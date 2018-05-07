@@ -1,0 +1,112 @@
+menu:
+  vim1: VIM1
+  vim2: VIM2
+  edge: Edge
+
+index:
+  get_started: Get started
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+
+sidebar:
+  vim1:
+    overview: Overview
+    getting_started: Getting started
+    vim1_interfaces: VIM1 Interfaces
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Via a USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Via a TF Card
+    install_le_via_windows: Install LE Via Windows
+    install_le_via_cli: Install LE Via CLI
+    create_burning_card_via_cli: Create Burning Card Via CLI
+    create_booting_card: Create Booting Card Via CLI
+    booting_card_vs_burning_card: Booting Card Versus Burning Card
+    extra_power_input: Extra Power Input
+    gpio_pinout: GPIO Pinout
+    development: Development
+    install_toolchains: Install Toolchains
+    setup_serial: Setup Serial Debugging Tool
+    erase_emmc: How To Erase eMMC Storage
+    uboot: U-boot
+    uboot_usage: U-boot Usage Guidance
+    build_boot_logo_for_uboot: Build Boot Logo For U-boot
+    setup_tftp: Setup TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    android: Android
+    download_android_source_code: Download the Android Source Code
+    build_android: Build Android Source Code
+    setup_adb: Setup ADB
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Image
+    hardware: Hardware
+    firmware: Firmware
+    download: Download
+  vim2:
+    overview: Overview
+    getting_started: Getting started
+    vim2_interfaces: VIM2 Interfaces
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Via a USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Via a TF Card
+    install_le_via_windows: Install LE Via Windows
+    install_le_via_cli: Install LE Via CLI
+    extra_power_input: Extra Power Input
+    gpio_pinout: GPIO Pinout
+    development: Development
+    install_toolchains: Install Toolchains
+    setup_serial: Setup Serial Debugging Tool
+    erase_emmc: How To Erase eMMC Storage
+    uboot: U-boot
+    uboot_usage: U-boot Usage Guidance
+    build_boot_logo_for_uboot: Build Boot Logo For U-boot
+    setup_tftp: Setup TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    kbi_guidance: KBI Guidance
+    android: Android
+    download_android_source_code: Download the Android Source Code
+    build_android: Build Android Source Code
+    setup_adb: Setup ADB
+    howto_use_wol: How To Use WOL
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Image
+    hardware: Hardware
+    firmware: Firmware
+    download: Download
+  edge:
+    overview: Overview
+    getting_started: Getting started
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Via a USB-C Cable
+    upgrade_via_tfcard: Upgrade Via a TF Card
+    install_le_via_windows: Install LE Via Windows
+    install_le_via_cli: Install LE Via CLI
+    create_burning_card_via_cli: Create Burning Card Via CLI
+    create_booting_card: Create Booting Card Via CLI
+    booting_card_vs_burning_card: Booting Card Versus Burning Card
+    extra_power_input: Extra Power Input
+    gpio_pinout: GPIO Pinout
+    development: Development
+    install_toolchains: Install Toolchains
+    setup_serial: Setup Serial Debugging Tool
+    erase_emmc: How To Erase eMMC Storage
+    uboot: U-boot
+    uboot_usage: U-boot Usage Guidance
+    build_boot_logo_for_uboot: Build Boot Logo For U-boot
+    setup_tftp: Setup TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    android: Android
+    download_android_source_code: Download the Android Source Code
+    build_android: Build Android Source Code
+    setup_adb: Setup ADB
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Image
+    hardware: Hardware
+    firmware: Firmware
+    download: Download
+

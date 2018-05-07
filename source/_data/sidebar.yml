@@ -1,0 +1,90 @@
+vim1:
+  getting_started:
+    overview: index.html
+    vim1_interfaces: VimInterfaces.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    upgrade_via_usb: UpgradeViaUSBCable.html
+    upgrade_via_tfcard: UpgradeViaTFBurningCard.html
+    install_le_via_windows: InstallLibreELECViaWindows.html
+    install_le_via_cli: CreateLibreELECBootCardViaCLI.html
+    create_burning_card_via_cli: CreateBurnCardViaCLI.html
+    create_booting_card: CreateBootableSDCard.html
+    booting_card_vs_burning_card: BootingCardVsBurningCard.html
+    extra_power_input: ExtraPowerInput.html
+    gpio_pinout: GPIOPinout.html
+  development:
+    install_toolchains: InstallToolchains.html
+    setup_serial: SetupSerialTool.html
+    erase_emmc: HowtoEraseEMMC.html
+  uboot:
+    uboot_usage: UBootUsage.html
+    build_boot_logo_for_uboot: BuildBootLogoForUboot.html
+    setup_tftp: SetupTFTPServer.html
+    load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
+  android:
+    download_android_source_code: DownloadAndroidSourceCode.html
+    build_android: BuildAndroid.html
+    setup_adb: SetupADB.html
+  linux:
+    fenix_script: FenixScript.html
+  hardware:
+    overview: HardwareDocs.html
+  firmware:
+    download: Firmware.html
+
+vim2:
+  getting_started:
+    overview: index.html
+    vim2_interfaces: Vim2Interfaces.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    upgrade_via_usb: UpgradeViaUSBCable.html
+    upgrade_via_tfcard: UpgradeViaTFBurningCard.html
+    install_le_via_windows: InstallLibreELECViaWindows.html
+    install_le_via_cli: CreateLibreELECBootCardViaCLI.html
+    extra_power_input: ExtraPowerInput.html
+    gpio_pinout: GPIOPinout.html
+  development:
+    install_toolchains: InstallToolchains.html
+    setup_serial: SetupSerialTool.html
+    erase_emmc: HowtoEraseEMMC.html
+  uboot:
+    uboot_usage: UBootUsage.html
+    build_boot_logo_for_uboot: BuildBootLogoForUboot.html
+    setup_tftp: SetupTFTPServer.html
+    load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
+    kbi_guidance: KbiGuidance.html
+  android:
+    download_android_source_code: DownloadAndroidSourceCode.html
+    build_android: BuildAndroid.html
+    setup_adb: SetupADB.html
+    howto_use_wol: HowtoUseWol.html
+  linux:
+    fenix_script: FenixScript.html
+  hardware:
+    overview: HardwareDocs.html
+  firmware:
+    download: Firmware.html
+
+edge:
+  getting_started:
+    overview: index.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    upgrade_via_usb: UpgradeViaUSBCable.html
+    upgrade_via_tfcard: UpgradeViaTFBurningCard.html
+  development:
+    install_toolchains: InstallToolchains.html
+    setup_serial: SetupSerialTool.html
+    erase_emmc: HowtoEraseEMMC.html
+  uboot:
+    overview: index.html
+  android:
+    download_android_source_code: DownloadAndroidSourceCode.html
+    build_android: BuildAndroid.html
+    setup_adb: SetupADB.html
+    howto_use_wol: HowtoUseWol.html
+  linux:
+    fenix_script: FenixScript.html
+  hardware:
+    overview: HardwareDocs.html
+  firmware:
+    download: Firmware.html
