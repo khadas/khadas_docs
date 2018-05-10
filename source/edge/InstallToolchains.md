@@ -1,4 +1,4 @@
-title: Install Extra Toolchains for Amlogic Platform
+title: Install Toolchains for Rockchip Platform
 ---
 
 # TBD
