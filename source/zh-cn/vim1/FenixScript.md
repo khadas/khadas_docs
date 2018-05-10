@@ -1,4 +1,4 @@
-title: 编译Ubuntu/Debia固件
+title: 编译Ubuntu/Debian固件
 ---
 
 你可以使用[Fenix](https://github.com/khadas/fenix)脚本来编译Ubuntu/Debian固件。
