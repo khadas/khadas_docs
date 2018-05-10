@@ -27,6 +27,7 @@ sidebar:
     create_burning_card_via_cli: Create Burning Card Via CLI
     create_booting_card: Create Booting Card Via CLI
     booting_card_vs_burning_card: Booting Card Versus Burning Card
+    boot_from_ext_image: Boot From external Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pinout
     development: Development
@@ -56,6 +57,7 @@ sidebar:
     upgrade_via_tfcard: Upgrade Android Via a TF Card
     install_le_via_windows: Install LE Via Windows
     install_le_via_cli: Install LE Via CLI
+    boot_from_ext_image: Boot From external Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pinout
     development: Development
@@ -89,6 +91,7 @@ sidebar:
     create_burning_card_via_cli: Create Burning Card Via CLI
     create_booting_card: Create Booting Card Via CLI
     booting_card_vs_burning_card: Booting Card Versus Burning Card
+    boot_from_ext_image: Boot From external Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pinout
     development: Development

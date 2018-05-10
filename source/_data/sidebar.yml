@@ -10,6 +10,7 @@ vim1:
     create_burning_card_via_cli: CreateBurnCardViaCLI.html
     create_booting_card: CreateBootableSDCard.html
     booting_card_vs_burning_card: BootingCardVsBurningCard.html
+    boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
   development:
@@ -41,6 +42,7 @@ vim2:
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     install_le_via_windows: InstallLibreELECViaWindows.html
     install_le_via_cli: CreateLibreELECBootCardViaCLI.html
+    boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
   development:
