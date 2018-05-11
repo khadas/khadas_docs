@@ -25,7 +25,7 @@ Make sure that you have right installed the USB Upgrade Tool, then follow the be
 * Click `Stop` button first, then close the tool to quit current upgrading operation.
 * [Extra power supply](/vim1/ExtraPowerInput.html) is required in some case your PC cannot provide enough current for the upgrading.
 
-## Upgrade On Ubuntn
+## Upgrade On Ubuntu
 ### Preperations
 ```
 $ sudo apt-get install libusb-dev git parted
