@@ -89,3 +89,10 @@ edge:
     overview: HardwareDocs.html
   firmware:
     download: Firmware.html
+
+tone_board:
+  getting_started:
+    overview: index.html
+  hardware:
+    overview: HardwareDocs.html
+

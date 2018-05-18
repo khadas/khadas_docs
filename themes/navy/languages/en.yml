@@ -2,6 +2,7 @@ menu:
   vim1: VIM1
   vim2: VIM2
   edge: Edge
+  tone_board: ToneBoard
 
 index:
   get_started: Get started
@@ -112,4 +113,7 @@ sidebar:
     hardware: Hardware
     firmware: Firmware
     download: Download
-
+  tone_board:
+    overview: Overview
+    getting_started: Getting started
+    hardware: Hardware
