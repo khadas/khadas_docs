@@ -60,6 +60,9 @@ vim2:
     howto_use_wol: HowtoUseWol.html
   linux:
     fenix_script: FenixScript.html
+  mcu:
+    mcu_develop: McuDevelop.html
+    mcu_code_flow_chart: McuCodeFlowChart.html
   hardware:
     overview: HardwareDocs.html
   firmware:

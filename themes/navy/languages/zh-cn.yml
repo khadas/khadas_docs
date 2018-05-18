@@ -79,6 +79,9 @@ sidebar:
     howto_use_wol: 如何使用WOL
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    mcu: MCU
+    mcu_develop: MCU开发
+    mcu_code_flow_chart: MCU代码流程图
     hardware: 硬件资料
     firmware: 固件下载
     download: 下载
