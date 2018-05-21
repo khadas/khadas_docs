@@ -62,6 +62,5 @@ Done!
 3. Wait
 
 ### Further Reading:
-* [Create LibreELEC_Booting_Card Via CLI](/vim1/CreateLibreELECBootCardViaCLI.html)
 * [Booting_Card Vs Burning Card](/vim1/BootingCardVsBurningCard.html)
 

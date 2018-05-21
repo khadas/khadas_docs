@@ -55,6 +55,5 @@ $ sudo eject /dev/sdb
 3. 等待升级完成。
 
 ### 更多资料
-* [通过命令行创建LibreELEC启动卡](/zh-cn/vim1/CreateLibreELECBootCardViaCLI.html)
 * [启动卡VS烧录卡](/zh-cn/vim1/BootingCardVsBurningCard.html)
 
