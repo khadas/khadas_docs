@@ -118,7 +118,7 @@ hexo.extend.helper.register('url_for_lang', function(path) {
 });
 
 hexo.extend.helper.register('raw_link', function(path) {
-  return 'https://github.com/nicknumb/site/edit/master/source/' + path;
+  return 'https://github.com/nicknumb/khadas_docs/edit/master/source/' + path;
 });
 
 hexo.extend.helper.register('page_anchor', function(str) {
