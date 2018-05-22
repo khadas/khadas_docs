@@ -18,7 +18,7 @@ per_page: 0
 theme: navy
 deploy:
   type: git
-  repo: https://github.com/nicknumb/nicknumb.github.io.git
+  repo: git@github.com:numbqq/numbqq.github.io.git
   branch: master
 
 highlight:
