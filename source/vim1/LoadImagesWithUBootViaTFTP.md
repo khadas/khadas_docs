@@ -41,7 +41,7 @@ Download and run linux:
 kvim# tftp 1080000 zImage
 kvim# tftp 10000000 uInitrd
 kvim# tftp 20000000 kvim.dtb 
-kvim# booti 1080000 10000000 20000000"
+kvim# booti 1080000 10000000 20000000
 ```
 ### Troubleshootings
 Failed to `saveenv`:
