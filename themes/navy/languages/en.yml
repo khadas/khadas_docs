@@ -47,7 +47,13 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     hardware: Hardware
     firmware: Firmware
-    download: Download
+    android_image: Android
+    ubuntu_image: Ubuntu
+    libreelec_image: LibreELEC
+    uboot_image: Uboot
+    dualos_image: DualOS
+    thirdparty_imgae: Third Party
+
   vim2:
     overview: Overview
     getting_started: Getting started
@@ -81,7 +87,13 @@ sidebar:
     mcu_code_flow_chart: MCU Code Flow Chart
     hardware: Hardware
     firmware: Firmware
-    download: Download
+    android_image: Android
+    ubuntu_image: Ubuntu
+    libreelec_image: LibreELEC
+    uboot_image: Uboot
+    dualos_image: DualOS
+    thirdparty_imgae: Third Party
+
   edge:
     overview: Overview
     getting_started: Getting started
@@ -115,7 +127,14 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     hardware: Hardware
     firmware: Firmware
-    download: Download
+    android_image: Android
+    ubuntu_image: Ubuntu
+    debian_image: Debian
+    libreelec_image: LibreELEC
+    dualos_image: DualOS
+    buildroot_image: Buildroot
+    uboot_image: U-boot
+
   tone_board:
     overview: Overview
     getting_started: Getting started

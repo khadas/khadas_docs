@@ -47,7 +47,13 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     hardware: 硬件资料
     firmware: 固件下载
-    download: 下载
+    android_image: Android
+    ubuntu_image: Ubuntu
+    libreelec_image: LibreELEC
+    uboot_image: Uboot
+    dualos_image: DualOS
+    thirdparty_imgae: 第三方固件
+
   vim2:
     getting_started: 开始使用
     overview: 概述
@@ -84,7 +90,13 @@ sidebar:
     mcu_code_flow_chart: MCU代码流程图
     hardware: 硬件资料
     firmware: 固件下载
-    download: 下载
+    android_image: Android
+    ubuntu_image: Ubuntu
+    libreelec_image: LibreELEC
+    uboot_image: Uboot
+    dualos_image: DualOS
+    thirdparty_imgae: 第三方固件
+
   edge:
     getting_started: 开始使用
     overview: 概述
@@ -116,7 +128,14 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     hardware: 硬件资料
     firmware: 固件下载
-    download: 下载
+    android_image: Android
+    ubuntu_image: Ubuntu
+    debian_image: Debian
+    libreelec_image: LibreELEC
+    dualos_image: DualOS
+    buildroot_image: Buildroot
+    uboot_image: U-boot
+
   tone_board:
     getting_started: 开始使用
     overview: 概述

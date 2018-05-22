@@ -30,7 +30,12 @@ vim1:
   hardware:
     overview: HardwareDocs.html
   firmware:
-    download: Firmware.html
+    android_image: FirmwareAndroid.html
+    ubuntu_image: FirmwareUbuntu.html
+    libreelec_image: FirmwareLibreelec.html
+    dualos_image: FirmwareDualos.html
+    uboot_image: FirmwareUboot.html
+    thirdparty_imgae: FirmwareThirdparty.html
 
 vim2:
   getting_started:
@@ -66,7 +71,12 @@ vim2:
   hardware:
     overview: HardwareDocs.html
   firmware:
-    download: Firmware.html
+    android_image: FirmwareAndroid.html
+    ubuntu_image: FirmwareUbuntu.html
+    libreelec_image: FirmwareLibreelec.html
+    dualos_image: FirmwareDualos.html
+    uboot_image: FirmwareUboot.html
+    thirdparty_imgae: FirmwareThirdparty.html
 
 edge:
   getting_started:
@@ -91,7 +101,13 @@ edge:
   hardware:
     overview: HardwareDocs.html
   firmware:
-    download: Firmware.html
+    android_image: FirmwareAndroid.html
+    ubuntu_image: FirmwareUbuntu.html
+    debian_image: FirmwareDebian.html
+    libreelec_image: FirmwareLibreelec.html
+    dualos_image: FirmwareDualos.html
+    buildroot_image: FirmwareBuildroot.html
+    uboot_image: FirmwareUboot.html
 
 tone_board:
   getting_started:
