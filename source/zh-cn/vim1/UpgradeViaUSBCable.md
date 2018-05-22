@@ -3,7 +3,7 @@ title: 通过USB-C数据线升级固件
 
 ## 通过Windows升级固件
 ### 准备工作
-* 下载升级工具[USB Upgrade Tool](http://www.mediafire.com/file/baum8z3ux7m4m04/USB_Burning_Tool_v2.1.2.zip)并解压。
+* 下载升级工具[USB Upgrade Tool](http://www.mediafire.com/file/ori8sd6m3wu1dig/USB_Burning_Tool_v2.1.6.3_zh.zip/file)并解压。
 * 运行Run 'setup_v2.x.x.exe'程序进行安装。
 ![image](/images/vim1/usb_upgrade_tool_setup_v208_zh.png) 
 
