@@ -46,6 +46,7 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     hardware: Hardware
+    download: Download
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -86,6 +87,7 @@ sidebar:
     mcu_develop: MCU Development
     mcu_code_flow_chart: MCU Code Flow Chart
     hardware: Hardware
+    download: Download
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -126,6 +128,7 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     hardware: Hardware
+    download: Download
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -139,3 +142,4 @@ sidebar:
     overview: Overview
     getting_started: Getting started
     hardware: Hardware
+    download: Download

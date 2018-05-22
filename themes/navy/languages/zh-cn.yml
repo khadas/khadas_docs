@@ -46,6 +46,7 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     hardware: 硬件资料
+    download: 下载
     firmware: 固件下载
     android_image: Android
     ubuntu_image: Ubuntu
@@ -89,6 +90,7 @@ sidebar:
     mcu_develop: MCU开发
     mcu_code_flow_chart: MCU代码流程图
     hardware: 硬件资料
+    download: 下载
     firmware: 固件下载
     android_image: Android
     ubuntu_image: Ubuntu
@@ -127,6 +129,7 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     hardware: 硬件资料
+    download: 下载
     firmware: 固件下载
     android_image: Android
     ubuntu_image: Ubuntu
@@ -140,3 +143,4 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     hardware: 硬件资料
+    download: 下载
