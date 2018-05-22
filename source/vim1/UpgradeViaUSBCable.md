@@ -2,14 +2,14 @@ title: Upgrade Via a USB-C Cable
 ---
 ## Upgrade On Windows
 ### Preparations
-* Download the [USB Upgrade Tool](http://www.mediafire.com/file/mvf43ds0iacs8i7/USB_Burning_Tool_v2.0.8_x86.rar) and extract it.
-* Run 'setup_v2.0.8.exe' to install the tool for VIMs upgrading:
+* Download the [USB Upgrade Tool](http://www.mediafire.com/file/baum8z3ux7m4m04/USB_Burning_Tool_v2.1.2.zip) and extract it.
+* Run 'setup_v2.x.x.exe' to install the tool for VIMs upgrading:
 	![Image of USB_Upgrade_Tool_Setup_V208](/images/vim1/usb_upgrade_tool_setup_v208.png)
 
 ### Upgrading Steps
 Make sure that you have right installed the USB Upgrade Tool, then follow the below steps to upgrade:
 
-1. Open ‘USB_Burning_Tool_v2.0.8.exe’, click ‘File-->Import image’ to chose an image for VIMs.
+1. Open ‘USB_Burning_Tool_v2.x.x.exe’, click ‘File-->Import image’ to chose an image for VIMs.
 2. Connect VIMs and PC with an USB-C cable(VIMs will power on automately).
 3. Let VIMs enter into upgrade mode to complete the upgrading:
 	* Long press `Power` key without release
