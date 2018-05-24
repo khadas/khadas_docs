@@ -115,3 +115,8 @@ tone_board:
   hardware:
     download: HardwareDocs.html
 
+firmware:
+  firmware_download:
+    vim1: index.html
+    vim2: Vim2Firmware.html
+    edge: EdgeFirmware.html

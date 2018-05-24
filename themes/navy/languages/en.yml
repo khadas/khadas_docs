@@ -3,6 +3,7 @@ menu:
   vim2: VIM2
   edge: Edge
   tone_board: ToneBoard
+  firmware: Firmware
 
 index:
   get_started: Get started
@@ -143,3 +144,10 @@ sidebar:
     getting_started: Getting started
     hardware: Hardware
     download: Download
+
+  firmware:
+    firmware_download: Firmware Download
+    vim1: VIM1
+    vim2: VIM2
+    edge: Edge
+    tone_board: Tone Board

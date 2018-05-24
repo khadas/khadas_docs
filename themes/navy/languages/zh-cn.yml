@@ -3,6 +3,7 @@ menu:
   vim2: VIM2
   edge: Edge
   tone_board: ToneBoard
+  firmware: 固件下载
 
 index:
   get_started: 开始使用
@@ -144,3 +145,10 @@ sidebar:
     overview: 概述
     hardware: 硬件资料
     download: 下载
+
+  firmware:
+    firmware_download: 固件下载
+    vim1: VIM1
+    vim2: VIM2
+    edge: Edge
+    tone_board: Tone Board
