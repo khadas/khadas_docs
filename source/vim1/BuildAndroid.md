@@ -27,17 +27,12 @@ $ make CROSS_COMPILE=aarch64-linux-gnu-
 ```sh
 $ cd ~/project/khadas/mmallow
 $ source build/envsetup.sh
-$ lunch kvim-user-32
+$ lunch kvim-userdebug-32
 $ make -jN otapackage
 ```
 *Note:*
 
 * Replace 'N' as the number you want when you run 'make -jN'
-* Use 'userdebug' instead if build android with debug mode:
-
-	```
-	$ lunch kvim-userdebug-32
-	```
 
 *Gernerated images in this step:*
 
