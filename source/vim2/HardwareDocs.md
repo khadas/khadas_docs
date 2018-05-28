@@ -8,4 +8,4 @@ This documentation is about hardware of Khadas VIM2.
 [Khadas VIM2 PCB Drawing](https://www.mediafire.com/file/klvdv6o1qk8ud61/VIM2_V12_Silk.pdf)
 [Khadas VIM2 2D Drawing (DXF format)](http://www.mediafire.com/file/5cchupqtdu9aaiz/VIM2_V12_DXF.7z)
 [Khadas VIM2 2D Drawing (PDF format)](https://www.mediafire.com/file/etzocr2a2d4g8v1/VIM2_V12_DXF.pdf)
-[Amlogic S912 Datasheet](http://www.mediafire.com/file/aib1ibnoxsc4j1x/S912_Datasheet_V0.220170314publicversion-Wesion.pdf))
+[Amlogic S912 Datasheet](http://www.mediafire.com/file/aib1ibnoxsc4j1x/S912_Datasheet_V0.220170314publicversion-Wesion.pdf)
