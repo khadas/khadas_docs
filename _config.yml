@@ -6,7 +6,7 @@ language:
   - en
 timezone: PRC
 
-url: https://numbqq.top
+url: https://docs.khadas.com
 root: /
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
@@ -18,7 +18,7 @@ per_page: 0
 theme: navy
 deploy:
   type: git
-  repo: git@github.com:numbqq/numbqq.github.io.git
+  repo: git@github.com:khadas/khadas.github.io.git
   branch: master
 
 highlight:
