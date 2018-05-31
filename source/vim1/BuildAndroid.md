@@ -13,7 +13,8 @@ title: Building Android Source Code
 
 **Build U-Boot:**
 ```sh
-$ cd ~/project/khadas/mmallow/uboot
+$ cd PATH_YOUR_PROJECT
+$ cd uboot
 $ make CROSS_COMPILE=aarch64-linux-gnu- kvim_defconfig
 $ make CROSS_COMPILE=aarch64-linux-gnu-
 ```
@@ -25,19 +26,17 @@ $ make CROSS_COMPILE=aarch64-linux-gnu-
 
 **Build Android:**
 ```sh
-$ cd ~/project/khadas/mmallow
+$ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
-$ lunch kvim-user-32
+$ lunch TARGET_LUNCH
 $ make -jN otapackage
 ```
 *Note:*
 
 * Replace 'N' as the number you want when you run 'make -jN'
-* Use 'userdebug' instead if build android with debug mode:
-
-	```
-	$ lunch kvim-userdebug-32
-	```
+* Replace 'TARGET_LUNCH' to your lunch select.
+  For Android Marshmallow(6.0), it's kvim-userdebug-32.
+  For Android Nougat(7.1), it's kvim-userdebug-64.
 
 *Gernerated images in this step:*
 
@@ -52,7 +51,6 @@ In some case, you might want to build Linux kernel separately, you can run the s
 ```sh
 $ source device/khadas/kvim/mkern.sh
 ```
-
 
 ### See Also
 * [Upgrade Via an USB Cable](/vim1/UpgradeViaUSBCable.html)
