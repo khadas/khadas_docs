@@ -111,7 +111,7 @@ edge:
     buildroot_image: FirmwareBuildroot.html
     uboot_image: FirmwareUboot.html
 
-tone_board:
+toneboard:
   getting_started:
     overview: index.html
   hardware:

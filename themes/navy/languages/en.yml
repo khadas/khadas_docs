@@ -2,7 +2,7 @@ menu:
   vim1: VIM1
   vim2: VIM2
   edge: Edge
-  tone_board: ToneBoard
+  toneboard: ToneBoard
   firmware: Firmware
 
 index:
@@ -141,7 +141,7 @@ sidebar:
     buildroot_image: Buildroot
     uboot_image: U-boot
 
-  tone_board:
+  toneboard:
     overview: Overview
     getting_started: Getting started
     hardware: Hardware
@@ -152,4 +152,4 @@ sidebar:
     vim1: VIM1
     vim2: VIM2
     edge: Edge
-    tone_board: Tone Board
+    toneboard: Tone Board
