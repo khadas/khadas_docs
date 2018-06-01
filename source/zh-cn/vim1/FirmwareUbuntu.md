@@ -22,7 +22,8 @@ title: Khadas VIM1 Ubuntu固件
 ### Server
 
 ### Mate
-
+* [VIMs_Ubuntu-xenial_Linux-3.14_mate_arm64_SD-USB_2018-05-31](http://www.mediafire.com/file/rsr8h33psd963eb/VIMs_Ubuntu-xenial_Linux-3.14_mate_arm64_SD-USB_2018-05-31.7z/file)
+* [VIMs_Ubuntu-xenial_Linux-4.9_mate_arm64_SD-USB_2018-05-31](http://www.mediafire.com/file/cvk21t83cu2t2ny/VIMs_Ubuntu-xenial_Linux-4.9_mate_arm64_SD-USB_2018-05-31.7z/file)
 * [VIM_Ubuntu-mate-16.04_Linux-4.9_SD-USB_V180207](http://www.mediafire.com/file/85n5qnc9om0xg3t/VIM_Ubuntu-mate-16.04_Linux-4.9_SD-USB_V180207.7z)
 * [VIM_Ubuntu-mate-16.04_Linux-3.14_SD-USB_V180207](http://www.mediafire.com/file/cwpg8qk32x387dq/VIM_Ubuntu-mate-16.04_Linux-3.14_SD-USB_V180207.7z)
 * [VIM_Ubuntu-mate-16.04_Linux-4.14_U-boot-V2018.01-rc3_SD-USB_alpha-V180106](http://www.mediafire.com/file/lnvj5jjcic59kwv/VIM_Ubuntu-mate-16.04_Linux-4.14_U-boot-V2018.01-rc3_SD-USB_alpha-V180106.7z)
