@@ -4,8 +4,8 @@ title: Building Android Source Code
 
 ### Preperations
 - [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
-- [x] [Downloading the Android Source](/vim1/DownloadAndroidSourceCode.html)
-- [x] [Install toolchains for Amlogic platform](/vim1/InstallToolchains.html)
+- [x] [Downloading the Android Source](/vim2/DownloadAndroidSourceCode.html)
+- [x] [Install toolchains for Amlogic platform](/vim2/InstallToolchains.html)
 
 
 ### Building
@@ -50,5 +50,5 @@ $ source device/khadas/kvim2/mkern.sh
 ```
 
 ### See Also
-* [Upgrade Via an USB Cable](/vim1/UpgradeViaUSBCable.html)
-* [Upgrade Via a Burnning TF Card](/vim1/UpgradeViaTFBurningCard.html)
+* [Upgrade Via an USB Cable](/vim2/UpgradeViaUSBCable.html)
+* [Upgrade Via a Burnning TF Card](/vim2/UpgradeViaTFBurningCard.html)
