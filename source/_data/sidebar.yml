@@ -114,6 +114,7 @@ edge:
 toneboard:
   getting_started:
     overview: index.html
+    user_manual: UserManual.html
   hardware:
     download: HardwareDocs.html
 

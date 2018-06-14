@@ -142,8 +142,9 @@ sidebar:
     uboot_image: U-boot
 
   toneboard:
-    overview: Overview
     getting_started: Getting started
+    overview: Overview
+    user_manual: User Manual
     hardware: Hardware
     download: Download
 

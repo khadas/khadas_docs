@@ -142,9 +142,10 @@ sidebar:
     buildroot_image: Buildroot
     uboot_image: U-boot
 
-  tone_board:
+  toneboard:
     getting_started: 开始使用
     overview: 概述
+    user_manual: 用户手册
     hardware: 硬件资料
     download: 下载
 
