@@ -120,7 +120,7 @@ Do you want to reset the board? y/n [n]? y
 Resetting board [OK]
 
 ```
-And you can add parameter `--debug` to print debug infomation.For more usage please refer to [docs](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs).
+For more usage please refer to [docs](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs).
 
 ### Uninstall burning tool
 ```

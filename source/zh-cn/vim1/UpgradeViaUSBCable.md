@@ -117,7 +117,7 @@ Do you want to reset the board? y/n [n]? y
 Resetting board [OK]
 
 ```
-你可以添加 `--debug` 参数来查看烧录调试打印信息。更多请参考[这里](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs)。
+更多请参考[这里](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs)。
 
 ### 卸载烧录工具
 ```
