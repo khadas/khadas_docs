@@ -84,10 +84,20 @@ Bus 002 Device 036: ID 1b8e:c003 Amlogic, Inc.
 以上信息表明已经识别到了VIMs。
 
 ### 如何在Ubuntu下烧录固件
-烧录命令如下：
+有2个命令可以用于烧录固件：`burn-tool`和`aml-burn-tool`。
+
+* 通过烧录命令`burn-tool`：
+
 ```
-$ burn-tool -i /path/to/image
+$ burn-tool -v aml -i /path/to/image
 ```
+
+* Amlogic平台专用烧录命令`aml-burn-tool`：
+
+```
+$ aml-burn-tool -i /path/to/image
+```
+
 如果烧录成功你会看到如下信息：
 ```
 Rebooting the board ........[OK]

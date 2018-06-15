@@ -87,9 +87,20 @@ Bus 002 Device 036: ID 1b8e:c003 Amlogic, Inc.
 The message means that your board is recognized.
 
 ### How to burn image on Ubuntu
+There are two commands can be used to burn image: `burn-tool` and `aml-burn-tool`.
+
+* General command `burn-tool`:
+
 ```
-$ burn-tool -i /path/to/image
+$ burn-tool -v aml -i /path/to/image
 ```
+
+* Amlogic platform command `aml-burn-tool`:
+
+```
+$ aml-burn-tool -i /path/to/image
+```
+
 You will see the logs if successed.
 ```
 Rebooting the board ........[OK]
