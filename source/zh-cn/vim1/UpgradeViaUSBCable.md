@@ -15,7 +15,7 @@ title: 通过USB-C数据线升级固件
 3. 进入固件更新模式
    * 长按Power键不要松开
    * 短按Rest键并松开
-   * 大概3秒后松开Power键进入固件升级模式
+   * 大概10秒后松开Power键进入固件升级模式
 4.  如果上面操作已正确执行，电脑端会发现VIM1/VIM2升级设备，点击升级工具上的start按钮开始固件升级，升级进度条100%时完成升级。
 ![image](/images/vim1/usb_upgrade_tool_interface_v208_zh.png)
 

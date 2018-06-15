@@ -14,7 +14,7 @@ Make sure that you have right installed the USB Upgrade Tool, then follow the be
 3. Let VIMs enter into upgrade mode to complete the upgrading:
 	* Long press `Power` key without release
 	* Short press `Reset` key and release
-	* Count 2-3 seconds and release the `Power` key to enter into upgrade mode
+	* Count 10 seconds and release the `Power` key to enter into upgrade mode
 4. Your PC should have found VIMs device as upgrade mode if you correctly follow the above operations.
 
 	Now all you need to do is to click `Start` button of the tool and wait the upgrading to complete:

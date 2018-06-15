@@ -13,7 +13,7 @@ Usually, the first two methods will meet most of the user needs, but in some cas
 1. Power on VIM2.
 2. Long press `Power` key without release
 3. Short press ‘Reset’ key and release
-4. Count 2-3 seconds and release the ‘Power’ key to enter into upgrade mode
+4. Count 10 seconds and release the ‘Power’ key to enter into upgrade mode
 
 
 ### Serial Mode(For developers)
