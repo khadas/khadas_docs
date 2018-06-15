@@ -8,13 +8,11 @@ title: Upgrade Via a USB-C Cable
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall.png)
   * Click `Install` button to install drivers
   ![DriverInstall install](/images/edge/DriverInstall_install.png)
-* Download the [Android Tool](http://www.mediafire.com/file/2oqjf121abbe73j/AndroidTool_Release_en_v2.52.zip) and extract it.
+* Download the [Android Tool](http://www.mediafire.com/file/on2h681x6tmi5mm/AndroidTool_Release_en_v2.55.zip) and extract it.
 * `AndroidTool.exe` is the burning tool, you don't need to install.
 
 ### Upgrading Steps
 Make sure that you have right installed the USB drivers, then follow the below steps to upgrade:
-
-#### Upgradeing Android
 
 1. Open `AndroidTool.exe`, click `Upgrade Firmware-->Firmware` to chose an image for Edge.
 ![AndroidTool firmware select](/images/edge/AndroldTool_firmware.png)
@@ -82,31 +80,29 @@ Done!
 **NOTE:** Root privilege required.
 
 ### How to burn image on Ubuntu
+There are two commands can be used to burn image: `burn-tool` and `rk-burn-tool`.
+
+* General command `burn-tool`:
+
 ```
 $ burn-tool -v rk -i /path/to/image
 ```
+
+* Rockchip platform command `rk-burn-tool`:
+
+```
+$ rk-burn-tool -i /path/to/image
+```
+
 You will see the logs if successed.
 ```
 Try to burn Rockchip image...
-Rockchip Linux image with GPT found!
-Try to burn Rockchip Linux image...
-Burn to eMMC...
-PARTITIONS OFFSET: 0 sectors.
-Loading loader...
-Support Type:RK330C	Loader ver:1.12	Loader Time:2018-04-26 10:24:40
-Upgrade loader ok.
-0+0 records in
-0+0 records out
-0 bytes copied, 8.4615e-05 s, 0.0 kB/s
-Erasing u-boot environment partition...
-Write LBA from file (100%)
-Burning image...
-Write LBA from file (100%)
-Burning GPT...
-directlba=1,first4access=1,gpt=1
-Write gpt...
-Write gpt ok.
-Reset Device OK.
+Rockchip Android image (or linux image compatible with AndroidTool one image burning) found!
+Try to burn Rockchip image...
+Loading firmware...
+Support Type:RK330C	FW Ver:6.0.277	FW Time:2018-06-15 17:10:26
+Loader ver:1.12	Loader Time:2018-06-15 16:59:09
+Upgrade firmware ok.
 Done!
 ```
 

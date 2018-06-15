@@ -8,13 +8,11 @@ title: 通过USB升级固件
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall_zh.png)
   * 在点击`驱动安装`来安装新的驱动。
   ![DriverInstall install](/images/edge/DriverInstall_install_zh.png)
-* 下载[Android Tool](http://www.mediafire.com/file/tc40f47bxso8j9k/AndroidTool_Release_zh_v2.52.zip)并解压。
+* 下载[Android Tool](http://www.mediafire.com/file/2f2yrog952fc10t/AndroidTool_Release_zh_v2.55.zip)并解压。
 * `AndroidTool.exe`就是烧录工具，是免安装的，直接运行即可。
 
 ### 升级步骤
-去报USB驱动已经安装，并按如下步骤进行升级。
-
-#### 烧录安卓
+确保USB驱动已经安装，并按如下步骤进行升级。
 
 1. 运行`AndroidTool.exe`, 点击`升级固件-->固件`来加载镜像文件。
 ![AndroidTool firmware select](/images/edge/AndroldTool_firmware_zh.png)
@@ -82,31 +80,29 @@ Done!
 **注意：** 安装需要`root`权限。
 
 ### 如何在Ubuntu下烧录镜像
+有2个命令可以用于烧录镜像：`burn-tool`和`rk-burn-tool`。
+
+* 使用通用命令`burn-tool`烧录：
+
 ```
 $ burn-tool -v rk -i /path/to/image
 ```
+
+* 使用Rockchip平台专用命令`rk-burn-tool`烧录：
+
+```
+$ rk-burn-tool -i /path/to/image
+```
+
 如果执行成功你会看到如下打印信息：
 ```
 Try to burn Rockchip image...
-Rockchip Linux image with GPT found!
-Try to burn Rockchip Linux image...
-Burn to eMMC...
-PARTITIONS OFFSET: 0 sectors.
-Loading loader...
-Support Type:RK330C	Loader ver:1.12	Loader Time:2018-04-26 10:24:40
-Upgrade loader ok.
-0+0 records in
-0+0 records out
-0 bytes copied, 8.4615e-05 s, 0.0 kB/s
-Erasing u-boot environment partition...
-Write LBA from file (100%)
-Burning image...
-Write LBA from file (100%)
-Burning GPT...
-directlba=1,first4access=1,gpt=1
-Write gpt...
-Write gpt ok.
-Reset Device OK.
+Rockchip Android image (or linux image compatible with AndroidTool one image burning) found!
+Try to burn Rockchip image...
+Loading firmware...
+Support Type:RK330C	FW Ver:6.0.277	FW Time:2018-06-15 17:10:26
+Loader ver:1.12	Loader Time:2018-06-15 16:59:09
+Upgrade firmware ok.
 Done!
 ```
 
