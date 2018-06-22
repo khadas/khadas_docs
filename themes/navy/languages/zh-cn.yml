@@ -19,6 +19,16 @@ page:
   next: 下一页
   last_updated: 上次更新：%s
 
+home_page:
+  intro_title1: 可编辑
+  intro_desc1: 这里的文档都可以可以编辑的，编辑后通过GitHub Pull Request提交代码，欢迎大家一起编辑完善文档。
+  intro_title2: 代码开源
+  intro_desc2: 文档网站的源码以及所有文档都是开源的，代码托管在Khadas GitHub。
+  intro_title3: 支持Markdown
+  intro_desc3: 所有的文档都是用Markdown语言编写。
+  intro_title4: 多国语言
+  intro_desc4: 目前支持简体中文和英文，以后会增加更多语言支持。
+
 sidebar:
   vim1:
     getting_started: 开始使用

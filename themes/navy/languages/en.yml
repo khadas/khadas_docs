@@ -19,6 +19,17 @@ page:
   next: Next
   last_updated: "Last updated: %s"
 
+home_page:
+  intro_title1: Editable
+  intro_desc1: This documentation is editable via GitHub Pull Request, any code donate is welcome.
+  intro_title2: Open Source
+  intro_desc2: All the source code are open source, you can find the source code on Khadas GitHub.
+  intro_title3: Markdown Support
+  intro_desc3: All documentation is written by Markdown.All features of GitHub flavored Markdown are supported.
+  intro_title4: Multi Languages Support
+  intro_desc4: English and Simplified Chinese are supported now, more languages will be supported in the future.
+
+
 sidebar:
   vim1:
     overview: Overview
