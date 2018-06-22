@@ -133,6 +133,7 @@ sidebar:
     erase_emmc: How To Erase eMMC Storage
     rk_docs: Rockchip Official Docs
     uboot: U-boot
+    boot_from_spi_flash: Boot From SPI Flash
     uboot_usage: U-boot Usage Guidance
     build_boot_logo_for_uboot: Build Boot Logo For U-boot
     setup_tftp: Setup TFTP Server for U-Boot
