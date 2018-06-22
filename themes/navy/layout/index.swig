@@ -13,6 +13,10 @@
          <i class="play icon"></i>
          {{ __('index.read_docs') }}
        </a>
+       <a href="faq/" class="ui inverted green button" id="intro-get-started-link">
+         <i class="question circle icon"></i>
+         {{ __('index.read_faqs') }}
+       </a>
 	  </div>
     </div>
   </div>

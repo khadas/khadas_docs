@@ -4,10 +4,12 @@ menu:
   edge: Edge
   toneboard: ToneBoard
   firmware: Firmware
+  faq: FAQ
 
 index:
   get_started: Get started
   read_docs: READ DOCS
+  read_faqs: READ FAQs
 
 page:
   contents: Contents

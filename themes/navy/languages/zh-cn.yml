@@ -4,10 +4,12 @@ menu:
   edge: Edge
   tone_board: ToneBoard
   firmware: 固件下载
+  faq: FAQ
 
 index:
   get_started: 开始使用
   read_docs: 阅读文档
+  read_faqs: 阅读FAQs
 
 page:
   contents: 目录
