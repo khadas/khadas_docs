@@ -3,6 +3,13 @@ title: Build Ubuntu/Debian Image
 
 You can use [Fenix](https://github.com/khadas/fenix) (one-stop script set) to build Ubuntu/Debian images.
 
+### Setup build host
+```
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install git make lsb-release
+```
+
 ### Clone Fenix repository
 Clone Fenix repo to somewhere like: `~/project/`
 

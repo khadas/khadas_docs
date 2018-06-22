@@ -3,6 +3,13 @@ title: 编译Ubuntu/Debian固件
 
 你可以使用[Fenix](https://github.com/khadas/fenix)脚本来编译Ubuntu/Debian固件。
 
+### 设置本地编辑环境
+```
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install git make lsb-release
+```
+
 ### 下载Fenix脚本
 下载Fenix脚本到本地路径，如:`~/project/`
 ```sh
