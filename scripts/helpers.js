@@ -51,11 +51,12 @@ hexo.extend.helper.register('doc_sidebar', function(className) {
   var link_temp ='';
   var open = '';
   var self = this;
+  var first_link = '';
 
   var prefix = 'sidebar.' + type + '.';
 
   _.each(sidebar, function(menu, title) {
-
+    first_link = 'yes';
 	link_temp = '';
     open = '';
     _.each(menu, function(link, text) {
@@ -63,6 +64,11 @@ hexo.extend.helper.register('doc_sidebar', function(className) {
       if (link === path) {
         open = 'yes';
 	    itemClass += ' current';
+	  }
+
+      if (first_link === 'yes') {
+	    itemClass += ' first';
+		first_link = 'no';
 	  }
 
       link_temp += '<a href="' + link + '" class="' + itemClass + '">' + self.__(prefix + text) + '</a>';
