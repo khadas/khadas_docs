@@ -21,6 +21,7 @@ Usually, the first two methods will meet most of the user needs, but in some cas
 2. Make sure again you've done the right connections and setup.
 3. Hit any keys at the moment of booting to stop autoboot. This step will let VIM1 boot into u-boot mode.
 4. Type `run update` on the terminal of u-boot as belowing:
+
 ```
 kvim# run update
 ```
