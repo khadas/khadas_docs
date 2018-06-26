@@ -11,6 +11,21 @@
       <link rel="alternative" hreflang="{{ loop.key }}" href="{{ canonical_url(loop.key) }}">
     {% endfor %}
   {% endif %}
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <style>
+    .pace .pace-progress {
+       background: #1E92FB;
+       height: 2px;
+     }
+    .pace .pace-progress-inner {
+       box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB;
+     }
+    .pace .pace-activity {
+       border-top-color: #1E92FB;
+       border-left-color: #1E92FB;
+    }
+  </style>
   <!-- Icon -->
   <link rel="Shortcut Icon" href="{{ url_for('/images/favicon.ico') }}">
   <!-- CSS -->
