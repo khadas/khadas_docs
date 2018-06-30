@@ -28,6 +28,7 @@ vim1:
     setup_adb: SetupADB.html
   linux:
     fenix_script: FenixScript.html
+    how_to_connect_wifi: HowToConnectWifi.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -67,6 +68,7 @@ vim2:
     howto_use_wol: HowtoUseWol.html
   linux:
     fenix_script: FenixScript.html
+    how_to_connect_wifi: HowToConnectWifi.html
   mcu:
     mcu_develop: McuDevelop.html
     mcu_code_flow_chart: McuCodeFlowChart.html
@@ -100,6 +102,7 @@ edge:
     howto_use_wol: HowtoUseWol.html
   linux:
     fenix_script: FenixScript.html
+    how_to_connect_wifi: HowToConnectWifi.html
   hardware:
     download: HardwareDocs.html
   firmware:
