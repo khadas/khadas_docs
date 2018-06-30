@@ -61,6 +61,7 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
@@ -104,6 +105,7 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
     mcu: MCU
     mcu_develop: MCU开发
     mcu_code_flow_chart: MCU代码流程图
@@ -148,6 +150,7 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
