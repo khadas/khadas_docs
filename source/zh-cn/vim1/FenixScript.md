@@ -24,80 +24,6 @@ $ git clone https://github.com/khadas/fenix
 $ cd ~/project/fenix
 $ source env/setenv.sh
 ```
-你会看到如下输出：
-```sh
-nick@Nick:~/project/khadas/ubuntu$ source env/setenv.sh 
-
-Choose Khadas board:
-1. VIM1
-2. VIM2
-3. Edge
-
-Which board would you like? [1] 1
-
-Choose uboot version:
-1. uboot-2015.01
-2. uboot-mainline
-
-Which uboot version would you like? [1] 
-
-Choose linux version:
-1. linux-3.14
-2. linux-4.9
-3. linux-mainline
-
-Which linux version would you like? [1] 
-
-Choose distribution:
-1. Ubuntu
-2. Debian
-
-Which distribution would you like? [1] 
-
-Choose Ubuntu release:
-1. xenial
-
-Which Ubuntu release would you like? [1] 
-
-Choose Ubuntu type:
-1. server
-2. mate
-
-Which Ubuntu type would you like? [1] 
-
-Choose Ubuntu architecture:
-1. arm64
-2. armhf
-
-Which Ubuntu architecture would you like? [1] 
-
-Choose install type:
-1. EMMC
-2. SD-USB
-
-Which install type would you like? [1] 
-===========================================
-#VERSION: 0.3
-
-#KHADAS_BOARD=VIM1
-#VENDER=Amlogic
-#CHIP=S905X
-#LINUX=3.14
-#UBOOT=2015.01
-#DISTRIBUTION=Ubuntu
-#DISTRIB_RELEASE=xenial
-#DISTRIB_TYPE=server
-#DISTRIB_ARCH=arm64
-#INSTALL_TYPE=EMMC
-
-===========================================
-
-Environment setup done.
-Type 'make' to build.
-
-nick@Nick:~/project/khadas/ubuntu$ 
-```
-
 ### 开始编译
 在设置好环境执行`make`就会开始编译，编译过程会用到`root`权限，会提示你要输入密码才能继续编译。
 ```sh
@@ -110,23 +36,111 @@ $ make
 通过执行`make help`来获取帮助信息。
 ```sh
 $ make help
+Fenix scripts help messages:
+  all           - Create image according to environment.
+  kernel        - Build linux kernel.
+  uboot         - Build u-boot.
+  debs          - Build linux debs.
+  image         - Pack update image.
+  clean         - Cleanup.
+  info          - Display current environment.
 ```
 
-#### make kernel
-编译linux内核。
+### 使用Docker编译
+Fenix支持在Docker中编译，我们提供了一个`Ubuntu 18.04`的Docker环境，你可以在里面编译所有的固件。
 
-#### make uboot
-编译u-boot。
+#### 安装Docker
+这里提供`Ubuntu 16.04`或新版本的Docker安装方法。
 
-#### make debs
-编译linux deb包。
+卸载旧版本Docker：
+```
+$ sudo apt-get remove docker docker-engine docker.io
+```
 
-#### make image
-打包固件。
+安装必要的软件包：
+```
+$ sudo apt-get update
+$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+$ curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+```
 
-#### make clean
-清理编译生成的文件。
+添加Docker源：
+```
+$ sudo add-apt-repository \
+    "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu \
+    $(lsb_release -cs) \
+    stable"
+```
 
-#### make info
-查看当前设置的环境。
+安装Docker:
+```
+$ sudo apt-get update
+$ sudo apt-get install docker-ce
+```
+启动Docker:
+```
+$ sudo systemctl enable docker
+$ sudo systemctl start docker
+```
+添加Docker用户组：
+```
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER
+```
+*注意: 必须注销或重启系统才会生效。*
+
+#### 检查Docker
+```
+$ docker run hello-world
+```
+
+如果你看到如下信息输出说明Docker安装成功：
+```
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+ca4f61b1923c: Pull complete
+Digest: sha256:be0cd392e45be79ffeffa6b05338b98ebb16c87b255f48e297ec7f98e123905c
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/engine/userguide/
+```
+#### 在Docker中运行Fenix
+编译Docker镜像：
+```
+$ cd ~/project/fenix
+$ docker build -t fenix .
+```
+
+进入Docker环境：
+```
+$ docker run -it -v $(pwd):/home/khadas/fenix --privileged fenix
+```
+现在已经在Docker容器里面了，可以开始编译了：
+```
+khadas@919cab43f66d:~/fenix$ source env/setenv.sh
+khadas@919cab43f66d:~/fenix$ make
+```
+
+### 参考
+[Docker](https://www.docker.com/)
+
 
