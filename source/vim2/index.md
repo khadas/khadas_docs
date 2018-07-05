@@ -3,5 +3,7 @@ title: VIM2 Documentation
 
 This part is about Khadas VIM2.
 
-[Khadas VIM2 Information](https://www.khadas.com/vim)
+{% youtube FZX6c8o5kzo %}
+
+For more information please refer to [VIM2 Specifications](https://www.khadas.com/vim).
 
