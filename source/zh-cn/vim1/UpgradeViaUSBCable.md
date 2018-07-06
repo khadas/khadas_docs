@@ -4,13 +4,13 @@ title: 通过USB-C数据线升级固件
 ## 通过Windows升级固件
 ### 准备工作
 * 下载升级工具[USB Upgrade Tool](http://www.mediafire.com/file/ori8sd6m3wu1dig/USB_Burning_Tool_v2.1.6.3_zh.zip/file)并解压。
-* 运行Run 'setup_v2.x.x.exe'程序进行安装。
+* 运行Run `setup_v2.x.x.exe`程序进行安装。
 ![image](/images/vim1/usb_upgrade_tool_setup_v208_zh.png) 
 
 ### 固件升级操作步骤
 确保已经正确安装好升级工具，按照下面步骤进行升级：
 
-1. 打开升级工具‘USB_Burning_Tool_v2.x.x.exe’，点击"File-->Import image"选择要升级的固件。
+1. 打开升级工具`USB_Burning_Tool_v2.x.x.exe`，点击"File-->Import image"选择要升级的固件。
 2. 用USB-C线连接VIM1/VIM2和PC电脑（默认VIM1/VIM2上电会自动开机）。
 3. 进入固件更新模式
    * 长按Power键不要松开
