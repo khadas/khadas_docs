@@ -1,4 +1,4 @@
-title: Setup STM8 Development Environment on Ubuntu 16.04.
+title: Setup STM8 Development Environment on Ubuntu 16.04
 ---
 
 ### Summary
