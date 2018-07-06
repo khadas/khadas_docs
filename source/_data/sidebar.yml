@@ -71,6 +71,8 @@ vim2:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+  fuchsia:
+    build_fuchsia: BuildFuchsia.html
   mcu:
     mcu_develop: McuDevelop.html
     mcu_code_flow_chart: McuCodeFlowChart.html
