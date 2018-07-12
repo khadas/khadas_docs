@@ -16,7 +16,7 @@ For different images you need different Android version.
 ```
 $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 ```
-* Use `Win32DiskImager` on Windows. Please refer to [Install LibreELEC Via Windows PC](/vim1/InstallLibreELECViaWindows.html).
+* Use `Win32DiskImager` on Windows. Please refer to [Install LibreELEC Via Windows PC](/vim1/InstallLibreELEC.html#On-Windows-PC).
 
 ### 2. Prepare dtb
 You need to choose different dtb for VIM1 and VIM2.

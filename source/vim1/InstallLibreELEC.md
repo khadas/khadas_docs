@@ -10,7 +10,7 @@ title: Howto Install LibreELEC
 
 
 ## Download the LibreELEC image
-You can download LibreELEC images from [firmware page](/vim1/Firmware.html#LibreELEC-1).
+You can download LibreELEC images from [firmware page](/vim1/FirmwareThirdparty.html#LibreELEC).
 *Note: Image contains KVIM is image for VIM1, and KVIM2 is for VIM2.*
 
 ## Write image to SD/USB storage

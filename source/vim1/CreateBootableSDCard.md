@@ -14,7 +14,7 @@ And why we need a bootable SD card?
 
 
 ### Steps to get started
-[Download](/vim1/Firmware.html) or [build u-boot](/vim1/BuildUboot.html) to get the bootloader blob for SD card.
+[Download](http://dl.khadas.com/Firmware/VIM1/U-boot/) or build u-boot to get the bootloader blob for SD card.
 No matter which way you take, you both need to keep in mind that there are different bootloader blobs for different boot disk/media:
 
 * u-boot blob `u-boot.bin.sd.bin` is built for SD card

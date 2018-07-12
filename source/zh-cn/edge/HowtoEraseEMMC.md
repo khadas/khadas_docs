@@ -2,7 +2,7 @@ title: 如何擦除eMMC
 ---
 
 ### 在Windows下
-你可以用[AndroidTool](http://www.mediafire.com/file/ztzdh8cam11a1ry/AndroidTool_Release_zh_v2.58.zip)来擦除eMMC。
+你可以用[AndroidTool](http://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.58.zip)来擦除eMMC。
 
 
 1. 给Edge上电并通过USB-C数据线连接Edge和你的电脑。
@@ -15,7 +15,7 @@ title: 如何擦除eMMC
 ![AndroidTool Erase eMMC](/images/edge/AndroidTool_erase_zh.png)
 
 ### 在Ubuntu下
-你可以使用[Linux_Upgrade_Tool](http://www.mediafire.com/file/5ls3elpvk357852/Linux_Upgrade_Tool_v1.34.zip)来擦除eMMC。
+你可以使用[Linux_Upgrade_Tool](http://dl.khadas.com/Tools/Linux_Upgrade_Tool_v1.34.zip)来擦除eMMC。
 
 1. 给Edge上电并通过USB-C数据线连接Edge和你的电脑。
 

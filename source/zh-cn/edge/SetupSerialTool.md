@@ -73,7 +73,7 @@ TE: 116640
 ```
 
 ### 支持`1500000` 波特率
-为了支持`1500000`波特率，需要替换`kermit` 文件，点击[这里](http://www.mediafire.com/file/7dc2jot6pcev4r6/kermit)下载，并执行如下命令。
+为了支持`1500000`波特率，需要替换`kermit` 文件，点击[这里](http://dl.khadas.com/Tools/kermit)下载，并执行如下命令。
 ```sh
 $ chmod +x kermit
 $ sudo cp kermit /usr/bin/kermit

@@ -5,7 +5,7 @@ This is a step by step instructions to create burning card for linux users, you 
 
 
 ### Preperations:
-* Build to get or [download](/vim1/Firmware.html) the latest U-Boot file for SD card.
+* Build to get or [download](http://dl.khadas.com/Firmware/VIM1/U-boot/) the latest U-Boot file for SD card.
 * You might need to [format the TF Card Via fdisk](/vim1/CreateBurnCardViaCLI.html) if your card exists more than one partitions.
 
 

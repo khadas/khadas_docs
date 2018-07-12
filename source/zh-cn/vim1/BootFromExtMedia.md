@@ -17,7 +17,7 @@ title: 从外部媒体介质启动系统
 ```
 $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 ```
-* 在Windows下使用工具`Win32DiskImager`写入。可以参考[在Windows下安装LibreELEC](/zh-cn/vim1/InstallLibreELECViaWindows.html).
+* 在Windows下使用工具`Win32DiskImager`写入。可以参考[在Windows下安装LibreELEC](/zh-cn/vim1/InstallLibreELEC.html#通过Windows-PC写入).
 
 ### 2、准备DTB文件
 VIM1和VIM2使用不同的DTB文件。

@@ -11,7 +11,7 @@ title: 如何安装LibreELEC
 注意：若是SD卡或U盘里面有数据要提前备份出来，制作过程会格式化整个SD卡。
 
 ## 下载固件
-可以从[固件列表](/zh-cn/vim1/Firmware.html#LibreELEC-1)下载LibreELEC固件。
+可以从[固件列表](/zh-cn/vim1/FirmwareThirdparty.html#LibreELEC)下载LibreELEC固件。
 *注意：固件包含KVIM字样的是VIM1的固件，包含KVIM2字样的是VIM2固件。*
 
 ## 写入固件到SD/USB存储器

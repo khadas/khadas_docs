@@ -12,7 +12,7 @@ title: 创建启动SD卡
 * 在某些情况下固件无法从eMMC启动时，可以通过SD卡启动
 
 ### 开始制作
-[下载](/zh-cn/vim1/Firmware.html)或[编译U-boot](/zh-cn/vim1/BuildUboot.html) 获取U-boot镜像。
+[下载](http://dl.khadas.com/Firmware/VIM1/U-boot/)或编译U-boot 获取U-boot镜像。
 
 不管通过哪种方式，你都会得到不同的镜像：
 
