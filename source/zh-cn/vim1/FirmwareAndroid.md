@@ -2,8 +2,8 @@ title: Khadas VIM1 Android固件
 ---
 
 # Android
-* [VIM1_Nougat_zhCN_V180622](http://www.mediafire.com/file/kpn4xz7c8hcpcv0/VIM1_Nougat_zhCN_V180622.7z)
-* [VIM1_Nougat_V180619](http://www.mediafire.com/file/qb8f69p2q20p66b/VIM1_Nougat_V180619.7z)
+* [VIM1_Nougat_zhCN_V180622](http://dl.khadas.com/Firmware/VIM1/Android/VIM1_Nougat_zhCN_V180622.7z)
+* [VIM1_Nougat_V180619](http://dl.khadas.com/Firmware/VIM1/Android/VIM1_Nougat_V180619.7z)
 * [VIM_Oreo_Preview_V171229](http://www.mediafire.com/file/cs2qvi41mc54n1d/VIM_Oreo_Preview_V171229.7z)
 * [VIM_Nougat_V180210](http://www.mediafire.com/file/fywf4d67j7g7745/VIM_Nougat_V180210.7z)
 * [VIM_Nougat_V171028](http://www.mediafire.com/file/1u50n5aqvcdpnpl/VIM_Nougat_V171028.7z)

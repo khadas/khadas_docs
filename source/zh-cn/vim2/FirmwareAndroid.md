@@ -2,8 +2,8 @@ title: Khadas VIM2 Android固件
 ---
 
 # Android
-* [VIM2_Nougat_zhCN_V180622](http://www.mediafire.com/file/lgy8dvc58wtelvp/VIM2_Nougat_zhCN_V180622.7z)
-* [VIM2_Nougat_V180619](http://www.mediafire.com/file/bt385rp3thcvu8y/VIM2_Nougat_V180619.7z)
+* [VIM2_Nougat_zhCN_V180622](http://dl.khadas.com/Firmware/VIM2/Android/VIM2_Nougat_zhCN_V180622.7z)
+* [VIM2_Nougat_V180619](http://dl.khadas.com/Firmware/VIM2/Android/VIM2_Nougat_V180619.7z)
 * [VIM2_Nougat_V180209](http://www.mediafire.com/file/dzo82z1420pd3dy/VIM2_Nougat_V180209.7z)
 * [VIM2_Nougat_V171028](http://www.mediafire.com/file/aopc62kcho6qhc4/VIM2_Nougat_V171028.7z)
 * [VIM2_Nougat_vTV_V171024](http://www.mediafire.com/file/mamhdv6c338tdm8/VIM2_Nougat_vTV_V171024.7z)
