@@ -2,7 +2,7 @@ title: 通过TF卡升级固件
 ---
 
 ### 准备工作
- * 下载[Burn Card Maker Tool](http://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) 并解压。
+* 下载[Burn Card Maker Tool](http://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) 并解压。
 * 准备好TF卡的读卡器。
 * 一台高清显示器（带HDMI接口）。
 
