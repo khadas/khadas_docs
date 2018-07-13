@@ -40,7 +40,7 @@ Fenix scripts help messages:
   all           - Create image according to environment.
   kernel        - Build linux kernel.
   uboot         - Build u-boot.
-  debs          - Build linux debs.
+  debs          - Build debs.
   image         - Pack update image.
   clean         - Cleanup.
   info          - Display current environment.
