@@ -16,6 +16,7 @@ vim1:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
+    how_to_access_gpio: HowToAccessGpio.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
@@ -56,6 +57,7 @@ vim2:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
+    how_to_access_gpio: HowToAccessGpio.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html

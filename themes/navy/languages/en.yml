@@ -49,6 +49,7 @@ sidebar:
     install_toolchains: Install Toolchains
     setup_serial: Setup Serial Debugging Tool
     erase_emmc: How To Erase eMMC Storage
+    how_to_access_gpio: How To Access GPIO
     uboot: U-boot
     uboot_usage: U-boot Usage Guidance
     build_boot_logo_for_uboot: Build Boot Logo For U-boot
@@ -89,6 +90,7 @@ sidebar:
     install_toolchains: Install Toolchains
     setup_serial: Setup Serial Debugging Tool
     erase_emmc: How To Erase eMMC Storage
+    how_to_access_gpio: How To Access GPIO
     uboot: U-boot
     uboot_usage: U-boot Usage Guidance
     build_boot_logo_for_uboot: Build Boot Logo For U-boot
