@@ -110,6 +110,7 @@ sidebar:
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
     how_to_setup_watchdog: 如何设置看门狗
+    how_to_setup_fan: 如何设置风扇
     fuchsia: Fuchsia
     build_fuchsia: 编译Fuchsia
     mcu: MCU

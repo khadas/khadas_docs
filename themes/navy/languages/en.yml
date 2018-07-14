@@ -108,6 +108,7 @@ sidebar:
     how_to_connect_wifi: How To Connect to Wi-Fi
     how_to_setup_bluetooth: How To Setup Bluetooth
     how_to_setup_watchdog: How To Setup Watchdog
+    how_to_setup_fan: How To Setup Cooling Fan
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
