@@ -63,6 +63,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: How To Connect to Wi-Fi
     how_to_setup_bluetooth: How To Setup Bluetooth
+    how_to_setup_watchdog: How To Setup Watchdog
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -104,6 +105,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: How To Connect to Wi-Fi
     how_to_setup_bluetooth: How To Setup Bluetooth
+    how_to_setup_watchdog: How To Setup Watchdog
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU

@@ -30,6 +30,7 @@ vim1:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    how_to_setup_watchdog: HowToSetupWatchdog.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -71,6 +72,7 @@ vim2:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    how_to_setup_watchdog: HowToSetupWatchdog.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   mcu:
