@@ -113,6 +113,7 @@ edge:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    how_to_setup_fan: HowToSetupFan.html
   hardware:
     download: HardwareDocs.html
   firmware:

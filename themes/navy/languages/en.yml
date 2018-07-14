@@ -158,6 +158,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: How To Connect to Wi-Fi
     how_to_setup_bluetooth: How To Setup Bluetooth
+    how_to_setup_fan: How To Setup Cooling Fan
     hardware: Hardware
     download: Download
     firmware: Firmware
