@@ -3,7 +3,7 @@ title:  Upgrade Android Via a TF Card
 
 ### Preparations:
 
-* Download the [Burn Card Maker Tool](http://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) and extract it.
+* Download the [Burn Card Maker Tool](https://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) and extract it.
 * Prepare a TF card and a card reader, the card will be formatted, you might need to back up the data first.
 * A HDMI supported display/monitor.
 

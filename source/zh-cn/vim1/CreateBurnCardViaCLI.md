@@ -4,7 +4,7 @@ title: 通过命令行方式创建系统烧录卡
 本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用[Windows方式创建烧录卡](/zh-cn/vim1/UpgradeViaTFBurningCard.html)
 
 ### 准备工作
-* 编译或[下载](http://dl.khadas.com/Firmware/VIM1/U-boot/)最新的U-Boot文件。
+* 编译或[下载](https://dl.khadas.com/Firmware/VIM1/U-boot/)最新的U-Boot文件。
 * 准备好TF卡和读卡器。
 * 如果TF卡上有多个分区的话，需要[通过fdisk格式化TF卡](/zh-cn/vim1/CreateBurnCardViaCLI.html)。
 

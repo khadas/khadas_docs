@@ -75,7 +75,7 @@ TE: 116640
 ```
 
 ### Enable 1500000 baudrate
-In order to enable `1500000` baudrate, you need to repalce `kermit` binary, click [here](http://dl.khadas.com/Tools/kermit) to download, and execute the following commands.
+In order to enable `1500000` baudrate, you need to repalce `kermit` binary, click [here](https://dl.khadas.com/Tools/kermit) to download, and execute the following commands.
 ```sh
 $ chmod +x kermit
 $ sudo cp kermit /usr/bin/kermit

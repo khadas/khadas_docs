@@ -2,13 +2,13 @@ title: Upgrade Via a USB-C Cable
 ---
 ## Upgrade On Windows
 ### Preparations
-* Download the [USB driver](http://dl.khadas.com/Tools/DriverAssitant_v4.6.zip) and extract it.
+* Download the [USB driver](https://dl.khadas.com/Tools/DriverAssitant_v4.6.zip) and extract it.
 * Run `DriverInstall.exe` to install USB drivers.
   * Click `Uninstall` button to uninstall old drivers
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall.png)
   * Click `Install` button to install drivers
   ![DriverInstall install](/images/edge/DriverInstall_install.png)
-* Download the [Android Tool](http://dl.khadas.com/Tools/AndroidTool_Release_en_v2.58.zip) and extract it.
+* Download the [Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.58.zip) and extract it.
 * `AndroidTool.exe` is the burning tool, you don't need to install.
 
 ### Upgrading Steps

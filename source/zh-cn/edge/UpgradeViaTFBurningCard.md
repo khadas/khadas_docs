@@ -3,7 +3,7 @@ title:  通过TF卡升级固件
 
 ### 准备工作
 * 一台Windows电脑
-* 下载[SDDiskTool](http://dl.khadas.com/Tools/SDDiskTool_zh_v1.53.zip)并解压
+* 下载[SDDiskTool](https://dl.khadas.com/Tools/SDDiskTool_zh_v1.53.zip)并解压
 * TF卡和读卡器
 * HDMI显示器
 

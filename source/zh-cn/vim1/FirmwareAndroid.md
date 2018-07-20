@@ -2,12 +2,12 @@ title: Khadas VIM1 Android固件
 ---
 
 # Android
-* [VIM1_Nougat_zhCN_V180622](http://dl.khadas.com/Firmware/VIM1/Android/Nougat/VIM1_Nougat_zhCN_V180622.7z)
-* [VIM1_Nougat_V180619](http://dl.khadas.com/Firmware/VIM1/Android/Nougat/VIM1_Nougat_V180619.7z)
-* [VIM_Oreo_Preview_V171229](http://dl.khadas.com/Firmware/VIM1/Android/Oreo/VIM_Oreo_V171229.7z)
+* [VIM1_Nougat_zhCN_V180622](https://dl.khadas.com/Firmware/VIM1/Android/Nougat/VIM1_Nougat_zhCN_V180622.7z)
+* [VIM1_Nougat_V180619](https://dl.khadas.com/Firmware/VIM1/Android/Nougat/VIM1_Nougat_V180619.7z)
+* [VIM_Oreo_Preview_V171229](https://dl.khadas.com/Firmware/VIM1/Android/Oreo/VIM_Oreo_V171229.7z)
 * [VIM_Nougat_V180210](http://www.mediafire.com/file/fywf4d67j7g7745/VIM_Nougat_V180210.7z)
 * [VIM_Nougat_V171028](http://www.mediafire.com/file/1u50n5aqvcdpnpl/VIM_Nougat_V171028.7z)
-* [VIM_Marshmallow_170929](http://dl.khadas.com/Firmware/VIM1/Android/Marshmallow/VIM_Marshmallow_170929.7z)
+* [VIM_Marshmallow_170929](https://dl.khadas.com/Firmware/VIM1/Android/Marshmallow/VIM_Marshmallow_170929.7z)
 * [VIM_Nougat_V170901](http://www.mediafire.com/file/s1k8ekaj3yvd18q/VIM_Nougat_170901.7z)
 * [Vim_Nougat_Root_170612](http://www.mediafire.com/file/8dqhuppx89r6yb2/Vim_Nougat_Root_170612.7z)
 * [Vim_Marshmallow_Root_170603](http://www.mediafire.com/file/u8lbni221l58536/Vim_Marshmallow_Root_170603.7z)

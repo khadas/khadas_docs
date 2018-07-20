@@ -3,7 +3,7 @@ title: Upgrade via a TF card
 
 ### preparations
 * A Windows PC
-* Download [SDDiskTool](http://dl.khadas.com/Tools/SDDiskTool_en_v1.53.zip) and extract it
+* Download [SDDiskTool](https://dl.khadas.com/Tools/SDDiskTool_en_v1.53.zip) and extract it
 * A TF card and a TF crad reader
 * A HDMI monitor
 
