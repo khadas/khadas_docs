@@ -33,6 +33,7 @@ vim1:
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
+    install_tensorflow: InstallTensorFlow.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -78,6 +79,7 @@ vim2:
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
     how_to_setup_fan: HowToSetupFan.html
+    install_tensorflow: InstallTensorFlow.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   mcu:
@@ -117,6 +119,7 @@ edge:
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     add_chinese_support: AddChineseSupport.html
     how_to_setup_fan: HowToSetupFan.html
+    install_tensorflow: InstallTensorFlow.html
   hardware:
     download: HardwareDocs.html
   firmware:

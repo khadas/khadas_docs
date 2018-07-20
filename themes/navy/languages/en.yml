@@ -66,6 +66,7 @@ sidebar:
     how_to_setup_bluetooth: How To Setup Bluetooth
     how_to_setup_watchdog: How To Setup Watchdog
     add_chinese_support: Add Chinese Support
+    install_tensorflow: Install TensorFlow
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -110,6 +111,7 @@ sidebar:
     how_to_setup_bluetooth: How To Setup Bluetooth
     how_to_setup_watchdog: How To Setup Watchdog
     add_chinese_support: Add Chinese Support
+    install_tensorflow: Install TensorFlow
     how_to_setup_fan: How To Setup Cooling Fan
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
@@ -162,6 +164,7 @@ sidebar:
     how_to_setup_bluetooth: How To Setup Bluetooth
     add_chinese_support: Add Chinese Support
     how_to_setup_fan: How To Setup Cooling Fan
+    install_tensorflow: Install TensorFlow
     hardware: Hardware
     download: Download
     firmware: Firmware
