@@ -66,6 +66,7 @@ sidebar:
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
+    install_docker: 安装Docker
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
@@ -116,6 +117,7 @@ sidebar:
     how_to_setup_fan: 如何设置风扇
     fuchsia: Fuchsia
     install_tensorflow: 安装TensorFlow
+    install_docker: 安装Docker
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -165,6 +167,7 @@ sidebar:
     add_chinese_support: 增加中文支持
     how_to_setup_fan: 如何设置风扇
     install_tensorflow: 安装TensorFlow
+    install_docker: 安装Docker
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
