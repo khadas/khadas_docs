@@ -168,6 +168,7 @@ sidebar:
     how_to_setup_fan: 如何设置风扇
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
+    build_packages_in_docker: 在Docker中编译软件包
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
