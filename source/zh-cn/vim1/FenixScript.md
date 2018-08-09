@@ -7,7 +7,7 @@ title: 编译Ubuntu/Debian固件
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ sudo apt-get install git make lsb-release
+$ sudo apt-get install git make lsb-release qemu-user-static
 ```
 
 ### 下载Fenix脚本
@@ -24,13 +24,30 @@ $ git clone https://github.com/khadas/fenix
 $ cd ~/project/fenix
 $ source env/setenv.sh
 ```
-### 开始编译
+### 开始编译完整固件
 在设置好环境执行`make`就会开始编译，编译过程会用到`root`权限，会提示你要输入密码才能继续编译。
 ```sh
 $ make
 ```
 
 **提示：**如果是你第一次编译，那么时间会比较久，因为脚本会检测你的电脑的编译环境，可能会安装编译需要的一些软件包，同时还会从Khadas Github下载一些仓库（如：u-boot和linux）。
+
+你也可以选择单独编译u-boot和内核。
+
+### 编译U-boot
+```
+$ make uboot
+```
+
+### 编译内核
+```
+$ make kernel
+```
+
+### 编译deb包
+```
+$ make debs
+```
 
 ### 获取帮助信息
 通过执行`make help`来获取帮助信息。
@@ -132,7 +149,7 @@ $ docker build -t fenix .
 
 进入Docker环境：
 ```
-$ docker run -it -v $(pwd):/home/khadas/fenix --privileged fenix
+$ docker run -it -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro --privileged fenix
 ```
 现在已经在Docker容器里面了，可以开始编译了：
 ```

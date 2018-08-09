@@ -7,7 +7,7 @@ You can use [Fenix](https://github.com/khadas/fenix) (one-stop script set) to bu
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ sudo apt-get install git make lsb-release
+$ sudo apt-get install git make lsb-release qemu-user-static
 ```
 
 ### Clone Fenix repository
@@ -27,13 +27,30 @@ $ cd ~/project/fenix
 $ source env/setenv.sh
 ```
 
-### Build image
+### Build full image
 If you have setup the environment then it’s time to build the image. And Fenix requires root privileges, you need to enter your password.
 ```sh
 $ make
 ```
 
 **NOTE:**If it’s your first time to build, the script will check your host PC environment and install some essential packages, and some repos(u-boot,linux) will be cloned automatically from Khadas GitHub.
+
+You can build u-boot and kernel alone.
+
+### Build U-boot
+```
+$ make uboot
+```
+
+### Build linux
+```
+$ make kernel
+```
+
+### Build deb packages
+```
+$ make debs
+```
 
 ### Get help messages
 You can get help messags by executing `make help`:
@@ -135,7 +152,7 @@ $ docker build -t fenix .
 
 Build image in Docker:
 ```
-$ docker run -it -v $(pwd):/home/khadas/fenix --privileged fenix
+$ docker run -it -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro --privileged fenix
 ```
 We are in Docker container now, start to build.
 ```
