@@ -35,6 +35,7 @@ vim1:
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
+    setup_golang: SetupGolang.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -82,6 +83,7 @@ vim2:
     how_to_setup_fan: HowToSetupFan.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
+    setup_golang: SetupGolang.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   mcu:
@@ -124,6 +126,7 @@ edge:
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     build_packages_in_docker: BuildPackagesInDocker.html
+    setup_golang: SetupGolang.html
   hardware:
     download: HardwareDocs.html
   firmware:

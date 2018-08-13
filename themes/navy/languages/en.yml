@@ -68,6 +68,7 @@ sidebar:
     add_chinese_support: Add Chinese Support
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
+    setup_golang: Setup Golang
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -115,6 +116,7 @@ sidebar:
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     how_to_setup_fan: How To Setup Cooling Fan
+    setup_golang: Setup Golang
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -169,6 +171,7 @@ sidebar:
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     build_packages_in_docker: Build Packages In Docker
+    setup_golang: Setup Golang
     hardware: Hardware
     download: Download
     firmware: Firmware

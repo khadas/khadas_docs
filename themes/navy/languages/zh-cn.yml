@@ -67,6 +67,7 @@ sidebar:
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
+    setup_golang: 搭建GO语言环境
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
@@ -118,6 +119,7 @@ sidebar:
     fuchsia: Fuchsia
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
+    setup_golang: 搭建GO语言环境
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -169,6 +171,7 @@ sidebar:
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
+    setup_golang: 搭建GO语言环境
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
