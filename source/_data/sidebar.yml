@@ -17,6 +17,7 @@ vim1:
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
+    how_to_access_i2c: HowToAccessI2c.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
@@ -62,6 +63,7 @@ vim2:
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
+    how_to_access_i2c: HowToAccessI2c.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html

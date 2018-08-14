@@ -49,6 +49,7 @@ sidebar:
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
+    how_to_access_i2c: 如何使用I2C接口
     uboot: U-boot
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
@@ -97,6 +98,7 @@ sidebar:
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
+    how_to_access_i2c: 如何使用I2C接口
     uboot: U-boot
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
