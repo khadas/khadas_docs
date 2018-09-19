@@ -2,4 +2,6 @@ title: Khadas VIM1 LibreELEC Firmware
 ---
 
 # LibreELEC
-Please refer to [Third Party LibreELEC](/vim1/FirmwareThirdparty.html#LibreELEC).
+[Official supported LibreELEC.](https://libreelec.tv/downloads/) Thanks LibreELEC team.
+
+[Third Party Build LibreELEC](/vim1/FirmwareThirdparty.html#LibreELEC).
