@@ -6,7 +6,7 @@ There are many different ways to boot into upgrade mode listed as following:
 * Keys Mode
 * Serial Mode
 * Linux/Android command line
-* Force enter Maskrom mode
+* TST Mode (Recommend)
 * MRegister Mode
 
 Usually, the first four methods will meet most of the user needs, but in some case, for example, if burnning a wrong u-boot, or your device cannot even boot any more, in thus cases, you can try with MRegister mode.
@@ -33,10 +33,10 @@ kedge# run update
 3. Boot into android or linux command line.
 4. Linux executes `sudo reboot loader`, Android executes `su` and `reboot loader`, the system will reboot and enter upgrade mode, you will see the sys-led on when enter upgrade mode(loader mode).
 
-### Force Enter Maskrom Mode
+### TST Mode (Recommend)
 1. Power on Edge.
-2. Quickly press `Func` key 3 times in 2 seconds.
-3. You will see the power-led blink, then short press `Reset` key, you will enter upgrade mode(maskrom mode).
+2. Quickly press `Func` key 3 times in 2 seconds and release the key.
+3. You will see the power-led(Blue) blink about 3 seconds, after the power-led(Blue) becomes breathe mode again indicate that the board is in upgrade mode(maskrom mode).
 
 ### MRegister Mode(Maskrom Mode)
 1. Power on Edge.

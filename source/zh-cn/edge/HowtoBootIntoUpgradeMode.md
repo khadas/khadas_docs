@@ -6,7 +6,7 @@ title: 如何进入升级模式
 * 按键模式
 * 串口模式
 * Linux/Android命令行模式
-* 强制进入Maskrom模式
+* TST模式（推荐使用）
 * MRegister模式
 
 通常前四种比较常用，但是在某些情况下，如烧录了错误的u-boot或者系统无法启动，这时候就需要使用`MRegister`模式来进入升级模式。
@@ -33,10 +33,10 @@ kedge# run update
 3. 启动进入系统命令行。
 4. Linux系统执行`sudo reboot loader`命令，安卓系统执行`su`和`reboot loader`命令，系统会重启进入升级模式（loader模式），进入升级模式后系统led灯会点亮。
 
-### 强制进入升级模式
+### TST模式（推荐使用）
 1. 给Edge上电。
-2. 在2秒钟内连续按3次`Func`按键。
-3. 你会看到系统电源指示灯闪烁，只是按下`Reset`按键系统会复位进入升级模式（maskrom模式）。
+2. 在2秒钟内连续按3次`Func`按键后松开。
+3. 你会看到系统电源指示灯（蓝色）闪烁，闪烁3秒后电源指示灯（蓝色）会重新变为呼吸灯模式，表明板子已经进入升级模式（maskrom模式）。
 
 ### MRegister模式(Maskrom Mode)
 1. 给Edge上电。
