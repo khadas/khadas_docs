@@ -36,7 +36,7 @@ kedge# run update
 ### TST Mode (Recommend)
 1. Power on Edge.
 2. Quickly press `Func` key 3 times in 2 seconds and release the key.
-3. You will see the power-led(Blue) blink about 3 seconds, after the power-led(Blue) becomes breathe mode again indicate that the board is in upgrade mode(maskrom mode).
+3. You will see the power-led(Blue) blink about 3 seconds, after the power-led(Blue) off indicate that the board is in upgrade mode(maskrom mode).
 
 ### MRegister Mode(Maskrom Mode)
 1. Power on Edge.
