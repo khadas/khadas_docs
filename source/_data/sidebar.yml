@@ -104,6 +104,7 @@ vim2:
 edge:
   getting_started:
     overview: index.html
+    edge_interfaces: EdgeInterfaces.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html

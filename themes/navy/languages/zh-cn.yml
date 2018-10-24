@@ -139,6 +139,7 @@ sidebar:
   edge:
     getting_started: 开始使用
     overview: 概述
+    edge_interfaces: Edge接口描述
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级
