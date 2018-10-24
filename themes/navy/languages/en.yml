@@ -138,6 +138,8 @@ sidebar:
     overview: Overview
     getting_started: Getting started
     edge_interfaces: Edge Interfaces
+    captain_interfaces: Captain Interfaces
+    edgev_interfaces: Edge V Interfaces
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Via a USB-C Cable
     upgrade_via_tfcard: Upgrade Via a TF Card
