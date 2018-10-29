@@ -143,6 +143,7 @@ sidebar:
     enter_upgrade_mode: 进入升级模式
     captain_interfaces: Captain接口描述
     edgev_interfaces: Edge V接口描述
+    edgecaptain_power_priority: Edge Captain电源优先级
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级
     install_le_via_windows: 通过Windows PC安装LE
