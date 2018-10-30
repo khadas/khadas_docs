@@ -6,12 +6,16 @@ title: Khadas VIM1 Ubuntu固件
 ## EMMC安装
 
 ### Server
+* [VIM1_Ubuntu-server-bionic_Linux-3.14_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-3.14_arm64_EMMC_V20181030.7z)
+* [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20181030.7z)
 * [VIM1_Ubuntu-server-xenial_Linux-4.9_arm64_EMMC_2018-07-12](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-xenial_Linux-4.9_arm64_EMMC_2018-07-12.7z)
 * [Vim_Ubuntu-server-16.04_Mainline-4.12_V170624_Pre-alpha](http://www.mediafire.com/file/89av0e16ypm0e7v/Vim_Ubuntu-server-16.04_Linux-Mainline-4.12-rc6_V170624_Pre-alpha.7z)
 * [Vim_Ubuntu-server-16.04_Linux-4.9_V170604](http://www.mediafire.com/file/vn9d1dg0plvkby7/Vim_Ubuntu-server-16.04_Linux-4.9_V170604.7z)
 * [Vim_Ubuntu-server-16.04_V170515](http://www.mediafire.com/file/yx7sg9rx3a52m33/Vim_Ubuntu-server-16.04_V170515.7z)
 
-### Mate
+### Desktop
+* [VIM1_Ubuntu-xfce-bionic_Linux-3.14_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-3.14_arm64_EMMC_V20181030.7z)
+* [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20181030.7z)
 * [VIM1_Ubuntu-xenial_Linux-3.14_mate_arm64_EMMC_2018-05-31](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xenial_Linux-3.14_mate_arm64_EMMC_2018-05-31.7z)
 * [VIM1_Ubuntu-xenial_Linux-4.9_mate_arm64_EMMC_2018-05-31](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xenial_Linux-4.9_mate_arm64_EMMC_2018-05-31.7z)
 * [VIM_Ubuntu-mate-16.04_Linux-3.14_KODI-17.3_EMMC_V180127](http://www.mediafire.com/file/ust64v93ji83ran/VIM_Ubuntu-mate-16.04_Linux-3.14_KODI-17.3_EMMC_V180127.7z)
