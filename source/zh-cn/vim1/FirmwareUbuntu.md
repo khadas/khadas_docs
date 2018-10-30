@@ -21,8 +21,10 @@ title: Khadas VIM1 Ubuntu固件
 ## SD/USB安装
 
 ### Server
+* [VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030.7z)
 
-### Mate
+### Desktop
+* [VIMs_Ubuntu-xfce-bionic_Linux-4.19_arm64_SD-USB_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-xfce-bionic_Linux-4.19_arm64_SD-USB_V20181030.7z)
 * [VIMs_Ubuntu-xenial_Linux-3.14_mate_arm64_SD-USB_2018-05-31](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-xenial_Linux-3.14_mate_arm64_SD-USB_2018-05-31.7z)
 * [VIMs_Ubuntu-xenial_Linux-4.9_mate_arm64_SD-USB_2018-05-31](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-xenial_Linux-4.9_mate_arm64_SD-USB_2018-05-31.7z)
 * [VIM_Ubuntu-mate-16.04_Linux-4.9_SD-USB_V180207](http://www.mediafire.com/file/85n5qnc9om0xg3t/VIM_Ubuntu-mate-16.04_Linux-4.9_SD-USB_V180207.7z)
