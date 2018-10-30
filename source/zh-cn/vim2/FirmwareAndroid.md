@@ -2,6 +2,7 @@ title: Khadas VIM2 Android固件
 ---
 
 # Android
+* [VIM2_Nougat_NonRoot_V181029](https://dl.khadas.com/Firmware/VIM2/Android/Nougat/VIM2_Nougat_NonRoot_V181029.7z)
 * [VIM2_Nougat_zhCN_V180622](https://dl.khadas.com/Firmware/VIM2/Android/Nougat/VIM2_Nougat_V180619.7z)
 * [VIM2_Nougat_V180619](https://dl.khadas.com/Firmware/VIM2/Android/VIM2_Nougat_V180619.7z)
 * [VIM2_Nougat_V180209](http://www.mediafire.com/file/dzo82z1420pd3dy/VIM2_Nougat_V180209.7z)
