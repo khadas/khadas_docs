@@ -109,6 +109,7 @@ sidebar:
     package_update_image: Fast Package Update Image
     setup_adb: Setup ADB
     howto_use_wol: How To Use WOL
+    force_reset_features: Force Reset Remotely
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: How To Connect to Wi-Fi
