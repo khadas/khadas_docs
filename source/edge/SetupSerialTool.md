@@ -10,9 +10,9 @@ title: Setup Serial Debugging Tool
 Follow the steps to do the connections:
 
 1) Connect Edge IO board to Edge via FPC connector.
-![Edge IO FPC](/images/edge/SerialConnections_fpc.png)
+![Edge IO FPC](/images/edge/edge_io.gif)
 
-2) Connect all the to GPIOs, and check the Tx / Rx Pins and ensure done the right connection:
+2) Connect all the GPIOs, and check the Tx / Rx Pins and ensure done the right connection:
 
   * Tool Pin `GND`: <---> Edge IO `GND`
   * Tool Pin `TXD`: <---> Edge IO `RXD`

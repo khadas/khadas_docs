@@ -10,7 +10,7 @@ title: 设置串口调试工具
 按如下步骤连接：
 
 1) 通过FPC排线连接Edge板和Edge IO板。
-![Edge IO FPC](/images/edge/SerialConnections_fpc.png)
+![Edge IO FPC](/images/edge/edge_io.gif)
 
 2）连接所有的GPIO，检查TX/RX确保连接正确。
 
