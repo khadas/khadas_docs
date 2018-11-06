@@ -31,7 +31,7 @@ $ git clone https://github.com/khadas/utils.git
 2）更新你想要编译的开机图片
 ```
 $ mkdir -p images/logo
-$ cp -r ~/Pictures/khadas.bmp images/logo/bootup.bmp
+$ cp ~/Pictures/khadas.bmp images/logo/bootup.bmp
 ```
 3）编译开机logo
 ```
@@ -75,7 +75,7 @@ $
 ### 下载`logo.img`
 1）拷贝生成的`logo.img`到U盘
 ```
-$ cp -r images/logo.img /media/gouwa/9B98-6C15/
+$ cp images/logo.img /media/gouwa/9B98-6C15/
 ```
 2）把U盘插在VIMs上，并进入u-boot命令行
 3）更新`logo`分区

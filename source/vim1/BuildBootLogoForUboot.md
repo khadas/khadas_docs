@@ -35,7 +35,7 @@ $ git clone https://github.com/khadas/utils.git
 **2)** Update a new logo picture as you want:
 ```sh
 $ mkdir -p images/logo
-$ cp -r ~/Pictures/khadas.bmp images/logo/bootup.bmp
+$ cp ~/Pictures/khadas.bmp images/logo/bootup.bmp
 ```
 **3)** Build the logo:
 ```sh
@@ -83,7 +83,7 @@ $
 ### Download the logo.img
 **1)** Copy the new logo.img to a USB disk:
 ```sh
-$ cp -r images/logo.img /media/gouwa/9B98-6C15/
+$ cp images/logo.img /media/gouwa/9B98-6C15/
 ```
 
 **2)** Insert the USB disk into VIM1 device, then boot into U-Boot mode.
