@@ -25,7 +25,7 @@ tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tf
 创建`/srv/tftp`目录，并修改权限：
 ```sh
 $ sudo mkdir /srv/tftp
-$ sudo chown -R gouwa /srv/tftp
+$ sudo chown -R $(whoami) /srv/tftp
 ```
 
 重启TFTP服务：
