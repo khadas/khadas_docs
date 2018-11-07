@@ -34,10 +34,8 @@ $ sudo apt-get install ckermit
 
 **Add the access permission**
 ```sh
-$ sudo usermod -a -G dialout gouwa
+$ sudo usermod -a -G dialout $(whoami)
 ```
-*Tips: replace the `gouwa` with your real username.*
-
 
 **Add the following contents into ~/.kermrc to finish the setup:**
 ```

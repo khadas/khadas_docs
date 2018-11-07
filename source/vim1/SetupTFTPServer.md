@@ -25,7 +25,7 @@ tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tf
 Create and modify permissions on TFTP root directory:
 ```sh
 $ sudo mkdir /srv/tftp
-$ sudo chown -R gouwa /srv/tftp
+$ sudo chown -R $(whoami) /srv/tftp
 ```
 
 Restart the TFTP Service:

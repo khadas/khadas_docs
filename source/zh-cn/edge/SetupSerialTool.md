@@ -31,9 +31,8 @@ $ sudo apt-get install ckermit
 
 **添加访问权限：**
 ```sh
-$ sudo usermod -a -G dialout gouwa
+$ sudo usermod -a -G dialout $(whoami)
 ```
-*提示: 替换`gouwa`为你自己的用户名。*
 
 **添加如下内容到 ~/.kermrc文件进行设置：**
 ```

@@ -18,7 +18,7 @@ Usually, the first four methods will meet most of the user needs, but in some ca
 4. Count 2-3 seconds and release the ‘Func’ key to enter into upgrade mode, you will see the sys-led on when enter upgrade mode(loader mode).
 
 ### Serial Mode(For developers)
-1. Refer this [guidance](/vim1/SetupSerialTool.html) to setup serial tool for Edge.
+1. Refer this [guidance](/edge/SetupSerialTool.html) to setup serial tool for Edge.
 2. Make sure again you've done the right connections and setup.
 3. Hit any keys at the moment of booting to stop autoboot. This step will let Edge boot into u-boot mode.
 4. Type `run update` on the terminal of u-boot as belowing, you will see the sys-led on when enter upgrade mode(loader mode).
@@ -28,7 +28,7 @@ kedge# run update
 ```
 
 ### Android/Linux command line
-1. Refer this [guidance](/vim1/SetupSerialTool.html) to setup serial tool for Edge.
+1. Refer this [guidance](/edge/SetupSerialTool.html) to setup serial tool for Edge.
 2. Make sure again you've done the right connections and setup.
 3. Boot into android or linux command line.
 4. Linux executes `sudo reboot loader`, Android executes `su` and `reboot loader`, the system will reboot and enter upgrade mode, you will see the sys-led on when enter upgrade mode(loader mode).
