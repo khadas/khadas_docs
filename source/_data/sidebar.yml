@@ -37,6 +37,7 @@ vim1:
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
+    enable_adb: HowtoEnableAdb.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -87,6 +88,7 @@ vim2:
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
+    enable_adb: HowtoEnableAdb.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   mcu:
@@ -134,6 +136,7 @@ edge:
     install_docker: InstallDocker.html
     build_packages_in_docker: BuildPackagesInDocker.html
     setup_golang: SetupGolang.html
+    enable_adb: HowtoEnableAdb.html
   hardware:
     download: HardwareDocs.html
   firmware:
