@@ -119,6 +119,7 @@ edge:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
+    how_to_access_gpio: HowToAccessGpio.html
     rk_docs: RockchipDocs.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html

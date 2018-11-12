@@ -160,6 +160,7 @@ sidebar:
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
+    how_to_access_gpio: 如何访问GPIO
     rk_docs: 瑞芯微官方文档
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
