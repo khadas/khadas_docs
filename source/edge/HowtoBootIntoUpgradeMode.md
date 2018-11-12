@@ -21,10 +21,15 @@ Usually, the first four methods will meet most of the user needs, but in some ca
 1. Refer this [guidance](/edge/SetupSerialTool.html) to setup serial tool for Edge.
 2. Make sure again you've done the right connections and setup.
 3. Hit any keys at the moment of booting to stop autoboot. This step will let Edge boot into u-boot mode.
-4. Type `run update` on the terminal of u-boot as belowing, you will see the sys-led on when enter upgrade mode(loader mode).
+4. Type `run update` on the terminal of u-boot as belowing, you will see the sys-led on when enter loader mode.
 
 ```
 kedge# run update
+```
+5. Type `run maskrom` on the terminal of u-boot as belowing, you will enter maskrom mode.
+
+```
+kedge# run maskrom
 ```
 
 ### Android/Linux command line

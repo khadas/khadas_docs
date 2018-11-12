@@ -21,10 +21,16 @@ title: 如何进入升级模式
 1. 参考[文档](/zh-cn/edge/SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
 3. 系统启动时按任意按键进入串口命令行模式
-4. 执行`run update`命令进入升级模式（loader模式），进入升级模式后系统led灯会点亮。
+4. 执行`run update`命令进入loader模式，进入loader模式后系统led灯会点亮。
 
 ```
 kedge# run update
+```
+
+5. 或者执行`run maskrom`命令进入maskrom模式。
+
+```
+kedge# run maskrom
 ```
 
 ### Android/Linux命令行模式
