@@ -14,5 +14,7 @@ title: Khadas Edge Ubuntu固件
 ## SD/USB安装
 
 ### Server
+* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181113](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181113.7z)
 
-### Mate
+### Desktop
+* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181113](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181113.7z)
