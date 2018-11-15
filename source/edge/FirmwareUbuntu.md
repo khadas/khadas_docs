@@ -6,15 +6,19 @@ title: Khadas Edge Ubuntu Firmware
 ## EMMC Installation
 
 ### Server
+* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20181115.7z)
 * [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20181102](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20181102.7z)
 
 ### Desktop
+* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20181115.7z)
 * [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20181102](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20181102.7z)
 
 ## SD/USB Installation
 
 ### Server
+* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181115.7z)
 * [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181113](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181113.7z)
 
 ### Desktop
+* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181115.7z)
 * [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181113](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181113.7z)
