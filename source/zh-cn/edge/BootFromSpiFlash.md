@@ -33,7 +33,7 @@ $ make uboot
 * 从TF卡加载u-boot:
 
 ```
-kedge# load mmc 0 $kernel_addr_r u-boot-spi.bin
+kedge# load mmc 1 $kernel_addr_r u-boot-spi.bin
 ```
 * 从U盘加载u-boot:
 

@@ -33,7 +33,7 @@ Copy `u-boot-spi.bin` to TF card or u-disk and insert to Edge.
 * Load u-boot from TF card:
 
 ```
-kedge# load mmc 0 $kernel_addr_r u-boot-spi.bin
+kedge# load mmc 1 $kernel_addr_r u-boot-spi.bin
 ```
 * Load u-boot from u-disk:
 
