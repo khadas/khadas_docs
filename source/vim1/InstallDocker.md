@@ -22,7 +22,15 @@ khadas@Khadas:~$ sudo add-apt-repository \
 ### Install Docker
 ```
 khadas@Khadas:~$ sudo apt-get update
+```
+Ubuntu 16.04:
+```
 khadas@Khadas:~$ sudo apt-get install docker-ce=18.03.1~ce-0~ubuntu
+```
+
+Ubuntu 18.04:
+```
+khadas@Khadas:~# sudo apt-get install docker-ce=18.03.1~ce~3-0~ubuntu
 ```
 
 ### Start Docker
