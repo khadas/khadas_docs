@@ -20,8 +20,8 @@ $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 
 ### 2. Prepare dtb
 You need to choose different dtb for VIM1 and VIM2.
-* VIM1: Copy `kvim.dtb` or `kvim_linux.dtb` to `/boot` and rename it to `dtb.img`.
-* VIM2: Copy `kvim2.dtb` or `kvim2_linux.dtb` to `/boot` and rename it to `dtb.img`.
+* VIM1: Copy `kvim.dtb`, `kvim_linux.dtb` or `meson-gxl-s905x-khadas-vim.dtb` to `/boot` and rename it to `dtb.img`.
+* VIM2: Copy `kvim2.dtb`, `kvim2_linux.dtb` or `meson-gxm-khadas-vim2.dtb` to `/boot` and rename it to `dtb.img`.
 
 ### 3. Activate the multi-boot
 Two ways to activate the multi-boot:

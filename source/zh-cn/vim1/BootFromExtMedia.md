@@ -21,8 +21,8 @@ $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 
 ### 2、准备DTB文件
 VIM1和VIM2使用不同的DTB文件。
-* VIM1: 拷贝`kvim.dtb`或者`kvim_linux.dtb`到`/boot`目录并重命名为`dtb.img`。
-* VIM2: 拷贝`kvim2.dtb`或者`kvim2_linux.dtb`到`/boot`目录并重命名为`dtb.img`。
+* VIM1: 拷贝`kvim.dtb`、`kvim_linux.dtb`或者`meson-gxl-s905x-khadas-vim.dtb`到`/boot`目录并重命名为`dtb.img`。
+* VIM2: 拷贝`kvim2.dtb`、`kvim2_linux.dtb`或者`meson-gxm-khadas-vim2.dtb`到`/boot`目录并重命名为`dtb.img`。
 
 ### 3、激活多启动
 两种方式激活多启动：
