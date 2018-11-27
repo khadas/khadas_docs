@@ -51,7 +51,7 @@ USB Type C数据线|USB Type C数据线
 * ### Windows
   以Windows 10为例进行说明，Windows 7和Windows XP也是类似的。
   *  安装XMOS驱动
-     * [下载](http://www.mediafire.com/file/hpjivuk0dbi8jqt/Thesycon-Stereo-USB-Audio-Driver-v224.rar)驱动
+     * [下载](https://dl.khadas.com/Tools/XMOS-Stereo-USB-Audio-Class2-Driver-3033_v2.26.0.zip)驱动
      * 解压并运行`setup.exe`来安装驱动
      * 安装完成后可以在设备管理器看到XMOS设备
 ![Tone Board Windows Setup1](/images/toneboard/ToneboardWindowsSetup1.png)
