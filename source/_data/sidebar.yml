@@ -115,6 +115,7 @@ edge:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     captain_gpio_pinout: CaptainGPIOPinout.html
+    edgev_gpio_pinout: EdgeVGPIOPinout.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html

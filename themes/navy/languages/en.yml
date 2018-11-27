@@ -155,6 +155,7 @@ sidebar:
     boot_from_ext_image: Boot From external Media
     extra_power_input: Extra Power Input
     captain_gpio_pinout: Captain GPIO Pinout
+    edgev_gpio_pinout: Edge V GPIO Pinout
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Setup Serial Debugging Tool
