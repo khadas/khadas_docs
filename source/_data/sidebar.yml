@@ -155,6 +155,7 @@ toneboard:
   getting_started:
     overview: index.html
     user_manual: UserManual.html
+    how_to_upgrade_firmware: HowtoUpgradeFirmware.html
   hardware:
     download: HardwareDocs.html
 
