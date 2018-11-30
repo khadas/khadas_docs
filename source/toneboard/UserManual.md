@@ -53,7 +53,7 @@ Most software platforms have integrated Tone Board drivers, and Windows platform
 * ### Windows
   Take windows 10 for example, windows xp and windows 7 is similar.
   *  install XMOS driver
-     * [Download](https://dl.khadas.com/Tools/XMOS-Stereo-USB-Audio-Class2-Driver-3033_v2.26.0.zip)
+     * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/XMOS-Driver-V2.26.0-for-Normal-Use.zip)
      * Decompression and run setup.exe to install driver
      * install finished
 ![Tone Board Windows Setup1](/images/toneboard/ToneboardWindowsSetup1.png)
