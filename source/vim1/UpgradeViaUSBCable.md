@@ -3,19 +3,19 @@ title: Upgrade Via a USB-C Cable
 ## Upgrade On Windows
 ### Preparations
 * Download the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.1.6.3_en.zip) and extract it.
-* Run `setup_v2.x.x.exe` to install the tool for upgrading your VIM:
+* Run `setup_v2.x.x.exe` to install the tool for upgrading your VIMs:
 	![Image of USB_Upgrade_Tool_Setup_V208](/images/vim1/usb_upgrade_tool_setup_v208.png)
 
 ### Upgrading Steps
 Make sure that you have installed the correct USB Upgrade Tool, then follow the steps below to upgrade:
 
-1. Open `USB_Burning_Tool_v2.x.x.exe`, click ‘File-->Import Image’ to chose an [image](https://dl.khadas.com/Firmware/) for your VIM. To download third-party images, e.g. Voluminio: [VIM1](https://docs.khadas.com/vim1/FirmwareThirdparty.html) / [VIM2](https://docs.khadas.com/vim2/FirmwareThirdparty.html)
-2. Connect your VIM to your PC with a USB-C cable (VIM will power on automatically).
-3. Place your VIM into "Upgrade Mode":
+1. Open `USB_Burning_Tool_v2.x.x.exe`, click ‘File-->Import Image’ to chose an [image](https://dl.khadas.com/Firmware/) for your VIMs. To download third-party images, e.g. Voluminio: [VIM1](https://docs.khadas.com/vim1/FirmwareThirdparty.html) / [VIM2](https://docs.khadas.com/vim2/FirmwareThirdparty.html)
+2. Connect your VIMs to your PC with a USB-C cable (VIMs will power on automatically).
+3. Place your VIMs into "Upgrade Mode":
 	* Long press the `Power` key without releasing.
 	* Short press `Reset` key and release it.
 	* Count to 10 seconds and release the `Power` key.
-4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your VIM as a connected USB-device.
+4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your VIMs as a connected USB-device.
 
 	Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
 	![Image of USB_Upgrade_Tool_Setup_V208](/images/vim1/usb_upgrade_tool_interface_v208.png)
@@ -78,7 +78,7 @@ Done!
 **NOTE:** Root privilege required.
 
 ### Check the USB driver
-You must now place your VIM board into "Upgrade Mode". See [VIM1](/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html) to enter upgrade mode.
+You must now place your VIMs board into "Upgrade Mode". See [VIM1](/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html) to enter upgrade mode.
 Check to see if Ubuntu has detected your VIM1/VIM2 as a connected USB-device.
 ```
 $ lsusb | grep Amlogic
