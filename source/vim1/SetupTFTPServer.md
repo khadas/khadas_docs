@@ -1,10 +1,8 @@
 title: Setup TFTP Server for U-Boot
 ---
 
-The approach to setup TFTP server is quite common with the guidance you can search on Google.
-
-Here we still provide a instruction for reference.
-
+Our approach to setup a TFTP server is quite similar to other guides that you can find via Google.
+Here we provide some instructions for reference:
 
 ### Setup TFTP
 Install TFTP packages:
@@ -13,7 +11,7 @@ $ sudo apt-get install openbsd-inetd tftpd tftp
 ```
 
 Configuration
-To enable the TFTP server, edit the file `/etc/inetd.conf` as the root user, and locate the line that looks like the following one:
+To enable the TFTP server, edit the file `/etc/inetd.conf` as the root user, and locate the line that looks like the following:
 ```
 #tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
 ```
@@ -36,9 +34,9 @@ $ sudo /etc/init.d/xinetd restart
 ### Setup for target device
 To setup TFTP for your target device, you will need:
 
-* Connect a Lan cable to your target device, and make sure your device is on same network with your Host PC.
-* Connect a Serial-to-USB module between the target device and PC and ensure have done the right [setup](/vim1/SetupSerialTool.html).
-* Power on your target device, and ensure the device has bootloader installed in it.
+* Connect a LAN cable to your target device, and make sure your device is on same network with your Host PC.
+* Connect a Serial-to-USB module between the target device and PC and ensure to have done the correct [setup](/vim1/SetupSerialTool.html).
+* Power on your target device, and ensure the device has a bootloader installed in it.
 
 Stop U-Boot autoboot by hitting `Enter` or `Space` key at the moment you power on your target device:
 
@@ -55,13 +53,13 @@ Hit Enter or space or Ctrl+C key to stop autoboot -- :  0
 kvim#
 ```
 
-Settup the ip address of target client and TFTP host server:
+Setup the ip address of the target client and TFTP host server:
 ```
 kvim# setenv ipaddr 192.168.1.100
 kvim# setenv serverip 192.168.1.168
 ```
 
-Save the settings aboved:
+Save the settings:
 ```
 kvim# saveenv
 Saving Environment to aml-storage...
@@ -69,18 +67,18 @@ mmc env offset: 0x7400000
 Writing to MMC(1)... done
 kvim#
 ```
-Running `saveenv` will save the env values to the env partition of eMMC, so the above setup will always take effort utils you run `defenv` to restore the env as the default values.
+Running `saveenv` will save the env values to the env partition on the eMMC. You can run `defenv` to restore the env to the default values.
 
 
 ### Test it
-Make sure you have copied the testing file to TFTF root path:
+Make sure you have copied the testing file to the TFTF root path:
 ```sh
 $ ls /srv/tftp/u-boot.bin
 /srv/tftp/u-boot.bin
 $ 
 ```
 
-Load a specify file onto `0x1080000` address:
+Load a file into the `0x1080000` address:
 ```
 kvim# tftp 1080000 u-boot.bin
 Speed: 100, full duplex
@@ -96,11 +94,11 @@ done
 Bytes transferred = 901120 (dc000 hex)
 kvim#
 ```
-If everything goes fine, the printing should be something like above.
+If everything goes well, the terminal print-out will look similar to what is shown above.
 
 
 ### Troubleshooting
-* You might need to check the connection of the Lan cable if printing like below:
+* You might need to check the connection of your LAN cable if the terminal print-out looks like:
 ```
 kvim# tftp 1080000 u-boot.bin
 dwmac.c9410000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
@@ -108,7 +106,7 @@ dwmac.c9410000: No link.
 kvim#
 ```
 
-* You might setup a wront server IP address if printing like:
+* You could have setup a wrong server IP address if the print-out looks like:
 ```
 kvim#tftp 1080000 u-boot.bin
 Speed: 100, full duplex
@@ -120,7 +118,7 @@ Loading: T T T T T T T T T T
 Retry count exceeded; starting again
 Speed: 100, full duplex
 ```
-In this case, I setup the server IP address as a wrong one `192.168.1.68`, which should be `192.168.1.168`.
+In this instance, I had setup the server IP address to an incorrect one `192.168.1.68`, it should be `192.168.1.168` instead.
 
 ### Resources
 * [Ubuntu Wiki: TFTP](https://help.ubuntu.com/community/TFTP)
