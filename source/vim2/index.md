@@ -1,7 +1,7 @@
 title: VIM2 Documentation
 ---
 
-This part is about Khadas VIM2.
+This video is about the Khadas VIM2.
 
 {% youtube FZX6c8o5kzo %}
 
