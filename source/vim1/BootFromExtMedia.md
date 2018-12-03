@@ -1,7 +1,7 @@
 title: Boot Images from External Media
 ---
 
-There are many images that are designed to run from an SD Card or Thumbdrive (U-Disk). For example, [LibreELEC](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793), [Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825) and [Khadas SD images](/vim1/Firmware.html#SD-USB-Installation). This tutorial is about how to boot these images.
+There are many images that are designed to run from an SD Card or Thumbdrive (U-Disk). For example, [LibreELEC](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793), [Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825) and [Khadas SD images](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/). This tutorial is about how to boot these images.
 
 In order to boot images from external media you must make sure:
 * Android is running on the eMMC

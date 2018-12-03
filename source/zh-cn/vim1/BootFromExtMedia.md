@@ -2,7 +2,7 @@ title: 从外部媒体介质启动系统
 ---
 
 
-有很多系统运行在SD卡或U盘上,例如：[LibreELEC](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793),[Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825)以及[Khadas SD images](/zh-cn/vim1/Firmware.html#SD-USB-Installation)。这篇文档介绍如何运行这些镜像。
+有很多系统运行在SD卡或U盘上,例如：[LibreELEC](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793),[Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825)以及[Khadas SD images](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/)。这篇文档介绍如何运行这些镜像。
 
 为了从外部媒体介质启动系统，需要确保如下两件事：
 * eMMC中要运行安卓系统
