@@ -1,16 +1,15 @@
-title: Howto Install LibreELEC
+title: How to Install LibreELEC
 ---
 
-**LibreELEC is running on external medias(SD card or U-disk), so you need to write the image to SD/USB storage.**
+**LibreELEC runs on external media (SD-Card or Thumbdrive), so you need to write the image to SD/USB storage.**
 
-## Preperations
+## Preparations
 - [x] Download the [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/).
 - [x] Extract and install it on your Windows PC.
-- [x] A SD card and a card reader or a U-disk is required, make sure there's nothing important on your card as ALL the data will be wiped out after the following operations.
-
+- [x] An SD card and a card reader or a thumdrive (U-disk) is required, make sure there's nothing important on your card as ALL the data will be wiped out after the following operations.
 
 ## Download the LibreELEC image
-You can download LibreELEC images from [firmware page](/vim1/FirmwareThirdparty.html#LibreELEC).
+You can download LibreELEC images from [VIM1](/vim1/FirmwareThirdparty.html#LibreELEC)/[VIM2](https://docs.khadas.com/vim2/FirmwareThirdparty.html#LibreELEC).
 *Note: Image contains KVIM is image for VIM1, and KVIM2 is for VIM2.*
 
 ## Write image to SD/USB storage
@@ -19,9 +18,9 @@ There are two ways to write LibreELEC image to SD/USB storage:
 ### On Windows PC
 1. Run Win32DiskImager.
 2. Insert the SD/USB storage into your PC, it should appear as a new drive letter
-3. Select the image file and verify the destination drive letter is correct, then click `write`:
+3. Select the image file and verify that the destination drive letter is correct, then click `write`:
 ![Image of Win32DiskImagerLibreELEC.jpg](/images/vim1/Win32DiskImagerLibreELEC.jpg)
-4. When write process completed you can safely remove the SD/USB storage by right clicking on the drive in Windows explorer and selecting eject.
+4. When the write process is complete, you can safely remove the SD/USB storage by right-clicking on the drive in Windows Explorer and selecting eject.
 
 ### On Linux
 **Get the device node of SD/USB storage:**
@@ -57,7 +56,7 @@ $ sudo eject /dev/sdb
 ```
 
 ## Boot LibreELEC from the SD/USB storage
-In order to boot from SD/USB storage, you need Android running on eMMC and activate the multi-boot.
+In order to boot from SD/USB storage, **you need Android running on the eMMC** to activate the multi-boot.
 
 Two ways to activate the multi-boot:
 
@@ -70,7 +69,7 @@ Two ways to activate the multi-boot:
 
 
 ## NOTICE
-* For previous Android N has permission issue, you can't use it to boot your external media image, or your booting card will be broken.
-* For Android O also has permission issue. If you want to boot Ubuntu with linux 4.9 please refer to [this reply](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-em mc/825/109).
+* Android N has a permission issue; Your bootable SD card will be damaged, if you attempt to use it to boot.
+* Android O also has a permission issue. If you want to boot Ubuntu with Linux 4.9 please refer to [this reply](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-em mc/825/109).
 
 
