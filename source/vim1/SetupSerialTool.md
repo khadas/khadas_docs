@@ -9,10 +9,10 @@ Follow these steps to make the right connections:
 
 **1)** Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins to ensure you've made the right connection:
 
-  * Tool Pin `GND`: <---> `Pin17` of VIM's GPIO
-  * Tool Pin `TXD`: <---> `Pin18` of VIM's GPIO(Linux_Rx)
-  * Tool Pin `RXD`: <---> `Pin19` of VIM's GPIO(Linux_Tx)
-  * Tool Pin `VCC`: <---> `Pin20` of VIM's GPIO
+  * Tool Pin `GND`: <---> `Pin17` of VIMs's GPIO
+  * Tool Pin `TXD`: <---> `Pin18` of VIMs's GPIO(Linux_Rx)
+  * Tool Pin `RXD`: <---> `Pin19` of VIMs's GPIO(Linux_Tx)
+  * Tool Pin `VCC`: <---> `Pin20` of VIMs's GPIO
 
 **2)** Insert the USB to your PC.
 
