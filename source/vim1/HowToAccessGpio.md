@@ -134,11 +134,11 @@ There are two ways to access the GPIO:
 
 ** ADB command **
 
-> Connect the VIM with a wifi adb:
+> Connect the VIMs with a wifi adb:
 ```
 $ adb connect IP_ADDR 
 ```
-> Login to the VIM:
+> Login to the VIMs:
 ```
 $ adb shell
 ```
