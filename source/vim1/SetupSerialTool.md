@@ -1,19 +1,18 @@
 title: Setup Serial Debugging Tool
 ---
 
-### Preperations
-- [x] A Serial Debugging Tool, what we used in the guidance is an USB to TTL Convertor.
-
+### Preparations
+- [x] You need a "Serial Debugging Tool". In this guide, we use a USB to TTL Convertor.
 
 ### Connections
-Follow the steps to do the connections:
+Follow these steps to make the right connections:
 
-**1)** Connect all the to GPIOs, and check the Tx / Rx Pins and ensure done the right connection:
+**1)** Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins to ensure you've made the right connection:
 
-  * Tool Pin `GND`: <---> `Pin17` of VIM1's GPIO
-  * Tool Pin `TXD`: <---> `Pin18` of VIM1's GPIO(Linux_Rx)
-  * Tool Pin `RXD`: <---> `Pin19` of VIM1's GPIO(Linux_Tx)
-  * Tool Pin `VCC`: <---> `Pin20` of VIM1's GPIO
+  * Tool Pin `GND`: <---> `Pin17` of VIMs's GPIO
+  * Tool Pin `TXD`: <---> `Pin18` of VIMs's GPIO(Linux_Rx)
+  * Tool Pin `RXD`: <---> `Pin19` of VIMs's GPIO(Linux_Tx)
+  * Tool Pin `VCC`: <---> `Pin20` of VIMs's GPIO
 
 **2)** Insert the USB to your PC.
 
@@ -55,7 +54,7 @@ c
 
 **Run command `kermit` to launch C-Kermit**
 
-Ensure that you have done the right connection, and if everything goes fine, printing would be like this:
+Ensure that you have made the right connection. If everything went well, you'll see the following:
 ```sh
 $ kermit
 Connecting to /dev/ttyUSB0, speed 115200
@@ -69,7 +68,7 @@ TE: 116640
 ...
 
 ```
-*Tips: If the printing contain following line, you might need to check the step `Add the access permission` above.*
+*Tip: If the terminal output contains this line, you might need to check the previous step `Add the access permission` above.*
 ```
 /dev/ttyUSB0: Permission denied
 ```
