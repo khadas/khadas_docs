@@ -3,31 +3,31 @@ title: Extra Power Input for Khadas VIMs
 
 **NOTE:**
 
-* **THE MAIN POWER SUPPLY COMES FROM USB-C PORT, AND THIS GUIDANCE IS FOR EXTRA POWER SUPPLY.**
-* **ENSURE THAT THE VOLTAGE OF YOUR POWER ADAPTER, IT'S 5.2V AS MAX, 2000MA IS RECOMMENDED.**
+* **MAIN POWER SUPPLY COMES FROM THE USB-C PORT, THIS GUIDE IS FOR THE EXTRA POWER SUPPLY ONLY.**
+* **ENSURE THAT THE VOLTAGE OF YOUR POWER ADAPTER IS LISTED AS: 5.2V MAX, 2000mA.**
 
 ### Overview
-Khadas VIMs designed with two power supply ports:
+Khadas VIM1/VIM2 is designed with three power supply ports:
 
-* One is USB-C port: used for both power supply and USB data transmission.
-* The other one is a 4-Pin VIN port which is close to USB-C port.
-* If have to figure out a third one, the USB port will be the optional one.
+1. USB-C Port: This is used for both Power Supply and USB Data Transmission.
+2. 4-Pin VIN port which is situated near the USB-C port.
+3. USB-Port beside the USB-C port, is the final power source (Optional USB Host).
 
-### Using USB-C as extra power input
-USB-C is a normal power supply interface，can also transport data in the same time，like burning firmware、ADB debug...
+### Using USB-C as Extra Power Input
+USB-C is the normal power supply interface. It can also transport data at the same time; burning firmware, ADB debug...
 ![image](/images/vim1/usbc_extra_power.png)
 
-### Using VIN as extra power input
-VIN Port spec as a 4-Pin 1.25mm port, and the pins define as following:
+### Using VIN as Extra Power Input
+The VIN port is a 4-Pin 1.25mm port. The pins are defined as such:
    
 ![Image of Extra_Power_VIN_Port](/images/vim1/vin_extra_power.png)
-*Tips: we haven't develop VIN cable for sale now, so this should be DIY by yourself.*
+*Tip: We don't have a VIN cable for sale, you'll need to DIY one by yourself.*
 
-### Using USB host as extra power input
-You might be also interested in a male-to-male USB cable to provide the extra power as following:
+### Using USB Host as Extra Power Input
+You might also be interested in a male-to-male USB cable to provide extra power:
 
 ![Image of Male2Male_USB_Extra_Power](/images/vim1/usb_host_extra_power.png)
-*Tips: the USB port beside the USB-C port is recommened to used as extra power input, as it spec as 900mA, and another one beside LAN port is spec as 500mA. Check the schematic for further details.*
+*Tip: The USB port beside the USB-C port is recommended for use as extra power input; it is specced to 900mA, whilst the other USB port beside LAN port is specced to only 500mA. Check the schematic for further details.*
 
 
 ### See Also
