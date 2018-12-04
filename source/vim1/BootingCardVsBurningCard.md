@@ -2,13 +2,13 @@ title: Booting Card Versus Burning Card
 ---
 
 ### Booting Card
-* A booting card is a place stored the final images/ROM, target device will boot from the TF card and load the images/ROM.
-* If you plug-out the booting TF card from the target device, the device cannot boot into the images/ROM anymore.
+* A "Booting Card" is an SD-Card that stores the final images/ROM. Your target device will boot from the SD-Card and load the images/ROM into RAM memory.
+* If you unplug the "Booting Card" from your target device, the device will be unable to boot into the images/ROM in future.
 
 ### Burning Card
-* A burning card is used to burn/download the images(stored at TF card temporarily) to onboard EMMC storage.
-* A burning card is one of the ways to burn/download the images, you can also burn/download images via USB cable.
-* When burning/downloading images completed, you can plug-out the TF card from your device, and device will also boot from onboard eMMC storage.
+* A "Burning Card" is used to burn/download the images (stored in the SD-Card temporarily) to the onboard eMMC storage.
+* A "Burning Card" is one method to burn/download the images into the eMMC storage (You can also burn/download images into the eMMC storage via USB-C data cable).
+* When burning/downloading the images is complete, you can safely unplug the SD-Card from your device. The device will then continue to bootup normally from its onboard eMMC storage.
 
 ### Feedback
-Still doubts with this? Feedback to us at [Khdas Forum](http://forum.khadas.com/).
+Still have doubts about this? Feedback to us at [Khdas Forum](http://forum.khadas.com/).

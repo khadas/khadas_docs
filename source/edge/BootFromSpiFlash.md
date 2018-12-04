@@ -1,14 +1,14 @@
 title: Boot From SPI Flash
 ---
 
-Khadas Edge contains a 16 MiB SPI flash on board used as boot storage, so you can image from it. This tutorial is about how to boot from the on board SPI falsh.
+Khadas Edge contains a 16 MB SPI-Flash that's used as boot storage; so you can image from it. This guide is about how to boot from the on-board SPI-Flash.
 
-### Build U-boot for SPI Flash
-The u-boot for SPI flash is different from eMMC/SD one. It's recommend you to use [Fenix script](https://github.com/khadas/fenix) to build u-boot, it's easy to build.
+### Build U-boot For SPI-Flash
+The U-Boot for SPI-Flash is different from the eMMC/SD's U-Boot. We recommend using [Fenix Script](https://github.com/khadas/fenix) to build U-Boot, as it's easy this way.
 
-**Assume that you have setup basic build environment, if not please refer to [Fenix Usage](/edge/FenixScript.html).**
+**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](/edge/FenixScript.html).**
 
-* Setup environment:
+* Setup Environment:
 
 ```
 $ cd fenix
@@ -21,21 +21,21 @@ Select `Edge` board.
 ```
 $ make uboot
 ```
-If successfully, you will get u-boot for SPI flash `u-boot-spi.bin` under folder `fenix/u-boot`.
+If successful, you will get a U-Boot for the SPI-Flash `u-boot-spi.bin`, in the directory `fenix/u-boot`.
 
-### Burn U-boot to SPI Flash
-Copy `u-boot-spi.bin` to TF card or u-disk and insert to Edge.
+### Burn U-boot To SPI Flash
+Copy `u-boot-spi.bin` to an SD-Card or Thumbdrive (U-Disk) and insert it into your Edge.
 
-[Setup serial debugging tool](/edge/SetupSerialTool.html) and boot to u-boot command line.
+[Setup serial debugging tool](/edge/SetupSerialTool.html) and boot to the U-Boot Command Line.
 
 #### Load U-boot to DDR
 
-* Load u-boot from TF card:
+* Load U-Boot from SD-Card:
 
 ```
 kedge# load mmc 1 $kernel_addr_r u-boot-spi.bin
 ```
-* Load u-boot from u-disk:
+* Load U-Boot from Thumbdrive (U-Disk):
 
 ```
 kedge# usb start
@@ -50,9 +50,9 @@ kedge# sf erase 0 +$filesize
 kedge# sf write $kernel_addr_r 0 $filesize
 kedge# reset
 ```
-*Note: This will take about 3 minutes, please keep patient.*
+*Tip: This will take about 3 minutes, please be patient.*
 
-After reboot, you will boot from SPI flash.
+After reboot, you will boot from the SPI-Flash.
 
-### See also
-[RK3399 boot options](http://opensource.rock-chips.com/wiki_Boot_option)
+### See Also
+[RK3399 Boot Options](http://opensource.rock-chips.com/wiki_Boot_option)

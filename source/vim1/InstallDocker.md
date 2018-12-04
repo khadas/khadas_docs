@@ -1,58 +1,58 @@
 title: Install Docker
 ---
 
-This tutorial is about how to install Docker on Ubuntu for Khadas VIMs/Edge.
+This guide will show you how to install Docker on Ubuntu for Khadas VIMs/Edge.
 
-### Preperations
+### Preparations
 * Ubuntu `V180531` or newer
 
-### Install some essential packages
+### Install Essential Packages
 ```
-khadas@Khadas:~$ sudo apt-get update
-khadas@Khadas:~$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
-khadas@Khadas:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-### Add Docker source
+### Add Docker Source
 ```
-khadas@Khadas:~$ sudo add-apt-repository \
-			"deb [arch=arm64] https://download.docker.com/linux/ubuntu \
-			$(lsb_release -cs) \
-			stable"
+$ sudo add-apt-repository \
+	"deb [arch=arm64] https://download.docker.com/linux/ubuntu \
+	$(lsb_release -cs) \
+	stable"
 ```
 ### Install Docker
 ```
-khadas@Khadas:~$ sudo apt-get update
+$ sudo apt-get update
 ```
 Ubuntu 16.04:
 ```
-khadas@Khadas:~$ sudo apt-get install docker-ce=18.03.1~ce-0~ubuntu
+$ sudo apt-get install docker-ce=18.03.1~ce-0~ubuntu
 ```
 
 Ubuntu 18.04:
 ```
-khadas@Khadas:~# sudo apt-get install docker-ce=18.03.1~ce~3-0~ubuntu
+$ sudo apt-get install docker-ce=18.03.1~ce~3-0~ubuntu
 ```
 
 ### Start Docker
 ```
-khadas@Khadas:~$ sudo systemctl enable docker
-khadas@Khadas:~$ sudo systemctl start docker
+$ sudo systemctl enable docker
+$ sudo systemctl start docker
 ```
 
-### Add Docker group
+### Add Docker Group
 ```
-khadas@Khadas:~$ sudo groupadd docker
-khadas@Khadas:~$ sudo usermod -aG docker $USER
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER
 ```
 
-*NOTE: You need to logout or reboot your system.*
+*Tip: You need to logout or reboot your system.*
 
 ### Check Docker
 ```
-khadas@Khadas:~$ docker run hello-world
+$ docker run hello-world
 ```
 
-If you see the following messages mean that Docker is setup OK.
+If you see the following messages, it means that Docker has been setup correctly:
 ```
 khadas@Khadas:~$ docker run hello-world
 Unable to find image 'hello-world:latest' locally
@@ -83,5 +83,5 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-### See also
+### See Also
 [Get Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)

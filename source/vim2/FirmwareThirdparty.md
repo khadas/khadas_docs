@@ -1,7 +1,7 @@
 title: Khadas VIM2 Third Party Firmware
 ---
 
-# 3rd party
+# 3rd Party
 ## AndroidTV
 **AndroidTV image built by SuperCeleron, thanks SuperCeleron.**
 * [Thanks SuperCeleron](http://forum.khadas.com/search?q=SCV)

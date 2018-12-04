@@ -1,54 +1,54 @@
 title: Upgrade Via a USB-C Cable
 ---
-## Upgrade On Windows
+## Upgrade Using Windows
 ### Preparations
 * Download the [USB driver](https://dl.khadas.com/Tools/DriverAssitant_v4.6.zip) and extract it.
 * Run `DriverInstall.exe` to install USB drivers.
-  * Click `Uninstall` button to uninstall old drivers
+  * Click the `Uninstall` button to uninstall old drivers
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall.png)
-  * Click `Install` button to install drivers
+  * Click the `Install` button to install drivers
   ![DriverInstall install](/images/edge/DriverInstall_install.png)
 * Download the [Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.58.zip) and extract it.
-* `AndroidTool.exe` is the burning tool, you don't need to install.
+* `AndroidTool.exe` is the burning tool, you don't need to install it.
 
 ### Upgrading Steps
-Make sure that you have right installed the USB drivers, then follow the below steps to upgrade:
+Make sure that you have installed the correct USB drivers, then follow these steps to upgrade:
 
-1. Open `AndroidTool.exe`, click `Upgrade Firmware-->Firmware` to chose an image for Edge.
+1. Open `AndroidTool.exe`, click `Upgrade Firmware-->Firmware` to choose an image for Edge.
 ![AndroidTool firmware select](/images/edge/AndroldTool_firmware.png)
-2. Connect Edge and PC with an USB-C cable(Edge will power on automately).
-3. Let Edge [enter into upgrade mode](/edge/HowtoBootIntoUpgradeMode.html) to complete the upgrading.
-4. Your PC should have found Edge device as upgrade mode if you correctly follow the above operations.
-* Loader mode you will see this:
+2. Connect Edge and PC with a USB-C data-cable (Edge will power-on automatically).
+3. Let Edge [enter into Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html) to complete the upgrading.
+4. Your PC should have found your Edge device as a connected USB device, if you had correctly followed the instructions above.
+* Loader Mode:
 ![AndroidTool loader](/images/edge/AndroldTool_loader.png)
-* Maskrom mode you will see this:
+* Maskrom Mode:
 ![AndroidTool maskrom](/images/edge/AndroldTool_maskrom.png)
 
-Now all you need to do is to click `Upgrade` button of the tool and wait the upgrading to complete:
+Now all you need to do is to click the `Upgrade` button of the tool and wait for upgrading to complete:
 ![AndroidTool upgrade](/images/edge/AndroldTool_upgrade.png)
 
-## Upgrade On Ubuntu
-### Preperations
+## Upgrade Using Ubuntu
+### Preparations
 ```
 $ sudo apt-get install libusb-dev git parted
 ```
-### Get burning tool
-Image burning tool on Ubuntu is in repository [utils](https://github.com/khadas/utils).
+### Get Burning Tool
+Image Burning Tool on Ubuntu is in this repository [Utils](https://github.com/khadas/utils).
 ```
 $ git clone https://github.com/khadas/utils
 ```
-Or just pull it if you have cloned this repository.
+Or just pull it if you have already cloned this repository.
 ```
 $ cd /path/to/utils
 $ git pull
 ```
-### Install burning tool
-You need to install USB rules and create some links.
+### Install Burning Tool
+You need to install the USB rules and create some links.
 ```
 $ cd /path/to/utils
 $ ./INSTALL
 ```
-You will see this if successed.
+You will see this if successful.
 ```
 Installing Amlogic flash-tool...
 
@@ -77,24 +77,24 @@ Done!
 Installing Khadas burn-tool...
 Done!
 ```
-**NOTE:** Root privilege required.
+**NOTE:** Root privilege is required.
 
-### How to burn image on Ubuntu
-There are two commands can be used to burn image: `burn-tool` and `rk-burn-tool`.
+### How to Burn Images Using Ubuntu
+There are two commands that can be used to burn images: `burn-tool` and `rk-burn-tool`.
 
-* General command `burn-tool`:
+* General Command `burn-tool`:
 
 ```
 $ burn-tool -v rk -i /path/to/image
 ```
 
-* Rockchip platform command `rk-burn-tool`:
+* Rockchip Command `rk-burn-tool`:
 
 ```
 $ rk-burn-tool -i /path/to/image
 ```
 
-You will see the logs if successed.
+You will see these logs if successful.
 ```
 Try to burn Rockchip image...
 Rockchip Android image (or linux image compatible with AndroidTool one image burning) found!
@@ -106,14 +106,14 @@ Upgrade firmware ok.
 Done!
 ```
 
-### Uninstall burning tool
+### Uninstall Burning Tool
 ```
 $ cd /path/to/utils
 $ ./UNINSTALL
 ```
 
-**NOTE:**This burning tool has only been verified on **Ubuntu 16.04**.
+**NOTE: This burning tool has only been verified on Ubuntu 16.04**.
 
-### See also
-* [Howto Boot Into Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
+### See Also
+* [How To Boot Into Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
 
