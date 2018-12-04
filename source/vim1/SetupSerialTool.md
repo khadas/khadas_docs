@@ -1,20 +1,20 @@
 title: Setup Serial Debugging Tool
 ---
 
-### Preparations
-- [x] You'll need a "Serial Debugging Tool". In this guide, we'll use a USB to TTL Convertor.
+### Preparation
+- [x] You need a "Serial Debugging Tool". In this guide, we will use a "USB to TTL Converter".
 
 ### Connections
-Follow these steps to make the right connections:
+Follow these steps to make the correct connections:
 
-**1)** Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins to ensure you've made the right connections:
+**1)** Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins once more to ensure that you've made correct connections:
 
   * Tool Pin `GND`: <---> `Pin17` of VIMs's GPIO
-  * Tool Pin `TXD`: <---> `Pin18` of VIMs's GPIO(Linux_Rx)
-  * Tool Pin `RXD`: <---> `Pin19` of VIMs's GPIO(Linux_Tx)
+  * Tool Pin `TXD`: <---> `Pin18` of VIMs's GPIO (Linux_Rx)
+  * Tool Pin `RXD`: <---> `Pin19` of VIMs's GPIO (Linux_Tx)
   * Tool Pin `VCC`: <---> `Pin20` of VIMs's GPIO
 
-**2)** Insert the USB-end to your PC.
+**2)** Insert the USB-end into your PC.
 
 The connections should look like this:
 
@@ -25,13 +25,14 @@ Another photo for more details (`VCC` Pin is not necessary):
 ![Image of SerialConnections](/images/vim1/SerialConnections.png)
 
 
-### Setup Kermit Protocol (C-Kermit)
-**Install the c-kermit:**
+### Setup Kermit Protocol(C-Kermit)
+**Install c-kermit:**
+
 ```sh
 $ sudo apt-get install ckermit
 ```
 
-**Add the access permission**
+**Add Access Permission**
 ```sh
 $ sudo usermod -a -G dialout $(whoami)
 ```
@@ -54,7 +55,8 @@ c
 
 **Run command `kermit` to launch C-Kermit**
 
-Ensure that you have made the right connections. If everything went well, you'll see the following:
+Ensure that you have made the correct connections. If everything went well, you'll see the following:
+
 ```sh
 $ kermit
 Connecting to /dev/ttyUSB0, speed 115200
@@ -68,7 +70,7 @@ TE: 116640
 ...
 
 ```
-*Tip: If the terminal output contains this line, you might need to check the previous step `Add the access permission` above.*
+*Tip: If the terminal output contains this line, you might need to check the previous step `Add Access Permission`.*
 ```
 /dev/ttyUSB0: Permission denied
 ```
