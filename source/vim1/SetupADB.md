@@ -1,14 +1,14 @@
 title: Setup ADB
 ---
 
-There are two ways to setup ADB for Khadas VIM1, and the methods are in common with other Android products.
+There are two ways to setup ADB for the Khadas VIM. The methods portrayed are common with other Android products.
 
 
 ### ADB over Wi-Fi/LAN 
-* Ensure that one of Wi-Fi or Lan is connected.
-* Enable adb debugging on your device: `Settings-->Developer options--->USB debugging`
-* Check the IP address of your device: `Settings-->About device--->Status--->IP`
-* Run `adb connect` command, e.x.:
+* Ensure that either the Wi-Fi or LAN is connected.
+* Enable ADB debugging on your Device: `Settings-->Developer options--->USB debugging`
+* Check the IP address of your Device: `Settings-->About device--->Status--->IP`
+* Run the `adb connect` command:
 ```sh
 $ adb connect 192.168.1.120
 connected to 192.168.1.120:5555
@@ -17,8 +17,8 @@ $ adb shell
 
 
 ### ADB over USB
-* Ensure the USB-C cable is connected to your PC.
-* Enable adb debugging on your device: `Settings-->Developer options--->USB debugging`
+* Ensure that a USB-C cable is connected between your PC and VIM.
+* Enable ADB debugging on your device: `Settings-->Developer options--->USB debugging`
 * Open a terminal and type:
 ```sh
 $ adb shell
@@ -26,4 +26,4 @@ $ adb shell
 
 
 ### Resources
-* [Android Debug Brige](https://developer.android.com/studio/command-line/adb.html)
+* [Android Debug Bridge](https://developer.android.com/studio/command-line/adb.html)
