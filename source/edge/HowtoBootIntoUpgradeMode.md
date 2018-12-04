@@ -1,52 +1,52 @@
-title: Howto Boot Into Upgrade Mode
+title: How To Boot Into Upgrade Mode
 ---
 
-There are many different ways to boot into upgrade mode listed as following:
+There are 5 ways to boot into Upgrade Mode:
 
-* Keys Mode
-* Serial Mode
-* Linux/Android command line
-* TST Mode (Recommend)
-* MRegister Mode
+1 Buttons Mode
+2 Serial Mode
+3 Linux/Android Command Line
+4 TST Mode (Recommended)
+5 MRegister Mode
 
-Usually, the first four methods will meet most of the user needs, but in some case, for example, if burnning a wrong u-boot, or your device cannot even boot any more, in thus cases, you can try with MRegister mode.
+Usually, the first 4 methods will meet the needs of most users. In exceptional cases, for example you've burned the incorrect U-Boot, or your device can't boot at all, you can use method 5: MRegister.
 
-### Keys Mode(U-Boot is running)
+### Buttons Mode (U-Boot is Running Normally)
 1. Power on Edge.
-2. Long press `Func` key without release.
-3. Short press ‘Reset’ key and release.
-4. Count 2-3 seconds and release the ‘Func’ key to enter into upgrade mode, you will see the sys-led on when enter upgrade mode(loader mode).
+2. Long press the `Function` key without releasing it.
+3. Short press the ‘Reset’ key and release it.
+4. Count for 2 to 3 seconds, then release the ‘Function’ key to enter into Upgrade Mode. You will see the sys-led turn ON when you've entered Upgrade Mode (Loader Mode).
 
-### Serial Mode(For developers)
-1. Refer this [guidance](/edge/SetupSerialTool.html) to setup serial tool for Edge.
-2. Make sure again you've done the right connections and setup.
-3. Hit any keys at the moment of booting to stop autoboot. This step will let Edge boot into u-boot mode.
-4. Type `run update` on the terminal of u-boot as belowing, you will see the sys-led on when enter loader mode.
+### Serial Mode (For Developers)
+1. Refer this [guide](/edge/SetupSerialTool.html) to setup your serial tool for Edge.
+2. Once again, make sure you've done the correct connections and setup.
+3. Hit any keys at the moment of booting to stop autoboot. This step will let Edge boot into U-Boot Mode.
+4. Type `run update` in the terminal of U-Boot as below. You will see the sys-led turn ON when you've entered Upgrade Mode.
 
 ```
 kedge# run update
 ```
-5. Type `run maskrom` on the terminal of u-boot as belowing, you will enter maskrom mode.
+5. Type `run maskrom` on the terminal of U-Boot as below, and you will enter Markrom Mode.
 
 ```
 kedge# run maskrom
 ```
 
-### Android/Linux command line
-1. Refer this [guidance](/edge/SetupSerialTool.html) to setup serial tool for Edge.
-2. Make sure again you've done the right connections and setup.
-3. Boot into android or linux command line.
-4. Linux executes `sudo reboot loader`, Android executes `su` and `reboot loader`, the system will reboot and enter upgrade mode, you will see the sys-led on when enter upgrade mode(loader mode).
+### Android/Linux Command Line
+1. Refer to this [guide](/edge/SetupSerialTool.html) to setup your serial tool for Edge.
+2. Once again, make sure you've done the correct connections and setup.
+3. Boot into Android or Linux command line.
+4. For Linux, execute `sudo reboot loader`. For Android, execute `su` and `reboot loader`. The system will reboot and enter Upgrade Mode. You will see the sys-led turn ON when you've entered Upgrade Mode (Loader Mode).
 
-### TST Mode (Recommend)
+### TST Mode (Recommended)
 1. Power on Edge.
-2. Quickly press `Func` key 3 times in 2 seconds and release the key.
-3. You will see the power-led(Blue) blink about 3 seconds, after the power-led(Blue) off indicate that the board is in upgrade mode(maskrom mode).
+2. Quickly press the `Function` key 3 times in 2 seconds, then release the key.
+3. You will see the Power-LED (Blue) blink for about 3 seconds. After the Power-LED (Blue) turns OFF, this indicates that the board is in Upgrade Mode (Maskrom Mode).
 
 ### MRegister Mode(Maskrom Mode)
 1. Power on Edge.
-2. Use a tweezer to short-circuit the two pads of `M` register and without release.
-3. Short press `Reset` key and release it to boot into upgrade mode(maskrom mode).
+2. Use a tweezer to short-circuit the two pads of `M` register, then without releasing...
+3. Short press the `Reset` key and release it to boot into Upgrade Mode (Maskrom Mode).
 
 ![Image of MRegister_ShortCircuit](/images/edge/MRegister_ShortCircuit.png)
-*Tips: The  `M` register is loacated on the bottom of Edge*
+*Tip: The `M` register is located on the backside of Edge*
