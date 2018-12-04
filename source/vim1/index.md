@@ -1,7 +1,7 @@
 title: VIM1 Documentation
 ---
 
-This part is about Khadas VIM1.
+These webpages contain documentation for the Khadas VIM1.
 
 {% youtube dLAX8nwcTvo %}
 
