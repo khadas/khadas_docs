@@ -9,7 +9,7 @@ title: Upgrade Via a USB-C Cable
 ### Upgrading Steps
 Make sure that you have installed the correct USB Upgrade Tool, then follow the steps below to upgrade:
 
-1. Open `USB_Burning_Tool_v2.x.x.exe`, click ‘File-->Import Image’ to chose an [image](https://dl.khadas.com/Firmware/) for your VIMs. To download third-party images, e.g. Voluminio: [VIM1](https://docs.khadas.com/vim1/FirmwareThirdparty.html) / [VIM2](https://docs.khadas.com/vim2/FirmwareThirdparty.html)
+1. Open `USB_Burning_Tool_v2.x.x.exe`, click ‘File-->Import Image’ to chose an [image](https://dl.khadas.com/Firmware/) for your VIMs. To download third-party images, e.g. Volumio: [VIM1](https://docs.khadas.com/vim1/FirmwareThirdparty.html) / [VIM2](https://docs.khadas.com/vim2/FirmwareThirdparty.html)
 2. Connect your VIMs to your PC with a USB-C cable (VIMs will power on automatically).
 3. Place your VIMs into "Upgrade Mode":
 	* Long press the `Power` key without releasing.
