@@ -1,7 +1,7 @@
 title: Tone Board Documentation
 ---
 
-This part is about Khadas Tone Board.
+This documentation is for the Khadas Tone Board.
 
 {% youtube 1CuvmEaGUNg %}
 
