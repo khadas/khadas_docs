@@ -1,16 +1,16 @@
 title: Build Fuchsia
 ---
-As some of you may know that Google's new operating system [Fuchsia](https://en.wikipedia.org/wiki/Google_Fuchsia) has added support for Khadas VIM2, but still under developing. Now I will give some instructions about how to build Fuchsia and get it running on VIM2. Let's go!
+Google's new operating system [Fuchsia](https://en.wikipedia.org/wiki/Google_Fuchsia) has added support for our Khadas VIM2. However, its still under development. In this guide, I will give instructions on how to build Fuchsia and get it running on your VIM2. Let's go!
 
-### Prepare your build environment (Once per build environment)
-Install some essential packages:
+### Prepare your Build Environment (needs to be done once per build environment)
+Install Essential Packages:
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install texinfo libglib2.0-dev liblz4-tool autoconf libtool libsdl-dev build-essential golang git curl unzip
 ```
 ### Build U-boot for Fuchsia
-In order to boot Fuchsia, a special u-boot is needed.
+In order to boot Fuchsia, a special U-Boot is needed.
 ```
 $ mkdir ~/project
 $ cd ~/project
@@ -19,14 +19,14 @@ $ cd u-boot
 $ make kvim2_defconfig
 $ make -j8 CROSS_COMPILE=aarch64-linux-gnu-
 ```
-After build you wii find `fip/u-boot.bin`.
+After building, you will see a `fip/u-boot.bin`.
 
-### Get Fuchsia source code
+### Get Fuchsia Source Code
 ```
 $ cd ~/project
 $ curl -s "https://fuchsia.googlesource.com/scripts/+/master/bootstrap?format=TEXT" | base64 --decode | bash -s garnet
 ```
-This will download all the source code of Fuchsia under `~/project/fuchsia`.
+This will download all the source code of Fuchsia into the directory `~/project/fuchsia`.
 
 ### Build Fuchsia
 ```
@@ -35,56 +35,56 @@ $ source scripts/fx-env.sh
 $ fx set arm64
 $ fx full-build
 ```
-If successfully will start to build Fuchsia, this will take some time.
+If you did the above steps correctly, Fuchsia will now begin to build. This will take some time, be patient.
 
 ### Boot Fuchsia
 
-#### Update u-boot to Fuchsia version
-Copy the u-boot for Fuchsia you build above to TF card or U-disk, and insert it to VIM2, power on VIM2 and boot into u-boot command line. And execute the following commands to update u-boot.
+#### Update your U-Boot to the Fuchsia Version
+Copy the U-Boot for Fuchsia that you've built above, to a TF card or Thumbdrive (U-Disk) and insert it into your VIM2. Power on your VIM2 and boot into U-Boot's command line. Then execute the following commands to update VIM2's U-Boot.
 
-* If your u-boot stored in U-disk
+* If your U-Boot is stored on a Thumbdrive (U-Disk)
 ```
 kvim2#usb start
 kvim2#fatload usb 0 1080000 u-boot.bin
 ```
-* If your u-boot stored in TF card
+* If your U-Boot stored on a TF-Card
 ```
 kvim2#mmc info
 kvim2#fatload mmc 0 1080000 u-boot.bin
 ```
-Update u-boot
+Update U-Boot
 ```
 kvim2#store rom_write 1080000 0 1000000
 kvim2#reset
 ```
-You will boot the u-boot for Fuchsia. 
+You will now boot the U-Boot for Fuchsia. 
 
 #### Flash Fuchsia
-Enter u-boot command line again and enter `fastboot` mode to flash Fuchsia.
+Enter the U-Boot command-line again and enter the `fastboot` mode to flash Fuchsia.
 
 ```
 kvim2#fastboot 
 ```
-Switch to your build host and enter your fuchsia folder. And make sure thst your VIM2  and host PC are in  the same local area network.
+Switch to your Build Host and enter your Fuchsia folder. Make sure that your VIM2 and host PC are on the same local area network (LAN).
 ```
 $ cd ~/project/fuchsia
 $ sudo ./scripts/fx flash vim2 --pave
 ```
-After this you will boot into Fuchsia, and you can connect VIM2 to the HDMI screen you will find the shell.
+After this you will boot into Fuchsia. Connect your VIM2 to a HDMI screen to see the shell.
 
-### In the end
-If you don't want to build the Fuchsia from scratch you can use the ready to use [u-boot](http://www.mediafire.com/file/ilpx433krhzit6j/u-boot.bin) and [zircon kernel](http://www.mediafire.com/file/d63ffa2fdyg6uts/vim2-boot.img) I build.
+### Conclusions
+If you don't want to build Fuchsia from scratch, you can use this ready-to-use [U-Boot](http://www.mediafire.com/file/ilpx433krhzit6j/u-boot.bin) and [Zircon Kernel](http://www.mediafire.com/file/d63ffa2fdyg6uts/vim2-boot.img), which I built myself.
 
-* Update u-boot
-Please follow the instructions in `Build U-boot for Fuchsia` about how to burn u-boot.
+* Update U-Boot
+Please follow the instructions in `Build U-boot for Fuchsia`, to burn the U-Boot.
 
 * Flash Zircon
-  * Enter `fastboot` mode by holding down `POWER KEY`, pressing `RESET KEY` quickly and keeping pressing `POWER KEY` for a few seconds.
+  * Enter `fastboot` mode by (1) holding-down the `POWER KEY`, (2) then tap the `RESET KEY` quickly WITHOUT releasing the `POWER KEY`, and (3) keep holding-down the `POWER KEY` for a few more seconds (10-seconds to be safe).
   * Burn
     `sudo fastboot flash boot vim2-boot.img`
 
-Reboot the board you will enter `zedboot`.
+Reboot your VIM2 to enter `zedboot`.
 
-### See also
+### See Also
 [Google Fuchsia Docs](https://fuchsia.googlesource.com/docs/+/master/getting_started.md#Prerequisites)
 [Zircon on Khadas VIM2 Board](https://github.com/fuchsia-mirror/zircon/blob/master/docs/targets/khadas-vim.md)
