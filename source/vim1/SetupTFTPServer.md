@@ -10,7 +10,7 @@ Install TFTP packages:
 $ sudo apt-get install openbsd-inetd tftpd tftp
 ```
 
-Configuration
+### Configuration
 To enable the TFTP server, edit the file `/etc/inetd.conf` as the root user, and locate the line that looks like the following:
 ```
 #tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
@@ -20,7 +20,7 @@ Uncomment this line, and add the option and value `-s /srv/tftp` to the end of t
 tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tftp
 ```
 
-Create and modify permissions on TFTP root directory:
+Create and modify permissions on the TFTP root directory:
 ```sh
 $ sudo mkdir /srv/tftp
 $ sudo chown -R $(whoami) /srv/tftp
@@ -31,12 +31,12 @@ Restart the TFTP Service:
 $ sudo /etc/init.d/xinetd restart
 ```
 
-### Setup for target device
-To setup TFTP for your target device, you will need:
+### Setup For Target Device
+To setup TFTP on your target device, you will need to:
 
-* Connect a LAN cable to your target device, and make sure your device is on same network with your Host PC.
-* Connect a Serial-to-USB module between the target device and PC and ensure to have done the correct [setup](/vim1/SetupSerialTool.html).
-* Power on your target device, and ensure the device has a bootloader installed in it.
+* Connect a LAN cable to your target device, and make sure your device is on same local network with your Host PC.
+* Connect a "Serial-To-USB Module" between the target device and Host PC and ensure you have done the correct [setup](/vim1/SetupSerialTool.html).
+* Power-on your target device, and ensure the device has a Bootloader installed in it.
 
 Stop U-Boot autoboot by hitting `Enter` or `Space` key at the moment you power on your target device:
 
@@ -70,7 +70,7 @@ kvim#
 Running `saveenv` will save the env values to the env partition on the eMMC. You can run `defenv` to restore the env to the default values.
 
 
-### Test it
+### Test Your TFTP Server
 Make sure you have copied the testing file to the TFTF root path:
 ```sh
 $ ls /srv/tftp/u-boot.bin
@@ -106,7 +106,7 @@ dwmac.c9410000: No link.
 kvim#
 ```
 
-* You could have setup a wrong server IP address if the print-out looks like:
+* You could have entered an incorrect server IP address if the print-out looks like:
 ```
 kvim#tftp 1080000 u-boot.bin
 Speed: 100, full duplex
