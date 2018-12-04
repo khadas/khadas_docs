@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 
 # How To Upgrade Firmware?
 
-**VIM1/VIM2*
+**VIM1/VIM2**
 
 1. Place VIM into [Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html).
 2. 2 ways to upgrade:
