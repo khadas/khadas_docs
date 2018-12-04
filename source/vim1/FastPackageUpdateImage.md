@@ -1,14 +1,14 @@
-title: Fast Package Update Image
+title: Make a "Fast Package Update Image"
 ---
 
-Here is about how to package update image quickly while only change one part of android. Such as only change uboot, kernel or system.
+This guide is about how to make a "Fast Package Update Image"; This means that you will only change one part of Android. For example, only change the U-Boot, Kernel or System.
 
-### Preperations:
+### Preparations:
 
-* [Already build android completely](/vim1/BuildAndroid.html).
+* [Build Android Completely](/vim1/BuildAndroid.html).
 
 
-### Only Change U-Boot
+### Only Change the U-Boot
 
 * Rebuild U-Boot
 ```sh
@@ -29,7 +29,7 @@ $ cp uboot/fip/u-boot.bin.sd.bin   out/target/product/TARGET/upgrade/
 ```sh
 $ ./vendor/amlogic/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
-### Only Change Bootup Logo
+### Only Change the Bootup Logo
 
 * Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/vim1/BuildBootLogoForUboot.html))
 ```sh
@@ -42,7 +42,7 @@ $ make logoimg
 ```sh
 $ ./vendor/amlogic/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
-### Only Change DTB or Kernel
+### Only Change the DTB or Kernel
 
 * Rebuild DTB and Kernel
 ```sh
@@ -56,7 +56,7 @@ $ source device/khadas/TARGET/mkern.sh
 $ ./vendor/amlogic/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-### Only Change System
+### Only Change the System
 
 * Rebuild System Image
 ```sh
