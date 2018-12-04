@@ -1,34 +1,34 @@
 title: Install TensorFlow
 ---
 
-This tutorial is about how to install Google [TensorFlow](https://github.com/tensorflow/tensorflow) on Khadas VIMs/Edge. Take `Ubuntu 16.04.4 arm64` for example.
+This guide will teach you how to install Google [TensorFlow](https://github.com/tensorflow/tensorflow) on Khadas VIMs/Edge. Take `Ubuntu 16.04.4 arm64` for example.
 
-*Note: This version only support CPU, not support GPU.*
+*Note: This version only supports CPU (there is no GPU support).*
 
 ### Install Python3
 ```
-khadas@Khadas:~$ sudo apt-get update
-khadas@Khadas:~$ sudo apt-get install python3-pip python3-dev
+$ sudo apt-get update
+$ sudo apt-get install python3-pip python3-dev
 ```
 
 ### Get TensorFlow Wheel for aarch64
-Download TensorFlow wheel for aarch64 to somewhere like:`~/tensorflow`, we download version `1.8.0`:
+Download TensorFlow wheel for aarch64 to someplace like:`~/tensorflow`, we will download version `1.8.0`:
 ```
-khadas@Khadas:~$ mkdir ~/tensorflow
-khadas@Khadas:~$ cd ~/tensorflow
-khadas@Khadas:~$ wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.8.0/tensorflow-1.8.0-cp35-none-linux_aarch64.whl
+$ mkdir ~/tensorflow
+$ cd ~/tensorflow
+$ wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.8.0/tensorflow-1.8.0-cp35-none-linux_aarch64.whl
 ```
 
 ### Install TensorFlow
 ```
-khadas@Khadas:~$ cd ~/tensorflow
-khadas@Khadas:~$ pip3 install tensorflow-1.8.0-cp35-none-linux_aarch64.whl
+$ cd ~/tensorflow
+$ pip3 install tensorflow-1.8.0-cp35-none-linux_aarch64.whl
 ```
-*Note: Installation will take a few minutes, please wait patiently.*
+*Tip: Installation will take a few minutes, please wait patiently.*
 
 ### Test TensorFlow
 ```
-khadas@Khadas~$ python3
+$ python3
 Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
 [GCC 5.4.0 20160609] on linux
 Type "help", "copyright", "credits" or "license" for more information.
@@ -40,11 +40,11 @@ b'Hello world!'
 >>> 
 ```
 
-If you see the `Hello world` out put message means that you install TensorFlow successfully.
+If you can see the `Hello world!` message print-out in your terminal, it means that Tensorflow has installed successfully.
 
 
 ### Troubleshooting
-If you got the following errors when you import the TensorFlow you should update the `libstdc++6`.
+If you get the following errors when you import TensorFlow, you should update `libstdc++6`.
 ```
 >>> import tensorflow as tf
 Traceback (most recent call last):
@@ -94,10 +94,10 @@ above this error message when asking for help.
 
 Try the following commands to update `libstdc++6`.
 ```
-khadas@Khadas~$ sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
-khadas@Khadas~$ sudo apt-get update
-khadas@Khadas~$ sudo apt-get upgrade
-khadas@Khadas~$ sudo apt-get dist-upgrade
+$ sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get dist-upgrade
 ```
 ### See Also
 [TensorFlow Docs](https://www.tensorflow.org/install)
