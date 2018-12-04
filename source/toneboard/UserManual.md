@@ -47,8 +47,8 @@ Step 2| Connect Tone Board with PC using a USB-C data cable
 ## Setting Up
 Most software platforms have integrated Tone Board Drivers. Only Windows platforms need to install drivers.
 * ### VIM1/VIM2/Edge
-  Make sure firmware of your VIM1 is upgraded to VIM_Nougat_V180524 or later.
-  Make sure firmware of your VIM2 is upgraded to VIM2_Nougat_V180413 or later.
+  Make sure the firmware of your VIM1 is upgraded to VIM_Nougat_V180524 or later.
+  Make sure the firmware of your VIM2 is upgraded to VIM2_Nougat_V180413 or later.
   Edge-V TBD.
 
 * ### Windows
@@ -65,15 +65,15 @@ Most software platforms have integrated Tone Board Drivers. Only Windows platfor
 ![Tone Board Windows Setup3](/images/toneboard/ToneboardWindowsSetup3.jpg)
 
 * ### Ubuntu
-  *  switch sound-card to the Tone Board
+  *  Switch sound-card to the Tone Board
 ![Tone Board Ubuntu Setup](/images/toneboard/ToneboardUbuntuSetup.jpg)
 
 * ### MacOS
-  *  switch sound-card to the Tone Board
+  *  Switch sound-card to the Tone Board
 ![Tone Board Mac OS Setup](/images/toneboard/ToneboardMacosSetup.jpg)
 
 * ### Raspberry Pi
-  *  switch sound-card to the Tone Board
+  *  Switch sound-card to the Tone Board
 
      * Volumio
 ![Tone Board Rpi Setup](/images/toneboard/ToneboardRpiSetup.jpg)
