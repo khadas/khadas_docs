@@ -1,23 +1,23 @@
 title: Add Chinese Support
 ---
 
-The default language of Ubuntu is English, so can't display Chinese well, you can install the following packages to support Chinese:
+English is the default language of Ubuntu. Therefore, it can't display Chinese Characters until you install the following packages:
 ```
-khadas@khadas:~$ sudo apt-get -y install language-pack-zh-* ttf-wqy-microhei language-pack-zh-han* ttf-wqy-zenhei fonts-droid-fallback
+$ sudo apt-get -y install language-pack-zh-* ttf-wqy-microhei language-pack-zh-han* ttf-wqy-zenhei fonts-droid-fallback
 ```
 
-Install font:
+Install Font:
 ```
-khadas@khadas:~$ sudo apt-get -y install fonts-arphic-uming fonts-arphic-ukai
+$ sudo apt-get -y install fonts-arphic-uming fonts-arphic-ukai
 ```
 
 Setup Language:
 ```
-hadas@khadas:~$ sudo locale-gen "zh_CN.UTF-8"
-hadas@khadas:~$ sudo export LC_ALL="zh_CN.utf8"
-hadas@khadas:~$ sudo update-locale LC_ALL="zh_CN.UTF-8" LANG="zh_CN.UTF-8" LC_MESSAGES=POSIX
-hadas@khadas:~$ sudo dpkg-reconfigure -f noninteractive locales
-hadas@khadas:~$ sudo reboot
+$ sudo locale-gen "zh_CN.UTF-8"
+$ sudo export LC_ALL="zh_CN.utf8"
+$ sudo update-locale LC_ALL="zh_CN.UTF-8" LANG="zh_CN.UTF-8" LC_MESSAGES=POSIX
+$ sudo dpkg-reconfigure -f noninteractive locales
+$ sudo reboot
 ```
 
-After reboot the system you will see the Chinese language.
+*Tip: After rebooting Ubuntu, you'll see the OS in Chinese.*

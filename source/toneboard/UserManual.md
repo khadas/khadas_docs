@@ -1,78 +1,79 @@
 title: Khadas Tone Board User Manual
 ---
 
-Thank you for purchasing Khadas Tone Board, now you can easily enjoy Hi-Res Audio at home.
+Thank you for purchasing a Khadas Tone Board. Now you can easily enjoy Hi-Res Audio at home.
 ![Tone Board Overview](/images/toneboard/ToneboardOverview.jpg)
 
 
 
 
 
-## In the box
+## In The Box
 VIMs Edition|Generic Edition|
 ---|:---
 Tone Board (with 20 & 40 pin header on board)|Tone Board
 USB Cable|USB Cable
-Screws set|Screws set
--|Header: 40 PIN Female
--|Header: 20 PIN
+Set of Screws|Set of Screws
+-|Header: 40-Pin Female
+-|Header: 20-Pin
 
 ![Tone Board Recipes](/images/toneboard/ToneboardRecipes.jpg)
 
 
-## Device connection
+## Device Connection
 
-* ### VIMs
+* ### VIM1/VIM2/Edge-V
 
-step|operation|
+Step|Operation|
 ---|:---
-step 1| connect Tone Board and VIMs through 40Pin Header
-step 2| connect RCA output
-step 3| connect HDMI
-step 4| connect DC 5V
+Step 1| Connect Tone Board and VIM1/VIM2/Edge-V SBC through 40-Pin Header
+Step 2| Connect RCA output
+Step 3| Connect HDMI
+Step 4| Connect DC 5V
 
 ![Tone Board Connection VIMs](/images/toneboard/ToneboardConnectionVIMs.png)
 
 
 * ### Others
 
-step|operation|
+Step|Operation|
 ---|:---
-step 1| connect RCA output
-step 2| connect Tone Board and PC through USB-C cable
+Step 1| Connect RCA output
+Step 2| Connect Tone Board with PC using a USB-C data cable
 
 ![Tone Board Connection General](/images/toneboard/ToneboardConnectionGeneral.jpg)
 
 
-## Setting up
-Most software platforms have integrated Tone Board drivers, and Windows platforms need to install drivers.
-* ### VIMs
-  Make sure firmware of VIM1 is upgrade to VIM_Nougat_V180524 or later.
-  Make sure firmware of VIM2 is upgrade to VIM2_Nougat_V180413 or later.
+## Setting Up
+Most software platforms have integrated Tone Board Drivers. Only Windows platforms need to install drivers.
+* ### VIM1/VIM2/Edge
+  Make sure firmware of your VIM1 is upgraded to VIM_Nougat_V180524 or later.
+  Make sure firmware of your VIM2 is upgraded to VIM2_Nougat_V180413 or later.
+  Edge-V TBD.
 
 * ### Windows
-  Take windows 10 for example, windows xp and windows 7 is similar.
-  *  install XMOS driver
-     * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/XMOS-Driver-V2.26.0-for-Normal-Use.zip)
-     * Decompression and run setup.exe to install driver
-     * install finished
+  We will use Windows 10 for this example. Windows 7 and XP are similar.
+  *  Install XMOS Driver
+     * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/XMOS-Driver-V2.26.0-for-Normal-Use.zip).
+     * Decompress and run setup.exe to install the driver.
+     * Install completed.
 ![Tone Board Windows Setup1](/images/toneboard/ToneboardWindowsSetup1.png)
-  *  switch sound card for Tone Board
-     * Click the sound icon from the lower right corner of the task-bar.
+  *  Switch sound-card to the Tone Board
+     * Click the sound icon in the lower-right-corner of the Windows Task-Bar.
 ![Tone Board Windows Setup2](/images/toneboard/ToneboardWindowsSetup2.jpg)
-     * Chose XMOS XS1-U8 DJ for the default sound-card.
+     * Chose XMOS XS1-U8 DJ as the default sound-card.
 ![Tone Board Windows Setup3](/images/toneboard/ToneboardWindowsSetup3.jpg)
 
 * ### Ubuntu
-  *  switch sound card for Tone Board
+  *  switch sound-card to the Tone Board
 ![Tone Board Ubuntu Setup](/images/toneboard/ToneboardUbuntuSetup.jpg)
 
 * ### MacOS
-  *  switch sound card for Tone Board
+  *  switch sound-card to the Tone Board
 ![Tone Board Mac OS Setup](/images/toneboard/ToneboardMacosSetup.jpg)
 
 * ### Raspberry Pi
-  *  switch sound card for Tone Board
+  *  switch sound-card to the Tone Board
 
      * Volumio
 ![Tone Board Rpi Setup](/images/toneboard/ToneboardRpiSetup.jpg)
@@ -97,7 +98,7 @@ ctl.!default {
 }
 ```
 
-## Ports and interfaces
+## Ports and Interfaces
 No|Ports|Function|
 ---|:---|:---
 1|USB-C    |Power supply & data transmission
@@ -113,9 +114,9 @@ No|Ports|Function|
 
 ![Tone Board Ports](/images/toneboard/ToneboardPorts.png)
 
-**No5**: 20 Pin Header Pinout (J4)
+**No5**: 20-Pin Header Pinout (J4)
 
-SIGNAL| PIN|PIN|SIGNAL
+Signal| Pin|Pin|Signal
 ---|:---|:---|:---
 VCC_3V3|1|11|TONE_5V
 Linux_TX|2|12|TONE_5V
@@ -128,9 +129,9 @@ XL_UP1|8|18|XMOS_TCK
 XMOS_3V3|9|19|XMOS_TMS
 GND|10|20|GND
 
-**No6:** 40 Pin Header Pinout (J1)
+**No6:** 40-Pin Header Pinout (J1)
 
-SIGNAL| PIN|PIN|SIGNAL
+Signal| Pin|Pin|Signal
 ---|:---|:---|:---
 5V_1|1|21|GND5
 5V_2|2|22|OLED_SCL
@@ -153,9 +154,9 @@ Linux_RX|18|38|-
 Linux_TX|19|39|MUTE
 VCC_3V3|20|40|GND9
 
-**No7:** I2S FPC Connectors Pinout (J9)
+**No7:** I2S FPC Connectors Pin-Out (J9)
 
-PIN|SIGNAL
+Pin|Signal
 ---|:---
 1|TONE_5V
 2|GND
@@ -168,9 +169,9 @@ PIN|SIGNAL
 9|I2S_SDO
 10|GND
 
-**No8:** 8 Channel Ext  FPC Connectors Pinout (J3)
+**No8:** 8 Channel Ext FPC Connectors Pin-Out (J3)
 
-PIN|SIGNAL
+Pin|Signal
 ---|:---
 1-3|TONE_5V
 4-6|GND
@@ -198,7 +199,7 @@ PIN|SIGNAL
 29|DSD_6
 30|GND
 
-**No9:** OLED  FPC Connectors Pinout (J8)
+**No9:** OLED FPC Connectors Pin-Out (J8)
 
 PIN|SIGNAL
 ---|:---
@@ -215,7 +216,5 @@ PIN|SIGNAL
 
 
 ## FAQs
-* How to extend to 8 channel audio?
-XMOS support 8 channels analog lineout, and Tone Board DAC(ES9038Q2M) has already used 2 channels. Users can add DAC for 8-channel expansion.
-
-
+* How to extend to 8-channel audio?
+XMOS supports 8-channel analog line-out. However, the Tone Board DAC (ES9038Q2M) is already using 2-channels. Users can add a DAC for 8-channel expansion.

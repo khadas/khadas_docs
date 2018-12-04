@@ -1,17 +1,17 @@
-title: Build Ubuntu/Debian Image
+title: Build Ubuntu/Debian Images
 ---
 
-You can use [Fenix](https://github.com/khadas/fenix) (one-stop script set) to build Ubuntu/Debian images.
+You can use [Fenix](https://github.com/khadas/fenix) (one-stop script) to build Ubuntu/Debian images.
 
-### Setup build host
+### Setup Build Host
 ```
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install git make lsb-release qemu-user-static
 ```
 
-### Clone Fenix repository
-Clone Fenix repo to somewhere like: `~/project/`
+### Clone Fenix Repository
+Clone Fenix repository to somewhere like: `~/project/`
 
 ```sh
 $ mkdir ~/project/
@@ -19,40 +19,40 @@ $ cd ~/project/
 $ git clone https://github.com/khadas/fenix
 ```
 
-### Setup build environment
-You should setup the build environment first.For example board type, linux version, distribution, etc.
+### Setup Build Environment
+You should setup the build environment first. For example: Board type, Linux version, distribution, etc.
 
 ```sh
 $ cd ~/project/fenix
 $ source env/setenv.sh
 ```
 
-### Build full image
-If you have setup the environment then it’s time to build the image. And Fenix requires root privileges, you need to enter your password.
+### Build Full Image
+If you have setup the environment, then it’s time to build the image. Fenix requires root privileges, so you'll need to enter your password.
 ```sh
 $ make
 ```
 
-**NOTE:**If it’s your first time to build, the script will check your host PC environment and install some essential packages, and some repos(u-boot,linux) will be cloned automatically from Khadas GitHub.
+**Tip:**If this is your first time building an image, the script will check your Host's environment and install some essential packages. In addition, repositories (U-Boot, Linux) will be cloned automatically from our Khadas GitHub.
 
-You can build u-boot and kernel alone.
+You can build the U-Boot and Kernel alone.
 
-### Build U-boot
+### Build U-Boot
 ```
 $ make uboot
 ```
 
-### Build linux
+### Build Linux
 ```
 $ make kernel
 ```
 
-### Build deb packages
+### Build .deb Packages
 ```
 $ make debs
 ```
 
-### Get help messages
+### Get Help Messages
 You can get help messags by executing `make help`:
 ```sh
 $ make help
@@ -68,12 +68,12 @@ Fenix scripts help messages:
 
 ### Build Fenix in Docker
 
-Fenix is supported to build in Docker, and we provide `Ubuntu 18.04` build host, so you can build all images in Docker.
+Fenix is supported via Docker. We provide a `Ubuntu 18.04` build host, so you can build all images in Docker.
 
 #### Install Docker
-Require host PC `Ubuntu 16.04` or newer.
+Requires Host PC to be running `Ubuntu 16.04` or newer.
 
-Uninstall old docker version:
+Uninstall old Docker version:
 ```
 $ sudo apt-get remove docker docker-engine docker.io
 ```
@@ -107,14 +107,14 @@ Add Docker group:
 $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 ```
-*NOTE: You need to logout or reboot your system.*
+*Tip: You'll need to logout or reboot your system.*
 
 #### Check Docker
 ```
 $ docker run hello-world
 ```
 
-If you see the following messages mean that Docker is setup OK.
+If you see the following print outs, it means that Docker has installed successfully:
 ```
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
@@ -144,21 +144,21 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 #### Run Fenix in Docker
-Build Docker image:
+Build Docker Image:
 ```
 $ cd ~/project/fenix
 $ docker build -t fenix .
 ```
 
-Build image in Docker:
+Build Image in Docker:
 ```
 $ docker run -it -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro --privileged fenix
 ```
-We are in Docker container now, start to build.
+We are in the Docker Container now, start your build.
 ```
 khadas@919cab43f66d:~/fenix$ source env/setenv.sh
 khadas@919cab43f66d:~/fenix$ make
 ```
 
-### See also
+### See Also
 [Docker](https://www.docker.com/)

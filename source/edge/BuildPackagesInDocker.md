@@ -1,12 +1,12 @@
-title: Build Packages In Docker
+title: Build Packages Using Docker
 ---
 
-This tutorial is about how to build packaes(libdrm, gstreamer, mpp, etc.) in docker.
+This guide is about how to build packages(libdrm, gstreamer, mpp, etc.) using Docker.
 
-*Note: We only provide arm64 architecture.*
+*Note: We only use the arm64 architecture.*
 
 ### Install Docker
-Require host PC `Ubuntu 16.04` or newer.
+Requires your Host PC to be `Ubuntu 16.04` or newer.
 
 ```
 $ sudo apt-get remove docker docker-engine docker.io
@@ -27,19 +27,19 @@ $ sudo systemctl enable docker
 $ sudo systemctl start docker
 ```
 
-Add Docker group:
+Add Docker Group:
 ```
 $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 ```
 
-*NOTE: You need to logout or reboot your system.*
+*Tip: You need to logout or reboot your system.*
 
 Check Docker:
 ```
 $ docker run hello-world
 ```
-If you see the following messages mean that Docker is setup OK.
+If you see the following messages, it means that Docker has installed successfully:
 ```
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
@@ -76,17 +76,17 @@ We provide a Debian stretch arm64 dockerfile. Clone it from GitHub.
 $ git clone https://github.com/numbqq/docker-rockchip -b arm64
 $ sudo docker build -t rockchip-arm64 .
 ```
-Now you get a Docker image named `rockchip-arm64` which include a debian multiarch cross-compiling enviroment.
+Now you'll see a Docker image named `rockchip-arm64`, which also includes a debian multi-architecture cross-compiling enviroment.
 
 ### Build Packages
 
-Enter docker shell:
+Enter Docker Shell:
 ```
 $ docker run -it -v <package dir>:/home/rk/packages rockchip-arm64 /bin/bash
 ```
-*Note: `package dir` is the package full path which you want to build.*
+*Tip: `package dir` is the full-path of the package that you want to build.*
 
-Start to build:
+Start To Build:
 ```
 # cd /home/rk/packages/<package-name>
 # DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -b -d -uc -us -aarm64
@@ -103,7 +103,7 @@ $ git clone https://github.com/numbqq/libdrm-rockchip -b rockchip-2.4.91
 $ cd libdrm-rockchip
 $ docker run -it -v $(pwd):/home/rk/packages rockchip-arm64 /bin/bash
 ```
-We are in docker now, start to build:
+We are in Docker now, start your build:
 ```
 # cd /home/rk/packages/libdrm-rockchip
 # DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -b -d -uc -us -aarm64

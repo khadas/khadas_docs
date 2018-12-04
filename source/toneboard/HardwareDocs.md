@@ -1,7 +1,7 @@
 title: Hardware Documentation
 ---
 
-This documentation is about hardware of Khadas Tone Board.
+These documentation files contain hardware information for the Khadas Tone Board.
 
 [Khadas Tone Board Specifications](https://dl.khadas.com/Hardware/ToneBoard/Schematic/Tone_Board_Specs.pdf)
 [Khadas Tone Board Schematic](https://dl.khadas.com/Hardware/ToneBoard/Schematic/Tone_V13%20SCH.pdf)
