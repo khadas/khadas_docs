@@ -1,19 +1,19 @@
-title: U-boot Usage Guidance
+title: U-Boot Usage Guide
 ---
 
-### Burnning boot.img using USB-Disk
-Copy the `boot.img` to a USB disk, the plug into your target device:
+### Burning boot.img Using A Thumbdrive (U-Disk)
+Copy the `boot.img` into a thumbdrive, then plug it into your target device:
 ```
 kvim# usb_update boot boot.img
 ```
 
-### Burnning boot.img using SD Card
-Copy the `boot.img` to a USB disk, the plug into your target device:
+### Burning boot.img Using An SD-Card
+Copy the `boot.img` to an SD-card, then plug into your target device:
 ```
 kvim# sdc_update boot boot.img
 ```
 
-###  Erase partition
+###  Erase Partition
 ```
 kvim# store erase partition boot
 ```
@@ -23,7 +23,7 @@ kvim# amlmmc erase rootfs
 ```
 
 ### Help
-You can get help on U-Boot commands by using the U-Boot `help` command.
+You can get help for U-Boot commands by using the U-Boot `help` command.
 
 Typing help followed by a command name gives help regarding that particular command:
 ```
@@ -58,7 +58,7 @@ store key read/write addr <size>
 kvim#
 ```
 
-Typing help at the U-Boot command prompt gives a list of commands supported:
+Typing help at the U-Boot command prompt gives a list of supported commands:
 ```
 kvim# help
 ?       - alias for 'help'
@@ -161,4 +161,4 @@ kvim#
 
 
 ### Resources:
-* [U-Boot Offical Guidance](http://www.denx.de/wiki/view/DULG/UBoot)
+* [U-Boot Offical Guide](http://www.denx.de/wiki/view/DULG/UBoot)

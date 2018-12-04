@@ -1,7 +1,7 @@
 title: Hardware Documentation
 ---
 
-This documentation is about hardware of Khadas VIM2.
+These files contain the Hardware Documentation for VIM2:
 
 [Khadas VIM2 Specifications](https://dl.khadas.com/Hardware/VIM2/Schematic/VIM2_Specs.pdf)
 [Khadas VIM2 Schematic](https://dl.khadas.com/Hardware/VIM2/Schematic/VIM2_V12_Sch.pdf)

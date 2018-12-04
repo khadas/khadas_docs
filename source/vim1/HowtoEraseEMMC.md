@@ -1,29 +1,29 @@
-title: Howto Erase the eMMC Storage
+title: How to Erase the eMMC Storage
 ---
 
-There are many different ways to wipe out all the data on the onboard eMMC storage, and list as following:
-* Keys Mode
-* Serial Mode
-* Breaking Mode
-* CLI Mode
+There are 4 different ways to erase all data on the onboard eMMC storage:
+1. Keys Mode (Side-Buttons)
+2. Serial Mode
+3. Interrupt Mode
+4. CLI Mode
 
-### Keys Mode(U-Boot is running)
-All the ROM we released support eMMC erasing, please follow the steps below to erase the data on eMMC:
+### Keys Mode(U-Boot is functional)
+All ROMs we have released support eMMC erasure. Please follow the steps below to erase the data on the eMMC:
 
-1. Power on VIMs.
-2. Long press `Power` and `Function` buttons simultaneously without release
-3. Short press ‘Reset’ key and release
-4. After the operations above, the system will begin to earse automately, and it will take around 10 seconds to done that.
-5. The display/monitor will display as a black screen when the wiping process is done.
+1. Power on VIM.
+2. Long press `Power` and `Function` buttons simultaneously, without releasing them.
+3. Short press the ‘Reset’ key and release.
+4. After the operations above, the system will begin to erase automatically; it will take about 10 seconds to finish.
+5. Your connected display/monitor will display a black screen when the erasure process is complete.
 
 
 ### Serial Mode(For developers)
-1. Refer this [guidance](/vim1/SetupSerialTool.html) to setup serial tool for VIMs.
-2. Make sure again you've done the right connections and setup.
-3. Hit any keys at the moment of booting to stop autoboot. This step will let VIMs boot into u-boot mode.
-4. Type `store init 3` on the terminal of u-boot, and wait the wiping process to complete.
+1. Refer to this [guide](/vim1/SetupSerialTool.html) to setup the Serial Tool for your VIM.
+2. Once again, ensure you've done the correct connections and setup.
+3. Hit any keys at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode.
+4. Type `store init 3` on the terminal of u-boot, and wait for the erasure process to complete.
 5. Type `reboot` or press the `Reset` button
-6. References as following:
+6. Use the following as a reference:
 ```
 Vim# store init 3
 emmc/sd response timeout, cmd8, status=0x1ff2800
@@ -53,26 +53,25 @@ The erase range would be change to 0x36000~0xe8ffff
 start = 221184,end = 15269886
 Vim# reboot
 ```
-**Tips:**
-If the erase process complete, the printing should be like when you power on your device:
+**Tip:**
+If the erasure process completed successfully, the terminal should look like this when you power on your device:
 ```
 GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:8;
 ```
 
+### Interrupt Mode
+This approach is suitable for all products that use the Amlogic SoC:
 
-### Breaking Mode
-This approach suits for all Amlogic SoCs based products:
-
-1. Do normal upgrading via [USB-C cable mode](/vim1/UpgradeViaUSBCable.html) or [TF card burning card mode](/vim1/UpgradeViaTFBurningCard.html).
-2. Break out during the upgrade process(break after 15% process is recommended), for example, plug-out the USB-C cable or the TF card.
-3. Power on VIMs again, and you'll find all the data on eMMC have been wiped out.
+1. Carry out normal upgrading via [USB-C Cable](/vim1/UpgradeViaUSBCable.html) or [TF Card](/vim1/UpgradeViaTFBurningCard.html).
+2. Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
+3. Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
 
 
 ### CLI Mode
-This approach suits for a Linux Distro preinstalled device:
+This approach is suitable for a VIM that has Linux installed:
 
 1. Power on and boot up.
-2. Open a terminal, run `dd` to fulfilled bootloader partition with zero:
+2. Open a terminal, and run `dd` to fill your bootloader partition with zeros:
 ```
 root@Khadas:~# dd if=/dev/zero of=/dev/bootloader
 dd: writing to '/dev/bootloader': No space left on device

@@ -1,49 +1,47 @@
-title: Load Images with U-Boot via TFTP
+title: Load Images With U-Boot Via TFTP
 ---
 
-With a network connection available, U-Boot can load images quickly and easily via TFTP.
+With an available network connection, U-Boot can load images quickly and easily via TFTP.
 
-### Preperations
+### Preparation
 - [x] [Setup TFTP Server for U-Boot](/vim1/SetupTFTPServer.html)
 
 We'll start off with a terminal connected to the board and sitting at the U-Boot prompt.
 
-
-
-### Upgrade bootloader
+### Upgrade Bootloader
 
 ```
 kvim# tftp 1080000 u-boot.bin
 kvim# store rom_write 1080000 0 100000
 ```
 
-**Note**: You might also need to clean up the old U-Boot environment value stored at `env` partition, and save as new value:
+**Note**: You might also need to clean up the old U-Boot environment value stored in the `env` partition, and then save it as a new value:
 ```
 kvim# defenv
 kvim# saveenv
 ```
 
-Run `reset` or press `Reset` Button to boot from the new bootloader:
+Run `reset` or press `reset` button to boot from the new bootloader:
 ```
 kvim# reset
 ```
 
 ### boot.img
-Load image into memeory, then run `bootm` to boot from memory:
+Load image into memory, then run `bootm` to boot from memory:
 ```
 kvim# tftp 1080000 boot.img
 kvim# bootm
 ```
 
 ### Linux Kernel Image
-Download and run linux:
+Download and run Linux:
 ```
 kvim# tftp 1080000 zImage
 kvim# tftp 10000000 uInitrd
 kvim# tftp 20000000 kvim.dtb 
 kvim# booti 1080000 10000000 20000000
 ```
-### Troubleshootings
+### Troubleshooting
 Failed to `saveenv`:
 ```
 kvim# saveenv
@@ -52,6 +50,6 @@ get partition info failed !!
 kvim#
 ```
 
-You need to write DTB first!
+You need to write a DTB first!
 ### Resources
-* [U-Boot Offical Guidance](http://www.denx.de/wiki/view/DULG/UBoot)
+* [U-Boot Offical Guide](http://www.denx.de/wiki/view/DULG/UBoot)

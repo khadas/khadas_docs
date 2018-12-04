@@ -1,65 +1,63 @@
-title: Create Burning Card Via Command Line
+title: Create A Burning Card From Command Line
 ---
-
-This is a step by step instructions to create burning card for linux users, you can also use the [Windows approach](/vim1/UpgradeViaTFBurningCard.html) instead.
-
-
-### Preperations:
-* Build to get or [download](https://dl.khadas.com/Firmware/VIM1/U-boot/) the latest U-Boot file for SD card.
-* You might need to [format the TF Card Via fdisk](/vim1/CreateBurnCardViaCLI.html) if your card exists more than one partitions.
+This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this [Windows Guide](/vim1/UpgradeViaTFBurningCard.html) instead.
 
 
-### Before starting
-In some cases, if your SD card have more then one partitions.
+### Preparation:
+* Build your own, or [download](https://dl.khadas.com/Firmware/VIM1/U-boot/) the latest U-Boot file for SD-Cards.
+* You may need to [format the SD-Card Via FDisk](/vim1/CreateBurnCardViaCLI.html) if your SD-Card contains >1 partition.
+
+
+### Before You Start
+If your SD-Card has >1 partition.
 ```sh
-gouwa@Wesion:~$ ls /dev/sdb*
+$ ls /dev/sdb*
 /dev/sdb  /dev/sdb1  /dev/sdb2
-gouwa@Wesion:~$ 
+$ 
 ```
 
-you might need delete the other partitions first:
+You may have to delete the other partitions first:
 ```sh
 fdisk /dev/sdb
 ```
 
-### Create the Burning TF Card
-**Insert the TF card into your PC, and make sure the disk is unmounted:**
+### Create the Burning SD-Card
+**Insert the SD-Card into your PC, and make sure the disk is unmounted:**
 ```sh
 $ umount /dev/sdb1
 ```
 
-**Format the TF Card as Fat32:**
+**Format the SD-Card to FAT32:**
 ```sh
 $ sudo mkfs.vfat /dev/sdb1 
 ```
 
-**Use `dd` to write the bootloader/u-boot to the first sector of TF Card:**
+**Use `dd` to write the Bootloader/U-Boot to the first sector of SD-Card:**
 ```sh
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=1 count=444
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=512 skip=1 seek=1
 ```
 *Notice: u-boot file `u-boot.bin.sd.bin` is build for SD, and `u-boot.bin` is for EMMC.*
 
-**Copy the images to TF Card:**
-
-Pop the TF card in again, then run the following command:
+**Copy the images to your SD-Card:**
+Insert the SD-Card in again, then run the following command:
 ```sh
 $ cp -a aml_sdc_burn.ini Vim_Marshmallow_160928/update.img /media/gouwa/9CE9-3938/
 ```
-*Tips: `aml_sdc_burn.ini` is a configuration file for u-boot to burn/download images into onboard EMMC storage*
+*Tip: `aml_sdc_burn.ini` is a configuration file for U-Boot to burn/download images into the onboard eMMC storage*
 
-**Eject the TF Card:**
+**Eject the SD-Card:**
 ```sh
 $ sudo eject /dev/sdb
 ```
 
 Done!
 
-### Upgrade using Burning TF Card
+### Upgrade Using Your "Burning Card"
 
-1. Insert the burning TF card into your device, and power on
-2. Follow the [guidance](/vim1/HowtoBootIntoUpgradeMode.html) to boot into upgrade mode
-3. Wait
+1. Insert your Burning Card into your VIM, and power-on.
+2. Follow this [guide](/vim1/HowtoBootIntoUpgradeMode.html) to boot into Upgrade Mode.
+3. Wait till the process completes.
 
 ### Further Reading:
 * [Booting_Card Vs Burning Card](/vim1/BootingCardVsBurningCard.html)

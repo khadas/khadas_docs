@@ -1,18 +1,18 @@
 title: How To Enable ADB
 ---
 
-This tutorial is about how to enable ADB on Ubuntu for VIMs/Edge.
+This guide will show you how to enable ADB on Ubuntu for VIMs/Edge.
 
 ### VIMs
-Only linux 3.14 support ADB, you can enable it via the following commands:
+Only Linux 3.14 supports ADB, you can enable it via the following commands:
 ```
-khadas@Khadas:~$ sudo systemctl enable adb-khadas.service
-khadas@Khadas:~$ sudo systemctl start adb-khadas.service
+$ sudo systemctl enable adb-khadas.service
+$ sudo systemctl start adb-khadas.service
 ```
 
 ### Edge
-Only linux 4.4 support ADB, you can enable it via the following commands:
+Only Linux 4.4 support ADB, you can enable it via the following commands:
 ```
-khadas@Khadas:~$ sudo systemctl enable adb-khadas.service
-khadas@Khadas:~$ sudo systemctl start adb-khadas.service
+$ sudo systemctl enable adb-khadas.service
+$ sudo systemctl start adb-khadas.service
 ```

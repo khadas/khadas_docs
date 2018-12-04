@@ -1,38 +1,38 @@
 title: Setup Serial Debugging Tool
 ---
 
-### Preperations
-- [x] A Serial Debugging Tool, what we used in the guidance is an USB to TTL Convertor.
-
+### Preparation
+- [x] You need a "Serial Debugging Tool". In this guide, we will use a "USB to TTL Converter".
 
 ### Connections
-Follow the steps to do the connections:
+Follow these steps to make the correct connections:
 
-**1)** Connect all the to GPIOs, and check the Tx / Rx Pins and ensure done the right connection:
+**1)** Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins once more to ensure that you've made correct connections:
 
-  * Tool Pin `GND`: <---> `Pin17` of VIM1's GPIO
-  * Tool Pin `TXD`: <---> `Pin18` of VIM1's GPIO(Linux_Rx)
-  * Tool Pin `RXD`: <---> `Pin19` of VIM1's GPIO(Linux_Tx)
-  * Tool Pin `VCC`: <---> `Pin20` of VIM1's GPIO
+  * Tool Pin `GND`: <---> `Pin17` of VIMs's GPIO
+  * Tool Pin `TXD`: <---> `Pin18` of VIMs's GPIO (Linux_Rx)
+  * Tool Pin `RXD`: <---> `Pin19` of VIMs's GPIO (Linux_Tx)
+  * Tool Pin `VCC`: <---> `Pin20` of VIMs's GPIO
 
-**2)** Insert the USB to your PC.
+**2)** Insert the USB-end into your PC.
 
-The connections should be like this:
+The connections should look like this:
 
 ![Image of SerialConnections](/images/vim1/SerialConnections_3Pin.png)
 
-Another photo for more details(`VCC` Pin is not necessary):
+Another photo for more details (`VCC` Pin is not necessary):
 
 ![Image of SerialConnections](/images/vim1/SerialConnections.png)
 
 
-### Setup the Kermit Protocol(C-Kermit)
-**Install the c-kermit:**
+### Setup Kermit Protocol(C-Kermit)
+**Install c-kermit:**
+
 ```sh
 $ sudo apt-get install ckermit
 ```
 
-**Add the access permission**
+**Add Access Permission**
 ```sh
 $ sudo usermod -a -G dialout $(whoami)
 ```
@@ -55,7 +55,8 @@ c
 
 **Run command `kermit` to launch C-Kermit**
 
-Ensure that you have done the right connection, and if everything goes fine, printing would be like this:
+Ensure that you have made the correct connections. If everything went well, you'll see the following:
+
 ```sh
 $ kermit
 Connecting to /dev/ttyUSB0, speed 115200
@@ -69,7 +70,7 @@ TE: 116640
 ...
 
 ```
-*Tips: If the printing contain following line, you might need to check the step `Add the access permission` above.*
+*Tip: If the terminal output contains this line, you might need to check the previous step `Add Access Permission`.*
 ```
 /dev/ttyUSB0: Permission denied
 ```

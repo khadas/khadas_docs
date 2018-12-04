@@ -1,29 +1,28 @@
 title: How To Access GPIO
 ---
 
-Here is about how to access GPIO on Android and Ubuntu.
+This guide is about how to access the GPIO using Android and Ubuntu.
 
 ### Preconditions
-The Rom must satisfy the following conditions:
-
-* Android M >= V170603
-* Android N >= V170421
+The ROM must satisfy the following conditions:
+```
+* Android M     >= V170603
+* Android N     >= V170421
 * Ubuntu Server >= V180712
-* Ubuntu Mate  >= V180531
+* Ubuntu Mate   >= V180531
+```
+### How to Get the GPIO Number
+You can get the GPIO number from GPIO Banks or Pins. Different versions of kernel will be different.
 
-### How to get GPIO number
-You can get the GPIO number from GPIO banks and pins. Different version of kernel are different.
-
-
-* Linux 3.14 (Android M,N and Ubuntu)
+* Linux 3.14 (Android M, N and Ubuntu)
 
 Banks:
 ```
 # cat /sys/kernel/debug/pinctrl/c1109880.pinmux/gpio-ranges
 
 GPIO ranges handled:
-0: banks GPIOS [155 - 255] PINS [10 - 110]
-0: ao-bank GPIOS [145 - 154] PINS [0 - 9]
+0: banks GPIOS   [155 - 255] PINS [10 - 110]
+0: ao-bank GPIOS [145 - 154] PINS [ 0 -   9]
 
 Notice: ao-bank means GPIOAO_X gpios
 ```
@@ -47,9 +46,11 @@ pin 35 (GPIOH_9)
 ```
 
 For example, get the number of `GPIOH_4`, `GPIOH_5` and `GPIOAO_6`.
-Number(GPIOH_5) = bank + pin = 155 - 10 + 31= 176
-Number(GPIOH_4) = bank + pin = 155 - 10 + 30= 175
-Number(GPIOAO_6) = bank + pin = 145 - 0 + 6 = 151
+```
+Number(GPIOH_5)  = bank + pin = 155 - 10 + 31 = 176
+Number(GPIOH_4)  = bank + pin = 155 - 10 + 30 = 175
+Number(GPIOAO_6) = bank + pin = 145 -  0 +  6 = 151
+```
 
 * Linux 4.9 (Android O and Ubuntu)
 
@@ -122,22 +123,22 @@ Number(GPIOH_5) = bank + pin = 11 - 11 + 32 = 32
 
 ```
 PIN         GPIO         Number
-PIN37       GPIOH5         176
-PIN33       GPIOAO6        151
+PIN37       GPIOH5       176
+PIN33       GPIOAO6      151
 ```
 
-There are two ways to access GPIO:
+There are two ways to access the GPIO:
 
 * ADB Command
 * Third-Party Applications 
 
 ** ADB command **
 
-> Connect the VIMs with wifi adb:
+> Connect the VIMs with a wifi adb:
 ```
 $ adb connect IP_ADDR 
 ```
-> Login the VIMs:
+> Login to the VIMs:
 ```
 $ adb shell
 ```
