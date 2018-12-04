@@ -7,7 +7,7 @@ menu:
   faq: FAQ
 
 index:
-  get_started: Get started
+  get_started: Getting Started
   read_docs: READ DOCS
   read_faqs: READ FAQs
 
@@ -21,30 +21,30 @@ page:
 
 home_page:
   intro_title1: Editable
-  intro_desc1: This documentation is editable via GitHub Pull Request, any code donate is welcome.
+  intro_desc1: This documentation is editable via GitHub Pull Request, any code donation is welcome.
   intro_title2: Open Source
-  intro_desc2: All the source code are open source, you can find the source code on Khadas GitHub.
+  intro_desc2: All source code is open source, you can find the source code on the Khadas GitHub.
   intro_title3: Markdown Support
-  intro_desc3: All documentation is written by Markdown.All features of GitHub flavored Markdown are supported.
-  intro_title4: Multi Languages Support
-  intro_desc4: English and Simplified Chinese are supported now, more languages will be supported in the future.
+  intro_desc3: All documentation is written with Markdown. All features of GitHub Flavoured Markdown are supported.
+  intro_title4: Multi-Language Support
+  intro_desc4: English and Simplified Chinese are supported, more languages will be supported in the future.
 
 
 sidebar:
   vim1:
     overview: Overview
-    getting_started: Getting started
+    getting_started: Getting Started
     vim1_interfaces: VIM1 Interfaces
     enter_upgrade_mode: Enter Upgrade Mode
-    upgrade_via_usb: Upgrade Via a USB-C Cable
-    upgrade_via_tfcard: Upgrade Android Via a TF Card
+    upgrade_via_usb: Upgrade Using A USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using An SD-Card
     install_libreelec: Install LibreELEC
-    create_burning_card_via_cli: Create Burning Card Via CLI
-    create_booting_card: Create Booting Card Via CLI
-    booting_card_vs_burning_card: Booting Card Versus Burning Card
-    boot_from_ext_image: Boot From external Media
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    booting_card_vs_burning_card: Booting Card Vs Burning Card
+    boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
-    gpio_pinout: GPIO Pinout
+    gpio_pinout: GPIO Pin-Outs
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Setup Serial Debugging Tool
@@ -52,7 +52,7 @@ sidebar:
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
     uboot: U-boot
-    uboot_usage: U-boot Usage Guidance
+    uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Build Boot Logo For U-boot
     setup_tftp: Setup TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
@@ -77,42 +77,42 @@ sidebar:
     android_image: Android
     ubuntu_image: Ubuntu
     libreelec_image: LibreELEC
-    uboot_image: Uboot
-    dualos_image: DualOS
+    uboot_image: U-Boot
+    dualos_image: Dual OS
     thirdparty_imgae: Third Party
 
   vim2:
     overview: Overview
-    getting_started: Getting started
+    getting_started: Getting Started
     vim2_interfaces: VIM2 Interfaces
     enter_upgrade_mode: Enter Upgrade Mode
-    upgrade_via_usb: Upgrade Via a USB-C Cable
-    upgrade_via_tfcard: Upgrade Android Via a TF Card
+    upgrade_via_usb: Upgrade Using a USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using An SD-Card
     install_libreelec: Install LibreELEC
-    boot_from_ext_image: Boot From external Media
+    boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
-    gpio_pinout: GPIO Pinout
+    gpio_pinout: GPIO Pin-Outs
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Setup Serial Debugging Tool
     erase_emmc: How To Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
-    uboot: U-boot
-    uboot_usage: U-boot Usage Guidance
+    uboot: U-Boot
+    uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Build Boot Logo For U-boot
     setup_tftp: Setup TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
-    kbi_guidance: KBI Guidance
+    kbi_guidance: KBI Guide
     android: Android
-    download_android_source_code: Download the Android Source Code
+    download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
     setup_adb: Setup ADB
     howto_use_wol: How To Use WOL
     force_reset_features: Force Reset Remotely
     linux: Linux
-    fenix_script: Build Ubuntu/Debian Image
+    fenix_script: Build Ubuntu/Debian Images
     how_to_connect_wifi: How To Connect to Wi-Fi
     how_to_setup_bluetooth: How To Setup Bluetooth
     how_to_setup_watchdog: How To Setup Watchdog
@@ -133,48 +133,48 @@ sidebar:
     android_image: Android
     ubuntu_image: Ubuntu
     libreelec_image: LibreELEC
-    uboot_image: Uboot
-    dualos_image: DualOS
+    uboot_image: U-Boot
+    dualos_image: Dual OS
     thirdparty_imgae: Third Party
 
   edge:
     overview: Overview
-    getting_started: Getting started
+    getting_started: Getting Started
     edge_interfaces: Edge Interfaces
     captain_interfaces: Captain Interfaces
-    edgev_interfaces: Edge V Interfaces
-    edgecaptain_power_priority: Edge Captain Power Priority
+    edgev_interfaces: Edge-V Interfaces
+    edgecaptain_power_priority: Edge+Captain Power Priority
     enter_upgrade_mode: Enter Upgrade Mode
-    upgrade_via_usb: Upgrade Via a USB-C Cable
-    upgrade_via_tfcard: Upgrade Via a TF Card
-    install_le_via_windows: Install LE Via Windows
-    install_le_via_cli: Install LE Via CLI
-    create_burning_card_via_cli: Create Burning Card Via CLI
-    create_booting_card: Create Booting Card Via CLI
-    booting_card_vs_burning_card: Booting Card Versus Burning Card
-    boot_from_ext_image: Boot From external Media
+    upgrade_via_usb: Upgrade Using A USB-C Cable
+    upgrade_via_tfcard: Upgrade Using An SD-Card
+    install_le_via_windows: Install LE Using Windows
+    install_le_via_cli: Install LE Using CLI
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    booting_card_vs_burning_card: Booting Card Vs Burning Card
+    boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
-    captain_gpio_pinout: Captain GPIO Pinout
-    edgev_gpio_pinout: Edge V GPIO Pinout
+    captain_gpio_pinout: Captain GPIO Pin-Outs
+    edgev_gpio_pinout: Edge V GPIO Pin-Outs
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Setup Serial Debugging Tool
     erase_emmc: How To Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     rk_docs: Rockchip Official Docs
-    uboot: U-boot
-    boot_from_spi_flash: Boot From SPI Flash
-    uboot_usage: U-boot Usage Guidance
+    uboot: U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
+    uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Build Boot Logo For U-boot
     setup_tftp: Setup TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
     android: Android
-    download_android_source_code: Download the Android Source Code
+    download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     setup_adb: Setup ADB
     howto_use_wol: How To Use WOL
     linux: Linux
-    fenix_script: Build Ubuntu/Debian Image
+    fenix_script: Build Ubuntu/Debian Images
     how_to_connect_wifi: How To Connect to Wi-Fi
     how_to_setup_bluetooth: How To Setup Bluetooth
     add_chinese_support: Add Chinese Support
@@ -191,12 +191,12 @@ sidebar:
     ubuntu_image: Ubuntu
     debian_image: Debian
     libreelec_image: LibreELEC
-    dualos_image: DualOS
+    dualos_image: Dual OS
     buildroot_image: Buildroot
-    uboot_image: U-boot
+    uboot_image: U-Boot
 
   toneboard:
-    getting_started: Getting started
+    getting_started: Getting Started
     overview: Overview
     user_manual: User Manual
     how_to_upgrade_firmware: How To Upgrade Firmware
