@@ -1,4 +1,4 @@
-title: Upgrade Via A SD Card
+title: Upgrade Using A SD Card
 ---
 
 ### Preparation
