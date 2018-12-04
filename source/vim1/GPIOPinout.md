@@ -1,7 +1,7 @@
-title: VIM1 GPIO Pinout
+title: VIM1 GPIO Pin-Out
 ---
 
-### Pinout map(V12):
+### Pin-Out Map(V12):
 ![Image of Vim GPIO](/images/vim1/vim_pinout.png)
 
 

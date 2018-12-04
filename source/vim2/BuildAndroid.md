@@ -2,14 +2,14 @@ title: Building Android Source Code
 ---
 
 
-### Preperations
+### Preparations
 - [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
 - [x] [Downloading the Android Source](/vim2/DownloadAndroidSourceCode.html)
-- [x] [Install toolchains for Amlogic platform](/vim2/InstallToolchains.html)
+- [x] [Install Toolchains for the Amlogic Platform](/vim2/InstallToolchains.html)
 
 
 ### Building
-*Note: Before you start to build, make sure you have done all the `Preperations` listed above.*
+*Note: Before you start to build, make sure you have done all the `Preparations` listed above.*
 
 **Build U-Boot:**
 ```sh
@@ -18,7 +18,7 @@ $ cd uboot
 $ make CROSS_COMPILE=aarch64-linux-gnu- kvim2_defconfig
 $ make CROSS_COMPILE=aarch64-linux-gnu-
 ```
-*Gernerated images in this step:*
+*Gernerate images in this step:*
 
 * fip/u-boot.bin: for onboard EMMC storage booting
 * fip/u-boot.bin.sd.bin: for external TF card booting
@@ -35,16 +35,16 @@ $ make -jN otapackage
 
 * Replace 'N' as the number you want when you run 'make -jN'
 
-*Gernerated images in this step:*
+*Gernerate images in this step:*
 
 * out/target/product/kvim2/update.img
 
 
 **Build Linux kernel:**
 
-When you build Android aboved, will build Linux kernel at the same time.
+When you build the Android Kernel (above), the Linux Kernel will also be built simultaneously.
 
-In some case, you might want to build Linux kernel separately, you can run the script below to do that:
+In some cases, you might want to build the Linux Kernel separately. You can run this script below to do that:
 ```sh
 $ source device/khadas/kvim2/mkern.sh
 ```

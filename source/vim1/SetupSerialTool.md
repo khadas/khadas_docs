@@ -20,13 +20,14 @@ The connections should look like this:
 
 ![Image of SerialConnections](/images/vim1/SerialConnections_3Pin.png)
 
-Another photo for more details(`VCC` Pin is not necessary):
+Another photo for more details (`VCC` Pin is not necessary):
 
 ![Image of SerialConnections](/images/vim1/SerialConnections.png)
 
 
 ### Setup Kermit Protocol(C-Kermit)
 **Install c-kermit:**
+
 ```sh
 $ sudo apt-get install ckermit
 ```
@@ -55,6 +56,7 @@ c
 **Run command `kermit` to launch C-Kermit**
 
 Ensure that you have made the correct connections. If everything went well, you'll see the following:
+
 ```sh
 $ kermit
 Connecting to /dev/ttyUSB0, speed 115200

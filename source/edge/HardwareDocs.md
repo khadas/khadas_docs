@@ -1,7 +1,7 @@
 title: Hardware Documentation
 ---
 
-This documentation is about hardware of Khadas Edge, Captain and Edge V.
+These documentation files contain hardware information for the Khadas Edge, Captain and Edge-V.
 
 [Khadas Edge Comparisons](https://dl.khadas.com/Hardware/Edge/Schematic/Edge_Comparisons.pdf)
 [Khadas Edge Specifications](https://dl.khadas.com/Hardware/Edge/Schematic/Edge_Specs.pdf)

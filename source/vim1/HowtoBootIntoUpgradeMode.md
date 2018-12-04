@@ -1,13 +1,13 @@
-title: Howto Boot Into Upgrade Mode
+title: How To Boot Into Upgrade Mode
 ---
 
-There are many different ways to boot into upgrade mode. They are listed as follows:
+There are 3 different ways to boot into Upgrade Mode:
 
 * Keys Mode (Side-Buttons)
 * Serial Mode
 * MRegister Mode
 
-Usually, the first two methods will meet the needs of most users. However, in some cases such as burning an incorrect u-boot, or if your device is unable to boot at all, you can try to rectify the issue with the MRegister mode.
+Usually, the first two methods will meet the needs of most users. However, in some cases such as burning an incorrect u-boot, or if your device is unable to boot at all, you can attempt to rectify the issue with the MRegister mode.
 
 ### Keys Mode (U-Boot is Running)
 1. Power on VIM1.
@@ -28,8 +28,8 @@ kvim# run update
 
 ### MRegister Mode (Maskrom Mode)
 1. Power on VIM1.
-2. Use a tweezer to short-circuit the two pads of the `M` register.
-3. Without releasing the tweezers, short press the `Reset` key and release it to boot into upgrade mode
+2. Use a tweezer to short-circuit the two pads of the `M` register, and without releasing it...
+3. Short press the `Reset` key and release it to boot into upgrade mode
 
 ![Image of MRegister_ShortCircuit](/images/vim1/MRegister_ShortCircuit.png)
-*Tip: The `M` register is loacated on the bottom of VIM1*
+*Tip: The `M` register is located on the backside of your VIM1*

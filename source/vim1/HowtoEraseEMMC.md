@@ -1,13 +1,13 @@
 title: How to Erase the eMMC Storage
 ---
 
-There are 4 different ways to wipe out all data on the onboard eMMC storage:
-1. Button Mode
+There are 4 different ways to erase all data on the onboard eMMC storage:
+1. Keys Mode (Side-Buttons)
 2. Serial Mode
 3. Interrupt Mode
 4. CLI Mode
 
-### Button Mode(U-Boot is functional)
+### Keys Mode(U-Boot is functional)
 All ROMs we have released support eMMC erasure. Please follow the steps below to erase the data on the eMMC:
 
 1. Power on VIM.

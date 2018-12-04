@@ -1,7 +1,7 @@
 title: How To Access GPIO
 ---
 
-This guide is about how to access the GPIO on Android and Ubuntu.
+This guide is about how to access the GPIO using Android and Ubuntu.
 
 ### Preconditions
 The ROM must satisfy the following conditions:
