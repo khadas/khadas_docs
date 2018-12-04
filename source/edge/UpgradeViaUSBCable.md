@@ -1,4 +1,4 @@
-title: Upgrade Via a USB-C Cable
+title: Upgrade Using a USB-C Cable
 ---
 ## Upgrade Using Windows
 ### Preparations
