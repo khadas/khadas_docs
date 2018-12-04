@@ -1,55 +1,55 @@
-title: Create a Bootable SD Card
+title: Create A Bootable SD Card
 ---
 
-Well, what is a bootable SD card?
+What is a "Bootable SD-Card"?
 
-* Bootable SD card is a SD card install the bootable bootloader on it.
-* Bootable SD card is a boot disk and your target device boot from the SD card.
+* A "Bootable SD-Card" is an SD-Card that has a bootloader installed on it.
+* A "Bootable SD-Card" is also known as a "Boot-Disk", and your target device will be able to boot from the SD-Card, as though it were the onboard eMMC storage.
 
-And why we need a bootable SD card?
+Why do we need a "Bootable SD-Card"?
 
-* Bootable SD card can be used in the development, to speed up the process.
-* If you wanna release ROM for SD card, Bootable SD card can be used in the development, 
-* In some cases, when your target device can not boot and even fail to load the bootloader, you can use bootable SD card to do the recovery.
+* A "Bootable SD-Card can be used to speed up the development process.
+* If you want to release ROM for an SD-Card, the Bootable SD-Card can be used during your development process.
+* In some extreme cases, when your target-device is unable to boot from the eMMC (e.g. damaged bootloader), you can use a Bootable SD-Card to do your system/file recovery.
 
 
-### Steps to get started
-[Download](https://dl.khadas.com/Firmware/VIM1/U-boot/) or build u-boot to get the bootloader blob for SD card.
-No matter which way you take, you both need to keep in mind that there are different bootloader blobs for different boot disk/media:
+### Getting Started
+[Download VIM1 U-Boot](https://dl.khadas.com/Firmware/VIM1/U-boot/) or build U-Boot to get the bootloader blob for your SD-Card.
+No matter which method you choose, you need to keep in mind that there are different bootloader blobs for different boot disks/media:
 
-* u-boot blob `u-boot.bin.sd.bin` is built for SD card
-* u-boot blob `u-boot.bin` is built for eMMC storage
+* U-Boot blob `u-boot.bin.sd.bin` is built for SD-Cards
+* U-Boot blob `u-boot.bin` is built for eMMC Storage
 
-Pop the SD card into your PC, and make sure the disk is unmounted:
+Insert the SD-Card into your PC, and make sure the disk is unmounted:
 ```sh
 $ umount /dev/sdb1
 ```
 
-Format the SD card as Fat32:
+Format the SD-Card as Fat32:
 ```sh
 $ sudo mkfs.vfat /dev/sdb1 
 ```
 
-Run `dd` to write the u-boot blob into the first sector of SD card:
+Run `dd` to write the U-Boot blob into the first sector of SD-Card:
 ```sh
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=1 count=444
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=512 skip=1 seek=1
 ```
 
-Eject the SD card from PC:
+Eject the SD-Card from your PC:
 ```sh
 $ sudo eject /dev/sdb
 ```
 
-### Check it
+### Check Your Bootable SD-Card
 
-Ensure that you have done the right [setup of Serial to USB module](/vim1/SetupSerialTool.html).
+Ensure that you have done the correct setup of your [Serial to USB Module](/vim1/SetupSerialTool.html).
 
-In order to check the bootable SD card, you might also need to make sure that all the data stored in the onboard eMMC has been [wipe out](/vim1/HowtoEraseEMMC.html).
+In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been [completely erased](/vim1/HowtoEraseEMMC.html).
 
-Open a terminal type `kermit` command:
+Open a terminal and type the `kermit` command:
 ```
-gouwa@Wesion:~$ kermit
+$ kermit
 Connecting to /dev/ttyUSB0, speed 115200
  Escape character: Ctrl-\ (ASCII 28, FS): enabled
 Type the escape character followed by C to get back,
@@ -58,7 +58,7 @@ or followed by ? to see other options.
 
 ```
 
-Insert the bootable SD card you create aboved into your target device and power it on, the printing should be like:
+Insert the Bootable SD-Card you created previously, into your target device and power-on. The terminal should print this out:
 ```
 GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:0;READ:0;0.0;CHK:0;
 no sdio debug board detected 
