@@ -1,16 +1,16 @@
 title: How To Setup Bluetooth
 ---
 
-For desktop system you can setup bluetooth via GUI easily, so in this tutorial we just talk about how to setup bluetooth under command line. For Ubuntu/Debian server we can use `bluez` & `bluetoothctl` to setup bluetooth.
+For desktop systems you can setup Bluetooth via the GUI easily. In this guide, we'll just talk about how to setup Bluetooth via the command line. For Ubuntu/Debian servers we can use `bluez` & `bluetoothctl` to setup Bluetooth.
 
-### Enable bluetooth
+### Enable Bluetooth
 ```
-khadas@Khadas:~$ sudo hciconfig hci0 up
+$ sudo hciconfig hci0 up
 ```
 
-### Launch bluetoothctl and setup
+### Launch bluetoothctl and Setup
 ```
-khadas@Khadas:~$ sudo bluetoothctl
+$ sudo bluetoothctl
 [NEW] Controller 43:54:A2:00:1F:AC Khadas [default]
 Agent registered
 [bluetooth]#
@@ -25,7 +25,7 @@ Setup:
 [bluetooth]# scan on
 ```
 
-### Scan bluetooth peripherals
+### Scan for Bluetooth Peripherals
 ```
 [bluetooth]# scan on
 Discovery started
@@ -33,7 +33,7 @@ Discovery started
 [NEW] Device 46:04:25:5F:1E:8D 46-04-25-5F-1E-8D
 [NEW] Device 8C:EB:C6:E7:2E:33 Khadas
 ```
-### Show devides
+### Show Devices
 ```
 [bluetooth]# devices
 Device 46:04:25:5F:1E:8D 46-04-25-5F-1E-8D
@@ -43,11 +43,11 @@ Device 9C:FB:D5:0D:91:47 9C-FB-D5-0D-91-47
 [CHG] Device AC:83:F3:DD:D4:E1 Name: LibreELEC
 [CHG] Device AC:83:F3:DD:D4:E1 Alias: LibreELEC
 ```
-### Connect to device
+### Connect to a Device
 ```
 [bluetooth]# connect <device_addr>
 ```
-*Note: `device_addr` is the address of the device you want to connect to.*
+*Tip: `device_addr` is the address of the device you want to connect to.*
 
 ### Exit bluetoothctl
 ```
