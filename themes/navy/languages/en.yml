@@ -32,7 +32,7 @@ home_page:
 
 sidebar:
   vim1:
-    overview: Beginners FAQ
+    overview: Beginners Guide
     getting_started: Getting Started
     vim1_interfaces: VIM1 Interfaces
     enter_upgrade_mode: Enter Upgrade Mode
@@ -82,7 +82,7 @@ sidebar:
     thirdparty_imgae: Third Party
 
   vim2:
-    overview: Beginners FAQ
+    overview: Beginners Guide
     getting_started: Getting Started
     vim2_interfaces: VIM2 Interfaces
     enter_upgrade_mode: Enter Upgrade Mode
@@ -138,7 +138,7 @@ sidebar:
     thirdparty_imgae: Third Party
 
   edge:
-    overview: Beginners FAQ
+    overview: Beginners Guide
     getting_started: Getting Started
     edge_interfaces: Edge Interfaces
     captain_interfaces: Captain Interfaces
