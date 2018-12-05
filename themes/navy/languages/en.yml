@@ -32,12 +32,12 @@ home_page:
 
 sidebar:
   vim1:
-    overview: Overview
+    overview: Beginners Guide
     getting_started: Getting Started
     vim1_interfaces: VIM1 Interfaces
     enter_upgrade_mode: Enter Upgrade Mode
-    upgrade_via_usb: Upgrade Using A USB-C Cable
-    upgrade_via_tfcard: Upgrade Android Using An SD-Card
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using SD-Card
     install_libreelec: Install LibreELEC
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
@@ -47,30 +47,30 @@ sidebar:
     gpio_pinout: GPIO Pin-Outs
     development: Development
     install_toolchains: Install Toolchains
-    setup_serial: Setup Serial Debugging Tool
-    erase_emmc: How To Erase eMMC Storage
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
-    uboot: U-boot
+    uboot: U-Boot
     uboot_usage: U-boot Usage Guide
-    build_boot_logo_for_uboot: Build Boot Logo For U-boot
-    setup_tftp: Setup TFTP Server for U-Boot
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
     android: Android
-    download_android_source_code: Download the Android Source Code
+    download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
     setup_adb: Setup ADB
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
-    how_to_connect_wifi: How To Connect to Wi-Fi
-    how_to_setup_bluetooth: How To Setup Bluetooth
-    how_to_setup_watchdog: How To Setup Watchdog
-    add_chinese_support: Add Chinese Support
+    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    how_to_setup_watchdog: Setup Watchdog
+    add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     setup_golang: Setup Golang
-    enable_adb: How To Enable ADB
+    enable_adb: Enable ADB
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -82,27 +82,27 @@ sidebar:
     thirdparty_imgae: Third Party
 
   vim2:
-    overview: Overview
+    overview: Beginners Guide
     getting_started: Getting Started
     vim2_interfaces: VIM2 Interfaces
     enter_upgrade_mode: Enter Upgrade Mode
-    upgrade_via_usb: Upgrade Using a USB-C Cable
-    upgrade_via_tfcard: Upgrade Android Using An SD-Card
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using SD-Card
     install_libreelec: Install LibreELEC
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
     development: Development
     install_toolchains: Install Toolchains
-    setup_serial: Setup Serial Debugging Tool
-    erase_emmc: How To Erase eMMC Storage
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
     uboot: U-Boot
-    uboot_usage: U-boot Usage Guide
-    build_boot_logo_for_uboot: Build Boot Logo For U-boot
-    setup_tftp: Setup TFTP Server for U-Boot
-    load_image_via_tftp: Load Images with U-Boot via TFTP
+    uboot_usage: U-Boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot Using TFTP
     kbi_guidance: KBI Guide
     android: Android
     download_android_source_code: Download Android Source Code
@@ -113,15 +113,15 @@ sidebar:
     force_reset_features: Force Reset Remotely
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
-    how_to_connect_wifi: How To Connect to Wi-Fi
-    how_to_setup_bluetooth: How To Setup Bluetooth
-    how_to_setup_watchdog: How To Setup Watchdog
-    add_chinese_support: Add Chinese Support
+    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    how_to_setup_watchdog: Setup Watchdog
+    add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
-    how_to_setup_fan: How To Setup Cooling Fan
+    how_to_setup_fan: Add Cooling Fan
     setup_golang: Setup Golang
-    enable_adb: How To Enable ADB
+    enable_adb: Enable ADB
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -138,15 +138,15 @@ sidebar:
     thirdparty_imgae: Third Party
 
   edge:
-    overview: Overview
+    overview: Beginners Guide
     getting_started: Getting Started
     edge_interfaces: Edge Interfaces
     captain_interfaces: Captain Interfaces
     edgev_interfaces: Edge-V Interfaces
     edgecaptain_power_priority: Edge+Captain Power Priority
     enter_upgrade_mode: Enter Upgrade Mode
-    upgrade_via_usb: Upgrade Using A USB-C Cable
-    upgrade_via_tfcard: Upgrade Using An SD-Card
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Using SD-Card
     install_le_via_windows: Install LE Using Windows
     install_le_via_cli: Install LE Using CLI
     create_burning_card_via_cli: Create Burning Card Using CLI
@@ -158,15 +158,15 @@ sidebar:
     edgev_gpio_pinout: Edge V GPIO Pin-Outs
     development: Development
     install_toolchains: Install Toolchains
-    setup_serial: Setup Serial Debugging Tool
-    erase_emmc: How To Erase eMMC Storage
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     rk_docs: Rockchip Official Docs
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
-    uboot_usage: U-boot Usage Guide
-    build_boot_logo_for_uboot: Build Boot Logo For U-boot
-    setup_tftp: Setup TFTP Server for U-Boot
+    uboot_usage: U-Boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
     android: Android
     download_android_source_code: Download Android Source Code
@@ -175,15 +175,15 @@ sidebar:
     howto_use_wol: How To Use WOL
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
-    how_to_connect_wifi: How To Connect to Wi-Fi
-    how_to_setup_bluetooth: How To Setup Bluetooth
-    add_chinese_support: Add Chinese Support
-    how_to_setup_fan: How To Setup Cooling Fan
+    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    add_chinese_support: Chinese Support
+    how_to_setup_fan: Add Cooling Fan
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     build_packages_in_docker: Build Packages In Docker
     setup_golang: Setup Golang
-    enable_adb: How To Enable ADB
+    enable_adb: Enable ADB
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -197,7 +197,7 @@ sidebar:
 
   toneboard:
     getting_started: Getting Started
-    overview: Overview
+    overview: Beginners FAQ
     user_manual: User Manual
     how_to_upgrade_firmware: How To Upgrade Firmware
     hardware: Hardware
