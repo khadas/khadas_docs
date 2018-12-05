@@ -57,7 +57,8 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 **Learn More:**
 * [Upgrade Using USB-Cable](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)
 * [Enter Upgrade Mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)
-* [Ubuntu Distributions](https://docs.khadas.com/edge/FirmwareUbuntu.html)
+* [Android OS](https://docs.khadas.com/edge/FirmwareAndroid.html)
+* [Ubuntu OS](https://docs.khadas.com/edge/FirmwareUbuntu.html)
 
 # Watching Movies, Expanding Internal eMMC Storage
 These items are useful if you wish to use your Edge-V or Edge+Captain SBC as a media center, for storing/downloading large movie files. A microSDXC UHS-I card is expensive, but its also fast enough for 4K video playback. An external NVMe M.2 socket SSD will also be large enough to contain your entire media library.
