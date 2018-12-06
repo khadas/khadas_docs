@@ -10,6 +10,7 @@ These guides will be helpful for anyone learning how to use a Khadas SBC for the
 * [VIM1](https://docs.khadas.com/vim1/index.html)
 * [VIM2](https://docs.khadas.com/vim2/index.html)
 * [Edge](https://docs.khadas.com/edge/index.html)
+* [Toneboard](https://docs.khadas.com/toneboard/UserManual.html)
 
 **Tip:** In addition to reading our documentation, you'll find many helpful people on our [Khadas Forum](https://forum.khadas.com).
 
