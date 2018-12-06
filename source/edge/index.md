@@ -4,8 +4,10 @@ title: Edge Beginners Guide
 # How should I power-on my Edge SBC?
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-1. USB-C 24W Power Adapter (USB Power Delivery Specifications)
-2. USB-C to USB-C Cable
+1. Khadas USB-C 24W Power Adapter (USB Power Delivery Specifications)
+2. Khadas USB-C Cable (Male-to-Male)
+
+**Tip:** These items will be available for sale after our Indiegogo Campaign ends.
 
 **Learn More:**
 * [Edge+Captain Power Priority](https://docs.khadas.com/edge/EdgeCaptainPowerPriority.html)
