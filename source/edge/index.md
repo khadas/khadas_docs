@@ -22,7 +22,7 @@ These items are useful when you need to connect your Edge SBC to an external dis
 1. 4K HDMI 2.0 Cable
 2. HDMI-Compatible 1080P/4K Monitor w/ USB Type-C
 3. Wireless USB Keyboard + Mouse
-4. CeC-Compatible Remote Control
+4. CEC-Compatible Remote Control
 
 **Learn More:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
