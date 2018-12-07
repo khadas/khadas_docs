@@ -75,7 +75,7 @@ Although your VIM1/VIM2 SBC is compatible with various types of power supplies, 
 
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-1. USB-C 24W Power Adapter (USB Power Delivery Specifications)
+1. USB-C 45W Power Adapter (USB Power Delivery Specifications)
 2. USB-C to USB-C Cable
 
 **Learn More:**
