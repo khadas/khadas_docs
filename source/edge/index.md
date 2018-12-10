@@ -4,7 +4,7 @@ title: Edge Beginners Guide
 # How should I power-on my Edge SBC?
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-1. Khadas USB-C 24W Power Adapter (USB Power Delivery Specifications)
+1. Khadas USB-C 45W Power Adapter (USB Power Delivery Specifications)
 2. Khadas USB-C Cable (Male-to-Male)
 
 **Tip:** These items will be available for sale after our Indiegogo Campaign ends.
@@ -22,7 +22,7 @@ These items are useful when you need to connect your Edge SBC to an external dis
 1. 4K HDMI 2.0 Cable
 2. HDMI-Compatible 1080P/4K Monitor w/ USB Type-C
 3. Wireless USB Keyboard + Mouse
-4. CeC-Compatible Remote Control
+4. CEC-Compatible Remote Control
 
 **Learn More:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
