@@ -16,6 +16,11 @@ title: Khadas VIM2 Third Party Firmware
 * [Image download](https://yadi.sk/d/ysAgoIWT32M9Hn)
 * [Forum topic](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793)
 
+## CoreELEC
+**A lightweight OS for KODI.**
+* [Image download](https://github.com/CoreELEC/CoreELEC/releases)
+* [Forum](https://discourse.coreelec.org/)
+
 ## Volumio
 **Volumio image built by balbes150, thanks balbes150.**
 * [Image download](https://yadi.sk/d/xbesnjYG3PETk5)
