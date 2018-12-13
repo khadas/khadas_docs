@@ -91,6 +91,19 @@ Your SBC may also fail to power-on if the bootloader is damaged. In such cases, 
 * [Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
 * [Upgrade Using USB-C Cable](https://docs.khadas.com/vim2/UpgradeViaUSBCable.html)
 
+# Help! I turned on WOL, and now there's this blue light?
+
+![vim2 blue light](/images/vim2/wol_status.jpg)
+
+If you've turned on Wake-On-LAN (WOL) in your VIM2, it will no longer power-on automatically when you connect a USB-C cable to it. Instead, you'll merely see a blue light activate indicating that there is electrical power being supplied to your SBC.
+
+**Furthermore, your VIM2 will only power-on under these conditions:**
+1. You physically press the ```power``` button, after seeing the blue light.
+2. You send a magic packet to turn it on via LAN (Ethernet cable must be connected, and sending device must be on the same LAN as your VIM2)
+
+**Learn More:**
+* [Turn On WOL](https://docs.khadas.com/vim2/HowtoUseWol.html)
+
 # How to build my own Ubuntu/Debian images?
 
 Please refer to: [Build Ubuntu/Debian Images](/vim1/FenixScript.html).
