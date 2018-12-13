@@ -4,7 +4,7 @@ title: Edge Beginners Guide
 # Edge Power Supply
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-1. Khadas USB-C 45W Power Adapter (USB Power Delivery Specifications)
+1. Khadas USB-C 45W Power Adapter (USB Power Delivery)
 2. Khadas USB-C Cable (Male-to-Male)
 
 **Tip:** These items will be available for sale after our Indiegogo Campaign ends.
@@ -15,9 +15,7 @@ Although your Edge SBC is compatible with various types of power supplies, these
 * [Khadas Edge Accessories](https://www.khadas.com/edge-add-ons)
 
 # Displays & User Input
-These items are useful when you need to connect your Edge SBC to an external display + keyboard mouse + remote control, for use as a desktop computer or media center.
-
-*Edge series SBCs have USB-C display-port capability, which allows them to connect directly to Type-C enabled 4K monitors, to exchange power / data / video / audio over a single cable.*
+These items are useful when you need to connect your Edge SBC to an external display + keyboard mouse + remote control, for use as a desktop computer or media center. *Edge series SBCs have USB-C display-port capability, which allows them to connect directly to Type-C enabled 4K monitors, to exchange power / data / video / audio over a single cable.*
 
 1. 4K HDMI 2.0 Cable
 2. HDMI-Compatible 1080P/4K Monitor w/ USB Type-C
@@ -27,8 +25,8 @@ These items are useful when you need to connect your Edge SBC to an external dis
 **Learn More:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
-* [Amazon - Wireless Keyboard + Mouse](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 * [Amazon - LG 4K Monitor w/ USB Type-C](https://www.amazon.com/LG-27UD88-W-LED-Lit-Monitor-Type-C/dp/B01CDYB0QS/ref=sr_1_7?ie=UTF8&qid=1543993886&sr=8-7&keywords=usb-c+compatible+monitor)
+* [Amazon - Wireless Keyboard + Mouse](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
 # Making Bootable/Burning SD-Cards/Thumbdrives
 These items are useful when you want to upgrade your Edge SBC's operating system via SD-Card or Thumbdrive (Burning Cards). Or if you want to run operating systems that can only be run from external media (Booting Cards) like LibreELEC.
@@ -49,7 +47,7 @@ These items are useful when you want to upgrade your Edge SBC's operating system
 * **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing the `SD_USB` mark, as well as LibreELEC and CoreELEC.
 * In order to bootup from **SD/USB images**, you need Android (V180209 or newer) or Ubuntu (V180531 or newer) running on your eMMC with Multi-Boot activated.
 
-# Upgrading eMMC Operating System Using USB-Cable
+# Upgrading eMMC Operating System Using USB-C Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your Edge SBC's operating system stored in its eMMC storage. For example, changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.
 
 1. USB-A to USB-C Data Cable (Legacy Computers)
@@ -57,8 +55,10 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Using USB-Cable](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)
-* [Enter Upgrade Mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Using USB-C Cable](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)
+
+**Firmware Images:**
 * [Android OS](https://docs.khadas.com/edge/FirmwareAndroid.html)
 * [Ubuntu OS](https://docs.khadas.com/edge/FirmwareUbuntu.html)
 
@@ -69,13 +69,11 @@ These items are useful if you wish to use your Edge-V or Edge+Captain SBC as a m
 2. 64GB or larger, *microSDXC UHS-I* SD-Card
 
 **Learn More:**
-* [Amazon - Samsung 970 EVO SSD](https://www.amazon.com/Samsung-970-EVO-500GB-MZ-V7E500BW/dp/B07BN4NJ2J/ref=sr_1_3?ie=UTF8&qid=1543993490&sr=8-3&keywords=samsung+m.2+ssd)
+* [Amazon - Samsung 970 EVO NVMe SSD](https://www.amazon.com/Samsung-970-EVO-500GB-MZ-V7E500BW/dp/B07BN4NJ2J/ref=sr_1_3?ie=UTF8&qid=1543993490&sr=8-3&keywords=samsung+m.2+ssd)
 * [Amazon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
 # Software Development / Advanced Crash Recovery
-Extreme cases of crash-recovery will require you to use the MRegister to reset your Edge SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
-
-*Edge series SBCs are equipped with "Terry's Smart Tweezers" for crash recovery without the need for conductive metal tweezers, even when the bootloader is damaged.*
+Extreme cases of crash-recovery will require you to use the MRegister to reset your Edge SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues. *Edge series SBCs are equipped with "Terry's Smart Tweezers" for crash recovery without the need for conductive metal tweezers, even when the bootloader is damaged.*
 
 1. Your Fingers (For resetting a dead SBC via Terry's Smart Tweezers)
 2. Conductive Metal Tweezers (For resetting a dead SBC via MRegister)
