@@ -2,16 +2,16 @@ title: VIM2 Beginners Guide
 ---
 
 # VIM2 Power Supply
-Although your VIM2 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.*
+Although your VIM2 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
 1. 5V, 2000mA Power Adapter
 2. USB-A to USB-C Cable
 
 **Learn More:**
-* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim2/ExtraPowerInput.html)
-* [Khadas VIM Specifications](https://www.khadas.com/vim)
 * [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
+* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim2/ExtraPowerInput.html)
+* [Khadas VIM Specifications](https://www.khadas.com/vim)
 
 # Displays & User Input
 These items are useful when you need to connect your VIM2 SBC to an external display + keyboard mouse + remote control, for use as a desktop computer or media center.
@@ -19,7 +19,7 @@ These items are useful when you need to connect your VIM2 SBC to an external dis
 1. 4K HDMI 2.0 Cable
 2. HDMI-Compatible 1080P/4K Monitor
 3. Wireless USB Keyboard + Mouse
-4. CeC-Compatible Remote Control
+4. CEC-Compatible Remote Control
 
 **Learn More:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
@@ -45,7 +45,7 @@ These items are useful when you want to upgrade your VIM2 SBC's operating system
 * **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing the `SD_USB` mark, as well as LibreELEC and CoreELEC.
 * In order to bootup from **SD/USB images**, you need Android (V180209 or newer) or Ubuntu (V180531 or newer) running on your eMMC with Multi-Boot activated.
 
-# Upgrading eMMC Operating System Using USB-Cable
+# Upgrading eMMC Operating System Using USB-C Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your VIM2 SBC's operating system stored in its eMMC storage. For example, changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.
 
 1. USB-A to USB-C Data Cable (Legacy Computers)
@@ -53,8 +53,10 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Using USB-Cable](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html)
-* [Enter Upgrade Mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Firmware Using USB-C Cable](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)
+
+**Firmware Images:**
 * [Android OS](https://docs.khadas.com/vim2/FirmwareAndroid.html)
 * [Ubuntu OS](https://docs.khadas.com/vim2/FirmwareUbuntu.html)
 * [LibreELEC](https://docs.khadas.com/vim2/FirmwareLibreelec.html)
