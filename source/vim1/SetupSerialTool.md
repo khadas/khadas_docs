@@ -39,7 +39,7 @@ $ sudo usermod -a -G dialout $(whoami)
 
 **Add the following contents into ~/.kermrc to finish the setup:**
 
-Use nano, ```$ nano ~/.kermrc``` to create a new ```.kermrc``` file. Then copy-paste the contents below.
+Use nano, `$ nano ~/.kermrc` to create a new `.kermrc` file. Then copy-paste the contents below.
 ```
 set line /dev/ttyUSB0
 set speed 115200
@@ -79,7 +79,7 @@ TE: 116640
 ```
 /dev/ttyUSB0: Permission denied
 ```
-2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the ```reset``` button on your device once. You should see some print-out on your terminal, and then you'll have access to U-boot.
+2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, and then you'll have access to U-boot.
 
 
 
