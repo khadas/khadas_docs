@@ -2,7 +2,7 @@ title: Setup Serial Debugging Tool
 ---
 
 ### Preparation
-- [x] You need a "Serial Debugging Tool". In this guide, we will use a "USB to TTL Converter".
+- You need a "Serial Debugging Tool". In this guide, we will use a "USB to TTL Converter".
 
 ### Connections
 Follow these steps to make the correct connections:
@@ -32,12 +32,14 @@ Another photo for more details (`VCC` Pin is not necessary):
 $ sudo apt-get install ckermit
 ```
 
-**Add Access Permission**
+**Add Access Permission:**
 ```sh
 $ sudo usermod -a -G dialout $(whoami)
 ```
 
 **Add the following contents into ~/.kermrc to finish the setup:**
+
+Use nano, `$ nano ~/.kermrc` to create a new `.kermrc` file. Then copy-paste the contents below.
 ```
 set line /dev/ttyUSB0
 set speed 115200
@@ -52,6 +54,7 @@ set send pack 1000
 set window 5
 c
 ```
+After you're done copy-pasting, save and exit nano.
 
 **Run command `kermit` to launch C-Kermit**
 
@@ -70,10 +73,13 @@ TE: 116640
 ...
 
 ```
-*Tip: If the terminal output contains this line, you might need to check the previous step `Add Access Permission`.*
+**Tips:**
+
+1. If the terminal output contains this line, you might need to check the previous step `Add Access Permission`.
 ```
 /dev/ttyUSB0: Permission denied
 ```
+2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, and then you'll have access to U-boot.
 
 
 

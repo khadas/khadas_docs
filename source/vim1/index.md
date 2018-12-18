@@ -2,16 +2,16 @@ title: VIM1 Beginners Guide
 ---
 
 # VIM1 Power Supply
-Although your VIM1 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.*
+Although your VIM1 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
 1. 5V, 2000mA Power Adapter
 2. USB-A to USB-C Cable
 
 **Learn More:**
-* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim1/ExtraPowerInput.html)
-* [Khadas VIM Specifications](https://www.khadas.com/vim)
 * [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
+* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim1/ExtraPowerInput.html)
+* [Khadas VIM Specifications](https://www.khadas.com/vim)
 
 # Displays & User Input
 These items are useful when you need to connect your VIM1 SBC to an external display + keyboard mouse + remote control, for use as a desktop computer or media center.
@@ -53,8 +53,10 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Using USB-Cable](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html)
-* [Enter Upgrade Mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Firmware Using USB-C Cable](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html)
+* [Booting Into Upgrade Mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)
+
+**Firmware Images:**
 * [Android OS](https://docs.khadas.com/vim1/FirmwareAndroid.html)
 * [Ubuntu OS](https://docs.khadas.com/vim1/FirmwareUbuntu.html)
 * [LibreELEC](https://docs.khadas.com/vim1/FirmwareLibreelec.html)
