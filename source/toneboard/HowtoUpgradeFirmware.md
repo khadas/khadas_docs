@@ -91,9 +91,9 @@ Installing toneboard-burn-tool...
 Done!
 ```
 
-*NOTE: Root privilege required.*
+*Note: Root privilege required.*
 
-**Upgrading:**
+** Upgrading: **
 
 * Download the firmware files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them to somewhere like your `Home` folder.
 
@@ -120,6 +120,8 @@ Bus 001 Device 005: ID 20b1:0008 XMOS Ltd
 ```
 $ toneboard-burn-tool -i /path/to/firmware.bin
 ```
+*Note: Upgrading will stuck at `Waiting for device to restart and enter DFU mode` for about 20 seconds, please wait patiently.*
+
 
 * If upgrading was done successfully, you should see:
 
