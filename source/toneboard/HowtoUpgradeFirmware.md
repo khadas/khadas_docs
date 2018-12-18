@@ -1,7 +1,7 @@
 title: How To Upgrade Firmware
 ---
 
-# Upgrade On Windows:
+# Upgrade On Windows
 
 **Preparation:**
 
@@ -45,43 +45,90 @@ title: How To Upgrade Firmware
 
 ![Tone Board USB Upgrade Tool Finished And Exit](/images/toneboard/tb_fw_09.jpg)
 
-# Upgrade On Ubuntu:
+# Upgrade On Ubuntu
 
 **Preparation:**
 
-* Download the [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/UpgradeTool/toneboard_dfu_tool), and save it to your `Home` folder.
-* Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them to your `Home` folder.
-  * Recommend upgrading using `Khadas_Tone_Board_dfu-2018-1206-Upgrade-Firmware.zip` first.
-  * Followed by using `Khadas_Tone_Board_dfu_1207-Default maximum volume.zip`.
+```
+$ sudo apt-get update
+$ sudo apt-get install git libusb-1.0-0 libusb-1.0-0-dev
+```
+
+**Download Burning Tool:**
+
+ToneBoard DFU burning tool on Ubuntu is in [utils](https://github.com/khadas/utils) repository.
+
+```
+$ git clone https://github.com/khadas/utils
+```
+
+Or just pull it (if you have already cloned this repository).
+```
+$ cd /path/to/utils
+$ git pull
+```
+
+**Install Burning Tool:**
+You need to install USB rules and create some links.
+
+```
+$ cd /path/to/utils/toneboard-dfu-tool
+$ sudo ./INSTALL
+```
+
+You will see this print-out if it was successful.
+```
+[sudo] password for nick: 
+
+===============================================
+
+Host PC: Ubuntu 16.04
+
+===============================================
+
+Installing USB rules...
+Installing toneboard-burn-tool...
+Done!
+```
+
+*NOTE: Root privilege required.*
 
 **Upgrading:**
 
+* Download the firmware files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them to somewhere like your `Home` folder.
+
 * Open a `Terminal` window, and `cd` into your `Home` folder.
 
-```$ cd /home/*```
+```
+$ cd /home/*
+```
 
 * Connect your Tone Board using a USB-C data cable to your PC. Check that it is recognised by Ubuntu.
 
-```$ lsusb```
+```
+$ lsusb
+```
 
 * If your Tone Board is recognised, you should see this (else, restart Ubuntu).
 
-```Bus 001 Device 005: ID 20b1:0008 XMOS Ltd```
+```
+Bus 001 Device 005: ID 20b1:0008 XMOS Ltd
+```
 
-* Then change the permissions for `toneboard_dfu_tool` with `chmod`.
+* Finally, run the tool with your firmware file of choice (drag and drop your `.bin` file to replace `/path/to/firmware.bin`).
 
-```$ chmod +x toneboard_dfu_tool```
-
-* Finally, run the tool with your firmware `.img` file of choice (drag and drop your `.img` file to replace `/path/to/firmware.img`).
-
-```$ sudo ./toneboard_dfu_tool --download /path/to/firmware.img```
+```
+$ toneboard-burn-tool -i /path/to/firmware.bin
+```
 
 * If upgrading was done successfully, you should see:
 
 ```
+Upgrading ToneBoard firmware...
 VID = 0xbda, PID = 0x411
 VID = 0x1d6b, PID = 0x3
 VID = 0x1a86, PID = 0x7523
+VID = 0x2207, PID = 0x330c
 VID = 0x4ca, PID = 0xa8
 VID = 0x20b1, PID = 0x8
 ToneBoard DFU application started - Interface 2 claimed
@@ -89,10 +136,19 @@ Detaching device from application mode.
 Waiting for device to restart and enter DFU mode...
 VID = 0x20b1, PID = 0x8
 ... DFU firmware upgrade device opened
-... Downloading image (/home/nick/work/share/ToneBoard/linux-upgrade-tool/firmware.bin) to device
+... Downloading image (firmware.bin) to device
 ... Download complete
 ... Returning device to application mode
 ```
+
+**Uninstall Burning Tool:**
+```
+$ cd /path/to/utils/toneboard-dfu-tool 
+$ sudo ./UNINSTALL
+```
+
+# Upgrade On Mac OS
+TODO
 
 # See Also:
 
