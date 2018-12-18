@@ -6,7 +6,9 @@ title: How To Upgrade Firmware
 **Preparation:**
 
 * Download the [USB Upgrade Tool](https://bit.ly/2LnQZhD) and extract it.
-* Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. Recommend upgrading using `Khadas_Tone_Board_dfu-2018-1206-Upgrade-Firmware.zip`, followed by using `Khadas_Tone_Board_dfu_1207-Default maximum volume.zip`.
+* Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
+  * Recommend upgrading using `Khadas_Tone_Board_dfu-2018-1206-Upgrade-Firmware.zip` first.
+  * Followed by using `Khadas_Tone_Board_dfu_1207-Default maximum volume.zip`.
 * Connect your Tone Board to your PC using a USB-C data cable.
 
 ![Tone Board With USB-C Cable](/images/toneboard/tb_fw_01.jpg)
@@ -43,13 +45,54 @@ title: How To Upgrade Firmware
 
 ![Tone Board USB Upgrade Tool Finished And Exit](/images/toneboard/tb_fw_09.jpg)
 
-# Notes:
+# Upgrade On Ubuntu:
 
-* Upgrading your Tone Board's DFU firmware is only possible using Windows 10.
-* The upgrade tool is not available for Mac OS X and Linux OSes.
-* The upgrade tool does not work on Windows 7, due to an "unsigned-driver" issue.
-* If you’re on a Mac or Linux machine, you can use a Virtual Machine to run Windows 10 and upgrade from there.
-* If you’re running older versions of Windows, you may have to borrow your friend’s Windows 10 computer.
+**Preparation:**
+
+* Download the [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/UpgradeTool/toneboard_dfu_tool), and save it to your `Home` folder.
+* Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them to your `Home` folder.
+  * Recommend upgrading using `Khadas_Tone_Board_dfu-2018-1206-Upgrade-Firmware.zip` first.
+  * Followed by using `Khadas_Tone_Board_dfu_1207-Default maximum volume.zip`.
+
+**Upgrading:**
+
+* Open a `Terminal` window, and `cd` into your `Home` folder.
+
+```$ cd /home/*```
+
+* Connect your Tone Board using a USB-C data cable to your PC. Check that it is recognised by Ubuntu.
+
+```$ lsusb```
+
+* If your Tone Board is recognised, you should see this (else, restart Ubuntu).
+
+```Bus 001 Device 005: ID 20b1:0008 XMOS Ltd```
+
+* Then change the permissions for `toneboard_dfu_tool` with `chmod`.
+
+```$ chmod +x toneboard_dfu_tool```
+
+* Finally, run the tool with your firmware `.img` file of choice (drag and drop your `.img` file to replace `/path/to/firmware.img`).
+
+```$ sudo ./toneboard_dfu_tool --download /path/to/firmware.img```
+
+* If upgrading was done successfully, you should see:
+
+```
+VID = 0xbda, PID = 0x411
+VID = 0x1d6b, PID = 0x3
+VID = 0x1a86, PID = 0x7523
+VID = 0x4ca, PID = 0xa8
+VID = 0x20b1, PID = 0x8
+ToneBoard DFU application started - Interface 2 claimed
+Detaching device from application mode.
+Waiting for device to restart and enter DFU mode...
+VID = 0x20b1, PID = 0x8
+... DFU firmware upgrade device opened
+... Downloading image (/home/nick/work/share/ToneBoard/linux-upgrade-tool/firmware.bin) to device
+... Download complete
+... Returning device to application mode
+```
 
 # See Also:
 
