@@ -5,11 +5,14 @@ title: How To Upgrade Firmware
 
 **Preparation:**
 
+* Download the [USB Upgrade Tool](https://bit.ly/2LnQZhD) and extract it.
+* Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. Recommend upgrading using `Khadas_Tone_Board_dfu-2018-1206-Upgrade-Firmware.zip`, followed by using `Khadas_Tone_Board_dfu_1207-Default maximum volume.zip`.
 * Connect your Tone Board to your PC using a USB-C data cable.
 
 ![Tone Board With USB-C Cable](/images/toneboard/tb_fw_01.jpg)
 
-* Download the [USB Upgrade Tool](https://bit.ly/2LnQZhD) and extract it.
+**Installation:**
+
 * Run `setup_eval.exe` to install the tool to upgrade your Tone Board's firmware.
 
 ![Tone Board USB Upgrade Tool Installation](/images/toneboard/tb_fw_02.jpg)
@@ -18,19 +21,17 @@ title: How To Upgrade Firmware
 
 ![Disconnect and Reconnect Tone Board](/images/toneboard/tb_fw_03.jpg)
 
+**Upgrading:**
+
 * Open the `TUSBAudio Firmware Upgrade` tool, from your Start Menu.
 
 ![TUSBAudio Firmware Upgrade Tool](/images/toneboard/tb_fw_04.jpg)
 
-* It should show `Device Opened`, which means your Tone Board is connected and ready for upgrading.
+* It should show `Device Opened`, which means your Tone Board is connected and ready for upgrading. (If not, disconnect and reconnect your Tone Board)
 
 ![Tone Board Ready For Upgrade](/images/toneboard/tb_fw_05.jpg)
 
-* Download the firmware files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/), recommend upgrading using `Khadas_Tone_Board_dfu-2018-1206-Upgrade-Firmware.zip` followed by using `Khadas_Tone_Board_dfu_1207-Default maximum volume.zip`.
-
-![Tone Board Firmware Directory](/images/toneboard/tb_fw_06.jpg)
-
-* After extracting the firmware, click browse and load it into the tool.
+* Click `Browse` and load the firmware `.img` file you extracted, into the tool.
 
 ![Tone Board USB Upgrade Tool Browse For .img](/images/toneboard/tb_fw_07.jpg)
 
