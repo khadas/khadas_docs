@@ -147,8 +147,7 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Using SD-Card
-    install_le_via_windows: Install LE Using Windows
-    install_le_via_cli: Install LE Using CLI
+    install_libreelec: Install LibreELEC
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
     booting_card_vs_burning_card: Booting Card Vs Burning Card

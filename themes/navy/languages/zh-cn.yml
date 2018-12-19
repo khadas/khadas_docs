@@ -149,8 +149,7 @@ sidebar:
     edgecaptain_power_priority: Edge Captain电源优先级
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级
-    install_le_via_windows: 通过Windows PC安装LE
-    install_le_via_cli: 通过命令行安装LE
+    install_libreelec: 如何安装LibreELEC 
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
     booting_card_vs_burning_card: 启动卡与烧录卡的比较
