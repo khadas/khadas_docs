@@ -158,14 +158,13 @@ $ sudo ./UNINSTALL
 
 **Installation:**
 
-* Open a `Mac OS X Terminal` window, by pressing `Command-Space`, then type `terminal` into `Spotlight`. 
+* Open a `Mac OS X Terminal` window, by pressing `Command-Space` on your keyboard, then type `terminal` into `Spotlight`. 
 * From within `Terminal` type `cd your_custom_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`.
      * Replace `your_custom_directory` with the directory that you've unzipped the `USB Upgrade Tool` to.
 * Alternatively, navigate to `/sc_usb_audio/module_dfu/host/` from within the `Finder`.
      * Then type `cd`, followed by space, into `Terminal`.
      * And drag the `/xmos_dfu_osx/` folder into `Terminal`, and hit your `Enter` key.
-* Build the tool by typing: `make -f Makefile.OSX all`
-     * into your `Terminal` window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
+* Build the tool by typing: `make -f Makefile.OSX all` into your `Terminal` window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
 * If build was successful, you should see the following:
 ```
 make -f Makefile.OSX all
@@ -197,16 +196,31 @@ xmosdfu.cpp:417:3: warning: bool literal returned from 'main' [-Wmain]
 * Download a firmware image file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
 * Next connect your Tone Board to your Macbook / iMac via a USB-C data cable.
 * Then return to `Terminal` and type `./xmosdfu --download`, followed by space, and drag the `firmware.bin` you just downloaded, from the `Finder` into `Terminal`. Then hit `Enter`.
-* In my case, on `Mac OS X Mojave 10.14.2` the upgrade failed with the following output. Please try it on your own Mac computers, and let us know if it works in this [forum thread](https://forum.khadas.com/t/firmware-update/3283/10).
+* If successful, you should see the following `Terminal` output:
 ```
-./xmosdfu --download /Users/ossyx/Downloads/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin 
+./xmosdfu --download /Users/ossyx/Documents/Wesion/TONEBOARD\ FIRMWARE\ UPGRADE\ TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin 
+VID = 0x20b1, PID = 0x8
+XMOS DFU application started - Interface 2 claimed
+Detaching device from application mode.
+Waiting for device to restart and enter DFU mode...
+VID = 0x20b1, PID = 0x8
+... DFU firmware upgrade device opened
+... Downloading image (/Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin) to device
+... Download complete
+... Returning device to application mode
+```
+
+**Notes:**
+* If you get the following output when attempting to upgrade the firmware on Mac OS X:
+```
+./xmosdfu --download /Users/ossyx/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/Khadas_Tone_Board_dfu_1226.bin 
 dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib
-  Referenced from: /Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/./xmosdfu
-  Reason: no suitable image found.  Did find:
-	/Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/libusb-1.0.0.dylib: mach-o, but wrong architecture
-	/Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/libusb-1.0.0.dylib: stat() failed with errno=1
+  Referenced from: /Users/ossyx/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/./xmosdfu
+  Reason: image not found
 Abort trap: 6
 ```
+* It means you need to upgrade `libusb`. You can do this by typing `brew install libusb`.
+* To install homebrew on your Mac: [Homebrew](https://brew.sh/)
 
 # See Also:
 
