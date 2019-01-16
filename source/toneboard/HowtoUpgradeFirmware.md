@@ -5,10 +5,8 @@ title: How To Upgrade Firmware
 
 **Preparation:**
 
-* Download the [USB Upgrade Tool](https://bit.ly/2LnQZhD) and extract it.
+* Download the [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) and extract it.
 * Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
-  * Recommend upgrading using `Khadas_Tone_Board_dfu-2018-1206-Upgrade-Firmware.zip` first.
-  * Followed by using `Khadas_Tone_Board_dfu_1207-Default maximum volume.zip`.
 * Connect your Tone Board to your PC using a USB-C data cable.
 
 ![Tone Board With USB-C Cable](/images/toneboard/tb_fw_01.jpg)
@@ -149,8 +147,66 @@ $ cd /path/to/utils/toneboard-dfu-tool
 $ sudo ./UNINSTALL
 ```
 
-# Upgrade On Mac OS
-TODO
+# Upgrade On Mac OS (BETA)
+
+**Preparation:**
+
+* Visit our Github and download the [Mac OS X - USB Upgrade Tool](https://github.com/numbqq/USB-Audio-2.0-Software-v6.1).
+     * Click the green `Clone or download` button.
+     * Then press the `Download ZIP` option.
+     * Afterwards, extract the `.zip` file to a directory of your choosing.
+
+**Installation:**
+
+* Open a `Mac OS X Terminal` window, by pressing `Command-Space`, then type `terminal` into `Spotlight`. 
+* From within `Terminal` type `cd your_custom_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`.
+     * Replace `your_custom_directory` with the directory that you've unzipped the `USB Upgrade Tool` to.
+* Alternatively, navigate to `/sc_usb_audio/module_dfu/host/` from within the `Finder`.
+     * Then type `cd`, followed by space, into `Terminal`.
+     * And drag the `/xmos_dfu_osx/` folder into `Terminal`, and hit your `Enter` key.
+* Build the tool by typing: `make -f Makefile.OSX all`
+     * into your `Terminal` window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
+* If build was successful, you should see the following:
+```
+make -f Makefile.OSX all
+g++ -g -o xmosdfu xmosdfu.cpp -I. -IOSX libusb-1.0.0-x86_64.dylib -m64
+xmosdfu.cpp:96:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+xmosdfu.cpp:100:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+xmosdfu.cpp:104:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+xmosdfu.cpp:108:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+xmosdfu.cpp:256:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+xmosdfu.cpp:417:3: warning: bool literal returned from 'main' [-Wmain]
+  return true;
+  ^      ~~~~
+6 warnings generated.
+```
+* Finally, type `source setup.sh` into Terminal, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?version=&page=3).
+     * If successful, `Terminal` will be silent.
+
+**Upgrading:**
+* Download a firmware image file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
+* Next connect your Tone Board to your Macbook / iMac via a USB-C data cable.
+* Then return to `Terminal` and type `./xmosdfu --download`, followed by space, and drag the `firmware.bin` you just downloaded, from the `Finder` into `Terminal`. Then hit `Enter`.
+* In my case, on `Mac OS X Mojave 10.14.2` the upgrade failed with the following output. Please try it on your own Mac computers, and let us know if it works in this [forum thread](https://forum.khadas.com/t/firmware-update/3283/10).
+```
+./xmosdfu --download /Users/ossyx/Downloads/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin 
+dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib
+  Referenced from: /Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/./xmosdfu
+  Reason: no suitable image found.  Did find:
+	/Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/libusb-1.0.0.dylib: mach-o, but wrong architecture
+	/Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/libusb-1.0.0.dylib: stat() failed with errno=1
+Abort trap: 6
+```
 
 # See Also:
 
