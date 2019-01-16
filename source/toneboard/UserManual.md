@@ -54,7 +54,7 @@ Most software platforms have integrated Tone Board Drivers. Only Windows platfor
 * ### Windows
   We will use Windows 10 for this example. Windows 7 and XP are similar.
   *  Install XMOS Driver
-     * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/XMOS-Driver-V2.26.0-for-Normal-Use.zip).
+     * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
      * Decompress and run setup.exe to install the driver.
      * Install completed.
 ![Tone Board Windows Setup1](/images/toneboard/ToneboardWindowsSetup1.png)
