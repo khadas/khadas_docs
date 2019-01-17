@@ -6,7 +6,7 @@ title: How To Upgrade Firmware
 **Preparation:**
 
 * Download the [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) and extract it.
-* Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
+* Download the firmware `.bin` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
 * Connect your Tone Board to your PC using a USB-C data cable.
 
 ![Tone Board With USB-C Cable](/images/toneboard/tb_fw_01.jpg)
@@ -31,7 +31,7 @@ title: How To Upgrade Firmware
 
 ![Tone Board Ready For Upgrade](/images/toneboard/tb_fw_05.jpg)
 
-* Click `Browse` and load the firmware `.img` file you extracted, into the tool.
+* Click `Browse` and load the firmware `.bin` file you extracted, into the tool.
 
 ![Tone Board USB Upgrade Tool Browse For .img](/images/toneboard/tb_fw_07.jpg)
 
@@ -147,7 +147,7 @@ $ cd /path/to/utils/toneboard-dfu-tool
 $ sudo ./UNINSTALL
 ```
 
-# Upgrade On Mac OS (BETA)
+# Upgrade On Mac OS
 
 **Preparation:**
 
@@ -158,13 +158,13 @@ $ sudo ./UNINSTALL
 
 **Installation:**
 
-* Open a `Mac OS X Terminal` window, by pressing `Command-Space` on your keyboard, then type `terminal` into `Spotlight`. 
-* From within `Terminal` type `cd your_custom_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`.
-     * Replace `your_custom_directory` with the directory that you've unzipped the `USB Upgrade Tool` to.
-* Alternatively, navigate to `/sc_usb_audio/module_dfu/host/` from within the `Finder`.
-     * Then type `cd`, followed by space, into `Terminal`.
-     * And drag the `/xmos_dfu_osx/` folder into `Terminal`, and hit your `Enter` key.
-* Build the tool by typing: `make -f Makefile.OSX all` into your `Terminal` window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
+* Open a Terminal window, by pressing `Command-Space` on your keyboard, then type `terminal` into Spotlight. 
+* From within Terminal type `cd your_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`.
+     * Replace `your_directory` with the directory that you've unzipped the USB Upgrade Tool to.
+* Alternatively, navigate to `/sc_usb_audio/module_dfu/host/` from within the Finder.
+     * Then type `cd`, followed by `space`, into Terminal.
+     * And drag the `xmos_dfu_osx` folder into Terminal, and hit your `Enter` key.
+* Build the tool by typing: `make -f Makefile.OSX all` into your Terminal window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
 * If build was successful, you should see the following:
 ```
 make -f Makefile.OSX all
@@ -190,13 +190,13 @@ xmosdfu.cpp:417:3: warning: bool literal returned from 'main' [-Wmain]
 6 warnings generated.
 ```
 * Finally, type `source setup.sh` into Terminal, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?version=&page=3).
-     * If successful, `Terminal` will be silent.
+     * If successful, Terminal will be silent.
 
 **Upgrading:**
-* Download a firmware image file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
-* Next connect your Tone Board to your Macbook / iMac via a USB-C data cable.
-* Then return to `Terminal` and type `./xmosdfu --download`, followed by space, and drag the `firmware.bin` you just downloaded, from the `Finder` into `Terminal`. Then hit `Enter`.
-* If successful, you should see the following `Terminal` output:
+* Download a firmware file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
+* Connect your Tone Board to your Macbook / iMac via a USB-C data cable.
+* Return to Terminal and type `./xmosdfu --download`, followed by `space`, and drag the `firmware.bin` you just downloaded, from the Finder into Terminal. Then hit `Enter`.
+* If successful, you should see the following Terminal output:
 ```
 ./xmosdfu --download /Users/ossyx/Documents/Wesion/TONEBOARD\ FIRMWARE\ UPGRADE\ TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin 
 VID = 0x20b1, PID = 0x8
@@ -220,7 +220,8 @@ dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib
 Abort trap: 6
 ```
 * It means you need to upgrade `libusb`. You can do this by typing `brew install libusb`.
-* To install homebrew on your Mac: [Homebrew](https://brew.sh/)
+* If typing `brew install libusb` didn't work, it means that you need to install [HomeBrew](https://brew.sh/).
+* If HomeBrew fails, you need to install Xcode Command Line Tools, type `xcode-select --install` into Terminal.
 
 # See Also:
 
