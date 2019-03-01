@@ -1,6 +1,17 @@
 title: Tone Board Beginners FAQ
 ---
 
+# Driver Installation On Mac OS X:
+
+* No driver installation is necessary.
+
+# Driver Installation On Windows:
+
+* If there is no sound is coming from your Tone Board, you may need to install a driver.
+
+**Download:**
+[Thesycon-Stereo-USB-Audio-Driver-V224](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)
+
 # Select Audio Device On Mac OS X:
 
 * The audio output controls for your Mac are in System Preferences > Sound.
