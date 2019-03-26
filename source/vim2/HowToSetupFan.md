@@ -4,9 +4,9 @@ title: How To Setup A Cooling Fan
 This guide is about how to setup a cooling fan in Ubuntu.
 
 ### Preparations
-* Ubuntu version must be `V20190320` or newer
+* Ubuntu version must be `V20190319` or newer
 
-For Ubuntu `V20190320`, the cooling fan is enabled by default.
+For Ubuntu `V20190319`, the cooling fan is enabled by default.
 
 The cooling fan has 5 working modes:
 * `off` : Cooling fan is disabled.
