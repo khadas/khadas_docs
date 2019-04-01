@@ -71,7 +71,7 @@ Extreme cases of crash-recovery will require you to use the MRegister to reset y
 2. USB Serial Debug Tool (For diagnosing software/hardware issues)
 
 **Learn More:**
-* [MRegister Upgrade Mode](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)
+* [MRegister Upgrade Mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
