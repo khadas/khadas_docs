@@ -3,7 +3,8 @@ title: 硬件资料
 
 这篇文档是Khadas VIM2相关的硬件资料，包括：原理图、PCB和数据手册等。
 
-[Khadas VIM2 Specifications](https://dl.khadas.com/Hardware/VIM2/Specs/VIM2_Specs.pdf)
+[Khadas VIM2 Specifications (V12)](https://dl.khadas.com/Hardware/VIM2/Specs/VIM2_Specs.pdf)
+[Khadas VIM2 Specifications (V14)](https://dl.khadas.com/Hardware/VIM2/Specs/Khadas_VIM2_Specs_190403.pdf)
 [Khadas VIM2 Schematic V12](https://dl.khadas.com/Hardware/VIM2/Schematic/VIM2_V12_Sch.pdf)
 [Khadas VIM2 PCB Drawing V12](https://dl.khadas.com/Hardware/VIM2/Schematic/VIM2_V12_Silk.pdf)
 [Khadas VIM2 Schematic V13](https://dl.khadas.com/Hardware/VIM2/Schematic/VIM2_V13_Sch.pdf)
