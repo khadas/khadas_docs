@@ -1,6 +1,22 @@
 title: VIM2 Beginners Guide
 ---
 
+# VIM2 v1.4 What's New?
+Khadas has recently upgraded their VIM2 to v1.4 which features several improvements, such as the addition of XPWR pads for an external power switch, as well as a larger 16MB SPI-flash.
+
+It also has had several components moved / upgraded to accomodate a quieter cooling system:
+* [New VIM Heatsink](https://www.khadas.com/product-page/new-vim-heatsink)
+* [3705 Cooling Fan](https://www.khadas.com/product-page/3705-cooling-fan)
+
+It is backwards-compatible with the DIY Case, vTV Board and Khadas Tone Board, and supports several new ROMs such as [Ubuntu 18.04](https://docs.khadas.com/vim2/FirmwareUbuntu.html) and [Google Fuchsia](https://fuchsia.googlesource.com/zircon/+/master/docs/targets/khadas-vim.md).
+
+**Learn More:**
+* [Khadas Website - VIM2 v1.4 Description](https://www.khadas.com/vim)
+* [Khadas Website - VIM2 v1.4 Accessories](https://www.khadas.com/vim-add-ons)
+* [Khadas Shop - VIM2 v1.4 Page](https://www.khadas.com/product-page/new-vim2)
+* [Khadas Files - VIM2 v1.4 Specifications Sheet](https://dl.khadas.com/Hardware/VIM2/Specs/Khadas_VIM2_Specs_190403.pdf)
+* [Distributor Guide - What's New In VIM2 v1.4](https://dl.khadas.com/Hardware/VIM2/Distributor/VIM2_v1.4_Whats_New.pdf)
+
 # VIM2 Power Supply
 Although your VIM2 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
