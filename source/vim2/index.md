@@ -8,7 +8,7 @@ It also has had several components moved / upgraded to accomodate a quieter cool
 * [New VIM Heatsink](https://www.khadas.com/product-page/new-vim-heatsink)
 * [3705 Cooling Fan](https://www.khadas.com/product-page/3705-cooling-fan)
 
-It is backward-compatible with the DIY Case, vTV Board and Khadas Tone Board, and supports several new ROMs such as [Ubuntu 18.04](https://docs.khadas.com/vim2/FirmwareUbuntu.html).
+It is backwards-compatible with the DIY Case, vTV Board and Khadas Tone Board, and supports several new ROMs such as [Ubuntu 18.04](https://docs.khadas.com/vim2/FirmwareUbuntu.html) and [Google Fuchsia](https://fuchsia.googlesource.com/zircon/+/master/docs/targets/khadas-vim.md).
 
 **Learn More:**
 * [Khadas Website - VIM2 v1.4 Description](https://www.khadas.com/vim)
