@@ -193,6 +193,7 @@ sidebar:
     dualos_image: Dual OS
     buildroot_image: Buildroot
     uboot_image: U-Boot
+    thirdparty_imgae: Third Party
 
   toneboard:
     getting_started: Getting Started

@@ -1,30 +1,16 @@
-title: Khadas VIM1 Third Party Firmware
+title: Khadas Edge Third Party Firmware
 ---
 
 # 3rd party
 ## AndroidTV
-**AndroidTV image built by SuperCeleron, thanks SuperCeleron.**
-* [Thanks SuperCeleron](http://forum.khadas.com/search?q=SCV)
 
 ## Armbian
 **Armbian Ubuntu/Debian image built by balbes150, thanks balbes150.**
-* [Image download](https://yadi.sk/d/pHxaRAs-tZiei)
-* [Forum topic](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825)
-
-## LibreELEC
-**LibreELEC image built by balbes150, thanks balbes150.**
-* [Image download](https://yadi.sk/d/ysAgoIWT32M9Hn)
-* [Forum topic](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793)
+* [Image download](https://yadi.sk/d/ie_dx5x_w2xUIQ/LINUX/ARMBIAN)
+* [Forum topic](https://forum.khadas.com/t/armbian-for-khadas-edge-rk3399/3168)
 
 ## Lakka
-* [Lakka-S905.arm-2.1-emmc](http://www.mediafire.com/file/mmychu9z6445mfg/Lakka-S905.arm-2.1-emmc.img.7z/file)
 
 ## Volumio
-**Volumio image built by balbes150, thanks balbes150.**
-* [Image download](https://yadi.sk/d/xbesnjYG3PETk5)
-* [Forum topic](http://forum.khadas.com/t/volumio-for-khadas/1437)
 
 ## ArchLinux
-**ArchLinux image built by balbes150, thanks balbes150.**
-* [Image download](https://yadi.sk/d/BbH_N6HFzvjhm)
-* [Forum topic](http://forum.khadas.com/t/archlinux-kodi-sd-usb-emmc/1152/1)

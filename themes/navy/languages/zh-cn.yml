@@ -193,6 +193,7 @@ sidebar:
     dualos_image: DualOS
     buildroot_image: Buildroot
     uboot_image: U-boot
+    thirdparty_imgae: 第三方固件
 
   toneboard:
     getting_started: 开始使用
