@@ -1,6 +1,7 @@
 menu:
   vim1: VIM1
   vim2: VIM2
+  vim3: VIM3
   edge: Edge
   tone_board: ToneBoard
   firmware: 固件下载
@@ -78,7 +79,7 @@ sidebar:
     libreelec_image: LibreELEC
     uboot_image: Uboot
     dualos_image: DualOS
-    thirdparty_imgae: 第三方固件
+    thirdparty_image: 第三方固件
 
   vim2:
     getting_started: 开始使用
@@ -137,7 +138,57 @@ sidebar:
     libreelec_image: LibreELEC
     uboot_image: Uboot
     dualos_image: DualOS
-    thirdparty_imgae: 第三方固件
+    thirdparty_image: 第三方固件
+
+  vim3:
+    getting_started: 开始使用
+    overview: 概述
+    vim3_interfaces: VIM3接口描述
+    enter_upgrade_mode: 进入升级模式
+    upgrade_via_usb: 通过USB升级
+    upgrade_via_tfcard: 通过TF卡升级安卓
+    install_libreelec: 如何安装LibreELEC
+    create_burning_card_via_cli: 通过命令行创建烧录卡
+    create_booting_card: 通过命令行创建启动卡
+    booting_card_vs_burning_card: 启动卡与烧录卡的比较
+    boot_from_ext_image: 从外部媒体介质启动系统
+    extra_power_input: 外部电源供电
+    gpio_pinout: GPIO 管脚映射
+    development: 开发
+    install_toolchains: 安装交叉编译器
+    setup_serial: 设置串口调试工具
+    erase_emmc: 如何擦除eMMC存储器
+    how_to_access_gpio: 如何访问GPIO
+    how_to_access_i2c: 如何使用I2C接口
+    uboot: U-boot
+    uboot_usage: U-boot使用说明
+    build_boot_logo_for_uboot: 编译U-boot启动Logo
+    setup_tftp: 搭建TFTP服务器
+    load_image_via_tftp: 通过TFTP下载镜像
+    android: Android
+    download_android_source_code: 下载安卓源码
+    build_android: 编译安卓源码
+    package_update_image: 快速打包安卓固件
+    setup_adb: 设置ADB
+    linux: Linux
+    fenix_script: 编译Ubuntu/Debian固件
+    how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
+    how_to_setup_watchdog: 如何设置看门狗
+    add_chinese_support: 增加中文支持
+    install_tensorflow: 安装TensorFlow
+    install_docker: 安装Docker
+    setup_golang: 搭建GO语言环境
+    enable_adb: 如何使能ADB
+    hardware: 硬件资料
+    download: 下载
+    firmware: 固件下载
+    android_image: Android
+    ubuntu_image: Ubuntu
+    libreelec_image: LibreELEC
+    uboot_image: Uboot
+    dualos_image: DualOS
+    thirdparty_image: 第三方固件
 
   edge:
     getting_started: 开始使用
@@ -193,7 +244,7 @@ sidebar:
     dualos_image: DualOS
     buildroot_image: Buildroot
     uboot_image: U-boot
-    thirdparty_imgae: 第三方固件
+    thirdparty_image: 第三方固件
 
   toneboard:
     getting_started: 开始使用

@@ -46,7 +46,7 @@ vim1:
     libreelec_image: FirmwareLibreelec.html
     dualos_image: FirmwareDualos.html
     uboot_image: FirmwareUboot.html
-    thirdparty_imgae: FirmwareThirdparty.html
+    thirdparty_image: FirmwareThirdparty.html
 
 vim2:
   getting_started:
@@ -102,7 +102,57 @@ vim2:
     libreelec_image: FirmwareLibreelec.html
     dualos_image: FirmwareDualos.html
     uboot_image: FirmwareUboot.html
-    thirdparty_imgae: FirmwareThirdparty.html
+    thirdparty_image: FirmwareThirdparty.html
+
+vim3:
+  getting_started:
+    overview: index.html
+    vim3_interfaces: Vim3Interfaces.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    upgrade_via_usb: UpgradeViaUSBCable.html
+    upgrade_via_tfcard: UpgradeViaTFBurningCard.html
+    install_libreelec: InstallLibreELEC.html
+    create_burning_card_via_cli: CreateBurnCardViaCLI.html
+    create_booting_card: CreateBootableSDCard.html
+    booting_card_vs_burning_card: BootingCardVsBurningCard.html
+    boot_from_ext_image: BootFromExtMedia.html
+    extra_power_input: ExtraPowerInput.html
+    gpio_pinout: GPIOPinout.html
+  development:
+    install_toolchains: InstallToolchains.html
+    setup_serial: SetupSerialTool.html
+    erase_emmc: HowtoEraseEMMC.html
+    how_to_access_gpio: HowToAccessGpio.html
+    how_to_access_i2c: HowToAccessI2c.html
+  uboot:
+    uboot_usage: UBootUsage.html
+    build_boot_logo_for_uboot: BuildBootLogoForUboot.html
+    setup_tftp: SetupTFTPServer.html
+    load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
+  android:
+    download_android_source_code: DownloadAndroidSourceCode.html
+    build_android: BuildAndroid.html
+    package_update_image: FastPackageUpdateImage.html
+    setup_adb: SetupADB.html
+  linux:
+    fenix_script: FenixScript.html
+    how_to_connect_wifi: HowToConnectWifi.html
+    how_to_setup_bluetooth: HowToSetupBluetooth.html
+    how_to_setup_watchdog: HowToSetupWatchdog.html
+    add_chinese_support: AddChineseSupport.html
+    install_tensorflow: InstallTensorFlow.html
+    install_docker: InstallDocker.html
+    setup_golang: SetupGolang.html
+    enable_adb: HowtoEnableAdb.html
+  hardware:
+    download: HardwareDocs.html
+  firmware:
+    android_image: FirmwareAndroid.html
+    ubuntu_image: FirmwareUbuntu.html
+    libreelec_image: FirmwareLibreelec.html
+    dualos_image: FirmwareDualos.html
+    uboot_image: FirmwareUboot.html
+    thirdparty_image: FirmwareThirdparty.html
 
 edge:
   getting_started:
@@ -151,7 +201,7 @@ edge:
     dualos_image: FirmwareDualos.html
     buildroot_image: FirmwareBuildroot.html
     uboot_image: FirmwareUboot.html
-    thirdparty_imgae: FirmwareThirdparty.html
+    thirdparty_image: FirmwareThirdparty.html
 
 toneboard:
   getting_started:
