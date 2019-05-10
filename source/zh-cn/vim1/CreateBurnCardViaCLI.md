@@ -34,14 +34,14 @@ $ sudo mkfs.vfat /dev/sdb1
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=1 count=444
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=512 skip=1 seek=1
 ```
-_说明：编译出来的U-Boot文件，其中“u-boot.bin.sd.bin”是用于制作 TF卡的，而“u-boot.bin”是用于eMMC启动的。_
+*说明：编译出来的U-Boot文件，其中“u-boot.bin.sd.bin”是用于制作 TF卡的，而“u-boot.bin”是用于eMMC启动的。你可以在[这里](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini)找到。*
 
 **复制系统固件到TF卡上:**
 重新拔插一下TF卡并运行以下命令:
 ```
 $ cp -a aml_sdc_burn.ini Vim_Marshmallow_160928/update.img /media/gouwa/9CE9-3938/
 ```
- _说明:"aml_sdc_burn.ini"是u-boot烧录/下载固件到eMMC的配置文件 。_
+*说明:"aml_sdc_burn.ini"是u-boot烧录/下载固件到eMMC的配置文件 。*
 
 **安全移除TF卡:**
 ```
