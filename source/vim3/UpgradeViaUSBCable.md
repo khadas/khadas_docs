@@ -92,5 +92,45 @@ There are two commands that be used to burn image: `burn-tool` and `aml-burn-too
 * General command `burn-tool`:
 
 ```
-$burn-tool -v aml -i /path/to/image
+$burn-tool -v aml -b VIM3 -i /path/to/image
 ```
+
+* Amlogic command `aml-burn-tool`:
+
+```
+$ aml-burn-tool -b VIM3 -i /path/to/image
+```
+
+You will see these teminal logs if successful.
+```
+Rebooting the board ........[OK]
+Unpacking image [OK]
+Initializing ddr ........[OK]
+Running u-boot ........[OK]
+Create partitions [OK]
+Writing device tree [OK]
+Writing bootloader [OK]
+Wiping  data partition [OK]
+Wiping  cache partition [OK]
+Writing boot partition [OK]
+Writing data partition [OK]
+Writing logo partition [OK]
+Writing system partition [OK]
+Do you want to reset the board? y/n [n]? y
+Resetting board [OK]
+
+```
+For more information please refer to [docs](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs).
+
+### Uninstall Burning Tool
+```
+$cd /path/to/utils
+$sudo ./UNINSTALL
+```
+
+**NOTE:** This burning tool has been verified to work on **Ubuntu 16.04**.
+
+### See Also
+* [Upgrade Via An SD-Card](/vim3/UpgradeViaTFBurningCard.html)
+* [How To Boot Into Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html)
+
