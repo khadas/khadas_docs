@@ -7,6 +7,7 @@ title: How To Boot Into Upgrade Mode
 * 串口模式
 * Linux/Android命令行模式
 * TST模式（推荐使用）
+* MRegister模式
 
 ### 按键模式（确保u-boot正常运行）
 1. 给VIM3上电
@@ -22,12 +23,6 @@ title: How To Boot Into Upgrade Mode
 
 ```
 kvim3# run update
-```
-
-5. 或者执行`run mskrom`命令进入mskrom模式。
-
-```
-kvim3# run maskrom
 ```
 
 ### Android/Linux命令行模式
@@ -50,4 +45,8 @@ $ su
 2. 在2S内连续按3次`Func`按键后松开。
 3. 你会看到系统电源指示灯(蓝色)闪烁,3s后电源指示灯(蓝色)会熄灭，表明板子已经进入升级模式。
 
+### MRegister 模式(Maskrom 模式)
+1. 给VIM3上电
+2. 使用镊子短接`M`处的两个焊盘触点不松开
+3. 短按复位按键进入升级模式
 

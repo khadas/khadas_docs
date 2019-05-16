@@ -7,6 +7,7 @@ There are 4 ways to boot into Upgrade Mode:
 2. Serial Mode
 3. Linux/Android Command Line
 4. TST Mode (Recommended)
+5. MRegister Mode
 
 ### Keys Mode (U-Boot is Running Normally)
 1. Power on VIM3.
@@ -23,11 +24,6 @@ There are 4 ways to boot into Upgrade Mode:
 ```
 kvim3# run update
 ```
-5. Type `run maskrom` on the terminal of U-Boot as below, and you will enter Maskrom Mode.
-
-```
-kvim3# run maskrom
-```
 
 ### Android/Linux Command Line
 1. Refer to this [guide](/vim3/SetupSerialTool.html) to setup your serial tool for VIM3.
@@ -39,3 +35,9 @@ kvim3# run maskrom
 1. Power-on VIM3.
 2. Quickly press the `Function` key 3 times in 2 seconds, then release the key.
 3. You will see the Power-LED (Blue) blink for about 3 seconds. After the Power-LED (Blue) turns OFF, this indicates that the board is in Upgrade Mode (Maskrom Mode).
+
+### MRegister Mode
+1. Power on VIM3.
+2. Use a tweezer to short-circuit the two pads of the `M` register, and without releasing...
+3. Short press the `Reset` key and then release it, to boot into upgroup mode
+
