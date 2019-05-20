@@ -5,40 +5,24 @@ title: How To Boot Into Upgrade Mode
 
 * 按键模式
 * 串口模式
-* Linux/Android命令行模式
 * TST模式（推荐使用）
 * MRegister模式
 
 ### 按键模式（确保u-boot正常运行）
 1. 给VIM3上电
-2. 长按`Func`按键不松开
+2. 长按`POWER`按键不松开
 3. 短按`Reset`按键。
-4. 数2-3秒后松开`Func`按键会进入升级模式(loader模式),进入升级模式后系统led会点亮。
+4. 数2-3秒后松开`POWER`按键会进入升级模式，进入升级模式后系统led会点亮。
 
 ### 串口模式（针对开发者）
 1. 参考[文档](/zh-cn/vim3/SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
 3. 系统启动时按任意按键进入串口命令行模式。
-4. 执行`run update`命令进入loader模式，进入loader模式后系统led灯会点亮。
+4. 执行`run update`命令进入升级模式，进入升级模式后系统led灯会点亮。
 
 ```
 kvim3# run update
 ```
-
-### Android/Linux命令行模式
-1. 参考[文档](/zh-cn/vim3/SetupSerialTool.html)设置串口。
-2. 确保串口连线正常。
-3. 启动进入系统命令行。
-4. linux执行，
-```
-$ sudo reboot loader 
-```
-安卓执行，
-```
-$ su
-# reboot loader
-```
-系统会重启进入升级模式(loader模式),进入升级模式后系统led灯会点亮。
 
 ### TST模式(推荐使用)
 1. 给VIM3上电。
