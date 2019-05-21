@@ -159,6 +159,7 @@ sidebar:
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
     uboot: U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
     uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
     setup_tftp: TFTP Server for U-Boot
