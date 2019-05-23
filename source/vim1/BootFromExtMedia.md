@@ -1,7 +1,7 @@
 title: Boot Images from External Media
 ---
 
-There are many images that are designed to run from an SD Card or Thumbdrive (U-Disk). For example, [Volumio](https://forum.khadas.com/t/volumio-for-khadas/1437), [CoreELEC](https://coreelec.org/), [LibreELEC](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793), [Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825) and [Khadas SD images](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/). This tutorial is about how to boot these images.
+There are many images that are designed to run from an SD Card or Thumbdrive (U-Disk). For example, [Volumio](https://forum.khadas.com/t/volumio-for-khadas/1437), [CoreELEC](https://coreelec.org/), [LibreELEC](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793), [Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825) and Khadas SD images([VIM1](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/)). This tutorial is about how to boot these images.
 
 In order to boot images from external media you must make sure:
 * Android OS is installed on the eMMC
@@ -13,7 +13,9 @@ For different images you may need different Android versions.
 
 ### Step 1. Clone image to SD-Card or Thumbdrive (U-Disk)
 
-* Download [Etcher](https://www.balena.io/etcher/), it will clone the image into your SD Card or Thumbdrive. It's got a user-friendly GUI for beginners, and is compatible with Mac, Windows and Linux.
+* Download [Etcher](https://www.balena.io/etcher/), it will clone the image into your SD Card or Thumbdrive. It's got a user-friendly GUI for beginners, and is compatible with Mac, Windows and Linux.After decompression, it is an executable file. Select firmware and it will automatically identify your USB device.
+
+![Howto Use Etcher](/images/vim3/HowtoUseEtcher.png)
 
 * Else, use `dd` on Ubuntu:
 
@@ -36,17 +38,20 @@ $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 
 * For VIM1: Copy `kvim.dtb`, `kvim_linux.dtb` or `meson-gxl-s905x-khadas-vim.dtb` to `/boot`, and rename it to `dtb.img`.
 * For VIM2: Copy `kvim2.dtb`, `kvim2_linux.dtb` or `meson-gxm-khadas-vim2.dtb` to `/boot`, and rename it to `dtb.img`.
- 
-* Unplug your SD card from your computer, then plug it into your Khadas VIM1, VIM2, or Edge.
+* For VIM3: Copy `kvim3_linux.dtb` or `kvim3l_linux.dtb` to `/boot`, and rename it to `dtb.img`.
+
+* Unplug your SD card from your computer, then plug it into your Khadas VIM1, VIM2, VIM3 or Edge.
+
+**note:if you board is `VIM3`,please choose `kvim3_linux.dtb`, or you board is `VIM3 net`,please choose `kvim3l.dtb`.**
 
 ### Step 3. Boot VIM from SD Card
 There are 2 ways to boot from the SD Card:
 
-1). Via [Keys mode (Side-Buttons).](/vim1/HowtoBootIntoUpgradeMode.html)
+1). Via [Keys mode (Side-Buttons)](/vim1/HowtoBootIntoUpgradeMode.html)
 
 2). Activate Multi-Boot via Android.
 
-* Enter `Settings>About Device->System->Updates`.
+* Enter `Settings->About Device->System->Updates`.
 * Click select and choose `aml_autosript.zip`.
 * Click update, then the system will reboot and boot from the external media image.
 
