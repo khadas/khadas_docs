@@ -1,12 +1,14 @@
-title: KBI Guidance for Khadas VIM2
+title: KBI Guidance for Khadas VIM2/VIM3/Edge
 ---
 
 KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to fulfil the following purposes:
 * Manage the programmable MCU
 * Carry out low level hardware management
-* Let developers use all the features of Khadas VIM2
+* Let developers use all the features of Khadas VIM2/VIM2/Edge
 
-This document describes how to setup, configure and use the KBI. As the KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to [setup the Serial Debugging Tool](/vim1/SetupSerialTool.html).
+This document describes how to setup, configure and use the KBI. As the KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup the Serial Debugging Tool([VIM2](/vim1/SetupSerialTool.html)/[VIM3](/vim1/SetupSerialTool.html)/[Edge](/edge/SetupSerialTool.html)).
+
+*Note: This document take VIM2 as en example, VIM3 and Edge are similar to it.*
 
 To continue the reading, make sure you have booted into the U-Boot:
 ```
@@ -49,40 +51,44 @@ kbi trigger [wol|rtc|ir|dcin|key|gpio] r - read mode of a boot trigger
 kvim2# kbi version
 version: 03
 ```
-The MCU firmware can be upgrade by [TBD]().
 
-**2) Get the device serial number:**
+**2) Initialize the KBI:**
+```
+kvim2# kbi init
+```
+
+**3) Get the device serial number:**
 ```
 kvim2# kbi usid
 usid: 000000
 ```
 
-**3) Get ADC value:**
+**4) Get ADC value:**
 ```
 kvim2# kbi adc
 adc: 0x236
 ```
 *The ADC value can be used to distinguish different hardware modules.*
 
-**4) Power off device:**
+**5) Power off device:**
 ```
 kvim2# kbi poweroff
 ```
 
-**5) Get the Ethernet MAC address:**
+**6) Get the Ethernet MAC address:**
 ```
 kvim2# kbi ethmac
 mac address: 98:aa:fc:60:44:c0
 ```
 
-**6) Setup the blue LED:**
+**7) Setup the blue LED:**
 The blue LED has different working modes like `Always Off`, `Always on`, `Breathe` and `Heartbeat` to indicate different statuses.
 
 The blue LED is controlled by the MCU, and the MCU does the system power management for VIM2. The white LED is controlled by the CPU; therefore the blue LED still works even after you have powered off your VIM2.
 
 The KBI can be used to program the blue LED for two different statuses:
-* system off / idle: power off status, the CPU/S912 is powered down.
-* system on / working: power on status, the CPU/S912 is in working mode.
+* system off / idle: power off status, the CPU is powered down.
+* system on / working: power on status, the CPU is in working mode.
 
 Examples:
 
@@ -108,14 +114,14 @@ You can also change the setting for "system on / working status":
 kvim2# kbi led systemon w breathe
 ```
 
-**7) Boot Mode**
+**8) Boot Mode**
 VIM2 comes with both SPI Flash and eMMC Storage. The KBI can be used to setup one of these as the default boot media.
 
 To set the default boot media as SPI Flash:
 ```
 kvim2# kbi bootmode w spi
 ```
-*For more information about the SPI Flash boot mode, see [How to boot from SPI Flash](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)*.
+*For more information about the SPI Flash boot mode, see How to boot from SPI Flash([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/vim3/BootFromSpiFlash.html)/[Edge](/edge/BootFromSpiFlash.html))*.
 
 To set the default boot media as eMMC storage:
 ```
@@ -128,7 +134,7 @@ kvim2# kbi bootmode r
 bootmode: emmc
 ```
 
-**8) Boot Trigger Events**
+**9) Boot Trigger Events**
 VIM2 supports different events for triggering boot:
 * WOL:  Wake on Lan
 * RTC:  RTC timer

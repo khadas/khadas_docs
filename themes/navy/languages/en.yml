@@ -215,6 +215,7 @@ sidebar:
     rk_docs: Rockchip Official Docs
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
+    kbi_guidance: KBI Guide
     uboot_usage: U-Boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
     setup_tftp: TFTP Server for U-Boot

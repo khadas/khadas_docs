@@ -173,6 +173,7 @@ edge:
     rk_docs: RockchipDocs.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
+    kbi_guidance: KbiGuidance.html
   android:
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html

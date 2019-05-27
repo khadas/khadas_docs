@@ -216,6 +216,7 @@ sidebar:
     rk_docs: 瑞芯微官方文档
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
+    kbi_guidance: KBI说明
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
     setup_tftp: 搭建TFTP服务器
