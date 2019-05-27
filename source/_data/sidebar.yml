@@ -91,9 +91,6 @@ vim2:
     enable_adb: HowtoEnableAdb.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
-  mcu:
-    mcu_develop: McuDevelop.html
-    mcu_code_flow_chart: McuCodeFlowChart.html
   hardware:
     download: HardwareDocs.html
   firmware:
