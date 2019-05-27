@@ -125,6 +125,7 @@ vim3:
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
   uboot:
+    boot_from_spi_flash: BootFromSpiFlash.html
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
     setup_tftp: SetupTFTPServer.html
