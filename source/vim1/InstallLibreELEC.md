@@ -9,8 +9,8 @@ title: How to Install LibreELEC
 - [x] An SD Card and a Card Reader or a Thumdrive (U-Disk) is required, make sure there is nothing important on your card as ALL the data will be erased after the following operations.
 
 ## Download The LibreELEC Image
-You can download LibreELEC images from [VIM1](/vim1/FirmwareThirdparty.html#LibreELEC)/[VIM2](https://docs.khadas.com/vim2/FirmwareThirdparty.html#LibreELEC).
-*Note: Image names containing "KVIM" is an image for VIM1, and "KVIM2" is for VIM2.*
+You can download LibreELEC images from [VIM1](/vim1/FirmwareThirdparty.html#LibreELEC)/[VIM2](https://docs.khadas.com/vim2/FirmwareThirdparty.html#LibreELEC)/[VIM3](https://docs.khadas.com/vim3/FirmwareThirdparty.html#LibreELEC).
+*Note: Image names containing "KVIM" is an image for VIM1, "KVIM2" is for VIM2, and "KVIM3" is for VIM3*
 
 ## Write Image to SD/USB Storage
 There are two ways to write a LibreELEC image to SD/USB storage:
