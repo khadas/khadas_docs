@@ -12,7 +12,7 @@ title: 创建启动SD卡
 * 在某些情况下固件无法从eMMC启动时，可以通过SD卡启动
 
 ### 开始制作
-[下载](https://dl.khadas.com/Firmware/VIM1/U-boot/)或编译U-boot 获取U-boot镜像。
+下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/))或编译U-boot 获取U-boot镜像。
 
 不管通过哪种方式，你都会得到不同的镜像：
 
@@ -21,30 +21,32 @@ title: 创建启动SD卡
 
 把SD卡插入电脑并卸载：
 ```sh
-$ umount /dev/sdb1
+$ umount /dev/sdX1
 ```
 
 格式化SD卡为Fat32文件系统:
 ```sh
-$ sudo mkfs.vfat /dev/sdb1 
+$ sudo mkfs.vfat /dev/sdX1 
 ```
 
 通过`dd`命令把U-boot写入SD卡：
 ```sh
-$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=1 count=444
-$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=512 skip=1 seek=1
+$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=1 count=444
+$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek=1
 ```
 
 从PC移除SD卡:
 ```sh
-$ sudo eject /dev/sdb
+$ sudo eject /dev/sdX
 ```
+
+*注意：请替换`sdX`为你自己电脑上的正确的块设备。*
 
 ### 检查
 
-确保串口连接正确，参考 [这里](/zh-cn/vim1/SetupSerialTool.html).
+确保串口连接正确，参考这里([VIM1](/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/zh-cn/vim3/SetupSerialTool.html))。
 
-为了确保U-boot从SD卡启动，你必须[擦除eMMC](/zh-cn/vim1/HowtoEraseEMMC.html)。
+为了确保U-boot从SD卡启动，你必须擦除eMMC([VIM1](/zh-cn/vim1/HowtoEraseEMMC.html)/[VIM2](/zh-cn/vim2/HowtoEraseEMMC.html)/[VIM3](/zh-cn/vim3/HowtoEraseEMMC.html))。
 
 打开终端，执行`kermit`命令:
 ```

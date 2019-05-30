@@ -14,7 +14,7 @@ Why do we need a "Bootable SD-Card"?
 
 
 ### Getting Started
-[Download VIM1 U-Boot](https://dl.khadas.com/Firmware/VIM1/U-boot/) or build U-Boot to get the bootloader blob for your SD-Card.
+Download U-Boot ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) or build U-Boot to get the bootloader blob for your SD-Card.
 No matter which method you choose, you need to keep in mind that there are different bootloader blobs for different boot disks/media:
 
 * U-Boot blob `u-boot.bin.sd.bin` is built for SD-Cards
@@ -22,30 +22,32 @@ No matter which method you choose, you need to keep in mind that there are diffe
 
 Insert the SD-Card into your PC, and make sure the disk is unmounted:
 ```sh
-$ umount /dev/sdb1
+$ umount /dev/sdX1
 ```
 
 Format the SD-Card as Fat32:
 ```sh
-$ sudo mkfs.vfat /dev/sdb1 
+$ sudo mkfs.vfat /dev/sdX1
 ```
 
 Run `dd` to write the U-Boot blob into the first sector of SD-Card:
 ```sh
-$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=1 count=444
-$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdb conv=fsync,notrunc bs=512 skip=1 seek=1
+$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=1 count=444
+$ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek=1
 ```
 
 Eject the SD-Card from your PC:
 ```sh
-$ sudo eject /dev/sdb
+$ sudo eject /dev/sdX
 ```
+
+*Note: Please replace `sdX` with the correct one on your PC.*
 
 ### Check Your Bootable SD-Card
 
-Ensure that you have done the correct setup of your [Serial to USB Module](/vim1/SetupSerialTool.html).
+Ensure that you have done the correct setup of your Serial to USB Module([VIM1](/vim1/SetupSerialTool.html)/[VIM2](/vim2/SetupSerialTool.html)/[VIM3](/vim3/SetupSerialTool.html)).
 
-In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been [completely erased](/vim1/HowtoEraseEMMC.html).
+In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been completely erased([VIM1](/vim1/HowtoEraseEMMC.html)/[VIM2](/vim2/HowtoEraseEMMC.html)/[VIM3](/vim3/HowtoEraseEMMC.html)).
 
 Open a terminal and type the `kermit` command:
 ```
