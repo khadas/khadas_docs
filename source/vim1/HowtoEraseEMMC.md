@@ -7,6 +7,8 @@ There are 4 different ways to erase all data on the onboard eMMC storage:
 3. Interrupt Mode
 4. CLI Mode
 
+**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
+
 ### Keys Mode(U-Boot is functional)
 All ROMs we have released support eMMC erasure. Please follow the steps below to erase the data on the eMMC:
 
@@ -18,14 +20,14 @@ All ROMs we have released support eMMC erasure. Please follow the steps below to
 
 
 ### Serial Mode(For developers)
-1. Refer to this [guide](/vim1/SetupSerialTool.html) to setup the Serial Tool for your VIM.
+1. Refer to this guide ([VIM1](/vim1/SetupSerialTool.html)/[VIM2](/vim2/SetupSerialTool.html)/[VIM3](/vim3/SetupSerialTool.html)) to setup the Serial Tool for your VIM.
 2. Once again, ensure you've done the correct connections and setup.
 3. Hit any keys at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode.
 4. Type `store init 3` on the terminal of u-boot, and wait for the erasure process to complete.
 5. Type `reboot` or press the `Reset` button
 6. Use the following as a reference:
 ```
-Vim# store init 3
+kvim# store init 3
 emmc/sd response timeout, cmd8, status=0x1ff2800
 emmc/sd response timeout, cmd55, status=0x1ff2800
 [mmc_startup] mmc refix success
@@ -62,7 +64,7 @@ GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:
 ### Interrupt Mode
 This approach is suitable for all products that use the Amlogic SoC:
 
-1. Carry out normal upgrading via [USB-C Cable](/vim1/UpgradeViaUSBCable.html) or [TF Card](/vim1/UpgradeViaTFBurningCard.html).
+1. Carry out normal upgrading via USB-C Cable([VIM1](/vim1/UpgradeViaUSBCable.html)/[VIM2](/vim2/UpgradeViaUSBCable.html)/[VIM3](/vim3/UpgradeViaUSBCable.html)) or TF Card([VIM1](/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/vim3/UpgradeViaTFBurningCard.html)).
 2. Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
 3. Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
 
