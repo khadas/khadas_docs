@@ -5,7 +5,7 @@ title: 通过USB升级固件
 ### 准备工作
 * 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.1.7.0%20_zh.zip)并解压。
 * 运行`setup_v2.x.x.exe`程序进行安装。
-![image](/images/vim1/usb_upgrade_tool_setup_v217.png)
+![image](/images/vim1/usb_upgrade_tool_setup_v217_zh.png)
 
 ### 固件升级操作步骤
 确保已经正确安装好升级工具，按照下面步骤进行升级：

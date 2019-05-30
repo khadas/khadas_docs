@@ -1,5 +1,1 @@
-title: How to Install LibreELEC
----
-
-# TBD
-
+../vim1/InstallLibreELEC.md
