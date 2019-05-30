@@ -11,6 +11,8 @@ title: 创建启动SD卡
 * 发布SD卡固件会使用到
 * 在某些情况下固件无法从eMMC启动时，可以通过SD卡启动
 
+**注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
+
 ### 开始制作
 下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/))或编译U-boot 获取U-boot镜像。
 

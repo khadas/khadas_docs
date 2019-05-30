@@ -1,6 +1,8 @@
 title:  Upgrade Android Via An SD-Card
 ---
 
+**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
+
 ### Preparation:
 
 * Download the [Burn Card Maker Tool](https://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) and extract it.

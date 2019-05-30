@@ -12,6 +12,7 @@ Why do we need a "Bootable SD-Card"?
 * If you want to release ROM for an SD-Card, the Bootable SD-Card can be used during your development process.
 * In some extreme cases, when your target-device is unable to boot from the eMMC (e.g. damaged bootloader), you can use a Bootable SD-Card to do your system/file recovery.
 
+**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
 
 ### Getting Started
 Download U-Boot ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) or build U-Boot to get the bootloader blob for your SD-Card.

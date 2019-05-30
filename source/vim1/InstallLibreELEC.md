@@ -3,6 +3,8 @@ title: How to Install LibreELEC
 
 **LibreELEC boots from external media (SD-Card or Thumbdrive), so you need to write the image to SD/USB storage.**
 
+**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
+
 ## Preparation
 - [x] Download the [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/).
 - [x] Extract and install it on your Windows PC.

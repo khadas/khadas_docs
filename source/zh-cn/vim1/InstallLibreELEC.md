@@ -3,6 +3,8 @@ title: 如何安装LibreELEC
 
 **LibreELEC运行在外部媒体介质上，如：SD卡或U盘，所以需要把镜像写入到外部媒体介质。**
 
+**注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
+
 ## 准备工作
 * [x] 下载 [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)。
 * [x] 解压并安装到Windows电脑上。

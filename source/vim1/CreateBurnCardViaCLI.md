@@ -1,7 +1,8 @@
 title: Create A Burning Card From Command Line
 ---
-This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this [Windows Guide](/vim1/UpgradeViaTFBurningCard.html) instead.
+This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/vim3/UpgradeViaTFBurningCard.html)) instead.
 
+**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
 
 ### Preparation:
 * Build your own, or download ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) the latest U-Boot file for SD-Cards.

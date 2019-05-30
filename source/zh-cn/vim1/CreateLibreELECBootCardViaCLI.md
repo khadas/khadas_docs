@@ -1,6 +1,7 @@
 title: 通过命令行创建LibreELEC启动卡
 ---
 
+**注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
 
 ### 概述
 * 本教程面向LibreELEC，同样也适用于OpenELEC, OSMC 和其它OpenELEC分支。
