@@ -56,6 +56,9 @@ vim2:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     install_libreelec: InstallLibreELEC.html
+    create_burning_card_via_cli: CreateBurnCardViaCLI.html
+    create_booting_card: CreateBootableSDCard.html
+    booting_card_vs_burning_card: BootingCardVsBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
@@ -91,9 +94,6 @@ vim2:
     enable_adb: HowtoEnableAdb.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
-  mcu:
-    mcu_develop: McuDevelop.html
-    mcu_code_flow_chart: McuCodeFlowChart.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -176,6 +176,7 @@ edge:
     rk_docs: RockchipDocs.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
+    kbi_guidance: KbiGuidance.html
   android:
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html

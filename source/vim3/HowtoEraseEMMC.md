@@ -1,4 +1,1 @@
-title: How to Erase the eMMC Storage
----
-
-# TBD
+../vim1/HowtoEraseEMMC.md

@@ -1,12 +1,14 @@
-title: Khadas VIM2 KBI说明
+title: Khadas VIM2/VIM3/Edge KBI说明
 ---
 
 KBI是"Khadas Bootloader Instructions"的缩写，主要用于以下几方面：
 * 控制可编程MCU
 * 管理底层硬件
-* 让开发者体验VIM2全部的特性
+* 让开发者体验VIM2/VIM3/Edge全部的特性
 
-这篇文档介绍了如何配置使用KBI。 因为KBI是[U-Boot](http://www.denx.de) 命令，所以必须先[设置串口调试工具](/zh-cn/vim1/SetupSerialTool.html)。
+这篇文档介绍了如何配置使用KBI。 因为KBI是[U-Boot](http://www.denx.de) 命令，所以必须先设置串口调试工具([VIM2](/zh-cn/vim1/SetupSerialTool.html)/[VIM3](/zh-cn/vim1/SetupSerialTool.html)/[Edge](/zh-cn/edge/SetupSerialTool.html))。
+
+*注意：此文档以VIM2为例进行说明，VIM3和Edge都是差不多的用法。*
 
 在开始之前，确保先进入U-boot命令行模式:
 ```
@@ -49,40 +51,44 @@ kbi trigger [wol|rtc|ir|dcin|key|gpio] r - read mode of a boot trigger
 kvim2# kbi version
 version: 03
 ```
-参考[这里]()升级MCU固件。
 
-**2) 获取设备usid：**
+**2) 初始化KBI：**
+```
+kvim2# kbi init
+```
+
+**3) 获取设备usid：**
 ```
 kvim2# kbi usid
 usid: 000000
 ```
 
-**3) 获取ADC数值：**
+**4) 获取ADC数值：**
 ```
 kvim2# kbi adc
 adc: 0x236
 ```
 *ADC数值用于区分不同的Khadas开发板。*
 
-**4) 给设备断电：**
+**5) 给设备断电：**
 ```
 kvim2# kbi poweroff
 ```
 
-**5) 获取以太网MAC地址：**
+**6) 获取以太网MAC地址：**
 ```
 kvim2# kbi ethmac
 mac address: 98:aa:fc:60:44:c0
 ```
 
-**6) 设置LED工作模式：**
+**7) 设置LED工作模式：**
 VIM2蓝色LED有不同的工作模式，如`长灭`、`长亮`、`呼吸`和`心跳`等来只是不同的状态。
 
 VIM2 蓝色LED是由MCU来控制的，同时MCU还控制VIM2的总电源，而VIM2白色LED是由Amlogic CPU来控制的，所以蓝色LED会一直工作，即使你关闭了VIM2电源。
 
 事实上，KBI能设置两种不同的蓝灯模式：
-* 系统关闭/待机：断电状态，CPU/S912断电。
-* 系统运行/工作：上电状态，CPU/S912工作。
+* 系统关闭/待机：断电状态，CPU断电。
+* 系统运行/工作：上电状态，CPU工作。
 
 示例：
 
@@ -108,14 +114,14 @@ kvim2# kbi led systemon w breathe
 kvim2# kbi led systemon w breathe
 ```
 
-**7) 启动模式**
+**8) 启动模式**
 VIM2配置有eMMC和SPI存储器，可以通过KBI设置从哪里启动系统。
 
 设置默认从SPI Flash启动系统：
 ```
 kvim2# kbi bootmode w spi
 ```
-*关于SPI FLASH启动请参考[如何从SPI Flash启动](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)*。
+*关于SPI FLASH启动请参考如何从SPI Flash启动([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/zh-cn/vim3/BootFromSpiFlash.html)/[Edge](/zh-cn/edge/BootFromSpiFlash.html))*。
 
 设置默认从eMMC启动系统：
 ```
@@ -128,7 +134,7 @@ kvim2# kbi bootmode r
 bootmode: emmc
 ```
 
-**8) 开机触发事件**
+**9) 开机触发事件**
 VIM2支持不同的开机触发事件：
 * WOL: 通过网络唤醒开机
 * RTC: 通过RTC唤醒开机

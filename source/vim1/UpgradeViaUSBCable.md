@@ -1,5 +1,8 @@
 title: Upgrade Via a USB-C Cable
 ---
+
+**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
+
 ## Upgrade On Windows
 ### Perparation
 * Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.1.7.0%20_zh.zip) and extarct it.
