@@ -1,6 +1,8 @@
 title: 通过USB升级固件
 ---
 
+**注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
+
 ## 通过Windows升级固件
 ### 准备工作
 * 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.1.7.0%20_zh.zip)并解压。
