@@ -10,11 +10,8 @@ Although your VIM3 SBC is compatible with various types of power supplies, these
 **Learn More:**
 * [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
-* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim2/ExtraPowerInput.html)
+* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim3/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
-
-# Displays & User Input
-These items are useful when you need to connect your VIM3 SBC to an external display + keyBoard mouse + remote control, for use as a desktop computer or media center.
 
 # Displays & User Input
 These items are useful when you need to connect your VIM3 SBC to an external display + keyBoard mouse + remote control, for use as a desktop computer or media center.
@@ -57,7 +54,7 @@ You'll need these items if you want to use you laptop or desktop PC to upgrade y
 
 **Learn More:**
 * [Upgrade Firmware Using USB-C Cable](https://docs.khadas.com/vim3/UpgradeViaUSBCable.html)
-* [Boot Into UPgrade Mode]((https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)
+* [Boot Into UPgrade Mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)
 
 **Firmware Iamges:**
 * [Android OS](https://docs.khadas.com/vim3/FirmwareAndroid.html)
