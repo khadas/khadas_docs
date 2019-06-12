@@ -1,12 +1,9 @@
 title: 通过TF卡升级固件
 ---
-<<<<<<< HEAD
 这里以安卓为例，Ubuntu的升级与安卓一致。
-=======
 
 **注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
 
->>>>>>> a6922732b580b70b002f53e69321d241c374a047
 ### 准备工作
 * 下载[Burn Card Maker Tool](https://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) 并解压。
 * 准备好TF卡的读卡器。
