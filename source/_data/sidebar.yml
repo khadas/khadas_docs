@@ -136,6 +136,7 @@ vim3:
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
     setup_adb: SetupADB.html
+    howto_use_wol: HowtoUseWol.html
   linux:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
