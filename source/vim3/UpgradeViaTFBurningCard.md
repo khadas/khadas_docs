@@ -1,4 +1,1 @@
-title:  Upgrade Android Via An SD-Card
----
-
-# TBD
+../vim1/UpgradeViaTFBurningCard.md
