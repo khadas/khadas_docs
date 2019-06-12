@@ -3,7 +3,9 @@ title: How To Use WOL
 
 Wake-On-LAN (WOL) is a protocol standard that allows your PC/Smartphone to turn on a computer via your local network or the Internet.
 
-VIM2 is different from VIM1, as it supports the WOL-function.
+**Note: The operation of VIM2, VIM3 and Edge is almost the same, so this document will take VIM2 as an example.**
+
+VIM2, VIM3 and Edge are different from VIM1, as it supports the WOL-function.
 
 Firstly, you have to connect VIM2 to your LAN, then get the Ethernet MAC address.
 

@@ -226,6 +226,8 @@ sidebar:
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     setup_adb: 设置ADB
+    howto_use_wol: 如何使用WOL
+    force_reset_features: 远程强制复位
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
