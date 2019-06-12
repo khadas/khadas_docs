@@ -166,6 +166,7 @@ sidebar:
     build_boot_logo_for_uboot: 编译U-boot启动Logo
     setup_tftp: 搭建TFTP服务器
     load_image_via_tftp: 通过TFTP下载镜像
+    kbi_guidance: KBI说明
     android: Android
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码

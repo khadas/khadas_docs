@@ -130,6 +130,7 @@ vim3:
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
     setup_tftp: SetupTFTPServer.html
     load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
+    kbi_guidance: KbiGuidance.html
   android:
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
