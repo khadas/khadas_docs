@@ -1,16 +1,16 @@
 title: KBI Guidance for Khadas VIM2/VIM3/Edge
 ---
 
-KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to fulfil the following purposes:
+KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to fulfill the following purposes:
 * Manage the programmable MCU
 * Carry out low level hardware management
-* Let developers use all the features of Khadas VIM2/VIM2/Edge
+* Let developers utilise all the features of Khadas VIM2/VIM2/Edge
 
-This document describes how to setup, configure and use the KBI. As the KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup the Serial Debugging Tool([VIM2](/vim1/SetupSerialTool.html)/[VIM3](/vim1/SetupSerialTool.html)/[Edge](/edge/SetupSerialTool.html)).
+This document describes how to setup, configure and use the KBI. As KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup a Serial Debugging Tool([VIM2](/vim1/SetupSerialTool.html)/[VIM3](/vim1/SetupSerialTool.html)/[Edge](/edge/SetupSerialTool.html)).
 
-*Note: This document take VIM2 as en example, VIM3 and Edge are similar to it.*
+*Note: This document uses VIM2 as an example, VIM3 and Edge are similar.*
 
-To continue the reading, make sure you have booted into the U-Boot:
+Before continuing, make sure you have booted into U-Boot:
 ```
 normal power off
 boot wol: enable
@@ -19,7 +19,7 @@ kvim2#
 ```
 
 ### Get help
-Similar with other U-Boot commands, you can get the help information by typing **kbi**:
+You can get help information by typing **kbi**:
 ```
 kvim2# kbi
 kbi - Khadas Bootloader Instructions sub-system
@@ -82,11 +82,11 @@ mac address: 98:aa:fc:60:44:c0
 ```
 
 **7) Setup the blue LED:**
-The blue LED has different working modes like `Always Off`, `Always on`, `Breathe` and `Heartbeat` to indicate different statuses.
+The blue LED has different working modes: `Always Off`, `Always on`, `Breathe` and `Heartbeat`. These indicate different VIM status-modes.
 
-The blue LED is controlled by the MCU, and the MCU does the system power management for VIM2. The white LED is controlled by the CPU; therefore the blue LED still works even after you have powered off your VIM2.
+The blue LED is controlled by the MCU, and the MCU is in charge of system power management. The white LED is controlled by the CPU; therefore the blue LED still works even after you have powered off your VIM2.
 
-The KBI can be used to program the blue LED for two different statuses:
+The KBI can be used to program the blue LED for two different status-modes:
 * system off / idle: power off status, the CPU is powered down.
 * system on / working: power on status, the CPU is in working mode.
 
@@ -115,13 +115,13 @@ kvim2# kbi led systemon w breathe
 ```
 
 **8) Boot Mode**
-VIM2 comes with both SPI Flash and eMMC Storage. The KBI can be used to setup one of these as the default boot media.
+VIM2 comes with both SPI flash and eMMC Storage. The KBI can be used to setup one of these as the default boot media.
 
-To set the default boot media as SPI Flash:
+To set the default boot media as SPI flash:
 ```
 kvim2# kbi bootmode w spi
 ```
-*For more information about the SPI Flash boot mode, see How to boot from SPI Flash([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/vim3/BootFromSpiFlash.html)/[Edge](/edge/BootFromSpiFlash.html))*.
+*For more information about the SPI flash boot mode, see How to boot from SPI Flash([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/vim3/BootFromSpiFlash.html)/[Edge](/edge/BootFromSpiFlash.html))*.
 
 To set the default boot media as eMMC storage:
 ```
@@ -135,7 +135,7 @@ bootmode: emmc
 ```
 
 **9) Boot Trigger Events**
-VIM2 supports different events for triggering boot:
+VIM2 supports different events for triggering boot-up:
 * WOL:  Wake on Lan
 * RTC:  RTC timer
 * IR:   IR remote controller
@@ -143,17 +143,17 @@ VIM2 supports different events for triggering boot:
 * Key:  Power Key/Button
 * GPIO: External GPIO events
 
-This means that when VIM2 is powered off, any of the above trigger events can power on the VIM2, when that trigger event has been set to the "enabled" status.
+This means that when your VIM2 is powered-off, any of the above events can trigger it to power-on; when that trigger event has been set to the "enabled" status.
 
 Examples:
 
-Read the status of WOL trigger event:
+Get the status for a WOL trigger event:
 ```
 kvim2# kbi trigger wol r
 boot wol: disable
 ```
 
-By default, WOL is disabled for the preinstalled ROM, you can enable it by writing a new value/status:
+By default, WOL is disabled for the preinstalled ROM, you can enable it by writing a new value:
 
 ```
 kvim2# kbi trigger wol w 1
