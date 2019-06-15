@@ -45,5 +45,3 @@ For more information, please refer to our website or see the Tone Board User Man
 
 * [Tone Board Website](https://www.khadas.com/tone)
 * [Tone Board User Manual](https://docs.khadas.com/toneboard/UserManual.html)
-
-{% youtube 1CuvmEaGUNg %}
