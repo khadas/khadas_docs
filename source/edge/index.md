@@ -4,7 +4,7 @@ title: Edge Beginners Guide
 # Edge Power Supply
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-![image](https://github.com/tsangyoujun/khadas_docs/blob/master/usb-c_adapter_24w_2.jpg)
+![image](/images/edge/usb-c_adapter_24w_2.jpg)
 
 1. Khadas USB-C 24W Power Adapter (USB Power Delivery)
 2. Khadas USB-C Cable (Male-to-Male)
