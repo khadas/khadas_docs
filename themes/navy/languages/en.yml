@@ -161,6 +161,7 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
+    how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     uboot_usage: U-boot Usage Guide

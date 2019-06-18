@@ -160,6 +160,7 @@ sidebar:
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
+    how_to_setup_pcie_usb_port: 如何设置PCIe或USB3.0
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     uboot_usage: U-boot使用说明
