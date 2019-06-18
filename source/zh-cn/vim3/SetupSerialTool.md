@@ -1,4 +1,4 @@
-title: Setup Serial Debugging Tool
+title: 设置串口调试工具
 ---
 
 ### 准备工作
