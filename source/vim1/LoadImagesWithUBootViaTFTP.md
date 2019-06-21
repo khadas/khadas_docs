@@ -12,7 +12,7 @@ We'll start off with a terminal connected to the board and sitting at the U-Boot
 
 ```
 kvim# tftp 1080000 u-boot.bin
-kvim# store rom_write 1080000 0 100000
+kvim# store rom_write 1080000 0 $filesize
 ```
 
 **Note**: You might also need to clean up the old U-Boot environment value stored in the `env` partition, and then save it as a new value:
