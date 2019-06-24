@@ -2,9 +2,11 @@ title: Setup Serial Debugging Tool
 ---
 
 ### Preparation
-- You need a "serival Debugging Tool". In this guide ,we will use a "USB to TTL Converter".
 
-### connections
+You need a "Serial Debugging Tool". In this guide we will use a "USB to TTL Converter".
+
+### Connections
+
 Follow these steps to make the correct connections:
 
 **1)** Connect the Tool Pin to the GPIOs, and check the Tx/Rx Pin once more to ensure that you have amde correct connections:
@@ -26,6 +28,7 @@ Another photo for more details(`VCC` Pin is not necessary):
 
 
 ### Setup kermit Protocol(c-kermit)
+
 **Install c-kermit:**
 
 ```sh
@@ -83,5 +86,6 @@ Sorry, you must SET LINE or SET HOST first
 ```
 This is the wrong device to choose.Confirm your ttyUSB device number in the `/dev` directory and then modify `.kermrc` file
 
-### See Also:
+### See Also
+
 # [C-Kermit offical websit](http://www.columbia.edu/kermit/index.html)
