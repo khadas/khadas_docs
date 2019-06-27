@@ -12,8 +12,13 @@ $mkdir -p WORKING_DIRECTORY
 $cd WORKING_DIRECTORY
 ```
 2）首先运行repo init下载清单存储库：
+#android 7.1:
 ```sh
 $repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-nougat
+```
+#android 9.0:
+```sh
+$repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-pie
 ```
 3）运行repo-sync下拉Android源代码：
 ```sh
