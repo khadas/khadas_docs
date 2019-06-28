@@ -24,9 +24,10 @@ Make sure that you have installed the correct USB drivers, then follow these ste
 * Maskrom Mode:
 ![AndroidTool maskrom](/images/edge/AndroldTool_maskrom.png)
 
-If the board is upgraded from`android 7.1`to`android 9.0 `firmware or
-The board is upgraded from`android 9.0`to`android 7.1 `firmware, 
-which requires `erasing Flash':
+If the board is upgraded from `android 7.1` to `android 9.0 ` firmware or
+The board is upgraded from `android 9.0` to `android 7.1 ` firmware, 
+which requires `erasing Flash`.
+* erasing Flash Mode:
 ![AndroidTool maskrom](/images/edge/AndroldTool_maskrom_en.png)
 
 Now all you need to do is to click the `Upgrade` button of the tool and wait for upgrading to complete:
