@@ -76,7 +76,7 @@ These items are useful if you wish to use your VIM3 SBC as a media center, for s
 
 **Tip:** Nowadays most people stream their media , see [How To Install LibreELEC](https://docs.khadas.com/vim3/InstallLibreELEC.html).
 
-# software Development / advanced  Crach Recovery
+# Software Development / Advanced  Crash Recovery
 Extreme cases of crash-recovery will require you to use the MRegister to reset your VIM3 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
 
 1. Conductive Metal Tweezers (For resetting a dead SBC via MRegister)
