@@ -9,6 +9,8 @@ title: Building Android Source Code
 ### Building
 *Note: Before you start to build, make sure you have done all the `Preperations` listed above.*
 
+# android 7.1:
+
 **Build U-boot：**
 ```sh
 $ cd PATH_YOUR_PROJECT
@@ -28,6 +30,7 @@ $ make ARCH=arm64 rk3399-khadas-edge-android.img -jN
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
 $ lunch rk3399_all-userdebug
+$ make installclean
 $ make -jN
 $ ./mkimage.sh
 ```
@@ -55,6 +58,61 @@ $ lunch rk3399_all-userdebug
 $ ./pack_image.sh
 ```
 
+# android 9.0:
+
+**Build U-boot：**
+```sh
+$ cd PATH_YOUR_PROJECT
+$ cd u-boot
+$ make mrproper
+$ ./make.sh kedge
+```
+**Build kernel：**
+```sh
+$ cd PATH_YOUR_PROJECT
+$ cd kernel
+$ make ARCH=arm64 kedge_defconfig -jN
+$ make ARCH=arm64 rk3399-khadas-edge-android.img -jN
+```
+**Build android：**
+```sh
+$ cd PATH_YOUR_PROJECT
+$ source build/envsetup.sh
+$ lunch rk3399-userdebug
+$ make installclean
+$ make -jN
+$ ./mkimage.sh
+```
+*Note: Replace 'N' as the number you want when you run 'make -jN*
+
+**After executing`./mkimage.sh`, generate a complete firmware package in the rockdev/Image-xxx/directory (xxx is the product name of the specific lunch)**
+```
+rockdev/Image-xxx/
+├── MiniLoaderAll.bin
+├── boot.img
+├── dtbo.img
+├── kernel.img
+├── misc.img
+├── oem.img
+├── parameter.txt
+├── pcba_small_misc.img
+├── pcba_whole_misc.img
+├── recovery.img
+├── resource.img
+├── system.img
+├── trust.img
+├── uboot.img
+├── update.img
+├── vbmeta.img
+└── vendor.img
+```
+**Packing update.img：**
+```sh
+$ cd PATH_YOUR_PROJECT
+$ source build/envsetup.sh
+$ lunch rk3399-userdebug
+$ ./pack_image.sh
+```
 ### See Also
 * [Upgrade Via an USB Cable](/zh-cn/edge/UpgradeViaUSBCable.html)
 * [Upgrade Via a Burnning TF Card](/zh-cn/edge/UpgradeViaTFBurningCard.html)
