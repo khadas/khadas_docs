@@ -21,15 +21,22 @@ title: 如何进入升级模式
 2. 确保串口连接正常并正确配置
 3. 按任意键进入uboot命令行模式
 4. 输入`update`命令进入升级模式
-```
-kvim2# update
-```
 
+```
+kvim2# run update
+```
 
 ### MRegister 模式(Maskrom 模式)
 1. 给VIM2上电
 2. 使用镊子短接`M`处的两个焊盘触点不松开
 3. 短按复位键会进入升级模式
 
+#### VIM2 V14
+
+![Image of MRegister_ShortCircuit](/images/vim2/MRegister_ShortCircuit_V14.png)
+
+#### VIM2 V12
+
 ![Image of MRegister_ShortCircuit](/images/vim2/MRegister_ShortCircuit.png)
+
 *提示:  `M` 触点在VIM板底部*
