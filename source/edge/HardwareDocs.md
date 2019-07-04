@@ -24,4 +24,5 @@ These documentation files contain hardware information for the Khadas Edge, Capt
 [Khadas Edge IO PCB Drawing](https://dl.khadas.com/Hardware/Edge/Schematic/Edge-IO_V13_Silk.pdf)
 [Khadas Edge IO 2D Drawing (DXF format)]()
 [Khadas Edge IO 2D Drawing (PDF format)]()
+[Khadas Juice Specifications](https://dl.khadas.com/Hardware/Edge/Specs/Juice_Specs.pdf)
 [Rockchip RK3399 Datasheet](https://dl.khadas.com/Hardware/Edge/Datasheet/Rockchip_RK3399TRM_V1.4_Part1-20170408.pdf)
