@@ -84,12 +84,14 @@ These items are useful if you wish to use your VIM3 SBC as a media center, for s
 **Tip:** Nowadays most people stream their media , see [How To Install LibreELEC](https://docs.khadas.com/vim3/InstallLibreELEC.html).
 
 # Software Development / Advanced Crash Recovery
-Extreme cases of crash-recovery will require you to use the MRegister to reset your VIM3 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
+Extreme cases of crash-recovery will require you to use either the Khadas TST (VIM3), or the MRegister to reset your VIM3 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
 
-1. Conductive Metal Tweezers (For resetting a dead SBC via MRegister)
-2. USB Serial Debug Tool(For diagnosing software/hardware issues)
+1. Your fingers (for resetting a dead SBC via Khadas-TST, VIM3 only)
+2. Conductive Metal Tweezers (for resetting a dead SBC via MRegister)
+3. USB Serial Debug Tool(For diagnosing software/hardware issues)
 
 **Learn More:**
+* [Khadas TST Upgrade Mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)
 * [Mregister Upgrade Mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
