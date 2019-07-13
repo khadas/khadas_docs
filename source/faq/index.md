@@ -9,6 +9,7 @@ These guides will be helpful for anyone learning how to use a Khadas SBC for the
 
 * [VIM1](https://docs.khadas.com/vim1/index.html)
 * [VIM2](https://docs.khadas.com/vim2/index.html)
+* [VIM3](https://docs.khadas.com/vim3/index.html)
 * [Edge](https://docs.khadas.com/edge/index.html)
 * [Toneboard](https://docs.khadas.com/toneboard/UserManual.html)
 
@@ -19,20 +20,20 @@ These guides will be helpful for anyone learning how to use a Khadas SBC for the
 Using Android OS, you can use SD-cards to augment the limited amount of storage on the eMMC. Make sure that you're using a modern "high-speed" SD-card; something like a *microSDXC UHS-I* card will be suitable for this application.
 
 **Instructions:**
-1. Insert your SD-card into your VIM1/VIM2/Edge-V
-2. Open the "Android-Settings" App (Gear Icon)
+1. Insert your SD-card into your VIM or Edge SBC.
+2. Open the "Android-Settings" App (Gear Icon).
 3. Select "Storage & Reset".
-4. Select your SD-card under "Removable Storage"
-5. Select "Set up as device storage"
+4. Select your SD-card under "Removable Storage".
+5. Select "Set up as device storage".
 
-**Tip:** If you've done the above steps correctly, your SD-card will become a seamless part of your SBC's eMMC storage. Exercise caution when unplugging your SD-card as some files and photos will become inaccessible!
+**Tip:** If you've done the above steps correctly, your SD-card will become a seamless part of your SBC's eMMC storage. Exercise caution when unplugging your SD-card as some files and photos will become inaccessible! Make sure that you use the OS to "eject" the card first, before removing it physically.
 
 # How to change/upgrade the Operating System?
-Depending on your use-case, you may want to change/upgrade your Android OS to Ubuntu Mate, or even run a dual-OS configuration. We refer to "operating system" files as "[Firmware Images](https://dl.khadas.com/Firmware/)", or .img files. On our server, they are compressed into [.7z containers](https://www.howtogeek.com/357846/what-is-a-7z-file-and-how-do-i-open-one/), and will require [WinRAR](https://www.rarlab.com/) to unpack on Windows OS.
+Depending on your use-case, you may want to change/upgrade your Android OS to Ubuntu 18.04, or even run a custom dual-OS ROM. We refer to "operating system" files as "[Firmware Images](https://dl.khadas.com/Firmware/)", .img files, or ROMs. On our server, they are compressed into [.7z containers](https://www.howtogeek.com/357846/what-is-a-7z-file-and-how-do-i-open-one/), and will require [WinRAR](https://www.rarlab.com/) to unpack on Windows OS.
 
 **Tip:** Changing operating systems will erase ALL the data on your eMMC. Unless the OS is meant to run from a Bootable SD-card (Booting Card), be sure to back-up all your data before following the instructions below.
 
-**VIM1/VIM2 Upgrading Instructions:**
+**VIM1/VIM2/VIM3 Upgrading Instructions:**
 
 1. Place VIM into [Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html).
 2. Two ways to upgrade:
@@ -58,30 +59,38 @@ In order to bootup from `SD/USB` images, you need Android (V180209 or newer) or 
 
 # Help! My SBC won't power-on!
 
-**Recommended VIM1/VIM2 Power Supply**
+**Recommended VIM Power Supply**
 
-Although your VIM1/VIM2 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
+Although your VIM SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-1. 5V, 2000mA Power Adapter
+1. 5V, 2A Power Adapter (USB 10W Adapter)
 2. USB-A to USB-C Cable
+
+The VIM3 will require the USB-C 24W Adapter, and USB-C male-to-male cable, if you attach power hungry devices like the M2X Extension Board, or an NVMe SSD.
+
+3. USB-C 24W Adapter (5-20V USB Power Delivery)
+4. USB-C Cable (Male-to-Male)
 
 **Learn More:**
 * [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim2/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
-* [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
-* [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
+* [Khadas Shop - USB 10W Adapter](https://www.khadas.com/product-page/power-adapter)
+* [Khadas Shop - USB-A to USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
+* [Khadas Shop - USB-C 24W Adapter](https://www.khadas.com/product-page/usb-c-24w-adapter)
+* [Khadas Shop - USB-C Cable (Male-to-Male)](https://www.khadas.com/product-page/usb-c-cable-male-to-male)
 
 **Recommended Edge Power Supply**
 
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-1. USB-C 45W Power Adapter (USB Power Delivery Specifications)
-2. USB-C Cable (Male to Male)
+1. USB-C 24W Adapter (5-20V USB Power Delivery)
+2. USB-C Cable (Male-to-Male)
 
 **Learn More:**
+* [Khadas Shop - USB-C 24W Adapter](https://www.khadas.com/product-page/usb-c-24w-adapter)
+* [Khadas Shop - USB-C Cable (Male-to-Male)](https://www.khadas.com/product-page/usb-c-cable-male-to-male)
 * [Edge+Captain Power Priority](https://docs.khadas.com/edge/EdgeCaptainPowerPriority.html)
 * [Khadas Edge Specifications](https://khadas.com/edge)
-* [Khadas Edge Accessories](https://www.khadas.com/edge-add-ons)
 
 **My Bootloader is Damaged**
 
@@ -95,11 +104,11 @@ Your SBC may also fail to power-on if the bootloader is damaged. In such cases, 
 
 ![vim2 blue light](/images/vim2/wol_status.jpg)
 
-If you've turned on Wake-On-LAN (WOL) in your VIM2, it will no longer power-on automatically when you connect a USB-C cable to it. Instead, you'll merely see a blue light activate indicating that there is electrical power being supplied to your SBC.
+If you've turned on Wake-On-LAN (WOL) in your VIM, it will no longer power-on automatically when you connect a USB-C cable to it. Instead, you'll merely see a blue light activate indicating that there is electrical power being supplied to your SBC.
 
-**Furthermore, your VIM2 will only power-on under these conditions:**
+**Furthermore, your VIM will only power-on under these conditions:**
 1. You physically press the ```power``` button, after seeing the blue light.
-2. You send a magic packet to turn it on via LAN (Ethernet cable must be connected, and sending device must be on the same LAN as your VIM2)
+2. You send a magic packet to turn it on via LAN (Ethernet cable must be connected, and sending device must be on the same LAN as your VIM)
 
 **Learn More:**
 * [Turn On WOL](https://docs.khadas.com/vim2/HowtoUseWol.html)
