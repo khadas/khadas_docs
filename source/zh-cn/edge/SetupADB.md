@@ -16,7 +16,7 @@ $ adb remount
 ```
 * 进而可以进行push操作来debug
 
-### USB ADB（目前板子不支持）：
+### USB ADB：
 * 确保设备通过USB-C数据线连接到PC
 * 确保调试模式打开: Settings-->Developer options--->USB debugging
 * 打开终端执行如下命令:
