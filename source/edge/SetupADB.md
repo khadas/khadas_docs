@@ -18,7 +18,7 @@ $ adb remount
 ```
 * Then you can push to debug
 
-### ADB over USB（the board does not support it）
+### ADB over USB
 * Ensure that a USB-C cable is connected between your PC and VIM.
 * Enable ADB debugging on your device: `Settings-->Developer options--->USB debugging`
 * Open a terminal and type:
