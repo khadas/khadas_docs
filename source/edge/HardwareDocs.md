@@ -14,6 +14,7 @@ These documentation files contain hardware information for the Khadas Edge, Capt
 [Khadas Captain PCB Drawing](https://dl.khadas.com/Hardware/Edge/Schematic/Captain_V12_Silk.pdf)
 [Khadas Captain 2D Drawing (DXF format)](https://dl.khadas.com/Hardware/Edge/DXF/Captain_V12_DXF.7z)
 [Khadas Captain 2D Drawing (PDF format)]()
+[Khadas Juice Schematic](https://dl.khadas.com/Hardware/Edge/Schematic/Juice_V12_Sch.pdf)
 [Khadas Edge-V Specifications](https://dl.khadas.com/Hardware/Edge/Specs/Edge-V_Specs.pdf)
 [Khadas Edge-V Schematic](https://dl.khadas.com/Hardware/Edge/Schematic/Edge-V_V13_Sch.pdf)
 [Khadas Edge-V PCB Drawing](https://dl.khadas.com/Hardware/Edge/Schematic/Edge-V_V13_Silk.pdf)
