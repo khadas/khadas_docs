@@ -28,7 +28,7 @@ n = (block_number * 32) + (sub_block_number * 8) + index
 例如： PIN15(GPIO1_C2)
 
 ```
-GPIO1_C2 -> (1 * 32) + (2 * 8) + 1 = 50
+GPIO1_C2 -> (1 * 32) + (2 * 8) + 2 = 50
 ```
 
 ** 如何通过命令行访问GPIO **
