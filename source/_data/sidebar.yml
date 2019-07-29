@@ -118,6 +118,7 @@ vim3:
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
+    connect_lcd: ConnectLcd.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
@@ -171,6 +172,7 @@ edge:
     captain_gpio_pinout: CaptainGPIOPinout.html
     edgev_gpio_pinout: EdgeVGPIOPinout.html
     install_libreelec: InstallLibreELEC.html
+    connect_lcd: ConnectLcd.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html

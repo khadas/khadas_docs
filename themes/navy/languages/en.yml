@@ -155,6 +155,7 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
+    connect_lcd: Connect to TS050 Touchscreen
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
@@ -213,6 +214,7 @@ sidebar:
     extra_power_input: Extra Power Input
     captain_gpio_pinout: Captain GPIO Pin-Outs
     edgev_gpio_pinout: Edge V GPIO Pin-Outs
+    connect_lcd: Connect to TS050 Touchscreen
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
