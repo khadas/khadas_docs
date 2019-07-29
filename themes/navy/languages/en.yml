@@ -156,6 +156,7 @@ sidebar:
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
     connect_lcd: Connect to TS050 Touchscreen
+    list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
@@ -215,6 +216,7 @@ sidebar:
     captain_gpio_pinout: Captain GPIO Pin-Outs
     edgev_gpio_pinout: Edge V GPIO Pin-Outs
     connect_lcd: Connect to TS050 Touchscreen
+    list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool

@@ -119,6 +119,7 @@ vim3:
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
     connect_lcd: ConnectLcd.html
+    list_of_compatible_nvme_ssd: ListOfCompatibleNVMeSSDs.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
@@ -173,6 +174,7 @@ edge:
     edgev_gpio_pinout: EdgeVGPIOPinout.html
     install_libreelec: InstallLibreELEC.html
     connect_lcd: ConnectLcd.html
+    list_of_compatible_nvme_ssd: ListOfCompatibleNVMeSSDs.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html

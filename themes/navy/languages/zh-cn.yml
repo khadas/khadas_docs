@@ -155,6 +155,7 @@ sidebar:
     extra_power_input: 外部电源供电
     gpio_pinout: GPIO 管脚映射
     connect_lcd: 配置触摸屏TS050
+    list_of_compatible_nvme_ssd: NVMe SSD支持列表
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
@@ -213,6 +214,7 @@ sidebar:
     captain_gpio_pinout: Captain GPIO 管脚映射
     edgev_gpio_pinout: Edge V GPIO 管脚映射
     connect_lcd: 配置触摸屏TS050
+    list_of_compatible_nvme_ssd: NVMe SSD支持列表
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
