@@ -2,21 +2,21 @@ title: Connect to TS050 Touchscreen
 ---
 
 This short guide will show you how to connect your Edge-V to the TS050 5-point multi-touch screen.
-![TS050 and Edge-V](/images/touchscreen_edge_v.jpg)
+![TS050 and Edge-V](https://github.com/khadas/khadas_docs/blob/master/source/images/touchscreen_edge_v.jpg?raw=true)
 
 # 1. Brief Introduction
 
 Edge-V has three display interfaces: HDMI + MIPI + EDP. The position of the interfaces are shown below:
 
-![C|690x252](upload://vCEu9zShwR4xgQctYmBgkJkbj2.png) 
+![C|690x252](https://forum.khadas.com/uploads/default/original/2X/0/039320ce09bcd95ca4182fec74bae410571860f8.png) 
 
 Edge has two LCD screen interfaces: HDMI + DP. The position of the interfaces are shown below:
 
-![image|618x500](upload://d3Gn7fhLKy1UxmfThAPswXX7roH.jpeg) 
+![image|618x500](https://forum.khadas.com/uploads/default/original/2X/5/5b86da95f1076e6ed99b52369c11f3f2f939717f.jpeg) 
 
 Captain has two LCD screen interfaces：EDP + MIPI. The position of the interfaces are shown below:
 
-![image|573x479](upload://kdXxfLuZKTDspbT9lrfOwvZSwS9.jpeg) 
+![image|573x479](https://forum.khadas.com/uploads/default/original/2X/8/8dbf772d96b98064f3fdfb22078d8434b97215dd.jpeg) 
 
 # 2. (HDMI + DP) Screen Config
 ##  2.1 Configure **DTS**
@@ -122,8 +122,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ```
 
 # 3. (MIPI + HDMI) Screen Config
-![image|585x462](upload://1smVSv0OSkCZ8lC4HhQ39uvgBlO.jpeg) 
-![image|620x409](upload://42xKX4UuzJjhppiFkIy0s1JbxmY.jpeg)
+![image|585x462](https://forum.khadas.com/uploads/default/original/2X/0/0a372675a4509323dd0ae1e599a238818583fd4c.jpeg) 
+![image|620x409](https://forum.khadas.com/uploads/default/original/2X/1/1c52541caf8d48bc0570cbfb6e0cd54ff6197d6c.jpeg)
 ##  3.1 Configuring **DTS**
 rk3399-khadas-edge-mipi-android.dtsi, for example: MIPI (Main Display) + HDMI (Secondary Display).
 ### 3.1.1 Enable Corresponding Display Device Nodes
@@ -277,8 +277,8 @@ Configure when HDMI is bound to vopl：
 };
 ```
 * Timing Attribute Reference Figure
-![image|690x430](upload://qJItLvH8QAG0aogocZeko9VPxmC.png)   
-![image|321x500](upload://qZUjYl3dKnDH3isCG6aMfJWcwTM.png) 
+![image|690x430](https://forum.khadas.com/uploads/default/original/2X/b/bb6381d5df4301ad346356a68dc26ffbeb8fdad6.png)   
+![image|321x500](https://forum.khadas.com/uploads/default/original/2X/b/bd380c0af2d7c0fd5bb5e1ec01aac571a4771562.png) 
 
 ### 3.1.7 Command Format Description
 ```sh
