@@ -1,54 +1,47 @@
-title: How To Setup Cooling Fan
+title: How To Setup A Cooling Fan
 ---
 
-This tutorial is about how to setup cooling fan on Ubuntu/Debian.
+This guide is about how to setup a cooling fan in Ubuntu.
+
+### Preparations
+* Ubuntu version must be `V20190116` or newer
+
+For Ubuntu `V20190116`, the cooling fan is enabled by default.
 
 The cooling fan has 5 working modes:
-* `off`: Cooling fan is disabled.
-* `low`: Cooling fan is working on low speed mode.
-* `mid`: Coolinn fan is working on middle speed mode.
-* `high`: Cooling fan is working on higt speed mode.
-* `auto`: Cooling fan is working on auto speed mode, setup speed depend on the temperature, it is the default mode.
-
-### Check Current Working Mode
-```
-khadas@Khadas:~$ fw_printenv fan
-fan=auto
-```
-`fan=auto` means current mode is `auto` speed mode.
+* `off` : Cooling fan is disabled.
+* `low` : Cooling fan is working at low speed mode.
+* `mid` : Coolinn fan is working at middle speed mode.
+* `high`: Cooling fan is working at high speed mode.
+* `auto`: Cooling fan is working at auto speed mode. By default, the fan speed is determined by CPU temperature.
 
 ### Setup Working Mode
 
-* Setup cooling fan `low` speed mode
+You can edit file `/boot/env.txt` to setup the FAN mode, the default mode is `auto`.
+
+* Set cooling fan to `low` speed mode:
+
+Edit file `/boot/env.txt` and set `fan_mode=low`.
+
+* Set cooling fan to `mid` speed mode:
+
+Edit file `/boot/env.txt` and set `fan_mode=mid`.
+
+* Set cooling fan to `high` speed mode:
+
+Edit file `/boot/env.txt` and set `fan_mode=high`.
+
+* Set cooling fan to `auto` speed mode:
+
+Edit file `/boot/env.txt` and set `fan_mode=auto`.
+
+* Disable cooling fan:
+
+Edit file `/boot/env.txt` and set `fan_mode=off`.
+
+After edit the file, please save the modification and reboot the board.
 
 ```
-khadas@Khadas:~$ sudo fw_setenv fan low
-khadas@Khadas:~$ sudo reboot
-```
-
-* Setup cooling fan `mid` speed mode
-
-```
-khadas@Khadas:~$ sudo fw_setenv fan mid
-khadas@Khadas:~$ sudo reboot
-```
-* Setup cooling fan `high` speed mode
-
-```
-khadas@Khadas:~$ sudo fw_setenv fan high
-khadas@Khadas:~$ sudo reboot
-```
-
-* Setup cooling fan `auto` speed mode
-
-```
-khadas@Khadas:~$ sudo fw_setenv fan auto
-khadas@Khadas:~$ sudo reboot
-```
-
-* Disable cooling fan
-
-```
-khadas@Khadas:~$ sudo fw_setenv fan off
+khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```

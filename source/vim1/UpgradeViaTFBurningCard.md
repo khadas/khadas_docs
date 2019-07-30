@@ -1,5 +1,9 @@
-title:  Upgrade Android Via An SD-Card
+title:  Upgrade Android Or Ubuntu Via An SD-Card
 ---
+
+Here's an example of upgrading Android.The way to upgrade Ubuntu is consistent with Android.
+
+**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
 
 ### Preparation:
 
@@ -34,3 +38,4 @@ Have Fun!
 * [Upgrade Via A USB Cable](/vim1/UpgradeViaUSBCable.html)
 * [VIM1 How To Boot Into Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
 * [VIM2 How To Boot Into Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html)
+* [VIM3 How To Boot Into Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html)

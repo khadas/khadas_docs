@@ -8,7 +8,7 @@ title: Upgrade Using a USB-C Cable
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall.png)
   * Click the `Install` button to install drivers
   ![DriverInstall install](/images/edge/DriverInstall_install.png)
-* Download the [Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.58.zip) and extract it.
+* Download the [Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.65.zip) and extract it.
 * `AndroidTool.exe` is the burning tool, you don't need to install it.
 
 ### Upgrading Steps
@@ -23,6 +23,11 @@ Make sure that you have installed the correct USB drivers, then follow these ste
 ![AndroidTool loader](/images/edge/AndroldTool_loader.png)
 * Maskrom Mode:
 ![AndroidTool maskrom](/images/edge/AndroldTool_maskrom.png)
+
+If the board is upgraded from `android 7.1` to `android 9.0 ` firmware or the board is upgraded from `android 9.0` to `android 7.1 ` firmware, 
+which requires `erasing Flash`.
+* Erasing Flash Mode:
+![AndroidTool maskrom](/images/edge/AndroidTool_erase_en.png)
 
 Now all you need to do is to click the `Upgrade` button of the tool and wait for upgrading to complete:
 ![AndroidTool upgrade](/images/edge/AndroldTool_upgrade.png)

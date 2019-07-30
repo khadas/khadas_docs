@@ -1,6 +1,7 @@
 menu:
   vim1: VIM1
   vim2: VIM2
+  vim3: VIM3
   edge: Edge
   toneboard: ToneBoard
   firmware: Firmware
@@ -79,7 +80,7 @@ sidebar:
     libreelec_image: LibreELEC
     uboot_image: U-Boot
     dualos_image: Dual OS
-    thirdparty_imgae: Third Party
+    thirdparty_image: Third Party
 
   vim2:
     overview: Beginners Guide
@@ -89,6 +90,9 @@ sidebar:
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
     install_libreelec: Install LibreELEC
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    booting_card_vs_burning_card: Booting Card Vs Burning Card
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
@@ -135,7 +139,63 @@ sidebar:
     libreelec_image: LibreELEC
     uboot_image: U-Boot
     dualos_image: Dual OS
-    thirdparty_imgae: Third Party
+    thirdparty_image: Third Party
+
+  vim3:
+    overview: Beginners Guide
+    getting_started: Getting Started
+    vim3_interfaces: VIM3 Interfaces
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using SD-Card
+    install_libreelec: Install LibreELEC
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    booting_card_vs_burning_card: Booting Card Vs Burning Card
+    boot_from_ext_image: Boot From External Media
+    extra_power_input: Extra Power Input
+    gpio_pinout: GPIO Pin-Outs
+    connect_lcd: Connect to TS050 Touchscreen
+    list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
+    development: Development
+    install_toolchains: Install Toolchains
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
+    how_to_access_gpio: How To Access GPIO
+    how_to_access_i2c: How To Access I2C
+    how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
+    uboot: U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
+    uboot_usage: U-boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    kbi_guidance: KBI Guide
+    android: Android
+    download_android_source_code: Download Android Source Code
+    build_android: Build Android Source Code
+    package_update_image: Fast Package Update Image
+    setup_adb: Setup ADB
+    howto_use_wol: How To Use WOL
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Image
+    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    how_to_setup_watchdog: Setup Watchdog
+    add_chinese_support: Chinese Support
+    install_tensorflow: Install TensorFlow
+    install_docker: Install Docker
+    setup_golang: Setup Golang
+    enable_adb: Enable ADB
+    hardware: Hardware
+    download: Download
+    firmware: Firmware
+    android_image: Android
+    ubuntu_image: Ubuntu
+    libreelec_image: LibreELEC
+    uboot_image: U-Boot
+    dualos_image: Dual OS
+    thirdparty_image: Third Party
 
   edge:
     overview: Beginners Guide
@@ -147,8 +207,7 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Using SD-Card
-    install_le_via_windows: Install LE Using Windows
-    install_le_via_cli: Install LE Using CLI
+    install_libreelec: Install LibreELEC
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
     booting_card_vs_burning_card: Booting Card Vs Burning Card
@@ -156,6 +215,8 @@ sidebar:
     extra_power_input: Extra Power Input
     captain_gpio_pinout: Captain GPIO Pin-Outs
     edgev_gpio_pinout: Edge V GPIO Pin-Outs
+    connect_lcd: Connect to TS050 Touchscreen
+    list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
@@ -164,6 +225,7 @@ sidebar:
     rk_docs: Rockchip Official Docs
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
+    kbi_guidance: KBI Guide
     uboot_usage: U-Boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
     setup_tftp: TFTP Server for U-Boot
@@ -194,6 +256,7 @@ sidebar:
     dualos_image: Dual OS
     buildroot_image: Buildroot
     uboot_image: U-Boot
+    thirdparty_image: Third Party
 
   toneboard:
     getting_started: Getting Started

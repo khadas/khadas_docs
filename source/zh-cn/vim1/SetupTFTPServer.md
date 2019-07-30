@@ -42,34 +42,41 @@ $ sudo /etc/init.d/xinetd restart
 按 `Enter` or `Space` 键进入U-boot命令行模式：
 
 ```
-U-Boot 2015.01-g1e20d03-dirty (Jan 01 2017 - 14:40:23)
+U-Boot 2015.01 (May 18 2019 - 19:31:53)
 
-DRAM:  2 GiB
-Relocation Offset is: 76ed0000
+DRAM:  3.8 GiB
+Relocation Offset is: d6e5600000
 
 ...
 
-[CANVAS]addr=0x3d800000 width=3840, height=2160
+gpio: pin GPIOAO_7 (gpio 7) value is 1
 Hit Enter or space or Ctrl+C key to stop autoboot -- :  0 
-kvim#
+kvim3#
 ```
 
 设置目标板IP地址以及TFTP服务器地址：
 ```
-kvim# setenv ipaddr 192.168.1.100
-kvim# setenv serverip 192.168.1.168
+kvim3# setenv ipaddr 192.168.1.249
+kvim3# setenv serverip 192.168.1.117
 ```
 
 保存环境变量：
 ```
-kvim# saveenv
+kvim3# saveenv
 Saving Environment to aml-storage...
-mmc env offset: 0x7400000 
+mmc env offset: 0x6c00000 
 Writing to MMC(1)... done
-kvim#
+kvim3#
 ```
 执行 `saveenv` 将会把环境变量保存到eMMC，所以在执行上述步骤后IP地址会一直存在，除非你执行`env default -a`来恢复默认环境变量。
 
+**提示**:如何确认你的环境变量设置是正确的。
+```
+kvim3#print ipaddr
+ipaddr=192.168.1.249
+kvim3#print serverip
+serverip=192.168.1.117
+```
 
 ### 测试
 确保已经拷贝测试文件（如u-boot.bin）到TFTP服务器根目录（`/srv/tftp`）:
@@ -81,10 +88,10 @@ $
 
 下载文件到地址 `0x1080000`：
 ```
-kvim# tftp 1080000 u-boot.bin
-Speed: 100, full duplex
-Using dwmac.c9410000 device
-TFTP from server 192.168.1.168; our IP address is 192.168.1.100
+kvim3# tftp 1080000 u-boot.bin
+Speed: 1000, full duplex
+Using dwmac.ff3f0000 device
+TFTP from server 192.168.1.117; our IP address is 192.168.1.249
 Filename 'u-boot.bin'.
 Load address: 0x1080000
 Loading: #################################################################
@@ -92,8 +99,8 @@ Loading: #################################################################
 	 ###############################################
 	 2.5 MiB/s
 done
-Bytes transferred = 901120 (dc000 hex)
-kvim#
+Bytes transferred = 1371504 (14ed70 hex)
+
 ```
 如果一切正常，你将会看到上述打印信息。
 
@@ -101,25 +108,25 @@ kvim#
 ### 调试
 * 如果你看到如下打印信息，那么你可能需要检查你的网线连接：
 ```
-kvim# tftp 1080000 u-boot.bin
-dwmac.c9410000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
-dwmac.c9410000: No link.
-kvim#
+kvim3# tftp 1080000 u-boot.bin
+dwmac.ff3f0000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
+dwmac.ff3f0000: No link.
+kvim3#
 ```
 
-* 如果看到如下打印信息，那么你可能是TFTP服务器地址设置错误
+* 如果看到如下打印信息，那么你可能是TFTP服务器地址设置错误或者文件名错误
 ```
-kvim#tftp 1080000 u-boot.bin
-Speed: 100, full duplex
-Using dwmac.c9410000 device
-TFTP from server 192.168.1.68; our IP address is 192.168.1.100
+kvim3#tftp 1080000 u-boot.bin
+Speed: 1000, full duplex
+Using dwmac.ff3f0000 device
+TFTP from server 192.168.1.177; our IP address is 192.168.1.249
 Filename 'u-boot.bin'.
 Load address: 0x1080000
 Loading: T T T T T T T T T T 
 Retry count exceeded; starting again
-Speed: 100, full duplex
+Speed: 1000, full duplex
 ```
-在这种情况下，我把服务器IP设置为错误的IP `192.168.1.68`，然而正确的应该是`192.168.1.168`。
+在这种情况下，我把服务器IP设置为错误的IP `192.168.1.177`，然而正确的应该是`192.168.1.117`。
 
 ### 参考
 * [Ubuntu Wiki: TFTP](https://help.ubuntu.com/community/TFTP)

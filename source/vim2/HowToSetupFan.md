@@ -4,9 +4,9 @@ title: How To Setup A Cooling Fan
 This guide is about how to setup a cooling fan in Ubuntu.
 
 ### Preparations
-* Ubuntu version must be `V20180531` or newer
+* Ubuntu version must be `V20190319` or newer
 
-For Ubuntu `V20180531`, the cooling fan is enabled by default.
+For Ubuntu `V20190319`, the cooling fan is enabled by default.
 
 The cooling fan has 5 working modes:
 * `off` : Cooling fan is disabled.
@@ -15,45 +15,33 @@ The cooling fan has 5 working modes:
 * `high`: Cooling fan is working at high speed mode.
 * `auto`: Cooling fan is working at auto speed mode. By default, the fan speed is determined by CPU temperature.
 
-### Check Working Mode
-```
-$ fw_printenv fan
-fan=auto
-```
-`fan=auto` means the working mode is currently set to `auto`.
-
 ### Setup Working Mode
+
+You can edit file `/boot/env.txt` to setup the FAN mode, the default mode is `auto`.
 
 * Set cooling fan to `low` speed mode:
 
-```
-$ sudo fw_setenv fan low
-$ sudo reboot
-```
+Edit file `/boot/env.txt` and set `fan_mode=low`.
 
 * Set cooling fan to `mid` speed mode:
 
-```
-$ sudo fw_setenv fan mid
-$ sudo reboot
-```
+Edit file `/boot/env.txt` and set `fan_mode=mid`.
+
 * Set cooling fan to `high` speed mode:
 
-```
-$ sudo fw_setenv fan high
-$ sudo reboot
-```
+Edit file `/boot/env.txt` and set `fan_mode=high`.
 
 * Set cooling fan to `auto` speed mode:
 
-```
-$ sudo fw_setenv fan auto
-$ sudo reboot
-```
+Edit file `/boot/env.txt` and set `fan_mode=auto`.
 
 * Disable cooling fan:
 
+Edit file `/boot/env.txt` and set `fan_mode=off`.
+
+After edit the file, please save the modification and reboot the board.
+
 ```
-$ sudo fw_setenv fan off
-$ sudo reboot
+khadas@Khadas:~$ sync
+khadas@Khadas:~$ sudo reboot
 ```

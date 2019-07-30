@@ -8,7 +8,7 @@ title: 通过USB升级固件
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall_zh.png)
   * 在点击`驱动安装`来安装新的驱动。
   ![DriverInstall install](/images/edge/DriverInstall_install_zh.png)
-* 下载[Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.58.zip)并解压。
+* 下载[Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.65.zip)并解压。
 * `AndroidTool.exe`就是烧录工具，是免安装的，直接运行即可。
 
 ### 升级步骤
@@ -23,6 +23,11 @@ title: 通过USB升级固件
 ![AndroidTool loader](/images/edge/AndroldTool_loader_zh.png)
 * Maskrom模式如下：
 ![AndroidTool maskrom](/images/edge/AndroldTool_maskrom_zh.png)
+
+如果板子为 `android 7.1` 升级到 `android 9.0` 固件或者
+板子为 `android 9.0` 升级到 `android 7.1` 固件，需要先执行`擦除Flash`。
+* 擦除Flash模式如下：
+![AndroidTool maskrom](/images/edge/AndroidTool_erase_zh.png)
 
 现在执行`升级`就会开始升级：
 ![AndroidTool upgrade](/images/edge/AndroldTool_upgrade_zh.png)

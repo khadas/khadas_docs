@@ -10,7 +10,7 @@ title: 通过TFTP下载镜像
 
 ```
 kvim# tftp 1080000 u-boot.bin
-kvim# store rom_write 1080000 0 100000
+kvim# store rom_write 1080000 0 $filesize
 ```
 
 **注意**：你可能需要清除旧的U-boot的环境变量：
