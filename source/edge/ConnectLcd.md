@@ -1,22 +1,19 @@
 title: Connect to TS050 Touchscreen
 ---
 
-This short guide will show you how to connect your Edge-V to the TS050 5-point multi-touch screen.
-![TS050 and Edge-V](https://github.com/khadas/khadas_docs/blob/master/source/images/touchscreen_edge_v.jpg?raw=true)
-
 # 1. Brief Introduction
 
 Edge-V has three display interfaces: HDMI + MIPI + EDP. The position of the interfaces are shown below:
 
-![C|690x252](https://forum.khadas.com/uploads/default/original/2X/0/039320ce09bcd95ca4182fec74bae410571860f8.png) 
+![C|690x252](https://github.com/tsangyoujun/khadas_docs/blob/master/edge-v-labels.jpg?raw=true) 
 
 Edge has two LCD screen interfaces: HDMI + DP. The position of the interfaces are shown below:
 
-![image|618x500](https://forum.khadas.com/uploads/default/original/2X/5/5b86da95f1076e6ed99b52369c11f3f2f939717f.jpeg) 
+![image|618x500](https://github.com/tsangyoujun/khadas_docs/blob/master/edge_edp_labels.jpg?raw=true) 
 
 Captain has two LCD screen interfaces：EDP + MIPI. The position of the interfaces are shown below:
 
-![image|573x479](https://forum.khadas.com/uploads/default/original/2X/8/8dbf772d96b98064f3fdfb22078d8434b97215dd.jpeg) 
+![image|573x479](https://github.com/tsangyoujun/khadas_docs/blob/master/captain_edp_labels.jpg?raw=true) 
 
 # 2. (HDMI + DP) Screen Config
 ##  2.1 Configure **DTS**
@@ -122,8 +119,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ```
 
 # 3. (MIPI + HDMI) Screen Config
-![image|585x462](https://forum.khadas.com/uploads/default/original/2X/0/0a372675a4509323dd0ae1e599a238818583fd4c.jpeg) 
-![image|620x409](https://forum.khadas.com/uploads/default/original/2X/1/1c52541caf8d48bc0570cbfb6e0cd54ff6197d6c.jpeg)
+![TS050 and Edge-V](https://github.com/tsangyoujun/khadas_docs/blob/master/touchscreen_edge_v_1280.jpg?raw=true)
 ##  3.1 Configuring **DTS**
 rk3399-khadas-edge-mipi-android.dtsi, for example: MIPI (Main Display) + HDMI (Secondary Display).
 ### 3.1.1 Enable Corresponding Display Device Nodes
@@ -277,8 +273,8 @@ Configure when HDMI is bound to vopl：
 };
 ```
 * Timing Attribute Reference Figure
-![image|690x430](https://forum.khadas.com/uploads/default/original/2X/b/bb6381d5df4301ad346356a68dc26ffbeb8fdad6.png)   
-![image|321x500](https://forum.khadas.com/uploads/default/original/2X/b/bd380c0af2d7c0fd5bb5e1ec01aac571a4771562.png) 
+![image|690x430](https://github.com/tsangyoujun/khadas_docs/blob/master/timing_reference.png?raw=true)   
+![image|321x500](https://github.com/tsangyoujun/khadas_docs/blob/master/command_values.png?raw=true) 
 
 ### 3.1.7 Command Format Description
 ```sh
