@@ -1,22 +1,19 @@
 title: Connect to TS050 Touchscreen
 ---
 
-This short guide will show you how to connect your Edge-V to the TS050 5-point multi-touch screen.
-![TS050 and Edge-V](/images/touchscreen_edge_v.jpg)
-
 # 1. Brief Introduction
 
 Edge-V has three display interfaces: HDMI + MIPI + EDP. The position of the interfaces are shown below:
 
-![C|690x252](upload://vCEu9zShwR4xgQctYmBgkJkbj2.png) 
+![C|690x252](https://github.com/tsangyoujun/khadas_docs/blob/master/edge-v-labels.jpg?raw=true) 
 
 Edge has two LCD screen interfaces: HDMI + DP. The position of the interfaces are shown below:
 
-![image|618x500](upload://d3Gn7fhLKy1UxmfThAPswXX7roH.jpeg) 
+![image|618x500](https://github.com/tsangyoujun/khadas_docs/blob/master/edge_edp_labels.jpg?raw=true) 
 
 Captain has two LCD screen interfaces：EDP + MIPI. The position of the interfaces are shown below:
 
-![image|573x479](upload://kdXxfLuZKTDspbT9lrfOwvZSwS9.jpeg) 
+![image|573x479](https://github.com/tsangyoujun/khadas_docs/blob/master/captain_edp_labels.jpg?raw=true) 
 
 # 2. (HDMI + DP) Screen Config
 ##  2.1 Configure **DTS**
@@ -122,8 +119,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ```
 
 # 3. (MIPI + HDMI) Screen Config
-![image|585x462](upload://1smVSv0OSkCZ8lC4HhQ39uvgBlO.jpeg) 
-![image|620x409](upload://42xKX4UuzJjhppiFkIy0s1JbxmY.jpeg)
+![TS050 and Edge-V](https://github.com/tsangyoujun/khadas_docs/blob/master/touchscreen_edge_v_1280.jpg?raw=true)
+
 ##  3.1 Configuring **DTS**
 rk3399-khadas-edge-mipi-android.dtsi, for example: MIPI (Main Display) + HDMI (Secondary Display).
 ### 3.1.1 Enable Corresponding Display Device Nodes
@@ -277,8 +274,8 @@ Configure when HDMI is bound to vopl：
 };
 ```
 * Timing Attribute Reference Figure
-![image|690x430](upload://qJItLvH8QAG0aogocZeko9VPxmC.png)   
-![image|321x500](upload://qZUjYl3dKnDH3isCG6aMfJWcwTM.png) 
+![image|690x430](https://github.com/tsangyoujun/khadas_docs/blob/master/timing_reference.png?raw=true)   
+![image|321x500](https://github.com/tsangyoujun/khadas_docs/blob/master/command_values.png?raw=true) 
 
 ### 3.1.7 Command Format Description
 ```sh
