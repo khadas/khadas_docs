@@ -26,3 +26,6 @@ AndroidTV image built by SuperCeleron, and beta-tested by Robert.
 ### USB/SD Card installation
 * [KDE](https://osdn.net/projects/manjaro-arm/storage/vim3/kde/)
 * [MATE](https://osdn.net/projects/manjaro-arm/storage/vim3/mate/)
+
+## OpenWRT
+* Work in progress, by [Hyphop](https://forum.khadas.com/t/khadas-vim-openwrt/701/4).
