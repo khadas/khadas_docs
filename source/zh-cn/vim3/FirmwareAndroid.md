@@ -2,5 +2,4 @@ title: Khadas VIM3 Android固件
 ---
 
 # Android
-* [VIM3_Pie_V190704](https://dl.khadas.com/Firmware/VIM3/Android/VIM3_Pie_V190704.7z)
-* [VIM3_Pie_V190726](https://dl.khadas.com/Firmware/VIM3/Android/VIM3_Pie_V190726.7z)
+* [VIM3_Pie_V190809](https://dl.khadas.com/Firmware/VIM3/Android/VIM3_Pie_V190809.7z)
