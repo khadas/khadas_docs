@@ -345,3 +345,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	sys.hwc.device.extend=HDMI-A
     #sys.hwc.device.extend=eDP
 ```
+
+# 5.（HDMI or DP + MIPI）Screen Config
+HDMI or DP + MIPI: This means compatible with HDMI(Main Display) + MIPI (Secondary Display) or DP(Main Display) + MIPI (Secondary Display), but does not support HDMI + DP at the same time.
+##  5.1 Configuring **DTS**
+### android 9.0 Config
+See DTS below for more details on the previous two chapters:
+rk3399-khadas-edge-android.dts
+
+##  5.2 Main and Secondary Display Config
+### android 9.0 Config
+device/rockchip/rk3399/rk3399.mk
+```sh
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.hwc.device.primary=HDMI-A,DP\
+	vendor.hwc.device.extend=DSI
+```
