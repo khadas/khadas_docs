@@ -26,11 +26,11 @@ title: Tone Board Beginners FAQ
 
 * Click the audio icon in your Windows Task Bar.
 
-![Windows 10 Volume Control](/images/toneboard/tb_faq_03.jpg)
+![Windows 10 Volume Control](https://github.com/tsangyoujun/khadas_docs/blob/master/source/xmos_volume.jpg?raw=true)
 
 * Then click the upward-facing arrow to select your audio output device.
 
-![Windows 10 Select Playback Device](/images/toneboard/tb_faq_04.jpg)
+![Windows 10 Select Playback Device](https://github.com/tsangyoujun/khadas_docs/blob/master/source/xmos_selection.jpg?raw=true)
 
 # Enable Volume Control On Mac OS X:
 
