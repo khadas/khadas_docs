@@ -39,6 +39,7 @@ vim1:
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -94,6 +95,7 @@ vim2:
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   hardware:
@@ -153,6 +155,7 @@ vim3:
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -204,6 +207,7 @@ edge:
     build_packages_in_docker: BuildPackagesInDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
   hardware:
     download: HardwareDocs.html
   firmware:

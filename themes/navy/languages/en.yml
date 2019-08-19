@@ -73,6 +73,7 @@ sidebar:
     install_docker: Install Docker
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -128,6 +129,7 @@ sidebar:
     how_to_setup_fan: Add Cooling Fan
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -190,6 +192,7 @@ sidebar:
     install_docker: Install Docker
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -250,6 +253,7 @@ sidebar:
     build_packages_in_docker: Build Packages In Docker
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
     hardware: Hardware
     download: Download
     firmware: Firmware
