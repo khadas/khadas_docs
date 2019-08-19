@@ -248,6 +248,7 @@ sidebar:
     build_android: Build Android Source Code
     setup_adb: Setup ADB
     howto_use_wol: How To Use WOL
+    instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
     how_to_connect_wifi: Connect to Wi-Fi

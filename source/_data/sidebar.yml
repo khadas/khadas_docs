@@ -202,6 +202,7 @@ edge:
     build_android: BuildAndroid.html
     setup_adb: SetupADB.html
     howto_use_wol: HowtoUseWol.html
+    instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
   linux:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html

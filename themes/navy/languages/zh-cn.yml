@@ -247,6 +247,7 @@ sidebar:
     setup_adb: 设置ADB
     howto_use_wol: 如何使用WOL
     force_reset_features: 远程强制复位
+    instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
