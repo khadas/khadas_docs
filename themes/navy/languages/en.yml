@@ -74,6 +74,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -130,6 +131,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -193,6 +195,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -254,6 +257,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware

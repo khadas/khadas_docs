@@ -73,6 +73,7 @@ sidebar:
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
@@ -130,6 +131,7 @@ sidebar:
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -192,6 +194,7 @@ sidebar:
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
@@ -253,6 +256,7 @@ sidebar:
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载

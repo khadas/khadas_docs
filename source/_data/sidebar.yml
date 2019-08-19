@@ -40,6 +40,7 @@ vim1:
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -96,6 +97,7 @@ vim2:
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   hardware:
@@ -156,6 +158,7 @@ vim3:
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -208,6 +211,7 @@ edge:
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
     download: HardwareDocs.html
   firmware:
