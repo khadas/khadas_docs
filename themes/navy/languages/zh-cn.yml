@@ -66,6 +66,7 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
+    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
@@ -122,6 +123,7 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
+    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     how_to_setup_fan: 如何设置风扇
@@ -187,6 +189,7 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
+    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow

@@ -33,6 +33,7 @@ vim1:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    bluetooth_instructions: BluetoothInstructions.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
@@ -89,6 +90,7 @@ vim2:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    bluetooth_instructions: BluetoothInstructions.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
     how_to_setup_fan: HowToSetupFan.html
@@ -152,6 +154,7 @@ vim3:
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
+    bluetooth_instructions: BluetoothInstructions.html
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html

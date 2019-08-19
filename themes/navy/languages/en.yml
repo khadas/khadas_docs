@@ -67,6 +67,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
+    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
@@ -123,6 +124,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Images
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
+    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
@@ -188,6 +190,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
+    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
