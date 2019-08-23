@@ -5,15 +5,15 @@ title: Connect to TS050 Touchscreen
 
 Edge-V开发板外置了3个LCD屏接口：HDMI + MIPI + EDP。接口对应板子上的位置如下图：
 
-![C|690x252](https://github.com/tsangyoujun/khadas_docs/blob/master/edge-v-labels.jpg?raw=true) 
+![C|690x252](/images/edge/edge-v_display_interfaces.jpg) 
 
 Edge开发板外置了2个LCD屏接口：HDMI + DP。接口对应板子上的位置如下图：
 
-![image|618x500](https://github.com/tsangyoujun/khadas_docs/blob/master/edge_edp_labels.jpg?raw=true)  
+![image|618x500](/images/edge/edge_display_interfaces.jpg)  
 
 Captain开发板外置了2个LCD屏接口：EDP + MIPI。接口对应板子上的位置如下图：
 
-![image|573x479](https://github.com/tsangyoujun/khadas_docs/blob/master/captain_edp_labels.jpg?raw=true) 
+![image|573x479](/images/edge/captain_display_interfaces.jpg) 
 
 # 2.（HDMI + DP）屏幕配置
 ##  2.1配置 **dts**
@@ -121,7 +121,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ```
 
 # 3.（MIPI + HDMI）屏幕配置
-![TS050 and Edge-V](https://github.com/tsangyoujun/khadas_docs/blob/master/touchscreen_edge_v_1280.jpg?raw=true)
+![TS050 and Edge-V](/images/edge/edge_v_ts050.jpg)
 ##  3.1配置 **dts**
 rk3399-khadas-edge-mipi-android.dtsi为例介绍：MIPI(主显) + HDMI（副显）
 ### 3.1.1 使能对应显示设备节点
@@ -276,8 +276,8 @@ cpll 这样可以分出任意 dclk 的频率。
     };
 };
 ```
-![image|690x429,75%](upload://gZ9Tkwvn8kCkQ3tIx8HTpDEcel6.png)  
-![2|379x500,100%](upload://8bqoPXXi4Q5btI9XdhB9SvoksRc.png) 
+![image|690x429,75%](/images/edge/timing_attribute_reference_figure.png)  
+![2|379x500,100%](/images/edge/timing_attribute_reference_figure_2.png) 
 
 ### 3.1.7 命令格式说明
 ```sh
