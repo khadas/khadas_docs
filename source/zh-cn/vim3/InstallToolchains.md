@@ -5,6 +5,7 @@ title: 安装Amlogic平台交叉编译器
 
 #### 安装U-Boot BL交叉编译器
 ```
+$ sudo apt-get install gcc-arm-none-eabi
 $ wget https://releases.linaro.org/archive/13.11/components/toolchain/binaries/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux.tar.bz2
 $ wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/6-2017q2/gcc-arm-none-eabi-6-2017-q2-update-linux.tar.bz2
 $ sudo mkdir /opt/toolchains
