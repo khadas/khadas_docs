@@ -25,9 +25,9 @@ $ repo init -u https://github.com/khadas/android_manifest.git -b Nougat
 ```
 *Note: Available for both VIM1 & VIM2.*
 
-For Android Oreo (8.0):
+For Android Pie (9.0):
 ```sh
-$ repo init -u https://github.com/khadas/android_manifest.git -b Oreo
+$ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vims-pie
 ```
 *Note: Only available for VIM1.*
 
