@@ -51,6 +51,7 @@ sidebar:
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
+    how_to_install_adb_tool: 如何安装ADB调试工具
     uboot: U-boot
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
@@ -65,12 +66,15 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
+    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
+    how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
@@ -101,6 +105,7 @@ sidebar:
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
+    how_to_install_adb_tool: 如何安装ADB调试工具
     uboot: U-boot
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
@@ -118,6 +123,7 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
+    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     how_to_setup_fan: 如何设置风扇
@@ -126,6 +132,8 @@ sidebar:
     install_docker: 安装Docker
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
+    how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -163,6 +171,7 @@ sidebar:
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
     how_to_setup_pcie_usb_port: 如何设置PCIe或USB3.0
+    how_to_install_adb_tool: 如何安装ADB调试工具
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     uboot_usage: U-boot使用说明
@@ -180,12 +189,15 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
+    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
+    how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载
@@ -221,6 +233,7 @@ sidebar:
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     rk_docs: 瑞芯微官方文档
+    how_to_install_adb_tool: 如何安装ADB调试工具
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     kbi_guidance: KBI说明
@@ -234,6 +247,7 @@ sidebar:
     setup_adb: 设置ADB
     howto_use_wol: 如何使用WOL
     force_reset_features: 远程强制复位
+    instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_connect_wifi: 如何连接Wi-Fi
@@ -245,6 +259,8 @@ sidebar:
     build_packages_in_docker: 在Docker中编译软件包
     setup_golang: 搭建GO语言环境
     enable_adb: 如何使能ADB
+    how_to_use_wiringpi: 如何使用WiringPi
+    how_to_use_rpigpio: 如何使用RPi.GPIO
     hardware: 硬件资料
     download: 下载
     firmware: 固件下载

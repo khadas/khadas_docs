@@ -52,6 +52,7 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
+    how_to_install_adb_tool: How To Install ADB Tool
     uboot: U-Boot
     uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
@@ -66,12 +67,15 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
+    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -102,6 +106,7 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
+    how_to_install_adb_tool: How To Install ADB Tool
     uboot: U-Boot
     uboot_usage: U-Boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
@@ -119,6 +124,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Images
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
+    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
@@ -126,6 +132,8 @@ sidebar:
     how_to_setup_fan: Add Cooling Fan
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -164,6 +172,7 @@ sidebar:
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
     how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
+    how_to_install_adb_tool: How To Install ADB Tool
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     uboot_usage: U-boot Usage Guide
@@ -181,12 +190,15 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
+    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -223,6 +235,7 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     rk_docs: Rockchip Official Docs
+    how_to_install_adb_tool: How To Install ADB Tool
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     kbi_guidance: KBI Guide
@@ -235,6 +248,7 @@ sidebar:
     build_android: Build Android Source Code
     setup_adb: Setup ADB
     howto_use_wol: How To Use WOL
+    instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
     how_to_connect_wifi: Connect to Wi-Fi
@@ -246,6 +260,8 @@ sidebar:
     build_packages_in_docker: Build Packages In Docker
     setup_golang: Setup Golang
     enable_adb: Enable ADB
+    how_to_use_wiringpi: How To Use WiringPi
+    how_to_use_rpigpio: How To Use PRi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware

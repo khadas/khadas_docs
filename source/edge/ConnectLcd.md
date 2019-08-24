@@ -3,7 +3,7 @@ title: Connect to TS050 Touchscreen
 
 # 1. Quick & Dirty Method
 
-![Edge_Captain_TS050_Battery_Case](https://github.com/tsangyoujun/khadas_docs/blob/master/Edge_Captain_TS050_Battery_Case.jpeg?raw=true)
+![Edge_Captain_TS050_Battery_Case](/images/edge/Cpt-v12_TS050_For_Display.jpg)
 
 * Download and unpack this [Android 9.0 MIPI Firmware](https://mega.nz/#!7vZD0I6D!sYrXemihQWok-L9tjq-N-6xE4rcAmMId75nfr3QQhO8), made by GoEnjoy.
 * Then install the [RockChip USB Drivers](https://dl.khadas.com/Tools/DriverAssitant_v4.6.zip), and plug in your Edge / Edge-V into your PC via USB-C cable.
@@ -17,15 +17,15 @@ title: Connect to TS050 Touchscreen
 
 Edge-V has three display interfaces: HDMI + MIPI + EDP. The position of the interfaces are shown below:
 
-![C|690x252](https://github.com/tsangyoujun/khadas_docs/blob/master/edge-v-labels.jpg?raw=true) 
+![C|690x252](/images/edge/edge-v_display_interfaces.jpg) 
 
 Edge has two LCD screen interfaces: HDMI + DP. The position of the interfaces are shown below:
 
-![image|618x500](https://github.com/tsangyoujun/khadas_docs/blob/master/edge_edp_labels.jpg?raw=true) 
+![image|618x500](/images/edge/edge_display_interfaces.jpg) 
 
 Captain has two LCD screen interfaces：EDP + MIPI. The position of the interfaces are shown below:
 
-![image|573x479](https://github.com/tsangyoujun/khadas_docs/blob/master/captain_edp_labels.jpg?raw=true) 
+![image|573x479](/images/edge/captain_display_interfaces.jpg) 
 
 # 3. (HDMI + DP) Screen Config
 ##  3.1 Configure **DTS**
@@ -131,7 +131,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ```
 
 # 4. (MIPI + HDMI) Screen Config
-![TS050 and Edge-V](https://github.com/tsangyoujun/khadas_docs/blob/master/touchscreen_edge_v_1280.jpg?raw=true)
+![TS050 and Edge-V](/images/edge/edge_v_ts050.jpg)
 ##  4.1 Configuring **DTS**
 rk3399-khadas-edge-mipi-android.dtsi, for example: MIPI (Main Display) + HDMI (Secondary Display).
 ### 4.1.1 Enable Corresponding Display Device Nodes
@@ -285,8 +285,8 @@ Configure when HDMI is bound to vopl：
 };
 ```
 * Timing Attribute Reference Figure
-![image|690x430](https://github.com/tsangyoujun/khadas_docs/blob/master/timing_reference.png?raw=true)   
-![image|321x500](https://github.com/tsangyoujun/khadas_docs/blob/master/command_values.png?raw=true) 
+![image|690x430](/images/edge/timing_attribute_reference_figure.png)   
+![image|321x500](/images/edge/timing_attribute_reference_figure_2.png) 
 
 ### 4.1.7 Command Format Description
 ```sh

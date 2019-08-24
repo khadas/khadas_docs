@@ -18,6 +18,7 @@ vim1:
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
+    how_to_install_adb_tool: HowToInstallADBTool.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
@@ -32,12 +33,15 @@ vim1:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    bluetooth_instructions: BluetoothInstructions.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -68,6 +72,7 @@ vim2:
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
+    how_to_install_adb_tool: HowToInstallADBTool.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
@@ -85,6 +90,7 @@ vim2:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    bluetooth_instructions: BluetoothInstructions.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
     how_to_setup_fan: HowToSetupFan.html
@@ -92,6 +98,8 @@ vim2:
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   hardware:
@@ -127,6 +135,7 @@ vim3:
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
     how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
+    how_to_install_adb_tool: HowToInstallADBTool.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     uboot_usage: UBootUsage.html
@@ -145,11 +154,14 @@ vim3:
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
+    bluetooth_instructions: BluetoothInstructions.html
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
     download: HardwareDocs.html
   firmware:
@@ -181,6 +193,7 @@ edge:
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     rk_docs: RockchipDocs.html
+    how_to_install_adb_tool: HowToInstallADBTool.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     kbi_guidance: KbiGuidance.html
@@ -189,6 +202,7 @@ edge:
     build_android: BuildAndroid.html
     setup_adb: SetupADB.html
     howto_use_wol: HowtoUseWol.html
+    instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
   linux:
     fenix_script: FenixScript.html
     how_to_connect_wifi: HowToConnectWifi.html
@@ -200,6 +214,8 @@ edge:
     build_packages_in_docker: BuildPackagesInDocker.html
     setup_golang: SetupGolang.html
     enable_adb: HowtoEnableAdb.html
+    how_to_use_wiringpi: HowToUseWiringPi.html
+    how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
     download: HardwareDocs.html
   firmware:

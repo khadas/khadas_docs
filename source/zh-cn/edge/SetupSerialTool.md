@@ -37,7 +37,7 @@ $ sudo usermod -a -G dialout $(whoami)
 **添加如下内容到 ~/.kermrc文件进行设置：**
 ```
 set line /dev/ttyUSB0
-set speed 115200
+set speed 1500000
 set carrier-watch off
 set handshake none
 set flow-control none
@@ -49,13 +49,19 @@ set send pack 1000
 set window 5
 c
 ```
+### 支持`1500000` 波特率
+为了支持`1500000`波特率，需要替换`kermit` 文件，点击[这里](https://dl.khadas.com/Tools/kermit)下载，并执行如下命令。
+```sh
+$ chmod +x kermit
+$ sudo cp kermit /usr/bin/kermit
+```
 
 **运行`kermit`：**
 
 确保连接正确，如果一切正常会打印如下信息：
 ```sh
 $ kermit
-Connecting to /dev/ttyUSB0, speed 115200
+Connecting to /dev/ttyUSB0, speed 1500000
  Escape character: Ctrl-\ (ASCII 28, FS): enabled
 Type the escape character followed by C to get back,
 or followed by ? to see other options.
@@ -70,15 +76,16 @@ TE: 116640
 ```
 /dev/ttyUSB0: Permission denied
 ```
+### SecureCRT BUG
+如果你使用SecureCRT连接你的edge，你会看到log是这样子的
+![SecureCRT BUG](/images/edge/SourceCRT_BUG.png)
+这是SecureCRT本身的bug，你需要执行以下步骤：
+* 先打开一个kermit,你会看到正确的log信息
+* 关闭kermit，打开SecureCRT连接你的开发板
+![SecureCRT BUG](/images/edge/SourceCRT_BUG_slove.png)
+你就会看到正确的信息了
 
-### 支持`1500000` 波特率
-为了支持`1500000`波特率，需要替换`kermit` 文件，点击[这里](https://dl.khadas.com/Tools/kermit)下载，并执行如下命令。
-```sh
-$ chmod +x kermit
-$ sudo cp kermit /usr/bin/kermit
-```
-
-如果想使用`1500000`波特率，需要修改文件`~/.kermrc`，把speed改为`1500000`.
+**提示：如果设置了还是不能连接，你可能需要检查你的串口设置时候正确了**
 
 ### 参考
 * [C-Kermit官网](http://www.columbia.edu/kermit/index.html)

@@ -45,7 +45,7 @@ $ sudo usermod -a -G dialout $(whoami)
 **Add the following contents into ~/.kermrc to finish the setup:**
 ```
 set line /dev/ttyUSB0
-set speed 115200
+set speed 1500000
 set carrier-watch off
 set handshake none
 set flow-control none
@@ -57,13 +57,19 @@ set send pack 1000
 set window 5
 c
 ```
+### Enable 1500000 baudrate
+To enable `1500000` baudrate, you need to replace the `kermit` binary. See [Khadas Kermit](https://dl.khadas.com/Tools/kermit) to download, and execute the following commands:
+```sh
+$ chmod +x kermit
+$ sudo cp kermit /usr/bin/kermit
+```
 
 **Run the command `kermit` to launch C-Kermit**
 
 Ensure that you have made the right connections, and if everything went fine, terminal will print this out:
 ```sh
 $ kermit
-Connecting to /dev/ttyUSB0, speed 115200
+Connecting to /dev/ttyUSB0, speed 1500000
  Escape character: Ctrl-\ (ASCII 28, FS): enabled
 Type the escape character followed by C to get back,
 or followed by ? to see other options.
@@ -78,15 +84,15 @@ TE: 116640
 ```
 /dev/ttyUSB0: Permission denied
 ```
+###SecureCRT Bug
+If you use SecureCRT to connect the Edge-V or edge,maybe you will see this.
+![SrcureCRT BUG](/images/edge/SourceCRT_BUG.png)
+This is not caused by incorrect settings. This is a CRT bug. You need to follow my steps.
+* Use kermit to connect you board,you will see the true log
+* Close kermit,then use SecureCRT to connect you board.you will find all is fine.
+![SecureCRT Slove](/images/edge/SourceCRT_BUG_slove.png)
 
-### Enable 1500000 baudrate
-To enable `1500000` baudrate, you need to replace the `kermit` binary. See [Khadas Kermit](https://dl.khadas.com/Tools/kermit) to download, and execute the following commands:
-```sh
-$ chmod +x kermit
-$ sudo cp kermit /usr/bin/kermit
-```
-
-If you want to use the `1500000` baudrate, you need to modify the `~/.kermrc` speed to `1500000`.
+**note:If these steps don't work, maybe you need to confirm your settings first.**
 
 ### See Also
 * [C-Kermit Offical website](http://www.columbia.edu/kermit/index.html)
