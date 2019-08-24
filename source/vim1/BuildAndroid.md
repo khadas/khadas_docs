@@ -60,8 +60,15 @@ $ make -jN otapackage
 When you build Android aboved, will build Linux kernel at the same time.
 
 In some case, you might want to build Linux kernel separately, you can run the script below to do that:
+
+For Android 6.0 and 7.1:
 ```sh
 $ source device/khadas/kvim/mkern.sh
+```
+
+For Android 9.0:
+```sh
+$ make bootimage
 ```
 
 ### See Also

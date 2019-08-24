@@ -58,8 +58,15 @@ $ make -jN otapackage
 当你在编译安卓的同时会编译linux内核。
 
 在某些情况下你可能需要单独编译linux内核，编译命令如下：
+
+编译Android 6.0 和 7.1时:
 ```sh
 $ source device/khadas/kvim/mkern.sh
+```
+
+编译Android 9.0时：
+```sh
+$ make bootimage
 ```
 
 
