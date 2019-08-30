@@ -6,6 +6,7 @@ title: Khadas VIM1 Ubuntu Firmware
 ## EMMC Installation
 
 ### Server
+* [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190830.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190604](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190604.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-3.14_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-3.14_arm64_EMMC_V20181030.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20181030.7z)
@@ -15,6 +16,7 @@ title: Khadas VIM1 Ubuntu Firmware
 * [Vim_Ubuntu-server-16.04_V170515](http://www.mediafire.com/file/yx7sg9rx3a52m33/Vim_Ubuntu-server-16.04_V170515.7z)
 
 ### Desktop
+* [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190830.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190604](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190604.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-3.14_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-3.14_arm64_EMMC_V20181030.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20181030.7z)
@@ -27,10 +29,14 @@ title: Khadas VIM1 Ubuntu Firmware
 ## SD/USB Installation
 
 ### Server
+* [VIM1_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830.7z)
+* [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190830.7z)
 * [VIMs_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190604](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190604.7z)
 * [VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030.7z)
 
 ### Desktop
+* [VIM1_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830.7z)
+* [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190830.7z)
 * [VIMs_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190604](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190604.7z)
 * [VIMs_Ubuntu-xfce-bionic_Linux-4.19_arm64_SD-USB_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-xfce-bionic_Linux-4.19_arm64_SD-USB_V20181030.7z)
 * [VIMs_Ubuntu-xenial_Linux-3.14_mate_arm64_SD-USB_2018-05-31](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-xenial_Linux-3.14_mate_arm64_SD-USB_2018-05-31.7z)
