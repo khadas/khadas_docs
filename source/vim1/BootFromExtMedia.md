@@ -48,7 +48,7 @@ $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 * For VIM2: Copy `kvim2.dtb`, `kvim2_linux.dtb` or `meson-gxm-khadas-vim2.dtb` to `/boot`, and rename it to `dtb.img`.
 * For VIM3: Copy `kvim3_linux.dtb` or `kvim3l_linux.dtb` to `/boot`, and rename it to `dtb.img`.
 
-**Note:if you board is `VIM3`,please choose `kvim3_linux.dtb`, or your board is `VIM3 Light`,please choose `kvim3l_linux.dtb`.**
+**Note:if you board is `VIM3`,please choose `kvim3_linux.dtb`, or your board is `VIM3 Lite`,please choose `kvim3l_linux.dtb`.**
 
 ### Step 3. Boot VIM from SD Card
 There are 2 ways to boot from the SD Card:
