@@ -3,21 +3,6 @@ title: Boot Images from External Media
 
 There are many images that are designed to run from an SD Card or Thumbdrive (U-Disk). For example, [Volumio](https://forum.khadas.com/t/volumio-for-khadas/1437), [CoreELEC](https://coreelec.org/), [LibreELEC](https://libreelec.tv/downloads_new/khadas-vim/), [Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825) and Khadas SD images([VIM1](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/)). This tutorial is about how to boot these images.
 
-In order to boot images from external media you must make sure:
-* Android OS is installed on the eMMC
-* Activate the Multi-Boot
-
-For different images you may need different Android versions.
-
-VIM1 and VIM2:
-
-* LibreELEC / Ubuntu with Linux 3.14: You need **Android M** or the latest **Android N (V180207 or later)** or latest Ubuntu running on the eMMC.
-* Ubuntu with Linux 4.9: You need **Android O** or latest Ubuntu running on the eMMC.
-
-VIM3:
-
-* Ubuntu with Linux 4.9: You need Android Q or Ubuntu running on the eMMC.
-
 ### Step 1. Clone image to SD-Card or Thumbdrive (U-Disk)
 
 * Download [Etcher](https://www.balena.io/etcher/), it will clone the image into your SD Card or Thumbdrive. It's got a user-friendly GUI for beginners, and is compatible with Mac, Windows and Linux.After decompression, it is an executable file. Select firmware and it will automatically identify your USB device.

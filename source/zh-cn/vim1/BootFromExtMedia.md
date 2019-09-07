@@ -4,20 +4,6 @@ title: 从外部媒体介质启动系统
 
 有很多系统运行在SD卡或U盘上,例如：[LibreELEC](https://libreelec.tv/downloads_new/khadas-vim/),[Armbian images](http://forum.khadas.com/t/armbian-kodi-ubuntu-debian-for-sd-usb-emmc/825)以及Khadas SD images([VIM1](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/))。这篇文档介绍如何运行这些镜像。
 
-为了从外部媒体介质启动系统，需要确保如下两件事：
-* eMMC中要运行安卓系统
-* 激活多启动
-
-对于不同的镜像需要不同的安卓版本。
-
-VIM1和VIM2：
-
-* LibreELEC, Ubuntu使用linux 3.14内核的需要Android M或Android N(V180207及更新版本)或最新的Ubuntu运行在eMMC。
-* Ubuntu使用linux 4.9内核的需要Android O或最新的Ubuntu运行在eMMC。
-
-VIM3：
-
-* Ubuntu使用linux 4.9内核的需要Android Q或Ubuntu运行在eMMC。
 
 ### 1、把固件写入到SD卡或U盘
 * 下载烧录工具[Etcher](https://www.balena.io/etcher/), 它会将镜像写入你的SD卡或U盘中。它为初学者提供了一个用户友好的图形用户界面，与Mac、Windows和Linux兼容，解压后是一个可执行文件，直接执行即可。选择固件，它将自动识别您的USB设备，然后烧录就可以了。
