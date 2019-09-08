@@ -16,7 +16,7 @@ The cooling fan has 5 working modes:
 * `mid` : Coolinn fan is working at middle speed mode.
 * `high`: Cooling fan is working at high speed mode.
 * `auto`: Cooling fan is working at auto speed mode. By default, the fan speed is determined by CPU temperature.
-* `on`  : Colling fan alias for `auto`. See above.
+* `on`  : Cooling fan alias for `auto`. See above.
 
 ### Setup Working Mode
 
