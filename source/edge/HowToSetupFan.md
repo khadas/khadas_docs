@@ -55,11 +55,18 @@ To query the fan mode/level, temperature and trigger after booting use the follo
 
 * `mode` : Query the actual fan mode/level.
 * `temp` : Query the actual CPU temperature.
-* `trig` : Query the three different temperatur trigger for low, mid and high fan level.
+* `trig` : Query the three different temperature trigger for low, mid and high fan level.
 
 ```bash
-khadas@Khadas:~$ sudo fan.sh mode
-Fan mode: auto
-Fan level: off
-Fan state: active
+khadas@Khadas:~$ sudo fan.sh --help
+Help: Command line parameters:
+
+Usage: /usr/local/bin/fan.sh [on|auto|off]  :: Set fan mode
+       /usr/local/bin/fan.sh [low|mid|high] :: Set fan level
+       /usr/local/bin/fan.sh [temp]         :: Query cpu temperature
+       /usr/local/bin/fan.sh [trig]         :: Query fan trigger temperature
+       /usr/local/bin/fan.sh [mode]         :: Query fan mode/level
+       /usr/local/bin/fan.sh [--help|-h]    :: This text
+
+Examp: /usr/local/bin/fan.sh auto
 ```
