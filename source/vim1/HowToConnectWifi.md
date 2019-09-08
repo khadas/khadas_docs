@@ -21,7 +21,7 @@ Find a Wi-Fi network that you can connect to.
 
 To avoid storing human readable passwords there is an handy tool coming with wpa_supplicant called `wpa_passphrase`.
 
-Use `wpa_passphrase your_ssid your_password` to create an hashed passphrase from your_ssid and your_password.
+Use `wpa_passphrase your_ssid your_password` to create a 256-bit PSK passphrase from your_ssid and your_password.
 
 ```bash
 khadas@Khadas:~$ wpa_passphrase your_ssid your_password
@@ -32,7 +32,9 @@ network={
 }
 ```
 
-The new password is now a hashed passphrase `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c`
+The new password is now a hashed passphrase.
+
+`6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c`
 
 *Tip: Replace the `your_ssid` & `your_password` with your SSID and password.*
 
@@ -46,7 +48,8 @@ Device 'wlan0' successfully activated with '206ab399-3822-4652-ba4c-64847af0bce9
 *Tip: Replace the `your_ssid` & `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c` with your SSID and passphrase.*
 
 ### Disconnect from a Wi-Fi Network
-```
+
+```bash
 $ sudo nmcli d disconnect wlan0
 Device 'wlan0' successfully disconnected.
 ```
