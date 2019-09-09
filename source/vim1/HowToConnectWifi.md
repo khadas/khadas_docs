@@ -17,16 +17,39 @@ IN-USE  SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SEC
 ```
 Find a Wi-Fi network that you can connect to.
 
-### Connect to a Wi-Fi Network
+### Create an hashed pre-computed PSK key with wpa_passphrase
+
+To avoid storing human readable passwords there is an handy tool coming with wpa_supplicant called `wpa_passphrase`.
+
+Use `wpa_passphrase your_ssid your_password` to create a 256-bit PSK passphrase from your_ssid and your_password.
+
+```bash
+khadas@Khadas:~$ wpa_passphrase your_ssid your_password
+network={
+  ssid="your_ssid"  
+  #psk="your_password"
+  psk=6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c
+}
 ```
-$ sudo nmcli d wifi connect your_ssid password your_password
-[sudo] password for khadas:
-Device 'wlan0' successfully activated with '206ab399-3822-4652-ba4c-64847af0bce9'.
-```
+
+The new password is now a hashed passphrase.
+
+`6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c`
+
 *Tip: Replace the `your_ssid` & `your_password` with your SSID and password.*
 
-### Disconnect from a Wi-Fi Network
+### Connect to a Wi-Fi Network
+
+```bash
+$ sudo nmcli d wifi connect your_ssid password 6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c wep-key-type key
+Device 'wlan0' successfully activated with '206ab399-3822-4652-ba4c-64847af0bce9'.
 ```
+
+*Tip: Replace the `your_ssid` & `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c` with your SSID and passphrase.*
+
+### Disconnect from a Wi-Fi Network
+
+```bash
 $ sudo nmcli d disconnect wlan0
 Device 'wlan0' successfully disconnected.
 ```
