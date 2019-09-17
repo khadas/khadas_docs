@@ -1,7 +1,7 @@
 title: Hardware Documentation
 ---
 
-This documentation is about hardware of Khadas VIM3.
+This documentation is about hardware of Khadas VIM3/3L.
 
 [Khadas VIM3 Specifications](https://dl.khadas.com/Hardware/VIM3/Specs/Khadas_VIM3_Specs.pdf)
 [Khadas VIM3 Schematic](https://dl.khadas.com/Hardware/VIM3/Schematic/VIM3_V11_Sch.pdf)
@@ -11,3 +11,9 @@ This documentation is about hardware of Khadas VIM3.
 [Khadas VIM3/3L 3D CAD (STEP format)](https://dl.khadas.com/Hardware/VIM3/CAD/VIM3%20v12%203D%20CAD%2009-Sep-2019.zip)
 [Amlogic S922X Datasheet](https://dl.khadas.com/Hardware/VIM3/Datasheet/S922X_Datasheet_Wesion.pdf)
 [Amlogic A311D Datasheet](https://dl.khadas.com/Hardware/VIM3/Datasheet/A311D_Datasheet_01_Wesion.pdf)
+
+Documentation for compatible Khadas VIM3/3L Accessories.
+
+[3705 Cooling Fan 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/3705_Cooling_Fan_3D_CAD.zip)
+[New VIM Heatsink 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/New_VIM_Heatsink_3D_CAD.zip)
+[TS050 Touchscreen 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/TS050_Touchscreen_3D_CAD.zip)
