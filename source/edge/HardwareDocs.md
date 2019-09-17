@@ -30,3 +30,11 @@ These documentation files contain hardware information for the Khadas Edge, Capt
 [Khadas Juice Specifications](https://dl.khadas.com/Hardware/Edge/Specs/Juice_Specs.pdf)
 [Khadas Juice Schematic](https://dl.khadas.com/Hardware/Edge/Schematic/Juice_V12_Sch.pdf)
 [Rockchip RK3399 Datasheet](https://dl.khadas.com/Hardware/Edge/Datasheet/Rockchip_RK3399TRM_V1.4_Part1-20170408.pdf)
+
+Documentation for compatible Khadas Edge, Captain and Edge-V Accessories.
+
+[3705 Cooling Fan 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/3705_Cooling_Fan_3D_CAD.zip)
+[New VIM Heatsink 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/New_VIM_Heatsink_3D_CAD.zip)
+[Edge Heatsink 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/Edge_Heatsink_3D_CAD.zip)
+[TS050 Touchscreen 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/TS050_Touchscreen_3D_CAD.zip)
+[Li-Po Battery (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/LiPo_Battery_3D_CAD.zip)
