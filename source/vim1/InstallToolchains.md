@@ -3,24 +3,23 @@ title: Install Extra Toolchains For The Amlogic Platform
 
 The Amlogic Platform requires extra toolchains for cross-compiling, you will need to follow these steps to setup:
 
-### Install Cross Compiler for U-Boot BL301:
+### Install Cross Compiler for U-Boot BL:
 ```sh
 $ sudo apt-get install gcc-arm-none-eabi
+$ wget https://releases.linaro.org/archive/13.11/components/toolchain/binaries/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux.tar.bz2
+$ wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/6-2017q2/gcc-arm-none-eabi-6-2017-q2-update-linux.tar.bz2
+$ sudo mkdir /opt/toolchains
+$ sudo tar -xjf gcc-linaro-aarch64-none-elf-4.8-2013.11_linux.tar.bz2 -C /opt/toolchains
+$ sudo tar -xjf gcc-arm-none-eabi-6-2017-q2-update-linux.tar.bz2 -C /opt/toolchains
 ```
-
-*Note:*
-* BL301 is an ARM Cortex-M3 based coprocessor, and is integrated into the Amlogic SoCs.
-* We have verified that 'gcc-4.8.2 on Ubuntu 14.04' and 'gcc-4.9.3 on Ubuntu 16.04' both work fine on the VIM1 Platform.
-* You might want to take a risk and experiment with other gcc versions.
 
 ### Install Cross-Compiler for Linux Kernel:
 ```sh
-$ wget http://releases.linaro.org/archive/14.09/components/toolchain/binaries/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux.tar.bz2
+$ wget https://releases.linaro.org/components/toolchain/binaries/6.3-2017.02/arm-linux-gnueabihf/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf.tar.xz
+$ wget https://releases.linaro.org/components/toolchain/binaries/6.3-2017.02/aarch64-linux-gnu/gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu.tar.xz
 $ sudo mkdir /opt/toolchains
-$ sudo tar -xjf gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux.tar.bz2 -C /opt/toolchains
+$ sudo tar xvJf gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf.tar.xz -C /opt/toolchains
+$ sudo tar xvJf gcc-linaro-6.3.1-2017.02-x86_64_aarch64-linux-gnu.tar.xz -C /opt/toolchains
 ```
-
-*Tip: You may need to find a new address for "gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux.tar.bz2" if the link address above has changed.*
-
 ### Further Reading:
 [Amlogic Openlinux Website](http://openlinux.amlogic.com/)

@@ -17,7 +17,7 @@ title: Khadas VIM1 Third Party Firmware
 * [Forum topic](http://forum.khadas.com/t/libreelec-for-khadas-vim-sd-usb-emmc/793)
 
 ## Lakka
-* [Lakka-S905.arm-2.1-emmc](http://www.mediafire.com/file/mmychu9z6445mfg/Lakka-S905.arm-2.1-emmc.img.7z/file)
+* [Lakka-S905.arm-2.1-emmc](https://dl.khadas.com/Firmware/VIM1/Lakka/Lakka-VIM-2.1-emmc.img.7z)
 
 ## Volumio
 **Volumio image built by balbes150, thanks balbes150.**

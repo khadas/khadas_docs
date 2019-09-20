@@ -1,6 +1,8 @@
 # Khadas documentation
 <!-- Markdown snippet -->
 
+[![Build Status](https://travis-ci.org/khadas/khadas_docs.svg?branch=master)](https://travis-ci.org/khadas/khadas_docs)
+
 ## Getting started
 
 Install Git:
