@@ -17,11 +17,18 @@ $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 * 在Windows下使用工具`Win32DiskImager`写入。可以参考[在Windows下安装LibreELEC](/zh-cn/vim1/InstallLibreELEC.html#通过Windows-PC写入).
 
 ### 2、准备DTB文件
+#### 除了Armbian和LibreELEC以外的其他SD卡固件
 VIM1、VIM2和VIM3使用不同的DTB文件。
 * VIM1: 拷贝`kvim.dtb`、`kvim_linux.dtb`或者`meson-gxl-s905x-khadas-vim.dtb`到`/boot`目录并重命名为`dtb.img`。
 * VIM2: 拷贝`kvim2.dtb`、`kvim2_linux.dtb`或者`meson-gxm-khadas-vim2.dtb`到`/boot`目录并重命名为`dtb.img`。
 * VIM3: 拷贝`kvim3_linux.dtb`或者`kvim3l_linux.dtb`到`/boot`目录并重命名为`dtb.img`.
 **注意:`VIM3`的板子选择`kvim3_linux.dtb`,`VIM3 Light`的板子请选择`kvim3l_linux.dtb`.**
+#### Armbian和LibreELEC
+在`dtb`文件夹里找到相应的DTB文件
+* VIM1: `/dtb/meson-gxl-s905x-khadas-vim.dtb`
+* VIM2: `VIM2: /dtb/meson-gxm-khadas-vim2.dtb`
+* VIM3: `/dtb/meson-g12b-a311d-khadas-vim3.dtb`
+编辑`/extlinux/extlinux.conf`里面的`FDT`,以及在`uEnv.ini`文件设置`dtb_name=`
 
 ### 3、激活多启动
 两种方式激活多启动：
