@@ -38,3 +38,4 @@ Documentation for compatible Khadas Edge, Captain and Edge-V Accessories.
 [Edge Heatsink 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/Edge_Heatsink_3D_CAD.zip)
 [TS050 Touchscreen 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/TS050_Touchscreen_3D_CAD.zip)
 [Li-Po Battery (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/LiPo_Battery_3D_CAD.zip)
+[M2X Extension Board 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/M2X_Extension_3D_CAD_Files_21_Sep_2019.zip)
