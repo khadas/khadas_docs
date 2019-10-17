@@ -50,7 +50,7 @@ set carrier-watch off
 set handshake none
 set flow-control none
 robust
-set file tpye bin
+set file type bin
 set file name lit
 set rec pack 1000
 set send pack 1000
