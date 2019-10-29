@@ -29,7 +29,7 @@ Host PC OS requirement:
 $ sudo apt update
 $ sudo apt install python3 python3-pip python3-virtualenv
 $ cd ~/npu/aml_npu_sdk/acuity-toolkit
-$ for req in $(cat requirements.txt); do pip3 install $req; done
+$ pip3 install -r requirements.txt
 ```
 
 *Note: The command will install TensorFlow CPU version by default, if your PC has NVIDIA GPU(s) you can choose to install [GPU version](https://www.tensorflow.org/install/gpu) to speed up the conversion.*
