@@ -67,6 +67,8 @@ These items are useful when you need to connect your VIM3 SBC to an external dis
 3. Wireless USB KeyBoard + Mouse
 4. CEC-Compatible Remote Control
 
+```Note: Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after some time.```
+
 **Learn More:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
