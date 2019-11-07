@@ -10,8 +10,8 @@ title: VIM3 相关文档
 **更多：**
 * [Khadas Shop - 电源适配器](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - Type-C数据线](https://www.khadas.com/product-page/usb-c-cable)
-* [Khadas VIMs外部供电接口](https://docs.khadas.com/zh-cn/vim3/ExtraPowerInput.html)
-* [Khadas VIm 规格](https://www.khadas.com/vim)
+* [Khadas VIMs 外部供电接口](https://docs.khadas.com/zh-cn/vim3/ExtraPowerInput.html)
+* [Khadas VIM 规格](https://www.khadas.com/vim)
 
 # 显示器　&& 用户输入
 当您需要将VIM3 SBC连接到外部显示器+键盘鼠标+遥控器，以用作台式计算机或媒体中心时，这些选项非常有用
