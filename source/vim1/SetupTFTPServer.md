@@ -4,13 +4,15 @@ title: Setup TFTP Server for U-Boot
 Our approach to setup a TFTP server is quite similar to other guides that you can find via Google.
 Here we provide some instructions for reference:
 
-### Setup TFTP
+### Ubuntu16.04
+
+#### Setup TFTP
 Install TFTP packages:
 ```sh
 $ sudo apt-get install openbsd-inetd tftpd tftp
 ```
 
-### Configuration
+#### Configuration
 To enable the TFTP server, edit the file `/etc/inetd.conf` as the root user, and locate the line that looks like the following:
 ```
 #tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
@@ -29,6 +31,34 @@ $ sudo chown -R $(whoami) /srv/tftp
 Restart the TFTP Service:
 ```sh
 $ sudo /etc/init.d/xinetd restart
+```
+
+### Ubuntu18.04
+
+#### Setup TFTP
+Install TFTP packages:
+```sh
+$ sudo apt-get install tftp-hpa tftpd-hpa
+```
+
+#### Configuration
+edit the file `etc/default/tftpd-hpa` as the root user, and edit the line look like this:
+```
+TFTP_DIRECTORY="/usr/lib/tftpboot"
+```
+change the dir to `/srv/tftp`
+```
+TFTP_DIRECTORY="/srv/tftp"
+```
+Create and modify permissions on the TFTP root directory:
+
+```sh
+$ sudo mkdir /srv/tftp
+$ sudo chown -R $(whoami) /srv/tftp
+```
+Restart the TFTP Services:
+```sh
+$ sudo service tftpd-hpa restart
 ```
 
 ### Setup For Target Device
