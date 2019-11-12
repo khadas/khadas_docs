@@ -5,8 +5,9 @@ title: 搭建TFTP服务器
 
 这里我们提供一个参考。
 
+### Ubuntu16.04
 
-### 设置TFTP
+#### 设置TFTP
 安装TFTP相关软件包：
 ```sh
 $ sudo apt-get install openbsd-inetd tftpd tftp
@@ -33,7 +34,33 @@ $ sudo chown -R $(whoami) /srv/tftp
 $ sudo /etc/init.d/xinetd restart
 ```
 
-### 设置VIM目标板
+### Ubuntu18.04
+安装TFTP相关软件包：
+```sh
+$ sudo apt-get install tftp-hpa tftpd-hpa
+```
+配置
+使用root权限修改tftp配置文件，修改的行如下:
+```
+TFTP_DIRECTORY="/usr/lib/tftpboot"
+```
+修改为:
+```
+TFTP_DIRECTORY="/srv/tftp"
+```
+
+创建`/srv/tftp`目录，并修改权限：
+```sh
+$ sudo mkdir /srv/tftp
+$ sudo chown -R $(whoami) /srv/tftp
+```
+
+重启TFTP服务：
+```sh
+$ sudo service tftpd-hpa restart
+```
+
+#### 设置VIM目标板
 为了设置TFTP你需要做如下事情：
 * 连接网线到VIM，并确保和你的PC在同一个局域网 
 * 连接串口线，参考[这里设置串口](/zh-cn/vim1/SetupSerialTool.html) 
