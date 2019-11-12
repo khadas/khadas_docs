@@ -21,6 +21,8 @@ These items are useful when you need to connect your VIM1 SBC to an external dis
 3. Wireless USB Keyboard + Mouse
 4. CeC-Compatible Remote Control
 
+```Note: Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after some time.```
+
 **Learn More:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)

@@ -25,6 +25,9 @@ AndroidTV image built by SuperCeleron, and beta-tested by Robert.
 ## Manjaro ARM
 ### USB/SD Card installation
 * [KDE](https://osdn.net/projects/manjaro-arm/storage/vim3/kde/)
+* [XFCE](https://osdn.net/projects/manjaro-arm/storage/vim3/xfce/)
+* [Minimal](https://osdn.net/projects/manjaro-arm/storage/vim3/minimal/)
+* [LXQT](https://osdn.net/projects/manjaro-arm/storage/vim3/lxqt/)
 * [MATE](https://osdn.net/projects/manjaro-arm/storage/vim3/mate/)
 
 ## OpenWRT

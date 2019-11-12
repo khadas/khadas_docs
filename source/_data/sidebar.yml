@@ -131,6 +131,7 @@ vim3:
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
+    how_to_use_npu: HowToUseNpu.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html

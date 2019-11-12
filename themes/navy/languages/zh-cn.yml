@@ -167,6 +167,7 @@ sidebar:
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
+    how_to_use_npu: 如何使用NPU
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口

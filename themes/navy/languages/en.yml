@@ -75,7 +75,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_rpigpio: How To Use PRi.GPIO
+    how_to_use_rpigpio: How To Use RPi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -133,7 +133,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_rpigpio: How To Use PRi.GPIO
+    how_to_use_rpigpio: How To Use RPi.GPIO
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -168,6 +168,7 @@ sidebar:
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
+    how_to_use_npu: How To Use the NPU
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
@@ -198,7 +199,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_rpigpio: How To Use PRi.GPIO
+    how_to_use_rpigpio: How To Use RPi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware
@@ -261,7 +262,7 @@ sidebar:
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_rpigpio: How To Use PRi.GPIO
+    how_to_use_rpigpio: How To Use RPi.GPIO
     hardware: Hardware
     download: Download
     firmware: Firmware
