@@ -168,6 +168,9 @@ sidebar:
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
     how_to_use_npu: 如何使用NPU
+    how_to_install_darknet: 如何安装darknet模型
+    how_to_train_yolo: 如何训练自己的yolo模型
+    how_to_transform_yolo: 如何转换yolo模型
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口

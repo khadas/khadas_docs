@@ -132,6 +132,9 @@ vim3:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     how_to_use_npu: HowToUseNpu.html
+    how_to_install_darknet: HowToInstallDarknet.html
+    how_to_train_yolo: HowToTrainYolo.html
+    how_to_transform_yolo: HowToTransformYolo.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html

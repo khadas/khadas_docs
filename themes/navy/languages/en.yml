@@ -169,6 +169,9 @@ sidebar:
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
     how_to_use_npu: How To Use the NPU
+    how_to_install_darknet: How To Install Darnket
+    how_to_train_yolo: How To Train Yolo Model
+    how_to_transform_yolo: How To Transform Yolo Model
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
