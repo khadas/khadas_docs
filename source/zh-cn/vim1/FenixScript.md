@@ -149,12 +149,19 @@ $ docker build -t fenix .
 
 进入Docker环境：
 ```
-$ docker run -it -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro --privileged fenix
+$ docker run -it --name fenix -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --privileged --device=/dev/loop0:/dev/loop0 --cap-add SYS_ADMIN fenix
 ```
 现在已经在Docker容器里面了，可以开始编译了：
 ```
 khadas@919cab43f66d:~/fenix$ source env/setenv.sh
 khadas@919cab43f66d:~/fenix$ make
+```
+
+下一次可以用如下命令启动Docker：
+
+```
+$ docker start fenix
+$ docker exec -ti fenix bash
 ```
 
 ### 参考
