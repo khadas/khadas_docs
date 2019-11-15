@@ -171,6 +171,7 @@ sidebar:
     how_to_install_darknet: 如何安装darknet模型
     how_to_train_yolo: 如何训练自己的yolo模型
     how_to_transform_yolo: 如何转换yolo模型
+    how_to_train_inception: 如何训练自己的Inception模型
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
