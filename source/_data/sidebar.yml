@@ -135,6 +135,7 @@ vim3:
     how_to_install_darknet: HowToInstallDarknet.html
     how_to_train_yolo: HowToTrainYolo.html
     how_to_transform_yolo: HowToTransformYolo.html
+    how_to_train_inception: HowToTrainInception.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
