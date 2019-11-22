@@ -8,7 +8,7 @@ title: 如何下载安卓源码
 * 使用内地镜像服务器下载
   * 优点：国内镜像服务器访问速度更快
   * 缺点：需要额外修改XML文件
-* 百度网盘下载基版本代码（链接: https://pan.baidu.com/s/1ARs4ZYXPsZQiFVg5J2QaDw 提取码: recz）（里面有个说明）
+* 百度网盘下载基版本代码（链接: https://pan.baidu.com/s/1_XbFongE6i7JNueJ-b-oXA 提取码: ivh5）（里面有个说明）
   * 优点：下载速度快
   * 缺点：需要下载与解压。
 * 使用内地镜像服务器下载 + 百度网盘下载基版本代码
