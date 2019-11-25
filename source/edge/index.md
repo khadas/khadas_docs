@@ -4,9 +4,9 @@ title: Edge Beginners Guide
 # Edge
 ![image](/images/edge/docs_edge_labels.jpg)
 
-Front (Blue)|Component|
----|:---
-1|USB 3.0
+Front (Blue)|Component
+---:|:---
+1|USB 3.0|3rd column
 2|[USB-C (3.0 & D.P)](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)
 3|HDMI 2.0
 4|[USB-C (P.D)](https://docs.khadas.com/edge/EdgeCaptainPowerPriority.html)
@@ -20,7 +20,7 @@ B|I-Pex [Wi-Fi](https://docs.khadas.com/edge/HowToConnectWifi.html) / [Bluetooth
 C|I-Pex [Wi-Fi](https://docs.khadas.com/edge/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/edge/HowToSetupBluetooth.html) Connector
 
 Back (Red)|Component|
----|:---
+---:|:---
 1|Li-Po Battery Connector
 2|Secondary [Wi-Fi](https://docs.khadas.com/edge/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/edge/HowToSetupBluetooth.html) Pad
 3|Secondary [Wi-Fi](https://docs.khadas.com/edge/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/edge/HowToSetupBluetooth.html) Pad
@@ -33,7 +33,7 @@ Back (Red)|Component|
 ![image](/images/edge/docs_edge_v_labels.jpg)
 
 Front (Blue)|Component|
----|:---
+---:|:---
 1|USB 3.0 (Blue)
 2|[Gigabit Ethernet (WOL)](https://docs.khadas.com/edge/HowtoUseWol.html)
 3|HDMI 2.0
@@ -52,7 +52,7 @@ F|I-Pex [Wi-Fi](https://docs.khadas.com/edge/HowToConnectWifi.html) / [Bluetooth
 G|I-Pex [Wi-Fi](https://docs.khadas.com/edge/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/edge/HowToSetupBluetooth.html) Connector
 
 Back (Red)|Component|
----|:---
+---:|:---
 1|[Li-Po Battery Connector](https://www.khadas.com/product-page/juice-board)
 2|USB-C (P.D)
 3|[Micro-SD Card Slot](https://docs.khadas.com/edge/UpgradeViaTFBurningCard.html)
@@ -69,7 +69,7 @@ B|[M-Register](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)
 ![image](/images/edge/docs_captain_labels.jpg)
 
 Front (Blue)|Component|
----|:---
+---:|:---
 1|RK3399 SoC Heat Spreader
 2|[Gigabit Ethernet](https://docs.khadas.com/edge/HowtoUseWol.html)
 3|[40-Pin GPIO](https://docs.khadas.com/edge/CaptainGPIOPinout.html)
@@ -98,7 +98,7 @@ P|[M3 Clearance Hole](https://www.khadas.com/product-page/kap-case)
 Q|[M2 Threaded Stand-Off](https://www.khadas.com/product-page/edge)
 
 Back (Red)|Component|
----|:---
+---:|:---
 1|[M.2 Socket (PCI-E 2.1)](https://docs.khadas.com/edge/ListOfCompatibleNVMeSSDs.html)
 2|External Speaker & DMIC Input FPC Connector
 3|[M.2 2280 Stand-Off (M2 Threaded)](https://docs.khadas.com/edge/ListOfCompatibleNVMeSSDs.html)
@@ -110,7 +110,7 @@ Back (Red)|Component|
 ![image](/images/edge/docs_captain_with_edge_labels.jpg)
 
 Front (Yellow)|Component|
----|:---
+---:|:---
 1|[314-Pin "Edge Connector"](https://www.khadas.com/product-page/edge)
 2|RockChip RK3399 SoC
 3|M2x4 Screw
