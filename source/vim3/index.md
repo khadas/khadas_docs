@@ -1,6 +1,70 @@
 title: VIM3 Beginners Guide
 ---
 
+# VIM3
+
+![image](source/images/vim3/docs_vim3.jpg)
+
+## Front (Blue)
+||Component|Purpose|
+|---:|:---|:---|
+|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](https://docs.khadas.com/vim3/HowToSetupPcieUsbPort.html), 900mA output|
+|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](https://docs.khadas.com/vim3/HowtoUseWol.html)|
+|3|HDMI|HDMI port supporting CEC|
+|4|USB-C|USB-C port with [USB power delivery (5-20V input)](https://www.khadas.com/product-page/usb-c-24w-adapter) and 2.0 speeds|
+|5|USB-A|USB 2.0 port that supports 500mA output|
+|6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
+|7|Reset Button|Force reboot your VIM3 in the event of a system freeze|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|9|Power Button|This button turns on your VIM3|
+|A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
+|B|G-Sensor|6-axis accelerometer|
+|C|RTC Header|A header for connecting a real-time clock (button) battery|
+|D|[40-Pin GPIO](https://docs.khadas.com/vim3/GPIOPinout.html)|[General input/output pins](https://docs.khadas.com/vim3/HowToAccessGpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|E|GPIO Expander|Increases VIM3's available I/O beyond what A311D can provide|
+|F|[MCU](https://docs.khadas.com/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|G|WOL Switch|Power switch activated via Wake-On-LAN|
+|H|Infrared Module|2-channel infrared receiver for the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
+|I|LEDs|Indicator LEDs|
+|J|IPEX Antenna|[Wi-Fi](https://docs.khadas.com/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
+|K|IPEX Antenna|Wi-Fi and [Bluetooth](https://docs.khadas.com/vim3/HowToSetupBluetooth.html) antenna connector|
+
+## Back (Red)
+||Component|Purpose|
+|---:|:---|:---|
+|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
+|2|[Micro-SD Slot](https://docs.khadas.com/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
+|3|Current Limit Switch|Prevents damage to VIM3 due to faulty loading conditions|
+|4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs](https://docs.khadas.com/vim3/ListOfCompatibleNVMeSSDs.html)|
+|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](https://docs.khadas.com/vim3/ConnectLcd.html)|
+|6|[MIPI-DSI](https://docs.khadas.com/vim3/ConnectLcd.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
+|7|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, dual cameras, 8MP image signal processing|
+|8|[SPI Flash](https://docs.khadas.com/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
+|9|XPWR Pads|Connect an external power switch using these pads|
+|A|M-Register|Allows the EMMC to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|S|S-Register|Allows the SPI Flash to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+
+## Buttons
+|Reset|Function|Power|Purpose|
+|:---:|:---:|:---:|:---|
+|x|||Force Reboot VIM3|
+||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|||x|Power ON/Wake Up VIM3|
+|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](https://docs.khadas.com/vim3/HowtoEraseEMMC.html)|
+
+# Amlogic A311D, NPU Usage Guides
+These following documentation links will help you get started with your VIM3's 5.0 TOPS neural processing unit.
+
+1. [Getting Started](https://docs.khadas.com/vim3/HowToUseNpu.html)
+2. [Install Darknet](https://docs.khadas.com/vim3/HowToInstallDarknet.html)
+3. [Train Yolo](https://docs.khadas.com/vim3/HowToTrainYolo.html)
+4. [Transform Yolo](https://docs.khadas.com/vim3/HowToTransformYolo.html)
+5. [Train Inception](https://docs.khadas.com/vim3/HowToTrainInception.html)
+
+**Learn More:**
+* [YouTube: VIM3 - Realtime Object Detection Using Yolo v3](https://www.youtube.com/watch?v=aQ-g_CBrzEU)
+
 # Booting 3rd-Party ROMs from Micro SD-Card
 These items are useful when you want to boot your VIM3 from an SD-Card, to run 3rd-party ROMs such as LibreELEC.
 
