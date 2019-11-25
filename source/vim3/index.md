@@ -3,7 +3,7 @@ title: VIM3 Beginners Guide
 
 # VIM3
 
-![image](source/images/vim3/docs_vim3.jpg)
+![image](/images/vim3/docs_vim3.jpg)
 
 ## Front (Blue)
 ||Component|Purpose|
