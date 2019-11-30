@@ -1,6 +1,54 @@
 title: VIM2 Beginners Guide
 ---
 
+# VIM2
+![image](/images/vim2/docs_vim2.jpg)
+
+## Front (Blue)
+||Component|Purpose|
+|---:|:---|:---|
+|1|USB-A|USB 2.0 speed, 500mA max output|
+|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](https://docs.khadas.com/vim2/HowtoUseWol.html)|
+|3|HDMI|HDMI 2.0a with CEC, 4K@60Hz|
+|4|USB-C|USB 2.0 OTG and 5V power input, can be used for [upgrading the OS](https://docs.khadas.com/vim2/UpgradeViaUSBCable.html)|
+|5|USB-A|USB 2.0 speed, 900mA max output|
+|6|Current Limit Switch|Prevents damage to VIM2 during uneven loading conditions|
+|7|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
+|8|Reset Button|Force reboot your VIM2 in the event of a system freeze|
+|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+|A|Power Button|This button turns on your VIM2|
+|B|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
+|C|RTC Battery Header|Header for attaching a battery for the real time clock|
+|D|[40-Pin GPIO](https://docs.khadas.com/vim2/GPIOPinout.html)|General [input/output](https://docs.khadas.com/vim2/HowToAccessGpio.html)|
+|E|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
+|F|LEDs|Status indicator LEDs|
+|G|FPC Connector|10-pins, 0.5mm pitch, with I2C, IOs|
+|H|I-Pex [Wi-Fi](https://docs.khadas.com/vim2/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|I|I-Pex [Wi-Fi](https://docs.khadas.com/vim2/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+
+## Back (Red)
+||Component|Purpose|
+|---:|:---|:---|
+|1|Pogo Pads|USB, I2C, DVB-Bus, IOs, for docking with the [vTV Board](https://www.khadas.com/product-page/vtv-board)|
+|2|[Micro-SD Card Slot](https://docs.khadas.com/vim2/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card|
+|3|500mA Fuse|Fuse for the 500mA USB port|
+|4|WOL Switch|Power switch activated via Wake-On-LAN|
+|5|[MCU](https://docs.khadas.com/vim2/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|6|MCU Pogo Pads|SWIM, UART, ADC, NRST|
+|7|SPI Flash|Flash memory module that interfaces over SPI|
+|8|20-Pin Pogo Pads|USB, I2C, DVB-Bus, IOs, for docking with the [vTV Board](https://www.khadas.com/product-page/vtv-board)|
+|9|XPWR Pads|Connect an external power switch using these pads|
+|A|900mA Fuse|Fuse for the 900mA USB port|
+
+## Buttons
+|Reset|Function|Power|Purpose|
+|:---:|:---:|:---:|:---|
+|x|||Force Reboot VIM2
+||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+|||x|Power On/Wake Up VIM2|
+|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](https://docs.khadas.com/vim2/HowtoEraseEMMC.html)|
+
 # VIM2 v1.4 What's New?
 Khadas has recently upgraded their VIM2 to v1.4 which features several improvements, such as the addition of XPWR pads for an external power switch, as well as a larger 16MB SPI-flash.
 
