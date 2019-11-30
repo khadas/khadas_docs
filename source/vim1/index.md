@@ -1,6 +1,45 @@
 title: VIM1 Beginners Guide
 ---
 
+# VIM1
+![image](/images/vim1/docs_vim1.jpg)
+
+## Front (Blue)
+||Component|Purpose|
+|---:|:---|:---|
+|1|USB-A|USB 2.0 speed, 500mA max output|
+|2|RJ-45|10/100 Mbps Ethernet|
+|3|HDMI|HDMI 2.0b with 3D, HDR, CEC and HDCP 2.2|
+|4|USB-C|USB 2.0 OTG and 5V power input, can be used for [upgrading the OS](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html)|
+|5|USB-A|USB 2.0 speed, 900mA max output|
+|6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
+|7|Reset Button|Force reboot your VIM1 in the event of a system freeze|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|9|Power Button|This button turns on your VIM1|
+|A|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
+|B|RTC Battery Header|Header for attaching a battery for the real time clock|
+|C|[40-Pin GPIO](https://docs.khadas.com/vim1/GPIOPinout.html)|General [input/output](https://docs.khadas.com/vim1/HowToAccessGpio.html)|
+|D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
+|E|LEDs|Status indicator LEDs|
+|F|I-Pex [Wi-Fi](https://docs.khadas.com/vim1/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+
+## Back (Red)
+||Component|Purpose|
+|---:|:---|:---|
+|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V power input|
+|2|[Micro-SD Card Slot](https://docs.khadas.com/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card|
+|3|M-Register|Allows the EMMC to [enter MaskROM mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|4|XPWR Pads|Connect an external power switch using these pads|
+
+## Buttons
+|Reset|Function|Power|Purpose|
+|:---:|:---:|:---:|:---|
+|x|||Force Reboot VIM1
+||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|||x|Power On/Wake Up VIM1|
+|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](https://docs.khadas.com/vim1/HowtoEraseEMMC.html)|
+
 # VIM1 Power Supply
 Although your VIM1 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
