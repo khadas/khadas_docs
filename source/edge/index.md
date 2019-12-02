@@ -7,11 +7,11 @@ title: Edge Beginners Guide
 ## Front (Blue)
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|Supports USB 3.0 speeds|
-|2|USB-C|Supports USB 3.0 and Display Port v1.2|
-|3|HDMI 2.0|HDMI 2.0 port with CEC|
-|4|USB-C|USB-C port with [5-20V input](https://www.khadas.com/product-page/usb-c-24w-adapter) (USB power delivery)|
-|5|USB-A|Supports USB 2.0 speeds|
+|1|USB-A|USB 3.0 speeds|
+|2|USB-C|USB 3.0, Display Port v1.2, with 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input (USB power delivery), can be used for [upgrading the OS](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)|
+|3|HDMI 2.0|Type-A Female, up to 4K@60Hz, HDCP 2.2|
+|4|USB-C|USB-C port with 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input (USB power delivery)|
+|5|USB-A|USB 2.0 speeds|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your Edge in the event of a system freeze|
 |8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)|
@@ -28,7 +28,7 @@ title: Edge Beginners Guide
 |3|Secondary Wi-Fi / Bluetooth Pad|Extra pad for mounting Wi-Fi / Bluetooth antennas|
 |4|M2x4 Mounting Point|For mounting a [heatsink](https://www.khadas.com/product-page/edge-heatsink) or [carrier board](https://www.khadas.com/product-page/captain-carrier-board)|
 |5|FPC Connector B|10-Pins, 0.5mm Pitch, USB, I2S(8ch), I2C, MCU IOs|
-|6|FPC Connector A|", ", UART, I2C, SPI, SDMMC, ADC, PWM, IOs. Extra GPIO: [Edge IO](https://www.khadas.com/product-page/edge-io)|
+|6|FPC Connector A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/edge-io)|
 |7|M-Register|Allows the EMMC to [enter MaskROM mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)|
 
 ## Buttons
@@ -39,23 +39,34 @@ title: Edge Beginners Guide
 |||x|Power On/Wake Up Edge|
 |x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)|
 
+## Indicator LEDs
+|Colour|Behaviour|Meaning|
+|---:|:---:|:---|
+|Blue|OFF|Power source disconnected|
+||Solid ON|Power source connected, SBC turned off|
+|White|OFF|SBC turned off|
+||Solid ON|SBC turned on|
+|Red|None|None|
+
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
+
 # Edge-V
 ![image](/images/edge/docs_edge_v_labels.jpg)
 
 ## Front (Blue)
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|USB 3.0 speed, blue colour|
+|1|USB-A|USB 3.0, blue colour|
 |2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](https://docs.khadas.com/edge/HowtoUseWol.html)|
-|3|HDMI|HDMI 2.0 with CEC|
-|4|USB-C|USB 3.0 speed with Display Port, can be used for [upgrading](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)|
-|5|USB-A|USB 2.0 speed, black colour|
+|3|HDMI|Type-A Female, up to 4K@60Hz, HDCP 2.2|
+|4|USB-C|USB 3.0, Display Port v1.2, with 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input (USB power delivery), can be used for [upgrading the OS](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)|
+|5|USB-A|USB 2.0, black colour|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your Edge-V in the event of a system freeze|
 |8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge-V|
 |A|RTC Battery Header|Header for attaching a battery for the real time clock|
-|B|[40-Pin GPIO](https://docs.khadas.com/edge/EdgeVGPIOPinout.html)|General [input/output](https://docs.khadas.com/edge/HowToAccessGpio.html) pins|
+|B|[40-Pin GPIO](https://docs.khadas.com/edge/EdgeVGPIOPinout.html)|Learn how to access GPIO [here](https://docs.khadas.com/edge/HowToAccessGpio.html)|
 |C|Gesture Sensor|Control your Edge-V with a hand-wave|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
@@ -65,9 +76,9 @@ title: Edge Beginners Guide
 ## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
-|1|Li-Po Battery Connector|Connect [Lithium Polymer batteries](https://www.khadas.com/product-page/lipo-battery) with the [Juice Board](https://www.khadas.com/product-page/juice-board)|
-|2|USB-C|USB-C port that accepts [5-20V power input](https://www.khadas.com/product-page/usb-c-24w-adapter), via USB power delivery|
-|3|[Micro-SD Card Slot](https://docs.khadas.com/edge/UpgradeViaTFBurningCard.html)|Boot alternative OSes via a Micro-SD card|
+|1|Li-Po Battery Connector|Connect a [Lithium Polymer battery](https://www.khadas.com/product-page/lipo-battery) with the [Juice Board](https://www.khadas.com/product-page/juice-board)|
+|2|USB-C|USB-C port that accepts 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) power input (USB power delivery)|
+|3|[Micro-SD Card Slot](https://docs.khadas.com/edge/UpgradeViaTFBurningCard.html)|Boot alternative OSes via a Micro-SD card, or just for extra storage|
 |4|M.2 Socket (PCI-E 2.1)|Connect 2280 NVMe SSDS at 4-lane speed with [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
 |5|E-DP Display|For connecting to external displays via E-DP|
 |6|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink-ii)|
@@ -85,6 +96,17 @@ title: Edge Beginners Guide
 |||x|Power On/Wake Up Edge-V|
 |x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)|
 
+## Indicator LEDs
+|Colour|Behaviour|Meaning|
+|---:|:---:|:---|
+|Blue|OFF|Power source disconnected|
+||Solid ON|Power source connected, SBC turned off|
+|White|OFF|SBC turned off|
+||Solid ON|SBC turned on|
+|Red|None|None|
+
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
+
 # Captain
 ![image](/images/edge/docs_captain_labels.jpg)
 
@@ -93,11 +115,11 @@ title: Edge Beginners Guide
 |---:|:---|:---|
 |1|RK3399 SoC Heat Spreader|Metallic layer for reducing heat concentration|
 |2|RJ-45|Gigabit Ethernet port with [Wake-On-LAN (WOL)](https://docs.khadas.com/edge/HowtoUseWol.html)|
-|3|[40-Pin GPIO](https://docs.khadas.com/edge/CaptainGPIOPinout.html)|General [input/output](https://docs.khadas.com/edge/HowToAccessGpio.html) pins.|
+|3|[40-Pin GPIO](https://docs.khadas.com/edge/CaptainGPIOPinout.html)|Learn how to access the GPIO [here](https://docs.khadas.com/edge/HowToAccessGpio.html)|
 |4|RTC Header|For connecting an external button battery for the real-time clock|
 |5|Reset Button|Forcefully reboot Edge+Captain if your system freezes|
 |6|12V DC Barrel Jack|Alternative [12V DC power input](https://www.khadas.com/product-page/captain-12v-adapter), see [power priority](https://docs.khadas.com/edge/EdgeCaptainPowerPriority.html)|
-|7|Micro-SD Card Slot|Boot additional OSes via [Micro-SD](https://docs.khadas.com/edge/UpgradeViaTFBurningCard.html)|
+|7|Micro-SD Card Slot|Boot additional OSes via [Micro-SD](https://docs.khadas.com/edge/UpgradeViaTFBurningCard.html), or just for extra storage|
 |8|Buzzer|Produces simple sounds|
 |9|Gesture Sensor|Control your Edge+Captain with a hand-wave|
 |A|IR Receiver|2-channel infrared module, for use with the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
@@ -108,7 +130,7 @@ title: Edge Beginners Guide
 |F|Touch Panel|For accepting [touch-input](https://docs.khadas.com/edge/ConnectLcd.html)|
 |G|MIPI-TX|MIPI-DSI header for connecting [LCD screens](https://docs.khadas.com/edge/ConnectLcd.html)|
 |H|MIPI-RX/TX|Configurable MIPI-CSI/DSI header|
-|I|MIPI-RX|MIPI-CSI camera input|
+|I|MIPI-RX|For connecting to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |J|3.5mm Audio Jack|Audio output, works with the [Kap Case](https://www.khadas.com/product-page/kap-case)|
 |K|Function Button|For entering [upgrade mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)|
 |L|Microphone|Audio input|
@@ -124,7 +146,7 @@ title: Edge Beginners Guide
 |1|[M.2 Socket (PCI-E 2.1)](https://docs.khadas.com/edge/ListOfCompatibleNVMeSSDs.html)|Connect directly to 2280 NVMe SSDs|
 |2|External Speaker & DMIC Input FPC Connector|Connecting to an external speaker|
 |3|[M.2 2280 Stand-Off (M2 Threaded)](https://docs.khadas.com/edge/ListOfCompatibleNVMeSSDs.html)|Boss for securing an SSD to the Captain|
-|4|Lithium Polymer Battery Connector|Add a [2-Cell Li-Po battery](https://www.khadas.com/product-page/lipo-battery) for portable usage|
+|4|Lithium Polymer Battery Connector|Add a [2-Cell Li-Po battery](https://www.khadas.com/product-page/lipo-battery) for portable usage, see [power priority](https://docs.khadas.com/edge/EdgeCaptainPowerPriority.html)|
 |5|Right Function Button|User programmable button|
 |6|Left Function Button|User programmable button|
 
@@ -137,6 +159,17 @@ title: Edge Beginners Guide
 ||||x|||User programmable button|
 |||||x||User programmable button|
 ||||||x|User programmable button|
+
+## Indicator LEDs
+|Colour|Behaviour|Meaning|
+|---:|:---:|:---|
+|Blue|OFF|Power source disconnected|
+||Solid ON|Power source connected, SBC turned off|
+|White|OFF|SBC turned off|
+||Solid ON|SBC turned on|
+|Red|None|None|
+
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
 
 # Captain + Edge
 ![image](/images/edge/docs_captain_with_edge_labels.jpg)
