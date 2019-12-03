@@ -59,7 +59,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |1|USB-A|USB 3.0, blue colour|
 |2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](https://docs.khadas.com/edge/HowtoUseWol.html)|
 |3|HDMI|Type-A Female, up to 4K@60Hz, HDCP 2.2|
-|4|USB-C|USB 3.0, Display Port v1.2, with 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input (USB power delivery), can be used for [upgrading the OS](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)|
+|4|USB-C|USB 3.0, Display Port v1.2, can be used for [upgrading the OS](https://docs.khadas.com/edge/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0, black colour|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your Edge-V in the event of a system freeze|
