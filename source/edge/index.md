@@ -66,7 +66,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/edge/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge-V|
 |A|RTC Battery Header|Header for attaching a battery for the real time clock|
-|B|[40-Pin GPIO](https://docs.khadas.com/edge/EdgeVGPIOPinout.html)|Learn how to access GPIO [here](https://docs.khadas.com/edge/HowToAccessGpio.html)|
+|B|[40-Pin GPIO](https://docs.khadas.com/edge/EdgeVGPIOPinout.html)|Learn how to access GPIO [here](https://docs.khadas.com/edge/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |C|Gesture Sensor|Control your Edge-V with a hand-wave|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
