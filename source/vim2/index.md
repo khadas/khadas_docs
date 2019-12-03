@@ -19,7 +19,7 @@ title: VIM2 Beginners Guide
 |A|Power Button|This button turns on your VIM2|
 |B|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |C|RTC Battery Header|Header for attaching a battery for the real time clock|
-|D|[40-Pin GPIO](https://docs.khadas.com/vim2/GPIOPinout.html)|Learn how to access the GPIO from [here](https://docs.khadas.com/vim2/HowToAccessGpio.html)|
+|D|[40-Pin GPIO](https://docs.khadas.com/vim2/GPIOPinout.html)|Learn how to access the GPIO from [here](https://docs.khadas.com/vim2/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |F|LEDs|Status indicator LEDs|
 |G|FPC Connector|10-pins, 0.5mm pitch, with I2C, IOs|
