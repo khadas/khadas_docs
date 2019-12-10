@@ -11,7 +11,7 @@ title: VIM3 Beginners Guide
 |1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](https://docs.khadas.com/vim3/HowToSetupPcieUsbPort.html), 900mA output|
 |2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](https://docs.khadas.com/vim3/HowtoUseWol.html)|
 |3|HDMI|HDMI port supporting CEC|
-|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds|
+|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](https://docs.khadas.com/vim3/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3 in the event of a system freeze|
@@ -75,7 +75,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](https://docs.khadas.com/vim3/HowToSetupPcieUsbPort.html), 900mA output|
 |2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](https://docs.khadas.com/vim3/HowtoUseWol.html)|
 |3|HDMI|HDMI port supporting CEC|
-|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds|
+|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](https://docs.khadas.com/vim3/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3L in the event of a system freeze|
