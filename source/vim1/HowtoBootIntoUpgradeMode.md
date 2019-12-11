@@ -1,10 +1,11 @@
 title: How To Boot Into Upgrade Mode
 ---
 
-There are 3 different ways to boot into Upgrade Mode:
+There are 4 different ways to boot into Upgrade Mode:
 
 * Keys Mode (Side-Buttons)
 * Serial Mode
+* TST Mode
 * MRegister Mode
 
 Usually, the first two methods will meet the needs of most users. However, in some cases such as burning an incorrect u-boot, or if your device is unable to boot at all, you can attempt to rectify the issue with the MRegister mode.
@@ -25,6 +26,11 @@ Usually, the first two methods will meet the needs of most users. However, in so
 ```
 kvim# run update
 ```
+
+### TST Mode (Recommended)
+1. Power-on VIM1 (v14 only).
+2. Quickly press the `Function` key 3 times in 2 seconds, then release the key.
+3. You will see the Power-LED (Blue) blink for about 3 seconds. After the Power-LED (Blue) turns OFF, this indicates that the board is in Upgrade Mode (Maskrom Mode).
 
 ### MRegister Mode (Maskrom Mode)
 1. Power on VIM1.

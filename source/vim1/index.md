@@ -1,6 +1,80 @@
 title: VIM1 Beginners Guide
 ---
 
+# VIM1
+![image](/images/vim1/docs_vim1.jpg)
+
+## Front (Blue)
+||Component|Purpose|
+|---:|:---|:---|
+|1|USB-A|USB 2.0 speed, 500mA max output|
+|2|RJ-45|10/100 Mbps Ethernet|
+|3|HDMI|HDMI 2.0b with 3D, HDR, CEC and HDCP 2.2|
+|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html)|
+|5|USB-A|USB 2.0 speed, 900mA max output|
+|6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
+|7|Reset Button|Force reboot your VIM1 in the event of a system freeze|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|9|Power Button|This button turns on your VIM1|
+|A|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
+|B|RTC Battery Header|Header for attaching a battery for the real time clock|
+|C|[40-Pin GPIO](https://docs.khadas.com/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](https://docs.khadas.com/vim1/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
+|E|LEDs|Status indicator LEDs|
+|F|I-Pex [Wi-Fi](https://docs.khadas.com/vim1/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+
+## Back (Red)
+||Component|Purpose|
+|---:|:---|:---|
+|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V power input|
+|2|[Micro-SD Card Slot](https://docs.khadas.com/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card, and for extra storage|
+|3|M-Register|Allows the EMMC to [enter MaskROM mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|4|XPWR Pads|Connect an external power switch using these pads|
+
+## Buttons
+|Reset|Function|Power|Purpose|
+|:---:|:---:|:---:|:---|
+|x|||Force Reboot VIM1
+||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|||x|Power On/Wake Up VIM1|
+|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](https://docs.khadas.com/vim1/HowtoEraseEMMC.html)|
+
+## Indicator LEDs
+|Colour|Behaviour|Meaning|
+|---:|:---:|:---|
+|Blue|OFF|Power source disconnected|
+||Solid ON|Power source connected, SBC turned off|
+|White|OFF|SBC turned off|
+||Solid ON|SBC turned on|
+|Red|None|None|
+
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
+
+# Krescue (Khadas-Rescue-OS)
+![image](/images/docs_krescue.jpg)
+
+[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC.
+
+**Main Features:**
+- Backup EMMC memory contents to an [SD card](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt), [USB](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt), [LAN host](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt).
+- Restore .img.gz into an EMMC on another device.
+- View device information.
+- Rescue shell for expert users.
+- [Shell access](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt) via UART, USB network, and LAN network.
+
+**[Steps](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt) to Boot Krescue:**
+1. Download an appropriate image for VIM1 from [dl.khadas.com](https://dl.khadas.com/Firmware/Krescue/dump/)
+2. Burn this image to a micro-SD card, using Rufus, dd (Linux) or [Etcher](https://www.balena.io/etcher/).
+3. Plug in the micro-SD card, USB-C power, and HDMI into your VIM1 device.
+4. Boot your VIM1 device into [MaskROM mode](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt) (please read!!!).
+5. Use an [IR remote control](https://www.khadas.com/product-page/ir-remote) or USB keyboard to navigate the UI menus.
+
+**Learn More:**
+- [YouTube - Krescue Introduction Video](https://youtu.be/ER4BOJUhoYU)
+- [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
+
+
 # VIM1 Power Supply
 Although your VIM1 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 

@@ -1,6 +1,88 @@
 title: VIM2 Beginners Guide
 ---
 
+# VIM2
+![image](/images/vim2/docs_vim2.jpg)
+
+## Front (Blue)
+||Component|Purpose|
+|---:|:---|:---|
+|1|USB-A|USB 2.0 speed, 500mA max output|
+|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](https://docs.khadas.com/vim2/HowtoUseWol.html)|
+|3|HDMI|HDMI 2.0a with CEC, 4K@60Hz|
+|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](https://docs.khadas.com/vim2/UpgradeViaUSBCable.html)|
+|5|USB-A|USB 2.0 speed, 900mA max output|
+|6|Current Limit Switch|Prevents damage to VIM2 during uneven loading conditions|
+|7|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
+|8|Reset Button|Force reboot your VIM2 in the event of a system freeze|
+|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+|A|Power Button|This button turns on your VIM2|
+|B|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
+|C|RTC Battery Header|Header for attaching a battery for the real time clock|
+|D|[40-Pin GPIO](https://docs.khadas.com/vim2/GPIOPinout.html)|Learn how to access the GPIO from [here](https://docs.khadas.com/vim2/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|E|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
+|F|LEDs|Status indicator LEDs|
+|G|FPC Connector|10-pins, 0.5mm pitch, with I2C, IOs|
+|H|I-Pex [Wi-Fi](https://docs.khadas.com/vim2/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|I|I-Pex [Wi-Fi](https://docs.khadas.com/vim2/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+
+## Back (Red)
+||Component|Purpose|
+|---:|:---|:---|
+|1|Pogo Pads|External 5V power input, can be provided by [vTV Board](https://www.khadas.com/product-page/vtv-board) (DVB Tuner)|
+|2|[Micro-SD Card Slot](https://docs.khadas.com/vim2/BootFromExtMedia.html)|Boot alternative OSes via a micro-SD card, or just for extra storage|
+|3|500mA Fuse|Fuse for the 500mA USB port|
+|4|WOL Switch|Power switch activated via Wake-On-LAN|
+|5|[MCU](https://docs.khadas.com/vim2/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|6|MCU Pogo Pads|SWIM, UART, ADC, NRST|
+|7|SPI Flash|Flash memory module that interfaces over SPI|
+|8|20-Pin Pogo Pads|USB, I2C, DVB-Bus, IOs, for docking with the [vTV Board](https://www.khadas.com/product-page/vtv-board) (DVB Tuner)|
+|9|XPWR Pads|Connect an external power switch using these pads|
+|A|900mA Fuse|Fuse for the 900mA USB port|
+
+## Buttons
+|Reset|Function|Power|Purpose|
+|:---:|:---:|:---:|:---|
+|x|||Force Reboot VIM2
+||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+|||x|Power On/Wake Up VIM2|
+|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](https://docs.khadas.com/vim2/HowtoEraseEMMC.html)|
+
+## Indicator LEDs
+|Colour|Behaviour|Meaning|
+|---:|:---:|:---|
+|Blue|OFF|Power source disconnected|
+||Solid ON|Power source connected, SBC turned off|
+|White|OFF|SBC turned off|
+||Solid ON|SBC turned on|
+|Red|None|None|
+
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
+
+# Krescue (Khadas-Rescue-OS)
+![image](/images/docs_krescue.jpg)
+
+[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC.
+
+**Main Features:**
+- Backup EMMC memory contents to an [SD card](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt), [USB](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt), [LAN host](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt).
+- Restore .img.gz into an EMMC on another device.
+- View device information.
+- Rescue shell for expert users.
+- [Shell access](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt) via UART, USB network, and LAN network.
+
+**[Steps](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt) to Boot Krescue:**
+1. Download an appropriate image for VIM2 from [dl.khadas.com](https://dl.khadas.com/Firmware/Krescue/dump/)
+2. Burn this image to a micro-SD card, using Rufus, dd (Linux) or [Etcher](https://www.balena.io/etcher/).
+3. Plug in the micro-SD card, USB-C power, and HDMI into your VIM2 device.
+4. Boot your VIM2 device into [MaskROM mode](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt) (please read!!!).
+5. Use an [IR remote control](https://www.khadas.com/product-page/ir-remote) or USB keyboard to navigate the UI menus.
+
+**Learn More:**
+- [YouTube - Krescue Introduction Video](https://youtu.be/ER4BOJUhoYU)
+- [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
+
 # VIM2 v1.4 What's New?
 Khadas has recently upgraded their VIM2 to v1.4 which features several improvements, such as the addition of XPWR pads for an external power switch, as well as a larger 16MB SPI-flash.
 

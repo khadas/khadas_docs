@@ -152,12 +152,19 @@ $ docker build -t fenix .
 
 Build Image in Docker:
 ```
-$ docker run -it -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro --privileged fenix
+$ docker run -it --name fenix -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --privileged --device=/dev/loop0:/dev/loop0 --cap-add SYS_ADMIN fenix
 ```
 We are in the Docker Container now, start your build.
 ```
 khadas@919cab43f66d:~/fenix$ source env/setenv.sh
 khadas@919cab43f66d:~/fenix$ make
+```
+
+To restart the Docker container a second time.
+
+```bash
+$ docker start fenix
+$ docker exec -ti fenix bash
 ```
 
 ### See Also

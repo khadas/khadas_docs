@@ -1,5 +1,6 @@
 title: 下载安卓源码
 ---
+国内用户请优先阅读此[网页](https://docs.khadas.com/zh-cn/vim3/DownloadAndroidSourceCode.html)。
 我们的Khadas Edge的Android源代码托管在Github上。有许多不同的存储库。
 
 按如下步骤下载源代码。

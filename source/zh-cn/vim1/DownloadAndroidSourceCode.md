@@ -1,14 +1,20 @@
 title: 如何下载安卓源码
 ---
 
-由于Android SDK的部分仓库需要从Google服务器下载，中国大陆地区用户，可以通过如下两种方式下载完整Android源码：
+由于Android SDK的部分仓库需要从Google服务器下载，中国大陆地区用户，可以通过如下4种方式下载完整Android源码：
 * 使用VPN直接下载源码
   * 优点：直接下载，无需额外修改XML文件
   * 缺点：需要使用VPN，根据不同VPN提供商网速可能较慢
 * 使用内地镜像服务器下载
   * 优点：国内镜像服务器访问速度更快
   * 缺点：需要额外修改XML文件
-
+* 百度网盘下载基版本代码（链接: https://pan.baidu.com/s/1_XbFongE6i7JNueJ-b-oXA 提取码: ivh5）（里面有个说明）
+  * 优点：下载速度快
+  * 缺点：需要下载与解压。
+* 使用内地镜像服务器下载 + 百度网盘下载基版本代码
+  * 优点：下载速度最快
+  * 缺点：需要额外修改XML文件 + 需要下载与解压。
+  
 VPN方式不再介绍，如下方法基于清华大学镜像服务器：
 * 步骤参考[Download the Android Source Code](/vim1/DownloadAndroidSourceCode.html)
 * 在`repo sync`之前修改default.xml文件，把Google的URL地址改为清华大学的，如下：

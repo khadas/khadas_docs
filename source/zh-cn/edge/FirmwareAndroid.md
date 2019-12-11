@@ -12,6 +12,7 @@ title: Khadas Edge Android固件
 * [Edge_Oreo_V181111](https://dl.khadas.com/Firmware/Edge/Android/Edge_Oreo_V181111.7z)
 
 # Pie
+* [Edge_Pie_V191205](https://dl.khadas.com/Firmware/Edge/Android/Edge_Pie_V191205.7z)
 * [Edge_Pie_V190912](https://dl.khadas.com/Firmware/Edge/Android/Edge_Pie_V190912.7z)
 * [Edge_Pie_V190816](https://dl.khadas.com/Firmware/Edge/Android/Edge_Pie_V190816.7z)
 * [Edge_Pie_V190719](https://dl.khadas.com/Firmware/Edge/Android/Edge_Pie_V190719.7z)
