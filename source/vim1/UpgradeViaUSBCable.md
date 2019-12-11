@@ -5,7 +5,7 @@ title: Upgrade Via a USB-C Cable
 
 ## Upgrade On Windows
 ### Perparation
-* Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.1.7.3_zh.zip) and extarct it.
+* Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.1.7.3_zh.zip) and extract it.
 * Run `setup_v2.x.x.exe` to install the tool for upgrading your VIMs:
 	![Image of USB_Upgrade_tool_setup_v217](/images/vim1/usb_upgrade_tool_setup_v217.png)
 
