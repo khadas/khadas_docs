@@ -1,8 +1,15 @@
 title: yolov3模型转换
 ---
 
-训练完成的模型是基于相应的框架运行的，尽管大部分框架都有c/c++接口，但是即使使用这些接口，仍然只能使用CPU或者GPU，想要使用NPU加速，就需要通过DDK将训练好的模型转换为使用NPU加速的模型代码。这篇文档主要介绍如何在DDK上适配我们的模型。
+训练完成的模型是基于相应的框架运行的，尽管大部分框架都有c/c++接口，但是即使使用这些接口，仍然只能使用CPU或者GPU，想要使用NPU加速，就需要通过DDK将训练好的模型转换为使用NPU加速的模型代码。这篇文档主要介绍如何在SDK上适配我们的模型。
 **说明**: 下面的例子都是以训练好的khadas的物体检测模型为例。
+
+## 申请SDK
+
+可以在我们[网站](https://www.khadas.com/npu-toolkit-vim3)上申请转换工具的SDK，填写相关的信息后，会通过邮件的方式发送SDK。
+```bash
+$ cd acuity-toolkit-binary-5.0.0/conversion_scripts/
+```
 
 ## 转换工具使用
 
@@ -44,9 +51,36 @@ title: yolov3模型转换
 > `--channel-mean-value '0 0 0 256' \`
 > `--export-dtype quantized \`
 
-## DDK使用
+### 运行转换工具
+
+```
+$ cd acuity-toolkit-binary-5.0.0/conversion_scripts/
+$ chmod +x 0_import_model.sh
+$ chmod +x 1_quantize_model.sh
+$ chmod +x 2_export_case_code.sh
+$ ./0_import_model.sh
+$ ./1_quantize_model.sh
+$ ./2_export_case_code.sh
+```
+转换完成以后，在`acuity-toolkit-binary-5.0.0/conversion_scripts/`目录下，会生成一个与脚本中的名字相同的文件,这些文件就是转换完的基础文件。
+
+## 应用自己转换的代码
+
+### 下载aml_npu_app 以及 aml_npu_demo_binaries
+
+```
+$ cd $workspace
+$ git clone https://gitlab.com/khadas/aml_npu_demo_binaries.git
+$ git clone https://gitlab.com/khadas/aml_npu_app.git
+```
+下载完成以后会有两个目录`aml_npu_app`和`aml_npu_binaries`
+> 1. aml_npu_app里面的代码是生成可执行文件的源码
+> 2. aml_npu_binaries里面的是可以直接执行的demo
 
 ### 文件替换
+```bash
+$ cd $workspace/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/
+```
 
 1. 将转换工具转换出来的`yolov3.nb`文件复制过来，替换`nn_data`目录下的`yolov3_88.nb`.
 2. 将转换工具转换出来的`vnn_yolov3.c` 替换DDK目录下的`vnn_yolov3.c`。
@@ -54,6 +88,10 @@ title: yolov3模型转换
 
 
 ### 文件修改
+```
+$ cd workspace/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/
+
+```
 ```bash
 $ vim yolov3_process.c
 ```
@@ -68,6 +106,26 @@ $ vim yolov3_process.c
 > 3. `int size[3]={nn_width/32, nn_height/32,97*3};`
 
 
-### DDK编译
-
+### 代码编译
+```bash
+$ cd workspace/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/
+$ ./build_vx.sh $path/to/linux_sdk_dir $path/to/fenix
+```
 编译相应的yolov3目录以后，在`bin_r`目录下会找到生成的`.so`文件。
+
+### 替换demo文件
+```bash
+$ cd $workspace/aml_npu_demo_binaries/detect_demo/
+```
+替换两个位置
+1. 复制上一步生成的so文替换到lib里
+2. 复制上一步的nb文件替换nn_data里面的文件
+举例：
+```
+$ cp workspace/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/bin_dir/libnn_yolo_v3.so $workspace/aml_npu_demo_binaries/detect_demo/lib/libnn_yolo_v3.so
+$ cp workspace/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/nn_data/yolov3_88.nb $workspace/aml_npu_demo_binaries/detect_demo/n_data/yolov3_88.nb
+```
+
+完成之后的demo就可以运行你自己的模型了.
+
+
