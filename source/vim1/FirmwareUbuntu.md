@@ -29,12 +29,14 @@ title: Khadas VIM1 Ubuntu Firmware
 ## SD/USB Installation
 
 ### Server
+* [VIM1_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191228](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191228.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190830.7z)
 * [VIMs_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190604](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190604.7z)
 * [VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030.7z)
 
 ### Desktop
+* [VIM1_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191228](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191228.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190917](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190917.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190830.7z)
 * [VIMs_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190604](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190604.7z)
