@@ -8,7 +8,7 @@ title: Upgrade Using a USB-C Cable
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall.png)
   * Click the `Install` button to install drivers
   ![DriverInstall install](/images/edge/DriverInstall_install.png)
-* Download the [Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.65.zip) and extract it.
+* Download the [AndroidTool_Release_zh_v2.65](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.65.zip) and extract it.
 * `AndroidTool.exe` is the burning tool, you don't need to install it.
 
 ### Upgrading Steps
