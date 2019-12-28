@@ -8,7 +8,7 @@ title: 通过USB升级固件
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall_zh.png)
   * 在点击`驱动安装`来安装新的驱动。
   ![DriverInstall install](/images/edge/DriverInstall_install_zh.png)
-* 下载[Android Tool](https://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.65.zip)并解压。
+* 下载[AndroidTool_Release_zh_v2.65](https://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.65.zip)并解压。
 * `AndroidTool.exe`就是烧录工具，是免安装的，直接运行即可。
 
 ### 升级步骤
