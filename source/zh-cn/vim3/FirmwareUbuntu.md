@@ -8,10 +8,12 @@ title: Khadas VIM3 Ubuntu固件
 ## EMMC安装
 
 ### Server
+* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 * [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190830.7z)
 * [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190813](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190813.7z)
 
 ### Desktop
+* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 * [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190830.7z)
 * [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190813](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190813.7z)
 
@@ -34,11 +36,13 @@ title: Khadas VIM3 Ubuntu固件
 # VIM3L
 
 ## EMMC安装
-* [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917.7z)
 
 ### Server
+* [VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 
 ### Desktop
+* [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
+* [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917.7z)
 
 ## SD/USB安装
 
