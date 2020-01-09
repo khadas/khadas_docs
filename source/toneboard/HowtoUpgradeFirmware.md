@@ -120,7 +120,7 @@ Bus 001 Device 005: ID 20b1:0008 XMOS Ltd
 * Finally, run the tool with your firmware file of choice (drag and drop your `.bin` file to replace `/path/to/firmware.bin`).
 
 ```
-$ toneboard-burn-tool -i /path/to/firmware.bin
+$ sudo toneboard-burn-tool -i /path/to/firmware.bin
 ```
 *Note: Upgrading will stuck at `Waiting for device to restart and enter DFU mode` for about 20 seconds, please wait patiently.*
 

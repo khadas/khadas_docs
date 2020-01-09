@@ -130,13 +130,14 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
 
 # Krescue (Khadas-Rescue-OS)
-![image](/images/docs_krescue.jpg)
+![image](/images/docs_krescue_online_install.jpg)
 
-[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC.
+[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
 
 **Main Features:**
 - Backup EMMC memory contents to an [SD card](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt), [USB](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt), [LAN host](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt).
 - Restore .img.gz into an EMMC on another device.
+- Online OS installation via Ethernet.
 - View device information.
 - Rescue shell for expert users.
 - [Shell access](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt) via UART, USB network, and LAN network.
@@ -148,8 +149,24 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 4. Boot your VIM3/3L device into [MaskROM mode](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt) (please read!!!).
 5. Use an [IR remote control](https://www.khadas.com/product-page/ir-remote) or USB keyboard to navigate the UI menus.
 
+**Online Installation via Shell Command:**
+
+Online Help:
+- curl -sfL dl.khadas.com/.mega | sh -s - --help
+- wget -O-  dl.khadas.com/.mega | sh -s - --help
+
+Write Krescue directly to EMMC via the web:
+- curl -sfL dl.khadas.com/.mega | sh -s - VIM1  > /dev/mmcblk? <tab auto-complete>
+- curl -sfL dl.khadas.com/.mega | sh -s - VIM2  > /dev/mmcblk? <tab auto-complete>
+- curl -sfL dl.khadas.com/.mega | sh -s - VIM3  > /dev/mmcblk? <tab auto-complete>
+- curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
+  
+More shell commands and examples:
+- [https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt](https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt)
+
 **Learn More:**
-- [YouTube - Krescue Introduction Video](https://youtu.be/ER4BOJUhoYU)
+- [YouTube - Krescue Introduction](https://youtu.be/ER4BOJUhoYU)
+- [YouTube - Krescue Online OS Installation](https://youtu.be/vvpkbhnyhZY)
 - [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
 
 # Amlogic A311D, NPU Usage Guides
