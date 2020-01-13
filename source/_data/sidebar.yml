@@ -43,7 +43,8 @@ vim1:
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
-    download: HardwareDocs.html
+    documentation: HardwareDocs.html
+    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -103,7 +104,8 @@ vim2:
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   hardware:
-    download: HardwareDocs.html
+    documentation: HardwareDocs.html
+    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -168,7 +170,8 @@ vim3:
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
-    download: HardwareDocs.html
+    documentation: HardwareDocs.html
+    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -222,7 +225,8 @@ edge:
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
   hardware:
-    download: HardwareDocs.html
+    documentation: HardwareDocs.html
+    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -239,7 +243,7 @@ toneboard:
     user_manual: UserManual.html
     how_to_upgrade_firmware: HowtoUpgradeFirmware.html
   hardware:
-    download: HardwareDocs.html
+    documentation: HardwareDocs.html
 
 firmware:
   firmware_download:
