@@ -1,4 +1,4 @@
-title: Hardware Extra
+title: 其他配件
 ---
 
 [Case](https://www.khadas.com/product-page/diy-case)
@@ -7,4 +7,4 @@ title: Hardware Extra
 
 ## Community
 
-[Case (jeanlego)](https://www.thingiverse.com/thing:4035740)  
+[Case (jeanlego)](https://www.thingiverse.com/thing:4035740)
