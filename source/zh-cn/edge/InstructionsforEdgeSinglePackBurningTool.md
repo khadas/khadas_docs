@@ -28,6 +28,7 @@ config.cfg 文件，则可以在工具启动时加载当前保存的配置。
 ![burn partition](/images/edge/burn_partiton_mirrors.png)
 
 # Linux
+check [Linux_Upgrade_Tool_v1.47](https://mega.nz/#!TnI3CAyD!pI5ptpffTpZfT7Brjm2CvHQge5MaCdGy9xgcM6uu9RQ)
 ```sh
 unzip Linux_Upgrade_Tool_v1.47.zip
 cd Linux_Upgrade_Tool_v1.47

@@ -78,6 +78,7 @@ sidebar:
     how_to_use_rpigpio: How To Use RPi.GPIO
     hardware: Hardware
     download: Download
+    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -141,6 +142,7 @@ sidebar:
     mcu_code_flow_chart: MCU Code Flow Chart
     hardware: Hardware
     download: Download
+    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -206,6 +208,7 @@ sidebar:
     how_to_use_rpigpio: How To Use RPi.GPIO
     hardware: Hardware
     download: Download
+    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -269,6 +272,7 @@ sidebar:
     how_to_use_rpigpio: How To Use RPi.GPIO
     hardware: Hardware
     download: Download
+    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -286,7 +290,7 @@ sidebar:
     how_to_upgrade_firmware: How To Upgrade Firmware
     hardware: Hardware
     download: Download
-
+    extra: Extra
   firmware:
     firmware_download: Firmware Download
     vim1: VIM1
