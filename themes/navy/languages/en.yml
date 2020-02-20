@@ -77,6 +77,7 @@ sidebar:
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
     how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
     hardware: Hardware
     download: Download
     extra: Extra
@@ -137,6 +138,7 @@ sidebar:
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
     how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -209,6 +211,7 @@ sidebar:
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
     how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
     hardware: Hardware
     download: Download
     extra: Extra
@@ -274,6 +277,7 @@ sidebar:
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
     how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
     hardware: Hardware
     download: Download
     extra: Extra
