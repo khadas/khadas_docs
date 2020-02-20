@@ -76,6 +76,7 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
     hardware: Hardware
     download: Download
     extra: Extra
@@ -135,6 +136,7 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -206,6 +208,7 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
     hardware: Hardware
     download: Download
     extra: Extra
@@ -270,6 +273,7 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
     hardware: Hardware
     download: Download
     extra: Extra
