@@ -77,6 +77,7 @@ sidebar:
     how_to_use_rpigpio: 如何使用RPi.GPIO
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
+    how_to_upgrade_the_kernel: 如何更新内核
     hardware: 硬件资料
     download: 下载
     extra: 其他
@@ -139,6 +140,7 @@ sidebar:
     how_to_use_rpigpio: 如何使用RPi.GPIO
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
+    how_to_upgrade_the_kernel: 如何更新内核
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -211,6 +213,7 @@ sidebar:
     how_to_use_rpigpio: 如何使用RPi.GPIO
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
+    how_to_upgrade_the_kernel: 如何更新内核
     hardware: 硬件资料
     download: 下载
     extra: 其他
@@ -277,6 +280,7 @@ sidebar:
     how_to_use_rpigpio: 如何使用RPi.GPIO
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
+    how_to_upgrade_the_kernel: 如何更新内核
     hardware: 硬件资料
     download: 下载
     extra: 其他
