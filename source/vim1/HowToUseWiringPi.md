@@ -132,7 +132,7 @@ PIN15 <---> RX
 PIN16 <---> TX
 ```
 
-### wiringPi函数列表
+### WiringPi Function List
 ```
 int  wiringPiSetup       (void) ;
 int  wiringPiSetupSys    (void) ;
