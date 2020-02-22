@@ -195,4 +195,5 @@ void softPwmStop   (int pin) ;
 ```
 
 ### notes
+If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB.
 WiringPi itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.

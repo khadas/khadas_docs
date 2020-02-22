@@ -134,5 +134,5 @@ This is a simple program of pin read-write control
 ```
 
 ### notes
-If you need to use the special function pin of wiring PI python, you need to confirm that the corresponding configuration is opened in DTB
+If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB
 WiringPi-Python itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.
