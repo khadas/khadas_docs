@@ -24,6 +24,6 @@ install:
 deploy:
   provider: script
   script: .travis/deploy.sh
-  skip_cleanup: true
+  skip_cleanup: false
   on:
     branch: master

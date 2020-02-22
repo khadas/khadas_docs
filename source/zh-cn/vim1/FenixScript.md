@@ -15,7 +15,7 @@ $ sudo apt-get install git make lsb-release qemu-user-static
 ```sh
 $ mkdir ~/project/
 $ cd ~/project/
-$ git clone https://github.com/khadas/fenix
+$ git clone --depth 1 https://github.com/khadas/fenix
 ```
 
 ### 设置编译环境
@@ -39,12 +39,31 @@ $ make
 $ make uboot
 ```
 
+### 编译U-boot debian包
+```
+$ make uboot-deb
+```
+
 ### 编译内核
 ```
 $ make kernel
 ```
 
-### 编译deb包
+### 编译内核debian包
+```
+$ make kernel-deb
+
+### 编译GPU debian包
+```
+$ make gpu-deb
+```
+
+### 编译板级debian包
+```
+$ make board-deb
+```
+
+### 编译所有的debian包
 ```
 $ make debs
 ```
@@ -57,7 +76,13 @@ Fenix scripts help messages:
   all           - Create image according to environment.
   kernel        - Build linux kernel.
   uboot         - Build u-boot.
-  debs          - Build debs.
+  uboot-deb     - Build u-boot debian package.
+  kernel-deb    - Build linux debian package.
+  board-deb     - Build board debian package.
+  common-deb    - Build common debian package.
+  desktop-deb   - Build desktop debian package.
+  gpu-deb       - Build gpu debian package.
+  debs          - Build all debian packages.
   image         - Pack update image.
   clean         - Cleanup.
   info          - Display current environment.

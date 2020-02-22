@@ -76,6 +76,9 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
+    how_to_upgrade_the_kernel: How To Upgrade The kernel
     hardware: Hardware
     download: Download
     extra: Extra
@@ -135,6 +138,9 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
+    how_to_upgrade_the_kernel: How To Upgrade The kernel
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -206,6 +212,9 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
+    how_to_upgrade_the_kernel: How To Upgrade The kernel
     hardware: Hardware
     download: Download
     extra: Extra
@@ -270,6 +279,9 @@ sidebar:
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
+    how_to_upgrade_the_logo: How To Upgrade The Logo
+    how_to_upgrade_the_uboot: How To Upgrade The u-boot
+    how_to_upgrade_the_kernel: How To Upgrade The kernel
     hardware: Hardware
     download: Download
     extra: Extra

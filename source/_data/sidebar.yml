@@ -42,6 +42,9 @@ vim1:
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
+    how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
+    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
+    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
   hardware:
     download: HardwareDocs.html
     extra: HardwareExtra.html
@@ -101,6 +104,9 @@ vim2:
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
+    how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
+    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
+    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
   hardware:
@@ -169,6 +175,9 @@ vim3:
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
+    how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
+    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
+    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
   hardware:
     download: HardwareDocs.html
     extra: HardwareExtra.html
@@ -224,6 +233,9 @@ edge:
     enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
+    how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
+    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
+    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
   hardware:
     download: HardwareDocs.html
     extra: HardwareExtra.html

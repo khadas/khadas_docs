@@ -16,7 +16,7 @@ Clone Fenix repository to somewhere like: `~/project/`
 ```sh
 $ mkdir ~/project/
 $ cd ~/project/
-$ git clone https://github.com/khadas/fenix
+$ git clone --depth 1 https://github.com/khadas/fenix
 ```
 
 ### Setup Build Environment
@@ -42,12 +42,32 @@ You can build the U-Boot and Kernel alone.
 $ make uboot
 ```
 
+### Build U-boot debian package
+```
+$ make uboot-deb
+```
+
 ### Build Linux
 ```
 $ make kernel
 ```
 
-### Build .deb Packages
+### Build Linux debian package
+```
+$ make kernel-deb
+```
+
+### Build GPU debian package
+```
+$ make gpu-deb
+```
+
+### Build Board debian package
+```
+$ make board-deb
+```
+
+### Build all debian  Packages
 ```
 $ make debs
 ```
@@ -60,7 +80,13 @@ Fenix scripts help messages:
   all           - Create image according to environment.
   kernel        - Build linux kernel.
   uboot         - Build u-boot.
-  debs          - Build debs.
+  uboot-deb     - Build u-boot debian package.
+  kernel-deb    - Build linux debian package.
+  board-deb     - Build board debian package.
+  common-deb    - Build common debian package.
+  desktop-deb   - Build desktop debian package.
+  gpu-deb       - Build gpu debian package.
+  debs          - Build all debian packages.
   image         - Pack update image.
   clean         - Cleanup.
   info          - Display current environment.
