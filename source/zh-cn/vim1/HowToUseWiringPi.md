@@ -99,5 +99,101 @@ wPi Pin 1 now is LOW
 ```
 你可以通过命令`gpio read 1`观察引脚的电平变化是否正确。
 
+### WiringPi特殊功能引脚
+wiringPi的特殊引脚功能包括`SPI,i2C,ADC,SoftPWM`
+
+#### SPI
+
+由于`VIM1`,`VIM2`没有将`SPI`引出到GPIO的Pin40上，所以`SPI`只支持`VIM3`,物理引脚与SPI功能的对应引脚
+```
+PIN37 <---> MOSI
+PIN35 <---> MISO
+PIN15 <---> SS
+PIN16 <---> SCLK
+```
+
+#### I2C
+`VIM1`,`VIM2`使用的是`i2c0`,`VIM3`使用`i2c3`,物理引脚连接如下:
+```
+PIN22 <---> SCK
+PIN23 <---> SDA
+```
+#### ADC
+`VIM1`,`VIM2`使用`ADC`的`通道0`和`通道2`,`VIM3`使用`通道0`和`通道3`,物理引脚连接如下:
+```
+PIN10 <---> ADC_CH0
+PIN12 <---> ADC_CH2后者ADC_CH3
+```
+#### Serial
+使用之前请先确认串口节点名称
+```
+PIN15 <---> RX
+PIN16 <---> TX
+```
+
+
+### wiringPi函数列表
+```
+int  wiringPiSetup       (void) ;
+int  wiringPiSetupSys    (void) ;
+int  wiringPiSetupGpio   (void) ;
+int  wiringPiSetupPhys   (void) ;
+void pinModeAlt          (int pin, int mode) ;
+void pinMode             (int pin, int mode) ;
+void pullUpDnControl     (int pin, int pud) ;
+int  digitalRead         (int pin) ;
+void digitalWrite        (int pin, int value) ;
+void pwmWrite            (int pin, int value) ;
+int  analogRead          (int pin) ;
+void analogWrite         (int pin, int value) ;
+int  piGpioLayout        (void) ;
+int  piBoardRev          (void) ;   // Deprecated
+void piBoardId           (int *model, int *rev, int *mem, int *maker, int *overVolted) ;
+int  wpiPinToGpio        (int wpiPin) ;
+int  physPinToGpio       (int physPin) ;
+void setPadDrive         (int group, int value) ;
+int  getAlt              (int pin) ;
+void pwmToneWrite        (int pin, int freq) ;
+void pwmSetMode          (int mode) ;
+void pwmSetRange         (unsigned int range) ;
+void pwmSetClock         (int divisor) ;
+void gpioClockSet        (int pin, int freq) ;
+void delay               (unsigned int howLong) ;
+void delayMicroseconds   (unsigned int howLong) ;
+
+I2C:
+int wiringPiI2CRead           (int fd) ;
+int wiringPiI2CReadReg8       (int fd, int reg) ;
+int wiringPiI2CReadReg16      (int fd, int reg) ;
+int wiringPiI2CWrite          (int fd, int data) ;
+int wiringPiI2CWriteReg8      (int fd, int reg, int data) ;
+int wiringPiI2CWriteReg16     (int fd, int reg, int data) ;
+int wiringPiI2CSetupInterface (const char *device, int devId) ;
+int wiringPiI2CSetup          (const int devId) ;
+
+SPI:
+int wiringPiSPIGetFd     (int channel) ;
+int wiringPiSPIDataRW    (int channel, unsigned char *data, int len) ;
+int wiringPiSPISetupMode (int channel, int speed, int mode) ;
+int wiringPiSPISetup     (int channel, int speed) ;
+
+Serial:
+int   serialOpen      (const char *device, const int baud) ;
+void  serialClose     (const int fd) ;
+void  serialFlush     (const int fd) ;
+void  serialPutchar   (const int fd, const unsigned char c) ;
+void  serialPuts      (const int fd, const char *s) ;
+void  serialPrintf    (const int fd, const char *message, ...) ;
+int   serialDataAvail (const int fd) ;
+int   serialGetchar   (const int fd) ;
+
+softPwm:
+int  softPwmCreate (int pin, int value, int range) ;
+void softPwmWrite  (int pin, int value) ;
+void softPwmStop   (int pin) ;
+
+```
+
 ### 注意
+如果需要使用wiringPi的特殊功能引脚，需要先确认dtb里面打开了相应的配置
 wiringPi本身包括很多功能，不仅仅只是控制GPIO引脚的输出和读取引脚电平值。这里只是一个简单的介绍和使用，更多的用法需要使用者自己去探索。
