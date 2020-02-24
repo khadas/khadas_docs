@@ -65,6 +65,7 @@ sidebar:
     setup_adb: Setup ADB
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
+    krescue: Krescue
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     bluetooth_instructions: Bluetooth Instructions
@@ -127,6 +128,7 @@ sidebar:
     force_reset_features: Force Reset Remotely
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
+    krescue: Krescue
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     bluetooth_instructions: Bluetooth Instructions
@@ -204,6 +206,7 @@ sidebar:
     howto_use_wol: How To Use WOL
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
+    krescue: Krescue
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     bluetooth_instructions: Bluetooth Instructions
@@ -272,6 +275,7 @@ sidebar:
     instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
+    krescue: Krescue
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
