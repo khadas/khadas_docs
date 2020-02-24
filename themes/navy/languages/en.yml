@@ -178,16 +178,17 @@ sidebar:
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
-    how_to_use_npu: How To Use the NPU
-    how_to_install_darknet: How To Install Darnket
-    how_to_train_yolo: How To Train Yolo Model
-    how_to_transform_yolo: How To Transform Yolo Model
-    how_to_train_inception: How To Train Inception Model
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
     how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
     how_to_install_adb_tool: How To Install ADB Tool
+    npu: NPU
+    how_to_use_npu: How To Use the NPU
+    how_to_install_darknet: How To Install Darnket
+    how_to_train_yolo: How To Train Yolo Model
+    how_to_transform_yolo: How To Transform Yolo Model
+    how_to_train_inception: How To Train Inception Model
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     uboot_usage: U-boot Usage Guide
