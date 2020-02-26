@@ -31,6 +31,7 @@ vim1:
     setup_adb: SetupADB.html
   linux:
     fenix_script: FenixScript.html
+    krescue: Krescue.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     bluetooth_instructions: BluetoothInstructions.html
@@ -93,6 +94,7 @@ vim2:
     force_reset_features: ForceResetFeatures.html 
   linux:
     fenix_script: FenixScript.html
+    krescue: Krescue.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     bluetooth_instructions: BluetoothInstructions.html
@@ -141,16 +143,17 @@ vim3:
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
-    how_to_use_npu: HowToUseNpu.html
-    how_to_install_darknet: HowToInstallDarknet.html
-    how_to_train_yolo: HowToTrainYolo.html
-    how_to_transform_yolo: HowToTransformYolo.html
-    how_to_train_inception: HowToTrainInception.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
     how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
     how_to_install_adb_tool: HowToInstallADBTool.html
+  npu:
+    how_to_use_npu: HowToUseNpu.html
+    how_to_install_darknet: HowToInstallDarknet.html
+    how_to_train_yolo: HowToTrainYolo.html
+    how_to_transform_yolo: HowToTransformYolo.html
+    how_to_train_inception: HowToTrainInception.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     uboot_usage: UBootUsage.html
@@ -166,6 +169,7 @@ vim3:
     howto_use_wol: HowtoUseWol.html
   linux:
     fenix_script: FenixScript.html
+    krescue: Krescue.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
@@ -225,6 +229,7 @@ edge:
     instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
   linux:
     fenix_script: FenixScript.html
+    krescue: Krescue.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
     add_chinese_support: AddChineseSupport.html

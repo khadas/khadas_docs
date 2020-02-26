@@ -64,6 +64,7 @@ sidebar:
     setup_adb: 设置ADB
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    krescue: Krescue
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
     bluetooth_instructions: 蓝牙使用说明
@@ -126,6 +127,7 @@ sidebar:
     force_reset_features: 远程强制复位
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    krescue: Krescue
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
     bluetooth_instructions: 蓝牙使用说明
@@ -177,16 +179,17 @@ sidebar:
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
-    how_to_use_npu: 如何使用NPU
-    how_to_install_darknet: 如何安装darknet模型
-    how_to_train_yolo: 如何训练自己的yolo模型
-    how_to_transform_yolo: 如何转换yolo模型
-    how_to_train_inception: 如何训练自己的Inception模型
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
     how_to_setup_pcie_usb_port: 如何设置PCIe或USB3.0
     how_to_install_adb_tool: 如何安装ADB调试工具
+    npu: NPU
+    how_to_use_npu: 如何使用NPU
+    how_to_install_darknet: 如何安装darknet模型
+    how_to_train_yolo: 如何训练自己的yolo模型
+    how_to_transform_yolo: 如何转换yolo模型
+    how_to_train_inception: 如何训练自己的Inception模型
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     uboot_usage: U-boot使用说明
@@ -202,6 +205,7 @@ sidebar:
     howto_use_wol: 如何使用WOL
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    krescue: Krescue
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
     bluetooth_instructions: 蓝牙使用说明
@@ -270,6 +274,7 @@ sidebar:
     instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    krescue: Krescue
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
     add_chinese_support: 增加中文支持
