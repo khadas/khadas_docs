@@ -86,7 +86,7 @@ $
 $ cp images/logo.img /media/gouwa/9B98-6C15/
 ```
 
-**2)** Insert the thumbdrive into your VIM, then boot into U-Boot mode.
+**2)** Insert the thumbdrive into your VIM, then boot into [U-Boot mode](https://docs.khadas.com/vim1/SetupSerialTool.html).
 
 **3)** Update logo partition as new `logo.img`:
 ```sh
@@ -115,4 +115,4 @@ u-boot/drivers/usb/gadget/v2_burning/v2_common/optimus_progress_ui.c
 ```
 
 See Also
-[U-Boot Usage]()
+[U-Boot Usage](https://docs.khadas.com/vim1/SetupSerialTool.html)
