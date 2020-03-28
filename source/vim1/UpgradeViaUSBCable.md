@@ -33,7 +33,7 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 ```
 $sudo apt-get install libusb-dev git parted
 ```
-### Dowmload Burning Tool
+### Download Burning Tool
 Image burning tool for Ubuntu is in this repository [utils](https://github.com/khadas/utils).
 ```
 $git clone https://github.com/khadas/utils

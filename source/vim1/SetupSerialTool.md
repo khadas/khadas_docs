@@ -73,15 +73,17 @@ TE: 116640
 ...
 
 ```
-**Tips:**
+**Tips (and booting into U-Boot):**
 
-1. If the terminal output contains this line, you might need to check the previous step `Add Access Permission`.
+1. If the terminal output contains this line, you might need to type `sudo kermit`.
 ```
 /dev/ttyUSB0: Permission denied
 ```
-2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, and then you'll have access to U-boot.
+2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](https://docs.khadas.com/vim1/UBootUsage.html) when you've entered u-boot.
 
+3. Note that to see the standard "help" commands as listed in the [U-Boot Usage Guide](https://docs.khadas.com/vim1/UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our [krescue images](https://dl.khadas.com/Firmware/Krescue/images/).
 
+4. You can use the U-Boot command line ([kvim#](https://docs.khadas.com/vim1/UBootUsage.html)), to change your VIM's default boot logo.bmp, according to the guide, [Boot Logo for U-Boot](https://docs.khadas.com/vim1/BuildBootLogoForUboot.html).
 
 ### See Also:
 * [C-Kermit Offical website](http://www.columbia.edu/kermit/index.html)

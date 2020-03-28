@@ -18,7 +18,7 @@ title: VIM3 Beginners Guide
 |8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
-|B|G-Sensor|6-axis accelerometer|
+|B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
 |D|[40-Pin GPIO](https://docs.khadas.com/vim3/GPIOPinout.html)|[General input/output pins](https://docs.khadas.com/vim3/HowToAccessGpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3's available I/O beyond what A311D can provide|
@@ -82,7 +82,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3L|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
-|B|G-Sensor|6-axis accelerometer|
+|B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
 |D|[40-Pin GPIO](https://docs.khadas.com/vim3/GPIOPinout.html)|[General input/output pins](https://docs.khadas.com/vim3/HowToAccessGpio.html) for VIM3L's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3L's available I/O beyond what S905D3 can provide|
