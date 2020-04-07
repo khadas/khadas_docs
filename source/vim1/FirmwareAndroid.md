@@ -2,6 +2,7 @@ title: Khadas VIM1 Android Firmware
 ---
 
 # Android
+* [VIM1_Pie_V200317](https://dl.khadas.com/Firmware/VIM1/Android/Pie/VIM1_Pie_V200317.7z)
 * [VIM1_Pie_V190823](https://dl.khadas.com/Firmware/VIM1/Android/Pie/VIM1_Pie_V190823.7z)
 * [VIM1_Nougat_NonRoot_V181030](https://dl.khadas.com/Firmware/VIM1/Android/Nougat/VIM1_Nougat_NonRoot_V181030.7z)
 * [VIM1_Nougat_V180619](https://dl.khadas.com/Firmware/VIM1/Android/Nougat/VIM1_Nougat_V180619.7z)
