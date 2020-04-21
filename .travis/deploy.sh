@@ -15,4 +15,10 @@ git config --global user.email hello@khadas.com
 # Clone the repository
 git clone git@github.com:khadas/khadas.github.io.git .deploy_git
 # Deploy to GitHub
-npm run deploy
+#npm run deploy
+
+mv .deploy_git/.git/ ./public/
+cd ./public
+git add .
+git commit -m "Site updated: `date +"%Y-%m-%d %H:%M"`"
+git push --force --quiet git@github.com:khadas/khadas.github.io.git master:master
