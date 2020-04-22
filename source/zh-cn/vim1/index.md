@@ -14,32 +14,32 @@ title: VIM1 文档
 |5|USB-A|USB 2.0接口,最大输出电流900mA|
 |6|风扇座子|PWM控制的4线制风扇|
 |7|reset按键|用于强制重启板子,按下会直接复位|
-|8|function按键|快速短按3下进入[MaskROM模式](/vim1/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
+|8|function按键|快速短按3下进入[MaskROM模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
 |9|power按键|用于关机或者配合其他按键使用|
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|RTC电池接口|硬件时钟电池的接口|
-|C|[40脚的GPIO](/vim1/GPIOPinout.html)|可用于控制GPIO(vim1/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|C|[40脚的GPIO](/zh-cn/vim1/GPIOPinout.html)|可用于控制GPIO(vim1/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |D|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |E|LED灯|用于指示板子的状态|
-|F|天线座子|用于插[wifi](/vim1/HowToConnectWifi.html)和[蓝牙](/vim1/HowToSetupBluetooth.html)的天线|
+|F|天线座子|用于插[wifi](/zh-cn/vim1/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim1/HowToSetupBluetooth.html)的天线|
 
 ## 背面(红色)
 
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V电压输出|
-|2|[SD卡插座](/vim1/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
-|3|M寄存器触点|[强制进入MaskROM模式](/vim1/HowtoBootIntoU    pgradeMode.html)|
+|2|[SD卡插座](/zh-cn/vim1/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
+|3|M寄存器触点|[强制进入MaskROM模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
 |4|XPWR焊盘|用于连接使用外部电源|
 
 ## 按键
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM1|
-||x||[进入升级模式(TST模式)](/vim1/HowtoBootIntoUpgradeMode.html)|
+||x||[进入升级模式(TST模式)](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM1|
-|x||x|[进入升级模式(按键模式)](/vim1/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[清除EMMC](/vim1/HowtoEraseEMMC.html)|
+|x||x|[进入升级模式(按键模式)](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[清除EMMC](/zh-cn/vim1/HowtoEraseEMMC.html)|
 
 ## LED灯指示
 |颜色|状态|含义|
@@ -66,7 +66,7 @@ title: VIM1 文档
 - 通过串口，USB网络接口或者网络接口使用[shell访问](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt)系统。
 
 **启动Krescue的[步骤](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt)**
-1. 从[dl.khadas.com](https://dl.khadas.com/Firmware/Kre    scue/dump/)上下载合适你板子使用的VIM1的镜像。
+1. 从[dl.khadas.com](https://dl.khadas.com/Firmware/Krescue/dump/)上下载合适你板子使用的VIM1的镜像。
 2. 使用启动盘制作工具([Etcher](https://www.balena.io/etcher/)，[rufus](https://rufus.ie/))将下载的镜像烧录到SD中。
 3. 将SD卡插到板子上，同时插上HDMI，用USB-C供电
 4. 启动板子进入[MaskROM模式](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt)(请仔细阅读这个谅解的文档！！！)
@@ -134,7 +134,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [启动卡与烧录卡的比较](/zh-cn/vim1/BootingCardVsBurningCard.html)
 [通过TF卡升级安卓](/zh-cn/vim1/UpgradeViaTFBurningCard.html)
 [从外部媒体介质启动系统](/zh-cn/vim1/BootFromExtMedia.html)
-[如何进入升级模式](/vim1/HowtoBootIntoUpgradeMode.html)
+[如何进入升级模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
 
 **提示:**
 * 应使用USB-C数据线从Ubuntu或Windows主机直接将**emmc固件**刻录到`emmc`。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。
@@ -169,7 +169,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amzon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-**提示:** 如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](https://docs.khadas.com/zh-cn/vim1/InstallLibreELEC.html)
+**提示:** 如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/zh-cn/vim1/InstallLibreELEC.html)
 
 # 软件开发/高级CRACH恢复
 在系统完全崩溃需要手动恢复的极端情况下，需要使用mregister重置VIM1 SBC。USB串行调试工具对于开发人员调>试复杂软件问题也很有用。

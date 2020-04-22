@@ -8,33 +8,33 @@ title: VIM2 文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 2.0接口,最大输出电流500mA|
-|2|RJ-45|有[WOL功能](/vim2/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/zh-cn/vim2/HowtoUseWol.html)的Gigabit网口|
 |3|HDMI|支持3D,HDR,CEC以及HDCP2.2的HDMI接口|
 |4|USB-C|USB2.0 OTG接口,[5V输出](https://www.khadas.com/pr/oduct-page/power-adapter),[可用于升级固件](/zh-cn/vim2/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0接口,最大输出电流900mA|
 |6|限流开关|防止在负载不均衡的情况下损坏VIM2|
 |7|风扇座子|PWM控制的4线制[风扇](https://www.khadas.com/product-page/3705-cooling-fan)|
 |8|reset按键|用于强制重启板子,按下会直接复位|
-|9|function按键|快速短按3下进入[MaskROM模式](/vim2/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
+|9|function按键|快速短按3下进入[MaskROM模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
 |A|power按键|用于关机或者配合其他按键使用|
 |B|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |C|RTC电池接口|硬件时钟电池的接口|
-|D|[40脚的GPIO](/vim2/GPIOPinout.html)|可用于控制GPIO(vim2/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|D|[40脚的GPIO](/zh-cn/vim2/GPIOPinout.html)|可用于控制[GPIO](/zh-cn/vim2/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |F|LED灯|用于指示板子的状态|
 |G|FPC控制器|10个引脚,0.5mm间距,具有I2C和IOs的功能|
-|H|天线座子|用于插[wifi](/vim2/HowToConnectWifi.html)和[蓝牙](/vim2/HowToSetupBluetooth.html)的天线|
-|I|天线座子|用于插[wifi](/vim2/HowToConnectWifi.html)和[蓝牙](/vim2/HowToSetupBluetooth.html)的天线|
+|H|天线座子|用于插[wifi](/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
+|I|天线座子|用于插[wifi](/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
 
 ## 背面(红色)
 
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|Pogo焊盘|外部5V电压输入,可有[VTV板子](https://www.khadas.com/product-page/vtv-board)提供|
-|2|[SD卡插座](/vim2/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
+|2|[SD卡插座](/zh-cn/vim2/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
 |3|500mA保险丝|为USB口提供500mA的电流保护|
 |4|WOL选择开关|打开以后可以用WOL的方式唤醒板子|
-|5|[MCU](https://docs.khadas.com/vim2/KbiGuidance.html)|可编程EEPROM阵列的STM8S003微控制器|
+|5|[MCU](/zh-cn/vim2/KbiGuidance.html)|可编程EEPROM阵列的STM8S003微控制器|
 |6|MCU焊盘|SWIM, UART, ADC, NRST|
 |7|SPI Flash|通过SPI控制的FLash模块|
 |8|20叫Pogo焊盘|用于[VTV板子](https://www.khadas.com/product-page/vtv-board)的USB, I2C, DVB-Bus, IOs接口|
@@ -45,10 +45,10 @@ title: VIM2 文档
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM2|
-||x||[进入升级模式(TST模式)](/vim2/HowtoBootIntoUpgradeMode.html)|
+||x||[进入升级模式(TST模式)](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM2|
-|x||x|[进入升级模式(按键模式)](/vim2/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[清除EMMC](/vim2/HowtoEraseEMMC.html)|
+|x||x|[进入升级模式(按键模式)](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[清除EMMC](/zh-cn/vim2/HowtoEraseEMMC.html)|
 
 ## LED灯指示
 |颜色|状态|含义|
@@ -143,7 +143,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [启动卡与烧录卡的比较](/zh-cn/vim2/BootingCardVsBurningCard.html)
 [通过TF卡升级安卓](/zh-cn/vim2/UpgradeViaTFBurningCard.html)
 [从外部媒体介质启动系统](/zh-cn/vim2/BootFromExtMedia.html)
-[如何进入升级模式](/vim2/HowtoBootIntoUpgradeMode.html)
+[如何进入升级模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
 
 **提示:**
 * 应使用USB-C数据线从Ubuntu或Windows主机直接将**emmc固件**刻录到`emmc`。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。
@@ -178,7 +178,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amzon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-**提示:** 如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](https://docs.khadas.com/zh-cn/vim2/InstallLibreELEC.html)
+**提示:** 如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/zh-cn/vim2/InstallLibreELEC.html)
 
 # 软件开发/高级CRACH恢复
 在系统完全崩溃需要手动恢复的极端情况下，需要使用mregister重置VIM2 SBC。USB串行调试工具对于开发人员调>试复杂软件问题也很有用。
