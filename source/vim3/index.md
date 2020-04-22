@@ -8,51 +8,51 @@ title: VIM3 Beginners Guide
 ## Front (Blue)
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](https://docs.khadas.com/vim3/HowToSetupPcieUsbPort.html), 900mA output|
-|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](https://docs.khadas.com/vim3/HowtoUseWol.html)|
+|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/vim3/HowToSetupPcieUsbPort.html), 900mA output|
+|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](/vim3/HowtoUseWol.html)|
 |3|HDMI|HDMI port supporting CEC|
-|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](https://docs.khadas.com/vim3/UpgradeViaUSBCable.html)|
+|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](/vim3/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3 in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
-|D|[40-Pin GPIO](https://docs.khadas.com/vim3/GPIOPinout.html)|[General input/output pins](https://docs.khadas.com/vim3/HowToAccessGpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|[40-Pin GPIO](/vim3/GPIOPinout.html)|[General input/output pins](/vim3/HowToAccessGpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3's available I/O beyond what A311D can provide|
-|F|[MCU](https://docs.khadas.com/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|F|[MCU](/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
 |G|WOL Switch|Power switch activated via Wake-On-LAN|
 |H|Infrared Module|2-channel infrared receiver for the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |I|LEDs|Indicator LEDs|
-|J|IPEX Antenna|[Wi-Fi](https://docs.khadas.com/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
-|K|IPEX Antenna|Wi-Fi and [Bluetooth](https://docs.khadas.com/vim3/HowToSetupBluetooth.html) antenna connector|
+|J|IPEX Antenna|[Wi-Fi](/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
+|K|IPEX Antenna|Wi-Fi and [Bluetooth](/vim3/HowToSetupBluetooth.html) antenna connector|
 
 ## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
-|2|[Micro-SD Slot](https://docs.khadas.com/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
+|2|[Micro-SD Slot](/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|Current Limit Switch|Prevents damage to VIM3 due to faulty loading conditions|
-|4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs](https://docs.khadas.com/vim3/ListOfCompatibleNVMeSSDs.html)|
-|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](https://docs.khadas.com/vim3/ConnectLcd.html)|
-|6|[MIPI-DSI](https://docs.khadas.com/vim3/ConnectLcd.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
+|4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs](/vim3/ListOfCompatibleNVMeSSDs.html)|
+|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](/vim3/ConnectLcd.html)|
+|6|[MIPI-DSI](/vim3/ConnectLcd.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
 |7|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, dual cameras, 8MP image signal processing|
-|8|[SPI Flash](https://docs.khadas.com/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
+|8|[SPI Flash](/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
 |9|XPWR Pads|Connect an external power switch using these pads|
-|A|M-Register|Allows the EMMC to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
-|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|A|M-Register|Allows the EMMC to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
+|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
 |C|Current Limit Switch|Prevents damage to VIM3 due to faulty loading conditions|
 
 ## Buttons
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3|
-||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/vim3/HowtoBootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3|
-|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](https://docs.khadas.com/vim3/HowtoEraseEMMC.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/vim3/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](/vim3/HowtoEraseEMMC.html)|
 
 ## Indicator LEDs
 |Colour|Behaviour|Meaning|
@@ -72,51 +72,51 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 ## Front (Blue)
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](https://docs.khadas.com/vim3/HowToSetupPcieUsbPort.html), 900mA output|
-|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](https://docs.khadas.com/vim3/HowtoUseWol.html)|
+|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/vim3/HowToSetupPcieUsbPort.html), 900mA output|
+|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](/vim3/HowtoUseWol.html)|
 |3|HDMI|HDMI port supporting CEC|
-|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](https://docs.khadas.com/vim3/UpgradeViaUSBCable.html)|
+|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](/vim3/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3L in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3L|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
-|D|[40-Pin GPIO](https://docs.khadas.com/vim3/GPIOPinout.html)|[General input/output pins](https://docs.khadas.com/vim3/HowToAccessGpio.html) for VIM3L's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|[40-Pin GPIO](/vim3/GPIOPinout.html)|[General input/output pins](/vim3/HowToAccessGpio.html) for VIM3L's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3L's available I/O beyond what S905D3 can provide|
-|F|[MCU](https://docs.khadas.com/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|F|[MCU](/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
 |G|WOL Switch|Power switch activated via Wake-On-LAN|
 |H|Infrared Module|2-channel infrared receiver for the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |I|LEDs|Indicator LEDs|
-|J|IPEX Antenna|[Wi-Fi](https://docs.khadas.com/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
-|K|IPEX Antenna|Wi-Fi and [Bluetooth](https://docs.khadas.com/vim3/HowToSetupBluetooth.html) antenna connector|
+|J|IPEX Antenna|[Wi-Fi](/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
+|K|IPEX Antenna|Wi-Fi and [Bluetooth](/vim3/HowToSetupBluetooth.html) antenna connector|
 
 ## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
-|2|[Micro-SD Slot](https://docs.khadas.com/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
+|2|[Micro-SD Slot](/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|Current Limit Switch|Prevents damage to VIM3L due to faulty loading conditions|
-|4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs](https://docs.khadas.com/vim3/ListOfCompatibleNVMeSSDs.html)|
-|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](https://docs.khadas.com/vim3/ConnectLcd.html)|
-|6|[MIPI-DSI](https://docs.khadas.com/vim3/ConnectLcd.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
+|4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs](/vim3/ListOfCompatibleNVMeSSDs.html)|
+|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](/vim3/ConnectLcd.html)|
+|6|[MIPI-DSI](/vim3/ConnectLcd.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
 |7|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, single camera, no image signal processor|
-|8|[SPI Flash](https://docs.khadas.com/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
+|8|[SPI Flash](/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
 |9|XPWR Pads|Connect an external power switch using these pads|
-|A|M-Register|Allows the EMMC to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
-|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+|A|M-Register|Allows the EMMC to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
+|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
 |C|Current Limit Switch|Prevents damage to VIM3L due to faulty loading conditions|
 
 ## Buttons
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3L|
-||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/vim3/HowtoBootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3L|
-|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](https://docs.khadas.com/vim3/HowtoEraseEMMC.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/vim3/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](/vim3/HowtoEraseEMMC.html)|
 
 ## Indicator LEDs
 |Colour|Behaviour|Meaning|
@@ -172,11 +172,11 @@ More shell commands and examples:
 # Amlogic A311D, NPU Usage Guides
 These following documentation links will help you get started with your VIM3's 5.0 TOPS neural processing unit.
 
-1. [How to Use NPU](https://docs.khadas.com/vim3/HowToUseNpu.html)
-2. [Install Darknet](https://docs.khadas.com/vim3/HowToInstallDarknet.html)
-3. [Train Yolo](https://docs.khadas.com/vim3/HowToTrainYolo.html)
-4. [Transform Yolo](https://docs.khadas.com/vim3/HowToTransformYolo.html)
-5. [Train Inception](https://docs.khadas.com/vim3/HowToTrainInception.html)
+1. [How to Use NPU](/vim3/HowToUseNpu.html)
+2. [Install Darknet](/vim3/HowToInstallDarknet.html)
+3. [Train Yolo](/vim3/HowToTrainYolo.html)
+4. [Transform Yolo](/vim3/HowToTransformYolo.html)
+5. [Train Inception](/vim3/HowToTrainInception.html)
 
 **Learn More:**
 * [YouTube: VIM3 - Realtime Object Detection Using Yolo v3](https://www.youtube.com/watch?v=aQ-g_CBrzEU)
@@ -194,14 +194,14 @@ Steps to boot your VIM3 from a Micro SD-card:
 3. Make sure you select the correct VIM3 .dtb file (follow instructions specific to the ROM!).
 4. Ensure that your VIM3 has Android 9.0 installed, and is connected to a power adapter (not PC!).
 5. Insert the SD-card into your VIM3, and power it on.
-6. Use [keys-mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html) to enter upgrade mode.
+6. Use [keys-mode](/vim3/HowtoBootIntoUpgradeMode.html) to enter upgrade mode.
 7. If you have done all the above steps correctly, your VIM3 will boot from the Micro SD-card.
 
 **Learn More:**
-* [Enter Upgrade Mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)
-* [Upgrade Using SD-Card](https://docs.khadas.com/vim3/UpgradeViaTFBurningCard.html)
-* [Boot From External Media](https://docs.khadas.com/vim3/BootFromExtMedia.html)
-* [Booting Card Vs Burning Card](https://docs.khadas.com/vim3/BootingCardVsBurningCard.html)
+* [Enter Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Using SD-Card](/vim3/UpgradeViaTFBurningCard.html)
+* [Boot From External Media](/vim3/BootFromExtMedia.html)
+* [Booting Card Vs Burning Card](/vim3/BootingCardVsBurningCard.html)
 
 **Tips:**
 * **EMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions Containing the `EMMC` mark.
@@ -216,16 +216,16 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Computer running Linux or Windows.
 
 **Learn More:**
-* [Upgrade OS Using USB-C Cable](https://docs.khadas.com/vim3/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)
+* [Upgrade OS Using USB-C Cable](/vim3/UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html)
 
 **Firmware Images:**
-* [Android OS](https://docs.khadas.com/vim3/FirmwareAndroid.html)
-* [Ubuntu OS](https://docs.khadas.com/vim3/FirmwareUbuntu.html)
-* [LibreELEC](https://docs.khadas.com/vim3/FirmwareLibreelec.html)
-* [Dual](https://docs.khadas.com/vim3/FirmwareDualos.html)
-* [U-Boot](https://docs.khadas.com/vim3/FirmwareUboot.html)
-* [Third Party OSes](https://docs.khadas.com/vim3/FirmwareThirdparty.html)
+* [Android OS](/vim3/FirmwareAndroid.html)
+* [Ubuntu OS](/vim3/FirmwareUbuntu.html)
+* [LibreELEC](/vim3/FirmwareLibreelec.html)
+* [Dual](/vim3/FirmwareDualos.html)
+* [U-Boot](/vim3/FirmwareUboot.html)
+* [Third Party OSes](/vim3/FirmwareThirdparty.html)
 
 # VIM3 Power Supply
 Although your VIM3 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
@@ -236,7 +236,7 @@ Although your VIM3 SBC is compatible with various types of power supplies, these
 **Learn More:**
 * [Khadas Shop - USB-C 24W Adapter](https://www.khadas.com/product-page/usb-c-24w-adapter)
 * [Khadas Shop - USB-C Cable (Male-to-Male)](https://www.khadas.com/product-page/usb-c-cable-male-to-male)
-* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim3/ExtraPowerInput.html)
+* [Extra Power Input For Khadas VIMs](/vim3/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
 
 # Displays & User Input
@@ -263,7 +263,7 @@ These items are useful if you wish to use your VIM3 SBC as a media center, for s
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amazon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-**Tip:** Nowadays most people stream their media , see [How To Install LibreELEC](https://docs.khadas.com/vim3/InstallLibreELEC.html).
+**Tip:** Nowadays most people stream their media , see [How To Install LibreELEC](/vim3/InstallLibreELEC.html).
 
 # Software Development / Advanced Crash Recovery
 Extreme cases of crash-recovery will require you to use either the Khadas TST (VIM3), or the MRegister to reset your VIM3 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
@@ -273,8 +273,8 @@ Extreme cases of crash-recovery will require you to use either the Khadas TST (V
 3. USB Serial Debug Tool(For diagnosing software/hardware issues)
 
 **Learn More:**
-* [Khadas TST Upgrade Mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)
-* [Mregister Upgrade Mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html)
+* [Khadas TST Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)
+* [Mregister Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
