@@ -68,12 +68,18 @@ TE: 116640
 ...
 
 ```
-*提示: 如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。*
+*提示*
+1. 如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。
 ```
 /dev/ttyUSB0: Permission denied
 ```
 
+2. 串口连接uboot
+连接串口工具到PC以及板子上,打开PC上的串口软件,给板上电,看到串口开始打印信息提后,按下空格键就把系统停在uboot界面,对uboot进行操作.成功停在uboot以后,会在串口软件看到[kvim#](/zh-cn/vim1/UBootUsage.html).
 
+3. 需要注意的是如果你想要使用[uboot用户指南](/zh-cn/vim1/UBootUsage.html)的里的标准"帮助"命令,那么你先要在板子上烧录一个ubuntu或者安卓的固件,当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行.
+
+4. 你可以使用uboot命令去修改默认的[开机图标](/zh-cn/vim1/BuildBootLogoForUboot.html)等等.
 
 ### 更多参考:
 * [C-Kermit 官方网站](http://www.columbia.edu/kermit/index.html)
