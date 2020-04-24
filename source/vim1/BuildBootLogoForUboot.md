@@ -115,4 +115,4 @@ u-boot/drivers/usb/gadget/v2_burning/v2_common/optimus_progress_ui.c
 ```
 
 See Also
-[U-Boot Usage](https://docs.khadas.com/vim1/SetupSerialTool.html)
+[U-Boot Usage](/vim1/UBootUsage.html)

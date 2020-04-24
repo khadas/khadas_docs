@@ -50,7 +50,7 @@ b'Hello World'
 
 ### 模型转换
 
-要想把训练好的模型部署在VIM3上运行，需要进行模型转换，当前只支持 `Caffe/Tensorflow/Tflite/Darknet/Onnx` 等模型。
+要想把训练好的模型部署在VIM3上运行，需要进行模型转换，当前只支持 `Caffe/Tensorflow/Tflite/Darknet/Onnx/Pytroch/keras` 模型。
 
 SDK里面自带了一个`TensorFlow`模型转换的示例脚本。执行如下脚本进行模型转换：
 
@@ -85,7 +85,7 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 
 *注意：如果你要转换自己的模型，那么需要修改脚本里面相应文件的路径和参数。*
 
-以上是一个模型转换的示例脚本，更多详细信息请参考模型转换文档`docs/Model-convert-0.4-Wesion_zh.pdf`。
+以上是一个模型转换的示例脚本，更多详细信息请参考模型转换文档`docs/DDK_6.4.0.10_模型转换运行用户指南(0.5).pdf`。
 
 ### 编译转换好的case代码
 
@@ -104,10 +104,10 @@ $ cp ~/npu/aml_npu_sdk/linux_sdk/demo/inceptionv3/build_vx.sh .
 * 编译case代码
 
 ```
-$ ./build_vx.sh ~/npu/aml_npu_sdk/linux_sdk/linux_sdk ~/code/fenix
+$ ./build_vx.sh ~/npu/aml_npu_sdk/linux_sdk/linux_sdk
 ```
 
-*说明： 编译脚本用法： **./build_vx.sh linux-SDK-directory fenix-directory**。*
+*说明： 编译脚本用法： **./build_vx.sh linux-SDK-directory**。*
 
 编译成功后生成的可执行文件在目录`bin_r`下：
 
@@ -177,8 +177,8 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 这个demo只是做了top5处理，可以看到识别的概率最大为索引`2`的`0.826660`，对比labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt`可以发现识别出来是`金鱼`，结果正确。
 
 #### 基于Android运行
-参考Android&Linux编译集成指导`docs/Android-Linux-compile-guidance-0.1-Wesion_zh.pdf` Android相关部分。
+参考Android&Linux编译集成指导`docs/DDK_6.4.0.10_Android&Linux编译集成指导(0.2).pdf` Android相关部分。
 
 ### 写在最后
 
-以上只是简单说明了模型转换以及case代码编译运行，更多详细信息请参考模型转换文档`docs/Model-convert-0.4-Wesion_zh.pdf`。
+以上只是简单说明了模型转换以及case代码编译运行，更多详细信息请参考模型转换文档`docs/DDK_6.4.0.10_模型转换运行用户指南(0.5).pdf`。

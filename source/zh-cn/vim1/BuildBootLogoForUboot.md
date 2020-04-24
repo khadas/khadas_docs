@@ -77,7 +77,7 @@ $
 ```
 $ cp images/logo.img /media/gouwa/9B98-6C15/
 ```
-2）把U盘插在VIMs上，并进入u-boot命令行
+2）把U盘插在VIMs上，并进入[u-boot命令行](/zh-cn/vim1/SetupSerialTool.html)
 3）更新`logo`分区
 ```
 kvim# usb_update logo logo.img

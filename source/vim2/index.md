@@ -8,32 +8,32 @@ title: VIM2 Beginners Guide
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 2.0 speed, 500mA max output|
-|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](https://docs.khadas.com/vim2/HowtoUseWol.html)|
+|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](/vim2/HowtoUseWol.html)|
 |3|HDMI|HDMI 2.0a with CEC, 4K@60Hz|
-|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](https://docs.khadas.com/vim2/UpgradeViaUSBCable.html)|
+|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/vim2/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0 speed, 900mA max output|
 |6|Current Limit Switch|Prevents damage to VIM2 during uneven loading conditions|
 |7|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |8|Reset Button|Force reboot your VIM2 in the event of a system freeze|
-|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/vim2/HowtoBootIntoUpgradeMode.html)|
 |A|Power Button|This button turns on your VIM2|
 |B|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |C|RTC Battery Header|Header for attaching a battery for the real time clock|
-|D|[40-Pin GPIO](https://docs.khadas.com/vim2/GPIOPinout.html)|Learn how to access the GPIO from [here](https://docs.khadas.com/vim2/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|[40-Pin GPIO](/vim2/GPIOPinout.html)|Learn how to access the GPIO from [here](/vim2/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |F|LEDs|Status indicator LEDs|
 |G|FPC Connector|10-pins, 0.5mm pitch, with I2C, IOs|
-|H|I-Pex [Wi-Fi](https://docs.khadas.com/vim2/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
-|I|I-Pex [Wi-Fi](https://docs.khadas.com/vim2/HowToConnectWifi.html) / [Bluetooth](https://docs.khadas.com/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|H|I-Pex [Wi-Fi](/vim2/HowToConnectWifi.html) / [Bluetooth](/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|I|I-Pex [Wi-Fi](/vim2/HowToConnectWifi.html) / [Bluetooth](/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 
 ## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|Pogo Pads|External 5V power input, can be provided by [vTV Board](https://www.khadas.com/product-page/vtv-board) (DVB Tuner)|
-|2|[Micro-SD Card Slot](https://docs.khadas.com/vim2/BootFromExtMedia.html)|Boot alternative OSes via a micro-SD card, or just for extra storage|
+|2|[Micro-SD Card Slot](/vim2/BootFromExtMedia.html)|Boot alternative OSes via a micro-SD card, or just for extra storage|
 |3|500mA Fuse|Fuse for the 500mA USB port|
 |4|WOL Switch|Power switch activated via Wake-On-LAN|
-|5|[MCU](https://docs.khadas.com/vim2/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|5|[MCU](/vim2/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
 |6|MCU Pogo Pads|SWIM, UART, ADC, NRST|
 |7|SPI Flash|Flash memory module that interfaces over SPI|
 |8|20-Pin Pogo Pads|USB, I2C, DVB-Bus, IOs, for docking with the [vTV Board](https://www.khadas.com/product-page/vtv-board) (DVB Tuner)|
@@ -44,10 +44,10 @@ title: VIM2 Beginners Guide
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM2
-||x||[Enter Upgrade Mode (TST)](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/vim2/HowtoBootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM2|
-|x||x|[Enter Upgrade Mode (KEYS)](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](https://docs.khadas.com/vim2/HowtoEraseEMMC.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/vim2/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](/vim2/HowtoEraseEMMC.html)|
 
 ## Indicator LEDs
 |Colour|Behaviour|Meaning|
@@ -107,7 +107,7 @@ It also has had several components moved / upgraded to accomodate a quieter cool
 * [New VIM Heatsink](https://www.khadas.com/product-page/new-vim-heatsink)
 * [3705 Cooling Fan](https://www.khadas.com/product-page/3705-cooling-fan)
 
-It is backwards-compatible with the DIY Case, vTV Board and Khadas Tone Board, and supports several new ROMs such as [Ubuntu 18.04](https://docs.khadas.com/vim2/FirmwareUbuntu.html) and [Google Fuchsia](https://fuchsia.googlesource.com/zircon/+/master/docs/targets/khadas-vim.md).
+It is backwards-compatible with the DIY Case, vTV Board and Khadas Tone Board, and supports several new ROMs such as [Ubuntu 18.04](/vim2/FirmwareUbuntu.html) and [Google Fuchsia](https://fuchsia.googlesource.com/zircon/+/master/docs/targets/khadas-vim.md).
 
 **Learn More:**
 * [Khadas Website - VIM2 v1.4 Description](https://www.khadas.com/vim)
@@ -125,7 +125,7 @@ Although your VIM2 SBC is compatible with various types of power supplies, these
 **Learn More:**
 * [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
-* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim2/ExtraPowerInput.html)
+* [Extra Power Input For Khadas VIMs](/vim2/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
 
 # Displays & User Input
@@ -152,10 +152,10 @@ These items are useful when you want to upgrade your VIM2 SBC's operating system
 4. 8GB or Larger, USB-Thumbdrive (U-Disk)
 
 **Learn More:**
-* [Booting Card Vs Burning Card](https://docs.khadas.com/vim1/BootingCardVsBurningCard.html)
-* [Upgrade Using SD-Card](https://docs.khadas.com/vim2/UpgradeViaTFBurningCard.html)
-* [Boot From External Media](https://docs.khadas.com/vim2/BootFromExtMedia.html)
-* [Enter Upgrade Mode](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)
+* [Booting Card Vs Burning Card](/vim1/BootingCardVsBurningCard.html)
+* [Upgrade Using SD-Card](/vim2/UpgradeViaTFBurningCard.html)
+* [Boot From External Media](/vim2/BootFromExtMedia.html)
+* [Enter Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html)
 
 **Tips:**
 * **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
@@ -170,16 +170,16 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Firmware Using USB-C Cable](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](https://docs.khadas.com/vim1/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Firmware Using USB-C Cable](/vim1/UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
 
 **Firmware Images:**
-* [Android OS](https://docs.khadas.com/vim2/FirmwareAndroid.html)
-* [Ubuntu OS](https://docs.khadas.com/vim2/FirmwareUbuntu.html)
-* [LibreELEC](https://docs.khadas.com/vim2/FirmwareLibreelec.html)
-* [Dual OS](https://docs.khadas.com/vim2/FirmwareDualos.html)
-* [U-Boot](https://docs.khadas.com/vim2/FirmwareUboot.html)
-* [Third Party OSes](https://docs.khadas.com/vim2/FirmwareThirdparty.html)
+* [Android OS](/vim2/FirmwareAndroid.html)
+* [Ubuntu OS](/vim2/FirmwareUbuntu.html)
+* [LibreELEC](/vim2/FirmwareLibreelec.html)
+* [Dual OS](/vim2/FirmwareDualos.html)
+* [U-Boot](/vim2/FirmwareUboot.html)
+* [Third Party OSes](/vim2/FirmwareThirdparty.html)
 
 # Watching Movies, Expanding Internal eMMC Storage
 These items are useful if you wish to use your VIM2 SBC as a media center, for storing/downloading large movie files. A microSDXC UHS-I card is expensive, but its also fast enough for 4K video playback. In addition, you can connect external USB-2.0/3.0 SSDs or HDDs for storage that can encompass your entire media library.
@@ -191,7 +191,7 @@ These items are useful if you wish to use your VIM2 SBC as a media center, for s
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amazon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-**Tip:** Nowadays most people stream their media, see [How To Install LibreELEC](https://docs.khadas.com/vim2/InstallLibreELEC.html).
+**Tip:** Nowadays most people stream their media, see [How To Install LibreELEC](/vim2/InstallLibreELEC.html).
 
 # Software Development / Advanced Crash Recovery
 Extreme cases of crash-recovery will require you to use the MRegister to reset your VIM2 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
@@ -201,8 +201,8 @@ Extreme cases of crash-recovery will require you to use the MRegister to reset y
 3. USB Serial Debug Tool (For diagnosing software/hardware issues)
 
 **Learn More:**
-* [Khadas TST Upgrade Mode](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html#TST-Mode-v1-4-only)
-* [MRegister Upgrade Mode](https://docs.khadas.com/vim2/HowtoBootIntoUpgradeMode.html)
+* [Khadas TST Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html#TST-Mode-v1-4-only)
+* [MRegister Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

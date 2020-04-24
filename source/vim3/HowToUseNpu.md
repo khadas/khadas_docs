@@ -29,7 +29,7 @@ Host PC OS requirement:
 $ sudo apt update
 $ sudo apt install python3 python3-pip python3-virtualenv
 $ cd ~/npu/aml_npu_sdk/acuity-toolkit
-$ pip3 install -r requirements.txt
+$ for req in $(cat requirements.txt); do pip3 install $req; done
 ```
 
 *Note: The command will install TensorFlow CPU version by default, if your PC has NVIDIA GPU(s) you can choose to install [GPU version](https://www.tensorflow.org/install/gpu) to speed up the conversion.*
@@ -52,7 +52,7 @@ If you see the `Hello World` string printed indicate that the TensorFlow is inst
 
 ### Model Conversion
 
-In order to run the model on VIM3, you need to convert the model to case code, only support `Caffe/Tensorflow/Tflite/Darknet/Onnx` models.
+In order to run the model on VIM3, you need to convert the model to case code, only support `Caffe/Tensorflow/Tflite/Darknet/Onnx/Keras/Pytroch` models.
 
 There are some sample scripts`acuity-toolkit/conversion_scripts` in the SDK to convert the model. Execute the scripts to convert the model:
 
@@ -88,7 +88,7 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 
 *Note: You need to modify the model file path and other parameters in the scripts if you want to convert your model.*
 
-They are just sample scripts to convert the model, for more information please refer to model conversion documentation`docs/Model-convert-0.4-Wesion_en.pdf`.
+They are just sample scripts to convert the model, for more information please refer to model conversion documentation`docs/DDK_6.4.0.10_Model_Transcoding and Running User Guide_V0.5.pdf`.
 
 ### Compile the Case Code
 
@@ -107,10 +107,10 @@ $ cp ~/npu/aml_npu_sdk/linux_sdk/demo/inceptionv3/build_vx.sh .
 * Compile
 
 ```
-$ ./build_vx.sh ~/npu/aml_npu_sdk/linux_sdk/linux_sdk ~/code/fenix
+$ ./build_vx.sh ~/npu/aml_npu_sdk/linux_sdk/linux_sdk
 ```
 
-*Note: Build script usage: **./build_vx.sh linux-SDK-directory fenix-directory**.*
+*Note: Build script usage: **./build_vx.sh linux-SDK-directory**.*
 
 You will find the executable binary in directory `bin_r` if compile sucessfully.
 
@@ -180,8 +180,8 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 This demo just show the top5, you can see the max probability is index `2`, you can check the labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt` and you will find the result is `goldfish`.
 
 #### Based On Android
-Please refer to Android&Linux complie guidance`docs/Android-Linux-compile-guidance-0.1-Wesion_en.pdf`.
+Please refer to Android&Linux complie guidance`docs/DDK_6.4.0.10_Android&Linux_Compilation and Integration Guide_0.2.pdf`.
 
 ### In The End
 
-This is just a simple sample about model conversion and case code complie, for more information please refer to model conversion documentation`docs/Model-convert-0.4-Wesion_en.pdf`.
+This is just a simple sample about model conversion and case code complie, for more information please refer to model conversion documentation`docs/DDK_6.4.0.10_Model_Transcoding and Running User Guide_V0.5.pdf`.
