@@ -6,7 +6,7 @@ Khadas VIM3/VIM3L contains a 16 MB SPI-Flash that's used as boot storage; so you
 ### Build U-boot For SPI-Flash
 The U-Boot for SPI-Flash is the same as eMMC U-Boot. We recommend using [Fenix Script](https://github.com/khadas/fenix) to build U-Boot, as it's easy this way.
 
-**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](vim33/FenixScript.html).**
+**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](/zh-cn/vim3/FenixScript.html).**
 
 * Setup Environment:
 
