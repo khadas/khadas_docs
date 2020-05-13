@@ -185,7 +185,6 @@ sidebar:
     how_to_access_i2c: How To Access I2C
     how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
     how_to_install_adb_tool: How To Install ADB Tool
-    how_to_use_lte_module: How To Use LTE Module
     npu: NPU
     how_to_use_npu: How To Use the NPU
     how_to_install_darknet: How To Install Darnket
@@ -223,6 +222,7 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
+    how_to_use_lte_module: How To Use LTE Module
     hardware: Hardware
     download: Download
     extra: Extra

@@ -184,7 +184,6 @@ sidebar:
     how_to_access_i2c: 如何使用I2C接口
     how_to_setup_pcie_usb_port: 如何设置PCIe或USB3.0
     how_to_install_adb_tool: 如何安装ADB调试工具
-    how_to_use_lte_module: 如何使用LTE模块
     npu: NPU
     how_to_use_npu: 如何使用NPU
     how_to_install_darknet: 如何安装darknet模型
@@ -222,6 +221,7 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
+    how_to_use_lte_module: 如何使用LTE模块
     hardware: 硬件资料
     download: 下载
     extra: 其他

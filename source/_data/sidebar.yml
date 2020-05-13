@@ -148,7 +148,6 @@ vim3:
     how_to_access_i2c: HowToAccessI2c.html
     how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
     how_to_install_adb_tool: HowToInstallADBTool.html
-    how_to_use_lte_module: HowToUseLTEModule.html
   npu:
     how_to_use_npu: HowToUseNpu.html
     how_to_install_darknet: HowToInstallDarknet.html
@@ -186,6 +185,7 @@ vim3:
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
+    how_to_use_lte_module: HowToUseLTEModule.html
   hardware:
     download: HardwareDocs.html
     extra: HardwareExtra.html
