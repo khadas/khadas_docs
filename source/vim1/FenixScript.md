@@ -94,46 +94,11 @@ Fenix scripts help messages:
 
 ### Build Fenix in Docker
 
-Fenix is supported via Docker. We provide a `Ubuntu 18.04` build host, so you can build all images in Docker.
+Fenix is supported via Docker. We provide a `Ubuntu 20.04` build host, so you can build all images in Docker.
 
 #### Install Docker
-Requires Host PC to be running `Ubuntu 16.04` or newer.
 
-Uninstall old Docker version:
-```
-$ sudo apt-get remove docker docker-engine docker.io
-```
-Install some essential packages:
-```
-$ sudo apt-get update
-$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-```
-
-Add Docker source:
-```
-$ sudo add-apt-repository \
-	"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-	$(lsb_release -cs) \
-	stable"
-```
-
-Install Docker:
-```
-$ sudo apt-get update
-$ sudo apt-get install docker-ce
-```
-Start Docker:
-```
-$ sudo systemctl enable docker
-$ sudo systemctl start docker
-```
-Add Docker group:
-```
-$ sudo groupadd docker
-$ sudo usermod -aG docker $USER
-```
-*Tip: You'll need to logout or reboot your system.*
+Please refer to [Docker Official Documentation](https://docs.docker.com/engine/install/).
 
 #### Check Docker
 ```
