@@ -181,6 +181,16 @@ These following documentation links will help you get started with your VIM3's 5
 **Learn More:**
 * [YouTube: VIM3 - Realtime Object Detection Using Yolo v3](https://www.youtube.com/watch?v=aQ-g_CBrzEU)
 
+# Attaching the OS08A10 Camera to VIM3
+Attaching a camera for the first-time to VIM3's MIPI-CSI header? Refer to this picture:
+
+![image](/images/vim3/docs_vim3_camera_OS08A10.jpg)
+
+**Learn More:**
+- [khadas.com/shop](https://www.khadas.com/product-page/os08a10-8mp-camera)
+- [Schematic](https://dl.khadas.com/Hardware/Accessories/OS08A10/OS08A10_V11_Specification.pdf)
+- [Datasheet](https://dl.khadas.com/Hardware/Accessories/OS08A10/OS08A10-H92A_Specification_Version-2-11_SE.pdf)
+
 # Booting 3rd-Party ROMs from Micro SD-Card
 These items are useful when you want to boot your VIM3 from an SD-Card, to run 3rd-party ROMs such as LibreELEC.
 
