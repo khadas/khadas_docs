@@ -89,47 +89,11 @@ Fenix scripts help messages:
 ```
 
 ### 使用Docker编译
-Fenix支持在Docker中编译，我们提供了一个`Ubuntu 18.04`的Docker环境，你可以在里面编译所有的固件。
+Fenix支持在Docker中编译，我们提供了一个`Ubuntu 20.04`的Docker环境，你可以在里面编译所有的固件。
 
 #### 安装Docker
-这里提供`Ubuntu 16.04`或新版本的Docker安装方法。
 
-卸载旧版本Docker：
-```
-$ sudo apt-get remove docker docker-engine docker.io
-```
-
-安装必要的软件包：
-```
-$ sudo apt-get update
-$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
-$ curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
-```
-
-添加Docker源：
-```
-$ sudo add-apt-repository \
-    "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu \
-    $(lsb_release -cs) \
-    stable"
-```
-
-安装Docker:
-```
-$ sudo apt-get update
-$ sudo apt-get install docker-ce
-```
-启动Docker:
-```
-$ sudo systemctl enable docker
-$ sudo systemctl start docker
-```
-添加Docker用户组：
-```
-$ sudo groupadd docker
-$ sudo usermod -aG docker $USER
-```
-*注意: 必须注销或重启系统才会生效。*
+请参考[Docker官方安装文档](https://docs.docker.com/engine/install/)。
 
 #### 检查Docker
 ```
