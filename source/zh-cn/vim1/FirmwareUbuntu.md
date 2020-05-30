@@ -31,6 +31,7 @@ title: Khadas VIM1 Ubuntu固件
 ## SD/USB安装
 
 ### Server
+* [VIM1_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 * [VIM1_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830.7z)
@@ -39,6 +40,7 @@ title: Khadas VIM1 Ubuntu固件
 * [VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIMs_Ubuntu-server-bionic_Linux-4.19_arm64_SD-USB_V20181030.7z)
 
 ### Desktop
+* [VIM1_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 * [VIM1_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190917](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190917.7z)
