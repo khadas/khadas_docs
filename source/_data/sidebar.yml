@@ -245,6 +245,7 @@ edge:
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
+    how_to_use_lte_module: HowToUseLTEModule.html
   hardware:
     download: HardwareDocs.html
     extra: HardwareExtra.html

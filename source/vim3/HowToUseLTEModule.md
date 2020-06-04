@@ -1,14 +1,16 @@
 title: How To Use LTE Module
 ---
 
-## View operators and frequency bands supported by your region
+# View operators and frequency bands supported by your region
 
 You can view it on the following two websites:
 
 1. [frequencycheck](https://www.frequencycheck.com/carriers)
 2. [spectrumonitoring](https://www.spectrummonitoring.com/frequencies/)
 
-## Use LTE Module with Ubuntu Desktop
+# Use LTE Module with Ubuntu Desktop
+
+## XFACE Desktop
 
 ### Step1: Open `edit connections`
 
@@ -60,7 +62,51 @@ Now, you can connect it , you will find you LTE module connections in network me
 
 And then, you will connect success !
 
-## Use LTE Module with Ubuntu Server
+## GNOME Desktop
+
+### Step1: Open `Mobile Board Settings`
+
+![LTE_gnome_open](/images/vim3/LTE_gnome_open.png)
+
+Click the menu bar in the upper right corner to see the 'mobile board settings' option
+
+### Step2: New Connect
+
+Click the `Network`, Chooise `Add new connection`, and then click `Next`.
+
+![LTE_gnome_new](/images/vim3/LTE_gnome_new.png)
+![LTE_gnome_next](/images/vim3/LTE_gnome_next.png)
+
+### Step3: Choose you provider's country
+
+Choose you provider's country . 
+
+![LTE_gnome_country](/images/vim3/LTE_gnome_country.png)
+
+### Step4: Choose you provider
+
+Choose you provider,This needs to be set according to your SIM card.
+
+![LTE_gnome_provider](/images/vim3/LTE_gnome_provider.png)
+### Step5: 输入密码连接
+
+After choose you provider, the next two steps use defconfigiure. So you just need to choose `next`. And then click `apply` . Now, you need a password , default is `000`.
+
+![LTE_gnome_apply](/images/vim3/LTE_gnome_apply.png)
+![LTE_gnome_psk](/images/vim3/LTE_gnome_psk.png)
+
+After entering the password, you can connect normally.
+
+![LTE_gnome_success](/images/vim3/LTE_gnome_success.png)
+
+### Change Password
+
+Open the corresponding settings and update the password in 'mobile broadband'
+
+![LTE_gnome_change_psk](/images/vim3/LTE_gnome_change_psk.png)
+
+
+# Use LTE Module with Ubuntu Server
 
 If you use Ubuntu Server, you just need a command to connect it .
 
@@ -69,12 +115,12 @@ $ sudo nmcli connection add type gsm apn 3gnet user 0000 password 0000 con-name 
 
 ```
 
-## How to check  you connection is success
+# How to check  you connection is success
 
 You can test it by `ping` command. And you need to use `-I` option to choose the LTE Module.
 
 
-### check your network node
+## check your network node
 ```
 $ ifconfig -a
 
@@ -93,7 +139,7 @@ wwan0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
 You will find `wwan0` via command `ifconfig -a`
 
 
-### Use `ping` command to test
+## Use `ping` command to test
 
 ```
 $ ping www.baidu.com -I wwan0
