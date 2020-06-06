@@ -88,7 +88,7 @@ Choose you provider's country .
 Choose you provider,This needs to be set according to your SIM card.
 
 ![LTE_gnome_provider](/images/vim3/LTE_gnome_provider.png)
-### Step5: 输入密码连接
+### Step5: Enter password and connect
 
 After choose you provider, the next two steps use defconfigiure. So you just need to choose `next`. And then click `apply` . Now, you need a password , default is `000`.
 
