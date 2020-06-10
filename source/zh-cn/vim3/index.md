@@ -39,7 +39,7 @@ title: VIM3 相关文档
 |4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘](/zh-cn/vim3/ListOfCompatibleNVMeSSDs.html)|
 |5|TP|10脚0.5mm间距FTP接口|
 |6|[MIPI-DSI接口](/zh-cn/vim3/ConnectLcd.html)|30脚0.5mm间距的FPC接口,可用于连接[TS050触控屏](https://www.khadas.com/product-page/ts050-touchscreen)|
-|7|MIPI-DSI接口|30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理|
+|7|MIPI-CSI接口|30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理|
 |8|[SPI Flash](/zh-cn/vim3/BootFromSpiFlash.html)|通过SPI控制的Flash模块|
 |9|XPWR焊盘|用于连接使用外部电源|
 |A|M寄存器|可在任何情况下,强制EMMC进入[MaskROM模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
@@ -104,7 +104,7 @@ title: VIM3 相关文档
 |4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘](/zh-cn/vim3/ListOfCompatibleNVMeSSDs.html)|
 |5|TP|10脚0.5mm间距FTP接口|
 |6|[MIPI-DSI接口](/zh-cn/vim3/ConnectLcd.html)|30脚0.5mm间距的FPC接口,可用于连接[TS050触控屏](https://www.khadas.com/product-page/ts050-touchscreen)|
-|7|MIPI-DSI接口|30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理|
+|7|MIPI-CSI接口|30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理|
 |8|[SPI Flash](/zh-cn/vim3/BootFromSpiFlash.html)|通过SPI控制的Flash模块|
 |9|XPWR焊盘|用于连接使用外部电源|
 |A|M寄存器|可在任何情况下,强制EMMC进入[MaskROM模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
