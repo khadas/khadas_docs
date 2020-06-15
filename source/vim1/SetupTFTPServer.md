@@ -42,7 +42,7 @@ $ sudo apt-get install tftp-hpa tftpd-hpa
 ```
 
 #### Configuration
-edit the file `etc/default/tftpd-hpa` as the root user, and edit the line look like this:
+edit the file `/etc/default/tftpd-hpa` as the root user, and edit the line look like this:
 ```
 TFTP_DIRECTORY="/usr/lib/tftpboot"
 ```
