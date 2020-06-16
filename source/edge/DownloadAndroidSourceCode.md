@@ -14,17 +14,19 @@ $ cd WORKING_DIRECTORY
 
 2) Run `repo init` to download the manifest repository first:
 
-**android 7.1:**
+**android 10.0:**
 ```sh
-$repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-nougat
+$repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-Qt
 ```
+
 **android 9.0:**
 ```sh
 $repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-pie
 ```
-**android 10.0:**
+
+**android 7.1:**
 ```sh
-$repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-Qt
+$repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-nougat
 ```
 
 3) Run `repo sync` to pull down the Android Source Tree:
