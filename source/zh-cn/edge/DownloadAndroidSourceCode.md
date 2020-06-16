@@ -22,6 +22,10 @@ $repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-noug
 ```sh
 $repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-pie
 ```
+**android 10.0:**
+```sh
+$repo init -u https://github.com/khadas/android_manifest.git -b khadas-edge-Qt
+```
 3）运行repo-sync下拉Android源代码：
 ```sh
 $repo sync -j4
