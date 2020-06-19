@@ -221,6 +221,7 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
+    how_to_use_lte_module: 如何使用LTE模块
     hardware: 硬件资料
     download: 下载
     extra: 其他
@@ -289,6 +290,7 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
+    how_to_use_lte_module: 如何使用LTE模块
     hardware: 硬件资料
     download: 下载
     extra: 其他
