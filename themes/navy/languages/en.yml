@@ -269,6 +269,15 @@ sidebar:
     overview: Beginners FAQ
     user_manual: User Manual
     how_to_upgrade_firmware: How To Upgrade Firmware
+
+  hardware:
+    hardware: hardware
+    vim1: VIM1
+    vim2: VIM2
+    vim3: VIM3
+    edge: Edge
+    toneboard: Tone Board
+
   firmware:
     firmware: Firmware
     vim1: VIM1

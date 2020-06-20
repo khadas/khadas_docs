@@ -222,6 +222,15 @@ toneboard:
     overview: index.html
     user_manual: UserManual.html
     how_to_upgrade_firmware: HowtoUpgradeFirmware.html
+
+hardware:
+  hardware:
+    vim1: hardwareVim1.html
+    vim2: hardwareVim2.html
+    vim3: hardwareVim3.html
+    edge: hardwareEdge.html
+    toneboard: hardwareToneboard.html
+    
 firmware:
   firmware:
     vim1: Vim1Firmware.html 
