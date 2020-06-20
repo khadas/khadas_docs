@@ -81,13 +81,6 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
-    firmware: 固件下载
-    android_image: Android
-    ubuntu_image: Ubuntu
-    libreelec_image: LibreELEC
-    uboot_image: Uboot
-    dualos_image: DualOS
-    thirdparty_image: 第三方固件
 
   vim2:
     getting_started: 开始使用
@@ -147,13 +140,6 @@ sidebar:
     mcu: MCU
     mcu_develop: MCU开发
     mcu_code_flow_chart: MCU代码流程图
-    firmware: 固件下载
-    android_image: Android
-    ubuntu_image: Ubuntu
-    libreelec_image: LibreELEC
-    uboot_image: Uboot
-    dualos_image: DualOS
-    thirdparty_image: 第三方固件
 
   vim3:
     getting_started: 开始使用
@@ -217,13 +203,6 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
     how_to_use_lte_module: 如何使用LTE模块
-    firmware: 固件下载
-    android_image: Android
-    ubuntu_image: Ubuntu
-    libreelec_image: LibreELEC
-    uboot_image: Uboot
-    dualos_image: DualOS
-    thirdparty_image: 第三方固件
 
   edge:
     getting_started: 开始使用
@@ -283,15 +262,6 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
     how_to_use_lte_module: 如何使用LTE模块
-    firmware: 固件下载
-    android_image: Android
-    ubuntu_image: Ubuntu
-    debian_image: Debian
-    libreelec_image: LibreELEC
-    dualos_image: DualOS
-    buildroot_image: Buildroot
-    uboot_image: U-boot
-    thirdparty_image: 第三方固件
 
   toneboard:
     getting_started: 开始使用
@@ -299,8 +269,9 @@ sidebar:
     user_manual: 用户手册
     how_to_upgrade_firmware: 如何升级固件
   firmware:
-    firmware_download: 固件下载
+    firmware: 固件
     vim1: VIM1
     vim2: VIM2
+    vim3: VIM3
     edge: Edge
     tone_board: Tone Board

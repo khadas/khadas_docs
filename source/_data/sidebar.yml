@@ -47,13 +47,6 @@ vim1:
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-  firmware:
-    android_image: FirmwareAndroid.html
-    ubuntu_image: FirmwareUbuntu.html
-    libreelec_image: FirmwareLibreelec.html
-    dualos_image: FirmwareDualos.html
-    uboot_image: FirmwareUboot.html
-    thirdparty_image: FirmwareThirdparty.html
 
 vim2:
   getting_started:
@@ -110,13 +103,6 @@ vim2:
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
-  firmware:
-    android_image: FirmwareAndroid.html
-    ubuntu_image: FirmwareUbuntu.html
-    libreelec_image: FirmwareLibreelec.html
-    dualos_image: FirmwareDualos.html
-    uboot_image: FirmwareUboot.html
-    thirdparty_image: FirmwareThirdparty.html
 
 vim3:
   getting_started:
@@ -180,13 +166,6 @@ vim3:
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_use_lte_module: HowToUseLTEModule.html
-  firmware:
-    android_image: FirmwareAndroid.html
-    ubuntu_image: FirmwareUbuntu.html
-    libreelec_image: FirmwareLibreelec.html
-    dualos_image: FirmwareDualos.html
-    uboot_image: FirmwareUboot.html
-    thirdparty_image: FirmwareThirdparty.html
 
 edge:
   getting_started:
@@ -237,15 +216,6 @@ edge:
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_use_lte_module: HowToUseLTEModule.html
-  firmware:
-    android_image: FirmwareAndroid.html
-    ubuntu_image: FirmwareUbuntu.html
-    debian_image: FirmwareDebian.html
-    libreelec_image: FirmwareLibreelec.html
-    dualos_image: FirmwareDualos.html
-    buildroot_image: FirmwareBuildroot.html
-    uboot_image: FirmwareUboot.html
-    thirdparty_image: FirmwareThirdparty.html
 
 toneboard:
   getting_started:
@@ -253,7 +223,8 @@ toneboard:
     user_manual: UserManual.html
     how_to_upgrade_firmware: HowtoUpgradeFirmware.html
 firmware:
-  firmware_download:
-    vim1: index.html
+  firmware:
+    vim1: Vim1Firmware.html 
     vim2: Vim2Firmware.html
+    vim3: Vim3Firmware.html
     edge: EdgeFirmware.html

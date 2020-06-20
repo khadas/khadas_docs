@@ -82,13 +82,6 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
-    firmware: Firmware
-    android_image: Android
-    ubuntu_image: Ubuntu
-    libreelec_image: LibreELEC
-    uboot_image: U-Boot
-    dualos_image: Dual OS
-    thirdparty_image: Third Party
 
   vim2:
     overview: Beginners Guide
@@ -148,13 +141,6 @@ sidebar:
     mcu: MCU
     mcu_develop: MCU Development
     mcu_code_flow_chart: MCU Code Flow Chart
-    firmware: Firmware
-    android_image: Android
-    ubuntu_image: Ubuntu
-    libreelec_image: LibreELEC
-    uboot_image: U-Boot
-    dualos_image: Dual OS
-    thirdparty_image: Third Party
 
   vim3:
     overview: Beginners Guide
@@ -218,13 +204,6 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_lte_module: How To Use LTE Module
-    firmware: Firmware
-    android_image: Android
-    ubuntu_image: Ubuntu
-    libreelec_image: LibreELEC
-    uboot_image: U-Boot
-    dualos_image: Dual OS
-    thirdparty_image: Third Party
 
   edge:
     overview: Beginners Guide
@@ -284,15 +263,6 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_lte_module: How To Use LTE Module
-    firmware: Firmware
-    android_image: Android
-    ubuntu_image: Ubuntu
-    debian_image: Debian
-    libreelec_image: LibreELEC
-    dualos_image: Dual OS
-    buildroot_image: Buildroot
-    uboot_image: U-Boot
-    thirdparty_image: Third Party
 
   toneboard:
     getting_started: Getting Started
@@ -300,8 +270,9 @@ sidebar:
     user_manual: User Manual
     how_to_upgrade_firmware: How To Upgrade Firmware
   firmware:
-    firmware_download: Firmware Download
+    firmware: Firmware
     vim1: VIM1
     vim2: VIM2
+    vim3: VIM3
     edge: Edge
     toneboard: Tone Board
