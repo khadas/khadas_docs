@@ -1,6 +1,6 @@
 vim1:
   getting_started:
-    overview: index.html
+    overview: index.html#Back-Red
     vim1_interfaces: VimInterfaces.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
@@ -47,9 +47,6 @@ vim1:
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-  hardware:
-    download: HardwareDocs.html
-    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -113,9 +110,6 @@ vim2:
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
-  hardware:
-    download: HardwareDocs.html
-    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -186,9 +180,6 @@ vim3:
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_use_lte_module: HowToUseLTEModule.html
-  hardware:
-    download: HardwareDocs.html
-    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -246,9 +237,6 @@ edge:
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_use_lte_module: HowToUseLTEModule.html
-  hardware:
-    download: HardwareDocs.html
-    extra: HardwareExtra.html
   firmware:
     android_image: FirmwareAndroid.html
     ubuntu_image: FirmwareUbuntu.html
@@ -264,9 +252,6 @@ toneboard:
     overview: index.html
     user_manual: UserManual.html
     how_to_upgrade_firmware: HowtoUpgradeFirmware.html
-  hardware:
-    download: HardwareDocs.html
-
 firmware:
   firmware_download:
     vim1: index.html

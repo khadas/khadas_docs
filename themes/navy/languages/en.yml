@@ -4,6 +4,7 @@ menu:
   vim3: VIM3
   edge: Edge
   toneboard: ToneBoard
+  hardware: Hardware
   firmware: Firmware
   faq: FAQ
 
@@ -81,9 +82,6 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
-    hardware: Hardware
-    download: Download
-    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -150,9 +148,6 @@ sidebar:
     mcu: MCU
     mcu_develop: MCU Development
     mcu_code_flow_chart: MCU Code Flow Chart
-    hardware: Hardware
-    download: Download
-    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -223,9 +218,6 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_lte_module: How To Use LTE Module
-    hardware: Hardware
-    download: Download
-    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -292,9 +284,6 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_lte_module: How To Use LTE Module
-    hardware: Hardware
-    download: Download
-    extra: Extra
     firmware: Firmware
     android_image: Android
     ubuntu_image: Ubuntu
@@ -310,9 +299,6 @@ sidebar:
     overview: Beginners FAQ
     user_manual: User Manual
     how_to_upgrade_firmware: How To Upgrade Firmware
-    hardware: Hardware
-    download: Download
-    extra: Extra
   firmware:
     firmware_download: Firmware Download
     vim1: VIM1

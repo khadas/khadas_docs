@@ -4,6 +4,7 @@ menu:
   vim3: VIM3
   edge: Edge
   tone_board: ToneBoard
+  hardware: 硬件资料
   firmware: 固件下载
   faq: FAQ
 
@@ -80,9 +81,6 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
-    hardware: 硬件资料
-    download: 下载
-    extra: 其他
     firmware: 固件下载
     android_image: Android
     ubuntu_image: Ubuntu
@@ -149,9 +147,6 @@ sidebar:
     mcu: MCU
     mcu_develop: MCU开发
     mcu_code_flow_chart: MCU代码流程图
-    hardware: 硬件资料
-    download: 下载
-    extra: 其他
     firmware: 固件下载
     android_image: Android
     ubuntu_image: Ubuntu
@@ -222,9 +217,6 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
     how_to_use_lte_module: 如何使用LTE模块
-    hardware: 硬件资料
-    download: 下载
-    extra: 其他
     firmware: 固件下载
     android_image: Android
     ubuntu_image: Ubuntu
@@ -291,9 +283,6 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
     how_to_use_lte_module: 如何使用LTE模块
-    hardware: 硬件资料
-    download: 下载
-    extra: 其他
     firmware: 固件下载
     android_image: Android
     ubuntu_image: Ubuntu
@@ -309,9 +298,6 @@ sidebar:
     overview: 概述
     user_manual: 用户手册
     how_to_upgrade_firmware: 如何升级固件
-    hardware: 硬件资料
-    download: 下载
-
   firmware:
     firmware_download: 固件下载
     vim1: VIM1
