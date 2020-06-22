@@ -6,8 +6,6 @@ vim1:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     install_libreelec: InstallLibreELEC.html
-    create_burning_card_via_cli: CreateBurnCardViaCLI.html
-    create_booting_card: CreateBootableSDCard.html
     booting_card_vs_burning_card: BootingCardVsBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
@@ -56,8 +54,6 @@ vim2:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     install_libreelec: InstallLibreELEC.html
-    create_burning_card_via_cli: CreateBurnCardViaCLI.html
-    create_booting_card: CreateBootableSDCard.html
     booting_card_vs_burning_card: BootingCardVsBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
@@ -111,8 +107,6 @@ vim3:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     install_libreelec: InstallLibreELEC.html
-    create_burning_card_via_cli: CreateBurnCardViaCLI.html
-    create_booting_card: CreateBootableSDCard.html
     booting_card_vs_burning_card: BootingCardVsBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
