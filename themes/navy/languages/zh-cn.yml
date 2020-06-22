@@ -39,7 +39,6 @@ sidebar:
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
-    install_libreelec: 如何安装LibreELEC
     booting_card_vs_burning_card: 启动卡与烧录卡的比较
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
@@ -87,7 +86,6 @@ sidebar:
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
-    install_libreelec: 如何安装LibreELEC
     booting_card_vs_burning_card: 启动卡与烧录卡的比较
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
@@ -143,7 +141,6 @@ sidebar:
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
-    install_libreelec: 如何安装LibreELEC
     booting_card_vs_burning_card: 启动卡与烧录卡的比较
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
@@ -208,7 +205,6 @@ sidebar:
     edgecaptain_power_priority: Edge Captain电源优先级
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级
-    install_libreelec: 如何安装LibreELEC 
     booting_card_vs_burning_card: 启动卡与烧录卡的比较
     extra_power_input: 外部电源供电
     captain_gpio_pinout: Captain GPIO 管脚映射

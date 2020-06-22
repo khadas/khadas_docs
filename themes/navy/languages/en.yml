@@ -40,7 +40,6 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    install_libreelec: Install LibreELEC
     booting_card_vs_burning_card: Booting Card Vs Burning Card
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
@@ -88,7 +87,6 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    install_libreelec: Install LibreELEC
     booting_card_vs_burning_card: Booting Card Vs Burning Card
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
@@ -144,7 +142,6 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    install_libreelec: Install LibreELEC
     booting_card_vs_burning_card: Booting Card Vs Burning Card
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
@@ -209,7 +206,6 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Using SD-Card
-    install_libreelec: Install LibreELEC
     booting_card_vs_burning_card: Booting Card Vs Burning Card
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
