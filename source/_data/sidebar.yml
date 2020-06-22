@@ -42,7 +42,6 @@ vim1:
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
-    enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
@@ -97,7 +96,6 @@ vim2:
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
-    enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
@@ -165,7 +163,6 @@ vim3:
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
-    enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
@@ -218,7 +215,6 @@ edge:
     install_docker: InstallDocker.html
     build_packages_in_docker: BuildPackagesInDocker.html
     setup_golang: SetupGolang.html
-    enable_adb: HowtoEnableAdb.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html

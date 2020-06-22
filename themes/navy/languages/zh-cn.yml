@@ -76,7 +76,6 @@ sidebar:
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     setup_golang: 搭建GO语言环境
-    enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -132,7 +131,6 @@ sidebar:
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     setup_golang: 搭建GO语言环境
-    enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -202,7 +200,6 @@ sidebar:
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     setup_golang: 搭建GO语言环境
-    enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -263,7 +260,6 @@ sidebar:
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
     setup_golang: 搭建GO语言环境
-    enable_adb: 如何使能ADB
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_rpigpio: 如何使用RPi.GPIO
     how_to_upgrade_the_logo: 如何更新logo
