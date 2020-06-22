@@ -37,6 +37,7 @@ sidebar:
     overview: Beginners Guide
     getting_started: Getting Started
     vim1_interfaces: VIM1 Interfaces
+    how_to_connect_wifi: Connect to Wi-Fi
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
@@ -46,7 +47,6 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     development: Development
-    install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -57,6 +57,7 @@ sidebar:
     setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
     android: Android
+    install_toolchains: Install Toolchains
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
@@ -64,7 +65,6 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     krescue: Krescue
-    how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
@@ -83,6 +83,7 @@ sidebar:
     overview: Beginners Guide
     getting_started: Getting Started
     vim2_interfaces: VIM2 Interfaces
+    how_to_connect_wifi: Connect to Wi-Fi
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
@@ -92,7 +93,6 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     development: Development
-    install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -104,6 +104,7 @@ sidebar:
     load_image_via_tftp: Load Images with U-Boot Using TFTP
     kbi_guidance: KBI Guide
     android: Android
+    install_toolchains: Install Toolchains
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
@@ -113,7 +114,6 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
     krescue: Krescue
-    how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
@@ -150,7 +150,6 @@ sidebar:
     HowToConnectCamera: How To Connect Camera
     how_to_use_lte_module: How To Use LTE Module
     development: Development
-    install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -163,6 +162,7 @@ sidebar:
     how_to_transform_yolo: How To Transform Yolo Model
     how_to_train_inception: How To Train Inception Model
     uboot: U-Boot
+    install_toolchains: Install Toolchains
     boot_from_spi_flash: Boot From SPI-Flash
     uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
@@ -213,7 +213,6 @@ sidebar:
     connect_lcd: Connect to TS050 Touchscreen
     how_to_use_lte_module: How To Use LTE Module
     development: Development
-    install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -226,6 +225,7 @@ sidebar:
     setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
     android: Android
+    install_toolchains: Install Toolchains
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     how_to_use_adb_tool: How To Use ADB Tool

@@ -11,7 +11,6 @@ vim1:
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
   development:
-    install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
@@ -22,6 +21,7 @@ vim1:
     setup_tftp: SetupTFTPServer.html
     load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
   android:
+    install_toolchains: InstallToolchains.html
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
@@ -57,7 +57,6 @@ vim2:
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
   development:
-    install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
@@ -69,6 +68,7 @@ vim2:
     load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
     kbi_guidance: KbiGuidance.html
   android:
+    install_toolchains: InstallToolchains.html
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
@@ -112,7 +112,6 @@ vim3:
     HowToConnectCamera: HowToConnectCamera.html
     how_to_use_lte_module: HowToUseLTEModule.html
   development:
-    install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
@@ -132,6 +131,7 @@ vim3:
     load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
     kbi_guidance: KbiGuidance.html
   android:
+    install_toolchains: InstallToolchains.html
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
@@ -173,7 +173,6 @@ edge:
     connect_lcd: ConnectLcd.html
     how_to_use_lte_module: HowToUseLTEModule.html
   development:
-    install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
@@ -182,6 +181,7 @@ edge:
     boot_from_spi_flash: BootFromSpiFlash.html
     kbi_guidance: KbiGuidance.html
   android:
+    install_toolchains: InstallToolchains.html
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
     how_to_use_adb_tool: HowToUseADBTool.html

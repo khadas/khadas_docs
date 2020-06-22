@@ -45,7 +45,6 @@ sidebar:
     Accessories: 配件
     how_to_setup_fan: 如何设置风扇
     development: 开发
-    install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
@@ -56,6 +55,7 @@ sidebar:
     setup_tftp: 搭建TFTP服务器
     load_image_via_tftp: 通过TFTP下载镜像
     android: Android
+    install_toolchains: 安装交叉编译器
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
@@ -91,7 +91,6 @@ sidebar:
     Accessories: 配件
     how_to_setup_fan: 如何设置风扇
     development: 开发
-    install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
@@ -103,6 +102,7 @@ sidebar:
     load_image_via_tftp: 通过TFTP下载镜像
     kbi_guidance: KBI说明
     android: Android
+    install_toolchains: 安装交叉编译器
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
@@ -149,7 +149,6 @@ sidebar:
     HowToConnectCamera: 如何连接使用摄像头
     how_to_use_lte_module: 如何使用LTE模块
     development: 开发
-    install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
@@ -169,6 +168,7 @@ sidebar:
     load_image_via_tftp: 通过TFTP下载镜像
     kbi_guidance: KBI说明
     android: Android
+    install_toolchains: 安装交叉编译器
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
@@ -211,12 +211,12 @@ sidebar:
     connect_lcd: 配置触摸屏TS050
     how_to_use_lte_module: 如何使用LTE模块
     development: 开发
-    install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     rk_docs: 瑞芯微官方文档
     uboot: U-boot
+    install_toolchains: 安装交叉编译器
     boot_from_spi_flash: 从SPI Flash启动系统
     kbi_guidance: KBI说明
     uboot_usage: U-boot使用说明
