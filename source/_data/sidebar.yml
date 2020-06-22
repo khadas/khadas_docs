@@ -20,7 +20,6 @@ vim1:
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
-    how_to_install_adb_tool: HowToInstallADBTool.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
@@ -30,7 +29,7 @@ vim1:
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
-    setup_adb: SetupADB.html
+    how_to_use_adb_tool: HowToUseADBTool.html
   linux:
     fenix_script: FenixScript.html
     krescue: Krescue.html
@@ -71,7 +70,6 @@ vim2:
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
-    how_to_install_adb_tool: HowToInstallADBTool.html
   uboot:
     uboot_usage: UBootUsage.html
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
@@ -82,7 +80,7 @@ vim2:
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
-    setup_adb: SetupADB.html
+    how_to_use_adb_tool: HowToUseADBTool.html
     howto_use_wol: HowtoUseWol.html
     force_reset_features: ForceResetFeatures.html 
   linux:
@@ -132,7 +130,6 @@ vim3:
     how_to_access_gpio: HowToAccessGpio.html
     how_to_access_i2c: HowToAccessI2c.html
     how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
-    how_to_install_adb_tool: HowToInstallADBTool.html
   npu:
     how_to_use_npu: HowToUseNpu.html
     how_to_install_darknet: HowToInstallDarknet.html
@@ -150,7 +147,7 @@ vim3:
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
-    setup_adb: SetupADB.html
+    how_to_use_adb_tool: HowToUseADBTool.html
     howto_use_wol: HowtoUseWol.html
   linux:
     fenix_script: FenixScript.html
@@ -194,14 +191,13 @@ edge:
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
     rk_docs: RockchipDocs.html
-    how_to_install_adb_tool: HowToInstallADBTool.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     kbi_guidance: KbiGuidance.html
   android:
     download_android_source_code: DownloadAndroidSourceCode.html
     build_android: BuildAndroid.html
-    setup_adb: SetupADB.html
+    how_to_use_adb_tool: HowToUseADBTool.html
     howto_use_wol: HowtoUseWol.html
     instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
   linux:
