@@ -5,7 +5,6 @@ vim1:
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-    booting_card_vs_burning_card: BootingCardVsBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
@@ -52,7 +51,6 @@ vim2:
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-    booting_card_vs_burning_card: BootingCardVsBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
@@ -104,7 +102,6 @@ vim3:
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-    booting_card_vs_burning_card: BootingCardVsBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
