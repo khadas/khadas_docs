@@ -47,6 +47,8 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
+    Accessories: Accessories
+    how_to_setup_fan: How To Setup Fan
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
@@ -97,6 +99,8 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
+    Accessories: Accessories
+    how_to_setup_fan: How To Setup Fan
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
@@ -127,7 +131,6 @@ sidebar:
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
-    how_to_setup_fan: Add Cooling Fan
     setup_golang: Setup Golang
     enable_adb: Enable ADB
     how_to_use_wiringpi: How To Use WiringPi
@@ -156,8 +159,12 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
-    connect_lcd: Connect to TS050 Touchscreen
     list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
+    Accessories: Accessories
+    how_to_setup_fan: How To Setup Fan
+    connect_lcd: Connect to TS050 Touchscreen
+    HowToConnectCamera: How To Connect Camera
+    how_to_use_lte_module: How To Use LTE Module
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
@@ -203,7 +210,6 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
-    how_to_use_lte_module: How To Use LTE Module
 
   edge:
     overview: Beginners Guide
@@ -223,8 +229,11 @@ sidebar:
     extra_power_input: Extra Power Input
     captain_gpio_pinout: Captain GPIO Pin-Outs
     edgev_gpio_pinout: Edge V GPIO Pin-Outs
-    connect_lcd: Connect to TS050 Touchscreen
     list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
+    Accessories: Accessories
+    how_to_setup_fan: How To Setup Fan
+    connect_lcd: Connect to TS050 Touchscreen
+    how_to_use_lte_module: How To Use LTE Module
     development: Development
     install_toolchains: Install Toolchains
     setup_serial: Serial Debugging Tool
@@ -251,7 +260,6 @@ sidebar:
     how_to_connect_wifi: Connect to Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
-    how_to_setup_fan: Add Cooling Fan
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     build_packages_in_docker: Build Packages In Docker
@@ -262,7 +270,6 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
-    how_to_use_lte_module: How To Use LTE Module
 
   toneboard:
     getting_started: Getting Started

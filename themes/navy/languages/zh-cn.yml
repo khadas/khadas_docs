@@ -46,6 +46,8 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     gpio_pinout: GPIO 管脚映射
+    Accessories: 配件
+    how_to_setup_fan: 如何设置风扇
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
@@ -96,6 +98,8 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     gpio_pinout: GPIO 管脚映射
+    Accessories: 配件
+    how_to_setup_fan: 如何设置风扇
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
@@ -124,7 +128,6 @@ sidebar:
     bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
-    how_to_setup_fan: 如何设置风扇
     fuchsia: Fuchsia
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
@@ -155,8 +158,12 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     gpio_pinout: GPIO 管脚映射
-    connect_lcd: 配置触摸屏TS050
     list_of_compatible_nvme_ssd: NVMe SSD支持列表
+    Accessories: 配件
+    how_to_setup_fan: 如何设置风扇
+    connect_lcd: 配置触摸屏TS050
+    HowToConnectCamera: 如何连接使用摄像头
+    how_to_use_lte_module: 如何使用LTE模块
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
@@ -202,7 +209,6 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
-    how_to_use_lte_module: 如何使用LTE模块
 
   edge:
     getting_started: 开始使用
@@ -221,8 +227,11 @@ sidebar:
     extra_power_input: 外部电源供电
     captain_gpio_pinout: Captain GPIO 管脚映射
     edgev_gpio_pinout: Edge V GPIO 管脚映射
-    connect_lcd: 配置触摸屏TS050
     list_of_compatible_nvme_ssd: NVMe SSD支持列表
+    Accessories: 配件
+    how_to_setup_fan: 如何设置风扇
+    connect_lcd: 配置触摸屏TS050
+    how_to_use_lte_module: 如何使用LTE模块
     development: 开发
     install_toolchains: 安装交叉编译器
     setup_serial: 设置串口调试工具
@@ -250,7 +259,6 @@ sidebar:
     how_to_connect_wifi: 如何连接Wi-Fi
     how_to_setup_bluetooth: 如何设置蓝牙
     add_chinese_support: 增加中文支持
-    how_to_setup_fan: 如何设置风扇
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
@@ -261,7 +269,6 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
-    how_to_use_lte_module: 如何使用LTE模块
 
   toneboard:
     getting_started: 开始使用

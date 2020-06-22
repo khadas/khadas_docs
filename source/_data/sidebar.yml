@@ -12,6 +12,8 @@ vim1:
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
+  Accessories:
+    how_to_setup_fan: HowToSetupFan.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
@@ -62,6 +64,8 @@ vim2:
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
+  Accessories:
+    how_to_setup_fan: HowToSetupFan.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
@@ -90,7 +94,6 @@ vim2:
     bluetooth_instructions: BluetoothInstructions.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
-    how_to_setup_fan: HowToSetupFan.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
@@ -118,8 +121,12 @@ vim3:
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
-    connect_lcd: ConnectLcd.html
     list_of_compatible_nvme_ssd: ListOfCompatibleNVMeSSDs.html
+  Accessories:
+    how_to_setup_fan: HowToSetupFan.html
+    connect_lcd: ConnectLcd.html
+    HowToConnectCamera: HowToConnectCamera.html
+    how_to_use_lte_module: HowToUseLTEModule.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
@@ -165,7 +172,6 @@ vim3:
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-    how_to_use_lte_module: HowToUseLTEModule.html
 
 edge:
   getting_started:
@@ -180,8 +186,11 @@ edge:
     captain_gpio_pinout: CaptainGPIOPinout.html
     edgev_gpio_pinout: EdgeVGPIOPinout.html
     install_libreelec: InstallLibreELEC.html
-    connect_lcd: ConnectLcd.html
     list_of_compatible_nvme_ssd: ListOfCompatibleNVMeSSDs.html
+  Accessories:
+    how_to_setup_fan: HowToSetupFan.html
+    connect_lcd: ConnectLcd.html
+    how_to_use_lte_module: HowToUseLTEModule.html
   development:
     install_toolchains: InstallToolchains.html
     setup_serial: SetupSerialTool.html
@@ -215,7 +224,6 @@ edge:
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-    how_to_use_lte_module: HowToUseLTEModule.html
 
 toneboard:
   getting_started:
