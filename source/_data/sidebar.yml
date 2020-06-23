@@ -10,7 +10,6 @@ vim1:
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
-    gpio_pinout: GPIOPinout.html
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
   development:
@@ -55,7 +54,6 @@ vim2:
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
-    gpio_pinout: GPIOPinout.html
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
   development:
@@ -105,7 +103,6 @@ vim3:
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
-    gpio_pinout: GPIOPinout.html
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
     connect_lcd: ConnectLcd.html
@@ -164,8 +161,6 @@ edge:
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-    captain_gpio_pinout: CaptainGPIOPinout.html
-    edgev_gpio_pinout: EdgeVGPIOPinout.html
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
     connect_lcd: ConnectLcd.html

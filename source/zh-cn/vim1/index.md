@@ -52,6 +52,17 @@ title: VIM1 文档
 
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](forum.khadas)咨询。
 
+## GPIO管脚映射
+![Image of Vim GPIO](/images/vim1/vim_pinout.png)
+
+
+**注意**:
+
+* `PIN17-20`: 串口调试
+* `PIN29-33`: I2S
+* `PIN36`: 32.768KHz时钟输出
+* `PIN38`: 系统电源使能管脚
+
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 

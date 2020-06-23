@@ -51,6 +51,18 @@ title: VIM1 Beginners Guide
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
 
+## GPIO Pin-Out
+
+![Image of Vim GPIO](/images/vim1/vim_pinout.png)
+
+
+**Notice**:
+
+* `PIN17-20`: for UART debugging
+* `PIN29-33`: iomux for I2S
+* `PIN36`   : 32.768KHz clock output
+* `PIN38`   : enable signal for whole system power
+
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 

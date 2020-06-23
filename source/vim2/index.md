@@ -60,6 +60,31 @@ title: VIM2 Beginners Guide
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
 
+## GPIO Pinout
+
+SIGNAL| PIN|PIN|SIGNAL
+---|:---|:---|:---
+5V|1|21|GND
+5V|2|22|I2C_SCK_A
+HUB_DM1|3|23|I2C_SDA_A
+HUB_DP1|4|24|GND
+GND|5|25|I2C_SCK_B
+GPIODV_21|6|26|I2C_SDA_B
+GPIODV_22|7|27|3.3V
+GPIODV_23|8|28|GND
+GND|9|29|I2S_SCLK
+ADC_CH0|10|30|I2S_MCLK
+1.8V|11|31|I2S_SDO
+ADC_CH2|12|32|I2S_LRCK
+SPDIF|13|33|I2S_SDI
+GND|14|34|GND
+UART_RX_AO_B|15|35|PWM_D
+UART_TX_AO_B|16|36|RTC_CLK
+GND|17|37|GPIOH_5
+Linux_RX|18|38|EXP_INT
+Linux_TX|19|39|GPIODV_13
+3.3V|20|40|GND
+
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
