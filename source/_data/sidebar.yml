@@ -4,6 +4,7 @@ vim1:
     vim1_interfaces: VimInterfaces.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -32,7 +33,6 @@ vim1:
     fenix_script: FenixScript.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
-    add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
@@ -49,6 +49,7 @@ vim2:
     vim2_interfaces: Vim2Interfaces.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -80,7 +81,6 @@ vim2:
     fenix_script: FenixScript.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
-    add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
@@ -99,6 +99,7 @@ vim3:
     vim3_interfaces: Vim3Interfaces.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -141,7 +142,6 @@ vim3:
     fenix_script: FenixScript.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
-    add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     setup_golang: SetupGolang.html
@@ -161,6 +161,7 @@ edge:
     edgecaptain_power_priority: EdgeCaptainPowerPriority.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html
+    add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -189,7 +190,6 @@ edge:
   linux:
     fenix_script: FenixScript.html
     krescue: Krescue.html
-    add_chinese_support: AddChineseSupport.html
     how_to_setup_fan: HowToSetupFan.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
