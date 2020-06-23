@@ -144,7 +144,6 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     gpio_pinout: GPIO Pin-Outs
-    list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     connect_lcd: Connect to TS050 Touchscreen
@@ -207,7 +206,6 @@ sidebar:
     extra_power_input: Extra Power Input
     captain_gpio_pinout: Captain GPIO Pin-Outs
     edgev_gpio_pinout: Edge V GPIO Pin-Outs
-    list_of_compatible_nvme_ssd: List of compatible NVMe SSDs
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     connect_lcd: Connect to TS050 Touchscreen

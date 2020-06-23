@@ -106,7 +106,6 @@ vim3:
     boot_from_ext_image: BootFromExtMedia.html
     extra_power_input: ExtraPowerInput.html
     gpio_pinout: GPIOPinout.html
-    list_of_compatible_nvme_ssd: ListOfCompatibleNVMeSSDs.html
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
     connect_lcd: ConnectLcd.html
@@ -167,7 +166,6 @@ edge:
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     captain_gpio_pinout: CaptainGPIOPinout.html
     edgev_gpio_pinout: EdgeVGPIOPinout.html
-    list_of_compatible_nvme_ssd: ListOfCompatibleNVMeSSDs.html
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
     connect_lcd: ConnectLcd.html
@@ -190,7 +188,6 @@ edge:
   linux:
     fenix_script: FenixScript.html
     krescue: Krescue.html
-    how_to_setup_fan: HowToSetupFan.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     build_packages_in_docker: BuildPackagesInDocker.html

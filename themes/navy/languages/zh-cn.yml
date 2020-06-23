@@ -143,7 +143,6 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     gpio_pinout: GPIO 管脚映射
-    list_of_compatible_nvme_ssd: NVMe SSD支持列表
     Accessories: 配件
     how_to_setup_fan: 如何设置风扇
     connect_lcd: 配置触摸屏TS050
@@ -205,7 +204,6 @@ sidebar:
     extra_power_input: 外部电源供电
     captain_gpio_pinout: Captain GPIO 管脚映射
     edgev_gpio_pinout: Edge V GPIO 管脚映射
-    list_of_compatible_nvme_ssd: NVMe SSD支持列表
     Accessories: 配件
     how_to_setup_fan: 如何设置风扇
     connect_lcd: 配置触摸屏TS050
