@@ -36,6 +36,8 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim1_interfaces: VIM1接口描述
+    how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
@@ -63,9 +65,6 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     krescue: Krescue
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
-    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
@@ -82,6 +81,8 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim2_interfaces: VIM2接口描述
+    how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
@@ -112,9 +113,6 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     krescue: Krescue
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
-    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     fuchsia: Fuchsia
@@ -136,6 +134,8 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim3_interfaces: VIM3接口描述
+    how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
@@ -177,9 +177,6 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     krescue: Krescue
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
-    bluetooth_instructions: 蓝牙使用说明
     how_to_setup_watchdog: 如何设置看门狗
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
@@ -196,6 +193,8 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     edge_interfaces: Edge接口描述
+    how_to_connect_wifi: 如何连接Wi-Fi
+    how_to_setup_bluetooth: 如何设置蓝牙
     enter_upgrade_mode: 进入升级模式
     captain_interfaces: Captain接口描述
     edgev_interfaces: Edge V接口描述
@@ -233,8 +232,6 @@ sidebar:
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     krescue: Krescue
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
     add_chinese_support: 增加中文支持
     install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker

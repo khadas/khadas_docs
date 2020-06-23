@@ -38,6 +38,7 @@ sidebar:
     getting_started: Getting Started
     vim1_interfaces: VIM1 Interfaces
     how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
@@ -65,8 +66,6 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     krescue: Krescue
-    how_to_setup_bluetooth: Setup Bluetooth
-    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
@@ -84,6 +83,7 @@ sidebar:
     getting_started: Getting Started
     vim2_interfaces: VIM2 Interfaces
     how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
@@ -114,8 +114,6 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
     krescue: Krescue
-    how_to_setup_bluetooth: Setup Bluetooth
-    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
@@ -137,6 +135,8 @@ sidebar:
     overview: Beginners Guide
     getting_started: Getting Started
     vim3_interfaces: VIM3 Interfaces
+    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
@@ -178,9 +178,6 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     krescue: Krescue
-    how_to_connect_wifi: Connect to Wi-Fi
-    how_to_setup_bluetooth: Setup Bluetooth
-    bluetooth_instructions: Bluetooth Instructions
     how_to_setup_watchdog: Setup Watchdog
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
@@ -200,6 +197,8 @@ sidebar:
     captain_interfaces: Captain Interfaces
     edgev_interfaces: Edge-V Interfaces
     edgecaptain_power_priority: Edge+Captain Power Priority
+    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Using SD-Card
@@ -234,8 +233,6 @@ sidebar:
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
     krescue: Krescue
-    how_to_connect_wifi: Connect to Wi-Fi
-    how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     install_tensorflow: Install TensorFlow
     install_docker: Install Docker

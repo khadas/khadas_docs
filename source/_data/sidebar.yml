@@ -2,6 +2,8 @@ vim1:
   getting_started:
     overview: index.html#Back-Red
     vim1_interfaces: VimInterfaces.html
+    how_to_connect_wifi: HowToConnectWifi.html
+    how_to_setup_bluetooth: HowToSetupBluetooth.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -29,9 +31,6 @@ vim1:
   linux:
     fenix_script: FenixScript.html
     krescue: Krescue.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
-    bluetooth_instructions: BluetoothInstructions.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
@@ -48,6 +47,8 @@ vim2:
   getting_started:
     overview: index.html
     vim2_interfaces: Vim2Interfaces.html
+    how_to_connect_wifi: HowToConnectWifi.html
+    how_to_setup_bluetooth: HowToSetupBluetooth.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -78,9 +79,6 @@ vim2:
   linux:
     fenix_script: FenixScript.html
     krescue: Krescue.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
-    bluetooth_instructions: BluetoothInstructions.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
@@ -99,6 +97,8 @@ vim3:
   getting_started:
     overview: index.html
     vim3_interfaces: Vim3Interfaces.html
+    how_to_connect_wifi: HowToConnectWifi.html
+    how_to_setup_bluetooth: HowToSetupBluetooth.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -140,10 +140,7 @@ vim3:
   linux:
     fenix_script: FenixScript.html
     krescue: Krescue.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
-    bluetooth_instructions: BluetoothInstructions.html
     add_chinese_support: AddChineseSupport.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
@@ -162,6 +159,8 @@ edge:
     captain_interfaces: CaptainInterfaces.html
     edgev_interfaces: EdgeVInterfaces.html
     edgecaptain_power_priority: EdgeCaptainPowerPriority.html
+    how_to_connect_wifi: HowToConnectWifi.html
+    how_to_setup_bluetooth: HowToSetupBluetooth.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -190,8 +189,6 @@ edge:
   linux:
     fenix_script: FenixScript.html
     krescue: Krescue.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
     add_chinese_support: AddChineseSupport.html
     how_to_setup_fan: HowToSetupFan.html
     install_tensorflow: InstallTensorFlow.html
