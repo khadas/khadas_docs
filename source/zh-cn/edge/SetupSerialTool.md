@@ -1,9 +1,16 @@
 title: 设置串口调试工具
 ---
 
+### Edge-V
+您不需要Edge-IO板就可以在Edge-V上设置串行调试器。 只需使用板载GPIO引脚，如图所示（与VIM1，VIM2和VIM3相同）。
+![VIM1-GPIO](https://docs.khadas.com/images/vim1/SerialConnections_3Pin.png)
+
+### Edge
+如果您使用的是Edge SBC，请继续阅读以下内容：
+
 ### 准备
-- [x] 需要USB转TTL串口工具，要确保支持`1500000`波特率。
-- [x] Edge板需要配合Edge IO板才能使用串口。
+- [x] 串行调试工具。 在本指南中，我们将使用USB到TTL转换器。 确保它支持“ 1500000”波特率。
+- [x] Edge需要Edge-IO分支板来支持串行调试。
 
 
 ### 连接
