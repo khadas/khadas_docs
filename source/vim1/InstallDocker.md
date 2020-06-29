@@ -33,6 +33,11 @@ Ubuntu 18.04:
 $ sudo apt-get install docker-ce=18.03.1~ce~3-0~ubuntu
 ```
 
+Ubuntu 20.04:
+```
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
 ### Start Docker
 ```
 $ sudo systemctl enable docker
