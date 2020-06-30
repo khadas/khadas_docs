@@ -76,6 +76,7 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
+    how_to_use_hardware_pwm: How To Use Hardware PWM
 
   vim2:
     overview: Beginners Guide
