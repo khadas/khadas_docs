@@ -7,7 +7,7 @@ var _ = require('lodash');
 var cheerio = require('cheerio');
 var lunr = require('lunr');
 
-var localizedPath = ['vim1', 'vim2', 'vim3', 'edge', 'toneboard', 'firmware', 'faq'];
+var localizedPath = ['vim1', 'vim2', 'vim3', 'edge', 'toneboard', "hardware", 'firmware', 'faq'];
 
 function startsWith(str, start) {
   return str.substring(0, start.length) === start;
@@ -99,14 +99,8 @@ hexo.extend.helper.register('header_menu', function(className) {
     }
 
     if (path === currentPath) {
-      if (title === 'firmware')
-		result += '<a href="https://dl.khadas.com/Firmware/" target="_blank" class="' + className + '-link current">' + self.__('menu.' + title) + '</a>';
-	  else
 		result += '<a href="' + self.url_for(path) + '" class="' + className + '-link current">' + self.__('menu.' + title) + '</a>';
 	} else {
-	  if (title === 'firmware')
-		result += '<a href="https://dl.khadas.com/Firmware/" target="_blank" class="' + className + '-link">' + self.__('menu.' + title) + '</a>';
-	  else
 		result += '<a href="' + self.url_for(path) + '" class="' + className + '-link">' + self.__('menu.' + title) + '</a>';
     }
   });
@@ -169,7 +163,7 @@ hexo.extend.helper.register('lunr_index', function(data) {
 hexo.extend.helper.register('canonical_path_for_nav', function() {
   var path = this.page.canonical_path;
 
-  if (startsWith(path, 'vim1/') || startsWith(path, 'vim2/') || startsWith(path, 'vim3/') || startsWith(path, 'edge/') || startsWith(path, 'firmware/') || startsWith(path, 'toneboard/') || startsWith(path, 'faq/')) {
+  if (startsWith(path, 'vim1/') || startsWith(path, 'vim2/') || startsWith(path, 'vim3/') || startsWith(path, 'edge/') || startsWith(path, 'hardware/') || startsWith(path, 'firmware/') || startsWith(path, 'toneboard/') || startsWith(path, 'faq/')) {
     return path;
   }
   return '';

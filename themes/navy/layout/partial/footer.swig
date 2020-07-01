@@ -1,4 +1,4 @@
-<footer id="footer" class="wrapper">
+<footer id="footer" class="wrapperforfooter">
   <div class="inner">
     <div id="footer-copyright">
       &copy; {{ moment(Date.now()).year() }} <a href="https://www.khadas.com/" target="_blank">{{ config.author }}</a><br>

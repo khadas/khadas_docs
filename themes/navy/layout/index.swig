@@ -1,3 +1,71 @@
+<style>
+
+.just-center{
+    text-align: center;
+}
+
+.column-center{
+    display:inline-block;
+}
+
+.clear{
+    clear:both;
+}
+.series{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    float: left;
+    margin: 16px;
+    margin-top:16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.homepage{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 16px;
+    margin-top:16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.homepage img{
+    max-width:350px;
+    height:auto;
+}
+
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+
+.mask font {
+    text-align: center;
+}
+
+.homepage a:hover .mask {
+    opacity: 1;           
+}
+
+</style>
+
 <header id="banner" class="wrapper">
   <div class="inner">
     <div id="banner-special-content">{{ page.special_content }}</div>
@@ -10,46 +78,155 @@
     <div class="inner">
       {{ page.content }}
 
-      <div class="ui two column grid" id="intro-block">
-        <div class="column">
-	      <div class="ui raised segment">
-	        <a class="ui green ribbon label" id="intro-label">{{ __('home_page.intro_title1') }}</a>
-	        <p id="intro-description">{{ __('home_page.intro_desc1') }}</p>
-	      </div>
+      <div class="ui two column just-center" id="intro-block">
+
+        <div class="column column-center">
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim1.jpg" alt="VIM1">
+            {% if page.lang == 'en'  %}
+              <a href="/vim1">
+            {% else %}
+              <a href="/zh-cn/vim1">
+            {% endif %}
+              <div class="mask">
+                <font size="10">VIM1</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim2.png" alt="VIM2">
+            {% if page.lang == 'en'  %}
+              <a href="/vim2">
+            {% else %}
+              <a href="/zh-cn/vim2">
+            {% endif %}
+              <div class="mask">
+                <font size="10">VIM2</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim3.png" alt="VIM3">
+            {% if page.lang == 'en'  %}
+              <a href="/vim3#VIM3">
+            {% else %}
+              <a href="/zh-cn/vim3#VIM3">
+            {% endif %}
+              <div class="mask">
+                <font size="10">VIM3</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim3l.jpg" alt="VIM3L">
+            {% if page.lang == 'en'  %}
+              <a href="/vim3#VIM3L">
+            {% else %}
+              <a href="/zh-cn/vim3#VIM3L">
+            {% endif %}
+              <div class="mask">
+                <font size="10">VIM3L</font>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui series" style="margin:16px;">
+            {% if page.lang == 'en'  %}
+              <font size="10">VIM Series</font>
+            {% else %}
+              <font size="10">VIM 系列</font>
+            {% endif %}
+          </div>
         </div>
 
-        <div class="column">
-	      <div class="ui raised segment">
-	        <a class="ui green right ribbon label" id="intro-label">{{ __('home_page.intro_title2') }}</a>
-	        <p id="intro-description">{{ __('home_page.intro_desc2') }}</p>
-	      </div>
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/edge.jpg" alt="Edge">
+            {% if page.lang == 'en'  %}
+              <a href="/edge#Edge">
+            {% else %}
+              <a href="/zh-cn/edge#Edge">
+            {% endif %}
+              <div class="mask">
+                <font size="10">Edge</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/edge-v.jpg" alt="Edge-V">
+            {% if page.lang == 'en'  %}
+              <a href="/edge#Edge-V">
+            {% else %}
+              <a href="/zh-cn/edge#Edge-V">
+            {% endif %}
+              <div class="mask">
+                <font size="10">Edge-V</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/captain.jpg" alt="Captain">
+            {% if page.lang == 'en'  %}
+              <a href="/edge#Captain">
+            {% else %}
+              <a href="/zh-cn/edge#Captain">
+            {% endif %}
+              <div class="mask">
+                <font size="10">Captain</font>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="column">
-	      <div class="ui raised segment">
-	        <a class="ui blue ribbon label" id="intro-label">{{ __('home_page.intro_title3') }}</a>
-	        <p id="intro-description">{{ __('home_page.intro_desc3') }}</p>
-	      </div>
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui series" style="margin:16px;">
+            {% if page.lang == 'en'  %}
+              <font size="10">Edge Series</font>
+            {% else %}
+              <font size="10">Edge 系列</font>
+            {% endif %}
+          </div>
         </div>
 
-        <div class="column">
-	      <div class="ui raised segment">
-	        <a class="ui orange right ribbon label" id="intro-label">{{ __('home_page.intro_title4') }}</a>
-	        <p id="intro-description">{{ __('home_page.intro_desc4') }}</p>
-	      </div>
-        </div>
-      </div>
+        <div class="clear"></div>
 
-	  <div class="btns" id="intro-get-started-wrap">
-       <a href="vim1/" class="ui inverted blue button" id="intro-get-started-link">
-         <i class="play icon"></i>
-         {{ __('index.read_docs') }}
-       </a>
-       <a href="faq/" class="ui inverted green button" id="intro-get-started-link">
-         <i class="question circle icon"></i>
-         {{ __('index.read_faqs') }}
-       </a>
-	  </div>
+        <div class="column column-center">
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/tone1.jpg" alt="Tone1">
+            {% if page.lang == 'en'  %}
+              <a href="/toneboard">
+            {% else %}
+              <a href="/zh-cn/toneboard">
+            {% endif %}
+              <div class="mask">
+                <font size="10">ToneBoard</font>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui series" style="margin:16px;">
+            {% if page.lang == 'en'  %}
+              <font size="10">ToneBoard Series</font>
+            {% else %}
+              <font size="10">ToneBoard 系列</font>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
     </div>
   </div>
 </div>

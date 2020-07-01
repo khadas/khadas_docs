@@ -1,7 +1,21 @@
 title: How To Setup Bluetooth
 ---
 
-For desktop systems you can setup Bluetooth via the GUI easily. In this guide, we'll just talk about how to setup Bluetooth via the command line. For Ubuntu/Debian servers we can use `bluez` & `bluetoothctl` to setup Bluetooth.
+# Android
+
+For Android you can setup Bluetooth via the GUI easily.
+
+# Ubuntu
+
+## Desktop
+
+For desktop systems you can setup Bluetooth via the GUI easily. 
+
+You can refer to connecting media playback devices via Bluetooth --> [How to connect Bluetooth media devices](/vim3/BluetoothInstructions.html)
+
+## Server
+
+For Ubuntu/Debian servers we can use `bluez` & `bluetoothctl` to setup Bluetooth via command line.
 
 ### Enable Bluetooth
 ```

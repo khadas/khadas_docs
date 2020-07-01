@@ -1,7 +1,21 @@
 title: 如何设置蓝牙
 ---
 
-对于桌面系统，可以很方便地通过图形界面来设置，这里只说明如何通过命令行来设置蓝牙。对于Ubuntu/Debian服务器版本可以通过`bluez`和`bluetoothctl`来设置。
+# Android 
+
+对于安卓系统, 可以很方便地通过图形界面来设置.
+
+# Ubuntu
+
+## Desktop
+
+对于桌面系统，可以很方便地通过图形界面来设置，
+
+通过蓝牙连接媒体播放设备可以参考 --> [如何连接蓝牙媒体设备](/zh-cn/vim3/BluetoothInstructions.html)
+
+## Server
+
+对于Ubuntu/Debian服务器版本可以使用命令行通过`bluez`和`bluetoothctl`来设置。
 
 ### 使能蓝牙
 ```

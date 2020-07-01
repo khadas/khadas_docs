@@ -1,7 +1,19 @@
 title: How to Connect to Wi-Fi
 ---
 
-For desktop systems you can setup Wi-Fi via the GUI easily. So in this guide, we'll just talk about how to connect to Wi-Fi via command line. For the Ubuntu/Debian server we can use `NetworkManager` to setup Wi-Fi.
+# Android
+
+For Android you can setup Wi-Fi via the GUI easily.
+
+# Ubuntu
+
+## Desktop
+
+For desktop systems you can setup Wi-Fi via the GUI easily. 
+
+## Server
+
+For the Ubuntu/Debian server we can use `NetworkManager` to setup Wi-Fi vis command line.
 
 ### Scan for Wi-Fi Networks
 ```

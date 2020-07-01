@@ -1,4 +1,4 @@
-title: Edge接口描述
+title: Edge Interfaces
 ---
 
-![Top view](/images/edge/EdgeInterfaces.jpg)
+![Top view](/images/edge/edge-specs.jpg)

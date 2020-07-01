@@ -65,6 +65,32 @@ title: VIM3 Beginners Guide
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
 
+## GPIO Pinout
+
+SIGNAL| PIN|PIN|SIGNAL
+---|:---|:---|:---
+5V|1|21|GND
+5V|2|22|I2C_M3_SCL
+USB_DM|3|23|I2C_M3_SDA
+USB_DP|4|24|GND
+GND|5|25|I2C_AO_SCK
+VCC_MCU|6|26|I2C_AO_SDA
+MCU_NRST|7|27|3.3V
+MCU_SWIM|8|28|GND
+GND|9|29|I2SB_SCLK
+ADC_CH0|10|30|I2S_MCLK0
+1.8V|11|31|I2SB_SDO
+ADC_CH3|12|32|I2SB_LRCK
+SPDIF_OUT|13|33|I2SB_SDI
+GND|14|34|GND
+UARTC_RX|15|35|PWM_F
+UARTC_TX|16|36|RTC_CLK
+GND|17|37|GPIOH_4
+Linux_RX|18|38|MCU_PA1
+Linux_TX|19|39|GPIODZ_15
+3.3V|20|40|GND
+
+
 # VIM3L
 
 ![image](/images/vim3/docs_vim3l.jpg)
@@ -129,6 +155,32 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
 
+## GPIO Pinout
+
+SIGNAL| PIN|PIN|SIGNAL
+---|:---|:---|:---
+5V|1|21|GND
+5V|2|22|I2C_M3_SCL
+USB_DM|3|23|I2C_M3_SDA
+USB_DP|4|24|GND
+GND|5|25|I2C_AO_SCK
+VCC_MCU|6|26|I2C_AO_SDA
+MCU_NRST|7|27|3.3V
+MCU_SWIM|8|28|GND
+GND|9|29|I2SB_SCLK
+ADC_CH0|10|30|I2S_MCLK0
+1.8V|11|31|I2SB_SDO
+ADC_CH3|12|32|I2SB_LRCK
+SPDIF_OUT|13|33|I2SB_SDI
+GND|14|34|GND
+UARTC_RX|15|35|PWM_F
+UARTC_TX|16|36|RTC_CLK
+GND|17|37|GPIOH_4
+Linux_RX|18|38|MCU_PA1
+Linux_TX|19|39|GPIODZ_15
+3.3V|20|40|GND
+
+
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
@@ -180,16 +232,6 @@ These following documentation links will help you get started with your VIM3's 5
 
 **Learn More:**
 * [YouTube: VIM3 - Realtime Object Detection Using Yolo v3](https://www.youtube.com/watch?v=aQ-g_CBrzEU)
-
-# Attaching the OS08A10 Camera to VIM3
-Attaching a camera for the first-time to VIM3's MIPI-CSI header? Refer to this picture:
-
-![image](/images/vim3/docs_vim3_camera_OS08A10.jpg)
-
-**Learn More:**
-- [khadas.com/shop](https://www.khadas.com/product-page/os08a10-8mp-camera)
-- [Schematic](https://dl.khadas.com/Hardware/Accessories/OS08A10/OS08A10_V11_Specification.pdf)
-- [Datasheet](https://dl.khadas.com/Hardware/Accessories/OS08A10/OS08A10-H92A_Specification_Version-2-11_SE.pdf)
 
 
 # Booting 3rd-Party ROMs from Micro SD-Card
