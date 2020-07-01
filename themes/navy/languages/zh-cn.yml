@@ -145,7 +145,7 @@ sidebar:
     Accessories: 配件
     how_to_setup_fan: 如何设置风扇
     connect_lcd: 配置触摸屏TS050
-    HowToConnectCamera: 如何连接使用摄像头
+    HowToUseMPICamera: 如何使用MIPI摄像头
     how_to_use_lte_module: 如何使用LTE模块
     development: 开发
     setup_serial: 设置串口调试工具

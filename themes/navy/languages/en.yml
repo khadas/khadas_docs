@@ -146,7 +146,7 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     connect_lcd: Connect to TS050 Touchscreen
-    HowToConnectCamera: How To Connect Camera
+    HowToUseMPICamera: How To Use MIPI Camera
     how_to_use_lte_module: How To Use LTE Module
     development: Development
     setup_serial: Serial Debugging Tool
