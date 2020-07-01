@@ -124,6 +124,7 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
+    how_to_use_hardware_pwm: 如何使用硬件PWM
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -185,6 +186,7 @@ sidebar:
     how_to_upgrade_the_logo: 如何更新logo
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
+    how_to_use_hardware_pwm: 如何使用硬件PWM
 
   edge:
     getting_started: 开始使用
