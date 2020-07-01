@@ -31,6 +31,7 @@ Install dependencies:
 $ git clone https://github.com/khadas/khadas_docs.git
 $ cd khadas_docs
 $ npm install
+$ npm install hexo-cli -g
 ```
 
 Generate:

@@ -207,7 +207,7 @@
               <a href="/zh-cn/toneboard">
             {% endif %}
               <div class="mask">
-                <font size="10">ToneBoard</font>
+                <font size="10">ToneBoard1</font>
               </div>
             </a>
           </div>
