@@ -124,6 +124,7 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
+    how_to_use_hardware_pwm: How To Use Hardware PWM
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -145,7 +146,7 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     connect_lcd: Connect to TS050 Touchscreen
-    HowToConnectCamera: How To Connect Camera
+    HowToUseMPICamera: How To Use MIPI Camera
     how_to_use_lte_module: How To Use LTE Module
     development: Development
     setup_serial: Serial Debugging Tool
@@ -186,6 +187,7 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
+    how_to_use_hardware_pwm: How To Use Hardware PWM
 
   edge:
     overview: Beginners Guide

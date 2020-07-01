@@ -94,7 +94,7 @@
             </a>
           </div>
           <div class="ui raised segment homepage" style="margin:16px;">
-            <img src="/images/home/vim2.png" alt="VIM2">
+            <img src="/images/home/vim2.jpg" alt="VIM2">
             {% if page.lang == 'en'  %}
               <a href="/vim2">
             {% else %}
@@ -106,7 +106,7 @@
             </a>
           </div>
           <div class="ui raised segment homepage" style="margin:16px;">
-            <img src="/images/home/vim3.png" alt="VIM3">
+            <img src="/images/home/vim3.jpg" alt="VIM3">
             {% if page.lang == 'en'  %}
               <a href="/vim3#VIM3">
             {% else %}
