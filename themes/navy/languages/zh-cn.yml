@@ -3,7 +3,7 @@ menu:
   vim2: VIM2
   vim3: VIM3
   edge: Edge
-  tone_board: ToneBoard
+  tone1: TONE1
   hardware: 硬件资料
   firmware: 固件下载
   faq: FAQ
@@ -239,7 +239,7 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
 
-  toneboard:
+  tone1:
     getting_started: 开始使用
     overview: 概述
     user_manual: 用户手册
@@ -251,11 +251,11 @@ sidebar:
     vim2: VIM2
     vim3: VIM3
     edge: Edge
-    tone_board: Tone Board
+    tone1: TONE1
   firmware:
     firmware: 固件
     vim1: VIM1
     vim2: VIM2
     vim3: VIM3
     edge: Edge
-    tone_board: Tone Board
+    tone1: TONE1

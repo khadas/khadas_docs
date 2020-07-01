@@ -6,42 +6,46 @@ title: How To Upgrade Firmware
 **Preparation:**
 
 * Download the [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) and extract it.
-* Download the firmware `.img` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
-* Connect your Tone Board to your PC using a USB-C data cable.
+* Download the firmware `.bin` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
+* Connect your TONE1 to your PC using a USB-C data cable.
 
-![Tone Board With USB-C Cable](/images/toneboard/tb_fw_01.jpg)
+![TONE1 With USB-C Cable](/images/tone1/tb_fw_01.jpg)
 
 **Installation:**
 
-* Run `setup_eval.exe` to install the tool to upgrade your Tone Board's firmware.
+* Run `setup_eval.exe` to install the tool to upgrade your TONE1's firmware.
 
-![Tone Board USB Upgrade Tool Installation](/images/toneboard/tb_fw_02.jpg)
+![TONE1 USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
 
-* Press `Yes`, then disconnect and reconnect your Tone Board.
+* Press `Yes`, then disconnect and reconnect your TONE1.
 
-![Disconnect and Reconnect Tone Board](/images/toneboard/tb_fw_03.jpg)
+![Disconnect and Reconnect TONE1](/images/tone1/tb_fw_03.jpg)
 
 **Upgrading:**
 
 * Open the `TUSBAudio Firmware Upgrade` tool, from your Start Menu.
 
-![TUSBAudio Firmware Upgrade Tool](/images/toneboard/tb_fw_04.jpg)
+![TUSBAudio Firmware Upgrade Tool](/images/tone1/tb_fw_04.jpg)
 
-* It should show `Device Opened`, which means your Tone Board is connected and ready for upgrading. (If not, disconnect and reconnect your Tone Board)
+* It should show `Device Opened`, which means your TONE1 is connected and ready for upgrading. (If not, disconnect and reconnect your TONE1)
 
-![Tone Board Ready For Upgrade](/images/toneboard/tb_fw_05.jpg)
+![TONE1 Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
 
-* Click `Browse` and load the firmware `.img` file you extracted, into the tool.
+* Click `Browse` and load the firmware `.bin` file you extracted, into the tool.
 
-![Tone Board USB Upgrade Tool Browse For .img](/images/toneboard/tb_fw_07.jpg)
+![TONE1 USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
 
 * Click `Start` to begin the upgrade process.
 
-![Tone Board USB Upgrade Tool Click Start](/images/toneboard/tb_fw_08.jpg)
+![TONE1 USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
 
 * Once firmware has upgraded, click `Exit`.
 
-![Tone Board USB Upgrade Tool Finished And Exit](/images/toneboard/tb_fw_09.jpg)
+![TONE1 USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
+
+* Uninstall the [EVAL driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) that you used for upgrading firmware, and re-install the [v224 driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
+
+* Alternatively, if you're on Windows 10, uninstall all Khadas-supplied drivers and use the native [Win10 UAC2 driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/usb-2-0-audio-drivers) supplied with the OS.
 
 # Upgrade On Ubuntu
 
@@ -54,7 +58,7 @@ $ sudo apt-get install git libusb-1.0-0 libusb-1.0-0-dev
 
 **Download Burning Tool:**
 
-ToneBoard DFU burning tool on Ubuntu is in [utils](https://github.com/khadas/utils) repository.
+TONE1 DFU burning tool on Ubuntu is in [utils](https://github.com/khadas/utils) repository.
 
 ```
 $ git clone https://github.com/khadas/utils
@@ -101,13 +105,13 @@ Done!
 $ cd /home/*
 ```
 
-* Connect your Tone Board using a USB-C data cable to your PC. Check that it is recognised by Ubuntu.
+* Connect your TONE1 using a USB-C data cable to your PC. Check that it is recognised by Ubuntu.
 
 ```
 $ lsusb
 ```
 
-* If your Tone Board is recognised, you should see this (else, restart Ubuntu).
+* If your TONE1 is recognised, you should see this (else, restart Ubuntu).
 
 ```
 Bus 001 Device 005: ID 20b1:0008 XMOS Ltd
@@ -116,7 +120,7 @@ Bus 001 Device 005: ID 20b1:0008 XMOS Ltd
 * Finally, run the tool with your firmware file of choice (drag and drop your `.bin` file to replace `/path/to/firmware.bin`).
 
 ```
-$ toneboard-burn-tool -i /path/to/firmware.bin
+$ sudo toneboard-burn-tool -i /path/to/firmware.bin
 ```
 *Note: Upgrading will stuck at `Waiting for device to restart and enter DFU mode` for about 20 seconds, please wait patiently.*
 
@@ -147,7 +151,7 @@ $ cd /path/to/utils/toneboard-dfu-tool
 $ sudo ./UNINSTALL
 ```
 
-# Upgrade On Mac OS (BETA)
+# Upgrade On Mac OS
 
 **Preparation:**
 
@@ -158,13 +162,13 @@ $ sudo ./UNINSTALL
 
 **Installation:**
 
-* Open a `Mac OS X Terminal` window, by pressing `Command-Space` on your keyboard, then type `terminal` into `Spotlight`. 
-* From within `Terminal` type `cd your_custom_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`.
-     * Replace `your_custom_directory` with the directory that you've unzipped the `USB Upgrade Tool` to.
-* Alternatively, navigate to `/sc_usb_audio/module_dfu/host/` from within the `Finder`.
-     * Then type `cd`, followed by space, into `Terminal`.
-     * And drag the `/xmos_dfu_osx/` folder into `Terminal`, and hit your `Enter` key.
-* Build the tool by typing: `make -f Makefile.OSX all` into your `Terminal` window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
+* Open a Terminal window, by pressing `Command-Space` on your keyboard, then type `terminal` into Spotlight. 
+* From within Terminal type `cd your_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`.
+     * Replace `your_directory` with the directory that you've unzipped the USB Upgrade Tool to.
+* Alternatively, navigate to `/sc_usb_audio/module_dfu/host/` from within the Finder.
+     * Then type `cd`, followed by `space`, into Terminal.
+     * And drag the `xmos_dfu_osx` folder into Terminal, and hit your `Enter` key.
+* Build the tool by typing: `make -f Makefile.OSX all` into your Terminal window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
 * If build was successful, you should see the following:
 ```
 make -f Makefile.OSX all
@@ -190,13 +194,13 @@ xmosdfu.cpp:417:3: warning: bool literal returned from 'main' [-Wmain]
 6 warnings generated.
 ```
 * Finally, type `source setup.sh` into Terminal, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?version=&page=3).
-     * If successful, `Terminal` will be silent.
+     * If successful, Terminal will be silent.
 
 **Upgrading:**
-* Download a firmware image file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
-* Next connect your Tone Board to your Macbook / iMac via a USB-C data cable.
-* Then return to `Terminal` and type `./xmosdfu --download`, followed by space, and drag the `firmware.bin` you just downloaded, from the `Finder` into `Terminal`. Then hit `Enter`.
-* If successful, you should see the following `Terminal` output:
+* Download a firmware file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
+* Connect your TONE1 to your Macbook / iMac via a USB-C data cable.
+* Return to Terminal and type `./xmosdfu --download`, followed by `space`, and drag the `firmware.bin` you just downloaded, from the Finder into Terminal. Then hit `Enter`.
+* If successful, you should see the following Terminal output:
 ```
 ./xmosdfu --download /Users/ossyx/Documents/Wesion/TONEBOARD\ FIRMWARE\ UPGRADE\ TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin 
 VID = 0x20b1, PID = 0x8
@@ -220,10 +224,11 @@ dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib
 Abort trap: 6
 ```
 * It means you need to upgrade `libusb`. You can do this by typing `brew install libusb`.
-* To install homebrew on your Mac: [Homebrew](https://brew.sh/)
+* If typing `brew install libusb` didn't work, it means that you need to install [HomeBrew](https://brew.sh/).
+* If HomeBrew fails, you need to install Xcode Command Line Tools, type `xcode-select --install` into Terminal.
 
 # See Also:
 
-* [Tone Board Beginners FAQ](https://docs.khadas.com/toneboard/index.html)
-* [Tone Board User Manual](https://docs.khadas.com/toneboard/UserManual.html)
-* [Tone Board Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)
+* [TONE1 Beginners FAQ](/tone1/index.html)
+* [TONE1 User Manual](/tone1/UserManual.html)
+* [TONE1 Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)

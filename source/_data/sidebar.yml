@@ -196,7 +196,7 @@ edge:
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
 
-toneboard:
+tone1:
   getting_started:
     overview: index.html
     user_manual: UserManual.html
@@ -208,7 +208,7 @@ hardware:
     vim2: hardwareVim2.html
     vim3: hardwareVim3.html
     edge: hardwareEdge.html
-    toneboard: hardwareToneboard.html
+    tone1: hardwareTone.html
     
 firmware:
   firmware:

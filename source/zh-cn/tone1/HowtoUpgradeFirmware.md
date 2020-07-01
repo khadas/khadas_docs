@@ -7,41 +7,41 @@ title: How To Upgrade Firmware
 
 * Download the [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) and extract it.
 * Download the firmware `.bin` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
-* Connect your Tone Board to your PC using a USB-C data cable.
+* Connect your TONE1 to your PC using a USB-C data cable.
 
-![Tone Board With USB-C Cable](/images/toneboard/tb_fw_01.jpg)
+![TONE1 With USB-C Cable](/images/tone1/tb_fw_01.jpg)
 
 **Installation:**
 
-* Run `setup_eval.exe` to install the tool to upgrade your Tone Board's firmware.
+* Run `setup_eval.exe` to install the tool to upgrade your TONE1's firmware.
 
-![Tone Board USB Upgrade Tool Installation](/images/toneboard/tb_fw_02.jpg)
+![TONE1 USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
 
-* Press `Yes`, then disconnect and reconnect your Tone Board.
+* Press `Yes`, then disconnect and reconnect your TONE1.
 
-![Disconnect and Reconnect Tone Board](/images/toneboard/tb_fw_03.jpg)
+![Disconnect and Reconnect TONE1](/images/tone1/tb_fw_03.jpg)
 
 **Upgrading:**
 
 * Open the `TUSBAudio Firmware Upgrade` tool, from your Start Menu.
 
-![TUSBAudio Firmware Upgrade Tool](/images/toneboard/tb_fw_04.jpg)
+![TUSBAudio Firmware Upgrade Tool](/images/tone1/tb_fw_04.jpg)
 
-* It should show `Device Opened`, which means your Tone Board is connected and ready for upgrading. (If not, disconnect and reconnect your Tone Board)
+* It should show `Device Opened`, which means your TONE1 is connected and ready for upgrading. (If not, disconnect and reconnect your TONE1)
 
-![Tone Board Ready For Upgrade](/images/toneboard/tb_fw_05.jpg)
+![TONE1 Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
 
 * Click `Browse` and load the firmware `.bin` file you extracted, into the tool.
 
-![Tone Board USB Upgrade Tool Browse For .img](/images/toneboard/tb_fw_07.jpg)
+![TONE1 USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
 
 * Click `Start` to begin the upgrade process.
 
-![Tone Board USB Upgrade Tool Click Start](/images/toneboard/tb_fw_08.jpg)
+![TONE1 USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
 
 * Once firmware has upgraded, click `Exit`.
 
-![Tone Board USB Upgrade Tool Finished And Exit](/images/toneboard/tb_fw_09.jpg)
+![TONE1 USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
 
 * Uninstall the [EVAL driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) that you used for upgrading firmware, and re-install the [v224 driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
 
@@ -58,7 +58,7 @@ $ sudo apt-get install git libusb-1.0-0 libusb-1.0-0-dev
 
 **Download Burning Tool:**
 
-ToneBoard DFU burning tool on Ubuntu is in [utils](https://github.com/khadas/utils) repository.
+TONE1 DFU burning tool on Ubuntu is in [utils](https://github.com/khadas/utils) repository.
 
 ```
 $ git clone https://github.com/khadas/utils
@@ -105,13 +105,13 @@ Done!
 $ cd /home/*
 ```
 
-* Connect your Tone Board using a USB-C data cable to your PC. Check that it is recognised by Ubuntu.
+* Connect your TONE1 using a USB-C data cable to your PC. Check that it is recognised by Ubuntu.
 
 ```
 $ lsusb
 ```
 
-* If your Tone Board is recognised, you should see this (else, restart Ubuntu).
+* If your TONE1 is recognised, you should see this (else, restart Ubuntu).
 
 ```
 Bus 001 Device 005: ID 20b1:0008 XMOS Ltd
@@ -198,7 +198,7 @@ xmosdfu.cpp:417:3: warning: bool literal returned from 'main' [-Wmain]
 
 **Upgrading:**
 * Download a firmware file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
-* Connect your Tone Board to your Macbook / iMac via a USB-C data cable.
+* Connect your TONE1 to your Macbook / iMac via a USB-C data cable.
 * Return to Terminal and type `./xmosdfu --download`, followed by `space`, and drag the `firmware.bin` you just downloaded, from the Finder into Terminal. Then hit `Enter`.
 * If successful, you should see the following Terminal output:
 ```
@@ -229,6 +229,6 @@ Abort trap: 6
 
 # See Also:
 
-* [Tone Board Beginners FAQ](https://docs.khadas.com/toneboard/index.html)
-* [Tone Board User Manual](https://docs.khadas.com/toneboard/UserManual.html)
-* [Tone Board Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)
+* [TONE1 Beginners FAQ](/tone1/index.html)
+* [TONE1 User Manual](/tone1/UserManual.html)
+* [TONE1 Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)

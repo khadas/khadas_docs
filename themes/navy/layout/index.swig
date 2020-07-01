@@ -200,14 +200,14 @@
 
         <div class="column column-center">
           <div class="ui raised segment homepage" style="margin:16px;">
-            <img src="/images/home/tone1.jpg" alt="Tone1">
+            <img src="/images/home/tone1.jpg" alt="TONE1">
             {% if page.lang == 'en'  %}
-              <a href="/toneboard">
+              <a href="/tone1">
             {% else %}
-              <a href="/zh-cn/toneboard">
+              <a href="/zh-cn/tone1">
             {% endif %}
               <div class="mask">
-                <font size="10">ToneBoard1</font>
+                <font size="10">TONE 1</font>
               </div>
             </a>
           </div>
@@ -218,9 +218,9 @@
         <div class="column column-center">
           <div class="ui series" style="margin:16px;">
             {% if page.lang == 'en'  %}
-              <font size="10">ToneBoard Series</font>
+              <font size="10">TONE Series</font>
             {% else %}
-              <font size="10">ToneBoard 系列</font>
+              <font size="10">TONE 系列</font>
             {% endif %}
           </div>
         </div>
