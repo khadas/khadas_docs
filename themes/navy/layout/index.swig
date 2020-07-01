@@ -1,13 +1,71 @@
 <style>
-.homepage{
+
+.just-center{
     text-align: center;
 }
-.homepage img{
-    width:23%;
-    height:auto;
-    vertical-align: middle;
+
+.column-center{
+    display:inline-block;
 }
+
+.clear{
+    clear:both;
+}
+.series{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    float: left;
+    margin: 16px;
+    margin-top:16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.homepage{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 16px;
+    margin-top:16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.homepage img{
+    max-width:350px;
+    height:auto;
+}
+
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+
+.mask font {
+    text-align: center;
+}
+
+.homepage a:hover .mask {
+    opacity: 1;           
+}
+
 </style>
+
 <header id="banner" class="wrapper">
   <div class="inner">
     <div id="banner-special-content">{{ page.special_content }}</div>
@@ -20,96 +78,154 @@
     <div class="inner">
       {{ page.content }}
 
-      <div class="ui two column" id="intro-block">
+      <div class="ui two column just-center" id="intro-block">
 
-        <div class="column">
-	      <div class="ui raised segment homepage">
+        <div class="column column-center">
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim1.jpg" alt="VIM1">
             {% if page.lang == 'en'  %}
-            <a href="/vim1"><img src="/images/home/vim1.jpg" alt="VIM1"></a>
-            <a href="/vim2"><img src="/images/home/vim2.png" alt="VIM2"></a>
-            <a href="/vim3/#VIM3"><img src="/images/home/vim3.png" alt="VIM3"></a>
-            <a href="/vim3/#VIM3L"><img src="/images/home/vim3l.jpg" alt="VIM3L"></a>
+              <a href="/vim1">
             {% else %}
-            <a href="/zh-cn/vim1"><img src="/images/home/vim1.jpg" alt="VIM1"></a>
-            <a href="/zh-cn/vim2"><img src="/images/home/vim2.png" alt="VIM2"></a>
-            <a href="/zh-cn/vim3/#VIM3"><img src="/images/home/vim3.png" alt="VIM3"></a>
-            <a href="/zh-cn/vim3/#VIM3L"><img src="/images/home/vim3l.jpg" alt="VIM3L"></a>
+              <a href="/zh-cn/vim1">
             {% endif %}
-	      </div>
-          <div class="ui homepage">
+              <div class="mask">
+                <font size="10">VIM1</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim2.png" alt="VIM2">
             {% if page.lang == 'en'  %}
-            <a><font size="10">VIMs Series (</font></a>
-            <a href="/vim1"><font size="10">VIM1</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/vim2"><font size="10">VIM2</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/vim3/#VIM3"><font size="10">VIM3</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/vim3/#VIM3L"><font size="10">VIM3L</font></a>
-            <a><font size="10">)</font></a>
+              <a href="/vim2">
             {% else %}
-            <a><font size="10">VIMs 系列 (</font></a>
-            <a href="/zh-cn/vim1"><font size="10">VIM1</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/zh-cn/vim2"><font size="10">VIM2</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/zh-cn/vim3/#VIM3"><font size="10">VIM3</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/zh-cn/vim3/#VIM3L"><font size="10">VIM3L</font></a>
-            <a><font size="10">)</font></a>
+              <a href="/zh-cn/vim2">
             {% endif %}
-	      </div>
+              <div class="mask">
+                <font size="10">VIM2</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim3.png" alt="VIM3">
+            {% if page.lang == 'en'  %}
+              <a href="/vim3#VIM3">
+            {% else %}
+              <a href="/zh-cn/vim3#VIM3">
+            {% endif %}
+              <div class="mask">
+                <font size="10">VIM3</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/vim3l.jpg" alt="VIM3L">
+            {% if page.lang == 'en'  %}
+              <a href="/vim3#VIM3L">
+            {% else %}
+              <a href="/zh-cn/vim3#VIM3L">
+            {% endif %}
+              <div class="mask">
+                <font size="10">VIM3L</font>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui series" style="margin:16px;">
+            {% if page.lang == 'en'  %}
+              <font size="10">VIM Series</font>
+            {% else %}
+              <font size="10">VIM 系列</font>
+            {% endif %}
+          </div>
         </div>
 
-        <div class="column">
-	      <div class="ui raised segment homepage">
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/edge.jpg" alt="Edge">
             {% if page.lang == 'en'  %}
-            <a href="/edge/#Edge"><img src="/images/home/edge.jpg" alt="Edge"></a>
-            <a href="/edge/#Edge-V"><img src="/images/home/edge-v.jpg" alt="Edge-V"></a>
-            <a href="/edge/#Caption"><img src="/images/home/captain.jpg" alt="Caption"></a>
+              <a href="/edge#Edge">
             {% else %}
-            <a href="/zh-cn/edge/#Edge"><img src="/images/home/edge.jpg" alt="Edge"></a>
-            <a href="/zh-cn/edge/#Edge-V"><img src="/images/home/edge-v.jpg" alt="Edge-V"></a>
-            <a href="/zh-cn/edge/#Caption"><img src="/images/home/caption.jpg" alt="Caption"></a>
+              <a href="/zh-cn/edge#Edge">
             {% endif %}
-	      </div>
-          <div class="ui homepage">
+              <div class="mask">
+                <font size="10">Edge</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/edge-v.jpg" alt="Edge-V">
             {% if page.lang == 'en'  %}
-            <a><font size="10">Edge Series (</font></a>
-            <a href="/edge#Edge"><font size="10">Edge</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/edge#Edge-V"><font size="10">Edge-V</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/edge#Caption"><font size="10">Caption</font></a>
-            <a><font size="10">)</font></a>
+              <a href="/edge#Edge-V">
             {% else %}
-            <a><font size="10">Edge 系列 (</font></a>
-            <a href="/zh-cn/edge/#Edge"><font size="10">Edge</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/zh-cn/edge/#Edge-V"><font size="10">Edge-V</font></a>
-            <a><font size="10">/</font></a>
-            <a href="/zh-cn/edge/#Caption"><font size="10">Caption</font></a>
-            <a><font size="10">)</font></a>
+              <a href="/zh-cn/edge#Edge-V">
             {% endif %}
-	      </div>
+              <div class="mask">
+                <font size="10">Edge-V</font>
+              </div>
+            </a>
+          </div>
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/captain.jpg" alt="Captain">
+            {% if page.lang == 'en'  %}
+              <a href="/edge#Captain">
+            {% else %}
+              <a href="/zh-cn/edge#Captain">
+            {% endif %}
+              <div class="mask">
+                <font size="10">Captain</font>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="column">
-	      <div class="ui raised segment homepage">
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui series" style="margin:16px;">
             {% if page.lang == 'en'  %}
-            <a href="/edge"><img src="/images/home/tone1.jpg" alt="Tone1"></a>
+              <font size="10">Edge Series</font>
             {% else %}
-            <a href="/zh-cn/edge"><img src="/images/home/tone1.jpg" alt="Tone1"></a>
+              <font size="10">Edge 系列</font>
             {% endif %}
-	      </div>
-          <div class="ui homepage">
-            {% if page.lang == 'en'  %}
-            <a href="/toneboard"><font size="10">ToneBoard</font></a>
-            {% else %}
-            <a href="/zh-cn/toneboard"><font size="10">ToneBoard</font></a>
-            {% endif %}
-	      </div>
+          </div>
         </div>
+
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui raised segment homepage" style="margin:16px;">
+            <img src="/images/home/tone1.jpg" alt="Tone1">
+            {% if page.lang == 'en'  %}
+              <a href="/toneboard">
+            {% else %}
+              <a href="/zh-cn/toneboard">
+            {% endif %}
+              <div class="mask">
+                <font size="10">ToneBoard</font>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="column column-center">
+          <div class="ui series" style="margin:16px;">
+            {% if page.lang == 'en'  %}
+              <font size="10">ToneBoard Series</font>
+            {% else %}
+              <font size="10">ToneBoard 系列</font>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="clear"></div>
 
     </div>
   </div>
