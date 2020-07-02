@@ -3,7 +3,7 @@ menu:
   vim2: VIM2
   vim3: VIM3
   edge: Edge
-  toneboard: ToneBoard
+  tone1: TONE1
   hardware: Hardware
   firmware: Firmware
   faq: FAQ
@@ -240,7 +240,7 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
 
-  toneboard:
+  tone1:
     getting_started: Getting Started
     overview: Beginners FAQ
     user_manual: User Manual
@@ -252,7 +252,7 @@ sidebar:
     vim2: VIM2
     vim3: VIM3
     edge: Edge
-    toneboard: Tone Board
+    tone1: TONE1
 
   firmware:
     firmware: Firmware
@@ -260,4 +260,4 @@ sidebar:
     vim2: VIM2
     vim3: VIM3
     edge: Edge
-    toneboard: Tone Board
+    tone1: TONE1
