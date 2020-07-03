@@ -1,4 +1,4 @@
-title: Toneboard硬件资料文档
+title: TONE1 硬件资料文档
 ---
 
 
