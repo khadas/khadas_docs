@@ -59,7 +59,8 @@ title: Khadas VIM2 固件资源
 
 # android 
 
-* [VIM2_Nougat_V190518](https://dl.khadas.com/Firmware/VIM2/Android/Nougat/VIM2_Nougat_V190518.7z)(Latest release)
+* [VIM2_Pie_V200624](https://dl.khadas.com/Firmware/VIM2/Android/Pie/VIM2_Pie_V200624.7z)(Latest release)
+* [VIM2_Nougat_V190518](https://dl.khadas.com/Firmware/VIM2/Android/Nougat/VIM2_Nougat_V190518.7z)
 * [VIM2_Nougat_NonRoot_V181030](https://dl.khadas.com/Firmware/VIM2/Android/Nougat/VIM2_Nougat_NonRoot_V181030.7z)
 * [VIM2_Nougat_V180619](https://dl.khadas.com/Firmware/VIM2/Android/Nougat/VIM2_Nougat_V180619.7z)
 * [VIM2_Nougat_V180209](http://www.mediafire.com/file/dzo82z1420pd3dy/VIM2_Nougat_V180209.7z)

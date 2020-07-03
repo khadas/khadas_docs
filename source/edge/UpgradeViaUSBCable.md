@@ -2,7 +2,7 @@ title: Upgrade Using a USB-C Cable
 ---
 ## Upgrade Using Windows
 ### Preparations
-* Download the [USB driver](https://dl.khadas.com/Tools/DriverAssitant_v4.6.zip) and extract it.
+* Download the [USB driver_v4.91](https://dl.khadas.com/Tools/DriverAssitant_v4.91.zip) and extract it.
 * Run `DriverInstall.exe` to install USB drivers.
   * Click the `Uninstall` button to uninstall old drivers
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall.png)
