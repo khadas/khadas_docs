@@ -1,4 +1,4 @@
-title: Toneboard Hardware Documentation
+title: TONE1 Hardware Documentation
 ---
 
 

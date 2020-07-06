@@ -2,7 +2,7 @@ title: 通过USB升级固件
 ---
 ## 通过Windows升级
 ### 准备
-* 下载[USB驱动](https://dl.khadas.com/Tools/DriverAssitant_v4.6.zip)并解压。
+* 下载[USB驱动_v4.91](https://dl.khadas.com/Tools/DriverAssitant_v4.91.zip)并解压。
 * 运行`DriverInstall.exe`来安装USB驱动。
   * 先点击`驱动卸载`来卸载旧的驱动。
   ![DriverInstall uninstall](/images/edge/DriverInstall_uninstall_zh.png)
