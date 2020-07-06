@@ -1,18 +1,13 @@
 title: Khadas TONE1 Beginners FAQ
 ---
 
-# Driver Installation On Mac OS X:
+# Mac OS
+
+## Driver
 
 * No driver installation is necessary.
 
-# Driver Installation On Windows:
-
-* If there is no sound is coming from your Tone Board, you may need to install a driver.
-
-**Download:**
-[Thesycon-Stereo-USB-Audio-Driver-V224](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)
-
-# Select Audio Device On Mac OS X:
+##  Select Audio Device
 
 * The audio output controls for your Mac are in System Preferences > Sound.
 
@@ -22,7 +17,25 @@ title: Khadas TONE1 Beginners FAQ
 
 ![Mac OS X Sound Menu](/images/tone1/tb_faq_02.jpg)
 
-# Select Audio Device On Windows:
+## Enable Volume Control On Mac OS X:
+
+If you're using a Tone Board on a Mac, you may notice that you are unable to control the output volume of your Tone Board. To enable volume control, you'll need to upgrade your Tone Board's firmware. (Newer models of Tone Board are shipped with upgraded firmware)
+
+**Learn More:**
+[Upgrade Tone Board Firmware](/tone1/HowtoUpgradeFirmware.html)
+
+
+# Windows
+
+
+## Driver
+
+* If there is no sound is coming from your Tone Board, you may need to install a driver.
+
+**Download:**
+[Thesycon-Stereo-USB-Audio-Driver-V224](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)
+
+## Select Audio Device On Windows:
 
 * Click the audio icon in your Windows Task Bar.
 
@@ -32,16 +45,9 @@ title: Khadas TONE1 Beginners FAQ
 
 ![Windows 10 Select Playback Device](/images/tone1/xmos_selection.jpg)
 
-# Enable Volume Control On Mac OS X:
-
-If you're using a Tone Board on a Mac, you may notice that you are unable to control the output volume of your Tone Board. To enable volume control, you'll need to upgrade your Tone Board's firmware. (Newer models of Tone Board are shipped with upgraded firmware)
-
-**Learn More:**
-[Upgrade Tone Board Firmware](/tone1/HowtoUpgradeFirmware.html)
 
 # More Information:
 
-For more information, please refer to our website or see the Tone Board User Manual.
-
 * [TONE1 Website](https://www.khadas.com/tone1)
 * [TONE1 User Manual](/tone1/UserManual.html)
+* [Upgrade Tone Board Firmware](/tone1/HowtoUpgradeFirmware.html)
