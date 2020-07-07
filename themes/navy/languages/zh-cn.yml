@@ -155,6 +155,7 @@ sidebar:
     how_to_setup_pcie_usb_port: 如何设置PCIe或USB3.0
     npu: NPU
     how_to_use_npu: 如何使用NPU
+    How_to_use_khadas_NPU_repositories: 如何使用khadas NPU仓库
     how_to_install_darknet: 如何安装darknet模型
     how_to_train_yolo: 如何训练自己的yolo模型
     how_to_transform_yolo: 如何转换yolo模型
