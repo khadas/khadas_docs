@@ -43,6 +43,7 @@ vim1:
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_use_hardware_pwm: HowToUseHardwarePWM.html
     how_to_use_uart: HowToUseUart.html
+    how_to_control_LED: HowToControlLED.html
 
 vim2:
   getting_started:
@@ -92,6 +93,7 @@ vim2:
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_use_hardware_pwm: HowToUseHardwarePWM.html
     how_to_use_uart: HowToUseUart.html
+    how_to_control_LED: HowToControlLED.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
 
@@ -154,6 +156,7 @@ vim3:
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_use_hardware_pwm: HowToUseHardwarePWM.html
     how_to_use_uart: HowToUseUart.html
+    how_to_control_LED: HowToControlLED.html
 
 edge:
   getting_started:
@@ -199,6 +202,7 @@ edge:
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
+    how_to_control_LED: HowToControlLED.html
 
 tone1:
   getting_started:
