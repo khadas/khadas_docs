@@ -77,6 +77,7 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_hardware_pwm: How To Use Hardware PWM
+    how_to_use_uart: How To Use Uart
 
   vim2:
     overview: Beginners Guide
@@ -125,6 +126,7 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_hardware_pwm: How To Use Hardware PWM
+    how_to_use_uart: How To Use Uart
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -189,6 +191,7 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_hardware_pwm: How To Use Hardware PWM
+    how_to_use_uart: How To Use Uart
 
   edge:
     overview: Beginners Guide

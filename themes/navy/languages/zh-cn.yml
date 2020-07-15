@@ -76,6 +76,7 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
     how_to_use_hardware_pwm: 如何使用硬件PWM
+    how_to_use_uart: 如何使用串口
 
   vim2:
     getting_started: 开始使用
@@ -125,6 +126,7 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
     how_to_use_hardware_pwm: 如何使用硬件PWM
+    how_to_use_uart: 如何使用串口
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -188,6 +190,7 @@ sidebar:
     how_to_upgrade_the_uboot: 如何更新u-boot
     how_to_upgrade_the_kernel: 如何更新内核
     how_to_use_hardware_pwm: 如何使用硬件PWM
+    how_to_use_uart: 如何使用串口
 
   edge:
     getting_started: 开始使用
