@@ -77,6 +77,8 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_hardware_pwm: How To Use Hardware PWM
+    how_to_use_uart: How To Use Uart
+    how_to_control_LED: How To Control LEDs
 
   vim2:
     overview: Beginners Guide
@@ -125,6 +127,8 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_hardware_pwm: How To Use Hardware PWM
+    how_to_use_uart: How To Use Uart
+    how_to_control_LED: How To Control LEDs
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -189,6 +193,8 @@ sidebar:
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
     how_to_use_hardware_pwm: How To Use Hardware PWM
+    how_to_use_uart: How To Use Uart
+    how_to_control_LED: How To Control LEDs
 
   edge:
     overview: Beginners Guide
@@ -240,6 +246,7 @@ sidebar:
     how_to_upgrade_the_logo: How To Upgrade The Logo
     how_to_upgrade_the_uboot: How To Upgrade The u-boot
     how_to_upgrade_the_kernel: How To Upgrade The kernel
+    how_to_control_LED: How To Control LEDs
 
   tone1:
     getting_started: Getting Started
