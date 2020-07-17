@@ -25,7 +25,7 @@ $ make uboot-deb
 
 * 更新u-boot
 
-拷贝编译好的debian到板子并安装：
+拷贝编译好的debian包到板子并安装：
 
 ```
 $ sudo dpkg -i linux-u-boot-vim3-vendor_0.8.3-2015.01_arm64.deb
