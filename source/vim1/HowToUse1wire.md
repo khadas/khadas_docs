@@ -20,7 +20,7 @@ root@Khadas:/home/khadas#
 
 * Check node status
 
-``shell
+```shell
 root@Khadas:/home/khadas# fdtget /boot/dtb/kvim1_linux.dtb /onewire status
 disable
 ```
