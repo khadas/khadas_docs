@@ -21,7 +21,7 @@ root@Khadas:/home/khadas#
 
 * 确认节点状态
 
-``shell
+```shell
 root@Khadas:/home/khadas# fdtget /boot/dtb/kvim1_linux.dtb /onewire status
 disable
 ```
