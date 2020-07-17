@@ -44,6 +44,9 @@ vim1:
     how_to_use_hardware_pwm: HowToUseHardwarePWM.html
     how_to_use_uart: HowToUseUart.html
     how_to_control_LED: HowToControlLED.html
+    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
+    how_to_set_auto_login: HowToSetAutoLogin.html
+    how_to_use_1-Wire: HowToUse1wire.html
 
 vim2:
   getting_started:
@@ -94,6 +97,9 @@ vim2:
     how_to_use_hardware_pwm: HowToUseHardwarePWM.html
     how_to_use_uart: HowToUseUart.html
     how_to_control_LED: HowToControlLED.html
+    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
+    how_to_set_auto_login: HowToSetAutoLogin.html
+    how_to_use_1-Wire: HowToUse1wire.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
 
@@ -157,6 +163,9 @@ vim3:
     how_to_use_hardware_pwm: HowToUseHardwarePWM.html
     how_to_use_uart: HowToUseUart.html
     how_to_control_LED: HowToControlLED.html
+    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
+    how_to_set_auto_login: HowToSetAutoLogin.html
+    how_to_use_1-Wire: HowToUse1wire.html
 
 edge:
   getting_started:
@@ -203,6 +212,9 @@ edge:
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
     how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     how_to_control_LED: HowToControlLED.html
+    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
+    how_to_set_auto_login: HowToSetAutoLogin.html
+    how_to_use_1-Wire: HowToUse1wire.html
 
 tone1:
   getting_started:
