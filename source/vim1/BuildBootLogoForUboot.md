@@ -11,7 +11,7 @@ This is a guide for building the boot-up logo on Amlogic platforms (may be diffe
 ### Preparations
 Before you begin, you'll need a bootup picture with the following specs:
 
-* BMP format, should be either:
+* BMP format, should be:
   * 16bit RGB565 BMP format
 * Resolution <= 1080P (1920 * 1080)
 
