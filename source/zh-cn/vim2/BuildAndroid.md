@@ -11,7 +11,7 @@ title: 编译Amlogic平台安卓源码
 ### 编译
 *注意：在开始编译前，确保已经搭建好如上`准备`所述的环境。*
 
-**编译U-boot：**
+**编译 Android 7.1 U-boot：**
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ cd uboot
@@ -23,17 +23,31 @@ $ make CROSS_COMPILE=aarch64-linux-gnu-
 * fip/u-boot.bin: 板载EMMC烧录uboot
 * fip/u-boot.bin.sd.bin: TF卡烧录uboot
 
+**编译 Android 9.0 U-Boot:**
+```sh
+$ cd ~/project/khadas/pie/bootloader/uboot
+$ ./mk kvim2
+```
+*编译生成的镜像文件如下*
+
+* build/u-boot.bin: 板载EMMC烧录uboot
+* build/u-boot.bin.sd.bin: TF卡烧录uboot
+
 
 **编译安卓：**
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
-$ lunch kvim2-userdebug-64
+$ lunch TARGET_LUNCH
 $ make -jN otapackage
 ```
 *注意：*
 
-* 替换`N`为你自己电脑实际的线程数。
+
+* 把N换成数字，如你电脑CPU的线程数。
+* TARGET_LUNCH定义如下：
+  * 编译Android7.1时: kvim2-userdebug-64
+  * 编译Android9.0时: kvim2-userdebug
 
 *生成镜像文件如下：*
 
@@ -44,9 +58,16 @@ $ make -jN otapackage
 
 当你按上面步骤编译安卓时会同时编译linux内核。
 
-在某些情况下你可能需要单独编译linux内核，按如下步骤单独编译linux内核。
+在某些情况下你可能需要单独编译linux内核，编译命令如下：
+
+编译Android 7.1时:
 ```sh
 $ source device/khadas/kvim2/mkern.sh
+```
+
+编译Android 9.0时：
+```sh
+$ make bootimage
 ```
 
 ### 参考
