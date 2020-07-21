@@ -42,9 +42,9 @@ $ make -jN otapackage
 
 * 把N换成数字，如你电脑CPU的线程数。
 * TARGET_LUNCH定义如下：
-  编译Android6.0时: kvim-userdebug-32
-  编译Android7.1时: kvim-userdebug-64
-  编译Android9.0时: kvim-userdebug
+  * 编译Android6.0时: kvim-userdebug-32
+  * 编译Android7.1时: kvim-userdebug-64
+  * 编译Android9.0时: kvim-userdebug
 
 
 
