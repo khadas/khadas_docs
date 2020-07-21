@@ -1,22 +1,23 @@
-title: Make a "Fast Package Update Image"
+title: 快速打包安卓升级固件
 ---
 
-This guide is about how to make a "Fast Package Update Image"; This means that you will only change one part of Android. For example, only change the U-Boot, Kernel or System.
+这篇文档介绍在只修改部分内容（如uboot和linux）的情况下如何快速打包安卓升级固件而不需要整个完全打包。
 
-### Preparations:
+### 准备:
 
-* [Build Android Completely](/vim3/BuildAndroid.html).
+* [如何编译安卓](/zh-cn/vim3/BuildAndroid.html)。
 
 
-### Only Change the U-Boot
+### 仅仅修改U-boot
 
-* Rebuild U-Boot
+* 重新编译U-boot
 ```sh
 $ cd PATH_YOUR_PROJECT
-$ cd bootload/uboot
+$ cd bootloader/uboot
 $ ./mk TARGET
 
-* Copy files to output directory
+```
+* 拷贝生成的文件到`output`目录
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ cp bootloader/uboot/build/u-boot.bin out/target/product/TARGET/bootloader.img
@@ -24,55 +25,55 @@ $ cp bootloader/uboot/build/u-boot.bin.usb.bl2  out/target/product/TARGET/upgrad
 $ cp bootloader/uboot/build/u-boot.bin.usb.tpl  out/target/product/TARGET/upgrade/
 $ cp bootloader/uboot/build/u-boot.bin.sd.bin   out/target/product/TARGET/upgrade/
 ```
-* Package Update Image
+* 打包固件
 ```sh
 $ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf
-out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
+  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
-### Only Change the Bootup Logo
+### 仅仅修改开机logo
 
-* Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/vim1/BuildBootLogoForUboot.html))
+* 重新编译Logo。参考[如何编译U-boot Logo](/zh-cn/vim1/BuildBootLogoForUboot.html)。
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
 $ lunch TARGET_LUNCH
 $ make logoimg
 ```
-* Package Update Image
+* 打包固件
 ```sh
-$ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
+$ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
-### Only Change the DTB or Kernel
+### 仅仅修改DTB或kernel
 
-* Rebuild DTB and Kernel
+* 重新编译DTB和kernel
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
 $ lunch TARGET_LUNCH
 $ make bootimage
 ```
-* Package Update Image
+* 打包固件
 ```sh
 $ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-### Only Change the System
+### 仅仅修改System
 
-* Rebuild System Image
+* 重新编译System
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
 $ lunch TARGET_LUNCH
 $ make systemimage
 ```
-* Package Update Image
+* 打包固件
 ```sh
-$ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
+$ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-**Note**: 
-* Replace `PATH_YOUR_PROJECT` to your project path
-* Replace `TARGET_LUNCH` to your lunch select.
-  * For VIM3, it's kvim3-userdebug.
-  * For VIM3L, it's kvim3l-userdebug.
-* `TARGET` should be kvim3 or kvim3l
+**注意**:
+* 替换`PATH_YOUR_PROJECT`为你自己的项目路径
+* 替换`TARGET_LUNCH`为你自己选择的lunch.
+  * 编译VIM3时，选择 kvim3-userdebug.
+  * 编译VIM3L时，选择 kvim3l-userdebug.
+* `TARGET` 应该为`kvim3`或`kvim3l`
