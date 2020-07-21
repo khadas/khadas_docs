@@ -13,7 +13,6 @@ Before you begin, you'll need a bootup picture with the following specs:
 
 * BMP format, should be either:
   * 16bit RGB565 BMP format
-  * 24bit RGB888 BMP format
 * Resolution <= 1080P (1920 * 1080)
 
 Check the bmp file:
