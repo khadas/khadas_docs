@@ -12,7 +12,8 @@ title: 编译Amlogic平台安卓源码
 
 **编译 Android 6.0 and 7.1 U-Boot:**
 ```sh
-$ cd ~/project/khadas/mmallow/uboot
+$ cd PATH_YOUR_PROJECT
+$ cd uboot
 $ make CROSS_COMPILE=aarch64-linux-gnu- kvim_defconfig
 $ make CROSS_COMPILE=aarch64-linux-gnu-
 ```
@@ -23,7 +24,8 @@ $ make CROSS_COMPILE=aarch64-linux-gnu-
 
 **编译 Android 9.0 U-Boot:**
 ```sh
-$ cd ~/project/khadas/pie/bootloader/uboot
+$ cd PATH_YOUR_PROJECT
+$ cd bootloader/uboot
 $ ./mk kvim
 ```
 *编译生成的镜像文件如下*
@@ -33,7 +35,7 @@ $ ./mk kvim
 
 **编译 Android:**
 ```sh
-$ cd ~/project/khadas/mmallow
+$ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
 $ lunch TARGET_LUNCH
 $ make -jN otapackage
