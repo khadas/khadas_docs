@@ -15,7 +15,7 @@ title: 编译Amlogic平台安卓源码
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ cd bootloader/uboot
-$ ./mk kvim3
+$ ./mk TARGET
 ```
 *生成文件描述如下：*
 
@@ -27,16 +27,21 @@ $ ./mk kvim3
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
-$ lunch kvim3-userdebug
+$ lunch TARGET_LUNCH
 $ make -jN otapackage
 ```
-*注意：*
-
-* 替换`N`为你自己电脑实际的线程数。
 
 *生成镜像文件如下：*
 
-* out/target/product/kvim3/update.img
+* out/target/product/TARGET/update.img
+
+*注意：*
+
+* 替换`N`为你自己电脑实际的线程数。
+* `TARGET` 为 kvim3 或者 kvim3l
+* `TARGET_LUNCH` 定义如下：
+  * 编译VIM3时: kvim3-userdebug
+  * 编译VIM3L时: kvim3l-userdebug
 
 
 **编译linux内核：**
