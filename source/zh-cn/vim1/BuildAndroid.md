@@ -18,8 +18,8 @@ $ make CROSS_COMPILE=aarch64-linux-gnu-
 ```
 *编译生成的镜像文件如下*
 
-* fip/u-boot.bin: for onboard EMMC storage booting
-* fip/u-boot.bin.sd.bin: for external TF card booting
+* fip/u-boot.bin: 板载EMMC烧录uboot
+* fip/u-boot.bin.sd.bin: TF卡烧录uboot
 
 **编译 Android 9.0 U-Boot:**
 ```sh
@@ -28,8 +28,8 @@ $ ./mk kvim
 ```
 *编译生成的镜像文件如下*
 
-* fip/u-boot.bin: for onboard EMMC storage booting
-* fip/u-boot.bin.sd.bin: for external TF card booting
+* fip/u-boot.bin: 板载EMMC烧录uboot
+* fip/u-boot.bin.sd.bin: TF卡烧录uboot
 
 **编译 Android:**
 ```sh
