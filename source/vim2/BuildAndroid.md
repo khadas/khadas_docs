@@ -44,7 +44,7 @@ $ make -jN otapackage
 *Note:*
 
 * Replace 'N' as the number you want when you run 'make -jN'
-* Replace ‘TARGET_LUNCH’ to your lunch select.
+* Replace 'TARGET_LUNCH' to your lunch select.
   For Android Nougat(7.1), it's kvim2-userdebug-64.
   For Android Pie(9.0), it's kvim2-userdebug.
 
