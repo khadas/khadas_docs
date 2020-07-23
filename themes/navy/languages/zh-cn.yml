@@ -81,6 +81,7 @@ sidebar:
     how_to_test_gpio_irq: 如何测试GPIO中断
     how_to_set_auto_login: 如何设置自动登录
     how_to_use_1-Wire: 如何使用单总线
+    how_to_setup_HDMI: 如何设置HDMI
 
   vim2:
     getting_started: 开始使用
@@ -135,6 +136,7 @@ sidebar:
     how_to_test_gpio_irq: 如何测试GPIO中断
     how_to_set_auto_login: 如何设置自动登录
     how_to_use_1-Wire: 如何使用单总线
+    how_to_setup_HDMI: 如何设置HDMI
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -203,6 +205,7 @@ sidebar:
     how_to_test_gpio_irq: 如何测试GPIO中断
     how_to_set_auto_login: 如何设置自动登录
     how_to_use_1-Wire: 如何使用单总线
+    how_to_setup_HDMI: 如何设置HDMI
 
   edge:
     getting_started: 开始使用
