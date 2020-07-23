@@ -1,8 +1,9 @@
 title: How To Set Auto Login
 ---
 
+# Desktop 
 
-# configiure file
+## configiure file
 
 configiure file is `50-greeter-wrapper.conf`
 
@@ -11,7 +12,7 @@ khadas@Khadas:~$ sudo vim /usr/share/lightdm/lightdm.conf.d/50-greeter-wrapper.c
 ```
 
 
-# Add auto login Configuration information
+## Add auto login Configuration information
 
 Add the following content to the file
 
@@ -24,4 +25,16 @@ autologin-user=khadas
 
 **note**: If you modify it through ssh or serial port, it will take effect after you log in once.
 
+# Server
 
+## tty1-tty6
+
+```shell
+sed -i "s/ExecStart=.*/ExecStart=-\/sbin\/agetty --noclear --autologin root \%I \$TERM/g" /lib/systemd/system/getty@.service
+```
+
+## ttyS0
+
+```shell
+sed -i "s/ExecStart=.*/ExecStart=-\/sbin\/agetty --autologin root --keep-baud 115200,38400,9600 \%I \$TERM/g" /lib/systemd/system/serial-getty@.service
+```

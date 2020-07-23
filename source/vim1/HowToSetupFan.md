@@ -3,6 +3,9 @@ title: How To Setup A Cooling Fan
 
 This guide is about how to setup a cooling fan in Ubuntu.
 
+
+## Setup via edit configiure file
+
 ### Preparations
 * Ubuntu version must be `V20190319` or newer
 
@@ -45,3 +48,29 @@ After edit the file, please save the modification and reboot the board.
 khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```
+
+## Setup via FFAN Setting application
+
+* Step1: Open Application 
+
+You can found the application which name `FAN Setting` in you application list ,
+
+![FAN Setting](/images/vim1/gnome_application_fan.png)
+
+Open it . 
+
+* Step2: Select mode you want
+
+![Fan Setting](/images/vim1/gnome_fan_setting.png)
+
+You can chooise anyone you want to , the default is `auto`.
+
+* Step3: Save 
+
+![Fan save](/images/vim1/gnome_fan_save.png)
+
+After chooise, you can save it as default . 
+
+![Fan PSK](/images/vim1/gnome_fan_psk.png)
+
+The password was same as you login password.

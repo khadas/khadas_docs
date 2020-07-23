@@ -3,6 +3,8 @@ title: 如何设置风扇
 
 这篇文档介绍如何在Ubuntu下设置风扇。
 
+## 通过修改配置文件修改
+
 ### 准备工作
 * Ubuntu版本必须为`V20190319`或更新版本
 
@@ -45,3 +47,31 @@ title: 如何设置风扇
 khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```
+
+
+## 通过风扇应用设置
+
+* Step1: 打开风扇应用
+
+你可以在系统的应用列表中找到`FAN Setting`
+
+![FAN Setting](/images/vim1/gnome_application_fan.png)
+
+打开这个应用
+
+* Step2: 选择风扇工作模式
+
+![Fan Setting](/images/vim1/gnome_fan_setting.png)
+
+可以选择你需要的工作模式,默认是`auto`.
+
+* Step3: 保存
+
+![Fan save](/images/vim1/gnome_fan_save.png)
+
+可以将你的选择保存为默认选项
+
+![Fan PSK](/images/vim1/gnome_fan_psk.png)
+
+密码就是你的用户密码
+

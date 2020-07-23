@@ -82,6 +82,7 @@ sidebar:
     how_to_test_gpio_irq: How To Test GPIO IRQ
     how_to_set_auto_login: How To Set Auto Login
     how_to_use_1-Wire: How To User 1-Wire driver
+    how_to_setup_HDMI: How To Setup HDMI
 
   vim2:
     overview: Beginners Guide
@@ -134,6 +135,7 @@ sidebar:
     how_to_control_LED: How To Control LEDs
     how_to_test_gpio_irq: How To Test GPIO IRQ
     how_to_set_auto_login: How To Set Auto Login
+    how_to_setup_HDMI: How To Setup HDMI
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -204,6 +206,7 @@ sidebar:
     how_to_test_gpio_irq: How To Test GPIO IRQ
     how_to_set_auto_login: How To Set Auto Login
     how_to_use_1-Wire: How To User 1-Wire driver
+    how_to_setup_HDMI: How To Setup HDMI
 
   edge:
     overview: Beginners Guide
