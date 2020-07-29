@@ -48,6 +48,8 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -99,6 +101,8 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -161,6 +165,8 @@ sidebar:
     HowToUseMPICamera: How To Use MIPI Camera
     how_to_use_lte_module: How To Use LTE Module
     development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO

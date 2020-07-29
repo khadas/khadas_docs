@@ -47,6 +47,8 @@ sidebar:
     Accessories: 配件
     how_to_setup_fan: 如何设置风扇
     development: 开发
+    create_burning_card_via_cli: 通过命令行创建烧录卡
+    create_booting_card: 通过命令行创建启动卡
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
@@ -98,6 +100,8 @@ sidebar:
     Accessories: 配件
     how_to_setup_fan: 如何设置风扇
     development: 开发
+    create_burning_card_via_cli: 通过命令行创建烧录卡
+    create_booting_card: 通过命令行创建启动卡
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
@@ -160,6 +164,8 @@ sidebar:
     HowToUseMPICamera: 如何使用MIPI摄像头
     how_to_use_lte_module: 如何使用LTE模块
     development: 开发
+    create_burning_card_via_cli: 通过命令行创建烧录卡
+    create_booting_card: 通过命令行创建启动卡
     setup_serial: 设置串口调试工具
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO

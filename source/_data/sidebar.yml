@@ -13,6 +13,8 @@ vim1:
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
   development:
+    create_burning_card_via_cli: CreateBurnCardViaCLI.html
+    create_booting_card: CreateBootableSDCard.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
@@ -64,6 +66,8 @@ vim2:
   Accessories:
     how_to_setup_fan: HowToSetupFan.html
   development:
+    create_burning_card_via_cli: CreateBurnCardViaCLI.html
+    create_booting_card: CreateBootableSDCard.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
@@ -123,6 +127,8 @@ vim3:
     HowToUseMPICamera: HowToUseMIPICamera.html
     how_to_use_lte_module: HowToUseLTEModule.html
   development:
+    create_burning_card_via_cli: CreateBurnCardViaCLI.html
+    create_booting_card: CreateBootableSDCard.html
     setup_serial: SetupSerialTool.html
     erase_emmc: HowtoEraseEMMC.html
     how_to_access_gpio: HowToAccessGpio.html
