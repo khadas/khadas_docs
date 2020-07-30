@@ -15,7 +15,7 @@ title: Building Android Source Code
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ cd bootloader/uboot
-$ ./mk kvim3
+$ ./mk TARGET
 ```
 *Gernerate images in this step:*
 
@@ -27,16 +27,23 @@ $ ./mk kvim3
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
-$ lunch kvim3-userdebug
+$ lunch TARGET_LUNCH
 $ make -jN otapackage
 ```
-*Note:*
-
-* Replace 'N' as the number you want when you run 'make -jN'
 
 *Gernerate images in this step:*
 
-* out/target/product/kvim3/update.img
+* out/target/product/TARGET/update.img
+
+*Note:*
+
+* Replace `N` as the number you want when you run 'make -jN'
+* Replace `TARGET_LUNCH` to your lunch select.
+  * For VIM3, it's kvim3-userdebug.
+  * For VIM3L, it's kvim3l-userdebug.
+* `TARGET` should be kvim3 or kvim3l
+
+
 
 
 **Build Linux kernel:**
