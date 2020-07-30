@@ -40,7 +40,6 @@ For Android Pie (9.0):
 ```sh
 $ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vims-pie
 ```
-*Note: Only available for VIM1.*
 
 3) Run `repo sync` to pull down the Android Source Tree:
 ```sh

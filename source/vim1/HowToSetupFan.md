@@ -49,7 +49,7 @@ khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```
 
-## Setup via FFAN Setting application
+## Setup via FAN Setting application
 
 * Step1: Open Application 
 

@@ -12,28 +12,30 @@ title: 编译Amlogic平台安卓源码
 
 **编译 Android 6.0 and 7.1 U-Boot:**
 ```sh
-$ cd ~/project/khadas/mmallow/uboot
+$ cd PATH_YOUR_PROJECT
+$ cd uboot
 $ make CROSS_COMPILE=aarch64-linux-gnu- kvim_defconfig
 $ make CROSS_COMPILE=aarch64-linux-gnu-
 ```
 *编译生成的镜像文件如下*
 
-* fip/u-boot.bin: for onboard EMMC storage booting
-* fip/u-boot.bin.sd.bin: for external TF card booting
+* fip/u-boot.bin: 板载EMMC烧录uboot
+* fip/u-boot.bin.sd.bin: TF卡烧录uboot
 
 **编译 Android 9.0 U-Boot:**
 ```sh
-$ cd ~/project/khadas/pie/bootloader/uboot
+$ cd PATH_YOUR_PROJECT
+$ cd bootloader/uboot
 $ ./mk kvim
 ```
 *编译生成的镜像文件如下*
 
-* fip/u-boot.bin: for onboard EMMC storage booting
-* fip/u-boot.bin.sd.bin: for external TF card booting
+* fip/u-boot.bin: 板载EMMC烧录uboot
+* fip/u-boot.bin.sd.bin: TF卡烧录uboot
 
 **编译 Android:**
 ```sh
-$ cd ~/project/khadas/mmallow
+$ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
 $ lunch TARGET_LUNCH
 $ make -jN otapackage
@@ -42,9 +44,9 @@ $ make -jN otapackage
 
 * 把N换成数字，如你电脑CPU的线程数。
 * TARGET_LUNCH定义如下：
-  编译Android6.0时: kvim-userdebug-32
-  编译Android7.1时: kvim-userdebug-64
-  编译Android9.0时: kvim-userdebug
+  * 编译Android6.0时: kvim-userdebug-32
+  * 编译Android7.1时: kvim-userdebug-64
+  * 编译Android9.0时: kvim-userdebug
 
 
 
