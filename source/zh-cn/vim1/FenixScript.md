@@ -130,7 +130,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 #### 在Docker中运行Fenix
-编译Docker镜像：
+获取Docker镜像：
 ```
 $ cd ~/project/fenix
 $ docker pull numbqq/fenix
