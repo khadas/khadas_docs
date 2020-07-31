@@ -133,12 +133,18 @@ For more examples and ideas, visit:
 编译Docker镜像：
 ```
 $ cd ~/project/fenix
-$ docker build -t fenix .
+$ docker pull numbqq/fenix
 ```
 
 进入Docker环境：
 ```
-$ docker run -it --name fenix -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --privileged --device=/dev/loop0:/dev/loop0 --cap-add SYS_ADMIN fenix
+$ docker run -it --name fenix -v $(pwd):/home/khadas/fenix \
+             -v /etc/localtime:/etc/localtime:ro \
+             -v /etc/timezone:/etc/timezone:ro \
+             -v $HOME/.ccache:/home/khadas/.ccache --privileged \
+             --device=/dev/loop-control:/dev/loop-control \
+             --device=/dev/loop0:/dev/loop0 --cap-add SYS_ADMIN \
+             numbqq/fenix
 ```
 现在已经在Docker容器里面了，可以开始编译了：
 ```
