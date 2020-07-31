@@ -138,7 +138,7 @@ For more examples and ideas, visit:
 Get Docker Image:
 ```
 $ cd ~/project/fenix
-$ docker pull numbqq/fenix
+$ docker pull numbqq/fenix:latest
 ```
 
 Build Image in Docker:

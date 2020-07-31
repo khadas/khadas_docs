@@ -133,7 +133,7 @@ For more examples and ideas, visit:
 获取Docker镜像：
 ```
 $ cd ~/project/fenix
-$ docker pull numbqq/fenix
+$ docker pull numbqq/fenix:latest
 ```
 
 进入Docker环境：
