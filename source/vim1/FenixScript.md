@@ -135,7 +135,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 #### Run Fenix in Docker
-Build Docker Image:
+Get Docker Image:
 ```
 $ cd ~/project/fenix
 $ docker pull numbqq/fenix
