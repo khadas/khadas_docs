@@ -95,6 +95,14 @@ Fenix支持在Docker中编译，我们提供了一个`Ubuntu 20.04`的Docker环�
 
 请参考[Docker官方安装文档](https://docs.docker.com/engine/install/)。
 
+#### 添加用户到Docker组
+
+```
+$ sudo usermod -aG docker $USER
+```
+
+*注意：你需要注销或重启系统来使其生效。*
+
 #### 检查Docker
 ```
 $ docker run hello-world

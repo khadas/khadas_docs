@@ -100,6 +100,14 @@ Fenix is supported via Docker. We provide a `Ubuntu 20.04` build host, so you ca
 
 Please refer to [Docker Official Documentation](https://docs.docker.com/engine/install/).
 
+#### Add User to Docker Group
+
+```
+$ sudo usermod -aG docker $USER
+```
+
+*Note: You need to logout or reboot the system to make it available.*
+
 #### Check Docker
 ```
 $ docker run hello-world
