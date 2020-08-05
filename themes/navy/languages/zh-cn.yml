@@ -85,6 +85,7 @@ sidebar:
     how_to_use_1-Wire: 如何使用单总线
     how_to_setup_HDMI: 如何设置HDMI
     how_to_change_logo: 如何更换开机Logo
+    how_to_custom_MAC: 如何自定义MAC地址
 
   vim2:
     getting_started: 开始使用
@@ -143,6 +144,7 @@ sidebar:
     how_to_use_1-Wire: 如何使用单总线
     how_to_setup_HDMI: 如何设置HDMI
     how_to_change_logo: 如何更换开机Logo
+    how_to_custom_MAC: 如何自定义MAC地址
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -216,6 +218,7 @@ sidebar:
     how_to_setup_HDMI: 如何设置HDMI
     how_to_overclocking_CPU: 如何设置CPU超频
     how_to_change_logo: 如何更换开机Logo
+    how_to_custom_MAC: 如何自定义MAC地址
 
   edge:
     getting_started: 开始使用

@@ -86,6 +86,7 @@ sidebar:
     how_to_use_1-Wire: How To User 1-Wire driver
     how_to_setup_HDMI: How To Setup HDMI
     how_to_change_logo: How To Change Boot Logo
+    how_to_custom_MAC: How To Custom MAC Address
 
   vim2:
     overview: Beginners Guide
@@ -142,6 +143,7 @@ sidebar:
     how_to_set_auto_login: How To Set Auto Login
     how_to_setup_HDMI: How To Setup HDMI
     how_to_change_logo: How To Change Boot Logo
+    how_to_custom_MAC: How To Custom MAC Addres
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -217,6 +219,7 @@ sidebar:
     how_to_setup_HDMI: How To Setup HDMI
     how_to_overclocking_CPU: How To Overclocking CPU
     how_to_change_logo: How To Change Boot Logo
+    how_to_custom_MAC: How To Custom MAC Addres
 
   edge:
     overview: Beginners Guide

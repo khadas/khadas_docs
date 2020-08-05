@@ -51,6 +51,7 @@ vim1:
     how_to_use_1-Wire: HowToUse1wire.html
     how_to_setup_HDMI: HowToSetupHDMI.html
     how_to_change_logo: HowToChangeBootLogo.html
+    how_to_custom_MAC: HowToCustomMac.html
 
 vim2:
   getting_started:
@@ -108,6 +109,7 @@ vim2:
     how_to_use_1-Wire: HowToUse1wire.html
     how_to_setup_HDMI: HowToSetupHDMI.html
     how_to_change_logo: HowToChangeBootLogo.html
+    how_to_custom_MAC: HowToCustomMac.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
 
@@ -179,6 +181,7 @@ vim3:
     how_to_setup_HDMI: HowToSetupHDMI.html
     how_to_overclocking_CPU: HowToOverclockingWithCPU.html
     how_to_change_logo: HowToChangeBootLogo.html
+    how_to_custom_MAC: HowToCustomMac.html
 
 edge:
   getting_started:
