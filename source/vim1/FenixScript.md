@@ -100,6 +100,14 @@ Fenix is supported via Docker. We provide a `Ubuntu 20.04` build host, so you ca
 
 Please refer to [Docker Official Documentation](https://docs.docker.com/engine/install/).
 
+#### Add User to Docker Group
+
+```
+$ sudo usermod -aG docker $USER
+```
+
+*Note: You need to logout or reboot the system to make it available.*
+
 #### Check Docker
 ```
 $ docker run hello-world
@@ -135,15 +143,21 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 #### Run Fenix in Docker
-Build Docker Image:
+Get Docker Image:
 ```
 $ cd ~/project/fenix
-$ docker build -t fenix .
+$ docker pull numbqq/fenix:latest
 ```
 
 Build Image in Docker:
 ```
-$ docker run -it --name fenix -v $(pwd):/home/khadas/fenix -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro --privileged --device=/dev/loop0:/dev/loop0 --cap-add SYS_ADMIN fenix
+$ docker run -it --name fenix -v $(pwd):/home/khadas/fenix \
+             -v /etc/localtime:/etc/localtime:ro \
+             -v /etc/timezone:/etc/timezone:ro \
+             -v $HOME/.ccache:/home/khadas/.ccache --privileged \
+             --device=/dev/loop-control:/dev/loop-control \
+             --device=/dev/loop0:/dev/loop0 --cap-add SYS_ADMIN \
+             numbqq/fenix
 ```
 We are in the Docker Container now, start your build.
 ```
