@@ -84,6 +84,7 @@ sidebar:
     how_to_set_auto_login: 如何设置自动登录
     how_to_use_1-Wire: 如何使用单总线
     how_to_setup_HDMI: 如何设置HDMI
+    how_to_change_logo: 如何更换开机Logo
 
   vim2:
     getting_started: 开始使用
@@ -141,6 +142,7 @@ sidebar:
     how_to_set_auto_login: 如何设置自动登录
     how_to_use_1-Wire: 如何使用单总线
     how_to_setup_HDMI: 如何设置HDMI
+    how_to_change_logo: 如何更换开机Logo
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -213,6 +215,7 @@ sidebar:
     how_to_use_1-Wire: 如何使用单总线
     how_to_setup_HDMI: 如何设置HDMI
     how_to_overclocking_CPU: 如何设置CPU超频
+    how_to_change_logo: 如何更换开机Logo
 
   edge:
     getting_started: 开始使用
