@@ -45,6 +45,88 @@ enable IR-Cut
 v4l2_test  -c 1 -p 0 -F 0 -f 0 -D 0 -R 1 -r 2 -d 2 -N 1000 -n 800 -w 0 -e 1 -I 1 -b /dev/fb0 -v /dev/video0
 ```
 
+# Use MIPICamera via opencv
+
+## Python
+
+The source code with python
+
+```python
+import cv2 
+
+if __name__ == '__main__':
+
+    val = True
+
+    cap = cv2.VideoCapture(0)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+
+    out = cv2.VideoWriter("./test.avi", fourcc, 20.0, (640, 480), True)
+
+    while val is True:
+        ret, frame = cap.read()
+        cv2.cvtColor(frame,cv2.COLOR_RGB2BGR)
+        if frame is None:
+            break
+        else:
+            out.write(frame)
+            cv2.imshow("video", frame)
+            k = cv2.waitKey(1) & 0xFF
+            if k == 27: 
+                break
+
+    cap.release()
+    out.release()
+```
+
+## C++
+
+The source code with C++
+
+```c++
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/core/core.hpp>
+#include <iostream>
+#include <string>
+using
+namespace  cv;
+
+using
+namespace  std;
+
+int main(int argc, char** argv)
+{
+    int count=100;
+    string str = argv[1];
+    string res=str.substr(10);
+    VideoCapture capture(stoi(res));
+        capture.set(CV_CAP_PROP_FRAME_WIDTH, 1920);
+    capture.set(CV_CAP_PROP_FRAME_HEIGHT, 1080);
+    while (count)
+    {
+        Mat frame;
+        capture >> frame;
+
+        if (frame.empty()) {
+            break;
+        }
+        int h = frame.rows;
+        int w = frame.cols;
+        const char *name = "video";
+        cvNamedWindow(name, 0);
+        cvResizeWindow(name, w / 1, h / 1);
+        imshow(name, frame);
+        waitKey(30);
+        count--;
+    }
+    return 0;
+}
+
+```
 
 **Learn More:**
 - [khadas.com/shop](https://www.khadas.com/product-page/os08a10-8mp-camera)
