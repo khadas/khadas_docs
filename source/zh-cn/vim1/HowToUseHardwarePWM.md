@@ -23,6 +23,8 @@ root@Khadas:~#
 
 ## 设置以及打开PWM
 
+VIM1/3:
+
 ```shell
 root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
 root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
@@ -30,9 +32,20 @@ root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
 root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
 ```
 
+VIM2:
+
+```shell
+root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/export
+root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip1/pwm1/period
+root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip1/pwm1/duty_cycle
+root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/pwm1/enable
+```
+
 如果你成功开启了硬件PWM,你可以通过示波器看到波形
 
 ![pwm-Oscilloscope](/images/vim1/pwm-Oscilloscope.jpg)
+
+**注意**: 如果使用示波器去查看波形,记得板子和示波器需要共地
 
 ## 关闭PWM
 

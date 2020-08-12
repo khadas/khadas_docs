@@ -48,6 +48,8 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -83,6 +85,8 @@ sidebar:
     how_to_set_auto_login: How To Set Auto Login
     how_to_use_1-Wire: How To User 1-Wire driver
     how_to_setup_HDMI: How To Setup HDMI
+    how_to_change_logo: How To Change Boot Logo
+    how_to_custom_MAC: How To Custom MAC Address
 
   vim2:
     overview: Beginners Guide
@@ -99,6 +103,8 @@ sidebar:
     Accessories: Accessories
     how_to_setup_fan: How To Setup Fan
     development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -136,6 +142,8 @@ sidebar:
     how_to_test_gpio_irq: How To Test GPIO IRQ
     how_to_set_auto_login: How To Set Auto Login
     how_to_setup_HDMI: How To Setup HDMI
+    how_to_change_logo: How To Change Boot Logo
+    how_to_custom_MAC: How To Custom MAC Addres
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -161,6 +169,8 @@ sidebar:
     HowToUseMPICamera: How To Use MIPI Camera
     how_to_use_lte_module: How To Use LTE Module
     development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
@@ -207,6 +217,9 @@ sidebar:
     how_to_set_auto_login: How To Set Auto Login
     how_to_use_1-Wire: How To User 1-Wire driver
     how_to_setup_HDMI: How To Setup HDMI
+    how_to_overclocking_CPU: How To Overclocking CPU
+    how_to_change_logo: How To Change Boot Logo
+    how_to_custom_MAC: How To Custom MAC Addres
 
   edge:
     overview: Beginners Guide

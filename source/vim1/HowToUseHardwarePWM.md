@@ -23,6 +23,8 @@ root@Khadas:~#
 
 ## Setup and enable PWM
 
+VIM1/3:
+
 ```shell
 root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
 root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
@@ -30,9 +32,20 @@ root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
 root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
 ```
 
+VIM2:
+
+```shell
+root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/export
+root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip1/pwm1/period
+root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip1/pwm1/duty_cycle
+root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/pwm1/enable
+```
+
 If you sueccess to enable it , you can see it with oscilloscope.
 
 ![pwm-Oscilloscope](/images/vim1/pwm-Oscilloscope.jpg)
+
+**Note**: If you use an oscilloscope to view the waveform, remember that the board and the oscilloscope need to share the GND
 
 ## Disable PWM
 
