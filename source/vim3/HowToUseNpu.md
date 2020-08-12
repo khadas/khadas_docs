@@ -180,7 +180,7 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 This demo just show the top5, you can see the max probability is index `2`, you can check the labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt` and you will find the result is `goldfish`.
 
 #### Based On Android
-Please refer to Android&Linux complie guidance`docs/DDK_6.4.0.10_Android&Linux_Compilation and Integration Guide_0.2.pdf`.
+Please refer to Android&Linux complie guidance`docs/en/Android&Linux_Compilation and Integration Guide_0.2.pdf`.
 
 ### In The End
 
