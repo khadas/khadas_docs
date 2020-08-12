@@ -92,7 +92,6 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 #### 基于Linux运行
 
 要想在VIM3上运行这个模型，需要编译上述转换好的case代码。
-需要交叉编译代码，这里使用[Fenix](/zh-cn/vim3/FenixScript.html)来提供交叉编译工具链。
 
 * 从示例demo中拷贝编译脚本到转换的case代码目录
 
@@ -130,10 +129,11 @@ drwxrwxr-x 3 nick nick   4096 9月  20 15:24 ../
 固件版本需要[V190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/)及以上版本，并更新至最新系统。
 
 ```
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ sync
-$ sudo reboot
+khadas@Khadas:~$ sudo apt update
+khadas@Khadas:~$ sudo apt full-upgrade
+khadas@Khadas:~$ sudo do-fenix-full-upgrade
+khadas@Khadas:~$ sync
+khadas@Khadas:~$ sudo reboot
 ```
 
 拷贝上面编译生成的可执行文件`inceptionv3`以及模型文件`inception_v3.nb`到VIM3上，同时拷贝要识别的图片（尺寸为299x299的jpeg图片）到VIM3上并运行。
