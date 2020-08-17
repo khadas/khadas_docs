@@ -85,14 +85,13 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 
 *注意：如果你要转换自己的模型，那么需要修改脚本里面相应文件的路径和参数。*
 
-以上是一个模型转换的示例脚本，更多详细信息请参考模型转换文档`docs/DDK_6.4.0.10_模型转换运行用户指南(0.5).pdf`。
+以上是一个模型转换的示例脚本，更多详细信息请参考模型转换文档`docs/zh-cn/模型转换运行用户指南(0.5).pdf`。
 
 ### 编译转换好的case代码
 
 #### 基于Linux运行
 
 要想在VIM3上运行这个模型，需要编译上述转换好的case代码。
-需要交叉编译代码，这里使用[Fenix](/zh-cn/vim3/FenixScript.html)来提供交叉编译工具链。
 
 * 从示例demo中拷贝编译脚本到转换的case代码目录
 
@@ -130,10 +129,11 @@ drwxrwxr-x 3 nick nick   4096 9月  20 15:24 ../
 固件版本需要[V190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/)及以上版本，并更新至最新系统。
 
 ```
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ sync
-$ sudo reboot
+khadas@Khadas:~$ sudo apt update
+khadas@Khadas:~$ sudo apt full-upgrade
+khadas@Khadas:~$ sudo do-fenix-full-upgrade
+khadas@Khadas:~$ sync
+khadas@Khadas:~$ sudo reboot
 ```
 
 拷贝上面编译生成的可执行文件`inceptionv3`以及模型文件`inception_v3.nb`到VIM3上，同时拷贝要识别的图片（尺寸为299x299的jpeg图片）到VIM3上并运行。
@@ -177,8 +177,8 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 这个demo只是做了top5处理，可以看到识别的概率最大为索引`2`的`0.826660`，对比labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt`可以发现识别出来是`金鱼`，结果正确。
 
 #### 基于Android运行
-参考Android&Linux编译集成指导`docs/DDK_6.4.0.10_Android&Linux编译集成指导(0.2).pdf` Android相关部分。
+参考Android&Linux编译集成指导`docs/zh-cn/Android&Linux编译集成指导(0.2).pdf` Android相关部分。
 
 ### 写在最后
 
-以上只是简单说明了模型转换以及case代码编译运行，更多详细信息请参考模型转换文档`docs/DDK_6.4.0.10_模型转换运行用户指南(0.5).pdf`。
+以上只是简单说明了模型转换以及case代码编译运行，更多详细信息请参考模型转换文档`docs/zh-cn/模型转换运行用户指南(0.5).pdf`。

@@ -88,14 +88,13 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 
 *Note: You need to modify the model file path and other parameters in the scripts if you want to convert your model.*
 
-They are just sample scripts to convert the model, for more information please refer to model conversion documentation`docs/DDK_6.4.0.10_Model_Transcoding and Running User Guide_V0.5.pdf`.
+They are just sample scripts to convert the model, for more information please refer to model conversion documentation`docs/en/Model_Transcoding and Running User Guide_V0.5.pdf`.
 
 ### Compile the Case Code
 
 #### Based On Linux
 
 In order to run the model on VIM3 you need to compile the case code to get the executable binary.
-In order to cross compile the code, we use [Fenix](/vim3/FenixScript.html) to provide the cross compile toolchains.
 
 * Copy the build script from sample demo
 
@@ -133,10 +132,11 @@ drwxrwxr-x 3 nick nick   4096 9月  20 15:24 ../
 Firmware version [V190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/) or newer, and update the system.
 
 ```
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ sync
-$ sudo reboot
+khadas@Khadas:~$ sudo apt update
+khadas@Khadas:~$ sudo apt full-upgrade
+khadas@Khadas:~$ sudo do-fenix-full-upgrade
+khadas@Khadas:~$ sync
+khadas@Khadas:~$ sudo reboot
 ```
 
 Copy the executable binary `inceptionv3`, model data `inception_v3.nb`, and test pictures (size 299x299) to VIM3 and run it
@@ -180,8 +180,8 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 This demo just show the top5, you can see the max probability is index `2`, you can check the labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt` and you will find the result is `goldfish`.
 
 #### Based On Android
-Please refer to Android&Linux complie guidance`docs/DDK_6.4.0.10_Android&Linux_Compilation and Integration Guide_0.2.pdf`.
+Please refer to Android&Linux complie guidance`docs/en/Android&Linux_Compilation and Integration Guide_0.2.pdf`.
 
 ### In The End
 
-This is just a simple sample about model conversion and case code complie, for more information please refer to model conversion documentation`docs/DDK_6.4.0.10_Model_Transcoding and Running User Guide_V0.5.pdf`.
+This is just a simple sample about model conversion and case code complie, for more information please refer to model conversion documentation`docs/en/Model_Transcoding and Running User Guide_V0.5.pdf`.

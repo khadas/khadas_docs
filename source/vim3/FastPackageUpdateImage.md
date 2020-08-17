@@ -15,6 +15,7 @@ This guide is about how to make a "Fast Package Update Image"; This means that y
 $ cd PATH_YOUR_PROJECT
 $ cd bootload/uboot
 $ ./mk TARGET
+```
 
 * Copy files to output directory
 ```sh
