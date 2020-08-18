@@ -52,6 +52,7 @@ vim1:
     how_to_setup_HDMI: HowToSetupHDMI.html
     how_to_change_logo: HowToChangeBootLogo.html
     how_to_custom_MAC: HowToCustomMac.html
+    how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
 
 vim2:
   getting_started:
@@ -110,6 +111,7 @@ vim2:
     how_to_setup_HDMI: HowToSetupHDMI.html
     how_to_change_logo: HowToChangeBootLogo.html
     how_to_custom_MAC: HowToCustomMac.html
+    how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
 
@@ -182,6 +184,7 @@ vim3:
     how_to_setup_max_cpu_freq: HowToSetupMaxCPUFrequency.html
     how_to_change_logo: HowToChangeBootLogo.html
     how_to_custom_MAC: HowToCustomMac.html
+    how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
 
 edge:
   getting_started:
