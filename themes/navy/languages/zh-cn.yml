@@ -87,6 +87,7 @@ sidebar:
     how_to_change_logo: 如何更换开机Logo
     how_to_custom_MAC: 如何自定义MAC地址
     how_to_use_dtbo: 如何使用Device Tree Overlay
+    how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
 
   vim2:
     getting_started: 开始使用
@@ -147,6 +148,7 @@ sidebar:
     how_to_change_logo: 如何更换开机Logo
     how_to_custom_MAC: 如何自定义MAC地址
     how_to_use_dtbo: 如何使用Device Tree Overlay
+    how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -222,6 +224,7 @@ sidebar:
     how_to_change_logo: 如何更换开机Logo
     how_to_custom_MAC: 如何自定义MAC地址
     how_to_use_dtbo: 如何使用Device Tree Overlay
+    how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
 
   edge:
     getting_started: 开始使用

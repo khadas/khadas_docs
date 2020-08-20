@@ -88,6 +88,7 @@ sidebar:
     how_to_change_logo: How To Change Boot Logo
     how_to_custom_MAC: How To Custom MAC Address
     how_to_use_dtbo: How To Use Device Tree Overlay
+    how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
 
   vim2:
     overview: Beginners Guide
@@ -146,6 +147,7 @@ sidebar:
     how_to_change_logo: How To Change Boot Logo
     how_to_custom_MAC: How To Custom MAC Addres
     how_to_use_dtbo: How To Use Device Tree Overlay
+    how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -223,6 +225,7 @@ sidebar:
     how_to_change_logo: How To Change Boot Logo
     how_to_custom_MAC: How To Custom MAC Addres
     how_to_use_dtbo: How To Use Device Tree Overlay
+    how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
 
   edge:
     overview: Beginners Guide
