@@ -87,6 +87,7 @@ sidebar:
     how_to_setup_HDMI: How To Setup HDMI
     how_to_change_logo: How To Change Boot Logo
     how_to_custom_MAC: How To Custom MAC Address
+    how_to_use_dtbo: How To Use Device Tree Overlay
 
   vim2:
     overview: Beginners Guide
@@ -144,6 +145,7 @@ sidebar:
     how_to_setup_HDMI: How To Setup HDMI
     how_to_change_logo: How To Change Boot Logo
     how_to_custom_MAC: How To Custom MAC Addres
+    how_to_use_dtbo: How To Use Device Tree Overlay
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -220,6 +222,7 @@ sidebar:
     how_to_setup_max_cpu_freq: How To Setup Maximum CPU Frequency
     how_to_change_logo: How To Change Boot Logo
     how_to_custom_MAC: How To Custom MAC Addres
+    how_to_use_dtbo: How To Use Device Tree Overlay
 
   edge:
     overview: Beginners Guide

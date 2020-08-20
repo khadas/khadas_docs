@@ -86,6 +86,7 @@ sidebar:
     how_to_setup_HDMI: 如何设置HDMI
     how_to_change_logo: 如何更换开机Logo
     how_to_custom_MAC: 如何自定义MAC地址
+    how_to_use_dtbo: 如何使用Device Tree Overlay
 
   vim2:
     getting_started: 开始使用
@@ -145,6 +146,7 @@ sidebar:
     how_to_setup_HDMI: 如何设置HDMI
     how_to_change_logo: 如何更换开机Logo
     how_to_custom_MAC: 如何自定义MAC地址
+    how_to_use_dtbo: 如何使用Device Tree Overlay
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -219,6 +221,7 @@ sidebar:
     how_to_setup_max_cpu_freq: 如何设置最大CPU频率
     how_to_change_logo: 如何更换开机Logo
     how_to_custom_MAC: 如何自定义MAC地址
+    how_to_use_dtbo: 如何使用Device Tree Overlay
 
   edge:
     getting_started: 开始使用
