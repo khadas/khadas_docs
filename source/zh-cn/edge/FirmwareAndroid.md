@@ -1,6 +1,7 @@
 title: Khadas Edge Android固件
 ---
 # Qt
+* [Edge_Qt_V200908](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V200908.7z)
 * [Edge_Qt_V200709](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V200709.7z)
 
 # Pie
