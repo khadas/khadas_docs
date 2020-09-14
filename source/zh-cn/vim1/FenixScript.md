@@ -52,6 +52,7 @@ $ make kernel
 ### 编译内核debian包
 ```
 $ make kernel-deb
+```
 
 ### 编译GPU debian包
 ```
@@ -87,6 +88,32 @@ Fenix scripts help messages:
   clean         - Cleanup.
   info          - Display current environment.
 ```
+
+### 编译选项
+
+* `NO_CCACHE` - ccache选项
+
+  * 使能ccache（默认）
+    * NO_CCACHE=no make
+  * 禁止ccache
+    * NO_CCACHE=yes make
+
+* `COMPRESS_IMAGE` - 压缩固件选项
+  * 不压缩（默认）
+    * COMPRESS_IMAGE=no make
+  * 压缩固件
+    * COMPRESS_IMAGE=yes make
+
+* `BUILD_TYPE` - 编译类型选项
+  * Develop
+    * BUILD_TYPE=develop make
+  * Release
+    * BUILD_TYPE=release make
+
+* `DOWNLOAD_MIRROR` - 源地址选项
+  * 使用国内源
+    * DOWNLOAD_MIRROR=china make
+
 
 ### 使用Docker编译
 Fenix支持在Docker中编译，我们提供了一个`Ubuntu 20.04`的Docker环境，你可以在里面编译所有的固件。
