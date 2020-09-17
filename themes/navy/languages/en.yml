@@ -90,6 +90,7 @@ sidebar:
     how_to_use_dtbo: How To Use Device Tree Overlay
     how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
+    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
 
   vim2:
     overview: Beginners Guide
