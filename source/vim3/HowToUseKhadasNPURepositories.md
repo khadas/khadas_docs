@@ -28,7 +28,7 @@ title: How To Use Pre-Built NPU Demo
 
 ```shell
 $ cd ${workspace}
-$ git cloe https://gitlab.com/khadas/aml_npu_demo_binaries
+$ git clone https://gitlab.com/khadas/aml_npu_demo_binaries
 ```
 
 ### Use `detect_demo` or `detect_demo_khadas` or `detect_demo_picture`
