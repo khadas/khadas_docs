@@ -92,6 +92,29 @@ Fenix scripts help messages:
   info          - Display current environment.
 ```
 
+### Build Options
+
+Trere are some options for building:
+
+* `NO_CCACHE` - ccache option
+
+  * Enable ccache (default)
+    * NO_CCACHE=no make
+  * Disable ccache
+    * NO_CCACHE=yes make
+
+* `COMPRESS_IMAGE` - compress build image option
+  * Don't compress (default)
+    * COMPRESS_IMAGE=no make
+  * Compress image with xz
+    * COMPRESS_IMAGE=yes make
+
+* `BUILD_TYPE` - image build type option
+  * Develop build
+    * BUILD_TYPE=develop make
+  * Release build
+    * BUILD_TYPE=release make
+
 ### Build Fenix in Docker
 
 Fenix is supported via Docker. We provide a `Ubuntu 20.04` build host, so you can build all images in Docker.

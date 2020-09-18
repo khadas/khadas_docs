@@ -1,9 +1,9 @@
-title: How To Custom MAC Address
+title: How To Setup Customer Ethernet MAC Address
 ---
 
-# View MAC address
+# Check Ethernet MAC address
 
-* View MAC address via `cmdline`
+* Check Ethernet MAC address via `cmdline`
 
 ```shell
 khadas@Khadas:~$ cat /proc/cmdline
@@ -12,7 +12,7 @@ root=UUID=be7fd8e4-c575-444f-832f-00bf27631d9f rootfstype=ext4 rootflags=data=wr
 
 You can see from the `mac` and `androidboot.mac` fields that the address is `c8:63:14:70:43:e4`
 
-* View MAC address via `ifconfig` command
+* Check Ethernet MAC address via `ifconfig` command
 
 ```shell
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
@@ -28,7 +28,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 You can see from the `ether` fields that the address is `c8:63:14:70:43:e4`
 
-# Custom MAC Address
+# Setup Customer Ethernet MAC Address
 
 * open `/boot/env.txt` file,
 
@@ -51,14 +51,14 @@ khadas@Khadas:~$ sudo reboot
 
 # Confirm whether the modification is effective
 
-* View MAC address via `cmdline`
+* Check Ethernet MAC address via `cmdline`
 
 ```shell
 cat /proc/cmdline
 root=UUID=be7fd8e4-c575-444f-832f-00bf27631d9f rootfstype=ext4 rootflags=data=writeback rw ubootpart=NULL console=ttyS0,115200n8 console=tty0 no_console_suspend consoleblank=0 loglevel=7 logo=osd0,loaded,0x3d800000,1080p60hz vout=1080p60hz,enable hdmimode=1080p60hz  fsck.repair=yes net.ifnames=0 ddr_size= wol_enable=0 max_freq_a53=2208 max_freq_a73=2400 jtag=disable mac=c8:63:14:70:43:e6 androidboot.mac=c8:63:14:70:43:e6  fan=auto khadas_board=VIM3 hwver=VIM3.V12 coherent_pool=2M reboot_mode=normal imagetype=EMMC uboottype=vendor
 ```
 
-* View MAC address via `ifconfig` command
+* Check Ethernet MAC address via `ifconfig` command
 
 ```shell
 khadas@Khadas:~$ ifconfig

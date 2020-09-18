@@ -1,7 +1,7 @@
-title: 如何自定义MAC地址
+title: 如何自定义以太网MAC地址
 ---
 
-# 查看MAC地址
+# 查看以太网MAC地址
 
 * 通过`cmdline`查看
 
@@ -28,7 +28,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 从`ether`字段可以看到MAC地址为`c8:63:14:70:43:e4`
 
-# 自定义MAC地址
+# 自定义以太网MAC地址
 
 * 打开`/boot/env.txt`文件,
 
