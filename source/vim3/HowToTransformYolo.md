@@ -16,8 +16,8 @@ $ cd Tool/acuity-toolkit-binary-5.0.0/conversion_scripts/
 ### 0_import_model.sh
 
 Parameter setting
-> 1. `NAME` is `yolov3`
-> 2. `--net-input` is path to yolov3-voc.cfg file
+> 1. `NAME` is `yolovX`
+> 2. `--net-input` is path to yolovX-voc.cfg file
 > 3. `--weight-input` is path to weights file
 example:
 > `NAME=yolov3`
@@ -27,7 +27,7 @@ example:
 ### 1_quantize_model.sh
 
 Parameter setting
-> 1. `NAME` is `yolov3`
+> 1. `NAME` is `yolovX`
 > 2. `--source-file` is path to Validation file
 > 3. `--channel-mean-value` set to `0 0 0 256`
 > 4. `--quantized-dtype` set to `dynamic_fixed_point-8`
@@ -40,7 +40,7 @@ example:
 ### 2_export_case_code.sh
 
 Parameter setting
-> 1. `NAME` is `yolov3`
+> 1. `NAME` is `yolovX`
 > 2. `--reorder-channel` RGB color channel order changed to BGR `2 1 0`
 > 3. `--channel-mean-value` set ot `0 0 0 256`
 > 4. `--export-dtype` set to `quantized`
@@ -87,7 +87,7 @@ $ cd $workspace/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3
 
 ### edit file
 ```bash
-$ vim yolov3_process.c
+$ vim yolovX_process.c
 ```
 Modify 3 places
 1. The content of `*coco_names[]` is modified to the class of your training model. The order should be the same as the names file when you train.
