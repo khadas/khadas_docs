@@ -165,7 +165,7 @@ Linux_TX|19|39|GPIODZ_15
 - 将EMMC的中的内容通过[SD卡](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt),[USB存储设备](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt)或者[网络](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt)备份。
 - 从其他设备或者网络覆写img.gz格式的固件到EMMC
 - 通过网络直接安装系统
-- 查看硬件谁设备信息
+- 查看硬件设备信息
 - 给有专业知识的用户准备的应急shell
 - 通过串口，USB网络接口或者网络接口使用[shell访问](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt)系统。
 
