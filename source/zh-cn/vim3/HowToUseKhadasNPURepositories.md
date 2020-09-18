@@ -1,7 +1,7 @@
-title: 如何使用Khadas NPU 仓库
+title: 如何使用Khadas NPU预编译demo
 ---
 
-# aml_npu_demo_binaries仓库
+# NPU预编译demo仓库
 
 `aml_npu_demo_binaries仓库`是可执行文件仓库,此仓库用于在**khadas VIM3/VIM3L上运行NPU demo**使用
 
