@@ -153,6 +153,7 @@ sidebar:
     how_to_use_dtbo: How To Use Device Tree Overlay
     how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
+    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -233,6 +234,7 @@ sidebar:
     how_to_use_dtbo: How To Use Device Tree Overlay
     how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
+    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
 
   edge:
     overview: Beginners Guide
@@ -289,6 +291,7 @@ sidebar:
     how_to_set_auto_login: How To Set Auto Login
     how_to_use_1-Wire: How To User 1-Wire driver
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
+    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
 
   tone1:
     getting_started: Getting Started

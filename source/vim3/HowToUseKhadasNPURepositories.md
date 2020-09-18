@@ -1,7 +1,7 @@
-title: How To Use Khadas NPU Repositories
+title: How To Use Pre-Built NPU Demo
 ---
 
-# aml_npu_demo_binaries Repository
+# Pre-Build NPU demo Repository
 
 `aml_npu_demo_binaries repository` are executable files repositories, this repository are used to run NPU demo on **khadas VIM3/VIM3L**
 
@@ -28,7 +28,7 @@ title: How To Use Khadas NPU Repositories
 
 ```shell
 $ cd ${workspace}
-$ git cloe https://gitlab.com/khadas/aml_npu_demo_binaries
+$ git clone https://gitlab.com/khadas/aml_npu_demo_binaries
 ```
 
 ### Use `detect_demo` or `detect_demo_khadas` or `detect_demo_picture`
