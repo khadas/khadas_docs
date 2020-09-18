@@ -152,6 +152,7 @@ vim3:
     how_to_train_yolo: HowToTrainYolo.html
     how_to_transform_yolo: HowToTransformYolo.html
     how_to_train_inception: HowToTrainInception.html
+    how_to_update_OTA_to_the_latest_version: HowToUpdateOTAToTheLatestVersion.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     uboot_usage: UBootUsage.html

@@ -188,6 +188,7 @@ sidebar:
     how_to_train_yolo: 如何训练自己的yolo模型
     how_to_transform_yolo: 如何转换yolo模型
     how_to_train_inception: 如何训练自己的Inception模型
+    how_to_update_OTA_to_the_latest_version: 如何将OTA升级到最新版本
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     uboot_usage: U-boot使用说明

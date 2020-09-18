@@ -190,6 +190,7 @@ sidebar:
     how_to_train_yolo: How To Train Yolo Model
     how_to_transform_yolo: How To Transform Yolo Model
     how_to_train_inception: How To Train Inception Model
+    how_to_update_OTA_to_the_latest_version: How To Update OTA To The Latest Version
     uboot: U-Boot
     install_toolchains: Install Toolchains
     boot_from_spi_flash: Boot From SPI-Flash
