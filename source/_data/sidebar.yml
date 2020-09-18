@@ -117,6 +117,7 @@ vim2:
     how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
     how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
+    how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
 
@@ -192,6 +193,7 @@ vim3:
     how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
     how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
+    how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
 
 edge:
   getting_started:
@@ -242,6 +244,7 @@ edge:
     how_to_set_auto_login: HowToSetAutoLogin.html
     how_to_use_1-Wire: HowToUse1wire.html
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
+    how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
 
 tone1:
   getting_started:
