@@ -89,7 +89,7 @@ sidebar:
     how_to_use_dtbo: 如何使用Device Tree Overlay
     how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
     how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
-
+    how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
   vim2:
     getting_started: 开始使用
     overview: 概述
