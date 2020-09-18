@@ -16,8 +16,8 @@ $ cd acuity-toolkit-binary-5.0.0/conversion_scripts/
 ### 0_import_model.sh
 
 参数设置
-> 1. `NAME` 设置为yolov3
-> 2. `--net-input` yolov3-voc.cfg文件位置
+> 1. `NAME` 设置为yolovX
+> 2. `--net-input` yolovX-voc.cfg文件位置
 > 3. `--weight-input` weights文件位置
 例如:
 > `NAME=yolov3`
@@ -27,7 +27,7 @@ $ cd acuity-toolkit-binary-5.0.0/conversion_scripts/
 ### 1_quantize_model.sh
 
 参数设置
-> 1. `NAME` 设置为yolov3
+> 1. `NAME` 设置为yolovX
 > 2. `--source-file` 检验文件
 > 3. `--channel-mean-value` 设置成`0 0 0 256`
 > 4. `--quantized-dtype` 设置成`dynamic_fixed_point-8`
@@ -40,7 +40,7 @@ $ cd acuity-toolkit-binary-5.0.0/conversion_scripts/
 ### 2_export_case_code.sh
 
 参数设置
-> 1. `NAME` 设置为yolov3
+> 1. `NAME` 设置为yolovX
 > 2. `--reorder-channel` RGB的颜色通道顺序修改为BGR`2 1 0`
 > 3. `--channel-mean-value` 设置为`0 0 0 256`
 > 4. `--export-dtype` 设置为`quantized`
@@ -93,7 +93,7 @@ $ cd workspace/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/
 
 ```
 ```bash
-$ vim yolov3_process.c
+$ vim yolovX_process.c
 ```
 修改3个位置
 1. `*coco_names[]` 的内容修改为你训练的模型的class，顺序要和你训练时的.names文件一致。
