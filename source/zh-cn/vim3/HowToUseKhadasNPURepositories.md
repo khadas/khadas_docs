@@ -28,7 +28,7 @@ title: 如何使用Khadas NPU预编译demo
 
 ```shell
 $ cd ${workspace}
-$ git cloe https://gitlab.com/khadas/aml_npu_demo_binaries
+$ git clone https://gitlab.com/khadas/aml_npu_demo_binaries
 ```
 
 ### 使用`detect_demo`或`detect_demo_khadas`或`detect_demo_picture`
