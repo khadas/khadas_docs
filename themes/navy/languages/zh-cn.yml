@@ -65,6 +65,7 @@ sidebar:
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: 如何使用ADB
     linux: Linux
+    how_to_update_OTA_to_the_latest_version: 如何将OTA升级到最新版本
     fenix_script: 编译Ubuntu/Debian固件
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
@@ -126,6 +127,7 @@ sidebar:
     howto_use_wol: 如何使用WOL
     force_reset_features: 远程强制复位
     linux: Linux
+    how_to_update_OTA_to_the_latest_version: 如何将OTA升级到最新版本
     fenix_script: 编译Ubuntu/Debian固件
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
@@ -204,6 +206,7 @@ sidebar:
     how_to_use_adb_tool: 如何使用ADB
     howto_use_wol: 如何使用WOL
     linux: Linux
+    how_to_update_OTA_to_the_latest_version: 如何将OTA升级到最新版本
     fenix_script: 编译Ubuntu/Debian固件
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗

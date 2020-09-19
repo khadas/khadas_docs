@@ -31,6 +31,7 @@ vim1:
     package_update_image: FastPackageUpdateImage.html
     how_to_use_adb_tool: HowToUseADBTool.html
   linux:
+    how_to_update_OTA_to_the_latest_version: HowToUpdateOTAToTheLatestVersion.html
     fenix_script: FenixScript.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
@@ -93,6 +94,7 @@ vim2:
     howto_use_wol: HowtoUseWol.html
     force_reset_features: ForceResetFeatures.html 
   linux:
+    how_to_update_OTA_to_the_latest_version: HowToUpdateOTAToTheLatestVersion.html
     fenix_script: FenixScript.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
@@ -168,6 +170,7 @@ vim3:
     how_to_use_adb_tool: HowToUseADBTool.html
     howto_use_wol: HowtoUseWol.html
   linux:
+    how_to_update_OTA_to_the_latest_version: HowToUpdateOTAToTheLatestVersion.html
     fenix_script: FenixScript.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html

@@ -66,6 +66,7 @@ sidebar:
     package_update_image: Fast Package Update Image
     how_to_use_adb_tool: How To Use ADB Tool
     linux: Linux
+    how_to_update_OTA_to_the_latest_version: How To Update OTA To The Latest Version
     fenix_script: Build Ubuntu/Debian Image
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
@@ -128,6 +129,7 @@ sidebar:
     howto_use_wol: How To Use WOL
     force_reset_features: Force Reset Remotely
     linux: Linux
+    how_to_update_OTA_to_the_latest_version: How To Update OTA To The Latest Version
     fenix_script: Build Ubuntu/Debian Images
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
@@ -206,6 +208,7 @@ sidebar:
     how_to_use_adb_tool: How To Use ADB Tool
     howto_use_wol: How To Use WOL
     linux: Linux
+    how_to_update_OTA_to_the_latest_version: How To Update OTA To The Latest Version
     fenix_script: Build Ubuntu/Debian Image
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
