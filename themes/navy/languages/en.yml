@@ -70,7 +70,6 @@ sidebar:
     how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_wiringpi-python: How To Use WiringPi-Python
@@ -132,7 +131,6 @@ sidebar:
     how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_wiringpi-python: How To Use WiringPi-Python
@@ -210,7 +208,6 @@ sidebar:
     how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_wiringpi-python: How To Use WiringPi-Python
@@ -275,7 +272,6 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Images
     how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     build_packages_in_docker: Build Packages In Docker
     how_to_use_wiringpi: How To Use WiringPi

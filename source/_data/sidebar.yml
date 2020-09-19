@@ -35,7 +35,6 @@ vim1:
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
-    install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
@@ -97,7 +96,6 @@ vim2:
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
-    install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
@@ -172,7 +170,6 @@ vim3:
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
-    install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
@@ -231,7 +228,6 @@ edge:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
-    install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     build_packages_in_docker: BuildPackagesInDocker.html
     how_to_use_wiringpi: HowToUseWiringPi.html

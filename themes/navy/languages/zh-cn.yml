@@ -69,7 +69,6 @@ sidebar:
     how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
@@ -131,7 +130,6 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
     fuchsia: Fuchsia
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
@@ -208,7 +206,6 @@ sidebar:
     how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
@@ -273,7 +270,6 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
     how_to_use_wiringpi: 如何使用WiringPi
