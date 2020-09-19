@@ -125,5 +125,6 @@ title: Khadas VIM3 Firmware Resources
 * [VIM3L_Pie_V191130](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V191130.7z)
 * [VIM3L_Pie_V200103](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V200103.7z)
 * [VIM3L_Pie_V200320](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V200320.7z)
-* [VIM3L_Pie_V200624](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V200624.7z)(Latest release)
+* [VIM3L_Pie_V200624](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V200624.7z)
+* [VIM3L_Pie_V200918](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V200918.7z)(Latest release)
 
