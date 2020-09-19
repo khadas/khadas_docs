@@ -31,13 +31,12 @@ vim1:
     package_update_image: FastPackageUpdateImage.html
     how_to_use_adb_tool: HowToUseADBTool.html
   linux:
-    how_to_update_OTA_to_the_latest_version: HowToUpdateOTAToTheLatestVersion.html
     fenix_script: FenixScript.html
+    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
-    setup_golang: SetupGolang.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
@@ -94,13 +93,12 @@ vim2:
     howto_use_wol: HowtoUseWol.html
     force_reset_features: ForceResetFeatures.html 
   linux:
-    how_to_update_OTA_to_the_latest_version: HowToUpdateOTAToTheLatestVersion.html
     fenix_script: FenixScript.html
+    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
-    setup_golang: SetupGolang.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
@@ -170,13 +168,12 @@ vim3:
     how_to_use_adb_tool: HowToUseADBTool.html
     howto_use_wol: HowtoUseWol.html
   linux:
-    how_to_update_OTA_to_the_latest_version: HowToUpdateOTAToTheLatestVersion.html
     fenix_script: FenixScript.html
+    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
-    setup_golang: SetupGolang.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
@@ -232,11 +229,11 @@ edge:
     instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
   linux:
     fenix_script: FenixScript.html
+    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
     krescue: Krescue.html
     install_tensorflow: InstallTensorFlow.html
     install_docker: InstallDocker.html
     build_packages_in_docker: BuildPackagesInDocker.html
-    setup_golang: SetupGolang.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_rpigpio: HowToUseRPiGPIO.html
     how_to_upgrade_the_logo: HowToUpgradeTheLogo.html

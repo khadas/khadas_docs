@@ -1,1 +1,0 @@
-../vim1/SetupGolang.md
