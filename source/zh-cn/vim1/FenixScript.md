@@ -193,6 +193,40 @@ khadas@919cab43f66d:~/fenix$ make
 $ docker start fenix
 $ docker exec -ti fenix bash
 ```
+### 编译uboot image
+设置Fenix编译环境后编译uboot image
+```sh
+$ source env/setenv.sh
+$ make uboot-image
+```
+
+### 帮助信息更新
+通过执行`make info`来更新信息:
+```sh
+$ make info
+Version: 0.9.4
+Current environment:
+===========================================
+
+#KHADAS_BOARD=VIM1
+#VENDOR=Amlogic
+#CHIP=S905X
+#LINUX=4.9
+#UBOOT=2015.01
+#DISTRIBUTION=Ubuntu
+#DISTRIB_RELEASE=bionic
+#DISTRIB_TYPE=server
+#DISTRIB_ARCH=arm64
+#INSTALL_TYPE=EMMC
+
+===========================================
+```
+
+### 获取最新的nightly build固件
+- 访问[Fenix](https://github.com/khadas/fenix)脚本
+- 点击下面的badge,如:Rlease Build,Build Ubuntu,Test Build Debian
+![image](/images/vim1/FenixScript.png)
+- 点击最新的workflow就可以看到固件下载页面了
 
 ### 参考
 [Docker](https://www.docker.com/)

@@ -194,6 +194,40 @@ To restart the Docker container a second time.
 $ docker start fenix
 $ docker exec -ti fenix bash
 ```
+### Build Uboot Image
+Setup the build environment first and then build uboot image
+```
+$ source env/setenv.sh
+$ make uboot-image
+```
+
+### Help Messages Update
+You can update messages by excuting `make info`:
+```
+$ make info
+Version: 0.9.4
+Current environment:
+===========================================
+
+#KHADAS_BOARD=VIM1
+#VENDOR=Amlogic
+#CHIP=S905X
+#LINUX=4.9
+#UBOOT=2015.01
+#DISTRIBUTION=Ubuntu
+#DISTRIB_RELEASE=bionic
+#DISTRIB_TYPE=server
+#DISTRIB_ARCH=arm64
+#INSTALL_TYPE=EMMC
+
+===========================================
+```
+
+### Get The Latest Night Build Image
+- Visit [Fenix](https://github.com/khadas/fenix)(one-stop script)
+- Click on the badge like Release Build,Test Build Ubuntu,Test Build Debian
+![image](/images/vim1/FenixScript.png)
+- You can see the firmware page when you click on the latest workflow
 
 ### See Also
 [Docker](https://www.docker.com/)
