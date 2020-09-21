@@ -65,13 +65,11 @@ sidebar:
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: 如何使用ADB
     linux: Linux
-    how_to_update_OTA_to_the_latest_version: 如何将OTA升级到最新版本
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -127,14 +125,12 @@ sidebar:
     howto_use_wol: 如何使用WOL
     force_reset_features: 远程强制复位
     linux: Linux
-    how_to_update_OTA_to_the_latest_version: 如何将OTA升级到最新版本
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
     fuchsia: Fuchsia
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -206,13 +202,11 @@ sidebar:
     how_to_use_adb_tool: 如何使用ADB
     howto_use_wol: 如何使用WOL
     linux: Linux
-    how_to_update_OTA_to_the_latest_version: 如何将OTA升级到最新版本
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -274,11 +268,10 @@ sidebar:
     instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_rpigpio: 如何使用RPi.GPIO
     how_to_upgrade_the_logo: 如何更新logo
