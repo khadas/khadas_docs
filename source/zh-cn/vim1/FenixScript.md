@@ -201,7 +201,7 @@ $ make uboot-image
 ```
 
 ### 帮助信息更新
-通过执行`make info`来更新信息:
+通过执行`make info`来显示当前环境:
 ```sh
 $ make info
 Version: 0.9.4
@@ -224,7 +224,7 @@ Current environment:
 
 ### 获取最新的nightly build固件
 - 访问[Fenix](https://github.com/khadas/fenix)脚本
-- 点击下面的badge,如:Rlease Build,Build Ubuntu,Test Build Debian
+- 点击下面的badge,如:Rlease Build,Test Build Ubuntu,Test Build Debian
 ![image](/images/vim1/FenixScript.png)
 - 点击最新的workflow就可以看到固件下载页面了
 
