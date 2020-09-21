@@ -71,6 +71,10 @@ $ make board-deb
 ```
 $ make debs
 ```
+### Build Uboot Image
+```
+$ make uboot-image
+```
 
 ### Get Help Messages
 You can get help messags by executing `make help`:
@@ -81,6 +85,7 @@ Fenix scripts help messages:
   kernel        - Build linux kernel.
   uboot         - Build u-boot.
   uboot-deb     - Build u-boot debian package.
+  uboot-image   - Build minimal image only with u-boot.
   kernel-deb    - Build linux debian package.
   board-deb     - Build board debian package.
   common-deb    - Build common debian package.
@@ -193,12 +198,6 @@ To restart the Docker container a second time.
 ```bash
 $ docker start fenix
 $ docker exec -ti fenix bash
-```
-### Build Uboot Image
-Setup the build environment first and then build uboot image
-```
-$ source env/setenv.sh
-$ make uboot-image
 ```
 
 ### Help Messages Update

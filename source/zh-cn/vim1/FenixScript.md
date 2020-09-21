@@ -69,6 +69,11 @@ $ make board-deb
 $ make debs
 ```
 
+### 编译uboot image
+```
+$ make uboot-image
+```
+
 ### 获取帮助信息
 通过执行`make help`来获取帮助信息。
 ```sh
@@ -78,6 +83,7 @@ Fenix scripts help messages:
   kernel        - Build linux kernel.
   uboot         - Build u-boot.
   uboot-deb     - Build u-boot debian package.
+  uboot-image   - Build minimal image only with u-boot.
   kernel-deb    - Build linux debian package.
   board-deb     - Build board debian package.
   common-deb    - Build common debian package.
@@ -192,12 +198,6 @@ khadas@919cab43f66d:~/fenix$ make
 ```
 $ docker start fenix
 $ docker exec -ti fenix bash
-```
-### 编译uboot image
-设置Fenix编译环境后编译uboot image
-```sh
-$ source env/setenv.sh
-$ make uboot-image
 ```
 
 ### 帮助信息更新
