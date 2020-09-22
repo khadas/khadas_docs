@@ -95,7 +95,7 @@ Done!
 
 *Note: Root privilege required.*
 
-** Upgrading: **
+**Upgrading:**
 
 * Download the firmware files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them to somewhere like your `Home` folder.
 
