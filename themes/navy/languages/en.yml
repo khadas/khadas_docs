@@ -66,13 +66,11 @@ sidebar:
     package_update_image: Fast Package Update Image
     how_to_use_adb_tool: How To Use ADB Tool
     linux: Linux
-    how_to_update_OTA_to_the_latest_version: How To Update OTA To The Latest Version
     fenix_script: Build Ubuntu/Debian Image
+    how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
-    setup_golang: Setup Golang
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_wiringpi-python: How To Use WiringPi-Python
     how_to_use_rpigpio: How To Use RPi.GPIO
@@ -129,13 +127,11 @@ sidebar:
     howto_use_wol: How To Use WOL
     force_reset_features: Force Reset Remotely
     linux: Linux
-    how_to_update_OTA_to_the_latest_version: How To Update OTA To The Latest Version
     fenix_script: Build Ubuntu/Debian Images
+    how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
-    setup_golang: Setup Golang
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_wiringpi-python: How To Use WiringPi-Python
     how_to_use_rpigpio: How To Use RPi.GPIO
@@ -209,13 +205,11 @@ sidebar:
     howto_use_wol: How To Use WOL
     how_to_use_fastboot_on_VIM3: How To Use Fastboot On VIM3
     linux: Linux
-    how_to_update_OTA_to_the_latest_version: How To Update OTA To The Latest Version
     fenix_script: Build Ubuntu/Debian Image
+    how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
-    setup_golang: Setup Golang
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_wiringpi-python: How To Use WiringPi-Python
     how_to_use_rpigpio: How To Use RPi.GPIO
@@ -277,11 +271,10 @@ sidebar:
     instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
+    how_to_upgrade_the_system: How To Upgrade the System
     krescue: Krescue
-    install_tensorflow: Install TensorFlow
     install_docker: Install Docker
     build_packages_in_docker: Build Packages In Docker
-    setup_golang: Setup Golang
     how_to_use_wiringpi: How To Use WiringPi
     how_to_use_rpigpio: How To Use RPi.GPIO
     how_to_upgrade_the_logo: How To Upgrade The Logo
