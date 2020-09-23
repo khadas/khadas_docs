@@ -165,6 +165,7 @@ vim3:
     package_update_image: FastPackageUpdateImage.html
     how_to_use_adb_tool: HowToUseADBTool.html
     howto_use_wol: HowtoUseWol.html
+    how_to_use_fastboot_on_VIM3: HowToUseFastbootOnVIM3.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
