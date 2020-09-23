@@ -203,7 +203,7 @@ sidebar:
     package_update_image: Fast Package Update Image
     how_to_use_adb_tool: How To Use ADB Tool
     howto_use_wol: How To Use WOL
-    how_to_use_fastboot_on_VIM3: How To Use Fastboot On VIM3
+    how_to_use_fastboot: How To Use Fastboot
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: How To Upgrade the System

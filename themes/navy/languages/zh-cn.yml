@@ -201,7 +201,7 @@ sidebar:
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: 如何使用ADB
     howto_use_wol: 如何使用WOL
-    how_to_use_fastboot_on_VIM3: 如何在VIM3上使用Fastboot
+    how_to_use_fastboot: 如何使用Fastboot
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 如何升级系统
