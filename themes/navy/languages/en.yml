@@ -230,6 +230,7 @@ sidebar:
     how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
+    how_to_use_linux_hardware_encoding_library: How To Use Linux Hardware Encoding Library
 
   edge:
     overview: Beginners Guide
