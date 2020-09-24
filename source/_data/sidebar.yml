@@ -192,6 +192,7 @@ vim3:
     how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
     how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
+    how_to_use_linux_hardware_encoding_library: HowToUseLinuxHardwareEncodingLibrary.html
 
 edge:
   getting_started:
