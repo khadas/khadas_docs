@@ -50,7 +50,7 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev
 ```
 After the burning is completed, the image is written to the SD card. At this time, you can enter [upgrade mode] (https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html) to start krecure.
 
-## Use kerscure
+## Use krescue
 
 1. Backup and restore
 With option 3, the firmware of EMMC on the board can be packed and stored in SD card. Option 2 allows you to restore the system in the SD card to the EMMC. SD card can save more than one system.

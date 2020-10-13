@@ -50,7 +50,7 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev
 ```
 等待烧录完成，镜像就被写入了SD卡里，此时就可以进入[升级模式](https://docs.khadas.com/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)启动krescue了。
 
-## 使用kerscure
+## 使用krescue
 
 1. 备份以及还原
 通过选项3，可以将板子上EMMC的固件打包存放到SD卡中。通过选项2可以将SD卡中的系统还原到EMMC上。SD卡可以保存不止一个系统。
