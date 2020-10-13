@@ -1,11 +1,11 @@
 title: Krescue - take full control you khadas device
 ---
 
-## what is krescure
+## what is krescue
 
 Krescue is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a “Swiss Army knife”, and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC.  Krescue can download and install OS images directly from the web via wired Ethernet.
 
-## Install Krescure by mirco SD card
+## Install Krescue by mirco SD card
 
 ### Means of preparation
 1. A mirco SD card.
@@ -13,24 +13,24 @@ Krescue is an extremely small (21mb) operating system that you can boot directly
 3. One of VIM1/2/3 or Edge-V
 4. A PC that can be use to make the startup disk.
 
-### Make Krescure startup disk
+### Make Krescue startup disk
 #### burning tool : Etcher
 [Etcher](https://www.balena.io/etcher/) is an easy-to-use burning tool with good compatibility and simple operation interface. We choose this tool as the burning tool for krecure to SD card.
 
-#### downloads Krescure images
-THe Krescure images can be downloads in [there](https://dl.khadas.com/Firmware/Krescue/dump/),change you board's version.
-![Kerscure_downloads](/images/vim1/Krescure_downloads.png)
+#### downloads Krescue images
+THe Krescue images can be downloads in [there](https://dl.khadas.com/Firmware/Krescue/dump/),change you board's version.
+![Kerscure_downloads](/images/vim1/Krescue_downloads.png)
 
 #### Make the startup disk
 Insert the mircosd card into the PC. Burn the downloaded image into SD card.
-![Make_Krescure](/images/vim1/HowtoUseEtcher.png)
+![Make_Krescue](/images/vim1/HowtoUseEtcher.png)
 
 
 ### Run
 Insert the SD card into the board, connect HDMI and enter the [upgrade mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html),You can see that the following figure shows the successful startup of kerscure.
-![boot Krescure](/images/vim1/krescure_boot.jpg)
+![boot Krescue](/images/vim1/krescue_boot.jpg)
 
-## Install Krescure by Internet
+## Install Krescue by Internet
 
 ### Means of preparation
 1. A mirco SD card.
@@ -44,7 +44,7 @@ Insert the SD card into the board, connect HDMI and enter the [upgrade mode](htt
 $ curl -sfL dl.khadas.com/.mega | sh -s - -l
 ```
 You can see the list with firmware
-![krescure firmware list](/images/vim1/krescure_list.png)
+![krescue firmware list](/images/vim1/krescue_list.png)
 ```
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```
