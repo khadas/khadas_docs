@@ -28,7 +28,7 @@ Krescure的镜像可以从[这里下载](https://dl.khadas.com/Firmware/Krescue/
 
 ### 运行
 将制作好的SD卡插入板子,连接HDMI，进入[升级模式](https://docs.khadas.com/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)，看到下图就是成功启动了kerscure
-![boot Krescure](/images/vim1/krescure_boot.png)
+![boot Krescure](/images/vim1/krescure_boot.jpg)
 
 ## 通过网络使用安装Krescure
 
@@ -53,22 +53,24 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev
 ## 使用kerscure
 
 1. 备份以及还原
-通过选项3，可以将板子上EMMC的固件打包存放到SD卡中。通过选项2可以将SD卡中的系统还原到EMMC上。SD卡可以保存不止一个系统
+通过选项3，可以将板子上EMMC的固件打包存放到SD卡中。通过选项2可以将SD卡中的系统还原到EMMC上。SD卡可以保存不止一个系统。
 
 2. 查看板子信息
-通过选项6，可以查看板子的配置等相关信息
+通过选项2中的 device info，可以查看板子的配置等相关信息。
 
 3. KBI
 通过选项7，可以控制板子的kbi。
 
 4. shell终端
-选中选项a，就会启动shell终端
+选中选项b，就会启动shell终端。
 
 5. 游戏
-选中选项5，可以在镜像备份或者还原时打发时间
+选中选项9，可以在镜像备份或者还原时打发时间。
 
 6. 其他
-其他功能可以通过选项1查看相关的帮助。
+通过选项1，可以进入向导模式；
+选中选项a，可以关机或重启；
+其他功能可以通过选项2中的 readme docs 查看相关的帮助。
 
 ## 注意事项
 

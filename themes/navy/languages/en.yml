@@ -91,6 +91,7 @@ sidebar:
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
+    bluetooth_instructions_with_ubuntu: Bluetooth Instructions With Ubuntu
 
   vim2:
     overview: Beginners Guide
@@ -152,6 +153,7 @@ sidebar:
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
+    bluetooth_instructions_with_ubuntu: Bluetooth Instructions With Ubuntu
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -234,6 +236,7 @@ sidebar:
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
     how_to_use_linux_hardware_encoding_library: How To Use Linux Hardware Encoding Library
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
+    bluetooth_instructions_with_ubuntu: Bluetooth Instructions With Ubuntu
 
   edge:
     overview: Beginners Guide

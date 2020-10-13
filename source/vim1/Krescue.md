@@ -28,7 +28,7 @@ Insert the mircosd card into the PC. Burn the downloaded image into SD card.
 
 ### Run
 Insert the SD card into the board, connect HDMI and enter the [upgrade mode](https://docs.khadas.com/vim3/HowtoBootIntoUpgradeMode.html),You can see that the following figure shows the successful startup of kerscure.
-![boot Krescure](/images/vim1/krescure_boot.png)
+![boot Krescure](/images/vim1/krescure_boot.jpg)
 
 ## Install Krescure by Internet
 
@@ -53,22 +53,24 @@ After the burning is completed, the image is written to the SD card. At this tim
 ## Use kerscure
 
 1. Backup and restore
-With option 3, the firmware of EMMC on the board can be packed and stored in SD card. Option 2 allows you to restore the system in the SD card to the EMMC. SD card can save more than one system
+With option 3, the firmware of EMMC on the board can be packed and stored in SD card. Option 2 allows you to restore the system in the SD card to the EMMC. SD card can save more than one system.
 
 2. View board information
-With option 6, you can view board configuration and other related information
+With the device info in option 2, you can view board configuration and other related information.
 
 3. KBI
-With option 7, the KBI of the board can be controlled
+With option 7, the KBI of the board can be controlled.
 
 4. Shell terminal
-Select option a to start the shell terminal
+Select option b to start the shell terminal.
 
 5. games
-Select option 5 to kill time during mirror backup or restore
+Select option 9 to kill time during mirror backup or restore.
 
 6. others
-Other functions can view the related help through option 1.
+With option 1, you can enter wizard mode;
+Select option a to reboot/poweroff;
+Other functions can view the related help through readme docs in option 1.
 
 
 ## notes
