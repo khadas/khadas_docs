@@ -200,28 +200,6 @@ $ docker start fenix
 $ docker exec -ti fenix bash
 ```
 
-### 帮助信息更新
-通过执行`make info`来显示当前环境:
-```sh
-$ make info
-Version: 0.9.4
-Current environment:
-===========================================
-
-#KHADAS_BOARD=VIM1
-#VENDOR=Amlogic
-#CHIP=S905X
-#LINUX=4.9
-#UBOOT=2015.01
-#DISTRIBUTION=Ubuntu
-#DISTRIB_RELEASE=bionic
-#DISTRIB_TYPE=server
-#DISTRIB_ARCH=arm64
-#INSTALL_TYPE=EMMC
-
-===========================================
-```
-
 ### 获取最新的nightly build固件
 - 访问[Fenix](https://github.com/khadas/fenix)脚本
 - 点击下面的badge,如:Rlease Build,Test Build Ubuntu,Test Build Debian
