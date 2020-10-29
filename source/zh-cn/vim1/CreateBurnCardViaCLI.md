@@ -11,16 +11,37 @@ title: 通过命令行方式创建系统烧录卡
 * 如果TF卡上有多个分区的话，需要通过fdisk格式化TF卡([VIM1](/zh-cn/vim1/CreateBurnCardViaCLI.html)/[VIM2](/zh-cn/vim2/CreateBurnCardViaCLI.html)/[VIM3](/zh-cn/vim3/CreateBurnCardViaCLI.html))。
 
 ### 开始前
-如果TF卡有多个分区
+首先要先删除所有分区
+
 ```
-gouwa@Wesion:~$ ls /dev/sdX*
-/dev/sdX  /dev/sdX1  /dev/sdX2
-gouwa@Wesion:~$ 
+$ sudo fdisk /dev/sdX
 ```
-则要先删除其它分区
+创建一个新的分区：
+
 ```
-fdisk /dev/sdX
+$ sudo fdisk /dev/sdX
 ```
+
+**注意：分区起始一定要设置为4096。**
+
+创建好的分区应该是像这样的:
+
+```
+Command (m for help): p
+
+Disk /dev/sdc: 14.86 GiB, 15931539456 bytes, 31116288 sectors
+Disk model: SD Card Reader
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x2914f327
+
+Device     Boot Start      End  Sectors  Size Id Type
+/dev/sdc1        4096 31116287 31112192 14.9G 83 Linux
+```
+
+起始分区从**4096**开始。
 
 ### 制作TF烧录卡
 **把TF卡接到电脑上，并确保接上去的TF卡处于未挂载状态:**
@@ -41,10 +62,12 @@ $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek
 ```
 *说明：编译出来的U-Boot文件，其中“u-boot.bin.sd.bin”是用于制作 TF卡的，而“u-boot.bin”是用于eMMC启动的。你可以在[这里](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini)找到。*
 
+**注意：aml_sdc_burn.ini 里面package字段需要与你拷贝的固件名字一致！**
+
 **复制系统固件到TF卡上:**
 重新拔插一下TF卡并运行以下命令:
 ```
-$ cp -a aml_sdc_burn.ini Vim_Marshmallow_160928/update.img /media/gouwa/9CE9-3938/
+$ cp -a aml_sdc_burn.ini update.img /media/XXX/9CE9-3938/
 ```
 *说明:"aml_sdc_burn.ini"是u-boot烧录/下载固件到eMMC的配置文件 。*
 

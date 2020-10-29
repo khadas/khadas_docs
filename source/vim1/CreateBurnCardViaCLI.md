@@ -10,17 +10,39 @@ This guide contains step-by-step instructions to create a Burning Card for Linux
 
 
 ### Before You Start
-If your SD-Card has >1 partition.
+
+You may have to delete all the partitions first:
+
 ```sh
-$ ls /dev/sdX*
-/dev/sdX  /dev/sdX1  /dev/sdX2
-$ 
+$ sudo fdisk /dev/sdX
 ```
 
-You may have to delete the other partitions first:
+Then you need to creat only 1 partition:
+
 ```sh
-fdisk /dev/sdX
+$ sudo fdisk /dev/sdX
 ```
+
+**NOTE: First sector must set to 4096.**
+
+The partition will be like this:
+
+```sh
+Command (m for help): p
+
+Disk /dev/sdc: 14.86 GiB, 15931539456 bytes, 31116288 sectors
+Disk model: SD Card Reader
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x2914f327
+
+Device     Boot Start      End  Sectors  Size Id Type
+/dev/sdc1        4096 31116287 31112192 14.9G 83 Linux
+```
+
+The Start should be **4096**.
 
 ### Create the Burning SD-Card
 **Insert the SD-Card into your PC, and make sure the disk is unmounted:**
@@ -30,7 +52,7 @@ $ umount /dev/sdX1
 
 **Format the SD-Card to FAT32:**
 ```sh
-$ sudo mkfs.vfat /dev/sdX1 
+$ sudo mkfs.vfat /dev/sdX1
 ```
 
 *Note: Replace `sdX the correct one on your PC.`*
@@ -45,9 +67,11 @@ $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek
 **Copy the images to your SD-Card:**
 Insert the SD-Card in again, then run the following command:
 ```sh
-$ cp -a aml_sdc_burn.ini Vim_Marshmallow_160928/update.img /media/gouwa/9CE9-3938/
+$ cp -a aml_sdc_burn.ini update.img /media/XXX/9CE9-3938/
 ```
 *Tip: `aml_sdc_burn.ini` is a configuration file for U-Boot to burn/download images into the onboard eMMC storage. You can found it [here](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini)*
+
+**NOTE: The package in aml_sdc_burn.ini should match your image!**
 
 **Eject the SD-Card:**
 ```sh
