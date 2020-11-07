@@ -9,33 +9,21 @@ Uart pin in 40 pins header is pin15 and pin16
 * [VIM2-GPIO-Pin-Out](/vim2/#GPIO-Pinout)
 * [VIM3-GPIO-Pin-Out](/vim3/#GPIO-Pinout)
 
-# Confirm whether the serial port is configured
+# Open uart node
 
-Use `fdtget` command to open uart int dtb
-
-* VIM1
-
-VIM1 has open uart in default
-
-* VIM2
+openg uart node via device tree overlays.
 
 ```shell
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim2_linux.dtb /serial@c81004e0 status
-disable
-khadas@Khadas:~$ sudo fdtput -t s /boot/dtb/kvim2_linux.dtb /serial@c81004e0 status "okay"
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim2_linux.dtb /serial@c81004e0 status
-okay
+$ vim /boot/env.txt
 ```
 
-* VIM3
+Make sure UART is in the overlays list (default is enable).
 
 ```shell
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim3_linux.dtb /serial@ffd22000 status
-disable
-khadas@Khadas:~$ sudo fdtput -t s /boot/dtb/kvim3_linux.dtb /serial@ffd22000 status "okay"
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim3_linux.dtb /serial@ffd22000 status
-okay
+overlays=uart4 pwm_ao_a pwm_f i2c0
 ```
+
+**note: VIM1/VIM2是uar4,VIM3/VIM3L是uart3**
 
 # Setting serial tool in PC
 
