@@ -3,46 +3,19 @@ title: 如何使用单总线
 
 以VIM1为例,VIM2请将dtb替换为`kvim2_linux.dtb`,VIM3请将dtb替换为`kvim3_linux.dtb`
 
-
-# 连接单总线设备
-
-这里以`ds18b20`模块为例.将设备连接到物理引脚`Pin15`上.
-
-# 打开dtb节点
-
-* 切换root用户
+# 通过Overlays打开onewire驱动
 
 ```shell
-khadas@Khadas:~$ su
-Password:
-root@Khadas:/home/khadas#
+$ vim /boot/env.txt
 ```
 
-
-* 确认节点状态
+将onewire添加进配置文件
 
 ```shell
-root@Khadas:/home/khadas# fdtget /boot/dtb/kvim1_linux.dtb /onewire status
-disable
+overlays=uart4 pwm_ao_a pwm_f i2c0 --> overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 ```
 
-* 打开节点
-
-```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/kvim1_linux.dtb /onewire status "okay"
-root@Khadas:/home/khadas# fdtget /boot/dtb/kvim1_linux.dtb /onewire status
-okay
-```
-
-不使用时,使用这个命令关闭节点
-
-```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/kvim1_linux.dtb /onewire status "disable"
-```
-
-* 重启
-
-重启设备,加载单总线驱动.
+关于overlays的详细说明可以参考[如何使用device tree overlays](/zh-cn/vim1/HowToUseDeviceTreeOverlay.html)
 
 # 使用单总线
 

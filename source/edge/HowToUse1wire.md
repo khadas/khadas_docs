@@ -3,46 +3,20 @@ title: How To Use 1-Wire
 
 Take Edge-V as an example, Caption please replace dtb with `rk3399-khadas-captain-linux.dtb`. Edge not support this driver.
 
-
 # Connect 1-Wire module
 
-Take the `ds18b20` module as an example. Connect the device to the physical pin `Pin15`.
+```shell
+$ vim /boot/env.txt
+```
 
-# Open 1-Wire dtb node 
-
-* Switch to root user
+Add onewire to configuration file (default is enable)
 
 ```shell
-khadas@Khadas:~$ su
-Password:
-root@Khadas:/home/khadas#
+overlays=i2c2 spi3 i2s0 onewire
 ```
 
+For details on overlays, please refer to [how to use device tree overlays](/edge/HowToUseDeviceTreeOverlay.html)
 
-* Check node status
-
-``shell
-root@Khadas:/home/khadas# fdtget /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status
-disable
-```
-
-* Enable node
-
-```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status "okay"
-root@Khadas:/home/khadas# fdtget /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status
-okay
-```
-
-use this command can disable it 
-
-```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status "disable"
-```
-
-* reboot
-
-Restart the device and load the 1-Wire driver.
 
 # How TO Use 
 
