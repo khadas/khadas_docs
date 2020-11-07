@@ -1,99 +1,110 @@
-title: Boot From SPI Flash
+title: 从SPI启动系统
 ---
 
-Khadas VIM3/VIM3L contains a 16 MB SPI-Flash that's used as boot storage; so you can boot from it. This guide is about how to boot from the on-board SPI-Flash.
+Khadas VIM3以及VIM3L板载了 一块存储空间为16MB的SPI-falsh芯片,可用于从SPI启动系统,这篇文档将说明如何从SPI启动.
 
-### Build U-boot For SPI-Flash
-The U-Boot for SPI-Flash is the same as eMMC U-Boot. We recommend using [Fenix Script](https://github.com/khadas/fenix) to build U-Boot, as it's easy this way.
+### 编译可用于SPI启动的Uboot
 
-**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](/zh-cn/vim3/FenixScript.html).**
+从SPI启动的Uboot和从EMMC启动的Uboot,编译方法是一样的,通过[fenix](https://github.com/khadas/fenix)就可以轻松的编译出用于SPI启动的脚本.
 
-* Setup Environment:
+**这意味着你要有一个可以用于编译的fenix的环境.如果没有,请参照 [fenix使用说明](/zh-cn/vim3/FenixScript.html) 搭建编译的环境**
 
-```
+* 选择编译的环境
+
+```shell
 $ cd fenix
 $ source env/setenv.sh
 ```
-Select `VIM3` or `VIM3L` board(This is according to your board).
 
-* Build U-boot
+如果你的板子是VIM3,请选择VIM3选项,是VIM3L,请选择VIM3L
 
-```
+* 编译uboot
+
+```shell
 $ make uboot
 ```
-If successful, you will get a U-Boot for the SPI-Flash `u-boot.bin`, in the directory `fenix/u-boot/build`.
 
-### Burn U-boot To SPI Flash
-Copy `u-boot.bin` to an SD-Card or Thumbdrive (U-Disk) and insert it into your board or load it via TFTP.
+如果编译成功了,你将会在`fenix/u-boot/build`下找到一个可以烧录进SPI的Uboot固件`uboot.bin`.
 
-[Setup serial debugging tool](/vim3/SetupSerialTool.html) and boot to the U-Boot Command Line.
+### 烧录uboot进SPI Flash
 
-#### Load U-boot to DDR
+将上一步编译得到的uboot放进SD卡,u盘,或者通过TFTP直接加载进内存中.
 
-* Load U-Boot from SD-Card:
+[设置串口工具](/vim3/SetupSerialTool.html) 并且进入Uboot命令行
 
-```
+#### 加载固件到DDR中
+
+* 从SD卡加载的方式:
+
+```shell
 kvim3#load mmc 0 1080000 u-boot.bin
 ```
-* Load U-Boot from Thumbdrive (U-Disk):
 
-```
+* 从U盘加载的方式:
+
+```shell
 kvim3#usb start
 kvim3#load usb 0 1080000 u-boot.bin
 ```
 
-* Load U-boot via TFTP
+* 通过TFTP的方式:
 
 Please refer [here](/vim3/SetupTFTPServer.html) about how to setup the TFTP.
+设置TFTP的方法在[如何设TFTP服务器](/zh-cn/vim3/SetupTFTPServer.html)的文档里有详细的说明.
 
-```
+
+```shell
 kvim3#tftp 1080000 u-boot.bin
 ```
 
-#### Burning
+#### 烧录
 
-```
+```shell
 kvim3#sf probe
 kvim3#sf erase 0 +$filesize
 kvim3#sf write 1080000 0 $filesize
 ```
-*Tip: This will take a few seconds, please be patient.*
 
-### Setup bootmode to SPI
-If you want to boot from SPI Flash, you have to setup the bootmode to SPI. The default bootmode is boot from eMMC.
+*说明: 这一步需要一些时间,请耐心的等待*
 
-* Check current bootmode:
+### 修改启动方式为SPI
 
-```
+如果你想要从SPI启动系统,首先需要将启动方式设置为SPI.默认的启动方式是从eMMC启动的
+
+* 确认当前的启动方式:
+
+```shell
 kvim3#kbi bootmode r
 bootmode: emmc
 ```
-Current bootmode is boot from eMMC.
 
-* Setup bootmode to SPI:
+当前启动方式为eMMC
 
-```
+* 设置为SPI启动:
+
+```shell
 kvim3#kbi bootmode w spi
 ```
 
-Poweroff the system to make it available:
-```
+关机已使新设置的启动方式的参数生效:
+
+```shell
 kvim3#kbi poweroff
 ```
 
-Press the `POWER` key to bootup, you will boot from the SPI-Flash.
+此时,再次按下power按键,就会从SPI启动了
 
-### Erase the SPI Flash to prevent boot from it
-```
+### 不再需要从SPI启动时清除SPI
+
+```shell
 kvim3#sf probe
 kvim3#sf erase 0 1000
 kvim3#reset
 ```
 
-### Troubleshooting
-1. Bootmode is boot from SPI, but the u-boot in SPI flash is corrupted, can't enter u-boot command line.
-	1) If u-boot in eMMC is correct, you can try [TST mode](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) or try [SPI MASKROM]() to boot from eMMC, then enter u-boot command line, erase the SPI flash or burn the new u-boot to SPI flash.
-	**Note: Don't use your PC to supply the power, or you will enter usb burning mode!**
-
-	2) U-boot in eMMC is also corrupted, you have to try [TST mode](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) to enter usb burning mode, and flash the image to emmc, then follow `step 1)`.
-	**Note: You need to connect the board to your host PC!**
+### 故障排查
+1. 如果启动方式已经设置为从SPI启动,同时SPI的uboot损坏了是无法进入uboot的命令行的
+	1) 如果uboot损坏了,你可以尝试使用[TST模式](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)从emmc启动,然后进入命令行,清除你的SPI或者从新烧录uboot进SPI
+	**注意:此时不能使用PC的USB口给板子供电,会直接进入升级模式,而不是从EMMC启动**
+	2) 如果EMMC的Uboot损坏了,你可以尝试使用[TST模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)进入升级模式,烧录一个固件到EMMC上,再重复步骤1.
+	**注意: 此时板子需要通过type-C的线连接到PC**
