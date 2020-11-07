@@ -69,6 +69,11 @@ $ make board-deb
 $ make debs
 ```
 
+### 编译uboot image
+```
+$ make uboot-image
+```
+
 ### 获取帮助信息
 通过执行`make help`来获取帮助信息。
 ```sh
@@ -78,6 +83,7 @@ Fenix scripts help messages:
   kernel        - Build linux kernel.
   uboot         - Build u-boot.
   uboot-deb     - Build u-boot debian package.
+  uboot-image   - Build minimal image only with u-boot.
   kernel-deb    - Build linux debian package.
   board-deb     - Build board debian package.
   common-deb    - Build common debian package.
@@ -193,6 +199,12 @@ khadas@919cab43f66d:~/fenix$ make
 $ docker start fenix
 $ docker exec -ti fenix bash
 ```
+
+### 获取最新的nightly build固件
+- 访问[Fenix](https://github.com/khadas/fenix)脚本
+- 点击下面的badge,如:Rlease Build,Test Build Ubuntu,Test Build Debian
+![image](/images/vim1/FenixScript.png)
+- 点击最新的workflow就可以看到固件下载页面了
 
 ### 参考
 [Docker](https://www.docker.com/)

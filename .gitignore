@@ -7,3 +7,4 @@ public/
 .deploy*/
 package-lock.json
 *.patch
+*.swp

@@ -71,6 +71,10 @@ $ make board-deb
 ```
 $ make debs
 ```
+### Build Uboot Image
+```
+$ make uboot-image
+```
 
 ### Get Help Messages
 You can get help messags by executing `make help`:
@@ -81,6 +85,7 @@ Fenix scripts help messages:
   kernel        - Build linux kernel.
   uboot         - Build u-boot.
   uboot-deb     - Build u-boot debian package.
+  uboot-image   - Build minimal image only with u-boot.
   kernel-deb    - Build linux debian package.
   board-deb     - Build board debian package.
   common-deb    - Build common debian package.
@@ -194,6 +199,12 @@ To restart the Docker container a second time.
 $ docker start fenix
 $ docker exec -ti fenix bash
 ```
+
+### Get The Latest Night Build Image
+- Visit [Fenix](https://github.com/khadas/fenix)(one-stop script)
+- Click on the badge like Release Build,Test Build Ubuntu,Test Build Debian
+![image](/images/vim1/FenixScript.png)
+- You can see the firmware page when you click on the latest workflow
 
 ### See Also
 [Docker](https://www.docker.com/)

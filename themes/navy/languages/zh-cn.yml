@@ -66,11 +66,10 @@ sidebar:
     how_to_use_adb_tool: 如何使用ADB
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -90,6 +89,7 @@ sidebar:
     how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
     how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
     how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
+    how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
   vim2:
     getting_started: 开始使用
     overview: 概述
@@ -127,12 +127,11 @@ sidebar:
     force_reset_features: 远程强制复位
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
     fuchsia: Fuchsia
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -152,6 +151,7 @@ sidebar:
     how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
     how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
     how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
+    how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -203,13 +203,13 @@ sidebar:
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: 如何使用ADB
     howto_use_wol: 如何使用WOL
+    how_to_use_fastboot: 如何使用Fastboot
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
     how_to_setup_watchdog: 如何设置看门狗
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_wiringpi-python: 如何使用wiringPi-Python
     how_to_use_rpigpio: 如何使用RPi.GPIO
@@ -230,6 +230,8 @@ sidebar:
     how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
     how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
     how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
+    how_to_use_linux_hardware_encoding_library: 如何使用Linux硬件编码库
+    how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
 
   edge:
     getting_started: 开始使用
@@ -271,11 +273,10 @@ sidebar:
     instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
+    how_to_upgrade_the_system: 如何升级系统
     krescue: Krescue
-    install_tensorflow: 安装TensorFlow
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
-    setup_golang: 搭建GO语言环境
     how_to_use_wiringpi: 如何使用WiringPi
     how_to_use_rpigpio: 如何使用RPi.GPIO
     how_to_upgrade_the_logo: 如何更新logo
