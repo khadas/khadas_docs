@@ -23,7 +23,7 @@ Refer this[CUDA and cudnn installation](https://www.tensorflow.org/install/gpu)
 
 ## Install darknet
 
-### Download darnket
+### Download darknet
 ```bash
 $ mkdir ~/git
 $ cd ~/git
