@@ -6,7 +6,7 @@ title: 如何更新内核
 * 设置Fenix环境
 
 ```
-$ source source env/setenv.sh
+$ source env/setenv.sh
 ```
 
 * 编译内核debian包

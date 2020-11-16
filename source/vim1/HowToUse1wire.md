@@ -5,43 +5,17 @@ Take VIM1 as an example, VIM2 please replace dtb with `kvim2_linux.dtb`, and VIM
 
 # Connect 1-Wire module
 
-Take the `ds18b20` module as an example. Connect the device to the physical pin `Pin15`.
-
-# Open 1-Wire dtb node 
-
-* Switch to root user
-
 ```shell
-khadas@Khadas:~$ su
-Password:
-root@Khadas:/home/khadas#
+$ vim /boot/env.txt
 ```
 
-
-* Check node status
-
-```shell
-root@Khadas:/home/khadas# fdtget /boot/dtb/kvim1_linux.dtb /onewire status
-disable
-```
-
-* Enable node
+Add onewire to configuration file
 
 ```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/kvim1_linux.dtb /onewire status "okay"
-root@Khadas:/home/khadas# fdtget /boot/dtb/kvim1_linux.dtb /onewire status
-okay
+overlays=uart4 pwm_ao_a pwm_f i2c0 --> overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 ```
 
-use this command can disable it 
-
-```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/kvim1_linux.dtb /onewire status "disable"
-```
-
-* reboot
-
-Restart the device and load the 1-Wire driver.
+For details on overlays, please refer to [how to use device tree overlays](/vim1/HowToUseDeviceTreeOverlay.html)
 
 # How TO Use 
 

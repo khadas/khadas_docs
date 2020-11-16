@@ -3,40 +3,22 @@ title: 如何使用单总线
 
 以Edge-V为例,Captian请将dtb替换为`rk3399-khadas-captain-linux.dtb`.Edge不支持这个驱动
 
-# 连接单总线设备
-
-这里以`ds18b20`模块为例.将设备连接到物理引脚`Pin15`上.
-
-# 打开dtb节点
-
-* 切换root用户
+# 通过Overlays打开onewire驱动
 
 ```shell
-khadas@Khadas:~$ su
-Password:
-root@Khadas:/home/khadas#
+$ vim /boot/env.txt
 ```
 
-
-* 确认节点状态
-
-``shell
-root@Khadas:/home/khadas# fdtget /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status
-disable
-```
-
-* 打开节点
+将onewire添加进配置文件 (默认就是驱动状态)
 
 ```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status "okay"
-root@Khadas:/home/khadas# fdtget /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status
-okay
+overlays=i2c2 spi3 i2s0 onewire
 ```
 
-不使用时使用这个命令关闭节点
+关于overlays的详细说明可以参考[如何使用device tree overlays](/zh-cn/edge/HowToUseDeviceTreeOverlay.html)
 
-```shell
-root@Khadas:/home/khadas# fdtput -t s /boot/dtb/rk3399-khadas-edgev-linux.dtb /onewire status "disable"
+
+
 ```
 
 * 重启

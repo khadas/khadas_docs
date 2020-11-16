@@ -8,7 +8,7 @@ title: 如何更新u-boot
 * 设置Fenix环境
 
 ```
-$ source source env/setenv.sh
+$ source env/setenv.sh
 ```
 
 * 编译u-boot debian包

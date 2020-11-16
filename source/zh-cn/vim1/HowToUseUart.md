@@ -9,33 +9,22 @@ uart_c引出到40Pin的引脚是15脚以及16脚
 * [VIM2-GPIO-Pin-Out](/vim2/#GPIO-Pinout)
 * [VIM3-GPIO-Pin-Out](/vim3/#GPIO-Pinout)
 
-# 确认串口是否配置
 
-使用`fdtget`命令打开uart_c的dtb配置
+# 打开串口
 
-* VIM1
-
-VIM1的串口默认已经打开
-
-* VIM2
+通过Overlays打开uart的节点
 
 ```shell
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim2_linux.dtb /serial@c81004e0 status
-disable
-khadas@Khadas:~$ sudo fdtput -t s /boot/dtb/kvim2_linux.dtb /serial@c81004e0 status "okay"
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim2_linux.dtb /serial@c81004e0 status
-okay
+$ vim /boot/env.txt
 ```
 
-* VIM3
+确保uart已经在overlays的列表中(默认已经打开)
 
 ```shell
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim3_linux.dtb /serial@ffd22000 status
-disable
-khadas@Khadas:~$ sudo fdtput -t s /boot/dtb/kvim3_linux.dtb /serial@ffd22000 status "okay"
-khadas@Khadas:~$ sudo fdtget /boot/dtb/kvim3_linux.dtb /serial@ffd22000 status
-okay
+overlays=uart4 pwm_ao_a pwm_f i2c0
 ```
+
+**注意: VIM1/VIM2是uar4,VIM3/VIM3L是uart3**
 
 # PC设置串口工具
 
