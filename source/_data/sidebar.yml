@@ -138,6 +138,7 @@ vim3:
     connect_lcd: ConnectLcd.html
     HowToUseMPICamera: HowToUseMIPICamera.html
     how_to_use_lte_module: HowToUseLTEModule.html
+    how_to_enable_M2X_ETH_through_overlays: HowToEnableM2XETHThroughOverlays.html
   development:
     create_burning_card_via_cli: CreateBurnCardViaCLI.html
     create_booting_card: CreateBootableSDCard.html

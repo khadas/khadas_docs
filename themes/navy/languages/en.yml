@@ -176,6 +176,7 @@ sidebar:
     connect_lcd: Connect to TS050 Touchscreen
     HowToUseMPICamera: How To Use MIPI Camera
     how_to_use_lte_module: How To Use LTE Module
+    how_to_enable_M2X_ETH_through_overlays: How To Enable M2X ETH Through Overlays
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI

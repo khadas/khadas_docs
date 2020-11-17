@@ -57,65 +57,72 @@ Number(GPIOAO_6) = bank + pin = 145 -  0 +  6 = 151
 `aobus-banks`:
 Banks:
 ```
-root@Khadas:~# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges 
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges
 GPIO ranges handled:
-0: aobus-banks GPIOS [0 - 10] PINS [0 - 10]
+0: aobus-banks GPIOS [496 - 511] PINS [0 - 15]
 ```
 Pins:
 ```
-root@Khadas:~# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
-registered pins: 11
-pin 0 (GPIOAO_0)  pinctrl@14
-pin 1 (GPIOAO_1)  pinctrl@14
-pin 2 (GPIOAO_2)  pinctrl@14
-pin 3 (GPIOAO_3)  pinctrl@14
-pin 4 (GPIOAO_4)  pinctrl@14
-pin 5 (GPIOAO_5)  pinctrl@14
-pin 6 (GPIOAO_6)  pinctrl@14
-pin 7 (GPIOAO_7)  pinctrl@14
-pin 8 (GPIOAO_8)  pinctrl@14
-pin 9 (GPIOAO_9)  pinctrl@14
-pin 10 (GPIO_TEST_N)  pinctrl@14
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/pins
+registered pins: 16
+pin 0 (GPIOAO_0)  pinctrl@ff800014
+pin 1 (GPIOAO_1)  pinctrl@ff800014
+pin 2 (GPIOAO_2)  pinctrl@ff800014
+pin 3 (GPIOAO_3)  pinctrl@ff800014
+pin 4 (GPIOAO_4)  pinctrl@ff800014
+pin 5 (GPIOAO_5)  pinctrl@ff800014
+pin 6 (GPIOAO_6)  pinctrl@ff800014
+pin 7 (GPIOAO_7)  pinctrl@ff800014
+pin 8 (GPIOAO_8)  pinctrl@ff800014
+pin 9 (GPIOAO_9)  pinctrl@ff800014
+pin 10 (GPIOAO_10)  pinctrl@ff800014
+pin 11 (GPIOAO_11)  pinctrl@ff800014
+pin 12 (GPIOE_0)  pinctrl@ff800014
+pin 13 (GPIOE_1)  pinctrl@ff800014
+pin 14 (GPIOE_2)  pinctrl@ff800014
+pin 15 (GPIO_TEST_N)  pinctrl@ff800014
 ```
 
 For example, get the number of `GPIOAO_6`:
-Number(GPIOAO_6) = bank + pin = 0 - 0 + 6 = 6
+Number(GPIOAO_6) = bank + pin = 496 + 6 = 502
 
 `periphs-banks`:
 Banks:
 ```
-root@Khadas:~# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges
 GPIO ranges handled:
-0: periphs-banks GPIOS [11 - 110] PINS [11 - 110]
+0: periphs-banks GPIOS [410 - 495] PINS [0 - 85]
 ```
 Pins:
-```
-root@Khadas:~# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins 
-registered pins: 100
-pin 11 (GPIOZ_0)  pinctrl@4b0
-pin 12 (GPIOZ_1)  pinctrl@4b0
-pin 13 (GPIOZ_2)  pinctrl@4b0
+```shell
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/pins
+registered pins: 86
+pin 0 (GPIOV_0)  pinctrl@ff634480
+pin 1 (GPIOZ_0)  pinctrl@ff634480
+pin 2 (GPIOZ_1)  pinctrl@ff634480
+pin 3 (GPIOZ_2)  pinctrl@ff634480
+pin 4 (GPIOZ_3)  pinctrl@ff634480
+pin 5 (GPIOZ_4)  pinctrl@ff634480
 ...
-pin 27 (GPIOH_0)  pinctrl@4b0
-pin 28 (GPIOH_1)  pinctrl@4b0
-pin 29 (GPIOH_2)  pinctrl@4b0
-pin 30 (GPIOH_3)  pinctrl@4b0
-pin 31 (GPIOH_4)  pinctrl@4b0
-pin 32 (GPIOH_5)  pinctrl@4b0
-pin 33 (GPIOH_6)  pinctrl@4b0
-pin 34 (GPIOH_7)  pinctrl@4b0
-pin 35 (GPIOH_8)  pinctrl@4b0
-pin 36 (GPIOH_9)  pinctrl@4b0
+pin 17 (GPIOH_0)  pinctrl@ff634480
+pin 18 (GPIOH_1)  pinctrl@ff634480
+pin 19 (GPIOH_2)  pinctrl@ff634480
+pin 20 (GPIOH_3)  pinctrl@ff634480
+pin 21 (GPIOH_4)  pinctrl@ff634480
+pin 22 (GPIOH_5)  pinctrl@ff634480
+pin 23 (GPIOH_6)  pinctrl@ff634480
+pin 24 (GPIOH_7)  pinctrl@ff634480
 ...
-pin 81 (GPIODV_21)  pinctrl@4b0
-pin 82 (GPIODV_22)  pinctrl@4b0
-pin 83 (GPIODV_23)  pinctrl@4b0
-pin 84 (GPIODV_24)  pinctrl@4b0
-...
+pin 80 (GPIOX_14)  pinctrl@ff634480
+pin 81 (GPIOX_15)  pinctrl@ff634480
+pin 82 (GPIOX_16)  pinctrl@ff634480
+pin 83 (GPIOX_17)  pinctrl@ff634480
+pin 84 (GPIOX_18)  pinctrl@ff634480
+pin 85 (GPIOX_19)  pinctrl@ff634480
 ```
 
 For example, get the number of `GPIOH_5`:
-Number(GPIOH_5) = bank + pin = 11 - 11 + 32 = 32
+Number(GPIOH_5) = bank + pin = 410 + 22 = 432
 
 ### On Android
 
@@ -123,8 +130,8 @@ Number(GPIOH_5) = bank + pin = 11 - 11 + 32 = 32
 
 ```
 PIN         GPIO         Number
-PIN37       GPIOH5       176
-PIN33       GPIOAO6      151
+PIN37       GPIOH5       432
+PIN33       GPIOAO6      502
 ```
 
 There are two ways to access the GPIO:
@@ -148,31 +155,31 @@ $ su
 ```
 > Request the gpio(GPIOH5)
 ```
-$ echo 176  > /sys/class/gpio/export
+$ echo 432  > /sys/class/gpio/export
 ```
 > Config the gpio(GPIOH5) as  output
 ```
-$ echo out > /sys/class/gpio/gpio176/direction
+$ echo out > /sys/class/gpio/gpio432/direction
 ```
 > Config the gpio(GPIOH5) as high level output
 ```
-$ echo 1 >  /sys/class/gpio/gpio176/value
+$ echo 1 >  /sys/class/gpio/gpio432/value
 ```
 > Config  the gpio(GPIOH5) as low level output
 ```
-$ echo 0 >  /sys/class/gpio/gpio176/value
+$ echo 0 >  /sys/class/gpio/gpio432/value
 ```
 > Config the gpio(GPIOH5) as input
 ```
-$ echo in > /sys/class/gpio/gpio176/direction
+$ echo in > /sys/class/gpio/gpio432/direction
 ```
 > Get the gpio(GPIOH5) level
 ```
-$ cat /sys/class/gpio/gpio176/value
+$ cat /sys/class/gpio/gpio432/value
 ```
 > Release the gpio(GPIOH5)
 ```
-$ echo 176 > /sys/class/gpio/unexport
+$ echo 432 > /sys/class/gpio/unexport
 ```
 
 ** Third-Party Applications **
@@ -184,21 +191,21 @@ Process mProcess = Runtime.getRuntime().exec("su");
 > Request the gpio(GPIOH5)
 ```
 DataOutputStream os = new DataOutputStream(mProcess.getOutputStream());
-os.writeBytes("echo " + 176 + " > /sys/class/gpio/export\n");
+os.writeBytes("echo " + 432 + " > /sys/class/gpio/export\n");
 ```
 > Config the gpio(GPIOH5) as high level output
 ```
-os.writeBytes("echo out > /sys/class/gpio/gpio" + 176 + "/direction\n");
-os.writeBytes("echo 1 > /sys/class/gpio/gpio" + 176 + "/value\n");
+os.writeBytes("echo out > /sys/class/gpio/gpio" + 432 + "/direction\n");
+os.writeBytes("echo 1 > /sys/class/gpio/gpio" + 432 + "/value\n");
 ```
 > Config the gpio(GPIOH5) as input
 ```
-os.writeBytes("echo in > /sys/class/gpio/gpio" + 176 + "/direction\n");
+os.writeBytes("echo in > /sys/class/gpio/gpio" + 432 + "/direction\n");
 ```
 > Get the gpio(GPIOH5) level
 ```
 Runtime runtime = Runtime.getRuntime(); 
-Process process = runtime.exec("cat " + "/sys/class/gpio/gpio" + 176 + "/value");  
+Process process = runtime.exec("cat " + "/sys/class/gpio/gpio" + 432 + "/value");  
 InputStream is = process.getInputStream(); 
 InputStreamReader isr = new InputStreamReader(is); 
 BufferedReader br = new BufferedReader(isr); 
@@ -209,7 +216,7 @@ while (null != (line = br.readLine())) {
 ```
 > Release the gpio(GPIOH5)
 ```
- os.writeBytes("echo " + 176 + " > /sys/class/gpio/unexport\n");
+ os.writeBytes("echo " + 432 + " > /sys/class/gpio/unexport\n");
 ```
 
 ### On Ubuntu
@@ -225,38 +232,38 @@ PIN33       GPIOAO6        151
 * Linux-4.9.40
 ```
 PIN         GPIO         Number
-PIN37       GPIOH5         32
-PIN33       GPIOAO6        6
+PIN37       GPIOH5         432
+PIN33       GPIOAO6        502
 ```
 
 ** How to access GPIO on Terminal **
 
-> [Example on linux-3.14]
+> [Example on linux-4.9]
 >  Request the gpio(GPIOH5)
 ```
-$ echo 176 > /sys/class/gpio/export
+$ echo 432 > /sys/class/gpio/export
 ```
 > Config the gpio(GPIOH5) as  output
 ```
-$ echo out > /sys/class/gpio/gpio176/direction
+$ echo out > /sys/class/gpio/gpio432/direction
 ```
 > Config the gpio(GPIOH5) as high level output
 ```
-$ echo 1 >  /sys/class/gpio/gpio176/value
+$ echo 1 >  /sys/class/gpio/gpio432/value
 ```
 > Config  the gpio(GPIOH5) as low level output
 ```
-$ echo 0 >  /sys/class/gpio/gpio176/value
+$ echo 0 >  /sys/class/gpio/gpio432/value
 ```
 > Config the gpio(GPIOH5) as input
 ```
-$ echo in > /sys/class/gpio/gpio176/direction
+$ echo in > /sys/class/gpio/gpio432/direction
 ```
 > Get the level of gpio(GPIOH5)
 ```
-$ cat  /sys/class/gpio/gpio176/value
+$ cat  /sys/class/gpio/gpio432/value
 ```
 > Release the gpio(GPIOH5)
 ```
-$ echo 176 > /sys/class/gpio/unexport
+$ echo 432 > /sys/class/gpio/unexport
 ```
