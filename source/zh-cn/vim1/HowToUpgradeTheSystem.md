@@ -1,9 +1,9 @@
-title: 如何将OAT升级到最新版本
+title: 如何将OTA升级到最新版本
 ---
 
 ## 更新资源
 ```sh
-$ sudo apt-get upgrade
+$ sudo apt-get update
 ```
 ## 升级
 ```sh
