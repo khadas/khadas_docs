@@ -190,7 +190,7 @@ sidebar:
     npu: NPU
     how_to_use_npu: How To Use the NPU
     How_to_use_khadas_NPU_repositories: How To Use Khadas NPU Repositories
-    how_to_install_darknet: How To Install Darnket
+    how_to_install_darknet: How To Install Darknet
     how_to_train_yolo: How To Train Yolo Model
     how_to_transform_yolo: How To Transform Yolo Model
     how_to_train_inception: How To Train Inception Model

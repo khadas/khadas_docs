@@ -23,7 +23,7 @@ $ sudo pip3 install opencv-python
 
 ## darknet安装
 
-### 下载darnket
+### 下载darknet
 ```bash
 $ mkdir ~/git
 $ cd ~/git
@@ -31,7 +31,7 @@ $ git clone https://github.com/pjreddie/darknet.git
 $ cd darknet
 ```
 ### 配置darknet
-编译darnket之前需要配置darknet已适配你的PC,修改Makefile文件
+编译darknet之前需要配置darknet已适配你的PC,修改Makefile文件
 ```bash
 $ vim Makefile
 ```
