@@ -56,6 +56,7 @@ vim1:
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
     how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
     how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
 
 vim2:
   getting_started:
@@ -118,6 +119,7 @@ vim2:
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
     how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
     how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
 
@@ -197,6 +199,7 @@ vim3:
     how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
     how_to_use_linux_hardware_encoding_library: HowToUseLinuxHardwareEncodingLibrary.html
     how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
 
 edge:
   getting_started:

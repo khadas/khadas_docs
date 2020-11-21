@@ -90,6 +90,7 @@ sidebar:
     how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
     how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
     how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: 如何配置Wi-Fi同时工作在STA+AP模式
   vim2:
     getting_started: 开始使用
     overview: 概述
@@ -152,6 +153,7 @@ sidebar:
     how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
     how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
     how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: 如何配置Wi-Fi同时工作在STA+AP模式
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -233,6 +235,7 @@ sidebar:
     how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
     how_to_use_linux_hardware_encoding_library: 如何使用Linux硬件编码库
     how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: 如何配置Wi-Fi同时工作在STA+AP模式
 
   edge:
     getting_started: 开始使用
