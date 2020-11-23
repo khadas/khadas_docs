@@ -91,6 +91,7 @@ sidebar:
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
 
   vim2:
     overview: Beginners Guide
@@ -152,6 +153,7 @@ sidebar:
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -176,6 +178,7 @@ sidebar:
     connect_lcd: Connect to TS050 Touchscreen
     HowToUseMPICamera: How To Use MIPI Camera
     how_to_use_lte_module: How To Use LTE Module
+    how_to_enable_M2X_ETH_through_overlays: How To Enable M2X ETH Through Overlays
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
@@ -187,7 +190,7 @@ sidebar:
     npu: NPU
     how_to_use_npu: How To Use the NPU
     How_to_use_khadas_NPU_repositories: How To Use Khadas NPU Repositories
-    how_to_install_darknet: How To Install Darnket
+    how_to_install_darknet: How To Install Darknet
     how_to_train_yolo: How To Train Yolo Model
     how_to_transform_yolo: How To Transform Yolo Model
     how_to_train_inception: How To Train Inception Model
@@ -234,6 +237,7 @@ sidebar:
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
     how_to_use_linux_hardware_encoding_library: How To Use Linux Hardware Encoding Library
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
 
   edge:
     overview: Beginners Guide
