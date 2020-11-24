@@ -188,6 +188,7 @@ sidebar:
     how_to_access_i2c: How To Access I2C
     how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
     npu: NPU
+    how_to_run_npu_demo: How To Run NPU Demo
     how_to_use_npu: How To Use the NPU
     How_to_use_khadas_NPU_repositories: How To Use Khadas NPU Repositories
     how_to_install_darknet: How To Install Darknet
