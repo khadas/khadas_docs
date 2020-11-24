@@ -5,6 +5,8 @@ NPU SDK 是转换AI模型和编译`aml_npu_sdk`的工具合集
 
 # 获取SDK
 
+SDK需要通过邮件申请,申请以后会通过一封邮件发到你的邮箱.[申请地址](https://www.khadas.com/npu-toolkit-vim3)
+
 # SDK目录结构说明
 
 进入SDK目录,

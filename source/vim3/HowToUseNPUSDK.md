@@ -5,6 +5,8 @@ NPU SDK is a collection of tools for converting AI models and compiling `aml_npu
 
 # Get SDK
 
+The SDK needs to be applied for by email, and an email will be sent to your mailbox after the application. [application address](https://www.khadas.com/npu-toolkit-vim3)
+
 # SDK directory structure description
 
 Enter the SDK directory,
