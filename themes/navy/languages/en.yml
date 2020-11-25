@@ -190,12 +190,10 @@ sidebar:
     how_to_access_i2c: How To Access I2C
     how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
     npu: NPU
-    how_to_use_npu: How To Use the NPU
-    How_to_use_khadas_NPU_repositories: How To Use Khadas NPU Repositories
-    how_to_install_darknet: How To Install Darknet
-    how_to_train_yolo: How To Train Yolo Model
-    how_to_transform_yolo: How To Transform Yolo Model
-    how_to_train_inception: How To Train Inception Model
+    how_to_run_npu_demo: How To Run NPU Demo
+    npu_sdk_description: SDK Description
+    aml_npu_app_description: aml_npu_app Repository Description
+    run_yourself_AI_with_npu: Run Yourself AI Model with NPU
     uboot: U-Boot
     install_toolchains: Install Toolchains
     boot_from_spi_flash: Boot From SPI-Flash
