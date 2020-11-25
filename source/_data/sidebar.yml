@@ -153,6 +153,7 @@ vim3:
     how_to_run_npu_demo: HowToRunNPUDemo.html
     npu_sdk_description: HowToUseNPUSDK.html
     aml_npu_app_description: HowToUseAmlNPUApp.html
+    run_yourself_AI_with_npu: HowToConvertToUseNPU.html
     how_to_use_npu: HowToUseNpu.html
     How_to_use_khadas_NPU_repositories: HowToUseKhadasNPURepositories.html
     how_to_install_darknet: HowToInstallDarknet.html
