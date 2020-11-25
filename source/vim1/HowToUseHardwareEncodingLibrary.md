@@ -3,12 +3,14 @@ title: How To Use Hardware Encoding Library
 ## Usage Of H264 Hardware Encoding Library
 
 ### H264 Hardware Encoding
+
 ```sh
 $ h264EncoderDemo  1080p.nv21    1080p.h264 1920 1080 10 30 2000000 2000 1
 ```
 The encoded file is `1080p.h264`
 
 ### Get Help Information
+
 ```sh
 $ h264EncoderDemo
 Amlogic AVC Encode API
@@ -26,14 +28,19 @@ Amlogic AVC Encode API
 ```
 
 ## Usage Of H265 Hardware Encoding Library
-**Note: VIM1 can't use H265 Hardware Encoding**
+
+**Note: VIM1 doesn't support H265 Hardware Encoding.**
+
 ### H265 Hardware Encoding
+
 ```sh
 $ h265EncoderDemo  1080p.nv21   1080p.h265  1920 1080 0 30 1000000 2000 0
 ```
+
 The encoded file is `1080p.h265`
 
 ### Get Help Information
+
 ```sh
 $ h265EncoderDemo
 Amlogic AVC Encode API
