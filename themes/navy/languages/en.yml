@@ -192,12 +192,6 @@ sidebar:
     npu_sdk_description: SDK Description
     aml_npu_app_description: aml_npu_app Repository Description
     run_yourself_AI_with_npu: Run Yourself AI Model with NPU
-    how_to_use_npu: How To Use the NPU
-    How_to_use_khadas_NPU_repositories: How To Use Khadas NPU Repositories
-    how_to_install_darknet: How To Install Darknet
-    how_to_train_yolo: How To Train Yolo Model
-    how_to_transform_yolo: How To Transform Yolo Model
-    how_to_train_inception: How To Train Inception Model
     uboot: U-Boot
     install_toolchains: Install Toolchains
     boot_from_spi_flash: Boot From SPI-Flash

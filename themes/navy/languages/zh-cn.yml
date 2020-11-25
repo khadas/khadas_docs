@@ -190,12 +190,6 @@ sidebar:
     npu_sdk_description: SDK使用说明
     aml_npu_app_description: aml_npu_app源码仓库说明
     run_yourself_AI_with_npu: 使用NPU跑自己的AI模型
-    how_to_use_npu: 如何使用NPU
-    How_to_use_khadas_NPU_repositories: 如何使用khadas NPU仓库
-    how_to_install_darknet: 如何安装darknet模型
-    how_to_train_yolo: 如何训练自己的yolo模型
-    how_to_transform_yolo: 如何转换yolo模型
-    how_to_train_inception: 如何训练自己的Inception模型
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     uboot_usage: U-boot使用说明
