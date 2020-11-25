@@ -153,7 +153,7 @@ $ ls
 libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 ```
 
-##编译应用
+## 编译应用
 
 编译应用时,要先编译`libnn_detect.so`.这是编译其他应用的依赖库之一.
 
