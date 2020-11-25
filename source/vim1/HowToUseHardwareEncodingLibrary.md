@@ -1,4 +1,4 @@
-title: How To Use Linux Hardware Encoding Library
+title: How To Use Hardware Encoding Library
 ---
 ## Usage Of H264 Hardware Encoding Library
 
@@ -26,6 +26,7 @@ Amlogic AVC Encode API
 ```
 
 ## Usage Of H265 Hardware Encoding Library
+**Note: VIM1 can't use H265 Hardware Encoding**
 ### H265 Hardware Encoding
 ```sh
 $ h265EncoderDemo  1080p.nv21   1080p.h265  1920 1080 0 30 1000000 2000 0
@@ -49,3 +50,4 @@ Amlogic AVC Encode API
    fmt      : encode input fmt 0:nv21, 1:nv12, 2:RGB888
 ```
 ### Code Library Source Code: https://github.com/numbqq/encoder_libs_aml
+
