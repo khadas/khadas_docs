@@ -3,12 +3,14 @@ title: 如何使用硬件编码库
 ## H264硬件编码库的使用
 
 ### H264硬件编码
+
 ```sh
 $ h264EncoderDemo  1080p.nv21    1080p.h264 1920 1080 10 30 2000000 2000 1
 ```
 编码后的文件为`1080p.h264`
 
 ### 获取帮助信息
+
 ```sh
 $ h264EncoderDemo
 Amlogic AVC Encode API
@@ -26,14 +28,19 @@ Amlogic AVC Encode API
 ```
 
 ## H265硬件编码库的使用
-**注意：VIM1不支持H265硬件编码**
+
+**注意：VIM1不支持H265硬件编码。**
+
 ### H265硬件编码
+
 ```sh
 $ h265EncoderDemo  1080p.nv21   1080p.h265  1920 1080 0 30 1000000 2000 0
 ```
+
 编码后的文件为`1080p.h265`
 
 ### 获取帮助信息
+
 ```sh
 $ h265EncoderDemo
 Amlogic AVC Encode API
