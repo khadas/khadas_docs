@@ -18,11 +18,11 @@ title: 设置串口调试工具
 
 连接方式如下：
 
-![Image of SerialConnections](/images/vim3/SerialConnections_3Pin.png)
+![Image of SerialConnections](/images/vim1/SerialConnections_3Pin.jpg)
 
 参考下图(`VCC` 管脚可以不接):
 
-![Image of SerialConnections](/images/vim3/SerialConnections.png)
+![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
 
 
 ### 设置串口软件`kermit`
