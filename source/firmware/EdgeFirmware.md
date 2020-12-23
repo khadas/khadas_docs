@@ -67,6 +67,8 @@ title: Khadas Edge Firmware Resources
 # android 
 
 ## Qt
+* [Edge_Qt_V201223](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V201223.7z)
+* [Edge_Qt_V200908](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V200908.7z)
 * [Edge_Qt_V200709](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V200709.7z)
 
 ## Pie
