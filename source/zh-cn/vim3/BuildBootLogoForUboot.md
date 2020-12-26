@@ -1,3 +1,1 @@
-title: Build Boot-Up Logo for U-Boot
----
-# TBD
+../vim1/BuildBootLogoForUboot.md
