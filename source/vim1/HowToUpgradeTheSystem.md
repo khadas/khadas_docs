@@ -3,11 +3,11 @@ title: How To Upgrade OTA To The Latest Version
 
 ## Update resources
 ```sh
-$ sudo apt-get update
+$ sudo apt update
 ```
 ## Upgrade
 ```sh
-$ sudo apt-get upgrade
+$ sudo apt full-upgrade
 $ sudo do-fenix-full-upgrade
 ```
 ## Reboot
