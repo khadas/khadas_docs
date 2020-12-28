@@ -30,7 +30,7 @@ $ make uboot
 
 将上一步编译得到的uboot放进SD卡,u盘,或者通过TFTP直接加载进内存中.
 
-[设置串口工具](/vim3/SetupSerialTool.html) 并且进入Uboot命令行
+[设置串口工具](/zh-cn/vim3/SetupSerialTool.html) 并且进入Uboot命令行
 
 #### 加载固件到DDR中
 
@@ -49,7 +49,6 @@ kvim3#load usb 0 1080000 u-boot.bin
 
 * 通过TFTP的方式:
 
-Please refer [here](/vim3/SetupTFTPServer.html) about how to setup the TFTP.
 设置TFTP的方法在[如何设TFTP服务器](/zh-cn/vim3/SetupTFTPServer.html)的文档里有详细的说明.
 
 
@@ -104,7 +103,7 @@ kvim3#reset
 
 ### 故障排查
 1. 如果启动方式已经设置为从SPI启动,同时SPI的uboot损坏了是无法进入uboot的命令行的
-	1) 如果uboot损坏了,你可以尝试使用[TST模式](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)从emmc启动,然后进入命令行,清除你的SPI或者从新烧录uboot进SPI
+	1) 如果uboot损坏了,你可以尝试使用[TST模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)从emmc启动,然后进入命令行,清除你的SPI或者从新烧录uboot进SPI
 	**注意:此时不能使用PC的USB口给板子供电,会直接进入升级模式,而不是从EMMC启动**
 	2) 如果EMMC的Uboot损坏了,你可以尝试使用[TST模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)进入升级模式,烧录一个固件到EMMC上,再重复步骤1.
 	**注意: 此时板子需要通过type-C的线连接到PC**

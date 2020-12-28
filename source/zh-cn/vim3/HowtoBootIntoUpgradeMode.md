@@ -1,4 +1,4 @@
-title: How To Boot Into Upgrade Mode
+title: 如何进入升级模式
 ---
 
 有很多种方式可以进入升级模式，如下：

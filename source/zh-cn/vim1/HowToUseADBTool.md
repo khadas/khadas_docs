@@ -1,6 +1,7 @@
 title: 如何使用ADB工具
+---
 
-# Install ADB
+# 安装ADB
 
 这里将会介绍如何安装以及如何使用ADB工具
 
