@@ -214,6 +214,7 @@ VID = 0x20b1, PID = 0x8
 ... Returning device to application mode
 ```
 
+
 **Notes:**
 * If you get the following output when attempting to upgrade the firmware on Mac OS X:
 ```
