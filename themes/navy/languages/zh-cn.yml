@@ -113,6 +113,7 @@ sidebar:
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
+    howto_use_wol: 如何使用WOL
     uboot: U-boot
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
@@ -125,7 +126,6 @@ sidebar:
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: 如何使用ADB
-    howto_use_wol: 如何使用WOL
     force_reset_features: 远程强制复位
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
@@ -186,6 +186,7 @@ sidebar:
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     how_to_access_i2c: 如何使用I2C接口
+    howto_use_wol: 如何使用WOL
     how_to_setup_pcie_usb_port: 如何设置PCIe或USB3.0
     npu: NPU
     how_to_run_npu_demo: 如何运行NPU Demo
@@ -205,7 +206,6 @@ sidebar:
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: 如何使用ADB
-    howto_use_wol: 如何使用WOL
     how_to_use_fastboot: 如何使用Fastboot
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
@@ -260,6 +260,7 @@ sidebar:
     erase_emmc: 如何擦除eMMC存储器
     how_to_access_gpio: 如何访问GPIO
     rk_docs: 瑞芯微官方文档
+    howto_use_wol: 如何使用WOL
     uboot: U-boot
     install_toolchains: 安装交叉编译器
     boot_from_spi_flash: 从SPI Flash启动系统
@@ -272,7 +273,6 @@ sidebar:
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     how_to_use_adb_tool: 如何使用ADB
-    howto_use_wol: 如何使用WOL
     force_reset_features: 远程强制复位
     instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
