@@ -50,7 +50,7 @@ title: VIM1 文档
 ||常亮|板子处于开机状态|
 |红灯|None|None|
 
-上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](forum.khadas.com)咨询。
+上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
 ## GPIO管脚映射
 ![Image of Vim GPIO](/images/vim1/vim_pinout.png)
