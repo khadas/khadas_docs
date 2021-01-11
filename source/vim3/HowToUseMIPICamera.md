@@ -1,4 +1,5 @@
 title: How To Use MIPI Camera
+---
 
 # How To Connect MIPI Camera
 

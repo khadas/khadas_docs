@@ -20,11 +20,11 @@ Follow these steps to make the correct connections:
 
 The connections should look like this:
 
-![Image of SerialConnections3Pin](/images/vim3/SerialConnections_3Pin.png)
+![Image of SerialConnections3Pin](/images/vim1/SerialConnections_3Pin.jpg)
 
 Another photo for more details(`VCC` Pin is not necessary):
 
-![Image of SerialConnections](/images/vim1/SerialConnections.png)
+![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
 
 
 ### Setup kermit Protocol(c-kermit)

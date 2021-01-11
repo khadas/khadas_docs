@@ -1,17 +1,19 @@
-title: 如何使用Linux硬件编码库
+title: How To Use Hardware Encoding Library
 ---
-## H264硬件编码库的使用
+## Usage Of H264 Hardware Encoding Library
 
-### H264硬件编码
+### H264 Hardware Encoding
+
 ```sh
 $ h264EncoderDemo  1080p.nv21    1080p.h264 1920 1080 10 30 2000000 2000 1
 ```
-编码后的文件为`1080p.h264`
+The encoded file is `1080p.h264`
 
-### 获取帮助信息
+### Get Help Information
+
 ```sh
 $ h264EncoderDemo
-Amlogic AVC Encode API 
+Amlogic AVC Encode API
  usage: output [srcfile][outfile][width][height][gop][framerate][bitrate][num][fmt]
   options  :
   srcfile  : yuv data url in your root fs
@@ -19,23 +21,29 @@ Amlogic AVC Encode API
   width    : width
   height   : height
   gop      : I frame refresh interval
-  framerate: framerate 
-   bitrate  : bit rate 
-   num      : encode frame count 
+  framerate: framerate
+   bitrate  : bit rate
+   num      : encode frame count
    fmt      : encode input fmt 0:nv12 1:nv21 2:yv12 3:rgb888 4:bgr888
 ```
 
-## H265硬件编码库的使用
-### H265硬件编码
+## Usage Of H265 Hardware Encoding Library
+
+**Note: VIM1 doesn't support H265 Hardware Encoding.**
+
+### H265 Hardware Encoding
+
 ```sh
 $ h265EncoderDemo  1080p.nv21   1080p.h265  1920 1080 0 30 1000000 2000 0
 ```
-编码后的文件为`1080p.h265`
 
-### 获取帮助信息
+The encoded file is `1080p.h265`
+
+### Get Help Information
+
 ```sh
-$ h265EncoderDemo 
-Amlogic AVC Encode API 
+$ h265EncoderDemo
+Amlogic AVC Encode API
  usage: output [srcfile][outfile][width][height][gop][framerate][bitrate][num]
   options  :
   srcfile  : yuv data url in your root fs
@@ -43,10 +51,10 @@ Amlogic AVC Encode API
   width    : width
   height   : height
   gop      : I frame refresh interval
-  framerate: framerate 
-   bitrate  : bit rate 
-   num      : encode frame count 
+  framerate: framerate
+   bitrate  : bit rate
+   num      : encode frame count
    fmt      : encode input fmt 0:nv21, 1:nv12, 2:RGB888
 ```
+### Code Library Source Code: https://github.com/numbqq/encoder_libs_aml
 
-### 编码库源码：https://github.com/numbqq/encoder_libs_aml

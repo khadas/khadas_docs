@@ -23,7 +23,7 @@ Make sure UART is in the overlays list (default is enable).
 overlays=uart4 pwm_ao_a pwm_f i2c0
 ```
 
-**note: VIM1/VIM2是uar4,VIM3/VIM3L是uart3**
+**note: VIM1/VIM2 is uar4,VIM3/VIM3L is uart3**
 
 # Setting serial tool in PC
 

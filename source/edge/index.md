@@ -48,7 +48,7 @@ title: Edge Beginners Guide
 ||Solid ON|SBC turned on|
 |Red|None|None|
 
-The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
 
 # Edge-V
 ![image](/images/edge/docs_edge_v_labels.jpg)
@@ -105,7 +105,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 ||Solid ON|SBC turned on|
 |Red|None|None|
 
-The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
 
 ## GPIO Pinout
 
@@ -194,7 +194,7 @@ Linux_TX|19|39|MCU_PA1
 ||Solid ON|SBC turned on|
 |Red|None|None|
 
-The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](forum.khadas.com).
+The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
 
 ## GPIO Pinout
 
