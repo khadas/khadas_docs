@@ -35,7 +35,7 @@ eth0      Link encap:Ethernet  HWaddr 98:aa:fc:60:46:de
 
 ### 使能WOL功能
 
-默认`WOL`功能是关闭的，你可以通过[KBI](/vim2/KbiGuidance.html)命令使能`WOL`功能。_
+默认`WOL`功能是关闭的，你可以通过[KBI](/zh-cn/vim2/KbiGuidance.html)命令使能`WOL`功能。_
 ```
 kvim2# kbi trigger wol w 1
 set_wol: 1

@@ -33,7 +33,7 @@ HWaddr **98:aa:fc:60:46:de** corresponds to your Ethernet MAC Address.
 
 ### Enable WOL
 
-By default **WOL** is disabled. So you'll have to use the [KBI](https://docs.khadas.com/vim2/KbiGuidance.html) (Khadas Bootloader Instructions) to enable it.
+By default **WOL** is disabled. So you'll have to use the [KBI](/vim2/KbiGuidance.html) (Khadas Bootloader Instructions) to enable it.
 ```
 kvim2# kbi trigger wol w 1
 set_wol: 1

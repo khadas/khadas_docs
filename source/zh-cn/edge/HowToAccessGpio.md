@@ -31,7 +31,7 @@ n = (block_number * 32) + (sub_block_number * 8) + index
 GPIO1_C2 -> (1 * 32) + (2 * 8) + 2 = 50
 ```
 
-** 如何通过命令行访问GPIO **
+**如何通过命令行访问GPIO**
 
 >  申请gpio(GPIO1_C2)
 ```

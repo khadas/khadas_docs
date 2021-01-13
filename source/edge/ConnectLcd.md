@@ -7,10 +7,10 @@ title: Connect to TS050 Touchscreen
 
 * Download and unpack this [Android 9.0 MIPI Firmware](https://mega.nz/#!7vZD0I6D!sYrXemihQWok-L9tjq-N-6xE4rcAmMId75nfr3QQhO8), made by GoEnjoy.
 * Then install the [RockChip USB Drivers](https://dl.khadas.com/Tools/DriverAssitant_v4.6.zip), and plug in your Edge / Edge-V into your PC via USB-C cable.
-* Reflash the firmware using these [USB Upgrade Instructions](https://docs.khadas.com/edge/UpgradeViaUSBCable.html), and reboot your Edge.
+* Reflash the firmware using these [USB Upgrade Instructions](/edge/UpgradeViaUSBCable.html), and reboot your Edge.
 * If you run into trouble, first press "Switch", then "EraseFlash", then "Upgrade", in that order.
 
-![RK_Upgrade_Tool](https://docs.khadas.com/images/edge/AndroldTool_firmware.png)
+![RK_Upgrade_Tool](/images/edge/AndroldTool_firmware.png)
 
 
 # 2. Brief Introduction

@@ -66,10 +66,10 @@ title: VIM1 文档
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
-[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
+[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
 
 **主要特性:**
-- 将EMMC的中的内容通过[SD卡](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt),[USB存储设备](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt)或者[网络]((https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt))备份。
+- 将EMMC的中的内容通过[SD卡](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt),[USB存储设备](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt)或者[网络](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt)备份。
 - 从其他设备或者网络覆写img.gz格式的固件到EMMC
 - 通过网络直接安装系统
 - 查看硬件谁设备信息
@@ -153,7 +153,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * 为了从**sd/usb images**启动，您需要在您的emmc上运行android或ubuntu，并激活多启动。
 
 # 使用Type-C升级EMMC系统
-如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM1 SBC操作系统，则需要这些项目。例如，将启>动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。
+如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM1 SBC操作系统，则需要这些项目。例如，将启动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。
 
 1. 常见Tpye-C数据线 (传统PC)
 2. 两头Type-C的数据线 (现代PC)
@@ -171,7 +171,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Third Party OSes](/zh-cn/vim1/FirmwareThirdparty.html)
 
 # 观看电影，扩展内部emmc存储
-如果您希望将VIM1 SBC用作媒体中心，用于存储/下载大型电影文件，这些项目非常有用。一个microDXC的UHS-I卡>很贵，但它的速度也足以支持4K视频播放。此外，您还可以连接外部USB-2.0 SSD或HDD以存储整个媒体库。
+如果您希望将VIM1 SBC用作媒体中心，用于存储/下载大型电影文件，这些项目非常有用。一个microDXC的UHS-I卡很贵，但它的速度也足以支持4K视频播放。此外，您还可以连接外部USB-2.0 SSD或HDD以存储整个媒体库。
 
 1. 不小于64GB的USB-2.0 HDD/SSD
 2. 不小于64GB的*microSDXC UHS-I* SD-Card

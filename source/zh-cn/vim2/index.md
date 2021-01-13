@@ -176,7 +176,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * 为了从**sd/usb images**启动，您需要在您的emmc上运行android或ubuntu，并激活多启动。
 
 # 使用Type-C升级EMMC系统
-如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM2 SBC操作系统，则需要这些项目。例如，将启>动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。
+如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM2 SBC操作系统，则需要这些项目。例如，将启动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。
 
 1. 常见Tpye-C数据线 (传统PC)
 2. 两头Type-C的数据线 (现代PC)
@@ -194,7 +194,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Third Party OSes](/zh-cn/vim2/FirmwareThirdparty.html)
 
 # 观看电影，扩展内部emmc存储
-如果您希望将VIM2 SBC用作媒体中心，用于存储/下载大型电影文件，这些项目非常有用。一个microDXC的UHS-I卡>很贵，但它的速度也足以支持4K视频播放。此外，您还可以连接外部USB-2.0 SSD或HDD以存储整个媒体库。
+如果您希望将VIM2 SBC用作媒体中心，用于存储/下载大型电影文件，这些项目非常有用。一个microDXC的UHS-I卡很贵，但它的速度也足以支持4K视频播放。此外，您还可以连接外部USB-2.0 SSD或HDD以存储整个媒体库。
 
 1. 不小于64GB的USB-2.0 HDD/SSD
 2. 不小于64GB的*microSDXC UHS-I* SD-Card

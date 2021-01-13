@@ -1,6 +1,6 @@
 title: How to enable M2X ETH through overlays
 ---
-We have already explained in the [documentation](https://docs.khadas.com/vim3/HowToUseDeviceTreeOverlay.html) how to useDevice Tree Overlays.
+We have already explained in the [documentation](/vim3/HowToUseDeviceTreeOverlay.html) how to useDevice Tree Overlays.
 ## Enable M2X ETH Under Ubuntu
 
 ### Update System:
