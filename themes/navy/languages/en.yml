@@ -115,6 +115,7 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
+    howto_use_wol: How To Use WOL
     uboot: U-Boot
     uboot_usage: U-Boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
@@ -127,7 +128,6 @@ sidebar:
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
     how_to_use_adb_tool: How To Use ADB Tool
-    howto_use_wol: How To Use WOL
     force_reset_features: Force Reset Remotely
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
@@ -188,6 +188,7 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     how_to_access_i2c: How To Access I2C
+    howto_use_wol: How To Use WOL
     how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
     npu: NPU
     how_to_run_npu_demo: How To Run NPU Demo
@@ -210,7 +211,6 @@ sidebar:
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
     how_to_use_adb_tool: How To Use ADB Tool
-    howto_use_wol: How To Use WOL
     how_to_use_fastboot: How To Use Fastboot
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
@@ -266,6 +266,7 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     how_to_access_gpio: How To Access GPIO
     rk_docs: Rockchip Official Docs
+    howto_use_wol: How To Use WOL
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     kbi_guidance: KBI Guide
@@ -278,7 +279,6 @@ sidebar:
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     how_to_use_adb_tool: How To Use ADB Tool
-    howto_use_wol: How To Use WOL
     instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images

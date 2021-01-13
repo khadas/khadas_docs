@@ -16,7 +16,8 @@ MAC Address Sticker on the backside of the VIM:
 
 
 If the sticker has peeled-off, you can use following steps to get the MAC Address.
-**1) On Ubuntu, type*** ifconfig **on terminal**
+
+**1) On Ubuntu, type `ifconfig` on terminal**
 ```
 $ ifconfig
 eth0      Link encap:Ethernet  HWaddr 98:aa:fc:60:46:de
@@ -33,17 +34,25 @@ HWaddr **98:aa:fc:60:46:de** corresponds to your Ethernet MAC Address.
 
 ### Enable WOL
 
-By default **WOL** is disabled. So you'll have to use the [KBI](/vim2/KbiGuidance.html) (Khadas Bootloader Instructions) to enable it.
+1) By default **WOL** is disabled. So you'll have to use the [KBI](/vim2/KbiGuidance.html) (Khadas Bootloader Instructions) to enable it.
 ```
 kvim2# kbi trigger wol w 1
-set_wol: 1
 ```
 If you want to check the WOL status, you can run:
 ```
 kvim2# kbi trigger wol r
-get_wol: 1
+boot wol: enable
 ```
-You can also enable **WOL** in the **Setting->More Settings->WOL** menu on Android.
+
+2) You can enable **WOL** in the **Applications->Wake On LAN Setting** on Ubuntu.
+
+![wol](/images/vim2/vim2_ubuntu_wol1.png)
+
+* Select WOL Mode.
+
+![wol](/images/vim2/vim2_ubuntu_wol2.png)
+
+3) You can also enable **WOL** in the **Setting->More Settings->WOL** menu on Android.
 
 ![wol](/images/vim2/vim2_android_wol.png)
 
