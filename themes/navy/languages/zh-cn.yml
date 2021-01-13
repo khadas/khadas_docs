@@ -194,6 +194,7 @@ sidebar:
     run_yourself_AI_with_npu: 使用NPU跑自己的AI模型
     how_to_use_AMLNNApi: 如何使用AMLNNApi模板
     how_to_use_Tengine_SDK: 如何使用tengine SDK
+    how_to_use_Tengine_app: 如何编译运行Tengine模板
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     uboot_usage: U-boot使用说明

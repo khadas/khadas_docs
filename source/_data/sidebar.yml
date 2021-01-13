@@ -158,6 +158,7 @@ vim3:
     run_yourself_AI_with_npu: HowToConvertToUseNPU.html
     how_to_use_AMLNNApi: HowToUseAMLNNApi.html
     how_to_use_Tengine_SDK: HowToUseTengineSDK.html
+    how_to_use_Tengine_app: HowToUseTengineApp.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     uboot_usage: UBootUsage.html
