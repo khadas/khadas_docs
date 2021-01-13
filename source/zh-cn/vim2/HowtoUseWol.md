@@ -16,7 +16,7 @@ VIM2、VIM3和Edge不同于VIM1的一点就是具有以太网唤醒功能。
 
 
 如果VIM2背面贴的MAC地址损坏了，你还可以通过如下方式获取MAC地址。
-**1) Ubuntu系统下在终端执行 **ifconfig**获取MAC地址**
+**1) Ubuntu系统下在终端执行 `ifconfig` 获取MAC地址**
 ```
 khadas@khadas:~$ ifconfig
 eth0      Link encap:Ethernet  HWaddr 98:aa:fc:60:46:de
@@ -35,18 +35,25 @@ eth0      Link encap:Ethernet  HWaddr 98:aa:fc:60:46:de
 
 ### 使能WOL功能
 
-默认`WOL`功能是关闭的，你可以通过[KBI](/vim2/KbiGuidance.html)命令使能`WOL`功能。_
+1) 默认`WOL`功能是关闭的，你可以通过[KBI](/zh-cn/vim2/KbiGuidance.html)命令使能`WOL`功能。
 ```
 kvim2# kbi trigger wol w 1
-set_wol: 1
 ```
 通过如下命令可以查看WOL状态。
 ```
 kvim2# kbi trigger wol r
-get_wol: 1
+boot wol: enable
 ```
 
-在在安卓系统中，可以通过**Setting->More Settings->WOL**使能**WOL**。
+2) 在Ubuntu系统中，可以通过 **Applications->Wake On LAN Setting** 使能 **WOL**。
+
+![wol](/images/vim2/vim2_ubuntu_wol1.png)
+
+* 选择模式为 **On** 即可。
+
+![wol](/images/vim2/vim2_ubuntu_wol2.png)
+
+3) 在安卓系统中，可以通过**Setting->More Settings->WOL**使能**WOL**。
 
 ![wol](/images/vim2/vim2_android_wol.png)
 
