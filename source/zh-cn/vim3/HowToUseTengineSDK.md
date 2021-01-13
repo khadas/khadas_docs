@@ -11,7 +11,7 @@ tengine SDK 源码仓库在khadas的gitlab上
 
 ```shell
 $ mkdir workspace && cd workspace
-$ git clone git@gitlab.com:khadas/tengine_khadas_sdk.git
+$ git clone https://gitlab.com/khadas/tengine_khadas_sdk.git
 $ cd tengine_khadas_sdk && ls
 docs  sdk  tengine_tools  toolchains
 ```

@@ -16,7 +16,7 @@ The source code of the `aml_npu_nnsdk_app` repository is open on the official gi
 ```shell
 $ mkdir workspace
 $ cd workspace
-$ git clone git@gitlab.com:khadas/aml_npu_nnsdk_app.git
+$ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 ```
 
 ### Source code structure introduction

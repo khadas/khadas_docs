@@ -16,7 +16,7 @@ Amlogic NN Api是amlogic官方推出的一套NPU Api.这篇文档将介绍如何
 ```shell
 $ mkdir workspace
 $ cd workspace
-$ git clone git@gitlab.com:khadas/aml_npu_nnsdk_app.git
+$ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 ```
 
 ### 源码结构介绍
