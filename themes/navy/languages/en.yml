@@ -195,6 +195,9 @@ sidebar:
     npu_sdk_description: SDK Description
     aml_npu_app_description: aml_npu_app Repository Description
     run_yourself_AI_with_npu: Run Yourself AI Model with NPU
+    how_to_use_AMLNNApi: How To Use AMLNNApi Demo
+    how_to_use_Tengine_SDK: How To Use Tengine SDK
+    how_to_use_Tengine_app: How To Compile And Run Tengine demo
     uboot: U-Boot
     install_toolchains: Install Toolchains
     boot_from_spi_flash: Boot From SPI-Flash
