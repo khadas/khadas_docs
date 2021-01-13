@@ -157,6 +157,7 @@ vim3:
     aml_npu_app_description: HowToUseAmlNPUApp.html
     run_yourself_AI_with_npu: HowToConvertToUseNPU.html
     how_to_use_AMLNNApi: HowToUseAMLNNApi.html
+    how_to_use_Tengine_SDK: HowToUseTengineSDK.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     uboot_usage: UBootUsage.html
