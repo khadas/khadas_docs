@@ -22,7 +22,7 @@ title: VIM3 相关文档
 |C|RTC电池接口|硬件时钟电池的接口|
 |D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
-|F|[MCU](https://docs.khadas.com/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
+|F|[MCU](/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|
 |H|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |I|LED灯|用于指示板子的状态|
@@ -64,7 +64,7 @@ title: VIM3 相关文档
 ||常亮|板子处于开机状态|
 |红灯|None|None|
 
-上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系>统都不同）编程的更多信息可通过[forum.khadas.com](forum.khadas)咨询。
+上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系>统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
 # VIM3L
 
@@ -87,7 +87,7 @@ title: VIM3 相关文档
 |C|RTC电池接口|硬件时钟电池的接口|
 |D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制GPIO(vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
-|F|[MCU](https://docs.khadas.com/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
+|F|[MCU](/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|
 |H|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |I|LED灯|用于指示板子的状态|
@@ -129,7 +129,7 @@ title: VIM3 相关文档
 ||常亮|板子处于开机状态|
 |红灯|None|None|
 
-上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系>统都不同）编程的更多信息可通过[forum.khadas.com](forum.khadas)咨询。
+上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系>统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
 ## GPIO管脚映射
 

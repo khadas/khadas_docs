@@ -81,7 +81,7 @@ $ adb shell
 
 # 参考
 
-* [Android Debug Brige](https://developer.android.com/studio/command-line/adb.html)
+* [Android Debug Bridge](https://developer.android.com/studio/command-line/adb.html)
 
 
 **注意:**

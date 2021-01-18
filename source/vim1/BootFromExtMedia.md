@@ -72,4 +72,4 @@ There are several ways to boot (activate multi-boot) from the SD card / Thumbdri
 **WARNING: Don't use your PC as the USB-Host to supply the electrical power, otherwise it will fail to activate Multi-Boot!**
 
 ### NOTICE
-* If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](https://docs.khadas.com/vim1/UpgradeViaUSBCable.html).
+* If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](/vim1/UpgradeViaUSBCable.html).

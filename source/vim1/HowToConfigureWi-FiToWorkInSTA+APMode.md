@@ -3,7 +3,7 @@ title: How To Configure Wi-Fi To Work In STA+AP Mode
 This guide is about how to configure Wi-Fi to work in STA+AP mode under Ubuntu.
 
 ### Preconditions
-The image is based on the V2005 version,and [update the OTA](https://docs.khadas.com/vim3/HowToUpgradeTheSystem.html) to the latest version
+The image is based on the V2005 version,and [update the OTA](/vim3/HowToUpgradeTheSystem.html) to the latest version
 
 ### Start to Configure
 Configrure wlan0 as STA mode, wlan1 as AP mode.
@@ -108,7 +108,7 @@ khadas@Khadas:~$ sudo ifconfig eth0 down
 ```
 
 2、Whether wlan0 can be used to surf the Internet
-* [Connect Wi-Fi](https://docs.khadas.com/vim3/HowToConnectWifi.html)
+* [Connect Wi-Fi](/vim3/HowToConnectWifi.html)
 Try to`ping www.khadas.com`:
 ```shell
 khadas@Khadas:~$ sudo ping -I wlan0 www.khadas.com
