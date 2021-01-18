@@ -22,7 +22,7 @@ title: VIM3 相关文档
 |C|RTC电池接口|硬件时钟电池的接口|
 |D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
-|F|[MCU](https://docs.khadas.com/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
+|F|[MCU](/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|
 |H|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |I|LED灯|用于指示板子的状态|
@@ -87,7 +87,7 @@ title: VIM3 相关文档
 |C|RTC电池接口|硬件时钟电池的接口|
 |D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制GPIO(vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
-|F|[MCU](https://docs.khadas.com/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
+|F|[MCU](/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|
 |H|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |I|LED灯|用于指示板子的状态|

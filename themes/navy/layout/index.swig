@@ -218,9 +218,9 @@
         <div class="column column-center">
           <div class="ui series" style="margin:16px;">
             {% if page.lang == 'en'  %}
-              <font size="10">TONE Series</font>
+              <font size="10">Tone Series</font>
             {% else %}
-              <font size="10">TONE 系列</font>
+              <font size="10">Tone 系列</font>
             {% endif %}
           </div>
         </div>

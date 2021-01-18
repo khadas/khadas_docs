@@ -23,7 +23,7 @@ title: 常问问题
 例如： Android固件，带有`EMMC`标识的Ubuntu固件为eMMC固件。
 
 **SD/USB固件** 只能烧录到TF卡或U盘的固件，不能烧录到eMMC，系统从TF卡或U盘运行。
-例如： Armbian固件，包含`EMMC`标识的Ubuntu固件，LibreELEC固件和CoreELEC固件。
+例如： Armbian固件，包含`SD-USB`标识的Ubuntu固件，LibreELEC固件和CoreELEC固件。
 
 # 如何运行SD/USB固件？
 

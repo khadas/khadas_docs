@@ -55,6 +55,7 @@ vim1:
     how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
     how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
+    how_to_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
     how_to_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
     how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
@@ -119,6 +120,7 @@ vim2:
     how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
     how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
+    how_to_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
     how_to_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
     how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
@@ -157,6 +159,9 @@ vim3:
     npu_sdk_description: HowToUseNPUSDK.html
     aml_npu_app_description: HowToUseAmlNPUApp.html
     run_yourself_AI_with_npu: HowToConvertToUseNPU.html
+    how_to_use_AMLNNApi: HowToUseAMLNNApi.html
+    how_to_use_Tengine_SDK: HowToUseTengineSDK.html
+    how_to_use_Tengine_app: HowToUseTengineApp.html
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     uboot_usage: UBootUsage.html
@@ -197,6 +202,7 @@ vim3:
     how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
     how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
     how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
+    how_to_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
     how_to_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
     how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html

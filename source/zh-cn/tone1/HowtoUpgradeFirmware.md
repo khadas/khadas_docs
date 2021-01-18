@@ -74,7 +74,7 @@ $ git pull
 需要安装usb规则以及创建链接文件。
 
 ```
-$ cd /path/to/utils/toneboard-dfu-tool
+$ cd /path/to/utils/tone-dfu-tool
 $ sudo ./INSTALL
 ```
 
@@ -84,12 +84,12 @@ $ sudo ./INSTALL
 
 ===============================================
 
-Host PC: Ubuntu 16.04
+Host PC: Ubuntu 20.04
 
 ===============================================
 
 Installing USB rules...
-Installing toneboard-burn-tool...
+Installing tone-burn-tool...
 Done!
 ```
 
@@ -128,26 +128,20 @@ $ sudo toneboard-burn-tool -i /path/to/firmware.bin
 * 如果升级成功，你会看到如下信息：
 
 ```
-Upgrading ToneBoard firmware...
-VID = 0xbda, PID = 0x411
-VID = 0x1d6b, PID = 0x3
-VID = 0x1a86, PID = 0x7523
-VID = 0x2207, PID = 0x330c
-VID = 0x4ca, PID = 0xa8
-VID = 0x20b1, PID = 0x8
-ToneBoard DFU application started - Interface 2 claimed
+Upgrading Tone firmware...
+Khadas Tone1 detected!
+Tone DFU application started - Interface 2 claimed
 Detaching device from application mode.
 Waiting for device to restart and enter DFU mode...
-VID = 0x20b1, PID = 0x8
 ... DFU firmware upgrade device opened
-... Downloading image (firmware.bin) to device
+... Downloading image (Tone1_Firmware_V2.00_201016.bin) to device
 ... Download complete
 ... Returning device to application mode
 ```
 
 **卸载烧录工具:**
 ```
-$ cd /path/to/utils/toneboard-dfu-tool 
+$ cd /path/to/utils/tone-dfu-tool
 $ sudo ./UNINSTALL
 ```
 

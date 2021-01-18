@@ -90,6 +90,7 @@ sidebar:
     how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
+    how_to_use_hardware_decoding_library: How To Use Hardware Decoding Library
     how_to_use_hardware_encoding_library: How To Use Hardware Encoding Library
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
@@ -153,6 +154,7 @@ sidebar:
     how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
+    how_to_use_hardware_decoding_library: How To Use Hardware Decoding Library
     how_to_use_hardware_encoding_library: How To Use Hardware Encoding Library
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
@@ -195,6 +197,9 @@ sidebar:
     npu_sdk_description: SDK Description
     aml_npu_app_description: aml_npu_app Repository Description
     run_yourself_AI_with_npu: Run Yourself AI Model with NPU
+    how_to_use_AMLNNApi: How To Use AMLNNApi Demo
+    how_to_use_Tengine_SDK: How To Use Tengine SDK
+    how_to_use_Tengine_app: How To Compile And Run Tengine demo
     uboot: U-Boot
     install_toolchains: Install Toolchains
     boot_from_spi_flash: Boot From SPI-Flash
@@ -235,6 +240,7 @@ sidebar:
     how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
     how_to_setup_fb_font: How To Setup Framebuffer Console Font
     how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
+    how_to_use_hardware_decoding_library: How To Use Hardware Decoding Library
     how_to_use_hardware_encoding_library: How To Use Hardware Encoding Library
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode

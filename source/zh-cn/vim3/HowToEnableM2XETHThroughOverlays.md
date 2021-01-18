@@ -1,6 +1,6 @@
 title: 如何通过overlays方式使能M2X ETH
 ---
-我们之前在[文档](https://docs.khadas.com/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)中介绍过如何使用Device Tree Overlay
+我们之前在[文档](/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)中介绍过如何使用Device Tree Overlay
 ## 在Ubuntu下使能M2X ETH
 
 ### 升级系统
