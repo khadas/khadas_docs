@@ -9,7 +9,7 @@ title: Khadas TONE1 初学者 FAQ
 
 ##  选择音频设备
 
-* 苹果上却换音频设备的位置`系统偏好设置` > `声音`.
+* 苹果上切换音频设备的位置`系统偏好设置` > `声音`.
 
 ![Mac OS X Sound Control Panel](/images/tone1/tb_faq_01.jpg)
 
@@ -29,7 +29,7 @@ title: Khadas TONE1 初学者 FAQ
 
 ## 驱动
 
-* 如果大仙无法控制音量,那么你需要安装一个驱动
+* 如果发现无法控制音量,那么你需要安装一个驱动
 
 **下载:**
 [Thesycon-Stereo-USB-Audio-Driver-V224](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)

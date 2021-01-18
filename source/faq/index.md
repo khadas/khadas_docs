@@ -7,11 +7,11 @@ These guides will be helpful for anyone learning how to use a Khadas SBC for the
 
 **Guides:**
 
-* [VIM1](https://docs.khadas.com/vim1/index.html)
-* [VIM2](https://docs.khadas.com/vim2/index.html)
-* [VIM3](https://docs.khadas.com/vim3/index.html)
-* [Edge](https://docs.khadas.com/edge/index.html)
-* [Toneboard](https://docs.khadas.com/toneboard/UserManual.html)
+* [VIM1](/vim1/index.html)
+* [VIM2](/vim2/index.html)
+* [VIM3](/vim3/index.html)
+* [Edge](/index.html)
+* [Toneboard](/toneboard/UserManual.html)
 
 **Tip:** In addition to reading our documentation, you'll find many helpful people on our [Khadas Forum](https://forum.khadas.com).
 
@@ -72,7 +72,7 @@ The VIM3 will require the USB-C 24W Adapter, and USB-C male-to-male cable, if yo
 4. USB-C Cable (Male-to-Male)
 
 **Learn More:**
-* [Extra Power Input For Khadas VIMs](https://docs.khadas.com/vim2/ExtraPowerInput.html)
+* [Extra Power Input For Khadas VIMs](/vim2/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
 * [Khadas Shop - USB 10W Adapter](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - USB-A to USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
@@ -89,7 +89,7 @@ Although your Edge SBC is compatible with various types of power supplies, these
 **Learn More:**
 * [Khadas Shop - USB-C 24W Adapter](https://www.khadas.com/product-page/usb-c-24w-adapter)
 * [Khadas Shop - USB-C Cable (Male-to-Male)](https://www.khadas.com/product-page/usb-c-cable-male-to-male)
-* [Edge+Captain Power Priority](https://docs.khadas.com/edge/EdgeCaptainPowerPriority.html)
+* [Edge+Captain Power Priority](/edge/EdgeCaptainPowerPriority.html)
 * [Khadas Edge Specifications](https://khadas.com/edge)
 
 **My Bootloader is Damaged**
@@ -98,7 +98,7 @@ Your SBC may also fail to power-on if the bootloader is damaged. In such cases, 
 
 **Learn More:**
 * [Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
-* [Upgrade Using USB-C Cable](https://docs.khadas.com/vim2/UpgradeViaUSBCable.html)
+* [Upgrade Using USB-C Cable](/vim2/UpgradeViaUSBCable.html)
 
 # Help! I turned on WOL, and now there's this blue light?
 
@@ -111,7 +111,7 @@ If you've turned on Wake-On-LAN (WOL) in your VIM, it will no longer power-on au
 2. You send a magic packet to turn it on via LAN (Ethernet cable must be connected, and sending device must be on the same LAN as your VIM)
 
 **Learn More:**
-* [Turn On WOL](https://docs.khadas.com/vim2/HowtoUseWol.html)
+* [Turn On WOL](/vim2/HowtoUseWol.html)
 
 # How to build my own Ubuntu/Debian images?
 
@@ -119,13 +119,13 @@ Please refer to: [Build Ubuntu/Debian Images](/vim1/FenixScript.html).
 
 # How to connect to Wi-Fi from the Linux Command Line?
 
-Please refer to: [Connecting to Wi-Fi from CLI](https://docs.khadas.com/edge/HowToConnectWifi.html)
+Please refer to: [Connecting to Wi-Fi from CLI](/edge/HowToConnectWifi.html)
 
 # How to setup Bluetooth from the Linux Command Line?
 
-Please refer to: [Setup Bluetooth from CLI](https://docs.khadas.com/edge/HowToSetupBluetooth.html)
+Please refer to: [Setup Bluetooth from CLI](/edge/HowToSetupBluetooth.html)
 
 # How can I check my MAC address?
 
-Please refer to: [How to Use WOL](https://docs.khadas.com/edge/HowtoUseWol.html).
+Please refer to: [How to Use WOL](/edge/HowtoUseWol.html).
 

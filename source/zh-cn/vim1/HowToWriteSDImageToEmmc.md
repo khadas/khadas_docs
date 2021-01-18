@@ -1,14 +1,14 @@
 title: 如何把SD卡固件写入到eMMC
 ---
 
-## [把固件写入到SD卡或U盘](https://docs.khadas.com/zh-cn/vim3/BootFromExtMedia.html)
+## [把固件写入到SD卡或U盘](/zh-cn/vim3/BootFromExtMedia.html)
 
 * 下载烧录工具[Etcher](https://www.balena.io/etcher/)
-* [固件下载](https://docs.khadas.com/zh-cn/firmware/)
+* [固件下载](/zh-cn/firmware/)
 * 选择固件并烧录
 
 ## 激活多启动
-- 通过[按键模式](https://docs.khadas.com/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
+- 通过[按键模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
   * 给板子上电。
   * 长按 POWER 按键不松开。
   * 短按 Reset 按键。
