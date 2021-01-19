@@ -212,6 +212,6 @@ Abort trap: 6
 
 # See Also:
 
-* [TONE1 Beginners FAQ](/tone1/index.html)
-* [TONE1 User Manual](/tone1/UserManual.html)
-* [TONE1 Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)
+* [Tone1 Beginners FAQ](/tone1/index.html)
+* [Tone1 User Manual](/tone1/UserManual.html)
+* [Tone1 Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)
