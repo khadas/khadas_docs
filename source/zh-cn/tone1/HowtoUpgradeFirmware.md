@@ -225,6 +225,6 @@ Abort trap: 6
 
 # 其他:
 
-* [TONE1 概述](/zh-cn/tone1/index.html)
-* [TONE1 用户手册](/zh-cn/tone1/UserManual.html)
-* [TONE1 固件下载](https://dl.khadas.com/Firmware/ToneBoard/)
+* [Tone1 概述](/zh-cn/tone1/index.html)
+* [Tone1 用户手册](/zh-cn/tone1/UserManual.html)
+* [Tone1 固件下载](https://dl.khadas.com/Firmware/ToneBoard/)
