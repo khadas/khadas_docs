@@ -1,7 +1,25 @@
 title: How To Upgrade Firmware
 ---
 
-# Upgrade On Windows
+# Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qRswdL1HPZU
+" target="_blank"><img src="http://img.youtube.com/vi/qRswdL1HPZU/0.jpg" 
+alt="Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)" width="480" height="360" border="10" /></a>
+
+Link: [YouTube](http://www.youtube.com/watch?v=qRswdL1HPZU)
+
+# Tone1 - Upgrade to Official Khadas Firmware v2.00
+
+<a href="https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware
+" target="_blank"><img src="https://static.wixstatic.com/media/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.jpg/v1/fill/w_740,h_416,al_c,q_90,usm_0.66_1.00_0.01/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.webp" 
+alt="Tone1 - Upgrade to Official Khadas Firmware v2.00" width="480" height="267" border="10" /></a>
+
+Link: [Khadas Blog](https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware)
+
+***
+
+# Tone1 - Upgrade On Windows (Legacy)
 
 **Preparation:**
 
@@ -47,7 +65,7 @@ title: How To Upgrade Firmware
 
 * Alternatively, if you're on Windows 10, uninstall all Khadas-supplied drivers and use the native [Win10 UAC2 driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/usb-2-0-audio-drivers) supplied with the OS.
 
-# Upgrade On Ubuntu
+# Tone1 - Upgrade On Ubuntu (Legacy)
 
 **Preparation:**
 
@@ -133,7 +151,7 @@ $ cd /path/to/utils/tone-dfu-tool
 $ sudo ./UNINSTALL
 ```
 
-# Upgrade On Mac OS
+# Tone1 - Upgrade On Mac OS (Legacy)
 
 **Preparation:**
 
