@@ -33,7 +33,7 @@ If you have setup the environment, then it’s time to build the image. Fenix re
 $ make
 ```
 
-**Tip:**If this is your first time building an image, the script will check your Host's environment and install some essential packages. In addition, repositories (U-Boot, Linux) will be cloned automatically from our Khadas GitHub.
+**Tip:** If this is your first time building an image, the script will check your Host's environment and install some essential packages. In addition, repositories (U-Boot, Linux) will be cloned automatically from our Khadas GitHub.
 
 You can build the U-Boot and Kernel alone.
 
