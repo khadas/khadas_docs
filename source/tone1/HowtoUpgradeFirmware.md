@@ -1,25 +1,43 @@
 title: How To Upgrade Firmware
 ---
 
-# Upgrade On Windows
+# Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qRswdL1HPZU
+" target="_blank"><img src="http://img.youtube.com/vi/qRswdL1HPZU/0.jpg" 
+alt="Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)" width="480" height="360" border="10" /></a>
+
+Link: [YouTube](http://www.youtube.com/watch?v=qRswdL1HPZU)
+
+# Tone1 - Upgrade to Official Khadas Firmware v2.00
+
+<a href="https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware
+" target="_blank"><img src="https://static.wixstatic.com/media/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.jpg/v1/fill/w_740,h_416,al_c,q_90,usm_0.66_1.00_0.01/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.webp" 
+alt="Tone1 - Upgrade to Official Khadas Firmware v2.00" width="480" height="267" border="10" /></a>
+
+Link: [Khadas Blog](https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware)
+
+***
+
+# Tone1 - Upgrade On Windows (Legacy)
 
 **Preparation:**
 
 * Download the [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) and extract it.
 * Download the firmware `.bin` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them. 
-* Connect your TONE1 to your PC using a USB-C data cable.
+* Connect your Tone to your PC using a USB-C data cable.
 
-![TONE1 With USB-C Cable](/images/tone1/tb_fw_01.jpg)
+![Tone With USB-C Cable](/images/tone1/tb_fw_01.jpg)
 
 **Installation:**
 
-* Run `setup_eval.exe` to install the tool to upgrade your TONE1's firmware.
+* Run `setup_eval.exe` to install the tool to upgrade your Tone's firmware.
 
-![TONE1 USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
+![Tone USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
 
-* Press `Yes`, then disconnect and reconnect your TONE1.
+* Press `Yes`, then disconnect and reconnect your Tone.
 
-![Disconnect and Reconnect TONE1](/images/tone1/tb_fw_03.jpg)
+![Disconnect and Reconnect Tone](/images/tone1/tb_fw_03.jpg)
 
 **Upgrading:**
 
@@ -27,27 +45,27 @@ title: How To Upgrade Firmware
 
 ![TUSBAudio Firmware Upgrade Tool](/images/tone1/tb_fw_04.jpg)
 
-* It should show `Device Opened`, which means your TONE1 is connected and ready for upgrading. (If not, disconnect and reconnect your TONE1)
+* It should show `Device Opened`, which means your Tone is connected and ready for upgrading. (If not, disconnect and reconnect your Tone)
 
-![TONE1 Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
+![Tone Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
 
 * Click `Browse` and load the firmware `.bin` file you extracted, into the tool.
 
-![TONE1 USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
+![Tone USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
 
 * Click `Start` to begin the upgrade process.
 
-![TONE1 USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
+![Tone USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
 
 * Once firmware has upgraded, click `Exit`.
 
-![TONE1 USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
+![Tone USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
 
 * Uninstall the [EVAL driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) that you used for upgrading firmware, and re-install the [v224 driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
 
 * Alternatively, if you're on Windows 10, uninstall all Khadas-supplied drivers and use the native [Win10 UAC2 driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/usb-2-0-audio-drivers) supplied with the OS.
 
-# Upgrade On Ubuntu
+# Tone1 - Upgrade On Ubuntu (Legacy)
 
 **Preparation:**
 
@@ -58,7 +76,7 @@ $ sudo apt-get install git libusb-1.0-0 libusb-1.0-0-dev
 
 **Download Burning Tool:**
 
-TONE1 DFU burning tool on Ubuntu is in [utils](https://github.com/khadas/utils) repository.
+Tone DFU burning tool on Ubuntu is in [utils](https://github.com/khadas/utils) repository.
 
 ```
 $ git clone https://github.com/khadas/utils
@@ -133,74 +151,41 @@ $ cd /path/to/utils/tone-dfu-tool
 $ sudo ./UNINSTALL
 ```
 
-# Upgrade On Mac OS
+# Tone1 - Upgrade On Mac OS (Legacy)
 
 **Preparation:**
 
-* Visit our Github and download the [Mac OS X - USB Upgrade Tool](https://github.com/numbqq/USB-Audio-2.0-Software-v6.1).
-     * Click the green `Clone or download` button.
-     * Then press the `Download ZIP` option.
-     * Afterwards, extract the `.zip` file to a directory of your choosing.
+Download the ready to use dfu tool to somewhere like:`~/Desktop`
 
-**Installation:**
-
-* Open a Terminal window, by pressing `Command-Space` on your keyboard, then type `terminal` into Spotlight. 
-* From within Terminal type `cd your_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`.
-     * Replace `your_directory` with the directory that you've unzipped the USB Upgrade Tool to.
-* Alternatively, navigate to `/sc_usb_audio/module_dfu/host/` from within the Finder.
-     * Then type `cd`, followed by `space`, into Terminal.
-     * And drag the `xmos_dfu_osx` folder into Terminal, and hit your `Enter` key.
-* Build the tool by typing: `make -f Makefile.OSX all` into your Terminal window, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu).
-* If build was successful, you should see the following:
 ```
-make -f Makefile.OSX all
-g++ -g -o xmosdfu xmosdfu.cpp -I. -IOSX libusb-1.0.0-x86_64.dylib -m64
-xmosdfu.cpp:96:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:100:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:104:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:108:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:256:1: warning: control may reach end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:417:3: warning: bool literal returned from 'main' [-Wmain]
-  return true;
-  ^      ~~~~
-6 warnings generated.
+$ wget https://github.com/khadas/utils/raw/master/tone-dfu-tool/tools/macos/tone_dfu_tool
+$ chmod +x tone_dfu_tool
 ```
-* Finally, type `source setup.sh` into Terminal, original instructions are [here](https://www.xmos.com/developer/published/dfu-user-guide?version=&page=3).
-     * If successful, Terminal will be silent.
 
 **Upgrading:**
 * Download a firmware file from [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/), then extract the `.zip` file.
-* Connect your TONE1 to your Macbook / iMac via a USB-C data cable.
-* Return to Terminal and type `./xmosdfu --download`, followed by `space`, and drag the `firmware.bin` you just downloaded, from the Finder into Terminal. Then hit `Enter`.
+* Connect your Tone to your Macbook / iMac via a USB-C data cable.
+* Return to Terminal and type `./tone_dfu_tool --download`, followed by `space`, and drag the `firmware.bin` you just downloaded, from the Finder into Terminal. Then hit `Enter`.
 * If successful, you should see the following Terminal output:
 ```
-./xmosdfu --download /Users/ossyx/Documents/Wesion/TONEBOARD\ FIRMWARE\ UPGRADE\ TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin 
-VID = 0x20b1, PID = 0x8
-XMOS DFU application started - Interface 2 claimed
+$ ./tone_dfu_tool --download /path/to/Tone2_Pro_DFU_TEST201228_nothing.bin 
+VID = 0x3353, PID = 0xa002
+Khadas Tone2 Pro detected!
+Tone DFU application started - Interface 2 claimed
 Detaching device from application mode.
 Waiting for device to restart and enter DFU mode...
-VID = 0x20b1, PID = 0x8
+VID = 0x3353, PID = 0xa002
 ... DFU firmware upgrade device opened
-... Downloading image (/Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin) to device
+... Downloading image (/path/to/Tone2_Pro_DFU_TEST201228_nothing.bin) to device
 ... Download complete
 ... Returning device to application mode
 ```
 
-
 **Notes:**
-* If you get the following output when attempting to upgrade the firmware on Mac OS X:
+
+* If you get the following output when attempting to upgrade the firmware on Mac OS:
 ```
-./xmosdfu --download /Users/ossyx/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/Khadas_Tone_Board_dfu_1226.bin 
+./tone_dfu_tool --download /path/to/Tone2_Pro_DFU_TEST201228_nothing.bin
 dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib
   Referenced from: /Users/ossyx/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/./xmosdfu
   Reason: image not found
@@ -212,6 +197,6 @@ Abort trap: 6
 
 # See Also:
 
-* [TONE1 Beginners FAQ](/tone1/index.html)
-* [TONE1 User Manual](/tone1/UserManual.html)
-* [TONE1 Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)
+* [Tone1 Beginners FAQ](/tone1/index.html)
+* [Tone1 User Manual](/tone1/UserManual.html)
+* [Tone1 Firmware Images](https://dl.khadas.com/Firmware/ToneBoard/)
