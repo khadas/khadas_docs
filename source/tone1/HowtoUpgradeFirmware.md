@@ -182,6 +182,7 @@ VID = 0x3353, PID = 0xa002
 ```
 
 **Notes:**
+
 * If you get the following output when attempting to upgrade the firmware on Mac OS:
 ```
 ./tone_dfu_tool --download /path/to/Tone2_Pro_DFU_TEST201228_nothing.bin
