@@ -13,6 +13,7 @@
     "cheerio": "^0.22.0",
     "hexo": "^5.0.0",
     "hexo-clean-css": "^1.0.0",
+    "hexo-deployer-git": "^2.1.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-fs": "^3.1.0",
     "hexo-generator-archive": "^1.0.0",
