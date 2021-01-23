@@ -74,7 +74,7 @@ $ make debs
 $ make uboot-image
 ```
 
-### 清除linux源码
+### 清除linux源码树
 ```
 $ make kernel-clean
 ```
