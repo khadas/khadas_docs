@@ -33,7 +33,7 @@ If you have setup the environment, then it’s time to build the image. Fenix re
 $ make
 ```
 
-**Tip:**If this is your first time building an image, the script will check your Host's environment and install some essential packages. In addition, repositories (U-Boot, Linux) will be cloned automatically from our Khadas GitHub.
+**Tip:** If this is your first time building an image, the script will check your Host's environment and install some essential packages. In addition, repositories (U-Boot, Linux) will be cloned automatically from our Khadas GitHub.
 
 You can build the U-Boot and Kernel alone.
 
@@ -76,25 +76,49 @@ $ make debs
 $ make uboot-image
 ```
 
+### Clean Linux Source Tree
+```
+$ make kernel-clean
+```
+
+### Show Linux Menuconfig
+```
+$ make kernel-config
+```
+
+### Save Linux Defconfig
+```
+$ make kernel-saveconfig
+```
+### Clean U-boot Source Tree
+```
+$ make uboot-clean
+```
+
 ### Get Help Messages
 You can get help messags by executing `make help`:
 ```sh
 $ make help
 Fenix scripts help messages:
-  all           - Create image according to environment.
-  kernel        - Build linux kernel.
-  uboot         - Build u-boot.
-  uboot-deb     - Build u-boot debian package.
-  uboot-image   - Build minimal image only with u-boot.
-  kernel-deb    - Build linux debian package.
-  board-deb     - Build board debian package.
-  common-deb    - Build common debian package.
-  desktop-deb   - Build desktop debian package.
-  gpu-deb       - Build gpu debian package.
-  debs          - Build all debian packages.
-  image         - Pack update image.
-  clean         - Cleanup.
-  info          - Display current environment.
+  all                   - Create image according to environment.
+  kernel                - Build linux kernel.
+  kernel-clean          - Clean linux source tree.
+  kernel-config         - Show linux menuconfig.
+  kernel-saveconfig     - Save linux defconfig.
+  uboot                 - Build u-boot.
+  uboot-clean           - Clean u-boot source tree.
+  uboot-deb             - Build u-boot debian package.
+  uboot-image           - Build minimal image only with u-boot.
+  kernel-deb            - Build linux debian package.
+  board-deb             - Build board debian package.
+  common-deb            - Build common debian package.
+  desktop-deb           - Build desktop debian package.
+  gpu-deb               - Build gpu debian package.
+  debs                  - Build all debian packages.
+  image                 - Pack update image.
+  clean                 - Cleanup.
+  info                  - Display current environment.
+  get-make-params       - Get available make parameters.
 ```
 
 ### Build Options
