@@ -9,6 +9,15 @@ We use [Fenix](/vim1/FenixScript.html) to build Ubuntu/Debian images. You can al
 $ source source env/setenv.sh
 ```
 
+* Change the kernel config [**Optional**]
+
+If you want to change the default kernel configuration you can follow these steps.
+
+```
+$ make kernel-config
+$ make kernel-saveconfig
+```
+
 * Build the kernel debian package
 
 ```

@@ -9,6 +9,15 @@ title: 如何更新内核
 $ source env/setenv.sh
 ```
 
+* 修改内核配置[**可选的**]
+
+如果你想要修改默认的内核配置，可以参考如下步骤。
+
+```
+$ make kernel-config
+$ make kernel-saveconfig
+```
+
 * 编译内核debian包
 
 ```
