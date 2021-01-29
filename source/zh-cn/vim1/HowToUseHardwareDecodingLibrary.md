@@ -20,6 +20,10 @@ https://github.com/numbqq/aml_hardware_decode_demo
 
 https://github.com/numbqq/uvc_capture_aml/tree/ionvideo
 
+读取视频文件解码。
+
+https://github.com/numbqq/aml_hardware_decode_demo/tree/ionvideo
+
 ### 解码库源码
 
 解码库源码：https://github.com/numbqq/libplayer

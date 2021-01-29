@@ -50,7 +50,7 @@ v4l2_test  -c 1 -p 0 -F 0 -f 0 -D 0 -R 1 -r 2 -d 2 -N 1000 -n 800 -w 0 -e 1 -I 1
 ```
 $ gst-launch-1.0 v4l2src name=vsrc device=/dev/video0 ! video/x-raw,width=1920,height=1080,framerate=60/1,format=RGB ! filesink location=.//test.rgb
 ```
-The recorded vidoe is saved in`test.rgb`.
+The recorded video is saved in`test.rgb`.
 
 # Use MIPI Camera via opencv
 
