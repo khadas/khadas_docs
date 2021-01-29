@@ -31,12 +31,12 @@ overlays=uart3 pwm_f i2c3 os08a10
 overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 otg-device
 ```
 
-3、使能服务：
+### 使能服务：
 ```shell
 khadas@khadas:~$ sudo systemctl enable usb-gadget-khadas.service
 ```
 
-4、保存文件`/boot/env.txt`并重启系统来使其生效：
+### 保存文件`/boot/env.txt`并重启系统：
 ```shell
 khadas@khadas:~$ sync
 khadas@khadas:~$ sudo reboot

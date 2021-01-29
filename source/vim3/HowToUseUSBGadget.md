@@ -30,12 +30,12 @@ overlays=uart3 pwm_f i2c3 os08a10
 overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 otg-device
 ```
 
-3.enable service:
+### Enable service:
 ```shell
 khadas@khadas:~$ sudo systemctl enable usb-gadget-khadas.service
 ```
 
-4.save the film`/boot/env.txt` and reboot the board to make it available:
+### Save the film`/boot/env.txt` and reboot the board:
 ```shell
 khadas@khadas:~$ sync
 khadas@khadas:~$ sudo reboot
