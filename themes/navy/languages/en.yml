@@ -244,6 +244,7 @@ sidebar:
     how_to_use_hardware_encoding_library: How To Use Hardware Encoding Library
     how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
+    how_to_use_usb_gadget: How To Use USB Gadget
 
   edge:
     overview: Beginners Guide
