@@ -242,6 +242,7 @@ sidebar:
     how_to_use_hardware_encoding_library: 如何使用硬件编码库
     how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: 如何配置Wi-Fi同时工作在STA+AP模式
+    how_to_use_usb_gadget: 如何使用USB Gadget
 
   edge:
     getting_started: 开始使用

@@ -206,6 +206,7 @@ vim3:
     how_to_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
     how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
+    how_to_use_usb_gadget: HowToUseUSBGadget.html
 
 edge:
   getting_started:
