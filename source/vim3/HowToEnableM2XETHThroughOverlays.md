@@ -25,11 +25,12 @@ khadas@khadas:~$ sudo vim /boot/enc.txt
 #   onewire         -- Enable onewire bus (GPIO Header PIN15)
 #   disable-ts050   -- Disable TS050 LCD
 #   m2x-eth         -- Enable M2X 100M ethernet. Note: 1G ethernet will be disabled.
+#   otg-device      -- Enable USB OTG Device
 overlays=uart3 pwm_f i2c3 os08a10
 ```
 `uart3 pwm_f i2c3 os08a10`are enabled by default.
 
-2、add`m2x-eth`to`overlays`node to make M2X ETH eenable
+2、add`m2x-eth`to`overlays`node to make M2X ETH enable
 ```shell
 overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 m2x-eth
 ```
@@ -37,7 +38,7 @@ overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 m2x-eth
 3、save the film`/boot/env.txt` and reboot the board to make it available.
 ```shell
 khadas@khadas:~$ sync
-khadas@khadas:~$ reboot
+khadas@khadas:~$ sudo reboot
 ```
 
 ### Check If M2X ETH Is Enable

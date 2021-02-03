@@ -22,7 +22,7 @@ MIPI摄像头的名称为`Juno R2`
 
 ![mipi_guvcview_setting.png](/images/vim3/mipi_guvcview_setting.png)
 
-分辨率设置成`1920x10800`,RGB格式为`BGR3-BGR3`
+分辨率设置成`1920x1080`,RGB格式为`BGR3-BGR3`
 
 ![mipi_guvcview_seccess.png](/images/vim3/mipi_guvcview_seccess.png)
 
@@ -45,6 +45,12 @@ IR-Cut打开
 ```shell
 v4l2_test  -c 1 -p 0 -F 0 -f 0 -D 0 -R 1 -r 2 -d 2 -N 1000 -n 800 -w 0 -e 1 -I 1 -b /dev/fb0 -v /dev/video0
 ```
+
+# 使用Gstreamer录制视频
+```
+$ gst-launch-1.0 v4l2src name=vsrc device=/dev/video0 ! video/x-raw,width=1920,height=1080,framerate=60/1,format=RGB ! filesink location=.//test.rgb
+```
+录制的视频保存在`test.rgb`中
 
 
 # 通过Opencv使用MIPICamera
@@ -130,7 +136,7 @@ int main(int argc, char** argv)
 
 ```
 
-**Learn More:**
+**更多资料:**
 - [khadas.com/shop](https://www.khadas.com/product-page/os08a10-8mp-camera)
 - [原理图](https://dl.khadas.com/Hardware/Accessories/OS08A10/OS08A10_V11_Specification.pdf)
 - [数据手册](https://dl.khadas.com/Hardware/Accessories/OS08A10/OS08A10-H92A_Specification_Version-2-11_SE.pdf)

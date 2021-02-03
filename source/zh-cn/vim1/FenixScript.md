@@ -74,25 +74,50 @@ $ make debs
 $ make uboot-image
 ```
 
+### 清除linux源码树
+```
+$ make kernel-clean
+```
+
+### 打开linux配置菜单
+```
+$ make kernel-config
+```
+
+### 保存linux配置文件
+```
+$ make kernel-saveconfig
+```
+
+### 清除uboot源码树
+```
+$ make uboot-clean
+```
+
 ### 获取帮助信息
 通过执行`make help`来获取帮助信息。
 ```sh
 $ make help
 Fenix scripts help messages:
-  all           - Create image according to environment.
-  kernel        - Build linux kernel.
-  uboot         - Build u-boot.
-  uboot-deb     - Build u-boot debian package.
-  uboot-image   - Build minimal image only with u-boot.
-  kernel-deb    - Build linux debian package.
-  board-deb     - Build board debian package.
-  common-deb    - Build common debian package.
-  desktop-deb   - Build desktop debian package.
-  gpu-deb       - Build gpu debian package.
-  debs          - Build all debian packages.
-  image         - Pack update image.
-  clean         - Cleanup.
-  info          - Display current environment.
+  all                   - Create image according to environment.
+  kernel                - Build linux kernel.
+  kernel-clean          - Clean linux source tree.
+  kernel-config         - Show linux menuconfig.
+  kernel-saveconfig     - Save linux defconfig.
+  uboot                 - Build u-boot.
+  uboot-clean           - Clean u-boot source tree.
+  uboot-deb             - Build u-boot debian package.
+  uboot-image           - Build minimal image only with u-boot.
+  kernel-deb            - Build linux debian package.
+  board-deb             - Build board debian package.
+  common-deb            - Build common debian package.
+  desktop-deb           - Build desktop debian package.
+  gpu-deb               - Build gpu debian package.
+  debs                  - Build all debian packages.
+  image                 - Pack update image.
+  clean                 - Cleanup.
+  info                  - Display current environment.
+  get-make-params       - Get available make parameters.
 ```
 
 ### 编译选项

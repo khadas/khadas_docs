@@ -25,6 +25,7 @@ khadas@khadas:~$ sudo vim /boot/enc.txt
 #   onewire         -- Enable onewire bus (GPIO Header PIN15)
 #   disable-ts050   -- Disable TS050 LCD
 #   m2x-eth         -- Enable M2X 100M ethernet. Note: 1G ethernet will be disabled.
+#   otg-device      -- Enable USB OTG Device
 overlays=uart3 pwm_f i2c3 os08a10
 ```
 其中`uart3 pwm_f i2c3 os08a10`是默认使能的
@@ -37,7 +38,7 @@ overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 m2x-eth
 3、保存文件`/boot/env.txt`并重启系统来使其生效
 ```shell
 khadas@khadas:~$ sync
-khadas@khadas:~$ reboot
+khadas@khadas:~$ sudo reboot
 ```
 
 ### 验证M2X ETH是否使能

@@ -20,6 +20,8 @@ title: 如何使用Device Tree Overlay
 #   os08a10         -- Enable OS08A10 Camera
 #   onewire         -- Enable onewire bus (PIO Header PIN15)
 #   disable-ts050   -- Disable TS050 LCD
+#   m2x-eth         -- Enable M2X 100M ethernet. Note: 1G ethernet will be disabled.
+#   otg-device      -- Enable USB OTG Device
 overlays=uart3 pwm_f i2c3 os08a10
 ```
 
@@ -42,16 +44,17 @@ overlays=uart3 pwm_f i2c3 os08a10
 
 ```sh
 khadas@Khadas:~$ ll /boot/dtb/overlays/kvim3
-total 36
-drwxr-xr-x 2 root root 4096 Aug 15 15:49 ./
-drwxr-xr-x 6 root root 4096 Aug 15 15:49 ../
--rw-r--r-- 1 root root  352 Aug 14 11:07 disable-ts050.dtbo
--rw-r--r-- 1 root root  223 Aug 14 11:07 i2c3.dtbo
--rw-r--r-- 1 root root  472 Aug 14 11:07 onewire.dtbo
--rw-r--r-- 1 root root 1072 Aug 14 11:07 os08a10.dtbo
--rw-r--r-- 1 root root  345 Aug 14 11:07 pwm_f.dtbo
--rw-r--r-- 1 root root  447 Aug 14 11:07 spi1.dtbo
--rw-r--r-- 1 root root  225 Aug 14 11:07 uart3.dtbo
+total 40
+drwxr-xr-x 2 root root 4096 Jan 29 11:13 ./
+drwxr-xr-x 6 root root 4096 Jan 29 11:13 ../
+-rw-r--r-- 1 root root  352 Jan 29 09:35 disable-ts050.dtbo
+-rw-r--r-- 1 root root  223 Jan 29 09:35 i2c3.dtbo
+-rw-r--r-- 1 root root  277 Jan 29 09:35 m2x-eth.dtbo
+-rw-r--r-- 1 root root  472 Jan 29 09:35 onewire.dtbo
+-rw-r--r-- 1 root root 1072 Jan 29 09:35 os08a10.dtbo
+-rw-r--r-- 1 root root  345 Jan 29 09:35 pwm_f.dtbo
+-rw-r--r-- 1 root root  447 Jan 29 09:35 spi1.dtbo
+-rw-r--r-- 1 root root  225 Jan 29 09:35 uart3.dtbo
 ```
 
 * 创建你自己的DTS文件，如：`example.dts`

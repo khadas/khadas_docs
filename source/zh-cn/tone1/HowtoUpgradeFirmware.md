@@ -7,19 +7,19 @@ title: 如何升级固件
 
 * 下载升级工具 [USB Upgrade Tool](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) 并解压。
 * 从 [目录](https://dl.khadas.com/Firmware/ToneBoard/) 下载 `.bin` 固件并解压。 
-* 用USB-C数据线将TONE1连接到PC。
+* 用USB-C数据线将Tone连接到PC。
 
-![TONE1 With USB-C Cable](/images/tone1/tb_fw_01.jpg)
+![Tone With USB-C Cable](/images/tone1/tb_fw_01.jpg)
 
 **安装:**
 
-* 运行 `setup_eval.exe` 程序安装工具，用来升级TONE1的固件。
+* 运行 `setup_eval.exe` 程序安装工具，用来升级Tone的固件。
 
-![TONE1 USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
+![Tone USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
 
-* 点击 `Yes`，然后断开并重新连接TONE1。
+* 点击 `Yes`，然后断开并重新连接Tone。
 
-![Disconnect and Reconnect TONE1](/images/tone1/tb_fw_03.jpg)
+![Disconnect and Reconnect Tone](/images/tone1/tb_fw_03.jpg)
 
 **升级:**
 
@@ -27,21 +27,21 @@ title: 如何升级固件
 
 ![TUSBAudio Firmware Upgrade Tool](/images/tone1/tb_fw_04.jpg)
 
-* 当出现 `Device Opened` 时, 表示TONE1连接成功并且可以开始升级(如果没有，断开并重新连接TONE1)。
+* 当出现 `Device Opened` 时, 表示Tone连接成功并且可以开始升级(如果没有，断开并重新连接Tone)。
 
-![TONE1 Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
+![Tone Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
 
 * 点击 `Browse`， 将解压的 `.bin` 文件加载到工具中。
 
-![TONE1 USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
+![Tone USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
 
 * 点击 `Start`， 开始升级。
 
-![TONE1 USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
+![Tone USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
 
 * 升级完成后，点击 `Exit` 退出。
 
-![TONE1 USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
+![Tone USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
 
 * 卸载用于升级固件的[EVAL driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) ，安装[v224 driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)。
 
@@ -58,7 +58,7 @@ $ sudo apt-get install git libusb-1.0-0 libusb-1.0-0-dev
 
 **下载烧录工具:**
 
-TONE1 DFU 烧录工具在仓库[utils](https://github.com/khadas/utils)中。
+Tone DFU 烧录工具在仓库[utils](https://github.com/khadas/utils)中。
 
 ```
 $ git clone https://github.com/khadas/utils
@@ -74,7 +74,7 @@ $ git pull
 需要安装usb规则以及创建链接文件。
 
 ```
-$ cd /path/to/utils/toneboard-dfu-tool
+$ cd /path/to/utils/tone-dfu-tool
 $ sudo ./INSTALL
 ```
 
@@ -84,12 +84,12 @@ $ sudo ./INSTALL
 
 ===============================================
 
-Host PC: Ubuntu 16.04
+Host PC: Ubuntu 20.04
 
 ===============================================
 
 Installing USB rules...
-Installing toneboard-burn-tool...
+Installing tone-burn-tool...
 Done!
 ```
 
@@ -105,7 +105,7 @@ Done!
 $ cd /home/*
 ```
 
-* 用USB-C数据线将TONE1连接到PC，并检查是否识别成功。
+* 用USB-C数据线将Tone连接到PC，并检查是否识别成功。
 
 ```
 $ lsusb
@@ -128,26 +128,20 @@ $ sudo toneboard-burn-tool -i /path/to/firmware.bin
 * 如果升级成功，你会看到如下信息：
 
 ```
-Upgrading ToneBoard firmware...
-VID = 0xbda, PID = 0x411
-VID = 0x1d6b, PID = 0x3
-VID = 0x1a86, PID = 0x7523
-VID = 0x2207, PID = 0x330c
-VID = 0x4ca, PID = 0xa8
-VID = 0x20b1, PID = 0x8
-ToneBoard DFU application started - Interface 2 claimed
+Upgrading Tone firmware...
+Khadas Tone1 detected!
+Tone DFU application started - Interface 2 claimed
 Detaching device from application mode.
 Waiting for device to restart and enter DFU mode...
-VID = 0x20b1, PID = 0x8
 ... DFU firmware upgrade device opened
-... Downloading image (firmware.bin) to device
+... Downloading image (Tone1_Firmware_V2.00_201016.bin) to device
 ... Download complete
 ... Returning device to application mode
 ```
 
 **卸载烧录工具:**
 ```
-$ cd /path/to/utils/toneboard-dfu-tool 
+$ cd /path/to/utils/tone-dfu-tool
 $ sudo ./UNINSTALL
 ```
 
@@ -155,71 +149,38 @@ $ sudo ./UNINSTALL
 
 **准备:**
 
-* 访问我们的Github并下载 [Mac OS X - USB Upgrade Tool](https://github.com/numbqq/USB-Audio-2.0-Software-v6.1)。
-     * 首先，点击绿色的 `Clone or download` 按钮。
-     * 然后，点击选项`Download ZIP`。
-     * 最后，解压 `.zip` 文件到你选择的目录。
+下载DFU工具到某处，如：`~/Desktop`：
 
-**安装:**
-
-* 打开终端，通过键盘上的 `Command-Space`，在Spotlight中输入 `terminal`。
-* 在终端中输入 `cd your_directory/sc_usb_audio/module_dfu/host/xmos_dfu_osx`。
-     * 将 `your_directory` 替换为解压USB升级工具的目录。
-* 或者，从Finder中导航到 `/sc_usb_audio/module_dfu/host/`：
-     * 首先输入 `cd`, 后跟 `space`，进入终端。
-     * 然后将 `xmos_dfu_osx` 文件夹拖入终端，按下 `Enter`键。 
-* 通过在终端中输入: `make -f Makefile.OSX all` 来构建工具，原始说明在[这里](https://www.xmos.com/developer/published/dfu-user-guide?page=4#usb-audiosec-building-xmos-dfu)。
-* 如果构建成功，你会看到如下信息:
 ```
-make -f Makefile.OSX all
-g++ -g -o xmosdfu xmosdfu.cpp -I. -IOSX libusb-1.0.0-x86_64.dylib -m64
-xmosdfu.cpp:96:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:100:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:104:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:108:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:256:1: warning: control may reach end of non-void function [-Wreturn-type]
-}
-^
-xmosdfu.cpp:417:3: warning: bool literal returned from 'main' [-Wmain]
-  return true;
-  ^      ~~~~
-6 warnings generated.
+$ cd ~/Desktop
+$ wget https://github.com/khadas/utils/raw/master/tone-dfu-tool/tools/macos/tone_dfu_tool
+$ chmod +x tone_dfu_tool
 ```
-* 最后, 在终端中输入 `source setup.sh`，原始说明在[这里](https://www.xmos.com/developer/published/dfu-user-guide?version=&page=3)。
-     * 如果成功，终端将保持沉默。
 
 **升级:**
 * 从 [https://dl.khadas.com/Firmware/ToneBoard/](https://dl.khadas.com/Firmware/ToneBoard/)下载固件，然后解压`.zip`文件。
-* 用USB-C数据线将TONE1连接到你的Macbook / iMac 。
-* 回到终端然后输入 `./xmosdfu --download`，后跟 `space`，将刚刚下载的 `firmware.bin` 从 Finder 拖到 Terminal，然后按下 `Enter` 键。
+* 用USB-C数据线将Tone连接到你的Macbook / iMac 。
+* 回到终端然后输入 `./tone_dfu_tool --download`，后跟 `space`，将刚刚下载的 `firmware.bin` 从 Finder 拖到 Terminal，然后按下 `Enter` 键。
      * 如果成功, 你会看到终端输出如下信息:
 ```
-./xmosdfu --download /Users/ossyx/Documents/Wesion/TONEBOARD\ FIRMWARE\ UPGRADE\ TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin 
-VID = 0x20b1, PID = 0x8
-XMOS DFU application started - Interface 2 claimed
+$ ./tone_dfu_tool --download /path/to/Tone2_Pro_DFU_TEST201228_nothing.bin 
+VID = 0x3353, PID = 0xa002
+Khadas Tone2 Pro detected!
+Tone DFU application started - Interface 2 claimed
 Detaching device from application mode.
 Waiting for device to restart and enter DFU mode...
-VID = 0x20b1, PID = 0x8
+VID = 0x3353, PID = 0xa002
 ... DFU firmware upgrade device opened
-... Downloading image (/Users/ossyx/Documents/Wesion/TONEBOARD FIRMWARE UPGRADE TOOL/Khadas_Tone_Board_dfu-2018-1226-Upgrade-Firmware/Khadas_Tone_Board_dfu_1226.bin) to device
+... Downloading image (/path/to/Tone2_Pro_DFU_TEST201228_nothing.bin) to device
 ... Download complete
 ... Returning device to application mode
 ```
 
-
 **注意:**
 
-* 如果在Mac OS X尝试升级固件时输出如下信息：
+* 如果在Mac OS尝试升级固件时输出如下信息：
 ```
-./xmosdfu --download /Users/ossyx/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/Khadas_Tone_Board_dfu_1226.bin 
+./tone_dfu_tool --download /path/to/Tone2_Pro_DFU_TEST201228_nothing.bin
 dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib
   Referenced from: /Users/ossyx/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/./xmosdfu
   Reason: image not found
@@ -231,6 +192,6 @@ Abort trap: 6
 
 # 其他:
 
-* [TONE1 概述](/zh-cn/tone1/index.html)
-* [TONE1 用户手册](/zh-cn/tone1/UserManual.html)
-* [TONE1 固件下载](https://dl.khadas.com/Firmware/ToneBoard/)
+* [Tone1 概述](/zh-cn/tone1/index.html)
+* [Tone1 用户手册](/zh-cn/tone1/UserManual.html)
+* [Tone1 固件下载](https://dl.khadas.com/Firmware/ToneBoard/)

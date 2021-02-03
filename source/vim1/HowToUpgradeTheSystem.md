@@ -1,5 +1,7 @@
-title: How To Upgrade OTA To The Latest Version
+title: How To Upgrade The System To Latest Version
 ---
+
+**Note: Only for Ubuntu.**
 
 ## Update resources
 ```sh
