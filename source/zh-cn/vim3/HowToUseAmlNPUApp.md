@@ -27,7 +27,7 @@ $ git clone https://gitlab.com/khadas/aml_npu_app
 ```shell
 $ cd {workspace}/aml_npu_app
 $ ls
-DDK_6.3.2  DDK_6.3.2.3  DDK_6.3.2.5  DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
+DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
 ```
 
 ```
@@ -92,11 +92,12 @@ model_code  sample_demo_fb  sample_demo_x11  source_code  yolo_demo_gst_uvc_fb  
 
 ```
 1. source_code            #编译出libnn_detect.so.作为桥梁,衔接不同的库和不同的应用demo
-2. sample_demo_fb         #编译出aml_npu_demo_binaries仓库的detect_demo_fb_cv3/detect_demo_fb_cv4,用于framebuffer下的图片识别
-3. sample_demo_x11        #编译出aml_npu_demo_binaries仓库的detect_demo_x11_cv3/detect_demo_x11_cv4,用于X11下的图片识别
-4. yolo_demo_gst_uvc_fb   #编译出aml_npu_demo_binaries仓库的detect_demo_uvc_fb_cv3/detect_demo_uvc_fb_cv4,用于framebuffer下的USB摄像头的动态识别
-5. yolo_demo_mipi_fb      #编译出aml_npu_demo_binaries仓库的detect_demo_mipi_fb_cv3/detect_demo_mipi_fb_cv4,用于framebuffer下的mipi摄像头动态识别
-6. yolo_demo_x11          #编译出aml_npu_demo_binaries仓库的detect_demo_x11_cv3/detect_demo_x11_cv4,用于X11下的摄像头动态识别
+2. sample_demo_fb         #编译出aml_npu_demo_binaries仓库的detect_demo_fb,用于framebuffer下的图片识别
+3. sample_demo_x11        #编译出aml_npu_demo_binaries仓库的detect_demo_x11,用于X11下的图片识别
+4. yolo_demo_fb_usb       #编译出aml_npu_demo_binaries仓库的detect_demo_fb_usb,用于framebuffer下的USB摄像头的动态识别
+5. yolo_demo_fb_mipi      #编译出aml_npu_demo_binaries仓库的detect_demo_fb_mipi,用于framebuffer下的mipi摄像头动态识别
+6. yolo_demo_x11_usb      #编译出aml_npu_demo_binaries仓库的detect_demo_x11_usb,用于X11下的usb摄像头动态识别
+6. yolo_demo_x11_mipi     #编译出aml_npu_demo_binaries仓库的detect_demo_x11_mipi,用于X11下的mipi摄像头动态识别
 ```
 
 这里以`sample_demo_x11`为例
@@ -104,16 +105,16 @@ model_code  sample_demo_fb  sample_demo_x11  source_code  yolo_demo_gst_uvc_fb  
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/sample_demo_x11
 $ ls
-1080p.bmp  build_vx_cv3.sh  build_vx_cv4.sh  detect.h  emb.db  main_cv3.cpp  main_cv4.cpp  makefile_cv3.linux  makefile_cv4.linux  nn_detect_common.h  nn_detect.h  nn_detect_utils.h  ReadMe.txt  result
+1080p.bmp  build_vx.sh  detect.h  emb.db  main.cpp  makefile.linux  nn_detect_common.h  nn_detect.h  nn_detect_utils.h  ReadMe.txt  result
 ```
 
 这里对主要的文件做说明
 
 ```
-1. build_vx_cv3.sh/build_vx_cv4.sh         #编译脚本,编译环境分别指定了`opencv3`和`opencv4`
-2. makefile_cv3.linux/makefile_cv4.linux   #分别是opencv3/opencv4编译脚本在编译时需要指定的makefile.linux文件
-3. main_cv3.cpp/main_cv4.cpp               #分别是opencv3/opencv4环境下的应用demo的主要源码.
-4. xxx.h                                   #应用层需要使用到的定义相关的头文件
+1. build_vx.sh         #编译脚本
+2. makefile.linux      #编译脚本在编译时需要指定的makefile.linux文件
+3. main.cpp            #环境下的应用demo的主要源码.
+4. xxx.h               #应用层需要使用到的定义相关的头文件
 ```
 
 # 编译仓库源码
@@ -125,24 +126,18 @@ $ ls
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
-$ ./build_vx.sh {path/to}/aml_npu_sdk/linux_sdk/linux_sdk
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_yolo_v3.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_yolo_v3.so'
-  COMPILE /home/yan/data/git/npu/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolov3_process.c
-  COMPILE /home/yan/data/git/npu/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/vnn_yolov3.c
+$ ./build_vx.sh 
+  COMPILE /home/khadas/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolov3_process.c
+  COMPILE /home/khadas/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/vnn_yolov3.c
 vnn_yolov3.c: In function ‘vnn_CreateYolov3’:
 vnn_yolov3.c:145:29: warning: unused variable ‘data’ [-Wunused-variable]
-     uint8_t *               data;
-                             ^~~~
+  145 |     uint8_t *               data;
+      |                             ^~~~
 At top level:
 vnn_yolov3.c:94:17: warning: ‘load_data’ defined but not used [-Wunused-function]
- static uint8_t* load_data
-                 ^~~~~~~~~
-  COMPILE /home/yan/data/git/npu/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolo_v3.c
-  LINK    libnn_yolo_v3.so
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_yolo_v3.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_yolo_v3.so'
-make: Nothing to be done for 'all'.
+   94 | static uint8_t* load_data
+      |                 ^~~~~~~~~
+  COMPILE /home/khadas/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolo_v3.c
 ```
 
 在输出目录`bin_r`下就能看到生成的库
@@ -163,14 +158,10 @@ libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/source_code
-$ ./build_vx.sh {path/to}/aml_npu_sdk/linux_sdk/linux_sdk
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_detect.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_detect.so'
-  COMPILE /home/yan/data/git/npu/aml_npu_app/detect_library/source_code/detect.c
-  COMPILE /home/yan/data/git/npu/aml_npu_app/detect_library/source_code/detect_log.c
-  LINK    libnn_detect.so
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_detect.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_detect.so'
+$ ./build_vx.sh
+  COMPILE /home/khadas/aml_npu_app/detect_library/source_code/detect.c
+  COMPILE /home/khadas/aml_npu_app/detect_library/source_code/detect_log.c
+tee: /linux_build_sample.log: Permission denied
 make: Nothing to be done for 'all'.
 ```
 
@@ -184,36 +175,49 @@ detect_log.o  detect.o  libnn_detect.so
 
 ### 编译应用demo
 
-这里以sample_demo_x11为例,编译opencv3版本
+这里以sample_demo_x11为例,
 
 ```shell
-$ cd {workspace}/aml_npu_app/detect_library/sample_demo_x11
-$ ./build_vx_cv3.sh {path/to}/aml_npu_sdk/linux_sdk/linux_sdk
-  COMPILE /home/yan/data/git/npu/aml_npu_app/detect_library/sample_demo_x11/main_cv3.cpp
-main_cv3.cpp: In function ‘int init_fb()’:
-main_cv3.cpp:436:11: warning: unused variable ‘i’ [-Wunused-variable]
-  long int i;
-           ^
-main_cv3.cpp: At global scope:
-main_cv3.cpp:434:12: warning: ‘int init_fb()’ defined but not used [-Wunused-function]
- static int init_fb(void)
-            ^~~~~~~
-  LINK    detect_demo
+./build_vx.sh
+  COMPILE /home/khadas/aml_npu_app/detect_library/sample_demo_x11/main.cpp
+main.cpp: In function ‘int run_detect_model(int, char**)’:
+main.cpp:321:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  321 |   return NULL;
+      |          ^~~~
+main.cpp:261:39: warning: unused variable ‘img_width’ [-Wunused-variable]
+  261 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                       ^~~~~~~~~
+main.cpp:261:50: warning: unused variable ‘img_height’ [-Wunused-variable]
+  261 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                                  ^~~~~~~~~~
+main.cpp: In function ‘int run_detect_facent(int, char**)’:
+main.cpp:413:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  413 |   return NULL;
+      |          ^~~~
+main.cpp:366:39: warning: unused variable ‘img_width’ [-Wunused-variable]
+  366 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                       ^~~~~~~~~
+main.cpp:366:50: warning: unused variable ‘img_height’ [-Wunused-variable]
+  366 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                                  ^~~~~~~~~~
+main.cpp: In function ‘int init_fb()’:
+main.cpp:539:11: warning: unused variable ‘i’ [-Wunused-variable]
+  539 |  long int i;
+      |           ^
+main.cpp: At global scope:
+main.cpp:537:12: warning: ‘int init_fb()’ defined but not used [-Wunused-function]
+  537 | static int init_fb(void)
+      |            ^~~~~~~
+tee: /linux_build_sample.log: Permission denied
 make: Nothing to be done for 'all'.
 ```
 
-在`bin_r_cv3`目录下,就会看到生成的`detect_demo`文件
+生成的`detect_demo`文件就是我们需要的文件.
 
 ```shell
-$ cd {workspace}/aml_npu_app/detect_library/sample_demo_x11/bin_r_cv3
-$ ls
-detect_demo  main_cv3.o
+$ ls bin_r_cv3/
+detect_demo  main.o
 ```
-
-编译opencv4版本只要使用`build_vx_cv4.sh`脚本编译即可.
-
-
-
 
 
 
