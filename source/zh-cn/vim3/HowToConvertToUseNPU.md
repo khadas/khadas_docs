@@ -255,7 +255,7 @@ int size[3]={nn_width/32, nn_height/32,85*3};
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
-$ ./build_vx.sh {workspace}/SDK/linux_sdk/linux_sdk
+$ ./build_vx.sh
 ```
 
 生成的库在`bin_r`目录下

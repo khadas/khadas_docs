@@ -103,17 +103,17 @@ Here is an example of `sample_demo_x11`
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/sample_demo_x11
 $ ls
-1080p.bmp  build_vx_cv3.sh  build_vx_cv4.sh  detect.h  emb.db  main_cv3.cpp  main_cv4.cpp  makefile_cv3.linux  makefile_cv4.linux  nn_detect_common.h  nn_detect.h  nn_detect_utils.h  ReadMe.txt  result
+1080p.bmp  build_vx.sh  detect.h  emb.db  main.cpp  makefile.linux  nn_detect_common.h  nn_detect.h  nn_detect_utils.h  ReadMe.txt  result
 ```
 
 Here is an explanation of the main files,
 
 
 ```
-1. build_vx_cv3.sh/build_vx_cv4.sh         #Compile script, the compilation environment specifies `opencv3` and `opencv4`
-2. makefile_cv3.linux/makefile_cv4.linux   #Respectively, the opencv3/opencv4 compilation scripts need to specify the makefile.linux file when compiling
-3. main_cv3.cpp/main_cv4.cpp               # Is the main source code of the application demo in the opencv3/opencv4 environment.
-4. xxx.h                                   #The definition related header files that the application layer needs to use
+1. build_vx.sh         #Compile script, the compilation environment specifies `opencv3` and `opencv4`
+2. makefile.linux      #Respectively, the opencv3/opencv4 compilation scripts need to specify the makefile.linux file when compiling
+3. main.cpp            # Is the main source code of the application demo in the opencv3/opencv4 environment.
+4. xxx.h               #The definition related header files that the application layer needs to use
 ```
 
 # Compile the repository source code
@@ -125,24 +125,18 @@ To compile the library, just enter the directory of the corresponding library an
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
-$ ./build_vx.sh {path/to}/aml_npu_sdk/linux_sdk/linux_sdk
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_yolo_v3.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_yolo_v3.so'
-  COMPILE /home/yan/data/git/npu/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolov3_process.c
-  COMPILE /home/yan/data/git/npu/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/vnn_yolov3.c
+$ ./build_vx.sh
+  COMPILE /home/khadas/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolov3_process.c
+  COMPILE /home/khadas/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/vnn_yolov3.c
 vnn_yolov3.c: In function ‘vnn_CreateYolov3’:
 vnn_yolov3.c:145:29: warning: unused variable ‘data’ [-Wunused-variable]
-     uint8_t *               data;
-                             ^~~~
+  145 |     uint8_t *               data;
+      |                             ^~~~
 At top level:
 vnn_yolov3.c:94:17: warning: ‘load_data’ defined but not used [-Wunused-function]
- static uint8_t* load_data
-                 ^~~~~~~~~
-  COMPILE /home/yan/data/git/npu/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolo_v3.c
-  LINK    libnn_yolo_v3.so
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_yolo_v3.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_yolo_v3.so'
-make: Nothing to be done for 'all'.
+   94 | static uint8_t* load_data
+      |                 ^~~~~~~~~
+  COMPILE /home/khadas/aml_npu_app/DDK_6.3.3.4/detect_library/model_code/detect_yolo_v3/yolo_v3.c
 ```
 
 You can see the generated library in the output directory `bin_r`
@@ -163,14 +157,10 @@ Enter the `source_code` directory and compile `libnn_detect.so`
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/source_code
-$ ./build_vx.sh {path/to}/aml_npu_sdk/linux_sdk/linux_sdk
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_detect.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_detect.so'
-  COMPILE /home/yan/data/git/npu/aml_npu_app/detect_library/source_code/detect.c
-  COMPILE /home/yan/data/git/npu/aml_npu_app/detect_library/source_code/detect_log.c
-  LINK    libnn_detect.so
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:85: warning: overriding recipe for target 'bin_r/libnn_detect.so'
-/home/yan/data/git/npu/aml_npu_sdk/linux_sdk/linux_sdk/common.target:64: warning: ignoring old recipe for target 'bin_r/libnn_detect.so'
+$ ./build_vx.sh
+  COMPILE /home/khadas/aml_npu_app/detect_library/source_code/detect.c
+  COMPILE /home/khadas/aml_npu_app/detect_library/source_code/detect_log.c
+tee: /linux_build_sample.log: Permission denied
 make: Nothing to be done for 'all'.
 ```
 
@@ -187,20 +177,40 @@ detect_log.o  detect.o  libnn_detect.so
 Here is sample_demo_x11 as an example to compile the opencv3 version
 
 ```shell
-$ cd {workspace}/aml_npu_app/detect_library/sample_demo_x11
-$ ./build_vx_cv3.sh {path/to}/aml_npu_sdk/linux_sdk/linux_sdk
-  COMPILE /home/yan/data/git/npu/aml_npu_app/detect_library/sample_demo_x11/main_cv3.cpp
-main_cv3.cpp: In function ‘int init_fb()’:
-main_cv3.cpp:436:11: warning: unused variable ‘i’ [-Wunused-variable]
-  long int i;
-           ^
-main_cv3.cpp: At global scope:
-main_cv3.cpp:434:12: warning: ‘int init_fb()’ defined but not used [-Wunused-function]
- static int init_fb(void)
-            ^~~~~~~
-  LINK    detect_demo
+./build_vx.sh
+  COMPILE /home/khadas/aml_npu_app/detect_library/sample_demo_x11/main.cpp
+main.cpp: In function ‘int run_detect_model(int, char**)’:
+main.cpp:321:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  321 |   return NULL;
+      |          ^~~~
+main.cpp:261:39: warning: unused variable ‘img_width’ [-Wunused-variable]
+  261 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                       ^~~~~~~~~
+main.cpp:261:50: warning: unused variable ‘img_height’ [-Wunused-variable]
+  261 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                                  ^~~~~~~~~~
+main.cpp: In function ‘int run_detect_facent(int, char**)’:
+main.cpp:413:10: warning: converting to non-pointer type ‘int’ from NULL [-Wconversion-null]
+  413 |   return NULL;
+      |          ^~~~
+main.cpp:366:39: warning: unused variable ‘img_width’ [-Wunused-variable]
+  366 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                       ^~~~~~~~~
+main.cpp:366:50: warning: unused variable ‘img_height’ [-Wunused-variable]
+  366 |  int nn_height, nn_width, nn_channel, img_width, img_height;
+      |                                                  ^~~~~~~~~~
+main.cpp: In function ‘int init_fb()’:
+main.cpp:539:11: warning: unused variable ‘i’ [-Wunused-variable]
+  539 |  long int i;
+      |           ^
+main.cpp: At global scope:
+main.cpp:537:12: warning: ‘int init_fb()’ defined but not used [-Wunused-function]
+  537 | static int init_fb(void)
+      |            ^~~~~~~
+tee: /linux_build_sample.log: Permission denied
 make: Nothing to be done for 'all'.
 ```
+
 
 In the `bin_r_cv3` directory, you will see the generated `detect_demo` file
 

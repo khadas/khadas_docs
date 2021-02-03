@@ -253,7 +253,7 @@ Use the `build_vx.sh` script to compile the yolov3 library,
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
-$ ./build_vx.sh {workspace}/SDK/linux_sdk/linux_sdk
+$ ./build_vx.sh
 ```
 
 The generated library is in the `bin_r` directory
