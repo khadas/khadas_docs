@@ -1,7 +1,7 @@
 title: How to run NPU Demo on VIM3
 ---
 
-# Bet NPU Demo
+# Get NPU Demo
 
 NPU Demo is not installed on the board by default. You need to download it from gitlab first
 
