@@ -117,20 +117,13 @@ $ sudo ./UNINSTALL
 
 ## 运行环境说明
 
-NPU Demo 可以运行在X11或者framebuffer模式,Opencv3或者Opencv4的不同环境下.选择对应的demo运行即可.
+NPU Demo 可以运行在X11或者framebuffer模式的不同环境下.选择对应的demo运行即可.
 
 ### X11/Framebuffer
 
 带有`fb`字样的demo是运行在framebuffer模式下.
 
 带有`X11`字样的demo则是运行在桌面系统环境下.
-
-### Opencv3/Opencv4
-
-
-以`cv3`字样结尾的就是Opencv3环境下运行的demo
-
-以`cv4`字样结尾的就是Opencv4环境下运行的demo
 
 ## 说明示例
 
@@ -139,13 +132,11 @@ NPU Demo 可以运行在X11或者framebuffer模式,Opencv3或者Opencv4的不同
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
 $ ls 
-1080p.bmp  detect_demo_fb_cv3  detect_demo_fb_cv4  detect_demo_x11_cv3  detect_demo_x11_cv4  INSTALL  lib  nn_data  README.md  UNINSTALL
+1080p.bmp  detect_demo_x11  detect_demo_xfb  INSTALL  lib  nn_data  README.md  UNINSTALL
 ```
 
-1. detect_demo_fb_cv3  是运行在framebuffer下使用opencv3的识别图片的demo
-2. detect_demo_fb_cv4  是运行在framebuffer下使用opencv4的识别图片的demo
-3. detect_demo_x11_cv3 是运行在X11下使用opencv3的识别图片的demo
-4. detect_demo_x11_cv4 是运行在X11下使用opencv4的识别图片的demo
+1. detect_demo_fb  是运行在framebuffer下识别图片的demo
+3. detect_demo_x11 是运行在X11下识别图片的demo
 
 
 ## 运行
@@ -159,11 +150,11 @@ $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
 $ ./detect_demo_xx_xx type picture_path
 ```
 
-这里以x11下使用Opencv3调用yolov3模型识别图片为例,
+这里以x11下调用yolov3模型识别图片为例,
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
-$ ./detect_demo_fb_cv3 2 1080p.bmp
+$ ./detect_demo_x11 2 1080p.bmp
 ```
 
 运行结果如下,
@@ -174,22 +165,20 @@ $ ./detect_demo_fb_cv3 2 1080p.bmp
 
 摄像头说明
 
-framebuffer下,使用USB摄像头应选用`uvc`的demo,使用mipi摄像头选用`mipi`的demo.
-
-x11下,usb摄像头和mipi摄像头使用的是同一套demo.
+使用USB摄像头应选用`usb`的demo,使用mipi摄像头选用`mipi`的demo.
 
 摄像头动态识别的命令格式
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_xx_xx_xx <video node> <type>
+$ ./detect_xx_xx <video node> <type>
 ```
 
-这里以x11环境下使用opencv3调用yolov3为例,
+这里以x11环境下调用yolov3为例,
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_demo_x11_cv3 /dev/video1 2
+$ ./detect_demo_x11_usb /dev/video1 2
 ```
 
 打开摄像头以后,会将识别的结果显示在屏幕上

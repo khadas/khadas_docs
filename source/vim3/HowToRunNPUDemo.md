@@ -1,7 +1,7 @@
 title: How to run NPU Demo on VIM3
 ---
 
-# Bet NPU Demo
+# Get NPU Demo
 
 NPU Demo is not installed on the board by default. You need to download it from gitlab first
 
@@ -115,19 +115,13 @@ The `type` parameter is an input parameter that must be selected whether it is t
 
 ## Operating environment description
 
-NPU Demo can run in X11 or framebuffer mode, Opencv3 or Opencv4 in different environments. Just select the corresponding demo to run.
+NPU Demo can run in X11 or framebuffer mode, just select the corresponding demo to run.
 
 ### X11/Framebuffer
 
 The demo with `fb` is running in framebuffer mode.
 
 The demo with `x11` is running in X11 mode.
-
-### Opencv3/Opencv4
-
-The one ending with `cv3` is the demo running in the Opencv3 environment
-
-The one ending with `cv4` is the demo running in the Opencv4 environment
 
 ## Illustrative example
 
@@ -136,13 +130,11 @@ Here is an example of `detect_demo_picture`,
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
 $ ls 
-1080p.bmp  detect_demo_fb_cv3  detect_demo_fb_cv4  detect_demo_x11_cv3  detect_demo_x11_cv4  INSTALL  lib  nn_data  README.md  UNINSTALL
+1080p.bmp  detect_demo_x11  detect_demo_xfb  INSTALL  lib  nn_data  README.md  UNINSTALL
 ```
 
-1. detect_demo_fb_cv3  It is a demo that uses opencv3 recognition pictures running under framebuffer
-2. detect_demo_fb_cv4  It is a demo that uses opencv4 recognition pictures running under framebuffer
-3. detect_demo_x11_cv3 It is a demo that uses opencv3 recognition pictures running under X11
-4. detect_demo_x11_cv4 It is a demo that uses opencv4 recognition pictures running under X11
+1. detect_demo_fb  It is a demo that uses opencv3 recognition pictures running under framebuffer
+3. detect_demo_x11 It is a demo that uses opencv3 recognition pictures running under X11
 
 
 ## Run
@@ -153,14 +145,14 @@ Identify the command format of the picture
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
-$ ./detect_demo_xx_xx type picture_path
+$ ./detect_demo_xx type picture_path
 ```
 
 Here is an example of using Opencv3 to call the yolov3 model to recognize pictures under x11.
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
-$ ./detect_demo_fb_cv3 2 1080p.bmp
+$ ./detect_demo_fb 2 1080p.bmp
 ```
 
 The results of the operation are as follows,
@@ -171,22 +163,20 @@ The results of the operation are as follows,
 
 Camera description
 
-Under framebuffer, you should use the demo of `uvc` to use the USB camera, and the demo of `mipi` to use the mipi camera.
-
-Under x11, the usb camera and mipi camera use the same set of demos.
+You should use the demo of `usb` to use the USB camera, and the demo of `mipi` to use the mipi camera.
 
 Command format for camera dynamic recognition
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_xx_xx_xx <video node> <type>
+$ ./detect_xx_xx <video node> <type>
 ```
 
 Here is an example of using opencv3 to call yolov3 in the x11 environment.
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_demo_x11_cv3 /dev/video1 2
+$ ./detect_demo_x11_usb /dev/video1 2
 ```
 
 After turning on the camera, the recognition result will be displayed on the screen
