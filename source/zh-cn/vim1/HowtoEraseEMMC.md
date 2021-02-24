@@ -2,21 +2,11 @@ title: 如何擦除eMMC存储器
 ---
 
 有四种方式可以擦除VIMs板载eMMC存储器，如下：
-* 按键模式
 * 串口模式
 * 中断模式
 * 命令行模式
 
 **注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
-
-### 按键模式(确保U-boot正常运行)
-所有固件都只支持eMMC擦除，请按如下步骤擦除eMMC：
-
-1. 给VIMs上电
-2. 同时按住`Power`和 `Function`按键不松手
-3. 短按 ‘Reset’按键
-4. 执行上述步骤后U-boot会自动擦除eMMC，大概10S左右
-5. 当eMMC数据擦除后，显示器会显示黑屏
 
 ### 串口模式(针对开发者)
 1. 参考这里([VIM1](/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/zh-cn/vim3/SetupSerialTool.html))设置串口
