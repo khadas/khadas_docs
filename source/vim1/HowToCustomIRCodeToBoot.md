@@ -1,4 +1,4 @@
-title: How To Set a custom `IR CODE` To Boot The System
+title: How To Set a custom IR CODE To Boot The System
 ---
 
 # Get the `IR CODE` of the remote control button

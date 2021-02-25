@@ -32,7 +32,7 @@ Example: PIN15(GPIO1_C2)
 GPIO1_C2 -> (1 * 32) + (2 * 8) + 2 = 50
 ```
 
-** How To Access GPIO Via Terminal **
+**How To Access GPIO Via Terminal**
 
 > Request the gpio(GPIO1_C2)
 ```

@@ -31,23 +31,23 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 ## Upgrade On Ubuntu
 ### Preparation
 ```
-$sudo apt-get install libusb-dev git parted
+$ sudo apt-get install libusb-dev git parted
 ```
 ### Download Burning Tool
 Image burning tool for Ubuntu is in this repository [utils](https://github.com/khadas/utils).
 ```
-$git clone https://github.com/khadas/utils
+$ git clone https://github.com/khadas/utils
 ```
 Or just pull it (if you have already cloned this repository).
 ```
-$cd /path/to/utils
-$git pull
+$ cd /path/to/utils
+$ git pull
 ```
 ### Install Burning Tool
 You need to install USB rules and create some links.
 ```
-$cd /path/to/utils
-$sudo ./INSTALL
+$ cd /path/to/utils
+$ sudo ./INSTALL
 ```
 You will see this print-out if it was successful.
 ```
@@ -84,7 +84,7 @@ Done!
 You must now place your VIM board into "Upgrade Mode".See [VIM1](/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/vim3/HowtoBootIntoUpgradeMode.html) to enter Upgrade Mode.
 Check to see if Ubuntu has detected your VIM1/VIM2 as a connected USB-device.
 ```
-$lsusb | grep Amlogic
+$ lsusb | grep Amlogic
 BUS 002 Device 036: ID 1b8e:c003 Amlogic, Inc.
 ```
 The message above means that your VIM is connected and recogized by Ubuntu.
@@ -97,7 +97,7 @@ For example: Burn image for VIM3
 * General command `burn-tool`:
 
 ```
-$burn-tool -v aml -b VIM3 -i /path/to/image
+$ burn-tool -v aml -b VIM3 -i /path/to/image
 ```
 
 * Amlogic command `aml-burn-tool`:
@@ -131,8 +131,8 @@ For more information please refer to [docs](https://github.com/khadas/utils/tree
 
 ### Uninstall Burning Tool
 ```
-$cd /path/to/utils
-$sudo ./UNINSTALL
+$ cd /path/to/utils
+$ sudo ./UNINSTALL
 ```
 
 **NOTE:** This burning tool has been verified to work on **Ubuntu 16.04**.

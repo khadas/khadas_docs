@@ -89,10 +89,10 @@ Linux_TX|19|39|GPIODV_13
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
-[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
+[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
 
 **主要特性:**
-- 将EMMC的中的内容通过[SD卡](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt),[USB存储设备](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt)或者[网络]((https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt))备份。
+- 将EMMC的中的内容通过[SD卡](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt),[USB存储设备](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt)或者[网络](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt)备份。
 - 从其他设备或者网络覆写img.gz格式的固件到EMMC
 - 通过网络直接安装系统
 - 查看硬件谁设备信息
@@ -100,7 +100,7 @@ Linux_TX|19|39|GPIODV_13
 - 通过串口，USB网络接口或者网络接口使用[shell访问](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt)系统。
 
 **启动Krescue的[步骤](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt)**
-1. 从[dl.khadas.com](https://dl.khadas.com/Firmware/Kre    scue/dump/)上下载合适你板子使用的VIM2的镜像。
+1. 从[dl.khadas.com](https://dl.khadas.com/Firmware/Krescue/dump/)上下载合适你板子使用的VIM2的镜像。
 2. 使用启动盘制作工具([Etcher](https://www.balena.io/etcher/)，[rufus](https://rufus.ie/))将下载的镜像烧录到SD中。
 3. 将SD卡插到板子上，同时插上HDMI，用USB-C供电
 4. 启动板子进入[MaskROM模式](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt)(请仔细阅读这个谅解的文档！！！)

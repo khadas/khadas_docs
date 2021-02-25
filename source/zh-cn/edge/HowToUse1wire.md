@@ -15,15 +15,15 @@ $ vim /boot/env.txt
 overlays=i2c2 spi3 i2s0 onewire
 ```
 
-关于overlays的详细说明可以参考[如何使用device tree overlays](/zh-cn/edge/HowToUseDeviceTreeOverlay.html)
+关于overlays的详细说明可以参考[如何使用device tree overlays](/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)。
 
 
 
-```
+
 
 * 重启
 
-重启设备,加载单总线驱动.
+重启设备,加载单总线驱动。
 
 # 使用单总线
 
