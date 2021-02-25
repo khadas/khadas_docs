@@ -25,10 +25,10 @@ title: 设置串口调试工具
 ![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
 
 
-### 设置串口软件`Kermit`
-**安装c-kermit:**
+### 设置串口软件`minicom`
+**安装minicom:**
 ```sh
-$ sudo apt-get install ckermit
+$ sudo apt-get install minicom
 ```
 
 **添加权限**
@@ -36,36 +36,92 @@ $ sudo apt-get install ckermit
 $ sudo usermod -a -G dialout $(whoami)
 ```
 
-**添加如下命令到 ~/.kermrc进行配置。**
-```
-set line /dev/ttyUSB0
-set speed 115200
-set carrier-watch off
-set handshake none
-set flow-control none
-robust
-set file type bin
-set file name lit
-set rec pack 1000
-set send pack 1000
-set window 5
-c
-```
+**打开minicom**
 
-**从命令行运行`kermit` 进入C-Kermit**
-
-确保连接正确, 如果一切正常那么你会看到如下信息：
 ```sh
-$ kermit
-Connecting to /dev/ttyUSB0, speed 115200
- Escape character: Ctrl-\ (ASCII 28, FS): enabled
-Type the escape character followed by C to get back,
-or followed by ? to see other options.
-----------------------------------------------------
-GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;0.0;CHK:0;
-TE: 116640
+$ minicom -D /dev/ttyUSB0 -b 115200
+```
 
-...
+`-D` 指定串口设备, `-b` to 指定波特率
+
+```
+Welcome to minicom 2.7.1
+
+OPTIONS: I18n
+Compiled on Aug 13 2017, 15:25:34.
+Port /dev/ttyUSB0, 16:45:10
+
+Press CTRL-A Z for help on special keys
+```
+**How to use minicom**
+
+`Ctrl + a` 或者 `Ctrl + z` 进入minicom控制模式. 按键 `o` 进入minicom配置界面
+
+```
++-----[configuration]------+
+| Filenames and paths      |
+| File transfer protocols  |
+| Serial port setup        |
+| Modem and dialing        |
+| Screen and keyboard      |
+| Save setup as dfl        |
+| Save setup as..          |
+| Exit                     |
++--------------------------+
+
+```
+
+`Serial port setup` 选项配置与串口通信有关的配置
+`Save setup as dfl` 保存成默认模式
+
+键盘 `q` 可以关闭minicom
+
+```
++----------------------+
+| Leave without reset? |
+|     Yes       No     |
++----------------------+
+```
+
+通过minicom的帮助命令可以查看到所有的选项
+
+```sh
+$ minicom -h
+Usage: minicom [OPTION]... [configuration]
+A terminal program for Linux and other unix-like systems.
+
+  -b, --baudrate         : set baudrate (ignore the value from config)
+  -D, --device           : set device name (ignore the value from config)
+  -s, --setup            : enter setup mode
+  -o, --noinit           : do not initialize modem & lockfiles at startup
+  -m, --metakey          : use meta or alt key for commands
+  -M, --metakey8         : use 8bit meta key for commands
+  -l, --ansi             : literal; assume screen uses non IBM-PC character set
+  -L, --iso              : don't assume screen uses ISO8859
+  -w, --wrap             : Linewrap on
+  -H, --displayhex       : display output in hex
+  -z, --statline         : try to use terminal's status line
+  -7, --7bit             : force 7bit mode
+  -8, --8bit             : force 8bit mode
+  -c, --color=on/off     : ANSI style color usage on or off
+  -a, --attrib=on/off    : use reverse or highlight attributes on or off
+  -t, --term=TERM        : override TERM environment variable
+  -S, --script=SCRIPT    : run SCRIPT at startup
+  -d, --dial=ENTRY       : dial ENTRY from the dialing directory
+  -p, --ptty=TTYP        : connect to pseudo terminal
+  -C, --capturefile=FILE : start capturing to FILE
+  -F, --statlinefmt      : format of status line
+  -R, --remotecharset    : character set of communication partner
+  -v, --version          : output version information and exit
+  -h, --help             : show help
+  configuration          : configuration file to use
+
+These options can also be specified in the MINICOM environment variable.
+This variable is currently unset.
+The configuration directory for the access file and the configurations
+is compiled to /etc/minicom.
+
+Report bugs to <minicom-devel@lists.alioth.debian.org>.
 
 ```
 *提示*
@@ -82,4 +138,4 @@ TE: 116640
 4. 你可以使用uboot命令去修改默认的[开机图标](/zh-cn/vim1/BuildBootLogoForUboot.html)等等.
 
 ### 更多参考:
-* [C-Kermit 官方网站](http://www.columbia.edu/kermit/index.html)
+[Minicom wiki](https://en.wikipedia.org/wiki/Minicom)
