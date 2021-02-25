@@ -2,22 +2,11 @@ title: How to Erase the eMMC Storage
 ---
 
 There are 4 different ways to erase all data on the onboard eMMC storage:
-1. Keys Mode (Side-Buttons)
-2. Serial Mode
-3. Interrupt Mode
-4. CLI Mode
+1. Serial Mode
+2. Interrupt Mode
+3. CLI Mode
 
 **Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
-
-### Keys Mode(U-Boot is functional)
-All ROMs we have released support eMMC erasure. Please follow the steps below to erase the data on the eMMC:
-
-1. Power on VIM.
-2. Long press `Power` and `Function` buttons simultaneously, without releasing them.
-3. Short press the ‘Reset’ key and release.
-4. After the operations above, the system will begin to erase automatically; it will take about 10 seconds to finish.
-5. Your connected display/monitor will display a black screen when the erasure process is complete.
-
 
 ### Serial Mode(For developers)
 1. Refer to this guide ([VIM1](/vim1/SetupSerialTool.html)/[VIM2](/vim2/SetupSerialTool.html)/[VIM3](/vim3/SetupSerialTool.html)) to setup the Serial Tool for your VIM.
