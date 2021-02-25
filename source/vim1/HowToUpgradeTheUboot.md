@@ -37,7 +37,7 @@ $ sudo reboot
 
 ### Upgrade u-boot in u-boot command line
 
-We can also upgrade the u-boot in u-boot command line mode. You need to setup the [Serial Tool](/edge/SetupSerialTool.html).
+We can also upgrade the u-boot in u-boot command line mode. You need to setup the [Serial Tool](/vim1/SetupSerialTool.html).
 
 Use [Fenix](/vim1/FenixScript.html) to build the uboot:
 
