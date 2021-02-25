@@ -22,7 +22,7 @@ title: Khadas TONE1 初学者 FAQ
 如果你在Mac上使用ToneBoard,你可能会无法控制toneboard音量的问题,如果出现这个问题就需要更新toneboard的固件.
 
 **更多:**
-[升级toneboard固件](/tone1/HowtoUpgradeFirmware.html)
+[升级toneboard固件](/zh-cn/tone1/HowtoUpgradeFirmware.html)
 
 
 # Windows
@@ -48,4 +48,4 @@ title: Khadas TONE1 初学者 FAQ
 # 更多相关信息:
 
 * [TONE1 官网](https://www.khadas.com/tone1)
-* [TONE1 用户手册](/tone1/UserManual.html)
+* [TONE1 用户手册](/zh-cn/tone1/UserManual.html)

@@ -70,8 +70,8 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |C|Gesture Sensor|Control your Edge-V with a hand-wave|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
-|F|I-Pex [Wi-Fi](edge/HowToConnectWifi.html) / [Bluetooth](edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
-|G|I-Pex [Wi-Fi](edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|F|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|G|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 
 ## Back (Red)
 ||Component|Purpose|
@@ -81,7 +81,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |3|[Micro-SD Card Slot](/edge/UpgradeViaTFBurningCard.html)|Boot alternative OSes via a Micro-SD card, or just for extra storage|
 |4|M.2 Socket (PCI-E 2.1)|Connect 2280 NVMe SSDS at 4-lane speed with [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
 |5|E-DP Display|For connecting to external displays via E-DP|
-|6|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink-ii)|
+|6|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |7|Touch Panel|For accepting [touch-input](/edge/ConnectLcd.html)|
 |8|MIPI-TX|MIPI-DSI header for connecting [LCD screens](/edge/ConnectLcd.html)|
 |9|MIPI-RX|For connecting to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera)|

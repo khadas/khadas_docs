@@ -1,4 +1,4 @@
-title: Connect to TS050 Touchscreen
+title: 如何连接TS050触摸屏
 ---
 
 # 1.简介

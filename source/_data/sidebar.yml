@@ -1,6 +1,6 @@
 vim1:
   getting_started:
-    overview: index.html#Back-Red
+    overview: index.html
     vim1_interfaces: VimInterfaces.html
     how_to_connect_wifi: HowToConnectWifi.html
     how_to_setup_bluetooth: HowToSetupBluetooth.html

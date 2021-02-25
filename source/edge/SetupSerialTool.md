@@ -4,7 +4,7 @@ title: Setup Serial Debugging Tool
 ### Edge-V
 You won't need an Edge-IO board to setup the serial debugger on an Edge-V. Just use the on-board GPIO pins, as shown in this picture (same as VIM1, VIM2, and VIM3).
 
-![VIM1-GPIO](/images/vim1/SerialConnections_3Pin.png)
+![VIM1-GPIO](/images/vim1/SerialConnections_3Pin.jpg)
 
 ### Edge
 If you're using an Edge SBC, continue reading below:

@@ -126,7 +126,7 @@ Number(GPIOH_5) = bank + pin = 410 + 22 = 432
 
 ### On Android
 
-** GPIO List **
+**GPIO List**
 
 ```
 PIN         GPIO         Number
@@ -139,7 +139,7 @@ There are two ways to access the GPIO:
 * ADB Command
 * Third-Party Applications 
 
-** ADB command **
+**ADB command**
 
 > Connect the VIMs with a wifi adb:
 ```
@@ -182,7 +182,7 @@ $ cat /sys/class/gpio/gpio432/value
 $ echo 432 > /sys/class/gpio/unexport
 ```
 
-** Third-Party Applications **
+**Third-Party Applications**
 
 > Get root permision
 ```
@@ -221,7 +221,7 @@ while (null != (line = br.readLine())) {
 
 ### On Ubuntu
 
-** GPIO List **
+**GPIO List**
 
 * Linux-3.14
 ```
@@ -236,7 +236,8 @@ PIN37       GPIOH5         432
 PIN33       GPIOAO6        502
 ```
 
-** How to access GPIO on Terminal **
+
+**How to access GPIO on Terminal**
 
 > [Example on linux-4.9]
 >  Request the gpio(GPIOH5)

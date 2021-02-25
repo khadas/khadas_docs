@@ -1,3 +1,5 @@
+title: Instructions for Edge Single Pack Burning Tool 
+---
 # Windows
 ## 1. Load Partition Config
 
@@ -23,44 +25,44 @@ After completing a partition configuration, the configuration can be exported fr
 # Linux
 check [Linux_Upgrade_Tool_v1.47](https://mega.nz/#!TnI3CAyD!pI5ptpffTpZfT7Brjm2CvHQge5MaCdGy9xgcM6uu9RQ)
 ```sh
-unzip Linux_Upgrade_Tool_v1.47.zip
-cd Linux_Upgrade_Tool_v1.47
-sudo mv upgrade_tool /usr/local/bin
-sudo chown root:root /usr/local/bin/upgrade_tool
-sudo chmod a+x /usr/local/bin/upgrade_tool
+$ unzip Linux_Upgrade_Tool_v1.47.zip
+$ cd Linux_Upgrade_Tool_v1.47
+$ sudo mv upgrade_tool /usr/local/bin
+$ sudo chown root:root /usr/local/bin/upgrade_tool
+$ sudo chmod a+x /usr/local/bin/upgrade_tool
 ```
 **`Erasing Flash`** is required if the board is upgraded from  `android 7.1`  to  `android 9.0`  firmware, or the board is downgraded from  `android 9.0`  to  `android 7.1`.
 ```sh
-sudo upgrade_tool ef update.img
+$ sudo upgrade_tool ef update.img
 ```
 Burning the firmware's update.img:
 ```sh
-sudo upgrade_tool uf update.img
+$ sudo upgrade_tool uf update.img
 ```
 ### Burn one or more Partition Mirrors:
 Currently known abbreviated partitions are - s (system partition), - k (kernel partition), - b (boot partition), - r (recovery partition), - m (misc partition), - u (uboot partition), - t (trust partition) and - re (resource partition). Examples are given to illustrate these definitions:
 
 When the device has burned a parameter, write a single system partition mirror command:
 ```sh
-sudo upgrade_tool di -s /path/to/system.img
+$ sudo upgrade_tool di -s /path/to/system.img
 ```
 If the device has not burned the parameter, write a single system partition mirror command:
 ```sh
-sudo upgrade_tool di -p parameter -s /path/to/system.img
+$ sudo upgrade_tool di -p parameter -s /path/to/system.img
 ```
 When the device has burned a parameter, write a single undefined abbreviated partition vendor image command:
 ```sh
-sudo upgrade_tool di -vendor /path/to/vendor.img
+$ sudo upgrade_tool di -vendor /path/to/vendor.img
 ```
 When the device has burned the parameter, burn several partition mirroring commands:
 ```sh
-sudo upgrade_tool di -b /path/to/uboot.img -k /path/to/boot.img
+$ sudo upgrade_tool di -b /path/to/uboot.img -k /path/to/boot.img
 ```
 Burn the parameter command:
 ```sh
-sudo upgrade_tool di -p paramater
+$ sudo upgrade_tool di -p paramater
 ```
 Burn the bootloader command:
 ```sh
-sudo upgrade_tool ul MiniLoaderAll.bin
+$ sudo upgrade_tool ul MiniLoaderAll.bin
 ```

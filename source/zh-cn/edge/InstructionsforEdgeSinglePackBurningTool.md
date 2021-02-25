@@ -1,3 +1,5 @@
+title: Edge单包烧录工具使用说明
+---
 # Windows
 ## 1. 导入分区配置
 
@@ -30,45 +32,45 @@ config.cfg 文件，则可以在工具启动时加载当前保存的配置。
 # Linux
 check [Linux_Upgrade_Tool_v1.47](https://mega.nz/#!TnI3CAyD!pI5ptpffTpZfT7Brjm2CvHQge5MaCdGy9xgcM6uu9RQ)
 ```sh
-unzip Linux_Upgrade_Tool_v1.47.zip
-cd Linux_Upgrade_Tool_v1.47
-sudo mv upgrade_tool /usr/local/bin
-sudo chown root:root /usr/local/bin/upgrade_tool
-sudo chmod a+x /usr/local/bin/upgrade_tool
+$ unzip Linux_Upgrade_Tool_v1.47.zip
+$ cd Linux_Upgrade_Tool_v1.47
+$ sudo mv upgrade_tool /usr/local/bin
+$ sudo chown root:root /usr/local/bin/upgrade_tool
+$ sudo chmod a+x /usr/local/bin/upgrade_tool
 ```
 如果板子为  `android 7.1`  升级到  `android 9.0`  固件或者
 板子为  `android 9.0`  升级到  `android 7.1`  固件，需要先执行 **`擦除Flash`** 。
 ```sh
-sudo upgrade_tool ef update.img
+$ sudo upgrade_tool ef update.img
 ```
 ### 烧写整个固件 update.img：
 ```sh
-sudo upgrade_tool uf update.img
+$ sudo upgrade_tool uf update.img
 ```
 ### 烧写一个或多个分区镜像：
 目前已知的定义缩写分区有-s(system 分区)、-k(kernel 分区)、-b(boot 分区)、-r(recovery 分区) 、-m(misc 分区) 、-u(uboot 分区) 、-t(trust 分区)和-re(resource 分区)，举例说明：
 
 设备已烧录过 parameter 情况下，烧写单个system分区镜像命令：
 ```sh
-sudo upgrade_tool di -s /path/to/system.img
+$ sudo upgrade_tool di -s /path/to/system.img
 ```
 设备未烧录过 parameter 情况下，烧写单个system分区镜像命令：
 ```sh
-sudo upgrade_tool di -p parameter -s /path/to/system.img
+$ sudo upgrade_tool di -p parameter -s /path/to/system.img
 ```
 设备已烧录过 parameter 情况下，烧写单个未定义缩写的分区 vendor 镜像命令：
 ```sh
-sudo upgrade_tool di -vendor /path/to/vendor.img
+$ sudo upgrade_tool di -vendor /path/to/vendor.img
 ```
 设备已烧录过 parameter 情况下，烧写多个分区镜像命令：
 ```sh
-sudo upgrade_tool di -b /path/to/uboot.img -k /path/to/boot.img
+$ sudo upgrade_tool di -b /path/to/uboot.img -k /path/to/boot.img
 ```
 烧写 parameter命令：
 ```sh
-sudo upgrade_tool di -p paramater
+$ sudo upgrade_tool di -p paramater
 ```
 烧写 bootloader命令：
 ```sh
-sudo upgrade_tool ul MiniLoaderAll.bin
+$ sudo upgrade_tool ul MiniLoaderAll.bin
 ```

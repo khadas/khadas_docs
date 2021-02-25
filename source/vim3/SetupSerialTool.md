@@ -88,4 +88,4 @@ This is the wrong device to choose.Confirm your ttyUSB device number in the `/de
 
 ### See Also
 
-# [C-Kermit offical websit](http://www.columbia.edu/kermit/index.html)
+* [C-Kermit offical websit](http://www.columbia.edu/kermit/index.html)

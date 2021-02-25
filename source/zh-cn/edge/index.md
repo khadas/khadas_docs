@@ -57,7 +57,7 @@ title: Edge文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0, 蓝色接口|
-|2|RJ-45|有[WOL功能](/edge/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/zh-cn/edge/HowtoUseWol.html)的Gigabit网口|
 |3|HDMI 2.0|支持4K@60Hz, HDCP 2.2的HDMI接口|
 |4||USB-C|USB 3.0,5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的DP输入, 同时可用于[升级系统](/zh-cn/edge/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0, 黑色接口|
@@ -82,8 +82,8 @@ title: Edge文档
 |4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘](/zh-cn/vim3/ListOfCompatibleNVMeSSDs.html)以及[M2x板子](https://www.khadas.com/product-page/m2x-extension-board)|
 |5|E-DP座子|用于外接eDP显示器|
 |6|4个M2插孔|用于[散热器](https://www.khadas.com/product-page/edge-heatsink)和[DIY外壳](https://www.khadas.com/product-page/captain-carrier-board)|
-|7|TP座子|用于连接[TP输入](/edge/ConnectLcd.html)|
-|8|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/edge/ConnectLcd.html)|
+|7|TP座子|用于连接[TP输入](/zh-cn/edge/ConnectLcd.html)|
+|8|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/zh-cn/edge/ConnectLcd.html)|
 |9|MIPI-RX|用于连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |A|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
 |B||M寄存器|强制板子进入[MaskROM模式](/edge/HowtoBootIntoUpgradeMode.html)|
@@ -139,7 +139,7 @@ Linux_TX|19|39|MCU_PA1
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|RK3399 SoC散热器|用于减少热量集中的金属层|
-|2|RJ-45|有[WOL功能](/edge/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/zh-cn/edge/HowtoUseWol.html)的Gigabit网口|
 |3|[40脚GPIO座子](/zh-cn/edge/CaptainGPIOPinout.html)|学习[连接GPIO](/zh-cn/edge/HowToAccessGpio.html)
 |4|RTC电池座子|硬件时钟芯片供电电池座子|
 |5|Reset按键|用于强制重启板子,按下会直接复位|
@@ -152,7 +152,7 @@ Linux_TX|19|39|MCU_PA1
 |C|左边边游戏按键|通过[Kap Case](https://www.khadas.com/product-page/kap-case)可以玩简单的游戏| 
 |D|USIC|旧版USB总线|
 |E|E-DP座子|用于外接eDP显示器|
-|F|TP座子|用于连接[TP输入](/edge/ConnectLcd.html)|
+|F|TP座子|用于连接[TP输入](/zh-cn/edge/ConnectLcd.html)|
 |G|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/zh-cn/edge/ConnectLcd.html)|
 |H|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
 |I|MIPI-RX|用于连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)|
@@ -192,7 +192,7 @@ Linux_TX|19|39|MCU_PA1
 ||常亮|板子处于开机状态|
 |红色|None|None|
 
-上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](forum.khadas.com)咨询。
+上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
 ## GPIO管脚
 
@@ -295,8 +295,8 @@ Linux_TX|19|39|MCU_PA1
 * [进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
 
 **固件:**
-* [Android OS](zh-cn/firmware/EdgeFirmware.html#Ubuntu)
-* [Ubuntu OS](/zh-cn/firmware/EdgeFirmware.html#android)
+* [Android OS](/zh-cn/firmware/EdgeFirmware.html#android)
+* [Ubuntu OS](/zh-cn/firmware/EdgeFirmware.html#Ubuntu)
 
 # 观看电影，扩展内部eMMC存储
 如果您希望将Edge-V或Edge + Captain SBC用作媒体中心，以存储/下载大型电影文件，则这些项目很有用。 microSDXC UHS-I卡价格昂贵，但也足够进行4K视频播放。 外部NVMe M.2插槽SSD也足够大，可以容纳整个媒体库。
