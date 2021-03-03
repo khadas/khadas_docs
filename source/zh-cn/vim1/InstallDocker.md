@@ -50,7 +50,7 @@ khadas@Khadas:~$ sudo groupadd docker
 khadas@Khadas:~$ sudo usermod -aG docker $USER
 ```
 
-*NOTE: You need to logout or reboot your system.*
+*注意：需要注销或重启系统来生效。*
 
 ### 检查Docker
 ```
