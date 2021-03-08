@@ -125,7 +125,7 @@ Number(GPIOH_5) = bank + pin = 410 + 22 = 432
 
 ### 在Android下
 
-** GPIO 列表 **
+**GPIO 列表**
 
 ```
 PIN         GPIO         Number
@@ -137,7 +137,7 @@ PIN33       GPIOAO6        502
 * 通过ADB命令
 * 第三方应用
 
-** ADB命令 **
+**ADB命令**
 
 > 通过Wi-Fi ADB连接到VIMs
 ```
@@ -180,7 +180,7 @@ $ cat /sys/class/gpio/gpio432/value
 $ echo 432 > /sys/class/gpio/unexport
 ```
 
-** 第三方应用 **
+**第三方应用**
 
 > 获取root权限
 ```
@@ -219,7 +219,7 @@ while (null != (line = br.readLine())) {
 
 ### 在Ubuntu下
 
-** GPIO 列表 **
+**GPIO 列表**
 
 * Linux-3.14
 ```
@@ -234,7 +234,8 @@ PIN37       GPIOH5         432
 PIN33       GPIOAO6        502
 ```
 
-** 在终端访问GPIO **
+
+**在终端访问GPIO**
 
 > [以linux 4.9为例]
 >  请求GPIO(GPIOH5)

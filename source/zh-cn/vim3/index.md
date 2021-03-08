@@ -20,9 +20,9 @@ title: VIM3 相关文档
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|G-Sensor|三轴加速传感器|
 |C|RTC电池接口|硬件时钟电池的接口|
-|D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](/zh-cn/vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
-|F|[MCU](/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
+|F|[MCU](/zh-cn/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|
 |H|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |I|LED灯|用于指示板子的状态|
@@ -76,7 +76,7 @@ title: VIM3 相关文档
 |1|USB-A|USB 3.0接口,最大输出电流900mA,PCIE被激活时,这个口降为2.0|
 |2|RJ-45|有[WOL功能](/zh-cn/vim3/HowtoUseWol.html)的Gigabit网口| 
 |3|HDMI|支持3D,HDR,CEC以及HDCP2.2的HDMI接口| 
-|4|USB-C|USB2.0 OTG接口,接受[5V](https://www.khadas.com/product-page/power-adapter)到[20V]((https://www.khadas.com/product-page/usb-c-24w-adapter)的输入,[可用于升级固件](/zh-cn/vim3/UpgradeViaUSBCable.html)|
+|4|USB-C|USB2.0 OTG接口,接受[5V](https://www.khadas.com/product-page/power-adapter)到[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的输入,[可用于升级固件](/zh-cn/vim3/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0接口,最大输出电流500mA|
 |6|风扇座子|PWM控制的4线制[风扇](https://www.khadas.com/product-page/3705-cooling-fan)|
 |7|reset按键|用于强制重启板子,按下会直接复位| 
@@ -85,7 +85,7 @@ title: VIM3 相关文档
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|G-Sensor|三轴加速传感器|
 |C|RTC电池接口|硬件时钟电池的接口|
-|D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制GPIO(vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|D|[40脚的GPIO](/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](/zh-cn/vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
 |F|[MCU](/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|
@@ -159,7 +159,7 @@ Linux_TX|19|39|GPIODZ_15
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
-[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
+[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
 
 **主要特性:**
 - 将EMMC的中的内容通过[SD卡](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt),[USB存储设备](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt)或者[网络](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt)备份。
@@ -250,7 +250,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [启动卡与烧录卡的比较](/zh-cn/vim3/BootingCardVsBurningCard.html)
 [通过TF卡升级安卓](/zh-cn/vim3/UpgradeViaTFBurningCard.html)
 [从外部媒体介质启动系统](/zh-cn/vim3/BootFromExtMedia.html)
-[如何进入升级模式](/vim3/HowtoBootIntoUpgradeMode.html)
+[如何进入升级模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)
 
 **提示:**
 * 应使用USB-C数据线从Ubuntu或Windows主机直接将**emmc固件**刻录到`emmc`。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。

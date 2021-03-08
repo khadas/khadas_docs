@@ -2,7 +2,7 @@ title: 如何更新Logo
 ---
 
 
-我们使用[Fenix](/vim1/FenixScript.html)来编译Ubuntu/Debian固件。默认logo为`archives/logo/Rockchip/logo.img`，你可以自己编译logo来替换默认的。
+我们使用[Fenix](/zh-cn/vim1/FenixScript.html)来编译Ubuntu/Debian固件。默认logo为`archives/logo/Rockchip/logo.img`，你可以自己编译logo来替换默认的。
 
 * 编译logo镜像
 
