@@ -15,7 +15,7 @@ The source code of the `aml_npu_nnsdk_app` repository is open on the official gi
 
 ```shell
 $ mkdir workspace
-$ cd workspace
+$ cd ${workspace}
 $ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 ```
 
@@ -30,7 +30,7 @@ There are currently 3 demos in the source code repository:
 There are compilation scripts, makefiles and source codes in each directory. Take person_detect as an example.
 
 ```shell
-$ cd workspace/aml_npu_nnsdk_app/person_detect_640x384
+$ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
 $ ls
 build-cv3.sh  include  makefile-cv3.linux  person_detect_640x384_camera.cpp  person_detect_640x384_picture.cpp  README.cn.md  README.md
 ```
@@ -47,7 +47,7 @@ Please refer to get SDK [#Get-SDK](/vim3/HowToUseNPUSDK#Get-SDK)
 Here also take person_detect as an example,
 
 ```shell
-$ cd workspace/aml_npu_nnsdk_app/person_detect_640x384
+$ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
 $ ./build-cv3.sh /path/to/aml_npu_sdk/linux_sdk/linux_sdk
   COMPILE /home/yan/data/git/npu/aml_npu_nnsdk_app/person_detect_640x384/person_detect_640x384_picture.cpp
   COMPILE /home/yan/data/git/npu/aml_npu_nnsdk_app/person_detect_640x384/person_detect_640x384_camera.cpp
@@ -55,7 +55,7 @@ $ ./build-cv3.sh /path/to/aml_npu_sdk/linux_sdk/linux_sdk
 
 Compilation will generate the generated file in `cv3_output`,
 ```shell
-$ cd workspace/aml_npu_nnsdk_app/person_detect_640x384/cv3_output
+$ cd {workspace}/aml_npu_nnsdk_app/person_detect_640x384/cv3_output
 $ ls
 person_detect_640x384_camera  person_detect_640x384_camera.o  person_detect_640x384_picture  person_detect_640x384_picture.o
 ```
@@ -70,7 +70,7 @@ Here also take person_detect as an example,
 1. Obtain the nb file [https://github.com/khadas/AML_NN_SDK](https://github.com/khadas/AML_NN_SDK), the nb file corresponding to `person_detect` is:
 
 ```shell
-$ mkdir board_space
+$ mkdir ${board_space}
 $ cd board_space
 $ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/88/person_detect_88.nb  [VIM3]
 $ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/99/person_detect_99.nb  [VIM3L]
@@ -83,16 +83,16 @@ $ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/99/perso
 Identify the picture
 
 ```shell
-$ /path/to/person_detect_640x384_picture board_space/person_detect_88.nb /path/to/picture  [VIM3] 
-$ /path/to/person_detect_640x384_picture board_space/person_detect_99.nb /path/to/picture  [VIM3L] 
+$ /path/to/person_detect_640x384_picture ${board_space}/person_detect_88.nb /path/to/picture  [VIM3] 
+$ /path/to/person_detect_640x384_picture ${board_space}/person_detect_99.nb /path/to/picture  [VIM3L] 
 
 ```
 
 Recognition camera
 
 ```shell
-$ /path/to/person_detect_640x384_camera board_space/person_detect_88.nb /dev/videoX   [VIM3]
-$ /path/to/person_detect_640x384_camera board_space/person_detect_99.nb /dev/videoX   [VIM3L]
+$ /path/to/person_detect_640x384_camera ${board_space}/person_detect_88.nb /dev/videoX   [VIM3]
+$ /path/to/person_detect_640x384_camera ${board_space}/person_detect_99.nb /dev/videoX   [VIM3L]
 ```
 
 

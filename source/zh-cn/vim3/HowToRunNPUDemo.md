@@ -171,14 +171,14 @@ $ ./detect_demo_x11 2 1080p.bmp
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_xx_xx <video node> <type>
+$ ./detect_xx_xx -d <video node> -m <type>
 ```
 
 这里以x11环境下调用yolov3为例,
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_demo_x11_usb /dev/video1 2
+$ ./detect_demo_x11_usb -d /dev/video1 -m 2
 ```
 
 打开摄像头以后,会将识别的结果显示在屏幕上

@@ -169,14 +169,14 @@ Command format for camera dynamic recognition
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_xx_xx <video node> <type>
+$ ./detect_xx_xx -d <video node> -m <type>
 ```
 
 Here is an example of using opencv3 to call yolov3 in the x11 environment.
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
-$ ./detect_demo_x11_usb /dev/video1 2
+$ ./detect_demo_x11_usb -d /dev/video1 -m 2
 ```
 
 After turning on the camera, the recognition result will be displayed on the screen

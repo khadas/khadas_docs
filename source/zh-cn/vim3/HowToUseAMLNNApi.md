@@ -15,7 +15,7 @@ Amlogic NN Api是amlogic官方推出的一套NPU Api.这篇文档将介绍如何
 
 ```shell
 $ mkdir workspace
-$ cd workspace
+$ cd ${workspace}
 $ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 ```
 
@@ -30,7 +30,7 @@ $ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 每个目录下都有编译脚本,makefile文件以及源码,以person_detect为例,
 
 ```shell
-$ cd workspace/aml_npu_nnsdk_app/person_detect_640x384
+$ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
 $ ls
 build-cv3.sh  include  makefile-cv3.linux  person_detect_640x384_camera.cpp  person_detect_640x384_picture.cpp  README.cn.md  README.md
 ```
@@ -47,7 +47,7 @@ build-cv3.sh  include  makefile-cv3.linux  person_detect_640x384_camera.cpp  per
 这里同样以person_detect为例,
 
 ```shell
-$ cd workspace/aml_npu_nnsdk_app/person_detect_640x384
+$ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
 $ ./build-cv3.sh /path/to/aml_npu_sdk/linux_sdk/linux_sdk
   COMPILE /home/yan/data/git/npu/aml_npu_nnsdk_app/person_detect_640x384/person_detect_640x384_picture.cpp
   COMPILE /home/yan/data/git/npu/aml_npu_nnsdk_app/person_detect_640x384/person_detect_640x384_camera.cpp
@@ -55,7 +55,7 @@ $ ./build-cv3.sh /path/to/aml_npu_sdk/linux_sdk/linux_sdk
 
 编译会生成生成的文件在`cv3_output`里面,
 ```shell
-$ cd workspace/aml_npu_nnsdk_app/person_detect_640x384/cv3_output
+$ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384/cv3_output
 $ ls
 person_detect_640x384_camera  person_detect_640x384_camera.o  person_detect_640x384_picture  person_detect_640x384_picture.o
 ```
@@ -72,7 +72,7 @@ person_detect_640x384_camera  person_detect_640x384_camera.o  person_detect_640x
 
 ```shell
 $ mkdir board_space
-$ cd board_space
+$ cd ${board_space}
 $ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/88/person_detect_88.nb  [VIM3]
 $ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/99/person_detect_99.nb  [VIM3L]
 ```
@@ -85,16 +85,16 @@ $ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/99/perso
 
 
 ```shell
-$ /path/to/person_detect_640x384_picture board_space/person_detect_88.nb /path/to/picture  [VIM3] 
-$ /path/to/person_detect_640x384_picture board_space/person_detect_99.nb /path/to/picture  [VIM3L] 
+$ /path/to/person_detect_640x384_picture ${board_space}/person_detect_88.nb /path/to/picture  [VIM3] 
+$ /path/to/person_detect_640x384_picture ${board_space}/person_detect_99.nb /path/to/picture  [VIM3L] 
 
 ```
 
 识别摄像头
 
 ```shell
-$ /path/to/person_detect_640x384_camera board_space/person_detect_88.nb /dev/videoX   [VIM3]
-$ /path/to/person_detect_640x384_camera board_space/person_detect_99.nb /dev/videoX   [VIM3L]
+$ /path/to/person_detect_640x384_camera ${board_space}/person_detect_88.nb /dev/videoX   [VIM3]
+$ /path/to/person_detect_640x384_camera ${board_space}/person_detect_99.nb /dev/videoX   [VIM3L]
 ```
 
 **注意** :
