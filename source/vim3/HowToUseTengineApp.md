@@ -9,7 +9,7 @@ The source code repository is located on gitlab of khadas
 
 ```shell
 $ mkdir workspace
-$ cd workspace
+$ cd ${workspace}
 $ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 $ cd tengine_khadas_app
 $ ls
@@ -23,7 +23,7 @@ yolov3-camera  yolov3-picture
 1. Get SDK
 
 ```shell
-$ cd workspace
+$ cd ${workspace}
 $ git clone https://gitlab.com/khadas/tengine_khadas_sdk.git
 ```
 
@@ -32,9 +32,9 @@ $ git clone https://gitlab.com/khadas/tengine_khadas_sdk.git
 yolov3-picture:
 
 ```shell
-$ cd workspace/tengine_khadas_app/yolov3-picture
-$ ./build-cv3.sh workspace/tengine_khadas_sdk/
-  COMPILE workspace/tengine_khadas_app/yolov3-picture/tengine_khadas_yolov3_picture.cpp
+$ cd ${workspace}/tengine_khadas_app/yolov3-picture
+$ ./build-cv3.sh ${workspace}/tengine_khadas_sdk/
+  COMPILE ${workspace}/tengine_khadas_app/yolov3-picture/tengine_khadas_yolov3_picture.cpp
 $ ls cv3_output/
 tengine_khadas_yolov3_picture  tengine_khadas_yolov3_picture.o
 ```
@@ -42,9 +42,9 @@ tengine_khadas_yolov3_picture  tengine_khadas_yolov3_picture.o
 yolov3-camera:
 
 ```shell
-$ cd workspace/tengine_khadas_app/yolov3-camera
-$ ./build-cv3.sh workspace/tengine_khadas_sdk/
-  COMPILE workspace/tengine_khadas_app/yolov3-camera/tengine_khadas_yolov3_camera.cpp
+$ cd ${workspace}/tengine_khadas_app/yolov3-camera
+$ ./build-cv3.sh ${workspace}/tengine_khadas_sdk/
+  COMPILE ${workspace}/tengine_khadas_app/yolov3-camera/tengine_khadas_yolov3_camera.cpp
 $ ls cv3_output/
 tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
 ```
