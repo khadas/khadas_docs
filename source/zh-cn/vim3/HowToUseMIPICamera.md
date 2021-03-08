@@ -136,6 +136,19 @@ int main(int argc, char** argv)
 
 ```
 
+编译命令:
+
+```sh
+$ gcc -o test test.cpp -lopencv_imgproc -lopencv_core -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -std=c++11 -std=gnu++11 -Wall -std=c++11 -lstdc++
+```
+
+运行:
+
+```sh
+$ ./test /dev/videoX
+```
+
+
 **更多资料:**
 - [khadas.com/shop](https://www.khadas.com/product-page/os08a10-8mp-camera)
 - [原理图](https://dl.khadas.com/Hardware/Accessories/OS08A10/OS08A10_V11_Specification.pdf)
