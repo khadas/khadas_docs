@@ -13,17 +13,17 @@ title: How To Access I2C
 `Sensor SCL` <-> `I2C0_SCK (PIN 22)`
 `Sensor SDA` <-> `I2C0_SDA (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //取决与传感器供电
 
 **I2C 4**
 `Sensor SCL` <-> `I2C1_SCK (PIN 25)`
 `Sensor SDA` <-> `I2C1_SDA (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
 
 
 ### 检测设备
-Detect device on `I2C 3`:
+检测挂在`I2C 3`的设备:
 ```
 # i2cdetect -y -r 3
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -35,7 +35,7 @@ Detect device on `I2C 3`:
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C 4`:
+检测挂载在`I2C 4`的设备:
 ```
 # i2cdetect -y -r 4
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
