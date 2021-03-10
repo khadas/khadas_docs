@@ -9,13 +9,13 @@ This guide is about how to access i2c on Ubuntu and Android.
 * `Android V180619` or newer
 
 ### Connections
-**I2C 0**
+**I2C 3**
 `Sensor SCL` <-> `I2C0_SCK (PIN 22)`
 `Sensor SDA` <-> `I2C0_SDA (PIN 23)`
 `Sensor GND` <-> `GND`
 `Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 
-**I2C 1**
+**I2C 4**
 `Sensor SCL` <-> `I2C1_SCK (PIN 25)`
 `Sensor SDA` <-> `I2C1_SDA (PIN 26)`
 `Sensor GND` <-> `GND`
@@ -23,7 +23,7 @@ This guide is about how to access i2c on Ubuntu and Android.
 
 
 ### Detect the device
-Detect device on `I2C 0`:
+Detect device on `I2C 3`:
 ```
 # i2cdetect -y -r 3
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -35,7 +35,7 @@ Detect device on `I2C 0`:
 50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C 1`:
+Detect device on `I2C 4`:
 ```
 # i2cdetect -y -r 4
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -53,7 +53,7 @@ If you have the right connection you will see the device address, e.g: `0x1d`,`0
 *Note: Root privileges required.*
 
 ### Read register from device
-Read register `0x0d` of device `0x22` on `I2C1`.
+Read register `0x0d` of device `0x22` on `I2C4`.
 ```
 # i2cget -f -y 4 0x22 0x0d
 0x0f
