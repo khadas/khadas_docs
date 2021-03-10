@@ -42,3 +42,12 @@ b1 01 4b 46 7f ff 0c 10 d8 : crc=d8 YES
 b1 01 4b 46 7f ff 0c 10 d8 t=27062
 ```
 
+单总线物理引脚
+
+```
+VIM1 (GPIOH5)   --- PIN37
+VIM2 (GPIOH5)   --- PIN37
+VIM3 (GPIOH6)   --- PIN15
+VIM3L(GPIOH6)   --- PIN15
+```
+
