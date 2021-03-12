@@ -108,8 +108,8 @@ This is a simple program of pin read-write control
   2
   3 INPUT = 0
   4 OUTPUT = 1
-  5 OUTPUT_PIN = 1
-  6 INPUT_PIN = 2
+  5 OUTPUT_PIN = 37
+  6 INPUT_PIN = 39
   7 OUTPUT_HIGH = 1
   8 OUTPUT_LOW = 0
   9 pinstatus_list = ['LOW','HIGH']

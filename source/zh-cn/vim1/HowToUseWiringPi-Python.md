@@ -107,8 +107,8 @@ import wiringpi as GPIO
 
 INPUT = 0
 OUTPUT = 1
-OUTPUT_PIN = 1
-INPUT_PIN = 2
+OUTPUT_PIN = 37
+INPUT_PIN = 39
 OUTPUT_HIGH = 1
 OUTPUT_LOW = 0
 pinstatus_list = ['LOW','HIGH']
