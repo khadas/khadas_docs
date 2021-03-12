@@ -101,7 +101,7 @@ class Serial(object):
 
 ```
 
-### WieingPi-Python sample demo 
+### WiringPi-Python sample demo 
 This is a simple program of pin read-write control
 ```
   1 import wiringpi as GPIO
