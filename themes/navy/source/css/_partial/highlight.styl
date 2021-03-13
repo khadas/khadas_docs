@@ -2,7 +2,7 @@
 highlight-background = #fff
 highlight-current-line = #efefef
 highlight-selection = #d6d6d6
-highlight-foreground = #4d4d4c
+highlight-foreground = #ffffff
 highlight-comment = #8e908c
 highlight-red = #c82829
 highlight-orange = #f5871f
@@ -14,14 +14,15 @@ highlight-purple = #8959a8
 
 pre, code
   font-family: font-mono
-  color: highlight-foreground
-  background: #eee
+  background: #272822
   font-size: 0.95em
 
 code
+  background: none
   padding: 0 5px
 
 pre
+  color: highlight-foreground
   padding: 10px 15px
   line-height: 22px
   code
@@ -30,7 +31,7 @@ pre
     padding: 0
 
 .highlight
-  background: #eee
+  background: #272822
   padding: 10px 15px
   color: highlight-foreground
   overflow: auto
