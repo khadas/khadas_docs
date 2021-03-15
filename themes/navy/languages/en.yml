@@ -37,7 +37,7 @@ sidebar:
     overview: Beginners Guide
     getting_started: Getting Started
     vim1_interfaces: VIM1 Interfaces
-    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_connect_wifi: Setup Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
@@ -46,14 +46,14 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: How To Setup Fan
+    how_to_setup_fan: Cooling FAN Setup
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
-    how_to_access_gpio: How To Access GPIO
-    how_to_access_i2c: How To Access I2C
+    how_to_access_gpio: Access GPIO
+    how_to_access_i2c: Access I2C
     uboot: U-Boot
     uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
@@ -64,42 +64,42 @@ sidebar:
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
-    how_to_use_adb_tool: How To Use ADB Tool
+    how_to_use_adb_tool: ADB Usage
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
-    how_to_upgrade_the_system: How To Upgrade the System
+    how_to_upgrade_the_system: Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
     install_docker: Install Docker
-    how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_wiringpi-python: How To Use WiringPi-Python
-    how_to_use_rpigpio: How To Use RPi.GPIO
-    how_to_upgrade_the_logo: How To Upgrade The Logo
-    how_to_upgrade_the_uboot: How To Upgrade The u-boot
-    how_to_upgrade_the_kernel: How To Upgrade The kernel
-    how_to_use_hardware_pwm: How To Use Hardware PWM
-    how_to_use_uart: How To Use Uart
-    how_to_control_LED: How To Control LEDs
-    how_to_test_gpio_irq: How To Test GPIO IRQ
-    how_to_set_auto_login: How To Set Auto Login
-    how_to_use_1-Wire: How To User 1-Wire driver
-    how_to_setup_HDMI: How To Setup HDMI
-    how_to_change_logo: How To Change Boot Logo
-    how_to_custom_MAC: How To Custom MAC Address
-    how_to_use_dtbo: How To Use Device Tree Overlay
-    how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
-    how_to_setup_fb_font: How To Setup Framebuffer Console Font
-    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
-    how_to_use_hardware_decoding_library: How To Use Hardware Decoding Library
-    how_to_use_hardware_encoding_library: How To Use Hardware Encoding Library
-    how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_use_wiringpi-python: WiringPi-Python Usage
+    how_to_use_rpigpio: RPi.GPIO Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    how_to_use_hardware_pwm: Hardware PWM Usage
+    how_to_use_uart: Uart Usage
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_use_1-Wire: 1-Wire Usage
+    how_to_setup_HDMI: HDMI Resolution Setup
+    how_to_change_logo: Change Boot Logo
+    how_to_custom_MAC: Custom MAC Address Setup
+    how_to_use_dtbo: Device Tree Overlay Usage
+    how_to_custom_IR_code_to_boot: Custom IR Code Setup
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
+    how_to_use_hardware_decoding_library:  Hardware Decoding Library Usage
+    how_to_use_hardware_encoding_library: Hardware Encoding Library Usage
+    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
 
   vim2:
     overview: Beginners Guide
     getting_started: Getting Started
     vim2_interfaces: VIM2 Interfaces
-    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_connect_wifi: Setup Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
@@ -108,15 +108,15 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: How To Setup Fan
+    how_to_setup_fan: Cooling Fan Setup
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
-    how_to_access_gpio: How To Access GPIO
-    how_to_access_i2c: How To Access I2C
-    howto_use_wol: How To Use WOL
+    how_to_access_gpio: GPIO Usage
+    how_to_access_i2c: I2C Usage
+    howto_use_wol: WOL Usage
     uboot: U-Boot
     uboot_usage: U-Boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
@@ -128,48 +128,48 @@ sidebar:
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
-    how_to_use_adb_tool: How To Use ADB Tool
+    how_to_use_adb_tool: ADB Usage
     force_reset_features: Force Reset Remotely
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
-    how_to_upgrade_the_system: How To Upgrade the System
+    how_to_upgrade_the_system: Upgrade the System
     krescue: Krescue
-    how_to_setup_watchdog: Setup Watchdog
+    how_to_setup_watchdog: Watchdog Setup
     install_docker: Install Docker
-    how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_wiringpi-python: How To Use WiringPi-Python
-    how_to_use_rpigpio: How To Use RPi.GPIO
-    how_to_upgrade_the_logo: How To Upgrade The Logo
-    how_to_upgrade_the_uboot: How To Upgrade The u-boot
-    how_to_upgrade_the_kernel: How To Upgrade The kernel
-    how_to_use_hardware_pwm: How To Use Hardware PWM
-    how_to_use_uart: How To Use Uart
-    how_to_control_LED: How To Control LEDs
-    how_to_test_gpio_irq: How To Test GPIO IRQ
-    how_to_set_auto_login: How To Set Auto Login
-    how_to_setup_HDMI: How To Setup HDMI
-    how_to_change_logo: How To Change Boot Logo
-    how_to_custom_MAC: How To Custom MAC Addres
-    how_to_use_dtbo: How To Use Device Tree Overlay
-    how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
-    how_to_setup_fb_font: How To Setup Framebuffer Console Font
-    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
-    how_to_use_hardware_decoding_library: How To Use Hardware Decoding Library
-    how_to_use_hardware_encoding_library: How To Use Hardware Encoding Library
-    how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_use_wiringpi-python: WiringPi-Python Usage
+    how_to_use_rpigpio: RPi.GPIO Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    how_to_use_hardware_pwm: Hardware PWM Usage
+    how_to_use_uart: Uart Usage
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_setup_HDMI: HDMI Resolution Setup
+    how_to_change_logo: Change Boot Logo
+    how_to_custom_MAC: Custom MAC Addres Setup
+    how_to_use_dtbo: Device Tree Overlay Usage
+    how_to_custom_IR_code_to_boot: Custom IR Code Setup
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
+    how_to_use_hardware_decoding_library: Hardware Decoding Library Usage
+    how_to_use_hardware_encoding_library: Hardware Encoding Library Usage
+    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    how_to_use_1-Wire: 1-Wire Usage
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
     mcu_develop: MCU Development
     mcu_code_flow_chart: MCU Code Flow Chart
-    how_to_use_1-Wire: How To User 1-Wire driver
 
   vim3:
     overview: Beginners Guide
     getting_started: Getting Started
     vim3_interfaces: VIM3 Interfaces
-    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_connect_wifi: Setup Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
@@ -178,28 +178,28 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: How To Setup Fan
+    how_to_setup_fan: Cooling Fan Setup
     connect_lcd: Connect to TS050 Touchscreen
-    HowToUseMPICamera: How To Use MIPI Camera
-    how_to_use_lte_module: How To Use LTE Module
-    how_to_enable_M2X_ETH_through_overlays: How To Enable M2X ETH Through Overlays
+    HowToUseMPICamera: MIPI Camera Usage
+    how_to_use_lte_module: LTE Module Usage
+    how_to_enable_M2X_ETH_through_overlays: M2X ETH Usage
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
-    how_to_access_gpio: How To Access GPIO
-    how_to_access_i2c: How To Access I2C
-    howto_use_wol: How To Use WOL
-    how_to_setup_pcie_usb_port: How To Setup PCIe/USB3.0 Port
+    how_to_access_gpio: GPIO Usage
+    how_to_access_i2c: I2C Usage
+    howto_use_wol: WOL Usage
+    how_to_setup_pcie_usb_port: PCIe/USB3.0 Port Setup
     npu: NPU
-    how_to_run_npu_demo: How To Run NPU Demo
+    how_to_run_npu_demo: NPU Demo Usage
     npu_sdk_description: SDK Description
     aml_npu_app_description: aml_npu_app Repository Description
-    run_yourself_AI_with_npu: Run Yourself AI Model with NPU
-    how_to_use_AMLNNApi: How To Use AMLNNApi Demo
-    how_to_use_Tengine_SDK: How To Use Tengine SDK
-    how_to_use_Tengine_app: How To Compile And Run Tengine demo
+    run_yourself_AI_with_npu: Run Your AI Model with NPU
+    how_to_use_AMLNNApi: AMLNNApi Demo Usage
+    how_to_use_Tengine_SDK: Tengine SDK Usage
+    how_to_use_Tengine_app: Tengine demo Usage
     uboot: U-Boot
     install_toolchains: Install Toolchains
     boot_from_spi_flash: Boot From SPI-Flash
@@ -212,39 +212,39 @@ sidebar:
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
     package_update_image: Fast Package Update Image
-    how_to_use_adb_tool: How To Use ADB Tool
-    how_to_use_fastboot: How To Use Fastboot
+    how_to_use_adb_tool: ADB Usage
+    how_to_use_fastboot: Fastboot Usage
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
-    how_to_upgrade_the_system: How To Upgrade the System
+    how_to_upgrade_the_system: Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
     install_docker: Install Docker
-    how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_wiringpi-python: How To Use WiringPi-Python
-    how_to_use_rpigpio: How To Use RPi.GPIO
-    how_to_upgrade_the_logo: How To Upgrade The Logo
-    how_to_upgrade_the_uboot: How To Upgrade The u-boot
-    how_to_upgrade_the_kernel: How To Upgrade The kernel
-    how_to_use_hardware_pwm: How To Use Hardware PWM
-    how_to_use_uart: How To Use Uart
-    how_to_control_LED: How To Control LEDs
-    how_to_test_gpio_irq: How To Test GPIO IRQ
-    how_to_set_auto_login: How To Set Auto Login
-    how_to_use_1-Wire: How To User 1-Wire driver
-    how_to_setup_HDMI: How To Setup HDMI
-    how_to_setup_max_cpu_freq: How To Setup Maximum CPU Frequency
-    how_to_change_logo: How To Change Boot Logo
-    how_to_custom_MAC: How To Custom MAC Addres
-    how_to_use_dtbo: How To Use Device Tree Overlay
-    how_to_custom_IR_code_to_boot: How To Custom IR Code To Boot System
-    how_to_setup_fb_font: How To Setup Framebuffer Console Font
-    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
-    how_to_use_hardware_decoding_library: How To Use Hardware Decoding Library
-    how_to_use_hardware_encoding_library: How To Use Hardware Encoding Library
-    how_to_run_32-bit_applications_on_64-bit_system: How To Run 32-bit Applications On 64-bit System
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: How To Configure Wi-Fi To Work In STA+AP Mode
-    how_to_use_usb_gadget: How To Use USB Gadget
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_use_wiringpi-python: WiringPi-Python Usage
+    how_to_use_rpigpio: RPi.GPIO Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    how_to_use_hardware_pwm: Hardware PWM Usage
+    how_to_use_uart: Uart Usage
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_use_1-Wire: 1-Wire Usage
+    how_to_setup_HDMI: HDMI Resolution Setup
+    how_to_setup_max_cpu_freq: Maximum CPU Frequency Setup
+    how_to_change_logo: Change Boot Logo
+    how_to_custom_MAC: Custom MAC Address Setup 
+    how_to_use_dtbo: Device Tree Overlay Usage
+    how_to_custom_IR_code_to_boot: Custom IR Code Setup
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
+    how_to_use_hardware_decoding_library: Hardware Decoding Library Usage
+    how_to_use_hardware_encoding_library: Hardware Encoding Library Usage
+    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    how_to_use_usb_gadget: USB Gadget Usage
 
   edge:
     overview: Beginners Guide
@@ -253,7 +253,7 @@ sidebar:
     captain_interfaces: Captain Interfaces
     edgev_interfaces: Edge-V Interfaces
     edgecaptain_power_priority: Edge+Captain Power Priority
-    how_to_connect_wifi: Connect to Wi-Fi
+    how_to_connect_wifi: Setup Wi-Fi
     how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
@@ -262,15 +262,15 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: How To Setup Fan
+    how_to_setup_fan: Cooling Fan Setup
     connect_lcd: Connect to TS050 Touchscreen
-    how_to_use_lte_module: How To Use LTE Module
+    how_to_use_lte_module: LTE Module Usage
     development: Development
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
-    how_to_access_gpio: How To Access GPIO
+    how_to_access_gpio: GPIO Usage
     rk_docs: Rockchip Official Docs
-    howto_use_wol: How To Use WOL
+    howto_use_wol: WOL Usage
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     kbi_guidance: KBI Guide
@@ -282,25 +282,25 @@ sidebar:
     install_toolchains: Install Toolchains
     download_android_source_code: Download Android Source Code
     build_android: Build Android Source Code
-    how_to_use_adb_tool: How To Use ADB Tool
+    how_to_use_adb_tool: ADB Usage
     instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
-    how_to_upgrade_the_system: How To Upgrade the System
+    how_to_upgrade_the_system: Upgrade the System
     krescue: Krescue
     install_docker: Install Docker
     build_packages_in_docker: Build Packages In Docker
-    how_to_use_wiringpi: How To Use WiringPi
-    how_to_use_rpigpio: How To Use RPi.GPIO
-    how_to_upgrade_the_logo: How To Upgrade The Logo
-    how_to_upgrade_the_uboot: How To Upgrade The u-boot
-    how_to_upgrade_the_kernel: How To Upgrade The kernel
-    how_to_control_LED: How To Control LEDs
-    how_to_test_gpio_irq: How To Test GPIO IRQ
-    how_to_set_auto_login: How To Set Auto Login
-    how_to_use_1-Wire: How To User 1-Wire driver
-    how_to_setup_fb_font: How To Setup Framebuffer Console Font
-    how_to_write_SD_image_to_eMMC: How To Write SD Image To EMMC
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_use_rpigpio: RPi.GPIO Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_use_1-Wire: 1-Wire Usage
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
 
   tone1:
     getting_started: Getting Started
