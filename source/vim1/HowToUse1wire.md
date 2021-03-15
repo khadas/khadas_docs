@@ -44,11 +44,32 @@ b1 01 4b 46 7f ff 0c 10 d8 t=27062
 
 Physical pins of onewire
 
-```
-VIM1 (GPIOH5)   --- PIN37
-VIM2 (GPIOH5)   --- PIN37
-VIM3 (GPIOH6)   --- PIN15
-VIM3L(GPIOH6)   --- PIN15
-```
-
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#vim1-phy" role="tab" aria-controls="vim1" aria-selected="true">VIM1</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#vim2-phy" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-phy" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="vim1-phy" role="tabpanel" aria-labelledby="vim1-tab">
+  ```sh
+  GPIOH5   --- PIN37
+  ```
+  </div>
+  <div class="tab-pane fade" id="vim2-phy" role="tabpanel" aria-labelledby="vim2-tab">
+  ```sh
+  GPIOH5   --- PIN37
+  ```
+  </div>
+  <div class="tab-pane fade" id="vim3-phy" role="tabpanel" aria-labelledby="vim3-tab">
+  ```sh
+  GPIOH6   --- PIN15
+  ```
+  </div>
+</div>
 
