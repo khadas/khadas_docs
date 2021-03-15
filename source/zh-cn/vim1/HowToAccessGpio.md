@@ -14,49 +14,22 @@ title: 如何访问GPIO
 ### 如何获取GPIO数值
 你可以通过GPIO banks和pins来获取。不同版本的内核数值不同。
 
-
-* Linux 3.14 (Android M,N and Ubuntu)
-
-Banks:
-```
-# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/gpio-ranges
-
-GPIO ranges handled:
-0: banks GPIOS [155 - 255] PINS [10 - 110]
-0: ao-bank GPIOS [145 - 154] PINS [0 - 9]
-
-Notice: ao-bank means GPIOAO_X gpios
-```
-
-Pins:
-```
-# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/pins
-...
-pin 5 (GPIOAO_5) 
-pin 6 (GPIOAO_6) 
-...
-pin 28 (GPIOH_2) 
-pin 29 (GPIOH_3) 
-pin 30 (GPIOH_4) 
-pin 31 (GPIOH_5) 
-pin 32 (GPIOH_6) 
-pin 33 (GPIOH_7) 
-pin 34 (GPIOH_8) 
-pin 35 (GPIOH_9) 
-...
-```
-
-例如：获取`GPIOH_4`, `GPIOH_5` and `GPIOAO_6`的数值：
-Number(GPIOH_5) = bank + pin = 155 - 10 + 31= 176
-Number(GPIOH_4) = bank + pin = 155 - 10 + 30= 175
-Number(GPIOAO_6) = bank + pin = 145 - 0 + 6 = 151
-
-* Linux 4.9 (Android O and Ubuntu)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#4.9-pins" role="tab" aria-controls="4.9" aria-selected="true">Kernel 4.9</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#3.14-pins" role="tab" aria-controls="3.14" aria-selected="false">Kernel 3.14</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="4.9-pins" role="tabpanel" aria-labelledby="4.9-tab">
+Linux 4.9 (Android O and Ubuntu)
 
 `aobus-banks`:
 Banks:
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges 
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [496 - 511] PINS [0 - 15]
 ```
@@ -88,7 +61,7 @@ Number(GPIOAO_6) = bank + pin = 496 + 6 = 502
 `periphs-banks`:
 Banks:
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges 
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges
 GPIO ranges handled:
 0: periphs-banks GPIOS [410 - 495] PINS [0 - 85]
 ```
@@ -119,9 +92,47 @@ pin 83 (GPIOX_17)  pinctrl@ff634480
 pin 84 (GPIOX_18)  pinctrl@ff634480
 pin 85 (GPIOX_19)  pinctrl@ff634480
 ```
+</div>
+<div class="tab-pane fade" id="3.14-pins" role="tabpanel" aria-labelledby="3.14-tab">
+Linux 3.14 (Android M,N and Ubuntu)
 
-例如：获取`GPIOH_5`的数值：
-Number(GPIOH_5) = bank + pin = 410 + 22 = 432
+Banks:
+```
+# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/gpio-ranges
+
+GPIO ranges handled:
+0: banks GPIOS [155 - 255] PINS [10 - 110]
+0: ao-bank GPIOS [145 - 154] PINS [0 - 9]
+
+Notice: ao-bank means GPIOAO_X gpios
+```
+
+Pins:
+```
+# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/pins
+...
+pin 5 (GPIOAO_5)
+pin 6 (GPIOAO_6)
+...
+pin 28 (GPIOH_2)
+pin 29 (GPIOH_3)
+pin 30 (GPIOH_4)
+pin 31 (GPIOH_5)
+pin 32 (GPIOH_6)
+pin 33 (GPIOH_7)
+pin 34 (GPIOH_8)
+pin 35 (GPIOH_9)
+...
+```
+
+例如：获取`GPIOH_4`, `GPIOH_5` and `GPIOAO_6`的数值：
+Number(GPIOH_5) = bank + pin = 155 - 10 + 31= 176
+Number(GPIOH_4) = bank + pin = 155 - 10 + 30= 175
+Number(GPIOAO_6) = bank + pin = 145 - 0 + 6 = 151
+
+</div>
+</div>
+
 
 ### 在Android下
 
@@ -221,19 +232,30 @@ while (null != (line = br.readLine())) {
 
 **GPIO 列表**
 
-* Linux-3.14
-```
-PIN         GPIO         Number
-PIN37       GPIOH5         176
-PIN33       GPIOAO6        151
-```
-* Linux-4.9.40
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#4.9" role="tab" aria-controls="4.9" aria-selected="true">Kernel 4.9</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#3.14" role="tab" aria-controls="3.14" aria-selected="false">Kernel 3.14</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="4.9" role="tabpanel" aria-labelledby="4.9-tab">
 ```
 PIN         GPIO         Number
 PIN37       GPIOH5         432
 PIN33       GPIOAO6        502
 ```
-
+</div>
+<div class="tab-pane fade" id="3.14" role="tabpanel" aria-labelledby="3.14-tab">
+```
+PIN         GPIO         Number
+PIN37       GPIOH5         176
+PIN33       GPIOAO6        151
+```
+</div>
+</div>
 
 **在终端访问GPIO**
 
