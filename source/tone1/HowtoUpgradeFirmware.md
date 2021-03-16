@@ -1,4 +1,4 @@
-title: How To Upgrade Firmware
+title: Upgrade the Firmware
 ---
 
 # Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)
