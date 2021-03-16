@@ -52,8 +52,8 @@ sidebar:
     create_booting_card: Create Booting Card Using CLI
     setup_serial: Serial Debugging Tool
     erase_emmc: Erase eMMC Storage
-    how_to_access_gpio: Access GPIO
-    how_to_access_i2c: Access I2C
+    how_to_access_gpio: GPIO Usage
+    how_to_access_i2c: I2C Usage
     uboot: U-Boot
     uboot_usage: U-boot Usage Guide
     build_boot_logo_for_uboot: Boot Logo For U-boot
