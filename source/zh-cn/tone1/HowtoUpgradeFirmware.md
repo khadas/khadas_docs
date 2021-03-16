@@ -1,4 +1,4 @@
-title: 如何升级固件
+title: 升级固件
 ---
 
 # 在Windows下

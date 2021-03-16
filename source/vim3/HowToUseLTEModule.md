@@ -1,7 +1,7 @@
 title: How To Use LTE Module
 ---
 
-# View operators and frequency bands supported by your region
+# Check operators and frequency bands supported by your region
 
 You can view it on the following two websites:
 
@@ -51,7 +51,7 @@ Power down and restart to switch back to default mode
 
 # Use LTE Module with Ubuntu Desktop
 
-## XFACE Desktop
+## Xfce Desktop
 
 ### Step1: Open `edit connections`
 

@@ -36,8 +36,8 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim1_interfaces: VIM1接口描述
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
+    how_to_connect_wifi: 设置Wi-Fi
+    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -45,14 +45,14 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 如何设置风扇
+    how_to_setup_fan: 设置风扇
     development: 开发
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
     setup_serial: 设置串口调试工具
-    erase_emmc: 如何擦除eMMC存储器
-    how_to_access_gpio: 如何访问GPIO
-    how_to_access_i2c: 如何使用I2C接口
+    erase_emmc: 擦除eMMC存储器
+    how_to_access_gpio: GPIO用法
+    how_to_access_i2c: I2C接口用法
     uboot: U-boot
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
@@ -63,42 +63,42 @@ sidebar:
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
-    how_to_use_adb_tool: 如何使用ADB
+    how_to_use_adb_tool: ADB用法
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 如何升级系统
+    how_to_upgrade_the_system: 系统升级
     krescue: Krescue
-    how_to_setup_watchdog: 如何设置看门狗
+    how_to_setup_watchdog: 设置看门狗
     install_docker: 安装Docker
-    how_to_use_wiringpi: 如何使用WiringPi
-    how_to_use_wiringpi-python: 如何使用wiringPi-Python
-    how_to_use_rpigpio: 如何使用RPi.GPIO
-    how_to_upgrade_the_logo: 如何更新logo
-    how_to_upgrade_the_uboot: 如何更新u-boot
-    how_to_upgrade_the_kernel: 如何更新内核
-    how_to_use_hardware_pwm: 如何使用硬件PWM
-    how_to_use_uart: 如何使用串口
-    how_to_control_LED: 如何控制LED灯
-    how_to_test_gpio_irq: 如何测试GPIO中断
-    how_to_set_auto_login: 如何设置自动登录
-    how_to_use_1-Wire: 如何使用单总线
-    how_to_setup_HDMI: 如何设置HDMI
-    how_to_change_logo: 如何更换开机Logo
-    how_to_custom_MAC: 如何自定义MAC地址
-    how_to_use_dtbo: 如何使用Device Tree Overlay
-    how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
-    how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
-    how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
-    how_to_use_hardware_decoding_library: 如何使用硬件解码库
-    how_to_use_hardware_encoding_library: 如何使用硬件编码库
-    how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: 如何配置Wi-Fi同时工作在STA+AP模式
+    how_to_use_wiringpi: WiringPi用法
+    how_to_use_wiringpi-python: wiringPi-Python用法
+    how_to_use_rpigpio: RPi.GPIO用法
+    how_to_upgrade_the_logo: 更新logo
+    how_to_upgrade_the_uboot: 更新u-boot
+    how_to_upgrade_the_kernel: 更新内核
+    how_to_use_hardware_pwm: 硬件PWM用法
+    how_to_use_uart: 串口用法
+    how_to_control_LED: LED用法
+    how_to_test_gpio_irq: GPIO中断用法
+    how_to_set_auto_login: 设置自动登录
+    how_to_use_1-Wire: 单总线用法
+    how_to_setup_HDMI: 设置HDMI分辨率
+    how_to_change_logo: 更换开机Logo
+    how_to_custom_MAC: 自定义MAC地址
+    how_to_use_dtbo: Device Tree Overlay用法
+    how_to_custom_IR_code_to_boot: 自定义IR CODE启动系统
+    how_to_setup_fb_font: 设置Framebuffer Console字体
+    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
+    how_to_use_hardware_decoding_library: 硬件解码库用法
+    how_to_use_hardware_encoding_library: 硬件编码库用法
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
   vim2:
     getting_started: 开始使用
     overview: 概述
     vim2_interfaces: VIM2接口描述
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
+    how_to_connect_wifi: 设置Wi-Fi
+    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -106,15 +106,15 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 如何设置风扇
+    how_to_setup_fan: 设置风扇
     development: 开发
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
     setup_serial: 设置串口调试工具
-    erase_emmc: 如何擦除eMMC存储器
-    how_to_access_gpio: 如何访问GPIO
-    how_to_access_i2c: 如何使用I2C接口
-    howto_use_wol: 如何使用WOL
+    erase_emmc: 擦除eMMC存储器
+    how_to_access_gpio: GPIO用法
+    how_to_access_i2c: I2C接口用法
+    howto_use_wol: WOL用法
     uboot: U-boot
     uboot_usage: U-boot使用说明
     build_boot_logo_for_uboot: 编译U-boot启动Logo
@@ -126,38 +126,38 @@ sidebar:
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
-    how_to_use_adb_tool: 如何使用ADB
+    how_to_use_adb_tool: ADB用法
     force_reset_features: 远程强制复位
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 如何升级系统
+    how_to_upgrade_the_system: 系统升级
     krescue: Krescue
-    how_to_setup_watchdog: 如何设置看门狗
+    how_to_setup_watchdog: 设置看门狗
     fuchsia: Fuchsia
     install_docker: 安装Docker
-    how_to_use_wiringpi: 如何使用WiringPi
-    how_to_use_wiringpi-python: 如何使用wiringPi-Python
-    how_to_use_rpigpio: 如何使用RPi.GPIO
-    how_to_upgrade_the_logo: 如何更新logo
-    how_to_upgrade_the_uboot: 如何更新u-boot
-    how_to_upgrade_the_kernel: 如何更新内核
-    how_to_use_hardware_pwm: 如何使用硬件PWM
-    how_to_use_uart: 如何使用串口
-    how_to_control_LED: 如何控制LED灯
-    how_to_test_gpio_irq: 如何测试GPIO中断
-    how_to_set_auto_login: 如何设置自动登录
-    how_to_use_1-Wire: 如何使用单总线
-    how_to_setup_HDMI: 如何设置HDMI
-    how_to_change_logo: 如何更换开机Logo
-    how_to_custom_MAC: 如何自定义MAC地址
-    how_to_use_dtbo: 如何使用Device Tree Overlay
-    how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
-    how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
-    how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
-    how_to_use_hardware_decoding_library: 如何使用硬件解码库
-    how_to_use_hardware_encoding_library: 如何使用硬件编码库
-    how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: 如何配置Wi-Fi同时工作在STA+AP模式
+    how_to_use_wiringpi: WiringPi用法
+    how_to_use_wiringpi-python: wiringPi-Python用法
+    how_to_use_rpigpio: RPi.GPIO用法
+    how_to_upgrade_the_logo: 更新logo
+    how_to_upgrade_the_uboot: 更新u-boot
+    how_to_upgrade_the_kernel: 更新内核
+    how_to_use_hardware_pwm: 硬件PWM用法
+    how_to_use_uart: 串口用法
+    how_to_control_LED: LED灯用法
+    how_to_test_gpio_irq: GPIO中断用法
+    how_to_set_auto_login: 设置自动登录
+    how_to_use_1-Wire: 单总线用法
+    how_to_setup_HDMI: 设置HDMI分辨率
+    how_to_change_logo: 更换开机Logo
+    how_to_custom_MAC: 自定义MAC地址
+    how_to_use_dtbo: Device Tree Overlay用法
+    how_to_custom_IR_code_to_boot: 自定义IR CODE启动系统
+    how_to_setup_fb_font: 设置Framebuffer Console字体
+    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
+    how_to_use_hardware_decoding_library: 硬件解码库用法
+    how_to_use_hardware_encoding_library: 硬件编码库用法
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -167,8 +167,8 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim3_interfaces: VIM3接口描述
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
+    how_to_connect_wifi: 设置Wi-Fi
+    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -176,28 +176,28 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 如何设置风扇
+    how_to_setup_fan: 设置风扇
     connect_lcd: 配置触摸屏TS050
-    HowToUseMPICamera: 如何使用MIPI摄像头
-    how_to_use_lte_module: 如何使用LTE模块
-    how_to_enable_M2X_ETH_through_overlays: 如何通过overlays方式使能M2X ETH
+    HowToUseMPICamera: MIPI摄像头用法
+    how_to_use_lte_module: LTE模块用法
+    how_to_enable_M2X_ETH_through_overlays: M2X ETH用法
     development: 开发
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
     setup_serial: 设置串口调试工具
-    erase_emmc: 如何擦除eMMC存储器
-    how_to_access_gpio: 如何访问GPIO
-    how_to_access_i2c: 如何使用I2C接口
-    howto_use_wol: 如何使用WOL
-    how_to_setup_pcie_usb_port: 如何设置PCIe或USB3.0
+    erase_emmc: 擦除eMMC存储器
+    how_to_access_gpio: GPIO用法
+    how_to_access_i2c: I2C接口用法
+    howto_use_wol: WOL用法
+    how_to_setup_pcie_usb_port: 设置PCIe/USB3.0端口
     npu: NPU
-    how_to_run_npu_demo: 如何运行NPU Demo
+    how_to_run_npu_demo: NPU Demo用法
     npu_sdk_description: SDK使用说明
     aml_npu_app_description: aml_npu_app源码仓库说明
     run_yourself_AI_with_npu: 使用NPU跑自己的AI模型
-    how_to_use_AMLNNApi: 如何使用AMLNNApi模板
-    how_to_use_Tengine_SDK: 如何使用tengine SDK
-    how_to_use_Tengine_app: 如何编译运行Tengine模板
+    how_to_use_AMLNNApi: AMLNNApi Demo用法
+    how_to_use_Tengine_SDK: tengine SDK用法
+    how_to_use_Tengine_app: Tengine Demo用法
     uboot: U-boot
     boot_from_spi_flash: 从SPI Flash启动系统
     uboot_usage: U-boot使用说明
@@ -210,46 +210,46 @@ sidebar:
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
-    how_to_use_adb_tool: 如何使用ADB
-    how_to_use_fastboot: 如何使用Fastboot
+    how_to_use_adb_tool: ADB用法
+    how_to_use_fastboot: Fastboot用法
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 如何升级系统
+    how_to_upgrade_the_system: 系统升级
     krescue: Krescue
-    how_to_setup_watchdog: 如何设置看门狗
+    how_to_setup_watchdog: 设置看门狗
     install_docker: 安装Docker
-    how_to_use_wiringpi: 如何使用WiringPi
-    how_to_use_wiringpi-python: 如何使用wiringPi-Python
-    how_to_use_rpigpio: 如何使用RPi.GPIO
-    how_to_upgrade_the_logo: 如何更新logo
-    how_to_upgrade_the_uboot: 如何更新u-boot
-    how_to_upgrade_the_kernel: 如何更新内核
-    how_to_use_hardware_pwm: 如何使用硬件PWM
-    how_to_use_uart: 如何使用串口
-    how_to_control_LED: 如何控制LED灯
-    how_to_test_gpio_irq: 如何测试GPIO中断
-    how_to_set_auto_login: 如何设置自动登录
-    how_to_use_1-Wire: 如何使用单总线
-    how_to_setup_HDMI: 如何设置HDMI
-    how_to_setup_max_cpu_freq: 如何设置最大CPU频率
-    how_to_change_logo: 如何更换开机Logo
-    how_to_custom_MAC: 如何自定义MAC地址
-    how_to_use_dtbo: 如何使用Device Tree Overlay
-    how_to_custom_IR_code_to_boot: 如何自定义IR CODE启动系统
-    how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
-    how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
-    how_to_use_hardware_decoding_library: 如何使用硬件解码库
-    how_to_use_hardware_encoding_library: 如何使用硬件编码库
-    how_to_run_32-bit_applications_on_64-bit_system: 如何在64位系统下运行32位应用
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: 如何配置Wi-Fi同时工作在STA+AP模式
-    how_to_use_usb_gadget: 如何使用USB Gadget
+    how_to_use_wiringpi: WiringPi用法
+    how_to_use_wiringpi-python: wiringPi-Python用法
+    how_to_use_rpigpio: RPi.GPIO用法
+    how_to_upgrade_the_logo: 更新logo
+    how_to_upgrade_the_uboot: 更新u-boot
+    how_to_upgrade_the_kernel: 更新内核
+    how_to_use_hardware_pwm: 使用硬件PWM
+    how_to_use_uart: 串口用法
+    how_to_control_LED: LED灯用法
+    how_to_test_gpio_irq: GPIO中断用法
+    how_to_set_auto_login: 设置自动登录
+    how_to_use_1-Wire: 单总线用法
+    how_to_setup_HDMI: 设置HDMI分辨率
+    how_to_setup_max_cpu_freq: 设置最大CPU频率
+    how_to_change_logo: 更换开机Logo
+    how_to_custom_MAC: 自定义MAC地址
+    how_to_use_dtbo: Device Tree Overlay用法
+    how_to_custom_IR_code_to_boot: 自定义IR CODE启动系统
+    how_to_setup_fb_font: 设置Framebuffer Console字体
+    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
+    how_to_use_hardware_decoding_library: 硬件解码库用法
+    how_to_use_hardware_encoding_library: 使用硬件编码库
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
+    how_to_use_usb_gadget: USB Gadget用法
 
   edge:
     getting_started: 开始使用
     overview: 概述
     edge_interfaces: Edge接口描述
-    how_to_connect_wifi: 如何连接Wi-Fi
-    how_to_setup_bluetooth: 如何设置蓝牙
+    how_to_connect_wifi: 设置Wi-Fi
+    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     captain_interfaces: Captain接口描述
@@ -259,15 +259,15 @@ sidebar:
     upgrade_via_tfcard: 通过TF卡升级
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 如何设置风扇
+    how_to_setup_fan: 设置风扇
     connect_lcd: 配置触摸屏TS050
-    how_to_use_lte_module: 如何使用LTE模块
+    how_to_use_lte_module: LTE模块用法
     development: 开发
     setup_serial: 设置串口调试工具
-    erase_emmc: 如何擦除eMMC存储器
-    how_to_access_gpio: 如何访问GPIO
+    erase_emmc: 擦除eMMC存储器
+    how_to_access_gpio: GPIO用法
     rk_docs: 瑞芯微官方文档
-    howto_use_wol: 如何使用WOL
+    howto_use_wol: WOL用法
     uboot: U-boot
     install_toolchains: 安装交叉编译器
     boot_from_spi_flash: 从SPI Flash启动系统
@@ -279,32 +279,32 @@ sidebar:
     android: Android
     download_android_source_code: 下载安卓源码
     build_android: 编译安卓源码
-    how_to_use_adb_tool: 如何使用ADB
+    how_to_use_adb_tool: ADB用法
     force_reset_features: 远程强制复位
     instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 如何升级系统
+    how_to_upgrade_the_system: 系统升级
     krescue: Krescue
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
-    how_to_use_wiringpi: 如何使用WiringPi
-    how_to_use_rpigpio: 如何使用RPi.GPIO
-    how_to_upgrade_the_logo: 如何更新logo
-    how_to_upgrade_the_uboot: 如何更新u-boot
-    how_to_upgrade_the_kernel: 如何更新内核
-    how_to_control_LED: 如何控制LED灯
-    how_to_test_gpio_irq: 如何测试GPIO中断
-    how_to_set_auto_login: 如何设置自动登录
-    how_to_use_1-Wire: 如何使用单总线
-    how_to_setup_fb_font: 如何设置Framebuffer Console字体大小
-    how_to_write_SD_image_to_eMMC: 如何把SD卡固件写入到eMMC
+    how_to_use_wiringpi: WiringPi用法
+    how_to_use_rpigpio: RPi.GPIO用法
+    how_to_upgrade_the_logo: 更新logo
+    how_to_upgrade_the_uboot: 更新u-boot
+    how_to_upgrade_the_kernel: 更新内核
+    how_to_control_LED: LED灯用法
+    how_to_test_gpio_irq: GPIO中断用法
+    how_to_set_auto_login: 设置自动登录
+    how_to_use_1-Wire: 单总线用法
+    how_to_setup_fb_font: 设置Framebuffer Console字体
+    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
 
   tone1:
     getting_started: 开始使用
     overview: 概述
     user_manual: 用户手册
-    how_to_upgrade_firmware: 如何升级固件
+    how_to_upgrade_firmware: 固件升级
 
   hardware:
     hardware: 硬件资料

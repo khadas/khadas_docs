@@ -1,4 +1,4 @@
-title: How To Upgrade The System To Latest Version
+title: Upgrade The System To Latest Version
 ---
 
 **Note: Only for Ubuntu.**

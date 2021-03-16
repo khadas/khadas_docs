@@ -1,4 +1,4 @@
-title: How To Upgrade Firmware
+title: Upgrade the Firmware
 ---
 
 # Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)
@@ -8,6 +8,7 @@ title: How To Upgrade Firmware
 alt="Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)" width="480" height="360" border="10" /></a>
 
 Link: [YouTube](http://www.youtube.com/watch?v=qRswdL1HPZU)
+Note: For Mac OS users, you need to type "chmod +x ./tone_dfu_tool_macos" to create an executable firmware upgrade tool
 
 # Tone1 - Upgrade to Official Khadas Firmware v2.00
 
@@ -158,8 +159,8 @@ $ sudo ./UNINSTALL
 Download the ready to use dfu tool to somewhere like:`~/Desktop`
 
 ```
-$ wget https://github.com/khadas/utils/raw/master/tone-dfu-tool/tools/macos/tone_dfu_tool
-$ chmod +x tone_dfu_tool
+$ wget https://dl.khadas.com/products/tone2/dfu_tool/tone_dfu_tool_macos
+$ chmod +x ./tone_dfu_tool_macos
 ```
 
 **Upgrading:**
@@ -187,7 +188,7 @@ VID = 0x3353, PID = 0xa002
 ```
 ./tone_dfu_tool --download /path/to/Tone2_Pro_DFU_TEST201228_nothing.bin
 dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib
-  Referenced from: /Users/ossyx/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/./xmosdfu
+  Referenced from: /Users/username/Downloads/USB-Audio-2.0-Software-v6.1-master/sc_usb_audio/module_dfu/host/xmos_dfu_osx/./xmosdfu
   Reason: image not found
 Abort trap: 6
 ```
