@@ -4,7 +4,26 @@ title: VIM2 Beginners Guide
 # VIM2
 ![image](/images/vim2/docs_vim2.jpg)
 
-## Front (Blue)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim2" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim2" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim2" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim2" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-vim2" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-vim2" role="tabpanel" aria-labelledby="front-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 2.0 speed, 500mA max output|
@@ -25,8 +44,9 @@ title: VIM2 Beginners Guide
 |G|FPC Connector|10-pins, 0.5mm pitch, with I2C, IOs|
 |H|I-Pex [Wi-Fi](/vim2/HowToConnectWifi.html) / [Bluetooth](/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 |I|I-Pex [Wi-Fi](/vim2/HowToConnectWifi.html) / [Bluetooth](/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+</div>
+<div class="tab-pane fade" id="back-vim2" role="tabpanel" aria-labelledby="back-tab">
 
-## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|Pogo Pads|External 5V power input, can be provided by [vTV Board](https://www.khadas.com/product-page/vtv-board) (DVB Tuner)|
@@ -39,8 +59,9 @@ title: VIM2 Beginners Guide
 |8|20-Pin Pogo Pads|USB, I2C, DVB-Bus, IOs, for docking with the [vTV Board](https://www.khadas.com/product-page/vtv-board) (DVB Tuner)|
 |9|XPWR Pads|Connect an external power switch using these pads|
 |A|900mA Fuse|Fuse for the 900mA USB port|
+</div>
+<div class="tab-pane fade" id="button-vim2" role="tabpanel" aria-labelledby="button-tab">
 
-## Buttons
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM2
@@ -48,8 +69,9 @@ title: VIM2 Beginners Guide
 |||x|Power On/Wake Up VIM2|
 |x||x|[Enter Upgrade Mode (KEYS)](/vim2/HowtoBootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/vim2/HowtoEraseEMMC.html)|
+</div>
+<div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
 
-## Indicator LEDs
 |Colour|Behaviour|Meaning|
 |---:|:---:|:---|
 |Blue|OFF|Power source disconnected|
@@ -59,8 +81,8 @@ title: VIM2 Beginners Guide
 |Red|None|None|
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
-
-## GPIO Pinout
+</div>
+<div class="tab-pane fade" id="gpio-vim2" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -84,6 +106,8 @@ GND|17|37|GPIOH_5
 Linux_RX|18|38|EXP_INT
 Linux_TX|19|39|GPIODV_13
 3.3V|20|40|GND
+</div>
+</div>
 
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
