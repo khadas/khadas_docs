@@ -4,7 +4,26 @@ title: VIM1 文档
 # VIM1
 ![image](/images/vim1/docs_vim1.jpg)
 
-## 正面(蓝色标识)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim1" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim1" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim1" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim1" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-vim1" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-vim1" role="tabpanel" aria-labelledby="front-tab">
+
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 2.0接口,最大输出电流500mA|
@@ -22,8 +41,8 @@ title: VIM1 文档
 |D|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |E|LED灯|用于指示板子的状态|
 |F|天线座子|用于插[wifi](/zh-cn/vim1/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim1/HowToSetupBluetooth.html)的天线|
-
-## 背面(红色)
+</div>
+<div class="tab-pane fade" id="back-vim1" role="tabpanel" aria-labelledby="back-tab">
 
 ||设备名称|描述说明|
 |---:|:---|:---|
@@ -31,8 +50,9 @@ title: VIM1 文档
 |2|[SD卡插座](/zh-cn/vim1/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
 |3|M寄存器触点|[强制进入MaskROM模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
 |4|XPWR焊盘|用于连接使用外部电源|
+</div>
+<div class="tab-pane fade" id="button-vim1" role="tabpanel" aria-labelledby="button-tab">
 
-## 按键
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM1|
@@ -40,8 +60,9 @@ title: VIM1 文档
 |||x|开机或者唤醒VIM1|
 |x||x|[进入升级模式(按键模式)](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
 |x|x|x|[清除EMMC](/zh-cn/vim1/HowtoEraseEMMC.html)|
+</div>
+<div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
 
-## LED灯指示
 |颜色|状态|含义|
 |---:|:---:|:---|
 |蓝色|关闭|电源关闭|
@@ -51,9 +72,12 @@ title: VIM1 文档
 |红灯|None|None|
 
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
+</div>
+<div class="tab-pane fade" id="gpio-vim1" role="tabpanel" aria-labelledby="gpio-tab">
 
-## GPIO管脚映射
 ![Image of Vim GPIO](/images/vim1/vim_pinout.png)
+</div>
+</div> 
 
 
 **注意**:

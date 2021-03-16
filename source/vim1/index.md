@@ -4,7 +4,26 @@ title: VIM1 Beginners Guide
 # VIM1
 ![image](/images/vim1/docs_vim1.jpg)
 
-## Front (Blue)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim1" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim1" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim1" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim1" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-vim1" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-vim1" role="tabpanel" aria-labelledby="front-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 2.0 speed, 500mA max output|
@@ -22,16 +41,18 @@ title: VIM1 Beginners Guide
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
 |F|I-Pex [Wi-Fi](/vim1/HowToConnectWifi.html) / [Bluetooth](/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+</div>
+<div class="tab-pane fade" id="back-vim1" role="tabpanel" aria-labelledby="back-tab">
 
-## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V power input|
 |2|[Micro-SD Card Slot](/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card, and for extra storage|
 |3|M-Register|Allows the EMMC to [enter MaskROM mode](/vim1/HowtoBootIntoUpgradeMode.html)|
 |4|XPWR Pads|Connect an external power switch using these pads|
+</div>
+<div class="tab-pane fade" id="button-vim1" role="tabpanel" aria-labelledby="button-tab">
 
-## Buttons
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM1
@@ -39,8 +60,9 @@ title: VIM1 Beginners Guide
 |||x|Power On/Wake Up VIM1|
 |x||x|[Enter Upgrade Mode (KEYS)](/vim1/HowtoBootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/vim1/HowtoEraseEMMC.html)|
+</div>
+<div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
 
-## Indicator LEDs
 |Colour|Behaviour|Meaning|
 |---:|:---:|:---|
 |Blue|OFF|Power source disconnected|
@@ -50,11 +72,12 @@ title: VIM1 Beginners Guide
 |Red|None|None|
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
-
-## GPIO Pin-Out
+</div>
+<div class="tab-pane fade" id="gpio-vim1" role="tabpanel" aria-labelledby="gpio-tab">
 
 ![Image of Vim GPIO](/images/vim1/vim_pinout.png)
-
+</div>
+</div> 
 
 **Notice**:
 
