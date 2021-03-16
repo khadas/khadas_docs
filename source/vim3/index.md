@@ -5,7 +5,26 @@ title: VIM3 Beginners Guide
 
 ![image](/images/vim3/docs_vim3.jpg)
 
-## Front (Blue)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim3" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim3" role="tab" aria-controls="back" aria-selected="false">BACK(Red)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim3" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim3" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-vim3" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-vim3" role="tabpanel" aria-labelledby="front-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/vim3/HowToSetupPcieUsbPort.html), 900mA output|
@@ -28,8 +47,9 @@ title: VIM3 Beginners Guide
 |I|LEDs|Indicator LEDs|
 |J|IPEX Antenna|[Wi-Fi](/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
 |K|IPEX Antenna|Wi-Fi and [Bluetooth](/vim3/HowToSetupBluetooth.html) antenna connector|
+</div>
+<div class="tab-pane fade" id="back-vim3" role="tabpanel" aria-labelledby="back-tab">
 
-## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
@@ -43,9 +63,9 @@ title: VIM3 Beginners Guide
 |9|XPWR Pads|Connect an external power switch using these pads|
 |A|M-Register|Allows the EMMC to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
 |B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
-|C|Current Limit Switch|Prevents damage to VIM3 due to faulty loading conditions|
+</div>
+<div class="tab-pane fade" id="button-vim3" role="tabpanel" aria-labelledby="button-tab">
 
-## Buttons
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3|
@@ -53,8 +73,9 @@ title: VIM3 Beginners Guide
 |||x|Power ON/Wake Up VIM3|
 |x||x|[Enter Upgrade Mode (KEYS)](/vim3/HowtoBootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/vim3/HowtoEraseEMMC.html)|
+</div>
+<div class="tab-pane fade" id="led-vim3" role="tabpanel" aria-labelledby="led-tab">
 
-## Indicator LEDs
 |Colour|Behaviour|Meaning|
 |---:|:---:|:---|
 |Blue|OFF|Power source disconnected|
@@ -64,8 +85,8 @@ title: VIM3 Beginners Guide
 |Red|None|None|
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
-
-## GPIO Pinout
+</div>
+<div class="tab-pane fade" id="gpio-vim3" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -89,13 +110,34 @@ GND|17|37|GPIOH_4
 Linux_RX|18|38|MCU_PA1
 Linux_TX|19|39|GPIODZ_15
 3.3V|20|40|GND
+</div>
+</div> 
 
 
 # VIM3L
 
 ![image](/images/vim3/docs_vim3l.jpg)
 
-## Front (Blue)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim3l" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim3l" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim3l" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim3l" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-vim3l" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-vim3l" role="tabpanel" aria-labelledby="front-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/vim3/HowToSetupPcieUsbPort.html), 900mA output|
@@ -118,8 +160,9 @@ Linux_TX|19|39|GPIODZ_15
 |I|LEDs|Indicator LEDs|
 |J|IPEX Antenna|[Wi-Fi](/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
 |K|IPEX Antenna|Wi-Fi and [Bluetooth](/vim3/HowToSetupBluetooth.html) antenna connector|
+</div>
+<div class="tab-pane fade" id="back-vim3l" role="tabpanel" aria-labelledby="back-tab">
 
-## Back (Red)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
@@ -134,8 +177,9 @@ Linux_TX|19|39|GPIODZ_15
 |A|M-Register|Allows the EMMC to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
 |B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/vim3/HowtoBootIntoUpgradeMode.html)|
 |C|Current Limit Switch|Prevents damage to VIM3L due to faulty loading conditions|
+</div>
+<div class="tab-pane fade" id="button-vim3l" role="tabpanel" aria-labelledby="button-tab">
 
-## Buttons
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3L|
@@ -143,8 +187,9 @@ Linux_TX|19|39|GPIODZ_15
 |||x|Power ON/Wake Up VIM3L|
 |x||x|[Enter Upgrade Mode (KEYS)](/vim3/HowtoBootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/vim3/HowtoEraseEMMC.html)|
+</div>
+<div class="tab-pane fade" id="led-vim3l" role="tabpanel" aria-labelledby="led-tab">
 
-## Indicator LEDs
 |Colour|Behaviour|Meaning|
 |---:|:---:|:---|
 |Blue|OFF|Power source disconnected|
@@ -154,8 +199,8 @@ Linux_TX|19|39|GPIODZ_15
 |Red|None|None|
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
-
-## GPIO Pinout
+</div>
+<div class="tab-pane fade" id="gpio-vim3l" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -180,6 +225,8 @@ Linux_RX|18|38|MCU_PA1
 Linux_TX|19|39|GPIODZ_15
 3.3V|20|40|GND
 
+</div>
+</div> 
 
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
