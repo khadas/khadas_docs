@@ -20,7 +20,17 @@ USB Type C数据线|USB Type C数据线
 
 ## 设备连接
 
-* ### VIMs版本
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vims-tab" data-toggle="tab" href="#vims" role="tab" aria-controls="vims" aria-selected="true">VIM1/VIM2/Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other" aria-selected="false">通用版本</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vims" role="tabpanel" aria-labelledby="win-tab">
 
 步骤|操作|
 ---|:---
@@ -31,8 +41,8 @@ USB Type C数据线|USB Type C数据线
 
 ![TONE1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
 
-
-* ### 通用版本
+</div>
+<div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="win-tab">
 
 步骤|操作|
 ---|:---
@@ -41,16 +51,41 @@ USB Type C数据线|USB Type C数据线
 
 ![TONE1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
 
+</div>
+</div>
+
 
 ## 设置
 大多数平台已经集成了TONE1驱动，但是Windows平台需要额外安装驱动。
-* ### VIMs
-  确保VIM1固件版本为`VIM_Nougat_V180524`或更新。
-  确保VIM2固件版本为`VIM2_Nougat_V180413`或更新。
 
-* ### Windows
-  以Windows 10为例进行说明，Windows 7和Windows XP也是类似的。
-  *  安装XMOS驱动
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vims-set-tab" data-toggle="tab" href="#vims-set" role="tab" aria-controls="vims-set" aria-selected="true">VIM1/VIM2/Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="win-set-tab" data-toggle="tab" href="#win-set" role="tab" aria-controls="win-set" aria-selected="false">Windows</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="ubuntu-set-tab" data-toggle="tab" href="#ubuntu-set" role="tab" aria-controls="ubuntu-set" aria-selected="false">Ubuntu</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="mac-set-tab" data-toggle="tab" href="#mac-set" role="tab" aria-controls="mac-set" aria-selected="false">MacOS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="rpi-set-tab" data-toggle="tab" href="#rpi-set" role="tab" aria-controls="rpi-set" aria-selected="false">Raspberry Pi</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vims-set" role="tabpanel" aria-labelledby="vims-set-tab">
+
+确保VIM1固件版本为`VIM_Nougat_V180524`或更新。
+确保VIM2固件版本为`VIM2_Nougat_V180413`或更新。
+
+</div>
+<div class="tab-pane fade" id="win-set" role="tabpanel" aria-labelledby="win-set-tab">
+
+以Windows 10为例进行说明，Windows 7和Windows XP也是类似的。
+  *  安装XMOS驱动 
      * [下载](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)驱动
      * 解压并运行`setup.exe`来安装驱动
      * 安装完成后可以在设备管理器看到XMOS设备
@@ -61,21 +96,27 @@ USB Type C数据线|USB Type C数据线
      * 选择XMOS XS1-U8 DJ为默认输出声卡
 ![TONE1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
 
-* ### Ubuntu
-  *  选择声卡为TONE1
+</div>
+<div class="tab-pane fade" id="ubuntu-set" role="tabpanel" aria-labelledby="ubuntu-set-tab">
+
+*  选择声卡为TONE1
 ![TONE1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
 
-* ### MacOS
-  *  选择声卡为TONE1
+</div>
+<div class="tab-pane fade" id="mac-set" role="tabpanel" aria-labelledby="mac-set-tab">
+
+*  选择声卡为TONE1
 ![TONE1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
 
-* ### 树莓派
-  *  选择声卡为TONE1
+</div>
+<div class="tab-pane fade" id="rpi-set" role="tabpanel" aria-labelledby="rpi-set-tab">
 
-     * Volumio
+*  选择声卡为TONE1
+
+   * Volumio
 ![TONE1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
 
-     * Raspbian
+   * Raspbian
 ```
 1.list sound card
 $ aplay -l
@@ -95,6 +136,10 @@ ctl.!default {
 }
 ```
 
+</div>
+</div>
+
+
 ## 接口描述
 No|Ports|Function|
 ---|:---|:---
@@ -111,6 +156,26 @@ No|Ports|Function|
 
 ![TONE1 Ports](/images/tone1/ToneboardPorts.png)
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="no5-tab" data-toggle="tab" href="#no5" role="tab" aria-controls="no5" aria-selected="true">No.5</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no6-tab" data-toggle="tab" href="#no6" role="tab" aria-controls="no6" aria-selected="false">No.6</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no7-tab" data-toggle="tab" href="#no7" role="tab" aria-controls="no7" aria-selected="false">No.7</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no8-tab" data-toggle="tab" href="#no8" role="tab" aria-controls="no8" aria-selected="false">No.8</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no9-tab" data-toggle="tab" href="#no9" role="tab" aria-controls="no9" aria-selected="false">No.9</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="no5" role="tabpanel" aria-labelledby="no5-tab">
+
 **No5**: 20 Pin Header Pinout (J4)
 
 SIGNAL| PIN|PIN|SIGNAL
@@ -125,6 +190,9 @@ XL_UP0|7|17|XMOS_TDI
 XL_UP1|8|18|XMOS_TCK
 XMOS_3V3|9|19|XMOS_TMS
 GND|10|20|GND
+
+</div>
+<div class="tab-pane fade" id="no6" role="tabpanel" aria-labelledby="no6-tab">
 
 **No6:** 40 Pin Header Pinout (J1)
 
@@ -151,6 +219,9 @@ Linux_RX|18|38|-
 Linux_TX|19|39|MUTE
 VCC_3V3|20|40|GND9
 
+</div>
+<div class="tab-pane fade" id="no7" role="tabpanel" aria-labelledby="no7-tab">
+
 **No7:** I2S FPC Connectors Pinout (J9)
 
 PIN|SIGNAL
@@ -165,6 +236,9 @@ PIN|SIGNAL
 8|I2S_LRCK
 9|I2S_SDO
 10|GND
+
+</div>
+<div class="tab-pane fade" id="no8" role="tabpanel" aria-labelledby="no8-tab">
 
 **No8:** 8 Channel Ext  FPC Connectors Pinout (J3)
 
@@ -196,6 +270,9 @@ PIN|SIGNAL
 29|DSD_6
 30|GND
 
+</div>
+<div class="tab-pane fade" id="no9" role="tabpanel" aria-labelledby="no9-tab">
+
 **No9:** OLED  FPC Connectors Pinout (J8)
 
 PIN|SIGNAL
@@ -210,6 +287,9 @@ PIN|SIGNAL
 8|OLED_PWREN
 9|-
 10|GND
+
+</div>
+</div>
 
 
 ## FAQs
