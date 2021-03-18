@@ -26,7 +26,8 @@
     .homepage {
         position: relative;
         float: left;
-        margin: 0 auto;
+        margin-top:16px;
+        margin-bottom:16px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -74,6 +75,13 @@
         opacity: 1;
     }
 
+    .series-font {
+        text-align: left;
+        font-size: medium;
+        font-weight: bold;
+     }
+
+
 </style>
 
 <header id="banner" class="wrapper">
@@ -89,9 +97,21 @@
 
             <div class="ui just-center container" id="intro-block">
                 <!-- VIM -->
+                <div class="column-center">
+                <div class="ui board-series" style="margin-top:32px;">
+                    {% if page.lang == 'en' %}
+                    <span class="series-font">VIM Series</span>
+                    {% else %}
+                    <span class="series-font">VIM 系列</span>
+                    {% endif %}
+                </div>
+                </div>
+
+                <div class="clear"></div>
+
                 <div class="column-center row">
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment col-box" style="margin-top:16px;">
+                        <div class="ui raised segment col-box">
                             <img src="/images/home/vim1.jpg" alt="VIM1">
                             {% if page.lang == 'en' %}
                             <a href="/vim1">
@@ -105,7 +125,7 @@
                         </div>
                     </div>
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment col-box" style="margin-top:16px;">
+                        <div class="ui raised segment col-box">
                             <img src="/images/home/vim2.jpg" alt="VIM2">
                             {% if page.lang == 'en' %}
                             <a href="/vim2">
@@ -119,7 +139,7 @@
                         </div>
                     </div>
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment col-box" style="margin-top:16px">
+                        <div class="ui raised segment col-box">
                             <img src="/images/home/vim3.jpg" alt="VIM3">
                             {% if page.lang == 'en' %}
                             <a href="/vim3#VIM3">
@@ -133,7 +153,7 @@
                         </div>
                     </div>
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment col-box" style="margin-top:16px;">
+                        <div class="ui raised segment col-box">
                             <img src="/images/home/vim3l.jpg" alt="VIM3L">
                             {% if page.lang == 'en' %}
                             <a href="/vim3#VIM3L">
@@ -150,22 +170,22 @@
 
                 <div class="clear"></div>
 
+                <!-- Edge -->
                 <div class="column-center">
                     <div class="ui board-series" style="margin:16px;">
                         {% if page.lang == 'en' %}
-                        <font size="10">VIM Series</font>
+                        <span class="series-font">Edge Series</span>
                         {% else %}
-                        <font size="10">VIM 系列</font>
+                        <span class="series-font">Edge 系列</span>
                         {% endif %}
                     </div>
                 </div>
 
                 <div class="clear"></div>
 
-                <!-- Edge -->
                 <div class="column-center row">
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment col-box" style="margin-top:16px;">
+                        <div class="ui raised segment col-box">
                             <img src="/images/home/edge.jpg" alt="Edge">
                             {% if page.lang == 'en' %}
                             <a href="/edge#Edge">
@@ -179,7 +199,7 @@
                         </div>
                     </div>
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment col-box" style="margin-top:16px;">
+                        <div class="ui raised segment col-box">
                             <img src="/images/home/edge-v.jpg" alt="Edge-V">
                             {% if page.lang == 'en' %}
                             <a href="/edge#Edge-V">
@@ -193,7 +213,7 @@
                         </div>
                     </div>
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment col-box" style="margin-top:16px;">
+                        <div class="ui raised segment col-box">
                             <img src="/images/home/captain.jpg" alt="Captain">
                             {% if page.lang == 'en' %}
                             <a href="/edge#Captain">
@@ -210,21 +230,22 @@
 
                 <div class="clear"></div>
 
+                <!-- TONE -->
                 <div class="column-center">
-                    <div class="ui board-series" style="margin:16px;">
+                    <div class="ui board-series">
                         {% if page.lang == 'en' %}
-                        <font size="10">Edge Series</font>
+                        <span class="series-font">Tone Series</span>
                         {% else %}
-                        <font size="10">Edge 系列</font>
+                        <span class="series-font">Tone 系列</span>
                         {% endif %}
                     </div>
                 </div>
 
                 <div class="clear"></div>
-                <!-- TONE -->
+
                 <div class="column-center row" style="display:block;">
                     <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="ui raised segment" style="margin-top:16px;">
+                        <div class="ui raised segment">
                             <img src="/images/home/tone1.jpg" alt="TONE1">
                             {% if page.lang == 'en' %}
                             <a href="/tone1">
@@ -232,7 +253,7 @@
                                 <a href="/zh-cn/tone1">
                                     {% endif %}
                                     <div class="mask">
-                                        <font size="10">Tone 1</font>
+                                        <font>Tone 1</font>
                                     </div>
                                 </a>
                         </div>
@@ -241,17 +262,6 @@
 
                 <div class="clear"></div>
 
-                <div class="column-center">
-                    <div class="ui board-series" style="margin:16px;">
-                        {% if page.lang == 'en' %}
-                        <font size="10">Tone Series</font>
-                        {% else %}
-                        <font size="10">Tone 系列</font>
-                        {% endif %}
-                    </div>
-                </div>
-
-                <div class="clear"></div>
 
             </div>
         </div>
