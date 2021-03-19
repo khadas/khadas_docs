@@ -22,7 +22,16 @@ Set of Screws|Set of Screws
 
 ## Device Connection
 
-* ### VIM1/VIM2/Edge-V
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vims-tab" data-toggle="tab" href="#vims" role="tab" aria-controls="vims" aria-selected="true">VIM1/VIM2/Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other" aria-selected="false">Others</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vims" role="tabpanel" aria-labelledby="win-tab">
 
 Step|Operation|
 ---|:---
@@ -33,30 +42,55 @@ Step 4| Connect DC 5V
 
 ![TONE1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
 
-
-* ### Others
+</div>
+<div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="win-tab">
 
 Step|Operation|
 ---|:---
-Step 1| Connect RCA output
+Step 1| Connect RCA output 
 Step 2| Connect TONE1 with PC using a USB-C data cable
 
 ![TONE1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
 
+</div>
+</div>
 
 ## Setting Up
 Most software platforms have integrated TONE1 Drivers. Only Windows platforms need to install drivers.
-* ### VIM1/VIM2/Edge
-  Make sure the firmware of your VIM1 is upgraded to VIM_Nougat_V180524 or later.
-  Make sure the firmware of your VIM2 is upgraded to VIM2_Nougat_V180413 or later.
-  Edge-V TBD.
 
-* ### Windows
-  We will use Windows 10 for this example. Windows 7 is similar.
-  *  Install XMOS Driver
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vims-set-tab" data-toggle="tab" href="#vims-set" role="tab" aria-controls="vims-set" aria-selected="true">VIM1/VIM2/Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="win-set-tab" data-toggle="tab" href="#win-set" role="tab" aria-controls="win-set" aria-selected="false">Windows</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="ubuntu-set-tab" data-toggle="tab" href="#ubuntu-set" role="tab" aria-controls="ubuntu-set" aria-selected="false">Ubuntu</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="mac-set-tab" data-toggle="tab" href="#mac-set" role="tab" aria-controls="mac-set" aria-selected="false">MacOS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="rpi-set-tab" data-toggle="tab" href="#rpi-set" role="tab" aria-controls="rpi-set" aria-selected="false">Raspberry Pi</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vims-set" role="tabpanel" aria-labelledby="vims-set-tab">
+
+Make sure the firmware of your VIM1 is upgraded to VIM_Nougat_V180524 or later.
+Make sure the firmware of your VIM2 is upgraded to VIM2_Nougat_V180413 or later.
+Edge-V TBD.
+
+
+</div>
+<div class="tab-pane fade" id="win-set" role="tabpanel" aria-labelledby="win-set-tab">
+
+ We will use Windows 10 for this example. Windows 7 is similar.
+  *  Install XMOS Driver 
      * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
      * Decompress and run setup.exe to install the driver.
-     * Install completed.
+     * Install completed. 
 ![TONE1 Windows Setup1](/images/tone1/ToneboardWindowsSetup1.png)
   *  Switch sound-card to the TONE1
      * Click the sound icon in the lower-right-corner of the Windows Task-Bar.
@@ -64,21 +98,27 @@ Most software platforms have integrated TONE1 Drivers. Only Windows platforms ne
      * Chose XMOS XS1-U8 DJ as the default sound-card.
 ![TONE1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
 
-* ### Ubuntu
-  *  Switch sound-card to the TONE1
+</div>
+<div class="tab-pane fade" id="ubuntu-set" role="tabpanel" aria-labelledby="ubuntu-set-tab">
+
+Switch sound-card to the TONE1
 ![TONE1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
 
-* ### MacOS
-  *  Switch sound-card to the TONE1
+</div>
+<div class="tab-pane fade" id="mac-set" role="tabpanel" aria-labelledby="mac-set-tab">
+
+Switch sound-card to the TONE1
 ![TONE1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
 
-* ### Raspberry Pi
-  *  Switch sound-card to the TONE1
+</div>
+<div class="tab-pane fade" id="rpi-set" role="tabpanel" aria-labelledby="rpi-set-tab">
 
-     * Volumio
+*  Switch sound-card to the TONE1
+     
+   * Volumio
 ![TONE1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
-
-     * Raspbian
+     
+   * Raspbian
 ```
 1.list sound card
 $ aplay -l
@@ -98,6 +138,10 @@ ctl.!default {
 }
 ```
 
+</div>
+</div>
+
+
 ## Ports and Interfaces
 No|Ports|Function|
 ---|:---|:---
@@ -114,6 +158,27 @@ No|Ports|Function|
 
 ![TONE1 Ports](/images/tone1/ToneboardPorts.png)
 
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="no5-tab" data-toggle="tab" href="#no5" role="tab" aria-controls="no5" aria-selected="true">No.5</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no6-tab" data-toggle="tab" href="#no6" role="tab" aria-controls="no6" aria-selected="false">No.6</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no7-tab" data-toggle="tab" href="#no7" role="tab" aria-controls="no7" aria-selected="false">No.7</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no8-tab" data-toggle="tab" href="#no8" role="tab" aria-controls="no8" aria-selected="false">No.8</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="no9-tab" data-toggle="tab" href="#no9" role="tab" aria-controls="no9" aria-selected="false">No.9</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="no5" role="tabpanel" aria-labelledby="no5-tab">
+
 **No5**: 20-Pin Header Pinout (J4)
 
 Signal| Pin|Pin|Signal
@@ -128,6 +193,9 @@ XL_UP0|7|17|XMOS_TDI
 XL_UP1|8|18|XMOS_TCK
 XMOS_3V3|9|19|XMOS_TMS
 GND|10|20|GND
+
+</div>
+<div class="tab-pane fade" id="no6" role="tabpanel" aria-labelledby="no6-tab">
 
 **No6:** 40-Pin Header Pinout (J1)
 
@@ -154,6 +222,9 @@ Linux_RX|18|38|-
 Linux_TX|19|39|MUTE
 VCC_3V3|20|40|GND9
 
+</div>
+<div class="tab-pane fade" id="no7" role="tabpanel" aria-labelledby="no7-tab">
+
 **No7:** I2S FPC Connectors Pin-Out (J9)
 
 Pin|Signal
@@ -168,6 +239,9 @@ Pin|Signal
 8|I2S_LRCK
 9|I2S_SDO
 10|GND
+
+</div>
+<div class="tab-pane fade" id="no8" role="tabpanel" aria-labelledby="no8-tab">
 
 **No8:** 8 Channel Ext FPC Connectors Pin-Out (J3)
 
@@ -199,6 +273,9 @@ Pin|Signal
 29|DSD_6
 30|GND
 
+</div>
+<div class="tab-pane fade" id="no9" role="tabpanel" aria-labelledby="no9-tab">
+
 **No9:** OLED FPC Connectors Pin-Out (J8)
 
 PIN|SIGNAL
@@ -214,6 +291,8 @@ PIN|SIGNAL
 9|-
 10|GND
 
+</div>
+</div>
 
 ## FAQs
 * How to extend to 8-channel audio?

@@ -14,45 +14,18 @@ The ROM must satisfy the following conditions:
 ### How to Get the GPIO Number
 You can get the GPIO number from GPIO Banks or Pins. Different versions of kernel will be different.
 
-* Linux 3.14 (Android M, N and Ubuntu)
 
-Banks:
-```
-# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/gpio-ranges
-
-GPIO ranges handled:
-0: banks GPIOS   [155 - 255] PINS [10 - 110]
-0: ao-bank GPIOS [145 - 154] PINS [ 0 -   9]
-
-Notice: ao-bank means GPIOAO_X gpios
-```
-
-Pins:
-```
-# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/pins
-...
-pin 5 (GPIOAO_5) 
-pin 6 (GPIOAO_6) 
-...
-pin 28 (GPIOH_2) 
-pin 29 (GPIOH_3) 
-pin 30 (GPIOH_4) 
-pin 31 (GPIOH_5) 
-pin 32 (GPIOH_6) 
-pin 33 (GPIOH_7) 
-pin 34 (GPIOH_8) 
-pin 35 (GPIOH_9) 
-...
-```
-
-For example, get the number of `GPIOH_4`, `GPIOH_5` and `GPIOAO_6`.
-```
-Number(GPIOH_5)  = bank + pin = 155 - 10 + 31 = 176
-Number(GPIOH_4)  = bank + pin = 155 - 10 + 30 = 175
-Number(GPIOAO_6) = bank + pin = 145 -  0 +  6 = 151
-```
-
-* Linux 4.9 (Android O and Ubuntu)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#4.9-pins" role="tab" aria-controls="4.9" aria-selected="true">Kernel 4.9</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#3.14-pins" role="tab" aria-controls="3.14" aria-selected="false">Kernel 3.14</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="4.9-pins" role="tabpanel" aria-labelledby="4.9-tab">
+Linux 4.9 (Android O and Ubuntu)
 
 `aobus-banks`:
 Banks:
@@ -123,6 +96,49 @@ pin 85 (GPIOX_19)  pinctrl@ff634480
 
 For example, get the number of `GPIOH_5`:
 Number(GPIOH_5) = bank + pin = 410 + 22 = 432
+
+</div>
+<div class="tab-pane fade" id="3.14-pins" role="tabpanel" aria-labelledby="3.14-tab">
+
+Linux 3.14 (Android M, N and Ubuntu)
+
+Banks:
+```
+# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/gpio-ranges
+
+GPIO ranges handled:
+0: banks GPIOS   [155 - 255] PINS [10 - 110]
+0: ao-bank GPIOS [145 - 154] PINS [ 0 -   9]
+
+Notice: ao-bank means GPIOAO_X gpios
+```
+
+Pins:
+```
+# cat /sys/kernel/debug/pinctrl/c1109880.pinmux/pins
+...
+pin 5 (GPIOAO_5)
+pin 6 (GPIOAO_6)
+...
+pin 28 (GPIOH_2)
+pin 29 (GPIOH_3)
+pin 30 (GPIOH_4)
+pin 31 (GPIOH_5)
+pin 32 (GPIOH_6)
+pin 33 (GPIOH_7)
+pin 34 (GPIOH_8)
+pin 35 (GPIOH_9)
+...
+```
+
+For example, get the number of `GPIOH_4`, `GPIOH_5` and `GPIOAO_6`.
+```
+Number(GPIOH_5)  = bank + pin = 155 - 10 + 31 = 176
+Number(GPIOH_4)  = bank + pin = 155 - 10 + 30 = 175
+Number(GPIOAO_6) = bank + pin = 145 -  0 +  6 = 151
+```
+</div>
+</div>
 
 ### On Android
 
@@ -223,18 +239,32 @@ while (null != (line = br.readLine())) {
 
 **GPIO List**
 
-* Linux-3.14
-```
-PIN         GPIO         Number
-PIN37       GPIOH5         176
-PIN33       GPIOAO6        151
-```
-* Linux-4.9.40
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#4.9-list" role="tab" aria-controls="4.9" aria-selected="true">Kernel 4.9</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#3.14-list" role="tab" aria-controls="3.14" aria-selected="false">Kernel 3.14</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="4.9-list" role="tabpanel" aria-labelledby="4.9-tab">
+Linux-4.9.40
 ```
 PIN         GPIO         Number
 PIN37       GPIOH5         432
 PIN33       GPIOAO6        502
 ```
+</div>
+<div class="tab-pane fade" id="3.14-list" role="tabpanel" aria-labelledby="3.14-tab">
+Linux-3.14
+```
+PIN         GPIO         Number
+PIN37       GPIOH5         176
+PIN33       GPIOAO6        151
+```
+</div>
+</div>
 
 
 **How to access GPIO on Terminal**

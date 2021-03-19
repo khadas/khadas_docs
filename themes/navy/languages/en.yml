@@ -245,6 +245,7 @@ sidebar:
     how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     how_to_use_usb_gadget: USB Gadget Usage
+    gsensor_sample_demo: Gsensor Sample demo
 
   edge:
     overview: Beginners Guide

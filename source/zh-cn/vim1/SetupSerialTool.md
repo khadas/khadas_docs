@@ -7,12 +7,11 @@ title: 设置串口调试工具
 ### 如何连接
 请按下面所示方式连接：
 
-**1)** 连接所有GPIO，确保TX/RX连接正确
-
-  * Tool Pin `GND`: <---> `Pin17` of VIM1's GPIO
-  * Tool Pin `TXD`: <---> `Pin18` of VIM1's GPIO(Linux_Rx)
-  * Tool Pin `RXD`: <---> `Pin19` of VIM1's GPIO(Linux_Tx)
-  * Tool Pin `VCC`: <---> `Pin20` of VIM1's GPIO
+**1)** 连接所有GPIO，确保TX/RX连接正确.
+* Tool Pin `GND`: <---> `Pin17` of VIMs' GPIO
+* Tool Pin `TXD`: <---> `Pin18` of VIMs' GPIO(Linux_Rx)
+* Tool Pin `RXD`: <---> `Pin19` of VIMs' GPIO(Linux_Tx)
+* Tool Pin `VCC`: <---> `Pin20` of VIMs' GPIO
 
 **2)** 把串口调试工具插入PC
 

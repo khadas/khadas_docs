@@ -1,7 +1,16 @@
 title: Khadas TONE1 Beginners FAQ
 ---
 
-# Mac OS
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="mac-tab" data-toggle="tab" href="#mac" role="tab" aria-controls="mac" aria-selected="true">Mac OS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="win-tab" data-toggle="tab" href="#win" role="tab" aria-controls="win" aria-selected="false">Windows</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="mac" role="tabpanel" aria-labelledby="win-tab">
 
 ## Driver
 
@@ -24,9 +33,8 @@ If you're using a Tone Board on a Mac, you may notice that you are unable to con
 **Learn More:**
 [Upgrade Tone Board Firmware](/tone1/HowtoUpgradeFirmware.html)
 
-
-# Windows
-
+</div>
+<div class="tab-pane fade" id="win" role="tabpanel" aria-labelledby="win-tab">
 
 ## Driver
 
@@ -45,6 +53,8 @@ If you're using a Tone Board on a Mac, you may notice that you are unable to con
 
 ![Windows 10 Select Playback Device](/images/tone1/xmos_selection.jpg)
 
+</div>
+</div>
 
 # More Information:
 

@@ -4,7 +4,26 @@ title: VIM2 文档
 # VIM2
 ![image](/images/vim2/docs_vim2.jpg)
 
-## 正面(蓝色标识)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim2" role="tab" aria-controls="front" aria-selected="true">正面(蓝色标识)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim2" role="tab" aria-controls="back" aria-selected="false">背面(红色)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim2" role="tab" aria-controls="button" aria-selected="false">按键</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim2" role="tab" aria-controls="led" aria-selected="false">LED灯指示</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-vim2" role="tab" aria-controls="gpio" aria-selected="false">GPIO管脚映射</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-vim2" role="tabpanel" aria-labelledby="front-tab">
+
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 2.0接口,最大输出电流500mA|
@@ -25,8 +44,8 @@ title: VIM2 文档
 |G|FPC控制器|10个引脚,0.5mm间距,具有I2C和IOs的功能|
 |H|天线座子|用于插[wifi](/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
 |I|天线座子|用于插[wifi](/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
-
-## 背面(红色)
+</div>
+<div class="tab-pane fade" id="back-vim2" role="tabpanel" aria-labelledby="back-tab">
 
 ||设备名称|描述说明|
 |---:|:---|:---|
@@ -40,8 +59,9 @@ title: VIM2 文档
 |8|20叫Pogo焊盘|用于[VTV板子](https://www.khadas.com/product-page/vtv-board)的USB, I2C, DVB-Bus, IOs接口|
 |9|XPWR焊盘|用于连接使用外部电源|
 |A|900mA保险丝|为900mA的USB口提供保护|
+</div>
+<div class="tab-pane fade" id="button-vim2" role="tabpanel" aria-labelledby="button-tab">
 
-## 按键
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM2|
@@ -49,8 +69,9 @@ title: VIM2 文档
 |||x|开机或者唤醒VIM2|
 |x||x|[进入升级模式(按键模式)](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
 |x|x|x|[清除EMMC](/zh-cn/vim2/HowtoEraseEMMC.html)|
+</div>
+<div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
 
-## LED灯指示
 |颜色|状态|含义|
 |---:|:---:|:---|
 |蓝色|关闭|电源关闭|
@@ -60,8 +81,8 @@ title: VIM2 文档
 |红灯|None|None|
 
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
-
-## GPIO管脚映射
+</div>
+<div class="tab-pane fade" id="gpio-vim2" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -85,6 +106,9 @@ GND|17|37|GPIOH_5
 Linux_RX|18|38|EXP_INT
 Linux_TX|19|39|GPIODV_13
 3.3V|20|40|GND
+</div>
+</div>
+
 
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)

@@ -3,7 +3,17 @@ title: 通过USB升级固件
 
 **注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
 
-## 通过Windows升级固件
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="win-tab" data-toggle="tab" href="#win" role="tab" aria-controls="win" aria-selected="true">Windows</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="ubu-tab" data-toggle="tab" href="#ubu" role="tab" aria-controls="ubu" aria-selected="false">Ubuntu</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="win" role="tabpanel" aria-labelledby="win-tab">
+
 ### 准备工作
 * 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip)并解压。
 * 运行`setup_v2.x.x.exe`程序进行安装。
@@ -15,9 +25,9 @@ title: 通过USB升级固件
 1. 打开升级工具`USB_Burning_Tool_v2.x.x.exe`，点击"File-->Import image"选择要升级的固件。
 2. 用USB-C线连接VIMs和PC电脑（默认VIMs上电会自动开机）。
 3. 进入固件更新模式
-	* 长按Power键不要松开
-	* 短按Rest键并松开
-	* 大概10秒后松开Power键进入固件升级模式
+    * 长按Power键不要松开
+    * 短按Rest键并松开
+    * 大概10秒后松开Power键进入固件升级模式
 4. 如果上面操作已正确执行，电脑端会发现VIMs升级设备，点击升级工具上的start按钮开始固件升级,升级进度条100%时完成升级。
 ![image](/images/vim1/usb_upgrade_tool_interface_v217_zh.png)
 
@@ -25,7 +35,9 @@ title: 通过USB升级固件
 * 先点击"stop"按钮再关闭升级工具。
 * 外部供电要求([VIM1](/zh-cn/vim1/ExtraPowerInput.html)/[VIM2](/zh-cn/vim2/ExtraPowerInput.html)/[VIM3](/zh-cn/vim3/ExtraPowerInput.html))，部分电脑供电比较弱会导致升级失败。
 
-## 通过Ubuntu升级固件
+</div>
+<div class="tab-pane fade" id="ubu" role="tabpanel" aria-labelledby="ubu-tab">
+
 ### 准备
 ```
 $ sudo apt-get install libusb-dev git parted
@@ -64,11 +76,11 @@ Installing Amlogic flash-tool...
  Installing Rockchip flash-tool...
  
  ===============================================
-		 
+         
  Host PC: Ubuntu 16.04
-				 
+                 
  ===============================================
-				   
+                   
  Installing USB rules...
  Installing flash-tool...
  Done!
@@ -127,7 +139,12 @@ Resetting board [OK]
 更多请参考[文档](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs)。
 
 ### 卸载烧录工具
-```
+
+```sh
 $ cd /path/to/utils
 $ ./UNINSTALL
 ```
+
+</div>
+</div>
+
