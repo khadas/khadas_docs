@@ -176,6 +176,7 @@ vim3:
     package_update_image: FastPackageUpdateImage.html
     how_to_use_adb_tool: HowToUseADBTool.html
     how_to_use_fastboot: HowToUseFastboot.html
+    how_to_access_i2c: HowToAccessI2c_android.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
