@@ -45,7 +45,7 @@ b1 01 4b 46 7f ff 0c 10 d8 t=27062
 单总线物理引脚
 
 
-<ul class="nav nav-tabs ul-code" id="myTab" role="tablist">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#vim1-phy" role="tab" aria-controls="vim1" aria-selected="true">VIM1</a>
   </li>
