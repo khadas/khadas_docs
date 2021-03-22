@@ -5,10 +5,10 @@ title: 在Docker中编译软件包
 
 *注意： 我们仅仅提供arm64架构的Docker环境。*
 
-### 安装Docker
+# 安装Docker
 需要主机系统为`Ubuntu 16.04`或更新。
 
-```
+```sh
 $ sudo apt-get remove docker docker-engine docker.io
 $ sudo apt-get update
 $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
@@ -22,13 +22,15 @@ $ sudo apt-get install docker-ce
 ```
 
 启动Docker：
-```
+
+```sh
 $ sudo systemctl enable docker
 $ sudo systemctl start docker
 ```
 
 添加Docker组：
-```
+
+```sh
 $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 ```
@@ -36,11 +38,14 @@ $ sudo usermod -aG docker $USER
 *注意：你需要注销或重启系统。*
 
 检查Docker：
-```
+
+```sh
 $ docker run hello-world
 ```
+
 如果你看到如下输出，说明Docker安装成功。
-```
+
+```sh
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 ca4f61b1923c: Pull complete
@@ -69,41 +74,47 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-### 编译Debian Docker镜像
+# 编译Debian Docker镜像
+
 我们提供`Debian stretch arm64`的dockerfile，从GitHub下载。
-```
+
+```sh
 $ git clone https://github.com/numbqq/docker-rockchip -b arm64
 $ sudo docker build -t rockchip-arm64 .
 ```
 现在编译好了一个名为`rockchip-arm64`包含多架构交叉编译环境的Docker镜像。
 
-### 编译软件包
+# 编译软件包
 
 进入Docker命令行：
-```
+
+```sh
 $ docker run -it -v <package dir>:/home/rk/packages rockchip-arm64 /bin/bash
 ```
 *注意： `package dir`为你要编译的软件包的完整路径。*
 
 开始编译：
-```
+
+```sh
 # cd /home/rk/packages/<package-name>
 # DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -b -d -uc -us -aarm64
 # ls ../*.deb
 ```
 
-### 例子
+# 例子
 编译libdrm。
 
-```
+```sh
 $ mkdir ~/test
 $ cd ~/test
 $ git clone https://github.com/numbqq/libdrm-rockchip -b rockchip-2.4.91
 $ cd libdrm-rockchip
 $ docker run -it -v $(pwd):/home/rk/packages rockchip-arm64 /bin/bash
 ```
+
 现在已经在Docker环境中了，开始编译：
-```
+
+```sh
 # cd /home/rk/packages/libdrm-rockchip
 # DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -b -d -uc -us -aarm64
 # ls ../*.deb
