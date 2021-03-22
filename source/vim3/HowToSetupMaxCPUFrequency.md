@@ -8,14 +8,14 @@ Khadas VIM3L has quad-core cortex-A55.
 
 * Little Cores, cortex-A53: CPU0 & CPU1.
 
-```
+```sh
 $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 0 1
 ```
 
 * Big cores, cortex-A73: CPU2, CPU3, CPU4 & CPU5.
 
-```
+```sh
 $ # cat /sys/devices/system/cpu/cpufreq/policy2/related_cpus
 2 3 4 5
 ```
@@ -24,14 +24,14 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy2/related_cpus
 
 * cortex-A55: CPU0, CPU1, CPU2 & CPU3.
 
-```
+```sh
 $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 0 1 2 3
 ```
 
 **For release `V0.9.3-20200814` or later, we can setup the maximum CPU frequency.**
 
-## Server Images
+# Server Images
 
 You can edit `/boot/env.txt` to setup the maximux CPU frequency.
 
@@ -49,7 +49,7 @@ You can edit `max_freq_*` node to change the maximum CPU frequency.
 *Note: You need to reboot the board after change the frequency.*
 
 
-## Desktop Images
+# Desktop Images
 
 * You can access `Applications->CPU Frequency Setting` to setup the maximux CPU frequency.
 
@@ -124,7 +124,7 @@ You can use command `cpufreq-info` to get the CPU frequency.
 
 For example, get CPU0 & CPU3 frequency:
 
-```
+```sh
 khadas@Khadas:~$ cpufreq-info -c 0 -f
 1800000
 khadas@Khadas:~$ cpufreq-info -c 3 -f

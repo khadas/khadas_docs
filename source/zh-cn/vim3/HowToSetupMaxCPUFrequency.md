@@ -8,14 +8,14 @@ Khadas VIM3L包含四个cortex-A55核心。
 
 * 小核，cortex-A53：CPU0和CPU1。
 
-```
+```sh
 $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 0 1
 ```
 
 * 大核，cortex-A73：CPU2，CPU3，CPU4和CPU5。
 
-```
+```sh
 $ # cat /sys/devices/system/cpu/cpufreq/policy2/related_cpus
 2 3 4 5
 ```
@@ -24,14 +24,14 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy2/related_cpus
 
 * cortex-A55：CPU0，CPU1，CPU2和CPU3。
 
-```
+```sh
 $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 0 1 2 3
 ```
 
 **对于固件版本为`V0.9.3-20200814`或更高可以设置最大CPU频率。**
 
-## Server固件
+# Server固件
 
 可以编辑`/boot/env.txt`文件来设置最大CPU频率。
 
@@ -49,7 +49,7 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 *注意：修改频率后需要通过重启来生效。*
 
 
-## 桌面固件
+# 桌面固件
 
 * 可以直接通过`Applications->CPU Frequency Setting`来设置最大CPU频率。
 
@@ -119,13 +119,13 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 | **2208**  | **2208 (Overclocking)**|
 
 
-## 查看CPU频率
+# 查看CPU频率
 
 可以通过命令`cpufreq-info`来查看CPU频率。
 
 例如，查看CPU0和CPU3的频率：
 
-```
+```sh
 khadas@Khadas:~$ cpufreq-info -c 0 -f
 1800000
 khadas@Khadas:~$ cpufreq-info -c 3 -f
