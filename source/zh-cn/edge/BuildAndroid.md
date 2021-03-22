@@ -1,11 +1,11 @@
 title: 编译安卓
 ---
-### 准备
+# 准备
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
 - [x] [下载安卓源码](/zh-cn/edge/DownloadAndroidSourceCode.html)
 - [x] [安装Rockchip平台工具链](/zh-cn/edge/InstallToolchains.html)
 
-### 编译
+# 编译
 *注意：在开始编译前，确保已经搭建好如上`准备`所述的环境。*
 
 # android 10.0:
@@ -167,6 +167,6 @@ $ source build/envsetup.sh
 $ lunch rk3399_all-userdebug
 $ ./pack_image.sh
 ```
-### 参考
+# 参考
 * [通过USB数据线升级](/zh-cn/edge/UpgradeViaUSBCable.html)
 * [通过TF卡升级](/zh-cn/edge/UpgradeViaTFBurningCard.html)
