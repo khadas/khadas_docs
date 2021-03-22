@@ -3,7 +3,7 @@ title: How To Setup A Cooling Fan
 
 This guide is about how to setup a cooling fan in Ubuntu.
 
-### Preparations
+# Preparations
 
 * Ubuntu version must be `V20190116` or newer
 
@@ -18,7 +18,7 @@ The cooling fan has 5 working modes:
 * `auto`: Cooling fan is working at auto speed mode. By default, the fan speed is determined by CPU temperature.
 * `on`  : Cooling fan alias for `auto`. See above.
 
-### Setup Working Mode
+# Setup Working Mode
 
 You can edit file `/boot/env.txt` to setup the fan mode, the default mode is `auto`.
 
@@ -49,7 +49,7 @@ khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```
 
-### Query fan mode/level, temperature and trigger after boot
+# Query fan mode/level, temperature and trigger after boot
 
 To query the fan mode/level, temperature and trigger after booting use the following commands:
 
