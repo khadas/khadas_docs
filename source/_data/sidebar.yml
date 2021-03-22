@@ -179,6 +179,7 @@ vim3:
     how_to_access_i2c: HowToAccessI2c_android.html
     how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
     how_to_change_logo: HowToChangeBootLogo_android.html
+    how_to_change_animation: HowToChangeBootAnimation_android.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
