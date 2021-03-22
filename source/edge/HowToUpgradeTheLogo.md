@@ -8,14 +8,14 @@ We use [Fenix](/vim1/FenixScript.html) to build Ubuntu/Debian images, The defaul
 
 Use yor bmp file to replace the defaut logo file in linux directory.
 
-```
+```sh
 $ cp yourlogo.bmp logo.bmp
 $ cp youtlogo.bmp logo_kernel.bmp
 ```
 
 Build the logo image:
 
-```
+```sh
 $ ./scripts/pack_logo.sh
 ```
 
@@ -23,7 +23,7 @@ You will get the logo image `logo.img` in linux directory. You can use this logo
 
 You can also upgade the logo directly in the ready to use image. Copy logo.img to board and update the logo:
 
-```
+```sh
 $ sudo dd if=logo.img of=/dev/mmcblk1p5
 $ sync
 ```
