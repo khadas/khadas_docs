@@ -2,9 +2,26 @@ title: Edge文档
 ---
 
 # Edge
+
 ![image](/images/edge/docs_edge_labels.jpg)
 
-## 正面(蓝色)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-edge" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-edge" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-edge" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-edge" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-edge" role="tabpanel" aria-labelledby="front-tab">
+
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0 speeds|
@@ -20,9 +37,11 @@ title: Edge文档
 |B|I-Pex天线|用于连接[wifi](/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/zh-cn/edge/HowToSetupBluetooth.html)的天线|
 |C|I-Pex天线|用于连接[wifi](/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/zh-cn/edge/HowToSetupBluetooth.html)的天线|
 
-## 背面(红色)
+</div>
+<div class="tab-pane fade" id="back-edge" role="tabpanel" aria-labelledby="back-tab">
+
 ||设备名称|描述说明|
-|---:|:---|:---|
+|---:|:---|:---| 
 |1|Li-Po电池接口|用于连接锂聚合物电池|
 |2|备用Wi-Fi/蓝牙焊盘|用于焊接连接wifi/蓝牙天线|
 |3|备用Wi-Fi/蓝牙焊盘|用于焊接连接wifi/蓝牙天线|
@@ -31,7 +50,9 @@ title: Edge文档
 |6|FPC座子A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/edge-io)|
 |7|M寄存器|强制板子进入[MaskROM模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
 
-## 按键
+</div>
+<div class="tab-pane fade" id="button-edge" role="tabpanel" aria-labelledby="button-tab">
+
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子|
@@ -39,21 +60,48 @@ title: Edge文档
 |||x|Power On/Wake Up Edge|
 |x||x|[进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
 
-## LED灯指示
+</div>
+<div class="tab-pane fade" id="led-edge" role="tabpanel" aria-labelledby="led-tab">
+
 |颜色|状态|含义|
 |---:|:---:|:---|
 |蓝色|关|电源关闭|
 ||常亮|已连接电源,但是处于关机状态|
-|白色|关|板子以关机|
+|白色|关|板子以关机| 
 ||常亮|板子处于开机状态|
 |红色|None|None|
 
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
+</div>
+</div> 
+
+
+
 # Edge-V
 ![image](/images/edge/docs_edge_v_labels.jpg)
 
-## Front (Blue)
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-edgev" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-edgev" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-edgev" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-edgev" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-edgev" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-edgev" role="tabpanel" aria-labelledby="front-tab">
+
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0, 蓝色接口|
@@ -73,7 +121,9 @@ title: Edge文档
 |F|I-Pex天线|用于连接[wifi](/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/zh-cn/edge/HowToSetupBluetooth.html)的天线|
 |G|I-Pex天线|用于连接[wifi](/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/zh-cn/edge/HowToSetupBluetooth.html)的天线|
 
-## 背面(红色)
+</div>
+<div class="tab-pane fade" id="back-edgev" role="tabpanel" aria-labelledby="back-tab">
+
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|Li-Po电池接口|通过[juice板子](https://www.khadas.com/product-page/lipo-battery)用于连接[锂聚合物电池](https://www.khadas.com/product-page/lipo-battery)|
@@ -88,15 +138,19 @@ title: Edge文档
 |A|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
 |B||M寄存器|强制板子进入[MaskROM模式](/edge/HowtoBootIntoUpgradeMode.html)|
 
-## 按键
-|Reset|Function|Power|描述说明| 
+</div>
+<div class="tab-pane fade" id="button-edgev" role="tabpanel" aria-labelledby="button-tab">
+
+|Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子| 
 ||x||[进入TST模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
 |x||x|[进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
 
-## LED灯指示
+</div>
+<div class="tab-pane fade" id="led-edgev" role="tabpanel" aria-labelledby="led-tab">
+
 |颜色|状态|含义| 
 |---:|:---:|:---|
 |蓝色|关|电源关闭| 
@@ -107,7 +161,8 @@ title: Edge文档
 
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
-## GPIO管脚
+</div>
+<div class="tab-pane fade" id="gpio-vim" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -132,10 +187,33 @@ Linux_RX|18|38|I2S0_LRCK_RX/GPIO3_D1
 Linux_TX|19|39|MCU_PA1
 3.3V|20|40|GND
 
+</div>
+</div>
+
+
 # Captain
 ![image](/images/edge/docs_captain_labels.jpg)
 
-## 正面(蓝色)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-captain" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-captain" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-captain" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-captain" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-captain" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-captain" role="tabpanel" aria-labelledby="front-tab">
+
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|RK3399 SoC散热器|用于减少热量集中的金属层|
@@ -149,7 +227,7 @@ Linux_TX|19|39|MCU_PA1
 |9|Gesture Sensor|三轴加速传感器|
 |A|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |B|右边游戏按键|通过[Kap Case](https://www.khadas.com/product-page/kap-case)可以玩简单的游戏|
-|C|左边边游戏按键|通过[Kap Case](https://www.khadas.com/product-page/kap-case)可以玩简单的游戏| 
+|C|左边边游戏按键|通过[Kap Case](https://www.khadas.com/product-page/kap-case)可以玩简单的游戏|
 |D|USIC|旧版USB总线|
 |E|E-DP座子|用于外接eDP显示器|
 |F|TP座子|用于连接[TP输入](/zh-cn/edge/ConnectLcd.html)|
@@ -165,7 +243,9 @@ Linux_TX|19|39|MCU_PA1
 |P|M3穿孔|用于与[Kap Case](https://www.khadas.com/product-page/kap-case)连接固定|
 |Q|M2螺纹支架|用于固定[Edge](https://www.khadas.com/product-page/edge)|
 
-## 背面(红色)
+</div>
+<div class="tab-pane fade" id="back-captain" role="tabpanel" aria-labelledby="back-tab">
+
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|[M.2 Socket (PCI-E 2.1)](/zh-cn/edge/ListOfCompatibleNVMeSSDs.html)|可用于连接NVMe SSD|
@@ -175,7 +255,9 @@ Linux_TX|19|39|MCU_PA1
 |5|右按键|自定义可编程按键|
 |6|左按键|自定义可编程按键|
 
-## 按键
+</div>
+<div class="tab-pane fade" id="button-captain" role="tabpanel" aria-labelledby="button-tab">
+
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子|
@@ -183,7 +265,9 @@ Linux_TX|19|39|MCU_PA1
 |||x|Power On/Wake Up Edge|
 |x||x|[进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
 
-## LED灯指示
+</div>
+<div class="tab-pane fade" id="led-captain" role="tabpanel" aria-labelledby="led-tab">
+
 |颜色|状态|含义|
 |---:|:---:|:---|
 |蓝色|关|电源关闭|
@@ -194,7 +278,8 @@ Linux_TX|19|39|MCU_PA1
 
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
-## GPIO管脚
+</div>
+<div class="tab-pane fade" id="gpio-vim" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -219,10 +304,14 @@ Linux_RX|18|38|I2S0_LRCK_RX/GPIO3_D1
 Linux_TX|19|39|MCU_PA1
 3.3V|20|40|GND
 
+</div>
+</div>
+
+
 # Captain + Edge
 ![image](/images/edge/docs_captain_with_edge_labels.jpg)
 
-## 正面(黄色)
+* 正面(黄色)
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|[314针金手指](https://www.khadas.com/product-page/edge)|Edge＆Captain之间的数据交换和电源接口|
