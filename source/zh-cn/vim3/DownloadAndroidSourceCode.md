@@ -18,7 +18,8 @@ title: 如何下载安卓源码
 VPN方式不再介绍，如下方法基于清华大学镜像服务器：
 * 步骤参考[Download the Android Source Code](/vim3/DownloadAndroidSourceCode.html)
 * 在`repo sync`之前修改default.xml文件，把Google的URL地址改为清华大学的，如下：
-```
+
+```sh
 gouwa@Server:~/project/khadas/aosp/.repo/manifests$ git diff
 diff --git a/default.xml b/default.xml
 index f48a988..b8cb9da 100644
@@ -35,11 +36,12 @@ index f48a988..b8cb9da 100644
 gouwa@Server:~/project/khadas/aosp/.repo/manifests$
 ```
 
-### 常见问题：
+# 常见问题：
 * repo在运行过程中会尝试访问Google官方的git源更新自己，因此在运行过程中有可能出现”无法连接gerrit.googlesource.com“的问题，解决方案参考[这里](https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/)。
 
 * 下载过程中如果报如下错误，检查上述VPN或者修改XML方法是否正确配置*
-```
+
+```sh
 ...
 Fetching project platform/prebuilts/sdk
 Fetching projects:  66% (4/6)  fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/tools/': Failed to connect to android.googlesource.com port 443: Connection timed out
@@ -53,7 +55,7 @@ error: Exited sync due to fetch errors
 gouwa@Server:~/project/khadas/aosp$
 ```
 
-### 更多参考：
+# 更多参考：
 * [总结国内下载源码报错问题](https://forum.khadas.com/t/faq/10745)
 * [清华大学官方文档：如何下载Android AOSP源码](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)
 

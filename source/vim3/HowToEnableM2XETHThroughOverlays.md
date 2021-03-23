@@ -1,9 +1,12 @@
 title: How to enable M2X ETH through overlays
 ---
-We have already explained in the [documentation](/vim3/HowToUseDeviceTreeOverlay.html) how to useDevice Tree Overlays.
-## Enable M2X ETH Under Ubuntu
 
-### Update System:
+We have already explained in the [documentation](/vim3/HowToUseDeviceTreeOverlay.html) how to useDevice Tree Overlays.
+
+# Enable M2X ETH Under Ubuntu
+
+## Update System:
+
 ```shell
 $ sudo apt update
 $ sudo apt full-upgrade
@@ -12,8 +15,10 @@ $ sync
 $ sudo reboot
 ```
 
-### Change The Configuration Of Device Tree Overlays
+## Change The Configuration Of Device Tree Overlays
+
 1、open`/boot/env.txt`film:
+
 ```shell
 khadas@khadas:~$ sudo vim /boot/enc.txt
 # Device Tree Overlays
@@ -28,21 +33,26 @@ khadas@khadas:~$ sudo vim /boot/enc.txt
 #   otg-device      -- Enable USB OTG Device
 overlays=uart3 pwm_f i2c3 os08a10
 ```
+
 `uart3 pwm_f i2c3 os08a10`are enabled by default.
 
 2、add`m2x-eth`to`overlays`node to make M2X ETH enable
+
 ```shell
 overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 m2x-eth
 ```
 
 3、save the film`/boot/env.txt` and reboot the board to make it available.
+
 ```shell
 khadas@khadas:~$ sync
 khadas@khadas:~$ sudo reboot
 ```
 
-### Check If M2X ETH Is Enable
+## Check If M2X ETH Is Enable
+
 1、whether you can get the IP addresss
+
 ```shell
 khadas@Khadas:~$ ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
@@ -55,7 +65,9 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
         device interrupt 14
 ```
+
 2、whether you can go online
+
 ```shell
 khadas@Khadas:~$ ping www.khadas.com
 PING td-balancer-sv5-61-96.wixdns.net (185.230.61.96) 56(84) bytes of data.

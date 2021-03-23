@@ -3,7 +3,7 @@ title: 如何访问GPIO
 
 这篇文档介绍如何在Android和Ubuntu下访问GPIO。
 
-### GPIO编号（部分）
+# GPIO编号（部分）
 ```
 PIN         GPIO        Number
 PIN15       GPIO1_C2     50
@@ -14,7 +14,7 @@ PIN23       GPIO1_B7     47
 
 *注意： 有些GPIO默认复用为其他功能，如：I2C。如果配置为GPIO功能则需要修改DTS。*
 
-### 如何获取GPIO编号
+# 如何获取GPIO编号
 可以使用下面的公式计算GPIO编号：
 
 ```

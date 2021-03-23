@@ -1,9 +1,12 @@
 title: 如何通过overlays方式使能M2X ETH
 ---
-我们之前在[文档](/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)中介绍过如何使用Device Tree Overlay
-## 在Ubuntu下使能M2X ETH
 
-### 升级系统
+我们之前在[文档](/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)中介绍过如何使用Device Tree Overlay
+
+# 在Ubuntu下使能M2X ETH
+
+## 升级系统
+
 ```shell
 $ sudo apt update
 $ sudo apt full-upgrade
@@ -12,8 +15,10 @@ $ sync
 $ sudo reboot
 ```
 
-### 更改Device Tree Overlay的配置，如下：
+## 更改Device Tree Overlay的配置，如下：
+
 1、打开`/boot/env.txt`文件：
+
 ```shell
 khadas@khadas:~$ sudo vim /boot/enc.txt
 # Device Tree Overlays
@@ -28,21 +33,26 @@ khadas@khadas:~$ sudo vim /boot/enc.txt
 #   otg-device      -- Enable USB OTG Device
 overlays=uart3 pwm_f i2c3 os08a10
 ```
+
 其中`uart3 pwm_f i2c3 os08a10`是默认使能的
 
 2、在`overlays`中增加`m2x-eth`使能M2X ETH
+
 ```shell
 overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 m2x-eth
 ```
 
 3、保存文件`/boot/env.txt`并重启系统来使其生效
+
 ```shell
 khadas@khadas:~$ sync
 khadas@khadas:~$ sudo reboot
 ```
 
-### 验证M2X ETH是否使能
+## 验证M2X ETH是否使能
+
 1、是否可以获取IP地址
+
 ```shell
 khadas@Khadas:~$ ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
@@ -55,7 +65,9 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
         device interrupt 14
 ```
+
 2、是否可以上网
+
 ```shell
 khadas@Khadas:~$ ping www.khadas.com
 PING td-balancer-sv5-61-96.wixdns.net (185.230.61.96) 56(84) bytes of data.

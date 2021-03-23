@@ -8,14 +8,14 @@ title: 如何更新Logo
 
 使用你自己的bmp文件来替换默认的文件，文件在linux目录下。
 
-```
+```sh
 $ cp yourlogo.bmp logo.bmp
 $ cp youtlogo.bmp logo_kernel.bmp
 ```
 
 编译logo镜像
 
-```
+```sh
 $ ./scripts/pack_logo.sh
 ```
 
@@ -24,7 +24,7 @@ $ ./scripts/pack_logo.sh
 你还可以直接在固件中更新logo镜像。拷贝`logo.img`到板子并执行如下命令更新logo。
 
 
-```
+```sh
 $ sudo dd if=logo.img of=/dev/mmcblk1p5
 $ sync
 ```

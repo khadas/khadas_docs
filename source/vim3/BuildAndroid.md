@@ -2,16 +2,19 @@ title: Building Android Source Code
 ---
 
 
-### Preparations
+# Preparations
+
 - [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
 - [x] [Downloading the Android Source](/vim3/DownloadAndroidSourceCode.html)
 - [x] [Install Toolchains for the Amlogic Platform](/vim3/InstallToolchains.html)
 
 
-### Building
+# Building
+
 *Note: Before you start to build, make sure you have done all the `Preparations` listed above.*
 
 **Build U-Boot:**
+
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ cd bootloader/uboot
@@ -24,6 +27,7 @@ $ ./mk TARGET
 
 
 **Build Android:**
+
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh
@@ -51,10 +55,11 @@ $ make -jN otapackage
 When you build the Android Kernel (above), the Linux Kernel will also be built simultaneously.
 
 In some cases, you might want to build the Linux Kernel separately. You can run this script below to do that:
+
 ```sh
 $ make bootimage
 ```
 
-### See Also
+# See Also
 * [Upgrade Via an USB Cable](/vim3/UpgradeViaUSBCable.html)
 * [Upgrade Via a Burnning TF Card](/vim3/UpgradeViaTFBurningCard.html)

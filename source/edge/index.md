@@ -4,7 +4,23 @@ title: Edge Beginners Guide
 # Edge
 ![image](/images/edge/docs_edge_labels.jpg)
 
-## Front (Blue)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-edge" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-edge" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-edge" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-edge" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-edge" role="tabpanel" aria-labelledby="front-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 3.0 speeds|
@@ -20,9 +36,11 @@ title: Edge Beginners Guide
 |B|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / Bluetooth Connector|Connect Wi-Fi / Bluetooth antennas|
 |C|I-Pex Wi-Fi / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Connect Wi-Fi / Bluetooth antennas|
 
-## Back (Red)
+</div>
+<div class="tab-pane fade" id="back-edge" role="tabpanel" aria-labelledby="back-tab">
+
 ||Component|Purpose|
-|---:|:---|:---|
+|---:|:---|:---| 
 |1|Li-Po Battery Connector|For connecting Lithium Polymer batteries|
 |2|Secondary Wi-Fi / Bluetooth Pad|Extra pad for mounting Wi-Fi / Bluetooth antennas|
 |3|Secondary Wi-Fi / Bluetooth Pad|Extra pad for mounting Wi-Fi / Bluetooth antennas|
@@ -31,7 +49,9 @@ title: Edge Beginners Guide
 |6|FPC Connector A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/edge-io)|
 |7|M-Register|Allows the EMMC to [enter MaskROM mode](/edge/HowtoBootIntoUpgradeMode.html)|
 
-## Buttons
+</div>
+<div class="tab-pane fade" id="button-edge" role="tabpanel" aria-labelledby="button-tab">
+
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot Edge|
@@ -39,7 +59,9 @@ title: Edge Beginners Guide
 |||x|Power On/Wake Up Edge|
 |x||x|[Enter Upgrade Mode (KEYS)](/edge/HowtoBootIntoUpgradeMode.html)|
 
-## Indicator LEDs
+</div>
+<div class="tab-pane fade" id="led-edge" role="tabpanel" aria-labelledby="led-tab">
+
 |Colour|Behaviour|Meaning|
 |---:|:---:|:---|
 |Blue|OFF|Power source disconnected|
@@ -50,10 +72,33 @@ title: Edge Beginners Guide
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
 
+</div>
+</div> 
+
+
 # Edge-V
 ![image](/images/edge/docs_edge_v_labels.jpg)
 
-## Front (Blue)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-edgev" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-edgev" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-edgev" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-edgev" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-edgev" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-edgev" role="tabpanel" aria-labelledby="front-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 3.0, blue colour|
@@ -73,7 +118,9 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |F|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 |G|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 
-## Back (Red)
+</div>
+<div class="tab-pane fade" id="back-edgev" role="tabpanel" aria-labelledby="back-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|Li-Po Battery Connector|Connect a [Lithium Polymer battery](https://www.khadas.com/product-page/lipo-battery) with the [Juice Board](https://www.khadas.com/product-page/juice-board)|
@@ -88,7 +135,9 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |A|MIPI-RX/TX|Configurable, connect to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera) or MIPI-DSI displays|
 |B|M-Register|Another way for entering [upgrade mode](/edge/HowtoBootIntoUpgradeMode.html)|
 
-## Buttons
+</div>
+<div class="tab-pane fade" id="button-edgev" role="tabpanel" aria-labelledby="button-tab">
+
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot Edge-V|
@@ -96,7 +145,9 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |||x|Power On/Wake Up Edge-V|
 |x||x|[Enter Upgrade Mode (KEYS)](/edge/HowtoBootIntoUpgradeMode.html)|
 
-## Indicator LEDs
+</div>
+<div class="tab-pane fade" id="led-edgev" role="tabpanel" aria-labelledby="led-tab">
+
 |Colour|Behaviour|Meaning|
 |---:|:---:|:---|
 |Blue|OFF|Power source disconnected|
@@ -107,7 +158,8 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
 
-## GPIO Pinout
+</div>
+<div class="tab-pane fade" id="gpio-vim" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -132,10 +184,33 @@ Linux_RX|18|38|I2S0_LRCK_RX/GPIO3_D1
 Linux_TX|19|39|MCU_PA1
 3.3V|20|40|GND
 
+</div>
+</div>
+
+
 # Captain
 ![image](/images/edge/docs_captain_labels.jpg)
 
-## Front (Blue)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-captain" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-captain" role="tab" aria-controls="back" aria-selected="false">BACK(RED)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-captain" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-captain" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="gpio-tab" data-toggle="tab" href="#gpio-captain" role="tab" aria-controls="gpio" aria-selected="false">GPIO Pinout</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="front-captain" role="tabpanel" aria-labelledby="front-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|RK3399 SoC Heat Spreader|Metallic layer for reducing heat concentration|
@@ -165,17 +240,21 @@ Linux_TX|19|39|MCU_PA1
 |P|M3 Clearance Hole|For mounting and cases, such as the [Kap Case](https://www.khadas.com/product-page/kap-case)|
 |Q|M2 Threaded Stand-Off|For mounting the [Edge](https://www.khadas.com/product-page/edge)|
 
-## Back (Red)
+</div>
+<div class="tab-pane fade" id="back-captain" role="tabpanel" aria-labelledby="back-tab">
+
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[M.2 Socket (PCI-E 2.1)](/edge/ListOfCompatibleNVMeSSDs.html)|Connect directly to 2280 NVMe SSDs|
-|2|External Speaker & DMIC Input FPC Connector|Connecting to an external speaker|
+|2|External Speaker & DMIC Input FPC Connector|Connecting to an external speaker| 
 |3|[M.2 2280 Stand-Off (M2 Threaded)](/edge/ListOfCompatibleNVMeSSDs.html)|Boss for securing an SSD to the Captain|
 |4|Lithium Polymer Battery Connector|Add a [2-Cell Li-Po battery](https://www.khadas.com/product-page/lipo-battery) for portable usage, see [power priority](/edge/EdgeCaptainPowerPriority.html)|
 |5|Right Function Button|User programmable button|
 |6|Left Function Button|User programmable button|
 
-## Buttons
+</div>
+<div class="tab-pane fade" id="button-captain" role="tabpanel" aria-labelledby="button-tab">
+
 |Reset|Function|Left Gamepad|Right Gamepad|Left Function|Right Function|Purpose|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---|
 |x||||||Force reboot Edge+Captain if the system freezes|
@@ -185,7 +264,9 @@ Linux_TX|19|39|MCU_PA1
 |||||x||User programmable button|
 ||||||x|User programmable button|
 
-## Indicator LEDs
+</div>
+<div class="tab-pane fade" id="led-captain" role="tabpanel" aria-labelledby="led-tab">
+
 |Colour|Behaviour|Meaning|
 |---:|:---:|:---|
 |Blue|OFF|Power source disconnected|
@@ -196,7 +277,8 @@ Linux_TX|19|39|MCU_PA1
 
 The above behaviours are default out-of-the-box, and can be altered by a user. For example the white LED can be made to blink or breathe. For more information on how to program them via your favourite OS (each OS is different), please consult with experts at [forum.khadas.com](https://forum.khadas.com).
 
-## GPIO Pinout
+</div>
+<div class="tab-pane fade" id="gpio-vim" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -221,10 +303,13 @@ Linux_RX|18|38|I2S0_LRCK_RX/GPIO3_D1
 Linux_TX|19|39|MCU_PA1
 3.3V|20|40|GND
 
+</div>
+</div>
+
 # Captain + Edge
 ![image](/images/edge/docs_captain_with_edge_labels.jpg)
 
-## Front (Yellow)
+* Front (Yellow)
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[314-Pin "Edge Connector"](https://www.khadas.com/product-page/edge)|Data and power interface between Edge & Captain|
@@ -276,7 +361,7 @@ These items are useful when you want to upgrade your Edge SBC's operating system
 4. 8GB or Larger, USB-Thumbdrive (U-Disk)
 
 **Learn More:**
-* [Booting Card Vs Burning Card](/vim1/BootingCardVsBurningCard.html)
+* [Booting Card Vs Burning Card](/edge/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/edge/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/vim2/BootFromExtMedia.html)
 * [Enter Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)

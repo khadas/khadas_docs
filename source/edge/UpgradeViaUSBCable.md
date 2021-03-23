@@ -1,7 +1,10 @@
 title: Upgrade Using a USB-C Cable
 ---
-## Upgrade Using Windows
-### Preparations
+
+# Upgrade Using Windows
+
+## Preparations
+
 * Download the [USB driver_v4.91](https://dl.khadas.com/Tools/DriverAssitant_v4.91.zip) and extract it.
 * Run `DriverInstall.exe` to install USB drivers.
   * Click the `Uninstall` button to uninstall old drivers
@@ -11,7 +14,8 @@ title: Upgrade Using a USB-C Cable
 * Download the [AndroidTool_Release_en_v2.71](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.71.zip) and extract it.
 * `AndroidTool.exe` is the burning tool, you don't need to install it.
 
-### Upgrading Steps
+## Upgrading Steps
+
 Make sure that you have installed the correct USB drivers, then follow these steps to upgrade:
 
 1. Open `AndroidTool.exe`, click `Upgrade Firmware-->Firmware` to choose an image for Edge.
@@ -32,29 +36,41 @@ which requires `erasing Flash`.
 Now all you need to do is to click the `Upgrade` button of the tool and wait for upgrading to complete:
 ![AndroidTool upgrade](/images/edge/AndroldTool_upgrade.png)
 
-## Upgrade Using Ubuntu
-### Preparations
-```
+# Upgrade Using Ubuntu
+
+## Preparations
+
+```sh
 $ sudo apt-get install libusb-dev git parted
 ```
-### Get Burning Tool
+
+## Get Burning Tool
+
 Image Burning Tool on Ubuntu is in this repository [Utils](https://github.com/khadas/utils).
-```
+
+```sh
 $ git clone https://github.com/khadas/utils
 ```
+
 Or just pull it if you have already cloned this repository.
-```
+
+```sh
 $ cd /path/to/utils
 $ git pull
 ```
-### Install Burning Tool
+
+## Install Burning Tool
+
 You need to install the USB rules and create some links.
-```
+
+```sh
 $ cd /path/to/utils
 $ ./INSTALL
 ```
 You will see this if successful.
-```
+
+```sh
+
 Installing Amlogic flash-tool...
 
 ===============================================
@@ -82,25 +98,28 @@ Done!
 Installing Khadas burn-tool...
 Done!
 ```
+
 **NOTE:** Root privilege is required.
 
-### How to Burn Images Using Ubuntu
+## How to Burn Images Using Ubuntu
+
 There are two commands that can be used to burn images: `burn-tool` and `rk-burn-tool`.
 
 * General Command `burn-tool`:
 
-```
+```sh
 $ burn-tool -v rk -i /path/to/image
 ```
 
 * Rockchip Command `rk-burn-tool`:
 
-```
+```sh
 $ rk-burn-tool -i /path/to/image
 ```
 
 You will see these logs if successful.
-```
+
+```sh
 Try to burn Rockchip image...
 Rockchip Android image (or linux image compatible with AndroidTool one image burning) found!
 Try to burn Rockchip image...
@@ -111,7 +130,7 @@ Upgrade firmware ok.
 Done!
 ```
 
-### Uninstall Burning Tool
+## Uninstall Burning Tool
 ```
 $ cd /path/to/utils
 $ ./UNINSTALL
@@ -119,6 +138,6 @@ $ ./UNINSTALL
 
 **NOTE: This burning tool has only been verified on Ubuntu 16.04**.
 
-### See Also
+# See Also
 * [How To Boot Into Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
 
