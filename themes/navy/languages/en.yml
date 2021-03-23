@@ -214,11 +214,11 @@ sidebar:
     package_update_image: Fast Package Update Image
     how_to_use_adb_tool: ADB Usage
     how_to_use_fastboot: Fastboot Usage
-    how_to_access_i2c: How To Access I2c
+    how_to_access_i2c_android: How To Access I2c
     how_to_enable_m2x_eth: How To Enable M2x Ethernet
-    how_to_change_logo: How To Change Boot Logo
+    how_to_change_logo_android: How To Change Boot Logo
     how_to_change_animation: How To Change Boot Animation
-    how_to_use_uart: How To Use Uart
+    how_to_use_uart_android: How To Use Uart
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: Upgrade the System
