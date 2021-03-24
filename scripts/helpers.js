@@ -43,42 +43,119 @@ hexo.extend.helper.register('page_nav', function() {
   return result;
 });
 
-hexo.extend.helper.register('doc_sidebar', function(className) {
+hexo.extend.helper.register('doc_sidebar', function (className) {
   var type = this.page.canonical_path.split('/')[0];
   var sidebar = this.site.data.sidebar[type];
   var path = pathFn.basename(this.path);
   var result = '';
-  var link_temp ='';
+  var link_temp = '';
   var open = '';
   var self = this;
   var first_link = '';
 
   var prefix = 'sidebar.' + type + '.';
 
-  _.each(sidebar, function(menu, title) {
+  _.each(sidebar, function (menu, title) {
     first_link = 'yes';
-	link_temp = '';
+    link_temp = '';
     open = '';
-    _.each(menu, function(link, text) {
+    _.each(menu, function (secondMenu, text) {
       var itemClass = className + '-link';
-      if (link === path) {
-        open = 'yes';
-	    itemClass += ' current';
-	  }
+      if (Object.prototype.toString.call(secondMenu) === '[object Object]') {
+        var secondary_link_temp = '';
+        var secondary_open = '';
+        var secondary_first_link = 'yes';
+        _.each(secondMenu, function (link, thirdMenuText) {
+          var secondary_item_class = className + '-link';
+          if (link === path) {
+            open = 'yes';
+            secondary_open = 'yes';
+            secondary_item_class += ' current';
+          }
 
-      if (first_link === 'yes') {
-	    itemClass += ' first';
-		first_link = 'no';
-	  }
+          if (secondary_first_link === 'yes') {
+            secondary_item_class += ' secondary-first';
+            secondary_first_link = 'no';
+          }
+          secondary_link_temp +=
+            '<a href="' +
+            link +
+            '" class="' +
+            secondary_item_class +
+            '">' +
+            self.__(prefix + thirdMenuText) +
+            '</a>';
+        });
 
-      link_temp += '<a href="' + link + '" class="' + itemClass + '">' + self.__(prefix + text) + '</a>';
+        if (secondary_open === 'yes') {
+          link_temp +=
+            '<strong class="' +
+            className +
+            '-link"><details open><summary>' +
+            self.__(prefix + text) +
+            '</summary>' +
+            secondary_link_temp +
+            '</details></strong>';
+        } else {
+          link_temp +=
+            '<strong class="' +
+            className +
+            '-link"><details><summary>' +
+            self.__(prefix + text) +
+            '</summary>' +
+            secondary_link_temp +
+            '</details></strong>';
+        }
+      } else {
+        var link = secondMenu;
+
+        if (link === path) {
+          open = 'yes';
+          itemClass += ' current';
+        }
+
+        if (first_link === 'yes') {
+          itemClass += ' first';
+          first_link = 'no';
+        }
+
+        link_temp +=
+          '<a href="' +
+          link +
+          '" class="' +
+          itemClass +
+          '">' +
+          self.__(prefix + text) +
+          '</a>';
+      }
     });
-	if (open === 'yes')
-		result += '<strong class="' + className + '-title">' + '<details open>' + '<summary>' + self.__(prefix + title) + '</summary>' + link_temp + '</details>' + '</strong>';
-	else
-		result += '<strong class="' + className + '-title">' + '<details>' + '<summary>' + self.__(prefix + title) + '</summary>' + link_temp + '</details>' + '</strong>';
-  });
 
+    if (open === 'yes') {
+      result +=
+        '<strong class="' +
+        className +
+        '-title">' +
+        '<details open>' +
+        '<summary>' +
+        self.__(prefix + title) +
+        '</summary>' +
+        link_temp +
+        '</details>' +
+        '</strong>';
+    } else {
+      result +=
+        '<strong class="' +
+        className +
+        '-title">' +
+        '<details>' +
+        '<summary>' +
+        self.__(prefix + title) +
+        '</summary>' +
+        link_temp +
+        '</details>' +
+        '</strong>';
+    }
+  });
   return result;
 });
 

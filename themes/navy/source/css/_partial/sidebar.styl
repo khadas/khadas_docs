@@ -10,8 +10,8 @@
     display: block
 
 .sidebar-title
-  margin-top: 10px
-  padding: 5px 0
+  margin-top: 20px
+  padding-top: 0px
   font-family: font-title
   font-weight: bold
   display: block
@@ -39,7 +39,8 @@ details[open] > summary::before
   display: block
   color: color-default
   text-decoration: none
-  padding: 7px 0
+  padding-top: 12px
+  padding-bottom: 1px;
   margin-left: 20px
   line-height: 1
   position: relative
@@ -48,7 +49,9 @@ details[open] > summary::before
   overflow: hidden
   white-space: nowrap
   &.first
-    padding-top: 20px
+    padding-top: 18px
+  &.secondary-first
+    padding-top: 14px
   &.current
     color: color-link
   &:hover
