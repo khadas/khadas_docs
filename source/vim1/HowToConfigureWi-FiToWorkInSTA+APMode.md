@@ -1,20 +1,24 @@
-title: How To Configure Wi-Fi To Work In STA+AP Mode
+title: Configure Wi-Fi To Work In STA+AP Mode
 ---
 This guide is about how to configure Wi-Fi to work in STA+AP mode under Ubuntu.
 
 ### Preconditions
+
 The image is based on the V2005 version,and [update the OTA](/vim3/HowToUpgradeTheSystem.html) to the latest version
 
 ### Start to Configure
+
 Configrure wlan0 as STA mode, wlan1 as AP mode.
 
 #### Add wlan1
-```shell
+
+```bash
 khadas@Khadas:~$ sudo iw phy phy0 interface add wlan1 type managed
 ```
 
 Check the addition:
-```shell
+
+```bash
 khadas@Khadas:~$ ifconfig 
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.1.193  netmask 255.255.255.0  broadcast 192.168.1.255
@@ -51,8 +55,10 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 ```
 
 #### Setup AP
+
 Set wlan1 as a hotspot and connect automatically.The name of the hotspot is`khadas_ap`,the password is`12345678`.
-```shell
+
+```bash
 $ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap
 $ sudo nmcli con modify Hostspot 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared
 $ sudo nmcli con modify Hostspot wifi-sec.key-mgmt wpa-psk
@@ -63,7 +69,8 @@ $ sudo nmcli con up Hostspot
 ```
 
 Check the setup:
-```shell
+
+```bash
 khadas@Khadas:~$ ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.1.193  netmask 255.255.255.0  broadcast 192.168.1.255
@@ -101,16 +108,21 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### Confirm the configured Wi-Fi can work in STA+AP mode
+### Verify
+
 1、Turn off Ethernet
-```shell
+
+```bash
 khadas@Khadas:~$ sudo ifconfig eth0 down
 ```
 
 2、Whether wlan0 can be used to surf the Internet
+
 * [Connect Wi-Fi](/vim3/HowToConnectWifi.html)
+
 Try to`ping www.khadas.com`:
-```shell
+
+```bash
 khadas@Khadas:~$ sudo ping -I wlan0 www.khadas.com
 PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wlan0: 56(84) bytes of data.
 64 bytes from 185.230.60.161 (185.230.60.161): icmp_seq=1 ttl=240 time=293 ms
@@ -120,6 +132,8 @@ PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wla
 ```
 
 3、Whether wlan1 can be connected as a hotpot
+
 * Name:`khadas_ap`
+
 * Password:`12345678`
 

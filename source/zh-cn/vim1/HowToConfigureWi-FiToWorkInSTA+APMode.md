@@ -3,18 +3,21 @@ title: 配置Wi-Fi同时工作在STA+AP模式
 这篇文档介绍如何在Ubuntu下配置Wi-Fi同时工作在STA+AP模式。
 
 ### 准备工作
-固件基于V2005版本，并将[OTA升级](/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新的版本
+
+固件基于V2005版本，并将[OTA升级](/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新的版本。
 
 ### 开始配置
 将wlan0配置为STA模式，将wlan1配置为AP模式。
 
 #### 添加wlan1
-```shell
+
+```bash
 khadas@Khadas:~$ sudo iw phy phy0 interface add wlan1 type managed
 ```
 
 验证是否添加成功：
-```shell
+
+```bash
 khadas@Khadas:~$ ifconfig 
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.1.193  netmask 255.255.255.0  broadcast 192.168.1.255
@@ -51,8 +54,10 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 ```
 
 #### 设置AP
+
 将wlan1设置为热点并且自动连接，热点名字为`khadas_ap`，密码为`12345678`。
-```shell
+
+```bash
 $ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap
 $ sudo nmcli con modify Hostspot 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared
 $ sudo nmcli con modify Hostspot wifi-sec.key-mgmt wpa-psk
@@ -63,7 +68,8 @@ $ sudo nmcli con up Hostspot
 ```
 
 验证是否设置成功：
-```shell
+
+```bash
 khadas@Khadas:~$ ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.1.193  netmask 255.255.255.0  broadcast 192.168.1.255
@@ -101,16 +107,20 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### 验证配置的Wi-Fi是否可以同时工作在STA+AP模式
+### 验证
 1、关闭以太网
-```shell
+
+```bash
 khadas@Khadas:~$ sudo ifconfig eth0 down
 ```
 
 2、wlan0是否能用于上网
+
 * [连接Wi-Fi](/zh-cn/vim3/HowToConnectWifi.html)
+
 尝试`ping www.khadas.com`:
-```shell
+
+```bash
 khadas@Khadas:~$ sudo ping -I wlan0 www.khadas.com
 PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wlan0: 56(84) bytes of data.
 64 bytes from 185.230.60.161 (185.230.60.161): icmp_seq=1 ttl=240 time=293 ms
@@ -120,6 +130,8 @@ PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wla
 ```
 
 3、wlan1是否能作为热点连接
+
 * 热点名称：`khadas_ap`
+
 * 密码：`12345678`
 
