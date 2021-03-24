@@ -1,7 +1,7 @@
 title: Krescue - take full control you khadas device
 ---
 
-## what is krescue
+## What is krescue
 
 Krescue is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a “Swiss Army knife”, and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC.  Krescue can download and install OS images directly from the web via wired Ethernet.
 
@@ -73,7 +73,7 @@ Select option a to reboot/poweroff;
 Other functions can view the related help through readme docs in option 1.
 
 
-## notes
+## Notes
 
 1. Select the firmware corresponding to your board model during burning. Vim3 and vim3l are different boards
 2. Install and use krecure through the network. The firmware on the board is required to be Ubuntu firmware

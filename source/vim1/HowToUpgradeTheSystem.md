@@ -1,7 +1,9 @@
 title: Upgrade The System To Latest Version
 ---
 
-**Note: Only for Ubuntu.**
+{% note warn Only for Ubuntu %}
+
+{% endnote %}
 
 ## Update resources
 ```sh

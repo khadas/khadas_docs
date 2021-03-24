@@ -1,48 +1,51 @@
 title: How To Use 1-Wire
 ---
 
-Take VIM1 as an example, VIM2 please replace dtb with `kvim2_linux.dtb`, and VIM3 please replace dtb with `kvim3_linux.dtb`.
+{% note info Take VIM1 as an example. %}
 
-# Connect 1-Wire module
+{% endnote %}
 
-```shell
-$ vim /boot/env.txt
+### Enable 1-Wire Driver
+
+Edit `/boot/env.txt` to add `onewire` to `overlays`.
+
+e.g. 
+
+```bash
+overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 ```
 
-Add onewire to configuration file
+For details on overlays, please refer to [how to use device tree overlays](/vim1/HowToUseDeviceTreeOverlay.html).
 
-```shell
-overlays=uart4 pwm_ao_a pwm_f i2c0 --> overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
-```
+### Uasge
 
-For details on overlays, please refer to [how to use device tree overlays](/vim1/HowToUseDeviceTreeOverlay.html)
+Here we attach a `1-Wire device `DS18B20` temperature sensor to the `1-Wire` bus.
 
-# How TO Use 
+Goto the driver directory:
 
-enter driver directory,
-
-```shell
+```bash
 khadas@Khadas:~$ cd /sys/bus/w1/devices
 khadas@Khadas:/sys/bus/w1/devices$ ls
 28-0119395ebf91  w1_bus_master1
 ```
-the `ds18b20` node is `28-0119395ebf91`. enter node directory,
 
-```shell
+You can see the node of `ds18b20` is `28-0119395ebf91`. Goto this directory:
+
+```
 khadas@Khadas:/sys/bus/w1/devices$ cd 28-0119395ebf91
 khadas@Khadas:/sys/bus/w1/devices/28-0119395ebf91$ ls
 driver  id  name  power  subsystem  uevent  w1_slave
 ```
 
-The value of the module can be read by reading the `w1_slave` file.
+Read `w1_slave` file will get the temperature value:
 
-```shell
-khadas@Khadas:/sys/bus/w1/devices/28-0119395ebf91$ cat w1_slave 
+```
+khadas@Khadas:/sys/bus/w1/devices/28-0119395ebf91$ cat w1_slave
 b1 01 4b 46 7f ff 0c 10 d8 : crc=d8 YES
 b1 01 4b 46 7f ff 0c 10 d8 t=27062
 ```
 
-Physical pins of onewire
+Physical pins of onewire bus:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -52,24 +55,18 @@ Physical pins of onewire
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#vim2-phy" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-phy" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-phy" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-phy" role="tabpanel" aria-labelledby="vim1-tab">
-  ```sh
-  GPIOH5   --- PIN37
-  ```
+  GPIOH5 - PIN37
   </div>
   <div class="tab-pane fade" id="vim2-phy" role="tabpanel" aria-labelledby="vim2-tab">
-  ```sh
-  GPIOH5   --- PIN37
-  ```
+  GPIOH5 - PIN37
   </div>
   <div class="tab-pane fade" id="vim3-phy" role="tabpanel" aria-labelledby="vim3-tab">
-  ```sh
-  GPIOH6   --- PIN15
-  ```
+  GPIOH6 - PIN15
   </div>
 </div>
 

@@ -1,6 +1,10 @@
 title: Build Boot-Up Logo for U-Boot
 ---
 
+{% note warn Only for Android %}
+
+{% endnote %}
+
 This is a guide for building the boot-up logo on Amlogic platforms (may be different on other SoC platforms):
 
 * The Logo is loaded on U-Boot

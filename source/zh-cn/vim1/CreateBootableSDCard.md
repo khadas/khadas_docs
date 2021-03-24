@@ -4,14 +4,16 @@ title: 创建启动SD卡
 什么是启动SD卡？
 
 * 启动SD卡包含U-boot
-* 启动SD卡包含文件系统
+* 启动卡又可以称为启动盘，在板载eMMC里面没有固件的情况下，可以用于启动你的板子
 
 为什么需要SD启动卡？
 * 在开发中使用SD启动卡提升调试效率
 * 发布SD卡固件会使用到
 * 在某些情况下固件无法从eMMC启动时，可以通过SD卡启动
 
-**注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
+{% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
+
+{% endnote %}
 
 ### 开始制作
 下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/))或编译U-boot 获取U-boot镜像。
@@ -22,27 +24,35 @@ title: 创建启动SD卡
 * `u-boot.bin` 是eMMC镜像
 
 把SD卡插入电脑并卸载：
-```sh
-$ umount /dev/sdX1
+
+```bash
+$ sudo umount /dev/sdX1
 ```
 
 格式化SD卡为Fat32文件系统:
-```sh
+
+```bash
 $ sudo mkfs.vfat /dev/sdX1 
 ```
 
 通过`dd`命令把U-boot写入SD卡：
-```sh
+
+```bash
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=1 count=444
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek=1
 ```
 
 从PC移除SD卡:
-```sh
+
+```bash
 $ sudo eject /dev/sdX
 ```
 
-*注意：请替换`sdX`为你自己电脑上的正确的块设备。*
+{% note info 注意 %}
+
+请替换`sdX`为你自己电脑上的正确的块设备。
+
+{% endnote %}
 
 ### 检查
 
@@ -50,19 +60,11 @@ $ sudo eject /dev/sdX
 
 为了确保U-boot从SD卡启动，你必须擦除eMMC([VIM1](/zh-cn/vim1/HowtoEraseEMMC.html)/[VIM2](/zh-cn/vim2/HowtoEraseEMMC.html)/[VIM3](/zh-cn/vim3/HowtoEraseEMMC.html))。
 
-打开终端，执行`kermit`命令:
-```
-gouwa@Wesion:~$ kermit
-Connecting to /dev/ttyUSB0, speed 115200
- Escape character: Ctrl-\ (ASCII 28, FS): enabled
-Type the escape character followed by C to get back,
-or followed by ? to see other options.
-----------------------------------------------------
+打开终端，执行`sudo minicom`命令或者你也可以选则其他你喜欢的串口工具。
 
-```
+插入刚做好的SD卡到VIM并上电，你会看到如下打印信息，说明系统是从SD卡启动的：
 
-插入刚做好的SD卡到VIM并上电，你会看到如下打印信息：
-```
+```bash
 GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:0;READ:0;0.0;CHK:0;
 no sdio debug board detected 
 TE: 194208

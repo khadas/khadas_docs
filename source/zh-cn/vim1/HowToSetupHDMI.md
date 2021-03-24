@@ -1,57 +1,51 @@
 title: 如何设置HDMI分辨率
 ---
 
-## 通过配置文件修改
+{% note info 仅适用与4.9内核的固件，对于主线内核的固件可以使用更加通用的方法！ %}
 
-### 打开配置文件
+{% endnote %}
 
-* 切换到`root`用户,普通用户没有足够的权限
+有两种方式可以设置HDMI分辨率：
 
-```shell
-khadas@Khadas:~$ su
-Password:
-root@Khadas:/home/khadas#
-```
+* 通过配置文件
+* 通过桌面应用（仅用于桌面系统）
 
-* 打开配置文件
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="file-tab" data-toggle="tab" href="#file" role="tab" aria-controls="file" aria-selected="true">配置文件</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="app-tab" data-toggle="tab" href="#app" role="tab" aria-controls="app" aria-selected="false">桌面应用（仅用于桌面系统）</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="file" role="tabpanel" aria-labelledby="file-tab">
 
-```shell
-root@Khadas:/home/khadas# vim /boot/env.txt
-```
 
-### 修改配置文件
+编辑文件`/boot/env.txt`来设置HDMI分辨率。
 
-* 设置自动识别为`no`
+* 设置`hdmi_autodetect=no`
+* 修改`hdmi`节点来设置分辨率，如：`hdmi=1080p60hz`
+* 保存文件
 
-```shell
-hdmi_autodetect=yes --> hdmi_autodetect=no
-```
+重启系统生效。
 
-* 在列表里选择一个分辨率,示例: 选择`1080p60hz`
+</div>
+<div class="tab-pane fade show" id="app" role="tabpanel" aria-labelledby="app-tab">
 
-```shell
-hdmi=1080p60hz
-```
-
-重启就会生效
-
-## 通过`HDMI Resoultion`应用设置
-
-### 打开应用
-
-在系统应用列表中找到`HDMI Resolution`.
+* 在系统应用列表中找到`HDMI Resolution`应用
 
 ![gnome-HDMI-application](/images/vim1/gnome-HDMI-application.png)
 
-打开这个应用
-
-### 设置分辨率
+* 打开这个应用
 
 ![gnome-HDMI-setting](/images/vim1/gnome-HDMI-setting.png)
 
-选择一个你需要的分辨率,然后选择保存,
+选择一个你需要的分辨率，然后点击`OK`。
 
 ![gnome-HDMI-save](/images/vim1/gnome-HDMI-save.png)
 
-系统会自动注销,分辨率的设置就会生效
+点击`Yes`后系统会自动注销，分辨率修改生效。
 
+</div>
+</div>

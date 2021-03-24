@@ -4,61 +4,95 @@ title: Install Docker
 This guide will show you how to install Docker on Ubuntu for Khadas VIMs/Edge.
 
 ### Preparations
+
 * Ubuntu `V180531` or newer
 
 ### Install Essential Packages
-```
+
+```bash
 $ sudo apt-get update
 $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
+
 ### Add Docker Source
-```
+
+```bash
 $ sudo add-apt-repository \
 	"deb [arch=arm64] https://download.docker.com/linux/ubuntu \
 	$(lsb_release -cs) \
 	stable"
 ```
+
 ### Install Docker
-```
-$ sudo apt-get update
-```
-Ubuntu 16.04:
-```
-$ sudo apt-get install docker-ce=18.03.1~ce-0~ubuntu
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="16-tab" data-toggle="tab" href="#16" role="tab" aria-controls="16" aria-selected="true">Ubuntu 16.04</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="18-tab" data-toggle="tab" href="#18" role="tab" aria-controls="18" aria-selected="false">Ubuntu 18.04</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="20-tab" data-toggle="tab" href="#20" role="tab" aria-controls="20" aria-selected="false">Ubuntu 20.04</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="16" role="tabpanel" aria-labelledby="16-tab">
+
+```bash
+khadas@Khadas:~$ sudo apt-get update
+khadas@Khadas:~$ sudo apt-get install docker-ce=18.03.1~ce-0~ubuntu
 ```
 
-Ubuntu 18.04:
-```
-$ sudo apt-get install docker-ce=18.03.1~ce~3-0~ubuntu
+</div>
+<div class="tab-pane fade show" id="18" role="tabpanel" aria-labelledby="18-tab">
+
+```bash
+khadas@Khadas:~$ sudo apt-get update
+khadas@Khadas:~$ sudo apt-get install docker-ce=18.03.1~ce~3-0~ubuntu
 ```
 
-Ubuntu 20.04:
+</div>
+<div class="tab-pane fade show" id="20" role="tabpanel" aria-labelledby="20-tab">
+
+```bash
+khadas@Khadas:~$ sudo apt-get update
+khadas@Khadas:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io
-```
+
+</div>
+</div>
 
 ### Start Docker
-```
-$ sudo systemctl enable docker
-$ sudo systemctl start docker
+
+```bash
+khadas@Khadas:~$ sudo systemctl enable docker
+khadas@Khadas:~$ sudo systemctl start docker
 ```
 
 ### Add Docker Group
-```
-$ sudo groupadd docker
-$ sudo usermod -aG docker $USER
+
+```bash
+khadas@Khadas:~$ sudo groupadd docker
+khadas@Khadas:~$ sudo usermod -aG docker $USER
 ```
 
-*Tip: You need to logout or reboot your system.*
+{% note info Tips %}
+
+You need to logout or reboot your system.
+
+{% endnote %}
 
 ### Check Docker
-```
-$ docker run hello-world
+
+```bash
+khadas@Khadas:~$ docker run hello-world
 ```
 
 If you see the following messages, it means that Docker has been setup correctly:
-```
+
+```bash
 khadas@Khadas:~$ docker run hello-world
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world

@@ -4,13 +4,15 @@ title: How To Use Device Tree Overlay
 From release [V0.9.3-20200814](https://forum.khadas.com/t/vim3-vim3l-ubuntu-20-04-linux-4-9-v0-9-3-20200814-ota-release/9205) device tree overlay is enabled.
 You can edit environment file `/boot/env.txt` to setup the device tree overlays to enable or disable the peripherals.
 
-### How To Use
+{% note info In this documentation, we will take VIM3 as an example to descripe how to use the device tree overlays. %}
 
-In this documentation, we will take **VIM3** as an example to descripe how to use the device tree overlays.
+{% endnote %}
+
+### How To Use
 
 You can find the device tree overlays configuration in `/boot/env.txt` for **VIM3**.
 
-```sh
+```bash
 # Device Tree Overlays
 #   uart3           -- Enable UART3 (uart_C, GPIO Header PIN15 & PIN16)
 #   pwm_f           -- Enable PWM_F (GPIO Header PIN35)
@@ -30,7 +32,11 @@ overlays=uart3 pwm_f i2c3 os08a10
 
 * If you want to enable `onewire`, you can add `onewire` to `overlays` node.
 
-*Note: You need to save the file `/boot/env.txt` and reboot the board to make it available.*
+{% note info Note %}
+
+You need to save the file `/boot/env.txt` and reboot the board to take effect.
+
+{% endnote %}
 
 ### Make Your Own DTBO Files
 
@@ -38,7 +44,7 @@ There are some ready to use dtbo files, you can also add your own dtbos to enabl
 
 The default dtbo files are stored in directory: `/boot/dtb/overlays/#BOARD#`
 
-```sh
+```bash
 khadas@Khadas:~$ ll /boot/dtb/overlays/kvim3
 total 40
 drwxr-xr-x 2 root root 4096 Jan 29 11:13 ./

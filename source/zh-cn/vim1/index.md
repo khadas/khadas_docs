@@ -80,12 +80,14 @@ title: VIM1 文档
 </div> 
 
 
-**注意**:
+{% note info 注意 %}
 
 * `PIN17-20`: 串口调试
 * `PIN29-33`: I2S
 * `PIN36`: 32.768KHz时钟输出
 * `PIN38`: 系统电源使能管脚
+
+{% endnote %}
 
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
@@ -171,10 +173,13 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [从外部媒体介质启动系统](/zh-cn/vim1/BootFromExtMedia.html)
 [如何进入升级模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
 
-**提示:**
+{% note warn 提示 %}
+
 * 应使用USB-C数据线从Ubuntu或Windows主机直接将**emmc固件**刻录到`emmc`。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。
 * **sd/usb固件**应复制到一张sd卡中，然后使用该卡用新操作系统重新格式化emmc存储。例如：Armbian、Ubuntu发行版包含到'sd_usb'标记，以及LibELEC。
 * 为了从**sd/usb images**启动，您需要在您的emmc上运行android或ubuntu，并激活多启动。
+
+{% endnote %}
 
 # 使用Type-C升级EMMC系统
 如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM1 SBC操作系统，则需要这些项目。例如，将启动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。

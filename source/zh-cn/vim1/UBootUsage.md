@@ -16,9 +16,6 @@ kvim# sdc_update boot boot.img
 ###  擦除分区
 ```
 kvim# store erase partition boot
-```
-
-```
 kvim# amlmmc erase rootfs
 ```
 

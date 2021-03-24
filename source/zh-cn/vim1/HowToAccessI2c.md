@@ -5,6 +5,7 @@ title: 如何使用I2C接口
 这篇文档介绍如何在Android和Ubuntu下使用I2C。
 
 ### 前提条件
+
 * `Ubuntu V180531`或更新版本
 * `Android V180619`或更新版本
 
@@ -18,7 +19,7 @@ title: 如何使用I2C接口
     <a class="nav-link" id="vim2-tab" data-toggle="tab" href="#vim2-pins" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-pins" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-pins" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -61,6 +62,7 @@ title: 如何使用I2C接口
 `Sensor GND` <-> `GND`
 `Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
 </div>
+</div>
 
 ### 检测设备
 
@@ -72,13 +74,15 @@ title: 如何使用I2C接口
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#vim2" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1" role="tabpanel" aria-labelledby="vim1-tab">
+
 Detect device on `I2C A`:
-```
+
+```bash
 # i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -91,7 +95,8 @@ Detect device on `I2C A`:
 70: -- -- -- -- -- -- -- --
 ```
 Detect device on `I2C B`:
-```
+
+```bash
 # i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -106,8 +111,10 @@ Detect device on `I2C B`:
 ```
 </div>
 <div class="tab-pane fade" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
+
 Detect device on `I2C A`:
-```
+
+```bash
 # i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -120,7 +127,8 @@ Detect device on `I2C A`:
 70: -- -- -- -- -- -- -- --
 ```
 Detect device on `I2C B`:
-```
+
+```bash
 # i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -135,8 +143,10 @@ Detect device on `I2C B`:
 ```
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
 Detect device on `I2C 3`:
-```
+
+```bash
 # i2cdetect -y -r 3
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -149,7 +159,8 @@ Detect device on `I2C 3`:
 70: -- -- -- -- -- -- -- --
 ```
 Detect device on `I2C 4`:
-```
+
+```bash
 # i2cdetect -y -r 4
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- 0e --
@@ -166,14 +177,25 @@ Detect device on `I2C 4`:
 
 如果连线正确并且所接传感器是正常的那么你会看到所接设备的地址，如：`0x1d`,`0x18` and `0x51`。
 
-*注意: 执行这些命令需要root权限。*
+{% note warn 注意 %}
+	
+执行这些命令需要root权限。
+
+{% endnote %}
 
 ### 从设备读取寄存器值
+
 从挂载在`I2C A`上设备地址为`0x1d`的设备读取寄存器`0x0d`的值。
-```
+
+```bash
 # i2cget -f -y 1 0x1d 0x0d
 0x2a
 ```
-*注意: 执行命令需要root权限。* 
+
+{% note warn 注意 %}
+
+注意: 执行命令需要root权限。
+
+{% endnote %}
 
 更多用法请参考i2c工具帮助信息。

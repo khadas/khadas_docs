@@ -1,37 +1,76 @@
 title: How To Setup the Maximum CPU Frequency
 ---
 
+{% note info %}
+
 Khadas VIM3 has dual-core cortex-A53 (little core) and quad-core cortex-A73 (big core).
 Khadas VIM3L has quad-core cortex-A55.
 
-**For VIM3:**
+{% endnote %}
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="true">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3l-tab" data-toggle="tab" href="#vim3l" role="tab" aria-controls="vim3l" aria-selected="false">VIM3L</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
 * Little Cores, cortex-A53: CPU0 & CPU1.
 
-```sh
+```bash
 $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 0 1
 ```
 
 * Big cores, cortex-A73: CPU2, CPU3, CPU4 & CPU5.
 
-```sh
+```bash
 $ # cat /sys/devices/system/cpu/cpufreq/policy2/related_cpus
 2 3 4 5
 ```
-
-**For VIM3L:**
+</div>
+<div class="tab-pane fade show" id="vim3l" role="tabpanel" aria-labelledby="vim3l-tab">
 
 * cortex-A55: CPU0, CPU1, CPU2 & CPU3.
 
-```sh
+```bash
 $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 0 1 2 3
 ```
 
-**For release `V0.9.3-20200814` or later, we can setup the maximum CPU frequency.**
+</div>
+</div>
 
-# Server Images
+{% note info From release V0.9.3-20200814, we can setup the maximum CPU frequency. %}
+
+{% endnote %}
+
+{% note warn Only for Linux 4.9. %}
+
+{% endnote %}
+
+
+{% note info There are 2 ways to setup the cpu frequency: %}
+
+* Setup via configuration file
+* Setup via desktop application (Only for desktop image)
+
+{% endnote %}
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="file-tab" data-toggle="tab" href="#file" role="tab" aria-controls="file" aria-selected="true">Configuration File</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="app-tab" data-toggle="tab" href="#app" role="tab" aria-controls="app" aria-selected="false">Application (Only for desktop image)</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="file" role="tabpanel" aria-labelledby="file-tab">
 
 You can edit `/boot/env.txt` to setup the maximux CPU frequency.
 
@@ -46,20 +85,43 @@ You can edit `/boot/env.txt` to setup the maximux CPU frequency.
 
 You can edit `max_freq_*` node to change the maximum CPU frequency.
 
-*Note: You need to reboot the board after change the frequency.*
+{% note info Note %}
 
+You need to reboot the board after change the frequency.
 
-# Desktop Images
+{% endnote %}
+
+</div>
+<div class="tab-pane fade show" id="app" role="tabpanel" aria-labelledby="app-tab">
 
 * You can access `Applications->CPU Frequency Setting` to setup the maximux CPU frequency.
 
-* Edit `/boot/env.txt` to setup the maximux CPU frequency. Seam as `Server Images`.
+</div>
+</div>
 
-## Overclocking
+### Overclocking
+
+{% note warn Note %}
 
 There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
 There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
 There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
+
+{% endnote %}
+
+#### Frequencies List
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim3-2-tab" data-toggle="tab" href="#vim3-2" role="tab" aria-controls="vim3-2" aria-selected="true">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3l-2-tab" data-toggle="tab" href="#vim3l-2" role="tab" aria-controls="vim3l-2" aria-selected="false">VIM3L</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim3-2" role="tabpanel" aria-labelledby="vim3-2-tab">
+
 
 * **VIM3 Little Cores Frequencies List**
 
@@ -99,6 +161,9 @@ There are several overclocking frequencies for you to setup, **but there is NO G
 | **2304**  | **2304 (Overclocking)**|
 | **2400**  | **2400 (Overclocking)**|
 
+</div>
+<div class="tab-pane fade show" id="vim3l-2" role="tabpanel" aria-labelledby="vim3l-2-tab">
+
 * **VIM3L Frequencies List**
 
 |  Frequency (MHz)   | ENV Node  |
@@ -117,8 +182,10 @@ There are several overclocking frequencies for you to setup, **but there is NO G
 | **2100**  | **2100 (Overclocking)**|
 | **2208**  | **2208 (Overclocking)**|
 
+</div>
+</div>
 
-## Check CPU Frequency
+### Check CPU Frequency
 
 You can use command `cpufreq-info` to get the CPU frequency.
 
@@ -130,6 +197,3 @@ khadas@Khadas:~$ cpufreq-info -c 0 -f
 khadas@Khadas:~$ cpufreq-info -c 3 -f
 2208000
 ```
-
-
-

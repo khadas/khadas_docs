@@ -1,7 +1,9 @@
 title: 通过USB升级固件
 ---
 
-**注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
+{% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
+
+{% endnote %}
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -31,35 +33,49 @@ title: 通过USB升级固件
 4. 如果上面操作已正确执行，电脑端会发现VIMs升级设备，点击升级工具上的start按钮开始固件升级,升级进度条100%时完成升级。
 ![image](/images/vim1/usb_upgrade_tool_interface_v217_zh.png)
 
-提示：
-* 先点击"stop"按钮再关闭升级工具。
+{% note info 提示 %}
+
+* 先点击`stop`按钮再关闭升级工具。
 * 外部供电要求([VIM1](/zh-cn/vim1/ExtraPowerInput.html)/[VIM2](/zh-cn/vim2/ExtraPowerInput.html)/[VIM3](/zh-cn/vim3/ExtraPowerInput.html))，部分电脑供电比较弱会导致升级失败。
+
+{% endnote %}
 
 </div>
 <div class="tab-pane fade" id="ubu" role="tabpanel" aria-labelledby="ubu-tab">
 
 ### 准备
-```
+
+```bash
 $ sudo apt-get install libusb-dev git parted
 ```
+
 ### 获取ubuntu烧录工具
-烧录工具在仓库[utils](https://github.com/khadas/utils)中.
-```
+
+烧录工具在仓库[utils](https://github.com/khadas/utils)中。
+
+```bash
 $ git clone https://github.com/khadas/utils
 ```
+
 如果你之前已经下载过`utils`仓库，那么你只需要更新到最新版本即可。
-```
+
+```bash
 $ cd /path/to/utils
 $ git pull
 ```
+
 ### 安装烧录工具
+
 需要安装usb规则以及创建链接文件。
-```
+
+```bash
 $ cd /path/to/utils
 $ ./INSTALL
 ```
+
 如果成功安装你会看到如下信息：
-```
+
+```bash
 Installing Amlogic flash-tool...
 
 ===============================================
@@ -87,38 +103,50 @@ Installing Amlogic flash-tool...
  Installing Khadas burn
  Done!
 ```
-**注意** 安装过程中需要root权限。
+
+{% note info 注意 %}
+
+安装过程中需要root权限。
+
+{% endnote %}
 
 ### 检查USB驱动
 首先设置VIMs进入升级模式([VIM1](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))，然后检查USB驱动：
-```
+
+```bash
 $ lsusb | grep Amlogic
 Bus 002 Devices 036: ID 1b8e:c003 Amlogic, Inc.
 ```
+
 以上信息说明PC已经识别到了VIM3
 
-### 如何在Ubuntu下烧录固件
-有2个命令可以用于烧录固件：`burn-tool`和`aml-burn-tool`。
+### 在Ubuntu下烧录固件
 
+有2个命令可以用于烧录固件：`burn-tool`和`aml-burn-tool`。
 
 以烧录VIM3为例：
 
 * 通过烧录命令`burn-tool`：
 
-```
+```bash
 $ burn-tool -v aml -b VIM3 -i /path/to/image
 ```
 
 * Amlogic平台专用烧录命令`aml-burn-tool`：
 
-```
+```bash
 $ aml-burn-tool -b VIM3 -i /path/to/image
 ```
 
-**注意：烧录VIM3一定要指定`-b VIM3`参数，否则会失败。对于VIM1或VIM2，可以指定，也可以不指定。**
+{% note info 注意 %}
+
+烧录VIM3一定要指定`-b VIM3`参数，否则会失败。对于VIM1或VIM2不用指定。
+
+{% endnote %}
 
 如果烧录成功你会看到如下信息：
-```
+
+```bash
 Rebooting the board ........[OK]
 Unpacking image [OK]
 Initializing ddr ........[OK]
@@ -136,11 +164,12 @@ Do you want to reset the board? y/n [n]? y
 Resetting board [OK]
 
 ```
+
 更多请参考[文档](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs)。
 
 ### 卸载烧录工具
 
-```sh
+```bash
 $ cd /path/to/utils
 $ ./UNINSTALL
 ```

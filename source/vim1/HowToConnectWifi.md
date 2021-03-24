@@ -1,21 +1,27 @@
 title: How to Connect to Wi-Fi
 ---
 
-# Android
+### Android
 
 For Android you can setup Wi-Fi via the GUI easily.
 
-# Ubuntu
+### Ubuntu
 
-## Desktop
-
-For desktop systems you can setup Wi-Fi via the GUI easily. 
-
-## Server
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="true">Server</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="false">Desktop</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="server" role="tabpanel" aria-labelledby="server-tab">
 
 For the Ubuntu/Debian server we can use `NetworkManager` to setup Wi-Fi vis command line.
 
-### Scan for Wi-Fi Networks
+* Scan for Wi-Fi Networks
+
 ```
 $ nmcli d wifi list
 IN-USE  SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SEC
@@ -27,9 +33,10 @@ IN-USE  SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SEC
         BRGCN_GUEST                   Infra  1     405 Mbit/s  64      ▂▄▆_  WPA
         BRGCN                         Infra  1     405 Mbit/s  62      ▂▄▆_  WPA
 ```
+
 Find a Wi-Fi network that you can connect to.
 
-### Create an hashed pre-computed PSK key with wpa_passphrase
+* Create an hashed pre-computed PSK key with wpa_passphrase
 
 To avoid storing human readable passwords there is an handy tool coming with wpa_supplicant called `wpa_passphrase`.
 
@@ -44,24 +51,39 @@ network={
 }
 ```
 
-The new password is now a hashed passphrase.
+The new password is now a hashed passphrase: `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c`
 
-`6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c`
+{% note info Tips %}
 
-*Tip: Replace the `your_ssid` & `your_password` with your SSID and password.*
+Replace the `your_ssid` & `your_password` with your SSID and password.
 
-### Connect to a Wi-Fi Network
+{% endnote %}
+
+* Connect to a Wi-Fi Network
 
 ```bash
 $ sudo nmcli d wifi connect your_ssid password 6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c wep-key-type key
 Device 'wlan0' successfully activated with '206ab399-3822-4652-ba4c-64847af0bce9'.
 ```
 
-*Tip: Replace the `your_ssid` & `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c` with your SSID and passphrase.*
+{% note info Tips %}
 
-### Disconnect from a Wi-Fi Network
+Replace the `your_ssid` & `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c` with your SSID and passphrase.
+
+{% endnote %}
+
+* Disconnect from a Wi-Fi Network
 
 ```bash
 $ sudo nmcli d disconnect wlan0
 Device 'wlan0' successfully disconnected.
 ```
+
+</div>
+
+<div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
+
+For the desktop image we can use GUI to setup Wi-Fi easily.
+
+</div>
+</div>

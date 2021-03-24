@@ -5,9 +5,9 @@ title: How To Use Hardware PWM
 
 Hardware PWM had open at default dtb configuration.So you need to check which Physical pin is connect to it .
 
-1. `PWM_F` on [VIM1 GPIO-Out](/vim1/index.html#GPIO-Pin-Out)
-2. `PWM_D` on [VIM2 GPIO-Out](/vim2/index.html#GPIO-Pinout)
-3. `PWM_F` on [VIM3 GPIO-Out](/vim3/index.html#GPIO-Pinout)
+* `PWM_F` on [VIM1 GPIO-Out](/vim1/index.html#GPIO-Pin-Out)
+* `PWM_D` on [VIM2 GPIO-Out](/vim2/index.html#GPIO-Pinout)
+* `PWM_F` on [VIM3 GPIO-Out](/vim3/index.html#GPIO-Pinout)
 
 # Switch to root user
 
@@ -31,7 +31,7 @@ root@Khadas:~#
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#vim2-enable" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-enable" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-enable" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -66,7 +66,11 @@ If you sueccess to enable it , you can see it with oscilloscope.
 
 ![pwm-Oscilloscope](/images/vim1/pwm-Oscilloscope.jpg)
 
-**Note**: If you use an oscilloscope to view the waveform, remember that the board and the oscilloscope need to share the GND
+{% note info Note %}
+
+If you use an oscilloscope to view the waveform, remember that the board and the oscilloscope need to share the GND.
+
+{% endnote %}
 
 ## Disable PWM
 
@@ -78,7 +82,7 @@ If you sueccess to enable it , you can see it with oscilloscope.
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#vim2-disable" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-disable" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-disable" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
