@@ -80,7 +80,7 @@ Device 9C:FB:D5:0D:91:47 9C-FB-D5-0D-91-47
 [bluetooth]# connect <device_addr>
 ```
 
-{% note info  注意 * %}
+{% note info  注意 %}
 
 `device_addr`为你要连接的设备的地址。
 
