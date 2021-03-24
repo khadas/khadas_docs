@@ -1,6 +1,6 @@
 title: 如何使用硬件解码库
 ---
-{% note warn 仅仅支持4.9内核。%}
+{% note warn 仅支持4.9内核。%}
 
 {% endnote %}
 
