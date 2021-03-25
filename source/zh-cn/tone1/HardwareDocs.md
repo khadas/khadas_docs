@@ -1,7 +1,7 @@
 title: 硬件资料
 ---
 
-这篇文档是Khadas TONE1 相关的硬件资料，包括：原理图、PCB和数据手册等。
+这篇文档是Khadas Tone1 相关的硬件资料，包括：原理图、PCB和数据手册等。
 
 [Khadas Tone Board Specifications](https://dl.khadas.com/Hardware/ToneBoard/Specs/Tone_Board_Specs.pdf)
 [Khadas Tone Board Schematic](https://dl.khadas.com/Hardware/ToneBoard/Schematic/Tone_V13%20SCH.pdf)

@@ -1,21 +1,21 @@
-title: Khadas TONE1 用户手册
+title: Khadas Tone1 用户手册
 ---
 
-感谢选购Khadas TONE1，现在开始享受高品质音乐吧～
-![TONE1 Overview](/images/tone1/ToneboardOverview.jpg)
+感谢选购Khadas Tone1，现在开始享受高品质音乐吧～
+![Tone1 Overview](/images/tone1/ToneboardOverview.jpg)
 
 
 
 ## 包装和配件
 VIMs 版本|通用版本|
 ---|:---
-TONE1 (已焊接20脚排针和40脚排座)|TONE1
+Tone1 (已焊接20脚排针和40脚排座)|Tone1
 USB Type C数据线|USB Type C数据线
 螺丝|螺丝
 -|40脚排座
 -|20脚排针
 
-![TONE1 Recipes](/images/tone1/ToneboardRecipes.jpg)
+![Tone1 Recipes](/images/tone1/ToneboardRecipes.jpg)
 
 
 ## 设备连接
@@ -34,12 +34,12 @@ USB Type C数据线|USB Type C数据线
 
 步骤|操作|
 ---|:---
-1| 把TONE1和VIMs通过40脚排座连接起来
+1| 把Tone1和VIMs通过40脚排座连接起来
 2| 连接音频线到RCA座子
 3| 连接HDMI线到显示器
 4| 连接5V电源
 
-![TONE1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
+![Tone1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
 
 </div>
 <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="win-tab">
@@ -47,16 +47,16 @@ USB Type C数据线|USB Type C数据线
 步骤|操作|
 ---|:---
 1| 连接音频线到RCA座子
-2| 通过USB Type C数据线连接TONE1和PC
+2| 通过USB Type C数据线连接Tone1和PC
 
-![TONE1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
+![Tone1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
 
 </div>
 </div>
 
 
 ## 设置
-大多数平台已经集成了TONE1驱动，但是Windows平台需要额外安装驱动。
+大多数平台已经集成了Tone1驱动，但是Windows平台需要额外安装驱动。
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -89,32 +89,32 @@ USB Type C数据线|USB Type C数据线
      * [下载](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)驱动
      * 解压并运行`setup.exe`来安装驱动
      * 安装完成后可以在设备管理器看到XMOS设备
-![TONE1 Windows Setup1](/images/tone1/ToneboardWindowsSetup1.png)
-  *  选择声卡为TONE1
+![Tone1 Windows Setup1](/images/tone1/ToneboardWindowsSetup1.png)
+  *  选择声卡为Tone1
      * 点击底部任务栏的声音图标
-![TONE1 Windows Setup2](/images/tone1/ToneboardWindowsSetup2.jpg)
+![Tone1 Windows Setup2](/images/tone1/ToneboardWindowsSetup2.jpg)
      * 选择XMOS XS1-U8 DJ为默认输出声卡
-![TONE1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
+![Tone1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
 
 </div>
 <div class="tab-pane fade" id="ubuntu-set" role="tabpanel" aria-labelledby="ubuntu-set-tab">
 
-*  选择声卡为TONE1
-![TONE1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
+*  选择声卡为Tone1
+![Tone1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="mac-set" role="tabpanel" aria-labelledby="mac-set-tab">
 
-*  选择声卡为TONE1
-![TONE1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
+*  选择声卡为Tone1
+![Tone1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="rpi-set" role="tabpanel" aria-labelledby="rpi-set-tab">
 
-*  选择声卡为TONE1
+*  选择声卡为Tone1
 
    * Volumio
-![TONE1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
+![Tone1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
 
    * Raspbian
 ```
@@ -154,7 +154,7 @@ No|Ports|Function|
 9|OLED     |VIMs OLED display
 10|Power LED     |Power supply indicator
 
-![TONE1 Ports](/images/tone1/ToneboardPorts.png)
+![Tone1 Ports](/images/tone1/ToneboardPorts.png)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -180,8 +180,8 @@ No|Ports|Function|
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
-VCC_3V3|1|11|TONE_5V
-Linux_TX|2|12|TONE_5V
+VCC_3V3|1|11|Tone_5V
+Linux_TX|2|12|Tone_5V
 Linux_RX|3|13|GND
 GND|4|14|GND
 XL_DN1|5|15|XMOS_RST
@@ -226,7 +226,7 @@ VCC_3V3|20|40|GND9
 
 PIN|SIGNAL
 ---|:---
-1|TONE_5V
+1|Tone_5V
 2|GND
 3|VCC_3V3
 4|GND
@@ -244,7 +244,7 @@ PIN|SIGNAL
 
 PIN|SIGNAL
 ---|:---
-1-3|TONE_5V
+1-3|Tone_5V
 4-6|GND
 7,8|XMOS_3V3
 9|XMOSIO3
@@ -277,8 +277,8 @@ PIN|SIGNAL
 
 PIN|SIGNAL
 ---|:---
-1|TONE_5V
-2|TONE_5V
+1|Tone_5V
+2|Tone_5V
 3|OLED_SCL
 4|OLED_SDA
 5|GND
@@ -294,5 +294,5 @@ PIN|SIGNAL
 
 ## FAQs
 * 如何扩展8通道输出？
-XMOS支持8通道模拟输出，TONE1 DAC（ES9038Q2M）已经用了2通道。用户可以增加DAC 8通道扩展。
+XMOS支持8通道模拟输出，Tone1 DAC（ES9038Q2M）已经用了2通道。用户可以增加DAC 8通道扩展。
 
