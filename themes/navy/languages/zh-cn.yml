@@ -322,7 +322,23 @@ sidebar:
   firmware:
     firmware: 固件
     vim1: VIM1
+    vim1_android: Android
+    vim1_ubuntu: Ubuntu
+    vim1_thirdparty: 第三方固件
     vim2: VIM2
+    vim2_android: Android
+    vim2_ubuntu: Ubuntu
+    vim2_thirdparty: 第三方固件
     vim3: VIM3
+    vim3_android: Android
+    vim3_ubuntu: Ubuntu
+    vim3_thirdparty: 第三方固件
+    vim3l: VIM3L
+    vim3l_android: Android
+    vim3l_ubuntu: Ubuntu
+    vim3l_thirdparty: 第三方固件
     edge: Edge
+    edge_android: Android
+    edge_ubuntu: Ubuntu
+    edge_thirdparty: 第三方固件
     tone1: TONE1

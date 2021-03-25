@@ -280,7 +280,23 @@ hardware:
     
 firmware:
   firmware:
-    vim1: Vim1Firmware.html 
-    vim2: Vim2Firmware.html
-    vim3: Vim3Firmware.html
-    edge: EdgeFirmware.html
+    vim1:
+      vim1_android: Vim1AndroidFirmware.html
+      vim1_ubuntu: Vim1UbuntuFirmware.html
+      vim1_thirdparty: Vim1ThirdpartyFirmware.html
+    vim2:
+      vim2_android: Vim2AndroidFirmware.html
+      vim2_ubuntu: Vim2UbuntuFirmware.html
+      vim2_thirdparty: Vim2ThirdpartyFirmware.html
+    vim3:
+      vim3_android: Vim3AndroidFirmware.html
+      vim3_ubuntu: Vim3UbuntuFirmware.html
+      vim3_thirdparty: Vim3ThirdpartyFirmware.html
+    vim3l:
+     vim3l_android: Vim3lAndroidFirmware.html
+     vim3l_ubuntu: Vim3lUbuntuFirmware.html
+     vim3l_thirdparty: Vim3lThirdpartyFirmware.html
+    edge:
+      edge_android: EdgeAndroidFirmware.html
+      edge_ubuntu: EdgeUbuntuFirmware.html
+      edge_thirdparty: EdgeThirdpartyFirmware.html
