@@ -123,6 +123,13 @@ BL2 Built : 15:22:05, Aug 28 2019. g12b g1bf2b53 - luan.yuan@droid15-sz
 
 ### Disable Watchdog
 
+* Disable Watchdog Service
+
 ```bash
 khadas@Khadas:~$ sudo systemctl disable watchdog
+khadas@Khadas:~$ sudo reboot
 ```
+
+* Disable Watchdog Driver [Optional]
+
+You can also disable the watchdog driver as well. Edit `/boot/env.txt` and remove `watchdog` in `overlays` node then save and reboot the system.

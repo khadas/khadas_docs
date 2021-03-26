@@ -122,6 +122,14 @@ BL2 Built : 15:22:05, Aug 28 2019. g12b g1bf2b53 - luan.yuan@droid15-sz
 
 ### 关闭看门狗
 
+* 关闭看门狗服务
+
 ```bash
 khadas@Khadas:~$ sudo systemctl disable watchdog
+khadas@Khadas:~$ sudo reboot
 ```
+
+* 关闭看门狗驱动【可选】
+
+你还可以选择关闭看门狗驱动。编辑文件`/boot/env.txt`，移除`overlays`节点里面的`watchdog`，然后保存文件并重启系统。
+
