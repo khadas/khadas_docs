@@ -2,6 +2,11 @@ header-padding-normal = 10px
 header-padding-max = 30px
 logo-size = 50px
 
+.dropdown-menu
+  padding: 0 0
+  margin: 0 0
+  border: none
+
 #header
   position: relative
   padding: header-padding-normal 50px
@@ -41,11 +46,29 @@ logo-size = 50px
   transition: 0.2s
   font-family: font-title
   display: inline-block
-  padding: 0 15px
-  &.current
-    color: color-link-hover
+  margin: 0 15px
+  &.secondary
+    line-height: 35px
+    font-size: 70%
+    color: black
   &:hover
     opacity: 1
+    color: color-link-hover
+  &.current
+    color: color-link-hover
+
+.submenu-list
+  background: #eae4e4
+  min-width:100%
+
+.submenu
+  text-align: center
+  &:hover
+    background: black
+
+li.submenu:hover a.main-nav-link
+  color: white
+  &.current
     color: color-link-hover
 
 #search-input-wrap
