@@ -1,4 +1,4 @@
-title: How To Setup Watchdog
+title: Setup Watchdog
 ---
 
 This guide is about how to setup `watchdog` in Ubuntu.
