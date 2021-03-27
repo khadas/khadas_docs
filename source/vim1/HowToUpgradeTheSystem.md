@@ -1,7 +1,7 @@
 title: Upgrade The System To Latest Version
 ---
 
-{% note warn Only for Ubuntu %}
+{% note warn Only for Ubuntu. %}
 
 {% endnote %}
 
