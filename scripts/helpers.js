@@ -54,6 +54,7 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
   var open = '';
   var self = this;
   var first_link = '';
+  var is_first_link = true;
 
   var prefix = 'sidebar.' + type + '.';
 
@@ -69,10 +70,18 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
         var secondary_first_link = 'yes';
         _.each(secondMenu, function (link, thirdMenuText) {
           var secondary_item_class = className + '-link';
+          if(link === 'index.html'){
+            is_first_link = false;
+          }
           if (link === path) {
             open = 'yes';
             secondary_open = 'yes';
             secondary_item_class += ' current';
+          }else if(is_first_link && path === 'index.html'){
+            open = 'yes';
+            secondary_open = 'yes';
+            secondary_item_class += ' current';
+            is_first_link = false;
           }
 
           if (secondary_first_link === 'yes') {
@@ -110,10 +119,17 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
         }
       } else {
         var link = secondMenu;
-
+        if(link === 'index.html'){
+          is_first_link = false;
+        }
         if (link === path) {
           open = 'yes';
           itemClass += ' current';
+          is_first_link = false;
+        }else if(is_first_link && path === 'index.html'){
+          open = 'yes';
+          itemClass += ' current';
+          is_first_link = false;
         }
 
         if (first_link === 'yes') {

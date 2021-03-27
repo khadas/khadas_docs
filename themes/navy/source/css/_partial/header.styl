@@ -5,7 +5,7 @@ logo-size = 50px
 .dropdown-menu
   padding: 0 0
   margin: 0 0
-  border: none
+  border: 0.1px solid #e9e7e7
 
 #header
   position: relative
@@ -58,18 +58,19 @@ logo-size = 50px
     color: color-link-hover
 
 .submenu-list
-  background: #eae4e4
-  min-width:100%
+  background: #fff
+  min-width: 100%
 
 .submenu
   text-align: center
   &:hover
-    background: black
+    background: color-link-hover
+    border-radius: 5px 5px 5px 5px
 
 li.submenu:hover a.main-nav-link
   color: white
   &.current
-    color: color-link-hover
+    color: white
 
 #search-input-wrap
   display: none
