@@ -6,7 +6,7 @@ title: How To Enable Auto Login
     <a class="nav-link active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true">Desktop</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="false">Server</a>
+    <a class="nav-link" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="false">Server (Headless)</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
