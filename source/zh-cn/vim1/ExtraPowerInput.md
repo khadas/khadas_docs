@@ -1,7 +1,7 @@
 title: Khadas VIMs外部供电接口
 ---
 
-### 前言：
+### 前言
  * 设备主要由USB-C接口供电。
  * 电源适配器电压确保最高为5.2V，电流推荐值为2000mA。
 
@@ -18,14 +18,23 @@ USB-C是常用的供电接口，在供电的同时也可以作数据传输，比
 ### 使用VIN作为外部供电
 VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 ![image](/images/vim1/vin_extra_power.png)
-提示：目前我们还没有VIN接口的电源线售卖，需要用户自己DIY。
+
+{% note info 提示 %}
+
+目前我们还没有VIN接口的电源线售卖，需要用户自己DIY。
+
+{% endnote %}
 
 ### 使用USB Host作为外部供电
 如图所示：需要准备一个公对公的USB线进行外部供电连接。
 ![image](/images/vim1/usb_host_extra_power.png)
 
 
-提示：靠近USB-C旁边的USB Host接口输入电流可达900mA，可作为备用外部供电接口。靠近网口的另外一路USB Host接口输入电流只有500mA。具体细节请参考原理图。
+{% note info 提示 %}
+
+靠近USB-C旁边的USB Host接口输入电流可达900mA，可作为备用外部供电接口。靠近网口的另外一路USB Host接口输入电流只有500mA。具体细节请参考原理图。
+
+{% endnote %}
 
 ### 更多资料
 * [VIM1接口描述](/zh-cn/vim1/VimInterfaces.html)

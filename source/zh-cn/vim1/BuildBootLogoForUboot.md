@@ -1,6 +1,10 @@
 title: 编译Amlogic平台u-boot开机logo
 ---
 
+{% note warn 仅用于Android %}
+
+{% endnote %}
+
 下面是Amlogic平台开机logo的基本信息（可能与其他平台不同）：
 * 开机logo是在u-boot中加载
 * 编译为`logo.img`镜像，存放在`logo`分区

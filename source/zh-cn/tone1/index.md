@@ -1,4 +1,4 @@
-title: Khadas TONE1 初学者 FAQ
+title: Khadas Tone1 初学者 FAQ
 ---
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -58,5 +58,5 @@ title: Khadas TONE1 初学者 FAQ
 
 # 更多相关信息:
 
-* [TONE1 官网](https://www.khadas.com/tone1)
-* [TONE1 用户手册](/zh-cn/tone1/UserManual.html)
+* [Tone1 官网](https://www.khadas.com/tone1)
+* [Tone1 用户手册](/zh-cn/tone1/UserManual.html)

@@ -1,56 +1,43 @@
 title: How To Use Uart
 ---
 
-# Confirm serial port hardware pins
+This documentation will introduce how to use the uart of 40PIN headers.
 
-Uart pin in 40 pins header is pin15 and pin16
+### Check Uart Hardware PINs
+
+Uart PIN in 40 PINs header is `PIN15` and `PIN16`:
 
 * [VIM1-GPIO-Pin-Out](/vim1/index.html#GPIO-Pin-Out)
 * [VIM2-GPIO-Pin-Out](/vim2/#GPIO-Pinout)
 * [VIM3-GPIO-Pin-Out](/vim3/#GPIO-Pinout)
 
-# Open uart node
+### Enable Uart Node
 
-openg uart node via device tree overlays.
+Enable uart node via device tree overlays. Edit `/boot/env.txt` to add `uartX` to `overlays`.
 
-```shell
-$ vim /boot/env.txt
-```
+e.g.
 
-Make sure UART is in the overlays list (default is enable).
-
-```shell
+```bash
 overlays=uart4 pwm_ao_a pwm_f i2c0
 ```
 
-**note: VIM1/VIM2 is uar4,VIM3/VIM3L is uart3**
+{% note info e.g. %}
 
-# Setting serial tool in PC
+* VIM1/VIM2  - **uar4**
+* VIM3/VIM3L - **uart3**
 
-Connect you board's uart and you PC via ttytoUSB tool.
+{% endnote %}
 
-The baud rate is set to `115200`, here is Ubuntu as an example:
+Reboot to take effect.
 
-```shell
-$ sudo minicom -b 115200 -D /dev/ttyUSBx
-```
+### Check the Uart Device Node
 
+After reboot, you will see the uart device node.
 
-# How to Use
+{% note info e.g. %}
 
-Open the terminal on the board and set the serial port baud rate.
+* VIM1/VIM2  - **/dev/ttyS4**
+* VIM3/VIM3L - **/dev/ttyS3**
 
-```shell
-$ sudo stty -F /dev/ttySx 115200
-```
-
-Print info via `echo` command
-
-```shell
-$ echo khadas | sudo tee /dev/ttySx
-```
-
-You will receive `khadas` in you PC
-
-
+{% endnote %}
 

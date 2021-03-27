@@ -1,21 +1,21 @@
-title: How To Test GPIO IRQ
+title: GPIO IRQ Usage
 ---
 
-# Switch to root user
+### Switch to root user
 
 Only root user can control GPIO, you need to switch to root user before testing.
 
-```shell
+```bash
 $ khadas@Khadas:~$ su
 Password: 
 root@Khadas:/home/khadas#
 ```
 
-# GPIO Pin Control Setting
+### GPIO Pin Control Setting
 
-* Confirm the pins you need to use, take VIM3 as an example:
+* Check the pins you need to use, take VIM3 as an example:
 
-```shell
+```bash
 root@Khadas:/home/khadas# gpio readall
  +------+-----+----------+------+---+----+---- Model  Khadas VIM3 --+----+---+------+----------+-----+------+
  | GPIO | wPi |   Name   | Mode | V | DS | PU/PD | Physical | PU/PD | DS | V | Mode |   Name   | wPi | GPIO |
@@ -43,19 +43,15 @@ root@Khadas:/home/khadas# gpio readall
  +------+-----+----------+------+---+----+-------+----++----+-------+----+---+------+----------+-----+------+
 ```
 
-Select the GPIO you need to use, and confirm the corresponding physical pin and GPIO value. Taking GPIOH6 as an example here, the corresponding GPIO value is 433, and the physical pin is pin 15.
+Select the GPIO you need to use, and confirm the corresponding physical pin and GPIO value. Taking `GPIOH6` as an example here, the related GPIO value is `433`, and the physical pin is  `PIN15`.
 
-* export GPIO
+* Export GPIO
 
-Export the selected GPIO to operate the GPIO,
-
-```shell
+```bash
 root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
 ```
 
-# Compile GPIO test program
-
-* source code for `gpio-irq.c`
+* Source code for `gpio-irq.c`
 
 ```c
 #include <stdio.h>
@@ -223,25 +219,24 @@ out:
 
 ```
 
-* 
+* Compile the source code
 
-```shell
+```bash
 root@Khadas:/home/khadas# gcc -o gpio-irq gpio-irq.c
 ```
-# Compile the source code
 
-* run
+* Check
 
-```shell
+```bash
 ./gpio-irq 433 rising down
 .
 GPIO 433 interrupt occurred!
 ..........
 ```
 
-Connect the Pin20 and pin15 of the physical pin through the DuPont line to trigger the interrupt. The phenomenon is as follows:
+Connect the `PIN20` and `PIN15` of the physical PIN via the DuPont line to trigger the interrupt. The phenomenon is as follows:
 
-```shell
+```bash
 root@Khadas:/home/khadas# ./gpio-irq 433 rising down
 .
 GPIO 433 interrupt occurred!
@@ -252,11 +247,12 @@ GPIO 433 interrupt occurred!
 .
 GPIO 433 interrupt occurred!
 ```
-* Test procedure description
+
+* Test Program Introduce
 
 The running format is as follows:
 
-```shell
+```bash
 root@Khadas:/home/khadas# ./gpio-irq <edge> [pull]
 ```
 

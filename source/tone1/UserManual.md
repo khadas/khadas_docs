@@ -1,8 +1,8 @@
-title: Khadas TONE1 User Manual
+title: Khadas Tone1 User Manual
 ---
 
-Thank you for purchasing a Khadas TONE1. Now you can easily enjoy Hi-Res Audio at home.
-![TONE1](/images/tone1/ToneboardOverview.jpg)
+Thank you for purchasing a Khadas Tone1. Now you can easily enjoy Hi-Res Audio at home.
+![Tone1](/images/tone1/ToneboardOverview.jpg)
 
 
 
@@ -11,13 +11,13 @@ Thank you for purchasing a Khadas TONE1. Now you can easily enjoy Hi-Res Audio a
 ## In The Box
 VIMs Edition|Generic Edition|
 ---|:---
-TONE1 (with 20 & 40 pin header on board)|TONE1
+Tone1 (with 20 & 40 pin header on board)|Tone1
 USB Cable|USB Cable
 Set of Screws|Set of Screws
 -|Header: 40-Pin Female
 -|Header: 20-Pin
 
-![TONE1 Recipes](/images/tone1/ToneboardRecipes.jpg)
+![Tone1 Recipes](/images/tone1/ToneboardRecipes.jpg)
 
 
 ## Device Connection
@@ -35,12 +35,12 @@ Set of Screws|Set of Screws
 
 Step|Operation|
 ---|:---
-Step 1| Connect TONE1 and VIM1/VIM2/Edge-V SBC through 40-Pin Header
+Step 1| Connect Tone1 and VIM1/VIM2/Edge-V SBC through 40-Pin Header
 Step 2| Connect RCA output
 Step 3| Connect HDMI
 Step 4| Connect DC 5V
 
-![TONE1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
+![Tone1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
 
 </div>
 <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="win-tab">
@@ -48,15 +48,15 @@ Step 4| Connect DC 5V
 Step|Operation|
 ---|:---
 Step 1| Connect RCA output 
-Step 2| Connect TONE1 with PC using a USB-C data cable
+Step 2| Connect Tone1 with PC using a USB-C data cable
 
-![TONE1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
+![Tone1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
 
 </div>
 </div>
 
 ## Setting Up
-Most software platforms have integrated TONE1 Drivers. Only Windows platforms need to install drivers.
+Most software platforms have integrated Tone1 Drivers. Only Windows platforms need to install drivers.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -91,32 +91,32 @@ Edge-V TBD.
      * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
      * Decompress and run setup.exe to install the driver.
      * Install completed. 
-![TONE1 Windows Setup1](/images/tone1/ToneboardWindowsSetup1.png)
-  *  Switch sound-card to the TONE1
+![Tone1 Windows Setup1](/images/tone1/ToneboardWindowsSetup1.png)
+  *  Switch sound-card to the Tone1
      * Click the sound icon in the lower-right-corner of the Windows Task-Bar.
-![TONE1 Windows Setup2](/images/tone1/ToneboardWindowsSetup2.jpg)
+![Tone1 Windows Setup2](/images/tone1/ToneboardWindowsSetup2.jpg)
      * Chose XMOS XS1-U8 DJ as the default sound-card.
-![TONE1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
+![Tone1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
 
 </div>
 <div class="tab-pane fade" id="ubuntu-set" role="tabpanel" aria-labelledby="ubuntu-set-tab">
 
-Switch sound-card to the TONE1
-![TONE1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
+Switch sound-card to the Tone1
+![Tone1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="mac-set" role="tabpanel" aria-labelledby="mac-set-tab">
 
-Switch sound-card to the TONE1
-![TONE1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
+Switch sound-card to the Tone1
+![Tone1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="rpi-set" role="tabpanel" aria-labelledby="rpi-set-tab">
 
-*  Switch sound-card to the TONE1
+*  Switch sound-card to the Tone1
      
    * Volumio
-![TONE1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
+![Tone1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
      
    * Raspbian
 ```
@@ -156,7 +156,7 @@ No|Ports|Function|
 9|OLED     |VIMs OLED display
 10|Power LED     |Power supply indicator
 
-![TONE1 Ports](/images/tone1/ToneboardPorts.png)
+![Tone1 Ports](/images/tone1/ToneboardPorts.png)
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -183,8 +183,8 @@ No|Ports|Function|
 
 Signal| Pin|Pin|Signal
 ---|:---|:---|:---
-VCC_3V3|1|11|TONE_5V
-Linux_TX|2|12|TONE_5V
+VCC_3V3|1|11|Tone_5V
+Linux_TX|2|12|Tone_5V
 Linux_RX|3|13|GND
 GND|4|14|GND
 XL_DN1|5|15|XMOS_RST
@@ -229,7 +229,7 @@ VCC_3V3|20|40|GND9
 
 Pin|Signal
 ---|:---
-1|TONE_5V
+1|Tone_5V
 2|GND
 3|VCC_3V3
 4|GND
@@ -247,7 +247,7 @@ Pin|Signal
 
 Pin|Signal
 ---|:---
-1-3|TONE_5V
+1-3|Tone_5V
 4-6|GND
 7,8|XMOS_3V3
 9|XMOSIO3
@@ -280,8 +280,8 @@ Pin|Signal
 
 PIN|SIGNAL
 ---|:---
-1|TONE_5V
-2|TONE_5V
+1|Tone_5V
+2|Tone_5V
 3|OLED_SCL
 4|OLED_SDA
 5|GND
@@ -296,4 +296,4 @@ PIN|SIGNAL
 
 ## FAQs
 * How to extend to 8-channel audio?
-XMOS supports 8-channel analog line-out. However, the TONE1 DAC (ES9038Q2M) is already using 2-channels. Users can add a DAC for 8-channel expansion.
+XMOS supports 8-channel analog line-out. However, the Tone1 DAC (ES9038Q2M) is already using 2-channels. Users can add a DAC for 8-channel expansion.

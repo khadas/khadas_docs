@@ -212,6 +212,11 @@ sidebar:
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: ADB用法
     how_to_use_fastboot: Fastboot用法
+    how_to_access_i2c_android: 如何操作I2C
+    how_to_enable_m2x_eth: 如何使能M2x
+    how_to_change_animation: 如何更新开机动画
+    how_to_use_uart_android: 如何使用uart
+    how_to_change_logo_android: 如何更新开机logo
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
@@ -313,11 +318,27 @@ sidebar:
     vim2: VIM2
     vim3: VIM3
     edge: Edge
-    tone1: TONE1
+    tone1: Tone1
   firmware:
     firmware: 固件
     vim1: VIM1
+    vim1_android: Android
+    vim1_ubuntu: Ubuntu
+    vim1_thirdparty: 第三方固件
     vim2: VIM2
+    vim2_android: Android
+    vim2_ubuntu: Ubuntu
+    vim2_thirdparty: 第三方固件
     vim3: VIM3
+    vim3_android: Android
+    vim3_ubuntu: Ubuntu
+    vim3_thirdparty: 第三方固件
+    vim3l: VIM3L
+    vim3l_android: Android
+    vim3l_ubuntu: Ubuntu
+    vim3l_thirdparty: 第三方固件
     edge: Edge
-    tone1: TONE1
+    edge_android: Android
+    edge_ubuntu: Ubuntu
+    edge_thirdparty: 第三方固件
+    tone1: Tone1

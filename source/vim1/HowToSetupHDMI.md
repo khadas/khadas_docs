@@ -1,56 +1,50 @@
-title: How to set HDMI resolution
+title: How to Set HDMI resolution
 ---
 
-## Modified by configuration file
+{% note info Only for Linux 4.9 image, mainline kernel image can use a more common way! %}
 
-### Switch to root user
+{% endnote %}
 
-* Switch to the `root` user, ordinary users do not have sufficient permission.
+Tere are 2 ways to set the HDMI resolution:
 
-```shell
-khadas@Khadas:~$ su
-Password:
-root@Khadas:/home/khadas#
-```
+* Setup via configuration file
+* Setup via desktop application (Only for desktop image)
 
-* open configuration file
 
-```shell
-root@Khadas:/home/khadas# vim /boot/env.txt
-```
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="file-tab" data-toggle="tab" href="#file" role="tab" aria-controls="file" aria-selected="true">Configuration File</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="app-tab" data-toggle="tab" href="#app" role="tab" aria-controls="app" aria-selected="false">Application (Only for Desktop)</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="file" role="tabpanel" aria-labelledby="file-tab">
 
-### modified configuration file
+Edit file `/boot/env.txt` to set the resolution. 
 
-* Set automatic recognition as `no`
+* Set `hdmi_autodetect=no`
+* Set `hdmi` node, e.g. `hdmi=1080p60hz`
+* Save the file
 
-```shell
-hdmi_autodetect=yes --> hdmi_autodetect=no
-```
+Reboot to take effect.
 
-* Select a resolution in the list, example: select `1080p60hz`.
+</div>
+<div class="tab-pane fade show" id="app" role="tabpanel" aria-labelledby="app-tab">
 
-```shell
-hdmi=1080p60hz
-```
-
-Restart will take effect
-
-## Apply settings via `HDMI Resolution`
-
-### open application
-
-Find `HDMI Resolution` in the list of system applications.Find `HDMI Resolution` in the list of system applications.
+* Find `HDMI Resolution` application in the list of system applications.
 
 ![gnome-HDMI-application](/images/vim1/gnome-HDMI-application.png)
 
-Then open it.
+* Click to open it.
 
-### Set resolution
+* Select resolution.
 
 ![gnome-HDMI-setting](/images/vim1/gnome-HDMI-setting.png)
 
-Choose a resolution you need, then choose save,
+Choose a resolution you want, then click `OK`,
 
 ![gnome-HDMI-save](/images/vim1/gnome-HDMI-save.png)
 
-The system will automatically log out and the resolution setting will take effect
+The system will automatically log out and the resolution setting will take effect.

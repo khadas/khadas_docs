@@ -79,12 +79,15 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 </div>
 </div> 
 
-**Notice**:
+
+{% note info Notice %}
 
 * `PIN17-20`: for UART debugging
 * `PIN29-33`: iomux for I2S
 * `PIN36`   : 32.768KHz clock output
 * `PIN38`   : enable signal for whole system power
+
+{% endnote %}
 
 # Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
@@ -146,7 +149,9 @@ These items are useful when you need to connect your VIM1 SBC to an external dis
 3. Wireless USB Keyboard + Mouse
 4. CeC-Compatible Remote Control
 
-```Note: Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after some time.```
+{% note warn Note %}
+Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after some time.
+{% endnote %}
 
 **Learn More:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)

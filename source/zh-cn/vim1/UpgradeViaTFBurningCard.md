@@ -1,8 +1,16 @@
 title: 通过TF卡升级固件
 ---
+
 这里以安卓为例，Ubuntu的升级与安卓一致。
 
-**注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。**
+{% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
+
+{% endnote %}
+
+{% note warn 注意：由于TF烧录卡只支持FAT32文件系统，因为Ubuntu桌面系统大小大于4GB，所以不支持TF卡烧录。 %}
+
+{% endnote %}
+
 
 ### 准备工作
 * 下载[Burn Card Maker Tool](https://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) 并解压。

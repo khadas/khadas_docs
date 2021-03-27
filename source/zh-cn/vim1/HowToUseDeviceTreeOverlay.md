@@ -4,14 +4,15 @@ title: 如何使用Device Tree Overlay
 从固件[V0.9.3-20200814](https://forum.khadas.com/t/vim3-vim3l-ubuntu-20-04-linux-4-9-v0-9-3-20200814-ota-release/9205)开始增加了Device Tree Overlays。
 你可以通过编辑文件`/boot/env.txt`来使能或者禁止某些外设。
 
+{% note info 这篇文档以VIM3为例介绍如何使用Device Tree Overlay。%}
+
+{% endnote %}
 
 ### 如何使用
 
-这边文档以**VIM3**为例介绍如何使用Device Tree Overlay。
-
 在文件`/boot/env.txt`中你可以看到关于**VIM3** Device Tree Overlay的配置，如下：
 
-```sh
+```bash
 # Device Tree Overlays
 #   uart3           -- Enable UART3 (uart_C, GPIO Header PIN15 & PIN16)
 #   pwm_f           -- Enable PWM_F (GPIO Header PIN35)
@@ -33,7 +34,11 @@ overlays=uart3 pwm_f i2c3 os08a10
 * 如果你想要使能`onewire`，你可以在`overlays`节点中增加`onewire`
 
 
-*注意：你需要保存文件`/boot/env.txt`并重启系统来使其生效。*
+{% note info 注意 %}
+
+你需要保存文件`/boot/env.txt`并重启系统来使其生效。
+
+{% endnote %}
 
 
 ### 创建你自己的DTBO文件
@@ -42,7 +47,7 @@ overlays=uart3 pwm_f i2c3 os08a10
 
 默认DTBO文件存在于目录：`/boot/dtb/overlays/#BOARD#`
 
-```sh
+```bash
 khadas@Khadas:~$ ll /boot/dtb/overlays/kvim3
 total 40
 drwxr-xr-x 2 root root 4096 Jan 29 11:13 ./

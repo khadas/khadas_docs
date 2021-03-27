@@ -1,40 +1,43 @@
-title: How To Set Auto Login
+title: How To Enable Auto Login
 ---
 
-# Desktop 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true">Desktop</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="false">Server (Headless)</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-## configiure file
+Edit file `/usr/share/lightdm/lightdm.conf.d/50-greeter-wrapper.conf` to add the configuration below:
 
-configiure file is `50-greeter-wrapper.conf`
-
-```shell
-khadas@Khadas:~$ sudo vim /usr/share/lightdm/lightdm.conf.d/50-greeter-wrapper.conf
-```
-
-
-## Add auto login Configuration information
-
-Add the following content to the file
-
-```shell
+```bash
 [SeatDefaults]
 greeter-session=lightdm-gtk-greeter
 autologin-user=khadas
 ```
 
+</div>
+<div class="tab-pane fade show" id="server" role="tabpanel" aria-labelledby="server-tab">
 
-**note**: If you modify it through ssh or serial port, it will take effect after you log in once.
+* For tty1-tty6
 
-# Server
-
-## tty1-tty6
-
-```shell
+```bash
 khadas@Khadas:~$ sudo sed -i "s/ExecStart=.*/ExecStart=-\/sbin\/agetty --noclear --autologin root \%I \$TERM/g" /lib/systemd/system/getty@.service
 ```
 
-## ttyS0
+* For ttyS0
 
-```shell
+```bash
 khadas@Khadas:~$ sudo sed -i "s/ExecStart=.*/ExecStart=-\/sbin\/agetty --autologin root --keep-baud 115200,38400,9600 \%I \$TERM/g" /lib/systemd/system/serial-getty@.service
 ```
+
+</div>
+</div>
+
+{% note info Reboot to take effect. %}
+
+{% endnote %}

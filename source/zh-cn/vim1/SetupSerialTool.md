@@ -2,48 +2,51 @@ title: 设置串口调试工具
 ---
 
 ### 准备工作
-- [x] 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具
+* 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具。
 
-### 如何连接
+### 连接
 请按下面所示方式连接：
 
-**1)** 连接所有GPIO，确保TX/RX连接正确.
-* Tool Pin `GND`: <---> `Pin17` of VIMs' GPIO
-* Tool Pin `TXD`: <---> `Pin18` of VIMs' GPIO(Linux_Rx)
-* Tool Pin `RXD`: <---> `Pin19` of VIMs' GPIO(Linux_Tx)
-* Tool Pin `VCC`: <---> `Pin20` of VIMs' GPIO
+* 连接所有GPIO，确保TX/RX连接正确.
+  * Tool Pin `GND`: <---> `Pin17` of VIMs' GPIO
+  * Tool Pin `TXD`: <---> `Pin18` of VIMs' GPIO(Linux_Rx)
+  * Tool Pin `RXD`: <---> `Pin19` of VIMs' GPIO(Linux_Tx)
+  * Tool Pin `VCC`: <---> `Pin20` of VIMs' GPIO
 
-**2)** 把串口调试工具插入PC
+* 把串口调试工具插入PC
 
 连接方式如下：
 
 ![Image of SerialConnections](/images/vim1/SerialConnections_3Pin.jpg)
 
-参考下图(`VCC` 管脚可以不接):
+参考下图(`VCC` 管脚可以不接)：
 
 ![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
 
 
 ### 设置串口软件`minicom`
-**安装minicom:**
-```sh
+
+安装minicom：
+
+```bash
 $ sudo apt-get install minicom
 ```
 
-**添加权限**
-```sh
+添加权限：
+
+```bash
 $ sudo usermod -a -G dialout $(whoami)
 ```
 
-**打开minicom**
+打开minicom：
 
-```sh
+```bash
 $ minicom -D /dev/ttyUSB0 -b 115200
 ```
 
-`-D` 指定串口设备, `-b` to 指定波特率
+`-D` 指定串口设备, `-b` to 指定波特率。
 
-```
+```bash
 Welcome to minicom 2.7.1
 
 OPTIONS: I18n
@@ -52,11 +55,11 @@ Port /dev/ttyUSB0, 16:45:10
 
 Press CTRL-A Z for help on special keys
 ```
-**How to use minicom**
+minicom使用方法：
 
-`Ctrl + a` 或者 `Ctrl + z` 进入minicom控制模式. 按键 `o` 进入minicom配置界面
+`Ctrl + a` 或者 `Ctrl + z` 进入minicom控制模式. 按键 `o` 进入minicom配置界面：
 
-```
+```bash
 +-----[configuration]------+
 | Filenames and paths      |
 | File transfer protocols  |
@@ -70,21 +73,21 @@ Press CTRL-A Z for help on special keys
 
 ```
 
-`Serial port setup` 选项配置与串口通信有关的配置
-`Save setup as dfl` 保存成默认模式
+`Serial port setup` 选项配置与串口通信有关的配置。
+`Save setup as dfl` 保存成默认模式。
 
-键盘 `q` 可以关闭minicom
+键盘 `q` 可以关闭minicoim：
 
-```
+```bash
 +----------------------+
 | Leave without reset? |
 |     Yes       No     |
 +----------------------+
 ```
 
-通过minicom的帮助命令可以查看到所有的选项
+通过minicom的帮助命令可以查看到所有的选项：
 
-```sh
+```bash
 $ minicom -h
 Usage: minicom [OPTION]... [configuration]
 A terminal program for Linux and other unix-like systems.
@@ -123,18 +126,22 @@ is compiled to /etc/minicom.
 Report bugs to <minicom-devel@lists.alioth.debian.org>.
 
 ```
-*提示*
-1. 如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。
-```
+
+{% note info 提示 %}
+
+1、如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。
+
+```bash
 /dev/ttyUSB0: Permission denied
 ```
 
-2. 串口连接uboot
-连接串口工具到PC以及板子上,打开PC上的串口软件,给板上电,看到串口开始打印信息提后,按下空格键就把系统停在uboot界面,对uboot进行操作.成功停在uboot以后,会在串口软件看到[kvim#](/zh-cn/vim1/UBootUsage.html).
+2、连接串口工具到PC以及板子上，打开PC上的串口软件，给板子上电，看到串口开始打印信息提后，按下空格键就把系统停在uboot命令行界面。成功停在uboot命令行以后,会在串口软件看到[kvim#](/zh-cn/vim1/UBootUsage.html)。
 
-3. 需要注意的是如果你想要使用[uboot用户指南](/zh-cn/vim1/UBootUsage.html)的里的标准"帮助"命令,那么你先要在板子上烧录一个ubuntu或者安卓的固件,当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行.
+3、需要注意的是如果你想要使用[uboot用户指南](/zh-cn/vim1/UBootUsage.html)的里的标准“帮助”命令，那么你先要在板子上烧录一个ubuntu或者安卓的固件，当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行。
 
-4. 你可以使用uboot命令去修改默认的[开机图标](/zh-cn/vim1/BuildBootLogoForUboot.html)等等.
+4、你可以使用uboot命令去修改默认的[开机图标](/zh-cn/vim1/BuildBootLogoForUboot.html)等等。
 
-### 更多参考:
+{% endnote %}
+
+### 更多参考
 [Minicom wiki](https://en.wikipedia.org/wiki/Minicom)

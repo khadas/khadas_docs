@@ -194,10 +194,13 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [从外部媒体介质启动系统](/zh-cn/vim2/BootFromExtMedia.html)
 [如何进入升级模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
 
-**提示:**
+{% note info 提示 %}
+
 * 应使用USB-C数据线从Ubuntu或Windows主机直接将**emmc固件**刻录到`emmc`。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。
 * **sd/usb固件**应复制到一张sd卡中，然后使用该卡用新操作系统重新格式化emmc存储。例如：Armbian、Ubuntu发行版包含到'sd_usb'标记，以及LibELEC。
 * 为了从**sd/usb images**启动，您需要在您的emmc上运行android或ubuntu，并激活多启动。
+
+{% endnote %}
 
 # 使用Type-C升级EMMC系统
 如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM2 SBC操作系统，则需要这些项目。例如，将启动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。
@@ -227,7 +230,11 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amzon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-**提示:** 如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/zh-cn/vim2/InstallLibreELEC.html)
+{% note info 提示 %}
+
+如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/zh-cn/vim2/InstallLibreELEC.html)。
+
+{% endnote %}
 
 # 软件开发/高级CRACH恢复
 在系统完全崩溃需要手动恢复的极端情况下，需要使用mregister重置VIM2 SBC。USB串行调试工具对于开发人员调>试复杂软件问题也很有用。

@@ -1,7 +1,9 @@
 title: 升级固件到最新版本
 ---
 
-**注意：仅用于Ubuntu。**
+{% note warn 仅用于Ubuntu。%}
+
+{% endnote %}
 
 ## 更新资源
 ```sh

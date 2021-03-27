@@ -1,7 +1,7 @@
-title: Edge硬件资料文档
+title: Khadas Edge 硬件资料文档
 ---
 
-# 主板资料
+## Edge 主板资料
 
 * [Khadas Edge Comparisons](https://dl.khadas.com/Hardware/Edge/Specs/Edge_Comparisons.pdf)
 * [Khadas Edge Specifications](https://dl.khadas.com/Hardware/Edge/Specs/Edge_Specs.pdf)
@@ -31,7 +31,7 @@ title: Edge硬件资料文档
 * [Khadas Juice Schematic](https://dl.khadas.com/Hardware/Edge/Schematic/Juice_V12_Sch.pdf)
 * [Rockchip RK3399 Datasheet](https://dl.khadas.com/Hardware/Edge/Datasheet/Rockchip_RK3399TRM_V1.4_Part1-20170408.pdf)
 
-# 3D CAD 文件
+## 3D CAD 文件
 
 * [3705 Cooling Fan 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/3705_Cooling_Fan_3D_CAD.zip)
 * [New VIM Heatsink 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/New_VIM_Heatsink_3D_CAD.zip)
@@ -41,7 +41,7 @@ title: Edge硬件资料文档
 * [M2X Extension Board 3D CAD Files (STEP format)](https://dl.khadas.com/Hardware/Accessories/CAD/M2X_Extension_3D_CAD_Files_21_Sep_2019.zip)
 
 
-# 配件资料
+## 配件资料
 
 * [Case](https://www.khadas.com/product-page/diy-case)
 * [Fan](https://www.khadas.com/product-page/3705-cooling-fan)

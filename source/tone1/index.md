@@ -1,4 +1,4 @@
-title: Khadas TONE1 Beginners FAQ
+title: Khadas Tone1 Beginners FAQ
 ---
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -58,6 +58,6 @@ If you're using a Tone Board on a Mac, you may notice that you are unable to con
 
 # More Information:
 
-* [TONE1 Website](https://www.khadas.com/tone1)
-* [TONE1 User Manual](/tone1/UserManual.html)
+* [Tone1 Website](https://www.khadas.com/tone1)
+* [Tone1 User Manual](/tone1/UserManual.html)
 * [Upgrade Tone Board Firmware](/tone1/HowtoUpgradeFirmware.html)

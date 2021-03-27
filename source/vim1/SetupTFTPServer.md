@@ -2,64 +2,90 @@ title: Setup TFTP Server for U-Boot
 ---
 
 Our approach to setup a TFTP server is quite similar to other guides that you can find via Google.
-Here we provide some instructions for reference:
+Here we provide some instructions for reference.
 
-### Ubuntu16.04
+### Setup TFTP
 
-#### Setup TFTP
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="16.04-tab" data-toggle="tab" href="#16.04" role="tab" aria-controls="16.04" aria-selected="true">Ubuntu 16.04</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="18.04-tab" data-toggle="tab" href="#18.04" role="tab" aria-controls="18.04" aria-selected="false">Ubuntu 18.04 (or newer)</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="16.04" role="tabpanel" aria-labelledby="16.04-tab">
+
 Install TFTP packages:
-```sh
+
+```bash
 $ sudo apt-get install openbsd-inetd tftpd tftp
 ```
 
-#### Configuration
+* Configuration
+
 To enable the TFTP server, edit the file `/etc/inetd.conf` as the root user, and locate the line that looks like the following:
-```
+
+```bash
 #tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
 ```
+
 Uncomment this line, and add the option and value `-s /srv/tftp` to the end of this line: 
-```
+
+```bash
 tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tftp
 ```
 
 Create and modify permissions on the TFTP root directory:
-```sh
+
+```bash
 $ sudo mkdir /srv/tftp
 $ sudo chown -R $(whoami) /srv/tftp
 ```
 
 Restart the TFTP Service:
-```sh
+
+```bash
 $ sudo /etc/init.d/xinetd restart
 ```
+</div>
 
-### Ubuntu18.04
+<div class="tab-pane fade show" id="18.04" role="tabpanel" aria-labelledby="18.04-tab">
 
-#### Setup TFTP
 Install TFTP packages:
-```sh
+
+```bash
 $ sudo apt-get install tftp-hpa tftpd-hpa
 ```
 
-#### Configuration
-edit the file `/etc/default/tftpd-hpa` as the root user, and edit the line look like this:
-```
+* Configuration
+
+Edit the file `/etc/default/tftpd-hpa` as the root user, and edit the line look like this:
+
+```bash
 TFTP_DIRECTORY="/usr/lib/tftpboot"
 ```
+
 change the dir to `/srv/tftp`
-```
+
+```bash
 TFTP_DIRECTORY="/srv/tftp"
 ```
 Create and modify permissions on the TFTP root directory:
 
-```sh
+```bash
 $ sudo mkdir /srv/tftp
 $ sudo chown -R $(whoami) /srv/tftp
 ```
 Restart the TFTP Services:
-```sh
+
+```bash
 $ sudo service tftpd-hpa restart
 ```
+
+</div>
+</div>
 
 ### Setup For Target Device
 To setup TFTP on your target device, you will need to:
@@ -70,7 +96,7 @@ To setup TFTP on your target device, you will need to:
 
 Stop U-Boot autoboot by hitting `Enter` or `Space` key at the moment you power on your target device:
 
-```
+```bash
 U-Boot 2015.01 (May 18 2019 - 19:31:53)
 
 DRAM:  3.8 GiB
@@ -84,13 +110,15 @@ kvim3#
 ```
 
 Setup the ip address of the target client and TFTP host server:
-```
+
+```bash
 kvim3# setenv ipaddr 192.168.1.249
 kvim3# setenv serverip 192.168.1.117
 ```
 
 Save the settings:
-```
+
+```bash
 kvim3# saveenv
 Saving Environment to aml-storage...
 mmc env offset: 0x6c00000 
@@ -99,20 +127,28 @@ kvim3#
 ```
 Running `saveenv` will save the env values to the env partition on the eMMC. You can run `defenv` to restore the env to the default values.
 
-**NOTE**:How to confirm that your configuration is correct.
-```
+{% note info NOTE %}
+
+Please confirm that your configuration is correct.
+
+e.g.
+
+```bash
 kvim3#print ipaddr
 ipaddr=192.168.1.249
 kvim3#print serverip
 serverip=192.168.1.117
 ```
 
+{% endnote %}
+
 ### Test Your TFTP Server
+
 Make sure you have copied the testing file to the TFTF root path:
-```sh
+
+```bash
 $ ls /srv/tftp/u-boot.bin
 /srv/tftp/u-boot.bin
-$ 
 ```
 
 Load a file into the `0x1080000` address:

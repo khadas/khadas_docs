@@ -1,21 +1,37 @@
 title: How to Erase the eMMC Storage
 ---
 
-There are 4 different ways to erase all data on the onboard eMMC storage:
-1. Serial Mode
-2. Interrupt Mode
-3. CLI Mode
+There are 3 different ways to erase all data on the onboard eMMC storage:
+* Serial Mode (For developers)
+* Interrupt Mode
+* CLI Mode
 
-**Note: The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example.**
+{% note info The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example. %}
 
-### Serial Mode(For developers)
-1. Refer to this guide ([VIM1](/vim1/SetupSerialTool.html)/[VIM2](/vim2/SetupSerialTool.html)/[VIM3](/vim3/SetupSerialTool.html)) to setup the Serial Tool for your VIM.
-2. Once again, ensure you've done the correct connections and setup.
-3. Hit any keys at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode.
-4. Type `store init 3` on the terminal of u-boot, and wait for the erasure process to complete.
-5. Type `reboot` or press the `Reset` button
-6. Use the following as a reference:
-```
+{% endnote %}
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="serial-tab" data-toggle="tab" href="#serial" role="tab" aria-controls="serial" aria-selected="true">Serial Mode (For developers)</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="interupt-tab" data-toggle="tab" href="#interupt" role="tab" aria-controls="interupt" aria-selected="false">Interupt Mode</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="cli-tab" data-toggle="tab" href="#cli" role="tab" aria-controls="cli" aria-selected="false">CLI Mode</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
+
+* Refer to this guide ([VIM1](/vim1/SetupSerialTool.html)/[VIM2](/vim2/SetupSerialTool.html)/[VIM3](/vim3/SetupSerialTool.html)) to setup the Serial Tool for your VIM.
+* Once again, ensure you've done the correct connections and setup.
+* Hit any keys at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode.
+* Type `store init 3` on the terminal of u-boot, and wait for the erasure process to complete.
+* Type `reboot` or press the `Reset` button
+* Use the following as a reference:
+
+```bash
 kvim# store init 3
 emmc/sd response timeout, cmd8, status=0x1ff2800
 emmc/sd response timeout, cmd55, status=0x1ff2800
@@ -42,28 +58,36 @@ Caution! Your devices Erase group is 0x400
 The erase range would be change to 0x36000~0xe8ffff
 
 start = 221184,end = 15269886
-Vim# reboot
+kvim# reboot
 ```
-**Tip:**
+{% note info Tips %}
+
 If the erasure process completed successfully, the terminal should look like this when you power on your device:
+
 ```
 GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:8;
 ```
+{% endnote %}
 
-### Interrupt Mode
+</div>
+
+<div class="tab-pane fade show" id="interupt" role="tabpanel" aria-labelledby="interupt-tab">
+
 This approach is suitable for all products that use the Amlogic SoC:
 
-1. Carry out normal upgrading via USB-C Cable([VIM1](/vim1/UpgradeViaUSBCable.html)/[VIM2](/vim2/UpgradeViaUSBCable.html)/[VIM3](/vim3/UpgradeViaUSBCable.html)) or TF Card([VIM1](/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/vim3/UpgradeViaTFBurningCard.html)).
-2. Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
-3. Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
+* Carry out normal upgrading via USB-C Cable([VIM1](/vim1/UpgradeViaUSBCable.html)/[VIM2](/vim2/UpgradeViaUSBCable.html)/[VIM3](/vim3/UpgradeViaUSBCable.html)) or TF Card([VIM1](/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/vim3/UpgradeViaTFBurningCard.html)).
+* Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
+* Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
 
+</div>
+<div class="tab-pane fade show" id="cli" role="tabpanel" aria-labelledby="cli-tab">
 
-### CLI Mode
 This approach is suitable for a VIM that has Linux installed:
 
-1. Power on and boot up.
-2. Open a terminal, and run `dd` to fill your bootloader partition with zeros:
-```
+* Power on and boot up.
+* Open a terminal, and run `dd` to fill your bootloader partition with zeros:
+
+```bash
 root@Khadas:~# dd if=/dev/zero of=/dev/bootloader
 dd: writing to '/dev/bootloader': No space left on device
 8193+0 records in
@@ -71,3 +95,6 @@ dd: writing to '/dev/bootloader': No space left on device
 4194304 bytes (4.2 MB, 4.0 MiB) copied, 1.1226 s, 3.7 MB/s
 root@Khadas:~# reboot
 ```
+
+</div>
+</div>

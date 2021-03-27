@@ -206,10 +206,13 @@ These items are useful when you want to upgrade your VIM2 SBC's operating system
 * [Boot From External Media](/vim2/BootFromExtMedia.html)
 * [Enter Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html)
 
-**Tips:**
+{% note info Tips %}
+
 * **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
 * **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing the `SD_USB` mark, as well as LibreELEC and CoreELEC.
 * In order to bootup from **SD/USB images**, you need Android (V180209 or newer) or Ubuntu (V180531 or newer) running on your eMMC with Multi-Boot activated.
+
+{% endnote %}
 
 # Upgrading eMMC Operating System Using USB-C Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your VIM2 SBC's operating system stored in its eMMC storage. For example, changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.
@@ -240,7 +243,11 @@ These items are useful if you wish to use your VIM2 SBC as a media center, for s
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amazon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-**Tip:** Nowadays most people stream their media, see [How To Install LibreELEC](/vim2/InstallLibreELEC.html).
+{% note info Tips %}
+
+Nowadays most people stream their media, see [How To Install LibreELEC](/vim2/InstallLibreELEC.html).
+
+{% endnote %}
 
 # Software Development / Advanced Crash Recovery
 Extreme cases of crash-recovery will require you to use the MRegister to reset your VIM2 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.

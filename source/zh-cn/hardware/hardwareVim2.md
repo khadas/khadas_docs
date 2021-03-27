@@ -1,7 +1,7 @@
-title: VIM2硬件资料文档
+title: Khadas VIM2 硬件资料文档
 ---
 
-# 主板资料
+## VIM2 主板资料
 
 * [Khadas VIM2 Specifications (V12)](https://dl.khadas.com/Hardware/VIM2/Specs/VIM2_Specs.pdf)
 * [Khadas VIM2 Specifications (V14)](https://dl.khadas.com/Hardware/VIM2/Specs/Khadas_VIM2_Specs_190403.pdf)
@@ -15,7 +15,7 @@ title: VIM2硬件资料文档
 * [Khadas VIM2 2D Drawing (PDF format) (V14)]()
 * [Amlogic S912 Datasheet](https://dl.khadas.com/Hardware/VIM2/Datasheet/S912_Datasheet_V0.220170314publicversion-Wesion.pdf)
 
-# 配件资料
+## 配件资料
 
 * [Case](https://www.khadas.com/product-page/diy-case)
 * [Fan](https://www.khadas.com/product-page/3705-cooling-fan)

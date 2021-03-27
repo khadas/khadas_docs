@@ -1,10 +1,12 @@
 title: Extra Power Input for Khadas VIMs
 ---
 
-**NOTE:**
+{% note info NOTE %}
 
 * **MAIN POWER SUPPLY COMES FROM THE USB-C PORT, THIS GUIDE IS FOR THE EXTRA POWER SUPPLY ONLY.**
 * **ENSURE THAT THE VOLTAGE OF YOUR POWER ADAPTER IS LISTED AS: 5.2V MAX, 2000mA.**
+
+{% endnote %}
 
 ### Overview
 Khadas VIM1/VIM2 is designed with three power supply ports:
@@ -21,14 +23,23 @@ USB-C is the normal power supply interface. It can also transport data at the sa
 The VIN port is a 4-Pin 1.25mm port. The pins are defined as such:
    
 ![Image of Extra_Power_VIN_Port](/images/vim1/vin_extra_power.png)
-*Tip: We don't have a VIN cable for sale, you'll need to DIY one by yourself.*
+
+{% note info Tips %}
+
+We don't have a VIN cable for sale, you'll need to DIY one by yourself.
+
+{% endnote %}
 
 ### Using USB Host as Extra Power Input
 You might also be interested in a male-to-male USB cable to provide extra power:
 
 ![Image of Male2Male_USB_Extra_Power](/images/vim1/usb_host_extra_power.png)
-*Tip: The USB port beside the USB-C port is recommended for use as extra power input; it is specced to 900mA, whilst the other USB port beside LAN port is specced to only 500mA. Check the schematic for further details.*
 
+{% note info Tips %}
+
+The USB port beside the USB-C port is recommended for use as extra power input; it is specced to 900mA, whilst the other USB port beside LAN port is specced to only 500mA. Check the schematic for further details.
+
+{% endnote %}
 
 ### See Also
 * [Interfaces Description](/vim1/VimInterfaces.html)

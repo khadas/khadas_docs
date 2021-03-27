@@ -1,4 +1,4 @@
-title: TONE1 硬件资料文档
+title: Tone1 硬件资料文档
 ---
 
 

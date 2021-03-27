@@ -214,6 +214,11 @@ sidebar:
     package_update_image: Fast Package Update Image
     how_to_use_adb_tool: ADB Usage
     how_to_use_fastboot: Fastboot Usage
+    how_to_access_i2c_android: How To Access I2c
+    how_to_enable_m2x_eth: How To Enable M2x Ethernet
+    how_to_change_logo_android: How To Change Boot Logo
+    how_to_change_animation: How To Change Boot Animation
+    how_to_use_uart_android: How To Use Uart
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: Upgrade the System
@@ -315,12 +320,28 @@ sidebar:
     vim2: VIM2
     vim3: VIM3
     edge: Edge
-    tone1: TONE1
+    tone1: Tone1
 
   firmware:
     firmware: Firmware
     vim1: VIM1
+    vim1_android: Android
+    vim1_ubuntu: Ubuntu
+    vim1_thirdparty: Third Party
     vim2: VIM2
+    vim2_android: Android
+    vim2_ubuntu: Ubuntu
+    vim2_thirdparty: Third Party
     vim3: VIM3
+    vim3_android: Android
+    vim3_ubuntu: Ubuntu
+    vim3_thirdparty: Third Party
+    vim3l: VIM3L
+    vim3l_android: Android
+    vim3l_ubuntu: Ubuntu
+    vim3l_thirdparty: Third Party
     edge: Edge
-    tone1: TONE1
+    edge_android: Android
+    edge_ubuntu: Ubuntu
+    edge_thirdparty: Third Party
+    tone1: Tone1

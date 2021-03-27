@@ -2,19 +2,19 @@ title: Setup Serial Debugging Tool
 ---
 
 ### Preparation
-- You need a "Serial Debugging Tool". In this guide, we will use a "USB to TTL Converter".
+* You need a `Serial Debugging Tool`. In this guide, we will use a `USB to TTL Converter`.
 
 ### Connections
 Follow these steps to make the correct connections:
 
-**1)** Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins once more to ensure that you've made correct connections:
+* Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins once more to ensure that you've made correct connections:
 
   * Tool Pin `GND`: <---> `Pin17` of VIMs's GPIO
   * Tool Pin `TXD`: <---> `Pin18` of VIMs's GPIO (Linux_Rx)
   * Tool Pin `RXD`: <---> `Pin19` of VIMs's GPIO (Linux_Tx)
   * Tool Pin `VCC`: <---> `Pin20` of VIMs's GPIO
 
-**2)** Insert the USB-end into your PC.
+* Insert the USB-end into your PC.
 
 The connections should look like this:
 
@@ -126,7 +126,7 @@ Report bugs to <minicom-devel@lists.alioth.debian.org>.
 
 ```
 
-**Tips (and booting into U-Boot):**
+{% note info Tips %}
 
 1. If the terminal output contains this line, you might need to type `sudo minicom`.
 ```
@@ -138,5 +138,7 @@ Report bugs to <minicom-devel@lists.alioth.debian.org>.
 
 4. You can use the U-Boot command line ([kvim#](/vim1/UBootUsage.html)), to change your VIM's default boot logo.bmp, according to the guide, [Boot Logo for U-Boot](/vim1/BuildBootLogoForUboot.html).
 
-### See Also:
+{% endnote %}
+
+### See Also
 * [Minicom wiki](https://en.wikipedia.org/wiki/Minicom)

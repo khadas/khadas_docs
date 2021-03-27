@@ -1,38 +1,47 @@
-title: How To Change Boot Logo
+title: How To Change the Boot Logo
 ---
 
-* Where is Logo
+{% note info There are 3 logos will display during the system booup for latest ubuntu image: %}
 
-Logo is stored in the `/usr/share` directory.
+* U-boot stage logo
+* Kernel stage logo
+* Ubuntu stage logo
 
-```shell
-$ ls /usr/share/fenix/logo/logo.bmp
-/usr/share/fenix/logo/logo.bmp
-```
+{% endnote %}
 
-* Logo format
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="uboot-tab" data-toggle="tab" href="#uboot" role="tab" aria-controls="uboot" aria-selected="true">U-boot Logo</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="kernel-tab" data-toggle="tab" href="#kernel" role="tab" aria-controls="kernel" aria-selected="false">Kernel Logo</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="ubuntu-tab" data-toggle="tab" href="#ubuntu" role="tab" aria-controls="ubuntu" aria-selected="false">Ubuntu Logo</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="uboot" role="tabpanel" aria-labelledby="uboot-tab">
 
-The image format requires a BMP format with a resolution of 500x500px and the Bit-Depth of 24 bits.
+U-boot stage logo is in file `/usr/share/fenix/logo/logo.bmp`.
+The image format is BMP with a resolution of `500x500px` and the bit-depth of `24 bits`.
 
-```shell
+For example, the default logo image format is below:
+
+```bash
 $ file /usr/share/fenix/logo/logo.bmp
 /usr/share/fenix/logo/logo.bmp: PC bitmap, Windows 3.x format, 500 x 500 x 24, image size 750002, resolution 2834 x 2834 px/m, cbSize 750056, bits offset 54
 ```
 
-* How To Change
+**Change the default logo:**
 
-Switch to root user
+You can use your own bmp logo image to replace the default one to change the default logo.
 
-```shell
-$ su
-Password:
-root@Khadas:/home/khadas#
-```
-
-Replace the logo in the correct format, and you will see the new logo after restarting
-
-```shell
-root@Khadas:/home/khadas# cp ${new-logo}.bmp /usr/share/fenix/logo/logo.bmp
-root@Khadas:/home/khadas# sync
-root@Khadas:/home/khadas# reboot
-```
+</div>
+<div class="tab-pane fade show" id="kernel" role="tabpanel" aria-labelledby="kernel-tab">
+TODO
+</div>
+<div class="tab-pane fade show" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
+TODO
+</div>
+</div>

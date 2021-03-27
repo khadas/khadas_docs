@@ -1,21 +1,21 @@
-title: 如何测试GPIO中断
+title: 如何使用GPIO中断
 ---
 
-# 却换root用户
+### 切换root用户
 
-只有root用户可以控制GPIO,在测试之前需要先切换到root用户
+只有root用户可以控制GPIO,在测试之前需要先切换到root用户。
 
-```shell
+```bash
 $ khadas@Khadas:~$ su
 Password: 
 root@Khadas:/home/khadas#
 ```
 
-# 设置GPIO引脚
+### 设置GPIO引脚
 
-* 确认你需要使用的引脚,以VIM3为例
+* 确认你需要使用的引脚,以VIM3为例：
 
-```shell
+```bash
 root@Khadas:/home/khadas# gpio readall
  +------+-----+----------+------+---+----+---- Model  Khadas VIM3 --+----+---+------+----------+-----+------+
  | GPIO | wPi |   Name   | Mode | V | DS | PU/PD | Physical | PU/PD | DS | V | Mode |   Name   | wPi | GPIO |
@@ -43,17 +43,13 @@ root@Khadas:/home/khadas# gpio readall
  +------+-----+----------+------+---+----+-------+----++----+-------+----+---+------+----------+-----+------+
 ```
 
-选择你需要使用的GPIO,确认对应的物理引脚和GPIO值.这里以GPIOH6为例,则对应的GPIO值为433,物理引脚为第15脚.
+选择你需要使用的GPIO，确认对应的物理引脚和GPIO值。这里以`GPIOH6`为例，则对应的GPIO值为`433`，物理引脚为第15脚。
 
-* export GPIO
+* Export GPIO
 
-export你选中的GPIO,才能对GPIO进行操作,
-
-```shell
+```bash
 root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
 ```
-
-# 编译GPIO测试程序
 
 * 测试程序源码`gpio-irq.c`
 
@@ -225,23 +221,22 @@ out:
 
 * 编译源码
 
-```shell
+```bash
 root@Khadas:/home/khadas# gcc -o gpio-irq gpio-irq.c
 ```
-# 测试使用
 
 * 运行程序
 
-```shell
+```bash
 ./gpio-irq 433 rising down
 .
 GPIO 433 interrupt occurred!
 ..........
 ```
 
-通过杜邦线连接物理引脚的Pin20和pin15,触发中断.现象如下:
+通过杜邦线连接物理引脚的`PIN20`和`PIN15`，触发中断。现象如下：
 
-```shell
+```bash
 root@Khadas:/home/khadas# ./gpio-irq 433 rising down
 .
 GPIO 433 interrupt occurred!
@@ -252,12 +247,13 @@ GPIO 433 interrupt occurred!
 .
 GPIO 433 interrupt occurred!
 ```
+
 * 测试程序说明
 
-运行格式如下
+运行格式如下：
 
-```shell
+```bash
 root@Khadas:/home/khadas# ./gpio-irq <edge> [pull]
 ```
 
-`<edge>`可设置为`rising`或者`failing`, [pull]为可选参数,设置为`up`或者`down`
+`<edge>`可设置为`rising`或者`failing`, [pull]为可选参数，设置为`up`或者`down`。
