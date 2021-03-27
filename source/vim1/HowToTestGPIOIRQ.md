@@ -1,4 +1,4 @@
-title: How To Test GPIO IRQ
+title: GPIO IRQ Usage
 ---
 
 ### Switch to root user
