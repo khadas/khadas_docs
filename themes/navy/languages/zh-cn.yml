@@ -311,6 +311,7 @@ sidebar:
     overview: 概述
     user_manual: 用户手册
     how_to_upgrade_firmware: 固件升级
+    how_to_use_tone_in_linux: linux下使用tone播放MPD
 
   hardware:
     hardware: 硬件资料

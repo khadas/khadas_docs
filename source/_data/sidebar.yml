@@ -269,6 +269,7 @@ tone1:
     overview: index.html
     user_manual: UserManual.html
     how_to_upgrade_firmware: HowtoUpgradeFirmware.html
+    how_to_use_tone_in_linux: HowToUseToneInLinux.html
 
 hardware:
   hardware:
