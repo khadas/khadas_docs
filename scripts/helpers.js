@@ -1,4 +1,5 @@
 /* global hexo */
+/* eslint-disable */
 
 'use strict';
 
@@ -6,6 +7,7 @@ var pathFn = require('path');
 var _ = require('lodash');
 var cheerio = require('cheerio');
 var lunr = require('lunr');
+const MOBILE_NAV = 'mobile-nav';
 
 var localizedPath = ['vim1', 'vim2', 'vim3', 'edge', 'tone1', "hardware", 'firmware', 'faq'];
 
@@ -52,6 +54,7 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
   var open = '';
   var self = this;
   var first_link = '';
+  var is_first_link = true;
 
   var prefix = 'sidebar.' + type + '.';
 
@@ -67,10 +70,18 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
         var secondary_first_link = 'yes';
         _.each(secondMenu, function (link, thirdMenuText) {
           var secondary_item_class = className + '-link';
+          if(link === 'index.html'){
+            is_first_link = false;
+          }
           if (link === path) {
             open = 'yes';
             secondary_open = 'yes';
             secondary_item_class += ' current';
+          }else if(is_first_link && path === 'index.html'){
+            open = 'yes';
+            secondary_open = 'yes';
+            secondary_item_class += ' current';
+            is_first_link = false;
           }
 
           if (secondary_first_link === 'yes') {
@@ -108,10 +119,17 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
         }
       } else {
         var link = secondMenu;
-
+        if(link === 'index.html'){
+          is_first_link = false;
+        }
         if (link === path) {
           open = 'yes';
           itemClass += ' current';
+          is_first_link = false;
+        }else if(is_first_link && path === 'index.html'){
+          open = 'yes';
+          itemClass += ' current';
+          is_first_link = false;
         }
 
         if (first_link === 'yes') {
@@ -159,14 +177,17 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
   return result;
 });
 
-hexo.extend.helper.register('header_menu', function(className) {
+hexo.extend.helper.register('header_menu', function (className) {
   var menu = this.site.data.menu;
   var result = '';
   var self = this;
   var lang = this.page.lang;
   var isEnglish = lang === 'en';
-
-  _.each(menu, function(path, title) {
+  var current = '';
+  if (className !== MOBILE_NAV){
+    result += '<div style="display:inline-block"><div class="btn-group">';
+  }
+  for (const [title, submenu] of Object.entries(menu)) {
     var currentPath = pathFn.dirname(self.path);
     if (!isEnglish && ~localizedPath.indexOf(title)) {
       path = lang + path;
@@ -174,14 +195,71 @@ hexo.extend.helper.register('header_menu', function(className) {
     } else {
       currentPath = '/' + currentPath + '/';
     }
+    if (Object.prototype.toString.call(submenu) === '[object Object]') {
+      var secondary_result = '';
+      var is_current = '';
+      var open = '';
 
-    if (path === currentPath) {
-		result += '<a href="' + self.url_for(path) + '" class="' + className + '-link current">' + self.__('menu.' + title) + '</a>';
-	} else {
-		result += '<a href="' + self.url_for(path) + '" class="' + className + '-link">' + self.__('menu.' + title) + '</a>';
+      _.each(submenu, function (path, subtitle) {
+        if (path === currentPath) {
+          open = 'open';
+          current = 'current';
+          is_current = true;
+        }
+        if (className === MOBILE_NAV){
+          secondary_result +=
+            '<a href="' + self.url_for(path) + '" class="' + className + '-link secondary ' + current + '">' +
+            self.__('menu.' + subtitle) +
+            '</a>';
+        }else{
+          secondary_result +=
+            '<li class="submenu">' +
+            '<a href="' + self.url_for(path) + '" class="' + className + '-link secondary ' + current + '">' +
+            self.__('menu.' + subtitle) +
+            '</a>' +
+            '</li>';
+        }
+        current = '';
+      });
+      if (is_current){
+        current = 'current';
+      }
+      if (className === MOBILE_NAV){
+        result +=
+          '<strong class="' + className + '-link ' + current + ' header">' +
+          '<details ' + open + '>' +
+          '<summary>' +
+          self.__('menu.' + title) +
+          '</summary>' +
+          secondary_result +
+          '</details>' +
+          '</strong>';
+      }else{
+        result +=
+          '<div class="' + className + '-link dropdown-toggle ' + current + '" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
+          self.__('menu.' + title) +
+          '</div>' +
+          '<ul class="dropdown-menu submenu-list" aria-labelledby="dropdownMenuLink">' +
+          secondary_result +
+          '</ul>' +
+          '</div>';
+      }
+      current = '';
+    } else {
+      var path = submenu;
+      if (path === currentPath) {
+        current = 'current';
+      }
+      result +=
+        '<a href="' + self.url_for(path) +'" class="' + className + '-link ' + current + ' header">' +
+        self.__('menu.' + title) +
+        '</a>';
+      current = '';
     }
-  });
-
+  }
+  if (className !== MOBILE_NAV){
+    result += '</div>';
+  }
   return result;
 });
 
