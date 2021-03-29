@@ -5,6 +5,13 @@ Check [Release Note](/firmware/Vim2UbuntuFirmwareReleaseNote.html).
 
 ## Linux 4.9 Images
 
+{% note info Note %}
+
+VIM2 Only support **Ubuntu 18.04** for Linux 4.9.
+
+{% endnote %}
+
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="true">Server (Headless)</a>
@@ -78,6 +85,13 @@ Check [Release Note](/firmware/Vim2UbuntuFirmwareReleaseNote.html).
 
 {% endnote %}
 
+{% note info Note %}
+
+VIM2 Only support **Ubuntu 20.04** for Mainline Linux.
+
+{% endnote %}
+
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="server2-tab" data-toggle="tab" href="#server2" role="tab" aria-controls="server2" aria-selected="true">Server (Headless)</a>
@@ -90,12 +104,16 @@ Check [Release Note](/firmware/Vim2UbuntuFirmwareReleaseNote.html).
 <div class="tab-pane fade show active" id="server2" role="tabpanel" aria-labelledby="server2-tab">
 
 * [VIM2_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM2_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="desktop2" role="tabpanel" aria-labelledby="desktop2-tab">
 
 * [VIM2_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM2_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 
 </div>

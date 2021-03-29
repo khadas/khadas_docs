@@ -5,6 +5,13 @@ title: Khadas VIM3L Ubuntu 固件
 
 ## Linux 4.9内核固件
 
+{% note info 注意 %}
+
+VIM3L仅支持4.9内核**Ubuntu 20.04**。
+
+{% endnote %}
+
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="true">Server (无桌面)</a>
@@ -28,12 +35,16 @@ title: Khadas VIM3L Ubuntu 固件
 <div class="tab-pane fade show active" id="emmc" role="tabpanel" aria-labelledby="emmc-tab">
 
 * [VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z) (最新)
+---
+**不再维护：**
 * [VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd" role="tabpanel" aria-labelledby="sd-tab">
 
 * [VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z) (最新)
+---
+**不再维护：**
 * [VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
 </div>
@@ -54,6 +65,8 @@ title: Khadas VIM3L Ubuntu 固件
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
 * [VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z) (最新)
+---
+**不再维护：**
 * [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 * [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917.7z)
 
@@ -61,6 +74,8 @@ title: Khadas VIM3L Ubuntu 固件
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
 * [VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z) (最新)
+---
+**不再维护：**
 * [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
 </div>
@@ -77,6 +92,13 @@ title: Khadas VIM3L Ubuntu 固件
 
 {% endnote %}
 
+{% note info 注意 %}
+
+VIM3L仅支持主线内核**Ubuntu 20.04**。
+
+{% endnote %}
+
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="server2-tab" data-toggle="tab" href="#server2" role="tab" aria-controls="server2" aria-selected="true">Server (无桌面)</a>
@@ -89,12 +111,16 @@ title: Khadas VIM3L Ubuntu 固件
 <div class="tab-pane fade show active" id="server2" role="tabpanel" aria-labelledby="server2-tab">
 
 * [VIM3L_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z) (最新)
+---
+**不再维护：**
 * [VIM3L_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="desktop2" role="tabpanel" aria-labelledby="desktop2-tab">
 
 * [VIM3L_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z) (最新)
+---
+**不再维护：**
 * [VIM3L_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 
 </div>
