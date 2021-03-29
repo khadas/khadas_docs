@@ -1,6 +1,8 @@
 title: Khadas VIM2 Ubuntu 固件
 ---
 
+查看[Release Note](/zh-cn/firmware/Vim2UbuntuFirmwareReleaseNote.html)。
+
 ## Linux 4.9内核固件
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">

@@ -1,6 +1,8 @@
 title: Khadas Edge Ubuntu Firmware
 ---
 
+Check [Release Note](/firmware/EdgeUbuntuFirmwareReleaseNote.html).
+
 ## Linux 4.4 Images
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">

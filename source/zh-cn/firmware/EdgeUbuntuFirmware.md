@@ -1,6 +1,8 @@
 title: Khadas Edge Ubuntu固件
 ---
 
+查看[Release Note](/zh-cn/firmware/EdgeUbuntuFirmwareReleaseNote.html)。
+
 ## Linux 4.4固件
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">

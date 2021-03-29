@@ -1,6 +1,8 @@
 title: Khadas VIM3L Ubuntu Firmware
 ---
 
+Check [Release Note](/firmware/Vim3lUbuntuFirmwareReleaseNote.html).
+
 ## Linux 4.9 Images
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">

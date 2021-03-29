@@ -1,6 +1,8 @@
 title: Khadas VIM3 Ubuntu Firmware
 ---
 
+Check [Release Note](/firmware/Vim3UbuntuFirmwareReleaseNote.html).
+
 ## Linux 4.9 Images
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
