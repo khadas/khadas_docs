@@ -1,11 +1,11 @@
 title: aml_NPU_app仓库说明以及使用
 ---
 
-`aml_npu_app仓库`是`aml_npu_demo_binaries`仓库的源码,可编译出`aml_npu_demo_binaries`仓库的库和demo.
+`aml_npu_app仓库`是`aml_npu_demo_binaries`仓库的源码，可编译出`aml_npu_demo_binaries`仓库的库和demo。
 
 # 获取仓库源码
 
-源码仓库存储在gitlab,仓库地址为:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
+源码仓库存储在gitlab，仓库地址为:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
 
 1. 通过git命令clone到本地
 
@@ -16,9 +16,9 @@ $ git clone https://gitlab.com/khadas/aml_npu_app
 
 2. 直接下载压缩包
 
-不使用git的用户也可以在仓库首页直接下载压缩包,再解压到板子上.
+不使用git的用户也可以在仓库首页直接下载压缩包，再解压到板子上。
 
-建议通过git命令clone,后续代码有更新时,可以直接`pull`
+建议通过git命令clone，后续代码有更新时，可以直接`pull`
 
 # 仓库源码说明
 
@@ -39,7 +39,7 @@ DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
 
 ## 库说明
 
-进入库源码的目录,也就是DDK的目录.
+进入库源码的目录，也就是DDK的目录。
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code
@@ -47,17 +47,17 @@ $ ls
 detect_mtcnn  detect_yoloface  detect_yolo_v2  detect_yolo_v3  detect_yolo_v3_tiny  detect_yolo_v4  facenet
 ```
 
-除了`detect_mtcnn`以外每一个目录都代表了一个不同的模型,每一个模型在编译时都会被编译成一个库.
+除了`detect_mtcnn`以外每一个目录都代表了一个不同的模型，每一个模型在编译时都会被编译成一个库。
 
 ```shell
-detect_yoloface       #yoloface模型,用于检测人脸
-detect_yolo_v2        #yolov2模型,用于物体检测
-detect_yolo_v3        #yolov3模型,用于物体检测
-detect_yolo_v3_tiny   #yolov3-tiny模型,用于物体检测
-detect_yolo_v4        #yolov4模型,用于物体检测
+detect_yoloface       #yoloface模型，用于检测人脸
+detect_yolo_v2        #yolov2模型，用于物体检测
+detect_yolo_v3        #yolov3模型，用于物体检测
+detect_yolo_v3_tiny   #yolov3-tiny模型，用于物体检测
+detect_yolo_v4        #yolov4模型，用于物体检测
 ```
 
-这里以`detect_yolo_v3`为例,说明每个目录的结构
+这里以`detect_yolo_v3`为例，说明每个目录的结构
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
@@ -122,7 +122,7 @@ $ ls
 
 ## 编译库
 
-编译库,只要进入到相应的库的目录编译即可.这里以yolov3为例
+编译库，只要进入到相应的库的目录编译即可。这里以yolov3为例
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
@@ -150,11 +150,11 @@ libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 
 ## 编译应用
 
-编译应用时,要先编译`libnn_detect.so`.这是编译其他应用的依赖库之一.
+编译应用时，要先编译`libnn_detect.so`。这是编译其他应用的依赖库之一.
 
 ### 编译`libnn_detect.so`
 
-进入`source_code`目录,编译`libnn_detect.so`
+进入`source_code`目录，编译`libnn_detect.so`
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/source_code
@@ -165,7 +165,7 @@ tee: /linux_build_sample.log: Permission denied
 make: Nothing to be done for 'all'.
 ```
 
-在`bin_r`目录下,就会生成`libnn_detect.so`
+在`bin_r`目录下，就会生成`libnn_detect.so`
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/source_code/bin_r
@@ -175,7 +175,7 @@ detect_log.o  detect.o  libnn_detect.so
 
 ### 编译应用demo
 
-这里以sample_demo_x11为例,
+这里以sample_demo_x11为例，
 
 ```shell
 ./build_vx.sh
@@ -212,7 +212,7 @@ tee: /linux_build_sample.log: Permission denied
 make: Nothing to be done for 'all'.
 ```
 
-生成的`detect_demo`文件就是我们需要的文件.
+生成的`detect_demo`文件就是我们需要的文件，
 
 ```shell
 $ ls bin_r_cv3/

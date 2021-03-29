@@ -3,7 +3,7 @@ title: 如何更新安卓启动动画
 
 * 原始动画文件目录
 
-安卓动画文件保存在 `device/khadas/common/products/mbox/bootanimation.zip` 目录.
+安卓动画文件保存在 `device/khadas/common/products/mbox/bootanimation.zip` 目录。
 
 * VIM3 设备动画存储目录
 
@@ -44,20 +44,20 @@ c 1 64 part3
 c 1 15 part4
 
 ```
-`543 143 60`:前两个数字代表图片的像素宽度和高度，60代表帧数，也就是1秒播放的图片张数
+`543 143 60`:前两个数字代表图片的像素宽度和高度，60代表帧数，也就是1秒播放的图片张数。
 
-`c 1 30 part0`: c代表标志位，1表示循环次数为1次，0表示阶段间隔时间为0，part0表示对应文件夹 
+`c 1 30 part0`: c代表标志位，1表示循环次数为1次，0表示阶段间隔时间为0，part0表示对应文件夹。
 其他part文件夹类似含义
 
 ### 怎样去生成Bootanimation.zip
 
-在你自定义part目录和desc.txt 文件后，你可以使用下列命令去生成bootanimation.zip
+在你自定义part目录和desc.txt 文件后，你可以使用下列命令去生成bootanimation.zip。
 
 ```
 zip -r -X -Z store bootanimation part*/* desc.txt 
 
 ``` 
-push bootanimation.zip to system/media ,重启设备将显示新的动画
+push bootanimation.zip to system/media，重启设备将显示新的动画。
 
 ```
 adb push bootanimation.zip system/media/bootanimation.zip

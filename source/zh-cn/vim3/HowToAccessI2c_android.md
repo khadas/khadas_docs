@@ -9,6 +9,7 @@ This guide is about how to access i2c on Android.
 * `Android V210128` or newer
 
 ### 连接
+
 **I2C 3**
 `Sensor SCL` <-> `I2C0_SCK (PIN 22)`
 `Sensor SDA` <-> `I2C0_SDA (PIN 23)`
@@ -23,6 +24,7 @@ This guide is about how to access i2c on Android.
 
 
 ### 检测设备
+
 检测挂在`I2C 3`的设备:
 ```
 # i2cdetect -y -r 3
@@ -53,12 +55,14 @@ This guide is about how to access i2c on Android.
 *Note: 执行这些命令需要root权限。*
 
 ### 从设备读寄存器值
+
 读挂载在I2C4总线上0x22设备寄存器地址0x0d的值
 ```
 # i2cget -f -y 4 0x22 0x0d
 0x0f
 ```
 ### 列出设备寄存器的值 
+
 列出I2C4总线上0x22的寄存器值
 ```
 # i2cdump -f -y 4 0x22 
@@ -82,6 +86,7 @@ e0: 00 00 00 00 00 00 00 00 00 90 39 0c 00 00 00 00    .........?9?....
 f0: 00 00 08 00 00 00 00 00 00 00 00 00 00 00 01 00    ..?...........?.
 ```
 ### 写设备的寄存器值
+
 向总线I2C4上的0x18设备寄存器0x20写入0，使用命令i2cdump去查询
 ```
 # i2cset -f -y 4 0x18 0x20 0
@@ -108,7 +113,9 @@ f0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
 ```
 
 ### 通过khadas api 操作i2c 
+
 除了用命令访问I2C外，还可以通过APK访问，例如，我们封装了一个jar包，其中包含I2C读写接口
+
 **I2C read**
 Function：public int i2c_read_byte_data(int bus, int addr, int reg)
 Parameter：bus: Device mounted I2C bus addr: Device I2C address reg: Device register

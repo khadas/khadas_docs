@@ -34,7 +34,7 @@ OK
 
 ## 掉电重启
 
-LITE模块需要掉电重启才能切换模式,拔出VIMs的电源,重新插上.LTE模块现在就工作在USBNet模式了
+LITE模块需要掉电重启才能切换模式，拔出VIMs的电源，重新插上。LTE模块现在就工作在USBNet模式了
 
 ## 恢复LTE模块
 
@@ -109,7 +109,7 @@ AT+QCFG="usbnet",0
 ![LTE_gnome_open](/images/vim3/LTE_gnome_open.png)
 
 
-在右上角菜单栏选中以后,就会看到`Mobile Board Settings`选项
+在右上角菜单栏选中以后，就会看到`Mobile Board Settings`选项。
 
 ### Step2: 新建一个连接
 
@@ -120,26 +120,26 @@ AT+QCFG="usbnet",0
 
 ### Step3: 选择运营商所在国家
 
-选择运营商所在国家,这个应该与sim卡相同.
+选择运营商所在国家，这个应该与sim卡相同。
 
 ![LTE_gnome_country](/images/vim3/LTE_gnome_country.png)
 ### Step4: 选择运营商
 
-选择呢运营商,这里应与你的sim卡相同.
+选择呢运营商，这里应与你的sim卡相同。
 
 ![LTE_gnome_provider](/images/vim3/LTE_gnome_provider.png)
 ### Step5: 输入密码连接
 
-选择完运营商以后,一路`Next`,最后`apply`.此时需要输入密码,默认是`000`
+选择完运营商以后，一路`Next`，最后`apply`。此时需要输入密码，默认是`000`
 
 ![LTE_gnome_apply](/images/vim3/LTE_gnome_apply.png)
 ![LTE_gnome_psk](/images/vim3/LTE_gnome_psk.png)
-输入以后以后就能正常连接了.
+输入以后以后就能正常连接了。
 ![LTE_gnome_success](/images/vim3/LTE_gnome_success.png)
 
 ### 修改连接密码
 
-打开相应的设置,在`Mobile Broadband`里面可以更新密码.
+打开相应的设置，在`Mobile Broadband`里面可以更新密码。
 
 ![LTE_gnome_change_psk](/images/vim3/LTE_gnome_change_psk.png)
 
