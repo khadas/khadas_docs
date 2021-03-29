@@ -1,4 +1,4 @@
-title: Use Tone1 / Tone2 to Play MPD in Linux
+title: Tone with MPD In Linux
 ---
 
 ## System Preparation
