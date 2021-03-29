@@ -34,7 +34,7 @@ khadas@Khadas:~$ cd /sys/bus/w1/devices
 khadas@Khadas:/sys/bus/w1/devices$ ls
 28-0119395ebf91  w1_bus_master1
 ```
-可以看见`ds18b20`的设备节点是`28-0119395ebf91`.进入节点目录,
+可以看见`ds18b20`的设备节点是`28-0119395ebf91`，进入节点目录。
 
 ```shell
 khadas@Khadas:/sys/bus/w1/devices$ cd 28-0119395ebf91

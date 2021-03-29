@@ -3,7 +3,7 @@ title: 如何使用ADB
 
 # Install ADB
 
-这里将会介绍如何安装以及如何使用ADB工具
+这里将会介绍如何安装以及如何使用ADB工具。
 
 ## 如何安装ADB
 
@@ -65,7 +65,7 @@ $ adb connect xxx.xxx.xxx.xxx(IP 地址)
 $ adb remount
 ```
 
-* 进而可以进行push操作来debug
+* 进而可以进行push操作来debug。
 
 ### USB ADB：
 
