@@ -8,7 +8,10 @@ title: 升级固件
 alt="Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)" width="480" height="360" border="10" /></a>
 
 链接: [YouTube](http://www.youtube.com/watch?v=qRswdL1HPZU)
-注意: 对于苹果用户,需要为升级固件的工具提供可执行权限`chmod +x ./tone_dfu_tool_macos`
+
+{% note info 注意 %}
+对于苹果用户,需要为升级固件的工具提供可执行权限`chmod +x ./tone_dfu_tool_macos`
+{% endnote %}
 
 # Tone1 - 升级到khadas官方v2.00版本
 
@@ -125,7 +128,9 @@ Installing tone-burn-tool...
 Done!
 ```
 
-*注意：安装过程中需要root权限。*
+{% note info 注意 %}
+安装过程中需要root权限。
+{% endnote %}
 
 **升级:**
 
@@ -154,8 +159,10 @@ Bus 001 Device 005: ID 20b1:0008 XMOS Ltd
 ```
 $ sudo toneboard-burn-tool -i /path/to/firmware.bin
 ```
-*注意：升级会停留在 `Waiting for device to restart and enter DFU mode` 20s，请耐心等待。*
 
+{% note info 注意 %}
+升级会停留在 `Waiting for device to restart and enter DFU mode` 20s，请耐心等待。
+{% endnote %}
 
 * 如果升级成功，你会看到如下信息：
 
@@ -209,7 +216,7 @@ VID = 0x3353, PID = 0xa002
 ... Returning device to application mode
 ```
 
-**注意:**
+{% note info 注意 %}
 
 * 如果在Mac OS尝试升级固件时输出如下信息：
 ```
@@ -222,6 +229,8 @@ Abort trap: 6
 * 表示你需要升级 `libusb`, 你可以通过输入 `brew install libusb`来完成。
 * 如果输入 `brew install libusb` 没有反应， 表示你需要升级 [HomeBrew](https://brew.sh/)。
 * 如果 HomeBrew 升级失败， 你需要安装 Xcode 命令行工具, 在终端中输入 `xcode-select --install` 。
+
+{% endnote %}
 
 </div>
 </div>
