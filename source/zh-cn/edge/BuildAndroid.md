@@ -1,17 +1,17 @@
 title: 编译安卓
 ---
-# 准备
+## 准备
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
 - [x] [下载安卓源码](/zh-cn/edge/DownloadAndroidSourceCode.html)
 - [x] [安装Rockchip平台工具链](/zh-cn/edge/InstallToolchains.html)
 
-# 编译
+## 编译
 
 {% note info 注意 %}
 在开始编译前，确保已经搭建好如上`准备`所述的环境。
 {% endnote %}
 
-# android 10.0:
+## android 10.0:
 
 **编译 U-boot：**
 ```sh
@@ -70,7 +70,7 @@ $ source build/envsetup.sh
 $ lunch rk3399_Android10-userdebug
 $ ./pack_image.sh
 ```
-# android 9.0:
+## android 9.0:
 
 **编译 U-boot：**
 ```sh
@@ -128,7 +128,7 @@ $ source build/envsetup.sh
 $ lunch rk3399-userdebug
 $ ./pack_image.sh
 ```
-# android 7.1:
+## android 7.1:
 
 **编译 U-boot：**
 ```sh
@@ -179,6 +179,6 @@ $ source build/envsetup.sh
 $ lunch rk3399_all-userdebug
 $ ./pack_image.sh
 ```
-# 参考
+## 参考
 * [通过USB数据线升级](/zh-cn/edge/UpgradeViaUSBCable.html)
 * [通过TF卡升级](/zh-cn/edge/UpgradeViaTFBurningCard.html)

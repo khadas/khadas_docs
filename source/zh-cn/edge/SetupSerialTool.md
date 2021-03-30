@@ -1,23 +1,23 @@
 title: 设置串口调试工具
 ---
 
-# Edge-V
+## Edge-V
 
 您不需要Edge-IO板就可以在Edge-V上设置串行调试器。 只需使用板载GPIO引脚，如图所示（与VIM1，VIM2和VIM3相同）。
 
 ![VIM1-GPIO](/images/vim1/SerialConnections_3Pin.jpg)
 
-# Edge
+## Edge
 
 如果您使用的是Edge SBC，请继续阅读以下内容：
 
-# 准备
+## 准备
 
 - [x] 串行调试工具。 在本指南中，我们将使用USB到TTL转换器。 确保它支持"1500000"波特率。
 - [x] Edge需要Edge-IO分支板来支持串行调试。
 
 
-# 连接
+## 连接
 
 按如下步骤连接：
 
@@ -37,7 +37,7 @@ title: 设置串口调试工具
 
 3) 把串口工具USB插入PC。
 
-# 设置Kermit
+## 设置Kermit
 
 **安装c-kermit:**
 
@@ -67,7 +67,7 @@ set send pack 1000
 set window 5
 c
 ```
-# 支持`1500000` 波特率
+## 支持`1500000` 波特率
 
 为了支持`1500000`波特率，需要替换`kermit` 文件，点击[这里](https://dl.khadas.com/Tools/kermit)下载，并执行如下命令。
 
@@ -101,7 +101,7 @@ TE: 116640
 ```sh
 /dev/ttyUSB0: Permission denied
 ```
-# SecureCRT BUG
+## SecureCRT BUG
 
 如果你使用SecureCRT连接你的edge，你会看到log是这样子的
 ![SecureCRT BUG](/images/edge/SourceCRT_BUG.png)
@@ -115,6 +115,6 @@ TE: 116640
 如果设置了还是不能连接，你可能需要检查你的串口设置时候正确了
 {% endnote %}
 
-# 参考
+## 参考
 
 * [C-Kermit官网](http://www.columbia.edu/kermit/index.html)

@@ -1,9 +1,9 @@
 title: How To Use ADB
 ---
 
-# Install ADB
+## Install ADB
 
-## How to install ADB
+### How to install ADB
 
 First you must synchronized index file,then you can Install it directly.
 
@@ -12,17 +12,17 @@ $ sudo apt-get update
 $ sudo apt-get install android-tools-adb
 ```
 
-## Add permission & Write configuration files
+### Add permission & Write configuration files
 
 Now,It's already installed on your computer.But you still need to do some preparations.
 
-### Add permission
+#### Add permission
 
 ```shell
 $ sudo  useradd -G plugdev $USER
 ```
 
-### Write configuration files
+#### Write configuration files
 
 touch a rules file for it.
 
@@ -38,15 +38,15 @@ SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0666"
 
 This is a general setup.
 
-## Restart udev
+### Restart udev
 
 ```shell
 $ sudo /etc/init.d/udev restart
 ```
 
-# How To Use ADB 
+## How To Use ADB 
 
-## ADB over Wi-Fi/LAN
+### ADB over Wi-Fi/LAN
 * Ensure that either the Wi-Fi or LAN is connected.
 
 * Enable ADB debugging on your Device: `Settings-->Developer options--->USB debugging`
@@ -63,7 +63,7 @@ $ adb remount
 ```
 * Then you can push to debug
 
-## ADB over USB
+### ADB over USB
 
 * Ensure that a USB-C cable is connected between your PC and VIM.
 
@@ -75,6 +75,6 @@ $ adb remount
 $ adb shell
 ```
 
-# Resources
+## Resources
 * [Android Debug Brige](https://developer.android.com/studio/command-line/adb.html)
 

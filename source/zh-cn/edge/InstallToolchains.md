@@ -1,7 +1,7 @@
 title: 安装Rockchip平台工具链
 ---
 
-# 搭建用于编译Android的环境，建议使用64位的Ubuntu 16.04，需要安装如下软件包：
+## 搭建用于编译Android的环境，建议使用64位的Ubuntu 16.04，需要安装如下软件包：
 
 ```sh
 $ sudo apt-get install bison g++-multilib git gperf libxml2-utils make python-networkx zip

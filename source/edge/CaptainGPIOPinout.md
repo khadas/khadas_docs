@@ -1,7 +1,7 @@
 title: Captain GPIO Pinout
 ---
 
-# Pinout map(V11):
+## Pinout map(V11):
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---

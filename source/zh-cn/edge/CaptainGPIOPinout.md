@@ -1,7 +1,7 @@
 title: Captain GPIO管脚映射
 ---
 
-# 管脚映射(V11):
+## 管脚映射(V11):
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---

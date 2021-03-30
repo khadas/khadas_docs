@@ -1,19 +1,19 @@
 title: Setup Serial Debugging Tool
 ---
 
-# Edge-V
+## Edge-V
 You won't need an Edge-IO board to setup the serial debugger on an Edge-V. Just use the on-board GPIO pins, as shown in this picture (same as VIM1, VIM2, and VIM3).
 
 ![VIM1-GPIO](/images/vim1/SerialConnections_3Pin.jpg)
 
-# Edge
+## Edge
 If you're using an Edge SBC, continue reading below:
 
-# Preparation
+## Preparation
 - [x] A Serial Debugging Tool. In this guide, we will use a USB to TTL Converter. Ensure that it supports the `1500000` baudrate.
 - [x] Edge needs the Edge-IO breakout-board to support serial debugging.
 
-# Connections
+## Connections
 Follow these steps to make the correct connections:
 
 1) Connect Edge-IO board to Edge via the FPC connector.
@@ -31,7 +31,7 @@ The connections should look like this:
 
 3) Insert the USB-end into your Host-PC.
 
-# Setup Kermit Protocol(C-Kermit)
+## Setup Kermit Protocol(C-Kermit)
 
 **Install c-kermit:**
 
@@ -60,7 +60,7 @@ set send pack 1000
 set window 5
 c
 ```
-# Enable 1500000 baudrate
+## Enable 1500000 baudrate
 To enable `1500000` baudrate, you need to replace the `kermit` binary. See [Khadas Kermit](https://dl.khadas.com/Tools/kermit) to download, and execute the following commands:
 
 ```sh
@@ -94,7 +94,7 @@ If the print-out contains the following line, you might need to check the step `
 ```
 {% endnote %}
 
-#SecureCRT Bug
+## SecureCRT Bug
 
 If you use SecureCRT to connect the Edge-V or edge,maybe you will see this.
 ![SrcureCRT BUG](/images/edge/SourceCRT_BUG.png)
@@ -108,6 +108,6 @@ This is not caused by incorrect settings. This is a CRT bug. You need to follow 
 If these steps don't work, maybe you need to confirm your settings first.
 {% endnote %}
 
-# See Also
+## See Also
 
 * [C-Kermit Offical website](http://www.columbia.edu/kermit/index.html)

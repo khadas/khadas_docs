@@ -1,7 +1,7 @@
 title: 如何擦除eMMC
 ---
 
-# 在Windows下
+## 在Windows下
 
 你可以用[AndroidTool](https://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.58.zip)来擦除eMMC。
 
@@ -15,7 +15,7 @@ title: 如何擦除eMMC
 4. 点击`擦除Flash`来擦除eMMC。
 ![AndroidTool Erase eMMC](/images/edge/AndroidTool_erase_zh.png)
 
-# 在Ubuntu下
+## 在Ubuntu下
 
 	你可以使用[Linux_Upgrade_Tool](https://dl.khadas.com/Tools/Linux_Upgrade_Tool_v1.34.zip)来擦除eMMC。
 

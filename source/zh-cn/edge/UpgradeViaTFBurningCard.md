@@ -1,7 +1,7 @@
 title:  通过TF卡升级固件
 ---
 
-# 准备工作
+## 准备工作
 
 * 一台Windows电脑
 * 下载[SDDiskTool](https://dl.khadas.com/Tools/SDDiskTool_zh_v1.53.zip)并解压
@@ -33,7 +33,7 @@ title:  通过TF卡升级固件
 
 ![Sdtool](/images/edge/Sdtool_zh_3.png)
 
-# 使用TF烧录卡进行升级
+## 使用TF烧录卡进行升级
 
 1. 把制作好的TF烧录卡插入Edge TF卡插槽
 2. 通过HDMI线连接Edge和显示器
@@ -48,6 +48,6 @@ title:  通过TF卡升级固件
 
 这时请弹出TF卡，然后Edge会自动重启进入到刚烧录好的系统。
 
-# 参考
+## 参考
 
 [通过USB数据线升级](/zh-cn/edge/UpgradeViaUSBCable.html)

@@ -1,7 +1,7 @@
 title: How To Test GPIO IRQ
 ---
 
-# Switch to root user
+## Switch to root user
 
 Only root user can control GPIO, you need to switch to root user before testing.
 
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-# GPIO Pin Control Setting
+## GPIO Pin Control Setting
 
 * Confirm the pins you need to use, take VIM3 as an example:
 
@@ -53,7 +53,7 @@ Export the selected GPIO to operate the GPIO,
 root@Khadas:/home/khadas# echo 112 > /sys/class/gpio/export
 ```
 
-# Compile GPIO test program
+## Compile GPIO test program
 
 * source code for `gpio-irq.c`
 
@@ -228,7 +228,7 @@ out:
 ```shell
 root@Khadas:/home/khadas# gcc -o gpio-irq gpio-irq.c
 ```
-# Compile the source code
+## Compile the source code
 
 * run
 

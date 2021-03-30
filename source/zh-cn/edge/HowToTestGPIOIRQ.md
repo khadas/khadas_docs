@@ -1,7 +1,7 @@
 title: 如何测试GPIO中断
 ---
 
-# 却换root用户
+## 却换root用户
 
 只有root用户可以控制GPIO，在测试之前需要先切换到root用户。
 
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-# 设置GPIO引脚
+## 设置GPIO引脚
 
 * 确认你需要使用的引脚，以VIM3为例。
 
@@ -53,7 +53,7 @@ export你选中的GPIO，才能对GPIO进行操作，
 root@Khadas:/home/khadas# echo 112 > /sys/class/gpio/export
 ```
 
-# 编译GPIO测试程序
+## 编译GPIO测试程序
 
 * 测试程序源码`gpio-irq.c`
 
@@ -228,7 +228,7 @@ out:
 ```shell
 root@Khadas:/home/khadas# gcc -o gpio-irq gpio-irq.c
 ```
-# 测试使用
+## 测试使用
 
 * 运行程序
 

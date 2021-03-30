@@ -3,7 +3,7 @@ title: How To Access GPIO
 
 This guide will teach you how to access the GPIO using Android and Ubuntu.
 
-# GPIO Number List
+## GPIO Number List
 ```
 PIN         GPIO        Number
 PIN15       GPIO1_C2     50
@@ -16,7 +16,7 @@ PIN23       GPIO1_B7     47
 Some GPIOs may be set to other functions by default, e.g. I2C. If you want to use them as GPIO you need to modify the DTS.
 {% endnote %}
 
-# How To Get GPIO Number
+## How To Get GPIO Number
 You can use the following formula to get GPIO number:
 ```
 n = (block_number * 32) + (sub_block_number * 8) + index

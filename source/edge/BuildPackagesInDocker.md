@@ -8,7 +8,7 @@ This guide is about how to build packages(libdrm, gstreamer, mpp, etc.) using Do
 We only use the arm64 architecture.
 {% endnote %}
 
-# Install Docker
+## Install Docker
 Requires your Host PC to be `Ubuntu 16.04` or newer.
 
 ```sh
@@ -74,7 +74,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-# Build Debian Docker Image
+## Build Debian Docker Image
 We provide a Debian stretch arm64 dockerfile. Clone it from GitHub.
 
 ```sh
@@ -84,7 +84,7 @@ $ sudo docker build -t rockchip-arm64 .
 
 Now you'll see a Docker image named `rockchip-arm64`, which also includes a debian multi-architecture cross-compiling enviroment.
 
-# Build Packages
+## Build Packages
 
 Enter Docker Shell:
 
@@ -104,7 +104,7 @@ Start To Build:
 # ls ../*.deb
 ```
 
-# Example
+## Example
 Build libdrm.
 
 ```sh

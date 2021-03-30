@@ -1,18 +1,18 @@
 title: Building Android Source Code
 ---
 
-# Preperations
+## Preperations
 - [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
 - [x] [Downloading the Android Source](/edge/DownloadAndroidSourceCode.html)
 - [x] [Install Toolchains for Rockchip Platform](/edge/InstallToolchains.html)
 
-# Building
+## Building
 
 {% note info Note %}
 Before you start to build, make sure you have done all the `Preperations` listed above.
 {% endnote %}
 
-# android 10.0:
+## android 10.0:
 
 **Build U-boot：**
 ```sh
@@ -72,7 +72,7 @@ $ lunch rk3399_Android10-userdebug
 $ ./pack_image.sh
 ```
 
-# android 9.0:
+## android 9.0:
 
 **Build U-boot：**
 ```sh
@@ -130,7 +130,7 @@ $ source build/envsetup.sh
 $ lunch rk3399-userdebug
 $ ./pack_image.sh
 ```
-# android 7.1:
+## android 7.1:
 
 **Build U-boot：**
 ```sh
@@ -181,6 +181,6 @@ $ source build/envsetup.sh
 $ lunch rk3399_all-userdebug
 $ ./pack_image.sh
 ```
-# See Also
+## See Also
 * [Upgrade Via an USB Cable](/edge/UpgradeViaUSBCable.html)
 * [Upgrade Via a Burnning TF Card](/edge/UpgradeViaTFBurningCard.html)

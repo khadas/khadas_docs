@@ -3,7 +3,7 @@ title: 如何使用单总线
 
 以Edge-V为例,Captian请将dtb替换为`rk3399-khadas-captain-linux.dtb`.Edge不支持这个驱动
 
-# 通过Overlays打开onewire驱动
+## 通过Overlays打开onewire驱动
 
 ```shell
 $ vim /boot/env.txt
@@ -25,7 +25,7 @@ overlays=i2c2 spi3 i2s0 onewire
 
 重启设备,加载单总线驱动。
 
-# 使用单总线
+## 使用单总线
 
 进入驱动目录,
 

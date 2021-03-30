@@ -7,7 +7,7 @@ title: 在Docker中编译软件包
 我们仅仅提供arm64架构的Docker环境。
 {% endnote %}
 
-# 安装Docker
+## 安装Docker
 需要主机系统为`Ubuntu 16.04`或更新。
 
 ```sh
@@ -78,7 +78,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-# 编译Debian Docker镜像
+## 编译Debian Docker镜像
 
 我们提供`Debian stretch arm64`的dockerfile，从GitHub下载。
 
@@ -88,7 +88,7 @@ $ sudo docker build -t rockchip-arm64 .
 ```
 现在编译好了一个名为`rockchip-arm64`包含多架构交叉编译环境的Docker镜像。
 
-# 编译软件包
+## 编译软件包
 
 进入Docker命令行：
 
@@ -108,7 +108,7 @@ $ docker run -it -v <package dir>:/home/rk/packages rockchip-arm64 /bin/bash
 # ls ../*.deb
 ```
 
-# 例子
+## 例子
 编译libdrm。
 
 ```sh
