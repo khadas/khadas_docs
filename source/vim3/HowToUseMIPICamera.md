@@ -4,7 +4,10 @@ title: How To Use MIPI Camera
 # How To Connect MIPI Camera
 
 Attaching a camera for the first-time to VIM3's MIPI-CSI header? Refer to this picture:
-**note**: The reverse connection will burn the camera, please check the connection of the picture carefully before connecting
+
+{% note info Note %}
+The reverse connection will burn the camera, please check the connection of the picture carefully before connecting
+{% endnote %}
 
 ![image](/images/vim3/docs_vim3_camera_OS08A10.jpg)
 

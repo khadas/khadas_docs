@@ -99,7 +99,11 @@ kvim3#reset
 # Troubleshooting
 1. Bootmode is boot from SPI, but the u-boot in SPI flash is corrupted, can't enter u-boot command line.
 	1) If u-boot in eMMC is correct, you can try [TST mode](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) or try [SPI MASKROM]() to boot from eMMC, then enter u-boot command line, erase the SPI flash or burn the new u-boot to SPI flash.
-	**Note: Don't use your PC to supply the power, or you will enter usb burning mode!**
+    {% note info Note %}
+		Don't use your PC to supply the power, or you will enter usb burning mode!
+    {% endnote %}
 
 	2) U-boot in eMMC is also corrupted, you have to try [TST mode](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) to enter usb burning mode, and flash the image to emmc, then follow `step 1)`.
-	**Note: You need to connect the board to your host PC!**
+	{% note info Note %}
+        You need to connect the board to your host PC!
+    {% endnote %}

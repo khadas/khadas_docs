@@ -11,7 +11,9 @@ title: Building Android Source Code
 
 # Building
 
-*Note: Before you start to build, make sure you have done all the `Preparations` listed above.*
+{% note info Note %}
+	Before you start to build, make sure you have done all the `Preparations` listed above.
+{% endnote %}
 
 **Build U-Boot:**
 
@@ -39,16 +41,14 @@ $ make -jN otapackage
 
 * out/target/product/TARGET/update.img
 
-*Note:*
+{% note info Note %}
+	* Replace `N` as the number you want when you run 'make -jN'
+	* Replace `TARGET_LUNCH` to your lunch select.
+	  * For VIM3, it's kvim3-userdebug.
+	  * For VIM3L, it's kvim3l-userdebug.
+	* `TARGET` should be kvim3 or kvim3l
 
-* Replace `N` as the number you want when you run 'make -jN'
-* Replace `TARGET_LUNCH` to your lunch select.
-  * For VIM3, it's kvim3-userdebug.
-  * For VIM3L, it's kvim3l-userdebug.
-* `TARGET` should be kvim3 or kvim3l
-
-
-
+{% endnote %}
 
 **Build Linux kernel:**
 

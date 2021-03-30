@@ -73,7 +73,9 @@ $ cd {workspace}/aml_npu_demo_binaries/inceptionv3/VIM3
 $ ./inceptionv3 inception_v3.nb path/to/picture
 ```
 
-**note**:The size of the picture must correspond to the size of the model, so here, the input of the inceptionv3 model is 299x299x3, and the incoming recognized picture must also be 299x299
+{% note info Note %}
+The size of the picture must correspond to the size of the model, so here, the input of the inceptionv3 model is 299x299x3, and the incoming recognized picture must also be 299x299
+{% endnote %}
 
 # yolo series model
 

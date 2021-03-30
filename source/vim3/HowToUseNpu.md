@@ -32,8 +32,9 @@ $ cd ~/npu/aml_npu_sdk/acuity-toolkit
 $ for req in $(cat requirements.txt); do pip3 install $req; done
 ```
 
-*Note: The command will install TensorFlow CPU version by default, if your PC has NVIDIA GPU(s) you can choose to install [GPU version](https://www.tensorflow.org/install/gpu) to speed up the conversion.*
-
+{% note info Note %}
+The command will install TensorFlow CPU version by default, if your PC has NVIDIA GPU(s) you can choose to install [GPU version](https://www.tensorflow.org/install/gpu) to speed up the conversion.
+{% endnote %}
 
 Verify the TensorFlow:
 ```
@@ -86,7 +87,9 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 -rw-rw-r-- 1 nick nick     1294 9月  20 15:16 vnn_pre_process.h
 ```
 
-*Note: You need to modify the model file path and other parameters in the scripts if you want to convert your model.*
+{% note info Note %}
+You need to modify the model file path and other parameters in the scripts if you want to convert your model.
+{% endnote %}
 
 They are just sample scripts to convert the model, for more information please refer to model conversion documentation`docs/en/Model_Transcoding and Running User Guide_V0.5.pdf`.
 
@@ -109,7 +112,9 @@ $ cp ~/npu/aml_npu_sdk/linux_sdk/demo/inceptionv3/build_vx.sh .
 $ ./build_vx.sh ~/npu/aml_npu_sdk/linux_sdk/linux_sdk
 ```
 
-*Note: Build script usage: **./build_vx.sh linux-SDK-directory**.*
+{% note info Note %}
+Note: Build script usage: **./build_vx.sh linux-SDK-directory**.
+{% endnote %}
 
 You will find the executable binary in directory `bin_r` if compile sucessfully.
 
@@ -141,7 +146,9 @@ khadas@Khadas:~$ sudo reboot
 
 Copy the executable binary `inceptionv3`, model data `inception_v3.nb`, and test pictures (size 299x299) to VIM3 and run it
 
-*Note: You can find the sample pictures in directory `linux_sdk/demo/inceptionv3/bin_demo`.*
+{% note info Note %}
+Note: You can find the sample pictures in directory `linux_sdk/demo/inceptionv3/bin_demo`.
+{% endnote %}
 
 ```
 root@Khadas:~/inceptionv3# ./inceptionv3 inception_v3.nb goldfish_299x299.jpg 

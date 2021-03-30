@@ -51,7 +51,7 @@ quant15.jpg   quant21.jpg  quant28.jpg  quant34.jpg  quant40.jpg  quant47.jpg  q
 
 ### Convert and quant
 
-```
+```sh
 $ cd workspace/tengine_khadas_sdk/tengine_tools/quant_tool
 $ ./quant_tool -f darknet -m workspace/yolov3.weights -p workspace/yolov3.cfg -o yolov3.tmfile -a MINMAX -i workspace/quant -x 128,128,128 -y 128,128,128 -z 416,416,3 -c INTERNAL -t UINT8 -n 100
 major: 0, minor: 2, revision: 0, seen: 0, transpose: 0

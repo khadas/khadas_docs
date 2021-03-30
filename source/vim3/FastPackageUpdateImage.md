@@ -82,10 +82,12 @@ $ make systemimage
 $ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
+{% note info Note %}
 
-**Note**: 
 * Replace `PATH_YOUR_PROJECT` to your project path
 * Replace `TARGET_LUNCH` to your lunch select.
   * For VIM3, it's kvim3-userdebug.
   * For VIM3L, it's kvim3l-userdebug.
 * `TARGET` should be kvim3 or kvim3l
+
+{% endnote %}

@@ -50,7 +50,9 @@ Detect device on `I2C 4`:
 ```
 If you have the right connection you will see the device address, e.g: `0x1e`,`0x18` and `0x51`.
 
-*Note: Root privileges required.*
+{% note info Note %}
+	Root privileges required.
+{% endnote %}
 
 ### Read register from device
 Read register `0x0d` of device `0x22` on `I2C4`.
@@ -107,7 +109,9 @@ e0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
 f0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
 ```
 
-*Note: Root privileges required.* 
+{% note info Note %}i
+	Root privileges required.
+{% endnote %}
 
 ### Access i2c by khadasapi
 In addition to the command to access I2C, you can also access through APK. We encapsulate a jar package, which contains the I2C read-write interface,for example

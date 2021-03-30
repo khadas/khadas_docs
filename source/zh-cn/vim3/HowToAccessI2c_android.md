@@ -52,7 +52,10 @@ This guide is about how to access i2c on Android.
 70: -- -- -- -- -- -- -- --
 ```
 如果连接正确你将看到设备地址，比如：`0x1e`,`0x18` and `0x51`.
-*Note: 执行这些命令需要root权限。*
+
+{% note info 注意 %}
+执行这些命令需要root权限。
+{% endnote %}
 
 ### 从设备读寄存器值
 

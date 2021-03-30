@@ -12,7 +12,7 @@ You can refer to this [document](HowToUpgradeTheSystem.html).
 1.open`/boot/env.txt`film:
 
 ```shell
-khadas@khadas:~$ sudo vim /boot/enc.txt
+khadas@khadas:~$ sudo vim /boot/env.txt
 # Device Tree Overlays
 #   uart3           -- Enable UART3 (uart_C, GPIO Header PIN15 & PIN16)
 #   pwm_f           -- Enable PWM_F (GPIO Header PIN35)

@@ -11,7 +11,9 @@ title: 编译Amlogic平台安卓源码
 
 # 编译
 
-*注意：在开始编译前，确保已经搭建好如上`准备`所述的环境。*
+{% note info 注意 %}
+在开始编译前，确保已经搭建好如上`准备`所述的环境。
+{% endnote %}
 
 **编译U-boot：**
 
@@ -40,14 +42,13 @@ $ make -jN otapackage
 
 * out/target/product/TARGET/update.img
 
-*注意：*
-
-* 替换`N`为你自己电脑实际的线程数。
-* `TARGET` 为 kvim3 或者 kvim3l
-* `TARGET_LUNCH` 定义如下：
-  * 编译VIM3时: kvim3-userdebug
-  * 编译VIM3L时: kvim3l-userdebug
-
+{% note info 注意 %}
+	* 替换`N`为你自己电脑实际的线程数。
+	* `TARGET` 为 kvim3 或者 kvim3l
+	* `TARGET_LUNCH` 定义如下：
+      * 编译VIM3时: kvim3-userdebug
+	  * 编译VIM3L时: kvim3l-userdebug
+{% endnote %}
 
 **编译linux内核：**
 

@@ -96,6 +96,7 @@ $ /path/to/person_detect_640x384_camera ${board_space}/person_detect_99.nb /dev/
 ```
 
 
-**Note** :
-
+{% note info Note %}
 Just a simple template repository, please refer to the documentation for detailed API introduction.
+{% endnote %}
+

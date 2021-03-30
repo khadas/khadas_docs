@@ -3,9 +3,9 @@ title: 如何转换并通过NPU调用自己的模型
 
 这里以yolov3为例，演示如何转换自己的模型，并适配进我们demo，在VIM3上面运行
 
-**注意**:
-
+{% note info 注意 %}
 请在参照文档转换之前，先仔细查看一遍一下文档
+{% endnote %}
 
 1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
 2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)

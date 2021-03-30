@@ -86,9 +86,11 @@ $ make systemimage
 $ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-**注意**:
+{% note info 注意 %}
 * 替换`PATH_YOUR_PROJECT`为你自己的项目路径
 * 替换`TARGET_LUNCH`为你自己选择的lunch.
   * 编译VIM3时，选择 kvim3-userdebug.
   * 编译VIM3L时，选择 kvim3l-userdebug.
 * `TARGET` 应该为`kvim3`或`kvim3l`
+{% endnote %}
+

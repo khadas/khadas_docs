@@ -31,7 +31,10 @@ $ cd ~/npu/aml_npu_sdk/acuity-toolkit
 $ for req in $(cat requirements.txt); do pip3 install $req; done
 ```
 
-*注意：默认安装的TensorFlow为CPU版本，如果你的电脑有英伟达GPU，你也可以选择安装[GPU版本](https://www.tensorflow.org/install/gpu)来加速模型转换速度。*
+
+{% note info 注意 %}
+默认安装的TensorFlow为CPU版本，如果你的电脑有英伟达GPU，你也可以选择安装[GPU版本](https://www.tensorflow.org/install/gpu)来加速模型转换速度。
+{% endnote %}
 
 验证TensorFlow安装：
 ```
@@ -83,7 +86,9 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 -rw-rw-r-- 1 nick nick     1294 9月  20 15:16 vnn_pre_process.h
 ```
 
-*注意：如果你要转换自己的模型，那么需要修改脚本里面相应文件的路径和参数。*
+{% note info 注意 %}
+如果你要转换自己的模型，那么需要修改脚本里面相应文件的路径和参数。
+{% endnote %}
 
 以上是一个模型转换的示例脚本，更多详细信息请参考模型转换文档`docs/zh-cn/模型转换运行用户指南(0.5).pdf`。
 

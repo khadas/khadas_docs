@@ -104,6 +104,10 @@ kvim3#reset
 # 故障排查
 1. 如果启动方式已经设置为从SPI启动，同时SPI的uboot损坏了是无法进入uboot的命令行的
 	1) 如果uboot损坏了，你可以尝试使用[TST模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)从emmc启动，然后进入命令行，清除你的SPI或者从新烧录uboot进SPI
-	**注意:此时不能使用PC的USB口给板子供电,会直接进入升级模式,而不是从EMMC启动**
+	{% note info 注意 %}
+		此时不能使用PC的USB口给板子供电,会直接进入升级模式,而不是从EMMC启动
+	{% endnote %}
 	2) 如果EMMC的Uboot损坏了，你可以尝试使用[TST模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)进入升级模式，烧录一个固件到EMMC上，再重复步骤1。
-	**注意: 此时板子需要通过type-C的线连接到PC**
+	{% note info 注意 %}
+		此时板子需要通过type-C的线连接到PC
+	{% endnote %}

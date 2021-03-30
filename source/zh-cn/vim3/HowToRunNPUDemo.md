@@ -75,7 +75,9 @@ $ cd {workspace}/aml_npu_demo_binaries/inceptionv3/VIM3
 $ ./inceptionv3 inception_v3.nb path/to/picture
 ```
 
-**note**:图片的尺寸要与模型的尺寸对应，因此这里，inceptionv3模型的输入是299x299x3，传入识别的图片也必须是299x299。
+{% note info 注意 %}
+图片的尺寸要与模型的尺寸对应，因此这里，inceptionv3模型的输入是299x299x3，传入识别的图片也必须是299x299。
+{% endnote %}
 
 # yolo系列模型
 

@@ -97,7 +97,7 @@ $ /path/to/person_detect_640x384_camera ${board_space}/person_detect_88.nb /dev/
 $ /path/to/person_detect_640x384_camera ${board_space}/person_detect_99.nb /dev/videoX   [VIM3L]
 ```
 
-**注意** :
-
+{% note info 注意 %}
 这只是一个简单的模板仓库，详细的api介绍请参考文档。
+{% endnote %}
 

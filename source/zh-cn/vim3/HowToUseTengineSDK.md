@@ -75,7 +75,7 @@ quant_tool  README.md  yolov3_FP32.tmfile  yolov3.tmfile  yolov3.tmfilefinetunes
 
 其中, yolov3_UINT8.tmfile 就是能在NPU上面运行的量化后的tmfile
 
-**注意**:
-
+{% note info 注意 %}
 详细的参数说明请参考`workspace/tengine_khadas_sdk/docs`
+{% endnote %}
 
