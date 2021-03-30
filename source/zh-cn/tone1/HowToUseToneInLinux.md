@@ -1,4 +1,4 @@
-title: LINUX系统下使用 Tone1 / Tone2 Prp 播放MPD
+title: Linux下使用MPD
 ---
 
 ## 系统准备

@@ -318,7 +318,7 @@ sidebar:
     overview: Beginners FAQ
     user_manual: User Manual
     how_to_upgrade_firmware: Upgrade the Firmware
-    how_to_use_tone_in_linux: Use Tone To Play MPD In Linux
+    how_to_use_tone_in_linux: Tone with MPD In Linux
 
   hardware:
     hardware: hardware

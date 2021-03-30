@@ -1,7 +1,16 @@
 title: Khadas VIM3L Ubuntu Firmware
 ---
 
+Check [Release Note](/firmware/Vim3lUbuntuFirmwareReleaseNote.html).
+
 ## Linux 4.9 Images
+
+{% note info Note %}
+
+VIM3L Only support **Ubuntu 20.04** for Linux 4.9.
+
+{% endnote %}
+
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -26,12 +35,16 @@ title: Khadas VIM3L Ubuntu Firmware
 <div class="tab-pane fade show active" id="emmc" role="tabpanel" aria-labelledby="emmc-tab">
 
 * [VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd" role="tabpanel" aria-labelledby="sd-tab">
 
 * [VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
 </div>
@@ -52,13 +65,16 @@ title: Khadas VIM3L Ubuntu Firmware
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
 * [VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
-* [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/EMMC/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190917.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
 * [VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
 </div>
@@ -75,6 +91,13 @@ title: Khadas VIM3L Ubuntu Firmware
 
 {% endnote %}
 
+{% note info Note %}
+
+VIM3L Only support **Ubuntu 20.04** for Mainline Linux.
+
+{% endnote %}
+
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="server2-tab" data-toggle="tab" href="#server2" role="tab" aria-controls="server2" aria-selected="true">Server (Headless)</a>
@@ -87,12 +110,16 @@ title: Khadas VIM3L Ubuntu Firmware
 <div class="tab-pane fade show active" id="server2" role="tabpanel" aria-labelledby="server2-tab">
 
 * [VIM3L_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM3L_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="desktop2" role="tabpanel" aria-labelledby="desktop2-tab">
 
 * [VIM3L_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+---
+**Deprecated:**
 * [VIM3L_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3L/Ubuntu/SD_USB/VIM3L_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V20191231.7z)
 
 </div>
