@@ -2,13 +2,13 @@ title: 编译Amlogic平台安卓源码
 ---
 
 
-### 准备
+## 准备
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
 - [x] [下载安卓源码](/zh-cn/vim2/DownloadAndroidSourceCode.html)
 - [x] [安装Amlogic平台工具链](/zh-cn/vim2/InstallToolchains.html)
 
 
-### 编译
+## 编译
 *注意：在开始编译前，确保已经搭建好如上`准备`所述的环境。*
 
 **编译 Android 7.1 U-boot：**
@@ -70,6 +70,6 @@ $ source device/khadas/kvim2/mkern.sh
 $ make bootimage
 ```
 
-### 参考
+## 参考
 * [通过USB数据线升级](/zh-cn/vim2/UpgradeViaUSBCable.html)
 * [通过TF卡升级](/zh-cn/vim2/UpgradeViaTFBurningCard.html)

@@ -18,7 +18,7 @@ Hit Enter or space or Ctrl+C key to stop autoboot -- :  0
 kvim2#
 ```
 
-### 帮助信息
+## 帮助信息
 和其他U-boot命令一样，直接执行`kbi`会给出帮助信息：
 ```
 kvim2# kbi
@@ -44,7 +44,7 @@ kbi trigger [wol|rtc|ir|dcin|key|gpio] w <0|1> - disable/enable boot trigger
 kbi trigger [wol|rtc|ir|dcin|key|gpio] r - read mode of a boot trigger
 ```
 
-### 使用方法
+## 使用方法
 
 **1) 获取MCU固件版本号：**
 ```
@@ -165,7 +165,7 @@ kvim2# kbi trigger wol w 0
 set_wol: 0
 ```
 
-### 更多
+## 更多
 [如何使用WOL](/zh-cn/vim2/HowtoUseWol.html)。
 [Edge-V MCU寄存器说明](https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_ZH.pdf)
 [VIM2 MCU寄存器说明](https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_ZH.pdf)

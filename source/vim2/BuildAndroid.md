@@ -2,13 +2,13 @@ title: Building Android Source Code
 ---
 
 
-### Preparations
+## Preparations
 - [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
 - [x] [Downloading the Android Source](/vim2/DownloadAndroidSourceCode.html)
 - [x] [Install Toolchains for the Amlogic Platform](/vim2/InstallToolchains.html)
 
 
-### Building
+## Building
 *Note: Before you start to build, make sure you have done all the `Preparations` listed above.*
 
 **Build Android 7.1 U-Boot:**
@@ -69,6 +69,6 @@ For Android 9.0:
 $ make bootimage
 ```
 
-### See Also
+## See Also
 * [Upgrade Via an USB Cable](/vim2/UpgradeViaUSBCable.html)
 * [Upgrade Via a Burnning TF Card](/vim2/UpgradeViaTFBurningCard.html)
