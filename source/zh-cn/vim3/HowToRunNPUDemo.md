@@ -1,7 +1,7 @@
 title: 如何在VIM3上面运行 NPU Demo
 ---
 
-# 获取NPU Demo
+## 获取NPU Demo
 
 NPU Demo 默认并没有安装在板子上。需要先从gitlab自行下载
 
@@ -25,7 +25,7 @@ detect_demo_picture: 识别图片的yolo系列模型合集
 inceptionv3: 识别图片的inception模型
 ```
 
-# inception模型识别图片
+## inception模型识别图片
 
 1. inception模型不需要安装任何库到系统中。进入inceptionv3目录
 
@@ -79,11 +79,11 @@ $ ./inceptionv3 inception_v3.nb path/to/picture
 图片的尺寸要与模型的尺寸对应，因此这里，inceptionv3模型的输入是299x299x3，传入识别的图片也必须是299x299。
 {% endnote %}
 
-# yolo系列模型
+## yolo系列模型
 
 yolo系列模型的应用分成了摄像头动态识别和图片识别两个部分。
 
-## 安装与卸载库
+### 安装与卸载库
 
 yolo系列的模型需要将库安装到系统中，无论是使用摄像头动态识别还是识别图片，共用了同一套库。
 
@@ -105,7 +105,7 @@ $ sudo ./INSTALL
 $ sudo ./UNINSTALL
 ```
 
-## `type`参数说明
+### `type`参数说明
 
 `type`参数无论是使用摄像头动态识别，还是识别图片，都是必须选择的一个输入参数，这个参数主要是用于指定运行的yolo系列模型。
 
@@ -117,17 +117,17 @@ $ sudo ./UNINSTALL
 4 : yolov4模型
 ```
 
-## 运行环境说明
+### 运行环境说明
 
 NPU Demo 可以运行在X11或者framebuffer模式的不同环境下，选择对应的demo运行即可。
 
-### X11/Framebuffer
+#### X11/Framebuffer
 
 带有`fb`字样的demo是运行在framebuffer模式下。
 
 带有`X11`字样的demo则是运行在桌面系统环境下。
 
-## 说明示例
+### 说明示例
 
 这里以`detect_demo_picture`为例，
 
@@ -141,9 +141,9 @@ $ ls
 3. detect_demo_x11 是运行在X11下识别图片的demo
 
 
-## 运行
+### 运行
 
-### 图片识别
+#### 图片识别
 
 识别图片的命令格式
 
@@ -163,7 +163,7 @@ $ ./detect_demo_x11 2 1080p.bmp
 
 ![detect_demo_picture_x11_cv3](/images/vim3/detect_demo_picture_x11_cv3.png)
 
-### 摄像头动态识别
+#### 摄像头动态识别
 
 摄像头说明
 
@@ -186,16 +186,5 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 打开摄像头以后。会将识别的结果显示在屏幕上
 
 ![detect_demo_x11_cv3](/images/vim3/detect_demo_x11_cv3.png)
-
-
-
-
-
-
-
-
-
-
-
 
 

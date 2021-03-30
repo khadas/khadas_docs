@@ -2,14 +2,14 @@ title: Building Android Source Code
 ---
 
 
-# Preparations
+## Preparations
 
 - [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
 - [x] [Downloading the Android Source](/vim3/DownloadAndroidSourceCode.html)
 - [x] [Install Toolchains for the Amlogic Platform](/vim3/InstallToolchains.html)
 
 
-# Building
+## Building
 
 {% note info Note %}
 	Before you start to build, make sure you have done all the `Preparations` listed above.
@@ -60,6 +60,6 @@ In some cases, you might want to build the Linux Kernel separately. You can run 
 $ make bootimage
 ```
 
-# See Also
+## See Also
 * [Upgrade Via an USB Cable](/vim3/UpgradeViaUSBCable.html)
 * [Upgrade Via a Burnning TF Card](/vim3/UpgradeViaTFBurningCard.html)

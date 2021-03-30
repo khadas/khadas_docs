@@ -11,7 +11,7 @@ There are three ways to setup the `PCIe/USB3.0` port:
 * Setup the port using the Android UI
 * Setup the port using the Android/Ubuntu command line
 
-# Setup the `PCIe/USB3.0` port using the KBI
+## Setup the `PCIe/USB3.0` port using the KBI
 You need to [setup the serial debug tool](/vim3/SetupSerialTool.html) and enter the u-boot command line.
 
 * Initialize the KBI:
@@ -50,7 +50,7 @@ do_kbi_poweroff
 ```
 Then press the `POWER KEY` to boot the system.
 
-# Setup the `PCIe/USB3.0` port using the Android UI
+## Setup the `PCIe/USB3.0` port using the Android UI
 You'll need to navigate to "Device Preferences" using an IR remote, mouse or attached keyboard.
 
 ![Android Device Preferences](https://github.com/tsangyoujun/khadas_docs/blob/master/settings_toggle.jpg?raw=true)
@@ -58,7 +58,7 @@ You'll need to navigate to "Device Preferences" using an IR remote, mouse or att
 
 **Reboot** the system to bring changes into effect.
 
-# Setup the `PCIe/USB3.0` port using the Android/Ubuntu command line
+## Setup the `PCIe/USB3.0` port using the Android/Ubuntu command line
 
 * Check current port mode:
 
@@ -90,5 +90,5 @@ khadas@Khadas:~$ echo 1 > /sys/class/mcu/poweroff
 
 Then press the `POWER KEY` to boot the system.
 
-# See Also
+## See Also
 [KBI Guide](/vim3/KbiGuidance.html)

@@ -1,7 +1,7 @@
 title: 如何使用uart
 ---
 
-# 确认串口硬件引脚
+## 确认串口硬件引脚
 
 Urt_c引出到40Pin的引脚是15脚以及16脚
 
@@ -15,7 +15,7 @@ VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 1445 };
 ```
 
-### 通过 comassistant apk去使用uart
+#### 通过 comassistant apk去使用uart
 
 **1）** Through the serial port to USB adapter board, one end is connected to the computer, the other end is connected to pin 15, pin 16
 
@@ -33,7 +33,7 @@ VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 serial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send test  serial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send test
 ``` 
 
-### 通过 khadas api使用uart 
+#### 通过 khadas api使用uart 
 
 当你下载khadas_api_demo 源码后，你可以在里面找到vim3_demo.apk，在api里面提供了串口操作接口，例如：
 

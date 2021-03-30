@@ -1,7 +1,7 @@
 title: 如何使用MIPI摄像头
 ---
 
-# 如何连接摄像头
+## 如何连接摄像头
 
 按照下面图片的方式，将摄像头连接到板子的是`MIPI-CSI`接口。
 
@@ -11,15 +11,15 @@ title: 如何使用MIPI摄像头
 
 ![image](/images/vim3/docs_vim3_camera_OS08A10.jpg)
 
-# 通过Guvcview使用摄像头
+## 通过Guvcview使用摄像头
 
-## 打开Guvcview
+### 打开Guvcview
 
 桌面版本已经预装了Guvcview，直接在软件列表里找到并打开这个软件
 
 ![mipi_guvcview_icon.png](/images/vim3/mipi_guvcview_icon.png)
 
-## 设置Guvcview
+### 设置Guvcview
 
 MIPI摄像头的名称为`Juno R2`
 
@@ -31,7 +31,7 @@ MIPI摄像头的名称为`Juno R2`
 
 设置成功以后，就能正常的使用摄像头了
 
-# 测试IR-Cut 
+## 测试IR-Cut 
 
 通过`v4l2`可以测试使用IR-Cut
 
@@ -49,16 +49,16 @@ IR-Cut打开
 v4l2_test  -c 1 -p 0 -F 0 -f 0 -D 0 -R 1 -r 2 -d 2 -N 1000 -n 800 -w 0 -e 1 -I 1 -b /dev/fb0 -v /dev/video0
 ```
 
-# 使用Gstreamer录制视频
+## 使用Gstreamer录制视频
 ```
 $ gst-launch-1.0 v4l2src name=vsrc device=/dev/video0 ! video/x-raw,width=1920,height=1080,framerate=60/1,format=RGB ! filesink location=.//test.rgb
 ```
 录制的视频保存在`test.rgb`中
 
 
-# 通过Opencv使用MIPICamera
+## 通过Opencv使用MIPICamera
 
-## Python
+### Python
 
 python版本的源码如下：
 
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     out.release()
 ```
 
-## C++
+### C++
 
 C++版本的源码如下：
 

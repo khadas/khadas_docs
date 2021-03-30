@@ -3,12 +3,12 @@ title: Make a "Fast Package Update Image"
 
 This guide is about how to make a "Fast Package Update Image"; This means that you will only change one part of Android. For example, only change the U-Boot, Kernel or System.
 
-# Preparations:
+## Preparations:
 
 * [Build Android Completely](/vim3/BuildAndroid.html).
 
 
-# Only Change the U-Boot
+## Only Change the U-Boot
 
 * Rebuild U-Boot
 
@@ -34,7 +34,7 @@ $ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/p
 out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-# Only Change the Bootup Logo
+## Only Change the Bootup Logo
 
 * Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/vim1/BuildBootLogoForUboot.html))
 
@@ -50,7 +50,7 @@ $ make logoimg
 $ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-# Only Change the DTB or Kernel
+## Only Change the DTB or Kernel
 
 * Rebuild DTB and Kernel
 
@@ -66,7 +66,7 @@ $ make bootimage
 $ ./vendor/amlogic/common/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package_avb.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-# Only Change the System
+## Only Change the System
 
 * Rebuild System Image
 

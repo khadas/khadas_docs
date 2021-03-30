@@ -1,7 +1,7 @@
 title: How To Use MIPI Camera
 ---
 
-# How To Connect MIPI Camera
+## How To Connect MIPI Camera
 
 Attaching a camera for the first-time to VIM3's MIPI-CSI header? Refer to this picture:
 
@@ -11,15 +11,15 @@ The reverse connection will burn the camera, please check the connection of the 
 
 ![image](/images/vim3/docs_vim3_camera_OS08A10.jpg)
 
-# User MIPI Camera via Guvcview
+## User MIPI Camera via Guvcview
 
-## Open Guvcview
+### Open Guvcview
 
 The desktop version has Guvcview pre-installed, find and open this software in the software list.
 
 ![mipi_guvcview_icon.png](/images/vim3/mipi_guvcview_icon.png)
 
-## Guvcview Setting
+### Guvcview Setting
 
 The name of the MIPI camera is `Juno R2`.
 
@@ -31,7 +31,7 @@ The resolution is set to `1920x1080` and the RGB format is `BGR3-BGR3`.
 
 After the setting is successful, you can use the camera normally.
 
-# Test IR-Cut 
+## Test IR-Cut 
 
 You can test IR-Cut via `v4l2`
 
@@ -49,15 +49,15 @@ enable IR-Cut
 v4l2_test  -c 1 -p 0 -F 0 -f 0 -D 0 -R 1 -r 2 -d 2 -N 1000 -n 800 -w 0 -e 1 -I 1 -b /dev/fb0 -v /dev/video0
 ```
 
-# Record Video via Gstreamer
+### Record Video via Gstreamer
 ```
 $ gst-launch-1.0 v4l2src name=vsrc device=/dev/video0 ! video/x-raw,width=1920,height=1080,framerate=60/1,format=RGB ! filesink location=.//test.rgb
 ```
 The recorded video is saved in`test.rgb`.
 
-# Use MIPI Camera via opencv
+## Use MIPI Camera via opencv
 
-## Python
+### Python
 
 The source code with python
 
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     out.release()
 ```
 
-## C++
+### C++
 
 The source code with C++
 

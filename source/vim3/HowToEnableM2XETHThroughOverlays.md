@@ -3,9 +3,9 @@ title: How to enable M2X ETH through overlays
 
 We have already explained in the [documentation](/vim3/HowToUseDeviceTreeOverlay.html) how to useDevice Tree Overlays.
 
-# Enable M2X ETH Under Ubuntu
+## Enable M2X ETH Under Ubuntu
 
-## Update System:
+### Update System:
 
 ```shell
 $ sudo apt update
@@ -15,7 +15,7 @@ $ sync
 $ sudo reboot
 ```
 
-## Change The Configuration Of Device Tree Overlays
+### Change The Configuration Of Device Tree Overlays
 
 1、open`/boot/env.txt`film:
 
@@ -49,7 +49,7 @@ khadas@khadas:~$ sync
 khadas@khadas:~$ sudo reboot
 ```
 
-## Check If M2X ETH Is Enable
+### Check If M2X ETH Is Enable
 
 1、whether you can get the IP addresss
 

@@ -3,11 +3,11 @@ title: How To Use USB Gadget
 
 We have already explained in the [documentation](/vim3/HowToUseDeviceTreeOverlay.html) how to use Device Tree Overlays.
 
-# Update System
+## Update System
 
 You can refer to this [document](HowToUpgradeTheSystem.html).
 
-# Configure DTS Overlays
+## Configure DTS Overlays
 
 1.open`/boot/env.txt`film:
 
@@ -34,13 +34,13 @@ overlays=uart3 pwm_f i2c3 os08a10
 overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 otg-device
 ```
 
-# Enable service
+## Enable service
 
 ```shell
 khadas@khadas:~$ sudo systemctl enable usb-gadget-khadas.service
 ```
 
-# Save film and reboot the board
+## Save film and reboot the board
 
 ```shell
 khadas@khadas:~$ sync

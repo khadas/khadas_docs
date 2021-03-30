@@ -1,7 +1,7 @@
 title: How To Use the NPU
 ---
 
-### Download NPU SDK
+## Download NPU SDK
 
 Please click [here](https://www.khadas.com/npu-toolkit-vim3) to get the SDK download link.
 
@@ -15,7 +15,7 @@ Directories description:
 * linux_sdk：Linux SDK
 * android_sdk：Android SDK
 
-### Environment Setup
+## Environment Setup
 
 In order to use the model conversion tools, you need to install [TensorFlow](https://www.tensorflow.org/) and other tools.
 
@@ -51,7 +51,7 @@ b'Hello World'
 
 If you see the `Hello World` string printed indicate that the TensorFlow is installed successfully.
 
-### Model Conversion
+## Model Conversion
 
 In order to run the model on VIM3, you need to convert the model to case code, only support `Caffe/Tensorflow/Tflite/Darknet/Onnx/Keras/Pytroch` models.
 
@@ -93,9 +93,9 @@ You need to modify the model file path and other parameters in the scripts if yo
 
 They are just sample scripts to convert the model, for more information please refer to model conversion documentation`docs/en/Model_Transcoding and Running User Guide_V0.5.pdf`.
 
-### Compile the Case Code
+## Compile the Case Code
 
-#### Based On Linux
+### Based On Linux
 
 In order to run the model on VIM3 you need to compile the case code to get the executable binary.
 
@@ -186,9 +186,9 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 
 This demo just show the top5, you can see the max probability is index `2`, you can check the labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt` and you will find the result is `goldfish`.
 
-#### Based On Android
+### Based On Android
 Please refer to Android&Linux complie guidance`docs/en/Android&Linux_Compilation and Integration Guide_0.2.pdf`.
 
-### In The End
+## In The End
 
 This is just a simple sample about model conversion and case code complie, for more information please refer to model conversion documentation`docs/en/Model_Transcoding and Running User Guide_V0.5.pdf`.

@@ -1,7 +1,7 @@
 title: VIM3 Beginners Guide
 ---
 
-# VIM3
+## VIM3
 
 ![image](/images/vim3/docs_vim3.jpg)
 
@@ -114,7 +114,7 @@ Linux_TX|19|39|GPIODZ_15
 </div> 
 
 
-# VIM3L
+## VIM3L
 
 ![image](/images/vim3/docs_vim3l.jpg)
 
@@ -228,7 +228,7 @@ Linux_TX|19|39|GPIODZ_15
 </div>
 </div> 
 
-# Krescue (Khadas-Rescue-OS)
+## Krescue (Khadas-Rescue-OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
@@ -268,7 +268,7 @@ More shell commands and examples:
 - [YouTube - Krescue Online OS Installation](https://youtu.be/vvpkbhnyhZY)
 - [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
 
-# Amlogic A311D, NPU Usage Guides
+## Amlogic A311D, NPU Usage Guides
 These following documentation links will help you get started with your VIM3's 5.0 TOPS neural processing unit.
 
 1. [How to Use NPU](/vim3/HowToUseNpu.html)
@@ -281,7 +281,7 @@ These following documentation links will help you get started with your VIM3's 5
 * [YouTube: VIM3 - Realtime Object Detection Using Yolo v3](https://www.youtube.com/watch?v=aQ-g_CBrzEU)
 
 
-# Booting 3rd-Party ROMs from Micro SD-Card
+## Booting 3rd-Party ROMs from Micro SD-Card
 These items are useful when you want to boot your VIM3 from an SD-Card, to run 3rd-party ROMs such as LibreELEC.
 
 1. 8GB or larger, Micro SD-card.
@@ -308,7 +308,7 @@ Steps to boot your VIM3 from a Micro SD-card:
 * **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing to `SD_USB` mark, as well as LibreELEC and CoreELEC.
 * In order to bootup from **SD/USB images**, you need Android or Ubuntu running on your eMMC with Multi-Boot activated.
 
-# Flashing eMMC Operating System Using USB-C Cable
+## Flashing eMMC Operating System Using USB-C Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your VIM3 SBC's operating system stored in the eMMC storage. For example, Changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.
 
 1. USB to USB-C Cable (Older Computers)
@@ -327,7 +327,7 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 * [U-Boot](/vim3/FirmwareUboot.html)
 * [Third Party OSes](/vim3/FirmwareThirdparty.html)
 
-# VIM3 Power Supply
+## VIM3 Power Supply
 Although your VIM3 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
 1. USB-C 24W Adapter
@@ -339,7 +339,7 @@ Although your VIM3 SBC is compatible with various types of power supplies, these
 * [Extra Power Input For Khadas VIMs](/vim3/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
 
-# Displays & User Input
+## Displays & User Input
 These items are useful when you need to connect your VIM3 SBC to an external display + keyBoard mouse + remote control, for use as a desktop computer or media center.
 
 1. 4K HDMI 2.0 Cable
@@ -353,7 +353,7 @@ These items are useful when you need to connect your VIM3 SBC to an external dis
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
 
-# Watching Movies, Expanding Internal eMMC Storage
+## Watching Movies, Expanding Internal eMMC Storage
 These items are useful if you wish to use your VIM3 SBC as a media center, for storing/downloading large movie files. A microSDXC UHS-I card is expensive, but its also fast enough for 4K video playback. In addition, you can connect external USB-2.0/3.0 SSDs or HDDs for storage that can encompass your entire media library.
 
 1. 64GB or larger, USB-2.0/3.0 HDD/SSD
@@ -365,7 +365,7 @@ These items are useful if you wish to use your VIM3 SBC as a media center, for s
 
 **Tip:** Nowadays most people stream their media , see [How To Install LibreELEC](/vim3/InstallLibreELEC.html).
 
-# Software Development / Advanced Crash Recovery
+## Software Development / Advanced Crash Recovery
 Extreme cases of crash-recovery will require you to use either the Khadas TST (VIM3), or the MRegister to reset your VIM3 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
 
 1. Your fingers (for resetting a dead SBC via Khadas-TST, VIM3 only)
@@ -378,7 +378,7 @@ Extreme cases of crash-recovery will require you to use either the Khadas TST (V
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
-# VIM3 Website
+## VIM3 Website
 For more information, please see our website, read more decumentation, or visit our forum.
 * [Khadas VIM3 Homepage](https://www.khadas.com/vim)
 * [Khadas VIM3 Forum](https://forum.khadas.com/c/Khadas-VIM3)

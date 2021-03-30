@@ -3,7 +3,7 @@ title: Description and Usage of aml_NPU_app Code Repository
 
 `aml_npu_app`  repository is the source code for `aml_npu_demo_binaries`,The library and demo of the `aml_npu_demo_binaries` repository can be compiled.
 
-# Get the source code repository
+## Get the source code repository
 
 The source code repository is stored in gitlab, and the repository address is:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
 
@@ -20,9 +20,9 @@ Users who do not use git can also download the compressed package directly from 
 
 It is recommended to use the git command to clone. When the subsequent code is updated, you can directly `pull`
 
-# Source description
+## Source description
 
-## Directory structure description
+### Directory structure description
 
 ```shell
 $ cd {workspace}/aml_npu_app
@@ -36,7 +36,7 @@ DDK_6.3.2  DDK_6.3.2.3  DDK_6.3.2.5  DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect
 4. LICENSE         #LICENSE file
 ```
 
-## Library description
+### Library description
 
 Enter the directory of the library source code, which is the directory of the DDK.
 
@@ -77,7 +77,7 @@ Main content description:
 8. yolov3_process.c   #Mainly defines the pre-processing and post-processing of the model
 ```
 
-## Application  description
+### Application  description
 
 Enter the application source code directory
 
@@ -116,10 +116,10 @@ Here is an explanation of the main files,
 4. xxx.h               #The definition related header files that the application layer needs to use
 ```
 
-# Compile the repository source code
+## Compile the repository source code
 
 
-## Compile library
+### Compile library
 
 To compile the library, just enter the directory of the corresponding library and compile it. Here is yolov3 as an example
 
@@ -147,11 +147,11 @@ $ ls
 libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 ```
 
-## Compile the application
+### Compile the application
 
 When compiling the application, first compile `libnn_detect.so`. This is one of the dependent libraries for compiling other applications.
 
-### Compile `libnn_detect.so`
+#### Compile `libnn_detect.so`
 
 Enter the `source_code` directory and compile `libnn_detect.so`
 
@@ -172,7 +172,7 @@ $ ls
 detect_log.o  detect.o  libnn_detect.so
 ```
 
-### Compile application demo
+#### Compile application demo
 
 Here is sample_demo_x11 as an example to compile the opencv3 version
 
@@ -221,14 +221,4 @@ detect_demo  main_cv3.o
 ```
 
 To compile the opencv4 version, just use the `build_vx_cv4.sh` script to compile.
-
-
-
-
-
-
-
-
-
-
 

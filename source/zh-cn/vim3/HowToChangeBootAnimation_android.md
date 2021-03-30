@@ -9,7 +9,7 @@ title: 如何更新安卓启动动画
 
 动画文件保存在 system/media/bootanimation.zip 目录
 
-### bootanization 内容解析
+#### bootanization 内容解析
 
 Android的开机动画是由一系列连续的png图片作为帧组成的动画形式，将各帧png图片以压缩方式保存。这个保存的文件名就是bootanimation.zip，压缩方式必须为存储压缩。一般包括一个文件、几个part目录
 
@@ -49,7 +49,7 @@ c 1 15 part4
 `c 1 30 part0`: c代表标志位，1表示循环次数为1次，0表示阶段间隔时间为0，part0表示对应文件夹。
 其他part文件夹类似含义
 
-### 怎样去生成Bootanimation.zip
+#### 怎样去生成Bootanimation.zip
 
 在你自定义part目录和desc.txt 文件后，你可以使用下列命令去生成bootanimation.zip。
 

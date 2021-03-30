@@ -3,11 +3,11 @@ title: SDK使用说明
 
 NPU SDK 是转换AI模型和编译`aml_npu_sdk`的工具合集。
 
-# 获取SDK
+## 获取SDK
 
 SDK需要通过邮件申请，申请以后会通过一封邮件发到你的邮箱。[申请地址](https://www.khadas.com/npu-toolkit-vim3)
 
-# SDK目录结构说明
+## SDK目录结构说明
 
 进入SDK目录，
 
@@ -27,7 +27,7 @@ docs              #转换相关的文档合集
 toolchains        #编译工具链目录
 ```
 
-# Docs说明
+## Docs说明
 
 进入Docs目录，
 
@@ -52,7 +52,7 @@ $ ls
 5. 'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'   #支持的网络层和算子文档
 ```
 
-# 转换工具说明
+## 转换工具说明
 
 `acuity-toolkit`就是转换工具目录，
 
@@ -71,7 +71,7 @@ bin  conversion_scripts  ReadMe.txt  requirements.txt
 4. requirements.txt      #转换工具依赖的环境
 ```
 
-## 依赖安装
+### 依赖安装
 
 转换工具需要的环境依赖包可以直接安装在PC上，或者通过虚拟环境`virtualenv`安装
 
@@ -100,7 +100,7 @@ torch==1.2.0
 其中`tensorflow==2.0.0`可用`tensorflow==2.0.0a0`替代
 
 
-## 转换脚本使用
+### 转换脚本使用
 
 转换脚本在`conversion_scripts`目录下，
 
@@ -128,7 +128,7 @@ main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_proces
 
 转换参数的设置，请参考`Docs`里面的'模型转换运行用户指南(0.6).pdf'。
 
-# linux SDK 说明
+## linux SDK 说明
 
 进入linux SDK目录
 
@@ -162,13 +162,4 @@ acuity-ovxlib-dev  build  common.target  linux_build_sample.log  makefile.linux.
 2. `build/sdk/drivers_xx`       #主要放置了编译需要使用的系统库
 3. `build/sdk/opencvX`          #主要是编译时使用的opencv库
 ```
-
-
-
-
-
-
-
-
-
 

@@ -99,7 +99,7 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 </div>
 </div>
 
-### 超频
+## 超频
 
 {% note warn 注意 %}
 
@@ -109,7 +109,7 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 
 {% endnote %}
 
-#### 频率列表
+### 频率列表
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -185,7 +185,7 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 </div>
 </div>
 
-### 查看CPU频率
+## 查看CPU频率
 
 可以通过命令`cpufreq-info`来查看CPU频率。
 
