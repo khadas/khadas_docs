@@ -85,10 +85,15 @@ TE: 116640
 ...
 
 ```
-*Tips: If the print-out contains the following line, you might need to check the step `Add Access Permission` above.*
+
+{% note info Tip %}
+
+If the print-out contains the following line, you might need to check the step `Add Access Permission` above.
 ```
 /dev/ttyUSB0: Permission denied
 ```
+{% endnote %}
+
 #SecureCRT Bug
 
 If you use SecureCRT to connect the Edge-V or edge,maybe you will see this.
@@ -98,7 +103,10 @@ This is not caused by incorrect settings. This is a CRT bug. You need to follow 
 * Close kermit,then use SecureCRT to connect you board.you will find all is fine.
 ![SecureCRT Slove](/images/edge/SourceCRT_BUG_slove.png)
 
-**note:If these steps don't work, maybe you need to confirm your settings first.**
+
+{% note info Note %}
+If these steps don't work, maybe you need to confirm your settings first.
+{% endnote %}
 
 # See Also
 

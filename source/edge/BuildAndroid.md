@@ -7,7 +7,10 @@ title: Building Android Source Code
 - [x] [Install Toolchains for Rockchip Platform](/edge/InstallToolchains.html)
 
 # Building
-*Note: Before you start to build, make sure you have done all the `Preperations` listed above.*
+
+{% note info Note %}
+Before you start to build, make sure you have done all the `Preperations` listed above.
+{% endnote %}
 
 # android 10.0:
 
@@ -34,7 +37,10 @@ $ make installclean
 $ make -jN
 $ ./mkimage.sh
 ```
-*Note: Replace 'N' as the number you want when you run 'make -jN*
+
+{% note info Note %}
+Replace 'N' as the number you want when you run 'make -jN
+{% endnote %}
 
 **After executing`./mkimage.sh`, generate a complete firmware package in the rockdev/Image-xxx/directory (xxx is the product name of the specific lunch)**
 ```
@@ -91,7 +97,10 @@ $ make installclean
 $ make -jN
 $ ./mkimage.sh
 ```
-*Note: Replace 'N' as the number you want when you run 'make -jN*
+
+{% note info Note %}
+Replace 'N' as the number you want when you run 'make -jN
+{% endnote %}
 
 **After executing`./mkimage.sh`, generate a complete firmware package in the rockdev/Image-xxx/directory (xxx is the product name of the specific lunch)**
 ```
@@ -146,7 +155,10 @@ $ make installclean
 $ make -jN
 $ ./mkimage.sh
 ```
-*Note: Replace 'N' as the number you want when you run 'make -jN*
+
+{% note info Note %}
+Replace 'N' as the number you want when you run 'make -jN
+{% endnote %}
 
 **After executing`./mkimage.sh`, generate a complete firmware package in the rockdev/Image-xxx/directory (xxx is the product name of the specific lunch)**
 ```

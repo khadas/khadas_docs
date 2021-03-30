@@ -6,7 +6,10 @@ title: 编译安卓
 - [x] [安装Rockchip平台工具链](/zh-cn/edge/InstallToolchains.html)
 
 # 编译
-*注意：在开始编译前，确保已经搭建好如上`准备`所述的环境。*
+
+{% note info 注意 %}
+在开始编译前，确保已经搭建好如上`准备`所述的环境。
+{% endnote %}
 
 # android 10.0:
 
@@ -33,7 +36,10 @@ $ make installclean
 $ make -jN
 $ ./mkimage.sh
 ```
-*注意：替换`N`为你自己电脑实际的线程数。*
+
+{% note info 注意 %}
+替换`N`为你自己电脑实际的线程数。
+{% endnote %}
 
 **执行`./mkimage.sh`后，在 rockdev/Image-xxx/目录生成完整的固件包(xxx 是具体 lunch的产品名)**
 ```
@@ -89,7 +95,10 @@ $ make installclean
 $ make -jN
 $ ./mkimage.sh
 ```
-*注意：替换`N`为你自己电脑实际的线程数。*
+
+{% note info 注意 %}
+替换`N`为你自己电脑实际的线程数。
+{% endnote %}
 
 **执行`./mkimage.sh`后，在 rockdev/Image-xxx/目录生成完整的固件包(xxx 是具体 lunch的产品名)**
 ```
@@ -144,7 +153,10 @@ $ make installclean
 $ make -jN
 $ ./mkimage.sh
 ```
-*注意：替换`N`为你自己电脑实际的线程数。*
+
+{% note info 注意 %}
+替换`N`为你自己电脑实际的线程数。
+{% endnote %}
 
 **执行`./mkimage.sh`后，在 rockdev/Image-xxx/目录生成完整的固件包(xxx 是具体 lunch的产品名)**
 ```

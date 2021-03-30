@@ -50,7 +50,10 @@ kedge# sf erase 0 +$filesize
 kedge# sf write $kernel_addr_r 0 $filesize
 kedge# reset
 ```
-*注意: 烧录过程会持续大约3分钟，请耐心等待。*
+
+{% note info 注意 %}
+烧录过程会持续大约3分钟，请耐心等待。
+{% endnote %}
 
 重启之后，就会从SPI Flash启动系统。
 

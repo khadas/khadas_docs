@@ -99,7 +99,9 @@ Installing Khadas burn-tool...
 Done!
 ```
 
-**注意：** 安装需要`root`权限。
+{% note info 注意 %}
+安装需要`root`权限。
+{% endnote %}
 
 ## 如何在Ubuntu下烧录镜像
 
@@ -135,8 +137,6 @@ Done!
 $ cd /path/to/utils
 $ ./UNINSTALL
 ```
-
-**注意：**烧录工具只在**Ubuntu 16.04**上验证过。
 
 # 参考
 * [如何进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)

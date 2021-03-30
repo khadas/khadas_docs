@@ -329,7 +329,9 @@ Although your Edge SBC is compatible with various types of power supplies, these
 1. Khadas USB-C 24W Power Adapter (USB Power Delivery)
 2. Khadas USB-C Cable (Male-to-Male)
 
-**Tip:** These items are now available at Khadas Shop
+{% note info Tip %}
+These items are now available at Khadas Shop
+{% endnote %}
 
 **Learn More:**
 * [Edge+Captain Power Priority](/edge/EdgeCaptainPowerPriority.html)
@@ -350,7 +352,10 @@ These items are useful when you need to connect your Edge SBC to an external dis
 * [Amazon - LG 4K Monitor w/ USB Type-C](https://www.amazon.com/LG-27UD88-W-LED-Lit-Monitor-Type-C/dp/B01CDYB0QS/ref=sr_1_7?ie=UTF8&qid=1543993886&sr=8-7&keywords=usb-c+compatible+monitor)
 * [Amazon - Wireless Keyboard + Mouse](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-```Note: Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after some time.```
+
+{% note info Note %}
+Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after some time.
+{% endnote %}
 
 # Making Bootable/Burning SD-Cards/Thumbdrives
 These items are useful when you want to upgrade your Edge SBC's operating system via SD-Card or Thumbdrive (Burning Cards). Or if you want to run operating systems that can only be run from external media (Booting Cards) like LibreELEC.
@@ -366,10 +371,11 @@ These items are useful when you want to upgrade your Edge SBC's operating system
 * [Boot From External Media](/vim2/BootFromExtMedia.html)
 * [Enter Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
 
-**Tips:**
+{% note info Tip %}
 * **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
 * **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing the `SD_USB` mark, as well as LibreELEC and CoreELEC.
 * In order to bootup from **SD/USB images**, you need Android (V180209 or newer) or Ubuntu (V180531 or newer) running on your eMMC with Multi-Boot activated.
+{% endnote %}
 
 # Upgrading eMMC Operating System Using USB-C Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your Edge SBC's operating system stored in its eMMC storage. For example, changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.

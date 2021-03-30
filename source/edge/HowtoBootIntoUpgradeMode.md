@@ -52,4 +52,7 @@ kedge# run maskrom
 3. Short press the `Reset` key and release it to boot into Upgrade Mode (Maskrom Mode).
 
 ![Image of MRegister_ShortCircuit](/images/edge/MRegister_ShortCircuit.png)
-*Tip: The `M` register is located on the backside of Edge*
+
+{% note info Tip %}
+The `M` register is located on the backside of Edge
+{% endnote %}

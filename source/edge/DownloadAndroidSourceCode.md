@@ -41,7 +41,9 @@ $ repo sync -j4
 ```
 The initial sync operation may take an hour or more to complete.
 
-*Tip: You might need to run above command repeatly if it fails halfway. Or you can try with this script instead:*
+{% note info Tip %}
+You might need to run above command repeatly if it fails halfway. Or you can try with this script instead:
+{% endnote %}
 
 ```sh
 #!/bin/bash

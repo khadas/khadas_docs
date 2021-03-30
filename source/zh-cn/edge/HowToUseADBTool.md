@@ -83,10 +83,9 @@ $ adb shell
 
 * [Android Debug Bridge](https://developer.android.com/studio/command-line/adb.html)
 
-
-**注意:**
+{% note info 注意 %}
 1.如果你使用的是安卓手机，请确认你的手机打开了 *开发者模式*.
 2.当你尝试开始通过  `adb devices` 命令调试你的手机时,你的手机会弹出一条提醒，请确认连接。
 3.如果你使用的安卓设备是khadas的开发板，那么直接连接即可。
-
+{% endnote %}
 

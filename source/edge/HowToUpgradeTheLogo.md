@@ -28,4 +28,7 @@ $ sudo dd if=logo.img of=/dev/mmcblk1p5
 $ sync
 ```
 
-*Note: The NMP file should be 24 bpp.*
+{% note info Note %}
+The NMP file should be 24 bpp.
+{% endnote %}
+

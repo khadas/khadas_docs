@@ -12,7 +12,9 @@ PIN22       GPIO1_C0     48
 PIN23       GPIO1_B7     47
 ```
 
-*Tip: Some GPIOs may be set to other functions by default, e.g. I2C. If you want to use them as GPIO you need to modify the DTS.*
+{% note info Tip %}
+Some GPIOs may be set to other functions by default, e.g. I2C. If you want to use them as GPIO you need to modify the DTS.
+{% endnote %}
 
 # How To Get GPIO Number
 You can use the following formula to get GPIO number:

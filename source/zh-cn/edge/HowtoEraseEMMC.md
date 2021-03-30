@@ -29,5 +29,7 @@ title: 如何擦除eMMC
 $ sudo ./upgrade_tool ef /path/to/MiniLoaderAll.bin
 ```
 
-*注意：`upgrade_tool`需要配合`MiniLoaderAll.bin`来进行擦除，可以通过编译u-boot得到。*
+{% note info 注意 %}
+`upgrade_tool`需要配合`MiniLoaderAll.bin`来进行擦除，可以通过编译u-boot得到。
+{% endnote %}
 

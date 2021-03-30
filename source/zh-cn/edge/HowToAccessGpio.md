@@ -12,7 +12,9 @@ PIN22       GPIO1_C0     48
 PIN23       GPIO1_B7     47
 ```
 
-*注意： 有些GPIO默认复用为其他功能，如：I2C。如果配置为GPIO功能则需要修改DTS。*
+{% note info 注意 %}
+有些GPIO默认复用为其他功能，如：I2C。如果配置为GPIO功能则需要修改DTS。
+{% endnote %}
 
 # 如何获取GPIO编号
 可以使用下面的公式计算GPIO编号：

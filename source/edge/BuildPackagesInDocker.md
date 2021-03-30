@@ -3,7 +3,10 @@ title: Build Packages Using Docker
 
 This guide is about how to build packages(libdrm, gstreamer, mpp, etc.) using Docker.
 
-*Note: We only use the arm64 architecture.*
+
+{% note info Note %}
+We only use the arm64 architecture.
+{% endnote %}
 
 # Install Docker
 Requires your Host PC to be `Ubuntu 16.04` or newer.
@@ -33,7 +36,9 @@ $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 ```
 
-*Tip: You need to logout or reboot your system.*
+{% note info Tip %}
+You need to logout or reboot your system.
+{% endnote %}
 
 Check Docker:
 ```sh
@@ -86,7 +91,10 @@ Enter Docker Shell:
 ```sh
 $ docker run -it -v <package dir>:/home/rk/packages rockchip-arm64 /bin/bash
 ```
-*Tip: `package dir` is the full-path of the package that you want to build.*
+
+{% note info Tip %}
+`package dir` is the full-path of the package that you want to build.
+{% endnote %}
 
 Start To Build:
 

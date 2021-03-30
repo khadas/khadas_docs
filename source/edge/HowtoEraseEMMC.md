@@ -28,5 +28,7 @@ You can use [AndroidTool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.
 $ sudo ./upgrade_tool ef /path/to/MiniLoaderAll.bin
 ```
 
-*Tip: `MiniLoaderAll.bin` is needed to perform the erasure. It is built from U-Boot.*
+{% note info Tip %}
+`MiniLoaderAll.bin` is needed to perform the erasure. It is built from U-Boot.
+{% endnote %}
 

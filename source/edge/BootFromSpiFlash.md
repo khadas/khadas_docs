@@ -50,7 +50,9 @@ kedge# sf erase 0 +$filesize
 kedge# sf write $kernel_addr_r 0 $filesize
 kedge# reset
 ```
-*Tip: This will take about 3 minutes, please be patient.*
+{% note info Tip %}
+This will take about 3 minutes, please be patient.
+{% endnote %}
 
 After reboot, you will boot from the SPI-Flash.
 

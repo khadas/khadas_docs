@@ -331,7 +331,9 @@ Linux_TX|19|39|MCU_PA1
 1. Khadas USB-C 24W供电器
 2. Khadas USB-C 数据线
 
-**提示:** 这些物品现在在Khadas商店有售
+{% note info 提示 %}
+这些物品现在在Khadas商店有售
+{% endnote %}
 
 **更多:**
 * [Edge+Captain电源优先管理](/zh-cn/edge/EdgeCaptainPowerPriority.html)
@@ -352,7 +354,10 @@ Linux_TX|19|39|MCU_PA1
 * [Amazon - LG 4K显示器](https://www.amazon.com/LG-27UD88-W-LED-Lit-Monitor-Type-C/dp/B01CDYB0QS/ref=sr_1_7?ie=UTF8&qid=1543993886&sr=8-7&keywords=usb-c+compatible+monitor)
 * [Amazon - 无线键盘鼠标](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-```注意: 请不要连接多头相互干扰的大头电缆，否则可能会弯曲或扭曲连接器，这将在一段时间后导致间歇性连接问题。```
+
+{% note info 注意 %}
+请不要连接多头相互干扰的大头电缆，否则可能会弯曲或扭曲连接器，这将在一段时间后导致间歇性连接问题。
+{% endnote %}
 
 # 制作可启动/刻录SD卡/U盘驱动器
 当您想通过SD卡或Thumbdrive（刻录卡）升级Edge SBC的操作系统时，这些项目很有用。 或者，如果您要运行只能从外部介质（引导卡）（如LibreELEC）运行的操作系统。
@@ -367,10 +372,11 @@ Linux_TX|19|39|MCU_PA1
 * [从外部介质启动](/zh-cn/vim2/BootFromExtMedia.html)
 * [进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
 
-**提示:**
+{% note info 提示 %}
 * **eMMC映像**应该使用USB-C数据线从Ubuntu或Windows主机直接刻录到eMMC。 请勿将其刻录到SD卡中。 例如：包含`EMMC`标记的Android和Ubuntu发行版。
 * ** SD / USB映像**应复制到SD卡中，然后再使用该卡通过新的OS重新格式化eMMC存储。 例如：Armbian，包含`SD_USB`标记的Ubuntu发行版，以及LibreELEC和CoreELEC。
 * 为了从**SD / USB映像**引导，您需要在eMMC上运行Android（V180209或更高版本）或Ubuntu（V180531或更高版本）并激活Multi-Boot。
+{% endnote %}
 
 # 通过type-C口升级系统
 如果要使用笔记本电脑或台式PC升级存储在其eMMC存储中的Edge SBC操作系统，则需要这些物品。 例如，将启动操作系统从Android更改为Ubuntu，或安装更具异国情调的第三方操作系统。

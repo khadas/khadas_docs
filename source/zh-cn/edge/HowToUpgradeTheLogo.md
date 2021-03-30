@@ -29,4 +29,7 @@ $ sudo dd if=logo.img of=/dev/mmcblk1p5
 $ sync
 ```
 
-*注意：Logo镜像需要为24位位深。*
+{% note info 注意 %}
+Logo镜像需要为24位位深。
+{% endnote %}
+

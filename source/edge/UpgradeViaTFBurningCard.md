@@ -8,7 +8,9 @@ title: Upgrade Using A SD Card
 * SD-Card and an SD-Card Reader.
 * HDMI Monitor.
 
-**Note:** You should backup the data of your SD-Card if it is important to you. All data on your SD-Card will be erased.
+{% note info Note %}
+You should backup the data of your SD-Card if it is important to you. All data on your SD-Card will be erased.
+{% endnote %}
 
 # Create Burning Card
 
