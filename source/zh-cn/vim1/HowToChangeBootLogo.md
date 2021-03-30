@@ -38,8 +38,30 @@ $ file /usr/share/fenix/logo/logo.bmp
 
 </div>
 <div class="tab-pane fade show" id="kernel" role="tabpanel" aria-labelledby="kernel-tab">
-TODO
+
+1. 通过`netpbm`工具，将png图片转换成ppm图片
+
+```sh
+$ pngtopnm linux_logo.png > linux_logo.pnm
+$ pnmquant 224 linux_logo.pnm > linux_logo_clut224.pnm
+$ pnmtoplainpnm linux_logo_clut224.pnm > logo_linux_clut224.ppm
+```
+
+2. 将转换完的ppm文件放进内核的`drivers/video/logo/`目录下，替换`logo_linux_clut224.ppm`文件。
+
+3. 重现编译内核，就能将logo替换成新的图片了
+
 </div>
 <div class="tab-pane fade show" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
+
+Ubuntu logo 与 uboot logo 是同一个文件，修改uboot logo就能修改Ubuntu开机的logo
+
+```sh
+$ ll /usr/share/plymouth/themes/fenix/logo.png
+lrwxrwxrwx 1 root root 30 Mar 27 17:07 /usr/share/plymouth/themes/fenix/logo.png -> /usr/share/fenix/logo/logo.png
+```
+
+替换`/usr/share/fenix/logo/logo.png`，就能修改Ubuntu开机logo
+
 </div>
 </div>

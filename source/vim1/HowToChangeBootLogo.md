@@ -39,9 +39,30 @@ You can use your own bmp logo image to replace the default one to change the def
 
 </div>
 <div class="tab-pane fade show" id="kernel" role="tabpanel" aria-labelledby="kernel-tab">
-TODO
+
+1. Use the `netpbm` tool to convert png images to ppm images
+
+```sh
+$ pngtopnm linux_logo.png > linux_logo.pnm
+$ pnmquant 224 linux_logo.pnm > linux_logo_clut224.pnm
+$ pnmtoplainpnm linux_logo_clut224.pnm > logo_linux_clut224.ppm
+```
+
+2. Put the converted ppm file into the `drivers/video/logo/` directory of the kernel, and replace the `logo_linux_clut224.ppm` file.
+
+3. Re-compile the kernel, you can replace the logo with a new picture
+
 </div>
 <div class="tab-pane fade show" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
-TODO
+
+The Ubuntu logo and uboot logo are the same file. Modifying the uboot logo can modify the Ubuntu boot logo
+
+```sh
+$ ll /usr/share/plymouth/themes/fenix/logo.png
+lrwxrwxrwx 1 root root 30 Mar 27 17:07 /usr/share/plymouth/themes/fenix/logo.png -> /usr/share/fenix/logo/logo.png
+```
+
+Replace `/usr/share/fenix/logo/logo.png` to modify the Ubuntu boot logo
+
 </div>
 </div>
