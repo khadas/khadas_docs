@@ -1,11 +1,25 @@
 title: Khadas Edge Ubuntu Firmware Release Notes
 ---
 
-## Linux 4.4 Images
+{% note warn For OTA Releases %}
 
-{% note info Note %}
+Please check [How To Upgrade The System](/edge/HowToUpgradeTheSystem.html) to upgrade the system to latest release.
 
-Edge Only support **Ubuntu 18.04** for Linux 4.4.
+{% endnote %}
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="4.4-tab" data-toggle="tab" href="#4.4" role="tab" aria-controls="4.4" aria-selected="true">Linux 4.4</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="mainline-tab" data-toggle="tab" href="#mainline" role="tab" aria-controls="mainline" aria-selected="false">Mainline</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="4.4" role="tabpanel" aria-labelledby="4.4-tab">
+
+{% note warn Edge Only support Ubuntu 18.04 for Linux 4.4. %}
 
 {% endnote %}
 
@@ -74,11 +88,10 @@ Edge Only support **Ubuntu 18.04** for Linux 4.4.
 3. Add Chromium WebGL support
 4. Add Chromium video play with hardware acceleration support
 
-## Mainline Kernel Images
+</div>
+<div class="tab-pane fade show" id="mainline" role="tabpanel" aria-labelledby="mainline-tab">
 
-{% note info Note %}
-
-Edge Only support **Ubuntu 20.04** for Mainline Linux. 
+{% note warn Edge Only support Ubuntu 20.04 for Mainline Linux. %}
 
 {% endnote %}
 
@@ -89,9 +102,5 @@ Edge Only support **Ubuntu 20.04** for Mainline Linux.
 2. U-boot 2020.04
 3. Linux 5.7.0
 
-{% note warn For OTA Releases %}
-
-You can check [How To Upgrade The System](/edge/HowToUpgradeTheSystem.html) to upgrade the system to latest release.
-
-{% endnote %}
-
+</div>
+</div>

@@ -1,11 +1,25 @@
 title: Khadas VIM3L Ubuntu Firmware Release Notes
 ---
 
-## Linux 4.9 Images
+{% note info For OTA Releases %}
 
-{% note info Note %}
+Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to upgrade the system to latest OTA release.
 
-VIM3L Only support **Ubuntu 20.04** for Linux 4.9.
+{% endnote %}
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="4.9-tab" data-toggle="tab" href="#4.9" role="tab" aria-controls="4.9" aria-selected="true">Linux 4.9</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="mainline-tab" data-toggle="tab" href="#mainline" role="tab" aria-controls="mainline" aria-selected="false">Mainline</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="4.9" role="tabpanel" aria-labelledby="4.9-tab">
+
+{% note warn VIM3L Only support Ubuntu 20.04 for Linux 4.9. %}
 
 {% endnote %}
 
@@ -74,14 +88,12 @@ VIM3L Only support **Ubuntu 20.04** for Linux 4.9.
 1. Initial support for Ubuntu 20.04 Focal
 2. Linux 4.9.224
 
-## Mainline Kernel Images
+</div>
+<div class="tab-pane fade show" id="mainline" role="tabpanel" aria-labelledby="mainline-tab">
 
-{% note info Note %}
-
-VIM3L Only support **Ubuntu 20.04** for Mainline Linux. 
+{% note warn VIM3L Only support Ubuntu 20.04 for Mainline Linux. %}
 
 {% endnote %}
-
 
 --------------------------------------------------------------------------------------------------
 **V0.9.1-20200602: (OTA Release)**
@@ -89,15 +101,11 @@ VIM3L Only support **Ubuntu 20.04** for Mainline Linux.
 1. Linux 5.7.0
 
 --------------------------------------------------------------------------------------------------
-**V20200530:**
+**V20200530: (Base Release)**
 
 1. Initial support for Ubuntu 20.04 Focal
 2. U-boot 2020.04
 3. Linux 5.7-rc7
 
-{% note warn For OTA Releases %}
-
-You can check [How To Upgrade The System](/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest release.
-
-{% endnote %}
-
+</div>
+</div>
