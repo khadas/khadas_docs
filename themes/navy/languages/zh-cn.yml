@@ -84,6 +84,7 @@ sidebar:
     how_to_set_auto_login: 设置自动登录
     how_to_use_1-Wire: 单总线用法
     how_to_setup_HDMI: 设置HDMI分辨率
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
     how_to_change_logo: 更换开机Logo
     how_to_custom_MAC: 自定义MAC地址
     how_to_use_dtbo: Device Tree Overlay用法
@@ -149,6 +150,7 @@ sidebar:
     how_to_set_auto_login: 设置自动登录
     how_to_use_1-Wire: 单总线用法
     how_to_setup_HDMI: 设置HDMI分辨率
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
     how_to_change_logo: 更换开机Logo
     how_to_custom_MAC: 自定义MAC地址
     how_to_use_dtbo: Device Tree Overlay用法
@@ -238,6 +240,7 @@ sidebar:
     how_to_use_1-Wire: 单总线用法
     how_to_setup_HDMI: 设置HDMI分辨率
     how_to_setup_max_cpu_freq: 设置最大CPU频率
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
     how_to_change_logo: 更换开机Logo
     how_to_custom_MAC: 自定义MAC地址
     how_to_use_dtbo: Device Tree Overlay用法
@@ -300,6 +303,7 @@ sidebar:
     how_to_upgrade_the_logo: 更新logo
     how_to_upgrade_the_uboot: 更新u-boot
     how_to_upgrade_the_kernel: 更新内核
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
     how_to_control_LED: LED灯用法
     how_to_test_gpio_irq: GPIO中断用法
     how_to_set_auto_login: 设置自动登录
