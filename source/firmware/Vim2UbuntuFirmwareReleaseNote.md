@@ -10,6 +10,14 @@ VIM2 Only support **Ubuntu 18.04** for Linux 4.9.
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**V1.0.4-210330: (OTA Release)**
+
+1. fix watchdog
+2. add ubuntu splash support
+3. improve loglevel setup
+4. fix board dependencies
+
+--------------------------------------------------------------------------------------------------
 **V1.0.3-210317: (OTA Release)**
 
 1. enable more governors

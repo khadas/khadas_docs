@@ -10,6 +10,15 @@ VIM3L Only support **Ubuntu 20.04** for Linux 4.9.
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**V1.0.4-210330: (OTA Release)**
+
+1. fix watchdog
+2. add ubuntu splash support
+3. improve loglevel setup
+4. fix board dependencies
+5. fix npu package conflict with jpeg package
+
+--------------------------------------------------------------------------------------------------
 **V1.0.3-210317: (OTA Release)**
 
 1. fix board package dependencies issue
