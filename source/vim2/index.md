@@ -109,7 +109,7 @@ Linux_TX|19|39|GPIODV_13
 </div>
 </div>
 
-## Krescue (Khadas-Rescue-OS)
+## Krescue (Khadas Rescue OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
@@ -192,7 +192,7 @@ These items are useful when you need to connect your VIM2 SBC to an external dis
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
 * [Amazon - Wireless Keyboard + Mouse](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-## Making Bootable/Burning SD-Cards/Thumbdrives
+## Making Bootable / Burning SD-Cards / Thumbdrives
 These items are useful when you want to upgrade your VIM2 SBC's operating system via SD-Card or Thumbdrive (Burning Cards). Or if you want to run operating systems that can only be run from external media (Booting Cards) like LibreELEC.
 
 1. 8GB or Larger, SD-Card

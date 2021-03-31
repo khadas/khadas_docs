@@ -403,7 +403,7 @@ Linux_TX|19|39|MCU_PA1
 * [Amazon - Samsung 970 EVO NVMe SSD](https://www.amazon.com/Samsung-970-EVO-500GB-MZ-V7E500BW/dp/B07BN4NJ2J/ref=sr_1_3?ie=UTF8&qid=1543993490&sr=8-3&keywords=samsung+m.2+ssd)
 * [Amazon - 高速SD卡](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-## 软件开发/崩溃恢复
+## 软件开发 / 崩溃恢复
 
 1. Edge系列SBC配备了“ Terry的智能镊子”，即使在引导加载程序损坏的情况下，也不需要导电金属镊子即可进行故障恢复。*极端的故障恢复情况将要求您使用MRegister重置Edge SBC。 USB串行调试工具对于开发人员调试复杂的软件问题也很有用。
 

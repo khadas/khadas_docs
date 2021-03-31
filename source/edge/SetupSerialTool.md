@@ -31,7 +31,7 @@ The connections should look like this:
 
 3) Insert the USB-end into your Host-PC.
 
-## Setup Kermit Protocol(C-Kermit)
+## Setup Kermit Protocol (C-Kermit)
 
 **Install c-kermit:**
 

@@ -32,7 +32,7 @@ kedge# run update
 kedge# run maskrom
 ```
 
-## Android/Linux Command Line
+## Android / Linux Command Line
 
 1. Refer to this [guide](/edge/SetupSerialTool.html) to setup your serial tool for Edge.
 2. Once again, make sure you've done the correct connections and setup.

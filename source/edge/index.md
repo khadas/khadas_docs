@@ -357,7 +357,7 @@ These items are useful when you need to connect your Edge SBC to an external dis
 Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after some time.
 {% endnote %}
 
-## Making Bootable/Burning SD-Cards/Thumbdrives
+## Making Bootable / Burning SD-Cards / Thumbdrives
 These items are useful when you want to upgrade your Edge SBC's operating system via SD-Card or Thumbdrive (Burning Cards). Or if you want to run operating systems that can only be run from external media (Booting Cards) like LibreELEC.
 
 1. 8GB or Larger, SD-Card

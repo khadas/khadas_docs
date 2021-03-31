@@ -121,7 +121,7 @@ $ sudo ./UNINSTALL
 
 NPU Demo 可以运行在X11或者framebuffer模式的不同环境下，选择对应的demo运行即可。
 
-#### X11/Framebuffer
+#### X11 / Framebuffer
 
 带有`fb`字样的demo是运行在framebuffer模式下。
 

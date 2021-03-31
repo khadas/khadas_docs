@@ -229,7 +229,7 @@ Linux_TX|19|39|GPIODZ_15
 </div>
 
 
-## Krescue (Khadas-Rescue-OS)
+## Krescue (Khadas Rescue OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
@@ -274,6 +274,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 - [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
 
 ## Amlogic A311D, NPU使用指南
+
 以下文档链接将帮助您开始使用VIM3的5.0tops神经处理单元。
 
 1. [How to Use NPU](/zh-cn/vim3/HowToUseNpu.html)
@@ -311,7 +312,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [Khadas Shop - 遥控器](https://www.khadas.com/product-page/ir-remote)
 [亚马逊－无线鼠标和键盘](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-## 制作可引导/烧录的SD卡/U盘驱动器
+## 制作可引导 / 烧录的SD卡 / U盘驱动器
 当您想通过SD卡或U盘驱动器（烧录卡）升级VIM3 SBC的操作系统时，这些项目非常有用。或者，如果您想运行只能从外部Medi A（烧录卡）运行的操作系统，如LibreELEC。
 
 1. 不小于8GB的SD卡。

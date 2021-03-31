@@ -16,7 +16,7 @@ title: 如何把SD卡固件写入到eMMC
 sudo emmc-install
 ```
 
-## 在SD / eMMC上安装/更新Bootloader
+## 在SD / eMMC上安装 / 更新Bootloader
 
 ![image](/images/vim1/Write_SD_image_to_eMMC1.png)
 

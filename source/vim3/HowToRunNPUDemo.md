@@ -119,7 +119,7 @@ The `type` parameter is an input parameter that must be selected whether it is t
 
 NPU Demo can run in X11 or framebuffer mode, just select the corresponding demo to run.
 
-#### X11/Framebuffer
+#### X11 / Framebuffer
 
 The demo with `fb` is running in framebuffer mode.
 

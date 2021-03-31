@@ -49,7 +49,7 @@ khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```
 
-## Query fan mode/level, temperature and trigger after boot
+## Query fan mode / level, temperature and trigger after boot
 
 To query the fan mode/level, temperature and trigger after booting use the following commands:
 

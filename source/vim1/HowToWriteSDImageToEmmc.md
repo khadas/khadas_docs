@@ -15,7 +15,7 @@ Check [here](/vim3/BootFromExtMedia.html).
 sudo emmc-install
 ```
 
-## Install/Update the bootloader on SD/eMMC
+## Install / Update the bootloader on SD / eMMC
 
 ![image](/images/vim1/Write_SD_image_to_eMMC1.png)
 
