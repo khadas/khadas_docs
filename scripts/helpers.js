@@ -240,18 +240,20 @@ hexo.extend.helper.register('header_menu', function (className) {
   }
   for (const [title, submenu] of Object.entries(menu)) {
     var currentPath = pathFn.dirname(self.path);
-    if (!isEnglish && ~localizedPath.indexOf(title)) {
-      path = lang + path;
-      currentPath = currentPath + '/';
-    } else {
-      currentPath = '/' + currentPath + '/';
-    }
     if (Object.prototype.toString.call(submenu) === '[object Object]') {
       var secondary_result = '';
       var is_current = '';
       var open = '';
 
       _.each(submenu, function (path, subtitle) {
+        var currentPath = pathFn.dirname(self.path);
+        if (!isEnglish && ~localizedPath.indexOf(subtitle)) {
+          path = lang + path;
+          currentPath = currentPath + '/';
+        } else {
+          currentPath = '/' + currentPath + '/';
+        }
+
         if (path === currentPath) {
           open = 'open';
           current = 'current';
@@ -301,6 +303,13 @@ hexo.extend.helper.register('header_menu', function (className) {
       current = '';
     } else {
       var path = submenu;
+      if (!isEnglish && ~localizedPath.indexOf(title)) {
+        path = lang + path;
+        currentPath = currentPath + '/';
+      } else {
+        currentPath = '/' + currentPath + '/';
+      }
+
       if (path === currentPath) {
         current = 'current';
       }
