@@ -36,6 +36,13 @@ $ file /usr/share/fenix/logo/logo.bmp
 
 只需用你的bmp logo图片替换原有的logo文件即可。
 
+{% note info 提示 %}
+
+如果你使用[Fenix](https://github.com/khadas/fenix)来编译固件，可以通过替换文件`archives/logo/bmp/logo.bmp` 文件来修改logo。
+
+{% endnote %}
+
+
 </div>
 <div class="tab-pane fade show" id="kernel" role="tabpanel" aria-labelledby="kernel-tab">
 
@@ -57,6 +64,13 @@ $ pnmtoplainpnm linux_logo_clut224.pnm > logo_linux_clut224.ppm
 Ubuntu logo对应的文件为：`/usr/share/fenix/logo/logo.png`。
 
 替换`/usr/share/fenix/logo/logo.png`，就能修改Ubuntu开机logo。
+
+{% note info 提示 %}
+
+如果你使用[Fenix](https://github.com/khadas/fenix)来编译固件，可以通过替换文件`archives/logo/png/logo.png` 文件来修改logo。
+
+{% endnote %}
+
 
 </div>
 </div>
