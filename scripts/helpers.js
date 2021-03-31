@@ -15,6 +15,57 @@ function startsWith(str, start) {
   return str.substring(0, start.length) === start;
 }
 
+function wideTraversal(selectNode, type) {
+  if (selectNode != null) {
+    var queue = [];
+    queue.unshift(Object.entries(selectNode));
+    while (queue.length !== 0) {
+      var item = queue.shift();
+      var title = '';
+      var menuList = '';
+      if(Object.prototype.toString.call(item[0][1]) === '[object Object]'){
+        title = item[0][0];
+        menuList = item[0][1];
+      }else{
+        title = item[0];
+        menuList = item[1];
+      }
+      if (title === type) {
+        return menuList;
+      }
+      if (Object.prototype.toString.call(menuList) === '[object Object]') {
+        for (var i = 0; i < Object.entries(menuList).length; i++) {
+          queue.push(Object.entries(menuList)[i]);
+        }
+      }
+    }
+  }
+}
+
+function deepFirstSearch(node) {
+  if (node != null) {
+    var stack = [];
+    stack.push(Object.entries(node));
+    while (stack.length != 0) {
+      var item = stack.pop();
+      var title = '';
+      var menuList = '';
+      if(stack.length === 0){
+        title = item[0][0];
+        menuList = item[0][1];
+      }else{
+        title = item[0];
+        menuList = item[1];
+      }
+      if(Object.prototype.toString.call(menuList) === '[object Object]'){
+        stack.push(Object.entries(menuList)[0]);
+      }else{
+        return menuList;
+      }
+    }
+  }
+}
+
 hexo.extend.helper.register('page_nav', function() {
   var type = this.page.canonical_path.split('/')[0];
   var sidebar = this.site.data.sidebar[type];
@@ -189,23 +240,26 @@ hexo.extend.helper.register('header_menu', function (className) {
   }
   for (const [title, submenu] of Object.entries(menu)) {
     var currentPath = pathFn.dirname(self.path);
-    if (!isEnglish && ~localizedPath.indexOf(title)) {
-      path = lang + path;
-      currentPath = currentPath + '/';
-    } else {
-      currentPath = '/' + currentPath + '/';
-    }
     if (Object.prototype.toString.call(submenu) === '[object Object]') {
       var secondary_result = '';
       var is_current = '';
       var open = '';
 
       _.each(submenu, function (path, subtitle) {
+        var currentPath = pathFn.dirname(self.path);
+        if (!isEnglish && ~localizedPath.indexOf(subtitle)) {
+          path = lang + path;
+          currentPath = currentPath + '/';
+        } else {
+          currentPath = '/' + currentPath + '/';
+        }
+
         if (path === currentPath) {
           open = 'open';
           current = 'current';
           is_current = true;
         }
+
         if (className === MOBILE_NAV){
           secondary_result +=
             '<a href="' + self.url_for(path) + '" class="' + className + '-link secondary ' + current + '">' +
@@ -221,9 +275,11 @@ hexo.extend.helper.register('header_menu', function (className) {
         }
         current = '';
       });
+
       if (is_current){
         current = 'current';
       }
+
       if (className === MOBILE_NAV){
         result +=
           '<strong class="' + className + '-link ' + current + ' header">' +
@@ -247,9 +303,25 @@ hexo.extend.helper.register('header_menu', function (className) {
       current = '';
     } else {
       var path = submenu;
+      if (!isEnglish && ~localizedPath.indexOf(title)) {
+        path = lang + path;
+        currentPath = currentPath + '/';
+      } else {
+        currentPath = '/' + currentPath + '/';
+      }
+
       if (path === currentPath) {
         current = 'current';
       }
+
+      var firmware_redirect_link = self.redirect_link(title, "firmware", path);
+      var hardware_redirect_link = self.redirect_link(title, "hardware", path);
+      if (title === "firmware"){
+        path = firmware_redirect_link;
+      }else if (title === "hardware"){
+        path = hardware_redirect_link;
+      }
+
       result +=
         '<a href="' + self.url_for(path) +'" class="' + className + '-link ' + current + ' header">' +
         self.__('menu.' + title) +
@@ -261,6 +333,31 @@ hexo.extend.helper.register('header_menu', function (className) {
     result += '</div>';
   }
   return result;
+});
+
+hexo.extend.helper.register('redirect_link',function(title, header_text, path){
+  if (title === header_text){
+    var canonicalPath = this.page.canonical_path;
+    if (
+      startsWith(canonicalPath, 'vim1/') ||
+      startsWith(canonicalPath, 'vim2/') ||
+      startsWith(canonicalPath, 'vim3/') ||
+      startsWith(canonicalPath, 'edge/') ||
+      (startsWith(canonicalPath, 'tone1/') && header_text === 'hardware')
+      ) {
+      var type = this.page.canonical_path.split("/")[0];
+      var redirectLink = '';
+      var menuList = wideTraversal(this.site.data.sidebar[header_text],type);
+      if (Object.prototype.toString.call(menuList) === '[object Object]'){
+        redirectLink = deepFirstSearch(menuList);
+      }else{
+        redirectLink = menuList;
+      }
+      path = path + redirectLink;
+    }
+    return path;
+  }
+  return null;
 });
 
 hexo.extend.helper.register('canonical_url', function(lang) {
