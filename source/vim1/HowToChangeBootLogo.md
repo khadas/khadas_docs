@@ -55,14 +55,9 @@ $ pnmtoplainpnm linux_logo_clut224.pnm > logo_linux_clut224.ppm
 </div>
 <div class="tab-pane fade show" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
 
-The Ubuntu logo and uboot logo are the same file. Modifying the uboot logo can modify the Ubuntu boot logo
+The Ubuntu logo file is `/usr/share/fenix/logo/logo.png`.
 
-```sh
-$ ll /usr/share/plymouth/themes/fenix/logo.png
-lrwxrwxrwx 1 root root 30 Mar 27 17:07 /usr/share/plymouth/themes/fenix/logo.png -> /usr/share/fenix/logo/logo.png
-```
-
-Replace `/usr/share/fenix/logo/logo.png` to modify the Ubuntu boot logo
+Replace `/usr/share/fenix/logo/logo.png` to change the Ubuntu boot logo.
 
 </div>
 </div>

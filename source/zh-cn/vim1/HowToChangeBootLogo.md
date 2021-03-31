@@ -1,7 +1,7 @@
 title: 如何更换开机Logo
 ---
 
-{% note info 对于最新的固件，在系统启动过程中会显示3个lgoo：%}
+{% note info 对于最新的固件，在系统启动过程中会显示3个logo：%}
 
 * U-boot阶段logo
 * Kernel阶段logo
@@ -54,14 +54,9 @@ $ pnmtoplainpnm linux_logo_clut224.pnm > logo_linux_clut224.ppm
 </div>
 <div class="tab-pane fade show" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
 
-Ubuntu logo 与 uboot logo 是同一个文件，修改uboot logo就能修改Ubuntu开机的logo
+Ubuntu logo对应的文件为：`/usr/share/fenix/logo/logo.png`。
 
-```sh
-$ ll /usr/share/plymouth/themes/fenix/logo.png
-lrwxrwxrwx 1 root root 30 Mar 27 17:07 /usr/share/plymouth/themes/fenix/logo.png -> /usr/share/fenix/logo/logo.png
-```
-
-替换`/usr/share/fenix/logo/logo.png`，就能修改Ubuntu开机logo
+替换`/usr/share/fenix/logo/logo.png`，就能修改Ubuntu开机logo。
 
 </div>
 </div>
