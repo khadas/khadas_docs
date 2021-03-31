@@ -104,8 +104,6 @@ You need to reboot the board after change the frequency.
 {% note warn Note %}
 
 There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
-There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
-There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
 
 {% endnote %}
 
