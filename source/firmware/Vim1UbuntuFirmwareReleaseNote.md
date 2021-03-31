@@ -108,7 +108,7 @@ Known issues:
 
 
 </div>
-<div class="tab-pane fade show active" id="mainline" role="tabpanel" aria-labelledby="mainline-tab">
+<div class="tab-pane fade show" id="mainline" role="tabpanel" aria-labelledby="mainline-tab">
 
 {% note warn VIM1 Only support Ubuntu 20.04 for Mainline Linux. %}
 
@@ -126,4 +126,5 @@ Known issues:
 2. U-boot 2020.04
 3. Linux 5.7-rc7
 
+</div>
 </div>
