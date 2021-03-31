@@ -99,17 +99,15 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 </div>
 </div>
 
-### 超频
+## 超频
 
 {% note warn 注意 %}
 
 这里提供了一些超频频率，**但是我们不能保证所有的VIM3/VIM3L板子都可以稳定运行这些超频频率，同时你需要接上风扇！！！**
-这里提供了一些超频频率，**但是我们不能保证所有的VIM3/VIM3L板子都可以稳定运行这些超频频率，同时你需要接上风扇！！！**
-这里提供了一些超频频率，**但是我们不能保证所有的VIM3/VIM3L板子都可以稳定运行这些超频频率，同时你需要接上风扇！！！**
 
 {% endnote %}
 
-#### 频率列表
+### 频率列表
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -185,7 +183,7 @@ $ # cat /sys/devices/system/cpu/cpufreq/policy0/related_cpus
 </div>
 </div>
 
-### 查看CPU频率
+## 查看CPU频率
 
 可以通过命令`cpufreq-info`来查看CPU频率。
 

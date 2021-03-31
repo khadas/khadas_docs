@@ -7,7 +7,7 @@ title: 下载安卓源码
 
 按如下步骤下载源代码。
 
-# 步骤
+## 步骤
 
 1）创建一个空目录来保存您的工作文件：
 
@@ -45,16 +45,20 @@ $repo sync -j4
 初始同步操作可能需要很长时间才能完成。
 提示：如果命令中途失败，您可能需要重复运行上面的命令。或者您可以尝试使用此脚本：
 
+{% note info 提示 %}
+如果命令中途失败，您可能需要重复运行上面的命令。或者您可以尝试使用此脚本
 ```sh
 #!/bin/bash
 repo sync -j4
 while [ $? = 1 ]; do
-	echo "Sync failed, repeat again:"
-	repo sync -j4
+    echo "Sync failed, repeat again:"
+    repo sync -j4
 done
 ```
 
 如果需要，请按ctrl-\退出。
+
+{% endnote %}
 
 4）建立开发分支：
 

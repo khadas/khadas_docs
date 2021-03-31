@@ -1,7 +1,7 @@
 title: VIM3 GPIO 管脚映射
 ---
 
-# GPIO管脚映射 (V11):
+## GPIO管脚映射 (V11):
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---

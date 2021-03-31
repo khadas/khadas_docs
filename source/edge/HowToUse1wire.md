@@ -3,7 +3,7 @@ title: How To Use 1-Wire
 
 Take Edge-V as an example, Caption please replace dtb with `rk3399-khadas-captain-linux.dtb`. Edge not support this driver.
 
-# Connect 1-Wire module
+## Connect 1-Wire module
 
 ```shell
 $ vim /boot/env.txt
@@ -18,7 +18,7 @@ overlays=i2c2 spi3 i2s0 onewire
 For details on overlays, please refer to [how to use device tree overlays](/vim1/HowToUseDeviceTreeOverlay.html)
 
 
-# How TO Use 
+## How TO Use 
 
 enter driver directory,
 

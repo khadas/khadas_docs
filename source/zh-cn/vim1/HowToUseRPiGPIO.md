@@ -1,12 +1,12 @@
 title: 如何使用RPi.GPIO
 ---
 
-### What is RPi.GPIO
+## What is RPi.GPIO
 
 RPi.GPIO 是一个树莓派上用来控制GPIO引脚的Python库。是在wirpingPI的基础上拓展的一个库。他们的底层都是C语言。不同的是RPi.GPIO的上层是使用Python控制的。现在我们已经将这个库移植到了VIMs上。可以通过Python控制板子上的40Pin的引脚。
 
-### 开始使用RPi.GPIO
-#### 确认RPi.GPIO是否已经正确安装
+## 开始使用RPi.GPIO
+### 确认RPi.GPIO是否已经正确安装
 
 这里有两个地方需要确认，
 
@@ -22,7 +22,7 @@ Description: This package provides a class to control the GPIO on a Raspberry Pi
 Description: This package provides a class to control the GPIO on a Raspberry Pi or KHADAS.
 ```
 
-#### 如何通过编写一个Python程序控制GPIO。
+### 如何通过编写一个Python程序控制GPIO。
 
 1. 导入相关的库
 
@@ -42,7 +42,7 @@ def shutdown():
 
 因为程序会通过库向内存申请内存空间，因此在程序退出时，需要释放这些内存。
 
-#### 一个简单的例子simple.py
+### 一个简单的例子simple.py
 
 ```python
 import RPi.GPIO as GPIO
@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
 这个例子只是简单的定时拉高拉低引脚的电平。
 
-#### 如果运行编写好的Python程序
+### 如果运行编写好的Python程序
 
 * 通过python2运行
 
@@ -104,5 +104,5 @@ simple.py:8: RuntimeWarning: This channel is already in use, continuing anyway. 
 GPIO.setup(GpioW,GPIO.OUT)
 ```
 结束程序时和Python2一样。
-### 注意
+## 注意
 RPi.GPIO本身包括很多功能，不仅仅只是控制GPIO引脚的输出和读取引脚电平值。这里只是一个简单的介绍和使用，更多的用法需要使用者自己去探索。

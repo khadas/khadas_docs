@@ -2,13 +2,13 @@ title: Bluetooth Instructions
 ---
 
 This guide is about how to use  `Bluetooth Media Device`  in Ubuntu.
-### What needs to be prepared ###
+## What needs to be prepared
 
 >1. Development board with Ubuntu firmware version.
 >2. Bluetooth Media Device (This document use a bluetooth headset).
 >3. Music player (This document use by [music.163.com](https://music.163.com/)).
 
-### Connect Bluetooth Media Device ### 
+## Connect Bluetooth Media Device
 
 >Open **Bluetooth Manager(preferences/Bluetooth Manager)** and pair you deivce.Then choice **headset** mode.
 
@@ -18,7 +18,7 @@ This guide is about how to use  `Bluetooth Media Device`  in Ubuntu.
 
 ![bluetooth connect success](/images/vim1/bluetooth_connect_success.png) 
 
-### Playing music and related settings ###
+## Playing music and related settings
 
 If you can play music normally, it means that your settings are all right.But sometimes you encounter problems that cannot be played.At this point, you need to confirm the following points:
 

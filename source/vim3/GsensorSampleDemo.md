@@ -1,7 +1,7 @@
 title: Gsensor sample demo
 ---
 
-# Gsensor node
+## Gsensor node
 
 Gsensor node in `/dev` directory
 
@@ -10,11 +10,11 @@ $ ll /dev/accel
 crw-rw-rw- 1 root root 10, 50 Mar 18 12:17 /dev/accel
 ```
 
-# Gsensor demo
+## Gsensor demo
 
 The Gsensor example is to read and write nodes through the ioctl function
 
-## source code
+### source code
 
 The source code only realizes the use of default settings to read data, other functions users can implement by yourself
 
@@ -83,7 +83,7 @@ int main(int argc, char **argv){
 }
 ```
 
-## compile
+### compile
 
 Use `gcc` to compile directly on the board
 
@@ -116,7 +116,7 @@ gsensor_sample_demo.c:57:3: warning: implicit declaration of function â€˜sleepâ€
 ```
 
 
-## Run
+### Run
 
 Rotate the board while running, you can see the changes in gsensor data
 

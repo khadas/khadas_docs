@@ -1,9 +1,9 @@
 title: Upgrade Using a USB-C Cable
 ---
 
-# Upgrade Using Windows
+## Upgrade Using Windows
 
-## Preparations
+### Preparations
 
 * Download the [USB driver_v4.91](https://dl.khadas.com/Tools/DriverAssitant_v4.91.zip) and extract it.
 * Run `DriverInstall.exe` to install USB drivers.
@@ -14,7 +14,7 @@ title: Upgrade Using a USB-C Cable
 * Download the [AndroidTool_Release_en_v2.71](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.71.zip) and extract it.
 * `AndroidTool.exe` is the burning tool, you don't need to install it.
 
-## Upgrading Steps
+### Upgrading Steps
 
 Make sure that you have installed the correct USB drivers, then follow these steps to upgrade:
 
@@ -36,15 +36,15 @@ which requires `erasing Flash`.
 Now all you need to do is to click the `Upgrade` button of the tool and wait for upgrading to complete:
 ![AndroidTool upgrade](/images/edge/AndroldTool_upgrade.png)
 
-# Upgrade Using Ubuntu
+## Upgrade Using Ubuntu
 
-## Preparations
+### Preparations
 
 ```sh
 $ sudo apt-get install libusb-dev git parted
 ```
 
-## Get Burning Tool
+### Get Burning Tool
 
 Image Burning Tool on Ubuntu is in this repository [Utils](https://github.com/khadas/utils).
 
@@ -59,7 +59,7 @@ $ cd /path/to/utils
 $ git pull
 ```
 
-## Install Burning Tool
+### Install Burning Tool
 
 You need to install the USB rules and create some links.
 
@@ -101,7 +101,7 @@ Done!
 
 **NOTE:** Root privilege is required.
 
-## How to Burn Images Using Ubuntu
+### How to Burn Images Using Ubuntu
 
 There are two commands that can be used to burn images: `burn-tool` and `rk-burn-tool`.
 
@@ -130,7 +130,7 @@ Upgrade firmware ok.
 Done!
 ```
 
-## Uninstall Burning Tool
+### Uninstall Burning Tool
 ```
 $ cd /path/to/utils
 $ ./UNINSTALL
@@ -138,6 +138,6 @@ $ ./UNINSTALL
 
 **NOTE: This burning tool has only been verified on Ubuntu 16.04**.
 
-# See Also
+## See Also
 * [How To Boot Into Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
 

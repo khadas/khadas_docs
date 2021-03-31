@@ -1,7 +1,7 @@
 title: VIM1 文档
 ---
 
-# VIM1
+## VIM1
 ![image](/images/vim1/docs_vim1.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -89,7 +89,7 @@ title: VIM1 文档
 
 {% endnote %}
 
-# Krescue (Khadas-Rescue-OS)
+## Krescue (Khadas Rescue OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
@@ -133,7 +133,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 - [YouTube - Krescue Online OS Installation](https://youtu.be/vvpkbhnyhZY)
 - [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
 
-# VIM1 电源选择
+## VIM1 电源选择
 尽管您的VIM1 SBC与各种类型的电源兼容，但这些是最佳性能输出和稳定性的推荐规格。
 
 1. 5V,2A 电源适配器
@@ -145,7 +145,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Khadas VIMs 外部供电接口](/zh-cn/vim1/ExtraPowerInput.html)
 * [Khadas VIM 规格](https://www.khadas.com/vim)
 
-# 显示器　&& 用户输入
+## 显示器　&& 用户输入
 当您需要将VIM1 SBC连接到外部显示器+键盘鼠标+遥控器，以用作台式计算机或媒体中心时，这些选项非常有用
 
 1. 4K HDMI 2.0 的数据线
@@ -158,7 +158,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [Khadas Shop - 遥控器](https://www.khadas.com/product-page/ir-remote)
 [亚马逊－无线鼠标和键盘](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-# 制作可引导/烧录的SD卡/U盘驱动器
+## 制作可引导 / 烧录的SD卡 / U盘驱动器
 当您想通过SD卡或U盘驱动器（烧录卡）升级VIM1 SBC的操作系统时，这些项目非常有用。或者，如果您想运行只能
 从外部Medi A（烧录卡）运行的操作系统，如LibreELEC。
 
@@ -181,7 +181,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 
 {% endnote %}
 
-# 使用Type-C升级EMMC系统
+## 使用Type-C升级EMMC系统
 如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM1 SBC操作系统，则需要这些项目。例如，将启动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。
 
 1. 常见Tpye-C数据线 (传统PC)
@@ -199,7 +199,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [U-Boot](/zh-cn/vim1/FirmwareUboot.html)
 * [Third Party OSes](/zh-cn/vim1/FirmwareThirdparty.html)
 
-# 观看电影，扩展内部emmc存储
+## 观看电影，扩展内部emmc存储
 如果您希望将VIM1 SBC用作媒体中心，用于存储/下载大型电影文件，这些项目非常有用。一个microDXC的UHS-I卡很贵，但它的速度也足以支持4K视频播放。此外，您还可以连接外部USB-2.0 SSD或HDD以存储整个媒体库。
 
 1. 不小于64GB的USB-2.0 HDD/SSD
@@ -222,11 +222,11 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [亚马逊－金属镊子](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [亚马逊-USB调试工具](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
-# VIM1相关网页
+## VIM1相关网页
 更多的相关信息，请查看我们的网页，阅读文档，或者到论坛浏览以及提问。
 * [VIM1网站首页](https://www.khadas.com/vim)
 * [VIM1论坛页](https://forum.khadas.com/c/khadas-vim)
 
-# VIM1 介绍视频
+## VIM1 介绍视频
 {% youtube dLAX8nwcTvo %}
 

@@ -3,12 +3,12 @@ title: 快速打包安卓升级固件
 
 这篇文档介绍在只修改部分内容（如uboot和linux）的情况下如何快速打包安卓升级固件而不需要整个完全打包。
 
-### 准备:
+## 准备:
 
 * [如何编译安卓](/zh-cn/vim1/BuildAndroid.html)。
 
 
-### 仅仅修改U-boot
+## 仅仅修改U-boot
 
 * 重新编译U-boot
 ```sh
@@ -29,7 +29,7 @@ $ cp uboot/fip/u-boot.bin.sd.bin   out/target/product/TARGET/upgrade/
 ```sh
 $ ./vendor/amlogic/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
-### 仅仅修改开机logo
+## 仅仅修改开机logo
 
 * 重新编译Logo。参考[如何编译U-boot Logo](/zh-cn/vim1/BuildBootLogoForUboot.html)。
 ```sh
@@ -42,7 +42,7 @@ $ make logoimg
 ```sh
 $ ./vendor/amlogic/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
-### 仅仅修改DTB或kernel
+## 仅仅修改DTB或kernel
 
 * 重新编译DTB和kernel
 ```sh
@@ -56,7 +56,7 @@ $ source device/khadas/TARGET/mkern.sh
 $ ./vendor/amlogic/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/TARGET/upgrade/aml_upgrade_package.conf  out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 ```
 
-### 仅仅修改System
+## 仅仅修改System
 
 * 重新编译System
 ```sh

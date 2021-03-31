@@ -1,9 +1,9 @@
 title: 如何测试GPIO中断
 ---
 
-# 却换root用户
+## 却换root用户
 
-只有root用户可以控制GPIO,在测试之前需要先切换到root用户
+只有root用户可以控制GPIO，在测试之前需要先切换到root用户。
 
 ```shell
 $ khadas@Khadas:~$ su
@@ -11,9 +11,9 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-# 设置GPIO引脚
+## 设置GPIO引脚
 
-* 确认你需要使用的引脚,以VIM3为例
+* 确认你需要使用的引脚，以VIM3为例。
 
 ```shell
 root@Khadas:/home/khadas# gpio readall
@@ -43,17 +43,17 @@ root@Khadas:/home/khadas# gpio readall
  +------+-----+-------------------+------+---+----+-------+----++----+-------+----+---+------+----------------------------+-----+------+
 ```
 
-选择你需要使用的GPIO,确认对应的物理引脚和GPIO值.这里以GPIO3C0为例,则对应的GPIO值为112,物理引脚为第13脚.
+选择你需要使用的GPIO，确认对应的物理引脚和GPIO值。这里以GPIO3C0为例，则对应的GPIO值为112，物理引脚为第13脚。
 
 * export GPIO
 
-export你选中的GPIO,才能对GPIO进行操作,
+export你选中的GPIO，才能对GPIO进行操作，
 
 ```shell
 root@Khadas:/home/khadas# echo 112 > /sys/class/gpio/export
 ```
 
-# 编译GPIO测试程序
+## 编译GPIO测试程序
 
 * 测试程序源码`gpio-irq.c`
 
@@ -228,7 +228,7 @@ out:
 ```shell
 root@Khadas:/home/khadas# gcc -o gpio-irq gpio-irq.c
 ```
-# 测试使用
+## 测试使用
 
 * 运行程序
 
@@ -239,7 +239,7 @@ GPIO 112 interrupt occurred!
 ..........
 ```
 
-通过杜邦线连接物理引脚的Pin40和pin13,触发中断.现象如下:
+通过杜邦线连接物理引脚的Pin40和pin13，触发中断。现象如下:
 
 ```shell
 root@Khadas:/home/khadas# ./gpio-irq 112 rising
@@ -260,4 +260,4 @@ GPIO 112 interrupt occurred!
 root@Khadas:/home/khadas# ./gpio-irq <edge>
 ```
 
-`<edge>`可设置为`rising`或者`failing`.
+`<edge>`可设置为`rising`或者`failing`.。

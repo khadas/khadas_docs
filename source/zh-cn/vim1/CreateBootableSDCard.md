@@ -15,7 +15,7 @@ title: 创建启动SD卡
 
 {% endnote %}
 
-### 开始制作
+## 开始制作
 下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/))或编译U-boot 获取U-boot镜像。
 
 不管通过哪种方式，你都会得到不同的镜像：
@@ -54,7 +54,7 @@ $ sudo eject /dev/sdX
 
 {% endnote %}
 
-### 检查
+## 检查
 
 确保串口连接正确，参考这里([VIM1](/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/zh-cn/vim3/SetupSerialTool.html))。
 

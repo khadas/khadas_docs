@@ -1,11 +1,11 @@
 title: How To Use RPi.GPIO
 ---
 
-### What is RPi.GPIO
+## What is RPi.GPIO
 RPi.GPIO is a Python Library which use to control GPIO on Raspberry Pi.This is a control library developed on the basis of wiringPi. The bottom layer also uses The C Program, the difference is that the upper control uses The Python Program.Now we transplant RPi.GPIO to VIMs.You can control the 40 pin headler on VIMs by writing a Python program. 
 
-### Begin to Use RPi.GPIO
-#### Verify that RPI is installed correctly
+## Begin to Use RPi.GPIO
+### Verify that RPI is installed correctly
 
 There are two locations to confirm.
 
@@ -21,7 +21,7 @@ Description: This package provides a class to control the GPIO on a Raspberry Pi
 Description: This package provides a class to control the GPIO on a Raspberry Pi or KHADAS.
 ```
 
-#### How to Programing The Python Program to control GPIO
+### How to Programing The Python Program to control GPIO
 
 1. Import Lib.
 
@@ -41,7 +41,7 @@ GPIO.cleanup()
 
 Because the program will apply for memory space, it must release the memory space when it exits.
 
-#### A Simple Example
+### A Simple Example
 
 ```python
 import RPi.GPIO as GPIO
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
 This program simply changes the pin level of GPIO.BCM15.
 
-#### How to Run you Program
+### How to Run you Program
 
 * Run with python2
 
@@ -105,5 +105,5 @@ GPIO.setup(GpioW,GPIO.OUT)
 
 Shutdown is same with python2.
 
-### Note
+## Note
 RPi.GPIO itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.

@@ -9,7 +9,7 @@ Animation file is stored in the `device/khadas/common/products/mbox/bootanimatio
 
 The Animation zip is stored on system/media/bootanimation.zip directory
 
-### Explanation of bootanization content
+## Explanation of bootanization content
 Android boot animation is composed of a series of continuous PNG pictures as a frame of animation, and each frame of PNG picture is saved in a compressed way. The saved file name is bootanimation.zip , compression mode must be storage compression. It generally includes one desc.txt file and some part directories
 
 ```
@@ -46,7 +46,7 @@ c 1 15 part4
 
 `c 1 30 part0`: c stands for the flag bit, 1 means the number of cycles is 1,0 means infinite loop, 30 is the interval time between current part0 stage and part1 stage ,the time is 30x(1/60)s, and part0 represents the corresponding folder,Other lines are similar
 
-### How To Generate Bootanimation.zip
+## How To Generate Bootanimation.zip
 
 After you custom part folders and desc.txt  ,then you can use following linux command to generate bootanimation.zip
 

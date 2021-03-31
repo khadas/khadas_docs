@@ -3,7 +3,7 @@ title: 如何连接Wi-Fi
 
 对于桌面系统，可以通过图形界面很方便地连接到Wi-Fi热点，所以在这里只说如何通过命令行连接Wi-Fi。对于Ubuntu/Debian服务器版本，没有图形界面，可以通过`NetworkManager`提供的命令来连接Wi-Fi。
 
-### 扫描Wi-Fi热点
+## 扫描Wi-Fi热点
 ```
 khadas@Khadas:~$ nmcli d wifi list
 IN-USE  SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SEC
@@ -17,7 +17,7 @@ IN-USE  SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SEC
 ```
 你会看到附近可见的Wi-Fi热点。
 
-### 连接到Wi-Fi热点
+## 连接到Wi-Fi热点
 ```
 khadas@Khadas:~$ sudo nmcli d wifi connect your_ssid password your_password
 [sudo] password for khadas:
@@ -25,7 +25,7 @@ Device 'wlan0' successfully activated with '206ab399-3822-4652-ba4c-64847af0bce9
 ```
 *注意： 替换`your_ssid`和`your_password`为你要连接的Wi-Fi的SSID和密码。*
 
-### 断开Wi-Fi
+## 断开Wi-Fi
 ```
 khadas@Khadas:~$ sudo nmcli d disconnect wlan0
 Device 'wlan0' successfully disconnected.

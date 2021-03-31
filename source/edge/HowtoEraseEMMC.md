@@ -1,7 +1,7 @@
 title: How To Erase The eMMC Storage
 ---
 
-# Using Windows
+## Using Windows
 
 You can use [AndroidTool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.58.zip) to erase the eMMC storage.
 
@@ -14,7 +14,7 @@ You can use [AndroidTool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.
 4. Click `EraseFlash` to erase the eMMC.
 ![AndroidTool Erase eMMC](/images/edge/AndroidTool_erase_en.png)
 
-# Using Ubuntu
+## Using Ubuntu
 
 	You can use [Linux_Upgrade_Tool](https://dl.khadas.com/Tools/Linux_Upgrade_Tool_v1.34.zip) to erase the eMMC storage.
 
@@ -28,5 +28,7 @@ You can use [AndroidTool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.
 $ sudo ./upgrade_tool ef /path/to/MiniLoaderAll.bin
 ```
 
-*Tip: `MiniLoaderAll.bin` is needed to perform the erasure. It is built from U-Boot.*
+{% note info Tip %}
+`MiniLoaderAll.bin` is needed to perform the erasure. It is built from U-Boot.
+{% endnote %}
 

@@ -1,11 +1,11 @@
 title: 如何使用ADB工具
 ---
 
-# 安装ADB
+## 安装ADB
 
 这里将会介绍如何安装以及如何使用ADB工具
 
-## 如何安装ADB
+### 如何安装ADB
 
 首先你要更新你的源，之后可以通过命令行直接安装。
 
@@ -14,17 +14,17 @@ $ sudo apt-get update
 $ sudo apt-get install android-tools-adb
 ```
 
-## 添加权限&编写配置文件
+### 添加权限&编写配置文件
 
 现在ADB工具已经安装在你的计算机中，但在使用之前还要做一些准备。
 
-### 添加权限
+#### 添加权限
 
 ```shell
 $ sudo  useradd -G plugdev $USER
 ```
 
-### 编写配置文件
+#### 编写配置文件
 
 创建一个rules文件
 
@@ -40,15 +40,15 @@ SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0666"
 
 这是一个通用配置。
 
-### 重启你的udev
+#### 重启你的udev
 
 ```shell
 $ sudo /etc/init.d/udev restart
 ```
 
-# 如何使用ADB
+## 如何使用ADB
 
-## 网络ADB 
+### 网络ADB 
 
 * 确保连上局域网Wi-Fi或有线网络
 
@@ -64,7 +64,7 @@ connected to 192.168.1.120:5555
 $ adb shell
 ```
 
-## USB ADB
+### USB ADB
 
 * 确保设备通过USB-C数据线连接到PC
 

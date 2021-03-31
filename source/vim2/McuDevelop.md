@@ -1,7 +1,7 @@
 title: Setup STM8 Development Environment on Ubuntu 16.04
 ---
 
-### Summary
+## Summary
 * This guide will show you how to install the STM8 development environment on Ubuntu. You will also learn how to install the SDCC compiler and stm8flash burning tool.
 
 * SDCC and stm8flash are an opensource project. 
@@ -12,61 +12,61 @@ title: Setup STM8 Development Environment on Ubuntu 16.04
 
 * Be sure that Ubuntu is prepared and that the ST-LINK V2 for STM8 is also at-hand.
 
-### Install SDCC Compiler
-#### Install
+## Install SDCC Compiler
+### Install
 
 ```
 $ sudo apt-get install sdcc sdcc-doc sdcc-libraries sdcc-ucsim
 
 ```
 
-#### Check SDCC Version. This information shows that the STM8 is supported.
+### Check SDCC Version. This information shows that the STM8 is supported.
 ```
 $ sdcc -v
 SDCC : mcs51/z80/z180/r2k/r3ka/gbz80/tlcs90/ds390/TININative/ds400/hc08/s08/stm8 3.5.0 #9253 (Mar 24 2016) (Linux)
 published under GNU General Public L1cense (GPL)
 ```
 
-### Install stm8flash Burning Tool.
-#### Download stm8flash
+## Install stm8flash Burning Tool.
+### Download stm8flash
 ```
 $ git clone https://github.com/vdudouyt/stm8flash.git
 ```
-#### Compile and Install stm8flash Tool
+### Compile and Install stm8flash Tool
 ```
 $ cd stm8flash
 $ make
 $ sudo make install
 ```
 
-### How to Connect VIM2 and ST-LINK V2
-#### To upgrade STM8 firmware just connect VCC_MCU, MCU_SWIM, MCU_NRST and GND between VIM2 and ST-LINK V2 tool
+## How to Connect VIM2 and ST-LINK V2
+### To upgrade STM8 firmware just connect VCC_MCU, MCU_SWIM, MCU_NRST and GND between VIM2 and ST-LINK V2 tool
 ![VIM2 MCU Header](/images/vim2/vim2_mcu_header.png)
 ![VIM2 MCU Header Description](/images/vim2/vim2_mcu_header_desc.png)
 
-### Add Permissions for the ST-LINK V2 Tool
+## Add Permissions for the ST-LINK V2 Tool
 
-#### Connect ST-LINK V2 Tool and PC via USB cable, and get the ID of ST-LINK V2 Tool.
+### Connect ST-LINK V2 Tool and PC via USB cable, and get the ID of ST-LINK V2 Tool.
 ```
 $ lsusb
 Bus 001 Device 003: ID 0483:3748 STMicroelectronics ST-LINK/V2
 ```
 
-#### Add the Following Contents into /etc/udev/rules.d/51-android.rules.
+### Add the Following Contents into /etc/udev/rules.d/51-android.rules.
 ```
 #STMicroelectronics ST-LINK/V2
 SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="3748", MODE="0666", OWNER="<kenny>"
 ```
   Tips: replace the kenny with your real username.
 
-### An Example of Compilation and Burning
+## An Example of Compilation and Burning
 
-#### Extract Source Code
+### Extract Source Code
 ```
 $ tar -zxvf mcu_20180322.tar.gz
 ```
 
-#### Compile
+### Compile
 ```
 $ cd Khadas/
 $ make
@@ -88,7 +88,7 @@ packihx khadas.ihx > khadas.hex
 packihx: read 250 lines, wrote 491: OK.
 ```
 
-#### Burning
+### Burning
 ```
 $ make load
 stm8flash -cstlinkv2 -pstm8s003?3 -s eeprom -w eeprom.hex
@@ -101,5 +101,5 @@ Writing Intel hex file 8003 bytes at 0x8000... OK
 Bytes written: 8003
 ```
 
-### See Also
+## See Also
 [MCU code](https://github.com/khadas/vim2-mcu)

@@ -1,7 +1,7 @@
 title: VIM2 GPIO Pinout
 ---
 
-### Pinout map(V12):
+## Pinout map(V12):
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---

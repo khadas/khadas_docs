@@ -18,7 +18,7 @@ Hit Enter or space or Ctrl+C key to stop autoboot -- :  0
 kvim2#
 ```
 
-### Get help
+## Get help
 You can get help information by typing **kbi**:
 ```
 kvim2# kbi
@@ -44,7 +44,7 @@ kbi trigger [wol|rtc|ir|dcin|key|gpio] w <0|1> - disable/enable boot trigger
 kbi trigger [wol|rtc|ir|dcin|key|gpio] r - read mode of a boot trigger
 ```
 
-### Command Usage
+## Command Usage
 
 **1) Get the MCU firmware version:**
 ```
@@ -165,7 +165,7 @@ Of course, for security reasons, you might want to disable the WOL:
 kvim2# kbi trigger wol w 0
 set_wol: 0
 ```
-### See also
+## See also
 [WOL setup and usage](/vim2/HowtoUseWol.html).
 [Edge-V MCU Register Map](https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_EN.pdf)
 [VIM2 MCU Register Map](https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_EN.pdf)

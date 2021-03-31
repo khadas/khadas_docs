@@ -1,7 +1,7 @@
 title: 如何编译使用Amlogic NN Api模板
 ---
 
-Amlogic NN Api是amlogic官方推出的一套NPU Api.这篇文档将介绍如何编译并使用khadas基于这套Api做的demo.
+Amlogic NN Api是amlogic官方推出的一套NPU Api，这篇文档将介绍如何编译并使用khadas基于这套Api做的demo。
 
 ## API文档
 
@@ -27,7 +27,7 @@ $ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 2. image_classify:  物体识别分类,仅支持图片识别
 3. person_detect:   人体检测,包含图片和摄像头两种方式
 
-每个目录下都有编译脚本,makefile文件以及源码,以person_detect为例,
+每个目录下都有编译脚本，makefile文件以及源码，以person_detect为例。
 
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
@@ -44,7 +44,7 @@ build-cv3.sh  include  makefile-cv3.linux  person_detect_640x384_camera.cpp  per
 
 获取SDK请参考[获取SDK](/zh-cn/vim3/HowToUseNPUSDK#获取SDK)
 
-这里同样以person_detect为例,
+这里同样以person_detect为例，
 
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
@@ -53,7 +53,7 @@ $ ./build-cv3.sh /path/to/aml_npu_sdk/linux_sdk/linux_sdk
   COMPILE /home/yan/data/git/npu/aml_npu_nnsdk_app/person_detect_640x384/person_detect_640x384_camera.cpp
 ```
 
-编译会生成生成的文件在`cv3_output`里面,
+编译会生成生成的文件在`cv3_output`里面，
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384/cv3_output
 $ ls
@@ -66,9 +66,9 @@ person_detect_640x384_camera  person_detect_640x384_camera.o  person_detect_640x
 ## 运行
 
 
-这里仍然以`person_detect`为例
+这里仍然以`person_detect`为例，
 
-1. 获取nb文件[https://github.com/khadas/AML_NN_SDK](https://github.com/khadas/AML_NN_SDK),`person_detect`对应的nb文件是:
+1. 获取nb文件[https://github.com/khadas/AML_NN_SDK](https://github.com/khadas/AML_NN_SDK)，`person_detect`对应的nb文件是:
 
 ```shell
 $ mkdir board_space
@@ -97,7 +97,7 @@ $ /path/to/person_detect_640x384_camera ${board_space}/person_detect_88.nb /dev/
 $ /path/to/person_detect_640x384_camera ${board_space}/person_detect_99.nb /dev/videoX   [VIM3L]
 ```
 
-**注意** :
-
-这只是一个简单的模板仓库,详细的api介绍请参考文档.
+{% note info 注意 %}
+这只是一个简单的模板仓库，详细的api介绍请参考文档。
+{% endnote %}
 

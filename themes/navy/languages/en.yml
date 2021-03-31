@@ -74,7 +74,6 @@ sidebar:
     install_docker: Install Docker
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
-    how_to_use_rpigpio: RPi.GPIO Usage
     how_to_upgrade_the_logo: Upgrade The Logo
     how_to_upgrade_the_uboot: Upgrade The u-boot
     how_to_upgrade_the_kernel: Upgrade The kernel
@@ -85,6 +84,7 @@ sidebar:
     how_to_set_auto_login: Auto Login Setup
     how_to_use_1-Wire: 1-Wire Usage
     how_to_setup_HDMI: HDMI Resolution Setup
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
     how_to_change_logo: Change Boot Logo
     how_to_custom_MAC: Custom MAC Address Setup
     how_to_use_dtbo: Device Tree Overlay Usage
@@ -139,7 +139,6 @@ sidebar:
     install_docker: Install Docker
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
-    how_to_use_rpigpio: RPi.GPIO Usage
     how_to_upgrade_the_logo: Upgrade The Logo
     how_to_upgrade_the_uboot: Upgrade The u-boot
     how_to_upgrade_the_kernel: Upgrade The kernel
@@ -149,6 +148,7 @@ sidebar:
     how_to_test_gpio_irq: GPIO IRQ Usage
     how_to_set_auto_login: Auto Login Setup
     how_to_setup_HDMI: HDMI Resolution Setup
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
     how_to_change_logo: Change Boot Logo
     how_to_custom_MAC: Custom MAC Addres Setup
     how_to_use_dtbo: Device Tree Overlay Usage
@@ -228,7 +228,6 @@ sidebar:
     install_docker: Install Docker
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
-    how_to_use_rpigpio: RPi.GPIO Usage
     how_to_upgrade_the_logo: Upgrade The Logo
     how_to_upgrade_the_uboot: Upgrade The u-boot
     how_to_upgrade_the_kernel: Upgrade The kernel
@@ -240,6 +239,7 @@ sidebar:
     how_to_use_1-Wire: 1-Wire Usage
     how_to_setup_HDMI: HDMI Resolution Setup
     how_to_setup_max_cpu_freq: Maximum CPU Frequency Setup
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
     how_to_change_logo: Change Boot Logo
     how_to_custom_MAC: Custom MAC Address Setup 
     how_to_use_dtbo: Device Tree Overlay Usage
@@ -298,10 +298,10 @@ sidebar:
     install_docker: Install Docker
     build_packages_in_docker: Build Packages In Docker
     how_to_use_wiringpi: WiringPi Usage
-    how_to_use_rpigpio: RPi.GPIO Usage
     how_to_upgrade_the_logo: Upgrade The Logo
     how_to_upgrade_the_uboot: Upgrade The u-boot
     how_to_upgrade_the_kernel: Upgrade The kernel
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
     how_to_control_LED: LED Usage
     how_to_test_gpio_irq: GPIO IRQ Usage
     how_to_set_auto_login: Auto Login Setup

@@ -3,9 +3,9 @@ title: 如何通过overlays方式使能M2X ETH
 
 我们之前在[文档](/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)中介绍过如何使用Device Tree Overlay
 
-# 在Ubuntu下使能M2X ETH
+## 在Ubuntu下使能M2X ETH
 
-## 升级系统
+### 升级系统
 
 ```shell
 $ sudo apt update
@@ -15,7 +15,7 @@ $ sync
 $ sudo reboot
 ```
 
-## 更改Device Tree Overlay的配置，如下：
+### 更改Device Tree Overlay的配置，如下：
 
 1、打开`/boot/env.txt`文件：
 
@@ -49,7 +49,7 @@ khadas@khadas:~$ sync
 khadas@khadas:~$ sudo reboot
 ```
 
-## 验证M2X ETH是否使能
+### 验证M2X ETH是否使能
 
 1、是否可以获取IP地址
 

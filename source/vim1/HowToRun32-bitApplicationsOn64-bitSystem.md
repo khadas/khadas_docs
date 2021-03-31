@@ -1,7 +1,7 @@
 title: How To Run 32-bit Applications On 64-bit System
 ---
 
-### Execute The 32-bit Program Under 64-bit System
+## Execute The 32-bit Program Under 64-bit System
 
 ```bash
 $ arm-linux-gnueabihf-gcc -o test test.c
@@ -10,7 +10,7 @@ $ ./test
 ```
 If you don’t install the 32-bit package,it will report an error when you run a 32-bit application under a 64-bit sysytem.
 
-### Install The 32-bit Package And Execute
+## Install The 32-bit Package And Execute
 
 ```bash
 $ sudo apt-get update

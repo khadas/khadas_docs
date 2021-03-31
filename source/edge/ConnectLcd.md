@@ -1,7 +1,7 @@
 title: Connect to TS050 Touchscreen
 ---
 
-# 1. Quick & Dirty Method
+## 1. Quick & Dirty Method
 
 ![Edge_Captain_TS050_Battery_Case](/images/edge/Cpt-v12_TS050_For_Display.jpg)
 
@@ -13,7 +13,7 @@ title: Connect to TS050 Touchscreen
 ![RK_Upgrade_Tool](/images/edge/AndroldTool_firmware.png)
 
 
-# 2. Brief Introduction
+## 2. Brief Introduction
 
 Edge-V has three display interfaces: HDMI + MIPI + EDP. The position of the interfaces are shown below:
 
@@ -27,10 +27,10 @@ Captain has two LCD screen interfaces：EDP + MIPI. The position of the interfac
 
 ![image|573x479](/images/edge/captain_display_interfaces.jpg) 
 
-# 3. (HDMI + DP) Screen Config
-##  3.1 Configure **DTS**
+## 3. (HDMI + DP) Screen Config
+###  3.1 Configure **DTS**
 rk3399-khadas-edge.dtsi,  for example: HDMI (Main Display) + DP (Secondary Display)
-### 3.1.1 Enable Corresponding Display Device Nodes
+#### 3.1.1 Enable Corresponding Display Device Nodes
 ```sh
 &hdmi {
 	status = "okay";
@@ -48,7 +48,7 @@ rk3399-khadas-edge.dtsi,  for example: HDMI (Main Display) + DP (Secondary Displ
 	phys = <&tcphy0_dp>;
 };
 ```
-### 3.1.2 Binding VOP
+#### 3.1.2 Binding VOP
 The RK3399 platform has two VOPs: vopb (Supports 4K), and vopl (Supports 2K). When the display device node opens, the ports corresponding to vopb and vopl will be opened, and the unused VOP will need to be turned off.
 ```sh
 &hdmi_in_vopb {
@@ -67,7 +67,7 @@ The RK3399 platform has two VOPs: vopb (Supports 4K), and vopl (Supports 2K). Wh
 	status = "okay";
 };
 ```
-### 3.1.3 Boot Logo
+#### 3.1.3 Boot Logo
 If the uboot logo is not turned on, the kernel boot-stage cannot display the boot logo, and it can only be seen after Android boots. In dts, it is possible to turn on uboot logo support by setting the corresponding routes; such as enabling the uboot logo to be displayed via HDMI:
 ```sh
 &route_hdmi {
@@ -75,7 +75,7 @@ If the uboot logo is not turned on, the kernel boot-stage cannot display the boo
 	connect = <&vopb_out_hdmi>;
 };
 ```
-### 3.1.4 Binding PLL
+#### 3.1.4 Binding PLL
 The VOP clock bound by the HDMI of rk3399 needs to be mounted on the vpll. If the dual display requires another VOP clock on the cpll, the frequency of any DCLK can be distinguished.
 
 For example, when HDMI is bound to vopb:
@@ -100,7 +100,7 @@ And when HDMI is bound to vopl：
 	assigned-clock-parents = <&cru PLL_VPLL>;
 };
 ```
-### 3.1.5 Turning On Audio Output
+#### 3.1.5 Turning On Audio Output
 ```sh
 &dp_sound {
 	status = "okay";
@@ -110,8 +110,8 @@ And when HDMI is bound to vopl：
 	status = "okay";
 };
 ```
-##  3.2 Main and Secondary Display Config
-### android 9.0 Config
+###  3.2 Main and Secondary Display Config
+#### android 9.0 Config
 device/rockchip/rk3399/rk3399.mk
 ```sh
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -120,7 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	#vendor.hwc.device.extend=DSI
     #vendor.hwc.device.extend=eDP
 ```
-### android 7.1 Config
+#### android 7.1 Config
 device/rockchip/rk3399/rk3399_all.mk
 ```sh
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -130,11 +130,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     #sys.hwc.device.extend=eDP
 ```
 
-# 4. (MIPI + HDMI) Screen Config
+## 4. (MIPI + HDMI) Screen Config
 ![TS050 and Edge-V](/images/edge/edge_v_ts050.jpg)
-##  4.1 Configuring **DTS**
+###  4.1 Configuring **DTS**
 rk3399-khadas-edge-mipi-android.dtsi, for example: MIPI (Main Display) + HDMI (Secondary Display).
-### 4.1.1 Enable Corresponding Display Device Nodes
+#### 4.1.1 Enable Corresponding Display Device Nodes
 ```sh
 &hdmi {
 	status = "okay";
@@ -154,7 +154,7 @@ rk3399-khadas-edge-mipi-android.dtsi, for example: MIPI (Main Display) + HDMI (S
     status = "okay";
 };
 ```
-### 4.1.2 Binding VOP
+#### 4.1.2 Binding VOP
 RK3399 platform has two VOP: vopb (Supports 4K) and vopl (Support 2K only). When the display device node opens, the ports corresponding to vopb and vopl will be opened, and the unused VOP will need to be turned off.
 ```sh
 &dp_in_vopl {
@@ -181,7 +181,7 @@ RK3399 platform has two VOP: vopb (Supports 4K) and vopl (Support 2K only). When
 	status = "okay";
 };
 ```
-### 4.1.3 Boot Logo
+#### 4.1.3 Boot Logo
 If the uboot logo is not turned on, the kernel booting stage cannot display the boot logo, and it can only be seen after Android boots. In dts, it is possible to turn on uboot logo support by setting the corresponding routes, such as enabling the uboot logo to be displayed via HDMI:
 ```sh
 &route_hdmi {
@@ -194,7 +194,7 @@ If the uboot logo is not turned on, the kernel booting stage cannot display the 
 	connect = <&vopb_out_dsi>;
 };
 ```
-### 4.1.4 Binding PLL
+#### 4.1.4 Binding PLL
 The VOP clock bound by the HDMI of rk3399 needs to be mounted on the vpll. If the dual display requires another VOP clock on the cpll, the frequency of any DCLK can be distinguished.
 
 For example, when HDMI is bound to vopb:
@@ -219,7 +219,7 @@ Configure when HDMI is bound to vopl：
 	assigned-clock-parents = <&cru PLL_VPLL>;
 };
 ```
-### 4.1.5 Turning On Audio Output
+#### 4.1.5 Turning On Audio Output
 ```sh
 &dp_sound {
 	status = "disabled";
@@ -229,7 +229,7 @@ Configure when HDMI is bound to vopl：
 	status = "okay";
 };
 ```
-### 4.1.6 Configure **Timing**
+#### 4.1.6 Configure **Timing**
 ```sh
 &dsi {
     status = "okay";
@@ -288,7 +288,7 @@ Configure when HDMI is bound to vopl：
 ![image|690x430](/images/edge/timing_attribute_reference_figure.png)   
 ![image|321x500](/images/edge/timing_attribute_reference_figure_2.png) 
 
-### 4.1.7 Command Format Description
+#### 4.1.7 Command Format Description
 ```sh
 		panel-exit-sequence = [
 			05 05 01 28
@@ -301,7 +301,7 @@ The first byte represents two types of commands: DCS command and Generic command
 
 There are three types of DCS commands: 0x05/0x15/0x39. Generic commands are classified into: 0x03/0x13/0x23/0x29.
 
-### 4.1.8 Backlight
+#### 4.1.8 Backlight
 ```sh
 &backlight {
 	pwms = <&pwm1 0 25000 0>;
@@ -326,8 +326,8 @@ There are three types of DCS commands: 0x05/0x15/0x39. Generic commands are clas
 ```
 **PWM Attributes:** The PWM output used by the MIPI screen is pwm1, and the cycle frequency is 40 KHz (25 000 nano-seconds).
 
-##  4.2 Main and Secondary Display Config
-### android 9.0 Config
+###  4.2 Main and Secondary Display Config
+#### android 9.0 Config
 device/rockchip/rk3399/rk3399.mk
 ```sh
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -336,7 +336,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	vendor.hwc.device.extend=HDMI-A
     #vendor.hwc.device.extend=eDP
 ```
-### android 7.1 Config
+#### android 7.1 Config
 device/rockchip/rk3399/rk3399_all.mk
 ```sh
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -346,15 +346,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     #sys.hwc.device.extend=eDP
 ```
 
-# 5.（HDMI or DP + MIPI）Screen Config
+## 5.（HDMI or DP + MIPI）Screen Config
 HDMI or DP + MIPI: This means compatible with HDMI(Main Display) + MIPI (Secondary Display) or DP(Main Display) + MIPI (Secondary Display), but does not support HDMI + DP at the same time.
-##  5.1 Configuring **DTS**
-### android 9.0 Config
+###  5.1 Configuring **DTS**
+#### android 9.0 Config
 See DTS below for more details on the previous two chapters:
 rk3399-khadas-edge-android.dts
 
-##  5.2 Main and Secondary Display Config
-### android 9.0 Config
+###  5.2 Main and Secondary Display Config
+#### android 9.0 Config
 device/rockchip/rk3399/rk3399.mk
 ```sh
 PRODUCT_PROPERTY_OVERRIDES += \

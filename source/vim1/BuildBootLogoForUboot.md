@@ -12,7 +12,7 @@ This is a guide for building the boot-up logo on Amlogic platforms (may be diffe
 * Will display at the point of U-Boot load `logo.img`. It will disappear when the boot-animation of Android begins.
 * If you don't want to display a bootup `logo`, just leave the logo partition blank.
 
-### Preparations
+## Preparations
 Before you begin, you'll need a bootup picture with the following specs:
 
 * BMP format, should be:
@@ -29,7 +29,7 @@ An example bootup logo file [khadas.bmp](http://www.mediafire.com/file/xoobk7gc3
 
 In this guide, we will introduce two different approaches to build the bootup Logo.
 
-### Build Logo Separately
+## Build Logo Separately
 **1)** Clone the tool:
 ```sh
 $ git clone https://github.com/khadas/utils.git
@@ -48,7 +48,7 @@ dbg:pack item [bootup]
 $ 
 ```
 
-### Build Logo on Android
+## Build Logo on Android
 **1)** Update a new logo picture as you want:
 ```sh
 $ cp ~/Pictures/khadas.bmp device/khadas/kvim/product/logo/bootup.bmp
@@ -78,12 +78,12 @@ dbg:pack item [upgrade_logo]
 dbg:pack item [upgrade_bar]
 Installed out/target/product/kvim/upgrade/logo.img
 
-#### make completed successfully (01:54 (mm:ss)) ####
+### make completed successfully (01:54 (mm:ss))
 
 $
 ```
 
-### Download the logo.img
+## Download the logo.img
 **1)** Copy the new logo.img to a thumbdrive (U-disk):
 ```sh
 $ cp images/logo.img /media/gouwa/9B98-6C15/
@@ -101,7 +101,7 @@ kvim# usb_update logo logo.img
 kvim# run init_display
 ```
 
-### Further reading
+## Further reading
 You might notice that there are [other pictures](https://github.com/khadas/android_device_khadas/tree/Vim/kvim/product/logo) that are also built into `logo.img`. They are listed below:
 
 ```sh

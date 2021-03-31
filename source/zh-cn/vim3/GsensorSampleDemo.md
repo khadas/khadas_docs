@@ -1,7 +1,7 @@
 title: Gsensor简单使用示例
 ---
 
-# Gsensor节点
+## Gsensor节点
 
 Gsensor的设备节点在`/dev`目录下
 
@@ -10,11 +10,11 @@ $ ll /dev/accel
 crw-rw-rw- 1 root root 10, 50 Mar 18 12:17 /dev/accel
 ```
 
-# Gsensor示例
+## Gsensor示例
 
 Gsensor示例是通过ioctl函数对节点进行读写
 
-## 源码
+### 源码
 
 源码只实现了使用默认设置读数据,其他功能用户可以自行实现
 
@@ -83,7 +83,7 @@ int main(int argc, char **argv){
 }
 ```
 
-## 编译
+### 编译
 
 在板子上直接使用`gcc`编译即可
 
@@ -116,7 +116,7 @@ gsensor_sample_demo.c:57:3: warning: implicit declaration of function ‘sleep�
 ```
 
 
-## 运行
+### 运行
 
 运行时旋转板子,可以看到gsensor数据的变化
 

@@ -17,7 +17,7 @@ Why do we need a `Bootable SD-Card`?
 
 {% endnote %}
 
-### Getting Started
+## Getting Started
 Download U-Boot ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) or build U-Boot to get the bootloader blob for your SD-Card.
 No matter which method you choose, you need to keep in mind that there are different bootloader blobs for different boot disks/media:
 
@@ -53,7 +53,7 @@ Please replace `sdX` with the correct one on your PC.
 
 {% endnote %}
 
-### Check Your Bootable SD-Card
+## Check Your Bootable SD-Card
 
 Ensure that you have done the correct setup of your Serial to USB Module([VIM1](/vim1/SetupSerialTool.html)/[VIM2](/vim2/SetupSerialTool.html)/[VIM3](/vim3/SetupSerialTool.html)).
 

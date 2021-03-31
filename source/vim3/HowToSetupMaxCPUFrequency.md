@@ -99,17 +99,15 @@ You need to reboot the board after change the frequency.
 </div>
 </div>
 
-### Overclocking
+## Overclocking
 
 {% note warn Note %}
 
 There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
-There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
-There are several overclocking frequencies for you to setup, **but there is NO GUARANTEE that all VIM3/VIM3L boards are stable with those frequencies, and a FAN is needed!!!**
 
 {% endnote %}
 
-#### Frequencies List
+### Frequencies List
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -185,7 +183,7 @@ There are several overclocking frequencies for you to setup, **but there is NO G
 </div>
 </div>
 
-### Check CPU Frequency
+## Check CPU Frequency
 
 You can use command `cpufreq-info` to get the CPU frequency.
 

@@ -1,7 +1,7 @@
 title: Edge文档
 ---
 
-# Edge
+## Edge
 
 ![image](/images/edge/docs_edge_labels.jpg)
 
@@ -78,7 +78,7 @@ title: Edge文档
 
 
 
-# Edge-V
+## Edge-V
 ![image](/images/edge/docs_edge_v_labels.jpg)
 
 
@@ -191,7 +191,7 @@ Linux_TX|19|39|MCU_PA1
 </div>
 
 
-# Captain
+## Captain
 ![image](/images/edge/docs_captain_labels.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -270,7 +270,7 @@ Linux_TX|19|39|MCU_PA1
 
 |颜色|状态|含义|
 |---:|:---:|:---|
-|蓝色|关|电源关闭|
+|b蓝色|关|电源关闭|
 ||常亮|已连接电源,但是处于关机状态|
 |白色|关|板子以关机|
 ||常亮|板子处于开机状态|
@@ -308,7 +308,7 @@ Linux_TX|19|39|MCU_PA1
 </div>
 
 
-# Captain + Edge
+## Captain + Edge
 ![image](/images/edge/docs_captain_with_edge_labels.jpg)
 
 * 正面(黄色)
@@ -323,7 +323,7 @@ Linux_TX|19|39|MCU_PA1
 |7|USB-A|USB 2.0接口|
 |9|HDMI|HDMI 2.0 and CEC|
 
-# Edge电源
+## Edge电源
 尽管Edge SBC可与各种类型的电源兼容，但建议使用这些规格以获得最佳的性能输出和稳定性。
 
 ![image](/images/edge/usb-c_adapter_24w_2.jpg)
@@ -331,14 +331,16 @@ Linux_TX|19|39|MCU_PA1
 1. Khadas USB-C 24W供电器
 2. Khadas USB-C 数据线
 
-**提示:** 这些物品现在在Khadas商店有售
+{% note info 提示 %}
+这些物品现在在Khadas商店有售
+{% endnote %}
 
 **更多:**
 * [Edge+Captain电源优先管理](/zh-cn/edge/EdgeCaptainPowerPriority.html)
 * [Khadas Edge 文档](https://khadas.com/edge)
 * [Khadas Edge 配件](https://www.khadas.com/edge-add-ons)
 
-# 显示和用户输入
+## 显示和用户输入
 当您需要将Edge SBC连接到外部显示器+键盘鼠标+遥控器以用作台式计算机或媒体中心时，这些项目很有用。*Edge系列SBC具有USB-C显示端口功能，可将它们直接连接到支持Type-C的4K监视器，并通过单根电缆交换电源，数据，视频和音频.*
 
 1. 4K HDMI 2.0数据线
@@ -352,9 +354,12 @@ Linux_TX|19|39|MCU_PA1
 * [Amazon - LG 4K显示器](https://www.amazon.com/LG-27UD88-W-LED-Lit-Monitor-Type-C/dp/B01CDYB0QS/ref=sr_1_7?ie=UTF8&qid=1543993886&sr=8-7&keywords=usb-c+compatible+monitor)
 * [Amazon - 无线键盘鼠标](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-```注意: 请不要连接多头相互干扰的大头电缆，否则可能会弯曲或扭曲连接器，这将在一段时间后导致间歇性连接问题。```
 
-# 制作可启动/刻录SD卡/U盘驱动器
+{% note info 注意 %}
+请不要连接多头相互干扰的大头电缆，否则可能会弯曲或扭曲连接器，这将在一段时间后导致间歇性连接问题。
+{% endnote %}
+
+## 制作可启动/刻录SD卡/U盘驱动器
 当您想通过SD卡或Thumbdrive（刻录卡）升级Edge SBC的操作系统时，这些项目很有用。 或者，如果您要运行只能从外部介质（引导卡）（如LibreELEC）运行的操作系统。
 
 1. 至少8GB的SD-Card
@@ -367,12 +372,13 @@ Linux_TX|19|39|MCU_PA1
 * [从外部介质启动](/zh-cn/vim2/BootFromExtMedia.html)
 * [进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
 
-**提示:**
+{% note info 提示 %}
 * **eMMC映像**应该使用USB-C数据线从Ubuntu或Windows主机直接刻录到eMMC。 请勿将其刻录到SD卡中。 例如：包含`EMMC`标记的Android和Ubuntu发行版。
 * ** SD / USB映像**应复制到SD卡中，然后再使用该卡通过新的OS重新格式化eMMC存储。 例如：Armbian，包含`SD_USB`标记的Ubuntu发行版，以及LibreELEC和CoreELEC。
 * 为了从**SD / USB映像**引导，您需要在eMMC上运行Android（V180209或更高版本）或Ubuntu（V180531或更高版本）并激活Multi-Boot。
+{% endnote %}
 
-# 通过type-C口升级系统
+## 通过type-C口升级系统
 如果要使用笔记本电脑或台式PC升级存储在其eMMC存储中的Edge SBC操作系统，则需要这些物品。 例如，将启动操作系统从Android更改为Ubuntu，或安装更具异国情调的第三方操作系统。
 
 1. 一头USBA,一头USBC的数据线
@@ -387,7 +393,7 @@ Linux_TX|19|39|MCU_PA1
 * [Android OS](/zh-cn/firmware/EdgeFirmware.html#android)
 * [Ubuntu OS](/zh-cn/firmware/EdgeFirmware.html#Ubuntu)
 
-# 观看电影，扩展内部eMMC存储
+## 观看电影，扩展内部eMMC存储
 如果您希望将Edge-V或Edge + Captain SBC用作媒体中心，以存储/下载大型电影文件，则这些项目很有用。 microSDXC UHS-I卡价格昂贵，但也足够进行4K视频播放。 外部NVMe M.2插槽SSD也足够大，可以容纳整个媒体库。
 
 1. NVMe SSD
@@ -397,7 +403,7 @@ Linux_TX|19|39|MCU_PA1
 * [Amazon - Samsung 970 EVO NVMe SSD](https://www.amazon.com/Samsung-970-EVO-500GB-MZ-V7E500BW/dp/B07BN4NJ2J/ref=sr_1_3?ie=UTF8&qid=1543993490&sr=8-3&keywords=samsung+m.2+ssd)
 * [Amazon - 高速SD卡](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-# 软件开发/崩溃恢复
+## 软件开发 / 崩溃恢复
 
 1. Edge系列SBC配备了“ Terry的智能镊子”，即使在引导加载程序损坏的情况下，也不需要导电金属镊子即可进行故障恢复。*极端的故障恢复情况将要求您使用MRegister重置Edge SBC。 USB串行调试工具对于开发人员调试复杂的软件问题也很有用。
 
@@ -410,7 +416,7 @@ Linux_TX|19|39|MCU_PA1
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - 串口调试工具](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
-# Edge 网页
+## Edge 网页
 有关更多信息，请访问我们的网站，阅读更多文档或访问我们的论坛。
 * [Khadas Edge文档](https://www.khadas.com/edge)
 * [Khadas Edge论坛](https://forum.khadas.com/c/Khadas-Edge)

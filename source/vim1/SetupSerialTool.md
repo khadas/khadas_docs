@@ -1,10 +1,10 @@
 title: Setup Serial Debugging Tool
 ---
 
-### Preparation
+## Preparation
 * You need a `Serial Debugging Tool`. In this guide, we will use a `USB to TTL Converter`.
 
-### Connections
+## Connections
 Follow these steps to make the correct connections:
 
 * Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins once more to ensure that you've made correct connections:
@@ -25,7 +25,7 @@ Another photo for more details (`VCC` Pin is not necessary):
 ![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
 
 
-### Setup Minicom Protocol
+## Setup Minicom Protocol
 **Install minicom:**
 
 ```sh
@@ -140,5 +140,5 @@ Report bugs to <minicom-devel@lists.alioth.debian.org>.
 
 {% endnote %}
 
-### See Also
+## See Also
 * [Minicom wiki](https://en.wikipedia.org/wiki/Minicom)

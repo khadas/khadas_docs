@@ -4,12 +4,12 @@ title: 如何使用I2C接口
 
 这篇文档介绍如何在Android和Ubuntu下使用I2C。
 
-### 前提条件
+## 前提条件
 
 * `Ubuntu V180531`或更新版本
 * `Android V180619`或更新版本
 
-### 连线
+## 连线
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -64,7 +64,7 @@ title: 如何使用I2C接口
 </div>
 </div>
 
-### 检测设备
+## 检测设备
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -183,7 +183,7 @@ Detect device on `I2C 4`:
 
 {% endnote %}
 
-### 从设备读取寄存器值
+## 从设备读取寄存器值
 
 从挂载在`I2C A`上设备地址为`0x1d`的设备读取寄存器`0x0d`的值。
 

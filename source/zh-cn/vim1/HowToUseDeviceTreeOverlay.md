@@ -8,7 +8,7 @@ title: 如何使用Device Tree Overlay
 
 {% endnote %}
 
-### 如何使用
+## 如何使用
 
 在文件`/boot/env.txt`中你可以看到关于**VIM3** Device Tree Overlay的配置，如下：
 
@@ -41,7 +41,7 @@ overlays=uart3 pwm_f i2c3 os08a10
 {% endnote %}
 
 
-### 创建你自己的DTBO文件
+## 创建你自己的DTBO文件
 
 默认已经有一些可以使用的DTBO文件，你也可以创建你自己的DTBO文件来使能或者禁止系统中的某些外设。
 

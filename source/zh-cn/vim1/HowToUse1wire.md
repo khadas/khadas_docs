@@ -5,7 +5,7 @@ title: 如何使用单总线
 
 {% endnote %}
 
-### 通过Overlays使能onewire驱动
+## 通过Overlays使能onewire驱动
 
 编辑`/boot/env.txt`在`overlays`中添加`onewire`。
 
@@ -18,7 +18,7 @@ overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 
 关于overlays的详细说明可以参考[如何使用device tree overlays](/zh-cn/vim1/HowToUseDeviceTreeOverlay.html)。
 
-### 使用单总线
+## 使用单总线
 
 这里以单总线设备`DS18B20`温度传感器为例进行说明。连接传感器到单总线。
 

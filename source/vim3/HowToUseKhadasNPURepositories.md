@@ -1,11 +1,11 @@
 title: How To Use Pre-Built NPU Demo
 ---
 
-# Pre-Build NPU demo Repository
+## Pre-Build NPU demo Repository
 
 `aml_npu_demo_binaries repository` are executable files repositories, this repository are used to run NPU demo on **khadas VIM3/VIM3L**
 
-## Repository information
+### Repository information
 
 * Repository address: [gitlab.com/khadas/aml_npu_demo_binaries](https://gitlab.com/khadas/aml_npu_demo_binaries)
 
@@ -16,9 +16,9 @@ title: How To Use Pre-Built NPU Demo
     3. inceptionv3 : This demo is a demo that recognizes pictures and makes top5 predictions
 
 
-## How To Use
+### How To Use
 
-### preparation
+#### preparation
 
 1. **Please run ubuntu firmware on VIM3 and upgrade the system through `sudo apt update && sudo apt upgrade`**
 
@@ -31,7 +31,7 @@ $ cd ${workspace}
 $ git clone https://gitlab.com/khadas/aml_npu_demo_binaries
 ```
 
-### Use `detect_demo` or `detect_demo_khadas` or `detect_demo_picture`
+#### Use `detect_demo` or `detect_demo_khadas` or `detect_demo_picture`
 
 Install demo:
 
@@ -50,7 +50,7 @@ uninstall demo:
 $ sudo ./UNINSTALL
 ```
 
-### Use inceptionv3
+#### Use inceptionv3
 
 If you board is VIM3
 
@@ -72,11 +72,11 @@ $ ./inceptionv3 inception_v3.nb /path/to/picture
 
 **Image format needs to use jpg format**
 
-# aml_npu_app Repository
+## aml_npu_app Repository
 
 aml_npu_app repository is used to compile demo repository, **this repository runs on PC**
 
-## Repository information
+### Repository information
 
 * Repository address: [gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app) 
 
@@ -89,9 +89,9 @@ aml_npu_app repository is used to compile demo repository, **this repository run
     5. `detect_library/sample_demo` Generate a demo that recognizes the picture.
 
 
-## How To Use
+### How To Use
 
-### Preparation
+#### Preparation
 
 1. [Apply sdk](https://www.khadas.com/npu-toolkit-vim3),and unzip.
 
@@ -102,7 +102,7 @@ $ cd ${workspace}
 $ git clone https://gitlab.com/khadas/aml_npu_app
 ```
 
-### Compile
+#### Compile
 
 Enter the location where you need to compile, here takes `yolov3` as an example.
 

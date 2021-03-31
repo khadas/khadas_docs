@@ -3,9 +3,9 @@ title: How to convert and call your own model through NPU
 
 Here takes yolov3 as an example to demonstrate how to convert your own model, adapt it to our demo, and run it on VIM3
 
-**note**:
-
-Please review the document carefully before converting the reference document
+{% note info Note %}
+	Please review the document carefully before converting the reference document
+{% endnote %}
 
 1. [SDK instructions](/vim3/HowToUseNPUSDK.html)
 2. [Description and Usage of aml_NPU_app Code Repository](/vim3/HowToUseAmlNPUApp.html)

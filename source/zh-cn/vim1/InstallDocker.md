@@ -3,11 +3,11 @@ title: 安装Docker
 
 这篇文档介绍如何在VIMs/Edge Ubuntu下安装Docker。
 
-### 准备
+## 准备
 
 * Ubuntu `V180531`或以上版本
 
-### 安装必要的软件包
+## 安装必要的软件包
 
 ```bash
 khadas@Khadas:~$ sudo apt-get update
@@ -15,7 +15,7 @@ khadas@Khadas:~$ sudo apt-get install apt-transport-https ca-certificates curl s
 khadas@Khadas:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-### 添加Docker源
+## 添加Docker源
 
 ```bash
 khadas@Khadas:~$ sudo add-apt-repository \
@@ -24,7 +24,7 @@ khadas@Khadas:~$ sudo add-apt-repository \
 			stable"
 ```
 
-### 安装Docker
+## 安装Docker
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -64,14 +64,14 @@ khadas@Khadas:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
 </div>
 </div>
 
-### 运行Docker
+## 运行Docker
 
 ```bash
 khadas@Khadas:~$ sudo systemctl enable docker
 khadas@Khadas:~$ sudo systemctl start docker
 ```
 
-### 添加Docker组
+## 添加Docker组
 
 ```bash
 khadas@Khadas:~$ sudo groupadd docker
@@ -84,7 +84,7 @@ khadas@Khadas:~$ sudo usermod -aG docker $USER
 
 {% endnote %}
 
-### 检查Docker
+## 检查Docker
 
 ```bash
 khadas@Khadas:~$ docker run hello-world
@@ -122,5 +122,5 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-### 参考
+## 参考
 [Get Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)

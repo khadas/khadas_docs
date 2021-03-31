@@ -1,7 +1,7 @@
 title: How To Set a custom IR CODE To Boot The System
 ---
 
-### Get the IR CODE
+## Get the IR CODE
 
 * Enable IR Driver Debug Information
 
@@ -25,11 +25,11 @@ Here is an example of the `Khadas` remote controller, press the `OK` button of t
 
 You can find `framecode=0xf807ff00` is the key value we need.
 
-### Set Custom IR CODE
+## Set Custom IR CODE
 
 You can set the `IR CODE` in uboot command line, there are two custom buttons that can be used.
 
-#### Write IR CODE
+### Write IR CODE
 
 * Custom customer1
 
@@ -43,7 +43,7 @@ kvim#kbi ircode customer1 w 0xf807ff00
 kvim#kbi ircode customer2 w 0xf807ff00
 ```
 
-#### Read IR CODE
+### Read IR CODE
 
 * Read customer1
 
@@ -59,7 +59,7 @@ kvim#kbi ircode customer2 r
 ircode2: 0xf807ff00
 ```
 
-### Verify
+## Verify
 
 * Power off the system
 

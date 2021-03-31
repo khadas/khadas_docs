@@ -1,7 +1,7 @@
 title: 如何使用NPU
 ---
 
-### 下载NPU相关工具包SDK
+## 下载NPU相关工具包SDK
 
 请访问[这里](https://www.khadas.com/npu-toolkit-vim3)来获取SDK下载链接。
 
@@ -15,7 +15,7 @@ title: 如何使用NPU
 * linux_sdk：Linux SDK
 * android_sdk：Android SDK
 
-### 环境搭建
+## 环境搭建
 
 要使用模型转换工具必须要先安装[TensorFlow](https://www.tensorflow.org/)等工具。
 
@@ -31,7 +31,10 @@ $ cd ~/npu/aml_npu_sdk/acuity-toolkit
 $ for req in $(cat requirements.txt); do pip3 install $req; done
 ```
 
-*注意：默认安装的TensorFlow为CPU版本，如果你的电脑有英伟达GPU，你也可以选择安装[GPU版本](https://www.tensorflow.org/install/gpu)来加速模型转换速度。*
+
+{% note info 注意 %}
+默认安装的TensorFlow为CPU版本，如果你的电脑有英伟达GPU，你也可以选择安装[GPU版本](https://www.tensorflow.org/install/gpu)来加速模型转换速度。
+{% endnote %}
 
 验证TensorFlow安装：
 ```
@@ -48,7 +51,7 @@ b'Hello World'
 
 如果看到`Hello World`打印说明`TensorFlow`安装成功。
 
-### 模型转换
+## 模型转换
 
 要想把训练好的模型部署在VIM3上运行，需要进行模型转换，当前只支持 `Caffe/Tensorflow/Tflite/Darknet/Onnx/Pytroch/keras` 模型。
 
@@ -83,13 +86,15 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 -rw-rw-r-- 1 nick nick     1294 9月  20 15:16 vnn_pre_process.h
 ```
 
-*注意：如果你要转换自己的模型，那么需要修改脚本里面相应文件的路径和参数。*
+{% note info 注意 %}
+如果你要转换自己的模型，那么需要修改脚本里面相应文件的路径和参数。
+{% endnote %}
 
 以上是一个模型转换的示例脚本，更多详细信息请参考模型转换文档`docs/zh-cn/模型转换运行用户指南(0.5).pdf`。
 
-### 编译转换好的case代码
+## 编译转换好的case代码
 
-#### 基于Linux运行
+### 基于Linux运行
 
 要想在VIM3上运行这个模型，需要编译上述转换好的case代码。
 
@@ -176,9 +181,9 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 
 这个demo只是做了top5处理，可以看到识别的概率最大为索引`2`的`0.826660`，对比labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt`可以发现识别出来是`金鱼`，结果正确。
 
-#### 基于Android运行
+### 基于Android运行
 参考Android&Linux编译集成指导`docs/zh-cn/Android&Linux编译集成指导(0.2).pdf` Android相关部分。
 
-### 写在最后
+## 写在最后
 
 以上只是简单说明了模型转换以及case代码编译运行，更多详细信息请参考模型转换文档`docs/zh-cn/模型转换运行用户指南(0.5).pdf`。

@@ -1,7 +1,7 @@
 title: Install Toolchains for Rockchip Platform
 ---
 
-# To build an environment for compiling Android, it is recommended to use 64-bit Ubuntu 16.04. The following software packages need to be installed:
+## To build an environment for compiling Android, it is recommended to use 64-bit Ubuntu 16.04. The following software packages need to be installed:
 
 ```sh
 $ sudo apt-get install bison g++-multilib git gperf libxml2-utils make python-networkx zip

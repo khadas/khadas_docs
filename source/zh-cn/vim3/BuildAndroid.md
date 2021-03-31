@@ -2,16 +2,18 @@ title: 编译Amlogic平台安卓源码
 ---
 
 
-# 准备
+## 准备
 
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
 - [x] [下载安卓源码](/zh-cn/vim3/DownloadAndroidSourceCode.html)
 - [x] [安装Amlogic平台工具链](/zh-cn/vim3/InstallToolchains.html)
 
 
-# 编译
+## 编译
 
-*注意：在开始编译前，确保已经搭建好如上`准备`所述的环境。*
+{% note info 注意 %}
+在开始编译前，确保已经搭建好如上`准备`所述的环境。
+{% endnote %}
 
 **编译U-boot：**
 
@@ -40,14 +42,13 @@ $ make -jN otapackage
 
 * out/target/product/TARGET/update.img
 
-*注意：*
-
-* 替换`N`为你自己电脑实际的线程数。
-* `TARGET` 为 kvim3 或者 kvim3l
-* `TARGET_LUNCH` 定义如下：
-  * 编译VIM3时: kvim3-userdebug
-  * 编译VIM3L时: kvim3l-userdebug
-
+{% note info 注意 %}
+	* 替换`N`为你自己电脑实际的线程数。
+	* `TARGET` 为 kvim3 或者 kvim3l
+	* `TARGET_LUNCH` 定义如下：
+      * 编译VIM3时: kvim3-userdebug
+	  * 编译VIM3L时: kvim3l-userdebug
+{% endnote %}
 
 **编译linux内核：**
 
@@ -59,6 +60,6 @@ $ make -jN otapackage
 $ make bootimage
 ```
 
-# 参考
+## 参考
 * [通过USB数据线升级](/zh-cn/vim3/UpgradeViaUSBCable.html)
 * [通过TF卡升级](/zh-cn/vim3/UpgradeViaTFBurningCard.html)

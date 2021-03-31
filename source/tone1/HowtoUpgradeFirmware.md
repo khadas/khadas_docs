@@ -8,7 +8,10 @@ title: Upgrade the Firmware
 alt="Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)" width="480" height="360" border="10" /></a>
 
 Link: [YouTube](http://www.youtube.com/watch?v=qRswdL1HPZU)
-Note: For Mac OS users, you need to type "chmod +x ./tone_dfu_tool_macos" to create an executable firmware upgrade tool
+
+{% note info Note %}
+For Mac OS users, you need to type "chmod +x ./tone_dfu_tool_macos" to create an executable firmware upgrade tool
+{% endnote %}
 
 # Tone1 - Upgrade to Official Khadas Firmware v2.00
 
@@ -127,7 +130,9 @@ Installing tone-burn-tool...
 Done!
 ```
 
-*Note: Root privilege required.*
+{% note info Note %}
+Root privilege required.
+{% endnote %}
 
 **Upgrading:**
 
@@ -144,8 +149,10 @@ $ cd /home/*
 ```
 $ sudo tone-burn-tool -i /path/to/firmware.bin
 ```
-*Note: Upgrading will stuck at `Waiting for device to restart and enter DFU mode` for about 20 seconds, please wait patiently.*
 
+{% note info Note %}
+Upgrading will stuck at `Waiting for device to restart and enter DFU mode` for about 20 seconds, please wait patiently.
+{% endnote %}
 
 * If upgrading was done successfully, you should see:
 
@@ -198,8 +205,7 @@ VID = 0x3353, PID = 0xa002
 ... Returning device to application mode
 ```
 
-**Notes:**
-
+{% note info Note %}
 * If you get the following output when attempting to upgrade the firmware on Mac OS:
 ```
 ./tone_dfu_tool --download /path/to/Tone2_Pro_DFU_TEST201228_nothing.bin
@@ -211,6 +217,7 @@ Abort trap: 6
 * It means you need to upgrade `libusb`. You can do this by typing `brew install libusb`.
 * If typing `brew install libusb` didn't work, it means that you need to install [HomeBrew](https://brew.sh/).
 * If HomeBrew fails, you need to install Xcode Command Line Tools, type `xcode-select --install` into Terminal.
+{% endnote %}
 
 </div>
 </div>

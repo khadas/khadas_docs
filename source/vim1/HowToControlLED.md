@@ -1,7 +1,7 @@
 title: How To Control LEDs
 ---
 
-### Switch to root user
+## Switch to root user
 
 Only the root user has the authority to control and modify the node status of the LEDs.
 
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-### Check LED Node
+## Check LED Node
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -58,7 +58,7 @@ root@Khadas:/home/khadas#
 </div>
 
 
-### How To Use
+## How To Use
 
 Here takes `sys_led` as an example:
 

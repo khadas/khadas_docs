@@ -1,11 +1,11 @@
 title: 如何转换并通过NPU调用自己的模型
 ---
 
-这里以yolov3为例,演示如何转换自己的模型,并适配进我们demo,在VIM3上面运行
+这里以yolov3为例，演示如何转换自己的模型，并适配进我们demo，在VIM3上面运行
 
-**注意**:
-
-请在参照文档转换之前,先仔细查看一遍一下文档
+{% note info 注意 %}
+请在参照文档转换之前，先仔细查看一遍一下文档
+{% endnote %}
 
 1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
 2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
@@ -14,11 +14,11 @@ title: 如何转换并通过NPU调用自己的模型
 
 # 准备
 
-1. 训练好自己的yolov3模型.训练方式和过程可参考官方: [Darknet Yolo Page](https://pjreddie.com/darknet/yolo/),这里使用官方训练好的基于coco数据集的weights
+1. 训练好自己的yolov3模型。训练方式和过程可参考官方: [Darknet Yolo Page](https://pjreddie.com/darknet/yolo/)，这里使用官方训练好的基于coco数据集的weights
 
-2. 准备好SDK,app仓库,以及demo仓库
+2. 准备好SDK,app仓库，以及demo仓库
 
-请分别参考SDK,app以及demo的文档是如何获取相应的代码的
+请分别参考SDK，app以及demo的文档是如何获取相应的代码的
 
 1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
 2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
@@ -26,7 +26,7 @@ title: 如何转换并通过NPU调用自己的模型
 
 # 转换
 
-转换在SDK下进行.
+转换在SDK下进行。
 
 ```shell
 $ cd {workspace}/SDK/acuity-toolkit/conversion_scripts
@@ -191,7 +191,7 @@ BUILD  main.c  makefile.linux  nbg_meta.json  vnn_global.h  vnn_post_process.c  
 
 # 编译
 
-这部分代码在aml_npu_app仓库中进行.进入`detect_yolo_v3`的目录里面
+这部分代码在aml_npu_app仓库中进行。进入`detect_yolo_v3`的目录里面
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
@@ -201,7 +201,7 @@ build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c
 
 ## 替换vnn文件
 
-1. 将SDK生成的`vnn_yolov3.h`,`vnn_post_process.h`,`vnn_pre_process.h`替换进来
+1. 将SDK生成的`vnn_yolov3.h`，`vnn_post_process.h`，`vnn_pre_process.h`替换进来
 
 ```shell
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_yolov3.h {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/include/vnn_yolov3.h
@@ -291,7 +291,7 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/yolov3.n
 
 ## 运行
 
-如何在板子上运行替换完的`aml_npu_demo_binaries`, 请参考
+如何在板子上运行替换完的`aml_npu_demo_binaries`，请参考
 
 
 [如何在板子上运行NPUDemo](/zh-cn/vim3/HowToRunNPUDemo.html)

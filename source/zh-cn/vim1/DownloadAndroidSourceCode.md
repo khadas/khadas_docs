@@ -35,7 +35,7 @@ index f48a988..b8cb9da 100644
 gouwa@Server:~/project/khadas/aosp/.repo/manifests$ 
 ```
 
-### 常见问题：
+## 常见问题：
 * repo在运行过程中会尝试访问Google官方的git源更新自己，因此在运行过程中有可能出现”无法连接gerrit.googlesource.com“的问题，解决方案参考[这里](https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/)。
 
 * 下载过程中如果报如下错误，检查上述VPN或者修改XML方法是否正确配置*
@@ -53,7 +53,7 @@ error: Exited sync due to fetch errors
 gouwa@Server:~/project/khadas/aosp$ 
 ```
 
-### 更多参考：
+## 更多参考：
 * [清华大学官方文档：如何下载Android AOSP源码](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)
 
 

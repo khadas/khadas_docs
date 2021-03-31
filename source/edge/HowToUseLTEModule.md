@@ -8,16 +8,16 @@ You can view it on the following two websites:
 1. [frequencycheck](https://www.frequencycheck.com/carriers)
 2. [spectrumonitoring](https://www.spectrummonitoring.com/frequencies/)
 
-# LTE module working mode setting
+## LTE module working mode setting
 
-## Install minicom in your boarad
+### Install minicom in your boarad
 
 ```shell
 $ sudo apt update
 $ sudo apt install minicom
 ```
 
-## Setting to USBNet mode
+### Setting to USBNet mode
 
 ```shell
 $ minicom -D /dev/ttyUSB2
@@ -31,11 +31,11 @@ AT+QCFG="usbnet",2
 OK
 ```
 
-## Power down and restart
+### Power down and restart
 
 LTE module needs power down and restart to switch mode. Unplug VIMS and plug in again. LTE module now works in usbnet mode
 
-## Restore LTE module
+### Restore LTE module
 
 ```shell
 $ minicom -D /dev/ttyUSB2
@@ -50,9 +50,9 @@ AT+QCFG="usbnet",0
 Power down and restart to switch back to default mode
 
 
-## Use LTE Module with Ubuntu Desktop
+### Use LTE Module with Ubuntu Desktop
 
-### Step1: Open `edit connections`
+#### Step1: Open `edit connections`
 
 Find `edit connections` in network menu.
 
@@ -60,25 +60,25 @@ Find `edit connections` in network menu.
 
 The lastest option is `edit connections`.
 
-### Step2: Add new connect
+#### Step2: Add new connect
 
 ![LTE_add_connect](/images/edge/LTE_add_connect.png)
 
 You can find the `+` option in the lower left corner.
 
-### Step3: choose connect type
+#### Step3: choose connect type
 
 ![LTE_choose_connect_tpye](/images/edge/LTE_choose_connect_tpye.png)
 
 The `Mobile Broadband` that can be use for LTE Module
 
-### Step4: Choose you provider's country 
+#### Step4: Choose you provider's country 
 
 ![LTE_choose_country](/images/edge/LTE_choose_country.png)
 
 Choose you provider's country . 
 
-### Step5: Choose you provider 
+#### Step5: Choose you provider 
 
 ![LTE_choose_provider](/images/edge/LTE_choose_provider.png)
 
@@ -86,13 +86,13 @@ Choose you provider,This needs to be set according to your SIM card.
 
 After choose you provider, the next two steps use defconfigiure. So you just need to choose `next`.
 
-### Step6: set password
+#### Step6: set password
 ![LTE_set_psk](/images/edge/LTE_set_psk.png)
 
 Set you LTE Module connect passwork, you need to remember it . When you connect it , you need to use it.
 And you can set you connection name or use default.
 
-### Step7: Connect 
+#### Step7: Connect 
 
 ![LTE_connect](/images/edge/LTE_connect.png)
 
@@ -102,7 +102,7 @@ Now, you can connect it , you will find you LTE module connections in network me
 
 And then, you will connect success !
 
-## Use LTE Module with Ubuntu Server
+### Use LTE Module with Ubuntu Server
 
 If you use Ubuntu Server, you just need a command to connect it .
 
@@ -111,12 +111,12 @@ $ sudo nmcli connection add type gsm apn 3gnet user 0000 password 0000 con-name 
 
 ```
 
-## How to check  you connection is success
+### How to check  you connection is success
 
 You can test it by `ping` command. And you need to use `-I` option to choose the LTE Module.
 
 
-### check your network node
+#### check your network node
 ```
 $ ifconfig -a
 
@@ -135,7 +135,7 @@ wwan0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
 You will find `wwan0` via command `ifconfig -a`
 
 
-### Use `ping` command to test
+#### Use `ping` command to test
 
 ```
 $ ping www.baidu.com -I wwan0

@@ -1,7 +1,7 @@
 title: How To Use the NPU
 ---
 
-### Download NPU SDK
+## Download NPU SDK
 
 Please click [here](https://www.khadas.com/npu-toolkit-vim3) to get the SDK download link.
 
@@ -15,7 +15,7 @@ Directories description:
 * linux_sdk：Linux SDK
 * android_sdk：Android SDK
 
-### Environment Setup
+## Environment Setup
 
 In order to use the model conversion tools, you need to install [TensorFlow](https://www.tensorflow.org/) and other tools.
 
@@ -32,8 +32,9 @@ $ cd ~/npu/aml_npu_sdk/acuity-toolkit
 $ for req in $(cat requirements.txt); do pip3 install $req; done
 ```
 
-*Note: The command will install TensorFlow CPU version by default, if your PC has NVIDIA GPU(s) you can choose to install [GPU version](https://www.tensorflow.org/install/gpu) to speed up the conversion.*
-
+{% note info Note %}
+The command will install TensorFlow CPU version by default, if your PC has NVIDIA GPU(s) you can choose to install [GPU version](https://www.tensorflow.org/install/gpu) to speed up the conversion.
+{% endnote %}
 
 Verify the TensorFlow:
 ```
@@ -50,7 +51,7 @@ b'Hello World'
 
 If you see the `Hello World` string printed indicate that the TensorFlow is installed successfully.
 
-### Model Conversion
+## Model Conversion
 
 In order to run the model on VIM3, you need to convert the model to case code, only support `Caffe/Tensorflow/Tflite/Darknet/Onnx/Keras/Pytroch` models.
 
@@ -86,13 +87,15 @@ drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../
 -rw-rw-r-- 1 nick nick     1294 9月  20 15:16 vnn_pre_process.h
 ```
 
-*Note: You need to modify the model file path and other parameters in the scripts if you want to convert your model.*
+{% note info Note %}
+You need to modify the model file path and other parameters in the scripts if you want to convert your model.
+{% endnote %}
 
 They are just sample scripts to convert the model, for more information please refer to model conversion documentation`docs/en/Model_Transcoding and Running User Guide_V0.5.pdf`.
 
-### Compile the Case Code
+## Compile the Case Code
 
-#### Based On Linux
+### Based On Linux
 
 In order to run the model on VIM3 you need to compile the case code to get the executable binary.
 
@@ -109,7 +112,9 @@ $ cp ~/npu/aml_npu_sdk/linux_sdk/demo/inceptionv3/build_vx.sh .
 $ ./build_vx.sh ~/npu/aml_npu_sdk/linux_sdk/linux_sdk
 ```
 
-*Note: Build script usage: **./build_vx.sh linux-SDK-directory**.*
+{% note info Note %}
+Note: Build script usage: **./build_vx.sh linux-SDK-directory**.
+{% endnote %}
 
 You will find the executable binary in directory `bin_r` if compile sucessfully.
 
@@ -141,7 +146,9 @@ khadas@Khadas:~$ sudo reboot
 
 Copy the executable binary `inceptionv3`, model data `inception_v3.nb`, and test pictures (size 299x299) to VIM3 and run it
 
-*Note: You can find the sample pictures in directory `linux_sdk/demo/inceptionv3/bin_demo`.*
+{% note info Note %}
+Note: You can find the sample pictures in directory `linux_sdk/demo/inceptionv3/bin_demo`.
+{% endnote %}
 
 ```
 root@Khadas:~/inceptionv3# ./inceptionv3 inception_v3.nb goldfish_299x299.jpg 
@@ -179,9 +186,9 @@ I [vsi_nn_ConvertTensorToData:732]Create 2002 data.
 
 This demo just show the top5, you can see the max probability is index `2`, you can check the labels `linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt` and you will find the result is `goldfish`.
 
-#### Based On Android
+### Based On Android
 Please refer to Android&Linux complie guidance`docs/en/Android&Linux_Compilation and Integration Guide_0.2.pdf`.
 
-### In The End
+## In The End
 
 This is just a simple sample about model conversion and case code complie, for more information please refer to model conversion documentation`docs/en/Model_Transcoding and Running User Guide_V0.5.pdf`.

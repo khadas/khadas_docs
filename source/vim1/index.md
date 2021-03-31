@@ -1,7 +1,7 @@
 title: VIM1 Beginners Guide
 ---
 
-# VIM1
+## VIM1
 ![image](/images/vim1/docs_vim1.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -89,7 +89,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 
 {% endnote %}
 
-# Krescue (Khadas-Rescue-OS)
+## Krescue (Khadas Rescue OS)
 ![image](/images/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
@@ -129,7 +129,7 @@ More shell commands and examples:
 - [YouTube - Krescue Online OS Installation](https://youtu.be/vvpkbhnyhZY)
 - [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
 
-# VIM1 Power Supply
+## VIM1 Power Supply
 Although your VIM1 SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
 1. 5V, 2000mA Power Adapter
@@ -141,7 +141,7 @@ Although your VIM1 SBC is compatible with various types of power supplies, these
 * [Extra Power Input For Khadas VIMs](/vim1/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
 
-# Displays & User Input
+## Displays & User Input
 These items are useful when you need to connect your VIM1 SBC to an external display + keyboard mouse + remote control, for use as a desktop computer or media center.
 
 1. 4K HDMI 2.0 Cable
@@ -158,7 +158,7 @@ Please do not attach multiple cables with large heads that interfere with each o
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
 * [Amazon - Wireless Keyboard + Mouse](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-# Making Bootable/Burning SD-Cards/Thumbdrives
+## Making Bootable / Burning SD-Cards / Thumbdrives
 These items are useful when you want to upgrade your VIM1 SBC's operating system via SD-Card or Thumbdrive (Burning Cards). Or if you want to run operating systems that can only be run from external media (Booting Cards) like LibreELEC.
 
 1. 8GB or Larger, SD-Card
@@ -177,7 +177,7 @@ These items are useful when you want to upgrade your VIM1 SBC's operating system
 * **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing the `SD_USB` mark, as well as LibreELEC and CoreELEC.
 * In order to bootup from **SD/USB images**, you need Android (V180209 or newer) or Ubuntu (V180531 or newer) running on your eMMC with Multi-Boot activated.
 
-# Upgrading eMMC Operating System Using USB-Cable
+## Upgrading eMMC Operating System Using USB-Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your VIM1 SBC's operating system stored in its eMMC storage. For example, changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.
 
 1. USB-A to USB-C Data Cable (Legacy Computers)
@@ -196,7 +196,7 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 * [U-Boot](/vim1/FirmwareUboot.html)
 * [Third Party OSes](/vim1/FirmwareThirdparty.html)
 
-# Software Development / Advanced Crash Recovery
+## Software Development / Advanced Crash Recovery
 Extreme cases of crash-recovery will require you to use the MRegister to reset your VIM1 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
 
 1. Conductive Metal Tweezers (For resetting a dead SBC via MRegister)
@@ -207,10 +207,10 @@ Extreme cases of crash-recovery will require you to use the MRegister to reset y
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
-# VIM1 Website
+## VIM1 Website
 For more information, please see our website, read more documentation, or visit our forum.
 * [Khadas VIM1 Homepage](https://www.khadas.com/vim)
 * [Khadas VIM1 Forum](https://forum.khadas.com/c/khadas-vim)
 
-# VIM1 Review Video
+## VIM1 Review Video
 {% youtube dLAX8nwcTvo %}

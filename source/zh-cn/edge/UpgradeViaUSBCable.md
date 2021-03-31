@@ -1,9 +1,9 @@
 title: 通过USB升级固件
 ---
 
-# 通过Windows升级
+## 通过Windows升级
 
-## 准备
+### 准备
 
 * 下载[USB驱动_v4.91](https://dl.khadas.com/Tools/DriverAssitant_v4.91.zip)并解压。
 * 运行`DriverInstall.exe`来安装USB驱动。
@@ -14,7 +14,7 @@ title: 通过USB升级固件
 * 下载[AndroidTool_Release_zh_v2.71](https://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.71.zip)并解压。
 * `AndroidTool.exe`就是烧录工具，是免安装的，直接运行即可。
 
-## 升级步骤
+### 升级步骤
 
 确保USB驱动已经安装，并按如下步骤进行升级。
 
@@ -36,9 +36,9 @@ title: 通过USB升级固件
 现在执行`升级`就会开始升级：
 ![AndroidTool upgrade](/images/edge/AndroldTool_upgrade_zh.png)
 
-# 在Ubuntu下升级固件
+## 在Ubuntu下升级固件
 
-## 准备
+### 准备
 
 ```sh
 $ sudo apt-get install libusb-dev git parted
@@ -59,7 +59,7 @@ $ cd /path/to/utils
 $ git pull
 ```
 
-## 安装烧录工具
+### 安装烧录工具
 
 需要安装USB规则文件以及创建链接文件。
 
@@ -99,9 +99,11 @@ Installing Khadas burn-tool...
 Done!
 ```
 
-**注意：** 安装需要`root`权限。
+{% note info 注意 %}
+安装需要`root`权限。
+{% endnote %}
 
-## 如何在Ubuntu下烧录镜像
+### 如何在Ubuntu下烧录镜像
 
 有2个命令可以用于烧录镜像：`burn-tool`和`rk-burn-tool`。
 
@@ -130,14 +132,12 @@ Upgrade firmware ok.
 Done!
 ```
 
-## 如何卸载烧录工具
+### 如何卸载烧录工具
 ```
 $ cd /path/to/utils
 $ ./UNINSTALL
 ```
 
-**注意：**烧录工具只在**Ubuntu 16.04**上验证过。
-
-# 参考
+## 参考
 * [如何进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
 

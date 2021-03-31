@@ -3,7 +3,7 @@ title: 设置看门狗
 
 这篇文档介绍如何在Ubuntu系统中设置看门狗。
 
-### 使能看门狗
+## 使能看门狗
 
 看门狗默认是关闭的，你可以按如下步骤来使能看门狗：
 
@@ -41,7 +41,7 @@ khadas@Khadas:~$ sudo systemctl start watchdog.service
 </div>
 </div>
 
-### 设置看门狗超时时间
+## 设置看门狗超时时间
 
 默认超时时间是`15秒`，你可以编辑`/etc/watchdog.conf`中的`watchdog-timeout`字段来修改。
 
@@ -51,7 +51,7 @@ khadas@Khadas:~$ sudo systemctl start watchdog.service
 khadas@Khadas:~$ sudo systemctl restart watchdog
 ```
 
-### 查看看门狗服务
+## 查看看门狗服务
 
 ```bash
 khadas@Khadas:~$ systemctl status watchdog.service
@@ -79,7 +79,7 @@ Mar 26 10:15:47 Khadas watchdog[3385]: still alive after 129 interval(s)
 lines 1-21/21 (END)
 ```
 
-### 测试看门狗
+## 测试看门狗
 
 * 手动触发内核奔溃。
 
@@ -120,7 +120,7 @@ BL2 Built : 15:22:05, Aug 28 2019. g12b g1bf2b53 - luan.yuan@droid15-sz
 
 ```
 
-### 关闭看门狗
+## 关闭看门狗
 
 * 关闭看门狗服务
 
