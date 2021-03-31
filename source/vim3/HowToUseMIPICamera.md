@@ -6,7 +6,7 @@ title: How To Use MIPI Camera
 Attaching a camera for the first-time to VIM3's MIPI-CSI header? Refer to this picture:
 **note**: The reverse connection will burn the camera, please check the connection of the picture carefully before connecting
 
-![image](/images/vim3/docs_vim3_camera_OS08A10.jpg)
+<img src="/images/vim3/docs_vim3_camera_OS08A10.jpg" width="50%" height="50%" >
 
 # User MIPI Camera via Guvcview
 
@@ -20,11 +20,11 @@ The desktop version has Guvcview pre-installed, find and open this software in t
 
 The name of the MIPI camera is `Juno R2`.
 
-![mipi_guvcview_setting.png](/images/vim3/mipi_guvcview_setting.png)
+<img src="/images/vim3/mipi_guvcview_setting.png" width="50%" height="50%" >
 
 The resolution is set to `1920x1080` and the RGB format is `BGR3-BGR3`.
 
-![mipi_guvcview_seccess.png](/images/vim3/mipi_guvcview_seccess.png)
+<img src="/images/vim3/mipi_guvcview_seccess.png" width="50%" height="50%" >
 
 After the setting is successful, you can use the camera normally.
 
