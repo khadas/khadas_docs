@@ -3,10 +3,10 @@ title: 通过TFTP下载镜像
 
 在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
 
-### 准备
+## 准备
 * [搭建TFTP服务器](/zh-cn/vim1/SetupTFTPServer.html)
 
-### 更新U-boot
+## 更新U-boot
 
 ```bash
 kvim# tftp 1080000 u-boot.bin
@@ -30,7 +30,7 @@ kvim# reset
 
 {% endnote %}
 
-### 加载运行`boot.img`
+## 加载运行`boot.img`
 
 下载镜像到内存，执行`bootm`直接启动镜像
 
@@ -45,7 +45,7 @@ kvim# bootm
 
 {% endnote %}
 
-### 通过tftp启动Linux
+## 通过tftp启动Linux
 
 下载镜像到内存，通过`booti`直接运行：
 
@@ -63,7 +63,7 @@ kvim# booti 1080000 10000000 20000000"
 {% endnote %}
 
 
-### 调试
+## 调试
 
 执行`saveenv`失败：
 
@@ -75,5 +75,5 @@ kvim#
 ```
 
 你需要先写入dtb。
-### 参考
+## 参考
 * [U-Boot Offical Guidance](http://www.denx.de/wiki/view/DULG/UBoot)

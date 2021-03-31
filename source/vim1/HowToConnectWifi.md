@@ -1,11 +1,11 @@
 title: How to Connect to Wi-Fi
 ---
 
-### Android
+## Android
 
 For Android you can setup Wi-Fi via the GUI easily.
 
-### Ubuntu
+## Ubuntu
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

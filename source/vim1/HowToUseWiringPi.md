@@ -1,11 +1,11 @@
 title: How To Use WiringPi
 ---
 
-### What is WiringPi
+## What is WiringPi
 WiringPi is a GPIO Controller basic on C Program.Originally a library for Raspberry Pie.Now we have migrated to VIMs.You can control the 40 pin header by it.
 
-### Begin to Use WiringPi
-#### Control command
+## Begin to Use WiringPi
+### Control command
 
 * run `gpio -h`, you can see all the control command with WiringPi.
 ```
@@ -44,7 +44,7 @@ Mode  --> GPIO Mode ,`ALT` mean that this  pin defined as a special function
 v     --> 1:HIGH 0:low 
 PU/PD --> PU:pull up PD:pull down DSBLD:disabled PU/PD
 ```
-#### Control by command
+### Control by command
 Here's an example of controlling wpi number 1.
 * run `gpio mode 1 out`
 Now, The wpi number 1 mode is out.
@@ -61,7 +61,7 @@ root@Khadas:~# gpio read 1
 ```
 you can see the wpi number 1 Output changed from high to low.
 
-#### Control by Linux C program
+### Control by Linux C program
 * Here is a simple control program.
 ```
 #include <stdio.h>
@@ -100,10 +100,10 @@ wPi Pin 1 now is LOW
 ```
 you can use `gpio read 1` to observing pin level changes.
 
-### Special pin functions of wiringpi
+## Special pin functions of wiringpi
 Special pin functions of wiringpi include`SPI,i2C,ADC,SoftPWM`
  
-#### SPI 
+### SPI 
 
 Because`VIM1`and`vim2` don't export `SPI` to pin40 of GPIO, only `vim3` is supported for `SPI`. The corresponding pins of physical pin and SPI function are as follows:
 ```
@@ -113,26 +113,26 @@ PIN15 <---> SS
 PIN16 <---> SCLK
 ```
  
-#### I2C
+### I2C
 `VIM1` and `vim2` use `i2c0`and `vim3` use `i2c3`. The physical pin connections are as follows:
 ```
 PIN22 <---> SCK
 PIN23 <---> SDA
 ```
-#### ADC
+### ADC
 `VIM1` and `vim2` uses `channel0` and `channel2`of `ADC`, and `vim3` uses `channel0` and `channel3`. The physical pins are connected as follows:
 ```
 PIN10 <---> ADC_CH0
 PIN12 <---> ADC_CH2 or ADC_CH3
 ```
-#### Serial
+### Serial
 Please confirm the node name for Serial before using
 ```
 PIN15 <---> RX
 PIN16 <---> TX
 ```
 
-### WiringPi Function List
+## WiringPi Function List
 ```
 int  wiringPiSetup       (void) ;
 int  wiringPiSetupSys    (void) ;
@@ -194,6 +194,6 @@ void softPwmStop   (int pin) ;
 
 ```
 
-### notes
+## notes
 If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB.
 WiringPi itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.

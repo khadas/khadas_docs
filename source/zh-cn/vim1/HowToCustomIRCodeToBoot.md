@@ -1,7 +1,7 @@
 title: 如何自定义 IR CODE 进行系统开机
 ---
 
-### 获取遥控器按键的IR CODE
+## 获取遥控器按键的IR CODE
 
 * 打开驱动调试信息
 
@@ -25,11 +25,11 @@ root@Khadas:/home/khadas# echo 1 > /sys/class/remote/amremote/debug_enable
 
 其中`framecode=0xf807ff00`就是我们需要的按键值。
 
-### 自定义设置IR CODE
+## 自定义设置IR CODE
 
 `IR CODE`的设置是在uboot设置，这里有两个自定义按键可以使用。
 
-#### 写入`IR CODE`
+### 写入`IR CODE`
 
 * 自定义customer1
 
@@ -43,7 +43,7 @@ kvim#kbi ircode customer1 w 0xf807ff00
 kvim#kbi ircode customer2 w 0xf807ff00
 ```
 
-##### 读取设置的`IR CODE`
+#### 读取设置的`IR CODE`
 
 * 读取customer1
 
@@ -59,7 +59,7 @@ kvim#kbi ircode customer2 r
 ircode2: 0xf807ff00
 ```
 
-### 验证设置是否成功
+## 验证设置是否成功
 
 
 系统关机：

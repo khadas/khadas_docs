@@ -1,10 +1,10 @@
 title: How To Use WiringPi-Python
 ---
 
-### What is WiringPi-Python 
+## What is WiringPi-Python 
 WiringPi-Python is the python version of wiringPi. Now we also migrate it to VIMs Board GPIO for control GPIO Headlers.
 
-### WiringPi-Python Function List
+## WiringPi-Python Function List
 ```
 //GPIO
 class GPIO(object):
@@ -101,7 +101,7 @@ class Serial(object):
 
 ```
 
-### WiringPi-Python sample demo 
+## WiringPi-Python sample demo 
 This is a simple program of pin read-write control
 ```
   1 import wiringpi as GPIO
@@ -133,6 +133,6 @@ This is a simple program of pin read-write control
 
 ```
 
-### notes
+## notes
 If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB
 WiringPi-Python itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.

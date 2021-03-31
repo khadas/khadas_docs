@@ -1,25 +1,25 @@
 title: U-boot使用说明
 ---
 
-### 通过U盘烧录`boot.img`
+## 通过U盘烧录`boot.img`
 拷贝 `boot.img` 到U盘, 然后插入到VIM USB，执行如下命令
 ```
 kvim# usb_update boot boot.img
 ```
 
-### 通过SD卡烧录`boot.img`
+## 通过SD卡烧录`boot.img`
 拷贝 `boot.img` SD卡, 然后插入到VIM SD卡插槽，执行如下命令：
 ```
 kvim# sdc_update boot boot.img
 ```
 
-###  擦除分区
+## 擦除分区
 ```
 kvim# store erase partition boot
 kvim# amlmmc erase rootfs
 ```
 
-### 帮助
+## 帮助
 执行`help cmd`获取具体命令的使用方式，如下：
 ```
 kvim# help store
@@ -155,5 +155,5 @@ kvim#
 ```
 
 
-### 更多
+## 更多
 * [U-Boot Offical Guidance](http://www.denx.de/wiki/view/DULG/UBoot)

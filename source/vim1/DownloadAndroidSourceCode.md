@@ -5,7 +5,7 @@ The Android Source Tree of our Khadas VIMs are hosted on [Github](https://www.gi
 
 Walk through the steps below to download the Source Code. 
 
-### Steps
+## Steps
 
 Firstly, install git-lfs tool for downloading Android 9.0 SDK
 
@@ -106,6 +106,6 @@ done
 $ repo start <BRANCH_NAME> --all
 ```
 
-### Further Reading
+## Further Reading
 * [Android Official Documents](https://source.android.com/source/downloading.html)
 * [Build Android Source Code](/vim1/BuildAndroid.html)

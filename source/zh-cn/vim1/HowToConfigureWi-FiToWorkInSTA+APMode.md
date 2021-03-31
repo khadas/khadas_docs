@@ -2,14 +2,14 @@ title: 配置Wi-Fi同时工作在STA+AP模式
 ---
 这篇文档介绍如何在Ubuntu下配置Wi-Fi同时工作在STA+AP模式。
 
-### 准备工作
+## 准备工作
 
 固件基于V2005版本，并将[OTA升级](/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新的版本。
 
-### 开始配置
+## 开始配置
 将wlan0配置为STA模式，将wlan1配置为AP模式。
 
-#### 添加wlan1
+### 添加wlan1
 
 ```bash
 khadas@Khadas:~$ sudo iw phy phy0 interface add wlan1 type managed
@@ -53,7 +53,7 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-#### 设置AP
+### 设置AP
 
 将wlan1设置为热点并且自动连接，热点名字为`khadas_ap`，密码为`12345678`。
 
@@ -107,7 +107,7 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### 验证
+## 验证
 1、关闭以太网
 
 ```bash

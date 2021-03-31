@@ -2,14 +2,14 @@ title: Building Android
 ---
 
 
-### Preperations
+## Preperations
 
 * [Establishing a Build Environment](http://source.android.com/source/initializing.html)
 * [Downloading the Android Source](/vim1/DownloadAndroidSourceCode.html)
 * [Install toolchains for Amlogic platform](/vim1/InstallToolchains.html)
 
 
-### Building
+## Building
 
 {% note info Note %}
 
@@ -17,7 +17,7 @@ Before you start to build, make sure you have done all the `Preperations` listed
 
 {% endnote %}
 
-#### Build U-Boot
+### Build U-Boot
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -67,7 +67,7 @@ Gernerated images in this step:
 </div>
 </div>
 
-#### Build Android
+### Build Android
 
 ```bash
 $ cd PATH_YOUR_PROJECT
@@ -91,7 +91,7 @@ Gernerated images in this step:
 {% endnote %}
 
 
-#### Build Linux kernel
+### Build Linux kernel
 
 When you build Android aboved, will build Linux kernel at the same time.
 
@@ -123,6 +123,6 @@ $ make bootimage
 </div>
 </div>
 
-### See Also
+## See Also
 * [Upgrade Via an USB Cable](/vim1/UpgradeViaUSBCable.html)
 * [Upgrade Via a Burnning TF Card](/vim1/UpgradeViaTFBurningCard.html)

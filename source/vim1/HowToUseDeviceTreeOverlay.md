@@ -8,7 +8,7 @@ You can edit environment file `/boot/env.txt` to setup the device tree overlays 
 
 {% endnote %}
 
-### How To Use
+## How To Use
 
 You can find the device tree overlays configuration in `/boot/env.txt` for **VIM3**.
 
@@ -38,7 +38,7 @@ You need to save the file `/boot/env.txt` and reboot the board to take effect.
 
 {% endnote %}
 
-### Make Your Own DTBO Files
+## Make Your Own DTBO Files
 
 There are some ready to use dtbo files, you can also add your own dtbos to enable or disable the peripherals.
 

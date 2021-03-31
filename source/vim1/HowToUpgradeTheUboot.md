@@ -1,7 +1,7 @@
 title: How To Upgrade The u-boot
 ---
 
-### Upgrade u-boot in kernel space
+## Upgrade u-boot in kernel space
 
 We use [Fenix](/vim1/FenixScript.html) to build Ubuntu/Debian images. You can also use it to build the u-boot debian package.
 
@@ -35,7 +35,7 @@ $ sync
 $ sudo reboot
 ```
 
-### Upgrade u-boot in u-boot command line
+## Upgrade u-boot in u-boot command line
 
 We can also upgrade the u-boot in u-boot command line mode. You need to setup the [Serial Tool](/vim1/SetupSerialTool.html).
 

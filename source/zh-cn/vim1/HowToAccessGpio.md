@@ -3,14 +3,14 @@ title: 如何访问GPIO
 
 这篇文档介绍如何在Android和Ubuntu下访问GPIO。
 
-### 准备工作
+## 准备工作
 固件版本必须满足以下条件：
 
 * Android M >= V170603
 * Android N >= V170421
 * Ubuntu    >= V180712
 
-### 如何获取GPIO数值
+## 如何获取GPIO数值
 你可以通过GPIO banks和pins来获取。不同版本的内核数值不同。
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -143,7 +143,7 @@ Number(GPIOAO_6) = bank + pin = 145 - 0 + 6 = 151
 </div>
 
 
-### 在Android下
+## 在Android下
 
 **GPIO 列表**
 
@@ -266,7 +266,7 @@ while (null != (line = br.readLine())) {
  os.writeBytes("echo " + 432 + " > /sys/class/gpio/unexport\n");
 ```
 
-### 在Ubuntu下
+## 在Ubuntu下
 
 **GPIO 列表**
 

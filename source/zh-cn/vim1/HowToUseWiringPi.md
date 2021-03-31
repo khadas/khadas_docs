@@ -1,11 +1,11 @@
 title: 如何使用WiringPi
 ---
 
-### 什么是 WiringPi
+## 什么是 WiringPi
 WiringPi 是一个基于C语言的GPIO引脚控制库。原本是开发被运用于树莓派上，现在我们移植到了VIMs上。可以通过WiringPi控制板子上40pin的引脚。
 
-### 开始使用wiringPi
-#### 控制命令
+## 开始使用wiringPi
+### 控制命令
 
 * 运行 `gpio -h`, 你可以看到所有可以关于WiringPi的相关的命令
 ```
@@ -43,7 +43,7 @@ Mode  --> 引脚的模式 ,`ALT`说明引脚已经被配置成特殊的功能
 V     --> 1表示引脚是高电平，0表示引脚是低电平
 PU/PD --> PU:上拉 PD:下拉 DSBLD:已关闭上下拉
 ```
-#### 通过命令行控制
+### 通过命令行控制
 这里的简单例子是通过wpi的1号引脚实现的。
 * 运行 `gpio mode 1 out`
 wpi的1号引脚被设置成了输出模式。
@@ -60,7 +60,7 @@ root@Khadas:~# gpio read 1
 ```
 你可看到将引脚设置成输出后，就可以通过写命令改变引脚的电平值了。
 
-#### 通过编写linuxC程序控制GPIO
+### 通过编写linuxC程序控制GPIO
 * 这里同样是一个控制GPIO1的简单程序。
 ```
 #include <stdio.h>
@@ -99,10 +99,10 @@ wPi Pin 1 now is LOW
 ```
 你可以通过命令`gpio read 1`观察引脚的电平变化是否正确。
 
-### WiringPi特殊功能引脚
+## WiringPi特殊功能引脚
 wiringPi的特殊引脚功能包括`SPI,i2C,ADC,SoftPWM`
 
-#### SPI
+### SPI
 
 由于`VIM1`,`VIM2`没有将`SPI`引出到GPIO的Pin40上，所以`SPI`只支持`VIM3`,物理引脚与SPI功能的对应引脚
 ```
@@ -112,19 +112,19 @@ PIN15 <---> SS
 PIN16 <---> SCLK
 ```
 
-#### I2C
+### I2C
 `VIM1`,`VIM2`使用的是`i2c0`,`VIM3`使用`i2c3`,物理引脚连接如下:
 ```
 PIN22 <---> SCK
 PIN23 <---> SDA
 ```
-#### ADC
+### ADC
 `VIM1`,`VIM2`使用`ADC`的`通道0`和`通道2`,`VIM3`使用`通道0`和`通道3`,物理引脚连接如下:
 ```
 PIN10 <---> ADC_CH0
 PIN12 <---> ADC_CH2后者ADC_CH3
 ```
-#### Serial
+### Serial
 使用之前请先确认串口节点名称
 ```
 PIN15 <---> RX
@@ -132,7 +132,7 @@ PIN16 <---> TX
 ```
 
 
-### wiringPi函数列表
+## wiringPi函数列表
 ```
 int  wiringPiSetup       (void) ;
 int  wiringPiSetupSys    (void) ;
@@ -194,6 +194,6 @@ void softPwmStop   (int pin) ;
 
 ```
 
-### 注意
+## 注意
 如果需要使用wiringPi的特殊功能引脚，需要先确认dtb里面打开了相应的配置
 wiringPi本身包括很多功能，不仅仅只是控制GPIO引脚的输出和读取引脚电平值。这里只是一个简单的介绍和使用，更多的用法需要使用者自己去探索。

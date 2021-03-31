@@ -5,7 +5,7 @@ title: How To Use 1-Wire
 
 {% endnote %}
 
-### Enable 1-Wire Driver
+## Enable 1-Wire Driver
 
 Edit `/boot/env.txt` to add `onewire` to `overlays`.
 
@@ -17,7 +17,7 @@ overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 
 For details on overlays, please refer to [how to use device tree overlays](/vim1/HowToUseDeviceTreeOverlay.html).
 
-### Uasge
+## Uasge
 
 Here we attach a `1-Wire device `DS18B20` temperature sensor to the `1-Wire` bus.
 

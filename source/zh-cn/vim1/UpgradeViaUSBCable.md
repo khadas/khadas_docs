@@ -16,12 +16,12 @@ title: 通过USB升级固件
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="win" role="tabpanel" aria-labelledby="win-tab">
 
-### 准备工作
+## 准备工作
 * 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip)并解压。
 * 运行`setup_v2.x.x.exe`程序进行安装。
 ![image](/images/vim1/usb_upgrade_tool_setup_v217_zh.png)
 
-### 固件升级操作步骤
+## 固件升级操作步骤
 确保已经正确安装好升级工具，按照下面步骤进行升级：
 
 1. 打开升级工具`USB_Burning_Tool_v2.x.x.exe`，点击"File-->Import image"选择要升级的固件。
@@ -43,13 +43,13 @@ title: 通过USB升级固件
 </div>
 <div class="tab-pane fade" id="ubu" role="tabpanel" aria-labelledby="ubu-tab">
 
-### 准备
+## 准备
 
 ```bash
 $ sudo apt-get install libusb-dev git parted
 ```
 
-### 获取ubuntu烧录工具
+## 获取ubuntu烧录工具
 
 烧录工具在仓库[utils](https://github.com/khadas/utils)中。
 
@@ -64,7 +64,7 @@ $ cd /path/to/utils
 $ git pull
 ```
 
-### 安装烧录工具
+## 安装烧录工具
 
 需要安装usb规则以及创建链接文件。
 
@@ -110,7 +110,7 @@ Installing Amlogic flash-tool...
 
 {% endnote %}
 
-### 检查USB驱动
+## 检查USB驱动
 首先设置VIMs进入升级模式([VIM1](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))，然后检查USB驱动：
 
 ```bash
@@ -120,7 +120,7 @@ Bus 002 Devices 036: ID 1b8e:c003 Amlogic, Inc.
 
 以上信息说明PC已经识别到了VIM3
 
-### 在Ubuntu下烧录固件
+## 在Ubuntu下烧录固件
 
 有2个命令可以用于烧录固件：`burn-tool`和`aml-burn-tool`。
 
@@ -167,7 +167,7 @@ Resetting board [OK]
 
 更多请参考[文档](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs)。
 
-### 卸载烧录工具
+## 卸载烧录工具
 
 ```bash
 $ cd /path/to/utils

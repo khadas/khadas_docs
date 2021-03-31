@@ -4,12 +4,12 @@ title: How To Access I2C
 
 This guide is about how to access i2c on Ubuntu and Android.
 
-### Preconditions
+## Preconditions
 
 * `Ubuntu V180531` or newer
 * `Android V180619` or newer
 
-### Connections
+## Connections
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -64,7 +64,7 @@ This guide is about how to access i2c on Ubuntu and Android.
 </div>
 </div>
 
-### Detect the device
+## Detect the device
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -183,7 +183,7 @@ Root privileges required.
 
 {% endnote %}
 
-### Read register from device
+## Read register from device
 
 Read register `0x0d` of device `0x1d` on `I2C A`.
 

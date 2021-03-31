@@ -3,11 +3,11 @@ title: Install Docker
 
 This guide will show you how to install Docker on Ubuntu for Khadas VIMs/Edge.
 
-### Preparations
+## Preparations
 
 * Ubuntu `V180531` or newer
 
-### Install Essential Packages
+## Install Essential Packages
 
 ```bash
 $ sudo apt-get update
@@ -15,7 +15,7 @@ $ sudo apt-get install apt-transport-https ca-certificates curl software-propert
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-### Add Docker Source
+## Add Docker Source
 
 ```bash
 $ sudo add-apt-repository \
@@ -24,7 +24,7 @@ $ sudo add-apt-repository \
 	stable"
 ```
 
-### Install Docker
+## Install Docker
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -64,14 +64,14 @@ khadas@Khadas:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
 </div>
 </div>
 
-### Start Docker
+## Start Docker
 
 ```bash
 khadas@Khadas:~$ sudo systemctl enable docker
 khadas@Khadas:~$ sudo systemctl start docker
 ```
 
-### Add Docker Group
+## Add Docker Group
 
 ```bash
 khadas@Khadas:~$ sudo groupadd docker
@@ -84,7 +84,7 @@ You need to logout or reboot your system.
 
 {% endnote %}
 
-### Check Docker
+## Check Docker
 
 ```bash
 khadas@Khadas:~$ docker run hello-world
@@ -122,5 +122,5 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-### See Also
+## See Also
 [Get Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)

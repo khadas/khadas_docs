@@ -5,7 +5,7 @@ title: 如何使用硬件编码库
 
 {% endnote %}
 
-### H264硬件编码
+## H264硬件编码
 
 ```bash
 $ h264EncoderDemo  1080p.nv21    1080p.h264 1920 1080 10 30 2000000 2000 1
@@ -13,7 +13,7 @@ $ h264EncoderDemo  1080p.nv21    1080p.h264 1920 1080 10 30 2000000 2000 1
 
 编码后的文件为`1080p.h264`
 
-#### 获取帮助信息
+### 获取帮助信息
 
 ```bash
 $ h264EncoderDemo
@@ -31,7 +31,7 @@ Amlogic AVC Encode API
    fmt      : encode input fmt 0:nv12 1:nv21 2:yv12 3:rgb888 4:bgr888
 ```
 
-### H265硬件编码
+## H265硬件编码
 
 {% note info 注意 %}
 
@@ -46,7 +46,7 @@ $ h265EncoderDemo  1080p.nv21   1080p.h265  1920 1080 0 30 1000000 2000 0
 
 编码后的文件为`1080p.h265`
 
-#### 获取帮助信息
+### 获取帮助信息
 
 ```bash
 $ h265EncoderDemo
@@ -64,7 +64,7 @@ Amlogic AVC Encode API
    fmt      : encode input fmt 0:nv21, 1:nv12, 2:RGB888
 ```
 
-### 编码库源码
+## 编码库源码
 
 https://github.com/numbqq/encoder_libs_aml
 

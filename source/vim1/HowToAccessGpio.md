@@ -3,7 +3,7 @@ title: How To Access GPIO
 
 This guide is about how to access the GPIO using Android and Ubuntu.
 
-### Preconditions
+## Preconditions
 
 The ROM must satisfy the following conditions:
 
@@ -11,7 +11,7 @@ The ROM must satisfy the following conditions:
 * Android N     >= V170421
 * Ubuntu 		>= V180712
 
-### How to Get the GPIO Number
+## How to Get the GPIO Number
 You can get the GPIO number from GPIO Banks or Pins. Different versions of kernel will be different.
 
 
@@ -149,7 +149,7 @@ Number(GPIOAO_6) = bank + pin = 145 -  0 +  6 = 151
 </div>
 </div>
 
-### On Android
+## On Android
 
 **GPIO List**
 
@@ -274,7 +274,7 @@ while (null != (line = br.readLine())) {
  os.writeBytes("echo " + 432 + " > /sys/class/gpio/unexport\n");
 ```
 
-### On Ubuntu
+## On Ubuntu
 
 **GPIO List**
 

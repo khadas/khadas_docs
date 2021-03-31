@@ -11,12 +11,12 @@ title: 通过命令行方式创建系统烧录卡
 
 {% endnote %}
 
-### 准备工作
+## 准备工作
 * 编译或下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/))最新的U-Boot文件。
 * 准备好TF卡和读卡器。
 * 如果TF卡上有多个分区的话，需要通过fdisk格式化TF卡([VIM1](/zh-cn/vim1/CreateBurnCardViaCLI.html)/[VIM2](/zh-cn/vim2/CreateBurnCardViaCLI.html)/[VIM3](/zh-cn/vim3/CreateBurnCardViaCLI.html))。
 
-### 开始前
+## 开始前
 首先要先删除所有分区，**卡里面所有的数据将会丢失，请注意保存！**
 
 ```bash
@@ -54,7 +54,7 @@ Device     Boot Start      End  Sectors  Size Id Type
 
 起始分区从**4096**开始。
 
-### 制作TF烧录卡
+## 制作TF烧录卡
 
 把TF卡接到电脑上，并确保接上去的TF卡处于未挂载状态：
 
@@ -115,11 +115,11 @@ $ sudo eject /dev/sdX
 ```
 至此，TF烧录卡的制作已完成。
 
-### 通过TF烧录卡升级固件
+## 通过TF烧录卡升级固件
 1. 把制作好的烧录卡插入VIM/VIM2设备中，然后上电。
 2. 参考文档([VIM1](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))进入升级模式。
 3. 等待升级完成。
 
-### 更多资料
+## 更多资料
 * 启动卡VS烧录卡([VIM1](/zh-cn/vim1/BootingCardVsBurningCard.html)/[VIM2](/zh-cn/vim2/BootingCardVsBurningCard.html)/[VIM3](/zh-cn/vim3/BootingCardVsBurningCard.html))
 

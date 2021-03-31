@@ -1,11 +1,11 @@
 title: How To Setup Bluetooth
 ---
 
-### Android
+## Android
 
 For Android you can setup Bluetooth via the GUI easily.
 
-### Ubuntu
+## Ubuntu
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

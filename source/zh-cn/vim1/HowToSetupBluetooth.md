@@ -1,11 +1,11 @@
 title: 如何设置蓝牙
 ---
 
-### Android
+## Android
 
 对于安卓系统, 可以很方便地通过图形界面来设置。
 
-### Ubuntu
+## Ubuntu
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

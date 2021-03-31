@@ -3,13 +3,13 @@ title: Load Images With U-Boot Via TFTP
 
 With an available network connection, U-Boot can load images quickly and easily via TFTP.
 
-### Preparation
+## Preparation
 
 * [Setup TFTP Server for U-Boot](/vim1/SetupTFTPServer.html)
 
 We'll start off with a terminal connected to the board and sitting at the U-Boot prompt.
 
-### Upgrade Bootloader
+## Upgrade Bootloader
 
 ```
 kvim# tftp 1080000 u-boot.bin
@@ -33,7 +33,7 @@ kvim# reset
 
 {% endnote %}
 
-### Load and Run boot.img
+## Load and Run boot.img
 
 Load image into memory, then run `bootm` to boot from memory:
 
@@ -48,7 +48,7 @@ Only for Android.
 
 {% endnote %}
 
-### Load and Run Linux Kernel Image
+## Load and Run Linux Kernel Image
 
 Download and run Linux:
 
@@ -66,7 +66,7 @@ Only for Ubuntu.
 {% endnote %}
 
 
-### Troubleshooting
+## Troubleshooting
 Failed to `saveenv`:
 ```
 kvim# saveenv
@@ -76,5 +76,5 @@ kvim#
 ```
 
 You need to write a DTB first!
-### Resources
+## Resources
 * [U-Boot Offical Guide](http://www.denx.de/wiki/view/DULG/UBoot)

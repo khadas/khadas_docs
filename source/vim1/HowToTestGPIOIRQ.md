@@ -1,7 +1,7 @@
 title: GPIO IRQ Usage
 ---
 
-### Switch to root user
+## Switch to root user
 
 Only root user can control GPIO, you need to switch to root user before testing.
 
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-### GPIO Pin Control Setting
+## GPIO Pin Control Setting
 
 * Check the pins you need to use, take VIM3 as an example:
 

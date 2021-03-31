@@ -12,13 +12,13 @@ Here's an example of upgrading Android.The way to upgrade Ubuntu is consistent w
 {% endnote %}
 
 
-### Preparation:
+## Preparation:
 
 * Download the [Burn Card Maker Tool](https://dl.khadas.com/Tools/Burn_card_maker_V2.0.2_20150617_en.7z) and extract it.
 * Prepare an SD-Card and a Card Reader. Your card will be formatted, so you might want to back up your data first.
 * A display/monitor that supports HDMI video-input.
 
-### Upgrading Steps:
+## Upgrading Steps:
 1. Run `Burn_Card_Maker.exe` tool:
 	![Image of BurnCardMaker_Tool](/images/vim1/BurnCardMaker_Tool.png)
 2. Insert the SD-Card into your PC, it should appear as a new drive letter. Then:

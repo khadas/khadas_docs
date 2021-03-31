@@ -2,15 +2,15 @@ title: Configure Wi-Fi To Work In STA+AP Mode
 ---
 This guide is about how to configure Wi-Fi to work in STA+AP mode under Ubuntu.
 
-### Preconditions
+## Preconditions
 
 The image is based on the V2005 version,and [update the OTA](/vim3/HowToUpgradeTheSystem.html) to the latest version
 
-### Start to Configure
+## Start to Configure
 
 Configrure wlan0 as STA mode, wlan1 as AP mode.
 
-#### Add wlan1
+### Add wlan1
 
 ```bash
 khadas@Khadas:~$ sudo iw phy phy0 interface add wlan1 type managed
@@ -54,7 +54,7 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-#### Setup AP
+### Setup AP
 
 Set wlan1 as a hotspot and connect automatically.The name of the hotspot is`khadas_ap`,the password is`12345678`.
 
@@ -108,7 +108,7 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### Verify
+## Verify
 
 1、Turn off Ethernet
 

@@ -1,7 +1,7 @@
 title: 如何使用硬件PWM
 ---
 
-# 确认PWM引脚
+## 确认PWM引脚
 
 dts配置文件里默认已经打开了硬件PWM，所以仅需要确认哪一个物理引脚对应了硬件PWM。
 
@@ -9,7 +9,7 @@ dts配置文件里默认已经打开了硬件PWM，所以仅需要确认哪一�
 * `PWM_D` on [VIM2 GPIO-Out](/zh-cn/vim2/index.html#GPIO-Pinout)
 * `PWM_F` on [VIM3 GPIO-Out](/zh-cn/vim3/index.html#GPIO-Pinout)
 
-# 却换到root用户
+## 却换到root用户
 
 普通用户无法控制GPIO，因此需要先却换到root用户。
 
@@ -19,9 +19,9 @@ khadas@Khadas:~$ sudo -i
 root@Khadas:~#
 ```
 
-# 设置硬件PWM
+## 设置硬件PWM
 
-## 设置以及打开PWM
+### 设置以及打开PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -71,7 +71,7 @@ root@Khadas:~#
 
 {% endnote %}
 
-## 关闭PWM
+### 关闭PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

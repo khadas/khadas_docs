@@ -4,7 +4,7 @@ title: Setup TFTP Server for U-Boot
 Our approach to setup a TFTP server is quite similar to other guides that you can find via Google.
 Here we provide some instructions for reference.
 
-### Setup TFTP
+## Setup TFTP
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -87,7 +87,7 @@ $ sudo service tftpd-hpa restart
 </div>
 </div>
 
-### Setup For Target Device
+## Setup For Target Device
 To setup TFTP on your target device, you will need to:
 
 * Connect a LAN cable to your target device, and make sure your device is on same local network with your Host PC.
@@ -142,7 +142,7 @@ serverip=192.168.1.117
 
 {% endnote %}
 
-### Test Your TFTP Server
+## Test Your TFTP Server
 
 Make sure you have copied the testing file to the TFTF root path:
 
@@ -170,7 +170,7 @@ Bytes transferred = 1371504 (14ed70 hex)
 If everything goes well, the terminal print-out will look similar to what is shown above.
 
 
-### Troubleshooting
+## Troubleshooting
 * You might need to check the connection of your LAN cable if the terminal print-out looks like:
 ```
 kvim3# tftp 1080000 u-boot.bin
@@ -193,6 +193,6 @@ Speed: 1000, full duplex
 ```
 In this instance, I had setup the server IP address to an incorrect one `192.168.1.177`, it should be `192.168.1.117` instead.
 
-### Resources
+## Resources
 * [Ubuntu Wiki: TFTP](https://help.ubuntu.com/community/TFTP)
 * [Configuring TFTP server for linux](http://venkateshabbarapu.blogspot.com/2012/10/configuring-tftp-server-for-linux.html)

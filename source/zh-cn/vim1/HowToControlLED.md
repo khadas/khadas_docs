@@ -1,7 +1,7 @@
 title: 如何控制LED
 ---
 
-### 切换root用户
+## 切换root用户
 
 只有root用户有权限控制修改LED灯的节点状态。
 
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-### 查看LED节点
+## 查看LED节点
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -57,7 +57,7 @@ root@Khadas:/home/khadas#
   </div>
 </div>
 
-### 使用LED
+## 使用LED
 
 这里以`sys_led`为例.
 

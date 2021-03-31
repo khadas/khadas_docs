@@ -16,12 +16,12 @@ title: Upgrade Via a USB-C Cable
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="win" role="tabpanel" aria-labelledby="win-tab">
 
-### Perparation
+## Perparation
 * Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip) and extract it.
 * Run `setup_v2.x.x.exe` to install the tool for upgrading your VIMs:
     ![Image of USB_Upgrade_tool_setup_v217](/images/vim1/usb_upgrade_tool_setup_v217.png)
 
-### Upgrade steps
+## Upgrade steps
 Make soure that you have install the correct USB upgrade Tool, then follow the steps below to upgrade:
 
 1. Open `USB_Burning_tool_v2.x.x.exe`, click "File-->Import Image" to choose an [image](https://dl.khadas.com/Firmware/) for your VIMs.
@@ -45,13 +45,13 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 </div>
 <div class="tab-pane fade" id="ubu" role="tabpanel" aria-labelledby="ubu-tab">
 
-### Preparation
+## Preparation
 
 ```bash
 $ sudo apt-get install libusb-dev git parted
 ```
 
-### Download Burning Tool
+## Download Burning Tool
 
 Image burning tool for Ubuntu is in this repository [utils](https://github.com/khadas/utils).
 
@@ -65,7 +65,7 @@ $ cd /path/to/utils
 $ git pull
 ```
 
-### Install Burning Tool
+## Install Burning Tool
 You need to install USB rules and create some links.
 
 ```bash
@@ -109,7 +109,7 @@ Root privilege required.
 
 {% endnote %}
 
-### Check The USB Driver
+## Check The USB Driver
 
 You must now place your VIM board into "Upgrade Mode".See [VIM1](/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/vim3/HowtoBootIntoUpgradeMode.html) to enter Upgrade Mode.
 Check to see if Ubuntu has detected your VIM1/VIM2 as a connected USB-device.
@@ -120,7 +120,7 @@ BUS 002 Device 036: ID 1b8e:c003 Amlogic, Inc.
 ```
 The message above means that your VIM is connected and recogized by Ubuntu.
 
-### How to burn an Image on Ubuntu
+## How to burn an Image on Ubuntu
 There are two commands that be used to burn image: `burn-tool` and `aml-burn-tool`.
 
 For example: Burn image for VIM3
@@ -161,11 +161,10 @@ Writing logo partition [OK]
 Writing system partition [OK]
 Do you want to reset the board? y/n [n]? y
 Resetting board [OK]
-
 ```
 For more information please refer to [docs](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs).
 
-### Uninstall Burning Tool
+## Uninstall Burning Tool
 
 ```bash
 $ cd /path/to/utils
@@ -176,7 +175,7 @@ $ sudo ./UNINSTALL
 </div>
 
 
-### See Also
+## See Also
 * [Upgrade Via An SD-Card](/vim1/UpgradeViaTFBurningCard.html)
 * [How To Boot Into Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
 

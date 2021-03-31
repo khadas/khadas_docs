@@ -1,14 +1,14 @@
 title: 编译Amlogic平台安卓源码
 ---
 
-### 准备工作
+## 准备工作
 
 * [搭建编译环境](http://source.android.com/source/initializing.html)
 * [下载安卓源码](/zh-cn/vim1/DownloadAndroidSourceCode.html)
 * [安装编译工具链](/zh-cn/vim1/InstallToolchains.html)
 
 
-### 编译
+## 编译
 
 {% note info 注意 %}
 
@@ -16,7 +16,7 @@ title: 编译Amlogic平台安卓源码
 
 {% endnote %}
 
-#### 编译u-boot
+### 编译u-boot
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -68,7 +68,7 @@ $ ./mk kvim
 </div>
 
 
-#### 编译 Android
+### 编译 Android
 
 ```bash
 $ cd PATH_YOUR_PROJECT
@@ -92,7 +92,7 @@ $ make -jN otapackage
 {% endnote %}
 
 
-#### 编译 Linux kernel
+### 编译 Linux kernel
 
 当你在编译安卓的同时会编译linux内核。
 
@@ -123,7 +123,7 @@ $ make bootimage
 </div>
 </div>
 
-### 参考
+## 参考
 * [通过USB升级](/zh-cn/vim1/UpgradeViaUSBCable.html)
 * [通过TF卡升级](/zh-cn/vim1/UpgradeViaTFBurningCard.html)
 

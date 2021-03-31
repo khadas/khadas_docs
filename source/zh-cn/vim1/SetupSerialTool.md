@@ -1,10 +1,10 @@
 title: 设置串口调试工具
 ---
 
-### 准备工作
+## 准备工作
 * 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具。
 
-### 连接
+## 连接
 请按下面所示方式连接：
 
 * 连接所有GPIO，确保TX/RX连接正确.
@@ -24,7 +24,7 @@ title: 设置串口调试工具
 ![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
 
 
-### 设置串口软件`minicom`
+## 设置串口软件`minicom`
 
 安装minicom：
 
@@ -143,5 +143,5 @@ Report bugs to <minicom-devel@lists.alioth.debian.org>.
 
 {% endnote %}
 
-### 更多参考
+## 更多参考
 [Minicom wiki](https://en.wikipedia.org/wiki/Minicom)

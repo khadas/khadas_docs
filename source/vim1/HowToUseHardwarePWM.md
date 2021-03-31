@@ -1,7 +1,7 @@
 title: How To Use Hardware PWM
 ---
 
-# Check HardwarePWM Pin
+## Check HardwarePWM Pin
 
 Hardware PWM had open at default dtb configuration.So you need to check which Physical pin is connect to it .
 
@@ -9,7 +9,7 @@ Hardware PWM had open at default dtb configuration.So you need to check which Ph
 * `PWM_D` on [VIM2 GPIO-Out](/vim2/index.html#GPIO-Pinout)
 * `PWM_F` on [VIM3 GPIO-Out](/vim3/index.html#GPIO-Pinout)
 
-# Switch to root user
+## Switch to root user
 
 Ordinary users cannot control GPIO, so they need to switch to the root user.
 
@@ -19,9 +19,9 @@ khadas@Khadas:~$ sudo -i
 root@Khadas:~#
 ```
 
-# Set Hardware PWM
+## Set Hardware PWM
 
-## Setup and enable PWM
+### Setup and enable PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -72,7 +72,7 @@ If you use an oscilloscope to view the waveform, remember that the board and the
 
 {% endnote %}
 
-## Disable PWM
+### Disable PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

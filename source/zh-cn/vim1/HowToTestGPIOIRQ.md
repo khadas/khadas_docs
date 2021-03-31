@@ -1,7 +1,7 @@
 title: 如何使用GPIO中断
 ---
 
-### 切换root用户
+## 切换root用户
 
 只有root用户可以控制GPIO,在测试之前需要先切换到root用户。
 
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-### 设置GPIO引脚
+## 设置GPIO引脚
 
 * 确认你需要使用的引脚,以VIM3为例：
 

@@ -4,7 +4,7 @@ title: Setup Watchdog
 This guide is about how to setup `watchdog` in Ubuntu.
 
 
-### Enable Watchdog
+## Enable Watchdog
 
 The watchdog is disabled by default. You can use the commands below to enable it.
 
@@ -42,7 +42,7 @@ khadas@Khadas:~$ sudo systemctl start watchdog.service
 </div>
 </div>
 
-### Check Watchdog Service
+## Check Watchdog Service
 
 ```bash
 khadas@Khadas:~$ systemctl status watchdog.service 
@@ -70,7 +70,7 @@ Mar 26 10:15:47 Khadas watchdog[3385]: still alive after 129 interval(s)
 lines 1-21/21 (END) 
 ```
 
-### Setup Watchdog Timeout
+## Setup Watchdog Timeout
 
 The default timeout is `15S`, you can edit file `/etc/watchdog.conf` to change the timeout `watchdog-timeout`.
 
@@ -80,7 +80,7 @@ The default timeout is `15S`, you can edit file `/etc/watchdog.conf` to change t
 $ sudo systemctl restart watchdog
 ```
 
-### Test Watchdog
+## Test Watchdog
 
 * Trigger a Kernel Crash.
 
@@ -121,7 +121,7 @@ BL2 Built : 15:22:05, Aug 28 2019. g12b g1bf2b53 - luan.yuan@droid15-sz
 
 ```
 
-### Disable Watchdog
+## Disable Watchdog
 
 * Disable Watchdog Service
 

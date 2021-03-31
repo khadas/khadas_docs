@@ -1,7 +1,7 @@
 title: How To Setup Customer Ethernet MAC Address
 ---
 
-### Check Ethernet MAC address
+## Check Ethernet MAC address
 
 * Check Ethernet MAC address via `cmdline`
 
@@ -28,7 +28,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 You can see from the `ether` fields that the address is `c8:63:14:70:43:e4`.
 
-### Setup Customer Ethernet MAC Address
+## Setup Customer Ethernet MAC Address
 
 Edit file `/boot/env.txt` to add node `custom_ethmac=xx:xx:xx:xx:xx:xx`.
 	 
@@ -44,7 +44,7 @@ custom_ethmac=c8:63:14:70:43:e6
 
 Reboot to take effect
 
-### Check the MAC Address
+## Check the MAC Address
 
 * Check Ethernet MAC address via `cmdline`
 
