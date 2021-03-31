@@ -73,7 +73,6 @@ sidebar:
     install_docker: 安装Docker
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
-    how_to_use_rpigpio: RPi.GPIO用法
     how_to_upgrade_the_logo: 更新logo
     how_to_upgrade_the_uboot: 更新u-boot
     how_to_upgrade_the_kernel: 更新内核
@@ -139,7 +138,6 @@ sidebar:
     install_docker: 安装Docker
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
-    how_to_use_rpigpio: RPi.GPIO用法
     how_to_upgrade_the_logo: 更新logo
     how_to_upgrade_the_uboot: 更新u-boot
     how_to_upgrade_the_kernel: 更新内核
@@ -228,7 +226,6 @@ sidebar:
     install_docker: 安装Docker
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
-    how_to_use_rpigpio: RPi.GPIO用法
     how_to_upgrade_the_logo: 更新logo
     how_to_upgrade_the_uboot: 更新u-boot
     how_to_upgrade_the_kernel: 更新内核
@@ -299,7 +296,6 @@ sidebar:
     install_docker: 安装Docker
     build_packages_in_docker: 在Docker中编译软件包
     how_to_use_wiringpi: WiringPi用法
-    how_to_use_rpigpio: RPi.GPIO用法
     how_to_upgrade_the_logo: 更新logo
     how_to_upgrade_the_uboot: 更新u-boot
     how_to_upgrade_the_kernel: 更新内核
