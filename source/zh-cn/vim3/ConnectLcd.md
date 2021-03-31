@@ -1,7 +1,6 @@
-title: 如何连接TS050触摸屏
+title: 连接TS050触摸屏
 ---
 
-![vim3 ts050 front](/images/vim3/vim3_ts050_front.jpg)
+<img src="/images/vim3/vim3_ts050_front.jpg" width="50%" height="50%">
 
-![vim3 ts050](/images/vim3/vim3_ts050.jpg)
-
+<img src="/images/vim3/vim3_ts050.jpg" width="50%" height="50%">

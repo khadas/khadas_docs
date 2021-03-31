@@ -180,7 +180,7 @@ sidebar:
     extra_power_input: Extra Power Input
     Accessories: Accessories
     how_to_setup_fan: Cooling Fan Setup
-    connect_lcd: Connect to TS050 Touchscreen
+    connect_lcd: Connect TS050 Touchscreen
     HowToUseMPICamera: MIPI Camera Usage
     how_to_use_lte_module: LTE Module Usage
     how_to_enable_M2X_ETH_through_overlays: M2X ETH Usage
@@ -270,7 +270,7 @@ sidebar:
     extra_power_input: Extra Power Input
     Accessories: Accessories
     how_to_setup_fan: Cooling Fan Setup
-    connect_lcd: Connect to TS050 Touchscreen
+    connect_lcd: Connect TS050 Touchscreen
     how_to_use_lte_module: LTE Module Usage
     development: Development
     setup_serial: Serial Debugging Tool
