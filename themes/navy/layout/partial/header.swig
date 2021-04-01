@@ -1,5 +1,5 @@
-<header id="header" class="wrapper">
-  <div id="header-inner" class="inner">
+<header id="header" class="header-wrapper">
+  <div id="header-inner" class="inner wrapper">
     <h1 id="logo-wrap">
       <a href="{{ url_for_lang('') }}" id="logo">Hexo</a>
     </h1>
