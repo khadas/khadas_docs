@@ -23,7 +23,7 @@ Select `VIM3` or `VIM3L` board(This is according to your board).
 $ make uboot
 ```
 
-If successful, you will get a U-Boot for the SPI-Flash `u-boot.bin`, in the directory `fenix/u-boot/build`.
+If successful, you will get a U-Boot for the SPI-Flash `u-boot.bin`, in the directory `fenix/build/u-boot/`.
 
 ## Burn U-boot To SPI Flash
 
