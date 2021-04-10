@@ -438,3 +438,5 @@ hexo.extend.helper.register('hexo_version', function() {
   return this.env.version;
 });
 
+hexo.extend.helper.register('toc', require('./toc'));
+

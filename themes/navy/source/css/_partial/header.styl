@@ -8,13 +8,23 @@ logo-size = 50px
   border: 0.1px solid #e9e7e7
 
 #header
-  position: relative
+  background: color-navy
+  position:sticky
+  height: header-height
+  top: 0
   padding: header-padding-normal 50px
+  z-index: 9999
   @media print
     display: none
 
+.header-wrapper
+  @media screen
+    max-width: max-width
+    min-width: 100%
+
 #header-inner
   display: flex
+  background: color-navy
   flex-flow: row nowrap
   align-items: center
   @media mq-mobile-tablet
@@ -96,7 +106,7 @@ li.submenu:hover a.main-nav-link
 
 #lang-select-wrap
   display: none
-  padding-right: 320px
+  padding-right: 15%
   position: relative
   @media mq-normal
     display: block

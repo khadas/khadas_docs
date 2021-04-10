@@ -1,6 +1,12 @@
 title: How to run NPU Demo on VIM3
 ---
 
+{% note warn Note %}
+
+Please follow this [docs](/vim3/HowToUpgradeTheSystem.html) to upgrade the system to latest version before run any NPU demos.
+
+{% endnote %}
+
 ## Get NPU Demo
 
 NPU Demo is not installed on the board by default. You need to download it from gitlab first
@@ -77,7 +83,7 @@ $ ./inceptionv3 inception_v3.nb path/to/picture
 The size of the picture must correspond to the size of the model, so here, the input of the inceptionv3 model is 299x299x3, and the incoming recognized picture must also be 299x299
 {% endnote %}
 
-## yolo series model
+## Yolo series model
 
 The application of the yolo series model is divided into two parts: camera dynamic recognition and image recognition.
 

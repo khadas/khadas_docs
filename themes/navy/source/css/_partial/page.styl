@@ -1,6 +1,7 @@
 note-tip = hsl(40, 100%, 50%)
 note-info = hsl(200, 100%, 50%)
 note-warn = hsl(0, 100%, 50%)
+article-padding-top = 40px
 
 #content
   clearfix()
@@ -20,13 +21,19 @@ note-warn = hsl(0, 100%, 50%)
   clearfix()
   @media mq-normal
     margin-right: sidebar-width
+    border-left: 1px solid color-border
+    border-right: 1px solid color-border
 
 .article
   float: left
   width: 100%
-  padding: 40px 0
+  padding: article-padding-top 0
   @media print
     padding: 0
+
+.inner-article
+    width: 100%
+    min-height: 'calc(100vh - %s - %s - 2 * %s)' %(footer-height header-height article-padding-top)
 
 #article-toc
   display: none
@@ -49,8 +56,12 @@ note-warn = hsl(0, 100%, 50%)
   width: sidebar-width
   .fixed &
     position: fixed
-    top: 0
+    top: header-height
     bottom: 0
+
+.article-toc-border
+  padding-left:10px
+  border-left: 5px solid color-link
 
 .toc-link
   @extend .sidebar-link

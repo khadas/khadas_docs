@@ -1,7 +1,7 @@
 title: 如何更换开机Logo
 ---
 
-{% note info 对于最新的固件，在系统启动过程中会显示3个lgoo：%}
+{% note info 对于最新的固件，在系统启动过程中会显示3个logo：%}
 
 * U-boot阶段logo
 * Kernel阶段logo
@@ -36,6 +36,13 @@ $ file /usr/share/fenix/logo/logo.bmp
 
 只需用你的bmp logo图片替换原有的logo文件即可。
 
+{% note info 提示 %}
+
+如果你使用[Fenix](https://github.com/khadas/fenix)来编译固件，可以通过替换文件`archives/logo/bmp/logo.bmp` 文件来修改logo。
+
+{% endnote %}
+
+
 </div>
 <div class="tab-pane fade show" id="kernel" role="tabpanel" aria-labelledby="kernel-tab">
 
@@ -54,14 +61,16 @@ $ pnmtoplainpnm linux_logo_clut224.pnm > logo_linux_clut224.ppm
 </div>
 <div class="tab-pane fade show" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
 
-Ubuntu logo 与 uboot logo 是同一个文件，修改uboot logo就能修改Ubuntu开机的logo
+Ubuntu logo对应的文件为：`/usr/share/fenix/logo/logo.png`。
 
-```sh
-$ ll /usr/share/plymouth/themes/fenix/logo.png
-lrwxrwxrwx 1 root root 30 Mar 27 17:07 /usr/share/plymouth/themes/fenix/logo.png -> /usr/share/fenix/logo/logo.png
-```
+替换`/usr/share/fenix/logo/logo.png`，就能修改Ubuntu开机logo。
 
-替换`/usr/share/fenix/logo/logo.png`，就能修改Ubuntu开机logo
+{% note info 提示 %}
+
+如果你使用[Fenix](https://github.com/khadas/fenix)来编译固件，可以通过替换文件`archives/logo/png/logo.png` 文件来修改logo。
+
+{% endnote %}
+
 
 </div>
 </div>

@@ -1,6 +1,13 @@
 title: 如何在VIM3上面运行 NPU Demo
 ---
 
+{% note warn 注意 %}
+
+在运行NPU Demo前请先参考[文档](/zh-cn/vim3/HowToUpgradeTheSystem.html)升级系统到最新版本。
+
+{% endnote %}
+
+
 ## 获取NPU Demo
 
 NPU Demo 默认并没有安装在板子上。需要先从gitlab自行下载
@@ -79,13 +86,13 @@ $ ./inceptionv3 inception_v3.nb path/to/picture
 图片的尺寸要与模型的尺寸对应，因此这里，inceptionv3模型的输入是299x299x3，传入识别的图片也必须是299x299。
 {% endnote %}
 
-## yolo系列模型
+## Yolo系列模型
 
-yolo系列模型的应用分成了摄像头动态识别和图片识别两个部分。
+Yolo系列模型的应用分成了摄像头动态识别和图片识别两个部分。
 
 ### 安装与卸载库
 
-yolo系列的模型需要将库安装到系统中，无论是使用摄像头动态识别还是识别图片，共用了同一套库。
+Yolo系列的模型需要将库安装到系统中，无论是使用摄像头动态识别还是识别图片，共用了同一套库。
 
 进入`detect_demo_picture`
 

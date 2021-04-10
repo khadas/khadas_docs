@@ -37,6 +37,12 @@ $ file /usr/share/fenix/logo/logo.bmp
 
 You can use your own bmp logo image to replace the default one to change the default logo.
 
+{% note info Note %}
+
+If you want to build the image with [Fenix](https://github.com/khadas/fenix), you can replace file `archives/logo/bmp/logo.bmp` to change the logo.
+
+{% endnote %}
+
 </div>
 <div class="tab-pane fade show" id="kernel" role="tabpanel" aria-labelledby="kernel-tab">
 
@@ -55,14 +61,16 @@ $ pnmtoplainpnm linux_logo_clut224.pnm > logo_linux_clut224.ppm
 </div>
 <div class="tab-pane fade show" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
 
-The Ubuntu logo and uboot logo are the same file. Modifying the uboot logo can modify the Ubuntu boot logo
+The Ubuntu logo file is `/usr/share/fenix/logo/logo.png`.
 
-```sh
-$ ll /usr/share/plymouth/themes/fenix/logo.png
-lrwxrwxrwx 1 root root 30 Mar 27 17:07 /usr/share/plymouth/themes/fenix/logo.png -> /usr/share/fenix/logo/logo.png
-```
+Replace `/usr/share/fenix/logo/logo.png` to change the Ubuntu boot logo.
 
-Replace `/usr/share/fenix/logo/logo.png` to modify the Ubuntu boot logo
+{% note info Note %}
+
+If you want to build the image with [Fenix](https://github.com/khadas/fenix), you can replace file `archives/logo/png/logo.png` to change the logo.
+
+{% endnote %}
+
 
 </div>
 </div>

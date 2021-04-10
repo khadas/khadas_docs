@@ -5,15 +5,15 @@ title: 如何连接TS050触摸屏
 
 Edge-V开发板外置了3个LCD屏接口：HDMI + MIPI + EDP。接口对应板子上的位置如下图：
 
-![C|690x252](/images/edge/edge-v_display_interfaces.jpg) 
+<img src="/images/edge/edge-v_display_interfaces.jpg" width="70%" height="70%" >
 
 Edge开发板外置了2个LCD屏接口：HDMI + DP。接口对应板子上的位置如下图：
 
-![image|618x500](/images/edge/edge_display_interfaces.jpg)  
+<img src="/images/edge/edge_display_interfaces.jpg" width="50%" height="50%" >
 
 Captain开发板外置了2个LCD屏接口：EDP + MIPI。接口对应板子上的位置如下图：
 
-![image|573x479](/images/edge/captain_display_interfaces.jpg) 
+<img src="/images/edge/captain_display_interfaces.jpg" width="50%" height="50%" >
 
 ## 2.（HDMI + DP）屏幕配置
 ###  2.1配置 **dts**
@@ -121,10 +121,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ```
 
 ## 3.（MIPI + HDMI）屏幕配置
-![TS050 and Edge-V](/images/edge/edge_v_ts050.jpg)
+<img src="/images/edge/edge_v_ts050.jpg" width="50%" height="50%" >
+
 ###  3.1配置 **dts**
+
 rk3399-khadas-edge-mipi-android.dtsi为例介绍：MIPI(主显) + HDMI（副显）
+
 #### 3.1.1 使能对应显示设备节点
+
 ```sh
 &hdmi {
 	status = "okay";
