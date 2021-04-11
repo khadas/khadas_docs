@@ -19,6 +19,8 @@ title: 设置串口调试工具
 
 ![Image of SerialConnections](/images/vim1/SerialConnections_3Pin.jpg)
 
+> 蓝色是 Tool Pin `TXD`， 橙色是 Tool Pin `RXD`， 黑色是 Tool Pin `GND`
+
 参考下图(`VCC` 管脚可以不接)：
 
 ![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
