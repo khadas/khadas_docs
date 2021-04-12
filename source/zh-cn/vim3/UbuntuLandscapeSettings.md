@@ -39,7 +39,7 @@ EndSection
 
 ## 增加分辨率设置启动脚本
 
-创建文件`/etc/xdg/autostart/panel-setup.desktop`包含一下内容：
+创建文件`/etc/xdg/autostart/panel-setup.desktop`包含以下内容：
 
 ```sh
 [Desktop Entry]
