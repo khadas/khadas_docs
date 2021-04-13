@@ -36,6 +36,7 @@ vim1:
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     install_docker: InstallDocker.html
+    how_to_rotate_framebuffer: HowToRotateFramebuffer.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
@@ -100,6 +101,7 @@ vim2:
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     install_docker: InstallDocker.html
+    how_to_rotate_framebuffer: HowToRotateFramebuffer.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
@@ -186,6 +188,7 @@ vim3:
     krescue: Krescue.html
     how_to_setup_watchdog: HowToSetupWatchdog.html
     install_docker: InstallDocker.html
+    how_to_rotate_framebuffer: HowToRotateFramebuffer.html
     how_to_use_wiringpi: HowToUseWiringPi.html
     how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
     how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
