@@ -96,3 +96,11 @@ khadas@Khadas:~$
 ```
 </div>
 </div>
+
+### Troubleshooting
+
+If your bluetooth doesn't work anymore, you can try to restart the bluetooth service manually.
+
+```
+$ sudo systemctl restart bluetooth-power-fixup.service
+```

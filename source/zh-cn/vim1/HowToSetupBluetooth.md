@@ -96,3 +96,11 @@ khadas@Khadas:~$
 ```
 </div>
 </div>
+
+### 故障排除
+
+如果蓝牙不工作了，可以尝试手动重启蓝牙服务。
+
+```
+$ sudo systemctl restart bluetooth-power-fixup.service
+```
