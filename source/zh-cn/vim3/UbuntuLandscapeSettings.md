@@ -3,9 +3,16 @@ title: TS050屏幕旋转
 
 TS050默认情况下是竖屏显示的，这里介绍如何旋转屏幕成横屏。
 
+## Android 
+
+Android系统会自动旋转，不需要设置。
+
+
+## Ubuntu桌面
+
 需要增加Xorg配置文件和开机启动设置分辨率脚本。
 
-## 创建Xorg配置文件
+### 创建Xorg配置文件
 
 创建文件`/etc/X11/xorg.conf.d/10-ts050-fbdev-rotate.conf`包含如下内容：
 
@@ -37,7 +44,7 @@ Section "InputClass"
 EndSection
 ```
 
-## 增加分辨率设置启动脚本
+### 增加分辨率设置启动脚本
 
 创建文件`/etc/xdg/autostart/panel-setup.desktop`包含以下内容：
 
@@ -68,3 +75,10 @@ NoDisplay=true
 {% note warn 这些配置同样会影响HDMI显示，如果你想要用HDMI显示，那么需要移除这些配置。 %}
 
 {% endnote %}
+
+
+## Ubuntu Server
+
+请参考[如何旋转framebuffer](/zh-cn/vim3/HowToRotateFramebuffer.html)
+
+

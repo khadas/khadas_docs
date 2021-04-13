@@ -3,9 +3,15 @@ title: Rotate TS050
 
 TS050 is portrait mode by default, here is a guide to rotate the screen to landscape mode.
 
+## Android
+
+Android will automatically rotate the system.No need to set.
+
 You need to create Xorg configuration file and autostart script for setting the resolution.
 
-## Create Xorg configuration file
+## Ubuntu Desktop
+
+### Create Xorg configuration file
 
 Create file `/etc/X11/xorg.conf.d/10-ts050-fbdev-rotate.conf` with the contents below:
 
@@ -37,7 +43,7 @@ Section "InputClass"
 EndSection
 ```
 
-## Create Resolution setting autostart file
+### Create Resolution setting autostart file
 
 Create the file `/etc/xdg/autostart/panel-setup.desktop` with contents below:
 
@@ -68,3 +74,11 @@ And please note the resolution for `landscape` mode is `1920x1088`, for `portrai
 {% note warn These configurations will also effect the HDMI display, so if you want to use HDMI display, you need to remove them. %}
 
 {% endnote %}
+
+
+## Ubuntu Server
+
+Please refer to [How To Ratote Framebuffer](/vim3/HowToRotateFramebuffer.html)
+
+
+
