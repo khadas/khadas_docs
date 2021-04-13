@@ -1,25 +1,13 @@
-title: Ubuntu Landscape Settings
+title: Rotate TS050
 ---
 
-TS050 is displayed in portrait mode by default, here is how to rotate the screen to landscape mode.
+TS050 is portrait mode by default, here is a guide to rotate the screen to landscape mode.
 
-Adding Xorg configuration files, setting and desktop resolution can rotate TS050 to landscape in two steps
+You need to create Xorg configuration file and autostart script for setting the resolution.
 
-## Xorg configuration file
+## Create Xorg configuration file
 
-1. Create the directory `/etc/X11/xorg.conf.d/`
-
-```sh
-$ sudo mkdir -p /etc/X11/xorg.conf.d/
-```
-
-2. Create file `10-ts050-fbdev-rotate.conf`
-
-```sh
-$ sudo touch /etc/X11/xorg.conf.d/10-ts050-fbdev-rotate.conf 
-```
-
-3. Write configuration,
+Create file `/etc/X11/xorg.conf.d/10-ts050-fbdev-rotate.conf` with the contents below:
 
 ```sh
 Section "Device"
@@ -49,21 +37,9 @@ Section "InputClass"
 EndSection
 ```
 
-## Resolution setting
+## Create Resolution setting autostart file
 
-1. Create the directory `/etc/xdg/autostart/`
-
-```sh
-$ sudo mkdir -p /etc/xdg/autostart/
-```
-
-2. Create file `panel-setup.desktop`
-
-```sh
-$ touch /etc/xdg/autostart/panel-setup.desktop
-```
-
-3. Write configuration,
+Create the file `/etc/xdg/autostart/panel-setup.desktop` with contents below:
 
 ```sh
 [Desktop Entry]
@@ -81,3 +57,14 @@ NoDisplay=true
 
 Restart the system and the screen will automatically be configured as a landscape screen.
 
+{% note info Note %}
+
+The configuration above will rotate to `landscape` mode, you can also rotate to other modes, simply uncomment the mode you want.
+And please note the resolution for `landscape` mode is `1920x1088`, for `portrait` mode is `1088x1920`.
+
+{% endnote %}
+
+
+{% note warn These configurations will also effect the HDMI display, so if you want to use HDMI display, you need to remove them. %}
+
+{% endnote %}
