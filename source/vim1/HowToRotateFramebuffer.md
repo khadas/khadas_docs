@@ -3,12 +3,12 @@ title: How To Rotate Framebuffer
 
 Under Ubuntu, FrameBuffer has two rotation methods.
 
-## framebuffer rotation value
-
+{% note info framebuffer rotation value %}
 1. The value is 0, which means the default value
 2. The value is 1, which means that the rotation is 90 degrees
 3. The value is 2, which means that the rotation is 180 degrees
 4. The value is 3, which means that the rotation is 270 degrees
+{% endnote %}
 
 ## Modify system node
 

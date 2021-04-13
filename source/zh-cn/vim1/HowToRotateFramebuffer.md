@@ -3,12 +3,14 @@ title: 如何旋转Framebuffer
 
 在Ubuntu下，FrameBuffer有两种旋转方法。
 
-## framebuffer旋转值
+{% note info framebuffer旋转值 %}
 
 1. 值为0，表示默认值
 2. 值为1，表示旋转90度
 3. 值为2，表示旋转180度
 4. 值为3，表示旋转270度
+
+{% endnote %}
 
 ## 修改系统节点
 

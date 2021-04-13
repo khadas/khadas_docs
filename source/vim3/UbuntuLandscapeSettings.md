@@ -17,18 +17,14 @@ TS050 is portrait mode by default, here is a guide to rotate the screen to lands
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="and" role="tabpanel" aria-labelledby="and-tab">
 
-## Android
-
 Android will automatically rotate the system.No need to set.
 
 </div>
 <div class="tab-pane fade" id="ubud" role="tabpanel" aria-labelledby="ubud-tab">
 
-## Ubuntu Desktop
-
 You need to create Xorg configuration file and autostart script for setting the resolution.
 
-### Create Xorg configuration file
+1. Create Xorg configuration file
 
 Create file `/etc/X11/xorg.conf.d/10-ts050-fbdev-rotate.conf` with the contents below:
 
@@ -60,7 +56,7 @@ Section "InputClass"
 EndSection
 ```
 
-### Create Resolution setting autostart file
+2. Create Resolution setting autostart file
 
 Create the file `/etc/xdg/autostart/panel-setup.desktop` with contents below:
 
@@ -94,8 +90,6 @@ And please note the resolution for `landscape` mode is `1920x1088`, for `portrai
 
 </div>
 <div class="tab-pane fade" id="ubus" role="tabpanel" aria-labelledby="ubus-tab">
-
-## Ubuntu Server
 
 Please refer to [How To Ratote Framebuffer](/vim3/HowToRotateFramebuffer.html)
 

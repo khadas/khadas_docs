@@ -18,18 +18,16 @@ TS050默认情况下是竖屏显示的，这里介绍如何旋转屏幕成横屏
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="and" role="tabpanel" aria-labelledby="and-tab">
 
-## Android 
 
 Android系统会自动旋转，不需要设置。
 
 </div>
 <div class="tab-pane fade" id="ubud" role="tabpanel" aria-labelledby="ubud-tab">
 
-## Ubuntu桌面
 
 需要增加Xorg配置文件和开机启动设置分辨率脚本。
 
-### 创建Xorg配置文件
+1. 创建Xorg配置文件
 
 创建文件`/etc/X11/xorg.conf.d/10-ts050-fbdev-rotate.conf`包含如下内容：
 
@@ -61,7 +59,7 @@ Section "InputClass"
 EndSection
 ```
 
-### 增加分辨率设置启动脚本
+2. 增加分辨率设置启动脚本
 
 创建文件`/etc/xdg/autostart/panel-setup.desktop`包含以下内容：
 
@@ -95,8 +93,6 @@ NoDisplay=true
 
 </div>
 <div class="tab-pane fade" id="ubus" role="tabpanel" aria-labelledby="ubus-tab">
-
-## Ubuntu Server
 
 请参考[如何旋转framebuffer](/zh-cn/vim3/HowToRotateFramebuffer.html)
 
