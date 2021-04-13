@@ -72,7 +72,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
     install_docker: Install Docker
-    how_to_rotate_framebuffer: How To Rotate Framebuffer
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
     how_to_upgrade_the_logo: Upgrade The Logo
@@ -138,7 +138,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: Watchdog Setup
     install_docker: Install Docker
-    how_to_rotate_framebuffer: How To Rotate Framebuffer
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
     how_to_upgrade_the_logo: Upgrade The Logo
@@ -229,7 +229,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
     install_docker: Install Docker
-    how_to_rotate_framebuffer: How To Rotate Framebuffer
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
     how_to_upgrade_the_logo: Upgrade The Logo

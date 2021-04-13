@@ -71,7 +71,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: 设置看门狗
     install_docker: 安装Docker
-    how_to_rotate_framebuffer: 如何旋转FrameBuffer
+    how_to_rotate_framebuffer: 旋转Framebuffer Console
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
     how_to_upgrade_the_logo: 更新logo
@@ -137,7 +137,7 @@ sidebar:
     how_to_setup_watchdog: 设置看门狗
     fuchsia: Fuchsia
     install_docker: 安装Docker
-    how_to_rotate_framebuffer: 如何旋转FrameBuffer
+    how_to_rotate_framebuffer: 旋转Framebuffer Console
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
     how_to_upgrade_the_logo: 更新logo
@@ -227,7 +227,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: 设置看门狗
     install_docker: 安装Docker
-    how_to_rotate_framebuffer: 如何旋转FrameBuffer
+    how_to_rotate_framebuffer: 旋转Framebuffer Console
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
     how_to_upgrade_the_logo: 更新logo
