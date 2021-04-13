@@ -181,7 +181,7 @@ sidebar:
     Accessories: 配件
     how_to_setup_fan: 设置风扇
     connect_lcd: 配置触摸屏TS050
-    landscape_settings: 横屏设置
+    landscape_settings: TS050屏幕旋转
     HowToUseMPICamera: MIPI摄像头用法
     how_to_use_lte_module: LTE模块用法
     how_to_enable_M2X_ETH_through_overlays: M2X ETH用法
