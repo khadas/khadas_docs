@@ -48,12 +48,13 @@ You can see the list with firmware
 ```
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```
+Note: When the system applies for -y parameter for "unsafe writing", the path of SD card is wrong.
 After the burning is completed, the image is written to the SD card. At this time, you can enter [upgrade mode] (/vim3/HowtoBootIntoUpgradeMode.html) to start krecure.
 
 ## Use krescue
 
 1. Backup and restore
-With option 3, the firmware of EMMC on the board can be packed and stored in SD card. Option 2 allows you to restore the system in the SD card to the EMMC. SD card can save more than one system.
+With option 4, the firmware of EMMC on the board can be packed and stored in SD card. Option 3 allows you to restore the system in the SD card to the EMMC. SD card can save more than one system, put the raw.img.xz file directly under the dumps file in the SD card.
 
 2. View board information
 With the device info in option 2, you can view board configuration and other related information.
@@ -62,7 +63,7 @@ With the device info in option 2, you can view board configuration and other rel
 With option 7, the KBI of the board can be controlled.
 
 4. Shell terminal
-Select option b to start the shell terminal.
+Select option c to start the shell terminal.
 
 5. games
 Select option 9 to kill time during mirror backup or restore.
@@ -70,7 +71,7 @@ Select option 9 to kill time during mirror backup or restore.
 6. others
 With option 1, you can enter wizard mode;
 Select option a to reboot/poweroff;
-Other functions can view the related help through readme docs in option 1.
+Other functions can view the related help through readme docs in option b.
 
 
 ## Notes
