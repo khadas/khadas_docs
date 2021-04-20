@@ -48,12 +48,13 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - -l
 ```
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```
+注：当系统申请-y参数来进行“不安全写入”则是SD卡的路径出错.这种情况下强行写入则会写入在EMMC中，造成不能运行其他固件的结果。
 等待烧录完成，镜像就被写入了SD卡里，此时就可以进入[升级模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)启动krescue了。
 
 ## 使用krescue
 
 1. 备份以及还原
-通过选项3，可以将板子上EMMC的固件打包存放到SD卡中。通过选项2可以将SD卡中的系统还原到EMMC上。SD卡可以保存不止一个系统。
+通过选项4，可以将板子上EMMC的固件打包存放到SD卡中。通过选项3可以将SD卡中的系统还原到EMMC上。SD卡可以保存不止一个系统，将.raw.img.xz文件直接放在SD卡中dumps文件下即可。
 
 2. 查看板子信息
 通过选项2中的 device info，可以查看板子的配置等相关信息。
@@ -62,7 +63,7 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev
 通过选项7，可以控制板子的kbi。
 
 4. shell终端
-选中选项b，就会启动shell终端。
+选中选项c，就会启动shell终端。
 
 5. 游戏
 选中选项9，可以在镜像备份或者还原时打发时间。
@@ -70,7 +71,7 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev
 6. 其他
 通过选项1，可以进入向导模式；
 选中选项a，可以关机或重启；
-其他功能可以通过选项2中的 readme docs 查看相关的帮助。
+其他功能可以通过选项b中的 readme docs 查看相关的帮助。
 
 ## 注意事项
 
