@@ -48,7 +48,7 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - -l
 ```
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```
-注：当系统申请-y参数来进行“不安全写入”则是SD卡的路径出错。
+注：当系统申请-y参数来进行“不安全写入”则是SD卡的路径出错.这种情况下强行写入则会写入在EMMC中，造成不能运行其他固件的结果。
 等待烧录完成，镜像就被写入了SD卡里，此时就可以进入[升级模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)启动krescue了。
 
 ## 使用krescue
