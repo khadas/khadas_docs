@@ -16,8 +16,72 @@ USB-C是常用的供电接口，在供电的同时也可以作数据传输，比
 ![image](/images/vim1/usbc_extra_power.png)
 
 ## 使用VIN作为外部供电
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim1v12-tab" data-toggle="tab" href="#vim1v12" role="tab" aria-controls="vim1v12" aria-selected="true">VIM1 V12</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim1v14-tab" data-toggle="tab" href="#vim1v14" role="tab" aria-controls="vim1v14" aria-selected="false">VIM1 V14</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim2v12-tab" data-toggle="tab" href="#vim2v12" role="tab" aria-controls="vim2v12" aria-selected="false">VIM2 V12</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim2v14-tab" data-toggle="tab" href="#vim2v14" role="tab" aria-controls="vim2v14" aria-selected="false">VIM2 V14</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1v12" role="tabpanel" aria-labelledby="vim1v12-tab">
+
+![image](/images/vim1/vim1v12-vin_extra_power.png)
+
 VIN供电接口座子规格参数：4-Pin 1.25mm间距。
-![image](/images/vim1/vin_extra_power.png)
+
+电压范围是0~5V。
+
+</div>
+<div class="tab-pane fade" id="vim1v14" role="tabpanel" aria-labelledby="vim1v14-tab">
+
+VIN供电接口座子规格参数：4-Pin 1.2mm间距。
+
+带有三角形标志的为1号脚。1号脚和2号脚为电源正极，3号和4号脚为电源负极。
+
+![image](/images/vim1/vim1v14-vin_extra_power.jpg)
+
+电压范围是0~5V。
+
+</div>
+<div class="tab-pane fade" id="vim2v12" role="tabpanel" aria-labelledby="vim2v12-tab">
+
+![image](/images/vim2/vim2v12-vin_extra_power.jpg)
+
+电压范围是0~5V。
+
+</div>
+<div class="tab-pane fade" id="vim2v14" role="tabpanel" aria-labelledby="vim2v14-tab">
+
+![image](/images/vim2/vim2v14-vin_extra_power.jpg)
+
+电压范围是0~5V。
+
+</div>
+<div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
+![image](/images/vim3/vim3-vin_extra_power.jpg)
+
+VIN供电接口座子规格参数：4-Pin 1.2mm间距。
+
+带有三角形标志的为1号脚。1号脚和2号脚为电源正极，3号和4号脚为电源负极。
+
+电压范围是0~20V。
+
+</div>
+</div>
+	
 
 {% note info 提示 %}
 
@@ -25,18 +89,9 @@ VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 
 {% endnote %}
 
-## 使用USB Host作为外部供电
-如图所示：需要准备一个公对公的USB线进行外部供电连接。
-![image](/images/vim1/usb_host_extra_power.png)
-
-
-{% note info 提示 %}
-
-靠近USB-C旁边的USB Host接口输入电流可达900mA，可作为备用外部供电接口。靠近网口的另外一路USB Host接口输入电流只有500mA。具体细节请参考原理图。
-
-{% endnote %}
 
 ## 更多资料
 * [VIM1接口描述](/zh-cn/vim1/VimInterfaces.html)
 * [VIM2接口描述](/zh-cn/vim2/Vim2Interfaces.html)
-
+* [VIM3接口描述](/zh-cn/vim3/Vim3Interfaces.html)
+* [vin对vin连接线](https://www.khadas.com/product-page/vin-to-vin-cable)
