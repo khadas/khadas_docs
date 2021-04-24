@@ -41,7 +41,7 @@ USB-C is the normal power supply interface. It can also transport data at the sa
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1v12" role="tabpanel" aria-labelledby="vim1v12-tab">
 
-![image](/images/vim1/vim1v12-vin_extra_power.png)
+<img src="/images/vim1/vim1v12-vin_extra_power.png" width="50%" height="50%" >
 
 The VIN port is a 4-Pin 1.25mm port.
 
@@ -50,36 +50,36 @@ The voltage range is 0~5V.
 </div>
 <div class="tab-pane fade" id="vim1v14" role="tabpanel" aria-labelledby="vim1v14-tab">
 
-![image](/images/vim1/vim1v14-vin_extra_power.jpg)
+<img src="/images/vim1/vim1v14-vin_extra_power.jpg" width="50%" height="50%" >
 
 The VIN port is a 4-Pin 1.2mm port.
 
-The one marked with a triangle is pin 1. Pin 1 and Pin 2 are positive, pin3 and pin 4 are negative
+The one marked with a triangle is Pin 1. Pin 1 and Pin 2 are positive, Pin3 and Pin 4 are negative
 
 The voltage range is 0~5V.
 
 </div>
 <div class="tab-pane fade" id="vim2v12" role="tabpanel" aria-labelledby="vim2v12-tab">
 
-![image](/images/vim2/vim2v12-vin_extra_power.jpg)
+<img src="/images/vim2/vim2v12-vin_extra_power.jpg" width="50%" height="50%" >
 
 The voltage range is 0~5V.
 
 </div>
 <div class="tab-pane fade" id="vim2v14" role="tabpanel" aria-labelledby="vim2v14-tab">
 
-![image](/images/vim2/vim2v14-vin_extra_power.jpg)
+<img src="/images/vim2/vim2v14-vin_extra_power.jpg" width="50%" height="50%" >
 
 The voltage range is 0~5V.
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-![image](/images/vim3/vim3-vin_extra_power.jpg)
+<img src="/images/vim3/vim3-vin_extra_power.jpg" width="50%" height="50%" >
 
 The VIN port is a 4-Pin 1.2mm port.
 
-The one marked with a triangle is pin 1. Pin 1 and Pin 2 are positive, pin3 and pin 4 are negative
+The one marked with a triangle is Pin 1. Pin 1 and Pin 2 are positive, Pin3 and Pin 4 are negative
 
 The voltage range is 0~20V.
 
