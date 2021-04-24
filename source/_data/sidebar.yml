@@ -183,6 +183,7 @@ vim3:
     how_to_change_animation: HowToChangeBootAnimation_android.html
     how_to_use_uart: HowToUseUart_android.html
     how_to_app_platform_sign: HowToAppPlatformSign.html
+    how_to_add_ir: HowToAddIr.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
