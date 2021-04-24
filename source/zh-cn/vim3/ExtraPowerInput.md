@@ -1,4 +1,1 @@
-title: Extra Power Input for Khadas VIMs
----
-
-# TBD
+../vim1/ExtraPowerInput.md
