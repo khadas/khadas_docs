@@ -11,7 +11,7 @@ This document describes how to use QT under VIMs Ubuntu.
 
 Note: The library only supports Ubuntu 20.04, and the firmware needs to be [upgraded](https://docs.khadas.com/vim3/HowToUpgradeTheSystem.html) to the latest version.
 
-```bush
+```bash
 $ sudo apt update
 $ sudo apt install qt5-default qtbase5-examples
 ```
@@ -24,14 +24,14 @@ Under desktop firmware, it can be used under framebuffer (Ctrl+Alt+F1 enters, Ct
 
 **Set the following environment before running**
 
-```bush
+```bash
 $ export QT_QPA_PLATFORM=eglfs
 $ export QT_QPA_EGLFS_INTEGRATION=eglfs_mali
 ```
 
 runing demo
 
-```bush
+```bash
 $ /usr/lib/aarch64-linux-gnu/qt5/examples/opengl/qopenglwidget/qopenglwidget
 ```
 
@@ -40,7 +40,7 @@ $ /usr/lib/aarch64-linux-gnu/qt5/examples/opengl/qopenglwidget/qopenglwidget
 The TS050 touch screen can also be used under the desktop firmware (the HDMI plug needs to be unplugged)
 On this basis, the TS050 touch screen can be adjusted to rotate the screen display. Routine is as follows:
 
-```bush
+```bash
 $ export QT_DEBUG_PLUGINS=1
 $ export QT_QPA_EGLFS_ROTATION=90
 $ export QT_QPA_EGLFS_DISABLE_INPUT=1

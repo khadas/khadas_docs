@@ -11,7 +11,7 @@ title: QT5用法
 
 注意：该库只支持Ubuntu 20.04，且需要将固件[升级](https://docs.khadas.com/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新版本
 
-```bush
+```bash
 $ sudo apt update
 $ sudo apt install qt5-default qtbase5-examples
 ```
@@ -24,14 +24,14 @@ $ sudo apt install qt5-default qtbase5-examples
 
 **在运行前需要设置下面的环境**
 
-```bush
+```bash
 $ export QT_QPA_PLATFORM=eglfs
 $ export QT_QPA_EGLFS_INTEGRATION=eglfs_mali
 ```
 
 运行例程
 
-```bush
+```bash
 $ /usr/lib/aarch64-linux-gnu/qt5/examples/opengl/qopenglwidget/qopenglwidget
 ```
 
@@ -40,7 +40,7 @@ $ /usr/lib/aarch64-linux-gnu/qt5/examples/opengl/qopenglwidget/qopenglwidget
 在桌面固件下也可使用TS050触摸屏使用（需将HDMI插头拔出）
 在此基础上，可对TS050触摸屏做出旋转屏幕显示的调整设置。例程如下：
 
-```bush
+```bash
 $ export QT_DEBUG_PLUGINS=1
 $ export QT_QPA_EGLFS_ROTATION=90
 $ export QT_QPA_EGLFS_DISABLE_INPUT=1
