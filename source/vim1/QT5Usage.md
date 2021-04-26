@@ -1,4 +1,4 @@
-title: How To Use QT
+title: QT5 Usage
 ---
 
 ## prepare
