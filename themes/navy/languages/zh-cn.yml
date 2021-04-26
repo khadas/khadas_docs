@@ -163,7 +163,7 @@ sidebar:
     how_to_use_hardware_encoding_library: 硬件编码库用法
     how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
-    qt5_usage: QT5的用法
+    qt5_usage: QT5用法
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
