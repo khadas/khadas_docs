@@ -1,26 +1,36 @@
 title: QT5 Usage
 ---
 
-## prepare
+{% note info This document describes how to use QT under VIMs Ubuntu.%}
 
-* One of VIM1/2/3 which was run with a buntu firmware
+{% endnote %}
 
-This document describes how to use QT under VIMs Ubuntu.
+{% note warn %}
+
+The library only supports Ubuntu 20.04, and the firmware needs to be [upgraded](https://docs.khadas.com/vim3/HowToUpgradeTheSystem.html) to the latest version.
+
+{% endnote %}
 
 ## Install
-
-Note: The library only supports Ubuntu 20.04, and the firmware needs to be [upgraded](https://docs.khadas.com/vim3/HowToUpgradeTheSystem.html) to the latest version.
 
 ```bash
 $ sudo apt update
 $ sudo apt install qt5-default qtbase5-examples
 ```
 
+{% note info %}
+
 If there is an error in installation, please confirm whether you have upgraded to the latest version of firmware. If you have not upgraded to the latest version, please re-burn the firmware and try again.
+
+{% endnote %}
 
 ## Run
 
+{% note info %}
+
 Under desktop firmware, it can be used under framebuffer (Ctrl+Alt+F1 enters, Ctrl+Alt+F7 exits). it is recommended to use it under server.
+
+{% endnote %}
 
 **Set the following environment before running**
 
@@ -29,7 +39,7 @@ $ export QT_QPA_PLATFORM=eglfs
 $ export QT_QPA_EGLFS_INTEGRATION=eglfs_mali
 ```
 
-runing demo
+**Runing demo**
 
 ```bash
 $ /usr/lib/aarch64-linux-gnu/qt5/examples/opengl/qopenglwidget/qopenglwidget

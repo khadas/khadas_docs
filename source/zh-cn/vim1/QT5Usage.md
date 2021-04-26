@@ -1,35 +1,45 @@
 title: QT5用法
 ---
 
-## 准备
+{% note info 这篇文档介绍如何在VIMs Ubuntu下使用QT。%}
 
-* 使用ubuntu固件的VIM1/2/3一个
+{% endnote %}
 
-这篇文档介绍如何在VIMs Ubuntu下使用QT。
+{% note warn %}
+
+该库只支持Ubuntu 20.04，且需要将固件[升级](https://docs.khadas.com/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新版本。
+
+{% endnote %}
 
 ## 安装
-
-注意：该库只支持Ubuntu 20.04，且需要将固件[升级](https://docs.khadas.com/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新版本
 
 ```bash
 $ sudo apt update
 $ sudo apt install qt5-default qtbase5-examples
 ```
 
+{% note info %}
+
 若安装出现错误，请确认是否有升级到最新版本固件。若无升级到最新版本，请重新烧录固件后重试。
+
+{% endnote %}
 
 ## 运行
 
+{% note info %}
+
 在桌面固件下可在framebuffer下使用（Ctrl+Alt+F1进入，Ctrl+Alt+F7退出）建议是在server下使用。
 
-**在运行前需要设置下面的环境**
+{% endnote %}
+
+**在运行前需要设置下面的环境。**
 
 ```bash
 $ export QT_QPA_PLATFORM=eglfs
 $ export QT_QPA_EGLFS_INTEGRATION=eglfs_mali
 ```
 
-运行例程
+**运行例程。**
 
 ```bash
 $ /usr/lib/aarch64-linux-gnu/qt5/examples/opengl/qopenglwidget/qopenglwidget
