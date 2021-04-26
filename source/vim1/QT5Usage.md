@@ -1,61 +1,81 @@
 title: QT5 Usage
 ---
 
-{% note info This document describes how to use QT under VIMs Ubuntu.%}
+The default QT packages from Ubuntu official are built with OpenGL Desktop support, but for VIMs, there don't have Mali GPU driver under X11, so you can't use QT with GPU.
+
+In order to use QT with GPU (fbdev), we have rebuilt the QT packages with eglfs Mali GPU support, this documentation will describe how to use QT5 with eglfs Mali GPU (fbdev) under Ubuntu.
+
+{% note warn Note %}
+
+The QT5 with eglfs Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
 
 {% endnote %}
 
-{% note warn %}
-
-The library only supports Ubuntu 20.04, and the firmware needs to be [upgraded](https://docs.khadas.com/vim3/HowToUpgradeTheSystem.html) to the latest version.
-
-{% endnote %}
-
-## Install
+## Install QT5 Packages
 
 ```bash
 $ sudo apt update
 $ sudo apt install qt5-default qtbase5-examples
 ```
 
-{% note info %}
+## Check
 
-If there is an error in installation, please confirm whether you have upgraded to the latest version of firmware. If you have not upgraded to the latest version, please re-burn the firmware and try again.
+As the GPU only support `fbdev` mode, so you have to switch to framebuffer console to run the demo, for desktop image, you can use `Ctrl+Alt+F1` to switch to framebuffer console mode.
 
-{% endnote %}
-
-## Run
-
-{% note info %}
-
-Under desktop firmware, it can be used under framebuffer (Ctrl+Alt+F1 enters, Ctrl+Alt+F7 exits). it is recommended to use it under server.
-
-{% endnote %}
-
-**Set the following environment before running**
+Before running the demo, you need to setup the environment variables below:
 
 ```bash
 $ export QT_QPA_PLATFORM=eglfs
 $ export QT_QPA_EGLFS_INTEGRATION=eglfs_mali
 ```
 
-**Runing demo**
+**Runing demo:**
 
 ```bash
 $ /usr/lib/aarch64-linux-gnu/qt5/examples/opengl/qopenglwidget/qopenglwidget
 ```
 
-## More
+If every thing works you will see the QT demo running on screen. For more demos, please check `/usr/lib/aarch64-linux-gnu/qt5/examples`.
 
-The TS050 touch screen can also be used under the desktop firmware (the HDMI plug needs to be unplugged)
-On this basis, the TS050 touch screen can be adjusted to rotate the screen display. Routine is as follows:
+## Setup for TS050 Touchscreen (Only for VIM3/VIM3L)
+
+If you want to run the QT demo on TS050 touchscreen you need to remove the HDMI cable first.
+
+The TS050 touchscreen is `portrait mode` by default, if you want to use the QT under `landscape mode` you need to setup the environment variables below to rotate the screen and touchscreen:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="true">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3l-tab" data-toggle="tab" href="#vim3l" role="tab" aria-controls="vim3l" aria-selected="false">VIM3L</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
 ```bash
-$ export QT_DEBUG_PLUGINS=1
 $ export QT_QPA_EGLFS_ROTATION=90
 $ export QT_QPA_EGLFS_DISABLE_INPUT=1
 $ export QT_QPA_EVDEV_TOUCHSCREEN_PARAMETERS=/dev/input/event3:rotate=90
 $ export QT_QPA_GENERIC_PLUGINS=evdevtouch:/dev/input/event3
 ```
 
-The example above is to rotate the display of the touch screen by 90 degrees, or try different angles, just change the 90 in the second paragraph to the corresponding 0-360.
+</div>
+<div class="tab-pane fade show" id="vim3l" role="tabpanel" aria-labelledby="vim3l-tab">
+
+```bash
+$ export QT_QPA_EGLFS_ROTATION=90
+$ export QT_QPA_EGLFS_DISABLE_INPUT=1
+$ export QT_QPA_EVDEV_TOUCHSCREEN_PARAMETERS=/dev/input/event4:rotate=90
+$ export QT_QPA_GENERIC_PLUGINS=evdevtouch:/dev/input/event4
+```
+
+</div>
+</div>
+
+For other orientation rotation, you can change them yourself.
+
+## See Also
+[Qt for Embedded Linux](https://doc.qt.io/qt-5/embedded-linux.html)
+
