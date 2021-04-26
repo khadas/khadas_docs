@@ -64,6 +64,28 @@ signApk/custom.jks is under app project directory
 
 After add custom.jks , it can be directly compiled in Android studio, and the app can be normally installed on the machine with platform signature
 
+#### jarsigner command to sign on windows
+First of all, windows needs to install jdk to use the jarsigner command
+```sh
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore custom.jks app-debug.apk khadasdemo
+ signing: res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+ signing: res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+ signing: res/layout/abc_action_menu_layout.xml
+ signing: res/drawable/abc_seekbar_tick_mark_material.xml
+ signing: classes.dex
+ signing: res/drawable/btn_checkbox_unchecked_mtrl.xml
+ signing: res/drawable-hdpi-v4/notification_bg_normal.9.png
+ signing: res/layout/abc_list_menu_item_icon.xml
+
+ signer
+   X.509, EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+
+```
+custom.jks:./keytool-importkeypair -k custom.jks -p 123456 -pk8 platform.pk8 -cert platform.x509.pem -alias khadasdemo ,this command to generate
+khadasdemo ：alias
+password to input when execute command：123456
+app-debug.apk ：unsigned apk ,signed apk name is also app-debug.apk
+
 {% note info note %}
 Both Android 7 and Android 9 can be signed in the above way,include vim vim2 vim3 vim3l
 {% endnote %}

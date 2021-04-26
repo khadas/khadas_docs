@@ -61,6 +61,27 @@ keyPassword '123456'
 signApk/custom.jks 为 custom.jks 在app 工程中的目录
 添加custom.jks 后，直接在android studio 中编译，app 可以正常安装在具有platform签名的机器上
 
+#### windows下通过jarsigner命令签名
+首先windows要安装jdk ,才能使用jarsigner 命令
+```sh
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore custom.jks app-debug.apk khadasdemo
+ 正在签名: res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png
+ 正在签名: res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+ 正在签名: res/layout/abc_action_menu_layout.xml
+ 正在签名: res/drawable/abc_seekbar_tick_mark_material.xml
+ 正在签名: classes.dex
+ 正在签名: res/drawable/btn_checkbox_unchecked_mtrl.xml
+ 正在签名: res/drawable-hdpi-v4/notification_bg_normal.9.png
+ 正在签名: res/layout/abc_list_menu_item_icon.xml
+
+ 签名者
+   X.509, EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+
+```
+custom.jks:./keytool-importkeypair -k custom.jks -p 123456 -pk8 platform.pk8 -cert platform.x509.pem -alias khadasdemo 生成
+khadasdemo ：别名
+命令执行输入密码：123456
+app-debug.apk ：未签名的apk ,生成的签名apk也是app-debug.apk
 {% note info 注意 %}
 android 7和android 9系统下的vim vim2 vim3 vim3l 都可以使用上述方式签名
 {% endnote %}
