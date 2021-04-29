@@ -97,6 +97,7 @@ sidebar:
     how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     SDL2_usage: SDL2 Mail Usage
+    PPSSPP_usage: PPSSPP Instructions
     qt5_usage: QT5 Usage
 
   vim2:
@@ -165,6 +166,7 @@ sidebar:
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     how_to_use_1-Wire: 1-Wire Usage
     SDL2_usage: SDL2 Mail Usage
+    PPSSPP_usage: PPSSPP Instructions
     qt5_usage: QT5 Usage
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
@@ -263,6 +265,7 @@ sidebar:
     how_to_use_usb_gadget: USB Gadget Usage
     gsensor_sample_demo: Gsensor Sample demo
     SDL2_usage: SDL2 Mail Usage
+    PPSSPP_usage: PPSSPP Instructions
     qt5_usage: QT5 Usage
 
   edge:
