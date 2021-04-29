@@ -37,7 +37,7 @@ USB-C是常用的供电接口，在供电的同时也可以作数据传输，比
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1v12" role="tabpanel" aria-labelledby="vim1v12-tab">
 
-![image](/images/vim1/vim1v12-vin_extra_power.png)
+<img src="/images/vim1/vim1v12-vin_extra_power.png" width="50%" height="50%" >
 
 VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 
@@ -50,28 +50,28 @@ VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
 带有三角形标志的为1号脚。1号脚和2号脚为电源正极，3号和4号脚为电源负极。
 
-![image](/images/vim1/vim1v14-vin_extra_power.jpg)
+<img src="/images/vim1/vim1v14-vin_extra_power.jpg" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim2v12" role="tabpanel" aria-labelledby="vim2v12-tab">
 
-![image](/images/vim2/vim2v12-vin_extra_power.jpg)
+<img src="/images/vim2/vim2v12-vin_extra_power.jpg" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim2v14" role="tabpanel" aria-labelledby="vim2v14-tab">
 
-![image](/images/vim2/vim2v14-vin_extra_power.jpg)
+<img src="/images/vim2/vim2v14-vin_extra_power.jpg" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-![image](/images/vim3/vim3-vin_extra_power.jpg)
+<img src="/images/vim3/vim3-vin_extra_power.jpg" width="50%" height="50%" >
 
 VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
