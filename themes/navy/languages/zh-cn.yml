@@ -71,7 +71,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: 设置看门狗
     install_docker: 安装Docker
-    how_to_rotate_framebuffer: 如何旋转FrameBuffer
+    how_to_rotate_framebuffer: 旋转Framebuffer Console
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
     how_to_upgrade_the_logo: 更新logo
@@ -95,6 +95,8 @@ sidebar:
     how_to_use_hardware_encoding_library: 硬件编码库用法
     how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
+    qt5_usage: Qt5的使用
+
   vim2:
     getting_started: 开始使用
     overview: 概述
@@ -137,7 +139,7 @@ sidebar:
     how_to_setup_watchdog: 设置看门狗
     fuchsia: Fuchsia
     install_docker: 安装Docker
-    how_to_rotate_framebuffer: 如何旋转FrameBuffer
+    how_to_rotate_framebuffer: 旋转Framebuffer Console
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
     how_to_upgrade_the_logo: 更新logo
@@ -161,6 +163,7 @@ sidebar:
     how_to_use_hardware_encoding_library: 硬件编码库用法
     how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
+    qt5_usage: QT5用法
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -221,13 +224,15 @@ sidebar:
     how_to_change_animation: 如何更新开机动画
     how_to_use_uart_android: 如何使用uart
     how_to_change_logo_android: 如何更新开机logo
+    how_to_app_platform_sign: app如何系统签名
+    how_to_add_ir: 如何添加遥控器
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
     krescue: Krescue
     how_to_setup_watchdog: 设置看门狗
     install_docker: 安装Docker
-    how_to_rotate_framebuffer: 如何旋转FrameBuffer
+    how_to_rotate_framebuffer: 旋转Framebuffer Console
     how_to_use_wiringpi: WiringPi用法
     how_to_use_wiringpi-python: wiringPi-Python用法
     how_to_upgrade_the_logo: 更新logo
@@ -254,6 +259,7 @@ sidebar:
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
     how_to_use_usb_gadget: USB Gadget用法
     gsensor_sample_demo: Gsensor简单使用示例
+    qt5_usage: QT5的用法
 
   edge:
     getting_started: 开始使用

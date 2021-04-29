@@ -72,7 +72,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
     install_docker: Install Docker
-    how_to_rotate_framebuffer: How To Rotate Framebuffer
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
     how_to_upgrade_the_logo: Upgrade The Logo
@@ -96,6 +96,7 @@ sidebar:
     how_to_use_hardware_encoding_library: Hardware Encoding Library Usage
     how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    qt5_usage: QT5 Usage
 
   vim2:
     overview: Beginners Guide
@@ -138,7 +139,7 @@ sidebar:
     krescue: Krescue
     how_to_setup_watchdog: Watchdog Setup
     install_docker: Install Docker
-    how_to_rotate_framebuffer: How To Rotate Framebuffer
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
     how_to_upgrade_the_logo: Upgrade The Logo
@@ -162,6 +163,7 @@ sidebar:
     how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     how_to_use_1-Wire: 1-Wire Usage
+    qt5_usage: QT5 Usage
     fuchsia: Fuchsia
     build_fuchsia: Build Fuchsia
     mcu: MCU
@@ -223,13 +225,15 @@ sidebar:
     how_to_change_logo_android: How To Change Boot Logo
     how_to_change_animation: How To Change Boot Animation
     how_to_use_uart_android: How To Use Uart
+    how_to_app_platform_sign: How To App Platform Sign 
+    how_to_add_ir: How To Add Ir
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: Upgrade the System
     krescue: Krescue
     how_to_setup_watchdog: Setup Watchdog
     install_docker: Install Docker
-    how_to_rotate_framebuffer: How To Rotate Framebuffer
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
     how_to_use_wiringpi: WiringPi Usage
     how_to_use_wiringpi-python: WiringPi-Python Usage
     how_to_upgrade_the_logo: Upgrade The Logo
@@ -256,6 +260,7 @@ sidebar:
     how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     how_to_use_usb_gadget: USB Gadget Usage
     gsensor_sample_demo: Gsensor Sample demo
+    qt5_usage: QT5 Usage
 
   edge:
     overview: Beginners Guide
