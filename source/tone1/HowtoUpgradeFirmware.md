@@ -1,19 +1,31 @@
 title: Upgrade the Firmware
 ---
 
-# Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)
+## Tone2 Pro - XMOS & MCU Firmware Upgrade (Windows)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=qRswdL1HPZU
-" target="_blank"><img src="http://img.youtube.com/vi/qRswdL1HPZU/0.jpg" 
-alt="Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)" width="480" height="360" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=yMuXtwA9loY
+" target="_blank"><img src="http://img.youtube.com/vi/yMuXtwA9loY/0.jpg" 
+alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Windows)" width="480" height="360" border="10" /></a>
 
-Link: [YouTube](http://www.youtube.com/watch?v=qRswdL1HPZU)
+[Tone2 Pro - XMOS & MCU Firmware Upgrade (Windows)](http://www.youtube.com/watch?v=yMuXtwA9loY)
 
-{% note info Note %}
-For Mac OS users, you need to type "chmod +x ./tone_dfu_tool_macos" to create an executable firmware upgrade tool
-{% endnote %}
+## Tone2 Pro - XMOS & MCU Firmware Upgrade (Linux)
 
-# Tone1 - Upgrade to Official Khadas Firmware v2.00
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=_lARvpZSLwE
+" target="_blank"><img src="http://img.youtube.com/vi/_lARvpZSLwE/0.jpg" 
+alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Linux)" width="480" height="360" border="10" /></a>
+
+[Tone2 Pro - XMOS & MCU Firmware Upgrade (Linux)](http://www.youtube.com/watch?v=_lARvpZSLwE)
+
+## Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=OBel13GioWc
+" target="_blank"><img src="http://img.youtube.com/vi/OBel13GioWc/0.jpg" 
+alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)" width="480" height="360" border="10" /></a>
+
+[Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)](http://www.youtube.com/watch?v=OBel13GioWc)
+
+## Tone1 - Upgrade to Official Khadas Firmware v2.00
 
 <a href="https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware
 " target="_blank"><img src="https://static.wixstatic.com/media/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.jpg/v1/fill/w_740,h_416,al_c,q_90,usm_0.66_1.00_0.01/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.webp" 
@@ -22,7 +34,7 @@ alt="Tone1 - Upgrade to Official Khadas Firmware v2.00" width="480" height="267"
 Link: [Khadas Blog](https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware)
 
 
-# Tone1 - Upgrade to Official Khadas Firmware via legacy methods
+## Tone1 - Upgrade to Official Khadas Firmware via legacy methods
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
