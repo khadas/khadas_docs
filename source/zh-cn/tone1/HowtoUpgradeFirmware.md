@@ -1,28 +1,50 @@
 title: 升级固件
 ---
 
-# Tone2 Pro - 升级固件 (Windows, Linux, Mac OS)
+## Tone2 Pro - XMOS & MCU 升级固件
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=qRswdL1HPZU
-" target="_blank"><img src="http://img.youtube.com/vi/qRswdL1HPZU/0.jpg" 
-alt="Tone2 Pro - Firmware Upgrade (Windows, Linux, Mac OS)" width="480" height="360" border="10" /></a>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mac" role="tab" aria-controls="mac" aria-selected="false">Mac</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
 
-链接: [YouTube](http://www.youtube.com/watch?v=qRswdL1HPZU)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=yMuXtwA9loY
+" target="_blank"><img src="http://img.youtube.com/vi/yMuXtwA9loY/0.jpg"
+alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Windows)" width="480" height="360" border="10" /></a>
 
-{% note info 注意 %}
-对于苹果用户,需要为升级固件的工具提供可执行权限`chmod +x ./tone_dfu_tool_macos`
-{% endnote %}
+[Tone2 Pro - XMOS & MCU 升级固件 (Windows)](http://www.youtube.com/watch?v=yMuXtwA9loY)
 
-# Tone1 - 升级到khadas官方v2.00版本
+</div>
+<div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux-tab">
 
-<a href="https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware
-" target="_blank"><img src="https://static.wixstatic.com/media/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.jpg/v1/fill/w_740,h_416,al_c,q_90,usm_0.66_1.00_0.01/04a2a6_604f21aa83504b44a64b48471c6a7d1a~mv2.webp" 
-alt="Tone1 - Upgrade to Official Khadas Firmware v2.00" width="480" height="267" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=_lARvpZSLwE
+" target="_blank"><img src="http://img.youtube.com/vi/_lARvpZSLwE/0.jpg"
+alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Linux)" width="480" height="360" border="10" /></a>
 
-链接: [Khadas 博客](https://www.khadas.com/post/tone1-upgrade-to-official-v2-firmware)
+[Tone2 Pro - XMOS & MCU 升级固件 (Linux)](http://www.youtube.com/watch?v=_lARvpZSLwE)
 
+</div>
+<div class="tab-pane fade" id="mac" role="tabpanel" aria-labelledby="mac-tab">
 
-# Tone1 - 旧版升级固件的方法
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=OBel13GioWc
+" target="_blank"><img src="http://img.youtube.com/vi/OBel13GioWc/0.jpg"
+alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)" width="480" height="360" border="10" /></a>
+
+[Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)](http://www.youtube.com/watch?v=OBel13GioWc)
+
+</div>
+</div>
+
+## Tone1 - 旧版升级固件的方法
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -236,7 +258,7 @@ Abort trap: 6
 </div>
 
 
-# 其他:
+## 其他:
 
 * [Tone1 概述](/zh-cn/tone1/index.html)
 * [Tone1 用户手册](/zh-cn/tone1/UserManual.html)

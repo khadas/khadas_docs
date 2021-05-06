@@ -1,29 +1,49 @@
 title: Upgrade the Firmware
 ---
 
-## Tone2 Pro - XMOS & MCU Firmware Upgrade (Windows)
+## Tone2 Pro - XMOS & MCU Firmware Upgrade
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mac" role="tab" aria-controls="mac" aria-selected="false">Mac</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=yMuXtwA9loY
-" target="_blank"><img src="http://img.youtube.com/vi/yMuXtwA9loY/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/yMuXtwA9loY/0.jpg"
 alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Windows)" width="480" height="360" border="10" /></a>
 
 [Tone2 Pro - XMOS & MCU Firmware Upgrade (Windows)](http://www.youtube.com/watch?v=yMuXtwA9loY)
 
-## Tone2 Pro - XMOS & MCU Firmware Upgrade (Linux)
+</div>
+<div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux-tab">
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=_lARvpZSLwE
-" target="_blank"><img src="http://img.youtube.com/vi/_lARvpZSLwE/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/_lARvpZSLwE/0.jpg"
 alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Linux)" width="480" height="360" border="10" /></a>
 
 [Tone2 Pro - XMOS & MCU Firmware Upgrade (Linux)](http://www.youtube.com/watch?v=_lARvpZSLwE)
 
-## Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)
+
+</div>
+<div class="tab-pane fade" id="mac" role="tabpanel" aria-labelledby="mac-tab">
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=OBel13GioWc
 " target="_blank"><img src="http://img.youtube.com/vi/OBel13GioWc/0.jpg" 
 alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)" width="480" height="360" border="10" /></a>
 
 [Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)](http://www.youtube.com/watch?v=OBel13GioWc)
+
+</div>
+</div>
 
 ## Tone1 - Upgrade to Official Khadas Firmware v2.00
 

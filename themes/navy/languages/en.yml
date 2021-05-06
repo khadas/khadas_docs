@@ -207,6 +207,7 @@ sidebar:
     npu_sdk_description: SDK Description
     aml_npu_app_description: aml_npu_app Repository Description
     run_yourself_AI_with_npu: Run Your AI Model with NPU
+    NPU_performance_usage: NPU Performance Interface Usage
     how_to_use_AMLNNApi: AMLNNApi Demo Usage
     how_to_use_Tengine_SDK: Tengine SDK Usage
     how_to_use_Tengine_app: Tengine demo Usage

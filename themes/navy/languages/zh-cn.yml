@@ -206,6 +206,7 @@ sidebar:
     npu_sdk_description: SDK使用说明
     aml_npu_app_description: aml_npu_app源码仓库说明
     run_yourself_AI_with_npu: 使用NPU跑自己的AI模型
+    NPU_performance_usage: NPU带宽及使用率说明文档
     how_to_use_AMLNNApi: AMLNNApi Demo用法
     how_to_use_Tengine_SDK: tengine SDK用法
     how_to_use_Tengine_app: Tengine Demo用法

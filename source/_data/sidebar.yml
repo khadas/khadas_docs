@@ -160,6 +160,7 @@ vim3:
     npu_sdk_description: HowToUseNPUSDK.html
     aml_npu_app_description: HowToUseAmlNPUApp.html
     run_yourself_AI_with_npu: HowToConvertToUseNPU.html
+    NPU_performance_usage: NPUPerformanceUsage.html
     how_to_use_AMLNNApi: HowToUseAMLNNApi.html
     how_to_use_Tengine_SDK: HowToUseTengineSDK.html
     how_to_use_Tengine_app: HowToUseTengineApp.html
