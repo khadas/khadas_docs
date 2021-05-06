@@ -1,22 +1,18 @@
 title: PPSSPP Instructions
 ---
 
-{% note warn note %}
+{% note warn Note %}
 
-1. System version must be Ubuntu 20.04
-2. Only run under framebuffer
+* Only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
+* Only support Framebuffer Console mode.
 
 {% endnote %}
 
 ## Upgrade System
 
-```sh
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo do-fenix-upgrade
-```
+Follow this [documentation](/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
 
-## Install
+## Install PPSSPP Package
 
 ```sh
 $ sudo apt update
@@ -25,10 +21,8 @@ $ sudo apt install ppsspp
 
 ## Run
 
-Run `launch_ppsspp.sh` to run the PPSSPP
+Run `launch_ppsspp.sh` to launch PPSSPP.
 
 ```sh
 $ launch_ppsspp.sh
 ```
-
-

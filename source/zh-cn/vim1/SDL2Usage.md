@@ -1,42 +1,40 @@
 title: SDL2 Mail库使用说明
 ---
 
-这篇文档将介绍如何在Ubuntu上安装和演示SDL2 Mail。
+Ubuntu系统默认自带的SDL2库版本是针对OpenGL桌面环境的，但是对于VIM系列来说，由于不支持桌面环境下的GPU，所以在使用时是不能用GPU进行加速的。
+
+为了使用GPU加速，我们重新编译了SDL2软件包，增加了Mali GPU（fbdev）支持，这篇文档将会介绍如何使用。
 
 
 {% note warn 注意 %}
 
-1. 系统版本必须为Ubuntu 20.04
-2. 只能运行在framebuffer下
+* 目前SDL2 Mali GPU（fbdev）库仅仅支持**Ubuntu 20.04 Linux 4.9**内核，同时需要先更新系统到最新版本。
+* 仅支持Framebuffer Console模式。
 
 {% endnote %}
 
-## 安装
+## 更新系统
 
-1. 升级系统
+参考这篇[文档](/zh-cn/vim1/HowToUpgradeTheSystem.html)升级系统到最新版本。
+
+
+## 安装
 
 ```sh
 $ sudo apt update
-$ sudo apt upgrade
-$ sudo reboot
-```
-
-2. 安装库
-
-```sh
 $ sudo apt install libsdl2-2.0-0 libsdl2-dev
 ```
 
 ## 演示
 
-1. 获取示例源代码
+* 获取示例源代码
 
 ```sh
 $ git clone https://github.com/libsdl-org/SDL
 $ git checkout release-2.0.10
 ```
 
-2. 编译源代码
+* 编译demo源代码
 
 ```sh
 $ cd SDL/test
@@ -44,22 +42,9 @@ $ ./configure
 $ make
 ```
 
-3. 运行
+* 运行
 
-查看信息
-
-```sh
-$ ./testdisplayinfo 
-NFO: See 1 displays.
-INFO: 0: "0" (1920x1080, (0, 0)), 1 modes.
-ERROR:     DPI: failed to query (That operation is not supported)
-INFO: CURRENT: fmt=SDL_PIXELFORMAT_RGBX8888 w=1920 h=1080 refresh=60
-INFO: DESKTOP: fmt=SDL_PIXELFORMAT_RGBX8888 w=1920 h=1080 refresh=60
-INFO:     MODE 0: fmt=SDL_PIXELFORMAT_RGBX8888 w=1920 h=1080 refresh=60
-INFO:
-```
-
-运行测试代码
+运行OpenGL ES Cube Demo。
 
 ```sh
 $ ./testgles2 
@@ -76,4 +61,4 @@ INFO: SDL_GL_BLUE_SIZE: requested 5, got 8
 INFO: SDL_GL_DEPTH_SIZE: requested 16, got 24
 ```
 
-屏幕上出现一个旋转的方块，就是运行成功了。
+如果一切正常，你会在屏幕上看到一个旋转的方块。

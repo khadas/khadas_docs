@@ -1,41 +1,38 @@
 title: SDL2 Mail Library Instructions
 ---
 
-This document will introduce how to install and demonstrate SDL2 Mail on Ubuntu.
+The default SDL2 packages from Ubuntu official are built with OpenGL Desktop support, but for VIMs, there don’t have Mali GPU driver under X11, so you can’t use SDL2 with GPU.
 
-{% note warn note %}
+In order to use SDL2 with GPU (fbdev), we have rebuilt the packages with Mali GPU support, this documentation will introduce how to install and demonstrate SDL2 Mail library on Ubuntu.
 
-1. System version must be Ubuntu 20.04
-2. Only run under framebuffer
+{% note warn Note %}
+
+* The SDL2 with Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
+* Only support Framebuffer Console mode.
 
 {% endnote %}
 
-## Install
+## Upgrade the System
 
-1. Upgrade your system
+Follow this [documentation](/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
+
+## Install SDL2 Packages
 
 ```sh
 $ sudo apt update
-$ sudo apt upgrade
-$ sudo reboot
-```
-
-2. Install Library
-
-```sh
 $ sudo apt install libsdl2-2.0-0 libsdl2-dev
 ```
 
 ## Demonstrate
 
-1. Get source code
+* Get SDL2 Source Code
 
 ```sh
 $ git clone https://github.com/libsdl-org/SDL
 $ git checkout release-2.0.10
 ```
 
-2. Compile source code
+* Compile Test Examples
 
 ```sh
 $ cd SDL/test
@@ -43,22 +40,9 @@ $ ./configure
 $ make
 ```
 
-3. Run
+* Run Test Examples
 
-Check info 
-
-```sh
-$ ./testdisplayinfo 
-NFO: See 1 displays.
-INFO: 0: "0" (1920x1080, (0, 0)), 1 modes.
-ERROR:     DPI: failed to query (That operation is not supported)
-INFO: CURRENT: fmt=SDL_PIXELFORMAT_RGBX8888 w=1920 h=1080 refresh=60
-INFO: DESKTOP: fmt=SDL_PIXELFORMAT_RGBX8888 w=1920 h=1080 refresh=60
-INFO:     MODE 0: fmt=SDL_PIXELFORMAT_RGBX8888 w=1920 h=1080 refresh=60
-INFO:
-```
-
-Run test demo
+Run OpenGL ES Cube Demo.
 
 ```sh
 $ ./testgles2 
@@ -75,4 +59,5 @@ INFO: SDL_GL_BLUE_SIZE: requested 5, got 8
 INFO: SDL_GL_DEPTH_SIZE: requested 16, got 24
 ```
 
-When a rotating square appears on the screen, the operation is successful.
+If everything is ok, you will see the cube on screen.
+
