@@ -31,13 +31,14 @@ $ sudo apt install libsdl2-2.0-0 libsdl2-dev
 
 ```sh
 $ git clone https://github.com/libsdl-org/SDL
+$ cd SDL
 $ git checkout release-2.0.10
 ```
 
 * 编译demo源代码
 
 ```sh
-$ cd SDL/test
+$ cd test
 $ ./configure
 $ make
 ```
