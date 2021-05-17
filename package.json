@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "5.2.0"
+    "version": "5.4.0"
   },
   "scripts": {
     "build": "hexo generate",
@@ -11,15 +11,15 @@
   },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "hexo": "^5.0.0",
+    "hexo": "hexojs/hexo",
     "hexo-clean-css": "^1.0.0",
-    "hexo-deployer-git": "^2.1.0",
+    "hexo-deployer-git": "^3.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-fs": "^3.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-sitemap": "^2.0.0",
-    "hexo-renderer-marked": "^3.0.0",
+    "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-renderer-swig": "^1.1.0",
@@ -45,9 +45,10 @@
     "*.{png,jpeg,jpg,gif,svg}": [
       "imagemin-lint-staged",
       "git add"
-    ]
+    ],
+    "*.js": "eslint --fix"
   },
   "engines": {
-    "node": ">=10.20.1"
+    "node": ">=12.9.0"
   }
 }
