@@ -29,13 +29,14 @@ $ sudo apt install libsdl2-2.0-0 libsdl2-dev
 
 ```sh
 $ git clone https://github.com/libsdl-org/SDL
+$ cd SDL
 $ git checkout release-2.0.10
 ```
 
 * Compile Test Examples
 
 ```sh
-$ cd SDL/test
+$ cd test
 $ ./configure
 $ make
 ```
