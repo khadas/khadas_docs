@@ -23,6 +23,19 @@ Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to up
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**V1.0.5-210430: (OTA Release)**
+
+1. fix alsa issue
+2. fix server image panel issue
+3. add fb rotate support
+4. setup i2s as DT overlay
+5. fan trigger temperature can setup under userspace
+6. fix bluetooth issue
+7. add SDL2 mali support
+8. add PPSSPP support
+9. add QT5 eglfs mali gpu support
+
+--------------------------------------------------------------------------------------------------
 **V1.0.4-210330: (OTA Release)**
 
 1. fix watchdog
@@ -93,6 +106,10 @@ Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to up
 
 {% endnote %}
 
+--------------------------------------------------------------------------------------------------
+**V1.0.5-210430: (OTA Release)**
+
+1. Linux 5.12
 
 --------------------------------------------------------------------------------------------------
 **V0.9.1-20200602: (OTA Release)**

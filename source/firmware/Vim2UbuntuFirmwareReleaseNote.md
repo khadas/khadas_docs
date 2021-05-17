@@ -25,6 +25,14 @@ Please check [How To Upgrade The System](/vim2/HowToUpgradeTheSystem.html) to up
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**V1.0.5-210430: (OTA Release)**
+
+1. fix alsa issue
+2. add fb rotate support
+3. setup i2s as DT overlay
+4. fix bluetooth issue
+
+--------------------------------------------------------------------------------------------------
 **V1.0.4-210330: (OTA Release)**
 
 1. fix watchdog
@@ -113,6 +121,11 @@ Known issues:
 {% note warn VIM2 Only support Ubuntu 20.04 for Mainline Linux. %}
 
 {% endnote %}
+
+--------------------------------------------------------------------------------------------------
+**V1.0.5-210430: (OTA Release)**
+
+1. Linux 5.12
 
 --------------------------------------------------------------------------------------------------
 **V0.9.1-20200602: (OTA Release)**
