@@ -22,7 +22,9 @@ $ source ~/.bashrc
 
 install node.js:
 ```
-$ nvm install v10.20
+$ nvm install v12.9.0
+$ nvm alias default v12.9.0
+$ nvm use v12.9.0
 ```
 
 Install dependencies:
