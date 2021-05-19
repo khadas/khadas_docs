@@ -34,6 +34,7 @@ VIM3仅支持4.9内核**Ubuntu 20.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc" role="tabpanel" aria-labelledby="emmc-tab">
 
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
 * [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)
 ---
 **不再维护：**
@@ -42,6 +43,7 @@ VIM3仅支持4.9内核**Ubuntu 20.04**。
 </div>
 <div class="tab-pane fade show" id="sd" role="tabpanel" aria-labelledby="sd-tab">
 
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)
 ---
 **不再维护：**
@@ -64,6 +66,7 @@ VIM3仅支持4.9内核**Ubuntu 20.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
 * [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)
 ---
 **不再维护：**
@@ -72,6 +75,7 @@ VIM3仅支持4.9内核**Ubuntu 20.04**。
 </div>
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)
 ---
 **不再维护：**
@@ -110,11 +114,13 @@ VIM3仅支持主线内核**Ubuntu 20.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="server2" role="tabpanel" aria-labelledby="server2-tab">
 
+* [VIM3_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM3_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 
 </div>
 <div class="tab-pane fade show" id="desktop2" role="tabpanel" aria-labelledby="desktop2-tab">
 
+* [VIM3_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM3_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 
 </div>
