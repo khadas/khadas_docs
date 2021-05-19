@@ -1,4 +1,1 @@
-User-agent: *
-Disallow: /hexo-theme-landscape/
-Disallow: /hexo-theme-light/
-Disallow: /hexo-theme-phase/
+../../linux/source/robots.txt

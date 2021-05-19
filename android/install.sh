@@ -1,4 +1,1 @@
-#!/bin/bash
-
-hexo g
-hexo s
+../linux/install.sh
