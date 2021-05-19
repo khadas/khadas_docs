@@ -6,7 +6,7 @@ language: en
 timezone: PRC
 
 url: https://docs.khadas.com
-root: /
+root: /linux
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
 code_dir: downloads/code

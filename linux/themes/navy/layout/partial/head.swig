@@ -29,13 +29,13 @@
   <!-- Icon -->
   <link rel="Shortcut Icon" href="{{ url_for('/images/favicon.ico') }}">
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="/vendor/semantic/dist/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="/vendor/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ config.root }}/vendor/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ config.root }}/vendor/bootstrap-4.0.0/dist/css/bootstrap.min.css">
   <script
     src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"
     crossorigin="anonymous"></script>
-  <script src="/vendor/semantic/dist/semantic.min.js"></script>
-  <script src="/vendor/bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ config.root }}/vendor/semantic/dist/semantic.min.js"></script>
+  <script src="{{ config.root }}/vendor/bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js"></script>
  <!-- Hotjar Tracking Code for https://docs.khadas.com -->
   <script>
       (function(h,o,t,j,a,r){
@@ -52,7 +52,7 @@
   {{ css('css/navy') }}
   <!-- endbuild -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/font/fontawesome.min.css">
+  <link rel="stylesheet" href="{{ config.root }}/css/font/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
   {{ feed_tag('atom.xml') }}
