@@ -1,0 +1,1 @@
+../vim1/HowToChangeBootLogo.md
