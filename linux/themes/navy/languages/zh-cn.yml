@@ -59,12 +59,6 @@ sidebar:
     build_boot_logo_for_uboot: 编译U-boot启动Logo
     setup_tftp: 搭建TFTP服务器
     load_image_via_tftp: 通过TFTP下载镜像
-    android: Android
-    install_toolchains: 安装交叉编译器
-    download_android_source_code: 下载安卓源码
-    build_android: 编译安卓源码
-    package_update_image: 快速打包安卓固件
-    how_to_use_adb_tool: ADB用法
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
@@ -127,13 +121,6 @@ sidebar:
     setup_tftp: 搭建TFTP服务器
     load_image_via_tftp: 通过TFTP下载镜像
     kbi_guidance: KBI说明
-    android: Android
-    install_toolchains: 安装交叉编译器
-    download_android_source_code: 下载安卓源码
-    build_android: 编译安卓源码
-    package_update_image: 快速打包安卓固件
-    how_to_use_adb_tool: ADB用法
-    force_reset_features: 远程强制复位
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
@@ -217,20 +204,6 @@ sidebar:
     setup_tftp: 搭建TFTP服务器
     load_image_via_tftp: 通过TFTP下载镜像
     kbi_guidance: KBI说明
-    android: Android
-    install_toolchains: 安装交叉编译器
-    download_android_source_code: 下载安卓源码
-    build_android: 编译安卓源码
-    package_update_image: 快速打包安卓固件
-    how_to_use_adb_tool: ADB用法
-    how_to_use_fastboot: Fastboot用法
-    how_to_access_i2c_android: 如何操作I2C
-    how_to_enable_m2x_eth: 如何使能M2x
-    how_to_change_animation: 如何更新开机动画
-    how_to_use_uart_android: 如何使用uart
-    how_to_change_logo_android: 如何更新开机logo
-    how_to_app_platform_sign: app如何系统签名
-    how_to_add_ir: 如何添加遥控器
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
@@ -300,12 +273,6 @@ sidebar:
     build_boot_logo_for_uboot: 编译U-boot启动Logo
     setup_tftp: 搭建TFTP服务器
     load_image_via_tftp: 通过TFTP下载镜像
-    android: Android
-    download_android_source_code: 下载安卓源码
-    build_android: 编译安卓源码
-    how_to_use_adb_tool: ADB用法
-    force_reset_features: 远程强制复位
-    instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
@@ -341,23 +308,18 @@ sidebar:
   firmware:
     firmware: 固件
     vim1: VIM1
-    vim1_android: Android
     vim1_ubuntu: Ubuntu
     vim1_thirdparty: 第三方固件
     vim2: VIM2
-    vim2_android: Android
     vim2_ubuntu: Ubuntu
     vim2_thirdparty: 第三方固件
     vim3: VIM3
-    vim3_android: Android
     vim3_ubuntu: Ubuntu
     vim3_thirdparty: 第三方固件
     vim3l: VIM3L
-    vim3l_android: Android
     vim3l_ubuntu: Ubuntu
     vim3l_thirdparty: 第三方固件
     edge: Edge
-    edge_android: Android
     edge_ubuntu: Ubuntu
     edge_thirdparty: 第三方固件
     tone1: Tone1

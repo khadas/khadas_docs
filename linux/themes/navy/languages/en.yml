@@ -60,12 +60,6 @@ sidebar:
     build_boot_logo_for_uboot: Boot Logo For U-boot
     setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
-    android: Android
-    install_toolchains: Install Toolchains
-    download_android_source_code: Download Android Source Code
-    build_android: Build Android Source Code
-    package_update_image: Fast Package Update Image
-    how_to_use_adb_tool: ADB Usage
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: Upgrade the System
@@ -128,13 +122,6 @@ sidebar:
     setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot Using TFTP
     kbi_guidance: KBI Guide
-    android: Android
-    install_toolchains: Install Toolchains
-    download_android_source_code: Download Android Source Code
-    build_android: Build Android Source Code
-    package_update_image: Fast Package Update Image
-    how_to_use_adb_tool: ADB Usage
-    force_reset_features: Force Reset Remotely
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
     how_to_upgrade_the_system: Upgrade the System
@@ -219,19 +206,6 @@ sidebar:
     setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
     kbi_guidance: KBI Guide
-    android: Android
-    download_android_source_code: Download Android Source Code
-    build_android: Build Android Source Code
-    package_update_image: Fast Package Update Image
-    how_to_use_adb_tool: ADB Usage
-    how_to_use_fastboot: Fastboot Usage
-    how_to_access_i2c_android: How To Access I2c
-    how_to_enable_m2x_eth: How To Enable M2x Ethernet
-    how_to_change_logo_android: How To Change Boot Logo
-    how_to_change_animation: How To Change Boot Animation
-    how_to_use_uart_android: How To Use Uart
-    how_to_app_platform_sign: How To App Platform Sign 
-    how_to_add_ir: How To Add Ir
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: Upgrade the System
@@ -301,12 +275,6 @@ sidebar:
     build_boot_logo_for_uboot: Boot Logo For U-boot
     setup_tftp: TFTP Server for U-Boot
     load_image_via_tftp: Load Images with U-Boot via TFTP
-    android: Android
-    install_toolchains: Install Toolchains
-    download_android_source_code: Download Android Source Code
-    build_android: Build Android Source Code
-    how_to_use_adb_tool: ADB Usage
-    instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
     linux: Linux
     fenix_script: Build Ubuntu/Debian Images
     how_to_upgrade_the_system: Upgrade the System
@@ -343,23 +311,18 @@ sidebar:
   firmware:
     firmware: Firmware
     vim1: VIM1
-    vim1_android: Android
     vim1_ubuntu: Ubuntu
     vim1_thirdparty: Third Party
     vim2: VIM2
-    vim2_android: Android
     vim2_ubuntu: Ubuntu
     vim2_thirdparty: Third Party
     vim3: VIM3
-    vim3_android: Android
     vim3_ubuntu: Ubuntu
     vim3_thirdparty: Third Party
     vim3l: VIM3L
-    vim3l_android: Android
     vim3l_ubuntu: Ubuntu
     vim3l_thirdparty: Third Party
     edge: Edge
-    edge_android: Android
     edge_ubuntu: Ubuntu
     edge_thirdparty: Third Party
     tone1: Tone1

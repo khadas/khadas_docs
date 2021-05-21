@@ -24,12 +24,6 @@ vim1:
     build_boot_logo_for_uboot: BuildBootLogoForUboot.html
     setup_tftp: SetupTFTPServer.html
     load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    package_update_image: FastPackageUpdateImage.html
-    how_to_use_adb_tool: HowToUseADBTool.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
@@ -88,13 +82,6 @@ vim2:
     setup_tftp: SetupTFTPServer.html
     load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
     kbi_guidance: KbiGuidance.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    package_update_image: FastPackageUpdateImage.html
-    how_to_use_adb_tool: HowToUseADBTool.html
-    force_reset_features: ForceResetFeatures.html 
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
@@ -171,20 +158,6 @@ vim3:
     setup_tftp: SetupTFTPServer.html
     load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
     kbi_guidance: KbiGuidance.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    package_update_image: FastPackageUpdateImage.html
-    how_to_use_adb_tool: HowToUseADBTool.html
-    how_to_use_fastboot: HowToUseFastboot.html
-    how_to_access_i2c: HowToAccessI2c_android.html
-    how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
-    how_to_change_logo: HowToChangeBootLogo_android.html
-    how_to_change_animation: HowToChangeBootAnimation_android.html
-    how_to_use_uart: HowToUseUart_android.html
-    how_to_app_platform_sign: HowToAppPlatformSign.html
-    how_to_add_ir: HowToAddIr.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
@@ -246,12 +219,6 @@ edge:
   uboot:
     boot_from_spi_flash: BootFromSpiFlash.html
     kbi_guidance: KbiGuidance.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    how_to_use_adb_tool: HowToUseADBTool.html
-    instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
@@ -288,22 +255,17 @@ hardware:
 firmware:
   firmware:
     vim1:
-      vim1_android: Vim1AndroidFirmware.html
       vim1_ubuntu: Vim1UbuntuFirmware.html
       vim1_thirdparty: Vim1ThirdpartyFirmware.html
     vim2:
-      vim2_android: Vim2AndroidFirmware.html
       vim2_ubuntu: Vim2UbuntuFirmware.html
       vim2_thirdparty: Vim2ThirdpartyFirmware.html
     vim3:
-      vim3_android: Vim3AndroidFirmware.html
       vim3_ubuntu: Vim3UbuntuFirmware.html
       vim3_thirdparty: Vim3ThirdpartyFirmware.html
     vim3l:
-     vim3l_android: Vim3lAndroidFirmware.html
      vim3l_ubuntu: Vim3lUbuntuFirmware.html
      vim3l_thirdparty: Vim3lThirdpartyFirmware.html
     edge:
-      edge_android: EdgeAndroidFirmware.html
       edge_ubuntu: EdgeUbuntuFirmware.html
       edge_thirdparty: EdgeThirdpartyFirmware.html
