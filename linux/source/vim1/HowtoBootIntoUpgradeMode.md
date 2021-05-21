@@ -35,7 +35,7 @@ Usually, the first two methods will meet the needs of most users. However, in so
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* Refer to this [guide](/vim1/SetupSerialTool.html) to setup your serial tool.
+* Refer to this [guide](/linux/vim1/SetupSerialTool.html) to setup your serial tool.
 * Once again, ensure that you've done the right connections and setup.
 * Hit any keys at the moment of bootup to stop autoboot. This step will let the board boot into u-boot mode.
 * Type `run update` on the terminal of u-boot as below:
@@ -62,7 +62,7 @@ kvim# run update
 * Use a tweezer to short-circuit the two pads of the `M` register, and without releasing it.
 * Short press the `Reset` key and release it to boot into upgrade mode.
 
-![Image of MRegister_ShortCircuit](/images/vim1/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/linux/images/vim1/MRegister_ShortCircuit.png)
 
 {% note info Tips %}
 

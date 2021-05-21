@@ -33,7 +33,7 @@ There are 4 ways to boot into Upgrade Mode:
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-1. Refer this [guide](/vim3/SetupSerialTool.html) to setup your serial tool for VIM3.
+1. Refer this [guide](/linux/vim3/SetupSerialTool.html) to setup your serial tool for VIM3.
 2. Once again, make sure you've done the correct connections and setup.
 3. Hit any keys at the moment of bootup to stop autoboot. This step will let VIM3 boot into U-Boot Mode.
 4. Type `run update` in the terminal of U-Boot as below. You will see the sys-led turn ON when you've entered Upgrade Mode.
@@ -52,7 +52,7 @@ There are 4 ways to boot into Upgrade Mode:
 2. Use a tweezer to short-circuit the two pads of the `M` register, and without releasing...
 3. Short press the `Reset` key and then release it, to boot into upgroup mode
 
-![image](/images/vim3/VIM3_M_Register.jpg)
+![image](/linux/images/vim3/VIM3_M_Register.jpg)
 
 </div>
 </div>
