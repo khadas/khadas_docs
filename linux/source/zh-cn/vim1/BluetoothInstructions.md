@@ -12,11 +12,11 @@ title: 蓝牙使用说明
 
 >打开 **Bluetooth Manager** 配对你的蓝牙设备.选择 **headset** 模式.
 
-![bluetooth connect](/images/vim1/bluetooth_connect.png)
+![bluetooth connect](/linux/images/vim1/bluetooth_connect.png)
 
 >如果连接成功你会看到下面这个图片的内容
 
-![bluetooth connect success](/images/vim1/bluetooth_connect_success.png)
+![bluetooth connect success](/linux/images/vim1/bluetooth_connect_success.png)
 
 ### 播放音乐以及相关的设置 ###
 
@@ -24,9 +24,9 @@ title: 蓝牙使用说明
 
 >1.确认播放的设备选择是否正确。
 
-![bluetooth player status](/images/vim1/bluetooth_player_status.png)
+![bluetooth player status](/linux/images/vim1/bluetooth_player_status.png)
 **注意**:我在这里使用谷歌的网页浏览器.如果你使用的不是谷歌浏览器或者使用其他播放器，这里你会看到你使用的设备
 >2.打开音频控制器，然后确认两个地方。 
 
-![bluetooth player back](/images/vim1/bluetooth_player_back.png) ![bluetooth player configuretion](/images/vim1/bluetooth_player_configuretion.png)
+![bluetooth player back](/linux/images/vim1/bluetooth_player_back.png) ![bluetooth player configuretion](/linux/images/vim1/bluetooth_player_configuretion.png)
 第一个就是你的播放源是否选择了正确的播放设备，然后就是你的蓝牙设备是否处于 *A2DP Sink* 模式。
