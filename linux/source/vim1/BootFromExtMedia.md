@@ -19,7 +19,7 @@ There are several ways to burn an image to a SD card or Thumbdrive:
 
 * [Etcher](https://www.balena.io/etcher/) got a user-friendly GUI for beginners, and is compatible with Mac, Windows and Linux. Simply select an image and it will automatically identify your external device which the image is going to be burned to. **(Recommended)**
 
-![Howto Use Etcher](/images/vim1/HowtoUseEtcher.png)
+![Howto Use Etcher](/linux/images/vim1/HowtoUseEtcher.png)
 
 * `dd` on Ubuntu / Debian with command line:
 
@@ -61,7 +61,7 @@ You need to select the appropriate DTB file.
 ## Step 3. Boot VIMs from SD card or Thumbdrive
 There are several ways to boot (activate multi-boot) from the SD card / Thumbdrive:
 
-* Via [Keys mode (Side-Buttons)](/vim1/HowtoBootIntoUpgradeMode.html) - the easiest and fastest way
+* Via [Keys mode (Side-Buttons)](/linux/vim1/HowtoBootIntoUpgradeMode.html) - the easiest and fastest way
 
 * Via Android
 
@@ -77,6 +77,6 @@ Don't use your PC as the USB-Host to supply the electrical power, otherwise it w
 
 {% note warn NOTICE %}
 
-* If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](/vim1/UpgradeViaUSBCable.html).
+* If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](/linux/vim1/UpgradeViaUSBCable.html).
 
 {% endnote %}

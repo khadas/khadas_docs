@@ -17,7 +17,7 @@ title: 从外部媒体介质启动系统
 ## 1、把固件写入到SD卡或U盘
 * 下载烧录工具[Etcher](https://www.balena.io/etcher/), 它会将镜像写入你的SD卡或U盘中。它为初学者提供了一个用户友好的图形用户界面，与Mac、Windows和Linux兼容，解压后是一个可执行文件，直接执行即可。选择固件，它将自动识别您的USB设备，然后烧录就可以了。
 
-![Howto Use Etcher](/images/vim1/HowtoUseEtcher.png)
+![Howto Use Etcher](/linux/images/vim1/HowtoUseEtcher.png)
 
 * 在Ubuntu下使用`dd`命令写入
 
@@ -57,7 +57,7 @@ $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 
 ## 3、激活多启动
 两种方式激活多启动：
-1)、通过[按键模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)。
+1)、通过[按键模式](/linux/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)。
 2)、通过安卓系统激活。
 * 进入`Settings>About Device->System->updates`。
 * 点击`select`并选择`aml_autosript.zip`。
