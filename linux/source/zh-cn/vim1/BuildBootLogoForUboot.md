@@ -80,7 +80,7 @@ $
 ```
 $ cp images/logo.img /media/gouwa/9B98-6C15/
 ```
-2）把U盘插在VIMs上，并进入[u-boot命令行](/zh-cn/vim1/SetupSerialTool.html)
+2）把U盘插在VIMs上，并进入[u-boot命令行](/linux/zh-cn/vim1/SetupSerialTool.html)
 3）更新`logo`分区
 ```
 kvim# usb_update logo logo.img
@@ -102,5 +102,5 @@ upgrade_bar.bmp  upgrade_fail.bmp   upgrade_success.bmp  upgrade_upgrading.bmp
 u-boot/drivers/usb/gadget/v2_burning/v2_common/optimus_progress_ui.c
 ```
 ## 参考
-[如何使用u-boot](/zh-cn/vim1/UBootUsage.html)
+[如何使用u-boot](/linux/zh-cn/vim1/UBootUsage.html)
 
