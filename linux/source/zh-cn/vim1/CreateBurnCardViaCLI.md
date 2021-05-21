@@ -1,7 +1,7 @@
 title: 通过命令行方式创建系统烧录卡
 ---
 
-本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式创建烧录卡([VIM1](/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/zh-cn/vim3/UpgradeViaTFBurningCard.html))。
+本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式创建烧录卡([VIM1](/linux/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/linux/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/linux/zh-cn/vim3/UpgradeViaTFBurningCard.html))。
 
 {% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
 
@@ -14,7 +14,7 @@ title: 通过命令行方式创建系统烧录卡
 ## 准备工作
 * 编译或下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/))最新的U-Boot文件。
 * 准备好TF卡和读卡器。
-* 如果TF卡上有多个分区的话，需要通过fdisk格式化TF卡([VIM1](/zh-cn/vim1/CreateBurnCardViaCLI.html)/[VIM2](/zh-cn/vim2/CreateBurnCardViaCLI.html)/[VIM3](/zh-cn/vim3/CreateBurnCardViaCLI.html))。
+* 如果TF卡上有多个分区的话，需要通过fdisk格式化TF卡([VIM1](/linux/zh-cn/vim1/CreateBurnCardViaCLI.html)/[VIM2](/linux/zh-cn/vim2/CreateBurnCardViaCLI.html)/[VIM3](/linux/zh-cn/vim3/CreateBurnCardViaCLI.html))。
 
 ## 开始前
 首先要先删除所有分区，**卡里面所有的数据将会丢失，请注意保存！**
@@ -117,9 +117,9 @@ $ sudo eject /dev/sdX
 
 ## 通过TF烧录卡升级固件
 1. 把制作好的烧录卡插入VIM/VIM2设备中，然后上电。
-2. 参考文档([VIM1](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))进入升级模式。
+2. 参考文档([VIM1](/linux/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/linux/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/linux/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))进入升级模式。
 3. 等待升级完成。
 
 ## 更多资料
-* 启动卡VS烧录卡([VIM1](/zh-cn/vim1/BootingCardVsBurningCard.html)/[VIM2](/zh-cn/vim2/BootingCardVsBurningCard.html)/[VIM3](/zh-cn/vim3/BootingCardVsBurningCard.html))
+* 启动卡VS烧录卡([VIM1](/linux/zh-cn/vim1/BootingCardVsBurningCard.html)/[VIM2](/linux/zh-cn/vim2/BootingCardVsBurningCard.html)/[VIM3](/linux/zh-cn/vim3/BootingCardVsBurningCard.html))
 
