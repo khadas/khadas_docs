@@ -228,7 +228,7 @@ $ docker exec -ti fenix bash
 ### 获取最新的nightly build固件
 - 访问[Fenix](https://github.com/khadas/fenix)脚本
 - 点击下面的badge,如:Rlease Build,Test Build Ubuntu,Test Build Debian
-![image](/images/vim1/FenixScript.png)
+![image](/linux/images/vim1/FenixScript.png)
 - 点击最新的workflow就可以看到固件下载页面了
 
 ### 参考
