@@ -34,18 +34,12 @@ Edge仅支持4.4内核**Ubuntu 18.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc" role="tabpanel" aria-labelledby="emmc-tab">
 
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110.7z) (最新)
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20190830.7z)
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20190116](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20190116.7z)
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V20181115.7z)
+* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd" role="tabpanel" aria-labelledby="sd-tab">
 
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110.7z)(最新)
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20190830.7z)
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181115.7z)
-* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181113](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V20181113.7z)
+* [Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110.7z)
 
 </div>
 </div>
@@ -64,18 +58,12 @@ Edge仅支持4.4内核**Ubuntu 18.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110.7z)(最新)
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20190830.7z)
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20190116](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20190116.7z)
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V20181115.7z)
+* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_EMMC_V0.8.3-20200110.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110.7z)(最新)
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20190830.7z)
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181115](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181115.7z)
-* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181113](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V20181113.7z)
+* [Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-lxde-bionic_Linux-4.4_arm64_SD-USB_V0.8.3-20200110.7z)
 
 </div>
 </div>
@@ -115,18 +103,12 @@ Edge仅支持主线内核**Ubuntu 20.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc3" role="tabpanel" aria-labelledby="emmc3-tab">
 
-* [Edge_Ubuntu-server-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602.7z)(最新)
----
-**不再维护：**
-* [Edge_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_EMMC_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_EMMC_V0.8.3-20200110.7z)
+* [Edge_Ubuntu-server-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-server-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd3" role="tabpanel" aria-labelledby="sd3-tab">
 
-* [Edge_Ubuntu-server-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602.7z)(最新)
----
-**不再维护：**
-* [Edge_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.3-20200110.7z)
+* [Edge_Ubuntu-server-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-server-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602.7z)
 
 </div>
 </div>
@@ -145,18 +127,12 @@ Edge仅支持主线内核**Ubuntu 20.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc4" role="tabpanel" aria-labelledby="emmc4-tab">
 
-* [Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602.7z)(最新)
----
-**不再维护：**
-* [Edge_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_EMMC_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_EMMC_V0.8.3-20200110.7z)
+* [Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/EMMC/Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_EMMC_V0.9.1-20200602.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd4" role="tabpanel" aria-labelledby="sd4-tab">
 
-* [Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602.7z)(最新)
----
-**不再维护：**
-* [Edge_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.3-20200110](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.3-20200110.7z)
+* [Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602](https://dl.khadas.com/Firmware/Edge/Ubuntu/SD_USB/Edge_Ubuntu-gnome-focal_Linux-5.7_arm64_SD-USB_V0.9.1-20200602.7z)
 
 </div>
 </div>
