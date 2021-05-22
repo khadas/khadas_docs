@@ -35,16 +35,16 @@ Reboot to take effect.
 
 * Find `HDMI Resolution` application in the list of system applications.
 
-![gnome-HDMI-application](/images/vim1/gnome-HDMI-application.png)
+![gnome-HDMI-application](/linux/images/vim1/gnome-HDMI-application.png)
 
 * Click to open it.
 
 * Select resolution.
 
-![gnome-HDMI-setting](/images/vim1/gnome-HDMI-setting.png)
+![gnome-HDMI-setting](/linux/images/vim1/gnome-HDMI-setting.png)
 
 Choose a resolution you want, then click `OK`,
 
-![gnome-HDMI-save](/images/vim1/gnome-HDMI-save.png)
+![gnome-HDMI-save](/linux/images/vim1/gnome-HDMI-save.png)
 
 The system will automatically log out and the resolution setting will take effect.
