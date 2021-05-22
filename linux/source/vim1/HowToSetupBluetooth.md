@@ -20,7 +20,7 @@ For Android you can setup Bluetooth via the GUI easily.
 
 For desktop systems you can setup Bluetooth via the GUI easily. 
 
-You can refer to connecting media playback devices via Bluetooth --> [How to connect Bluetooth media devices](/vim3/BluetoothInstructions.html)
+You can refer to connecting media playback devices via Bluetooth --> [How to connect Bluetooth media devices](/linux/vim3/BluetoothInstructions.html)
 
 </div>
 

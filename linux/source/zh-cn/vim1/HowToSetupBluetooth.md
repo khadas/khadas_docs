@@ -20,7 +20,7 @@ title: 如何设置蓝牙
 
 对于桌面系统，可以很方便地通过图形界面来设置，
 
-通过蓝牙连接媒体播放设备可以参考 --> [如何连接蓝牙媒体设备](/zh-cn/vim3/BluetoothInstructions.html)
+通过蓝牙连接媒体播放设备可以参考 --> [如何连接蓝牙媒体设备](/linux/zh-cn/vim3/BluetoothInstructions.html)
 
 </div>
 
