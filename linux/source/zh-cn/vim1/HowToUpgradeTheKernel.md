@@ -1,7 +1,7 @@
 title: 如何更新内核
 ---
 
-我们使用[Fenix](/zh-cn/vim1/FenixScript.html)来编译Ubuntu/Debian固件。你也可以使用它来编译内核debian包。
+我们使用[Fenix](/linux/h-cn/vim1/FenixScript.html)来编译Ubuntu/Debian固件。你也可以使用它来编译内核debian包。
 
 * 设置Fenix环境
 

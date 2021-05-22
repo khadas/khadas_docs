@@ -1,7 +1,7 @@
 title: How To Upgrade The kernel
 ---
 
-We use [Fenix](/vim1/FenixScript.html) to build Ubuntu/Debian images. You can also use it to build the kernel debian package.
+We use [Fenix](/linux/vim1/FenixScript.html) to build Ubuntu/Debian images. You can also use it to build the kernel debian package.
 
 * Set the Fenix environment
 
