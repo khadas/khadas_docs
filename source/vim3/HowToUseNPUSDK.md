@@ -14,7 +14,7 @@ Enter the SDK directory,
 ```shell
 $ cd {workspace}/aml_npu_sdk
 $ ls
-acuity-toolkit  android_sdk  Dockerfile  docs  LICENSE  linux_sdk  README.md  toolchains
+acuity-toolkit  android_sdk  Dockerfile  docs  LICENSE README.md
 ```
 
 The SDK is mainly divided into several `SDK`, `conversion tools` and `compilation tools`, and `docs`.
@@ -22,9 +22,7 @@ The SDK is mainly divided into several `SDK`, `conversion tools` and `compilatio
 ```
 acuity-toolkit    #Conversion tool , used to convert AI models
 android_sdk       #Android SDK 
-linux_sdk         #linux SDK ,use for compiling `aml_npu_app`
 docs              #Conversion related documents collection
-toolchains        #Compile toolchain directory
 ```
 
 ## Docs description
@@ -122,47 +120,6 @@ main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_proces
 ```
 
 For the setting of conversion parameters, please refer to'Model Conversion Operation User Guide (0.6).pdf' in `Docs`
-
-## linux SDK instructions
-
-Enter the linux SDK directory
-
-```shell
-$ cd {workspace}/aml_npu_sdk/linux_sdk
-$ ls
-demo  linux_sdk  linux_sdk_6.4.0.10  linux_sdk_6.4.2.1  linux_sdk_6.4.3
-```
-
-Here you can see a simple demo that has been converted, and various versions of the linux SDK.
-
-```
-1. demo                     #The executable file and source code of the converted inception model
-2. linux_sdk                #Link to the latest SDK
-3. linux_sdk_x.x.x.x        #Different versions of linux SDK
-```
-
-Enter `linux_sdk`, you can see the main components of the sdk
-
-```shell
-$ cd {workspace}/aml_npu_sdk/linux_sdk/linux_sdk
-$ ls 
-acuity-ovxlib-dev  build  common.target  linux_build_sample.log  makefile.linux.def
-```
-
-Mainly used parts:
-
-```
-1. `acuity-ovxlib-dev`          #Mainly placed the `ovxlib` library needed for compilation
-2. `build/sdk/drivers_xx`       #Mainly placed the system libraries needed for compilation
-3. `build/sdk/opencvX`          #Mainly the opencv library used during compilation
-```
-
-
-
-
-
-
-
 
 
 

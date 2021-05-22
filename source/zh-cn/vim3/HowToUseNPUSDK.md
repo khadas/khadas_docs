@@ -14,7 +14,7 @@ SDK需要通过邮件申请，申请以后会通过一封邮件发到你的邮�
 ```shell
 $ cd {workspace}/aml_npu_sdk
 $ ls
-acuity-toolkit  android_sdk  Dockerfile  docs  LICENSE  linux_sdk  README.md  toolchains
+acuity-toolkit  android_sdk  Dockerfile  docs  LICENSE  README.md
 ```
 
 SDK主要分成几个sdk，转换工具和编译工具以及docs几个部分。
@@ -22,9 +22,7 @@ SDK主要分成几个sdk，转换工具和编译工具以及docs几个部分。
 ```
 acuity-toolkit    #转换工具目录,用于转换AI模型
 android_sdk       #Android SDK 目录
-linux_sdk         #linux SDK 目录,主要用于编译`aml_npu_app`
 docs              #转换相关的文档合集
-toolchains        #编译工具链目录
 ```
 
 ## Docs说明
@@ -127,39 +125,4 @@ main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_proces
 ```
 
 转换参数的设置，请参考`Docs`里面的'模型转换运行用户指南(0.6).pdf'。
-
-## linux SDK 说明
-
-进入linux SDK目录
-
-```shell
-$ cd {workspace}/aml_npu_sdk/linux_sdk
-$ ls
-demo  linux_sdk  linux_sdk_6.4.0.10  linux_sdk_6.4.2.1  linux_sdk_6.4.3
-```
-
-这里可以看到简单的已经转换完成的demo，以及各版本的linux SDK。
-
-```
-1. demo                     #已经转换完成的inception模型的可执行文件和源码
-2. linux_sdk                #指向最新的SDK
-3. linux_sdk_x.x.x.x        #不同版本的linux SDK
-```
-
-
-进入`linux_sdk`，可以看到sdk的主要组成，
-
-```shell
-$ cd {workspace}/aml_npu_sdk/linux_sdk/linux_sdk
-$ ls 
-acuity-ovxlib-dev  build  common.target  linux_build_sample.log  makefile.linux.def
-```
-
-主要使用的几个部分:
-
-```
-1. `acuity-ovxlib-dev`          #主要放置了编译需要的使用的`ovxlib`库
-2. `build/sdk/drivers_xx`       #主要放置了编译需要使用的系统库
-3. `build/sdk/opencvX`          #主要是编译时使用的opencv库
-```
 
