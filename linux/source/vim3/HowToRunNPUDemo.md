@@ -3,7 +3,7 @@ title: How to run NPU Demo on VIM3
 
 {% note warn Note %}
 
-Please follow this [docs](/vim3/HowToUpgradeTheSystem.html) to upgrade the system to latest version before run any NPU demos.
+Please follow this [docs](/linux/vim3/HowToUpgradeTheSystem.html) to upgrade the system to latest version before run any NPU demos.
 
 {% endnote %}
 
@@ -165,7 +165,7 @@ $ ./detect_demo_fb 2 1080p.bmp
 
 The results of the operation are as follows,
 
-![detect_demo_picture_x11_cv3](/images/vim3/detect_demo_picture_x11_cv3.png)
+![detect_demo_picture_x11_cv3](/linux/images/vim3/detect_demo_picture_x11_cv3.png)
 
 #### Dynamic camera recognition
 
@@ -189,7 +189,7 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 
 After turning on the camera, the recognition result will be displayed on the screen
 
-![detect_demo_x11_cv3](/images/vim3/detect_demo_x11_cv3.png)
+![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
 
 
 

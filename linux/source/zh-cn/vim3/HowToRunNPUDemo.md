@@ -3,7 +3,7 @@ title: 如何在VIM3上面运行 NPU Demo
 
 {% note warn 注意 %}
 
-在运行NPU Demo前请先参考[文档](/zh-cn/vim3/HowToUpgradeTheSystem.html)升级系统到最新版本。
+在运行NPU Demo前请先参考[文档](/linux/zh-cn/vim3/HowToUpgradeTheSystem.html)升级系统到最新版本。
 
 {% endnote %}
 
@@ -168,7 +168,7 @@ $ ./detect_demo_x11 2 1080p.bmp
 
 运行结果如下，
 
-![detect_demo_picture_x11_cv3](/images/vim3/detect_demo_picture_x11_cv3.png)
+![detect_demo_picture_x11_cv3](/linux/images/vim3/detect_demo_picture_x11_cv3.png)
 
 #### 摄像头动态识别
 
@@ -192,6 +192,6 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 
 打开摄像头以后。会将识别的结果显示在屏幕上
 
-![detect_demo_x11_cv3](/images/vim3/detect_demo_x11_cv3.png)
+![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
 
 
