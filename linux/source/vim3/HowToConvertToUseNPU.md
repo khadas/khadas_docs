@@ -7,9 +7,9 @@ Here takes yolov3 as an example to demonstrate how to convert your own model, ad
 	Please review the document carefully before converting the reference document
 {% endnote %}
 
-1. [SDK instructions](/vim3/HowToUseNPUSDK.html)
-2. [Description and Usage of aml_NPU_app Code Repository](/vim3/HowToUseAmlNPUApp.html)
-3. [How to run NPU Demo](/vim3/HowToRunNPUDemo.html)
+1. [SDK instructions](/linux/vim3/HowToUseNPUSDK.html)
+2. [Description and Usage of aml_NPU_app Code Repository](/linux/vim3/HowToUseAmlNPUApp.html)
+3. [How to run NPU Demo](/linux/vim3/HowToRunNPUDemo.html)
 
 
 # Prepare
@@ -20,9 +20,9 @@ Here takes yolov3 as an example to demonstrate how to convert your own model, ad
 
 Please refer to the SDK, app and demo documents respectively for how to obtain the corresponding code
 
-1. [SDK instructions](/vim3/HowToUseNPUSDK.html)
-2. [Description and Usage of aml_NPU_app Code Repository](/vim3/HowToUseAmlNPUApp.html)
-3. [How to run NPU Demo](/vim3/HowToRunNPUDemo.html)
+1. [SDK instructions](/linux/vim3/HowToUseNPUSDK.html)
+2. [Description and Usage of aml_NPU_app Code Repository](/linux/vim3/HowToUseAmlNPUApp.html)
+3. [How to run NPU Demo](/linux/vim3/HowToRunNPUDemo.html)
 
 # Conversion
 
@@ -291,5 +291,5 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/yolov3.n
 
 How to run the replaced `aml_npu_demo_binaries` on the board, please refer to
 
-[How to run NPU Demo](/vim3/HowToRunNPUDemo.html)
+[How to run NPU Demo](/linux/vim3/HowToRunNPUDemo.html)
 
