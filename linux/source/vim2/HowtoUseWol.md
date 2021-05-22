@@ -14,7 +14,7 @@ Firstly, you have to connect VIM2 to your LAN, then get the Ethernet MAC address
 ### Get Ethernet MAC address
 1.MAC Address Sticker on the backside of the VIM:
 
-![mac_page](/images/vim2/vim2_mac.jpg)
+![mac_page](/linux/images/vim2/vim2_mac.jpg)
 
 If the sticker has peeled-off, you can use following steps to get the MAC Address.
 
@@ -31,7 +31,7 @@ HWaddr **98:aa:fc:60:46:de** corresponds to your Ethernet MAC Address.
 
 ### Enable WOL
 
-1.By default **WOL** is disabled. So you'll have to use the [KBI](/vim2/KbiGuidance.html) (Khadas Bootloader Instructions) to enable it.
+1.By default **WOL** is disabled. So you'll have to use the [KBI](/linux/vim2/KbiGuidance.html) (Khadas Bootloader Instructions) to enable it.
 ```
 kvim2# kbi trigger wol w 1
 ```
@@ -43,11 +43,11 @@ boot wol: enable
 
 2.You can enable **WOL** in the **Applications->Wake On LAN Setting** on Ubuntu.
 
-![wol](/images/vim2/vim2_ubuntu_wol1.png)
+![wol](/linux/images/vim2/vim2_ubuntu_wol1.png)
 
 * Select WOL Mode.
 
-![wol](/images/vim2/vim2_ubuntu_wol2.png)
+![wol](/linux/images/vim2/vim2_ubuntu_wol2.png)
 
 ### Test WOL
 After doing the steps above, we can test the WOL function.
@@ -74,13 +74,13 @@ $ wakeonlan 98:aa:fc:60:46:de
 
 You can get it from **Settings->More Settings->About->Status** menu.
 
-![mac](/images/vim2/vim2_android_mac.png)
+![mac](/linux/images/vim2/vim2_android_mac.png)
 
 ### Enable WOL
 
 You can enable **WOL** in the **Setting->More Settings->WOL** menu.
 
-![wol](/images/vim2/vim2_android_wol.png)
+![wol](/linux/images/vim2/vim2_android_wol.png)
 
 
 ### Test WOL
@@ -93,18 +93,18 @@ You can enable **WOL** in the **Setting->More Settings->WOL** menu.
 
 * Download **[Wake-On-LAN Sender](http://www.yarovy.com/wol/)** tool
 
-![sender](/images/vim2/wol_sender_main.png)
+![sender](/linux/images/vim2/wol_sender_main.png)
 
 * Add a remote computer
 
-![sender_add](/images/vim2/wol_sender_add_remote.png)
+![sender_add](/linux/images/vim2/wol_sender_add_remote.png)
 
 * Wake up VIM2 with this button
 
-![sender](/images/vim2/wol_sender_send.png)
+![sender](/linux/images/vim2/wol_sender_send.png)
 
 * Note:On iPhone, you can search for **wake on lan** in the App Store.
 
 ## See also
-[KBI Guidance](/vim2/KbiGuidance.html)
+[KBI Guidance](/linux/vim2/KbiGuidance.html)
 

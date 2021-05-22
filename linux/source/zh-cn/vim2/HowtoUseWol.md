@@ -15,7 +15,7 @@ VIM2、VIM3和Edge不同于VIM1的一点就是具有以太网唤醒功能。
 
 1.在VIM2背面贴有MAC地址。
 
-![mac_page](/images/vim2/vim2_mac.jpg)
+![mac_page](/linux/images/vim2/vim2_mac.jpg)
 
 如果VIM2背面贴的MAC地址损坏了，你还可以通过如下方式获取MAC地址。
 
@@ -32,7 +32,7 @@ eth0      Link encap:Ethernet  HWaddr 98:aa:fc:60:46:de
 
 ### 使能WOL功能
 
-1) 默认`WOL`功能是关闭的，你可以通过[KBI](/zh-cn/vim2/KbiGuidance.html)命令使能`WOL`功能。
+1) 默认`WOL`功能是关闭的，你可以通过[KBI](/linux/zh-cn/vim2/KbiGuidance.html)命令使能`WOL`功能。
 
 ```sh
 kvim2# kbi trigger wol w 1
@@ -47,11 +47,11 @@ boot wol: enable
 
 2) 在Ubuntu系统中，可以通过 **Applications->Wake On LAN Setting** 使能 **WOL**。
  
-![wol](/images/vim2/vim2_ubuntu_wol1.png)
+![wol](/linux/images/vim2/vim2_ubuntu_wol1.png)
  
 * 选择模式为 **On** 即可。
  
-![wol](/images/vim2/vim2_ubuntu_wol2.png)
+![wol](/linux/images/vim2/vim2_ubuntu_wol2.png)
 
 ### 开始测试
 
@@ -77,13 +77,13 @@ terry@terry:~$ wakeonlan 98:aa:fc:60:46:de
 
 通过**Settings->More Settings->About->Status**菜单查下MAC地址
 
-![mac](/images/vim2/vim2_android_mac.png)
+![mac](/linux/images/vim2/vim2_android_mac.png)
 
 ### 使能WOL功能
  
 通过**Setting->More Settings->WOL**使能**WOL**。
 
-![wol](/images/vim2/vim2_android_wol.png)
+![wol](/linux/images/vim2/vim2_android_wol.png)
 
 ### 开始测试
  
@@ -95,18 +95,18 @@ terry@terry:~$ wakeonlan 98:aa:fc:60:46:de
 
 * 在Windows下, 你需要下载安装 **[Wake-On-LAN Sender](http://www.yarovy.com/wol/)** 工具
 
-![sender](/images/vim2/wol_sender_main.png)
+![sender](/linux/images/vim2/wol_sender_main.png)
 
 * 添加远程电脑：
 
-![sender_add](/images/vim2/wol_sender_add_remote.png)
+![sender_add](/linux/images/vim2/wol_sender_add_remote.png)
 
 * 通过如下按钮唤醒VIM2：
 
-![sender](/images/vim2/wol_sender_send.png)
+![sender](/linux/images/vim2/wol_sender_send.png)
 
 
 * 注意：在iPhone下, 你可以在应用商店搜索 **wake on lan** 工具。
 
 ## 更多
-[KBI参考](/zh-cn/vim2/KbiGuidance.html)
+[KBI参考](/linux/zh-cn/vim2/KbiGuidance.html)
