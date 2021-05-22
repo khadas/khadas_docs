@@ -5,9 +5,9 @@ title: 如何使用硬件PWM
 
 dts配置文件里默认已经打开了硬件PWM，所以仅需要确认哪一个物理引脚对应了硬件PWM。
 
-* `PWM_F` on [VIM1 GPIO-Out](/zh-cn/vim1/index.html#GPIO-Pin-Out)
-* `PWM_D` on [VIM2 GPIO-Out](/zh-cn/vim2/index.html#GPIO-Pinout)
-* `PWM_F` on [VIM3 GPIO-Out](/zh-cn/vim3/index.html#GPIO-Pinout)
+* `PWM_F` on [VIM1 GPIO-Out](/linux/zh-cn/vim1/index.html#GPIO-Pin-Out)
+* `PWM_D` on [VIM2 GPIO-Out](/linux/zh-cn/vim2/index.html#GPIO-Pinout)
+* `PWM_F` on [VIM3 GPIO-Out](/linux/zh-cn/vim3/index.html#GPIO-Pinout)
 
 ## 却换到root用户
 
@@ -63,7 +63,7 @@ root@Khadas:~#
 
 如果你成功开启了硬件PWM，你可以通过示波器看到波形：
 
-![pwm-Oscilloscope](/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/linux/images/vim1/pwm-Oscilloscope.jpg)
 
 {% note info 注意 %}
 
