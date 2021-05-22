@@ -42,7 +42,7 @@ build-cv3.sh  include  makefile-cv3.linux  person_detect_640x384_camera.cpp  per
 
 ### Compilation method
 
-Please refer to get SDK [#Get-SDK](/vim3/HowToUseNPUSDK#Get-SDK)
+Please refer to get SDK [#Get-SDK](/linux/vim3/HowToUseNPUSDK#Get-SDK)
 
 Here also take person_detect as an example,
 
