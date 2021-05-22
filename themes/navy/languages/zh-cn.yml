@@ -232,6 +232,7 @@ sidebar:
     how_to_app_platform_sign: app如何系统签名
     how_to_add_ir: 如何添加遥控器
     how_to_use_pwm: 如何使用PWM
+    how_to_use_recovery: 如何使用recovery
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
