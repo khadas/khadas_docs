@@ -9,7 +9,7 @@ title: 使用MIPI摄像头
 接反会烧坏摄像头，连接前请仔细查看图片的接法。
 {% endnote %}
 
-<img src="/images/vim3/docs_vim3_camera_OS08A10.jpg" width="50%" height="50%" >
+<img src="/linux/images/vim3/docs_vim3_camera_OS08A10.jpg" width="50%" height="50%" >
 
 ## 通过Guvcview使用摄像头
 
@@ -17,17 +17,17 @@ title: 使用MIPI摄像头
 
 桌面版本已经预装了Guvcview，直接在软件列表里找到并打开这个软件
 
-![mipi_guvcview_icon.png](/images/vim3/mipi_guvcview_icon.png)
+![mipi_guvcview_icon.png](/linux/images/vim3/mipi_guvcview_icon.png)
 
 ### 设置Guvcview
 
 MIPI摄像头的名称为`Juno R2`
 
-<img src="/images/vim3/mipi_guvcview_setting.png" width="50%" height="50%" >
+<img src="/linux/images/vim3/mipi_guvcview_setting.png" width="50%" height="50%" >
 
 分辨率设置成`1920x1080`，RGB格式为`BGR3-BGR3`
 
-<img src="/images/vim3/mipi_guvcview_seccess.png" width="50%" height="50%" >
+<img src="/linux/images/vim3/mipi_guvcview_seccess.png" width="50%" height="50%" >
 
 设置成功以后，就能正常的使用摄像头了
 
