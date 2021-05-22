@@ -4,15 +4,15 @@ title: How To Setup PCIe/USB3.0 Port
 Khadas VIM3 contains a 2:1 data switch chipset to switch the "combo interface" between `PCIe` and `USB 3.0`, and the default mode is `USB 3.0`.
 You can refer the block below for further details:
 
-![VIM3 PCIe/USB3.0 Block](/images/vim3/vim3_pcie_usb3_block.png)
+![VIM3 PCIe/USB3.0 Block](/linux/images/vim3/vim3_pcie_usb3_block.png)
 
 There are three ways to setup the `PCIe/USB3.0` port:
-* Setup the port using the [KBI](/vim3/KbiGuidance.html)
+* Setup the port using the [KBI](/linux/vim3/KbiGuidance.html)
 * Setup the port using the Android UI
 * Setup the port using the Android/Ubuntu command line
 
 ## Setup the PCIe / USB3.0 port using the KBI
-You need to [setup the serial debug tool](/vim3/SetupSerialTool.html) and enter the u-boot command line.
+You need to [setup the serial debug tool](/linux/vim3/SetupSerialTool.html) and enter the u-boot command line.
 
 * Initialize the KBI:
 
@@ -91,4 +91,4 @@ khadas@Khadas:~$ echo 1 > /sys/class/mcu/poweroff
 Then press the `POWER KEY` to boot the system.
 
 ## See Also
-[KBI Guide](/vim3/KbiGuidance.html)
+[KBI Guide](/linux/vim3/KbiGuidance.html)
