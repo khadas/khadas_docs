@@ -2,7 +2,7 @@ title: How To Upgrade The Logo
 ---
 
 
-We use [Fenix](/vim1/FenixScript.html) to build Ubuntu/Debian images, The default logo is  `archives/logo/Rockchip/logo.img`, so you can use your own logo image to replace the default one.
+We use [Fenix](/linux/vim1/FenixScript.html) to build Ubuntu/Debian images, The default logo is  `archives/logo/Rockchip/logo.img`, so you can use your own logo image to replace the default one.
 
 * Build the logo image
 
