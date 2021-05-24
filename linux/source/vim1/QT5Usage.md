@@ -7,14 +7,14 @@ In order to use QT with GPU (fbdev), we have rebuilt the QT packages with eglfs 
 
 {% note warn Note %}
 
-* The QT5 with eglfs Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
+* The QT5 with eglfs Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/linux/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
 * Only support Framebuffer Console mode.
 
 {% endnote %}
 
 ## Upgrade the System
 
-Follow this [documentation](/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
+Follow this [documentation](/linux/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
 
 
 ## Install QT5 Packages
