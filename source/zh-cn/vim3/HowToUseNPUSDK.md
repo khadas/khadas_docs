@@ -39,6 +39,10 @@ $ ls
 'Android&Linux_Compilation and Integration Guide_0.2.pdf'  'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'
 ```
 
+{% note info Linux SDK %}
+所有的demo已经迁移到板子上编译，需要的库也预转在板子上，不再需要Linux SDK
+{% endnote %}
+
 文档记录了从转换到集成的一系列过程，以及一些常见的问题
 
 
