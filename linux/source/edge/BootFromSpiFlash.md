@@ -26,7 +26,7 @@ If successful, you will get a U-Boot for the SPI-Flash `u-boot-spi.bin`, in the 
 ## Burn U-boot To SPI Flash
 Copy `u-boot-spi.bin` to an SD-Card or Thumbdrive (U-Disk) and insert it into your Edge.
 
-[Setup serial debugging tool](/edge/SetupSerialTool.html) and boot to the U-Boot Command Line.
+[Setup serial debugging tool](/linux/edge/SetupSerialTool.html) and boot to the U-Boot Command Line.
 
 ### Load U-boot to DDR
 

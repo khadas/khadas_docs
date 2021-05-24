@@ -26,7 +26,7 @@ $ make uboot
 ## 烧录U-boot到SPI Flash
 拷贝`u-boot-spi.bin`到TF卡或U盘，并插入到Edge开发板。
 
-[设置串口调试工具](/zh-cn/edge/SetupSerialTool.html)并进入u-boot命令行。
+[设置串口调试工具](/linux/zh-cn/edge/SetupSerialTool.html)并进入u-boot命令行。
 
 ### 加载U-boot到DDR
 
