@@ -1,4 +1,4 @@
 title: Edge Captain Power Priority
 ---
 
-![Top view](/images/edge/EdgeCaptainPowerPriority.jpg)
+![Top view](/linux/images/edge/EdgeCaptainPowerPriority.jpg)
