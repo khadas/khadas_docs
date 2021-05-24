@@ -36,13 +36,13 @@ Here's an example of upgrading Android.The way to upgrade Ubuntu is consistent w
 	* Count 2 to 3 seconds and release the `Power` key to enter into Upgrade Mode.
 
 If everything went fine, now your display/monitor should show this:
-![Image of Upgrading_Interface](/images/vim1/Upgrading_interface.png)
+![Image of Upgrading_Interface](/linux/images/vim1/Upgrading_interface.png)
 
 Have Fun!
 
 **See Also:**
 
-* [Upgrade Via A USB Cable](/vim1/UpgradeViaUSBCable.html)
-* [VIM1 How To Boot Into Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
-* [VIM2 How To Boot Into Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html)
-* [VIM3 How To Boot Into Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Via A USB Cable](/linux/vim1/UpgradeViaUSBCable.html)
+* [VIM1 How To Boot Into Upgrade Mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)
+* [VIM2 How To Boot Into Upgrade Mode](/linux/vim2/HowtoBootIntoUpgradeMode.html)
+* [VIM3 How To Boot Into Upgrade Mode](/linux/vim3/HowtoBootIntoUpgradeMode.html)
