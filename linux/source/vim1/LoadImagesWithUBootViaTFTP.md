@@ -5,7 +5,7 @@ With an available network connection, U-Boot can load images quickly and easily 
 
 ## Preparation
 
-* [Setup TFTP Server for U-Boot](/vim1/SetupTFTPServer.html)
+* [Setup TFTP Server for U-Boot](/linux/vim1/SetupTFTPServer.html)
 
 We'll start off with a terminal connected to the board and sitting at the U-Boot prompt.
 
