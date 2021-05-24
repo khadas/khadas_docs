@@ -56,47 +56,47 @@ AT+QCFG="usbnet",0
 
 在右上角的网络菜单最下面选中`edit connections`选项。
 
-![LTE_edit_connect](/images/edge/LTE_edit_connect.png)
+![LTE_edit_connect](/linux/images/edge/LTE_edit_connect.png)
 
 #### Step2: 新建一个连接
 
-![LTE_add_connect](/images/edge/LTE_add_connect.png)
+![LTE_add_connect](/linux/images/edge/LTE_add_connect.png)
 
 在左下角的`+`选项可以新建一个连接。
 
 #### Step3: 选择新建的连接类型
 
-![LTE_choose_connect_tpye](/images/edge/LTE_choose_connect_tpye.png)
+![LTE_choose_connect_tpye](/linux/images/edge/LTE_choose_connect_tpye.png)
 
 `Mobile Broadband`可用于LTE模块，这里选用这个选项。
 
 #### Step4: 选择你的运营商所在国家
 
-![LTE_choose_country](/images/edge/LTE_choose_country.png)
+![LTE_choose_country](/linux/images/edge/LTE_choose_country.png)
 
 选择你的运营商所在国家，这个应与sim卡相同。
 
 #### Step5: 选择运营商
 
-![LTE_choose_provider](/images/edge/LTE_choose_provider.png)
+![LTE_choose_provider](/linux/images/edge/LTE_choose_provider.png)
 
 选择运营商，这个同样应该与sim卡相同。
 
 选择完运营商以后，后面的两部使用默认的就可以，直接`next`。
 
 #### Step6: 设置连接密码
-![LTE_set_psk](/images/edge/LTE_set_psk.png)
+![LTE_set_psk](/linux/images/edge/LTE_set_psk.png)
 
 设置连接密码，这步设置的密码，下一步连接时会用到，请记住设置的密码。
 同时你可以设置你的节点名字，不设置将使用默认的。
 
 #### Step7: 连接
 
-![LTE_connect](/images/edge/LTE_connect.png)
+![LTE_connect](/linux/images/edge/LTE_connect.png)
 
 在右上角的网络菜单选中上一步设置的网络节点。输入上一步设置的密码。
 
-![LTE_use_psk](/images/edge/LTE_use_psk.png)
+![LTE_use_psk](/linux/images/edge/LTE_use_psk.png)
 
 输入密码以后，就可以成功连接到网络了。
 
