@@ -2,7 +2,7 @@ title: Edge Beginners Guide
 ---
 
 ## Edge
-![image](/images/edge/docs_edge_labels.jpg)
+![image](/linux/images/edge/docs_edge_labels.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -24,17 +24,17 @@ title: Edge Beginners Guide
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 3.0 speeds|
-|2|USB-C|USB 3.0, Display Port v1.2, with 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input (USB power delivery), can be used for [upgrading the OS](/edge/UpgradeViaUSBCable.html)|
+|2|USB-C|USB 3.0, Display Port v1.2, with 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input (USB power delivery), can be used for [upgrading the OS](/linux/edge/UpgradeViaUSBCable.html)|
 |3|HDMI 2.0|Type-A Female, up to 4K@60Hz, HDCP 2.2|
 |4|USB-C|USB-C port with 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input (USB power delivery)|
 |5|USB-A|USB 2.0 speeds|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your Edge in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge|
 |A|314-Pin Gold Fingers|For docking with expansion boards such as the [Captain](https://www.khadas.com/product-page/captain-carrier-board)|
-|B|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / Bluetooth Connector|Connect Wi-Fi / Bluetooth antennas|
-|C|I-Pex Wi-Fi / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Connect Wi-Fi / Bluetooth antennas|
+|B|I-Pex [Wi-Fi](/linux/edge/HowToConnectWifi.html) / Bluetooth Connector|Connect Wi-Fi / Bluetooth antennas|
+|C|I-Pex Wi-Fi / [Bluetooth](/linux/edge/HowToSetupBluetooth.html) Connector|Connect Wi-Fi / Bluetooth antennas|
 
 </div>
 <div class="tab-pane fade" id="back-edge" role="tabpanel" aria-labelledby="back-tab">
@@ -44,10 +44,10 @@ title: Edge Beginners Guide
 |1|Li-Po Battery Connector|For connecting Lithium Polymer batteries|
 |2|Secondary Wi-Fi / Bluetooth Pad|Extra pad for mounting Wi-Fi / Bluetooth antennas|
 |3|Secondary Wi-Fi / Bluetooth Pad|Extra pad for mounting Wi-Fi / Bluetooth antennas|
-|4|M2x4 Mounting Point|For mounting a [heatsink](https://www.khadas.com/product-page/edge-heatsink) or [carrier board](https://www.khadas.com/product-page/captain-carrier-board)|
+|4|M2x4 Mounting Point|For mounting a [heatsink](https://www.khadas.com/product-page/linux/edge-heatsink) or [carrier board](https://www.khadas.com/product-page/captain-carrier-board)|
 |5|FPC Connector B|10-Pins, 0.5mm Pitch, USB, I2S(8ch), I2C, MCU IOs|
-|6|FPC Connector A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/edge-io)|
-|7|M-Register|Allows the EMMC to [enter MaskROM mode](/edge/HowtoBootIntoUpgradeMode.html)|
+|6|FPC Connector A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/linux/edge-io)|
+|7|M-Register|Allows the EMMC to [enter MaskROM mode](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edge" role="tabpanel" aria-labelledby="button-tab">
@@ -55,9 +55,9 @@ title: Edge Beginners Guide
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot Edge|
-||x||[Enter Upgrade Mode (TST)](/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[Enter Upgrade Mode (KEYS)](/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edge" role="tabpanel" aria-labelledby="led-tab">
@@ -77,7 +77,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 
 
 ## Edge-V
-![image](/images/edge/docs_edge_v_labels.jpg)
+![image](/linux/images/edge/docs_edge_v_labels.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -102,21 +102,21 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 3.0, blue colour|
-|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](/edge/HowtoUseWol.html)|
+|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](/linux/edge/HowtoUseWol.html)|
 |3|HDMI|Type-A Female, up to 4K@60Hz, HDCP 2.2|
-|4|USB-C|USB 3.0, Display Port v1.2, can be used for [upgrading the OS](/edge/UpgradeViaUSBCable.html)|
+|4|USB-C|USB 3.0, Display Port v1.2, can be used for [upgrading the OS](/linux/edge/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0, black colour|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your Edge-V in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge-V|
 |A|RTC Battery Header|Header for attaching a battery for the real time clock|
-|B|[40-Pin GPIO](/edge/EdgeVGPIOPinout.html)|Learn how to access GPIO [here](/edge/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|B|[40-Pin GPIO](/linux/edge/EdgeVGPIOPinout.html)|Learn how to access GPIO [here](/linux/edge/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |C|Gesture Sensor|Control your Edge-V with a hand-wave|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
-|F|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
-|G|I-Pex [Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|F|I-Pex [Wi-Fi](/linux/edge/HowToConnectWifi.html) / [Bluetooth](/linux/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|G|I-Pex [Wi-Fi](/linux/edge/HowToConnectWifi.html) / [Bluetooth](/linux/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 
 </div>
 <div class="tab-pane fade" id="back-edgev" role="tabpanel" aria-labelledby="back-tab">
@@ -125,15 +125,15 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |---:|:---|:---|
 |1|Li-Po Battery Connector|Connect a [Lithium Polymer battery](https://www.khadas.com/product-page/lipo-battery) with the [Juice Board](https://www.khadas.com/product-page/juice-board)|
 |2|USB-C|USB-C port that accepts 5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) power input (USB power delivery)|
-|3|[Micro-SD Card Slot](/edge/UpgradeViaTFBurningCard.html)|Boot alternative OSes via a Micro-SD card, or just for extra storage|
+|3|[Micro-SD Card Slot](/linux/edge/UpgradeViaTFBurningCard.html)|Boot alternative OSes via a Micro-SD card, or just for extra storage|
 |4|M.2 Socket (PCI-E 2.1)|Connect 2280 NVMe SSDS at 4-lane speed with [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
 |5|E-DP Display|For connecting to external displays via E-DP|
 |6|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
-|7|Touch Panel|For accepting [touch-input](/edge/ConnectLcd.html)|
-|8|MIPI-TX|MIPI-DSI header for connecting [LCD screens](/edge/ConnectLcd.html)|
+|7|Touch Panel|For accepting [touch-input](/linux/edge/ConnectLcd.html)|
+|8|MIPI-TX|MIPI-DSI header for connecting [LCD screens](/linux/edge/ConnectLcd.html)|
 |9|MIPI-RX|For connecting to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |A|MIPI-RX/TX|Configurable, connect to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera) or MIPI-DSI displays|
-|B|M-Register|Another way for entering [upgrade mode](/edge/HowtoBootIntoUpgradeMode.html)|
+|B|M-Register|Another way for entering [upgrade mode](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edgev" role="tabpanel" aria-labelledby="button-tab">
@@ -141,9 +141,9 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot Edge-V|
-||x||[Enter Upgrade Mode (TST)](/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge-V|
-|x||x|[Enter Upgrade Mode (KEYS)](/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edgev" role="tabpanel" aria-labelledby="led-tab">
@@ -189,7 +189,7 @@ Linux_TX|19|39|MCU_PA1
 
 
 ## Captain
-![image](/images/edge/docs_captain_labels.jpg)
+![image](/linux/images/linux/edge/docs_captain_labels.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -214,12 +214,12 @@ Linux_TX|19|39|MCU_PA1
 ||Component|Purpose|
 |---:|:---|:---|
 |1|RK3399 SoC Heat Spreader|Metallic layer for reducing heat concentration|
-|2|RJ-45|Gigabit Ethernet port with [Wake-On-LAN (WOL)](/edge/HowtoUseWol.html)|
-|3|[40-Pin GPIO](/edge/CaptainGPIOPinout.html)|Learn how to access the GPIO [here](/edge/HowToAccessGpio.html)|
+|2|RJ-45|Gigabit Ethernet port with [Wake-On-LAN (WOL)](/linux/edge/HowtoUseWol.html)|
+|3|[40-Pin GPIO](/linux/edge/CaptainGPIOPinout.html)|Learn how to access the GPIO [here](/linux/edge/HowToAccessGpio.html)|
 |4|RTC Header|For connecting an external button battery for the real-time clock|
 |5|Reset Button|Forcefully reboot Edge+Captain if your system freezes|
-|6|12V DC Barrel Jack|Alternative [12V DC power input](https://www.khadas.com/product-page/captain-12v-adapter), see [power priority](/edge/EdgeCaptainPowerPriority.html)|
-|7|Micro-SD Card Slot|Boot additional OSes via [Micro-SD](/edge/UpgradeViaTFBurningCard.html), or just for extra storage|
+|6|12V DC Barrel Jack|Alternative [12V DC power input](https://www.khadas.com/product-page/captain-12v-adapter), see [power priority](/linux/edge/EdgeCaptainPowerPriority.html)|
+|7|Micro-SD Card Slot|Boot additional OSes via [Micro-SD](/linux/edge/UpgradeViaTFBurningCard.html), or just for extra storage|
 |8|Buzzer|Produces simple sounds|
 |9|Gesture Sensor|Control your Edge+Captain with a hand-wave|
 |A|IR Receiver|2-channel infrared module, for use with the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
@@ -227,28 +227,28 @@ Linux_TX|19|39|MCU_PA1
 |C|Left Game Pad|For games, use with the [Kap Case](https://www.khadas.com/product-page/kap-case)|
 |D|USIC|Legacy USB-bus, unpopular|
 |E|E-DP Display|For connecting to external displays via E-DP|
-|F|Touch Panel|For accepting [touch-input](/edge/ConnectLcd.html)|
-|G|MIPI-TX|MIPI-DSI header for connecting [LCD screens](/edge/ConnectLcd.html)|
+|F|Touch Panel|For accepting [touch-input](/linux/edge/ConnectLcd.html)|
+|G|MIPI-TX|MIPI-DSI header for connecting [LCD screens](/linux/edge/ConnectLcd.html)|
 |H|MIPI-RX/TX|Configurable MIPI-CSI/DSI header|
 |I|MIPI-RX|For connecting to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |J|3.5mm Audio Jack|Audio output, works with the [Kap Case](https://www.khadas.com/product-page/kap-case)|
-|K|Function Button|For entering [upgrade mode](/edge/HowtoBootIntoUpgradeMode.html)|
+|K|Function Button|For entering [upgrade mode](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 |L|Microphone|Audio input|
-|M|MXM3 Connector|For docking with the [Edge](https://www.khadas.com/product-page/edge)|
-|N|[Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Chip Antenna|Wi-Fi and BT antenna|
-|O|[Wi-Fi](/edge/HowToConnectWifi.html) / [Bluetooth](/edge/HowToSetupBluetooth.html) Chip Antenna|Wi-Fi and BT antenna|
+|M|MXM3 Connector|For docking with the [Edge](https://www.khadas.com/product-page/linux/edge)|
+|N|[Wi-Fi](/linux/edge/HowToConnectWifi.html) / [Bluetooth](/linux/edge/HowToSetupBluetooth.html) Chip Antenna|Wi-Fi and BT antenna|
+|O|[Wi-Fi](/linux/edge/HowToConnectWifi.html) / [Bluetooth](/linux/edge/HowToSetupBluetooth.html) Chip Antenna|Wi-Fi and BT antenna|
 |P|M3 Clearance Hole|For mounting and cases, such as the [Kap Case](https://www.khadas.com/product-page/kap-case)|
-|Q|M2 Threaded Stand-Off|For mounting the [Edge](https://www.khadas.com/product-page/edge)|
+|Q|M2 Threaded Stand-Off|For mounting the [Edge](https://www.khadas.com/product-page/linux/edge)|
 
 </div>
 <div class="tab-pane fade" id="back-captain" role="tabpanel" aria-labelledby="back-tab">
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|[M.2 Socket (PCI-E 2.1)](/edge/ListOfCompatibleNVMeSSDs.html)|Connect directly to 2280 NVMe SSDs|
+|1|[M.2 Socket (PCI-E 2.1)](/linux/edge/ListOfCompatibleNVMeSSDs.html)|Connect directly to 2280 NVMe SSDs|
 |2|External Speaker & DMIC Input FPC Connector|Connecting to an external speaker| 
-|3|[M.2 2280 Stand-Off (M2 Threaded)](/edge/ListOfCompatibleNVMeSSDs.html)|Boss for securing an SSD to the Captain|
-|4|Lithium Polymer Battery Connector|Add a [2-Cell Li-Po battery](https://www.khadas.com/product-page/lipo-battery) for portable usage, see [power priority](/edge/EdgeCaptainPowerPriority.html)|
+|3|[M.2 2280 Stand-Off (M2 Threaded)](/linux/edge/ListOfCompatibleNVMeSSDs.html)|Boss for securing an SSD to the Captain|
+|4|Lithium Polymer Battery Connector|Add a [2-Cell Li-Po battery](https://www.khadas.com/product-page/lipo-battery) for portable usage, see [power priority](/linux/edge/EdgeCaptainPowerPriority.html)|
 |5|Right Function Button|User programmable button|
 |6|Left Function Button|User programmable button|
 
@@ -258,7 +258,7 @@ Linux_TX|19|39|MCU_PA1
 |Reset|Function|Left Gamepad|Right Gamepad|Left Function|Right Function|Purpose|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---|
 |x||||||Force reboot Edge+Captain if the system freezes|
-||x|||||[Enter Upgrade Mode (TST)](/edge/HowtoBootIntoUpgradeMode.html)|
+||x|||||[Enter Upgrade Mode (TST)](/linux/edge/HowtoBootIntoUpgradeMode.html)|
 |||x||||User programmable button|
 ||||x|||User programmable button|
 |||||x||User programmable button|
@@ -307,16 +307,16 @@ Linux_TX|19|39|MCU_PA1
 </div>
 
 ## Captain + Edge
-![image](/images/edge/docs_captain_with_edge_labels.jpg)
+![image](/linux/images/edge/docs_captain_with_edge_labels.jpg)
 
 * Front (Yellow)
 ||Component|Purpose|
 |---:|:---|:---|
-|1|[314-Pin "Edge Connector"](https://www.khadas.com/product-page/edge)|Data and power interface between Edge & Captain|
+|1|[314-Pin "Edge Connector"](https://www.khadas.com/product-page/linux/edge)|Data and power interface between Edge & Captain|
 |2|RockChip RK3399 SoC|x2 1.8GHz A72, x4 1.5GHz A53|
 |3|M2x4 Screw|Use M2 screws to secure to the Captain|
-|4|[USB-C Power Delivery (5-20V)](/edge/EdgeCaptainPowerPriority.html)|USB-C power input|
-|5|[USB-C (3.0 + Display Port)](/edge/UpgradeViaUSBCable.html)|USB-C power input, and display port output|
+|4|[USB-C Power Delivery (5-20V)](/linux/edge/EdgeCaptainPowerPriority.html)|USB-C power input|
+|5|[USB-C (3.0 + Display Port)](/linux/edge/UpgradeViaUSBCable.html)|USB-C power input, and display port output|
 |6|USB-A|USB 3.0 speed|
 |7|USB-A|USB 2.0 speed|
 |9|HDMI|HDMI 2.0 and CEC|
@@ -324,7 +324,7 @@ Linux_TX|19|39|MCU_PA1
 ## Edge Power Supply
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-![image](/images/edge/usb-c_adapter_24w_2.jpg)
+![image](/linux/images/edge/usb-c_adapter_24w_2.jpg)
 
 1. Khadas USB-C 24W Power Adapter (USB Power Delivery)
 2. Khadas USB-C Cable (Male-to-Male)
@@ -334,9 +334,9 @@ These items are now available at Khadas Shop
 {% endnote %}
 
 **Learn More:**
-* [Edge+Captain Power Priority](/edge/EdgeCaptainPowerPriority.html)
-* [Khadas Edge Specifications](https://khadas.com/edge)
-* [Khadas Edge Accessories](https://www.khadas.com/edge-add-ons)
+* [Edge+Captain Power Priority](/linux/edge/EdgeCaptainPowerPriority.html)
+* [Khadas Edge Specifications](https://khadas.com/linux/edge)
+* [Khadas Edge Accessories](https://www.khadas.com/linux/edge-add-ons)
 
 ## Displays & User Input
 These items are useful when you need to connect your Edge SBC to an external display + keyboard mouse + remote control, for use as a desktop computer or media center. *Edge series SBCs have USB-C display-port capability, which allows them to connect directly to Type-C enabled 4K monitors, to exchange power, data, video, and audio over a single cable.*
@@ -366,10 +366,10 @@ These items are useful when you want to upgrade your Edge SBC's operating system
 4. 8GB or Larger, USB-Thumbdrive (U-Disk)
 
 **Learn More:**
-* [Booting Card Vs Burning Card](/edge/BootingCardVsBurningCard.html)
-* [Upgrade Using SD-Card](/edge/UpgradeViaTFBurningCard.html)
+* [Booting Card Vs Burning Card](/linux/edge/BootingCardVsBurningCard.html)
+* [Upgrade Using SD-Card](/linux/edge/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/vim2/BootFromExtMedia.html)
-* [Enter Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
+* [Enter Upgrade Mode](/linux/edge/HowtoBootIntoUpgradeMode.html)
 
 {% note info Tip %}
 * **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
@@ -385,12 +385,12 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Using USB-C Cable](/edge/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Using USB-C Cable](/linux/edge/UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](/linux/edge/HowtoBootIntoUpgradeMode.html)
 
 **Firmware Images:**
-* [Android OS](/edge/FirmwareAndroid.html)
-* [Ubuntu OS](/edge/FirmwareUbuntu.html)
+* [Android OS](/linux/edge/FirmwareAndroid.html)
+* [Ubuntu OS](/linux/edge/FirmwareUbuntu.html)
 
 ## Watching Movies, Expanding Internal eMMC Storage
 These items are useful if you wish to use your Edge-V or Edge+Captain SBC as a media center, for storing/downloading large movie files. A microSDXC UHS-I card is expensive, but its also fast enough for 4K video playback. An external NVMe M.2 socket SSD will also be large enough to contain your entire media library.
@@ -410,12 +410,12 @@ These items are useful if you wish to use your Edge-V or Edge+Captain SBC as a m
 3. USB Serial Debug Tool (For diagnosing software/hardware issues)
 
 **Learn More:**
-* [Terry's Smart Tweezers](/edge/HowtoBootIntoUpgradeMode.html)
-* [MRegister Upgrade Mode](/edge/HowtoBootIntoUpgradeMode.html)
+* [Terry's Smart Tweezers](/linux/edge/HowtoBootIntoUpgradeMode.html)
+* [MRegister Upgrade Mode](/linux/edge/HowtoBootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
 ## Edge Website
 For more information, please see our website, read more documentation, or visit our forum.
-* [Khadas Edge Homepage](https://www.khadas.com/edge)
+* [Khadas Edge Homepage](https://www.khadas.com/linux/edge)
 * [Khadas Edge Forum](https://forum.khadas.com/c/Khadas-Edge)

@@ -2,7 +2,7 @@ title: VIM1 Beginners Guide
 ---
 
 ## VIM1
-![image](/images/vim1/docs_vim1.jpg)
+![image](/linux/images/vim1/docs_vim1.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -29,26 +29,26 @@ title: VIM1 Beginners Guide
 |1|USB-A|USB 2.0 speed, 500mA max output|
 |2|RJ-45|10/100 Mbps Ethernet|
 |3|HDMI|HDMI 2.0b with 3D, HDR, CEC and HDCP 2.2|
-|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/vim1/UpgradeViaUSBCable.html)|
+|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/linux/vim1/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0 speed, 900mA max output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM1 in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/vim1/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM1|
 |A|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|RTC Battery Header|Header for attaching a battery for the real time clock|
-|C|[40-Pin GPIO](/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/vim1/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|C|[40-Pin GPIO](/linux/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/vim1/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
-|F|I-Pex [Wi-Fi](/vim1/HowToConnectWifi.html) / [Bluetooth](/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|F|I-Pex [Wi-Fi](/linux/vim1/HowToConnectWifi.html) / [Bluetooth](/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim1" role="tabpanel" aria-labelledby="back-tab">
 
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V power input|
-|2|[Micro-SD Card Slot](/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card, and for extra storage|
-|3|M-Register|Allows the EMMC to [enter MaskROM mode](/vim1/HowtoBootIntoUpgradeMode.html)|
+|2|[Micro-SD Card Slot](/linux/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card, and for extra storage|
+|3|M-Register|Allows the EMMC to [enter MaskROM mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
 |4|XPWR Pads|Connect an external power switch using these pads|
 </div>
 <div class="tab-pane fade" id="button-vim1" role="tabpanel" aria-labelledby="button-tab">
@@ -56,10 +56,10 @@ title: VIM1 Beginners Guide
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM1
-||x||[Enter Upgrade Mode (TST)](/vim1/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM1|
-|x||x|[Enter Upgrade Mode (KEYS)](/vim1/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/vim1/HowtoEraseEMMC.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](/linux/vim1/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
 
@@ -75,7 +75,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 </div>
 <div class="tab-pane fade" id="gpio-vim1" role="tabpanel" aria-labelledby="gpio-tab">
 
-![Image of Vim GPIO](/images/vim1/vim_pinout.png)
+![Image of Vim GPIO](/linux/linux/vim1/vim_pinout.png)
 </div>
 </div> 
 
@@ -90,7 +90,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 {% endnote %}
 
 ## Krescue (Khadas Rescue OS)
-![image](/images/docs_krescue_online_install.jpg)
+![image](/linux/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
 
@@ -138,7 +138,7 @@ Although your VIM1 SBC is compatible with various types of power supplies, these
 **Learn More:**
 * [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
-* [Extra Power Input For Khadas VIMs](/vim1/ExtraPowerInput.html)
+* [Extra Power Input For Khadas VIMs](/linux/vim1/ExtraPowerInput.html)
 * [Khadas VIM Specifications](https://www.khadas.com/vim)
 
 ## Displays & User Input
@@ -167,10 +167,10 @@ These items are useful when you want to upgrade your VIM1 SBC's operating system
 4. 8GB or Larger, USB-Thumbdrive (U-Disk)
 
 **Learn More:**
-* [Booting Card Vs Burning Card](/vim1/BootingCardVsBurningCard.html)
-* [Upgrade Using SD-Card](/vim1/UpgradeViaTFBurningCard.html)
-* [Boot From External Media](/vim1/BootFromExtMedia.html)
-* [Enter Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
+* [Booting Card Vs Burning Card](/linux/vim1/BootingCardVsBurningCard.html)
+* [Upgrade Using SD-Card](/linux/vim1/UpgradeViaTFBurningCard.html)
+* [Boot From External Media](/linux/vim1/BootFromExtMedia.html)
+* [Enter Upgrade Mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)
 
 **Tips:**
 * **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
@@ -185,16 +185,16 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Firmware Using USB-C Cable](/vim1/UpgradeViaUSBCable.html)
-* [Booting Into Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Firmware Using USB-C Cable](/linux/vim1/UpgradeViaUSBCable.html)
+* [Booting Into Upgrade Mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)
 
 **Firmware Images:**
-* [Android OS](/vim1/FirmwareAndroid.html)
-* [Ubuntu OS](/vim1/FirmwareUbuntu.html)
-* [LibreELEC](/vim1/FirmwareLibreelec.html)
-* [Dual OS](/vim1/FirmwareDualos.html)
-* [U-Boot](/vim1/FirmwareUboot.html)
-* [Third Party OSes](/vim1/FirmwareThirdparty.html)
+* [Android OS](/linux/vim1/FirmwareAndroid.html)
+* [Ubuntu OS](/linux/vim1/FirmwareUbuntu.html)
+* [LibreELEC](/linux/vim1/FirmwareLibreelec.html)
+* [Dual OS](/linux/vim1/FirmwareDualos.html)
+* [U-Boot](/linux/vim1/FirmwareUboot.html)
+* [Third Party OSes](/linux/vim1/FirmwareThirdparty.html)
 
 ## Software Development / Advanced Crash Recovery
 Extreme cases of crash-recovery will require you to use the MRegister to reset your VIM1 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.
@@ -203,7 +203,7 @@ Extreme cases of crash-recovery will require you to use the MRegister to reset y
 2. USB Serial Debug Tool (For diagnosing software/hardware issues)
 
 **Learn More:**
-* [MRegister Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
+* [MRegister Upgrade Mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
