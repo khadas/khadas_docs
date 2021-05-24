@@ -94,7 +94,7 @@ NoDisplay=true
 </div>
 <div class="tab-pane fade" id="ubus" role="tabpanel" aria-labelledby="ubus-tab">
 
-请参考[如何旋转framebuffer](/zh-cn/vim3/HowToRotateFramebuffer.html)
+请参考[如何旋转framebuffer](/linux/zh-cn/vim3/HowToRotateFramebuffer.html)
 
 </div>
 </div>

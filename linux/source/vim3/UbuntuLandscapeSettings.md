@@ -91,7 +91,7 @@ And please note the resolution for `landscape` mode is `1920x1088`, for `portrai
 </div>
 <div class="tab-pane fade" id="ubus" role="tabpanel" aria-labelledby="ubus-tab">
 
-Please refer to [How To Ratote Framebuffer](/vim3/HowToRotateFramebuffer.html)
+Please refer to [How To Ratote Framebuffer](/linux/vim3/HowToRotateFramebuffer.html)
 
 </div>
 </div>
