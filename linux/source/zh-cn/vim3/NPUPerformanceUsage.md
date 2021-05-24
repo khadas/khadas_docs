@@ -5,7 +5,7 @@ title: NPU性能接口说明文档
 
 ### 升级系统到最新的版本
 
-请参考文档: [升级固件到最新版本](/zh-cn/vim3/HowToUpgradeTheSystem)
+请参考文档: [升级固件到最新版本](/linux/zh-cn/vim3/HowToUpgradeTheSystem)
 
 ### 重新加载驱动模块
 
@@ -31,7 +31,7 @@ export VIV_VX_DEBUG_LEVEL=1
 ```
 ### 运行模型
 
-这里以inception为例。 [NPU Demo获取](/zh-cn/vim3/HowToRunNPUDemo.html)
+这里以inception为例。 [NPU Demo获取](/linux/zh-cn/vim3/HowToRunNPUDemo.html)
 
 ```sh
 $ aml_npu_demo_binaries/inceptionv3/VIM3$ ./run.sh
