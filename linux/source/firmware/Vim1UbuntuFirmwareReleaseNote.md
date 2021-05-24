@@ -3,7 +3,7 @@ title: Khadas VIM1 Ubuntu Firmware Release Notes
 
 {% note info For OTA Releases %}
 
-Please check [How To Upgrade The System](/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest OTA release.
+Please check [How To Upgrade The System](/linux/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest OTA release.
 
 {% endnote %}
 

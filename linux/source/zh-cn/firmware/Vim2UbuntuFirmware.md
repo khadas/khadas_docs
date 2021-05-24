@@ -1,7 +1,7 @@
 title: Khadas VIM2 Ubuntu 固件
 ---
 
-查看[Release Note](/zh-cn/firmware/Vim2UbuntuFirmwareReleaseNote.html)。
+查看[Release Note](/linux/zh-cn/firmware/Vim2UbuntuFirmwareReleaseNote.html)。
 
 ## Linux 4.9内核固件
 
@@ -120,13 +120,13 @@ VIM2仅支持主线内核**Ubuntu 20.04**。
 {% note warn EMMC安装 %}
 
 **固件用于通过Amlogic烧录工具烧录到板载eMMC。**
-查看[通过USB线烧录文档](/zh-cn/vim1/UpgradeViaUSBCable.html)。
+查看[通过USB线烧录文档](/linux/zh-cn/vim1/UpgradeViaUSBCable.html)。
 
 {% endnote %}
 
 {% note warn SD/USB安装 %}
 
 **固件用于烧录到SD/USB存储设备。**
-查看[从外部媒体介质启动文档](/zh-cn/vim1/BootFromExtMedia.html)。
-查看[把SD/USB固件写入到板载eMMC文档](/zh-cn/vim1/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC。
+查看[从外部媒体介质启动文档](/linux/zh-cn/vim1/BootFromExtMedia.html)。
+查看[把SD/USB固件写入到板载eMMC文档](/linux/zh-cn/vim1/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC。
 {% endnote %}

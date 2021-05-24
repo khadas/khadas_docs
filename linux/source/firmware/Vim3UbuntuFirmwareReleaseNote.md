@@ -3,7 +3,7 @@ title: Khadas VIM3 Ubuntu Firmware Release Notes
 
 {% note info For OTA Releases %}
 
-Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to upgrade the system to latest OTA release.
+Please check [How To Upgrade The System](/linux/vim3/HowToUpgradeTheSystem.html) to upgrade the system to latest OTA release.
 
 {% endnote %}
 

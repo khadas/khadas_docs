@@ -1,7 +1,7 @@
 title: Khadas VIM1 Ubuntu Firmware
 ---
 
-Check [Release Note](/firmware/Vim1UbuntuFirmwareReleaseNote.html).
+Check [Release Note](/linux/firmware/Vim1UbuntuFirmwareReleaseNote.html).
 
 ## Linux 4.9 Images
 
@@ -126,13 +126,13 @@ VIM1 Only support **Ubuntu 20.04** for Mainline Linux.
 {% note warn EMMC Installation %}
 
 **Images used to be flashed to onboard eMMC via Amlogic USB Burning Tool.**
-Check [Upgrade Via USB Cable Documentation](/vim1/UpgradeViaUSBCable.html).
+Check [Upgrade Via USB Cable Documentation](/linux/vim1/UpgradeViaUSBCable.html).
 
 {% endnote %}
 
 {% note warn SD/USB Installation %}
 
 **Images used to be flashed to SD/USB storage.**
-Check [Boot From Ext Media Documentation](/vim1/BootFromExtMedia.html).
-Check [Write SD Image To eMMC](/vim1/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC.
+Check [Boot From Ext Media Documentation](/linux/vim1/BootFromExtMedia.html).
+Check [Write SD Image To eMMC](/linux/vim1/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC.
 {% endnote %}
