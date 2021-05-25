@@ -35,6 +35,9 @@ $ ls
 'AMLNN Convolution Acceleration Tips.pdf'                  'Model_Transcoding and Running User Guide_V0.6.pdf'                              'NN Tool FAQ (0.1).pdf'
 'Android&Linux_Compilation and Integration Guide_0.2.pdf'  'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'
 ```
+{% note info Linux SDK %}
+All demos have been migrated to the board for compilation, and the required libraries are also pre-transferred to the board, so Linux SDK is no longer needed
+{% endnote %}
 
 The document records a series of processes from conversion to integration, as well as some common problems
 
