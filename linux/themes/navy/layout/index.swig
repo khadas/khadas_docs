@@ -115,7 +115,7 @@ img {
         <div class="column-center row">
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/images/home/vim1.jpg" alt="VIM1">
+              <img src="/linux/images/home/vim1.jpg" alt="VIM1">
               {% if page.lang == 'en' %}
               <a href="/vim1">
                 {% else %}
@@ -129,7 +129,7 @@ img {
           </div>
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/images/home/vim2.jpg" alt="VIM2">
+              <img src="/linux/images/home/vim2.jpg" alt="VIM2">
               {% if page.lang == 'en' %}
               <a href="/vim2">
                 {% else %}
@@ -143,7 +143,7 @@ img {
           </div>
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/images/home/vim3.jpg" alt="VIM3">
+              <img src="/linux/images/home/vim3.jpg" alt="VIM3">
               {% if page.lang == 'en' %}
               <a href="/vim3#VIM3">
                 {% else %}
@@ -157,7 +157,7 @@ img {
           </div>
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/images/home/vim3l.jpg" alt="VIM3L">
+              <img src="/linux/images/home/vim3l.jpg" alt="VIM3L">
               {% if page.lang == 'en' %}
               <a href="/vim3#VIM3L">
                 {% else %}
@@ -189,7 +189,7 @@ img {
         <div class="column-center row">
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/images/home/edge.jpg" alt="Edge">
+              <img src="/linux/images/home/edge.jpg" alt="Edge">
               {% if page.lang == 'en' %}
               <a href="/edge#Edge">
                 {% else %}
@@ -203,7 +203,7 @@ img {
           </div>
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/images/home/edge-v.jpg" alt="Edge-V">
+              <img src="/linux/images/home/edge-v.jpg" alt="Edge-V">
               {% if page.lang == 'en' %}
               <a href="/edge#Edge-V">
                 {% else %}
@@ -217,7 +217,7 @@ img {
           </div>
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/images/home/captain.jpg" alt="Captain">
+              <img src="/linux/images/home/captain.jpg" alt="Captain">
               {% if page.lang == 'en' %}
               <a href="/edge#Captain">
                 {% else %}
@@ -249,7 +249,7 @@ img {
         <div class="column-center row" style="display:block;">
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment">
-              <img src="/images/home/tone1.jpg" alt="TONE1">
+              <img src="/linux/images/home/tone1.jpg" alt="TONE1">
               {% if page.lang == 'en' %}
               <a href="/tone1">
                 {% else %}
