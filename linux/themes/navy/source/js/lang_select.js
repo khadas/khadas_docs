@@ -7,7 +7,7 @@
     if (lang === 'en') lang = '';
     if (lang) lang += '/';
 
-    location.href = '/{{ root }}' + lang + canonical;
+    location.href = '/linux/' + lang + canonical;
   }
 
   document.getElementById('lang-select').addEventListener('change', changeLang);
