@@ -187,6 +187,7 @@ vim3:
     how_to_add_ir: HowToAddIr.html
     how_to_use_pwm: HowToUsePwm.html
     how_to_use_recovery: HowToUseRecovery.html
+    how_to_get_gps_data: HowToGetGpsData.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
