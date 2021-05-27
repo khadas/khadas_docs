@@ -7,12 +7,10 @@ menu:
   tone1: Tone1
   hardware: Hardware
   firmware: Firmware
-  faq: FAQ
 
 index:
   get_started: Getting Started
   read_docs: READ DOCS
-  read_faqs: READ FAQs
 
 page:
   contents: Contents
