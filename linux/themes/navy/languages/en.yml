@@ -34,6 +34,8 @@ home_page:
 sidebar:
   vim1:
     quick_start: Quick Start
+    vim1_interfaces: VIM1 Interfaces
+    wifi_Usage: Wi-Fi Usage
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
@@ -45,6 +47,8 @@ sidebar:
 
   vim2:
     quick_start: Quick Start
+    vim2_interfaces: VIM2 Interfaces
+    wifi_Usage: Wi-Fi Usage
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
@@ -56,6 +60,8 @@ sidebar:
 
   vim3:
     quick_start: Quick Start
+    vim3_interfaces: VIM3 Interfaces
+    wifi_Usage: Wi-Fi Usage
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
@@ -67,6 +73,7 @@ sidebar:
 
   edge:
     quick_start: Quick Start
+    edge_interfaces: Edge Interfaces
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures

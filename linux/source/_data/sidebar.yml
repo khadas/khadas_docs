@@ -1,5 +1,7 @@
 vim1:
   quick_start:
+    vim1_interfaces: index.html
+    wifi_Usage: WifiUsageDesktopVersion.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -11,6 +13,8 @@ vim1:
 
 vim2:
   quick_start:
+    vim2_interfaces: index.html
+    wifi_Usage: WifiUsageDesktopVersion.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -22,6 +26,8 @@ vim2:
 
 vim3:
   quick_start:
+    vim3_interfaces: index.html
+    wifi_Usage: WifiUsageDesktopVersion.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -33,6 +39,7 @@ vim3:
 
 edge:
   quick_start:
+    edge_interfaces: index.html
   rescures_control:
     accessories:
     board_rescoures:
