@@ -35,6 +35,7 @@ sidebar:
     quick_start: 快速上手
     vim1_interfaces: VIM1接口描述
     wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -49,6 +50,7 @@ sidebar:
     quick_start: 快速上手
     vim2_interfaces: VIM2接口描述
     wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -63,6 +65,7 @@ sidebar:
     quick_start: 快速上手
     vim3_interfaces: VIM3接口描述
     wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -77,6 +80,7 @@ sidebar:
     quick_start: 快速上手
     edge_interfaces: Edge接口描述
     wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
