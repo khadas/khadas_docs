@@ -235,6 +235,7 @@ sidebar:
     how_to_use_pwm: How To Use Pwm
     how_to_use_recovery: How To Use Recovery
     how_to_get_gps_data: How To Get Gps Data
+    how_to_get_gsensor_data: How To Get Gsensor Data
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: Upgrade the System

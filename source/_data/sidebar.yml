@@ -188,6 +188,7 @@ vim3:
     how_to_use_pwm: HowToUsePwm.html
     how_to_use_recovery: HowToUseRecovery.html
     how_to_get_gps_data: HowToGetGpsData.html
+    how_to_get_gsensor_data: HowToGetGsensorData.html
   linux:
     fenix_script: FenixScript.html
     how_to_upgrade_the_system: HowToUpgradeTheSystem.html
