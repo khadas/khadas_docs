@@ -1,7 +1,11 @@
-title: WiFi用户手册
+title: WiFi使用说明
 ---
 
 这篇文档将介绍在桌面环境下如何使用WiFi
+
+{% note info 说明 %}
+如果你使用server版本的固件或者想通过命令行控制Wi-Fi,请参考这份文档 --> [Wi-Fi命令行使用说明](/linux/zh-cn/vim1/WifiUsageCommand.html).
+{% endnote %}
 
 
 ## 打开Wi-Fi设置
