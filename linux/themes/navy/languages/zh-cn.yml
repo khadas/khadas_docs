@@ -40,6 +40,7 @@ sidebar:
     accessories: 配件
     board_rescoures: 板载资源
     wifi_command_usage: WiFi命令使用说明
+    bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
     development: 开发
     uboot: U-boot
@@ -55,6 +56,7 @@ sidebar:
     accessories: 配件
     board_rescoures: 板载资源
     wifi_command_usage: WiFi命令使用说明
+    bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
     development: 开发
     uboot: U-boot
@@ -70,6 +72,7 @@ sidebar:
     accessories: 配件
     board_rescoures: 板载资源
     wifi_command_usage: WiFi命令使用说明
+    bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
     development: 开发
     uboot: U-boot
@@ -84,6 +87,7 @@ sidebar:
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
+    bluetooth_command_usage: 蓝牙命令使用说明
     wifi_command_usage: WiFi命令使用说明
     system_control: 系统控制
     development: 开发

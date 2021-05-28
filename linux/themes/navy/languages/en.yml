@@ -41,6 +41,7 @@ sidebar:
     accessories: Accessories
     board_rescoures: Board Rescoures
     wifi_command_usage: Wi-Fi Command Usage
+    bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot
@@ -56,6 +57,7 @@ sidebar:
     accessories: Accessories
     board_rescoures: Board Rescoures
     wifi_command_usage: Wi-Fi Command Usage
+    bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot
@@ -71,6 +73,7 @@ sidebar:
     accessories: Accessories
     board_rescoures: Board Rescoures
     wifi_command_usage: Wi-Fi Command Usage
+    bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot
@@ -86,6 +89,7 @@ sidebar:
     accessories: Accessories
     board_rescoures: Board Rescoures
     wifi_command_usage: Wi-Fi Command Usage
+    bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot

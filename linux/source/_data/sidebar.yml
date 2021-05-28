@@ -7,6 +7,7 @@ vim1:
     accessories:
     board_rescoures:
       wifi_command_usage: WifiUsageCommand.html
+      bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
   development:
     uboot:
@@ -22,6 +23,7 @@ vim2:
     accessories:
     board_rescoures:
       wifi_command_usage: WifiUsageCommand.html
+      bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
   development:
     uboot:
@@ -37,6 +39,7 @@ vim3:
     accessories:
     board_rescoures:
       wifi_command_usage: WifiUsageCommand.html
+      bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
   development:
     uboot:
@@ -52,6 +55,7 @@ edge:
     accessories:
     board_rescoures:
       wifi_command_usage: WifiUsageCommand.html
+      bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
   development:
     uboot:
