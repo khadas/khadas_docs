@@ -39,6 +39,7 @@ sidebar:
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
+    wifi_command_usage: Wi-Fi Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot
@@ -52,6 +53,7 @@ sidebar:
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
+    wifi_command_usage: Wi-Fi Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot
@@ -65,6 +67,7 @@ sidebar:
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
+    wifi_command_usage: Wi-Fi Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot
@@ -74,9 +77,11 @@ sidebar:
   edge:
     quick_start: Quick Start
     edge_interfaces: Edge Interfaces
+    wifi_Usage: Wi-Fi Usage
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
+    wifi_command_usage: Wi-Fi Command Usage
     system_control: System Control
     development: Development
     uboot: U-boot

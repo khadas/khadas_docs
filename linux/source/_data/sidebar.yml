@@ -5,6 +5,7 @@ vim1:
   rescures_control:
     accessories:
     board_rescoures:
+      wifi_command_usage: WifiUsageCommand.html
     system_control:
   development:
     uboot:
@@ -18,6 +19,7 @@ vim2:
   rescures_control:
     accessories:
     board_rescoures:
+      wifi_command_usage: WifiUsageCommand.html
     system_control:
   development:
     uboot:
@@ -31,6 +33,7 @@ vim3:
   rescures_control:
     accessories:
     board_rescoures:
+      wifi_command_usage: WifiUsageCommand.html
     system_control:
   development:
     uboot:
@@ -40,9 +43,11 @@ vim3:
 edge:
   quick_start:
     edge_interfaces: index.html
+    wifi_Usage: WifiUsageDesktopVersion.html
   rescures_control:
     accessories:
     board_rescoures:
+      wifi_command_usage: WifiUsageCommand.html
     system_control:
   development:
     uboot:
