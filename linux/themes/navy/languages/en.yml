@@ -96,6 +96,7 @@ sidebar:
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
     lte_module_usage: LTE Module Usage
+    howto_enable_M2XETH_through_overlays: M2X ETH Usage
     board_rescoures: Board Rescoures
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage

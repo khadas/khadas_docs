@@ -93,6 +93,7 @@ sidebar:
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
     lte_module_usage: LTE模块使用说明
+	howto_enable_M2XETH_through_overlays: M2X ETH使用说明
     board_rescoures: 板载资源
     system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明

@@ -62,6 +62,7 @@ vim3:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
       lte_module_usage: LTEModuleUsage.html
+      howto_enable_M2XETH_through_overlays: HowToEnableM2XETHThroughOverlays.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
