@@ -38,6 +38,7 @@ sidebar:
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
     howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
@@ -60,6 +61,7 @@ sidebar:
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
     howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
@@ -82,6 +84,7 @@ sidebar:
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
     howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
@@ -103,6 +106,8 @@ sidebar:
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
     howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
+    upgrade_via_tf_burning_card: 通过TF卡升级固件
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源

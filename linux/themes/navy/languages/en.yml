@@ -39,6 +39,7 @@ sidebar:
     bluetooth_usage: Bluetooth Usage
     hdmi_usage: HDMI resolution Setting Usage
     howto_boot_into_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
     accessories: Accessories
@@ -62,6 +63,7 @@ sidebar:
     bluetooth_usage: Bluetooth Usage
     hdmi_usage: HDMI resolution Setting Usage
     howto_boot_into_upgrade_mode: Enter Upgrade Mode 
+    upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
     accessories: Accessories
@@ -85,6 +87,7 @@ sidebar:
     bluetooth_usage: Bluetooth Usage
     hdmi_usage: HDMI resolution Setting Usage
     howto_boot_into_upgrade_mode: Enter Upgrade Mode 
+    upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
     accessories: Accessories
@@ -106,7 +109,9 @@ sidebar:
     edge_interfaces: Edge Interfaces
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
-    howto_boot_into_upgrade_mode: Enter Upgrade Mode 
+    howto_boot_into_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_USB_cable: Upgrade Via a USB-C Cable
+    upgrade_via_tf_burning_card: Upgrade Using SD Card	
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
