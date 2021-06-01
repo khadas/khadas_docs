@@ -5,6 +5,7 @@ vim1:
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
     howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    boot_from_ext_media: BootFromExtMedia.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -26,6 +27,7 @@ vim2:
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
     howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    boot_from_ext_media: BootFromExtMedia.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -47,6 +49,7 @@ vim3:
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
     howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    boot_from_ext_media: BootFromExtMedia.html
   rescures_control:
     accessories:
     board_rescoures:

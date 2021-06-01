@@ -38,6 +38,7 @@ sidebar:
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
     howto_boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -58,6 +59,7 @@ sidebar:
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
     howto_boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -78,6 +80,7 @@ sidebar:
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
     howto_boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
