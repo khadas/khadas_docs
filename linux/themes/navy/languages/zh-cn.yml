@@ -91,6 +91,7 @@ sidebar:
     rescures_control: 资源控制
     accessories: 配件
     fan_setting_usage: 风扇设置说明
+    ts050_setting: TS050配置说明
     board_rescoures: 板载资源
     system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明
@@ -114,6 +115,7 @@ sidebar:
     rescures_control: 资源控制
     accessories: 配件
     fan_setting_usage: 风扇设置说明
+    ts050_setting: TS050配置说明
     board_rescoures: 板载资源
     system_configure_usage: 系统配置文件使用说明
     bluetooth_command_usage: 蓝牙命令使用说明

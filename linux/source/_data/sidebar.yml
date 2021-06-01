@@ -60,6 +60,7 @@ vim3:
   rescures_control:
     accessories:
       fan_setting_usage: FanSettingUsage.html
+      ts050_setting: TS050Setting.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
@@ -84,6 +85,7 @@ edge:
   rescures_control:
     accessories:
       fan_setting_usage: FanSettingUsage.html
+      ts050_setting: TS050Setting.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html

@@ -94,6 +94,7 @@ sidebar:
     rescures_control: Rescoures Control
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
+    ts050_setting: TS050 Setting Usage
     board_rescoures: Board Rescoures
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
@@ -118,6 +119,7 @@ sidebar:
     rescures_control: Rescoures Control
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
+    ts050_setting: TS050 Setting Usage
     board_rescoures: Board Rescoures
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
