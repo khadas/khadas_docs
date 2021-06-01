@@ -43,6 +43,7 @@ sidebar:
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
     accessories: Accessories
+    fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
@@ -67,6 +68,7 @@ sidebar:
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
     accessories: Accessories
+    fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
@@ -91,6 +93,7 @@ sidebar:
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
     accessories: Accessories
+    fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
@@ -114,7 +117,9 @@ sidebar:
     upgrade_via_tf_burning_card: Upgrade Using SD Card	
     rescures_control: Rescoures Control
     accessories: Accessories
+    fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
+    system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control

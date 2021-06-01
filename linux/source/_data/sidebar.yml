@@ -9,6 +9,7 @@ vim1:
     boot_from_ext_media: BootFromExtMedia.html
   rescures_control:
     accessories:
+      fan_setting_usage: FanSettingUsage.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
@@ -33,6 +34,7 @@ vim2:
     boot_from_ext_media: BootFromExtMedia.html
   rescures_control:
     accessories:
+      fan_setting_usage: FanSettingUsage.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
@@ -57,6 +59,7 @@ vim3:
     boot_from_ext_media: BootFromExtMedia.html
   rescures_control:
     accessories:
+      fan_setting_usage: FanSettingUsage.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
@@ -80,7 +83,9 @@ edge:
     upgrade_via_tf_burning_card: UpgradeViaTFBurningCard.html
   rescures_control:
     accessories:
+      fan_setting_usage: FanSettingUsage.html
     board_rescoures:
+      system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:

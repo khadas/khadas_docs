@@ -42,6 +42,7 @@ sidebar:
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
+    fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
     system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明
@@ -65,6 +66,7 @@ sidebar:
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
+    fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
     system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明
@@ -88,6 +90,7 @@ sidebar:
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
     accessories: 配件
+    fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
     system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明
@@ -110,7 +113,9 @@ sidebar:
     upgrade_via_tf_burning_card: 通过TF卡升级固件
     rescures_control: 资源控制
     accessories: 配件
+    fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     wifi_command_usage: WiFi命令使用说明
     system_control: 系统控制

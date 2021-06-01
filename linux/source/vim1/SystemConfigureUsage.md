@@ -96,3 +96,49 @@ hdmi=1080p60hz
 ```
 
 Restart the system will take effect.
+
+
+## Fan Setting
+
+{% note info Only applicable to the firmware of the 4.9 kernel %}
+
+{% endnote %}
+
+### Fan level
+
+* `off` : Cooling fan is disabled.
+* `low` : Cooling fan is working at low speed mode.
+* `mid` : Coolinn fan is working at middle speed mode.
+* `high`: Cooling fan is working at high speed mode.
+* `auto`: Cooling fan is working at auto speed mode. By default, the fan speed is determined by CPU temperature.
+
+### Change Fan Level
+
+* Set cooling fan to `low` speed mode:
+
+  * Edit file `/boot/env.txt` and set `fan_mode=low`.
+
+* Set cooling fan to `mid` speed mode:
+
+  * Edit file `/boot/env.txt` and set `fan_mode=mid`.
+
+* Set cooling fan to `high` speed mode:
+
+  * Edit file `/boot/env.txt` and set `fan_mode=high`.
+
+* Set cooling fan to `auto` speed mode:
+
+  * Edit file `/boot/env.txt` and set `fan_mode=auto`.
+
+* Disable cooling fan:
+
+  * Edit file `/boot/env.txt` and set `fan_mode=off`.
+
+After edit the file, you need to save the file and reboot the board.
+
+```bash
+khadas@Khadas:~$ sync
+khadas@Khadas:~$ sudo reboot
+```
+
+
