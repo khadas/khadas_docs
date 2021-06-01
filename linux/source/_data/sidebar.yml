@@ -61,6 +61,7 @@ vim3:
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
+      lte_module_usage: LTEModuleUsage.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
@@ -86,6 +87,7 @@ edge:
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
+      lte_module_usage: LTEModuleUsage.html
     board_rescoures:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
