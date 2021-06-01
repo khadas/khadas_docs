@@ -11,6 +11,7 @@ vim1:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
+      chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
     kerenl:
@@ -29,6 +30,7 @@ vim2:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
+      chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
     kerenl:
@@ -47,6 +49,7 @@ vim3:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
+      chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
     kerenl:
@@ -63,6 +66,7 @@ edge:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
+      chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
     kerenl:

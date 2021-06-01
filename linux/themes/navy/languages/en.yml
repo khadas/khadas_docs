@@ -45,6 +45,7 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
+    chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
     kernel: Kernel
@@ -63,6 +64,7 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
+    chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
     kernel: Kernel
@@ -81,6 +83,7 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
+    chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
     kernel: Kernel
@@ -97,6 +100,7 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
+    chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
     kernel: Kernel
