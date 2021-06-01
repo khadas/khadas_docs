@@ -53,6 +53,7 @@ sidebar:
     kernel: Kernel
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
+    extra_power_input: Exter Power Input
 
   vim2:
     quick_start: Quick Start
@@ -75,6 +76,7 @@ sidebar:
     kernel: Kernel
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
+    extra_power_input: Exter Power Input
 
   vim3:
     quick_start: Quick Start
@@ -97,6 +99,7 @@ sidebar:
     kernel: Kernel
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
+    extra_power_input: Exter Power Input
 
   edge:
     quick_start: Quick Start

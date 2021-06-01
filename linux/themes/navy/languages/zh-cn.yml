@@ -51,6 +51,7 @@ sidebar:
     kernel: 内核
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
+    extra_power_input: 外部电源输入
 
   vim2:
     quick_start: 快速上手
@@ -72,6 +73,7 @@ sidebar:
     kernel: 内核
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
+    extra_power_input: 外部电源输入
 
   vim3:
     quick_start: 快速上手
@@ -93,6 +95,7 @@ sidebar:
     kernel: 内核
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
+    extra_power_input: 外部电源输入
 
   edge:
     quick_start: 快速上手

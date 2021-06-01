@@ -16,9 +16,10 @@ vim1:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
-    kerenl:
+    kernel:
     hardware:
       setup_serial_tool: SetupSerialTool.html
+      extra_power_input: ExtraPowerInput.html
 
 vim2:
   quick_start:
@@ -38,9 +39,10 @@ vim2:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
-    kerenl:
+    kernel:
     hardware:
       setup_serial_tool: SetupSerialTool.html
+      extra_power_input: ExtraPowerInput.html
 
 vim3:
   quick_start:
@@ -60,9 +62,10 @@ vim3:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
-    kerenl:
+    kernel:
     hardware:
       setup_serial_tool: SetupSerialTool.html
+      extra_power_input: ExtraPowerInput.html
 
 edge:
   quick_start:
@@ -79,7 +82,7 @@ edge:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
-    kerenl:
+    kernel:
     hardware:
       setup_serial_tool: SetupSerialTool.html
 
