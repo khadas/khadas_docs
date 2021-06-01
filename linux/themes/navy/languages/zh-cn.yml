@@ -36,9 +36,11 @@ sidebar:
     vim1_interfaces: VIM1接口描述
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
+    hdmi_usage: HDMI分辨率设置
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
@@ -52,9 +54,11 @@ sidebar:
     vim2_interfaces: VIM2接口描述
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
+    hdmi_usage: HDMI分辨率设置
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
@@ -68,9 +72,11 @@ sidebar:
     vim3_interfaces: VIM3接口描述
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
+    hdmi_usage: HDMI分辨率设置
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制

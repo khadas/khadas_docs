@@ -3,9 +3,11 @@ vim1:
     vim1_interfaces: index.html
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
+    hdmi_usage: HDMIUsage.html
   rescures_control:
     accessories:
     board_rescoures:
+      system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
@@ -19,9 +21,11 @@ vim2:
     vim2_interfaces: index.html
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
+    hdmi_usage: HDMIUsage.html
   rescures_control:
     accessories:
     board_rescoures:
+      system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:
@@ -35,9 +39,11 @@ vim3:
     vim3_interfaces: index.html
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
+    hdmi_usage: HDMIUsage.html
   rescures_control:
     accessories:
     board_rescoures:
+      system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
     system_control:

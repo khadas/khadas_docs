@@ -37,9 +37,11 @@ sidebar:
     vim1_interfaces: VIM1 Interfaces
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
+    hdmi_usage: HDMI resolution Setting Usage
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
+    system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
@@ -53,9 +55,11 @@ sidebar:
     vim2_interfaces: VIM2 Interfaces
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
+    hdmi_usage: HDMI resolution Setting Usage
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
+    system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
@@ -69,9 +73,11 @@ sidebar:
     vim3_interfaces: VIM3 Interfaces
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
+    hdmi_usage: HDMI resolution Setting Usage
     rescures_control: Rescoures Control
     accessories: Accessories
     board_rescoures: Board Rescoures
+    system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     system_control: System Control
