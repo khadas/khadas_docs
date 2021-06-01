@@ -53,6 +53,7 @@ sidebar:
     development: Development
     uboot: U-boot
     kernel: Kernel
+    system: System
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -78,6 +79,7 @@ sidebar:
     development: Development
     uboot: U-boot
     kernel: Kernel
+    system: System
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -106,6 +108,7 @@ sidebar:
     development: Development
     uboot: U-boot
     kernel: Kernel
+    system: System
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -132,6 +135,7 @@ sidebar:
     development: Development
     uboot: U-boot
     kernel: Kernel
+    system: System
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
 

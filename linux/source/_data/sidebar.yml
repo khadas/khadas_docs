@@ -19,6 +19,7 @@ vim1:
   development:
     uboot:
     kernel:
+    system:
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -44,6 +45,7 @@ vim2:
   development:
     uboot:
     kernel:
+    system:
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -72,6 +74,7 @@ vim3:
   development:
     uboot:
     kernel:
+    system:
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -98,6 +101,7 @@ edge:
   development:
     uboot:
     kernel:
+    system:
     hardware:
       setup_serial_tool: SetupSerialTool.html
 
