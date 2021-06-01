@@ -4,6 +4,7 @@ vim1:
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
+    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -16,6 +17,7 @@ vim1:
     uboot:
     kerenl:
     hardware:
+      setup_serial_tool: SetupSerialTool.html
 
 vim2:
   quick_start:
@@ -23,6 +25,7 @@ vim2:
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
+    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -35,6 +38,7 @@ vim2:
     uboot:
     kerenl:
     hardware:
+      setup_serial_tool: SetupSerialTool.html
 
 vim3:
   quick_start:
@@ -42,6 +46,7 @@ vim3:
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
+    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -54,12 +59,14 @@ vim3:
     uboot:
     kerenl:
     hardware:
+      setup_serial_tool: SetupSerialTool.html
 
 edge:
   quick_start:
     edge_interfaces: index.html
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
+    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
   rescures_control:
     accessories:
     board_rescoures:
@@ -71,6 +78,7 @@ edge:
     uboot:
     kerenl:
     hardware:
+      setup_serial_tool: SetupSerialTool.html
 
 tone1:
   getting_started:

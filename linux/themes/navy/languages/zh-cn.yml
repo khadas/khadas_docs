@@ -37,6 +37,7 @@ sidebar:
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
+    howto_boot_into_upgrade_mode: 进入升级模式
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -48,6 +49,7 @@ sidebar:
     uboot: U-boot
     kernel: 内核
     hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
 
   vim2:
     quick_start: 快速上手
@@ -55,6 +57,7 @@ sidebar:
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
+    howto_boot_into_upgrade_mode: 进入升级模式
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -66,6 +69,7 @@ sidebar:
     uboot: U-boot
     kernel: 内核
     hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
 
   vim3:
     quick_start: 快速上手
@@ -73,6 +77,7 @@ sidebar:
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
+    howto_boot_into_upgrade_mode: 进入升级模式
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -84,12 +89,14 @@ sidebar:
     uboot: U-boot
     kernel: 内核
     hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
 
   edge:
     quick_start: 快速上手
     edge_interfaces: Edge接口描述
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
+    howto_boot_into_upgrade_mode: 进入升级模式
     rescures_control: 资源控制
     accessories: 配件
     board_rescoures: 板载资源
@@ -100,6 +107,7 @@ sidebar:
     uboot: U-boot
     kernel: 内核
     hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
 
   tone1:
     getting_started: 开始使用
