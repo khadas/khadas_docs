@@ -42,6 +42,9 @@ sidebar:
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
+    system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
+    chinese_support_usage: Chinese Support Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -50,9 +53,6 @@ sidebar:
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: GPIO Usage
     howto_access_i2c: I2C Usage
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -78,6 +78,9 @@ sidebar:
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
+    system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
+    chinese_support_usage: Chinese Support Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -87,9 +90,6 @@ sidebar:
     howto_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
     howto_access_i2c: I2C Usage
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -116,6 +116,9 @@ sidebar:
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     rescures_control: Rescoures Control
+    system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
+    chinese_support_usage: Chinese Support Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -129,9 +132,6 @@ sidebar:
     howto_use_wol: WOL Usage
     howto_setup_Pcie_usb_port: PCIe/USB3.0 port Switch
     howto_access_i2c: I2C Usage
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -158,6 +158,9 @@ sidebar:
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     upgrade_via_tf_burning_card: Upgrade Using SD Card	
     rescures_control: Rescoures Control
+    system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
+    chinese_support_usage: Chinese Support Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -168,9 +171,6 @@ sidebar:
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
     development: Development
     rockchip_docs: Rockchip Docs
     uboot: U-boot

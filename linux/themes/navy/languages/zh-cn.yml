@@ -41,6 +41,9 @@ sidebar:
     upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -50,9 +53,6 @@ sidebar:
     howto_access_gpio: GPIO使用说明
     howto_access_i2c: I2C使用说明
     howto_use_wol: WOL使用说明
-    system_control: 系统控制
-    howto_upgrade_the_system: 如何升级系统
-    chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
@@ -78,6 +78,9 @@ sidebar:
     upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -87,9 +90,6 @@ sidebar:
     howto_access_gpio: GPIO使用说明
     howto_use_wol: WOL使用说明
     howto_access_i2c: I2C使用说明
-    system_control: 系统控制
-    howto_upgrade_the_system: 如何升级系统
-    chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
@@ -116,6 +116,9 @@ sidebar:
     upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
     rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -129,9 +132,6 @@ sidebar:
     howto_use_wol: WOL使用说明
     howto_access_i2c: I2C使用说明
     howto_setup_Pcie_usb_port: PCIe/USB3.0口切换
-    system_control: 系统控制
-    howto_upgrade_the_system: 如何升级系统
-    chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
     boot_from_spi_flash: 从SPI-Flash启动
@@ -158,6 +158,9 @@ sidebar:
     upgrade_via_USB_cable: 通过USB-C口升级固件
     upgrade_via_tf_burning_card: 通过TF卡升级固件
     rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -167,9 +170,6 @@ sidebar:
     bluetooth_command_usage: 蓝牙命令使用说明
     wifi_command_usage: WiFi命令使用说明
     howto_access_gpio: GPIO用法
-    system_control: 系统控制
-    howto_upgrade_the_system: 如何升级系统
-    chinese_support_usage: 中文支持说明
     development: 开发
     rockchip_docs: 瑞芯微文档
     uboot: U-boot
