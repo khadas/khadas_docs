@@ -51,6 +51,7 @@ sidebar:
     howto_access_i2c: I2C使用说明
     howto_use_wol: WOL使用说明
     system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
@@ -87,6 +88,7 @@ sidebar:
     howto_use_wol: WOL使用说明
     howto_access_i2c: I2C使用说明
     system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
@@ -128,6 +130,7 @@ sidebar:
     howto_access_i2c: I2C使用说明
     howto_setup_Pcie_usb_port: PCIe/USB3.0口切换
     system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
@@ -165,6 +168,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     howto_access_gpio: GPIO用法
     system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
     development: 开发
     rockchip_docs: 瑞芯微文档

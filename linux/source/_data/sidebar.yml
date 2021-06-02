@@ -17,6 +17,7 @@ vim1:
       howto_access_gpio: HowToAccessGpio.html
       howto_access_i2c: HowToAccessI2c.html
     system_control:
+      howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
@@ -53,6 +54,7 @@ vim2:
       howto_use_wol: HowtoUseWol.html
       howto_access_i2c: HowToAccessI2c.html
     system_control:
+      howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
@@ -94,6 +96,7 @@ vim3:
       howto_access_i2c: HowToAccessI2c.html
       howto_setup_Pcie_usb_port: HowToSetupPcieUsbPort.html
     system_control:
+      howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
@@ -132,6 +135,7 @@ edge:
       howto_access_gpio: HowToAccessGpio.html
       howto_use_wol: HowtoUseWol.html
     system_control:
+      howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
   development:
     rockchip_docs: RockchipDocs.html

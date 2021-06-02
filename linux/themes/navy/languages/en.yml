@@ -51,6 +51,7 @@ sidebar:
     howto_access_gpio: GPIO Usage
     howto_access_i2c: I2C Usage
     system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
@@ -87,6 +88,7 @@ sidebar:
     howto_use_wol: WOL Usage
     howto_access_i2c: I2C Usage
     system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
@@ -128,6 +130,7 @@ sidebar:
     howto_setup_Pcie_usb_port: PCIe/USB3.0 port Switch
     howto_access_i2c: I2C Usage
     system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
@@ -166,6 +169,7 @@ sidebar:
     howto_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
     system_control: System Control
+    howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     development: Development
     rockchip_docs: Rockchip Docs
