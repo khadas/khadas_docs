@@ -83,10 +83,12 @@ vim3:
       howto_access_gpio: HowToAccessGpio.html
       howto_use_wol: HowtoUseWol.html
       howto_access_i2c: HowToAccessI2c.html
+      howto_setup_Pcie_usb_port: HowToSetupPcieUsbPort.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
+      boot_from_spi_flash: BootFromSpiFlash.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -120,6 +122,7 @@ edge:
   development:
     rockchip_docs: RockchipDocs.html
     uboot:
+      boot_from_spi_flash: BootFromSpiFlash.html
     kernel:
     system:
       howto_erase_emmc: HowtoEraseEMMC.html

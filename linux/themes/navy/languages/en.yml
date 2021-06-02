@@ -116,11 +116,13 @@ sidebar:
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
+    howto_setup_Pcie_usb_port: PCIe/USB3.0 port Switch
     howto_access_i2c: I2C Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
+    boot_from_spi_flash: Boot From SPI-Flash
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
@@ -154,6 +156,7 @@ sidebar:
     development: Development
     rockchip_docs: Rockchip Docs
     uboot: U-boot
+    boot_from_spi_flash: Boot From SPI-Flash
     kernel: Kernel
     system: System
     howto_erase_emmc: How To Erase EMMC

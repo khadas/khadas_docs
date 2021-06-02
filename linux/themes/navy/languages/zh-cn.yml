@@ -117,10 +117,12 @@ sidebar:
     howto_access_gpio: GPIO使用说明
     howto_use_wol: WOL使用说明
     howto_access_i2c: I2C使用说明
+    howto_setup_Pcie_usb_port: PCIe/USB3.0口切换
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
+    boot_from_spi_flash: 从SPI-Flash启动
     kernel: 内核
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
@@ -153,6 +155,7 @@ sidebar:
     development: 开发
     rockchip_docs: 瑞芯微文档
     uboot: U-boot
+    boot_from_spi_flash: 从SPI-Flash启动
     kernel: 内核
     system: 系统	
     howto_erase_emmc: 如何擦除EMMC
