@@ -45,6 +45,7 @@ vim2:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
+      howto_use_wol: HowtoUseWol.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
@@ -78,6 +79,7 @@ vim3:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
+      howto_use_wol: HowtoUseWol.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
@@ -109,9 +111,11 @@ edge:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
+      howto_use_wol: HowtoUseWol.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
+    rockchip_docs: RockchipDocs.html
     uboot:
     kernel:
     system:

@@ -79,6 +79,7 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: How To Access GPIO
+    howto_use_wol: How To Use WOL
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
@@ -112,6 +113,7 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: How To Access GPIO
+    howto_use_wol: How To Use WOL
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
@@ -143,9 +145,11 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: How To Access GPIO
+    howto_use_wol: How To Use WOL
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
+    rockchip_docs: Rockchip Docs
     uboot: U-boot
     kernel: Kernel
     system: System

@@ -48,6 +48,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     howto_access_gpio: 如何连接控制GPIO
+    howto_use_wol: 如何使用WOL
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
     development: 开发
@@ -78,6 +79,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     howto_access_gpio: 如何连接控制GPIO
+    howto_use_wol: 如何使用WOL
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
     development: 开发
@@ -111,6 +113,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     howto_access_gpio: 如何连接控制GPIO
+    howto_use_wol: 如何使用WOL
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
     development: 开发
@@ -145,6 +148,7 @@ sidebar:
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
     development: 开发
+    rockchip_docs: 瑞芯微文档
     uboot: U-boot
     kernel: 内核
     system: 系统	
