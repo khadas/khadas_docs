@@ -21,6 +21,7 @@ vim1:
   development:
     uboot:
       uboot_usage: UBootUsage.html
+      setup_tftp_server: SetupTFTPServer.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -54,6 +55,7 @@ vim2:
   development:
     uboot:
       uboot_usage: UBootUsage.html
+      setup_tftp_server: SetupTFTPServer.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -92,6 +94,7 @@ vim3:
     uboot:
       uboot_usage: UBootUsage.html
       boot_from_spi_flash: BootFromSpiFlash.html
+      setup_tftp_server: SetupTFTPServer.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html

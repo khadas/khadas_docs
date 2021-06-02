@@ -55,6 +55,7 @@ sidebar:
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
+    setup_tftp_server: 搭建TFTP服务器
     kernel: 内核
     system: 系统
     create_burn_card_via_cli: 通过命令行创建烧录卡
@@ -88,6 +89,7 @@ sidebar:
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
+    setup_tftp_server: 搭建TFTP服务器
     kernel: 内核
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
@@ -125,6 +127,7 @@ sidebar:
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
+    setup_tftp_server: 搭建TFTP服务器
     boot_from_spi_flash: 从SPI-Flash启动
     kernel: 内核
     system: 系统	

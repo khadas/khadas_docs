@@ -55,6 +55,7 @@ sidebar:
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
+    setup_tftp_server: TFTP Sever for U-Boot
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
@@ -88,6 +89,7 @@ sidebar:
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
+    setup_tftp_server: TFTP Sever for U-Boot
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
@@ -125,6 +127,7 @@ sidebar:
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
+    setup_tftp_server: TFTP Sever for U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     kernel: Kernel
     system: System
