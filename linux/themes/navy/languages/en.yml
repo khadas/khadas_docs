@@ -54,6 +54,7 @@ sidebar:
     uboot: U-boot
     kernel: Kernel
     system: System
+    create_burn_card_via_cli: Create Burn Card Via CLI
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -80,6 +81,7 @@ sidebar:
     uboot: U-boot
     kernel: Kernel
     system: System
+    create_burn_card_via_cli: Create Burn Card Via CLI
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -109,6 +111,7 @@ sidebar:
     uboot: U-boot
     kernel: Kernel
     system: System
+    create_burn_card_via_cli: Create Burn Card Via CLI
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input

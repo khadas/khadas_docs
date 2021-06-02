@@ -20,6 +20,7 @@ vim1:
     uboot:
     kernel:
     system:
+      create_burn_card_via_cli: CreateBurnCardViaCLI.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -46,6 +47,7 @@ vim2:
     uboot:
     kernel:
     system:
+      create_burn_card_via_cli: CreateBurnCardViaCLI.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -75,6 +77,7 @@ vim3:
     uboot:
     kernel:
     system:
+      create_burn_card_via_cli: CreateBurnCardViaCLI.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
