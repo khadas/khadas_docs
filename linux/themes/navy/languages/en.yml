@@ -49,6 +49,7 @@ sidebar:
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: GPIO Usage
+    howto_access_i2c: I2C Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
@@ -80,6 +81,7 @@ sidebar:
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
+    howto_access_i2c: I2C Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
@@ -114,6 +116,7 @@ sidebar:
     bluetooth_command_usage: Bluetooth Command Usage
     howto_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
+    howto_access_i2c: I2C Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development

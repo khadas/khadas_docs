@@ -15,6 +15,7 @@ vim1:
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
+      howto_access_i2c: HowToAccessI2c.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
@@ -46,6 +47,7 @@ vim2:
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
       howto_use_wol: HowtoUseWol.html
+      howto_access_i2c: HowToAccessI2c.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
@@ -80,6 +82,7 @@ vim3:
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
       howto_use_wol: HowtoUseWol.html
+      howto_access_i2c: HowToAccessI2c.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:

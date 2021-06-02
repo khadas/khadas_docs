@@ -48,6 +48,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     howto_access_gpio: GPIO使用说明
+    howto_access_i2c: I2C使用说明
     howto_use_wol: WOL使用说明
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
@@ -80,6 +81,7 @@ sidebar:
     bluetooth_command_usage: 蓝牙命令使用说明
     howto_access_gpio: GPIO使用说明
     howto_use_wol: WOL使用说明
+    howto_access_i2c: I2C使用说明
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
     development: 开发
@@ -114,6 +116,7 @@ sidebar:
     bluetooth_command_usage: 蓝牙命令使用说明
     howto_access_gpio: GPIO使用说明
     howto_use_wol: WOL使用说明
+    howto_access_i2c: I2C使用说明
     system_control: 系统控制
     chinese_support_usage: 中文支持说明
     development: 开发
