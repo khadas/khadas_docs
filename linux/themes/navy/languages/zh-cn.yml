@@ -48,6 +48,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
+    chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
     kernel: 内核
@@ -76,6 +77,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
+    chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
     kernel: 内核
@@ -107,6 +109,7 @@ sidebar:
     wifi_command_usage: WiFi命令使用说明
     bluetooth_command_usage: 蓝牙命令使用说明
     system_control: 系统控制
+    chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
     kernel: 内核
@@ -136,6 +139,7 @@ sidebar:
     bluetooth_command_usage: 蓝牙命令使用说明
     wifi_command_usage: WiFi命令使用说明
     system_control: 系统控制
+    chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
     kernel: 内核
