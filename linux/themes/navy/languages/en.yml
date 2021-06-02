@@ -48,7 +48,7 @@ sidebar:
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: How To Access GPIO
+    howto_access_gpio: GPIO Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
@@ -78,8 +78,8 @@ sidebar:
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: How To Access GPIO
-    howto_use_wol: How To Use WOL
+    howto_access_gpio: GPIO Usage
+    howto_use_wol: WOL Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
@@ -112,8 +112,8 @@ sidebar:
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: How To Access GPIO
-    howto_use_wol: How To Use WOL
+    howto_access_gpio: GPIO Usage
+    howto_use_wol: WOL Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
@@ -144,8 +144,8 @@ sidebar:
     system_configure_usage: Ubuntu System configure file Usage
     wifi_command_usage: Wi-Fi Command Usage
     bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: How To Access GPIO
-    howto_use_wol: How To Use WOL
+    howto_access_gpio: GPIO Usage
+    howto_use_wol: WOL Usage
     system_control: System Control
     chinese_support_usage: Chinese Support Usage
     development: Development
