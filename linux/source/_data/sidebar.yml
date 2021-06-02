@@ -14,6 +14,7 @@ vim1:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
+      howto_access_gpio: HowToAccessGpio.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
@@ -43,6 +44,7 @@ vim2:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
+      howto_access_gpio: HowToAccessGpio.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
@@ -75,6 +77,7 @@ vim3:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
+      howto_access_gpio: HowToAccessGpio.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
@@ -105,6 +108,7 @@ edge:
       system_configure_usage: SystemConfigureUsage.html
       wifi_command_usage: WifiUsageCommand.html
       bluetooth_command_usage: BluetoothCommandUsage.html
+      howto_access_gpio: HowToAccessGpio.html
     system_control:
       chinese_support_usage: ChineseSupportUsage.html
   development:
