@@ -24,7 +24,7 @@ vim1:
       setup_tftp_server: SetupTFTPServer.html
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
     kernel:
-    system:
+    firmware&& system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
@@ -60,7 +60,7 @@ vim2:
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
       Kbi_guidance: KbiGuidance.html
     kernel:
-    system:
+    firmware&&system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
@@ -101,7 +101,7 @@ vim3:
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
       Kbi_guidance: KbiGuidance.html
     kernel:
-    system:
+    firmware&&system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
@@ -136,7 +136,7 @@ edge:
       boot_from_spi_flash: BootFromSpiFlash.html
       Kbi_guidance: KbiGuidance.html
     kernel:
-    system:
+    firmware&&system:
       howto_erase_emmc: HowtoEraseEMMC.html
     hardware:
       setup_serial_tool: SetupSerialTool.html

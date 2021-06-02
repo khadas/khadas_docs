@@ -58,7 +58,7 @@ sidebar:
     setup_tftp_server: TFTP Sever for U-Boot
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
     kernel: Kernel
-    system: System
+    firmware&&system: Firmware && System
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -94,7 +94,7 @@ sidebar:
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
     Kbi_guidance: KBI Guide
     kernel: Kernel
-    system: System
+    firmware&&system: Firmware && System
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -135,7 +135,7 @@ sidebar:
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
     Kbi_guidance: KBI Guide
     kernel: Kernel
-    system: System
+    firmware&&system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -170,7 +170,7 @@ sidebar:
     boot_from_spi_flash: Boot From SPI-Flash
     Kbi_guidance: KBI Guide
     kernel: Kernel
-    system: System
+    firmware&&system: Firmware && System
     howto_erase_emmc: How To Erase EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
