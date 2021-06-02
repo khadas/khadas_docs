@@ -92,6 +92,7 @@ sidebar:
     uboot_usage: U-Boot使用说明
     setup_tftp_server: 搭建TFTP服务器
     load_images_with_uboot_via_tftp: 通过TFTP下载镜像
+    Kbi_guidance: KBI说明
     kernel: 内核
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
@@ -128,10 +129,11 @@ sidebar:
     chinese_support_usage: 中文支持说明
     development: 开发
     uboot: U-boot
+    boot_from_spi_flash: 从SPI-Flash启动
     uboot_usage: U-Boot使用说明
     setup_tftp_server: 搭建TFTP服务器
     load_images_with_uboot_via_tftp: 通过TFTP下载镜像
-    boot_from_spi_flash: 从SPI-Flash启动
+    Kbi_guidance: KBI说明
     kernel: 内核
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
@@ -165,6 +167,7 @@ sidebar:
     rockchip_docs: 瑞芯微文档
     uboot: U-boot
     boot_from_spi_flash: 从SPI-Flash启动
+    Kbi_guidance: KBI说明
     kernel: 内核
     system: 系统	
     howto_erase_emmc: 如何擦除EMMC

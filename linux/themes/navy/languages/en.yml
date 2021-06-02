@@ -92,6 +92,7 @@ sidebar:
     uboot_usage: U-Boot Usage
     setup_tftp_server: TFTP Sever for U-Boot
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
+    Kbi_guidance: KBI Guide
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
@@ -129,9 +130,10 @@ sidebar:
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
+    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
-    boot_from_spi_flash: Boot From SPI-Flash
+    Kbi_guidance: KBI Guide
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
@@ -166,6 +168,7 @@ sidebar:
     rockchip_docs: Rockchip Docs
     uboot: U-boot
     boot_from_spi_flash: Boot From SPI-Flash
+    Kbi_guidance: KBI Guide
     kernel: Kernel
     system: System
     howto_erase_emmc: How To Erase EMMC

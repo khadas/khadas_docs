@@ -58,6 +58,7 @@ vim2:
       uboot_usage: UBootUsage.html
       setup_tftp_server: SetupTFTPServer.html
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
+      Kbi_guidance: KbiGuidance.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -98,6 +99,7 @@ vim3:
       boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
+      Kbi_guidance: KbiGuidance.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -132,6 +134,7 @@ edge:
     rockchip_docs: RockchipDocs.html
     uboot:
       boot_from_spi_flash: BootFromSpiFlash.html
+      Kbi_guidance: KbiGuidance.html
     kernel:
     system:
       howto_erase_emmc: HowtoEraseEMMC.html
