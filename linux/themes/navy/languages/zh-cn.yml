@@ -53,7 +53,8 @@ sidebar:
     kernel: 内核
     system: 系统
     create_burn_card_via_cli: 通过命令行创建烧录卡
-    create_bootable_sd_card: 通过命令行创建启动卡    
+    create_bootable_sd_card: 通过命令行创建启动卡
+    howto_erase_emmc: 如何擦除EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -81,6 +82,7 @@ sidebar:
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡    
+    howto_erase_emmc: 如何擦除EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -111,6 +113,7 @@ sidebar:
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡    
+    howto_erase_emmc: 如何擦除EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -137,6 +140,7 @@ sidebar:
     uboot: U-boot
     kernel: 内核
     system: 系统	
+    howto_erase_emmc: 如何擦除EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
 

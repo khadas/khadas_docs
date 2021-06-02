@@ -56,6 +56,7 @@ sidebar:
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
+    howto_erase_emmc: How To Erase EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -84,6 +85,7 @@ sidebar:
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
+    howto_erase_emmc: How To Erase EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -115,6 +117,7 @@ sidebar:
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
+    howto_erase_emmc: How To Erase EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -142,6 +145,7 @@ sidebar:
     uboot: U-boot
     kernel: Kernel
     system: System
+    howto_erase_emmc: How To Erase EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
 

@@ -22,6 +22,7 @@ vim1:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
+      howto_erase_emmc: HowtoEraseEMMC.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -50,6 +51,7 @@ vim2:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
+      howto_erase_emmc: HowtoEraseEMMC.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -81,6 +83,7 @@ vim3:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
+      howto_erase_emmc: HowtoEraseEMMC.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -108,6 +111,7 @@ edge:
     uboot:
     kernel:
     system:
+      howto_erase_emmc: HowtoEraseEMMC.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
 
