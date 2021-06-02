@@ -54,6 +54,7 @@ sidebar:
     chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
+    uboot_usage: U-Boot Usage
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
@@ -86,6 +87,7 @@ sidebar:
     chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
+    uboot_usage: U-Boot Usage
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
@@ -122,6 +124,7 @@ sidebar:
     chinese_support_usage: Chinese Support Usage
     development: Development
     uboot: U-boot
+    uboot_usage: U-Boot Usage
     boot_from_spi_flash: Boot From SPI-Flash
     kernel: Kernel
     system: System

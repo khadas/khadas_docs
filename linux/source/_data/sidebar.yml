@@ -20,6 +20,7 @@ vim1:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
+      uboot_usage: UBootUsage.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -52,6 +53,7 @@ vim2:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
+      uboot_usage: UBootUsage.html
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -88,6 +90,7 @@ vim3:
       chinese_support_usage: ChineseSupportUsage.html
   development:
     uboot:
+      uboot_usage: UBootUsage.html
       boot_from_spi_flash: BootFromSpiFlash.html
     kernel:
     system:
