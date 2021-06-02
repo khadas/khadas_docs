@@ -53,6 +53,7 @@ sidebar:
     kernel: 内核
     system: 系统
     create_burn_card_via_cli: 通过命令行创建烧录卡
+    create_bootable_sd_card: 通过命令行创建启动卡    
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -79,6 +80,7 @@ sidebar:
     kernel: 内核
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
+    create_bootable_sd_card: 通过命令行创建启动卡    
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -108,6 +110,7 @@ sidebar:
     kernel: 内核
     system: 系统	
     create_burn_card_via_cli: 通过命令行创建烧录卡
+    create_bootable_sd_card: 通过命令行创建启动卡    
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入

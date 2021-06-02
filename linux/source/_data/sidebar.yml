@@ -21,6 +21,7 @@ vim1:
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
+      create_bootable_sd_card: CreateBootableSDCard.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -48,6 +49,7 @@ vim2:
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
+      create_bootable_sd_card: CreateBootableSDCard.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -78,6 +80,7 @@ vim3:
     kernel:
     system:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
+      create_bootable_sd_card: CreateBootableSDCard.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html

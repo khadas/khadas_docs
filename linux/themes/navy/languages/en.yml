@@ -55,6 +55,7 @@ sidebar:
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
+    create_bootable_sd_card: Create Bootable SD Card
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -82,6 +83,7 @@ sidebar:
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
+    create_bootable_sd_card: Create Bootable SD Card
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -112,6 +114,7 @@ sidebar:
     kernel: Kernel
     system: System
     create_burn_card_via_cli: Create Burn Card Via CLI
+    create_bootable_sd_card: Create Bootable SD Card
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
