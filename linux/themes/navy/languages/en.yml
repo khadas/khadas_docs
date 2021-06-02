@@ -59,6 +59,7 @@ sidebar:
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
     kernel: Kernel
     firmware&&system: Firmware && System
+    fenix_script: Build Ubuntu/Debian Image
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -95,6 +96,7 @@ sidebar:
     Kbi_guidance: KBI Guide
     kernel: Kernel
     firmware&&system: Firmware && System
+    fenix_script: Build Ubuntu/Debian Image
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -136,6 +138,7 @@ sidebar:
     Kbi_guidance: KBI Guide
     kernel: Kernel
     firmware&&system: System
+    fenix_script: Build Ubuntu/Debian Image
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -171,6 +174,7 @@ sidebar:
     Kbi_guidance: KBI Guide
     kernel: Kernel
     firmware&&system: Firmware && System
+    fenix_script: Build Ubuntu/Debian Image
     howto_erase_emmc: How To Erase EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage

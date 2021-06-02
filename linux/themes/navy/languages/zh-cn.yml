@@ -59,6 +59,7 @@ sidebar:
     load_images_with_uboot_via_tftp: 通过TFTP下载镜像
     kernel: 内核
     firmware&&system: 固件&&系统
+    fenix_script: 编译Ubuntu/Debian固件
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
@@ -95,6 +96,7 @@ sidebar:
     Kbi_guidance: KBI说明
     kernel: 内核
     firmware&&system: 固件&&系统
+    fenix_script: 编译Ubuntu/Debian固件
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
@@ -136,6 +138,7 @@ sidebar:
     Kbi_guidance: KBI说明
     kernel: 内核
     firmware&&system: 固件&&系统	
+    fenix_script: 编译Ubuntu/Debian固件
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
@@ -170,6 +173,7 @@ sidebar:
     Kbi_guidance: KBI说明
     kernel: 内核
     firmware&&system: 固件&&系统	
+    fenix_script: 编译Ubuntu/Debian固件
     howto_erase_emmc: 如何擦除EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明

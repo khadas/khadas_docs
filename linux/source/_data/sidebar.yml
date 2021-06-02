@@ -25,6 +25,7 @@ vim1:
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
     kernel:
     firmware&& system:
+      fenix_script: FenixScript.html
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
@@ -61,6 +62,7 @@ vim2:
       Kbi_guidance: KbiGuidance.html
     kernel:
     firmware&&system:
+      fenix_script: FenixScript.html
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
@@ -102,6 +104,7 @@ vim3:
       Kbi_guidance: KbiGuidance.html
     kernel:
     firmware&&system:
+      fenix_script: FenixScript.html
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
@@ -137,6 +140,7 @@ edge:
       Kbi_guidance: KbiGuidance.html
     kernel:
     firmware&&system:
+      fenix_script: FenixScript.html
       howto_erase_emmc: HowtoEraseEMMC.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
