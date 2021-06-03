@@ -21,6 +21,7 @@ vim1:
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
       howto_access_i2c: HowToAccessI2c.html
+      howto_use_wiringpi: HowToUseWiringPi.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -61,6 +62,7 @@ vim2:
       howto_access_gpio: HowToAccessGpio.html
       howto_use_wol: HowtoUseWol.html
       howto_access_i2c: HowToAccessI2c.html
+      howto_use_wiringpi: HowToUseWiringPi.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -106,6 +108,7 @@ vim3:
       howto_use_wol: HowtoUseWol.html
       howto_access_i2c: HowToAccessI2c.html
       howto_setup_Pcie_usb_port: HowToSetupPcieUsbPort.html
+      howto_use_wiringpi: HowToUseWiringPi.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -146,6 +149,7 @@ edge:
       bluetooth_command_usage: BluetoothCommandUsage.html
       howto_access_gpio: HowToAccessGpio.html
       howto_use_wol: HowtoUseWol.html
+      howto_use_wiringpi: HowToUseWiringPi.html
   development:
     rockchip_docs: RockchipDocs.html
     uboot:

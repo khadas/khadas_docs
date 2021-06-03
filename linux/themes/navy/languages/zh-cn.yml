@@ -54,7 +54,7 @@ sidebar:
     bluetooth_command_usage: 蓝牙命令使用说明
     howto_access_gpio: GPIO使用说明
     howto_access_i2c: I2C使用说明
-    howto_use_wol: WOL使用说明
+    howto_use_wiringpi: WiringPi使用说明
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
@@ -95,6 +95,7 @@ sidebar:
     howto_access_gpio: GPIO使用说明
     howto_use_wol: WOL使用说明
     howto_access_i2c: I2C使用说明
+    howto_use_wiringpi: WiringPi使用说明
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
@@ -140,6 +141,7 @@ sidebar:
     howto_use_wol: WOL使用说明
     howto_access_i2c: I2C使用说明
     howto_setup_Pcie_usb_port: PCIe/USB3.0口切换
+    howto_use_wiringpi: WiringPi使用说明
     development: 开发
     uboot: U-boot
     boot_from_spi_flash: 从SPI-Flash启动
@@ -179,6 +181,7 @@ sidebar:
     bluetooth_command_usage: 蓝牙命令使用说明
     wifi_command_usage: WiFi命令使用说明
     howto_access_gpio: GPIO用法
+    howto_use_wiringpi: WiringPi使用说明
     development: 开发
     rockchip_docs: 瑞芯微文档
     uboot: U-boot
