@@ -56,6 +56,7 @@ sidebar:
     howto_access_gpio: GPIO Usage
     howto_access_i2c: I2C Usage
     howto_use_wiringpi: WiringPi Usage
+    howto_use_wiringpi-python: WiringPi-Python Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -97,6 +98,7 @@ sidebar:
     howto_use_wol: WOL Usage
     howto_access_i2c: I2C Usage
     howto_use_wiringpi: WiringPi Usage
+    howto_use_wiringpi-python: WiringPi-Python Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -143,6 +145,7 @@ sidebar:
     howto_setup_Pcie_usb_port: PCIe/USB3.0 port Switch
     howto_access_i2c: I2C Usage
     howto_use_wiringpi: WiringPi Usage
+    howto_use_wiringpi-python: WiringPi-Python Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -184,6 +187,7 @@ sidebar:
     howto_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
     howto_use_wiringpi: WiringPi Usage
+    howto_use_wiringpi-python: WiringPi-Python Usage
     development: Development
     rockchip_docs: Rockchip Docs
     uboot: U-boot

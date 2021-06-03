@@ -22,6 +22,7 @@ vim1:
       howto_access_gpio: HowToAccessGpio.html
       howto_access_i2c: HowToAccessI2c.html
       howto_use_wiringpi: HowToUseWiringPi.html
+      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -63,6 +64,7 @@ vim2:
       howto_use_wol: HowtoUseWol.html
       howto_access_i2c: HowToAccessI2c.html
       howto_use_wiringpi: HowToUseWiringPi.html
+      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -109,6 +111,7 @@ vim3:
       howto_access_i2c: HowToAccessI2c.html
       howto_setup_Pcie_usb_port: HowToSetupPcieUsbPort.html
       howto_use_wiringpi: HowToUseWiringPi.html
+      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -150,6 +153,7 @@ edge:
       howto_access_gpio: HowToAccessGpio.html
       howto_use_wol: HowtoUseWol.html
       howto_use_wiringpi: HowToUseWiringPi.html
+      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
   development:
     rockchip_docs: RockchipDocs.html
     uboot:
