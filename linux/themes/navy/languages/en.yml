@@ -45,6 +45,7 @@ sidebar:
     system_control: System Control
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
+    howto_setup_watchdog: Watchdog Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -61,6 +62,7 @@ sidebar:
     kernel: Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
+    install_docker: DOcker installation
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -81,6 +83,7 @@ sidebar:
     system_control: System Control
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
+    howto_setup_watchdog: Watchdog Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -99,6 +102,7 @@ sidebar:
     kernel: Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
+    install_docker: DOcker installation
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -119,6 +123,7 @@ sidebar:
     system_control: System Control
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
+    howto_setup_watchdog: Watchdog Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -142,6 +147,7 @@ sidebar:
     kernel: Kernel
     firmware&&system: System
     fenix_script: Build Ubuntu/Debian Image
+    install_docker: DOcker installation
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
@@ -179,6 +185,7 @@ sidebar:
     kernel: Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
+    install_docker: DOcker installation
     howto_erase_emmc: How To Erase EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage

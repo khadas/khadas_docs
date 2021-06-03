@@ -44,6 +44,7 @@ sidebar:
     system_control: 系统控制
     howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
+    howto_setup_watchdog: Watchdog使用说明
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -61,6 +62,7 @@ sidebar:
     kernel: 内核
     firmware&&system: 固件&&系统
     fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
@@ -81,6 +83,7 @@ sidebar:
     system_control: 系统控制
     howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
+    howto_setup_watchdog: Watchdog使用说明
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -99,6 +102,7 @@ sidebar:
     kernel: 内核
     firmware&&system: 固件&&系统
     fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
@@ -119,6 +123,7 @@ sidebar:
     system_control: 系统控制
     howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
+    howto_setup_watchdog: Watchdog使用说明
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -142,6 +147,7 @@ sidebar:
     kernel: 内核
     firmware&&system: 固件&&系统	
     fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
@@ -178,6 +184,7 @@ sidebar:
     kernel: 内核
     firmware&&system: 固件&&系统	
     fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
     howto_erase_emmc: 如何擦除EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
