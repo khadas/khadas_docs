@@ -141,4 +141,34 @@ khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```
 
+## Framebuffer Rotate
+
+### Check related configuration
+
+```sh
+khadas@Khadas:~$ cat /boot/env.txt | grep "fb_rotate"
+fb_rotate=0
+```
+
+### Change setting
+
+Rotate 90 degrees,
+
+```sh
+khadas@Khadas:~$ sudo vim /boot/env.txt
+[sudo] password for khadas:
+```
+
+`fb_rotate=0` change to `fb_rotate=1`.
+
+### Confirm that the modification is successful and restart the system
+
+```sh
+khadas@Khadas:~$ cat /boot/env.txt | grep "fb_rotate"
+fb_rotate=1
+khadas@Khadas:~$ sync
+khadas@Khadas:~$ sudo reboot
+```
+
+After restarting, you will see the framebuffer console rotated 90 degrees.
 

@@ -12,6 +12,7 @@ vim1:
       howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
       howto_setup_watchdog: HowToSetupWatchdog.html
+      howto_rotate_framebuffer: HowToRotateFramebuffer.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -50,6 +51,7 @@ vim2:
       howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
       howto_setup_watchdog: HowToSetupWatchdog.html
+      howto_rotate_framebuffer: HowToRotateFramebuffer.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -90,6 +92,7 @@ vim3:
       howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
       howto_setup_watchdog: HowToSetupWatchdog.html
+      howto_rotate_framebuffer: HowToRotateFramebuffer.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html

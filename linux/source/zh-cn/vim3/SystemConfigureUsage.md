@@ -143,4 +143,35 @@ khadas@Khadas:~$ sudo reboot
 ```
 
 
+## Framebuffer旋转设置
+
+### 查看相关配置
+
+```sh
+khadas@Khadas:~$ cat /boot/env.txt | grep "fb_rotate"
+fb_rotate=0
+``` 
+
+### 修改配置
+
+
+旋转90度：
+
+```sh
+khadas@Khadas:~$ sudo vim /boot/env.txt
+[sudo] password for khadas:
+```
+
+`fb_rotate=0`修改为`fb_rotate=1`。 
+
+### 确认修改时候成功并重启
+
+```sh
+khadas@Khadas:~$ cat /boot/env.txt | grep "fb_rotate"
+fb_rotate=1 
+khadas@Khadas:~$ sync
+khadas@Khadas:~$ sudo reboot
+```
+
+重启以后就会看到framebuffer console旋转了90度。
 

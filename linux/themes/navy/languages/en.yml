@@ -46,6 +46,7 @@ sidebar:
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     howto_setup_watchdog: Watchdog Usage
+    howto_rotate_framebuffer: FrameBuffer Rotation
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -84,6 +85,7 @@ sidebar:
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     howto_setup_watchdog: Watchdog Usage
+    howto_rotate_framebuffer: FrameBuffer Rotation
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -124,6 +126,7 @@ sidebar:
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     howto_setup_watchdog: Watchdog Usage
+    howto_rotate_framebuffer: FrameBuffer Rotation
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
