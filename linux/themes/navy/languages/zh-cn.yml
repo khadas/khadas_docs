@@ -61,6 +61,7 @@ sidebar:
     uboot_usage: U-Boot使用说明
     setup_tftp_server: 搭建TFTP服务器
     load_images_with_uboot_via_tftp: 通过TFTP下载镜像
+    howto_upgrade_the_uboot: 更新U-Boot
     kernel: 内核
     firmware&&system: 固件&&系统
     fenix_script: 编译Ubuntu/Debian固件
@@ -104,6 +105,7 @@ sidebar:
     setup_tftp_server: 搭建TFTP服务器
     load_images_with_uboot_via_tftp: 通过TFTP下载镜像
     Kbi_guidance: KBI说明
+    howto_upgrade_the_uboot: 更新U-Boot
     kernel: 内核
     firmware&&system: 固件&&系统
     fenix_script: 编译Ubuntu/Debian固件
@@ -151,6 +153,7 @@ sidebar:
     uboot_usage: U-Boot使用说明
     setup_tftp_server: 搭建TFTP服务器
     load_images_with_uboot_via_tftp: 通过TFTP下载镜像
+    howto_upgrade_the_uboot: 更新U-Boot
     Kbi_guidance: KBI说明
     kernel: 内核
     firmware&&system: 固件&&系统	
@@ -191,6 +194,7 @@ sidebar:
     uboot: U-boot
     boot_from_spi_flash: 从SPI-Flash启动
     Kbi_guidance: KBI说明
+    howto_upgrade_the_uboot: 更新U-Boot
     kernel: 内核
     firmware&&system: 固件&&系统	
     fenix_script: 编译Ubuntu/Debian固件

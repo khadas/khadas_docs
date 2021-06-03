@@ -28,6 +28,7 @@ vim1:
       uboot_usage: UBootUsage.html
       setup_tftp_server: SetupTFTPServer.html
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
+      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
     firmware&& system:
       fenix_script: FenixScript.html
@@ -71,6 +72,7 @@ vim2:
       setup_tftp_server: SetupTFTPServer.html
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
       Kbi_guidance: KbiGuidance.html
+      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
     firmware&&system:
       fenix_script: FenixScript.html
@@ -119,6 +121,7 @@ vim3:
       setup_tftp_server: SetupTFTPServer.html
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
       Kbi_guidance: KbiGuidance.html
+      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
     firmware&&system:
       fenix_script: FenixScript.html
@@ -159,6 +162,7 @@ edge:
     uboot:
       boot_from_spi_flash: BootFromSpiFlash.html
       Kbi_guidance: KbiGuidance.html
+      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
     firmware&&system:
       fenix_script: FenixScript.html

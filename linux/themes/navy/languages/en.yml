@@ -62,6 +62,7 @@ sidebar:
     uboot_usage: U-Boot Usage
     setup_tftp_server: TFTP Sever for U-Boot
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
+    howto_upgrade_the_uboot: Upgrade U-Boot
     kernel: Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
@@ -104,6 +105,7 @@ sidebar:
     uboot_usage: U-Boot Usage
     setup_tftp_server: TFTP Sever for U-Boot
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
+    howto_upgrade_the_uboot: Upgrade U-Boot
     Kbi_guidance: KBI Guide
     kernel: Kernel
     firmware&&system: Firmware && System
@@ -152,6 +154,7 @@ sidebar:
     boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
+    howto_upgrade_the_uboot: Upgrade U-Boot
     Kbi_guidance: KBI Guide
     kernel: Kernel
     firmware&&system: System
@@ -193,6 +196,7 @@ sidebar:
     uboot: U-boot
     boot_from_spi_flash: Boot From SPI-Flash
     Kbi_guidance: KBI Guide
+    howto_upgrade_the_uboot: Upgrade U-Boot
     kernel: Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
