@@ -17,6 +17,9 @@ vim1:
       display_ubuntu_logo: DisplayUbuntuLogo.html
       howto_change_boot_logo: HowToChangeBootLogo.html
       howto_custom_mac: HowToCustomMac.html
+      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
+      howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
+      howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -48,6 +51,7 @@ vim1:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
+      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -71,6 +75,9 @@ vim2:
       display_ubuntu_logo: DisplayUbuntuLogo.html
       howto_change_boot_logo: HowToChangeBootLogo.html
       howto_custom_mac: HowToCustomMac.html
+      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
+      howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
+      howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -104,6 +111,7 @@ vim2:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
+      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -128,6 +136,9 @@ vim3:
       display_ubuntu_logo: DisplayUbuntuLogo.html
       howto_change_boot_logo: HowToChangeBootLogo.html
       howto_custom_mac: HowToCustomMac.html
+      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
+      howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
+      howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
@@ -166,6 +177,7 @@ vim3:
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
       create_bootable_sd_card: CreateBootableSDCard.html
       howto_erase_emmc: HowtoEraseEMMC.html
+      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -184,6 +196,7 @@ edge:
       chinese_support_usage: ChineseSupportUsage.html
       how_to_set_auto_login: HowToSetAutoLogin.html
       display_ubuntu_logo: DisplayUbuntuLogo.html
+      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
@@ -211,6 +224,7 @@ edge:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
       howto_erase_emmc: HowtoEraseEMMC.html
+      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
     hardware:
       setup_serial_tool: SetupSerialTool.html
 

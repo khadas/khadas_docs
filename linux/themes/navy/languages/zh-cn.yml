@@ -50,6 +50,9 @@ sidebar:
     display_ubuntu_logo: 显示/关闭Ubuntu logo
     howto_change_boot_logo: 修改启动logo
     howto_custom_mac: 自定义MAC地址设置
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
+    howto_use_hardware_decoding_library: 硬件解码库使用
+    howto_use_hardware_encoding_library: 硬件编码库使用
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -81,6 +84,7 @@ sidebar:
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -104,6 +108,9 @@ sidebar:
     display_ubuntu_logo: 显示/关闭Ubuntu logo
     howto_change_boot_logo: 修改启动logo
     howto_custom_mac: 自定义MAC地址设置
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
+    howto_use_hardware_decoding_library: 硬件解码库使用
+    howto_use_hardware_encoding_library: 硬件编码库使用
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -137,6 +144,7 @@ sidebar:
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -161,6 +169,9 @@ sidebar:
     display_ubuntu_logo: 显示/关闭Ubuntu logo
     howto_change_boot_logo: 修改启动logo
     howto_custom_mac: 自定义MAC地址设置
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
+    howto_use_hardware_decoding_library: 硬件解码库使用
+    howto_use_hardware_encoding_library: 硬件编码库使用
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -199,6 +210,7 @@ sidebar:
     create_burn_card_via_cli: 通过命令行创建烧录卡
     create_bootable_sd_card: 通过命令行创建启动卡
     howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
     extra_power_input: 外部电源输入
@@ -217,6 +229,7 @@ sidebar:
     chinese_support_usage: 中文支持说明
     how_to_set_auto_login: 自动登录设置
     display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -243,6 +256,7 @@ sidebar:
     fenix_script: 编译Ubuntu/Debian固件
     install_docker: Docker安装
     howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
     hardware: 硬件
     setup_serial_tool: 串口工具使用说明
 

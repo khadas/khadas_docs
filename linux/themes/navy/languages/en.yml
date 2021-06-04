@@ -51,6 +51,9 @@ sidebar:
     display_ubuntu_logo: Enable/Disable Ubuntu Logo
     howto_change_boot_logo: Change Boot Logo
     howto_custom_mac: howto_Custom MAC Address Setup
+    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
+    howto_use_hardware_decoding_library: Hardware Decoding Library Usage
+    howto_use_hardware_encoding_library: Hardware Encoding Library Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -82,6 +85,7 @@ sidebar:
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
+    howto_write_sd_image_to_emmc: Write SD Image To EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -105,6 +109,9 @@ sidebar:
     display_ubuntu_logo: Enable/Disable Ubuntu Logo
     howto_change_boot_logo: Change Boot Logo
     howto_custom_mac: howto_Custom MAC Address Setup
+    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
+    howto_use_hardware_decoding_library: Hardware Decoding Library Usage
+    howto_use_hardware_encoding_library: Hardware Encoding Library Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -138,6 +145,7 @@ sidebar:
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
+    howto_write_sd_image_to_emmc: Write SD Image To EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -162,6 +170,9 @@ sidebar:
     display_ubuntu_logo: Enable/Disable Ubuntu Logo
     howto_change_boot_logo: Change Boot Logo
     howto_custom_mac: howto_Custom MAC Address Setup
+    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
+    howto_use_hardware_decoding_library: Hardware Decoding Library Usage
+    howto_use_hardware_encoding_library: Hardware Encoding Library Usage
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -200,6 +211,7 @@ sidebar:
     create_burn_card_via_cli: Create Burn Card Via CLI
     create_bootable_sd_card: Create Bootable SD Card
     howto_erase_emmc: How To Erase EMMC
+    howto_write_sd_image_to_emmc: Write SD Image To EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
     extra_power_input: Exter Power Input
@@ -218,6 +230,7 @@ sidebar:
     chinese_support_usage: Chinese Support Usage
     how_to_set_auto_login: Auto Login
     display_ubuntu_logo: Enable/Disable Ubuntu Logo
+    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -245,6 +258,7 @@ sidebar:
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation
     howto_erase_emmc: How To Erase EMMC
+    howto_write_sd_image_to_emmc: Write SD Image To EMMC
     hardware: Hardware
     setup_serial_tool: Serial Tool Usage
 
