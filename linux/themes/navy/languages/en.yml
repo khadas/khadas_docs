@@ -66,6 +66,7 @@ sidebar:
     howto_control_led: LED Usage
     howto_test_gpioirq: GPIO IRQ dmeo
     howto_use_1wire: One Wire Usage
+    howto_custom_ir_code_to_boot: Custom IR Code Setup
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -74,6 +75,7 @@ sidebar:
     howto_upgrade_the_uboot: Upgrade U-Boot
     kernel: Kernel
     how_to_upgrade_the_kernel: How To Upgrade The Kernel
+    howto_use_device_tree_overlay: Device Tree Overlay Usage
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation
@@ -119,6 +121,7 @@ sidebar:
     howto_control_led: LED Usage
     howto_test_gpioirq: GPIO IRQ dmeo
     howto_use_1wire: One Wire Usage
+    howto_custom_ir_code_to_boot: Custom IR Code Setup
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -128,6 +131,7 @@ sidebar:
     Kbi_guidance: KBI Guide
     kernel: Kernel
     how_to_upgrade_the_kernel: How To Upgrade The Kernel
+    howto_use_device_tree_overlay: Device Tree Overlay Usage
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation
@@ -178,6 +182,7 @@ sidebar:
     howto_control_led: LED Usage
     howto_test_gpioirq: GPIO IRQ dmeo
     howto_use_1wire: One Wire Usage
+    howto_custom_ir_code_to_boot: Custom IR Code Setup
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -188,6 +193,7 @@ sidebar:
     Kbi_guidance: KBI Guide
     kernel: Kernel
     how_to_upgrade_the_kernel: How To Upgrade The Kernel
+    howto_use_device_tree_overlay: Device Tree Overlay Usage
     firmware&&system: System
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation

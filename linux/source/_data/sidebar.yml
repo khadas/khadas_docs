@@ -32,6 +32,7 @@ vim1:
       howto_control_led: HowToControlLED.html
       howto_test_gpioirq: HowToTestGPIOIRQ.html
       howto_use_1wire: HowToUse1wire.html
+      howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -40,6 +41,7 @@ vim1:
       howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
       how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
+      howto_use_device_tree_overlay: HowToUseDeviceTreeOverlay.html
     firmware&&system:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
@@ -85,6 +87,7 @@ vim2:
       howto_control_led: HowToControlLED.html
       howto_test_gpioirq: HowToTestGPIOIRQ.html
       howto_use_1wire: HowToUse1wire.html
+      howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -94,6 +97,7 @@ vim2:
       howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
       how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
+      howto_use_device_tree_overlay: HowToUseDeviceTreeOverlay.html
     firmware&&system:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
@@ -144,6 +148,7 @@ vim3:
       howto_control_led: HowToControlLED.html
       howto_test_gpioirq: HowToTestGPIOIRQ.html
       howto_use_1wire: HowToUse1wire.html
+      howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -154,6 +159,7 @@ vim3:
       howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
       how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
+      howto_use_device_tree_overlay: HowToUseDeviceTreeOverlay.html
     firmware&&system:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
