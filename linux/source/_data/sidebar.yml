@@ -20,6 +20,7 @@ vim1:
       howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
       howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
       howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
+      how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -78,6 +79,7 @@ vim2:
       howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
       howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
       howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
+      how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -139,6 +141,10 @@ vim3:
       howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
       howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
       howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
+      how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
+      SDL2_usage: SDL2Usage.html
+      PPSSPP_usage: PPSSPPUsage.html
+      qt5_usage: QT5Usage.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html

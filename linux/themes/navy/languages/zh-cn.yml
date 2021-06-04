@@ -53,6 +53,7 @@ sidebar:
     howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
     howto_use_hardware_decoding_library: 硬件解码库使用
     howto_use_hardware_encoding_library: 硬件编码库使用
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -111,6 +112,7 @@ sidebar:
     howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
     howto_use_hardware_decoding_library: 硬件解码库使用
     howto_use_hardware_encoding_library: 硬件编码库使用
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -172,6 +174,10 @@ sidebar:
     howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
     howto_use_hardware_decoding_library: 硬件解码库使用
     howto_use_hardware_encoding_library: 硬件编码库使用
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    SDL2_usage: SDL2 Mail使用说明
+    PPSSPP_usage: PPSSPP使用说明
+    qt5_usage: Qt5的使用
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
