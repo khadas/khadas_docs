@@ -236,6 +236,7 @@ sidebar:
     how_to_get_gps_data: 如何获取gps数据
     how_to_get_gsensor_data: 如何获取gsensor数据
     how_to_use_android_npu_demo: 如何使用安卓npu demo
+    how_to_use_settings_command: 如何使用Settings命令
     linux: Linux
     fenix_script: 编译Ubuntu/Debian固件
     how_to_upgrade_the_system: 系统升级
