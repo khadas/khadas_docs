@@ -38,6 +38,7 @@ sidebar:
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
     hdmi_usage: HDMI resolution Setting Usage
+    overview: Overview
     howto_boot_into_upgrade_mode: Enter Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
@@ -55,6 +56,7 @@ sidebar:
     howto_use_hardware_decoding_library: Hardware Decoding Library Usage
     howto_use_hardware_encoding_library: Hardware Encoding Library Usage
     how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -97,6 +99,7 @@ sidebar:
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
     hdmi_usage: HDMI resolution Setting Usage
+    overview: Overview
     howto_boot_into_upgrade_mode: Enter Upgrade Mode 
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
@@ -114,6 +117,7 @@ sidebar:
     howto_use_hardware_decoding_library: Hardware Decoding Library Usage
     howto_use_hardware_encoding_library: Hardware Encoding Library Usage
     how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -158,6 +162,7 @@ sidebar:
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
     hdmi_usage: HDMI resolution Setting Usage
+    overview: Overview
     howto_boot_into_upgrade_mode: Enter Upgrade Mode 
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
@@ -176,6 +181,7 @@ sidebar:
     howto_use_hardware_decoding_library: Hardware Decoding Library Usage
     howto_use_hardware_encoding_library: Hardware Encoding Library Usage
     how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
     SDL2_usage: SDL2 Mail Usage
     PPSSPP_usage: PPSSPP Instructions
     qt5_usage: QT5 Usage
@@ -227,6 +233,7 @@ sidebar:
     edge_interfaces: Edge Interfaces
     wifi_Usage: Wi-Fi Usage
     bluetooth_usage: Bluetooth Usage
+    overview: Overview
     howto_boot_into_upgrade_mode: Enter Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     upgrade_via_tf_burning_card: Upgrade Using SD Card	

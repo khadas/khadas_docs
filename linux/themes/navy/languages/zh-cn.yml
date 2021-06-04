@@ -37,6 +37,7 @@ sidebar:
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
+    overview: 概述
     howto_boot_into_upgrade_mode: 进入升级模式
     upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
@@ -54,6 +55,7 @@ sidebar:
     howto_use_hardware_decoding_library: 硬件解码库使用
     howto_use_hardware_encoding_library: 硬件编码库使用
     how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP模式设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -96,6 +98,7 @@ sidebar:
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
+    overview: 概述
     howto_boot_into_upgrade_mode: 进入升级模式
     upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
@@ -113,6 +116,7 @@ sidebar:
     howto_use_hardware_decoding_library: 硬件解码库使用
     howto_use_hardware_encoding_library: 硬件编码库使用
     how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP模式设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -157,6 +161,7 @@ sidebar:
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
     hdmi_usage: HDMI分辨率设置
+    overview: 概述
     howto_boot_into_upgrade_mode: 进入升级模式
     upgrade_via_USB_cable: 通过USB-C口升级固件
     boot_from_ext_media: 从外部介质启动
@@ -175,6 +180,7 @@ sidebar:
     howto_use_hardware_decoding_library: 硬件解码库使用
     howto_use_hardware_encoding_library: 硬件编码库使用
     how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP模式设置
     SDL2_usage: SDL2 Mail使用说明
     PPSSPP_usage: PPSSPP使用说明
     qt5_usage: Qt5的使用
@@ -226,6 +232,7 @@ sidebar:
     edge_interfaces: Edge接口描述
     wifi_Usage: Wi-Fi使用说明
     bluetooth_usage: 蓝牙使用说明
+    overview: 概述
     howto_boot_into_upgrade_mode: 进入升级模式
     upgrade_via_USB_cable: 通过USB-C口升级固件
     upgrade_via_tf_burning_card: 通过TF卡升级固件

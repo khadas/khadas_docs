@@ -4,6 +4,7 @@ vim1:
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
+    overview: overview.html
     howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_USB_cable: UpgradeViaUSBCable.html
     boot_from_ext_media: BootFromExtMedia.html
@@ -37,6 +38,7 @@ vim1:
       howto_test_gpioirq: HowToTestGPIOIRQ.html
       howto_use_1wire: HowToUse1wire.html
       howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
+      howto_configure_wi-fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -63,6 +65,7 @@ vim2:
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
+    overview: overview.html
     howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_USB_cable: UpgradeViaUSBCable.html
     boot_from_ext_media: BootFromExtMedia.html
@@ -80,6 +83,7 @@ vim2:
       howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
       howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
       how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
+      howto_configure_wi-fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -124,6 +128,7 @@ vim3:
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
     hdmi_usage: HDMIUsage.html
+    overview: overview.html
     howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_USB_cable: UpgradeViaUSBCable.html
     boot_from_ext_media: BootFromExtMedia.html
@@ -142,6 +147,7 @@ vim3:
       howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
       howto_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
       how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
+      howto_configure_wi-fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
       SDL2_usage: SDL2Usage.html
       PPSSPP_usage: PPSSPPUsage.html
       qt5_usage: QT5Usage.html
@@ -193,6 +199,7 @@ edge:
     edge_interfaces: index.html
     wifi_Usage: WifiUsageDesktopVersion.html
     bluetooth_usage: BluetoothUsage.html
+    overview: overview.html
     howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_USB_cable: UpgradeViaUSBCable.html
     upgrade_via_tf_burning_card: UpgradeViaTFBurningCard.html
