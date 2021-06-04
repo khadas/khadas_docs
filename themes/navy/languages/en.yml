@@ -238,6 +238,7 @@ sidebar:
     how_to_get_gsensor_data: How To Get Gsensor Data
     how_to_use_android_npu_demo: How To Use Android Npu Demo
     how_to_use_settings_command: How To Use Settings Command
+    how_to_use_npu_jni: How To Use Npu Jni
     linux: Linux
     fenix_script: Build Ubuntu/Debian Image
     how_to_upgrade_the_system: Upgrade the System
