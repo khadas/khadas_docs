@@ -47,6 +47,7 @@ sidebar:
     chinese_support_usage: Chinese Support Usage
     howto_setup_watchdog: Watchdog Usage
     howto_rotate_framebuffer: FrameBuffer Rotation
+    how_to_set_auto_login: Auto Login
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -57,6 +58,11 @@ sidebar:
     howto_access_i2c: I2C Usage
     howto_use_wiringpi: WiringPi Usage
     howto_use_wiringpi-python: WiringPi-Python Usage
+    howto_use_hardware_pwm: How To Use Hardware PWM
+    howto_use_uart: How To Use Uart
+    howto_control_led: LED Usage
+    howto_test_gpioirq: GPIO IRQ dmeo
+    howto_use_1wire: One Wire Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -64,6 +70,7 @@ sidebar:
     load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
     howto_upgrade_the_uboot: Upgrade U-Boot
     kernel: Kernel
+    how_to_upgrade_the_kernel: How To Upgrade The Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation
@@ -89,6 +96,7 @@ sidebar:
     chinese_support_usage: Chinese Support Usage
     howto_setup_watchdog: Watchdog Usage
     howto_rotate_framebuffer: FrameBuffer Rotation
+    how_to_set_auto_login: Auto Login
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -100,6 +108,11 @@ sidebar:
     howto_access_i2c: I2C Usage
     howto_use_wiringpi: WiringPi Usage
     howto_use_wiringpi-python: WiringPi-Python Usage
+    howto_use_hardware_pwm: How To Use Hardware PWM
+    howto_use_uart: How To Use Uart
+    howto_control_led: LED Usage
+    howto_test_gpioirq: GPIO IRQ dmeo
+    howto_use_1wire: One Wire Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -108,6 +121,7 @@ sidebar:
     howto_upgrade_the_uboot: Upgrade U-Boot
     Kbi_guidance: KBI Guide
     kernel: Kernel
+    how_to_upgrade_the_kernel: How To Upgrade The Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation
@@ -133,6 +147,8 @@ sidebar:
     chinese_support_usage: Chinese Support Usage
     howto_setup_watchdog: Watchdog Usage
     howto_rotate_framebuffer: FrameBuffer Rotation
+    how_to_set_auto_login: Auto Login
+    howto_setup_max_cpu_frequency: How To Setup Max CPU Frequency
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -148,6 +164,11 @@ sidebar:
     howto_access_i2c: I2C Usage
     howto_use_wiringpi: WiringPi Usage
     howto_use_wiringpi-python: WiringPi-Python Usage
+    howto_use_hardware_pwm: How To Use Hardware PWM
+    howto_use_uart: How To Use Uart
+    howto_control_led: LED Usage
+    howto_test_gpioirq: GPIO IRQ dmeo
+    howto_use_1wire: One Wire Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
@@ -157,6 +178,7 @@ sidebar:
     howto_upgrade_the_uboot: Upgrade U-Boot
     Kbi_guidance: KBI Guide
     kernel: Kernel
+    how_to_upgrade_the_kernel: How To Upgrade The Kernel
     firmware&&system: System
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation
@@ -179,6 +201,7 @@ sidebar:
     system_control: System Control
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
+    how_to_set_auto_login: Auto Login
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -191,6 +214,9 @@ sidebar:
     howto_use_wol: WOL Usage
     howto_use_wiringpi: WiringPi Usage
     howto_use_wiringpi-python: WiringPi-Python Usage
+    howto_control_led: LED Usage
+    howto_test_gpioirq: GPIO IRQ dmeo
+    howto_use_1wire: One Wire Usage
     development: Development
     rockchip_docs: Rockchip Docs
     uboot: U-boot
@@ -198,6 +224,7 @@ sidebar:
     Kbi_guidance: KBI Guide
     howto_upgrade_the_uboot: Upgrade U-Boot
     kernel: Kernel
+    how_to_upgrade_the_kernel: How To Upgrade The Kernel
     firmware&&system: Firmware && System
     fenix_script: Build Ubuntu/Debian Image
     install_docker: DOcker installation

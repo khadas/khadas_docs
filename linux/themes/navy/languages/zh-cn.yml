@@ -46,6 +46,7 @@ sidebar:
     chinese_support_usage: 中文支持说明
     howto_setup_watchdog: Watchdog使用说明
     howto_rotate_framebuffer: Framebuffer旋转设置
+    how_to_set_auto_login: 自动登录设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -56,6 +57,11 @@ sidebar:
     howto_access_i2c: I2C使用说明
     howto_use_wiringpi: WiringPi使用说明
     howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_use_hardware_pwm: 如何使用硬件PWM
+    howto_use_uart: 如何使用串口
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
@@ -63,6 +69,7 @@ sidebar:
     load_images_with_uboot_via_tftp: 通过TFTP下载镜像
     howto_upgrade_the_uboot: 更新U-Boot
     kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
     firmware&&system: 固件&&系统
     fenix_script: 编译Ubuntu/Debian固件
     install_docker: Docker安装
@@ -88,6 +95,7 @@ sidebar:
     chinese_support_usage: 中文支持说明
     howto_setup_watchdog: Watchdog使用说明
     howto_rotate_framebuffer: Framebuffer旋转设置
+    how_to_set_auto_login: 自动登录设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -99,6 +107,11 @@ sidebar:
     howto_access_i2c: I2C使用说明
     howto_use_wiringpi: WiringPi使用说明
     howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_use_hardware_pwm: 如何使用硬件PWM
+    howto_use_uart: 如何使用串口
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
     development: 开发
     uboot: U-boot
     uboot_usage: U-Boot使用说明
@@ -107,6 +120,7 @@ sidebar:
     Kbi_guidance: KBI说明
     howto_upgrade_the_uboot: 更新U-Boot
     kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
     firmware&&system: 固件&&系统
     fenix_script: 编译Ubuntu/Debian固件
     install_docker: Docker安装
@@ -132,6 +146,8 @@ sidebar:
     chinese_support_usage: 中文支持说明
     howto_setup_watchdog: Watchdog使用说明
     howto_rotate_framebuffer: Framebuffer旋转设置
+    how_to_set_auto_login: 自动登录设置
+    howto_setup_max_cpu_frequency: 如何设置CPU的最大频率
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -147,6 +163,11 @@ sidebar:
     howto_setup_Pcie_usb_port: PCIe/USB3.0口切换
     howto_use_wiringpi: WiringPi使用说明
     howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_use_hardware_pwm: 如何使用硬件PWM
+    howto_use_uart: 如何使用串口
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
     development: 开发
     uboot: U-boot
     boot_from_spi_flash: 从SPI-Flash启动
@@ -156,6 +177,7 @@ sidebar:
     howto_upgrade_the_uboot: 更新U-Boot
     Kbi_guidance: KBI说明
     kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
     firmware&&system: 固件&&系统	
     fenix_script: 编译Ubuntu/Debian固件
     install_docker: Docker安装
@@ -178,6 +200,7 @@ sidebar:
     system_control: 系统控制
     howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
+    how_to_set_auto_login: 自动登录设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -189,6 +212,9 @@ sidebar:
     howto_access_gpio: GPIO用法
     howto_use_wiringpi: WiringPi使用说明
     howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
     development: 开发
     rockchip_docs: 瑞芯微文档
     uboot: U-boot
@@ -196,6 +222,7 @@ sidebar:
     Kbi_guidance: KBI说明
     howto_upgrade_the_uboot: 更新U-Boot
     kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
     firmware&&system: 固件&&系统	
     fenix_script: 编译Ubuntu/Debian固件
     install_docker: Docker安装

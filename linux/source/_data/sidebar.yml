@@ -13,6 +13,7 @@ vim1:
       chinese_support_usage: ChineseSupportUsage.html
       howto_setup_watchdog: HowToSetupWatchdog.html
       howto_rotate_framebuffer: HowToRotateFramebuffer.html
+      how_to_set_auto_login: HowToSetAutoLogin.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -23,6 +24,11 @@ vim1:
       howto_access_i2c: HowToAccessI2c.html
       howto_use_wiringpi: HowToUseWiringPi.html
       howto_use_wiringpi-python: HowToUseWiringPi-Python.html
+      howto_use_hardware_pwm: HowToUseHardwarePWM.html
+      howto_use_uart: HowToUseUart.html
+      howto_control_led: HowToControlLED.html
+      howto_test_gpioirq: HowToTestGPIOIRQ.html
+      howto_use_1wire: HowToUse1wire.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -30,7 +36,8 @@ vim1:
       load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
       howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
-    firmware&& system:
+      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
+    firmware&&system:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
       create_burn_card_via_cli: CreateBurnCardViaCLI.html
@@ -55,6 +62,7 @@ vim2:
       chinese_support_usage: ChineseSupportUsage.html
       howto_setup_watchdog: HowToSetupWatchdog.html
       howto_rotate_framebuffer: HowToRotateFramebuffer.html
+      how_to_set_auto_login: HowToSetAutoLogin.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -66,6 +74,11 @@ vim2:
       howto_access_i2c: HowToAccessI2c.html
       howto_use_wiringpi: HowToUseWiringPi.html
       howto_use_wiringpi-python: HowToUseWiringPi-Python.html
+      howto_use_hardware_pwm: HowToUseHardwarePWM.html
+      howto_use_uart: HowToUseUart.html
+      howto_control_led: HowToControlLED.html
+      howto_test_gpioirq: HowToTestGPIOIRQ.html
+      howto_use_1wire: HowToUse1wire.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -74,6 +87,7 @@ vim2:
       Kbi_guidance: KbiGuidance.html
       howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
+      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     firmware&&system:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
@@ -99,6 +113,8 @@ vim3:
       chinese_support_usage: ChineseSupportUsage.html
       howto_setup_watchdog: HowToSetupWatchdog.html
       howto_rotate_framebuffer: HowToRotateFramebuffer.html
+      how_to_set_auto_login: HowToSetAutoLogin.html
+      howto_setup_max_cpu_frequency: HowToSetupMaxCPUFrequency.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
@@ -114,6 +130,11 @@ vim3:
       howto_setup_Pcie_usb_port: HowToSetupPcieUsbPort.html
       howto_use_wiringpi: HowToUseWiringPi.html
       howto_use_wiringpi-python: HowToUseWiringPi-Python.html
+      howto_use_hardware_pwm: HowToUseHardwarePWM.html
+      howto_use_uart: HowToUseUart.html
+      howto_control_led: HowToControlLED.html
+      howto_test_gpioirq: HowToTestGPIOIRQ.html
+      howto_use_1wire: HowToUse1wire.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -123,6 +144,7 @@ vim3:
       Kbi_guidance: KbiGuidance.html
       howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
+      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     firmware&&system:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
@@ -145,6 +167,7 @@ edge:
     system_control:
       howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
+      how_to_set_auto_login: HowToSetAutoLogin.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
@@ -157,6 +180,9 @@ edge:
       howto_use_wol: HowtoUseWol.html
       howto_use_wiringpi: HowToUseWiringPi.html
       howto_use_wiringpi-python: HowToUseWiringPi-Python.html
+      howto_control_led: HowToControlLED.html
+      howto_test_gpioirq: HowToTestGPIOIRQ.html
+      howto_use_1wire: HowToUse1wire.html
   development:
     rockchip_docs: RockchipDocs.html
     uboot:
@@ -164,6 +190,7 @@ edge:
       Kbi_guidance: KbiGuidance.html
       howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
     kernel:
+      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
     firmware&&system:
       fenix_script: FenixScript.html
       install_docker: InstallDocker.html
