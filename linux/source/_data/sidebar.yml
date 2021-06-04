@@ -14,6 +14,9 @@ vim1:
       howto_setup_watchdog: HowToSetupWatchdog.html
       howto_rotate_framebuffer: HowToRotateFramebuffer.html
       how_to_set_auto_login: HowToSetAutoLogin.html
+      display_ubuntu_logo: DisplayUbuntuLogo.html
+      howto_change_boot_logo: HowToChangeBootLogo.html
+      howto_custom_mac: HowToCustomMac.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -63,6 +66,9 @@ vim2:
       howto_setup_watchdog: HowToSetupWatchdog.html
       howto_rotate_framebuffer: HowToRotateFramebuffer.html
       how_to_set_auto_login: HowToSetAutoLogin.html
+      display_ubuntu_logo: DisplayUbuntuLogo.html
+      howto_change_boot_logo: HowToChangeBootLogo.html
+      howto_custom_mac: HowToCustomMac.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
     board_rescoures:
@@ -115,6 +121,9 @@ vim3:
       howto_rotate_framebuffer: HowToRotateFramebuffer.html
       how_to_set_auto_login: HowToSetAutoLogin.html
       howto_setup_max_cpu_frequency: HowToSetupMaxCPUFrequency.html
+      display_ubuntu_logo: DisplayUbuntuLogo.html
+      howto_change_boot_logo: HowToChangeBootLogo.html
+      howto_custom_mac: HowToCustomMac.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html
@@ -168,6 +177,7 @@ edge:
       howto_upgrade_the_system: HowToUpgradeTheSystem.html
       chinese_support_usage: ChineseSupportUsage.html
       how_to_set_auto_login: HowToSetAutoLogin.html
+      display_ubuntu_logo: DisplayUbuntuLogo.html
     accessories:
       fan_setting_usage: FanSettingUsage.html
       ts050_setting: TS050Setting.html

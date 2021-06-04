@@ -47,6 +47,9 @@ sidebar:
     howto_setup_watchdog: Watchdog使用说明
     howto_rotate_framebuffer: Framebuffer旋转设置
     how_to_set_auto_login: 自动登录设置
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_change_boot_logo: 修改启动logo
+    howto_custom_mac: 自定义MAC地址设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -96,6 +99,9 @@ sidebar:
     howto_setup_watchdog: Watchdog使用说明
     howto_rotate_framebuffer: Framebuffer旋转设置
     how_to_set_auto_login: 自动登录设置
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_change_boot_logo: 修改启动logo
+    howto_custom_mac: 自定义MAC地址设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     board_rescoures: 板载资源
@@ -148,6 +154,9 @@ sidebar:
     howto_rotate_framebuffer: Framebuffer旋转设置
     how_to_set_auto_login: 自动登录设置
     howto_setup_max_cpu_frequency: 如何设置CPU的最大频率
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_change_boot_logo: 修改启动logo
+    howto_custom_mac: 自定义MAC地址设置
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明
@@ -201,6 +210,7 @@ sidebar:
     howto_upgrade_the_system: 如何升级系统
     chinese_support_usage: 中文支持说明
     how_to_set_auto_login: 自动登录设置
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
     accessories: 配件
     fan_setting_usage: 风扇设置说明
     ts050_setting: TS050配置说明

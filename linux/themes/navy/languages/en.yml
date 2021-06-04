@@ -48,6 +48,9 @@ sidebar:
     howto_setup_watchdog: Watchdog Usage
     howto_rotate_framebuffer: FrameBuffer Rotation
     how_to_set_auto_login: Auto Login
+    display_ubuntu_logo: Enable/Disable Ubuntu Logo
+    howto_change_boot_logo: Change Boot Logo
+    howto_custom_mac: howto_Custom MAC Address Setup
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -97,6 +100,9 @@ sidebar:
     howto_setup_watchdog: Watchdog Usage
     howto_rotate_framebuffer: FrameBuffer Rotation
     how_to_set_auto_login: Auto Login
+    display_ubuntu_logo: Enable/Disable Ubuntu Logo
+    howto_change_boot_logo: Change Boot Logo
+    howto_custom_mac: howto_Custom MAC Address Setup
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     board_rescoures: Board Rescoures
@@ -149,6 +155,9 @@ sidebar:
     howto_rotate_framebuffer: FrameBuffer Rotation
     how_to_set_auto_login: Auto Login
     howto_setup_max_cpu_frequency: How To Setup Max CPU Frequency
+    display_ubuntu_logo: Enable/Disable Ubuntu Logo
+    howto_change_boot_logo: Change Boot Logo
+    howto_custom_mac: howto_Custom MAC Address Setup
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
@@ -202,6 +211,7 @@ sidebar:
     howto_upgrade_the_system: How To Upgrade the System
     chinese_support_usage: Chinese Support Usage
     how_to_set_auto_login: Auto Login
+    display_ubuntu_logo: Enable/Disable Ubuntu Logo
     accessories: Accessories
     fan_setting_usage: Fan Setting Usage
     ts050_setting: TS050 Setting Usage
