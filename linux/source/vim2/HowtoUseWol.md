@@ -67,44 +67,6 @@ Now you can wake up your VIM2 with it's MAC Address
 $ wakeonlan 98:aa:fc:60:46:de
 ```
 
-
-## Android
-
-### Get Ethernet MAC address
-
-You can get it from **Settings->More Settings->About->Status** menu.
-
-![mac](/linux/images/vim2/vim2_android_mac.png)
-
-### Enable WOL
-
-You can enable **WOL** in the **Setting->More Settings->WOL** menu.
-
-![wol](/linux/images/vim2/vim2_android_wol.png)
-
-
-### Test WOL
-
-**1) Connect VIM2 with LAN**
-
-**2) Power off VIM2**
-
-**3) Attempt to wake up your VIM2 on Android.**
-
-* Download **[Wake-On-LAN Sender](http://www.yarovy.com/wol/)** tool
-
-![sender](/linux/images/vim2/wol_sender_main.png)
-
-* Add a remote computer
-
-![sender_add](/linux/images/vim2/wol_sender_add_remote.png)
-
-* Wake up VIM2 with this button
-
-![sender](/linux/images/vim2/wol_sender_send.png)
-
-* Note:On iPhone, you can search for **wake on lan** in the App Store.
-
 ## See also
 [KBI Guidance](/linux/vim2/KbiGuidance.html)
 

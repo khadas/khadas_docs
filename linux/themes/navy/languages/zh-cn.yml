@@ -205,6 +205,11 @@ sidebar:
     howto_test_gpioirq: GPIO IRQ使用示例
     howto_use_1wire: 单总线使用说明
     howto_custom_ir_code_to_boot: 自定义IR Code
+    npu: NPU
+    origin_npu: 原始NPU
+    origin_npu_demo_usage: 演示demo说明
+    tengine_npu: Tengine NPU
+    nnapi_npu: NNAPI NPU
     development: 开发
     uboot: U-boot
     boot_from_spi_flash: 从SPI-Flash启动
