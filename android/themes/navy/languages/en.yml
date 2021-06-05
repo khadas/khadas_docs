@@ -36,8 +36,6 @@ sidebar:
     overview: Beginners Guide
     getting_started: Getting Started
     vim1_interfaces: VIM1 Interfaces
-    how_to_connect_wifi: Setup Wi-Fi
-    how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
@@ -102,8 +100,6 @@ sidebar:
     overview: Beginners Guide
     getting_started: Getting Started
     vim2_interfaces: VIM2 Interfaces
-    how_to_connect_wifi: Setup Wi-Fi
-    how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
@@ -176,8 +172,6 @@ sidebar:
     overview: Beginners Guide
     getting_started: Getting Started
     vim3_interfaces: VIM3 Interfaces
-    how_to_connect_wifi: Setup Wi-Fi
-    how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
@@ -274,8 +268,6 @@ sidebar:
     captain_interfaces: Captain Interfaces
     edgev_interfaces: Edge-V Interfaces
     edgecaptain_power_priority: Edge+Captain Power Priority
-    how_to_connect_wifi: Setup Wi-Fi
-    how_to_setup_bluetooth: Setup Bluetooth
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable

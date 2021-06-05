@@ -35,8 +35,6 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim1_interfaces: VIM1接口描述
-    how_to_connect_wifi: 设置Wi-Fi
-    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -101,8 +99,6 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim2_interfaces: VIM2接口描述
-    how_to_connect_wifi: 设置Wi-Fi
-    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -175,8 +171,6 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     vim3_interfaces: VIM3接口描述
-    how_to_connect_wifi: 设置Wi-Fi
-    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -270,8 +264,6 @@ sidebar:
     getting_started: 开始使用
     overview: 概述
     edge_interfaces: Edge接口描述
-    how_to_connect_wifi: 设置Wi-Fi
-    how_to_setup_bluetooth: 设置蓝牙
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     captain_interfaces: Captain接口描述

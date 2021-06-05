@@ -2,8 +2,6 @@ vim1:
   getting_started:
     overview: index.html
     vim1_interfaces: VimInterfaces.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
     add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
@@ -64,8 +62,6 @@ vim2:
   getting_started:
     overview: index.html
     vim2_interfaces: Vim2Interfaces.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
     add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
@@ -131,8 +127,6 @@ vim3:
   getting_started:
     overview: index.html
     vim3_interfaces: Vim3Interfaces.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
     add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
@@ -227,8 +221,6 @@ edge:
     captain_interfaces: CaptainInterfaces.html
     edgev_interfaces: EdgeVInterfaces.html
     edgecaptain_power_priority: EdgeCaptainPowerPriority.html
-    how_to_connect_wifi: HowToConnectWifi.html
-    how_to_setup_bluetooth: HowToSetupBluetooth.html
     add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
