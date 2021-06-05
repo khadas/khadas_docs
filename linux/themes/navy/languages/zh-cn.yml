@@ -1,0 +1,307 @@
+menu:
+  vim: VIM
+  vim1: VIM1
+  vim2: VIM2
+  vim3: VIM3
+  edge: Edge
+  tone1: Tone1
+  hardware: 硬件资料
+  firmware: 固件下载
+
+index:
+  get_started: 开始使用
+  read_docs: 阅读文档
+
+page:
+  contents: 目录
+  back_to_top: 回到顶部
+  improve: 改进本文
+  prev: 上一页
+  next: 下一页
+  last_updated: 上次更新：%s
+
+home_page:
+  intro_title1: 可编辑
+  intro_desc1: 这里的文档都可以可以编辑的，编辑后通过GitHub Pull Request提交代码，欢迎大家一起编辑完善文档。
+  intro_title2: 代码开源
+  intro_desc2: 文档网站的源码以及所有文档都是开源的，代码托管在Khadas GitHub。
+  intro_title3: 支持Markdown
+  intro_desc3: 所有的文档都是用Markdown语言编写。
+  intro_title4: 多国语言
+  intro_desc4: 目前支持简体中文和英文，以后会增加更多语言支持。
+
+sidebar:
+  vim1:
+    quick_start: 快速上手
+    vim1_interfaces: VIM1接口描述
+    wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
+    hdmi_usage: HDMI分辨率设置
+    overview: 概述
+    howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
+    boot_from_ext_media: 从外部介质启动
+    rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
+    howto_setup_watchdog: Watchdog使用说明
+    howto_rotate_framebuffer: Framebuffer旋转设置
+    how_to_set_auto_login: 自动登录设置
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_change_boot_logo: 修改启动logo
+    howto_custom_mac: 自定义MAC地址设置
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
+    howto_use_hardware_decoding_library: 硬件解码库使用
+    howto_use_hardware_encoding_library: 硬件编码库使用
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP模式设置
+    accessories: 配件
+    fan_setting_usage: 风扇设置说明
+    board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
+    wifi_command_usage: WiFi命令使用说明
+    bluetooth_command_usage: 蓝牙命令使用说明
+    howto_access_gpio: GPIO使用说明
+    howto_access_i2c: I2C使用说明
+    howto_use_wiringpi: WiringPi使用说明
+    howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_use_hardware_pwm: 如何使用硬件PWM
+    howto_use_uart: 如何使用串口
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
+    howto_custom_ir_code_to_boot: 自定义IR Code
+    development: 开发
+    uboot: U-boot
+    uboot_usage: U-Boot使用说明
+    setup_tftp_server: 搭建TFTP服务器
+    load_images_with_uboot_via_tftp: 通过TFTP下载镜像
+    howto_upgrade_the_uboot: 更新U-Boot
+    kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
+    howto_use_device_tree_overlay: 设备树overlays使用说明
+    firmware&&system: 固件&&系统
+    fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
+    create_burn_card_via_cli: 通过命令行创建烧录卡
+    create_bootable_sd_card: 通过命令行创建启动卡
+    howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
+    hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
+    extra_power_input: 外部电源输入
+
+  vim2:
+    quick_start: 快速上手
+    vim2_interfaces: VIM2接口描述
+    wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
+    hdmi_usage: HDMI分辨率设置
+    overview: 概述
+    howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
+    boot_from_ext_media: 从外部介质启动
+    rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
+    howto_setup_watchdog: Watchdog使用说明
+    howto_rotate_framebuffer: Framebuffer旋转设置
+    how_to_set_auto_login: 自动登录设置
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_change_boot_logo: 修改启动logo
+    howto_custom_mac: 自定义MAC地址设置
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
+    howto_use_hardware_decoding_library: 硬件解码库使用
+    howto_use_hardware_encoding_library: 硬件编码库使用
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP模式设置
+    accessories: 配件
+    fan_setting_usage: 风扇设置说明
+    board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
+    wifi_command_usage: WiFi命令使用说明
+    bluetooth_command_usage: 蓝牙命令使用说明
+    howto_access_gpio: GPIO使用说明
+    howto_use_wol: WOL使用说明
+    howto_access_i2c: I2C使用说明
+    howto_use_wiringpi: WiringPi使用说明
+    howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_use_hardware_pwm: 如何使用硬件PWM
+    howto_use_uart: 如何使用串口
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
+    howto_custom_ir_code_to_boot: 自定义IR Code
+    development: 开发
+    uboot: U-boot
+    uboot_usage: U-Boot使用说明
+    setup_tftp_server: 搭建TFTP服务器
+    load_images_with_uboot_via_tftp: 通过TFTP下载镜像
+    Kbi_guidance: KBI说明
+    howto_upgrade_the_uboot: 更新U-Boot
+    kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
+    howto_use_device_tree_overlay: 设备树overlays使用说明
+    firmware&&system: 固件&&系统
+    fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
+    create_burn_card_via_cli: 通过命令行创建烧录卡
+    create_bootable_sd_card: 通过命令行创建启动卡
+    howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
+    hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
+    extra_power_input: 外部电源输入
+
+  vim3:
+    quick_start: 快速上手
+    vim3_interfaces: VIM3接口描述
+    wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
+    hdmi_usage: HDMI分辨率设置
+    overview: 概述
+    howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
+    boot_from_ext_media: 从外部介质启动
+    rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
+    howto_setup_watchdog: Watchdog使用说明
+    howto_rotate_framebuffer: Framebuffer旋转设置
+    how_to_set_auto_login: 自动登录设置
+    howto_setup_max_cpu_frequency: 如何设置CPU的最大频率
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_change_boot_logo: 修改启动logo
+    howto_custom_mac: 自定义MAC地址设置
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
+    howto_use_hardware_decoding_library: 硬件解码库使用
+    howto_use_hardware_encoding_library: 硬件编码库使用
+    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
+    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP模式设置
+    SDL2_usage: SDL2 Mail使用说明
+    PPSSPP_usage: PPSSPP使用说明
+    qt5_usage: Qt5的使用
+    accessories: 配件
+    fan_setting_usage: 风扇设置说明
+    ts050_setting: TS050配置说明
+    lte_module_usage: LTE模块使用说明
+    howto_enable_M2XETH_through_overlays: M2X ETH使用说明
+    board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
+    wifi_command_usage: WiFi命令使用说明
+    bluetooth_command_usage: 蓝牙命令使用说明
+    howto_access_gpio: GPIO使用说明
+    howto_use_wol: WOL使用说明
+    howto_access_i2c: I2C使用说明
+    howto_setup_Pcie_usb_port: PCIe/USB3.0口切换
+    howto_use_wiringpi: WiringPi使用说明
+    howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_use_hardware_pwm: 如何使用硬件PWM
+    howto_use_uart: 如何使用串口
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
+    howto_custom_ir_code_to_boot: 自定义IR Code
+    development: 开发
+    uboot: U-boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    uboot_usage: U-Boot使用说明
+    setup_tftp_server: 搭建TFTP服务器
+    load_images_with_uboot_via_tftp: 通过TFTP下载镜像
+    howto_upgrade_the_uboot: 更新U-Boot
+    Kbi_guidance: KBI说明
+    kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
+    howto_use_device_tree_overlay: 设备树overlays使用说明
+    firmware&&system: 固件&&系统	
+    fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
+    create_burn_card_via_cli: 通过命令行创建烧录卡
+    create_bootable_sd_card: 通过命令行创建启动卡
+    howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
+    hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
+    extra_power_input: 外部电源输入
+
+  edge:
+    quick_start: 快速上手
+    edge_interfaces: Edge接口描述
+    wifi_Usage: Wi-Fi使用说明
+    bluetooth_usage: 蓝牙使用说明
+    overview: 概述
+    howto_boot_into_upgrade_mode: 进入升级模式
+    upgrade_via_USB_cable: 通过USB-C口升级固件
+    upgrade_via_tf_burning_card: 通过TF卡升级固件
+    rescures_control: 资源控制
+    system_control: 系统控制
+    howto_upgrade_the_system: 如何升级系统
+    chinese_support_usage: 中文支持说明
+    how_to_set_auto_login: 自动登录设置
+    display_ubuntu_logo: 显示/关闭Ubuntu logo
+    howto_setup_framebuffer_console_font: 如何设置Framebuffer字体
+    accessories: 配件
+    fan_setting_usage: 风扇设置说明
+    ts050_setting: TS050配置说明
+    lte_module_usage: LTE模块使用说明
+    board_rescoures: 板载资源
+    system_configure_usage: 系统配置文件使用说明
+    bluetooth_command_usage: 蓝牙命令使用说明
+    wifi_command_usage: WiFi命令使用说明
+    howto_access_gpio: GPIO用法
+    howto_use_wiringpi: WiringPi使用说明
+    howto_use_wiringpi-python: WiringPi-Python使用说明
+    howto_control_led: LED使用说明
+    howto_test_gpioirq: GPIO IRQ使用示例
+    howto_use_1wire: 单总线使用说明
+    development: 开发
+    rockchip_docs: 瑞芯微文档
+    uboot: U-boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    Kbi_guidance: KBI说明
+    howto_upgrade_the_uboot: 更新U-Boot
+    kernel: 内核
+    how_to_upgrade_the_kernel: 更新内核
+    firmware&&system: 固件&&系统	
+    fenix_script: 编译Ubuntu/Debian固件
+    install_docker: Docker安装
+    howto_erase_emmc: 如何擦除EMMC
+    howto_write_sd_image_to_emmc: 烧写SD镜像到EMMC
+    hardware: 硬件
+    setup_serial_tool: 串口工具使用说明
+
+  tone1:
+    getting_started: 开始使用
+    overview: 概述
+    user_manual: 用户手册
+    how_to_upgrade_firmware: 固件升级
+    how_to_use_tone_in_linux: Linux下使用MPD
+
+  hardware:
+    hardware: 硬件资料
+    vim1: VIM1
+    vim2: VIM2
+    vim3: VIM3
+    edge: Edge
+    tone1: Tone1
+  firmware:
+    firmware: 固件
+    vim1: VIM1
+    vim1_ubuntu: Ubuntu
+    vim1_thirdparty: 第三方固件
+    vim2: VIM2
+    vim2_ubuntu: Ubuntu
+    vim2_thirdparty: 第三方固件
+    vim3: VIM3
+    vim3_ubuntu: Ubuntu
+    vim3_thirdparty: 第三方固件
+    vim3l: VIM3L
+    vim3l_ubuntu: Ubuntu
+    vim3l_thirdparty: 第三方固件
+    edge: Edge
+    edge_ubuntu: Ubuntu
+    edge_thirdparty: 第三方固件
+    tone1: Tone1
