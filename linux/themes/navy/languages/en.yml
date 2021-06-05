@@ -206,6 +206,10 @@ sidebar:
     howto_test_gpioirq: GPIO IRQ dmeo
     howto_use_1wire: One Wire Usage
     howto_custom_ir_code_to_boot: Custom IR Code Setup
+    npu: NPU
+    origin_npu: Origin NPU
+    tengine_npu: Tengine NPU
+    nnapi_npu: NNAPI NPU
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage

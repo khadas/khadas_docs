@@ -172,6 +172,10 @@ vim3:
       howto_test_gpioirq: HowToTestGPIOIRQ.html
       howto_use_1wire: HowToUse1wire.html
       howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
+  npu:
+    origin_npu:
+    tengine_npu:
+    nnapi_npu:
   development:
     uboot:
       uboot_usage: UBootUsage.html
