@@ -211,6 +211,7 @@ sidebar:
     origin_npu_demo_usage: Binaries Demo Usage
     tengine_npu: Tengine NPU
     nnapi_npu: NNAPI NPU
+    howto_use_aml_npu_app: Application Source Code Usage
     development: Development
     uboot: U-boot
     uboot_usage: U-Boot Usage
