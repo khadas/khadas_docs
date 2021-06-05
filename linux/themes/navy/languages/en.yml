@@ -208,6 +208,7 @@ sidebar:
     howto_custom_ir_code_to_boot: Custom IR Code Setup
     npu: NPU
     origin_npu: Origin NPU
+    origin_npu_demo_usage: Binaries Demo Usage
     tengine_npu: Tengine NPU
     nnapi_npu: NNAPI NPU
     development: Development

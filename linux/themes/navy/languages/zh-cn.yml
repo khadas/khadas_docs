@@ -207,6 +207,7 @@ sidebar:
     howto_custom_ir_code_to_boot: 自定义IR Code
     npu: NPU
     origin_npu: 原始NPU
+    origin_npu_demo_usage: 演示demo说明
     tengine_npu: Tengine NPU
     nnapi_npu: NNAPI NPU
     development: 开发
