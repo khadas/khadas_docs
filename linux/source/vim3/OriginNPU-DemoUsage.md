@@ -192,14 +192,7 @@ After turning on the camera, the recognition result will be displayed on the scr
 ![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
 
 
-
-
-
-
-
-
-
-
-
-
+{% note info Note %}
+Only pictures or cameras with the same resolution as the monitor can be displayed normally under Framebuffer.
+{% endnote %}
 

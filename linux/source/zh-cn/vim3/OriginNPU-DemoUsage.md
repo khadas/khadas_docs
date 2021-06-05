@@ -195,3 +195,7 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 ![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
 
 
+{% note info 注意 %}
+Framebuffer下只有与显示器分辨率相同的图片或者摄像头才能正常显示。
+{% endnote %}
+
