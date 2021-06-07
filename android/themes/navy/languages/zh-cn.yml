@@ -42,7 +42,6 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 设置风扇
     development: 开发
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
@@ -106,7 +105,6 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 设置风扇
     development: 开发
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
@@ -178,9 +176,7 @@ sidebar:
     boot_from_ext_image: 从外部媒体介质启动系统
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 设置风扇
     connect_lcd: 配置触摸屏TS050
-    landscape_settings: TS050屏幕旋转
     how_to_use_lte_module: LTE模块用法
     development: 开发
     create_burning_card_via_cli: 通过命令行创建烧录卡
@@ -271,7 +267,6 @@ sidebar:
     upgrade_via_tfcard: 通过TF卡升级
     extra_power_input: 外部电源供电
     Accessories: 配件
-    how_to_setup_fan: 设置风扇
     connect_lcd: 配置触摸屏TS050
     how_to_use_lte_module: LTE模块用法
     development: 开发

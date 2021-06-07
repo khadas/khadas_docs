@@ -43,7 +43,6 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: Cooling FAN Setup
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
@@ -107,7 +106,6 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: Cooling Fan Setup
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
@@ -179,9 +177,7 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: Cooling Fan Setup
     connect_lcd: Connect TS050 Touchscreen
-    landscape_settings: TS050 Rotate
     how_to_use_lte_module: LTE Module Usage
     development: Development
     create_burning_card_via_cli: Create Burning Card Using CLI
@@ -273,7 +269,6 @@ sidebar:
     boot_from_ext_image: Boot From External Media
     extra_power_input: Extra Power Input
     Accessories: Accessories
-    how_to_setup_fan: Cooling Fan Setup
     connect_lcd: Connect TS050 Touchscreen
     how_to_use_lte_module: LTE Module Usage
     development: Development
