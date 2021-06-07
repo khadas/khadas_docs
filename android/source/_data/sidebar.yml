@@ -137,9 +137,7 @@ vim3:
     how_to_setup_fan: HowToSetupFan.html
     connect_lcd: ConnectLcd.html
     landscape_settings: UbuntuLandscapeSettings.html
-    HowToUseMPICamera: HowToUseMIPICamera.html
     how_to_use_lte_module: HowToUseLTEModule.html
-    how_to_enable_M2X_ETH_through_overlays: HowToEnableM2XETHThroughOverlays.html
   development:
     create_burning_card_via_cli: CreateBurnCardViaCLI.html
     create_booting_card: CreateBootableSDCard.html
