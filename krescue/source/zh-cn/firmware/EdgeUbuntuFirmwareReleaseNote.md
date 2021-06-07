@@ -1,1 +1,0 @@
-../../firmware/EdgeUbuntuFirmwareReleaseNote.md

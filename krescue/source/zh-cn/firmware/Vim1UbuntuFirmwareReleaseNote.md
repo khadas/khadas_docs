@@ -1,1 +1,0 @@
-../../firmware/Vim1UbuntuFirmwareReleaseNote.md

@@ -20,8 +20,8 @@ hardware:
     
 firmware:
   firmware:
-    vim1:
-    vim2:
-    vim3:
-    vim3l:
-    edge:
+    vim1: Vim1KrescueFirmware.html
+    vim2: Vim2KrescueFirmware.html
+    vim3: Vim3KrescueFirmware.html
+    vim3l: Vim3lKrescueFirmware.html
+    edge: EdgeKrescueFirmware.html
