@@ -19,16 +19,16 @@ Krescue is an extremely small (21mb) operating system that you can boot directly
 
 #### downloads Krescue images
 THe Krescue images can be downloads in [there](https://dl.khadas.com/Firmware/Krescue/dump/),change you board's version.
-![Kerscure_downloads](/images/vim1/Krescue_downloads.png)
+![Kerscure_downloads](/krescue/images/vim1/Krescue_downloads.png)
 
 #### Make the startup disk
 Insert the mircosd card into the PC. Burn the downloaded image into SD card.
-![Make_Krescue](/images/vim1/HowtoUseEtcher.png)
+![Make_Krescue](/krescue/images/vim1/HowtoUseEtcher.png)
 
 
 ### Run
-Insert the SD card into the board, connect HDMI and enter the [upgrade mode](/vim3/HowtoBootIntoUpgradeMode.html),You can see that the following figure shows the successful startup of kerscure.
-![boot Krescue](/images/vim1/krescue_boot.jpg)
+Insert the SD card into the board, connect HDMI and enter the [upgrade mode](/linux/vim3/HowtoBootIntoUpgradeMode.html),You can see that the following figure shows the successful startup of kerscure.
+![boot Krescue](/krescue/images/vim1/krescue_boot.jpg)
 
 ## Install Krescue by Internet
 
@@ -44,12 +44,12 @@ Insert the SD card into the board, connect HDMI and enter the [upgrade mode](/vi
 $ curl -sfL dl.khadas.com/.mega | sh -s - -l
 ```
 You can see the list with firmware
-![krescue firmware list](/images/vim1/krescue_list.png)
+![krescue firmware list](/krescue/images/vim1/krescue_list.png)
 ```
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```
 Note: When the system applies for -y parameter for "unsafe writing", the path of SD card is wrong. In this case, forced writing will be written in EMMC, resulting in the failure to run other firmware.
-After the burning is completed, the image is written to the SD card. At this time, you can enter [upgrade mode] (/vim3/HowtoBootIntoUpgradeMode.html) to start krecure.
+After the burning is completed, the image is written to the SD card. At this time, you can enter [upgrade mode] (/linux/vim3/HowtoBootIntoUpgradeMode.html) to start krecure.
 
 ## Use krescue
 
