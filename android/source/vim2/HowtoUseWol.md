@@ -47,5 +47,5 @@ You can enable **WOL** in the **Setting->More Settings->WOL** menu.
 * Note:On iPhone, you can search for **wake on lan** in the App Store.
 
 ## See also
-[KBI Guidance](/vim2/KbiGuidance.html)
+[KBI Guidance](/android/vim2/KbiGuidance.html)
 

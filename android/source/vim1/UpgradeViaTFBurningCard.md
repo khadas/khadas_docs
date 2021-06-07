@@ -40,5 +40,5 @@ Have Fun!
 
 * [Upgrade Via A USB Cable](/android/vim1/UpgradeViaUSBCable.html)
 * [VIM1 How To Boot Into Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
-* [VIM2 How To Boot Into Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html)
+* [VIM2 How To Boot Into Upgrade Mode](/android/vim2/HowtoBootIntoUpgradeMode.html)
 * [VIM3 How To Boot Into Upgrade Mode](/vim3/HowtoBootIntoUpgradeMode.html)

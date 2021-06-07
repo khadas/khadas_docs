@@ -3,11 +3,11 @@ title: Force Reset Remotely
 
 ## Introduction
 Your VIM is equipped with a programmable MCU(STM8S003F3U6), this allows it to support more features:
-* [WOL: Wake-On-Lan](/vim2/HowtoUseWol.html)
+* [WOL: Wake-On-Lan](/android/vim2/HowtoUseWol.html)
 * Boot Media Setup: Boot from eMMC or SPI-Flash
 * IR Remote Power On/Off
 * Timer Power On/Off
-* [KBI: Khadas Bootloader Instructions](/vim2/KbiGuidance.html)
+* [KBI: Khadas Bootloader Instructions](/android/vim2/KbiGuidance.html)
 
 For other purposes, Makers could want more features like:
 * Power on the VIM2 via a PIN on the 40-PIN GPIO
@@ -19,7 +19,7 @@ This guide will walk you through step-by-step, on how use the various force-rese
 *This article is only suitable for **V05 and Higher Versions** of the MCU firmware.*
 
 ## WOL Working Modes
-The WOL feature is disabled by default, however you can enable it using [KBI](/vim2/KbiGuidance.html) commands.
+The WOL feature is disabled by default, however you can enable it using [KBI](/android/vim2/KbiGuidance.html) commands.
 
 This is a simple method to check the WOL-state:
 
@@ -33,7 +33,7 @@ This is a simple method to check the WOL-state:
   * VIM2 remains on, and the Blue LED remains OFF (White LED is ON).
 
 ## Enable WOL-Force-Feset feature
-Boot into U-Boot mode via [serial](/vim2/SetupSerialTool.html) and run following KBI sub-command to enable the WOL-Force-Reset feature:
+Boot into U-Boot mode via [serial](/android/vim2/SetupSerialTool.html) and run following KBI sub-command to enable the WOL-Force-Reset feature:
 ```
 kvim2# kbi forcereset wol w 1
 [BL31]: tee size: 0

@@ -38,7 +38,7 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 {% note info Tips %}
 
 * To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark.
-* Extra power supply([VIM1](/android/vim1/ExtraPowerInput.html)/[VIM2](/vim2/ExtraPowerInput.html)/[VIM3](/vim3/ExtraPowerInput.html)) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
+* Extra power supply([VIM1](/android/vim1/ExtraPowerInput.html)/[VIM2](/android/vim2/ExtraPowerInput.html)/[VIM3](/vim3/ExtraPowerInput.html)) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
 
 {% endnote %}
 
@@ -111,7 +111,7 @@ Root privilege required.
 
 ## Check The USB Driver
 
-You must now place your VIM board into "Upgrade Mode".See [VIM1](/android/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/vim3/HowtoBootIntoUpgradeMode.html) to enter Upgrade Mode.
+You must now place your VIM board into "Upgrade Mode".See [VIM1](/android/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/android/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/vim3/HowtoBootIntoUpgradeMode.html) to enter Upgrade Mode.
 Check to see if Ubuntu has detected your VIM1/VIM2 as a connected USB-device.
 
 ```bash

@@ -6,7 +6,7 @@ title: How To Use Hardware PWM
 Hardware PWM had open at default dtb configuration.So you need to check which Physical pin is connect to it .
 
 * `PWM_F` on [VIM1 GPIO-Out](/android/vim1/index.html#GPIO-Pin-Out)
-* `PWM_D` on [VIM2 GPIO-Out](/vim2/index.html#GPIO-Pinout)
+* `PWM_D` on [VIM2 GPIO-Out](/android/vim2/index.html#GPIO-Pinout)
 * `PWM_F` on [VIM3 GPIO-Out](/vim3/index.html#GPIO-Pinout)
 
 ## Switch to root user
