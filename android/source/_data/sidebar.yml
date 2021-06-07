@@ -27,35 +27,6 @@ vim1:
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
     how_to_use_adb_tool: HowToUseADBTool.html
-  linux:
-    fenix_script: FenixScript.html
-    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
-    krescue: Krescue.html
-    how_to_setup_watchdog: HowToSetupWatchdog.html
-    install_docker: InstallDocker.html
-    how_to_rotate_framebuffer: HowToRotateFramebuffer.html
-    how_to_use_wiringpi: HowToUseWiringPi.html
-    how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
-    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-    how_to_use_hardware_pwm: HowToUseHardwarePWM.html
-    how_to_use_uart: HowToUseUart.html
-    how_to_control_LED: HowToControlLED.html
-    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
-    how_to_set_auto_login: HowToSetAutoLogin.html
-    how_to_use_1-Wire: HowToUse1wire.html
-    how_to_setup_HDMI: HowToSetupHDMI.html
-    display_ubuntu_logo: DisplayUbuntuLogo.html
-    how_to_change_logo: HowToChangeBootLogo.html
-    how_to_custom_MAC: HowToCustomMac.html
-    how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
-    how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
-    how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
-    how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
-    how_to_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
-    how_to_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
-    how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
 
 vim2:
   getting_started:
@@ -88,36 +59,7 @@ vim2:
     build_android: BuildAndroid.html
     package_update_image: FastPackageUpdateImage.html
     how_to_use_adb_tool: HowToUseADBTool.html
-    force_reset_features: ForceResetFeatures.html 
-  linux:
-    fenix_script: FenixScript.html
-    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
-    krescue: Krescue.html
-    how_to_setup_watchdog: HowToSetupWatchdog.html
-    install_docker: InstallDocker.html
-    how_to_rotate_framebuffer: HowToRotateFramebuffer.html
-    how_to_use_wiringpi: HowToUseWiringPi.html
-    how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
-    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-    how_to_use_hardware_pwm: HowToUseHardwarePWM.html
-    how_to_use_uart: HowToUseUart.html
-    how_to_control_LED: HowToControlLED.html
-    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
-    how_to_set_auto_login: HowToSetAutoLogin.html
-    how_to_use_1-Wire: HowToUse1wire.html
-    how_to_setup_HDMI: HowToSetupHDMI.html
-    display_ubuntu_logo: DisplayUbuntuLogo.html
-    how_to_change_logo: HowToChangeBootLogo.html
-    how_to_custom_MAC: HowToCustomMac.html
-    how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
-    how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
-    how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
-    how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
-    how_to_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
-    how_to_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
-    how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
+    force_reset_features: ForceResetFeatures.html
   fuchsia:
     build_fuchsia: BuildFuchsia.html
 
@@ -168,46 +110,11 @@ vim3:
     how_to_use_fastboot: HowToUseFastboot.html
     how_to_access_i2c: HowToAccessI2c_android.html
     how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
-    how_to_change_logo: HowToChangeBootLogo_android.html
+    how_to_change_logo_android: HowToChangeBootLogo_android.html
     how_to_change_animation: HowToChangeBootAnimation_android.html
-    how_to_use_uart: HowToUseUart_android.html
+    how_to_use_uart_android: HowToUseUart_android.html
     how_to_app_platform_sign: HowToAppPlatformSign.html
     how_to_add_ir: HowToAddIr.html
-  linux:
-    fenix_script: FenixScript.html
-    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
-    krescue: Krescue.html
-    how_to_setup_watchdog: HowToSetupWatchdog.html
-    install_docker: InstallDocker.html
-    how_to_rotate_framebuffer: HowToRotateFramebuffer.html
-    how_to_use_wiringpi: HowToUseWiringPi.html
-    how_to_use_wiringpi-python: HowToUseWiringPi-Python.html
-    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-    how_to_use_hardware_pwm: HowToUseHardwarePWM.html
-    how_to_use_uart: HowToUseUart.html
-    how_to_control_LED: HowToControlLED.html
-    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
-    how_to_set_auto_login: HowToSetAutoLogin.html
-    how_to_use_1-Wire: HowToUse1wire.html
-    how_to_setup_HDMI: HowToSetupHDMI.html
-    how_to_setup_max_cpu_freq: HowToSetupMaxCPUFrequency.html
-    display_ubuntu_logo: DisplayUbuntuLogo.html
-    how_to_change_logo: HowToChangeBootLogo.html
-    how_to_custom_MAC: HowToCustomMac.html
-    how_to_use_dtbo: HowToUseDeviceTreeOverlay.html
-    how_to_custom_IR_code_to_boot: HowToCustomIRCodeToBoot.html
-    how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
-    how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
-    how_to_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
-    how_to_use_hardware_encoding_library: HowToUseHardwareEncodingLibrary.html
-    how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
-    how_to_use_usb_gadget: HowToUseUSBGadget.html
-    gsensor_sample_demo: GsensorSampleDemo.html
-    SDL2_usage: SDL2Usage.html
-    PPSSPP_usage: PPSSPPUsage.html
-    qt5_usage: QT5Usage.html
 edge:
   getting_started:
     overview: index.html
@@ -237,23 +144,6 @@ edge:
     build_android: BuildAndroid.html
     how_to_use_adb_tool: HowToUseADBTool.html
     instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
-  linux:
-    fenix_script: FenixScript.html
-    how_to_upgrade_the_system: HowToUpgradeTheSystem.html
-    krescue: Krescue.html
-    install_docker: InstallDocker.html
-    build_packages_in_docker: BuildPackagesInDocker.html
-    how_to_use_wiringpi: HowToUseWiringPi.html
-    how_to_upgrade_the_logo: HowToUpgradeTheLogo.html
-    how_to_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-    display_ubuntu_logo: DisplayUbuntuLogo.html
-    how_to_control_LED: HowToControlLED.html
-    how_to_test_gpio_irq: HowToTestGPIOIRQ.html
-    how_to_set_auto_login: HowToSetAutoLogin.html
-    how_to_use_1-Wire: HowToUse1wire.html
-    how_to_setup_fb_font: HowToSetupFramebufferConsoleFont.html
-    how_to_write_SD_image_to_eMMC: HowToWriteSDImageToEmmc.html
 
 tone1:
   getting_started:

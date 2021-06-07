@@ -60,39 +60,6 @@ sidebar:
     build_android: 编译安卓源码
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: ADB用法
-    linux: Linux
-    fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 系统升级
-    krescue: Krescue
-    how_to_setup_watchdog: 设置看门狗
-    install_docker: 安装Docker
-    how_to_rotate_framebuffer: 旋转Framebuffer Console
-    how_to_use_wiringpi: WiringPi用法
-    how_to_use_wiringpi-python: wiringPi-Python用法
-    how_to_upgrade_the_logo: 更新logo
-    how_to_upgrade_the_uboot: 更新u-boot
-    how_to_upgrade_the_kernel: 更新内核
-    how_to_use_hardware_pwm: 硬件PWM用法
-    how_to_use_uart: 串口用法
-    how_to_control_LED: LED用法
-    how_to_test_gpio_irq: GPIO中断用法
-    how_to_set_auto_login: 设置自动登录
-    how_to_use_1-Wire: 单总线用法
-    how_to_setup_HDMI: 设置HDMI分辨率
-    display_ubuntu_logo: 显示/关闭Ubuntu logo
-    how_to_change_logo: 更换开机Logo
-    how_to_custom_MAC: 自定义MAC地址
-    how_to_use_dtbo: Device Tree Overlay用法
-    how_to_custom_IR_code_to_boot: 自定义IR CODE启动系统
-    how_to_setup_fb_font: 设置Framebuffer Console字体
-    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
-    how_to_use_hardware_decoding_library: 硬件解码库用法
-    how_to_use_hardware_encoding_library: 硬件编码库用法
-    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
-    SDL2_usage: SDL2 Mail使用说明
-    PPSSPP_usage: PPSSPP使用说明
-    qt5_usage: Qt5的使用
 
   vim2:
     getting_started: 开始使用
@@ -126,40 +93,6 @@ sidebar:
     package_update_image: 快速打包安卓固件
     how_to_use_adb_tool: ADB用法
     force_reset_features: 远程强制复位
-    linux: Linux
-    fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 系统升级
-    krescue: Krescue
-    how_to_setup_watchdog: 设置看门狗
-    fuchsia: Fuchsia
-    install_docker: 安装Docker
-    how_to_rotate_framebuffer: 旋转Framebuffer Console
-    how_to_use_wiringpi: WiringPi用法
-    how_to_use_wiringpi-python: wiringPi-Python用法
-    how_to_upgrade_the_logo: 更新logo
-    how_to_upgrade_the_uboot: 更新u-boot
-    how_to_upgrade_the_kernel: 更新内核
-    how_to_use_hardware_pwm: 硬件PWM用法
-    how_to_use_uart: 串口用法
-    how_to_control_LED: LED灯用法
-    how_to_test_gpio_irq: GPIO中断用法
-    how_to_set_auto_login: 设置自动登录
-    how_to_use_1-Wire: 单总线用法
-    how_to_setup_HDMI: 设置HDMI分辨率
-    display_ubuntu_logo: 显示/关闭Ubuntu logo
-    how_to_change_logo: 更换开机Logo
-    how_to_custom_MAC: 自定义MAC地址
-    how_to_use_dtbo: Device Tree Overlay用法
-    how_to_custom_IR_code_to_boot: 自定义IR CODE启动系统
-    how_to_setup_fb_font: 设置Framebuffer Console字体
-    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
-    how_to_use_hardware_decoding_library: 硬件解码库用法
-    how_to_use_hardware_encoding_library: 硬件编码库用法
-    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
-    SDL2_usage: SDL2 Mail使用说明
-    PPSSPP_usage: PPSSPP使用说明
-    qt5_usage: QT5用法
     build_fuchsia: 编译Fuchsia
     mcu: MCU
     mcu_develop: MCU开发
@@ -217,42 +150,6 @@ sidebar:
     how_to_change_logo_android: 如何更新开机logo
     how_to_app_platform_sign: app如何系统签名
     how_to_add_ir: 如何添加遥控器
-    linux: Linux
-    fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 系统升级
-    krescue: Krescue
-    how_to_setup_watchdog: 设置看门狗
-    install_docker: 安装Docker
-    how_to_rotate_framebuffer: 旋转Framebuffer Console
-    how_to_use_wiringpi: WiringPi用法
-    how_to_use_wiringpi-python: wiringPi-Python用法
-    how_to_upgrade_the_logo: 更新logo
-    how_to_upgrade_the_uboot: 更新u-boot
-    how_to_upgrade_the_kernel: 更新内核
-    how_to_use_hardware_pwm: 使用硬件PWM
-    how_to_use_uart: 串口用法
-    how_to_control_LED: LED灯用法
-    how_to_test_gpio_irq: GPIO中断用法
-    how_to_set_auto_login: 设置自动登录
-    how_to_use_1-Wire: 单总线用法
-    how_to_setup_HDMI: 设置HDMI分辨率
-    how_to_setup_max_cpu_freq: 设置最大CPU频率
-    display_ubuntu_logo: 显示/关闭Ubuntu logo
-    how_to_change_logo: 更换开机Logo
-    how_to_custom_MAC: 自定义MAC地址
-    how_to_use_dtbo: Device Tree Overlay用法
-    how_to_custom_IR_code_to_boot: 自定义IR CODE启动系统
-    how_to_setup_fb_font: 设置Framebuffer Console字体
-    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
-    how_to_use_hardware_decoding_library: 硬件解码库用法
-    how_to_use_hardware_encoding_library: 使用硬件编码库
-    how_to_run_32-bit_applications_on_64-bit_system: 64位系统下运行32位应用
-    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi同时配置STA+AP模式
-    how_to_use_usb_gadget: USB Gadget用法
-    gsensor_sample_demo: Gsensor简单使用示例
-    SDL2_usage: SDL2 Mail使用说明
-    PPSSPP_usage: PPSSPP使用说明
-    qt5_usage: QT5的用法
 
   edge:
     getting_started: 开始使用
@@ -289,23 +186,6 @@ sidebar:
     how_to_use_adb_tool: ADB用法
     force_reset_features: 远程强制复位
     instructions_for_edge_single_pack_burning_tool: Edge单包烧录工具使用说明
-    linux: Linux
-    fenix_script: 编译Ubuntu/Debian固件
-    how_to_upgrade_the_system: 系统升级
-    krescue: Krescue
-    install_docker: 安装Docker
-    build_packages_in_docker: 在Docker中编译软件包
-    how_to_use_wiringpi: WiringPi用法
-    how_to_upgrade_the_logo: 更新logo
-    how_to_upgrade_the_uboot: 更新u-boot
-    how_to_upgrade_the_kernel: 更新内核
-    display_ubuntu_logo: 显示/关闭Ubuntu logo
-    how_to_control_LED: LED灯用法
-    how_to_test_gpio_irq: GPIO中断用法
-    how_to_set_auto_login: 设置自动登录
-    how_to_use_1-Wire: 单总线用法
-    how_to_setup_fb_font: 设置Framebuffer Console字体
-    how_to_write_SD_image_to_eMMC: 把SD卡固件写入到eMMC
 
   tone1:
     getting_started: 开始使用
