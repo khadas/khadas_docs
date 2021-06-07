@@ -4,8 +4,8 @@ title: 编译Amlogic平台安卓源码
 ## 准备工作
 
 * [搭建编译环境](http://source.android.com/source/initializing.html)
-* [下载安卓源码](/zh-cn/vim1/DownloadAndroidSourceCode.html)
-* [安装编译工具链](/zh-cn/vim1/InstallToolchains.html)
+* [下载安卓源码](/android/zh-cn/vim1/DownloadAndroidSourceCode.html)
+* [安装编译工具链](/android/zh-cn/vim1/InstallToolchains.html)
 
 
 ## 编译
@@ -124,6 +124,6 @@ $ make bootimage
 </div>
 
 ## 参考
-* [通过USB升级](/zh-cn/vim1/UpgradeViaUSBCable.html)
-* [通过TF卡升级](/zh-cn/vim1/UpgradeViaTFBurningCard.html)
+* [通过USB升级](/android/zh-cn/vim1/UpgradeViaUSBCable.html)
+* [通过TF卡升级](/android/zh-cn/vim1/UpgradeViaTFBurningCard.html)
 

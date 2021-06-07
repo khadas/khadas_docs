@@ -16,7 +16,7 @@ title: 如何使用单总线
 overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 ```
 
-关于overlays的详细说明可以参考[如何使用device tree overlays](/zh-cn/vim1/HowToUseDeviceTreeOverlay.html)。
+关于overlays的详细说明可以参考[如何使用device tree overlays](/android/zh-cn/vim1/HowToUseDeviceTreeOverlay.html)。
 
 ## 使用单总线
 

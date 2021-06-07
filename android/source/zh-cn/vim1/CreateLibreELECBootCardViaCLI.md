@@ -43,5 +43,5 @@ $ sudo eject /dev/sdb
 
 ### 更多资料
 * [LibreELEC官方安装指导](https://wiki.libreelec.tv/doku.php)
-* [通过Windows电脑安装LibreELEC](/zh-cn/vim1/InstallLibreELECViaWindows.html)
+* [通过Windows电脑安装LibreELEC](/android/zh-cn/vim1/InstallLibreELECViaWindows.html)
 

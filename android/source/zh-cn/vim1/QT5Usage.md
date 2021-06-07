@@ -7,14 +7,14 @@ Ubuntu系统默认自带的QT版本是针对OpenGL桌面环境的，但是对于
 
 {% note warn 注意 %}
 
-* 目前QT5 eglfs Mali GPU（fbdev）仅仅支持**Ubuntu 20.04 Linux 4.9内核**，同时需要先[更新系统](/zh-cn/vim1/HowToUpgradeTheSystem.html)到最新版本。
+* 目前QT5 eglfs Mali GPU（fbdev）仅仅支持**Ubuntu 20.04 Linux 4.9内核**，同时需要先[更新系统](/android/zh-cn/vim1/HowToUpgradeTheSystem.html)到最新版本。
 * 仅支持Framebuffer Console模式。
 
 {% endnote %}
 
 ## 更新系统
 
-参考这篇[文档](/zh-cn/vim1/HowToUpgradeTheSystem.html)升级系统到最新版本。
+参考这篇[文档](/android/zh-cn/vim1/HowToUpgradeTheSystem.html)升级系统到最新版本。
 
 ## 安装QT5软件包
 

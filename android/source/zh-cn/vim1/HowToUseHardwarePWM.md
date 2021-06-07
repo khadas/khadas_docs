@@ -5,7 +5,7 @@ title: 如何使用硬件PWM
 
 dts配置文件里默认已经打开了硬件PWM，所以仅需要确认哪一个物理引脚对应了硬件PWM。
 
-* `PWM_F` on [VIM1 GPIO-Out](/zh-cn/vim1/index.html#GPIO-Pin-Out)
+* `PWM_F` on [VIM1 GPIO-Out](/android/zh-cn/vim1/index.html#GPIO-Pin-Out)
 * `PWM_D` on [VIM2 GPIO-Out](/zh-cn/vim2/index.html#GPIO-Pinout)
 * `PWM_F` on [VIM3 GPIO-Out](/zh-cn/vim3/index.html#GPIO-Pinout)
 

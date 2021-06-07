@@ -56,9 +56,9 @@ $ sudo eject /dev/sdX
 
 ## 检查
 
-确保串口连接正确，参考这里([VIM1](/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/zh-cn/vim3/SetupSerialTool.html))。
+确保串口连接正确，参考这里([VIM1](/android/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/zh-cn/vim3/SetupSerialTool.html))。
 
-为了确保U-boot从SD卡启动，你必须擦除eMMC([VIM1](/zh-cn/vim1/HowtoEraseEMMC.html)/[VIM2](/zh-cn/vim2/HowtoEraseEMMC.html)/[VIM3](/zh-cn/vim3/HowtoEraseEMMC.html))。
+为了确保U-boot从SD卡启动，你必须擦除eMMC([VIM1](/android/zh-cn/vim1/HowtoEraseEMMC.html)/[VIM2](/zh-cn/vim2/HowtoEraseEMMC.html)/[VIM3](/zh-cn/vim3/HowtoEraseEMMC.html))。
 
 打开终端，执行`sudo minicom`命令或者你也可以选则其他你喜欢的串口工具。
 

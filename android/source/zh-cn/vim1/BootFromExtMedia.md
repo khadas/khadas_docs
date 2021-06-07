@@ -57,7 +57,7 @@ $ sudo dd if=/path/to/image of=/dev/sdX bs=8M
 
 ## 3、激活多启动
 两种方式激活多启动：
-1)、通过[按键模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)。
+1)、通过[按键模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)。
 2)、通过安卓系统激活。
 * 进入`Settings>About Device->System->updates`。
 * 点击`select`并选择`aml_autosript.zip`。
