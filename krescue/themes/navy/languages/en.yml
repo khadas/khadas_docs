@@ -1,0 +1,363 @@
+menu:
+  vim: VIM
+  vim1: VIM1
+  vim2: VIM2
+  vim3: VIM3
+  edge: Edge
+  tone1: Tone1
+  hardware: Hardware
+  firmware: Firmware
+
+index:
+  get_started: Getting Started
+  read_docs: READ DOCS
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+
+home_page:
+  intro_title1: Editable
+  intro_desc1: This documentation is editable via GitHub Pull Request, any code donation is welcome.
+  intro_title2: Open Source
+  intro_desc2: All source code is open source, you can find the source code on the Khadas GitHub.
+  intro_title3: Markdown Support
+  intro_desc3: All documentation is written with Markdown. All features of GitHub Flavoured Markdown are supported.
+  intro_title4: Multi-Language Support
+  intro_desc4: English and Simplified Chinese are supported, more languages will be supported in the future.
+
+
+sidebar:
+  vim1:
+    overview: Beginners Guide
+    getting_started: Getting Started
+    vim1_interfaces: VIM1 Interfaces
+    how_to_connect_wifi: Setup Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    add_chinese_support: Chinese Support
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using SD-Card
+    boot_from_ext_image: Boot From External Media
+    extra_power_input: Extra Power Input
+    Accessories: Accessories
+    how_to_setup_fan: Cooling FAN Setup
+    development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
+    how_to_access_gpio: GPIO Usage
+    how_to_access_i2c: I2C Usage
+    uboot: U-Boot
+    uboot_usage: U-boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    android: Android
+    install_toolchains: Install Toolchains
+    download_android_source_code: Download Android Source Code
+    build_android: Build Android Source Code
+    package_update_image: Fast Package Update Image
+    how_to_use_adb_tool: ADB Usage
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Image
+    how_to_upgrade_the_system: Upgrade the System
+    krescue: Krescue
+    how_to_setup_watchdog: Setup Watchdog
+    install_docker: Install Docker
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_use_wiringpi-python: WiringPi-Python Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    how_to_use_hardware_pwm: Hardware PWM Usage
+    how_to_use_uart: Uart Usage
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_use_1-Wire: 1-Wire Usage
+    how_to_setup_HDMI: HDMI Resolution Setup
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
+    how_to_change_logo: Change Boot Logo
+    how_to_custom_MAC: Custom MAC Address Setup
+    how_to_use_dtbo: Device Tree Overlay Usage
+    how_to_custom_IR_code_to_boot: Custom IR Code Setup
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
+    how_to_use_hardware_decoding_library:  Hardware Decoding Library Usage
+    how_to_use_hardware_encoding_library: Hardware Encoding Library Usage
+    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    SDL2_usage: SDL2 Mail Usage
+    PPSSPP_usage: PPSSPP Instructions
+    qt5_usage: QT5 Usage
+
+  vim2:
+    overview: Beginners Guide
+    getting_started: Getting Started
+    vim2_interfaces: VIM2 Interfaces
+    how_to_connect_wifi: Setup Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    add_chinese_support: Chinese Support
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using SD-Card
+    boot_from_ext_image: Boot From External Media
+    extra_power_input: Extra Power Input
+    Accessories: Accessories
+    how_to_setup_fan: Cooling Fan Setup
+    development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
+    how_to_access_gpio: GPIO Usage
+    how_to_access_i2c: I2C Usage
+    howto_use_wol: WOL Usage
+    uboot: U-Boot
+    uboot_usage: U-Boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot Using TFTP
+    kbi_guidance: KBI Guide
+    android: Android
+    install_toolchains: Install Toolchains
+    download_android_source_code: Download Android Source Code
+    build_android: Build Android Source Code
+    package_update_image: Fast Package Update Image
+    how_to_use_adb_tool: ADB Usage
+    force_reset_features: Force Reset Remotely
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Images
+    how_to_upgrade_the_system: Upgrade the System
+    krescue: Krescue
+    how_to_setup_watchdog: Watchdog Setup
+    install_docker: Install Docker
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_use_wiringpi-python: WiringPi-Python Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    how_to_use_hardware_pwm: Hardware PWM Usage
+    how_to_use_uart: Uart Usage
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_setup_HDMI: HDMI Resolution Setup
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
+    how_to_change_logo: Change Boot Logo
+    how_to_custom_MAC: Custom MAC Addres Setup
+    how_to_use_dtbo: Device Tree Overlay Usage
+    how_to_custom_IR_code_to_boot: Custom IR Code Setup
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
+    how_to_use_hardware_decoding_library: Hardware Decoding Library Usage
+    how_to_use_hardware_encoding_library: Hardware Encoding Library Usage
+    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    how_to_use_1-Wire: 1-Wire Usage
+    SDL2_usage: SDL2 Mail Usage
+    PPSSPP_usage: PPSSPP Instructions
+    qt5_usage: QT5 Usage
+    fuchsia: Fuchsia
+    build_fuchsia: Build Fuchsia
+    mcu: MCU
+    mcu_develop: MCU Development
+    mcu_code_flow_chart: MCU Code Flow Chart
+
+  vim3:
+    overview: Beginners Guide
+    getting_started: Getting Started
+    vim3_interfaces: VIM3 Interfaces
+    how_to_connect_wifi: Setup Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    add_chinese_support: Chinese Support
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Android Using SD-Card
+    boot_from_ext_image: Boot From External Media
+    extra_power_input: Extra Power Input
+    Accessories: Accessories
+    how_to_setup_fan: Cooling Fan Setup
+    connect_lcd: Connect TS050 Touchscreen
+    landscape_settings: TS050 Rotate
+    HowToUseMPICamera: MIPI Camera Usage
+    how_to_use_lte_module: LTE Module Usage
+    how_to_enable_M2X_ETH_through_overlays: M2X ETH Usage
+    development: Development
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
+    how_to_access_gpio: GPIO Usage
+    how_to_access_i2c: I2C Usage
+    howto_use_wol: WOL Usage
+    how_to_setup_pcie_usb_port: PCIe/USB3.0 Port Setup
+    npu: NPU
+    how_to_run_npu_demo: NPU Demo Usage
+    npu_sdk_description: SDK Description
+    aml_npu_app_description: aml_npu_app Repository Description
+    run_yourself_AI_with_npu: Run Your AI Model with NPU
+    NPU_performance_usage: NPU Performance Interface Usage
+    how_to_use_AMLNNApi: AMLNNApi Demo Usage
+    how_to_use_Tengine_SDK: Tengine SDK Usage
+    how_to_use_Tengine_app: Tengine demo Usage
+    uboot: U-Boot
+    install_toolchains: Install Toolchains
+    boot_from_spi_flash: Boot From SPI-Flash
+    uboot_usage: U-boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    kbi_guidance: KBI Guide
+    android: Android
+    download_android_source_code: Download Android Source Code
+    build_android: Build Android Source Code
+    package_update_image: Fast Package Update Image
+    how_to_use_adb_tool: ADB Usage
+    how_to_use_fastboot: Fastboot Usage
+    how_to_access_i2c_android: How To Access I2c
+    how_to_enable_m2x_eth: How To Enable M2x Ethernet
+    how_to_change_logo_android: How To Change Boot Logo
+    how_to_change_animation: How To Change Boot Animation
+    how_to_use_uart_android: How To Use Uart
+    how_to_app_platform_sign: How To App Platform Sign 
+    how_to_add_ir: How To Add Ir
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Image
+    how_to_upgrade_the_system: Upgrade the System
+    krescue: Krescue
+    how_to_setup_watchdog: Setup Watchdog
+    install_docker: Install Docker
+    how_to_rotate_framebuffer: Rotate Framebuffer Console
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_use_wiringpi-python: WiringPi-Python Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    how_to_use_hardware_pwm: Hardware PWM Usage
+    how_to_use_uart: Uart Usage
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_use_1-Wire: 1-Wire Usage
+    how_to_setup_HDMI: HDMI Resolution Setup
+    how_to_setup_max_cpu_freq: Maximum CPU Frequency Setup
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
+    how_to_change_logo: Change Boot Logo
+    how_to_custom_MAC: Custom MAC Address Setup 
+    how_to_use_dtbo: Device Tree Overlay Usage
+    how_to_custom_IR_code_to_boot: Custom IR Code Setup
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
+    how_to_use_hardware_decoding_library: Hardware Decoding Library Usage
+    how_to_use_hardware_encoding_library: Hardware Encoding Library Usage
+    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
+    how_to_configure_Wi-Fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    how_to_use_usb_gadget: USB Gadget Usage
+    gsensor_sample_demo: Gsensor Sample demo
+    SDL2_usage: SDL2 Mail Usage
+    PPSSPP_usage: PPSSPP Instructions
+    qt5_usage: QT5 Usage
+
+  edge:
+    overview: Beginners Guide
+    getting_started: Getting Started
+    edge_interfaces: Edge Interfaces
+    captain_interfaces: Captain Interfaces
+    edgev_interfaces: Edge-V Interfaces
+    edgecaptain_power_priority: Edge+Captain Power Priority
+    how_to_connect_wifi: Setup Wi-Fi
+    how_to_setup_bluetooth: Setup Bluetooth
+    add_chinese_support: Chinese Support
+    enter_upgrade_mode: Enter Upgrade Mode
+    upgrade_via_usb: Upgrade Using USB-C Cable
+    upgrade_via_tfcard: Upgrade Using SD-Card
+    boot_from_ext_image: Boot From External Media
+    extra_power_input: Extra Power Input
+    Accessories: Accessories
+    how_to_setup_fan: Cooling Fan Setup
+    connect_lcd: Connect TS050 Touchscreen
+    how_to_use_lte_module: LTE Module Usage
+    development: Development
+    setup_serial: Serial Debugging Tool
+    erase_emmc: Erase eMMC Storage
+    how_to_access_gpio: GPIO Usage
+    rk_docs: Rockchip Official Docs
+    howto_use_wol: WOL Usage
+    uboot: U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
+    kbi_guidance: KBI Guide
+    uboot_usage: U-Boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-boot
+    setup_tftp: TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    android: Android
+    install_toolchains: Install Toolchains
+    download_android_source_code: Download Android Source Code
+    build_android: Build Android Source Code
+    how_to_use_adb_tool: ADB Usage
+    instructions_for_edge_single_pack_burning_tool: Instructions for Edge Single Pack Burning Tool
+    linux: Linux
+    fenix_script: Build Ubuntu/Debian Images
+    how_to_upgrade_the_system: Upgrade the System
+    krescue: Krescue
+    install_docker: Install Docker
+    build_packages_in_docker: Build Packages In Docker
+    how_to_use_wiringpi: WiringPi Usage
+    how_to_upgrade_the_logo: Upgrade The Logo
+    how_to_upgrade_the_uboot: Upgrade The u-boot
+    how_to_upgrade_the_kernel: Upgrade The kernel
+    display_ubuntu_logo: Enable/Disable Ubuntu logo
+    how_to_control_LED: LED Usage
+    how_to_test_gpio_irq: GPIO IRQ Usage
+    how_to_set_auto_login: Auto Login Setup
+    how_to_use_1-Wire: 1-Wire Usage
+    how_to_setup_fb_font: Framebuffer Console Font Setup
+    how_to_write_SD_image_to_eMMC: Write SD Image To eMMC
+
+  tone1:
+    getting_started: Getting Started
+    overview: Beginners FAQ
+    user_manual: User Manual
+    how_to_upgrade_firmware: Upgrade the Firmware
+    how_to_use_tone_in_linux: Tone with MPD In Linux
+
+  hardware:
+    hardware: hardware
+    vim1: VIM1
+    vim2: VIM2
+    vim3: VIM3
+    edge: Edge
+    tone1: Tone1
+
+  firmware:
+    firmware: Firmware
+    vim1: VIM1
+    vim1_android: Android
+    vim1_ubuntu: Ubuntu
+    vim1_thirdparty: Third Party
+    vim2: VIM2
+    vim2_android: Android
+    vim2_ubuntu: Ubuntu
+    vim2_thirdparty: Third Party
+    vim3: VIM3
+    vim3_android: Android
+    vim3_ubuntu: Ubuntu
+    vim3_thirdparty: Third Party
+    vim3l: VIM3L
+    vim3l_android: Android
+    vim3l_ubuntu: Ubuntu
+    vim3l_thirdparty: Third Party
+    edge: Edge
+    edge_android: Android
+    edge_ubuntu: Ubuntu
+    edge_thirdparty: Third Party
+    tone1: Tone1
