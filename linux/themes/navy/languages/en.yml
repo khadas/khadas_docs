@@ -213,7 +213,10 @@ sidebar:
     how_to_run_yourself_ai_model: Run Yourself AI Model
     origin_npu_performance_usage: NPU Performance Usage
     tengine_npu: Tengine NPU
+    tengie_sdk_usage: Tengie Sdk Usage
+    how_to_use_tengine_app: Tengine Application Usage
     nnapi_npu: NNAPI NPU
+    howto_use_amlnn_api: AML NN API Demo Usage
     howto_use_aml_npu_app: Application Source Code Usage
     development: Development
     uboot: U-boot

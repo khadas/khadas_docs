@@ -213,7 +213,10 @@ sidebar:
     how_to_run_yourself_ai_model: 运行自己训练的AI模型
     origin_npu_performance_usage: NPU性能接口说明
     tengine_npu: Tengine NPU
+    tengie_sdk_usage: Tengine SDK使用说明
+    how_to_use_tengine_app: Tengine应用使用说明
     nnapi_npu: NNAPI NPU
+    howto_use_amlnn_api: AML NN API示例使用说明
     development: 开发
     uboot: U-boot
     boot_from_spi_flash: 从SPI-Flash启动

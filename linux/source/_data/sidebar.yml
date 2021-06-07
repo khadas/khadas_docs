@@ -180,7 +180,10 @@ vim3:
       how_to_run_yourself_ai_model: HowToConvertToUseNPU.html
       origin_npu_performance_usage: OriginNPUPerformanceUsage.html
     tengine_npu:
+      tengie_sdk_usage: HowToUseTengineSDK.html
+      how_to_use_tengine_app: HowToUseTengineApp.html
     nnapi_npu:
+      howto_use_amlnn_api: HowToUseAMLNNApi.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
