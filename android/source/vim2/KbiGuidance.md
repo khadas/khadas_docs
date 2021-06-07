@@ -6,7 +6,7 @@ KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to
 * Carry out low level hardware management
 * Let developers utilise all the features of Khadas VIM2/VIM3/Edge
 
-This document describes how to setup, configure and use the KBI. As KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup a Serial Debugging Tool([VIM2](/android/vim1/SetupSerialTool.html)/[VIM3](/android/vim1/SetupSerialTool.html)/[Edge](/edge/SetupSerialTool.html)).
+This document describes how to setup, configure and use the KBI. As KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup a Serial Debugging Tool([VIM2](/android/vim1/SetupSerialTool.html)/[VIM3](/android/vim1/SetupSerialTool.html)/[Edge](/android/edge/SetupSerialTool.html)).
 
 *Note: This document uses VIM2 as an example, VIM3 and Edge are similar.*
 
@@ -121,7 +121,7 @@ To set the default boot media as SPI flash:
 ```
 kvim2# kbi bootmode w spi
 ```
-*For more information about the SPI flash boot mode, see How to boot from SPI Flash([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/android/vim3/BootFromSpiFlash.html)/[Edge](/edge/BootFromSpiFlash.html))*.
+*For more information about the SPI flash boot mode, see How to boot from SPI Flash([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/android/vim3/BootFromSpiFlash.html)/[Edge](/android/edge/BootFromSpiFlash.html))*.
 
 To set the default boot media as eMMC storage:
 ```
