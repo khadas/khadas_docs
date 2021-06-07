@@ -36,7 +36,7 @@ title: 通过USB升级固件
 {% note info 提示 %}
 
 * 先点击`stop`按钮再关闭升级工具。
-* 外部供电要求([VIM1](/android/zh-cn/vim1/ExtraPowerInput.html)/[VIM2](/zh-cn/vim2/ExtraPowerInput.html)/[VIM3](/zh-cn/vim3/ExtraPowerInput.html))，部分电脑供电比较弱会导致升级失败。
+* 外部供电要求([VIM1](/android/zh-cn/vim1/ExtraPowerInput.html)/[VIM2](/android/zh-cn/vim2/ExtraPowerInput.html)/[VIM3](/zh-cn/vim3/ExtraPowerInput.html))，部分电脑供电比较弱会导致升级失败。
 
 {% endnote %}
 
@@ -111,7 +111,7 @@ Installing Amlogic flash-tool...
 {% endnote %}
 
 ## 检查USB驱动
-首先设置VIMs进入升级模式([VIM1](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))，然后检查USB驱动：
+首先设置VIMs进入升级模式([VIM1](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))，然后检查USB驱动：
 
 ```bash
 $ lsusb | grep Amlogic

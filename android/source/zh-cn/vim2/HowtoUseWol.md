@@ -47,4 +47,4 @@ VIM2、VIM3和Edge不同于VIM1的一点就是具有以太网唤醒功能。
 * 注意：在iPhone下, 你可以在应用商店搜索 **wake on lan** 工具。
 
 ## 更多
-[KBI参考](/zh-cn/vim2/KbiGuidance.html)
+[KBI参考](/android/zh-cn/vim2/KbiGuidance.html)

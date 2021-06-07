@@ -27,33 +27,33 @@ title: VIM2 文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 2.0接口,最大输出电流500mA|
-|2|RJ-45|有[WOL功能](/zh-cn/vim2/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/android/zh-cn/vim2/HowtoUseWol.html)的Gigabit网口|
 |3|HDMI|支持3D,HDR,CEC以及HDCP2.2的HDMI接口|
-|4|USB-C|USB2.0 OTG接口,[5V输出](https://www.khadas.com/pr/oduct-page/power-adapter),[可用于升级固件](/zh-cn/vim2/UpgradeViaUSBCable.html)|
+|4|USB-C|USB2.0 OTG接口,[5V输出](https://www.khadas.com/pr/oduct-page/power-adapter),[可用于升级固件](/android/zh-cn/vim2/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0接口,最大输出电流900mA|
 |6|限流开关|防止在负载不均衡的情况下损坏VIM2|
 |7|风扇座子|PWM控制的4线制[风扇](https://www.khadas.com/product-page/3705-cooling-fan)|
 |8|reset按键|用于强制重启板子,按下会直接复位|
-|9|function按键|快速短按3下进入[MaskROM模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
+|9|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
 |A|power按键|用于关机或者配合其他按键使用|
 |B|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |C|RTC电池接口|硬件时钟电池的接口|
-|D|[40脚的GPIO](/zh-cn/vim2/GPIOPinout.html)|可用于控制[GPIO](/zh-cn/vim2/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|D|[40脚的GPIO](/android/zh-cn/vim2/GPIOPinout.html)|可用于控制[GPIO](/android/zh-cn/vim2/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |F|LED灯|用于指示板子的状态|
 |G|FPC控制器|10个引脚,0.5mm间距,具有I2C和IOs的功能|
-|H|天线座子|用于插[wifi](/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
-|I|天线座子|用于插[wifi](/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
+|H|天线座子|用于插[wifi](/android/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
+|I|天线座子|用于插[wifi](/android/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
 </div>
 <div class="tab-pane fade" id="back-vim2" role="tabpanel" aria-labelledby="back-tab">
 
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|Pogo焊盘|外部5V电压输入,可有[VTV板子](https://www.khadas.com/product-page/vtv-board)提供|
-|2|[SD卡插座](/zh-cn/vim2/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
+|2|[SD卡插座](/android/zh-cn/vim2/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
 |3|500mA保险丝|为USB口提供500mA的电流保护|
 |4|WOL选择开关|打开以后可以用WOL的方式唤醒板子|
-|5|[MCU](/zh-cn/vim2/KbiGuidance.html)|可编程EEPROM阵列的STM8S003微控制器|
+|5|[MCU](/android/zh-cn/vim2/KbiGuidance.html)|可编程EEPROM阵列的STM8S003微控制器|
 |6|MCU焊盘|SWIM, UART, ADC, NRST|
 |7|SPI Flash|通过SPI控制的FLash模块|
 |8|20叫Pogo焊盘|用于[VTV板子](https://www.khadas.com/product-page/vtv-board)的USB, I2C, DVB-Bus, IOs接口|
@@ -65,10 +65,10 @@ title: VIM2 文档
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM2|
-||x||[进入升级模式(TST模式)](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
+||x||[进入升级模式(TST模式)](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM2|
-|x||x|[进入升级模式(按键模式)](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[清除EMMC](/zh-cn/vim2/HowtoEraseEMMC.html)|
+|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
+|x|x|x|[清除EMMC](/android/zh-cn/vim2/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
 
@@ -163,7 +163,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 **更多：**
 * [Khadas Shop - 电源适配器](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - Type-C数据线](https://www.khadas.com/product-page/usb-c-cable)
-* [Khadas VIMs 外部供电接口](/zh-cn/vim2/ExtraPowerInput.html)
+* [Khadas VIMs 外部供电接口](/android/zh-cn/vim2/ExtraPowerInput.html)
 * [Khadas VIM 规格](https://www.khadas.com/vim)
 
 ## 显示器　&& 用户输入
@@ -189,10 +189,10 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 4. 不小于8GB的U盘。
 
 **更多：**
-[启动卡与烧录卡的比较](/zh-cn/vim2/BootingCardVsBurningCard.html)
-[通过TF卡升级安卓](/zh-cn/vim2/UpgradeViaTFBurningCard.html)
-[从外部媒体介质启动系统](/zh-cn/vim2/BootFromExtMedia.html)
-[如何进入升级模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
+[启动卡与烧录卡的比较](/android/zh-cn/vim2/BootingCardVsBurningCard.html)
+[通过TF卡升级安卓](/android/zh-cn/vim2/UpgradeViaTFBurningCard.html)
+[从外部媒体介质启动系统](/android/zh-cn/vim2/BootFromExtMedia.html)
+[如何进入升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
 
 {% note info 提示 %}
 
@@ -209,16 +209,16 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 2. 两头Type-C的数据线 (现代PC)
 
 **更多：**
-* [通过USB升级固件](/zh-cn/vim2/UpgradeViaUSBCable.html)
-* [进入升级模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
+* [通过USB升级固件](/android/zh-cn/vim2/UpgradeViaUSBCable.html)
+* [进入升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
 
 **固件**
-* [安卓固件](/zh-cn/vim2/FirmwareAndroid.html)
-* [Ubuntu固件](/zh-cn/vim2/FirmwareUbuntu.html)
-* [LibreELEC](/zh-cn/vim2/FirmwareLibreelec.html)
-* [Dual](/zh-cn/vim2/FirmwareDualos.html)
-* [U-Boot](/zh-cn/vim2/FirmwareUboot.html)
-* [Third Party OSes](/zh-cn/vim2/FirmwareThirdparty.html)
+* [安卓固件](/android/zh-cn/vim2/FirmwareAndroid.html)
+* [Ubuntu固件](/android/zh-cn/vim2/FirmwareUbuntu.html)
+* [LibreELEC](/android/zh-cn/vim2/FirmwareLibreelec.html)
+* [Dual](/android/zh-cn/vim2/FirmwareDualos.html)
+* [U-Boot](/android/zh-cn/vim2/FirmwareUboot.html)
+* [Third Party OSes](/android/zh-cn/vim2/FirmwareThirdparty.html)
 
 ## 观看电影，扩展内部emmc存储
 如果您希望将VIM2 SBC用作媒体中心，用于存储/下载大型电影文件，这些项目非常有用。一个microDXC的UHS-I卡很贵，但它的速度也足以支持4K视频播放。此外，您还可以连接外部USB-2.0 SSD或HDD以存储整个媒体库。
@@ -232,7 +232,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 
 {% note info 提示 %}
 
-如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/zh-cn/vim2/InstallLibreELEC.html)。
+如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/android/zh-cn/vim2/InstallLibreELEC.html)。
 
 {% endnote %}
 
@@ -243,7 +243,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 2. USB串行调试工具（用于诊断软件/硬件问题）
 
 **更多:**
-* [升级模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
+* [升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
 * [亚马逊－金属镊子](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [亚马逊-USB调试工具](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
