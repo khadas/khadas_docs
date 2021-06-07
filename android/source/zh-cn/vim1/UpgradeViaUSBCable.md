@@ -19,7 +19,7 @@ title: 通过USB升级固件
 ## 准备工作
 * 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip)并解压。
 * 运行`setup_v2.x.x.exe`程序进行安装。
-![image](/images/vim1/usb_upgrade_tool_setup_v217_zh.png)
+![image](/android/images/vim1/usb_upgrade_tool_setup_v217_zh.png)
 
 ## 固件升级操作步骤
 确保已经正确安装好升级工具，按照下面步骤进行升级：
@@ -31,7 +31,7 @@ title: 通过USB升级固件
     * 短按Rest键并松开
     * 大概10秒后松开Power键进入固件升级模式
 4. 如果上面操作已正确执行，电脑端会发现VIMs升级设备，点击升级工具上的start按钮开始固件升级,升级进度条100%时完成升级。
-![image](/images/vim1/usb_upgrade_tool_interface_v217_zh.png)
+![image](/android/images/vim1/usb_upgrade_tool_interface_v217_zh.png)
 
 {% note info 提示 %}
 

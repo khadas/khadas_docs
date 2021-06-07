@@ -5,15 +5,15 @@ title: 如何连接TS050触摸屏
 
 Edge-V开发板外置了3个LCD屏接口：HDMI + MIPI + EDP。接口对应板子上的位置如下图：
 
-<img src="/images/edge/edge-v_display_interfaces.jpg" width="70%" height="70%" >
+<img src="/android/images/edge/edge-v_display_interfaces.jpg" width="70%" height="70%" >
 
 Edge开发板外置了2个LCD屏接口：HDMI + DP。接口对应板子上的位置如下图：
 
-<img src="/images/edge/edge_display_interfaces.jpg" width="50%" height="50%" >
+<img src="/android/images/edge/edge_display_interfaces.jpg" width="50%" height="50%" >
 
 Captain开发板外置了2个LCD屏接口：EDP + MIPI。接口对应板子上的位置如下图：
 
-<img src="/images/edge/captain_display_interfaces.jpg" width="50%" height="50%" >
+<img src="/android/images/edge/captain_display_interfaces.jpg" width="50%" height="50%" >
 
 ## 2.（HDMI + DP）屏幕配置
 ###  2.1配置 **dts**
@@ -121,7 +121,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ```
 
 ## 3.（MIPI + HDMI）屏幕配置
-<img src="/images/edge/edge_v_ts050.jpg" width="50%" height="50%" >
+<img src="/android/images/edge/edge_v_ts050.jpg" width="50%" height="50%" >
 
 ###  3.1配置 **dts**
 
@@ -280,8 +280,8 @@ cpll 这样可以分出任意 dclk 的频率。
     };
 };
 ```
-![image|690x429,75%](/images/edge/timing_attribute_reference_figure.png)  
-![2|379x500,100%](/images/edge/timing_attribute_reference_figure_2.png) 
+![image|690x429,75%](/android/images/edge/timing_attribute_reference_figure.png)  
+![2|379x500,100%](/android/images/edge/timing_attribute_reference_figure_2.png) 
 
 #### 3.1.7 命令格式说明
 ```sh

@@ -61,10 +61,10 @@ $ wakeonlan 98:aa:fc:60:45:87
 
 ## Tips: Ways to get the MAC Address
 * From the sticker on the backside of VIM2 board:
-![image|487x136](/images/vim2/vim2_mac.jpg)
+![image|487x136](/android/images/vim2/vim2_mac.jpg)
 
 * From the Setting app (Android): Setting --> Network --> MAC Address
-![image|489x200](/images/vim2/vim2_android_mac.jpg)
+![image|489x200](/android/images/vim2/vim2_android_mac.jpg)
 
 * From the UART print-out:
 ```

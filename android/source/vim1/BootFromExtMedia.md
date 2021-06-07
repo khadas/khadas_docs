@@ -19,7 +19,7 @@ There are several ways to burn an image to a SD card or Thumbdrive:
 
 * [Etcher](https://www.balena.io/etcher/) got a user-friendly GUI for beginners, and is compatible with Mac, Windows and Linux. Simply select an image and it will automatically identify your external device which the image is going to be burned to. **(Recommended)**
 
-![Howto Use Etcher](/images/vim1/HowtoUseEtcher.png)
+![Howto Use Etcher](/android/images/vim1/HowtoUseEtcher.png)
 
 * `dd` on Ubuntu / Debian with command line:
 

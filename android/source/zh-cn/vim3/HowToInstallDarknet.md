@@ -72,7 +72,7 @@ $ make
 ./darknet imtest data/eagle.jpg
 ```
 如果看到类似下面的图案即使安装成功
-![ai-basic0002-1](/images/vim3/darknet_install_success.png)
+![ai-basic0002-1](/android/images/vim3/darknet_install_success.png)
 
 ### 使用yolo模型
 #### 获取训练好的模型文件
@@ -86,7 +86,7 @@ $ ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 ```
 结果如下
 
-![ai-basic0002-2](/images/vim3/darknet_install_check.png)
+![ai-basic0002-2](/android/images/vim3/darknet_install_check.png)
 
 #### 使用摄像头
 使用摄像头必须使用opencv和gpu，指令如下

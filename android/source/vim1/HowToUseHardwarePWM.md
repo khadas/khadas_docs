@@ -64,7 +64,7 @@ root@Khadas:~#
 
 If you sueccess to enable it , you can see it with oscilloscope.
 
-![pwm-Oscilloscope](/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/android/images/vim1/pwm-Oscilloscope.jpg)
 
 {% note info Note %}
 

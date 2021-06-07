@@ -15,13 +15,13 @@ VIM2、VIM3和Edge不同于VIM1的一点就是具有以太网唤醒功能。
 
 通过**Settings->More Settings->About->Status**菜单查下MAC地址
 
-![mac](/images/vim2/vim2_android_mac.png)
+![mac](/android/images/vim2/vim2_android_mac.png)
 
 ### 使能WOL功能
  
 通过**Setting->More Settings->WOL**使能**WOL**。
 
-![wol](/images/vim2/vim2_android_wol.png)
+![wol](/android/images/vim2/vim2_android_wol.png)
 
 ### 开始测试
  
@@ -33,15 +33,15 @@ VIM2、VIM3和Edge不同于VIM1的一点就是具有以太网唤醒功能。
 
 * 在Windows下, 你需要下载安装 **[Wake-On-LAN Sender](http://www.yarovy.com/wol/)** 工具
 
-![sender](/images/vim2/wol_sender_main.png)
+![sender](/android/images/vim2/wol_sender_main.png)
 
 * 添加远程电脑：
 
-![sender_add](/images/vim2/wol_sender_add_remote.png)
+![sender_add](/android/images/vim2/wol_sender_add_remote.png)
 
 * 通过如下按钮唤醒VIM2：
 
-![sender](/images/vim2/wol_sender_send.png)
+![sender](/android/images/vim2/wol_sender_send.png)
 
 
 * 注意：在iPhone下, 你可以在应用商店搜索 **wake on lan** 工具。

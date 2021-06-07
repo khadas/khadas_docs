@@ -20,11 +20,11 @@ title: Khadas Tone1 初学者 FAQ
 
 * 苹果上切换音频设备的位置`系统偏好设置` > `声音`.
 
-![Mac OS X Sound Control Panel](/images/tone1/tb_faq_01.jpg)
+![Mac OS X Sound Control Panel](/android/images/tone1/tb_faq_01.jpg)
 
 * 或者在菜单栏的音量开关那里切换设备.
 
-![Mac OS X Sound Menu](/images/tone1/tb_faq_02.jpg)
+![Mac OS X Sound Menu](/android/images/tone1/tb_faq_02.jpg)
 
 ## 打开音量控制: 
 
@@ -47,11 +47,11 @@ title: Khadas Tone1 初学者 FAQ
 
 * 通过任务栏的音量控制切换设备
 
-![Windows 10 Volume Control](/images/tone1/xmos_volume.jpg)
+![Windows 10 Volume Control](/android/images/tone1/xmos_volume.jpg)
 
 * 然后单击向上箭头选择您的音频输出设备
 
-![Windows 10 Select Playback Device](/images/tone1/xmos_selection.jpg)
+![Windows 10 Select Playback Device](/android/images/tone1/xmos_selection.jpg)
 
 </div>
 </div>

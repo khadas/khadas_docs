@@ -17,7 +17,7 @@ vim3 uart_C default is enabled in kvim3.dts,the corresponding dev node is /dev/t
 **1）** Through the serial port to USB adapter board, one end is connected to the computer, the other end is connected to pin 15, pin 16
 **2）** install the comassistant.apk,the apk can test uart send and recieve funtion
 **3）** the run result is as following,comassistant apk recevie 12345678 from pc , and send "serial send test" to pc 
-![Image of serial_send_rec](/images/vim3/serial_send_rec.png)
+![Image of serial_send_rec](/android/images/vim3/serial_send_rec.png)
 **4）** pc receive "serial send test",show in serial tool secureCRT 
 ```
 serial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send test  serial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send test
@@ -85,6 +85,6 @@ serialPortHelper.addCommands(sendTxt);
 serialPortHelper.closeDevice();
 ```
 **4)** run result in vim3_demo.apk as following
-![Image of vim_serial](/images/vim3/vim3_serial.png)
+![Image of vim_serial](/android/images/vim3/vim3_serial.png)
 
 

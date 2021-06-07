@@ -25,7 +25,7 @@ VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 
 **3）** 运行结果如下,comassistant apk从电脑接收数字 12345678 , 发送 "serial send test" 字符到电脑端 
 
-![Image of serial_send_rec](/images/vim3/serial_send_rec.png)
+![Image of serial_send_rec](/android/images/vim3/serial_send_rec.png)
 
 **4）** 电脑接收 "serial send test",在 secureCRT工具显示如下
 
@@ -104,6 +104,6 @@ serialPortHelper.closeDevice();
 
 **4)** 在 vim3_demo.apk 中运行结果如下
 
-![Image of vim_serial](/images/vim3/vim3_serial.png)
+![Image of vim_serial](/android/images/vim3/vim3_serial.png)
 
 

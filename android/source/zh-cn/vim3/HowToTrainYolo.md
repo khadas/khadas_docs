@@ -65,7 +65,7 @@ $ cd labelImg/
 $ python3 labelImg.py
 ```
 安装依赖正确就会打开一个图形化工具。如下图所示:
-![ai-examples0002-1](/images/vim3/darknet_labelImg_tool.png)
+![ai-examples0002-1](/android/images/vim3/darknet_labelImg_tool.png)
 
 ### 制作标签
 
@@ -103,7 +103,7 @@ Heatsink(Edge)
 
 #### 标注
 如下图所示:
-![ai-examples0002-2](/images/vim3/howto_labelImg_tool.png)
+![ai-examples0002-2](/android/images/vim3/howto_labelImg_tool.png)
 > 1. 点击左边的'Create'按钮创建新的标注，或者按快捷键`w`.保存选择一个labels保存，右边这里可以看到labels。
 > 2. 按照图中的标识1，把需要识别的物体整个放入标识框内。
 > 3. 按照图中的标识2，设置相应的labels。点击右边的labels。相应的框会变亮。

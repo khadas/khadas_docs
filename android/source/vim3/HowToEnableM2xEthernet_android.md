@@ -4,7 +4,7 @@ title: How To Enable M2x Ethernet
 
 ### Enable m2x ethernet on tv setting
 * Enter Droid Settings-> More settings-> Network&Internet-> Ethernet,pitch on Ethernet Port as following
-	![Image of M2x_eth_port](/images/vim3/vim3_m2x_eth.png)
+	![Image of M2x_eth_port](/android/images/vim3/vim3_m2x_eth.png)
 
 
 

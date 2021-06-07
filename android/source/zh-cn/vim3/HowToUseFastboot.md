@@ -15,7 +15,7 @@ Fastboot是一种快速升级Android每个分区包的方法，是通过USB数�
 adb reboot fastboot
 ```
 
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_1.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_1.png)
 
 
 ## 2、解锁引导加载程序
@@ -28,7 +28,7 @@ adb reboot fastboot
 fastboot flashing unlock
 ```
 
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_2.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_2.png)
 
 ## 3、选择你想要烧录的图片
 
@@ -45,7 +45,7 @@ fastboot flash odm /path/to/odm.img
 
 例如：
 
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_3.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_3.png)
 升级固件后，你可以选择是否锁定设备（调试过程中不需要）：
 
 ```sh
@@ -58,4 +58,4 @@ fastboot flashing lock
 fastboot reboot
 ```
 
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_4.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_4.png)

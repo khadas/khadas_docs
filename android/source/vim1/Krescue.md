@@ -19,16 +19,16 @@ Krescue is an extremely small (21mb) operating system that you can boot directly
 
 #### downloads Krescue images
 THe Krescue images can be downloads in [there](https://dl.khadas.com/Firmware/Krescue/dump/),change you board's version.
-![Kerscure_downloads](/images/vim1/Krescue_downloads.png)
+![Kerscure_downloads](/android/images/vim1/Krescue_downloads.png)
 
 #### Make the startup disk
 Insert the mircosd card into the PC. Burn the downloaded image into SD card.
-![Make_Krescue](/images/vim1/HowtoUseEtcher.png)
+![Make_Krescue](/android/images/vim1/HowtoUseEtcher.png)
 
 
 ### Run
 Insert the SD card into the board, connect HDMI and enter the [upgrade mode](/vim3/HowtoBootIntoUpgradeMode.html),You can see that the following figure shows the successful startup of kerscure.
-![boot Krescue](/images/vim1/krescue_boot.jpg)
+![boot Krescue](/android/images/vim1/krescue_boot.jpg)
 
 ## Install Krescue by Internet
 
@@ -44,7 +44,7 @@ Insert the SD card into the board, connect HDMI and enter the [upgrade mode](/vi
 $ curl -sfL dl.khadas.com/.mega | sh -s - -l
 ```
 You can see the list with firmware
-![krescue firmware list](/images/vim1/krescue_list.png)
+![krescue firmware list](/android/images/vim1/krescue_list.png)
 ```
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```

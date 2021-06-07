@@ -227,7 +227,7 @@ $ docker exec -ti fenix bash
 ### Get The Latest Night Build Image
 - Visit [Fenix](https://github.com/khadas/fenix)(one-stop script)
 - Click on the badge like Release Build,Test Build Ubuntu,Test Build Debian
-![image](/images/vim1/FenixScript.png)
+![image](/android/images/vim1/FenixScript.png)
 - You can see the firmware page when you click on the latest workflow
 
 ### See Also

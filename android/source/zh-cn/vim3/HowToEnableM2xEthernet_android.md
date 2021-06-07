@@ -6,7 +6,7 @@ title: 如何使能M2x以太网
 ### 在tv设置中使能m2x以太网
 
 * 进入 Droid Settings-> More settings-> Network&Internet-> Ethernet,选中Ethernet Port 
-	![Image of M2x_eth_port](/images/vim3/vim3_m2x_eth.png)
+	![Image of M2x_eth_port](/android/images/vim3/vim3_m2x_eth.png)
 
 
 

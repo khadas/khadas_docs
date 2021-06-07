@@ -165,7 +165,7 @@ $ ./detect_demo_fb 2 1080p.bmp
 
 The results of the operation are as follows,
 
-![detect_demo_picture_x11_cv3](/images/vim3/detect_demo_picture_x11_cv3.png)
+![detect_demo_picture_x11_cv3](/android/images/vim3/detect_demo_picture_x11_cv3.png)
 
 #### Dynamic camera recognition
 
@@ -189,7 +189,7 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 
 After turning on the camera, the recognition result will be displayed on the screen
 
-![detect_demo_x11_cv3](/images/vim3/detect_demo_x11_cv3.png)
+![detect_demo_x11_cv3](/android/images/vim3/detect_demo_x11_cv3.png)
 
 
 

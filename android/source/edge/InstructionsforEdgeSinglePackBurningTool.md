@@ -4,24 +4,24 @@ title: Instructions for Edge Single Pack Burning Tool
 
 ### 1. Load Partition Config
 
-![load partition config](/images/edge/load_partition_config.png)
-![Android tool](/images/edge/android_tool.png)
+![load partition config](/android/images/edge/load_partition_config.png)
+![Android tool](/android/images/edge/android_tool.png)
 
 #### 1.1 Modify Partition Config
 
-![Modeify partition config](/images/edge/modify_partitio_config.png)
-![Modeify partition config2](/images/edge/modify_partitio_config2.png)
+![Modeify partition config](/android/images/edge/modify_partitio_config.png)
+![Modeify partition config2](/android/images/edge/modify_partitio_config2.png)
 
 The contents of the partition profile published with the new tool is as shown in the figure above, in most cases there is a certain degree of difference. The user can load a project partition configuration by first right-clicking in the blank space of the partition configuration window, and then selecting "Load Config". If you want to load a specific partition profile when the tool starts, you can modify the DEFAULT_IMAGE_CONFIG entry in the Config.ini file.
 
-![config ini](/images/edge/config_ini.png)
+![config ini](/android/images/edge/config_ini.png)
 ### 2. Export Config
 
-![export config](/images/edge/export_config.png)
+![export config](/android/images/edge/export_config.png)
 After completing a partition configuration, the configuration can be exported from the tool. Right-click in the blank space of the partition configuration window, and select "Export Config", then select a directory to save the file. If you replace the config.cfg file found within this tool's directory, your currently saved configuration will be loaded at tool startup.
 
 ### 3. Burn one or more Partition Mirrors
-![burn partition](/images/edge/burn_partiton_mirrors.png)
+![burn partition](/android/images/edge/burn_partiton_mirrors.png)
 
 ## Linux
 

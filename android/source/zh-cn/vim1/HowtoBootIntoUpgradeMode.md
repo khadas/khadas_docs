@@ -62,7 +62,7 @@ kvim# run update
 * 使用镊子短接`M`处的两个焊盘触点不松开
 * 短按复位键会进入升级模式
 
-![Image of MRegister_ShortCircuit](/images/vim1/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/android/images/vim1/MRegister_ShortCircuit.png)
 
 {% note info 提示 %}
 

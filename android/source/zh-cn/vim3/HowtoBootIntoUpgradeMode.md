@@ -52,7 +52,7 @@ title: 如何进入升级模式
 2. 使用镊子短接`M`处的两个焊盘触点不松开
 3. 短按复位按键进入升级模式
 
-![image](/images/vim3/VIM3_M_Register.jpg)
+![image](/android/images/vim3/VIM3_M_Register.jpg)
 
 </div>
 </div>

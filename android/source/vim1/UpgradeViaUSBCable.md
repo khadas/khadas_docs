@@ -19,7 +19,7 @@ title: Upgrade Via a USB-C Cable
 ## Perparation
 * Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip) and extract it.
 * Run `setup_v2.x.x.exe` to install the tool for upgrading your VIMs:
-    ![Image of USB_Upgrade_tool_setup_v217](/images/vim1/usb_upgrade_tool_setup_v217.png)
+    ![Image of USB_Upgrade_tool_setup_v217](/android/images/vim1/usb_upgrade_tool_setup_v217.png)
 
 ## Upgrade steps
 Make soure that you have install the correct USB upgrade Tool, then follow the steps below to upgrade:
@@ -33,7 +33,7 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your VIMs asa connected USB-device.
 
     Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
-    ![Image of USB_Upgrade_Tool_Interface_v217](/images/vim1/usb_upgrade_tool_interface_v217_en.png)
+    ![Image of USB_Upgrade_Tool_Interface_v217](/android/images/vim1/usb_upgrade_tool_interface_v217_en.png)
 
 {% note info Tips %}
 

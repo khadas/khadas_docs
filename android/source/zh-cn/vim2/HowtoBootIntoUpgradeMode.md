@@ -55,11 +55,11 @@ kvim2# run update
 
 1. VIM2 V14
 
-![Image of MRegister_ShortCircuit](/images/vim2/MRegister_ShortCircuit_V14.png)
+![Image of MRegister_ShortCircuit](/android/images/vim2/MRegister_ShortCircuit_V14.png)
 
 2. VIM2 V12
 
-![Image of MRegister_ShortCircuit](/images/vim2/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/android/images/vim2/MRegister_ShortCircuit.png)
 
 *提示:  `M` 触点在VIM板底部*
 

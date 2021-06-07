@@ -12,7 +12,7 @@ You can use [AndroidTool](https://dl.khadas.com/Tools/AndroidTool_Release_en_v2.
 3. Open `AndroidTool` and choose `Upgrade Firmware->Firmware`.
 
 4. Click `EraseFlash` to erase the eMMC.
-![AndroidTool Erase eMMC](/images/edge/AndroidTool_erase_en.png)
+![AndroidTool Erase eMMC](/android/images/edge/AndroidTool_erase_en.png)
 
 ## Using Ubuntu
 

@@ -35,15 +35,15 @@ title: 如何设置HDMI分辨率
 
 * 在系统应用列表中找到`HDMI Resolution`应用
 
-![gnome-HDMI-application](/images/vim1/gnome-HDMI-application.png)
+![gnome-HDMI-application](/android/images/vim1/gnome-HDMI-application.png)
 
 * 打开这个应用
 
-![gnome-HDMI-setting](/images/vim1/gnome-HDMI-setting.png)
+![gnome-HDMI-setting](/android/images/vim1/gnome-HDMI-setting.png)
 
 选择一个你需要的分辨率，然后点击`OK`。
 
-![gnome-HDMI-save](/images/vim1/gnome-HDMI-save.png)
+![gnome-HDMI-save](/android/images/vim1/gnome-HDMI-save.png)
 
 点击`Yes`后系统会自动注销，分辨率修改生效。
 

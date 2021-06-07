@@ -63,7 +63,7 @@ root@Khadas:~#
 
 如果你成功开启了硬件PWM，你可以通过示波器看到波形：
 
-![pwm-Oscilloscope](/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/android/images/vim1/pwm-Oscilloscope.jpg)
 
 {% note info 注意 %}
 

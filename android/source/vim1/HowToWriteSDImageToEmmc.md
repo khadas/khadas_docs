@@ -17,12 +17,12 @@ sudo emmc-install
 
 ## Install / Update the bootloader on SD / eMMC
 
-![image](/images/vim1/Write_SD_image_to_eMMC1.png)
+![image](/android/images/vim1/Write_SD_image_to_eMMC1.png)
 
 ## Continue
 
-![image](/images/vim1/Write_SD_image_to_eMMC2.png)
+![image](/android/images/vim1/Write_SD_image_to_eMMC2.png)
 
 ## Writing bootloader done
 
-![image](/images/vim1/Write_SD_image_to_eMMC3.png)
+![image](/android/images/vim1/Write_SD_image_to_eMMC3.png)

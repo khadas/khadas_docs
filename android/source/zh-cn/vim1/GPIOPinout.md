@@ -2,7 +2,7 @@ title: VIM1 GPIO 管脚映射
 ---
 
 ## GPIO管脚映射(V12):
-![Image of Vim GPIO](/images/vim1/vim_pinout.png)
+![Image of Vim GPIO](/android/images/vim1/vim_pinout.png)
 
 
 ## 注意

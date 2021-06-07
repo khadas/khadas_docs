@@ -61,10 +61,10 @@ $ wakeonlan 98:aa:fc:60:45:87
 
 ## 提示：几种方式获取MAC地址
 * 在VIM2底部贴纸上写有MAC地址：
-![image|487x136](/images/vim2/vim2_mac.jpg)
+![image|487x136](/android/images/vim2/vim2_mac.jpg)
 
 * 从Android系统App获取MAC地址: Setting --> network --> MAC address
-![image|489x200](/images/vim2/vim2_android_mac.jpg)
+![image|489x200](/android/images/vim2/vim2_android_mac.jpg)
 
 * 从串口打印获取MAC地址：
 ```

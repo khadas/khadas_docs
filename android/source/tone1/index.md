@@ -20,11 +20,11 @@ title: Khadas Tone1 Beginners FAQ
 
 * The audio output controls for your Mac are in System Preferences > Sound.
 
-![Mac OS X Sound Control Panel](/images/tone1/tb_faq_01.jpg)
+![Mac OS X Sound Control Panel](/android/images/tone1/tb_faq_01.jpg)
 
 * Or click the volume icon in your Mac’s menu bar.
 
-![Mac OS X Sound Menu](/images/tone1/tb_faq_02.jpg)
+![Mac OS X Sound Menu](/android/images/tone1/tb_faq_02.jpg)
 
 ## Enable Volume Control On Mac OS X:
 
@@ -47,11 +47,11 @@ If you're using a Tone Board on a Mac, you may notice that you are unable to con
 
 * Click the audio icon in your Windows Task Bar.
 
-![Windows 10 Volume Control](/images/tone1/xmos_volume.jpg)
+![Windows 10 Volume Control](/android/images/tone1/xmos_volume.jpg)
 
 * Then click the upward-facing arrow to select your audio output device.
 
-![Windows 10 Select Playback Device](/images/tone1/xmos_selection.jpg)
+![Windows 10 Select Playback Device](/android/images/tone1/xmos_selection.jpg)
 
 </div>
 </div>

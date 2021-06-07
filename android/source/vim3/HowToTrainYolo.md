@@ -65,7 +65,7 @@ $ cd labelImg/
 $ python3 labelImg.py
 ```
 A graphical tool opens when the installation dependency is correct. As shown in the figure below:
-![ai-examples0002-1](/images/vim3/darknet_labelImg_tool.png)
+![ai-examples0002-1](/android/images/vim3/darknet_labelImg_tool.png)
 
 ### Making labels
 
@@ -103,7 +103,7 @@ The model of mobile object detection basically needs to mark the training sample
 
 #### Making
 As shown in the figure below:
-![ai-examples0002-2](/images/vim3/howto_labelImg_tool.png)
+![ai-examples0002-2](/android/images/vim3/howto_labelImg_tool.png)
 > 1. Click the 'create' button on the left to create a new annotation, or press the shortcut key 'W'. Save and select a labels to save. You can see the labels here on the right.
 > 2. According to the mark 1 in the figure, put the whole object to be recognized into the mark box.
 > 3. Set the corresponding labels according to the identification 2 in the figure. Click labels on the right. The corresponding box lights up.

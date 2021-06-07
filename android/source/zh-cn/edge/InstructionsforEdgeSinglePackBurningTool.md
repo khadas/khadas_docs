@@ -4,13 +4,13 @@ title: Edge单包烧录工具使用说明
 
 ### 1. 导入分区配置
 
-![load partition config](/images/edge/load_partition_config.png)
-![Android tool](/images/edge/android_tool.png)
+![load partition config](/android/images/edge/load_partition_config.png)
+![Android tool](/android/images/edge/android_tool.png)
 
 #### 1.1 修改分区配置
 
-![Modeify partition config](/images/edge/modify_partitio_config.png)
-![Modeify partition config2](/images/edge/modify_partitio_config2.png)
+![Modeify partition config](/android/images/edge/modify_partitio_config.png)
+![Modeify partition config2](/android/images/edge/modify_partitio_config2.png)
 
 
 每次随新工具发布的分区配置文件内容如上图，大部分情况下与项目的分区配置
@@ -18,17 +18,17 @@ title: Edge单包烧录工具使用说明
 入配置”,加载之前保存的项目分区配置文件。如果想在工具启动时加载指定的
 分区配置文件，可以通过修改 Config.ini 文件中 DEFAULT_IMAGE_CONFIG 项。
 
-![config ini](/images/edge/config_ini.png)
+![config ini](/android/images/edge/config_ini.png)
 
 ### 2. 导出分区配置
 
-![export config](/images/edge/export_config.png)
+![export config](/android/images/edge/export_config.png)
 用户完成分区配置后，可以将分区配置通过导出功能进行保存，在分区配置区域
 空白处点击“导出配置”，输入保存的文件名和目录，如果替换掉工具目录下的
 config.cfg 文件，则可以在工具启动时加载当前保存的配置。
 
 ### 3. 烧写一个或多个分区镜像
-![burn partition](/images/edge/burn_partiton_mirrors.png)
+![burn partition](/android/images/edge/burn_partiton_mirrors.png)
 
 ## Linux
 

@@ -2,7 +2,7 @@ title: VIM1 Beginners Guide
 ---
 
 ## VIM1
-![image](/images/vim1/docs_vim1.jpg)
+![image](/android/images/vim1/docs_vim1.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -75,7 +75,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 </div>
 <div class="tab-pane fade" id="gpio-vim1" role="tabpanel" aria-labelledby="gpio-tab">
 
-![Image of Vim GPIO](/images/vim1/vim_pinout.png)
+![Image of Vim GPIO](/android/images/vim1/vim_pinout.png)
 </div>
 </div> 
 
@@ -90,7 +90,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 {% endnote %}
 
 ## Krescue (Khadas Rescue OS)
-![image](/images/docs_krescue_online_install.jpg)
+![image](/android/images/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
 

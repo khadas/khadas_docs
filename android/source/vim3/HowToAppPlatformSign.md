@@ -22,13 +22,13 @@ app-debug.apk is the APK that states the system permission before signing ,if An
 platform.x509.pem，platform.pk8，are under build/target/product/security
 custom.jks file (android studio generates)，detail can refer android studio jks file generates steps
 #### android studio jks file generates steps
-![Image of jks_step](/images/vim3/step1.png)
-![Image of jks_step](/images/vim3/step2.png)
-![Image of jks_step](/images/vim3/step3.png)
-![Image of jks_step](/images/vim3/step4.png)
-![Image of jks_step](/images/vim3/step5.png)
-![Image of jks_step](/images/vim3/step6.png)
-![Image of jks_step](/images/vim3/step7.png)
+![Image of jks_step](/android/images/vim3/step1.png)
+![Image of jks_step](/android/images/vim3/step2.png)
+![Image of jks_step](/android/images/vim3/step3.png)
+![Image of jks_step](/android/images/vim3/step4.png)
+![Image of jks_step](/android/images/vim3/step5.png)
+![Image of jks_step](/android/images/vim3/step6.png)
+![Image of jks_step](/android/images/vim3/step7.png)
 
 after custom.jks generated, the keytool import keypair script is used to generate the new platform signature custom.jks The command is as follows
 ```sh

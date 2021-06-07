@@ -41,8 +41,8 @@ $ sudo make install
 
 ## How to Connect VIM2 and ST-LINK V2
 ### To upgrade STM8 firmware just connect VCC_MCU, MCU_SWIM, MCU_NRST and GND between VIM2 and ST-LINK V2 tool
-![VIM2 MCU Header](/images/vim2/vim2_mcu_header.png)
-![VIM2 MCU Header Description](/images/vim2/vim2_mcu_header_desc.png)
+![VIM2 MCU Header](/android/images/vim2/vim2_mcu_header.png)
+![VIM2 MCU Header Description](/android/images/vim2/vim2_mcu_header_desc.png)
 
 ## Add Permissions for the ST-LINK V2 Tool
 

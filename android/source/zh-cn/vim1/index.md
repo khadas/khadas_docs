@@ -2,7 +2,7 @@ title: VIM1 文档
 ---
 
 ## VIM1
-![image](/images/vim1/docs_vim1.jpg)
+![image](/android/images/vim1/docs_vim1.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -75,7 +75,7 @@ title: VIM1 文档
 </div>
 <div class="tab-pane fade" id="gpio-vim1" role="tabpanel" aria-labelledby="gpio-tab">
 
-![Image of Vim GPIO](/images/vim1/vim_pinout.png)
+![Image of Vim GPIO](/android/images/vim1/vim_pinout.png)
 </div>
 </div> 
 
@@ -90,7 +90,7 @@ title: VIM1 文档
 {% endnote %}
 
 ## Krescue (Khadas Rescue OS)
-![image](/images/docs_krescue_online_install.jpg)
+![image](/android/images/docs_krescue_online_install.jpg)
 
 [Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
 

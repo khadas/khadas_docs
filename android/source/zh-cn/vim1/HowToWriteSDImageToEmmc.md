@@ -18,12 +18,12 @@ sudo emmc-install
 
 ## 在SD / eMMC上安装 / 更新Bootloader
 
-![image](/images/vim1/Write_SD_image_to_eMMC1.png)
+![image](/android/images/vim1/Write_SD_image_to_eMMC1.png)
 
 ## 继续下一步
 
-![image](/images/vim1/Write_SD_image_to_eMMC2.png)
+![image](/android/images/vim1/Write_SD_image_to_eMMC2.png)
 
 ## 编写Bootloader完成
 
-![image](/images/vim1/Write_SD_image_to_eMMC3.png)
+![image](/android/images/vim1/Write_SD_image_to_eMMC3.png)

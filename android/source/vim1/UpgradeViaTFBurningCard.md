@@ -16,13 +16,13 @@ Here's an example of upgrading Android.
 
 ## Upgrading Steps:
 1. Run `Burn_Card_Maker.exe` tool:
-	![Image of BurnCardMaker_Tool](/images/vim1/BurnCardMaker_Tool.png)
+	![Image of BurnCardMaker_Tool](/android/images/vim1/BurnCardMaker_Tool.png)
 2. Insert the SD-Card into your PC, it should appear as a new drive letter. Then:
 	* Select your SD-Card from the drop-down list of `Choose the disk`.
 	* [Optional] Enable `To Partition and Format`(Check this the first time you're making a Booting Card for VIM).
 	* Click the `Open` button and choose an image for VIM.
 	* Click the `Make` button to create a Burning Card for VIM:
-	![Image of BurnCardMaker_Tool_Interface](/images/vim1/BurnCardMaker_Tool_Interface.png)
+	![Image of BurnCardMaker_Tool_Interface](/android/images/vim1/BurnCardMaker_Tool_Interface.png)
 3. When everything is finished, click the `Success` button to terminate the current operation.
 4. Unplug the SD-Card from your PC and insert it into the SD-Card slot on your VIM.
 5. Connect the USB-C & HDMI cables, and VIM will power-on automatically.
@@ -32,7 +32,7 @@ Here's an example of upgrading Android.
 	* Count 2 to 3 seconds and release the `Power` key to enter into Upgrade Mode.
 
 If everything went fine, now your display/monitor should show this:
-![Image of Upgrading_Interface](/images/vim1/Upgrading_interface.png)
+![Image of Upgrading_Interface](/android/images/vim1/Upgrading_interface.png)
 
 Have Fun!
 

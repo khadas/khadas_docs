@@ -3,7 +3,7 @@ title: Edge文档
 
 ## Edge
 
-![image](/images/edge/docs_edge_labels.jpg)
+![image](/android/images/edge/docs_edge_labels.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -79,7 +79,7 @@ title: Edge文档
 
 
 ## Edge-V
-![image](/images/edge/docs_edge_v_labels.jpg)
+![image](/android/images/edge/docs_edge_v_labels.jpg)
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -192,7 +192,7 @@ Linux_TX|19|39|MCU_PA1
 
 
 ## Captain
-![image](/images/edge/docs_captain_labels.jpg)
+![image](/android/images/edge/docs_captain_labels.jpg)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -309,7 +309,7 @@ Linux_TX|19|39|MCU_PA1
 
 
 ## Captain + Edge
-![image](/images/edge/docs_captain_with_edge_labels.jpg)
+![image](/android/images/edge/docs_captain_with_edge_labels.jpg)
 
 * 正面(黄色)
 ||设备名称|描述说明|
@@ -326,7 +326,7 @@ Linux_TX|19|39|MCU_PA1
 ## Edge电源
 尽管Edge SBC可与各种类型的电源兼容，但建议使用这些规格以获得最佳的性能输出和稳定性。
 
-![image](/images/edge/usb-c_adapter_24w_2.jpg)
+![image](/android/images/edge/usb-c_adapter_24w_2.jpg)
 
 1. Khadas USB-C 24W供电器
 2. Khadas USB-C 数据线

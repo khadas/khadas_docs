@@ -73,7 +73,7 @@ wait it to build compiled.
 ./darknet imtest data/eagle.jpg
 ```
 If you look some pictures like this.It mean you install success.
-![ai-basic0002-1](/images/vim3/darknet_install_success.png)
+![ai-basic0002-1](/android/images/vim3/darknet_install_success.png)
 
 ### Use yolo model on darknet
 #### Get the trained model file
@@ -87,7 +87,7 @@ $ ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 ```
 You would look a picture:
 
-![ai-basic0002-2](/images/vim3/darknet_install_check.png)
+![ai-basic0002-2](/android/images/vim3/darknet_install_check.png)
 
 #### use by webcam
 You can use webcam with this comand.

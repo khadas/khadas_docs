@@ -1,4 +1,4 @@
 title: Edge Interfaces
 ---
 
-![Top view](/images/edge/edge-specs.jpg)
+![Top view](/android/images/edge/edge-specs.jpg)

@@ -21,13 +21,13 @@ app-debug.apk 是签名前申明系统权限的apk ,就是在AndroidManifeset.xm
 platform.x509.pem，platform.pk8，在源码目录build/target/product/security下
 custom.jks (android studio 下生成)，具体参考 android studio jks 文件生成步骤
 #### android studio jks 文件生成步骤
-![Image of jks_step](/images/vim3/step1.png)
-![Image of jks_step](/images/vim3/step2.png)
-![Image of jks_step](/images/vim3/step3.png)
-![Image of jks_step](/images/vim3/step4.png)
-![Image of jks_step](/images/vim3/step5.png)
-![Image of jks_step](/images/vim3/step6.png)
-![Image of jks_step](/images/vim3/step7.png)
+![Image of jks_step](/android/images/vim3/step1.png)
+![Image of jks_step](/android/images/vim3/step2.png)
+![Image of jks_step](/android/images/vim3/step3.png)
+![Image of jks_step](/android/images/vim3/step4.png)
+![Image of jks_step](/android/images/vim3/step5.png)
+![Image of jks_step](/android/images/vim3/step6.png)
+![Image of jks_step](/android/images/vim3/step7.png)
 
 custom.jks 生成后,使用keytool-importkeypair 脚本生成嵌入platform 签名的新的custom.jks,命令如下
 ```sh
