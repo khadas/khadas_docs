@@ -1,14 +1,13 @@
 title: 如何访问GPIO
 ---
 
-这篇文档介绍如何在Android和Ubuntu下访问GPIO。
+这篇文档介绍如何在Android下访问GPIO。
 
 ## 准备工作
 固件版本必须满足以下条件：
 
 * Android M >= V170603
 * Android N >= V170421
-* Ubuntu    >= V180712
 
 ## 如何获取GPIO数值
 你可以通过GPIO banks和pins来获取。不同版本的内核数值不同。
@@ -23,7 +22,7 @@ title: 如何访问GPIO
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="4.9-pins" role="tabpanel" aria-labelledby="4.9-tab">
-Linux 4.9 (Android O and Ubuntu)
+Linux 4.9 (Android O )
 
 
 * aobus-banks
@@ -101,7 +100,7 @@ pin 85 (GPIOX_19)  pinctrl@ff634480
 ```
 </div>
 <div class="tab-pane fade" id="3.14-pins" role="tabpanel" aria-labelledby="3.14-tab">
-Linux 3.14 (Android M,N and Ubuntu)
+Linux 3.14 (Android M,N)
 
 Banks:
 
@@ -266,83 +265,3 @@ while (null != (line = br.readLine())) {
  os.writeBytes("echo " + 432 + " > /sys/class/gpio/unexport\n");
 ```
 
-## 在Ubuntu下
-
-**GPIO 列表**
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#4.9" role="tab" aria-controls="4.9" aria-selected="true">Kernel 4.9</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#3.14" role="tab" aria-controls="3.14" aria-selected="false">Kernel 3.14 （弃用）</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-<div class="tab-pane fade show active" id="4.9" role="tabpanel" aria-labelledby="4.9-tab">
-
-```bash
-PIN         GPIO         Number
-PIN37       GPIOH5         432
-PIN33       GPIOAO6        502
-```
-</div>
-<div class="tab-pane fade" id="3.14" role="tabpanel" aria-labelledby="3.14-tab">
-
-```bash
-PIN         GPIO         Number
-PIN37       GPIOH5         176
-PIN33       GPIOAO6        151
-```
-</div>
-</div>
-
-**在终端访问GPIO**
-
-{% note info 说明 %}
-
-以linux 4.9为例。
-
-{% endnote %}
-
-*  申请GPIO(GPIOH5)
-
-```bash
-$ echo 432 > /sys/class/gpio/export
-```
-
-* 配置GPIO(GPIOH5)为输出
-
-```bash
-$ echo out > /sys/class/gpio/gpio432/direction
-```
-
-* 配置GPOIO(GPIOH5)输出高电平
-
-```bash
-$ echo 1 >  /sys/class/gpio/gpio432/value
-```
-
-* 配置GPIO(GPIOH5)输出低电平
-
-```bash
-$ echo 0 >  /sys/class/gpio/gpio432/value
-```
-
-* 配置GPIO(GPIOH5)为输入
-
-```bash
-$ echo in > /sys/class/gpio/gpio432/direction
-```
-
-* 读取GPIO(GPIOH5)电平
-
-```bash
-$ cat  /sys/class/gpio/gpio432/value
-```
-
-* 释放GPIO(GPIOH5)
-
-```bash
-$ echo 432 > /sys/class/gpio/unexport
-```

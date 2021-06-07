@@ -1,13 +1,9 @@
-title:  Upgrade Android Or Ubuntu Via An SD-Card
+title:  Upgrade Android Via An SD-Card
 ---
 
-Here's an example of upgrading Android.The way to upgrade Ubuntu is consistent with Android.
+Here's an example of upgrading Android.
 
 {% note info The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example. %}
-
-{% endnote %}
-
-{% note warn As the burning card only support FAT32 filesystem, because the Ubuntu desktop image size is large then 4GB, so it is not supported to burn via TF card. %}
 
 {% endnote %}
 

@@ -2,11 +2,10 @@ title: 如何使用I2C接口
 ---
 
 
-这篇文档介绍如何在Android和Ubuntu下使用I2C。
+这篇文档介绍如何在Android下使用I2C。
 
 ## 前提条件
 
-* `Ubuntu V180531`或更新版本
 * `Android V180619`或更新版本
 
 ## 连线
