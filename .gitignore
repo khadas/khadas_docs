@@ -10,6 +10,12 @@ linux/*.log
 linux/db.json
 linux/public/
 linux/.deploy*/
+krescue/node_modules/
+krescue/*.log
+krescue/db.json
+krescue/public/
+krescue/.deploy*/
+krescue/package-lock.json
 android/package-lock.json
 linux/package-lock.json
 *.patch
