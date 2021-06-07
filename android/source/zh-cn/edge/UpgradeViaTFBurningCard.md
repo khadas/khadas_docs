@@ -50,4 +50,4 @@ title:  通过TF卡升级固件
 
 ## 参考
 
-[通过USB数据线升级](/zh-cn/edge/UpgradeViaUSBCable.html)
+[通过USB数据线升级](/android/zh-cn/edge/UpgradeViaUSBCable.html)

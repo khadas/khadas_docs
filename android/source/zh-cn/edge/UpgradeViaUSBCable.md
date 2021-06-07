@@ -21,7 +21,7 @@ title: 通过USB升级固件
 1. 运行`AndroidTool.exe`, 点击`升级固件-->固件`来加载镜像文件。
 ![AndroidTool firmware select](/android/images/edge/AndroldTool_firmware_zh.png)
 2. 通过USB-C数据线连接Edge和PC。
-3. 使Edge[进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)。
+3. 使Edge[进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)。
 4. 执行上述操作后你会看到Edge升级模式设备。
 * Loader模式如下：
 ![AndroidTool loader](/android/images/edge/AndroldTool_loader_zh.png)
@@ -139,5 +139,5 @@ $ ./UNINSTALL
 ```
 
 ## 参考
-* [如何进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
+* [如何进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
 

@@ -6,7 +6,7 @@ KBI是"Khadas Bootloader Instructions"的缩写，主要用于以下几方面：
 * 管理底层硬件
 * 让开发者体验VIM2/VIM3/Edge全部的特性
 
-这篇文档介绍了如何配置使用KBI。 因为KBI是[U-Boot](http://www.denx.de) 命令，所以必须先设置串口调试工具([VIM2](/android/zh-cn/vim1/SetupSerialTool.html)/[VIM3](/android/zh-cn/vim1/SetupSerialTool.html)/[Edge](/zh-cn/edge/SetupSerialTool.html))。
+这篇文档介绍了如何配置使用KBI。 因为KBI是[U-Boot](http://www.denx.de) 命令，所以必须先设置串口调试工具([VIM2](/android/zh-cn/vim1/SetupSerialTool.html)/[VIM3](/android/zh-cn/vim1/SetupSerialTool.html)/[Edge](/android/zh-cn/edge/SetupSerialTool.html))。
 
 *注意：此文档以VIM2为例进行说明，VIM3和Edge都是差不多的用法。*
 
@@ -121,7 +121,7 @@ VIM2配置有eMMC和SPI存储器，可以通过KBI设置从哪里启动系统。
 ```
 kvim2# kbi bootmode w spi
 ```
-*关于SPI FLASH启动请参考如何从SPI Flash启动([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/android/zh-cn/vim3/BootFromSpiFlash.html)/[Edge](/zh-cn/edge/BootFromSpiFlash.html))* 。
+*关于SPI FLASH启动请参考如何从SPI Flash启动([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/android/zh-cn/vim3/BootFromSpiFlash.html)/[Edge](/android/zh-cn/edge/BootFromSpiFlash.html))* 。
 
 设置默认从eMMC启动系统：
 ```
