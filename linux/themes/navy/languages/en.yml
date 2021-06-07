@@ -210,6 +210,7 @@ sidebar:
     origin_npu: Origin NPU
     how_to_use_aml_npu_sdk: SDK Usage
     origin_npu_demo_usage: Binaries Demo Usage
+    how_to_run_yourself_ai_model: Run Yourself AI Model
     tengine_npu: Tengine NPU
     nnapi_npu: NNAPI NPU
     howto_use_aml_npu_app: Application Source Code Usage
