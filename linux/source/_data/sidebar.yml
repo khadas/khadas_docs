@@ -178,6 +178,7 @@ vim3:
       how_to_use_aml_npu_sdk: HowToUseNPUSDK.html
       howto_use_aml_npu_app: HowToUseAmlNPUApp.html
       how_to_run_yourself_ai_model: HowToConvertToUseNPU.html
+      origin_npu_performance_usage: OriginNPUPerformanceUsage.html
     tengine_npu:
     nnapi_npu:
   development:

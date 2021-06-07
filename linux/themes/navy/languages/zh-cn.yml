@@ -209,8 +209,9 @@ sidebar:
     origin_npu: 原始NPU
     origin_npu_demo_usage: 演示demo说明
     how_to_use_aml_npu_sdk: SDK使用说明
-    how_to_run_yourself_ai_model: 运行自己训练的AI模型
     howto_use_aml_npu_app: 应用源码使用说明
+    how_to_run_yourself_ai_model: 运行自己训练的AI模型
+    origin_npu_performance_usage: NPU性能接口说明
     tengine_npu: Tengine NPU
     nnapi_npu: NNAPI NPU
     development: 开发
