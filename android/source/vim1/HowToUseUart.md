@@ -9,7 +9,7 @@ Uart PIN in 40 PINs header is `PIN15` and `PIN16`:
 
 * [VIM1-GPIO-Pin-Out](/android/vim1/index.html#GPIO-Pin-Out)
 * [VIM2-GPIO-Pin-Out](/android/vim2/#GPIO-Pinout)
-* [VIM3-GPIO-Pin-Out](/vim3/#GPIO-Pinout)
+* [VIM3-GPIO-Pin-Out](/android/vim3/#GPIO-Pinout)
 
 ## Enable Uart Node
 

@@ -5,7 +5,7 @@ title: How To Use Uart
 
 Uart_C pin in 40 pins header is pin15 and pin16
 
-* [VIM3-GPIO-Pin-Out](/vim3/#GPIO-Pinout)
+* [VIM3-GPIO-Pin-Out](/android/vim3/#GPIO-Pinout)
 vim3 uart_C default is enabled in kvim3.dts,the corresponding dev node is /dev/ttyS3
 ```
 1443 &uart_C {

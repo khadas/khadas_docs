@@ -10,7 +10,7 @@ title: How To Enable M2x Ethernet
 
 
 ### Enable m2x ethernet by kbi command
-* About kbi usage ,you can refer [kbi guide](/vim3/KbiGuidance.html),set command as followimg
+* About kbi usage ,you can refer [kbi guide](/android/vim3/KbiGuidance.html),set command as followimg
 ```
 kvim3#kbi
 kbi - Khadas Bootloader Instructions sub-system

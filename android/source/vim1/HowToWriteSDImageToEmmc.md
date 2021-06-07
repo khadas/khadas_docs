@@ -3,11 +3,11 @@ title: How to write SD image to eMMC
 
 ## Write image to SD card or Thumbdriver(U-Disk)
 
-Check [here](/vim3/BootFromExtMedia.html#Step-1-Clone-image-to-SD-card-or-Thumbdrive-U-Disk).
+Check [here](/android/vim3/BootFromExtMedia.html#Step-1-Clone-image-to-SD-card-or-Thumbdrive-U-Disk).
 
 ## Boot from SD card or Thumbdriver(U-Disk)
 
-Check [here](/vim3/BootFromExtMedia.html).
+Check [here](/android/vim3/BootFromExtMedia.html).
 
 ## Write SD image or Thumbdriver(U-Disk) image to eMMC
 

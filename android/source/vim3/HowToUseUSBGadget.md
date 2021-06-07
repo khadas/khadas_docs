@@ -1,7 +1,7 @@
 title: How To Use USB Gadget
 ---
 
-We have already explained in the [documentation](/vim3/HowToUseDeviceTreeOverlay.html) how to use Device Tree Overlays.
+We have already explained in the [documentation](/android/vim3/HowToUseDeviceTreeOverlay.html) how to use Device Tree Overlays.
 
 ## Update System
 

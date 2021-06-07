@@ -27,7 +27,7 @@ Insert the mircosd card into the PC. Burn the downloaded image into SD card.
 
 
 ### Run
-Insert the SD card into the board, connect HDMI and enter the [upgrade mode](/vim3/HowtoBootIntoUpgradeMode.html),You can see that the following figure shows the successful startup of kerscure.
+Insert the SD card into the board, connect HDMI and enter the [upgrade mode](/android/vim3/HowtoBootIntoUpgradeMode.html),You can see that the following figure shows the successful startup of kerscure.
 ![boot Krescue](/android/images/vim1/krescue_boot.jpg)
 
 ## Install Krescue by Internet
@@ -49,7 +49,7 @@ You can see the list with firmware
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```
 Note: When the system applies for -y parameter for "unsafe writing", the path of SD card is wrong. In this case, forced writing will be written in EMMC, resulting in the failure to run other firmware.
-After the burning is completed, the image is written to the SD card. At this time, you can enter [upgrade mode] (/vim3/HowtoBootIntoUpgradeMode.html) to start krecure.
+After the burning is completed, the image is written to the SD card. At this time, you can enter [upgrade mode] (/android/vim3/HowtoBootIntoUpgradeMode.html) to start krecure.
 
 ## Use krescue
 

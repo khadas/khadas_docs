@@ -55,9 +55,9 @@ Please replace `sdX` with the correct one on your PC.
 
 ## Check Your Bootable SD-Card
 
-Ensure that you have done the correct setup of your Serial to USB Module([VIM1](/android/vim1/SetupSerialTool.html)/[VIM2](/android/vim2/SetupSerialTool.html)/[VIM3](/vim3/SetupSerialTool.html)).
+Ensure that you have done the correct setup of your Serial to USB Module([VIM1](/android/vim1/SetupSerialTool.html)/[VIM2](/android/vim2/SetupSerialTool.html)/[VIM3](/android/vim3/SetupSerialTool.html)).
 
-In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been completely erased([VIM1](/android/vim1/HowtoEraseEMMC.html)/[VIM2](/android/vim2/HowtoEraseEMMC.html)/[VIM3](/vim3/HowtoEraseEMMC.html)).
+In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been completely erased([VIM1](/android/vim1/HowtoEraseEMMC.html)/[VIM2](/android/vim2/HowtoEraseEMMC.html)/[VIM3](/android/vim3/HowtoEraseEMMC.html)).
 
 Open a terminal and type the `sudo minicom` command or other serial tool you like.
 

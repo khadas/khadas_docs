@@ -56,7 +56,7 @@ Among them, `tengine_khadas_yolov3_picture` and `tengine_khadas_yolov3_camera` a
 
 1. Get tmfile
 
-Please refer to [How To Use Tengine SDK](/vim3/HowToUseTengineSDK)
+Please refer to [How To Use Tengine SDK](/android/vim3/HowToUseTengineSDK)
 
 
 2. Run

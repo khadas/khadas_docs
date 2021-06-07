@@ -5,7 +5,7 @@ This guide is about how to make a "Fast Package Update Image"; This means that y
 
 ## Preparations:
 
-* [Build Android Completely](/vim3/BuildAndroid.html).
+* [Build Android Completely](/android/vim3/BuildAndroid.html).
 
 
 ## Only Change the U-Boot

@@ -62,4 +62,4 @@ $ repo start <BRANCH_NAME> --all
 
 ## Further Reading
 * [Android Official Documents](https://source.android.com/source/downloading.html)
-* [Build Android Source Code](/vim3/BuildAndroid.html)
+* [Build Android Source Code](/android/vim3/BuildAndroid.html)

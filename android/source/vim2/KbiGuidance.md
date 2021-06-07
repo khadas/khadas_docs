@@ -121,7 +121,7 @@ To set the default boot media as SPI flash:
 ```
 kvim2# kbi bootmode w spi
 ```
-*For more information about the SPI flash boot mode, see How to boot from SPI Flash([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/vim3/BootFromSpiFlash.html)/[Edge](/edge/BootFromSpiFlash.html))*.
+*For more information about the SPI flash boot mode, see How to boot from SPI Flash([VIM2](http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354)/[VIM3](/android/vim3/BootFromSpiFlash.html)/[Edge](/edge/BootFromSpiFlash.html))*.
 
 To set the default boot media as eMMC storage:
 ```
