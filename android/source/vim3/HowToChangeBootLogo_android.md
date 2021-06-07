@@ -62,7 +62,7 @@ $
 $ cp images/logo.img /media/jason/9B98-6C15/
 ```
 
-**2)** Insert the thumbdrive into your VIM3, then boot into [U-Boot mode](/vim1/SetupSerialTool.html).
+**2)** Insert the thumbdrive into your VIM3, then boot into [U-Boot mode](/android/vim1/SetupSerialTool.html).
 
 **3)** Update logo partition as new `logo.img`:
 ```sh
@@ -83,7 +83,7 @@ $ lunch TARGET_LUNCH
 $ make installclean -j8
 $ make otapackage -j8
 ```
-**3)** Burn upgrate package update.img to your device you can refer [How To Upgrate](/vim1/UpgradeViaUSBCable.html) ,restart then you can see the new boot logo 
+**3)** Burn upgrate package update.img to your device you can refer [How To Upgrate](/android/vim1/UpgradeViaUSBCable.html) ,restart then you can see the new boot logo 
  
 
 **Note**:

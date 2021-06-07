@@ -35,7 +35,7 @@ Usually, the first two methods will meet the needs of most users. However, in so
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-1. Refer to this [guide](/vim1/SetupSerialTool.html) to setup a serial tool for VIM2.
+1. Refer to this [guide](/android/vim1/SetupSerialTool.html) to setup a serial tool for VIM2.
 2. Make sure again that you've done the right connections and setup.
 3. Hit any keys at the moment of booting to stop autoboot. This step will let VIM boot into u-boot mode.
 4. Type `run update` in the terminal of u-boot as shown below:

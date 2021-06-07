@@ -3,14 +3,14 @@ title: PPSSPP Instructions
 
 {% note warn Note %}
 
-* Only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
+* Only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/android/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
 * Only support Framebuffer Console mode.
 
 {% endnote %}
 
 ## Upgrade System
 
-Follow this [documentation](/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
+Follow this [documentation](/android/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
 
 ## Install PPSSPP Package
 

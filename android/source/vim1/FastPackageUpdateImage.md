@@ -5,7 +5,7 @@ This guide is about how to make a "Fast Package Update Image" on Android 6.0 and
 
 ## Preparations:
 
-* [Build Android Completely](/vim1/BuildAndroid.html).
+* [Build Android Completely](/android/vim1/BuildAndroid.html).
 
 
 ## Only Change the U-Boot
@@ -31,7 +31,7 @@ $ ./vendor/amlogic/tools/aml_upgrade/aml_image_v2_packer  -r out/target/product/
 ```
 ## Only Change the Bootup Logo
 
-* Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/vim1/BuildBootLogoForUboot.html))
+* Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/android/vim1/BuildBootLogoForUboot.html))
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ source build/envsetup.sh

@@ -15,7 +15,7 @@ e.g.
 overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 ```
 
-For details on overlays, please refer to [how to use device tree overlays](/vim1/HowToUseDeviceTreeOverlay.html).
+For details on overlays, please refer to [how to use device tree overlays](/android/vim1/HowToUseDeviceTreeOverlay.html).
 
 ## Uasge
 

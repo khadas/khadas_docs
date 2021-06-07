@@ -1,7 +1,7 @@
 title: Create A Burning Card From Command Line
 ---
 
-This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/vim3/UpgradeViaTFBurningCard.html)) instead.
+This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](/android/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/vim3/UpgradeViaTFBurningCard.html)) instead.
 
 {% note info The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example. %}
 
@@ -14,7 +14,7 @@ This guide contains step-by-step instructions to create a Burning Card for Linux
 
 ## Preparation
 * Build your own, or download ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) the latest U-Boot file for SD-Cards.
-* You may need to format the SD-Card Via FDisk ([VIM1](/vim1/CreateBurnCardViaCLI.html)/[VIM2](/vim2/CreateBurnCardViaCLI.html)/[VIM3](/vim3/CreateBurnCardViaCLI.html)) if your SD-Card contains >1 partition.
+* You may need to format the SD-Card Via FDisk ([VIM1](/android/vim1/CreateBurnCardViaCLI.html)/[VIM2](/vim2/CreateBurnCardViaCLI.html)/[VIM3](/vim3/CreateBurnCardViaCLI.html)) if your SD-Card contains >1 partition.
 
 
 ## Before You Start
@@ -121,9 +121,9 @@ Done!
 ## Upgrade Using Your "Burning Card"
 
 1. Insert your Burning Card into your VIM, and power-on.
-2. Follow this guide([VIM1](/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/vim3/HowtoBootIntoUpgradeMode.html)) to boot into Upgrade Mode.
+2. Follow this guide([VIM1](/android/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/vim3/HowtoBootIntoUpgradeMode.html)) to boot into Upgrade Mode.
 3. Wait till the process completes.
 
 ## Further Reading:
-* Booting_Card Vs Burning Card([VIM1](/vim1/BootingCardVsBurningCard.html)/[VIM2](/vim2/BootingCardVsBurningCard.html)/[VIM3](/vim3/BootingCardVsBurningCard.html))
+* Booting_Card Vs Burning Card([VIM1](/android/vim1/BootingCardVsBurningCard.html)/[VIM2](/vim2/BootingCardVsBurningCard.html)/[VIM3](/vim3/BootingCardVsBurningCard.html))
 

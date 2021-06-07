@@ -6,7 +6,7 @@ KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to
 * Carry out low level hardware management
 * Let developers utilise all the features of Khadas VIM2/VIM3/Edge
 
-This document describes how to setup, configure and use the KBI. As KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup a Serial Debugging Tool([VIM2](/vim1/SetupSerialTool.html)/[VIM3](/vim1/SetupSerialTool.html)/[Edge](/edge/SetupSerialTool.html)).
+This document describes how to setup, configure and use the KBI. As KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup a Serial Debugging Tool([VIM2](/android/vim1/SetupSerialTool.html)/[VIM3](/android/vim1/SetupSerialTool.html)/[Edge](/edge/SetupSerialTool.html)).
 
 *Note: This document uses VIM2 as an example, VIM3 and Edge are similar.*
 

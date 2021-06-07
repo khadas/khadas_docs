@@ -7,7 +7,7 @@ title: How To Use Hardware Decoding Library
 
 ## Upgrade Systm to Latest
 
-Please make sure you use the latest image, if not please follow [How To Upgrade The System](/vim1/HowToUpgradeTheSystem.html) to upgrade your system.
+Please make sure you use the latest image, if not please follow [How To Upgrade The System](/android/vim1/HowToUpgradeTheSystem.html) to upgrade your system.
 
 ## Hardware Decoding just For Display
 

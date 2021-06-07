@@ -61,7 +61,7 @@ You need to select the appropriate DTB file.
 ## Step 3. Boot VIMs from SD card or Thumbdrive
 There are several ways to boot (activate multi-boot) from the SD card / Thumbdrive:
 
-* Via [Keys mode (Side-Buttons)](/vim1/HowtoBootIntoUpgradeMode.html) - the easiest and fastest way
+* Via [Keys mode (Side-Buttons)](/android/vim1/HowtoBootIntoUpgradeMode.html) - the easiest and fastest way
 
 * Via Android
 
@@ -77,6 +77,6 @@ Don't use your PC as the USB-Host to supply the electrical power, otherwise it w
 
 {% note warn NOTICE %}
 
-* If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](/vim1/UpgradeViaUSBCable.html).
+* If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](/android/vim1/UpgradeViaUSBCable.html).
 
 {% endnote %}

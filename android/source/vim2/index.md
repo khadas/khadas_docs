@@ -201,7 +201,7 @@ These items are useful when you want to upgrade your VIM2 SBC's operating system
 4. 8GB or Larger, USB-Thumbdrive (U-Disk)
 
 **Learn More:**
-* [Booting Card Vs Burning Card](/vim1/BootingCardVsBurningCard.html)
+* [Booting Card Vs Burning Card](/android/vim1/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/vim2/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/vim2/BootFromExtMedia.html)
 * [Enter Upgrade Mode](/vim2/HowtoBootIntoUpgradeMode.html)
@@ -222,8 +222,8 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Firmware Using USB-C Cable](/vim1/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Firmware Using USB-C Cable](/android/vim1/UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
 
 **Firmware Images:**
 * [Android OS](/vim2/FirmwareAndroid.html)
