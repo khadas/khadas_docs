@@ -13,7 +13,7 @@ Khadas VIM3包含一个数据切换开关来切换`PCIe`或`USB 3.0`模式。默
 
 ## 通过KBI来切换 PCIe / USB3.0 模式
 
-你要先 [设置串口调试工具](/zh-cn/vim3/SetupSerialTool.html)，然后进入u-boot命令行模式。
+你要先 [设置串口调试工具](/android/zh-cn/vim3/SetupSerialTool.html)，然后进入u-boot命令行模式。
 
 * 初始化KBI：
 
@@ -94,4 +94,4 @@ khadas@Khadas:~$ echo 1 > /sys/class/mcu/poweroff
 
 
 ## 参考
-[KBI Guide](/zh-cn/vim3/KbiGuidance.html)
+[KBI Guide](/android/zh-cn/vim3/KbiGuidance.html)

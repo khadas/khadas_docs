@@ -42,7 +42,7 @@ build-cv3.sh  include  makefile-cv3.linux  person_detect_640x384_camera.cpp  per
 
 ### 编译方法
 
-获取SDK请参考[获取SDK](/zh-cn/vim3/HowToUseNPUSDK#获取SDK)
+获取SDK请参考[获取SDK](/android/zh-cn/vim3/HowToUseNPUSDK#获取SDK)
 
 这里同样以person_detect为例，
 

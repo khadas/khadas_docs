@@ -5,7 +5,7 @@ title: 使用darknet训练自己的yolo模型
 
 ### 搭建darknet开发环境
 
-darknet的搭建可以参考这个文档，安装需求搭建[安装配置darknet环境](/zh-cn/vim3/HowToInstallDarknet.html)
+darknet的搭建可以参考这个文档，安装需求搭建[安装配置darknet环境](/android/zh-cn/vim3/HowToInstallDarknet.html)
 darknet环境训练yolo模型的几点说明：
 > 1. opencv的选项一定要打开 
 > 2. 使用GPU训练的，最好要有8G以上的显存

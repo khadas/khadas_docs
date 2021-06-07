@@ -57,7 +57,7 @@ tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
 
 1. 获取tmfile
 
-请参考[如何使用Tengine SDK](/zh-cn/vim3/HowToUseTengineSDK)
+请参考[如何使用Tengine SDK](/android/zh-cn/vim3/HowToUseTengineSDK)
 
 
 2. 运行

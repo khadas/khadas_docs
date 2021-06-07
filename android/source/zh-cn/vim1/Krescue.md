@@ -27,7 +27,7 @@ Krescue的镜像可以从[这里下载](https://dl.khadas.com/Firmware/Krescue/d
 
 
 ### 运行
-将制作好的SD卡插入板子,连接HDMI，进入[升级模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)，看到下图就是成功启动了kerscue
+将制作好的SD卡插入板子,连接HDMI，进入[升级模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)，看到下图就是成功启动了kerscue
 ![boot Krescue](/android/images/vim1/krescue_boot.jpg)
 
 ## 通过网络使用安装Krescue
@@ -49,7 +49,7 @@ $ curl -sfL dl.khadas.com/.mega | sh -s - -l
 $ curl -sfL dl.khadas.com/.mega | sh -s - [BOARD_ID] > /dev/mmcblk0 (或者`/dev/mmcblk1`)
 ```
 注：当系统申请-y参数来进行“不安全写入”则是SD卡的路径出错.这种情况下强行写入则会写入在EMMC中，造成不能运行其他固件的结果。
-等待烧录完成，镜像就被写入了SD卡里，此时就可以进入[升级模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)启动krescue了。
+等待烧录完成，镜像就被写入了SD卡里，此时就可以进入[升级模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)启动krescue了。
 
 ## 使用krescue
 

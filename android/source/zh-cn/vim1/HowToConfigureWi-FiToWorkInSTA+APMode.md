@@ -4,7 +4,7 @@ title: 配置Wi-Fi同时工作在STA+AP模式
 
 ## 准备工作
 
-固件基于V2005版本，并将[OTA升级](/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新的版本。
+固件基于V2005版本，并将[OTA升级](/android/zh-cn/vim3/HowToUpgradeTheSystem.html)到最新的版本。
 
 ## 开始配置
 将wlan0配置为STA模式，将wlan1配置为AP模式。
@@ -116,7 +116,7 @@ khadas@Khadas:~$ sudo ifconfig eth0 down
 
 2、wlan0是否能用于上网
 
-* [连接Wi-Fi](/zh-cn/vim3/HowToConnectWifi.html)
+* [连接Wi-Fi](/android/zh-cn/vim3/HowToConnectWifi.html)
 
 尝试`ping www.khadas.com`:
 

@@ -5,7 +5,7 @@ title: 快速打包安卓升级固件
 
 ## 准备:
 
-* [如何编译安卓](/zh-cn/vim3/BuildAndroid.html)。
+* [如何编译安卓](/android/zh-cn/vim3/BuildAndroid.html)。
 
 
 ## 仅仅修改U-boot

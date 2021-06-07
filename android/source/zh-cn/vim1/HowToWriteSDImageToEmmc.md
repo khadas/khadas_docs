@@ -3,12 +3,12 @@ title: 如何把SD卡固件写入到eMMC
 
 ## 把固件写入到SD卡或U盘
 
-参考[这里](/zh-cn/vim3/BootFromExtMedia#1、把固件写入到SD卡或U盘)。
+参考[这里](/android/zh-cn/vim3/BootFromExtMedia#1、把固件写入到SD卡或U盘)。
 
 
 ## 从SD卡或U盘启动系统
 
-参考[这里](/zh-cn/vim3/BootFromExtMedia.html)。
+参考[这里](/android/zh-cn/vim3/BootFromExtMedia.html)。
 
 ## 把固件写入到eMMC
 

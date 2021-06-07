@@ -129,7 +129,7 @@ title: Edge文档
 |1|Li-Po电池接口|通过[juice板子](https://www.khadas.com/product-page/lipo-battery)用于连接[锂聚合物电池](https://www.khadas.com/product-page/lipo-battery)|
 |2|USB-C|5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的type-C接口|
 |3|[SD Card 插座](/zh-cn/edge/UpgradeViaTFBurningCard.html)|通过SD Card启动或者只作为外部存储器|
-|4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘](/zh-cn/vim3/ListOfCompatibleNVMeSSDs.html)以及[M2x板子](https://www.khadas.com/product-page/m2x-extension-board)|
+|4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘](/android/zh-cn/vim3/ListOfCompatibleNVMeSSDs.html)以及[M2x板子](https://www.khadas.com/product-page/m2x-extension-board)|
 |5|E-DP座子|用于外接eDP显示器|
 |6|4个M2插孔|用于[散热器](https://www.khadas.com/product-page/edge-heatsink)和[DIY外壳](https://www.khadas.com/product-page/captain-carrier-board)|
 |7|TP座子|用于连接[TP输入](/zh-cn/edge/ConnectLcd.html)|

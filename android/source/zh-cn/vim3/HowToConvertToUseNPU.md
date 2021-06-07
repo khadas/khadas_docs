@@ -7,9 +7,9 @@ title: 如何转换并通过NPU调用自己的模型
 请在参照文档转换之前，先仔细查看一遍一下文档
 {% endnote %}
 
-1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
-2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
-3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
+1. [SDK使用说明](/android/zh-cn/vim3/HowToUseNPUSDK.html)
+2. [aml_npu_app源码仓库使用说明](/android/zh-cn/vim3/HowToUseAmlNPUApp.html)
+3. [如何在板子上运行NPU Demo](/android/zh-cn/vim3/HowToRunNPUDemo.html)
 
 
 # 准备
@@ -20,9 +20,9 @@ title: 如何转换并通过NPU调用自己的模型
 
 请分别参考SDK，app以及demo的文档是如何获取相应的代码的
 
-1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
-2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
-3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
+1. [SDK使用说明](/android/zh-cn/vim3/HowToUseNPUSDK.html)
+2. [aml_npu_app源码仓库使用说明](/android/zh-cn/vim3/HowToUseAmlNPUApp.html)
+3. [如何在板子上运行NPU Demo](/android/zh-cn/vim3/HowToRunNPUDemo.html)
 
 # 转换
 
@@ -294,5 +294,5 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/yolov3.n
 如何在板子上运行替换完的`aml_npu_demo_binaries`，请参考
 
 
-[如何在板子上运行NPUDemo](/zh-cn/vim3/HowToRunNPUDemo.html)
+[如何在板子上运行NPUDemo](/android/zh-cn/vim3/HowToRunNPUDemo.html)
 
