@@ -232,39 +232,6 @@ img {
         </div>
 
         <div class="clear"></div>
-
-        <!-- TONE -->
-        <div class="column-center">
-          <div class="ui board-series">
-            {% if page.lang == 'en' %}
-              <span class="series-font">Tone Series</span>
-            {% else %}
-              <span class="series-font">Tone 系列</span>
-            {% endif %}
-          </div>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="column-center row" style="display:block;">
-          <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-            <div class="ui raised segment">
-              <img src="/android/images/home/tone1.jpg" alt="TONE1">
-              {% if page.lang == 'en' %}
-              <a href="/tone1">
-                {% else %}
-                <a href="/zh-cn/tone1">
-                  {% endif %}
-                  <div class="mask">
-                    <span class="mask-text">Tone 1</span>
-                  </div>
-                </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="clear"></div>
-
       </div>
     </div>
   </div>
