@@ -1,13 +1,13 @@
 title: How To Use Android Settings Command
 ---
 
-### android Settings three type attribute
+## android Settings three type attribute
 android settings has three types of attributes, namely global, system and secure, corresponding to the three tables of /data/data/com.android.providers.settings/databases/settings.db 
 ``1)`` global：all preferences are open to all users of the system, and the third-party app has read permission,no write permission
 ``2)`` system：contains a variety of user preferences system settings
 ``3)`` secure：user preference system setting for security，and the third-party app has read permission,no write permission
 
-### android settings usage 
+## android settings usage 
 ``1)`` settings list 
 This command is used to view the values of three properties, such as
 View all global values

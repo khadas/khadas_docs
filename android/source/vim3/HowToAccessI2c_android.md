@@ -4,10 +4,10 @@ title: How To Access I2C
 
 This guide is about how to access i2c on Android.
 
-### Preconditions
+## Preconditions
 * `Android V210128` or newer
 
-### Connections
+## Connections
 **I2C 3**
 `Sensor SCL` <-> `I2C0_SCK (PIN 22)`
 `Sensor SDA` <-> `I2C0_SDA (PIN 23)`
@@ -21,7 +21,7 @@ This guide is about how to access i2c on Android.
 `Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 
 
-### Detect the device
+## Detect the device
 Detect device on `I2C 3`:
 ```
 # i2cdetect -y -r 3
@@ -54,13 +54,13 @@ If you have the right connection you will see the device address, e.g: `0x1e`,`0
 	Root privileges required.
 {% endnote %}
 
-### Read register from device
+## Read register from device
 Read register `0x0d` of device `0x22` on `I2C4`.
 ```
 # i2cget -f -y 4 0x22 0x0d
 0x0f
 ```
-### Show device register value 
+## Show device register value 
 Show register value of device `0x22` on `I2C4`.
 ```
 # i2cdump -f -y 4 0x22 
@@ -83,7 +83,7 @@ d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
 e0: 00 00 00 00 00 00 00 00 00 90 39 0c 00 00 00 00    .........?9?....
 f0: 00 00 08 00 00 00 00 00 00 00 00 00 00 00 01 00    ..?...........?.
 ```
-### Write device register value
+## Write device register value
 Write 0x20 address register value to 0 of device `0x18` on `I2C4`,use i2cdump to query
 ```
 # i2cset -f -y 4 0x18 0x20 0
@@ -113,7 +113,7 @@ f0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
 	Root privileges required.
 {% endnote %}
 
-### Access i2c by khadasapi
+## Access i2c by khadasapi
 In addition to the command to access I2C, you can also access through APK. We encapsulate a jar package, which contains the I2C read-write interface,for example
 **I2C read**
 Function：public int i2c_read_byte_data(int bus, int addr, int reg)

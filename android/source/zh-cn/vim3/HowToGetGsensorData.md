@@ -1,6 +1,6 @@
 title: 如何获取android gsensor 数据
 ---
-### gsensor 用法
+## gsensor 用法
 VIM3 板子在安卓9上已经集成gsensor功能,安装sensor读取的apk可以查看x,y,z的加速度大小，如下
 ![Image of vim_gsensor](/android/images/vim3/sensor.png)
 
@@ -34,7 +34,7 @@ add device 7: /dev/input/event4
 
 ```
 
-### android apk 获取gsensor数据
+## android apk 获取gsensor数据
 app层数据获取主要分为3个步骤
 **1)** 获取Sensor服务：getSystemService;
 **2)** 获取具体sensor对象：getDefaultSensor;

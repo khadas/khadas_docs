@@ -1,6 +1,6 @@
 title: how to get android gps data
 ---
-### android gnss frame
+## android gnss frame
 In Android, GPS data is obtained through GNSS location framework, and location is implemented in a hierarchical way, from top to bottom
 - application frame: provider android.location API
 
@@ -31,12 +31,13 @@ hardware/interfaces/gnss/1.1/                        ====>android.hardware.gnss@
 hardware/interfaces/gnss/1.1/default/         ====>android.hardware.gnss@1.1-service
 
 
-### gps usage
+## gps usage
 VIM3 board has integrated USB GPS function on Android 9. It can insert GPS receiver through USB interface, and then install GPS APK, which can view the information of current position, longitude and latitude, or install map software to view positioning
 
-**note** 
+{% note info Note %}
 **1)** It may take a long time to get the first positioning data from the start of GPS module
 **2)** It can also be used without network, but GPS equipment needs to be placed outdoors to receive satellite signals
+{% endnote %}
 
 To use GPS positioning, you need to turn on the location switch in the settings first，Droid Settings > More settings > Device Preferences > Loacation,Location selects on,use command to query location_providers_allowed is gps 
 ```shell
@@ -47,7 +48,7 @@ console:/ $
 Apk runs as follows
 ![Image of vim_gps](/android/images/vim3/gps.png)
 
-### Android GPS location data API description
+## Android GPS location data API description
 Android frameworks encapsulates the standard API to allow applications to obtain GPS related data. For example, longitude and latitude data can be obtained through the methods in the class of frameworks/base/location/java/android/location/Location.java. For details, please refer to the Android source code frameworks/base/tests/LocationTracker, longitude and latitude api are as follows
 ```shell
  583     /**

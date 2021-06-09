@@ -1,14 +1,14 @@
 title: 如何使用android recovery
 ---
 
-# recovery 进入方式
+## recovery 进入方式
 **1）** 板子上电后，长按power按键直至进入recovery 模式
 **2）** 进入主系统后，串口输入reboot recovery ,或者通过adb reboot recovery 命令
 
-# recovery ota 升级
+## recovery ota 升级
 进入recovery 后，将源码生成的kvim3-ota-eng.root.zip 升级包复制到u盘，选择 Apply update from EXT 项进行升级，升级不擦除data分区
 
-# 修改recovery 文字大小
+## 修改recovery 文字大小
 android recovery 默认有两种字体,一种是12x22 ,一种是18x32,从recovery下的png图片中获取对应的字体大小，对应如下
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/Downloads/android_khadas/bootable/recovery/fonts# ls -l
@@ -32,7 +32,7 @@ endif
 
 **注意**: 12x22.png 对应的字体大小是长等于12个像素，高等于22个像素，12x22.png实际像素大小是1152x44,12 = 1152/96，22=44/2 
 
-# recovery 下常用命令使用
+## recovery 下常用命令使用
 进入recovery后，有些常用命令cp ,ls,vi 等不能直接使用，要通过busybox 才能使用,比如
 ```shell
 # vi /etc/recovery.kl                                                          

@@ -5,10 +5,10 @@ title: 如何添加遥控器
 这个文档主要说明在安卓上增加遥控器
 
 
-### 硬件连接
+## 硬件连接
 `IR_IN(红外遥控头输出)` <-> `GPIOAO_5(主芯片红外输入口)`
 
-### 安卓9软件配置
+## 安卓9软件配置
 **1）**  对于vim3，common/arch/arm/boot/dts/amlogic/mesong12b.dtsi 中增加遥控器码值到键值的映射，使能遥控器驱动配置
 ```sh
         remote:rc@0xff808040 {
@@ -86,7 +86,7 @@ key 104   VOLUME_UP
 key 109   VOLUME_DOWN
 key 212   CAMERA
 ```
-### 遥控器键值查看
+## 遥控器键值查看
 如果驱动和kl文件添加正确的话，输入getevent ,按遥控器可以查看到键值
 ```sh
 getevent -l 

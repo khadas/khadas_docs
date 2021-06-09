@@ -3,7 +3,7 @@ title: How to use platform key sign Android third party applications
 
 When a third-party application claims to use system permissions, it needs the platform key to sign in order to install normally
 
-#### Signature in the environment of Linux khadas source code compilation
+## Signature in the environment of Linux khadas source code compilation
 f you have a khadas source code compilation environment , you can sign in two ways
 
 **1）** add LOCAL_CERTIFICATE := platform in the Android.mk, after you recompile your unsigned APK, it will have platform signature
@@ -16,12 +16,12 @@ java -Djava.library.path=out/host/linux-x86/lib64 -jar out/host/linux-x86/framew
 
 app-debug.apk is the APK that states the system permission before signing ,if AndroidManifeset.xml include android:sharedUserid= "android.uid.system ",and the system signature of device is not added, failure install will appear in ADB install,error is failued install_failed_shared_user_incompatible, app-debug-signed.apk is a signed apk which can be installed directly in adb install
 
-#### Sign on Android studio directly under Windows
+## Sign on Android studio directly under Windows
 
 **1）** Need to prepare keytool import keypair tool script, download address https://github.com/getfatday/keytool-importkeypair
 platform.x509.pem，platform.pk8，are under build/target/product/security
 custom.jks file (android studio generates)，detail can refer android studio jks file generates steps
-#### android studio jks file generates steps
+### android studio jks file generates steps
 ![Image of jks_step](/android/images/vim3/step1.png)
 ![Image of jks_step](/android/images/vim3/step2.png)
 ![Image of jks_step](/android/images/vim3/step3.png)
@@ -42,7 +42,7 @@ The new custom.jks with platform signature, it needs to be copied to the project
 
 In this way, the compiled app can be installed and run directly. Please refer to Android studio configuration custom.jks for details
 
-####  Android studio configuration custom.jks
+###  Android studio configuration custom.jks
 
 Under the project directory app build.gradle ,add signingconfigs configuration , fill in jks file store path, password and alias in turn
 ```sh
@@ -64,7 +64,7 @@ signApk/custom.jks is under app project directory
 
 After add custom.jks , it can be directly compiled in Android studio, and the app can be normally installed on the machine with platform signature
 
-#### jarsigner command to sign on windows
+## jarsigner command to sign on windows
 First of all, windows needs to install jdk to use the jarsigner command
 ```sh
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore custom.jks app-debug.apk khadasdemo

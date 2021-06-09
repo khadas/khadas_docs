@@ -1,6 +1,6 @@
 title: How to get android gsensor data
 ---
-### gsensor usage
+## gsensor usage
 VIM3 board has integrated gsensor function on Android 9. Installing sensor apk can view the acceleration of X, y and Z, as follows
 ![Image of vim_gsensor](/android/images/vim3/sensor.png)
 
@@ -34,7 +34,7 @@ add device 7: /dev/input/event4
 /dev/input/event4: EV_ABS       ABS_Z                00004160            
 
 ```
-### android apk get gsensor data
+## android apk get gsensor data
 The data acquisition of app layer is mainly divided into three steps
 **1)** get Sensor service：getSystemService;
 **2)** get detailed sensor object：getDefaultSensor;

@@ -8,7 +8,7 @@ title: 如何使用Android Npu Jni
 {% endnote %}
 
 
-### 获取NPU jni/app 源码
+## 获取NPU jni/app 源码
 
 npu jni源码目前没有集成到固件中，需要先从gitlab自行下载
 
@@ -16,7 +16,7 @@ jni仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android
 
 app仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android_npu_app.git](https://github.com/liustarting/khadas_android_npu_app.git)
 
-### 安装ndk 编译环境
+## 安装ndk 编译环境
 
 ``1)`` 下载ndk
 	wget https://dl.google.com/android/repository/android-ndk-r17-linux-x86_64.zip 
@@ -31,7 +31,7 @@ app仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android
 ``4)`` 检测ndk是否安装完成：
 	在shell中输入“ndk-build”命令来检查你的安装是否成功，如果不是显示“ndk-build not found”
 
-### ndk编译 npu jni so库
+## ndk编译 npu jni so库
 下载npu jni源码后，进入khadas_android_npu_library目录，如下
 
 ```shell
@@ -92,13 +92,13 @@ Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependenc
 Android NDK:     current module    
 [armeabi-v7a] Install        : libnn_yolo_v3.so => libs/armeabi-v7a/libnn_yolo_v3.so
 ```
-### so库说明
+## so库说明
 libkhadas_npu_jni.so: khadas 封装的npu相关的api, 由khadas npu demo app调用，具体查看khadas_android_npu_library 和khadas_android_npu_app 代码
 libnn_yoloface.so: 由模型转换工具自动生成的yoloface人脸检测case代码编译，具体如何转出case代码，请参考linux板块关于npu模型转换的说明
 libnn_yolo_v2.so:由模型转换工具自动生成的yolo_v2图像识别case代码编译，具体如何转出case代码，请参考linux板块关于npu模型转换的说明
 libnn_yolo_v3.so:由模型转换工具自动生成的yolo_v3图像识别case代码编译，具体如何转出case代码，请参考linux板块关于npu模型转换的说明
 
-### khadas_android_npu_app app so库使用
+## khadas_android_npu_app app so库使用
 下载npu app 源码后，在app/libs/armeabi-v7a 目录中包含libkhadas_npu_jni.so libnn_yoloface.so libnn_yolo_v2.so libnn_yolo_v3.so以及其他npu相关的库，libovxlib.so等,app通过jni调用libkhadas_npu_jni.so接口 
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu/app/libs/armeabi-v7a# ll

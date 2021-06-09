@@ -1,7 +1,7 @@
 title: 如何使用硬件PWM
 ---
 
-# 目前VIM3板子还有PWM_F这个管脚可以使用pwm
+## 目前VIM3板子还有PWM_F这个管脚可以使用pwm
 
 dts配置文件里默认没有配置pwm_f,需要在arch/arm/boot/dts/amlogic/kvim3.dts添加如下配置
 ```shell
@@ -11,11 +11,11 @@ dts配置文件里默认没有配置pwm_f,需要在arch/arm/boot/dts/amlogic/kvi
 +                pinctrl-0 = <&pwm_f_pins2>;
         };
 ```
-# 确认哪一个物理引脚对应了硬件PWM.
+## 确认哪一个物理引脚对应了硬件PWM.
 
 `PWM_F` on [VIM3 GPIO-Out](/android/zh-cn/vim3/index.html#GPIO-Pinout)
 
-# 却换到root用户
+## 却换到root用户
 
 普通用户无法控制GPIO,因此需要先却换到root用户
 
@@ -23,7 +23,7 @@ dts配置文件里默认没有配置pwm_f,需要在arch/arm/boot/dts/amlogic/kvi
 kvim3:/ $ su
 ```
 
-# 设置硬件PWM
+## 设置硬件PWM
 
 ## 设置以及打开PWM
 
@@ -38,7 +38,9 @@ kvim3:/ $ su
 
 ![pwm-Oscilloscope](/android/images/vim1/pwm-Oscilloscope.jpg)
 
-**注意**: 如果使用示波器去查看波形,记得板子和示波器需要共地
+{% note info 注意 %}
+如果使用示波器去查看波形,记得板子和示波器需要共地
+{% endnote %}
 
 ## 关闭PWM
 

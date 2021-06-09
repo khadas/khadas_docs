@@ -1,13 +1,13 @@
 title: 如何使用Android Settings 命令
 ---
 
-### android Settings系统属性
+## android Settings系统属性
 android Settings 有三种类型的属性，分别是global，system, secure，对应的是/data/data/com.android.providers.settings/databases/settings.db 数据库的三张表
 ``1)`` global：所有的偏好设置对系统的所有用户公开，第三方APP有读没有写的权限
 ``2)`` system：包含各种各样的用户偏好系统设置
 ``3)`` secure：安全性的用户偏好系统设置，第三方APP有读没有写的权限
 
-### android Settings 用法 
+## android Settings 用法 
 ``1)`` settings list 
 此命令用于查看三种属性的值，比如
 查看global所有的值

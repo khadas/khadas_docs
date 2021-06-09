@@ -16,7 +16,7 @@ Logo file is stored in the `device/khadas/TARGET/logo_img_files/bootup.bmp` dire
 
 Replace the bootup.bmp ,then rebuild the logo.img
 
-### Build Logo on Android
+## Build Logo on Android
 **1)** Update a new logo picture as you want:
 ```sh
 $ cp ~/Pictures/khadas.bmp device/khadas/kvim3/logo_img_files/bootup.bmp
@@ -55,7 +55,7 @@ Installed out/target/product/kvim3/upgrade/logo.img
 $
 ```
 
-### Burn the logo.img Separately
+## Burn the logo.img Separately
 
 **1)** Copy the new logo.img to a thumbdrive (U-disk):
 ```sh
@@ -73,7 +73,7 @@ kvim3# usb_update logo logo.img
 ```sh
 kvim3# run init_display
 ```
-### Updage the logo by upgrate whole firmware
+## Updage the logo by upgrate whole firmware
 **1)** replace `device/khadas/TARGET/logo_img_files/bootup.bmp` bmp file 
 **2)** build upgrate package 
 ```sh
@@ -85,11 +85,10 @@ $ make otapackage -j8
 ```
 **3)** Burn upgrate package update.img to your device you can refer [How To Upgrate](/android/vim1/UpgradeViaUSBCable.html) ,restart then you can see the new boot logo 
  
-
-**Note**:
+{% note info Note %}
 * Replace `PATH_YOUR_PROJECT` to your project path
 * Replace `TARGET_LUNCH` to your lunch select.
   * For VIM3, it's kvim3-userdebug.
   * For VIM3L, it's kvim3l-userdebug.
 * `TARGET` should be kvim3 or kvim3l
-
+{% endnote %}
