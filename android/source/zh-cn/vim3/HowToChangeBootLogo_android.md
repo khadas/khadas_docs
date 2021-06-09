@@ -61,7 +61,7 @@ $
 $ cp images/logo.img /media/jason/9B98-6C15/
 ```
 
-**2)** 插上u盘到你的VIM3上, 然后进入 [U-Boot 模式](/vim1/SetupSerialTool.html)。
+**2)** 插上u盘到你的VIM3上, 然后进入 [U-Boot 模式](/android/zh-cn/vim1/SetupSerialTool.html)。
 
 **3)** 更新logo.img到 logo 分区:
 ```sh
@@ -82,7 +82,7 @@ $ lunch TARGET_LUNCH
 $ make installclean -j8
 $ make otapackage -j8
 ```
-**3)** 烧录升级包到你的设备，你可以参考 [How To Upgrate](/vim1/UpgradeViaUSBCable.html)，重启设备你将看到新的logo。
+**3)** 烧录升级包到你的设备，你可以参考 [How To Upgrate](/android/zh-cn/vim1/UpgradeViaUSBCable.html)，重启设备你将看到新的logo。
  
 {% note info 注意 %}
 * `PATH_YOUR_PROJECT` 是你的工程目录

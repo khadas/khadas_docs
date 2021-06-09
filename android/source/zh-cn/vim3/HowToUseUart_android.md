@@ -5,7 +5,7 @@ title: 如何使用uart
 
 Urt_c引出到40Pin的引脚是15脚以及16脚
 
-* [VIM3-GPIO-Pin-Out](/vim3/#GPIO-Pinout)
+* [VIM3-GPIO-Pin-Out](/android/zh-cn/vim3/#GPIO-Pinout)
 
 VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 

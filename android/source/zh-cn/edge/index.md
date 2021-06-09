@@ -136,7 +136,7 @@ title: Edge文档
 |8|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/android/zh-cn/edge/ConnectLcd.html)|
 |9|MIPI-RX|用于连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |A|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
-|B||M寄存器|强制板子进入[MaskROM模式](/edge/HowtoBootIntoUpgradeMode.html)|
+|B||M寄存器|强制板子进入[MaskROM模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edgev" role="tabpanel" aria-labelledby="button-tab">

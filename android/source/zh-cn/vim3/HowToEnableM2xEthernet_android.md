@@ -13,7 +13,7 @@ title: 如何使能M2x以太网
 
 ## 通过kbi命令使能m2x以太网
 
-* 关于kbi 用法 ,你可以参考 [kbi guide](/vim3/KbiGuidance.html),设置命令如下
+* 关于kbi 用法 ,你可以参考 [kbi guide](/android/zh-cn/vim3/KbiGuidance.html),设置命令如下
 
 ```
 kvim3#kbi
