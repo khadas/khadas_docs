@@ -121,7 +121,7 @@ sidebar:
     how_to_use_lte_module: LTE模块用法   
     board_rescoures: 板载资源
     how_to_access_gpio: GPIO用法
-    how_to_access_i2c_android: 如何操作I2C
+    how_to_access_i2c: 如何操作I2C
     howto_use_wol: WOL用法
     how_to_setup_pcie_usb_port: 设置PCIe/USB3.0端口
     how_to_enable_m2x_eth: 如何使能M2x
