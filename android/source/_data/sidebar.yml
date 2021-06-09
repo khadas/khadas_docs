@@ -1,5 +1,5 @@
 vim1:
-  getting_started:
+  quick_start:
     overview: index.html
     vim1_interfaces: VimInterfaces.html
     add_chinese_support: AddChineseSupport.html
@@ -7,29 +7,32 @@ vim1:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
-    extra_power_input: ExtraPowerInput.html
-  Accessories:
+  rescures_control:
+    system_control:
+      how_to_use_adb_tool: HowToUseADBTool.html
+    board_rescoures:
+      how_to_access_gpio: HowToAccessGpio.html
+      how_to_access_i2c: HowToAccessI2c.html
   development:
-    create_burning_card_via_cli: CreateBurnCardViaCLI.html
-    create_booting_card: CreateBootableSDCard.html
-    setup_serial: SetupSerialTool.html
-    erase_emmc: HowtoEraseEMMC.html
-    how_to_access_gpio: HowToAccessGpio.html
-    how_to_access_i2c: HowToAccessI2c.html
-  uboot:
-    uboot_usage: UBootUsage.html
-    build_boot_logo_for_uboot: BuildBootLogoForUboot.html
-    setup_tftp: SetupTFTPServer.html
-    load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    package_update_image: FastPackageUpdateImage.html
-    how_to_use_adb_tool: HowToUseADBTool.html
+    uboot:
+      uboot_usage: UBootUsage.html
+      build_boot_logo_for_uboot: BuildBootLogoForUboot.html
+      setup_tftp: SetupTFTPServer.html
+      load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
+    firmware&&system:
+      install_toolchains: InstallToolchains.html
+      download_android_source_code: DownloadAndroidSourceCode.html
+      build_android: BuildAndroid.html
+      package_update_image: FastPackageUpdateImage.html
+      create_burning_card_via_cli: CreateBurnCardViaCLI.html
+      create_booting_card: CreateBootableSDCard.html
+      erase_emmc: HowtoEraseEMMC.html
+    hardware:
+      setup_serial: SetupSerialTool.html
+      extra_power_input: ExtraPowerInput.html
 
 vim2:
-  getting_started:
+  quick_start:
     overview: index.html
     vim2_interfaces: Vim2Interfaces.html
     add_chinese_support: AddChineseSupport.html
@@ -37,32 +40,34 @@ vim2:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
-    extra_power_input: ExtraPowerInput.html
-  Accessories:
+  rescures_control:
+    system_control:
+      how_to_use_adb_tool: HowToUseADBTool.html
+    board_rescoures:
+      how_to_access_gpio: HowToAccessGpio.html
+      how_to_access_i2c: HowToAccessI2c.html
+      howto_use_wol: HowtoUseWol.html
+      force_reset_features: ForceResetFeatures.html
   development:
-    create_burning_card_via_cli: CreateBurnCardViaCLI.html
-    create_booting_card: CreateBootableSDCard.html
-    setup_serial: SetupSerialTool.html
-    erase_emmc: HowtoEraseEMMC.html
-    how_to_access_gpio: HowToAccessGpio.html
-    how_to_access_i2c: HowToAccessI2c.html
-    howto_use_wol: HowtoUseWol.html
-  uboot:
-    uboot_usage: UBootUsage.html
-    build_boot_logo_for_uboot: BuildBootLogoForUboot.html
-    setup_tftp: SetupTFTPServer.html
-    load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
-    kbi_guidance: KbiGuidance.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    package_update_image: FastPackageUpdateImage.html
-    how_to_use_adb_tool: HowToUseADBTool.html
-    force_reset_features: ForceResetFeatures.html
-
+    uboot:
+      uboot_usage: UBootUsage.html
+      build_boot_logo_for_uboot: BuildBootLogoForUboot.html
+      setup_tftp: SetupTFTPServer.html
+      load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
+      kbi_guidance: KbiGuidance.html
+    firmware&&system:
+      install_toolchains: InstallToolchains.html
+      download_android_source_code: DownloadAndroidSourceCode.html
+      build_android: BuildAndroid.html
+      package_update_image: FastPackageUpdateImage.html
+      create_burning_card_via_cli: CreateBurnCardViaCLI.html
+      create_booting_card: CreateBootableSDCard.html
+      erase_emmc: HowtoEraseEMMC.html
+    hardware:
+      setup_serial: SetupSerialTool.html
+      extra_power_input: ExtraPowerInput.html
 vim3:
-  getting_started:
+  quick_start:
     overview: index.html
     vim3_interfaces: Vim3Interfaces.html
     add_chinese_support: AddChineseSupport.html
@@ -70,51 +75,46 @@ vim3:
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
-    extra_power_input: ExtraPowerInput.html
-  Accessories:
-    connect_lcd: ConnectLcd.html
-    how_to_use_lte_module: HowToUseLTEModule.html
-  development:
-    create_burning_card_via_cli: CreateBurnCardViaCLI.html
-    create_booting_card: CreateBootableSDCard.html
-    setup_serial: SetupSerialTool.html
-    erase_emmc: HowtoEraseEMMC.html
-    how_to_access_gpio: HowToAccessGpio.html
-    how_to_access_i2c: HowToAccessI2c.html
-    howto_use_wol: HowtoUseWol.html
-    how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
+  rescures_control:
+    system_control:
+      how_to_use_adb_tool: HowToUseADBTool.html
+      how_to_change_logo_android: HowToChangeBootLogo_android.html
+      how_to_change_animation: HowToChangeBootAnimation_android.html
+      how_to_app_platform_sign: HowToAppPlatformSign.html
+    accessories:
+      connect_lcd: ConnectLcd.html
+      how_to_use_lte_module: HowToUseLTEModule.html
+    board_rescoures:
+      how_to_access_gpio: HowToAccessGpio.html
+      how_to_access_i2c: HowToAccessI2c_android.html
+      howto_use_wol: HowtoUseWol.html
+      how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
+      how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
+      how_to_use_uart_android: HowToUseUart_android.html
+      how_to_add_ir: HowToAddIr.html
   npu:
-    how_to_run_npu_demo: HowToRunNPUDemo.html
-    npu_sdk_description: HowToUseNPUSDK.html
-    aml_npu_app_description: HowToUseAmlNPUApp.html
-    run_yourself_AI_with_npu: HowToConvertToUseNPU.html
-    NPU_performance_usage: NPUPerformanceUsage.html
-    how_to_use_AMLNNApi: HowToUseAMLNNApi.html
-    how_to_use_Tengine_SDK: HowToUseTengineSDK.html
-    how_to_use_Tengine_app: HowToUseTengineApp.html
-  uboot:
-    boot_from_spi_flash: BootFromSpiFlash.html
-    uboot_usage: UBootUsage.html
-    build_boot_logo_for_uboot: BuildBootLogoForUboot.html
-    setup_tftp: SetupTFTPServer.html
-    load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
-    kbi_guidance: KbiGuidance.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    package_update_image: FastPackageUpdateImage.html
-    how_to_use_adb_tool: HowToUseADBTool.html
-    how_to_use_fastboot: HowToUseFastboot.html
-    how_to_access_i2c: HowToAccessI2c_android.html
-    how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
-    how_to_change_logo_android: HowToChangeBootLogo_android.html
-    how_to_change_animation: HowToChangeBootAnimation_android.html
-    how_to_use_uart_android: HowToUseUart_android.html
-    how_to_app_platform_sign: HowToAppPlatformSign.html
-    how_to_add_ir: HowToAddIr.html
+  development:
+    uboot:
+      boot_from_spi_flash: BootFromSpiFlash.html
+      uboot_usage: UBootUsage.html
+      build_boot_logo_for_uboot: BuildBootLogoForUboot.html
+      setup_tftp: SetupTFTPServer.html
+      load_image_via_tftp: LoadImagesWithUBootViaTFTP.html
+      kbi_guidance: KbiGuidance.html
+    firmware&&system:
+      install_toolchains: InstallToolchains.html
+      download_android_source_code: DownloadAndroidSourceCode.html
+      build_android: BuildAndroid.html
+      package_update_image: FastPackageUpdateImage.html
+      create_burning_card_via_cli: CreateBurnCardViaCLI.html
+      create_booting_card: CreateBootableSDCard.html
+      erase_emmc: HowtoEraseEMMC.html
+      how_to_use_fastboot: HowToUseFastboot.html
+    hardware:
+      setup_serial: SetupSerialTool.html
+      extra_power_input: ExtraPowerInput.html
 edge:
-  getting_started:
+  quick_start:
     overview: index.html
     edge_interfaces: EdgeInterfaces.html
     captain_interfaces: CaptainInterfaces.html
@@ -124,24 +124,28 @@ edge:
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-  Accessories:
-    connect_lcd: ConnectLcd.html
-    how_to_use_lte_module: HowToUseLTEModule.html
+  rescures_control:
+    system_control:
+      how_to_use_adb_tool: HowToUseADBTool.html
+    accessories:
+      connect_lcd: ConnectLcd.html
+      how_to_use_lte_module: HowToUseLTEModule.html
+    board_rescoures:
+      how_to_access_gpio: HowToAccessGpio.html
+      howto_use_wol: HowtoUseWol.html
   development:
-    setup_serial: SetupSerialTool.html
-    erase_emmc: HowtoEraseEMMC.html
-    how_to_access_gpio: HowToAccessGpio.html
     rk_docs: RockchipDocs.html
-    howto_use_wol: HowtoUseWol.html
-  uboot:
-    boot_from_spi_flash: BootFromSpiFlash.html
-    kbi_guidance: KbiGuidance.html
-  android:
-    install_toolchains: InstallToolchains.html
-    download_android_source_code: DownloadAndroidSourceCode.html
-    build_android: BuildAndroid.html
-    how_to_use_adb_tool: HowToUseADBTool.html
-    instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
+    uboot:
+      boot_from_spi_flash: BootFromSpiFlash.html
+      kbi_guidance: KbiGuidance.html
+    firmware&&system:
+      install_toolchains: InstallToolchains.html
+      download_android_source_code: DownloadAndroidSourceCode.html
+      build_android: BuildAndroid.html
+      erase_emmc: HowtoEraseEMMC.html
+      instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
+    hardware:
+      setup_serial: SetupSerialTool.html
 
 hardware:
   hardware:
@@ -149,7 +153,7 @@ hardware:
     vim2: hardwareVim2.html
     vim3: hardwareVim3.html
     edge: hardwareEdge.html
-    
+
 firmware:
   firmware:
     vim1: Vim1AndroidFirmware.html
