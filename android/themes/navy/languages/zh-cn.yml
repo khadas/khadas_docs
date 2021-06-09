@@ -116,6 +116,10 @@ sidebar:
     how_to_change_logo_android: 如何更新开机logo
     how_to_change_animation: 如何更新开机动画
     how_to_app_platform_sign: app如何系统签名
+    how_to_use_recovery: 如何使用recovery
+    how_to_get_gps_data: 如何获取gps数据
+    how_to_get_gsensor_data: 如何获取gsensor数据
+    how_to_use_settings_command: 如何使用Settings命令
     accessories: 配件
     connect_lcd: 配置触摸屏TS050
     how_to_use_lte_module: LTE模块用法   
@@ -127,7 +131,10 @@ sidebar:
     how_to_enable_m2x_eth: 如何使能M2x
     how_to_use_uart_android: 如何使用uart
     how_to_add_ir: 如何添加遥控器
+    how_to_use_pwm: 如何使用PWM
     npu: NPU
+    how_to_use_android_npu_demo: 如何使用安卓npu demo
+    how_to_use_npu_jni: 如何使用Npu jni
     development: 开发
     uboot: U-Boot
     boot_from_spi_flash: 从SPI Flash启动系统

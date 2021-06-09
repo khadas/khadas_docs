@@ -81,6 +81,10 @@ vim3:
       how_to_change_logo_android: HowToChangeBootLogo_android.html
       how_to_change_animation: HowToChangeBootAnimation_android.html
       how_to_app_platform_sign: HowToAppPlatformSign.html
+      how_to_use_recovery: HowToUseRecovery.html
+      how_to_get_gps_data: HowToGetGpsData.html
+      how_to_get_gsensor_data: HowToGetGsensorData.html
+      how_to_use_settings_command: HowToUseSettingsCommand.html
     accessories:
       connect_lcd: ConnectLcd.html
       how_to_use_lte_module: HowToUseLTEModule.html
@@ -92,7 +96,10 @@ vim3:
       how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
       how_to_use_uart_android: HowToUseUart_android.html
       how_to_add_ir: HowToAddIr.html
+      how_to_use_pwm: HowToUsePwm.html
   npu:
+    how_to_use_android_npu_demo: HowToUseAndroidNpuDemo.html
+    how_to_use_npu_jni: HowToUseNpuJni.html
   development:
     uboot:
       boot_from_spi_flash: BootFromSpiFlash.html
