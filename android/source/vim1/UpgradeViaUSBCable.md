@@ -19,7 +19,7 @@ title: Upgrade Via a USB-C Cable
 ## Perparation
 * Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip) and extract it.
 * Run `setup_v2.x.x.exe` to install the tool for upgrading your VIMs:
-    ![Image of USB_Upgrade_tool_setup_v217](/images/vim1/usb_upgrade_tool_setup_v217.png)
+    ![Image of USB_Upgrade_tool_setup_v217](/android/images/vim1/usb_upgrade_tool_setup_v217.png)
 
 ## Upgrade steps
 Make soure that you have install the correct USB upgrade Tool, then follow the steps below to upgrade:
@@ -33,12 +33,12 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your VIMs asa connected USB-device.
 
     Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
-    ![Image of USB_Upgrade_Tool_Interface_v217](/images/vim1/usb_upgrade_tool_interface_v217_en.png)
+    ![Image of USB_Upgrade_Tool_Interface_v217](/android/images/vim1/usb_upgrade_tool_interface_v217_en.png)
 
 {% note info Tips %}
 
 * To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark.
-* Extra power supply([VIM1](/vim1/ExtraPowerInput.html)/[VIM2](/vim2/ExtraPowerInput.html)/[VIM3](/vim3/ExtraPowerInput.html)) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
+* Extra power supply([VIM1](/android/vim1/ExtraPowerInput.html)/[VIM2](/android/vim2/ExtraPowerInput.html)/[VIM3](/android/vim3/ExtraPowerInput.html)) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
 
 {% endnote %}
 
@@ -111,7 +111,7 @@ Root privilege required.
 
 ## Check The USB Driver
 
-You must now place your VIM board into "Upgrade Mode".See [VIM1](/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/vim3/HowtoBootIntoUpgradeMode.html) to enter Upgrade Mode.
+You must now place your VIM board into "Upgrade Mode".See [VIM1](/android/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/android/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/android/vim3/HowtoBootIntoUpgradeMode.html) to enter Upgrade Mode.
 Check to see if Ubuntu has detected your VIM1/VIM2 as a connected USB-device.
 
 ```bash
@@ -176,6 +176,6 @@ $ sudo ./UNINSTALL
 
 
 ## See Also
-* [Upgrade Via An SD-Card](/vim1/UpgradeViaTFBurningCard.html)
-* [How To Boot Into Upgrade Mode](/vim1/HowtoBootIntoUpgradeMode.html)
+* [Upgrade Via An SD-Card](/android/vim1/UpgradeViaTFBurningCard.html)
+* [How To Boot Into Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
 

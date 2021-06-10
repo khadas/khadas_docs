@@ -4,10 +4,10 @@ title: How To Add Ir
 This guide is about how to add ir on android. 
 
 
-### Hardware Connectity
+## Hardware Connectity
 `IR_IN(Infrared remote control output)` <-> `GPIOAO_5(Main chip infrared input port)`
 
-### Android 9 Software Configuration
+## Android 9 Software Configuration
 **1）**  for vim3，add the mapping from remote control code value to key value , enable remote control driver configuration in common/arch/arm/boot/dts/amlogic/mesong12b.dtsi 
 ```sh
         remote:rc@0xff808040 {
@@ -84,7 +84,7 @@ key 104   VOLUME_UP
 key 109   VOLUME_DOWN
 key 212   CAMERA
 ```
-### remoter key value querry
+## remoter key value querry
 If the driver and kl file are added correctly, enter getevent and press the remote control to view the key value
 ```sh
 getevent -l 

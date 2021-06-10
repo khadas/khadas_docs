@@ -3,17 +3,17 @@ title: 如何使能M2x以太网
 
 * 在你使用m2x以太网之前，你可以通过两种方法去使能它
 
-### 在tv设置中使能m2x以太网
+## 在tv设置中使能m2x以太网
 
 * 进入 Droid Settings-> More settings-> Network&Internet-> Ethernet,选中Ethernet Port 
-	![Image of M2x_eth_port](/images/vim3/vim3_m2x_eth.png)
+	![Image of M2x_eth_port](/android/images/vim3/vim3_m2x_eth.png)
 
 
 
 
-### 通过kbi命令使能m2x以太网
+## 通过kbi命令使能m2x以太网
 
-* 关于kbi 用法 ,你可以参考 [kbi guide](/vim3/KbiGuidance.html),设置命令如下
+* 关于kbi 用法 ,你可以参考 [kbi guide](/android/zh-cn/vim3/KbiGuidance.html),设置命令如下
 
 ```
 kvim3#kbi

@@ -2,7 +2,7 @@ title: Khadas Tone1 User Manual
 ---
 
 Thank you for purchasing a Khadas Tone1. Now you can easily enjoy Hi-Res Audio at home.
-![Tone1](/images/tone1/ToneboardOverview.jpg)
+![Tone1](/android/images/tone1/ToneboardOverview.jpg)
 
 
 
@@ -17,7 +17,7 @@ Set of Screws|Set of Screws
 -|Header: 40-Pin Female
 -|Header: 20-Pin
 
-![Tone1 Recipes](/images/tone1/ToneboardRecipes.jpg)
+![Tone1 Recipes](/android/images/tone1/ToneboardRecipes.jpg)
 
 
 ## Device Connection
@@ -40,7 +40,7 @@ Step 2| Connect RCA output
 Step 3| Connect HDMI
 Step 4| Connect DC 5V
 
-![Tone1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
+![Tone1 Connection VIMs](/android/images/tone1/ToneboardConnectionVIMs.png)
 
 </div>
 <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="win-tab">
@@ -50,7 +50,7 @@ Step|Operation|
 Step 1| Connect RCA output 
 Step 2| Connect Tone1 with PC using a USB-C data cable
 
-![Tone1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
+![Tone1 Connection General](/android/images/tone1/ToneboardConnectionGeneral.jpg)
 
 </div>
 </div>
@@ -91,24 +91,24 @@ Edge-V TBD.
      * [Download](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
      * Decompress and run setup.exe to install the driver.
      * Install completed. 
-![Tone1 Windows Setup1](/images/tone1/ToneboardWindowsSetup1.png)
+![Tone1 Windows Setup1](/android/images/tone1/ToneboardWindowsSetup1.png)
   *  Switch sound-card to the Tone1
      * Click the sound icon in the lower-right-corner of the Windows Task-Bar.
-![Tone1 Windows Setup2](/images/tone1/ToneboardWindowsSetup2.jpg)
+![Tone1 Windows Setup2](/android/images/tone1/ToneboardWindowsSetup2.jpg)
      * Chose XMOS XS1-U8 DJ as the default sound-card.
-![Tone1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
+![Tone1 Windows Setup3](/android/images/tone1/ToneboardWindowsSetup3.jpg)
 
 </div>
 <div class="tab-pane fade" id="ubuntu-set" role="tabpanel" aria-labelledby="ubuntu-set-tab">
 
 Switch sound-card to the Tone1
-![Tone1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
+![Tone1 Ubuntu Setup](/android/images/tone1/ToneboardUbuntuSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="mac-set" role="tabpanel" aria-labelledby="mac-set-tab">
 
 Switch sound-card to the Tone1
-![Tone1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
+![Tone1 Mac OS Setup](/android/images/tone1/ToneboardMacosSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="rpi-set" role="tabpanel" aria-labelledby="rpi-set-tab">
@@ -116,7 +116,7 @@ Switch sound-card to the Tone1
 *  Switch sound-card to the Tone1
      
    * Volumio
-![Tone1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
+![Tone1 Rpi Setup](/android/images/tone1/ToneboardRpiSetup.jpg)
      
    * Raspbian
 ```
@@ -156,7 +156,7 @@ No|Ports|Function|
 9|OLED     |VIMs OLED display
 10|Power LED     |Power supply indicator
 
-![Tone1 Ports](/images/tone1/ToneboardPorts.png)
+![Tone1 Ports](/android/images/tone1/ToneboardPorts.png)
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">

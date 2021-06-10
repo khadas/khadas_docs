@@ -20,7 +20,7 @@ title: 如何进入升级模式
 
 ## 串口模式（针对开发者）
 
-1. 参考[文档](/zh-cn/edge/SetupSerialTool.html)设置串口。
+1. 参考[文档](/android/zh-cn/edge/SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
 3. 系统启动时按任意按键进入串口命令行模式
 4. 执行`run update`命令进入loader模式，进入loader模式后系统led灯会点亮。
@@ -37,7 +37,7 @@ kedge# run maskrom
 
 ## Android / Linux命令行模式
 
-1. 参考[文档](/zh-cn/edge/SetupSerialTool.html)设置串口。
+1. 参考[文档](/android/zh-cn/edge/SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
 3. 启动进入系统命令行。
 4. Linux系统执行`sudo reboot loader`命令，安卓系统执行`su`和`reboot loader`命令，系统会重启进入升级模式（loader模式），进入升级模式后系统led灯会点亮。
@@ -54,7 +54,7 @@ kedge# run maskrom
 2. 用镊子短接 `M` register不松开。
 3. 短按`Reset`按键会进入升级模式（maskrom模式）。
 
-![Image of MRegister_ShortCircuit](/images/edge/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/android/images/edge/MRegister_ShortCircuit.png)
 
 {% note info 提示 %}
 `M` register在Edge板背面

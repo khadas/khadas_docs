@@ -5,8 +5,8 @@ title: 编译Amlogic平台安卓源码
 ## 准备
 
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
-- [x] [下载安卓源码](/zh-cn/vim3/DownloadAndroidSourceCode.html)
-- [x] [安装Amlogic平台工具链](/zh-cn/vim3/InstallToolchains.html)
+- [x] [下载安卓源码](/android/zh-cn/vim3/DownloadAndroidSourceCode.html)
+- [x] [安装Amlogic平台工具链](/android/zh-cn/vim3/InstallToolchains.html)
 
 
 ## 编译
@@ -61,5 +61,5 @@ $ make bootimage
 ```
 
 ## 参考
-* [通过USB数据线升级](/zh-cn/vim3/UpgradeViaUSBCable.html)
-* [通过TF卡升级](/zh-cn/vim3/UpgradeViaTFBurningCard.html)
+* [通过USB数据线升级](/android/zh-cn/vim3/UpgradeViaUSBCable.html)
+* [通过TF卡升级](/android/zh-cn/vim3/UpgradeViaTFBurningCard.html)

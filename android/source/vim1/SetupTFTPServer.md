@@ -91,7 +91,7 @@ $ sudo service tftpd-hpa restart
 To setup TFTP on your target device, you will need to:
 
 * Connect a LAN cable to your target device, and make sure your device is on same local network with your Host PC.
-* Connect a "Serial-To-USB Module" between the target device and Host PC and ensure you have done the correct [setup](/vim1/SetupSerialTool.html).
+* Connect a "Serial-To-USB Module" between the target device and Host PC and ensure you have done the correct [setup](/android/vim1/SetupSerialTool.html).
 * Power-on your target device, and ensure the device has a Bootloader installed in it.
 
 Stop U-Boot autoboot by hitting `Enter` or `Space` key at the moment you power on your target device:

@@ -24,7 +24,7 @@ title: 如何擦除eMMC存储器
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* 参考这里([VIM1](/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/zh-cn/vim3/SetupSerialTool.html))设置串口
+* 参考这里([VIM1](/android/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/android/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/android/zh-cn/vim3/SetupSerialTool.html))设置串口
 * 确保串口线连接正确以及串口软件正确配置
 * 在VIMs上电时按住任意键会进入U-boot命令行模式
 * U-boot命令行执行`store init 3`会擦除整个eMMC
@@ -77,7 +77,7 @@ GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:
 
 这种方法适用于所有Amlogic产品。
 
-* 通过USB-C([VIM1](/zh-cn/vim1/UpgradeViaUSBCable.html)/[VIM2](/zh-cn/vim2/UpgradeViaUSBCable.html)/[VIM3](/zh-cn/vim3/UpgradeViaUSBCable.html)) 或TF卡([VIM1](/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/zh-cn/vim3/UpgradeViaTFBurningCard.html))升级固件.
+* 通过USB-C([VIM1](/android/zh-cn/vim1/UpgradeViaUSBCable.html)/[VIM2](/android/zh-cn/vim2/UpgradeViaUSBCable.html)/[VIM3](/android/zh-cn/vim3/UpgradeViaUSBCable.html)) 或TF卡([VIM1](/android/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/android/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/android/zh-cn/vim3/UpgradeViaTFBurningCard.html))升级固件.
 * 中断升级过程(建议进度条超过15%后中断), 例如, 拔掉USB数据线或TF卡
 * 重新上电，你会发现eMMC被擦除
 

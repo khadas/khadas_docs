@@ -5,8 +5,8 @@ title: Building Android
 ## Preperations
 
 * [Establishing a Build Environment](http://source.android.com/source/initializing.html)
-* [Downloading the Android Source](/vim1/DownloadAndroidSourceCode.html)
-* [Install toolchains for Amlogic platform](/vim1/InstallToolchains.html)
+* [Downloading the Android Source](/android/vim1/DownloadAndroidSourceCode.html)
+* [Install toolchains for Amlogic platform](/android/vim1/InstallToolchains.html)
 
 
 ## Building
@@ -124,5 +124,5 @@ $ make bootimage
 </div>
 
 ## See Also
-* [Upgrade Via an USB Cable](/vim1/UpgradeViaUSBCable.html)
-* [Upgrade Via a Burnning TF Card](/vim1/UpgradeViaTFBurningCard.html)
+* [Upgrade Via an USB Cable](/android/vim1/UpgradeViaUSBCable.html)
+* [Upgrade Via a Burnning TF Card](/android/vim1/UpgradeViaTFBurningCard.html)

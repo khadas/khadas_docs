@@ -1,7 +1,7 @@
 title: How To Access GPIO
 ---
 
-This guide is about how to access the GPIO using Android and Ubuntu.
+This guide is about how to access the GPIO using Android.
 
 ## Preconditions
 
@@ -9,7 +9,6 @@ The ROM must satisfy the following conditions:
 
 * Android M     >= V170603
 * Android N     >= V170421
-* Ubuntu 		>= V180712
 
 ## How to Get the GPIO Number
 You can get the GPIO number from GPIO Banks or Pins. Different versions of kernel will be different.
@@ -26,7 +25,7 @@ You can get the GPIO number from GPIO Banks or Pins. Different versions of kerne
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="4.9-pins" role="tabpanel" aria-labelledby="4.9-tab">
 
-Linux 4.9 (Android O/P and Ubuntu)
+Linux 4.9 (Android O/P)
 
 * aobus-banks
 
@@ -107,7 +106,7 @@ Number(GPIOH_5) = bank + pin = 410 + 22 = 432
 </div>
 <div class="tab-pane fade" id="3.14-pins" role="tabpanel" aria-labelledby="3.14-tab">
 
-Linux 3.14 (Android M, N and Ubuntu)
+Linux 3.14 (Android M, N)
 
 Banks:
 
@@ -274,82 +273,3 @@ while (null != (line = br.readLine())) {
  os.writeBytes("echo " + 432 + " > /sys/class/gpio/unexport\n");
 ```
 
-## On Ubuntu
-
-**GPIO List**
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#4.9-list" role="tab" aria-controls="4.9" aria-selected="true">Kernel 4.9</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#3.14-list" role="tab" aria-controls="3.14" aria-selected="false">Kernel 3.14 (Deprecated)</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-<div class="tab-pane fade show active" id="4.9-list" role="tabpanel" aria-labelledby="4.9-tab">
-```
-PIN         GPIO         Number
-PIN37       GPIOH5         432
-PIN33       GPIOAO6        502
-```
-</div>
-<div class="tab-pane fade" id="3.14-list" role="tabpanel" aria-labelledby="3.14-tab">
-```
-PIN         GPIO         Number
-PIN37       GPIOH5         176
-PIN33       GPIOAO6        151
-```
-</div>
-</div>
-
-
-**Access GPIO on Terminal**
-
-{% note info Note %}
-
-Example on linux-4.9.
-
-{% endnote %}
-
-*  Request the gpio(GPIOH5)
-
-```bash
-$ echo 432 > /sys/class/gpio/export
-```
-
-* Config the gpio(GPIOH5) as  output
-
-```bash
-$ echo out > /sys/class/gpio/gpio432/direction
-```
-
-* Config the gpio(GPIOH5) as high level output
-
-```bash
-$ echo 1 >  /sys/class/gpio/gpio432/value
-```
-
-* Config  the gpio(GPIOH5) as low level output
-
-```bash
-$ echo 0 >  /sys/class/gpio/gpio432/value
-```
-
-* Config the gpio(GPIOH5) as input
-
-```bash
-$ echo in > /sys/class/gpio/gpio432/direction
-```
-
-* Get the level of gpio(GPIOH5)
-
-```bash
-$ cat  /sys/class/gpio/gpio432/value
-```
-
-* Release the gpio(GPIOH5)
-
-```bash
-$ echo 432 > /sys/class/gpio/unexport
-```

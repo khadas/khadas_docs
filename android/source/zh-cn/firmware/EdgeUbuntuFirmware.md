@@ -167,14 +167,14 @@ Edge仅支持主线内核**Ubuntu 20.04**。
 {% note warn EMMC Installation %}
 
 **固件用于通过Rockchip烧录工具烧录到板载eMMC。**
-查看[通过USB线烧录文档](/zh-cn/edge/UpgradeViaUSBCable.html)。
+查看[通过USB线烧录文档](/android/zh-cn/edge/UpgradeViaUSBCable.html)。
 
 {% endnote %}
 
 {% note warn SD/USB Installation %}
 
 **固件用于烧录到SD/USB存储设备。**
-查看[把SD/USB固件写入到板载eMMC文档](/zh-cn/edge/HowToWriteSDImageToEmmc.html)。
+查看[把SD/USB固件写入到板载eMMC文档](/android/zh-cn/edge/HowToWriteSDImageToEmmc.html)。
 
 
 {% endnote %}

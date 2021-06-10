@@ -167,12 +167,12 @@ Edge Only support **Ubuntu 20.04** for Mainline Linux.
 {% note warn EMMC Installation %}
 
 **Images used to be flashed to onboard eMMC via Rockchip USB Burning Tool.**
-Check [Upgrade Via USB Cable Documentation](/edge/UpgradeViaUSBCable.html).
+Check [Upgrade Via USB Cable Documentation](/android/edge/UpgradeViaUSBCable.html).
 
 {% endnote %}
 
 {% note warn SD/USB Installation %}
 
 **Images used to be flashed to SD/USB storage.**
-Check [Write SD Image To eMMC](/edge/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC.
+Check [Write SD Image To eMMC](/android/edge/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC.
 {% endnote %}

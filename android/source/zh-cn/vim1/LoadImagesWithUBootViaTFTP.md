@@ -4,7 +4,7 @@ title: 通过TFTP下载镜像
 在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
 
 ## 准备
-* [搭建TFTP服务器](/zh-cn/vim1/SetupTFTPServer.html)
+* [搭建TFTP服务器](/android/zh-cn/vim1/SetupTFTPServer.html)
 
 ## 更新U-boot
 
@@ -44,24 +44,6 @@ kvim# bootm
 仅用于Android。
 
 {% endnote %}
-
-## 通过tftp启动Linux
-
-下载镜像到内存，通过`booti`直接运行：
-
-```bash
-kvim# tftp 1080000 zImage
-kvim# tftp 10000000 uInitrd
-kvim# tftp 20000000 kvim.dtb
-kvim# booti 1080000 10000000 20000000"
-```
-
-{% note warn 注意 %}
-
-仅用于Ubuntu。
-
-{% endnote %}
-
 
 ## 调试
 

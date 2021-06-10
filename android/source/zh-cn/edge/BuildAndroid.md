@@ -2,8 +2,8 @@ title: 编译安卓
 ---
 ## 准备
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
-- [x] [下载安卓源码](/zh-cn/edge/DownloadAndroidSourceCode.html)
-- [x] [安装Rockchip平台工具链](/zh-cn/edge/InstallToolchains.html)
+- [x] [下载安卓源码](/android/zh-cn/edge/DownloadAndroidSourceCode.html)
+- [x] [安装Rockchip平台工具链](/android/zh-cn/edge/InstallToolchains.html)
 
 ## 编译
 
@@ -180,5 +180,5 @@ $ lunch rk3399_all-userdebug
 $ ./pack_image.sh
 ```
 ## 参考
-* [通过USB数据线升级](/zh-cn/edge/UpgradeViaUSBCable.html)
-* [通过TF卡升级](/zh-cn/edge/UpgradeViaTFBurningCard.html)
+* [通过USB数据线升级](/android/zh-cn/edge/UpgradeViaUSBCable.html)
+* [通过TF卡升级](/android/zh-cn/edge/UpgradeViaTFBurningCard.html)

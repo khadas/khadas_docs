@@ -2,15 +2,15 @@ title: How To Enable M2x Ethernet
 ---
 * before you use the M2x ethernet ,you should enable m2x ethernet by two method
 
-### Enable m2x ethernet on tv setting
+## Enable m2x ethernet on tv setting
 * Enter Droid Settings-> More settings-> Network&Internet-> Ethernet,pitch on Ethernet Port as following
-	![Image of M2x_eth_port](/images/vim3/vim3_m2x_eth.png)
+	![Image of M2x_eth_port](/android/images/vim3/vim3_m2x_eth.png)
 
 
 
 
-### Enable m2x ethernet by kbi command
-* About kbi usage ,you can refer [kbi guide](/vim3/KbiGuidance.html),set command as followimg
+## Enable m2x ethernet by kbi command
+* About kbi usage ,you can refer [kbi guide](/android/vim3/KbiGuidance.html),set command as followimg
 ```
 kvim3#kbi
 kbi - Khadas Bootloader Instructions sub-system

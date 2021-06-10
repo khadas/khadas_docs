@@ -4,7 +4,7 @@ title: Setup Serial Debugging Tool
 ## Edge-V
 You won't need an Edge-IO board to setup the serial debugger on an Edge-V. Just use the on-board GPIO pins, as shown in this picture (same as VIM1, VIM2, and VIM3).
 
-![VIM1-GPIO](/images/vim1/SerialConnections_3Pin.jpg)
+![VIM1-GPIO](/android/images/vim1/SerialConnections_3Pin.jpg)
 
 ## Edge
 If you're using an Edge SBC, continue reading below:
@@ -17,7 +17,7 @@ If you're using an Edge SBC, continue reading below:
 Follow these steps to make the correct connections:
 
 1) Connect Edge-IO board to Edge via the FPC connector.
-![Edge IO FPC](/images/edge/edge_io.gif)
+![Edge IO FPC](/android/images/edge/edge_io.gif)
 
 2) Connect all the GPIOs, and check that the Tx / Rx Pins are connected correctly:
 
@@ -27,7 +27,7 @@ Follow these steps to make the correct connections:
 
 The connections should look like this:
 
-![Image of SerialConnections](/images/edge/SerialConnections_3Pin.png)
+![Image of SerialConnections](/android/images/edge/SerialConnections_3Pin.png)
 
 3) Insert the USB-end into your Host-PC.
 
@@ -97,11 +97,11 @@ If the print-out contains the following line, you might need to check the step `
 ## SecureCRT Bug
 
 If you use SecureCRT to connect the Edge-V or edge,maybe you will see this.
-![SrcureCRT BUG](/images/edge/SourceCRT_BUG.png)
+![SrcureCRT BUG](/android/images/edge/SourceCRT_BUG.png)
 This is not caused by incorrect settings. This is a CRT bug. You need to follow my steps.
 * Use kermit to connect you board,you will see the true log
 * Close kermit,then use SecureCRT to connect you board.you will find all is fine.
-![SecureCRT Slove](/images/edge/SourceCRT_BUG_slove.png)
+![SecureCRT Slove](/android/images/edge/SourceCRT_BUG_slove.png)
 
 
 {% note info Note %}

@@ -1,4 +1,4 @@
 title: Captain接口描述
 ---
 
-![Top view](/images/edge/CaptainInterfaces.jpg)
+![Top view](/android/images/edge/CaptainInterfaces.jpg)

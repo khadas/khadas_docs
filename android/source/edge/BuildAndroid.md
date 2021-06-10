@@ -3,8 +3,8 @@ title: Building Android Source Code
 
 ## Preperations
 - [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
-- [x] [Downloading the Android Source](/edge/DownloadAndroidSourceCode.html)
-- [x] [Install Toolchains for Rockchip Platform](/edge/InstallToolchains.html)
+- [x] [Downloading the Android Source](/android/edge/DownloadAndroidSourceCode.html)
+- [x] [Install Toolchains for Rockchip Platform](/android/edge/InstallToolchains.html)
 
 ## Building
 
@@ -182,5 +182,5 @@ $ lunch rk3399_all-userdebug
 $ ./pack_image.sh
 ```
 ## See Also
-* [Upgrade Via an USB Cable](/edge/UpgradeViaUSBCable.html)
-* [Upgrade Via a Burnning TF Card](/edge/UpgradeViaTFBurningCard.html)
+* [Upgrade Via an USB Cable](/android/edge/UpgradeViaUSBCable.html)
+* [Upgrade Via a Burnning TF Card](/android/edge/UpgradeViaTFBurningCard.html)

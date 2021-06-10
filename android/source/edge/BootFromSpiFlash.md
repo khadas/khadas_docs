@@ -6,7 +6,7 @@ Khadas Edge contains a 16 MB SPI-Flash that's used as boot storage; so you can i
 ## Build U-boot For SPI-Flash
 The U-Boot for SPI-Flash is different from the eMMC/SD's U-Boot. We recommend using [Fenix Script](https://github.com/khadas/fenix) to build U-Boot, as it's easy this way.
 
-**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](/edge/FenixScript.html).**
+**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](/android/edge/FenixScript.html).**
 
 * Setup Environment:
 
@@ -26,7 +26,7 @@ If successful, you will get a U-Boot for the SPI-Flash `u-boot-spi.bin`, in the 
 ## Burn U-boot To SPI Flash
 Copy `u-boot-spi.bin` to an SD-Card or Thumbdrive (U-Disk) and insert it into your Edge.
 
-[Setup serial debugging tool](/edge/SetupSerialTool.html) and boot to the U-Boot Command Line.
+[Setup serial debugging tool](/android/edge/SetupSerialTool.html) and boot to the U-Boot Command Line.
 
 ### Load U-boot to DDR
 

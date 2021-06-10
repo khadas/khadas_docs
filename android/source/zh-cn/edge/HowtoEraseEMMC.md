@@ -8,12 +8,12 @@ title: 如何擦除eMMC
 
 1. 给Edge上电并通过USB-C数据线连接Edge和你的电脑。
 
-2. 进入`Loader`或`MASKROM`，参考[如何进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)。
+2. 进入`Loader`或`MASKROM`，参考[如何进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)。
 
 3. 打开`AndroidTool`选择`升级固件->固件`来加载固件。
 
 4. 点击`擦除Flash`来擦除eMMC。
-![AndroidTool Erase eMMC](/images/edge/AndroidTool_erase_zh.png)
+![AndroidTool Erase eMMC](/android/images/edge/AndroidTool_erase_zh.png)
 
 ## 在Ubuntu下
 
@@ -21,7 +21,7 @@ title: 如何擦除eMMC
 
 1. 给Edge上电并通过USB-C数据线连接Edge和你的电脑。
 
-2. 进入`Loader`或`MASKROM`，参考[如何进入升级模式](/zh-cn/edge/HowtoBootIntoUpgradeMode.html)。
+2. 进入`Loader`或`MASKROM`，参考[如何进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)。
 
 3. 使用`upgrade_tool`来擦除eMMC。
 

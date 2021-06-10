@@ -14,7 +14,7 @@ Input the following ADB command:
 ```sh
 adb reboot fastboot
 ```
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_1.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_1.png)
 
 ### 2.Unlock bootloader
 
@@ -25,7 +25,7 @@ After entering the FastBoot mode, input the following command to unlock:
 ```sh
 fastboot flashing unlock
 ```
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_2.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_2.png)
 
 ### 3.Select the image you want to brush
 
@@ -42,7 +42,7 @@ fastboot flash odm /path/to/odm.img
 
 give an example：
 
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_3.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_3.png)
 
 After upgrading the firmware, you can choose to lock the device （Not required during debug）:
 
@@ -55,4 +55,4 @@ fastboot flashing lock
 ```
 fastboot reboot
 ```
-![image](/images/vim3/How_To_Use_Fastboot_On_VIM3_4.png)
+![image](/android/images/vim3/How_To_Use_Fastboot_On_VIM3_4.png)

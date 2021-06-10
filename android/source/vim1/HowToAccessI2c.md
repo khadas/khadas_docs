@@ -2,11 +2,10 @@ title: How To Access I2C
 ---
 
 
-This guide is about how to access i2c on Ubuntu and Android.
+This guide is about how to access i2c on Android.
 
 ## Preconditions
 
-* `Ubuntu V180531` or newer
 * `Android V180619` or newer
 
 ## Connections

@@ -34,7 +34,7 @@ title: 如何进入升级模式
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-1. 参考 [这里](/zh-cn/vim1/SetupSerialTool.html) 去设置串口.
+1. 参考 [这里](/android/zh-cn/vim1/SetupSerialTool.html) 去设置串口.
 2. 确保串口连接正常并正确配置  
 3. 按任意键进入uboot命令行模式 
 4. 输入`update`命令进入升级模式
@@ -55,11 +55,11 @@ kvim2# run update
 
 1. VIM2 V14
 
-![Image of MRegister_ShortCircuit](/images/vim2/MRegister_ShortCircuit_V14.png)
+![Image of MRegister_ShortCircuit](/android/images/vim2/MRegister_ShortCircuit_V14.png)
 
 2. VIM2 V12
 
-![Image of MRegister_ShortCircuit](/images/vim2/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/android/images/vim2/MRegister_ShortCircuit.png)
 
 *提示:  `M` 触点在VIM板底部*
 

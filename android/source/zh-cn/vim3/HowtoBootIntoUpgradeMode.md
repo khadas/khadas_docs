@@ -33,7 +33,7 @@ title: 如何进入升级模式
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-1. 参考[文档](/zh-cn/vim3/SetupSerialTool.html)设置串口。
+1. 参考[文档](/android/zh-cn/vim3/SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
 3. 系统启动时按任意按键进入串口命令行模式。
 4. 执行`run update`命令进入升级模式，进入升级模式后系统led灯会点亮。
@@ -52,7 +52,7 @@ title: 如何进入升级模式
 2. 使用镊子短接`M`处的两个焊盘触点不松开
 3. 短按复位按键进入升级模式
 
-![image](/images/vim3/VIM3_M_Register.jpg)
+![image](/android/images/vim3/VIM3_M_Register.jpg)
 
 </div>
 </div>

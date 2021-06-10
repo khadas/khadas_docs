@@ -21,10 +21,10 @@ title: 通过TF卡升级固件
 
 ## 固件升级操作步骤
 1. 插入TF卡到电脑上，系统有识别到TF的盘符
-![image](/images/vim1/tfcard_pc_zh.png)
+![image](/android/images/vim1/tfcard_pc_zh.png)
 
 2. 识别到TF卡后双击运行工具“**Burn_Card_Maker.exe**”
-![image|646x86](/images/vim1/BurnCardMaker_Tool_zh.png)
+![image|646x86](/android/images/vim1/BurnCardMaker_Tool_zh.png)
 
 3. 选择工具设置项
    * 在工具的下拉框“**选中SD卡**”里选择TF卡设备。
@@ -32,10 +32,10 @@ title: 通过TF卡升级固件
    * 点击"**打开**"按钮选择要升级的固件
    * 点击"**制作**"按钮制作TF升级卡
 
-![image|520x372](/images/vim1/BurnCardMaker_Tool_Interface_zh.png)
+![image|520x372](/android/images/vim1/BurnCardMaker_Tool_Interface_zh.png)
 
 4. 当所有都完成了之后，会弹出"**Success**"消息，点击“**确定**”按钮完成当前操作。
-![image|519x385](/images/vim1/BurnCardMaker_Tool_success_zh.png)
+![image|519x385](/android/images/vim1/BurnCardMaker_Tool_success_zh.png)
 
 5. 从电脑上安全移除TF卡，然后插入到VIM/ VIM2的TF卡槽里面。
 
@@ -47,12 +47,12 @@ title: 通过TF卡升级固件
    * 大概3秒后松开Power键进入固件升级模式
 
 正常操作后，显示器上会显示以下内容：
-![image|690x465](/images/vim1/Upgrading_interface.png)
+![image|690x465](/android/images/vim1/Upgrading_interface.png)
 
 ## 更多资料
- * [通过USB-C数据线](/zh-cn/vim1/UpgradeViaUSBCable.html)
- * [VIM1怎样进入升级模式](/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
- * [VIM2怎样进入升级模式](/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
- * [VIM3怎样进入升级模式](/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)
+ * [通过USB-C数据线](/android/zh-cn/vim1/UpgradeViaUSBCable.html)
+ * [VIM1怎样进入升级模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
+ * [VIM2怎样进入升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
+ * [VIM3怎样进入升级模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)
 
 

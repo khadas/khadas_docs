@@ -6,7 +6,7 @@ Khadas Edge包含一个16 MiB的SPI Flash， 可以用于启动系统。这篇�
 ## 编译SPI Flash Uboot
 SPI flash u-boot和eMMC/SD的不同。建议使用[Fenix脚本](https://github.com/khadas/fenix)来编译u-boot，非常方便。
 
-**假设你已经安装了基本的编译环境，如果没有，请参考[Fenix使用说明](/zh-cn/edge/FenixScript.html)。**
+**假设你已经安装了基本的编译环境，如果没有，请参考[Fenix使用说明](/android/zh-cn/edge/FenixScript.html)。**
 
 * 设置Fenix环境:
 
@@ -26,7 +26,7 @@ $ make uboot
 ## 烧录U-boot到SPI Flash
 拷贝`u-boot-spi.bin`到TF卡或U盘，并插入到Edge开发板。
 
-[设置串口调试工具](/zh-cn/edge/SetupSerialTool.html)并进入u-boot命令行。
+[设置串口调试工具](/android/zh-cn/edge/SetupSerialTool.html)并进入u-boot命令行。
 
 ### 加载U-boot到DDR
 

@@ -3,7 +3,7 @@ title: Khadas Edge Ubuntu Firmware Release Notes
 
 {% note warn For OTA Releases %}
 
-Please check [How To Upgrade The System](/edge/HowToUpgradeTheSystem.html) to upgrade the system to latest release.
+Please check [How To Upgrade The System](/android/edge/HowToUpgradeTheSystem.html) to upgrade the system to latest release.
 
 {% endnote %}
 

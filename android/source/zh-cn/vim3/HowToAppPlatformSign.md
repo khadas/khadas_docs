@@ -3,7 +3,7 @@ title: Android 第三方应用如何系统签名
 
 当第三方应用声明使用系统权限时，需要平台key去签名才能正常安装
 
-#### Linux的khadas源码编译环境下签名
+## Linux的khadas源码编译环境下签名
 如果你有Linux的khadas源码编译环境，你可以采用两种方式去签名
 
 
@@ -16,18 +16,18 @@ java -Djava.library.path=out/host/linux-x86/lib64 -jar out/host/linux-x86/framew
 ```
 app-debug.apk 是签名前申明系统权限的apk ,就是在AndroidManifeset.xml 中申明了android:sharedUserid=”android.uid.system”,如果不加入device的系统签名，adb install 安装会出现Failure INSTALL_FAILED_SHARED_USER_INCOMPATIBLE: Package couldn't be installed 的 error，app-debug-signed.apk 是采用平台签名后apk,可以直接adb installl 安装
 
-#### windows 下直接在android studio 上签名
+## windows 下直接在android studio 上签名
 **1）** 需要准备 keytool-importkeypair 工具脚本，下载地址 https://github.com/getfatday/keytool-importkeypair
 platform.x509.pem，platform.pk8，在源码目录build/target/product/security下
 custom.jks (android studio 下生成)，具体参考 android studio jks 文件生成步骤
-#### android studio jks 文件生成步骤
-![Image of jks_step](/images/vim3/step1.png)
-![Image of jks_step](/images/vim3/step2.png)
-![Image of jks_step](/images/vim3/step3.png)
-![Image of jks_step](/images/vim3/step4.png)
-![Image of jks_step](/images/vim3/step5.png)
-![Image of jks_step](/images/vim3/step6.png)
-![Image of jks_step](/images/vim3/step7.png)
+### android studio jks 文件生成步骤
+![Image of jks_step](/android/images/vim3/step1.png)
+![Image of jks_step](/android/images/vim3/step2.png)
+![Image of jks_step](/android/images/vim3/step3.png)
+![Image of jks_step](/android/images/vim3/step4.png)
+![Image of jks_step](/android/images/vim3/step5.png)
+![Image of jks_step](/android/images/vim3/step6.png)
+![Image of jks_step](/android/images/vim3/step7.png)
 
 custom.jks 生成后,使用keytool-importkeypair 脚本生成嵌入platform 签名的新的custom.jks,命令如下
 ```sh
@@ -40,7 +40,7 @@ custom.jks 是android studio 中生成的，123456 是创建custom.jks 时输入
 
 这样编译的app可以直接安装运行，具体参考 android studio 配置custom.jks 去系统签名
 
-#### android studio 配置 jks 系统签名
+### android studio 配置 jks 系统签名
 
 在工程目录app下的build.gradle中添加signingConfigs配置，依次填写jks的路径，密码，别名
 ```sh
@@ -61,7 +61,7 @@ keyPassword '123456'
 signApk/custom.jks 为 custom.jks 在app 工程中的目录
 添加custom.jks 后，直接在android studio 中编译，app 可以正常安装在具有platform签名的机器上
 
-#### windows下通过jarsigner命令签名
+## windows下通过jarsigner命令签名
 首先windows要安装jdk ,才能使用jarsigner 命令
 ```sh
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore custom.jks app-debug.apk khadasdemo

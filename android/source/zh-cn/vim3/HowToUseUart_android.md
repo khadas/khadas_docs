@@ -5,7 +5,7 @@ title: 如何使用uart
 
 Urt_c引出到40Pin的引脚是15脚以及16脚
 
-* [VIM3-GPIO-Pin-Out](/vim3/#GPIO-Pinout)
+* [VIM3-GPIO-Pin-Out](/android/zh-cn/vim3/#GPIO-Pinout)
 
 VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 
@@ -15,7 +15,7 @@ VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 1445 };
 ```
 
-#### 通过 comassistant apk去使用uart
+## 通过 comassistant apk去使用uart
 
 **1）** Through the serial port to USB adapter board, one end is connected to the computer, the other end is connected to pin 15, pin 16
 
@@ -25,7 +25,7 @@ VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 
 **3）** 运行结果如下,comassistant apk从电脑接收数字 12345678 , 发送 "serial send test" 字符到电脑端 
 
-![Image of serial_send_rec](/images/vim3/serial_send_rec.png)
+![Image of serial_send_rec](/android/images/vim3/serial_send_rec.png)
 
 **4）** 电脑接收 "serial send test",在 secureCRT工具显示如下
 
@@ -33,7 +33,7 @@ VIM3 uart_C 默认在kvim3.dts中使能，对应的设备节点是/dev/ttyS3
 serial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send test  serial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send testserial send test
 ``` 
 
-#### 通过 khadas api使用uart 
+## 通过 khadas api使用uart 
 
 当你下载khadas_api_demo 源码后，你可以在里面找到vim3_demo.apk，在api里面提供了串口操作接口，例如：
 
@@ -104,6 +104,6 @@ serialPortHelper.closeDevice();
 
 **4)** 在 vim3_demo.apk 中运行结果如下
 
-![Image of vim_serial](/images/vim3/vim3_serial.png)
+![Image of vim_serial](/android/images/vim3/vim3_serial.png)
 
 

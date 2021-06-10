@@ -39,8 +39,8 @@ $ sudo make install
 
 ## 烧录器与VIM2的连接
 ### 烧录器只需要连接 **VCC_MCU, MCU_SWIM, MCU_NRST, GND** 就可以实现烧录。
-![VIM2 MCU Header](/images/vim2/vim2_mcu_header.png)
-![VIM2 MCU Header Description](/images/vim2/vim2_mcu_header_desc.png)
+![VIM2 MCU Header](/android/images/vim2/vim2_mcu_header.png)
+![VIM2 MCU Header Description](/android/images/vim2/vim2_mcu_header_desc.png)
 
 
 ## 增加USB烧录器的权限

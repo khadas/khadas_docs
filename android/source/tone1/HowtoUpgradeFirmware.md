@@ -77,39 +77,39 @@ Link: [Khadas Blog](https://www.khadas.com/post/tone1-upgrade-to-official-v2-fir
 * Download the firmware `.bin` files from [this directory](https://dl.khadas.com/Firmware/ToneBoard/) and extract them.
 * Connect your Tone to your PC using a USB-C data cable.
 
-![Tone With USB-C Cable](/images/tone1/tb_fw_01.jpg)
+![Tone With USB-C Cable](/android/images/tone1/tb_fw_01.jpg)
 
 **Installation:**
 
 * Run `setup_eval.exe` to install the tool to upgrade your Tone's firmware.
 
-![Tone USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
+![Tone USB Upgrade Tool Installation](/android/images/tone1/tb_fw_02.jpg)
 
 * Press `Yes`, then disconnect and reconnect your Tone.
 
-![Disconnect and Reconnect Tone](/images/tone1/tb_fw_03.jpg)
+![Disconnect and Reconnect Tone](/android/images/tone1/tb_fw_03.jpg)
 
 **Upgrading:**
 
 * Open the `TUSBAudio Firmware Upgrade` tool, from your Start Menu.
 
-![TUSBAudio Firmware Upgrade Tool](/images/tone1/tb_fw_04.jpg)
+![TUSBAudio Firmware Upgrade Tool](/android/images/tone1/tb_fw_04.jpg)
 
 * It should show `Device Opened`, which means your Tone is connected and ready for upgrading. (If not, disconnect and reconnect your Tone)
 
-![Tone Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
+![Tone Ready For Upgrade](/android/images/tone1/tb_fw_05.jpg)
 
 * Click `Browse` and load the firmware `.bin` file you extracted, into the tool.
 
-![Tone USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
+![Tone USB Upgrade Tool Browse For .img](/android/images/tone1/tb_fw_07.jpg)
 
 * Click `Start` to begin the upgrade process.
 
-![Tone USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
+![Tone USB Upgrade Tool Click Start](/android/images/tone1/tb_fw_08.jpg)
 
 * Once firmware has upgraded, click `Exit`.
 
-![Tone USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
+![Tone USB Upgrade Tool Finished And Exit](/android/images/tone1/tb_fw_09.jpg)
 
 * Uninstall the [EVAL driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) that you used for upgrading firmware, and re-install the [v224 driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar).
 

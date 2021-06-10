@@ -1,4 +1,4 @@
 title: Edge Captain电源优先级
 ---
 
-![Top view](/images/edge/EdgeCaptainPowerPriority.jpg)
+![Top view](/android/images/edge/EdgeCaptainPowerPriority.jpg)

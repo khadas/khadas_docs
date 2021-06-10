@@ -89,7 +89,7 @@ $
 $ cp images/logo.img /media/gouwa/9B98-6C15/
 ```
 
-**2)** Insert the thumbdrive into your VIM, then boot into [U-Boot mode](/vim1/SetupSerialTool.html).
+**2)** Insert the thumbdrive into your VIM, then boot into [U-Boot mode](/android/vim1/SetupSerialTool.html).
 
 **3)** Update logo partition as new `logo.img`:
 ```sh
@@ -118,4 +118,4 @@ u-boot/drivers/usb/gadget/v2_burning/v2_common/optimus_progress_ui.c
 ```
 
 See Also
-[U-Boot Usage](/vim1/UBootUsage.html)
+[U-Boot Usage](/android/vim1/UBootUsage.html)

@@ -6,7 +6,7 @@ Khadas VIM3/VIM3L contains a 16 MB SPI-Flash that's used as boot storage; so you
 ## Build U-boot For SPI-Flash
 The U-Boot for SPI-Flash is the same as eMMC U-Boot. We recommend using [Fenix Script](https://github.com/khadas/fenix) to build U-Boot, as it's easy this way.
 
-**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](/vim3/FenixScript.html).**
+**This guide assumes that you have already setup a basic build environment. If not, please refer to [Fenix Usage](/android/vim3/FenixScript.html).**
 
 * Setup Environment:
 
@@ -29,7 +29,7 @@ If successful, you will get a U-Boot for the SPI-Flash `u-boot.bin`, in the dire
 
 Copy `u-boot.bin` to an SD-Card or Thumbdrive (U-Disk) and insert it into your board or load it via TFTP.
 
-[Setup serial debugging tool](/vim3/SetupSerialTool.html) and boot to the U-Boot Command Line.
+[Setup serial debugging tool](/android/vim3/SetupSerialTool.html) and boot to the U-Boot Command Line.
 
 ### Load U-boot to DDR
 
@@ -47,7 +47,7 @@ kvim3#load usb 0 1080000 u-boot.bin
 
 * Load U-boot via TFTP
 
-Please refer [here](/vim3/SetupTFTPServer.html) about how to setup the TFTP.
+Please refer [here](/android/vim3/SetupTFTPServer.html) about how to setup the TFTP.
 
 ```sh
 kvim3#tftp 1080000 u-boot.bin
@@ -98,12 +98,12 @@ kvim3#reset
 
 ## Troubleshooting
 1. Bootmode is boot from SPI, but the u-boot in SPI flash is corrupted, can't enter u-boot command line.
-	1) If u-boot in eMMC is correct, you can try [TST mode](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) or try [SPI MASKROM]() to boot from eMMC, then enter u-boot command line, erase the SPI flash or burn the new u-boot to SPI flash.
+	1) If u-boot in eMMC is correct, you can try [TST mode](/android/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) or try [SPI MASKROM]() to boot from eMMC, then enter u-boot command line, erase the SPI flash or burn the new u-boot to SPI flash.
     {% note info Note %}
 		Don't use your PC to supply the power, or you will enter usb burning mode!
     {% endnote %}
 
-	2) U-boot in eMMC is also corrupted, you have to try [TST mode](/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) to enter usb burning mode, and flash the image to emmc, then follow `step 1)`.
+	2) U-boot in eMMC is also corrupted, you have to try [TST mode](/android/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended) to enter usb burning mode, and flash the image to emmc, then follow `step 1)`.
 	{% note info Note %}
         You need to connect the board to your host PC!
     {% endnote %}

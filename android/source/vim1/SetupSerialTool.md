@@ -18,13 +18,13 @@ Follow these steps to make the correct connections:
 
 The connections should look like this:
 
-![Image of SerialConnections](/images/vim1/SerialConnections_3Pin.jpg)
+![Image of SerialConnections](/android/images/vim1/SerialConnections_3Pin.jpg)
 
 > Blue color line: Tool Pin `TXD`， orange color: Tool Pin `RXD`， black: Tool Pin `GND`
 
 Another photo for more details (`VCC` Pin is not necessary):
 
-![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
+![Image of SerialConnections](/android/images/vim1/SerialConnections.jpg)
 
 
 ## Setup Minicom Protocol
@@ -134,11 +134,11 @@ Report bugs to <minicom-devel@lists.alioth.debian.org>.
 ```
 /dev/ttyUSB0: Permission denied
 ```
-2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](/vim1/UBootUsage.html) when you've entered u-boot.
+2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](/android/vim1/UBootUsage.html) when you've entered u-boot.
 
-3. Note that to see the standard "help" commands as listed in the [U-Boot Usage Guide](/vim1/UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our [krescue images](https://dl.khadas.com/Firmware/Krescue/images/).
+3. Note that to see the standard "help" commands as listed in the [U-Boot Usage Guide](/android/vim1/UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our [krescue images](https://dl.khadas.com/Firmware/Krescue/android/images/).
 
-4. You can use the U-Boot command line ([kvim#](/vim1/UBootUsage.html)), to change your VIM's default boot logo.bmp, according to the guide, [Boot Logo for U-Boot](/vim1/BuildBootLogoForUboot.html).
+4. You can use the U-Boot command line ([kvim#](/android/vim1/UBootUsage.html)), to change your VIM's default boot logo.bmp, according to the guide, [Boot Logo for U-Boot](/android/vim1/BuildBootLogoForUboot.html).
 
 {% endnote %}
 

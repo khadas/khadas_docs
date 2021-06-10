@@ -5,7 +5,7 @@ This guide is about how to make a "Fast Package Update Image"; This means that y
 
 ## Preparations:
 
-* [Build Android Completely](/vim3/BuildAndroid.html).
+* [Build Android Completely](/android/vim3/BuildAndroid.html).
 
 
 ## Only Change the U-Boot
@@ -36,7 +36,7 @@ out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 
 ## Only Change the Bootup Logo
 
-* Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/vim1/BuildBootLogoForUboot.html))
+* Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/android/vim1/BuildBootLogoForUboot.html))
 
 ```sh
 $ cd PATH_YOUR_PROJECT
