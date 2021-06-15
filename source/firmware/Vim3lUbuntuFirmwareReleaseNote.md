@@ -24,6 +24,13 @@ Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to up
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**V1.0.6-210520: (OTA Release)**
+
+1. fix bluetooth issue on desktop
+2. fix reboot hangs on wait eth0
+3. update npu libraries to version 6.4.4.3
+
+--------------------------------------------------------------------------------------------------
 **V1.0.5-210430: (OTA Release)**
 
 1. fix alsa issue
