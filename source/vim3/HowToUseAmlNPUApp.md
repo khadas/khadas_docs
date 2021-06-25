@@ -3,6 +3,17 @@ title: Description and Usage of aml_NPU_app Code Repository
 
 `aml_npu_app`  repository is the source code for `aml_npu_demo_binaries`,The library and demo of the `aml_npu_demo_binaries` repository can be compiled.
 
+{% note warn Note %}
+1. Just support local compile
+2. Just support Opencv4
+{% endnote %}
+
+## Install Opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv
+```
+
 ## Get the source code repository
 
 The source code repository is stored in gitlab, and the repository address is:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
