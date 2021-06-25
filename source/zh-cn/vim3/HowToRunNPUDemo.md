@@ -3,9 +3,16 @@ title: 如何在VIM3上面运行 NPU Demo
 
 {% note warn 注意 %}
 
-在运行NPU Demo前请先参考[文档](/zh-cn/vim3/HowToUpgradeTheSystem.html)升级系统到最新版本。
+1. 在运行NPU Demo前请先参考[文档](/zh-cn/vim3/HowToUpgradeTheSystem.html)升级系统到最新版本。
+2. 只支持opencv4
 
 {% endnote %}
+
+## 安装Opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv
+```
 
 
 ## 获取NPU Demo

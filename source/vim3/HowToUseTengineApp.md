@@ -23,6 +23,12 @@ yolov3-camera  yolov3-picture
 
 `yolov3-camera` and `yolov3-picture` are based on the demos of camera recognition and picture recognition of opencv respectively
 
+## Install opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv 
+```
+
 ## How To Compile
 
 yolov3-picture:

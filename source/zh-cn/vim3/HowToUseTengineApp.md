@@ -23,6 +23,12 @@ yolov3-camera  yolov3-picture
 
 `yolov3-camera`和`yolov3-picture`分别基于opencv的摄像头识别和图片识别的demo
 
+## 安装opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv
+```
+
 ## 如何编译
 
 
