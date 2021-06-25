@@ -3,9 +3,14 @@ title: 如何编译运行tengine示例
 
 Tengine_khadas_app 源码仓库是khadas基于tengine API制作的一个简易demo仓库
 
+
+{% note warn 注意 %}
+tengine-lite v.14(即NPU6.4.4.3)之后，demo仅支持在板子上进行本地编译
+{% endnote %}
+
 ## 获取源码
 
-源码仓库位于khadas的gitlab上
+源码仓库位于khadas的gitlab上,clone到板子上
 
 ```shell
 $ mkdir ${workspace}
@@ -20,20 +25,12 @@ yolov3-camera  yolov3-picture
 
 ## 如何编译
 
-1. 首先需要获取SDK
-
-```shell
-$ cd ${workspace}
-$ git clone https://gitlab.com/khadas/tengine_khadas_sdk.git
-```
-
-2. 编译
 
 yolov3-picture:
 
 ```shell
 $ cd ${workspace}/tengine_khadas_app/yolov3-picture
-$ ./build-cv3.sh ${workspace}/tengine_khadas_sdk/
+$ ./build-cv4.sh
   COMPILE ${workspace}/tengine_khadas_app/yolov3-picture/tengine_khadas_yolov3_picture.cpp
 $ ls cv3_output/
 tengine_khadas_yolov3_picture  tengine_khadas_yolov3_picture.o
@@ -43,7 +40,7 @@ yolov3-camera:
 
 ```shell
 $ cd ${workspace}/tengine_khadas_app/yolov3-camera
-$ ./build-cv3.sh ${workspace}/tengine_khadas_sdk/
+$ ./build-cv3.sh
   COMPILE ${workspace}/tengine_khadas_app/yolov3-camera/tengine_khadas_yolov3_camera.cpp
 $ ls cv3_output/
 tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
@@ -63,8 +60,8 @@ tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
 2. 运行
 
 ```shell
-$ ./tengine_khadas_yolov3_camera -m path/to/yolov3 uint8_t timfile -i path/to/picture
-$ ./tengine_khadas_yolov3_camera -m path/to/yolov3 uint8_t timfile -d /dev/videoX
+$ ./tengine_khadas_yolov3_camera -m path/to/yolov3_uint8_t_timfile -i path/to/picture
+$ ./tengine_khadas_yolov3_camera -m path/to/yolov3_uint8_t_timfile -d /dev/videoX
 ```
 
 

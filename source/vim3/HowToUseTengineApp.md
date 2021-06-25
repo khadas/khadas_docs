@@ -3,6 +3,11 @@ title: How To Compile And Run Tengine Demo
 
 The source code repository is a simple demo repository made by khadas based on the tengine API
 
+{% note warn Note %}
+After tengine-lite v.14 (ie NPU6.4.4.3), the demo only supports local compilation on the board
+{% endnote %}
+
+
 ## Get Source code
 
 The source code repository is located on gitlab of khadas
@@ -20,20 +25,11 @@ yolov3-camera  yolov3-picture
 
 ## How To Compile
 
-1. Get SDK
-
-```shell
-$ cd ${workspace}
-$ git clone https://gitlab.com/khadas/tengine_khadas_sdk.git
-```
-
-2. Compile
-
 yolov3-picture:
 
 ```shell
 $ cd ${workspace}/tengine_khadas_app/yolov3-picture
-$ ./build-cv3.sh ${workspace}/tengine_khadas_sdk/
+$ ./build-cv4.sh
   COMPILE ${workspace}/tengine_khadas_app/yolov3-picture/tengine_khadas_yolov3_picture.cpp
 $ ls cv3_output/
 tengine_khadas_yolov3_picture  tengine_khadas_yolov3_picture.o
@@ -43,7 +39,7 @@ yolov3-camera:
 
 ```shell
 $ cd ${workspace}/tengine_khadas_app/yolov3-camera
-$ ./build-cv3.sh ${workspace}/tengine_khadas_sdk/
+$ ./build-cv4.sh
   COMPILE ${workspace}/tengine_khadas_app/yolov3-camera/tengine_khadas_yolov3_camera.cpp
 $ ls cv3_output/
 tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
@@ -62,8 +58,8 @@ Please refer to [How To Use Tengine SDK](/vim3/HowToUseTengineSDK)
 2. Run
 
 ```shell
-$ ./tengine_khadas_yolov3_camera -m path/to/yolov3 uint8_t timfile -i path/to/picture
-$ ./tengine_khadas_yolov3_camera -m path/to/yolov3 uint8_t timfile -d /dev/videoX
+$ ./tengine_khadas_yolov3_camera -m path/to/yolov3_uint8_t_timfile -i path/to/picture
+$ ./tengine_khadas_yolov3_camera -m path/to/yolov3_uint8_t_timfile -d /dev/videoX
 ```
 
 
