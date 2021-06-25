@@ -34,12 +34,14 @@ VIM1 Only support **Ubuntu 18.04** for Linux 4.9.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc" role="tabpanel" aria-labelledby="emmc-tab">
 
+* [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625.img.xz)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd" role="tabpanel" aria-labelledby="sd-tab">
 
+* [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625.img.xz)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
@@ -60,12 +62,14 @@ VIM1 Only support **Ubuntu 18.04** for Linux 4.9.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
+* [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.6-210625](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
+* [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
