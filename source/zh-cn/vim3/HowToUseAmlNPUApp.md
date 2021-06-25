@@ -3,6 +3,17 @@ title: aml_NPU_app仓库说明以及使用
 
 `aml_npu_app仓库`是`aml_npu_demo_binaries`仓库的源码，可编译出`aml_npu_demo_binaries`仓库的库和demo。
 
+{% note warn 注意 %}
+1. 只支持本地编译
+2. 只支持opencv4
+{% endnote %}
+
+## 安装Opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv
+```
+
 # 获取仓库源码
 
 源码仓库存储在gitlab，仓库地址为:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
