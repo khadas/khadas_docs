@@ -25,6 +25,12 @@ Please check [How To Upgrade The System](/vim2/HowToUpgradeTheSystem.html) to up
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**V1.0.7-210625: (OTA Release)**
+
+1. remove opencv3 package
+2. adapt new Wi-Fi driver
+
+--------------------------------------------------------------------------------------------------
 **V1.0.6-210520: (OTA Release)**
 
 1. fix bluetooth issue on desktop

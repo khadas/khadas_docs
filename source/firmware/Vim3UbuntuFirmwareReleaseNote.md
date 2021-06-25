@@ -23,6 +23,16 @@ Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to up
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**V1.0.7-210625: (OTA Release)**
+
+1. remove opencv3 package
+2. adapt new Wi-Fi driver
+3. add 'command-not-found' package
+4. fix screen flicker when write data to NVMe SSD
+5. add npu package missing libraries & herders
+6. update Tengine to version 1.4-dev
+
+--------------------------------------------------------------------------------------------------
 **V1.0.6-210520: (OTA Release)**
 
 1. fix bluetooth issue on desktop

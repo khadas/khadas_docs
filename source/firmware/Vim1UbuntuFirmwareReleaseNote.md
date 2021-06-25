@@ -22,6 +22,11 @@ Please check [How To Upgrade The System](/vim1/HowToUpgradeTheSystem.html) to up
 {% note warn VIM1 Only support Ubuntu 18.04 for Linux 4.9. %}
 
 {% endnote %}
+--------------------------------------------------------------------------------------------------
+**V1.0.7-210625: (OTA Release)**
+
+1. remove opencv3 package
+2. adapt new Wi-Fi driver
 
 --------------------------------------------------------------------------------------------------
 **V1.0.6-210520: (OTA Release)**
