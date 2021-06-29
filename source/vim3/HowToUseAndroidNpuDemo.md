@@ -12,7 +12,7 @@ before run android NPU Demo,please download [firmware](/zh-cn/firmware/Vim3Andro
 
 NPU demo is not installed on the board by default. You need to download it from gitlab
 
-gitlab repository address :[https://github.com/liustarting/khadas_android_npu_app.git](https://github.com/liustarting/khadas_android_npu_app.git)
+gitlab repository address :[https://github.com/khadas/khadas_android_npu_app](https://github.com/khadas/khadas_android_npu_app)
 
 NPU demo app currently integrates three Yolo series models, as shown in the following figure
 ![Image of vim_npumode](/images/vim3/npumode.png)
