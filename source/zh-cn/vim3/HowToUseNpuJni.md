@@ -12,9 +12,9 @@ title: 如何使用Android Npu Jni
 
 npu jni源码目前没有集成到固件中，需要先从gitlab自行下载
 
-jni仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android_npu_library.git](https://github.com/liustarting/khadas_android_npu_library.git)
+jni仓库在gitlab上的地址为:[https://github.com/khadas/khadas_android_npu_library](https://github.com/khadas/khadas_android_npu_library)
 
-app仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android_npu_app.git](https://github.com/liustarting/khadas_android_npu_app.git)
+app仓库在gitlab上的地址为:[https://github.com/khadas/khadas_android_npu_app](https://github.com/khadas/khadas_android_npu_app)
 
 ### 安装ndk 编译环境
 

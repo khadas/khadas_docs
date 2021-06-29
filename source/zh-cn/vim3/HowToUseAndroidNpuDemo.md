@@ -12,7 +12,7 @@ title: 如何在VIM3上面运行 Android Npu Demo
 
 NPU Demo 默认并没有安装在板子上。需要先从gitlab自行下载
 
-仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android_npu_app.git](https://github.com/liustarting/khadas_android_npu_app.git)
+仓库在gitlab上的地址为:[https://github.com/khadas/khadas_android_npu_app](https://github.com/khadas/khadas_android_npu_app)
 
 NPU Demo app 目前集成了yolo 系列的三个模型，如下图
 ![Image of vim_npumode](/images/vim3/npumode.png)
