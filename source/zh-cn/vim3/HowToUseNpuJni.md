@@ -10,7 +10,7 @@ title: 如何使用Android NPU JNI
 
 ### 获取NPU JNI/APP 源码
 
-NPU JNI源码目前没有集成到固件中，需要先从gitlab自行下载
+NPU JNI源码目前没有集成到固件中，需要先从gitlab自行下载。
 
 JNI仓库在gitlab上的地址为:[https://github.com/khadas/khadas_android_npu_library](https://github.com/khadas/khadas_android_npu_library)
 
@@ -26,10 +26,10 @@ APP仓库在gitlab上的地址为:[https://github.com/khadas/khadas_android_npu_
 
 	export NDKROOT=/usr/ndk/android-ndk-r17
 	export PATH=$NDKROOT:$PATH
-	保存退出。更新下环境变量：source ~/.bashrc
+	保存退出，更新下环境变量：source ~/.bashrc。
 
 ``4)`` 检测NDK是否安装完成：
-	在shell中输入“ndk-build”命令来检查你的安装是否成功，如果不是显示“ndk-build not found”
+	在shell中输入“ndk-build”命令来检查你的安装是否成功，如果不是显示“ndk-build not found”。
 
 ### NDK编译 NPU JNI so库
 下载NPU JNI源码后，进入khadas_android_npu_library目录，如下
@@ -93,13 +93,13 @@ Android NDK:     current module
 [armeabi-v7a] Install        : libnn_yolo_v3.so => libs/armeabi-v7a/libnn_yolo_v3.so
 ```
 ### so库说明
-libkhadas_npu_jni.so: khadas 封装的NPU相关的API, 由khadas NPU demo APP调用，具体查看khadas_android_npu_library 和khadas_android_npu_app 代码
-libnn_yoloface.so: 由模型转换工具自动生成的yoloface人脸检测case代码编译，具体如何转出case代码，请参考linux板块关于NPU模型转换的说明
-libnn_yolo_v2.so:由模型转换工具自动生成的yolo_v2图像识别case代码编译，具体如何转出case代码，请参考linux板块关于NPU模型转换的说明
-libnn_yolo_v3.so:由模型转换工具自动生成的yolo_v3图像识别case代码编译，具体如何转出case代码，请参考linux板块关于NPU模型转换的说明
+libkhadas_npu_jni.so: khadas 封装的NPU相关的API, 由khadas NPU demo APP调用，具体查看khadas_android_npu_library 和khadas_android_npu_app 代码。
+libnn_yoloface.so: 由模型转换工具自动生成的yoloface人脸检测case代码编译，具体如何转出case代码，请参考linux板块关于NPU模型转换的说明。
+libnn_yolo_v2.so:由模型转换工具自动生成的yolo_v2图像识别case代码编译，具体如何转出case代码，请参考linux板块关于NPU模型转换的说明。
+libnn_yolo_v3.so:由模型转换工具自动生成的yolo_v3图像识别case代码编译，具体如何转出case代码，请参考linux板块关于NPU模型转换的说明。
 
 ### khadas_android_npu_app APP so库使用
-下载NPU APP 源码后，在app/libs/armeabi-v7a 目录中包含libkhadas_npu_jni.so libnn_yoloface.so libnn_yolo_v2.so libnn_yolo_v3.so以及其他NPU相关的库，libovxlib.so等,APP通过JNI调用libkhadas_npu_jni.so接口 
+下载NPU APP源码后，在app/libs/armeabi-v7a目录中包含libkhadas_npu_jni.so libnn_yoloface.so libnn_yolo_v2.so libnn_yolo_v3.so以及其他NPU相关的库，libovxlib.so等,APP通过JNI调用libkhadas_npu_jni.so接口。 
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu/app/libs/armeabi-v7a# ll
 total 33008
