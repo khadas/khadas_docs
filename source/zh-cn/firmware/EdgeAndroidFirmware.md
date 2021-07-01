@@ -2,6 +2,7 @@ title: Khadas Edge Android固件
 ---
 
 ## Qt
+* [Edge_Qt_V210630](https://dl.khadas.com/products/edge/firmware/Android/Edge_Qt_V210630.7z)
 * [Edge_Qt_V210521](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V210521.7z)
 * [Edge_Qt_V201223](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V201223.7z)
 * [Edge_Qt_V200908](https://dl.khadas.com/Firmware/Edge/Android/Edge_Qt_V200908.7z)
