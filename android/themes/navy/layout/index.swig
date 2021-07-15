@@ -117,9 +117,9 @@ img {
             <div class="ui raised segment col-box">
               <img src="/android/images/home/vim1.jpg" alt="VIM1">
               {% if page.lang == 'en' %}
-              <a href="/vim1">
+              <a href="/android/vim1">
                 {% else %}
-                <a href="/zh-cn/vim1">
+                <a href="/android/zh-cn/vim1">
                   {% endif %}
                   <div class="mask">
                     <span class="mask-text">VIM1</span>
@@ -131,9 +131,9 @@ img {
             <div class="ui raised segment col-box">
               <img src="/android/images/home/vim2.jpg" alt="VIM2">
               {% if page.lang == 'en' %}
-              <a href="/vim2">
+              <a href="/android/vim2">
                 {% else %}
-                <a href="/zh-cn/vim2">
+                <a href="/android/zh-cn/vim2">
                   {% endif %}
                   <div class="mask">
                     <span class="mask-text">VIM2</span>
@@ -145,9 +145,9 @@ img {
             <div class="ui raised segment col-box">
               <img src="/android/images/home/vim3.jpg" alt="VIM3">
               {% if page.lang == 'en' %}
-              <a href="/vim3#VIM3">
+              <a href="/android/vim3#VIM3">
                 {% else %}
-                <a href="/zh-cn/vim3#VIM3">
+                <a href="/android/zh-cn/vim3#VIM3">
                   {% endif %}
                   <div class="mask">
                     <span class="mask-text">VIM3</span>
@@ -159,9 +159,9 @@ img {
             <div class="ui raised segment col-box">
               <img src="/android/images/home/vim3l.jpg" alt="VIM3L">
               {% if page.lang == 'en' %}
-              <a href="/vim3#VIM3L">
+              <a href="/android/vim3#VIM3L">
                 {% else %}
-                <a href="/zh-cn/vim3#VIM3L">
+                <a href="/android/zh-cn/vim3#VIM3L">
                   {% endif %}
                   <div class="mask">
                     <span class="mask-text">VIM3L</span>
@@ -191,9 +191,9 @@ img {
             <div class="ui raised segment col-box">
               <img src="/android/images/home/edge.jpg" alt="Edge">
               {% if page.lang == 'en' %}
-              <a href="/edge#Edge">
+              <a href="/android/edge#Edge">
                 {% else %}
-                <a href="/zh-cn/edge#Edge">
+                <a href="/android/zh-cn/edge#Edge">
                   {% endif %}
                   <div class="mask">
                     <span class="mask-text">Edge</span>
@@ -205,9 +205,9 @@ img {
             <div class="ui raised segment col-box">
               <img src="/android/images/home/edge-v.jpg" alt="Edge-V">
               {% if page.lang == 'en' %}
-              <a href="/edge#Edge-V">
+              <a href="/android/edge#Edge-V">
                 {% else %}
-                <a href="/zh-cn/edge#Edge-V">
+                <a href="/android/zh-cn/edge#Edge-V">
                   {% endif %}
                   <div class="mask">
                     <span class="mask-text">Edge-V</span>
@@ -219,9 +219,9 @@ img {
             <div class="ui raised segment col-box">
               <img src="/android/images/home/captain.jpg" alt="Captain">
               {% if page.lang == 'en' %}
-              <a href="/edge#Captain">
+              <a href="/android/edge#Captain">
                 {% else %}
-                <a href="/zh-cn/edge#Captain">
+                <a href="/android/zh-cn/edge#Captain">
                   {% endif %}
                   <div class="mask">
                     <span class="mask-text">Captain</span>
