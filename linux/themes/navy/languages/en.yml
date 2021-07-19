@@ -10,7 +10,6 @@ menu:
 
 index:
   get_started: Getting Started
-  read_docs: READ DOCS
 
 page:
   contents: Contents
@@ -20,279 +19,304 @@ page:
   next: Next
   last_updated: "Last updated: %s"
 
-home_page:
-  intro_title1: Editable
-  intro_desc1: This documentation is editable via GitHub Pull Request, any code donation is welcome.
-  intro_title2: Open Source
-  intro_desc2: All source code is open source, you can find the source code on the Khadas GitHub.
-  intro_title3: Markdown Support
-  intro_desc3: All documentation is written with Markdown. All features of GitHub Flavoured Markdown are supported.
-  intro_title4: Multi-Language Support
-  intro_desc4: English and Simplified Chinese are supported, more languages will be supported in the future.
-
-
 sidebar:
   vim1:
     quick_start: Quick Start
-    vim1_interfaces: VIM1 Interfaces
-    wifi_Usage: Wi-Fi Usage
-    bluetooth_usage: Bluetooth Usage
-    hdmi_usage: HDMI resolution Setting Usage
-    overview: Overview
-    howto_boot_into_upgrade_mode: Enter Upgrade Mode
+    quick_setup: Quick Setup
+    os_introduce: OS Introduce
+    install_os_into_emmc: Install OS into eMMC
+    install_os_into_sd_usb: Install OS into SD/USB Media
+    enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
-    rescures_control: Rescoures Control
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
-    howto_setup_watchdog: Watchdog Usage
-    howto_rotate_framebuffer: FrameBuffer Rotation
-    how_to_set_auto_login: Auto Login
-    display_ubuntu_logo: Enable/Disable Ubuntu Logo
-    howto_change_boot_logo: Change Boot Logo
-    howto_custom_mac: howto_Custom MAC Address Setup
-    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
-    howto_use_hardware_decoding_library: Hardware Decoding Library Usage
-    howto_use_hardware_encoding_library: Hardware Encoding Library Usage
-    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
-    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    vim1_interfaces: VIM1 Interfaces
+    configuration: Configuration
+    basic: Basic
+    upgrade_os: Upgrade System
+    system_config_file: Config File
+    device_tree_overlay: Device Tree Overlay
+    auto_login: Auto Login
+    write_sd_image_to_emmc: Write SD Image to eMMC
+    network: Network
+    wifi: Wi-Fi
+    bt: Bluetooth
+    custom_mac_address: Custom MAC Address
+    howto_use_wol: Wake On Lan
+    display: Display
+    hdmi_resolution: HDMI Resolution
+    rotate_framebuffer: Rotate Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: Change Boot Logo
+    framebuffer_console_font: Framebuffer Console Font
     accessories: Accessories
-    fan_setting_usage: Fan Setting Usage
-    board_rescoures: Board Rescoures
-    system_configure_usage: Ubuntu System configure file Usage
-    wifi_command_usage: Wi-Fi Command Usage
-    bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: GPIO Usage
-    howto_access_i2c: I2C Usage
-    howto_use_wiringpi: WiringPi Usage
-    howto_use_wiringpi-python: WiringPi-Python Usage
-    howto_use_hardware_pwm: How To Use Hardware PWM
-    howto_use_uart: How To Use Uart
-    howto_control_led: LED Usage
-    howto_test_gpioirq: GPIO IRQ dmeo
-    howto_use_1wire: One Wire Usage
-    howto_custom_ir_code_to_boot: Custom IR Code Setup
-    development: Development
-    uboot: U-boot
-    uboot_usage: U-Boot Usage
-    setup_tftp_server: TFTP Sever for U-Boot
-    load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
-    howto_upgrade_the_uboot: Upgrade U-Boot
-    kernel: Kernel
-    how_to_upgrade_the_kernel: How To Upgrade The Kernel
-    howto_use_device_tree_overlay: Device Tree Overlay Usage
-    firmware&&system: Firmware && System
-    fenix_script: Build Ubuntu/Debian Image
-    install_docker: DOcker installation
-    create_burn_card_via_cli: Create Burn Card Via CLI
-    create_bootable_sd_card: Create Bootable SD Card
-    howto_erase_emmc: How To Erase EMMC
-    howto_write_sd_image_to_emmc: Write SD Image To EMMC
+    fan: Cooling Fan
     hardware: Hardware
-    setup_serial_tool: Serial Tool Usage
+    pcie_usb_port: PCIe/USB3.0 Port Switch
+    custom_ir_code: Custom IR Code
     extra_power_input: Exter Power Input
+    applications: Applications
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: Play Video
+    hardware_decoding: Hardware Decoding
+    hardware_encoding: Hardware Encoding
+    docker: Docker
+    watchdog: Watchdog
+    wifi_apsta_mode: Wi-Fi STA/AP Mode
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32-bit Library
+    development: Development
+    uboot: U-Boot
+    build_uboot: Build U-Boot
+    upgrade_uboot: Upgrade U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
+    setup_tftp_server: TFTP Sever for U-Boot
+    kbi_guidance: KBI Guide
+    linux: Linux
+    build_linux_kernel: Build Linux Kernel
+    upgrade_linux_kernel: Upgrade Linux Kernel
+    fenix: Build Ubuntu/Debian Image
+    setup_serial_tool: Setup Serial Debug Tool
+    create_burn_card: Create Burn Card
+    create_bootable_sd_card: Create Bootable SD Card
+    erase_emmc: Erase eMMC
 
   vim2:
     quick_start: Quick Start
-    vim2_interfaces: VIM2 Interfaces
-    wifi_Usage: Wi-Fi Usage
-    bluetooth_usage: Bluetooth Usage
-    hdmi_usage: HDMI resolution Setting Usage
-    overview: Overview
-    howto_boot_into_upgrade_mode: Enter Upgrade Mode 
+    quick_setup: Quick Setup
+    os_introduce: OS Introduce
+    install_os_into_emmc: Install OS into eMMC
+    install_os_into_sd_usb: Install OS into SD/USB Media
+    enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
-    rescures_control: Rescoures Control
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
-    howto_setup_watchdog: Watchdog Usage
-    howto_rotate_framebuffer: FrameBuffer Rotation
-    how_to_set_auto_login: Auto Login
-    display_ubuntu_logo: Enable/Disable Ubuntu Logo
-    howto_change_boot_logo: Change Boot Logo
-    howto_custom_mac: howto_Custom MAC Address Setup
-    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
-    howto_use_hardware_decoding_library: Hardware Decoding Library Usage
-    howto_use_hardware_encoding_library: Hardware Encoding Library Usage
-    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
-    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
+    vim2_interfaces: VIM2 Interfaces
+    configuration: Configuration
+    basic: Basic
+    upgrade_os: Upgrade System
+    system_config_file: Config File
+    device_tree_overlay: Device Tree Overlay
+    auto_login: Auto Login
+    write_sd_image_to_emmc: Write SD Image to eMMC
+    network: Network
+    wifi: Wi-Fi
+    bt: Bluetooth
+    custom_mac_address: Custom MAC Address
+    howto_use_wol: Wake On Lan
+    display: Display
+    hdmi_resolution: HDMI Resolution
+    rotate_framebuffer: Rotate Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: Change Boot Logo
+    framebuffer_console_font: Framebuffer Console Font
     accessories: Accessories
-    fan_setting_usage: Fan Setting Usage
-    board_rescoures: Board Rescoures
-    system_configure_usage: Ubuntu System configure file Usage
-    wifi_command_usage: Wi-Fi Command Usage
-    bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: GPIO Usage
-    howto_use_wol: WOL Usage
-    howto_access_i2c: I2C Usage
-    howto_use_wiringpi: WiringPi Usage
-    howto_use_wiringpi-python: WiringPi-Python Usage
-    howto_use_hardware_pwm: How To Use Hardware PWM
-    howto_use_uart: How To Use Uart
-    howto_control_led: LED Usage
-    howto_test_gpioirq: GPIO IRQ dmeo
-    howto_use_1wire: One Wire Usage
-    howto_custom_ir_code_to_boot: Custom IR Code Setup
-    development: Development
-    uboot: U-boot
-    uboot_usage: U-Boot Usage
-    setup_tftp_server: TFTP Sever for U-Boot
-    load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
-    howto_upgrade_the_uboot: Upgrade U-Boot
-    Kbi_guidance: KBI Guide
-    kernel: Kernel
-    how_to_upgrade_the_kernel: How To Upgrade The Kernel
-    howto_use_device_tree_overlay: Device Tree Overlay Usage
-    firmware&&system: Firmware && System
-    fenix_script: Build Ubuntu/Debian Image
-    install_docker: DOcker installation
-    create_burn_card_via_cli: Create Burn Card Via CLI
-    create_bootable_sd_card: Create Bootable SD Card
-    howto_erase_emmc: How To Erase EMMC
-    howto_write_sd_image_to_emmc: Write SD Image To EMMC
+    fan: Cooling Fan
     hardware: Hardware
-    setup_serial_tool: Serial Tool Usage
+    pcie_usb_port: PCIe/USB3.0 Port Switch
+    custom_ir_code: Custom IR Code
     extra_power_input: Exter Power Input
+    applications: Applications
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: Play Video
+    hardware_decoding: Hardware Decoding
+    hardware_encoding: Hardware Encoding
+    docker: Docker
+    watchdog: Watchdog
+    wifi_apsta_mode: Wi-Fi STA/AP Mode
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32-bit Library
+    development: Development
+    uboot: U-Boot
+    build_uboot: Build U-Boot
+    upgrade_uboot: Upgrade U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
+    setup_tftp_server: TFTP Sever for U-Boot
+    kbi_guidance: KBI Guide
+    linux: Linux
+    build_linux_kernel: Build Linux Kernel
+    upgrade_linux_kernel: Upgrade Linux Kernel
+    fenix: Build Ubuntu/Debian Image
+    setup_serial_tool: Setup Serial Debug Tool
+    create_burn_card: Create Burn Card
+    create_bootable_sd_card: Create Bootable SD Card
+    erase_emmc: Erase eMMC
 
   vim3:
     quick_start: Quick Start
-    vim3_interfaces: VIM3 Interfaces
-    wifi_Usage: Wi-Fi Usage
-    bluetooth_usage: Bluetooth Usage
-    hdmi_usage: HDMI resolution Setting Usage
-    overview: Overview
-    howto_boot_into_upgrade_mode: Enter Upgrade Mode 
+    quick_setup: Quick Setup
+    os_introduce: OS Introduce
+    install_os_into_emmc: Install OS into eMMC
+    install_os_into_sd_usb: Install OS into SD/USB Media
+    enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
-    rescures_control: Rescoures Control
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
-    howto_setup_watchdog: Watchdog Usage
-    howto_rotate_framebuffer: FrameBuffer Rotation
-    how_to_set_auto_login: Auto Login
-    howto_setup_max_cpu_frequency: How To Setup Max CPU Frequency
-    display_ubuntu_logo: Enable/Disable Ubuntu Logo
-    howto_change_boot_logo: Change Boot Logo
-    howto_custom_mac: howto_Custom MAC Address Setup
-    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
-    howto_use_hardware_decoding_library: Hardware Decoding Library Usage
-    howto_use_hardware_encoding_library: Hardware Encoding Library Usage
-    how_to_run_32-bit_applications_on_64-bit_system: 32-bit Applications Usage
-    howto_configure_wi-fi_to_work_in_STA+AP_mode: Wi-Fi STA+AP Mode Setup
-    SDL2_usage: SDL2 Mail Usage
-    PPSSPP_usage: PPSSPP Instructions
-    qt5_usage: QT5 Usage
+    vim3_interfaces: VIM3 Interfaces
+    configuration: Configuration
+    basic: Basic
+    upgrade_os: Upgrade System
+    system_config_file: Config File
+    device_tree_overlay: Device Tree Overlay
+    auto_login: Auto Login
+    write_sd_image_to_emmc: Write SD Image to eMMC
+    network: Network
+    wifi: Wi-Fi
+    bt: Bluetooth
+    custom_mac_address: Custom MAC Address
+    howto_use_wol: Wake On Lan
+    display: Display
+    hdmi_resolution: HDMI Resolution
+    rotate_framebuffer: Rotate Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: Change Boot Logo
+    framebuffer_console_font: Framebuffer Console Font
     accessories: Accessories
-    fan_setting_usage: Fan Setting Usage
-    ts050_setting: TS050 Setting Usage
-    lte_module_usage: LTE Module Usage
-    howto_enable_M2XETH_through_overlays: M2X ETH Usage
-    board_rescoures: Board Rescoures
-    system_configure_usage: Ubuntu System configure file Usage
-    wifi_command_usage: Wi-Fi Command Usage
-    bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: GPIO Usage
-    howto_use_wol: WOL Usage
-    howto_setup_Pcie_usb_port: PCIe/USB3.0 port Switch
-    howto_access_i2c: I2C Usage
-    howto_use_wiringpi: WiringPi Usage
-    howto_use_wiringpi-python: WiringPi-Python Usage
-    howto_use_hardware_pwm: How To Use Hardware PWM
-    howto_use_uart: How To Use Uart
-    howto_control_led: LED Usage
-    howto_test_gpioirq: GPIO IRQ dmeo
-    howto_use_1wire: One Wire Usage
-    howto_custom_ir_code_to_boot: Custom IR Code Setup
+    fan: Cooling Fan
+    ts050: TS050 Touch Screen
+    lte_module_usage: LTE 4G Module
+    m2x_eth: M2X ETH
+    hardware: Hardware
+    pcie_usb_port: PCIe/USB3.0 Port Switch
+    custom_ir_code: Custom IR Code
+    extra_power_input: Exter Power Input
+    applications: Applications
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: Play Video
+    hardware_decoding: Hardware Decoding
+    hardware_encoding: Hardware Encoding
+    docker: Docker
+    watchdog: Watchdog
+    wifi_apsta_mode: Wi-Fi STA/AP Mode
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32-bit Library
     npu: NPU
-    origin_npu: Origin NPU
-    how_to_use_aml_npu_sdk: SDK Usage
-    origin_npu_demo_usage: Binaries Demo Usage
-    how_to_run_yourself_ai_model: Run Yourself AI Model
-    origin_npu_performance_usage: NPU Performance Usage
-    tengine_npu: Tengine NPU
-    tengie_sdk_usage: Tengie Sdk Usage
-    how_to_use_tengine_app: Tengine Application Usage
-    nnapi_npu: NNAPI NPU
-    howto_use_amlnn_api: AML NN API Demo Usage
-    howto_use_aml_npu_app: Application Source Code Usage
+    npu_binary_demo: Prebuilt NPU Demo
+    aml_npu_sdk: NPU SDK
+    aml_npu_app: NPU Demo Source Code
+    model_convert: Model Convert
+    npu_performance: NPU Performance
+    tengine_sdk: Tengine SDK
+    tengine_demo: Tengine Demo
+    amlnn_api_demo: Amlogic NN API Demo
     development: Development
-    uboot: U-boot
-    uboot_usage: U-Boot Usage
+    uboot: U-Boot
+    build_uboot: Build U-Boot
+    upgrade_uboot: Upgrade U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
-    load_images_with_uboot_via_tftp: Load Images With UBoot Via TFTP
-    howto_upgrade_the_uboot: Upgrade U-Boot
-    Kbi_guidance: KBI Guide
-    kernel: Kernel
-    how_to_upgrade_the_kernel: How To Upgrade The Kernel
-    howto_use_device_tree_overlay: Device Tree Overlay Usage
-    firmware&&system: System
-    fenix_script: Build Ubuntu/Debian Image
-    install_docker: DOcker installation
-    create_burn_card_via_cli: Create Burn Card Via CLI
+    kbi_guidance: KBI Guide
+    linux: Linux
+    build_linux_kernel: Build Linux Kernel
+    upgrade_linux_kernel: Upgrade Linux Kernel
+    fenix: Build Ubuntu/Debian Image
+    setup_serial_tool: Setup Serial Debug Tool
+    create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
-    howto_erase_emmc: How To Erase EMMC
-    howto_write_sd_image_to_emmc: Write SD Image To EMMC
-    hardware: Hardware
-    setup_serial_tool: Serial Tool Usage
-    extra_power_input: Exter Power Input
+    erase_emmc: Erase eMMC
 
   edge:
     quick_start: Quick Start
-    edge_interfaces: Edge Interfaces
-    wifi_Usage: Wi-Fi Usage
-    bluetooth_usage: Bluetooth Usage
-    overview: Overview
-    howto_boot_into_upgrade_mode: Enter Upgrade Mode
+    quick_setup: Quick Setup
+    os_introduce: OS Introduce
+    install_os_into_emmc: Install OS into eMMC
+    install_os_into_sd_usb: Install OS into SD/USB Media
+    enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    upgrade_via_tf_burning_card: Upgrade Using SD Card	
-    rescures_control: Rescoures Control
-    system_control: System Control
-    howto_upgrade_the_system: How To Upgrade the System
-    chinese_support_usage: Chinese Support Usage
-    how_to_set_auto_login: Auto Login
-    display_ubuntu_logo: Enable/Disable Ubuntu Logo
-    howto_setup_framebuffer_console_font: How To Setup Framebuffer Console Font
+    boot_from_ext_media: Boot From External Media
+    edge_interfaces: Edge Interfaces
+    configuration: Configuration
+    basic: Basic
+    upgrade_os: Upgrade System
+    system_config_file: Config File
+    auto_login: Auto Login
+    write_sd_image_to_emmc: Write SD Image to eMMC
+    network: Network
+    wifi: Wi-Fi
+    bt: Bluetooth
+    custom_mac_address: Custom MAC Address
+    howto_use_wol: Wake On Lan
+    display: Display
+    rotate_framebuffer: Rotate Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: Change Boot Logo
+    framebuffer_console_font: Framebuffer Console Font
     accessories: Accessories
-    fan_setting_usage: Fan Setting Usage
-    ts050_setting: TS050 Setting Usage
-    lte_module_usage: LTE Module Usage
-    board_rescoures: Board Rescoures
-    system_configure_usage: Ubuntu System configure file Usage
-    wifi_command_usage: Wi-Fi Command Usage
-    bluetooth_command_usage: Bluetooth Command Usage
-    howto_access_gpio: GPIO Usage
-    howto_use_wol: WOL Usage
-    howto_use_wiringpi: WiringPi Usage
-    howto_use_wiringpi-python: WiringPi-Python Usage
-    howto_control_led: LED Usage
-    howto_test_gpioirq: GPIO IRQ dmeo
-    howto_use_1wire: One Wire Usage
-    development: Development
-    rockchip_docs: Rockchip Docs
-    uboot: U-boot
-    boot_from_spi_flash: Boot From SPI-Flash
-    Kbi_guidance: KBI Guide
-    howto_upgrade_the_uboot: Upgrade U-Boot
-    kernel: Kernel
-    how_to_upgrade_the_kernel: How To Upgrade The Kernel
-    firmware&&system: Firmware && System
-    fenix_script: Build Ubuntu/Debian Image
-    install_docker: DOcker installation
-    howto_erase_emmc: How To Erase EMMC
-    howto_write_sd_image_to_emmc: Write SD Image To EMMC
+    fan: Cooling Fan
+    ts050: TS050 Touch Screen
+    lte_module_usage: LTE 4G Module
     hardware: Hardware
-    setup_serial_tool: Serial Tool Usage
+    extra_power_input: Exter Power Input
+    applications: Applications
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: Play Video
+    hardware_decoding: Hardware Decoding
+    hardware_encoding: Hardware Encoding
+    docker: Docker
+    watchdog: Watchdog
+    wifi_apsta_mode: Wi-Fi STA/AP Mode
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32-bit Library
+    development: Development
+    uboot: U-Boot
+    build_uboot: Build U-Boot
+    upgrade_uboot: Upgrade U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
+    setup_tftp_server: TFTP Sever for U-Boot
+    kbi_guidance: KBI Guide
+    linux: Linux
+    build_linux_kernel: Build Linux Kernel
+    upgrade_linux_kernel: Upgrade Linux Kernel
+    fenix: Build Ubuntu/Debian Image
+    setup_serial_tool: Setup Serial Debug Tool
 
   tone1:
     getting_started: Getting Started
     overview: Beginners FAQ
     user_manual: User Manual
-    how_to_upgrade_firmware: Upgrade the Firmware
-    how_to_use_tone_in_linux: Tone with MPD In Linux
+    upgrade_firmware: Upgrade the Firmware
+    use_tone_in_linux: Tone with MPD In Linux
 
   hardware:
     hardware: hardware

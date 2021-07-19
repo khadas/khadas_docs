@@ -1,264 +1,297 @@
 vim1:
   quick_start:
-    vim1_interfaces: index.html
-    wifi_Usage: WifiUsageDesktopVersion.html
-    bluetooth_usage: BluetoothUsage.html
-    hdmi_usage: HDMIUsage.html
-    overview: overview.html
-    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
-    upgrade_via_USB_cable: UpgradeViaUSBCable.html
+    quick_setup: QuickSetup.html
+    os_introduce: OsIntroduce.html
+    install_os_into_emmc: UpgradeViaUSBCable.html
+    install_os_into_sd_usb: InstallSystemOnSdusb.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     boot_from_ext_media: BootFromExtMedia.html
-  rescures_control:
-    system_control:
-      howto_upgrade_the_system: HowToUpgradeTheSystem.html
-      chinese_support_usage: ChineseSupportUsage.html
-      howto_setup_watchdog: HowToSetupWatchdog.html
-      howto_rotate_framebuffer: HowToRotateFramebuffer.html
-      how_to_set_auto_login: HowToSetAutoLogin.html
-      display_ubuntu_logo: DisplayUbuntuLogo.html
-      howto_change_boot_logo: HowToChangeBootLogo.html
-      howto_custom_mac: HowToCustomMac.html
-      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
-      howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
-      howto_use_hardware_encoding_library: HardwareEncodingLibrary.html
-      how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
+    vim1_interfaces: index.html
+  configuration:
+    basic:
+      upgrade_os: HowToUpgradeTheSystem.html
+      system_config_file: SystemConfigureUsage.html
+      device_tree_overlay: HowToUseDeviceTreeOverlay.html
+      auto_login: HowToSetAutoLogin.html
+      write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
+    network:
+      wifi: WifiUsageCommand.html
+      bt: BluetoothCommandUsage.html
+      custom_mac_address: HowToCustomMac.html
+      howto_use_wol: HowtoUseWol.html
+    display:
+      hdmi_resolution: HDMIUsage.html
+      rotate_framebuffer: HowToRotateFramebuffer.html
+      ubuntu_logo: DisplayUbuntuLogo.html
+      change_boot_logo: HowToChangeBootLogo.html
+      framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
     accessories:
-      fan_setting_usage: FanSettingUsage.html
-    board_rescoures:
-      system_configure_usage: SystemConfigureUsage.html
-      wifi_command_usage: WifiUsageCommand.html
-      bluetooth_command_usage: BluetoothCommandUsage.html
-      howto_access_gpio: HowToAccessGpio.html
-      howto_access_i2c: HowToAccessI2c.html
-      howto_use_wiringpi: HowToUseWiringPi.html
-      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
-      howto_use_hardware_pwm: HowToUseHardwarePWM.html
-      howto_use_uart: HowToUseUart.html
-      howto_control_led: HowToControlLED.html
-      howto_test_gpioirq: HowToTestGPIOIRQ.html
-      howto_use_1wire: HowToUse1wire.html
-      howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
-      howto_configure_wi-fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
+      fan: FanSettingUsage.html
+    hardware:
+      pcie_usb_port: HowToSetupPcieUsbPort.html
+      custom_ir_code: HowToCustomIRCodeToBoot.html
+      extra_power_input: ExtraPowerInput.html
+  applications:
+    gpio:
+      gpio_usage: HowToAccessGpio.html
+      i2c: HowToAccessI2c.html
+      gpio_irq: HowToTestGPIOIRQ.html
+      led: HowToControlLED.html
+      1wire: HowToUse1wire.html
+      uart: HowToUseUart.html
+      pwm: HowToUseHardwarePWM.html
+      wiringpi: HowToUseWiringPi.html
+      wiringpi_python: HowToUseWiringPi-Python.html
+    play_video: PlayVideo.html
+    hardware_decoding: HowToUseHardwareDecodingLibrary.html
+    hardware_encoding: HardwareEncodingLibrary.html
+    docker: InstallDocker.html
+    watchdog: HowToSetupWatchdog.html
+    wifi_apsta_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
+    sdl2: SDL2Usage.html
+    ppsspp: PPSSPPUsage.html
+    qt5: QT5Usage.html
+    32bit_library: HowToRun32-bitApplicationsOn64-bitSystem.html
   development:
     uboot:
-      uboot_usage: UBootUsage.html
+      build_uboot: BuildUboot.html
+      upgrade_uboot: HowToUpgradeTheUboot.html
+      boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
-      load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
-      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    kernel:
-      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-      howto_use_device_tree_overlay: HowToUseDeviceTreeOverlay.html
-    firmware&&system:
-      fenix_script: FenixScript.html
-      install_docker: InstallDocker.html
-      create_burn_card_via_cli: CreateBurnCardViaCLI.html
-      create_bootable_sd_card: CreateBootableSDCard.html
-      howto_erase_emmc: HowtoEraseEMMC.html
-      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
-    hardware:
-      setup_serial_tool: SetupSerialTool.html
-      extra_power_input: ExtraPowerInput.html
+      kbi_guidance: KbiGuidance.html
+    linux:
+      build_linux_kernel: BuildLinuxKernel.html
+      upgrade_linux_kernel: HowToUpgradeTheKernel.html
+    fenix: FenixScript.html
+    setup_serial_tool: SetupSerialTool.html
+    create_burn_card: CreateBurnCardViaCLI.html
+    create_bootable_sd_card: CreateBootableSDCard.html
+    erase_emmc: HowtoEraseEMMC.html
 
 vim2:
   quick_start:
-    vim2_interfaces: index.html
-    wifi_Usage: WifiUsageDesktopVersion.html
-    bluetooth_usage: BluetoothUsage.html
-    hdmi_usage: HDMIUsage.html
-    overview: overview.html
-    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
-    upgrade_via_USB_cable: UpgradeViaUSBCable.html
+    quick_setup: QuickSetup.html
+    os_introduce: SystemIntroduce.html
+    install_os_into_emmc: UpgradeViaUSBCable.html
+    install_os_into_sd_usb: InstallSystemOnSdusb.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     boot_from_ext_media: BootFromExtMedia.html
-  rescures_control:
-    system_control:
-      howto_upgrade_the_system: HowToUpgradeTheSystem.html
-      chinese_support_usage: ChineseSupportUsage.html
-      howto_setup_watchdog: HowToSetupWatchdog.html
-      howto_rotate_framebuffer: HowToRotateFramebuffer.html
-      how_to_set_auto_login: HowToSetAutoLogin.html
-      display_ubuntu_logo: DisplayUbuntuLogo.html
-      howto_change_boot_logo: HowToChangeBootLogo.html
-      howto_custom_mac: HowToCustomMac.html
-      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
-      howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
-      howto_use_hardware_encoding_library: HardwareEncodingLibrary.html
-      how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
-      howto_configure_wi-fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
-    accessories:
-      fan_setting_usage: FanSettingUsage.html
-    board_rescoures:
-      system_configure_usage: SystemConfigureUsage.html
-      wifi_command_usage: WifiUsageCommand.html
-      bluetooth_command_usage: BluetoothCommandUsage.html
-      howto_access_gpio: HowToAccessGpio.html
+    vim2_interfaces: index.html
+  configuration:
+    basic:
+      upgrade_os: HowToUpgradeTheSystem.html
+      system_config_file: SystemConfigureUsage.html
+      device_tree_overlay: HowToUseDeviceTreeOverlay.html
+      auto_login: HowToSetAutoLogin.html
+      write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
+    network:
+      wifi: WifiUsageCommand.html
+      bt: BluetoothCommandUsage.html
+      custom_mac_address: HowToCustomMac.html
       howto_use_wol: HowtoUseWol.html
-      howto_access_i2c: HowToAccessI2c.html
-      howto_use_wiringpi: HowToUseWiringPi.html
-      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
-      howto_use_hardware_pwm: HowToUseHardwarePWM.html
-      howto_use_uart: HowToUseUart.html
-      howto_control_led: HowToControlLED.html
-      howto_test_gpioirq: HowToTestGPIOIRQ.html
-      howto_use_1wire: HowToUse1wire.html
-      howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
+    display:
+      hdmi_resolution: HDMIUsage.html
+      rotate_framebuffer: HowToRotateFramebuffer.html
+      ubuntu_logo: DisplayUbuntuLogo.html
+      change_boot_logo: HowToChangeBootLogo.html
+      framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
+    accessories:
+      fan: FanSettingUsage.html
+    hardware:
+      pcie_usb_port: HowToSetupPcieUsbPort.html
+      custom_ir_code: HowToCustomIRCodeToBoot.html
+      extra_power_input: ExtraPowerInput.html
+  applications:
+    gpio:
+      gpio_usage: HowToAccessGpio.html
+      i2c: HowToAccessI2c.html
+      gpio_irq: HowToTestGPIOIRQ.html
+      led: HowToControlLED.html
+      1wire: HowToUse1wire.html
+      uart: HowToUseUart.html
+      pwm: HowToUseHardwarePWM.html
+      wiringpi: HowToUseWiringPi.html
+      wiringpi_python: HowToUseWiringPi-Python.html
+    play_video: PlayVideo.html
+    hardware_decoding: HowToUseHardwareDecodingLibrary.html
+    hardware_encoding: HardwareEncodingLibrary.html
+    docker: InstallDocker.html
+    watchdog: HowToSetupWatchdog.html
+    wifi_apsta_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
+    sdl2: SDL2Usage.html
+    ppsspp: PPSSPPUsage.html
+    qt5: QT5Usage.html
+    32bit_library: HowToRun32-bitApplicationsOn64-bitSystem.html
   development:
     uboot:
-      uboot_usage: UBootUsage.html
+      build_uboot: BuildUboot.html
+      upgrade_uboot: HowToUpgradeTheUboot.html
+      boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
-      load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
-      Kbi_guidance: KbiGuidance.html
-      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    kernel:
-      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-      howto_use_device_tree_overlay: HowToUseDeviceTreeOverlay.html
-    firmware&&system:
-      fenix_script: FenixScript.html
-      install_docker: InstallDocker.html
-      create_burn_card_via_cli: CreateBurnCardViaCLI.html
-      create_bootable_sd_card: CreateBootableSDCard.html
-      howto_erase_emmc: HowtoEraseEMMC.html
-      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
-    hardware:
-      setup_serial_tool: SetupSerialTool.html
-      extra_power_input: ExtraPowerInput.html
+      kbi_guidance: KbiGuidance.html
+    linux:
+      build_linux_kernel: BuildLinuxKernel.html
+      upgrade_linux_kernel: HowToUpgradeTheKernel.html
+    fenix: FenixScript.html
+    setup_serial_tool: SetupSerialTool.html
+    create_burn_card: CreateBurnCardViaCLI.html
+    create_bootable_sd_card: CreateBootableSDCard.html
+    erase_emmc: HowtoEraseEMMC.html
 
 vim3:
   quick_start:
-    vim3_interfaces: index.html
-    wifi_Usage: WifiUsageDesktopVersion.html
-    bluetooth_usage: BluetoothUsage.html
-    hdmi_usage: HDMIUsage.html
-    overview: overview.html
-    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
-    upgrade_via_USB_cable: UpgradeViaUSBCable.html
+    quick_setup: QuickSetup.html
+    os_introduce: SystemIntroduce.html
+    install_os_into_emmc: UpgradeViaUSBCable.html
+    install_os_into_sd_usb: InstallSystemOnSdusb.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     boot_from_ext_media: BootFromExtMedia.html
-  rescures_control:
-    system_control:
-      howto_upgrade_the_system: HowToUpgradeTheSystem.html
-      chinese_support_usage: ChineseSupportUsage.html
-      howto_setup_watchdog: HowToSetupWatchdog.html
-      howto_rotate_framebuffer: HowToRotateFramebuffer.html
-      how_to_set_auto_login: HowToSetAutoLogin.html
-      howto_setup_max_cpu_frequency: HowToSetupMaxCPUFrequency.html
-      display_ubuntu_logo: DisplayUbuntuLogo.html
-      howto_change_boot_logo: HowToChangeBootLogo.html
-      howto_custom_mac: HowToCustomMac.html
-      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
-      howto_use_hardware_decoding_library: HowToUseHardwareDecodingLibrary.html
-      howto_use_hardware_encoding_library: HardwareEncodingLibrary.html
-      how_to_run_32-bit_applications_on_64-bit_system: HowToRun32-bitApplicationsOn64-bitSystem.html
-      howto_configure_wi-fi_to_work_in_STA+AP_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
-      SDL2_usage: SDL2Usage.html
-      PPSSPP_usage: PPSSPPUsage.html
-      qt5_usage: QT5Usage.html
-    accessories:
-      fan_setting_usage: FanSettingUsage.html
-      ts050_setting: TS050Setting.html
-      lte_module_usage: LTEModuleUsage.html
-      howto_enable_M2XETH_through_overlays: HowToEnableM2XETHThroughOverlays.html
-    board_rescoures:
-      system_configure_usage: SystemConfigureUsage.html
-      wifi_command_usage: WifiUsageCommand.html
-      bluetooth_command_usage: BluetoothCommandUsage.html
-      howto_access_gpio: HowToAccessGpio.html
+    vim3_interfaces: index.html
+  configuration:
+    basic:
+      upgrade_os: HowToUpgradeTheSystem.html
+      system_config_file: SystemConfigureUsage.html
+      device_tree_overlay: HowToUseDeviceTreeOverlay.html
+      auto_login: HowToSetAutoLogin.html
+      write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
+    network:
+      wifi: WifiUsageCommand.html
+      bt: BluetoothCommandUsage.html
+      custom_mac_address: HowToCustomMac.html
       howto_use_wol: HowtoUseWol.html
-      howto_access_i2c: HowToAccessI2c.html
-      howto_setup_Pcie_usb_port: HowToSetupPcieUsbPort.html
-      howto_use_wiringpi: HowToUseWiringPi.html
-      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
-      howto_use_hardware_pwm: HowToUseHardwarePWM.html
-      howto_use_uart: HowToUseUart.html
-      howto_control_led: HowToControlLED.html
-      howto_test_gpioirq: HowToTestGPIOIRQ.html
-      howto_use_1wire: HowToUse1wire.html
-      howto_custom_ir_code_to_boot: HowToCustomIRCodeToBoot.html
+    display:
+      hdmi_resolution: HDMIUsage.html
+      rotate_framebuffer: HowToRotateFramebuffer.html
+      ubuntu_logo: DisplayUbuntuLogo.html
+      change_boot_logo: HowToChangeBootLogo.html
+      framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
+    accessories:
+      fan: FanSettingUsage.html
+      ts050: TS050Setting.html
+      lte_module_usage: LTEModuleUsage.html
+      m2x_eth: HowToEnableM2XETHThroughOverlays.html
+    hardware:
+      pcie_usb_port: HowToSetupPcieUsbPort.html
+      custom_ir_code: HowToCustomIRCodeToBoot.html
+      extra_power_input: ExtraPowerInput.html
+  applications:
+    gpio:
+      gpio_usage: HowToAccessGpio.html
+      i2c: HowToAccessI2c.html
+      gpio_irq: HowToTestGPIOIRQ.html
+      led: HowToControlLED.html
+      1wire: HowToUse1wire.html
+      uart: HowToUseUart.html
+      pwm: HowToUseHardwarePWM.html
+      wiringpi: HowToUseWiringPi.html
+      wiringpi_python: HowToUseWiringPi-Python.html
+    play_video: PlayVideo.html
+    hardware_decoding: HowToUseHardwareDecodingLibrary.html
+    hardware_encoding: HardwareEncodingLibrary.html
+    docker: InstallDocker.html
+    watchdog: HowToSetupWatchdog.html
+    wifi_apsta_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
+    sdl2: SDL2Usage.html
+    ppsspp: PPSSPPUsage.html
+    qt5: QT5Usage.html
+    32bit_library: HowToRun32-bitApplicationsOn64-bitSystem.html
   npu:
-    origin_npu:
-      origin_npu_demo_usage: OriginNPU-DemoUsage.html
-      how_to_use_aml_npu_sdk: HowToUseNPUSDK.html
-      howto_use_aml_npu_app: HowToUseAmlNPUApp.html
-      how_to_run_yourself_ai_model: HowToConvertToUseNPU.html
-      origin_npu_performance_usage: OriginNPUPerformanceUsage.html
-    tengine_npu:
-      tengie_sdk_usage: HowToUseTengineSDK.html
-      how_to_use_tengine_app: HowToUseTengineApp.html
-    nnapi_npu:
-      howto_use_amlnn_api: HowToUseAMLNNApi.html
+    npu_binary_demo: OriginNPU-DemoUsage.html
+    aml_npu_sdk: HowToUseNPUSDK.html
+    aml_npu_app: HowToUseAmlNPUApp.html
+    model_convert: HowToConvertToUseNPU.html
+    npu_performance: OriginNPUPerformanceUsage.html
+    tengine_sdk: HowToUseTengineSDK.html
+    tengine_demo: HowToUseTengineApp.html
+    amlnn_api_demo: HowToUseAMLNNApi.html
   development:
     uboot:
-      uboot_usage: UBootUsage.html
+      build_uboot: BuildUboot.html
+      upgrade_uboot: HowToUpgradeTheUboot.html
       boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
-      load_images_with_uboot_via_tftp: LoadImagesWithUBootViaTFTP.html
-      Kbi_guidance: KbiGuidance.html
-      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    kernel:
-      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-      howto_use_device_tree_overlay: HowToUseDeviceTreeOverlay.html
-    firmware&&system:
-      fenix_script: FenixScript.html
-      install_docker: InstallDocker.html
-      create_burn_card_via_cli: CreateBurnCardViaCLI.html
-      create_bootable_sd_card: CreateBootableSDCard.html
-      howto_erase_emmc: HowtoEraseEMMC.html
-      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
-    hardware:
-      setup_serial_tool: SetupSerialTool.html
-      extra_power_input: ExtraPowerInput.html
+      kbi_guidance: KbiGuidance.html
+    linux:
+      build_linux_kernel: BuildLinuxKernel.html
+      upgrade_linux_kernel: HowToUpgradeTheKernel.html
+    fenix: FenixScript.html
+    setup_serial_tool: SetupSerialTool.html
+    create_burn_card: CreateBurnCardViaCLI.html
+    create_bootable_sd_card: CreateBootableSDCard.html
+    erase_emmc: HowtoEraseEMMC.html
 
 edge:
   quick_start:
+    quick_setup: QuickSetup.html
+    os_introduce: SystemIntroduce.html
+    install_os_into_emmc: UpgradeViaUSBCable.html
+    install_os_into_sd_usb: InstallSystemOnSdusb.html
+    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     edge_interfaces: index.html
-    wifi_Usage: WifiUsageDesktopVersion.html
-    bluetooth_usage: BluetoothUsage.html
-    overview: overview.html
-    howto_boot_into_upgrade_mode: HowtoBootIntoUpgradeMode.html
-    upgrade_via_USB_cable: UpgradeViaUSBCable.html
-    upgrade_via_tf_burning_card: UpgradeViaTFBurningCard.html
-  rescures_control:
-    system_control:
-      howto_upgrade_the_system: HowToUpgradeTheSystem.html
-      chinese_support_usage: ChineseSupportUsage.html
-      how_to_set_auto_login: HowToSetAutoLogin.html
-      display_ubuntu_logo: DisplayUbuntuLogo.html
-      howto_setup_framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
-    accessories:
-      fan_setting_usage: FanSettingUsage.html
-      ts050_setting: TS050Setting.html
-      lte_module_usage: LTEModuleUsage.html
-    board_rescoures:
-      system_configure_usage: SystemConfigureUsage.html
-      wifi_command_usage: WifiUsageCommand.html
-      bluetooth_command_usage: BluetoothCommandUsage.html
-      howto_access_gpio: HowToAccessGpio.html
+  configuration:
+    basic:
+      upgrade_os: HowToUpgradeTheSystem.html
+      system_config_file: SystemConfigureUsage.html
+      auto_login: HowToSetAutoLogin.html
+      write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
+    network:
+      wifi: WifiUsageCommand.html
+      bt: BluetoothCommandUsage.html
+      custom_mac_address: HowToCustomMac.html
       howto_use_wol: HowtoUseWol.html
-      howto_use_wiringpi: HowToUseWiringPi.html
-      howto_use_wiringpi-python: HowToUseWiringPi-Python.html
-      howto_control_led: HowToControlLED.html
-      howto_test_gpioirq: HowToTestGPIOIRQ.html
-      howto_use_1wire: HowToUse1wire.html
-  development:
-    rockchip_docs: RockchipDocs.html
-    uboot:
-      boot_from_spi_flash: BootFromSpiFlash.html
-      Kbi_guidance: KbiGuidance.html
-      howto_upgrade_the_uboot: HowToUpgradeTheUboot.html
-    kernel:
-      how_to_upgrade_the_kernel: HowToUpgradeTheKernel.html
-    firmware&&system:
-      fenix_script: FenixScript.html
-      install_docker: InstallDocker.html
-      howto_erase_emmc: HowtoEraseEMMC.html
-      howto_write_sd_image_to_emmc: HowToWriteSDImageToEmmc.html
+    display:
+      rotate_framebuffer: HowToRotateFramebuffer.html
+      ubuntu_logo: DisplayUbuntuLogo.html
+      change_boot_logo: HowToChangeBootLogo.html
+      framebuffer_console_font: HowToSetupFramebufferConsoleFont.html
+    accessories:
+      fan: FanSettingUsage.html
+      ts050: TS050Setting.html
+      lte_module_usage: LTEModuleUsage.html
     hardware:
-      setup_serial_tool: SetupSerialTool.html
+      pcie_usb_port: HowToSetupPcieUsbPort.html
+      custom_ir_code: HowToCustomIRCodeToBoot.html
+      extra_power_input: ExtraPowerInput.html
+  applications:
+    gpio:
+      gpio_usage: HowToAccessGpio.html
+      i2c: HowToAccessI2c.html
+      gpio_irq: HowToTestGPIOIRQ.html
+      led: HowToControlLED.html
+      1wire: HowToUse1wire.html
+      uart: HowToUseUart.html
+      pwm: HowToUseHardwarePWM.html
+      wiringpi: HowToUseWiringPi.html
+      wiringpi_python: HowToUseWiringPi-Python.html
+    play_video: PlayVideo.html
+    hardware_decoding: HowToUseHardwareDecodingLibrary.html
+    hardware_encoding: HardwareEncodingLibrary.html
+    docker: InstallDocker.html
+    watchdog: HowToSetupWatchdog.html
+    wifi_apsta_mode: HowToConfigureWi-FiToWorkInSTA+APMode.html
+    sdl2: SDL2Usage.html
+    ppsspp: PPSSPPUsage.html
+    qt5: QT5Usage.html
+    32bit_library: HowToRun32-bitApplicationsOn64-bitSystem.html
+  development:
+    uboot:
+      build_uboot: BuildUboot.html
+      upgrade_uboot: HowToUpgradeTheUboot.html
+      boot_from_spi_flash: BootFromSpiFlash.html
+      setup_tftp_server: SetupTFTPServer.html
+      kbi_guidance: KbiGuidance.html
+    linux:
+      build_linux_kernel: BuildLinuxKernel.html
+      upgrade_linux_kernel: HowToUpgradeTheKernel.html
+    fenix: FenixScript.html
+    setup_serial_tool: SetupSerialTool.html
 
 tone1:
   getting_started:
     overview: index.html
     user_manual: UserManual.html
-    how_to_upgrade_firmware: HowtoUpgradeFirmware.html
-    how_to_use_tone_in_linux: HowToUseToneInLinux.html
+    upgrade_firmware: HowtoUpgradeFirmware.html
+    use_tone_in_linux: HowToUseToneInLinux.html
 
 hardware:
   hardware:

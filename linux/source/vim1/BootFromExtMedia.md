@@ -2,7 +2,7 @@ title: Boot Images from External Media
 ---
 
 There are several images that are designed to run from a SD Card or Thumbdrive (U-Disk) and are compatible with VIMs. For example:
-* [Armbian with Debian / Ubuntu]()
+* [Armbian with Debian / Ubuntu](https://www.armbian.com/download/?tx_maker=khadas)
 * [CoreELEC](https://coreelec.org/)
 * [LibreELEC](https://libreelec.tv/downloads_new/khadas-vim/)
 * [Manjaro](https://forum.khadas.com/t/manjaro-linux-desktop-environment-for-vim1-vim3/3945)
@@ -14,24 +14,11 @@ There are several images that are designed to run from a SD Card or Thumbdrive (
 
 This tutorial is about how to boot these images.
 
-## Step 1. Clone image to SD card or Thumbdrive (U-Disk)
-There are several ways to burn an image to a SD card or Thumbdrive:
+## Install Image to SD/USB Storage
 
-* [Etcher](https://www.balena.io/etcher/) got a user-friendly GUI for beginners, and is compatible with Mac, Windows and Linux. Simply select an image and it will automatically identify your external device which the image is going to be burned to. **(Recommended)**
+Please check [Install System on SD/USB Storage](/linux/vim1/InstallSystemOnSdusb.html).
 
-![Howto Use Etcher](/linux/images/vim1/HowtoUseEtcher.png)
-
-* `dd` on Ubuntu / Debian with command line:
-
-```
-$ sudo dd if=/path/to/image of=/dev/sdX bs=8M
-```
-
-## Step 2. Select the appropriate DTB file
-
-{% note info If the image you choose is Khadas SD image, skip this step and goto Step 3. %}
-
-{% endnote %}
+## Select the Appropriate DTB
 
 ### For Armbian, LibreELEC, Manjaro
 You need to select the appropriate DTB file.
@@ -57,8 +44,11 @@ You need to select the appropriate DTB file.
   * VIM2: Copy `kvim2.dtb`, `kvim2_linux.dtb` or `meson-gxm-khadas-vim2.dtb` to `BOOT` partition, and rename it to `dtb.img`.
   * VIM3: Copy `kvim3_linux.dtb` or `kvim3l_linux.dtb` to `BOOT` partition, and rename it to `dtb.img`.
 
+### For Khadas SD/USB Images
 
-## Step 3. Boot VIMs from SD card or Thumbdrive
+No need to setup the dtb file, just skip this step.
+
+## Boot from SD/USB Storage
 There are several ways to boot (activate multi-boot) from the SD card / Thumbdrive:
 
 * Via [Keys mode (Side-Buttons)](/linux/vim1/HowtoBootIntoUpgradeMode.html) - the easiest and fastest way
@@ -77,6 +67,6 @@ Don't use your PC as the USB-Host to supply the electrical power, otherwise it w
 
 {% note warn NOTICE %}
 
-* If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](/linux/vim1/UpgradeViaUSBCable.html).
+If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Android is burned to eMMC by following [Upgrade Via a USB-C Cable](/linux/vim1/UpgradeViaUSBCable.html).
 
 {% endnote %}

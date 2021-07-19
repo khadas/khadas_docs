@@ -1,12 +1,12 @@
-title: How To Boot Into Upgrade Mode
+title: Enter Upgrade Mode
 ---
 
-There are 4 ways to boot into Upgrade Mode:
+There are 4 ways to boot into upgrade mode:
 
-1. Keys Mode (Side-Buttons)
-2. Serial Mode
-3. TST Mode (Recommended)
-4. MRegister Mode
+* Keys Mode (Side-Buttons)
+* Serial Mode
+* TST Mode (Recommended)
+* MRegister Mode
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
