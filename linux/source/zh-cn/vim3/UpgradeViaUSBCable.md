@@ -1,1 +1,0 @@
-../vim1/UpgradeViaUSBCable.md

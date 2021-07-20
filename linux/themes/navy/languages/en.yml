@@ -26,7 +26,7 @@ sidebar:
     os_introduce: OS Introduce
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
-    enter_upgrade_mode: Enter Upgrade Mode
+    boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     vim1_interfaces: VIM1 Interfaces
@@ -51,7 +51,6 @@ sidebar:
     accessories: Accessories
     fan: Cooling Fan
     hardware: Hardware
-    pcie_usb_port: PCIe/USB3.0 Port Switch
     custom_ir_code: Custom IR Code
     extra_power_input: Exter Power Input
     applications: Applications
@@ -97,7 +96,7 @@ sidebar:
     os_introduce: OS Introduce
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
-    enter_upgrade_mode: Enter Upgrade Mode
+    boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     vim2_interfaces: VIM2 Interfaces
@@ -122,7 +121,6 @@ sidebar:
     accessories: Accessories
     fan: Cooling Fan
     hardware: Hardware
-    pcie_usb_port: PCIe/USB3.0 Port Switch
     custom_ir_code: Custom IR Code
     extra_power_input: Exter Power Input
     applications: Applications
@@ -168,7 +166,7 @@ sidebar:
     os_introduce: OS Introduce
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
-    enter_upgrade_mode: Enter Upgrade Mode
+    boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     vim3_interfaces: VIM3 Interfaces
@@ -251,7 +249,7 @@ sidebar:
     os_introduce: OS Introduce
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
-    enter_upgrade_mode: Enter Upgrade Mode
+    boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
     edge_interfaces: Edge Interfaces

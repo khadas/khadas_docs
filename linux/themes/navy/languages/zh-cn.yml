@@ -27,7 +27,7 @@ sidebar:
     os_introduce: 操作系统说明
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
-    enter_upgrade_mode: 进入升级模式
+    boot_into_upgrade_mode: 进入升级模式
     boot_from_ext_media: 从外部介质启动系统
     vim1_interfaces: VIM1接口描述
     configuration: 配置
@@ -97,7 +97,7 @@ sidebar:
     os_introduce: 操作系统说明
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
-    enter_upgrade_mode: 进入升级模式
+    boot_into_upgrade_mode: 进入升级模式
     boot_from_ext_media: 从外部介质启动系统
     vim2_interfaces: VIM2接口描述
     configuration: 配置
@@ -167,7 +167,7 @@ sidebar:
     os_introduce: 操作系统说明
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
-    enter_upgrade_mode: 进入升级模式
+    boot_into_upgrade_mode: 进入升级模式
     boot_from_ext_media: 从外部介质启动系统
     vim3_interfaces: VIM3接口描述
     configuration: 配置
@@ -249,7 +249,7 @@ sidebar:
     os_introduce: 操作系统说明
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
-    enter_upgrade_mode: 进入升级模式
+    boot_into_upgrade_mode: 进入升级模式
     boot_from_ext_media: 从外部介质启动系统
     edge_interfaces: Edge 接口描述
     configuration: 配置
