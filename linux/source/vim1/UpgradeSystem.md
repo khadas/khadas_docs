@@ -1,18 +1,18 @@
-title: Upgrade The System To Latest Version
+title: Upgrade System
 ---
 
-## Update resources
+{% note warn Note %}
+
+Only for official released Ubuntu images, check [here](https://dl.khadas.com/Firmware/) for official images.
+
+{% endnote %}
+
+If you already have our official released Ubuntu image in the eMMC, then you can follow the instructions to upgrade your system to latest release.
+
 ```sh
 $ sudo apt update
-```
-## Upgrade
-```sh
 $ sudo apt full-upgrade
 $ sudo do-fenix-full-upgrade
-```
-## Reboot
-```sh
 $ sync
 $ sudo reboot
 ```
-

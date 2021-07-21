@@ -1,7 +1,7 @@
-title: How To Upgrade The u-boot
+title: Upgrade U-Boot
 ---
 
-## Upgrade u-boot in kernel space
+## Upgrade U-Boot in Kernel Space
 
 We use [Fenix](/linux/vim1/FenixScript.html) to build Ubuntu/Debian images. You can also use it to build the u-boot debian package.
 
@@ -11,7 +11,7 @@ We use [Fenix](/linux/vim1/FenixScript.html) to build Ubuntu/Debian images. You 
 $ source source env/setenv.sh
 ```
 
-* Build the u-boot debian package
+* Build the U-Boot debian package
 
 ```
 $ make uboot
@@ -25,9 +25,9 @@ The you will find the u-boot debian package in directory `build/images/debs/FENI
 
 So the package directory maybe: `build/images/debs/0.8.3/VIM3`, and the debian package maybe: `linux-u-boot-vim3-vendor_0.8.3-2015.01_arm64.deb`.
 
-* Upgrade the u-boot
+* Upgrade the U-Boot
 
-Copy the u-boot debian package to the board and install it.
+Copy the U-Boot debian package to the board and install it.
 
 ```
 $ sudo dpkg -i linux-u-boot-vim3-vendor_0.8.3-2015.01_arm64.deb
@@ -35,17 +35,17 @@ $ sync
 $ sudo reboot
 ```
 
-## Upgrade u-boot in u-boot command line
+## Upgrade U-Boot in U-Boot Command Line
 
-We can also upgrade the u-boot in u-boot command line mode. You need to setup the [Serial Tool](/linux/vim1/SetupSerialTool.html).
+We can also upgrade the U-Boot in U-Boot command line mode. You need to setup the [Serial Tool](/linux/vim1/SetupSerialTool.html).
 
-Use [Fenix](/linux/vim1/FenixScript.html) to build the uboot:
+Use [Fenix](/linux/vim1/FenixScript.html) to build the U-Boot:
 
 ```
 $ make uboot
 ```
 
-The built u-boot is `u-boot/fip/_tmp/u-boot.bin`.
+The built U-Boot is `u-boot/fip/_tmp/u-boot.bin`.
 
 * Power on the board and enter u-boot command line
 * Copy `u-boot.bin` to a U-Disk

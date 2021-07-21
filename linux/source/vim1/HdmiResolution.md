@@ -1,9 +1,9 @@
-title: HIDM Setting Usage
+title: HIDM Resolution
 ---
 
 This document will introduce how to setting HDMI resolution.
 
-{% note info Only for Linux 4.9 image, mainline kernel image can use a more common way! %}
+{% note info Only for Linux 4.9 image. %}
 
 {% endnote %}
 

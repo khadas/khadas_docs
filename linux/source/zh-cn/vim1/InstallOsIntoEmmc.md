@@ -1,13 +1,12 @@
 title: 通过USB线安装系统到eMMC
 ---
 
-{% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
+{% note info 由于VIM系列操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
 
 {% endnote %}
 
-{% note info 所有VIM系列板子都有板载eMMC存储，可以通过USB烧录工具把系统安装到eMMC。%}
+所有VIM系列板子都有板载eMMC存储，可以通过USB烧录工具把系统安装到eMMC。
 
-{% endnote %}
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -31,7 +30,7 @@ title: 通过USB线安装系统到eMMC
 
 1、打开升级工具`USB_Burning_Tool_v2.x.x.exe`，点击`File-->Import image`选择要升级的固件。
 2、用USB-C线连接板子和PC电脑（默认板子上电会自动开机）。
-3、进入固件[升级模式](/linux/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)。
+3、进入固件[升级模式](/linux/zh-cn/vim1/BootIntoUpgradeMode.html)。
 4、如果上面操作已正确执行，电脑端会发现板子升级设备，点击升级工具上的`开始`按钮开始固件升级,升级进度条100%时完成升级。
 
 ![image](/linux/images/vim1/usb_upgrade_tool_interface_v217_zh.png)

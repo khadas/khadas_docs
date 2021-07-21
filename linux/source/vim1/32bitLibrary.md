@@ -1,4 +1,4 @@
-title: How To Run 32-bit Applications On 64-bit System
+title: 32-bit Library
 ---
 
 ## Execute The 32-bit Program Under 64-bit System

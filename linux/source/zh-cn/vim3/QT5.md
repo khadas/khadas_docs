@@ -1,4 +1,4 @@
-title: QT5用法
+title: QT5
 ---
 
 Ubuntu系统默认自带的QT版本是针对OpenGL桌面环境的，但是对于VIM系列来说，由于不支持桌面环境下的GPU，所以在使用时是不能用GPU进行加速的。
@@ -7,20 +7,25 @@ Ubuntu系统默认自带的QT版本是针对OpenGL桌面环境的，但是对于
 
 {% note warn 注意 %}
 
-* 目前QT5 eglfs Mali GPU（fbdev）仅仅支持**Ubuntu 20.04 Linux 4.9内核**，同时需要先[更新系统](/linux/zh-cn/vim1/HowToUpgradeTheSystem.html)到最新版本。
+* 目前QT5 eglfs Mali GPU（fbdev）仅仅支持**Ubuntu 20.04 Linux 4.9内核**，同时需要先[更新系统](/linux/zh-cn/vim1/UpgradeSystem.html)到最新版本。
 * 仅支持Framebuffer Console模式。
+* 安装这个版本的库会破坏一些对这个库有依赖的官方软件包。
 
 {% endnote %}
 
 ## 更新系统
 
-参考这篇[文档](/linux/zh-cn/vim1/HowToUpgradeTheSystem.html)升级系统到最新版本。
+参考这篇[文档](/linux/zh-cn/vim1/UpgradeSystem.html)升级系统到最新版本。
 
 ## 安装QT5软件包
 
 ```bash
 $ sudo apt update
 $ sudo apt install qt5-default qtbase5-examples
+$ mkdir /tmp/qt5
+$ cd /tmp/qt5
+$ wget https://dl.khadas.com/repos/debs/vim3/focal/qt5/libqt5gui5_5.12.8%2Bdfsg-0ubuntu2_arm64.deb
+$ sudo dpkg -i libqt5gui5_5.12.8+dfsg-0ubuntu2_arm64.deb
 ```
 
 ## 检查
@@ -80,6 +85,15 @@ $ export QT_QPA_GENERIC_PLUGINS=evdevtouch:/dev/input/event4
 </div>
 
 如果你想要旋转到其他方向，可以自己修改相应的参数。
+
+## 错误排查
+
+在安装了这个版本的库后会破坏一些对这个库有依赖的软件包（如：`qtcreator`），导致这些包无法正常运行，这时你可以按如下方法回退到默认的版本。
+
+```bash
+$ wget http://ports.ubuntu.com/pool/universe/q/qtbase-opensource-src/libqt5gui5_5.12.8+dfsg-0ubuntu1_arm64.deb
+$ sudo dpkg -i libqt5gui5_5.12.8+dfsg-0ubuntu1_arm64.deb
+```
 
 ## 参考
 [Qt for Embedded Linux](https://doc.qt.io/qt-5/embedded-linux.html)

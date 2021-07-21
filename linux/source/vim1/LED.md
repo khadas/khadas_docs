@@ -1,4 +1,4 @@
-title: How To Control LEDs
+title: LED
 ---
 
 ## Switch to root user

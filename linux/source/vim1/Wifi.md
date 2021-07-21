@@ -1,4 +1,4 @@
-title: Wi-Fi commnad Line Usage
+title: Wi-Fi
 ---
 
 For the Ubuntu/Debian server we can use `NetworkManager` to setup Wi-Fi vis command line.

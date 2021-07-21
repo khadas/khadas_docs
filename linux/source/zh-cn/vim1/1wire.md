@@ -1,4 +1,4 @@
-title: 如何使用单总线
+title: 单总线
 ---
 
 {% note info 以VIM1为例进行说明。%} 

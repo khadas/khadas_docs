@@ -1,4 +1,4 @@
-title: How To Setup Customer Ethernet MAC Address
+title: Setup Customer Ethernet MAC Address
 ---
 
 ## Check Ethernet MAC address

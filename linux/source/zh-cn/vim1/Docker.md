@@ -1,4 +1,4 @@
-title: 安装Docker
+title: Docker
 ---
 
 这篇文档介绍如何在VIMs/Edge Ubuntu下安装Docker。

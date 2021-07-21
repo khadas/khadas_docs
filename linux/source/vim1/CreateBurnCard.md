@@ -1,4 +1,4 @@
-title: Create A Burning Card From Command Line
+title: Create a Burning Card
 ---
 
 This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](/linux/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/linux/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/linux/vim3/UpgradeViaTFBurningCard.html)) instead.

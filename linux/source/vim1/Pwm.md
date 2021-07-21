@@ -1,4 +1,4 @@
-title: How To Use Hardware PWM
+title: PWM
 ---
 
 ## Check HardwarePWM Pin

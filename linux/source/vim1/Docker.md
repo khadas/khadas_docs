@@ -1,30 +1,30 @@
-title: 安装Docker
+title: Docker
 ---
 
-这篇文档介绍如何在VIMs/Edge Ubuntu下安装Docker。
+This guide will show you how to install Docker on Ubuntu for Khadas VIMs/Edge.
 
-## 准备
+## Preparations
 
-* Ubuntu `V180531`或以上版本
+* Ubuntu `V180531` or newer
 
-## 安装必要的软件包
-
-```bash
-khadas@Khadas:~$ sudo apt-get update
-khadas@Khadas:~$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
-khadas@Khadas:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-```
-
-## 添加Docker源
+## Install Essential Packages
 
 ```bash
-khadas@Khadas:~$ sudo add-apt-repository \
-			"deb [arch=arm64] https://download.docker.com/linux/ubuntu \
-			$(lsb_release -cs) \
-			stable"
+$ sudo apt-get update
+$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-## 安装Docker
+## Add Docker Source
+
+```bash
+$ sudo add-apt-repository \
+	"deb [arch=arm64] https://download.docker.com/linux/ubuntu \
+	$(lsb_release -cs) \
+	stable"
+```
+
+## Install Docker
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -64,33 +64,33 @@ khadas@Khadas:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
 </div>
 </div>
 
-## 运行Docker
+## Start Docker
 
 ```bash
 khadas@Khadas:~$ sudo systemctl enable docker
 khadas@Khadas:~$ sudo systemctl start docker
 ```
 
-## 添加Docker组
+## Add Docker Group
 
 ```bash
 khadas@Khadas:~$ sudo groupadd docker
 khadas@Khadas:~$ sudo usermod -aG docker $USER
 ```
 
-{% note info 注意 %}
+{% note info Tips %}
 
-需要注销或重启系统来生效。
+You need to logout or reboot your system.
 
 {% endnote %}
 
-## 检查Docker
+## Check Docker
 
 ```bash
 khadas@Khadas:~$ docker run hello-world
 ```
 
-如果看到如下输出说明Docker安装成功。
+If you see the following messages, it means that Docker has been setup correctly:
 
 ```bash
 khadas@Khadas:~$ docker run hello-world
@@ -122,5 +122,5 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-## 参考
+## See Also
 [Get Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)

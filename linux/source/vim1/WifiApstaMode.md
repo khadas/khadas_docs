@@ -1,4 +1,4 @@
-title: Configure Wi-Fi To Work In STA+AP Mode
+title: Wi-Fi in STA+AP Mode
 ---
 This guide is about how to configure Wi-Fi to work in STA+AP mode under Ubuntu.
 

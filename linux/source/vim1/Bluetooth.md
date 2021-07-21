@@ -1,4 +1,4 @@
-title: Bluetooth Command Usage
+title: Bluetooth
 ---
 
 This document will introduce how to use Bluetooth via Bluetooth commands

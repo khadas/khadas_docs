@@ -1,4 +1,4 @@
-title: SDL2 Mail Library Instructions
+title: SDL2 Mail Library
 ---
 
 The default SDL2 packages from Ubuntu official are built with OpenGL Desktop support, but for VIMs, there don’t have Mali GPU driver under X11, so you can’t use SDL2 with GPU.
@@ -7,20 +7,27 @@ In order to use SDL2 with GPU (fbdev), we have rebuilt the packages with Mali GP
 
 {% note warn Note %}
 
-* The SDL2 with Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/linux/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
+* The SDL2 with Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/linux/vim1/UpgradeSystem.html) the firmware to latest version.
 * Only support Framebuffer Console mode.
+* Install this version of library will break some official packages which depend on this library.
 
 {% endnote %}
 
 ## Upgrade the System
 
-Follow this [documentation](/linux/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
+Follow this [documentation](/linux/vim1/UpgradeSystem.html) to upgrade the system to latest version.
 
 ## Install SDL2 Packages
 
 ```sh
 $ sudo apt update
 $ sudo apt install libsdl2-2.0-0 libsdl2-dev
+$ mkdir /tmp/sdl2
+$ cd /tmp/sdl2
+$ wget https://dl.khadas.com/repos/debs/vim3/focal/sdl2/sdl2.tgz
+$ tar xvzf sdl2.tgz
+$ cd sdl2
+$ sudo dpkg -i libsdl2-2.0-0_2.0.10+dfsg1-3_arm64.deb libsdl2-dev_2.0.10+dfsg1-3_arm64.deb
 ```
 
 ## Demonstrate
@@ -28,6 +35,7 @@ $ sudo apt install libsdl2-2.0-0 libsdl2-dev
 * Get SDL2 Source Code
 
 ```sh
+$ cd /tmp
 $ git clone https://github.com/libsdl-org/SDL
 $ cd SDL
 $ git checkout release-2.0.10
@@ -61,4 +69,18 @@ INFO: SDL_GL_DEPTH_SIZE: requested 16, got 24
 ```
 
 If everything is ok, you will see the cube on screen.
+
+## Troubleshooting
+
+When you install such version of library you will break some packages (such as `guvcview`) which depend on the original library, if you don't want to break the packages you can follow the instructions below to install the original SDL2 library.
+
+```
+$ wget http://ports.ubuntu.com/ubuntu-ports/ubuntu-ports/pool/universe/libs/libsdl2/libsdl2-2.0-0_2.0.10+dfsg1-3_arm64.deb
+$ wget http://ports.ubuntu.com/ubuntu-ports/ubuntu-ports/pool/universe/libs/libsdl2/libsdl2-dev_2.0.10+dfsg1-3_arm64.deb
+$ sudo dpkg -i libsdl2-2.0-0_2.0.10+dfsg1-3_arm64.deb libsdl2-dev_2.0.10+dfsg1-3_arm64.deb
+$ sync
+```
+
+
+
 

@@ -1,14 +1,13 @@
-title: Install System into eMMC via USB Cable
+title: Install OS into eMMC
 ---
 
-{% note info The operation of VIM1, VIM2 and VIM3 are almost the same, so this documentation will take VIM1 as an example. %}
+{% note info The operation for VIM series are almost the same, so this documentation will take VIM1 as an example. %}
 
 {% endnote %}
 
 
-{% note info All the VIM series boards have onboard eMMC storage, so you can install the system on it via USB upgrade tool. %}
+All the VIM series boards have onboard eMMC storage, so you can install the OS via USB upgrade tool.
 
-{% endnote %}
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -33,7 +32,7 @@ Make sure that you have installed the correct USB upgrade Tool, then follow the 
 
 1. Open `USB_Burning_tool_v2.x.x.exe`, click `File-->Import Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
-3. Put your board into [Upgrade Mode](/linux/vim1/HowtoBootIntoUpgradeMode.html).
+3. Put your board into [Upgrade Mode](/linux/vim1/BootIntoUpgradeMode.html).
 4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as a connected USB-device.
 
     Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
@@ -187,6 +186,5 @@ $ sudo ./UNINSTALL
 
 
 ## See Also
-* [Upgrade Via An SD-Card](/linux/vim1/UpgradeViaTFBurningCard.html)
-* [Boot Into Upgrade Mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)
+* [Boot Into Upgrade Mode](/linux/vim1/BootIntoUpgradeMode.html)
 

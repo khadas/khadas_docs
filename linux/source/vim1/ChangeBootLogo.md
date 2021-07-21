@@ -1,4 +1,4 @@
-title: How To Change the Boot Logo
+title: Change the Boot Logo
 ---
 
 {% note info There are 3 logos will display during the system booup for latest ubuntu image: %}

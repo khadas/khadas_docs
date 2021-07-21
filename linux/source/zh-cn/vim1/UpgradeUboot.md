@@ -1,7 +1,7 @@
-title: 如何更新u-boot
+title: 更新U-Boot
 ---
 
-## 在kernel下升级
+## 在Linux下升级
 
 我们使用[Fenix](/linux/zh-cn/vim1/FenixScript.html)来编译Ubuntu/Debian固件。你同样可以使用它来编译u-boot debian包。
 
@@ -35,17 +35,17 @@ $ sync
 $ sudo reboot
 ```
 
-## 在u-boot命令行下升级
+## 在U-Boot命令行下升级
 
-我们也可以在u-boot命令行下升级u-boot，你需要先设置[串口](/linux/zh-cn/vim1/SetupSerialTool.html)。
+我们也可以在U-Boot命令行下升级，你需要先设置[串口](/linux/zh-cn/vim1/SetupSerialTool.html)。
 
-使用 [Fenix](/linux/zh-cn/vim1/FenixScript.html)来编译u-boot：
+使用 [Fenix](/linux/zh-cn/vim1/FenixScript.html)来编译U-Boot：
 
 ```
 $ make uboot
 ```
 
-编译好的u-boot在：`u-boot/fip/_tmp/u-boot.bin`。
+编译好的U-Boot在：`u-boot/fip/_tmp/u-boot.bin`。
 
 * 板子上电，并进入y-boot命令行
 * 拷贝`u-boot.bin`到U盘

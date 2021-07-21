@@ -1,4 +1,4 @@
-title: How To Setup PCIe/USB3.0 Port
+title: PCIe/USB3.0 Port
 ---
 
 Khadas VIM3 contains a 2:1 data switch chipset to switch the "combo interface" between `PCIe` and `USB 3.0`, and the default mode is `USB 3.0`.

@@ -1,4 +1,4 @@
-title: How To Boot Into Upgrade Mode
+title: Boot into Upgrade Mode
 ---
 
 There are 4 different ways to boot into Upgrade Mode:
@@ -8,7 +8,7 @@ There are 4 different ways to boot into Upgrade Mode:
 * TST Mode (Recommended)
 * MRegister Mode
 
-Usually, the first two methods will meet the needs of most users. However, in some cases such as burning an incorrect u-boot, or if your device is unable to boot at all, you can attempt to rectify the issue with the MRegister mode.
+Usually, the first two methods will meet the needs of most users. However, in some cases such as burning an incorrect U-Boot, or if your device is unable to boot at all, you can attempt to rectify the issue with the MRegister mode.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

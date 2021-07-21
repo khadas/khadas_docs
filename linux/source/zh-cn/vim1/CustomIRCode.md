@@ -1,4 +1,4 @@
-title: 如何自定义 IR CODE 进行系统开机
+title: 自定义IR Code
 ---
 
 ## 获取遥控器按键的IR CODE

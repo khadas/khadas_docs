@@ -1,4 +1,4 @@
-title: How To Use WiringPi
+title: WiringPi
 ---
 
 ## What is WiringPi

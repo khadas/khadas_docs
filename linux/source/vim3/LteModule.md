@@ -1,4 +1,4 @@
-title: How To Use LTE Module
+title: LTE 4G Module
 ---
 
 ## Check operators and frequency bands supported by your region

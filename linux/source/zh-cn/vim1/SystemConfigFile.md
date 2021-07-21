@@ -3,7 +3,7 @@ title: Ubuntu系统配置文件使用说明
 
 这边文档将介绍如何使用Ubuntu系统的配置文件
 
-{% note warn 配置文件中的所有功能不是对主线以及4.9都有效，请查看对应的功能介绍 %}
+{% note warn 仅仅适用于Ubuntu Linux 4.9内核固件。 %}
 {% endnote %}
 
 ## 介绍

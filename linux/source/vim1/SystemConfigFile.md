@@ -1,9 +1,9 @@
-title: Ubuntu system configuration file Usage
+title: Ubuntu System Configuration File
 ---
 
-This document will introduce how to use the configuration file of the Ubuntu system
+This documentation will introduce how to use the configuration file of the Ubuntu system.
 
-{% note warn All the functions in the configuration file are not valid for the main line and 4.9, please check the corresponding function introduction %}
+{% note warn The config file is only for Ubuntu system with Linux 4.9 kernel. %}
 {% endnote %}
 
 ## Introduction

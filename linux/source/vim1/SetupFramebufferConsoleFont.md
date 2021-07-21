@@ -1,4 +1,4 @@
-title: How To Setup Framebuffer Console Font
+title: Setup Framebuffer Console Font
 ---
 
 If the font on framebuffer console is too small, e.g. 4K display or MIPI LCD, you can reconfigure the console:

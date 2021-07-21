@@ -1,4 +1,4 @@
-title: How To Use Hardware Encoding Library
+title: Hardware Encoding
 ---
 
 {% note warn Only support Linux 4.9. %}

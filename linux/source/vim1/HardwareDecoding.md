@@ -1,4 +1,4 @@
-title: How To Use Hardware Decoding Library
+title: Hardware Decoding
 ---
 
 {% note warn Only for linux 4.9. %}

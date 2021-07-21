@@ -1,4 +1,4 @@
-title: 如何控制LED
+title: LED
 ---
 
 ## 切换root用户

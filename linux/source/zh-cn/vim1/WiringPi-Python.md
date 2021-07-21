@@ -1,4 +1,4 @@
-title: 如何使用WiringPi-Python
+title: WiringPi-Python
 ---
 
 ## 什么是 WiringPi-Python

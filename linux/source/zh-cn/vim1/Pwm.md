@@ -1,4 +1,4 @@
-title: 如何使用硬件PWM
+title: PWM
 ---
 
 ## 确认PWM引脚

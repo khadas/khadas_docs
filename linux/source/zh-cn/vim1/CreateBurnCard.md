@@ -1,4 +1,4 @@
-title: 通过命令行方式创建系统烧录卡
+title: 创建系统烧录卡
 ---
 
 本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式创建烧录卡([VIM1](/linux/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/linux/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/linux/zh-cn/vim3/UpgradeViaTFBurningCard.html))。

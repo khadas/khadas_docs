@@ -1,4 +1,4 @@
-title: How To Set a custom IR CODE To Boot The System
+title: Custom IR Code
 ---
 
 ## Get the IR CODE

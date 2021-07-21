@@ -1,4 +1,4 @@
-title: How To Use 1-Wire
+title: 1-Wire
 ---
 
 {% note info Take VIM1 as an example. %}

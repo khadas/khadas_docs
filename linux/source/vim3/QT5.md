@@ -1,4 +1,4 @@
-title: QT5 Usage
+title: QT5
 ---
 
 The default QT packages from Ubuntu official are built with OpenGL Desktop support, but for VIMs, there don't have Mali GPU driver under X11, so you can't use QT with GPU.
@@ -7,14 +7,15 @@ In order to use QT with GPU (fbdev), we have rebuilt the QT packages with eglfs 
 
 {% note warn Note %}
 
-* The QT5 with eglfs Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/linux/vim1/HowToUpgradeTheSystem.html) the firmware to latest version.
+* The QT5 with eglfs Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/linux/vim1/UpgradeSystem.html) the firmware to latest version.
 * Only support Framebuffer Console mode.
+* Install this version of library will break some official packages which depend on this library.
 
 {% endnote %}
 
 ## Upgrade the System
 
-Follow this [documentation](/linux/vim1/HowToUpgradeTheSystem.html) to upgrade the system to latest version.
+Follow this [documentation](/linux/vim1/UpgradeSystem.html) to upgrade the system to latest version.
 
 
 ## Install QT5 Packages
@@ -22,6 +23,10 @@ Follow this [documentation](/linux/vim1/HowToUpgradeTheSystem.html) to upgrade t
 ```bash
 $ sudo apt update
 $ sudo apt install qt5-default qtbase5-examples
+$ mkdir /tmp/qt5
+$ cd /tmp/qt5
+$ wget https://dl.khadas.com/repos/debs/vim3/focal/qt5/libqt5gui5_5.12.8%2Bdfsg-0ubuntu2_arm64.deb
+$ sudo dpkg -i libqt5gui5_5.12.8+dfsg-0ubuntu2_arm64.deb
 ```
 
 ## Check
@@ -81,6 +86,16 @@ $ export QT_QPA_GENERIC_PLUGINS=evdevtouch:/dev/input/event4
 </div>
 
 For other orientation rotation, you can change them yourself.
+
+## Troubleshooting
+
+When you install such version of library you will break some packages (such as `qtcreator`) which depend on the original library, if you don’t want to break the packages you can follow the instructions below to install the original QT5 library.
+
+```bash
+$ wget http://ports.ubuntu.com/pool/universe/q/qtbase-opensource-src/libqt5gui5_5.12.8+dfsg-0ubuntu1_arm64.deb
+$ sudo dpkg -i libqt5gui5_5.12.8+dfsg-0ubuntu1_arm64.deb
+```
+
 
 ## See Also
 [Qt for Embedded Linux](https://doc.qt.io/qt-5/embedded-linux.html)

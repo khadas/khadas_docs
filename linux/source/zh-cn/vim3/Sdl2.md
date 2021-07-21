@@ -1,4 +1,4 @@
-title: SDL2 Mail库使用说明
+title: SDL2 Mail库
 ---
 
 Ubuntu系统默认自带的SDL2库版本是针对OpenGL桌面环境的，但是对于VIM系列来说，由于不支持桌面环境下的GPU，所以在使用时是不能用GPU进行加速的。
@@ -10,12 +10,13 @@ Ubuntu系统默认自带的SDL2库版本是针对OpenGL桌面环境的，但是�
 
 * 目前SDL2 Mali GPU（fbdev）库仅仅支持**Ubuntu 20.04 Linux 4.9**内核，同时需要先更新系统到最新版本。
 * 仅支持Framebuffer Console模式。
+* 安装这个版本的库会破坏一些对这个库有依赖的官方软件包。
 
 {% endnote %}
 
 ## 更新系统
 
-参考这篇[文档](/linux/zh-cn/vim1/HowToUpgradeTheSystem.html)升级系统到最新版本。
+参考这篇[文档](/linux/zh-cn/vim1/UpgradeSystem.html)升级系统到最新版本。
 
 
 ## 安装
@@ -23,6 +24,12 @@ Ubuntu系统默认自带的SDL2库版本是针对OpenGL桌面环境的，但是�
 ```sh
 $ sudo apt update
 $ sudo apt install libsdl2-2.0-0 libsdl2-dev
+$ mkdir /tmp/sdl2
+$ cd /tmp/sdl2
+$ wget https://dl.khadas.com/repos/debs/vim3/focal/sdl2/sdl2.tgz
+$ tar xvzf sdl2.tgz
+$ cd sdl2
+$ sudo dpkg -i libsdl2-2.0-0_2.0.10+dfsg1-3_arm64.deb libsdl2-dev_2.0.10+dfsg1-3_arm64.deb
 ```
 
 ## 演示
@@ -30,6 +37,7 @@ $ sudo apt install libsdl2-2.0-0 libsdl2-dev
 * 获取示例源代码
 
 ```sh
+$ cd /tmp
 $ git clone https://github.com/libsdl-org/SDL
 $ cd SDL
 $ git checkout release-2.0.10
@@ -63,3 +71,15 @@ INFO: SDL_GL_DEPTH_SIZE: requested 16, got 24
 ```
 
 如果一切正常，你会在屏幕上看到一个旋转的方块。
+
+## 错误排查
+
+在安装了这个版本的SDL2库后会破坏一些对这个库有依赖的软件包（如：`guvcview`），导致这些包无法正常运行，这时你可以按如下方法回退到默认的版本。
+
+```
+$ wget http://ports.ubuntu.com/ubuntu-ports/ubuntu-ports/pool/universe/libs/libsdl2/libsdl2-2.0-0_2.0.10+dfsg1-3_arm64.deb
+$ wget http://ports.ubuntu.com/ubuntu-ports/ubuntu-ports/pool/universe/libs/libsdl2/libsdl2-dev_2.0.10+dfsg1-3_arm64.deb
+$ sudo dpkg -i libsdl2-2.0-0_2.0.10+dfsg1-3_arm64.deb libsdl2-dev_2.0.10+dfsg1-3_arm64.deb
+$ sync
+```
+

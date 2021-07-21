@@ -1,4 +1,4 @@
-title: How To Use Uart
+title: UART
 ---
 
 This documentation will introduce how to use the uart of 40PIN headers.

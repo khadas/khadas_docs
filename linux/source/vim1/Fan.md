@@ -1,4 +1,4 @@
-title: How To Setup the Cooling Fan
+title: Cooling Fan
 ---
 
 This guide is about how to setup the cooling fan in Ubuntu.

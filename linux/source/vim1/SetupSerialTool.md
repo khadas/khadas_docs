@@ -18,13 +18,13 @@ Follow these steps to make the correct connections:
 
 The connections should look like this:
 
-![Image of SerialConnections](/images/vim1/SerialConnections_3Pin.jpg)
+![Image of SerialConnections](/linux/images/vim1/SerialConnections_3Pin.jpg)
 
 > Blue color line: Tool Pin `TXD`， orange color: Tool Pin `RXD`， black: Tool Pin `GND`
 
 Another photo for more details (`VCC` Pin is not necessary):
 
-![Image of SerialConnections](/images/vim1/SerialConnections.jpg)
+![Image of SerialConnections](/linux/images/vim1/SerialConnections.jpg)
 
 
 ## Setup Minicom Protocol

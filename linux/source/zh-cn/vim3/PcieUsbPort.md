@@ -1,4 +1,4 @@
-title: 如何设置PCIe/USB3.0端口模式
+title: PCIe/USB3.0端口
 ---
 
 Khadas VIM3包含一个数据切换开关来切换`PCIe`或`USB 3.0`模式。默认为`USB 3.0`模式。
