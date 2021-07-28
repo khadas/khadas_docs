@@ -29,7 +29,7 @@ sidebar:
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
-    vim1_interfaces: VIM1 Interfaces
+    vim1_hardware: VIM1 Hardware
     configuration: Configuration
     basic: Basic
     upgrade_os: Upgrade System
@@ -99,7 +99,7 @@ sidebar:
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
-    vim2_interfaces: VIM2 Interfaces
+    vim2_hardware: VIM2 Hardware
     configuration: Configuration
     basic: Basic
     upgrade_os: Upgrade System
@@ -169,7 +169,7 @@ sidebar:
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
-    vim3_interfaces: VIM3 Interfaces
+    vim3_hardware: VIM3 Hardware
     configuration: Configuration
     basic: Basic
     upgrade_os: Upgrade System
@@ -252,7 +252,7 @@ sidebar:
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
-    edge_interfaces: Edge Interfaces
+    edge_hardware: Edge Hardware
     configuration: Configuration
     basic: Basic
     upgrade_os: Upgrade System

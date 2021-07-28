@@ -6,7 +6,7 @@ vim1:
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
     boot_from_ext_media: BootFromExtMedia.html
-    vim1_interfaces: Interfaces.html
+    vim1_hardware: Hardware.html
   configuration:
     basic:
       upgrade_os: UpgradeSystem.html
@@ -69,7 +69,7 @@ vim2:
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
     boot_from_ext_media: BootFromExtMedia.html
-    vim2_interfaces: interfaces.html
+    vim2_hardware: Hardware.html
   configuration:
     basic:
       upgrade_os: UpgradeSystem.html
@@ -135,7 +135,7 @@ vim3:
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
     boot_from_ext_media: BootFromExtMedia.html
-    vim3_interfaces: Interfaces.html
+    vim3_hardware: Hardware.html
   configuration:
     basic:
       upgrade_os: UpgradeSystem.html
@@ -216,7 +216,7 @@ edge:
     install_os_into_emmc: InstallOsIntoEmmc.html
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
-    edge_interfaces: Interfaces.html
+    edge_hardware: Hardware.html
   configuration:
     basic:
       upgrade_os: UpgradeSystem.html
