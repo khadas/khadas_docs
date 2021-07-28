@@ -139,5 +139,5 @@ $ ./UNINSTALL
 **NOTE: This burning tool has only been verified on Ubuntu 16.04**.
 
 ## See Also
-* [How To Boot Into Upgrade Mode](/linux/edge/HowtoBootIntoUpgradeMode.html)
+* [How To Boot Into Upgrade Mode](/linux/edge/BootIntoUpgradeMode.html)
 
