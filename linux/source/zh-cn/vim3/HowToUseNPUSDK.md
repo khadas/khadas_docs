@@ -47,11 +47,11 @@ $ ls
 
 
 ```
-1. 'Android&Linux编译集成指导.pdf'                              #Android&&linux编译集成指导,主要说明如何使用转换后的code
-2. 'NN工具FAQ.pdf'                                              #转换工具FAQ文档,记录了常见的转换的问题
-3. '模型转换运行用户指南.pdf'                                   #模型转换文档,详细的介绍了如何转换
-4. 'AMLNN Convolution Acceleration Tips.pdf                     #AMLNN卷积加速文档
-5. 'Neural Network Layer and Operation Support Guide.pdf'        #支持的网络层和算子文档
+1. 'Android&Linux编译集成指导(0.2).pdf'                                              #Android&&linux编译集成指导,主要说明如何使用转换后的code
+2. 'NN工具FAQ (0.1).pdf'                                                             #转换工具FAQ文档,记录了常见的转换的问题
+3. '模型转换运行用户指南(0.6).pdf'                                                   #模型转换文档,详细的介绍了如何转换
+4. 'AMLNN Convolution Acceleration Tips.pdf                                          #AMLNN卷积加速文档
+5. 'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'   #支持的网络层和算子文档
 ```
 
 ## 转换工具说明
@@ -61,14 +61,14 @@ $ ls
 ```shell
 $ cd {workspace}/aml_npu_sdk/acuity-toolkit
 $ ls
-bin  demo  ReadMe.txt  requirements.txt
+bin  conversion_scripts  ReadMe.txt  requirements.txt
 ```
 
-主要关注的目录是`demo`
+主要关注的目录是`conversion_scripts`
 
 ```
 1. bin                   #转换的使用的各种工具的合集,大部分都是不开源的.
-2. demo    #转换脚本目录,转换AI模型的位置
+2. conversion_scripts    #转换脚本目录,转换AI模型的位置
 3. ReadMe.txt            #ReadMe.txt文件说明了如何转换和使用
 4. requirements.txt      #转换工具依赖的环境
 ```
@@ -104,29 +104,29 @@ torch==1.2.0
 
 ### 转换脚本使用
 
-转换脚本在`demo`目录下，
+转换脚本在`conversion_scripts`目录下，
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts
 $ ls
-0_import_model.sh  1_quantize_model.sh  2_export_case_code.sh  data  extractoutput.py  inference.sh  model
+0_import_model.sh  1_quantize_model.sh  2_export_case_code.sh  data  dataset.txt  extractoutput.py  inference.sh  mobilenet_tf.data  mobilenet_tf.json  mobilenet_tf.quantize  model  normal_case_demo
 ```
 
 使用脚本转换AI模型
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts
 $ bash 0_import_model.sh && bash 1_quantize_model.sh && bash 2_export_case_code.sh 
 ```
 
 转换完成以后在`nbg_unify_xxxx`目录下就能看到转换出来的代码，这里以自带的模型为例
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo/nbg_unify_mobilenet_tf
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts/nbg_unify_mobilenet_tf
 $ ls
 BUILD   makefile.linux   mobilenettf.vcxproj  vnn_global.h       vnn_mobilenettf.h   vnn_post_process.h  vnn_pre_process.h
 main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_process.c  vnn_pre_process.c
 ```
 
-转换参数的设置，请参考`Docs`里面的'模型转换运行用户指南.pdf'。
+转换参数的设置，请参考`Docs`里面的'模型转换运行用户指南(0.6).pdf'。
 

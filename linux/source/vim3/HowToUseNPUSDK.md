@@ -42,11 +42,11 @@ All demos have been migrated to the board for compilation, and the required libr
 The document records a series of processes from conversion to integration, as well as some common problems
 
 ```
-1. 'Android&Linux_Compilation and Integration Guide.pdf'       #Android&&linux compilation and integration guide, mainly explaining how to use the converted code
-2. 'NN Tool FAQ.pdf'                                           #Conversion tool FAQ document, which records common conversion problems
-3. 'Model_Transcoding and Running User Guide.pdf'              #Model conversion document, a detailed description of how to convert
-4. 'AMLNN Convolution Acceleration Tips.pdf                    #AMLNN convolution acceleration docs
-5. 'Neural Network Layer and Operation Support Guide.pdf'      #Supported network layer and operator documentation
+1. 'Android&Linux_Compilation and Integration Guide_0.2.pdf'                         #Android&&linux compilation and integration guide, mainly explaining how to use the converted code
+2. 'NN Tool FAQ (0.1).pdf'                                                           #Conversion tool FAQ document, which records common conversion problems
+3. 'Model_Transcoding and Running User Guide_V0.6.pdf'                               #Model conversion document, a detailed description of how to convert
+4. 'AMLNN Convolution Acceleration Tips.pdf                                          #AMLNN convolution acceleration docs
+5. 'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'   #Supported network layer and operator documentation
 ```
 
 ## Conversion tool description
@@ -56,14 +56,14 @@ The document records a series of processes from conversion to integration, as we
 ```shell
 $ cd {workspace}/aml_npu_sdk/acuity-toolkit
 $ ls
-bin  demo  ReadMe.txt  requirements.txt
+bin  conversion_scripts  ReadMe.txt  requirements.txt
 ```
 
-The main directory of interest is `demo`
+The main directory of interest is `conversion_scripts`
 
 ```
 1. bin                   #Conversion is a collection of various tools used, most of which are not open source.
-2. demo    #Conversion script directory, convert AI model location
+2. conversion_scripts    #Conversion script directory, convert AI model location
 3. ReadMe.txt            #ReadMe.txt file explains how to convert and use
 4. requirements.txt      #Conversion tool dependent environment
 ```
@@ -98,10 +98,10 @@ Among them, `tensorflow==2.0.0` can be replaced by `tensorflow==2.0.0a0`
 
 ### Conversion script usage
 
-The conversion script is in the `demo` directory,
+The conversion script is in the `conversion_scripts` directory,
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts
 $ ls
 0_import_model.sh  1_quantize_model.sh  2_export_case_code.sh  data  dataset.txt  extractoutput.py  inference.sh  mobilenet_tf.data  mobilenet_tf.json  mobilenet_tf.quantize  model  normal_case_demo
 ```
@@ -109,14 +109,14 @@ $ ls
 Use scripts to convert AI models
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts
 $ bash 0_import_model.sh && bash 1_quantize_model.sh && bash 2_export_case_code.sh 
 ```
 
 After the conversion is completed, you can see the converted code in the `nbg_unify_xxxx` directory, here is the built-in model as an example
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo/nbg_unify_mobilenet_tf
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts/nbg_unify_mobilenet_tf
 $ ls
 BUILD   makefile.linux   mobilenettf.vcxproj  vnn_global.h       vnn_mobilenettf.h   vnn_post_process.h  vnn_pre_process.h
 main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_process.c  vnn_pre_process.c
