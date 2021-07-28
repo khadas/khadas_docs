@@ -120,6 +120,8 @@ khadas@Khadas:~$ sudo ifconfig eth0 down
 
 尝试`ping www.khadas.com`:
 
+#### 2.4G Hz
+
 ```bash
 khadas@Khadas:~$ sudo ping -I wlan0 www.khadas.com
 PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wlan0: 56(84) bytes of data.
@@ -129,9 +131,23 @@ PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wla
 ...
 ```
 
+#### 5G Hz
+
+```sh
+$ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap_5G
+$ sudo nmcli c modify Hostspot 802-11-wireless.mode ap 802-11-wireless.band a 802-11-wireless.channel 149 802-11-wireless.powersave 2 ipv4.method shared
+$ sudo nmcli con modify Hostspot wifi-sec.key-mgmt wpa-psk
+$ sudo nmcli con modify Hostspot wifi-sec.psk "12345678"
+$ sudo nmcli con modify Hostspot ipv4.addresses 192.168.2.20/24
+$ sudo nmcli con modify Hostspot ipv4.gateway 192.168.2.1
+$ sudo nmcli con up Hostspot
+```
+配置成5G,需要设置一下信道
+
+
 3、wlan1是否能作为热点连接
 
-* 热点名称：`khadas_ap`
+* 热点名称：2.4G/`khadas_ap`, 5G/`khadas_ap_5G`
 
 * 密码：`12345678`
 

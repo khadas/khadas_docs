@@ -58,6 +58,8 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 Set wlan1 as a hotspot and connect automatically.The name of the hotspot is`khadas_ap`,the password is`12345678`.
 
+#### 2.4G Hz
+
 ```bash
 $ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap
 $ sudo nmcli con modify Hostspot 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared
@@ -67,6 +69,21 @@ $ sudo nmcli con modify Hostspot ipv4.addresses 192.168.2.20/24
 $ sudo nmcli con modify Hostspot ipv4.gateway 192.168.2.1
 $ sudo nmcli con up Hostspot
 ```
+
+#### 5G Hz
+
+```sh
+$ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap
+$ sudo nmcli c modify Hostspot 802-11-wireless.mode ap 802-11-wireless.band a 802-11-wireless.channel 149 802-11-wireless.powersave 2 ipv4.method shared
+$ sudo nmcli con modify Hostspot wifi-sec.key-mgmt wpa-psk
+$ sudo nmcli con modify Hostspot wifi-sec.psk "12345678"
+$ sudo nmcli con modify Hostspot ipv4.addresses 192.168.2.20/24
+$ sudo nmcli con modify Hostspot ipv4.gateway 192.168.2.1
+$ sudo nmcli con up Hostspot
+```
+
+To configure a 5G network, you need to set up a channel.
+
 
 Check the setup:
 
@@ -133,7 +150,7 @@ PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wla
 
 3、Whether wlan1 can be connected as a hotpot
 
-* Name:`khadas_ap`
+* Name: 2.4G/`khadas_ap`, 5G/`khadas_ap_5G`
 
 * Password:`12345678`
 
