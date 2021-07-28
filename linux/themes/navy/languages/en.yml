@@ -259,6 +259,7 @@ sidebar:
     system_config_file: Config File
     auto_login: Auto Login
     write_sd_image_to_emmc: Write SD Image to eMMC
+    device_tree_overlay: Device Tree Overlay
     network: Network
     wifi: Wi-Fi
     bt: Bluetooth

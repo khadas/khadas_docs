@@ -15,7 +15,7 @@ $ vim /boot/env.txt
 overlays=i2c2 spi3 i2s0 onewire
 ```
 
-关于overlays的详细说明可以参考[如何使用device tree overlays](/linux/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)。
+关于overlays的详细说明可以参考[如何使用device tree overlays](/linux/zh-cn/edge/DeviceTreeOverlay.html)。
 
 
 

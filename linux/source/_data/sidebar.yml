@@ -223,6 +223,7 @@ edge:
       system_config_file: SystemConfigFile.html
       auto_login: AutoLogin.html
       write_sd_image_to_emmc: WriteSDImageToEmmc.html
+      device_tree_overlay: DeviceTreeOverlay.html
     network:
       wifi: Wifi.html
       bt: Bluetooth.html

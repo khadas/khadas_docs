@@ -139,5 +139,5 @@ $ ./UNINSTALL
 ```
 
 ## 参考
-* [如何进入升级模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
+* [如何进入升级模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)
 
