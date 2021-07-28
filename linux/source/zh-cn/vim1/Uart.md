@@ -7,9 +7,9 @@ title: 串口
 
 Uart引出到40Pin的引脚是15脚以及16脚：
 
-* [VIM1-GPIO-Pin-Out](/linux/vim1/index.html#GPIO-Pin-Out)
-* [VIM2-GPIO-Pin-Out](/linux/vim2/#GPIO-Pinout)
-* [VIM3-GPIO-Pin-Out](/linux/vim3/#GPIO-Pinout)
+* [VIM1-GPIO-Pin-Out](/linux/vim1/Hardware#VIM3-硬件信息)
+* [VIM2-GPIO-Pin-Out](/linux/vim2/Hardware#VIM3-硬件信息)
+* [VIM3-GPIO-Pin-Out](/linux/vim3/Hardware#VIM3-硬件信息)
 
 
 ## 使能串口
