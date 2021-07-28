@@ -1,6 +1,38 @@
 title: Wi-Fi
 ---
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true">Desktop</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="false">Server</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
+
+* Open Wi-Fi Settings
+
+Wi-Fi settings are in the upper right corner, click on the lower triangle to see Wi-Fi settings options
+
+<img src="/linux/images/vim1/wifi-setting.png" width="400px">
+
+* Select Network
+
+Choose a Wi-Fi you want to connect to,
+
+<img src="/linux/images/vim1/wifi-select.png" width="400px">
+
+* Enter Password
+
+After entering the password, you can use WiFi normally,
+
+<img src="/linux/images/vim1/wifi-password.png" width="400px">
+
+</div>
+<div class="tab-pane fade" id="server" role="tabpanel" aria-labelledby="server-tab">
+
 For the Ubuntu/Debian server we can use `NetworkManager` to setup Wi-Fi vis command line.
 
 * Scan for Wi-Fi Networks
@@ -61,4 +93,9 @@ Replace the `your_ssid` & `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d
 $ sudo nmcli d disconnect wlan0
 Device 'wlan0' successfully disconnected.
 ```
+
+</div>
+</div>
+
+
 

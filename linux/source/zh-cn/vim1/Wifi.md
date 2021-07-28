@@ -1,6 +1,38 @@
-title: Wi-Fi命令行使用说明
+title: Wi-Fi
 ---
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true">Desktop</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="false">Server</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
+
+* 打开Wi-Fi设置
+
+Wi-Fi设置在右上角，点击下三角就会看见Wi-Fi的设置选项
+
+<img src="/linux/images/vim1/wifi-setting.png" width="400px">
+
+* 选择网络
+
+选择一个你要链接的Wi-Fi
+
+<img src="/linux/images/vim1/wifi-select.png" width="400px">
+
+* 输入密码
+
+输入密码以后就可以正常使用WiFi了
+
+<img src="/linux/images/vim1/wifi-password.png" width="400px">
+
+
+</div>
+<div class="tab-pane fade" id="server" role="tabpanel" aria-labelledby="server-tab">
 
 * 扫描Wi-Fi网络
 
@@ -60,4 +92,9 @@ Device 'wlan0' successfully activated with '206ab399-3822-4652-ba4c-64847af0bce9
 $ sudo nmcli d disconnect wlan0
 Device 'wlan0' successfully disconnected.
 ```
+
+</div>
+</div>
+
+
 
