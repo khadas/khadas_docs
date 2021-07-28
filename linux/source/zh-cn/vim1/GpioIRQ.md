@@ -51,6 +51,15 @@ root@Khadas:/home/khadas# gpio readall
 root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
 ```
 
+{% note info 注意 %}
+
+请确保`gpio readall`查看到的`GPIOH_6`状态为普通GPIO，如果不是，你需要先把这个管脚配置为普通GPIO，方法为编辑文件`/boot/env.txt`，移除`overlays`节点里面的`uart3`，然后保存重启系统。
+
+详细信息请查看 [Device Tree Overlays](/zh-cn/vim3/HowToUseDeviceTreeOverlay.html) 。
+
+{% endnote %}
+
+
 * 测试程序源码`gpio-irq.c`
 
 ```c
