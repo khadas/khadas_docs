@@ -3,6 +3,17 @@ title: aml_NPU_app仓库说明以及使用
 
 `aml_npu_app仓库`是`aml_npu_demo_binaries`仓库的源码，可编译出`aml_npu_demo_binaries`仓库的库和demo。
 
+{% note warn 注意 %}
+1. 只支持本地编译
+2. 只支持opencv4
+{% endnote %}
+
+## 安装Opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv
+```
+
 # 获取仓库源码
 
 源码仓库存储在gitlab，仓库地址为:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
@@ -27,7 +38,7 @@ $ git clone https://gitlab.com/khadas/aml_npu_app
 ```shell
 $ cd {workspace}/aml_npu_app
 $ ls
-DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  DDK_6.4.4.3  detect_library  LICENSE  NN_SLT
+DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
 ```
 
 ```
@@ -68,16 +79,14 @@ build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c
 主要内容说明:
 
 ```
-1. build_vx.sh          #编译脚本
-2. include              #相应的头文件以及所有的定义都会放置在这个目录下
-3. Makefile:            #Makefile文件
-4. makefile.linux       #Make时的环境配置文件
-5. makefile.linux.def   #Make时的环境配置文件
-6. makefile.target_name #Make时的环境配置文件
-7. nn_data              #SDK转换出来的对应模型的nb文件
-8. vnn_yolov3.c         #SDK转换出来的模型处理文件,主要使用到其中与nb文件对接的接口
-9. yolo_v3.c            #指定调用的nb文件,同时定义了模型的调用的所有接口
-10.yolov3_process.c     #主要定义了模型的前处理和后处理
+1. build_vx.sh        #编译脚本
+2. include            #相应的头文件以及所有的定义都会放置在这个目录下
+3. Makefile:          #Makefile文件
+4. makefile.linux     #Make时的环境配置文件
+5. nn_data            #SDK转换出来的对应模型的nb文件
+6. vnn_yolov3.c       #SDK转换出来的模型处理文件,主要使用到其中与nb文件对接的接口
+7. yolo_v3.c          #指定调用的nb文件,同时定义了模型的调用的所有接口
+8. yolov3_process.c   #主要定义了模型的前处理和后处理
 ```
 
 ## 应用层说明
@@ -113,12 +122,10 @@ $ ls
 这里对主要的文件做说明
 
 ```
-1. build_vx.sh           #编译脚本
-2. makefile.linux        #编译脚本在编译时需要指定的makefile.linux文件
-5. makefile.linux.def    #Make时的环境配置文件
-6. makefile.target_name  #Make时的环境配置文件
-3. main.cpp              #环境下的应用demo的主要源码.
-4. xxx.h                 #应用层需要使用到的定义相关的头文件
+1. build_vx.sh         #编译脚本
+2. makefile.linux      #编译脚本在编译时需要指定的makefile.linux文件
+3. main.cpp            #环境下的应用demo的主要源码.
+4. xxx.h               #应用层需要使用到的定义相关的头文件
 ```
 
 # 编译仓库源码

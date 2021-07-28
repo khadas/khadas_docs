@@ -3,6 +3,16 @@ title: How to Compile and Use Amlogic NN Api demo
 
 Amlogic NN Api is a set of NPU Api officially launched by amlogic. This document will introduce how to compile and use khadas to demonstrate based on this set of Api.
 
+{% note warn Note %}
+Just support for opencv4
+{% endnote %}
+
+## Install Opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv
+```
+
 ## API Docs
 
 For detailed information about the API, please refer to the document `docs/zh-cn/DDK_6.4.3_SDK_V1.6 API Description.pdf`
@@ -16,7 +26,7 @@ The source code of the `aml_npu_nnsdk_app` repository is open on the official gi
 ```shell
 $ mkdir workspace
 $ cd ${workspace}
-$ git clone https://gitlab.com/khadas/tengine_khadas_app.git
+$ git clone https://gitlab.com/khadas/aml_npu_nnsdk_app
 ```
 
 ### Source code structure introduction
@@ -24,77 +34,64 @@ $ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 There are currently 3 demos in the source code repository:
 
 1. body_pose:       Detect 18-point posture of the human body, only support image recognition
-2. image_classify:  Object recognition classification, only supports image recognition
-3. person_detect:   Human body detection, supports image recognition and camera recognition
 
-There are compilation scripts, makefiles and source codes in each directory. Take person_detect as an example.
+There are compilation scripts, makefiles and source codes in each directory. Take image_classify as an example.
 
 ```shell
-$ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
+$ cd ${workspace}/aml_npu_nnsdk_app/image_classify_224x224
 $ ls
-build-cv3.sh  include  makefile-cv3.linux  person_detect_640x384_camera.cpp  person_detect_640x384_picture.cpp  README.cn.md  README.md
+build-cv4.sh  cv3_output  image_classify_224x224.cpp  include  makefile-cv4.linux  README.cn.md  README.md
 ```
 
-1. build-cv3.sh : Compiled script
-2. makefile-cv3.linux : Compilesd makefile
-3. person_detect_640x384_camera.cpp: Source code for image recognition
-4. person_detect_640x384_picture.cpp: Source code for camera recognition
+1. build-cv4.sh : Compiled script
+2. makefile-cv4.linux : Compilesd makefile
+3. image_classify_224x224.cpp: Source code for camera recognition
 
 ### Compilation method
 
 Please refer to get SDK [#Get-SDK](/vim3/HowToUseNPUSDK#Get-SDK)
 
-Here also take person_detect as an example,
+Here also take image_classify as an example,
 
 ```shell
-$ cd ${workspace}/aml_npu_nnsdk_app/person_detect_640x384
-$ ./build-cv3.sh /path/to/aml_npu_sdk/linux_sdk/linux_sdk
-  COMPILE /home/yan/data/git/npu/aml_npu_nnsdk_app/person_detect_640x384/person_detect_640x384_picture.cpp
-  COMPILE /home/yan/data/git/npu/aml_npu_nnsdk_app/person_detect_640x384/person_detect_640x384_camera.cpp
+$ cd ${workspace}/aml_npu_nnsdk_app/image_classify_224x224
+$ ./build-cv4.sh
+  COMPILE /home/khadas/aml_npu_nnsdk_app/image_classify_224x224/image_classify_224x224.cpp
 ```
 
-Compilation will generate the generated file in `cv3_output`,
+Compilation will generate the generated file in `cv4_output`,
 ```shell
-$ cd {workspace}/aml_npu_nnsdk_app/person_detect_640x384/cv3_output
+$ cd {workspace}/aml_npu_nnsdk_app/image_classify_224x224/cv4_output
 $ ls
-person_detect_640x384_camera  person_detect_640x384_camera.o  person_detect_640x384_picture  person_detect_640x384_picture.o
+image_classify_224x224  image_classify_224x224.o
 ```
 
-Among them, `person_detect_640x384_camera` and `person_detect_640x384_picture` are the generated executable files
+Among them, `image_classify_224x224` are the generated executable files
 
 ## How to Run
 
 
-Here also take person_detect as an example,
+Here also take image_classify_224x224 as an example,
 
-1. Obtain the nb file [https://github.com/khadas/AML_NN_SDK](https://github.com/khadas/AML_NN_SDK), the nb file corresponding to `person_detect` is:
+1. Obtain the nb file [https://github.com/khadas/AML_NN_SDK](https://github.com/khadas/AML_NN_SDK), the nb file corresponding to `image classify` is:
 
 ```shell
 $ mkdir ${board_space}
 $ cd board_space
-$ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/88/person_detect_88.nb  [VIM3]
-$ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/99/person_detect_99.nb  [VIM3L]
+$ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/88/image_classify_88.nb  [VIM3]
+$ wget https://github.com/khadas/AML_NN_SDK/raw/master/Model/DDK6.4.4.3/99/image_classify_88.nb  [VIM3L]
 ```
 
 2. Copy the executable file compiled on the PC to the board
 
 3. Run
 
-Identify the picture
 
 ```shell
-$ /path/to/person_detect_640x384_picture ${board_space}/person_detect_88.nb /path/to/picture  [VIM3] 
-$ /path/to/person_detect_640x384_picture ${board_space}/person_detect_99.nb /path/to/picture  [VIM3L] 
+$ /path/to/image_classify_224x224 ${board_space}/image_classify_88.nb /path/to/picture  [VIM3] 
+$ /path/to/image_classify_224x224 ${board_space}/image_classify_99.nb /path/to/picture  [VIM3L] 
 
 ```
-
-Recognition camera
-
-```shell
-$ /path/to/person_detect_640x384_camera ${board_space}/person_detect_88.nb /dev/videoX   [VIM3]
-$ /path/to/person_detect_640x384_camera ${board_space}/person_detect_99.nb /dev/videoX   [VIM3L]
-```
-
 
 {% note info Note %}
 Just a simple template repository, please refer to the documentation for detailed API introduction.

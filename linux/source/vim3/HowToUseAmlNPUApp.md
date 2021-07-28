@@ -3,6 +3,17 @@ title: Description and Usage of aml_NPU_app Code Repository
 
 `aml_npu_app`  repository is the source code for `aml_npu_demo_binaries`,The library and demo of the `aml_npu_demo_binaries` repository can be compiled.
 
+{% note warn Note %}
+1. Just support local compile
+2. Just support Opencv4
+{% endnote %}
+
+## Install Opencv4
+
+```shell
+$ sudo apt install libopencv-dev python3-opencv
+```
+
 ## Get the source code repository
 
 The source code repository is stored in gitlab, and the repository address is:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
@@ -27,7 +38,7 @@ It is recommended to use the git command to clone. When the subsequent code is u
 ```shell
 $ cd {workspace}/aml_npu_app
 $ ls
-DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  DDK_6.4.4.3  detect_library  LICENSE  NN_SLT
+DDK_6.3.2  DDK_6.3.2.3  DDK_6.3.2.5  DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
 ```
 ```
 1. DDK_xxx         #Different versions of library source code
@@ -67,16 +78,14 @@ build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c
 Main content description:
 
 ```
-1. build_vx.sh           #Compile script
-2. include               #The corresponding header files and all definitions will be placed in this directory
-3. Makefile:             #Makefile file
-4. makefile.linux        #Make environment configuration file
-5. makefile.linux.def    #Make environment configuration file
-6. makefile.target_name  #Make environment configuration file
-7. nn_data               #SDK converted nb file of the corresponding model
-8. vnn_yolov3.c          #SDK The converted model processing file is mainly used to interface with the nb file
-9. yolo_v3.c             #Specify the called nb file, and define all the interfaces of the model call
-10.yolov3_process.c      #Mainly defines the pre-processing and post-processing of the model
+1. build_vx.sh        #Compile script
+2. include            #The corresponding header files and all definitions will be placed in this directory
+3. Makefile:          #Makefile file
+4. makefile.linux     #Make environment configuration file
+5. nn_data            #SDK converted nb file of the corresponding model
+6. vnn_yolov3.c       #SDK The converted model processing file is mainly used to interface with the nb file
+7. yolo_v3.c          #Specify the called nb file, and define all the interfaces of the model call
+8. yolov3_process.c   #Mainly defines the pre-processing and post-processing of the model
 ```
 
 ### Application  description
@@ -112,12 +121,10 @@ Here is an explanation of the main files,
 
 
 ```
-1. build_vx.sh           #Compile script, the compilation environment specifies `opencv3` and `opencv4`
-2. makefile.linux        #Respectively, the opencv3/opencv4 compilation scripts need to specify the makefile.linux file when compiling
-3. makefile.linux.def    #Make environment configuration file
-4. makefile.target_name  #Make environment configuration file
-5. main.cpp              # Is the main source code of the application demo in the opencv3/opencv4 environment.
-6. xxx.h                 #The definition related header files that the application layer needs to use
+1. build_vx.sh         #Compile script, the compilation environment specifies `opencv3` and `opencv4`
+2. makefile.linux      #Respectively, the opencv3/opencv4 compilation scripts need to specify the makefile.linux file when compiling
+3. main.cpp            # Is the main source code of the application demo in the opencv3/opencv4 environment.
+4. xxx.h               #The definition related header files that the application layer needs to use
 ```
 
 ## Compile the repository source code
