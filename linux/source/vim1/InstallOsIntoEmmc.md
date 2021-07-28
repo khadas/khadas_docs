@@ -120,7 +120,7 @@ Root privilege required.
 
 ## Check The USB Driver
 
-You must now place your board into `Upgrade Mode`.See [VIM1](/linux/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/linux/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/linux/vim3/HowtoBootIntoUpgradeMode.html) to enter upgrade mode.
+You must now place your board into `Upgrade Mode`.See [VIM1](/linux/vim1/BootIntoUpgradeMode.html)/[VIM2](/linux/vim2/BootIntoUpgradeMode.html)/[VIM3](/linux/vim3/BootIntoUpgradeMode.html) to enter upgrade mode.
 Check to see if Ubuntu has detected your board as a connected USB-device.
 
 ```bash

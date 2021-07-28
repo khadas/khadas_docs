@@ -113,7 +113,7 @@ Installing Amlogic flash-tool...
 {% endnote %}
 
 ## 检查USB驱动
-首先设置VIMs进入升级模式([VIM1](/linux/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/linux/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/linux/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))，然后检查USB驱动：
+首先设置VIMs进入升级模式([VIM1](/linux/zh-cn/vim1/BootIntoUpgradeMode.html)/[VIM2](/linux/zh-cn/vim2/BootIntoUpgradeMode.html)/[VIM3](/linux/zh-cn/vim3/BootIntoUpgradeMode.html))，然后检查USB驱动：
 
 ```bash
 $ lsusb | grep Amlogic

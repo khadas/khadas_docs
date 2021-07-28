@@ -7,7 +7,7 @@ title: Hardware Decoding
 
 ## Upgrade Systm to Latest
 
-Please make sure you use the latest image, if not please follow [How To Upgrade The System](/linux/im1/HowToUpgradeTheSystem.html) to upgrade your system.
+Please make sure you use the latest image, if not please follow [How To Upgrade The System](/linux/im1/UpgradeSystem.html) to upgrade your system.
 
 ## Hardware Decoding just For Display
 

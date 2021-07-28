@@ -75,7 +75,7 @@ GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:
 
 This approach is suitable for all products that use the Amlogic SoC:
 
-* Carry out normal upgrading via USB-C Cable([VIM1](/linux/vim1/UpgradeViaUSBCable.html)/[VIM2](/linux/vim2/UpgradeViaUSBCable.html)/[VIM3](/linux/vim3/UpgradeViaUSBCable.html)) or TF Card([VIM1](/linux/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/linux/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/linux/vim3/UpgradeViaTFBurningCard.html)).
+* Carry out normal upgrading via USB-C Cable([VIM1](/linux/vim1/InstallOsIntoEmmc.html)/[VIM2](/linux/vim2/InstallOsIntoEmmc.html)/[VIM3](/linux/vim3/InstallOsIntoEmmc.html)) or TF Card([VIM1](/linux/vim1/InstallOsIntoSdusb.html)/[VIM2](/linux/vim2/InstallOsIntoSdusb.html)/[VIM3](/linux/vim3/InstallOsIntoSdusb.html)).
 * Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
 * Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
 

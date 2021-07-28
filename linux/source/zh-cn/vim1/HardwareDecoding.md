@@ -6,7 +6,7 @@ title: 硬件解码
 
 ## 更新系统到最新版本
 
-请确保你使用的是最新的固件，如果不是请参考[如何升级系统](/linux/zh-cn/vim1/HowToUpgradeTheSystem.html)进行升级。
+请确保你使用的是最新的固件，如果不是请参考[如何升级系统](/linux/zh-cn/vim1/UpgradeSystem.html)进行升级。
 
 ## 硬件解码和显示
 

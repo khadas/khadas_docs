@@ -1,7 +1,7 @@
 title: 创建系统烧录卡
 ---
 
-本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式创建烧录卡([VIM1](/linux/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/linux/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/linux/zh-cn/vim3/UpgradeViaTFBurningCard.html))。
+本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式创建烧录卡([VIM1](/linux/zh-cn/vim1/CreateBootableSDCard.html)/[VIM2](/linux/zh-cn/vim2/CreateBootableSDCard.html)/[VIM3](/linux/zh-cn/vim3/CreateBootableSDCard.html))。
 
 {% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
 
@@ -117,9 +117,6 @@ $ sudo eject /dev/sdX
 
 ## 通过TF烧录卡升级固件
 1. 把制作好的烧录卡插入VIM/VIM2设备中，然后上电。
-2. 参考文档([VIM1](/linux/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/linux/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/linux/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))进入升级模式。
+2. 参考文档([VIM1](/linux/zh-cn/vim1/BootIntoUpgradeMode.html)/[VIM2](/linux/zh-cn/vim2/BootIntoUpgradeMode.html)/[VIM3](/linux/zh-cn/vim3/BootIntoUpgradeMode.html))进入升级模式。
 3. 等待升级完成。
-
-## 更多资料
-* 启动卡VS烧录卡([VIM1](/linux/zh-cn/vim1/BootingCardVsBurningCard.html)/[VIM2](/linux/zh-cn/vim2/BootingCardVsBurningCard.html)/[VIM3](/linux/zh-cn/vim3/BootingCardVsBurningCard.html))
 

@@ -124,6 +124,3 @@ Done!
 2. Follow this guide([VIM1](/linux/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/linux/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/linux/vim3/HowtoBootIntoUpgradeMode.html)) to boot into Upgrade Mode.
 3. Wait till the process completes.
 
-## Further Reading:
-* Booting_Card Vs Burning Card([VIM1](/linux/vim1/BootingCardVsBurningCard.html)/[VIM2](/linux/vim2/BootingCardVsBurningCard.html)/[VIM3](/linux/vim3/BootingCardVsBurningCard.html))
-

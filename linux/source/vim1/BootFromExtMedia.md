@@ -51,7 +51,7 @@ No need to setup the dtb file, just skip this step.
 ## Boot from SD/USB Storage
 There are several ways to boot (activate multi-boot) from the SD card / Thumbdrive:
 
-* Via [Keys mode (Side-Buttons)](/linux/vim1/HowtoBootIntoUpgradeMode.html) - the easiest and fastest way
+* Via [Keys mode (Side-Buttons)](/linux/vim1/BootIntoUpgradeMode.html) - the easiest and fastest way
 
 * Via Android
 

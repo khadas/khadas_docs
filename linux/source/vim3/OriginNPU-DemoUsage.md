@@ -3,7 +3,7 @@ title: How to run NPU Demo on VIM3
 
 {% note warn Note %}
 
-Please follow this [docs](/linux/vim3/HowToUpgradeTheSystem.html) to upgrade the system to latest version before run any NPU demos.
+Please follow this [docs](/linux/vim3/UpgradeSystem.html) to upgrade the system to latest version before run any NPU demos.
 
 {% endnote %}
 

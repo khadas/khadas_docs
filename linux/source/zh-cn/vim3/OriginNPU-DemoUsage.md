@@ -3,7 +3,7 @@ title: 如何在VIM3上面运行 NPU Demo
 
 {% note warn 注意 %}
 
-在运行NPU Demo前请先参考[文档](/linux/zh-cn/vim3/HowToUpgradeTheSystem.html)升级系统到最新版本。
+在运行NPU Demo前请先参考[文档](/linux/zh-cn/vim3/UpgradeSystem.html)升级系统到最新版本。
 
 {% endnote %}
 

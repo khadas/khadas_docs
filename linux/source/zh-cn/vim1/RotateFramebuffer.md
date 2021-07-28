@@ -58,4 +58,4 @@ root@Khadas:/home/khadas# cat /sys/class/graphics/fbcon/rotate
 
 ## 通过配置文件
 
-参考这篇文档设置 --> [Framebuffer旋转设置](/linux/zh-cn/vim3/SystemConfigureUsage#Framebuffer旋转设置)
+参考这篇文档设置 --> [Framebuffer旋转设置](/linux/zh-cn/vim3/SystemConfigFile#Framebuffer旋转设置)

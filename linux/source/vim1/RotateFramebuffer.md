@@ -55,5 +55,5 @@ The modification will be lost after a power cycle, if you want to save it you ca
 
 ## Via Configuration File
 
-Follow this Guide to setup --> [Framebuffer Rotate](/linux/vim3/SystemConfigureUsage#Framebuffer-Rotate)
+Follow this Guide to setup --> [Framebuffer Rotate](/linux/vim3/SystemConfigFile#Framebuffer-Rotate)
 
