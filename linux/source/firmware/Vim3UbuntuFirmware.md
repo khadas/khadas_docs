@@ -1,7 +1,7 @@
 title: Khadas VIM3 Ubuntu Firmware
 ---
 
-Check [Release Note](/linux/firmware/Vim3UbuntuFirmwareReleaseNote.html).
+Check [Release Note](/firmware/Vim3UbuntuFirmwareReleaseNote.html).
 
 ## Linux 4.9 Images
 
@@ -34,22 +34,22 @@ VIM3 Only support **Ubuntu 20.04** for Linux 4.9.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc" role="tabpanel" aria-labelledby="emmc-tab">
 
-* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)(Latest release)
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V1.0.7-210625.img.xz)
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)
 ---
 **Deprecated:**
-* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
-* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190830.7z)
-* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190813](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20190813.7z)
+* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/old/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd" role="tabpanel" aria-labelledby="sd-tab">
 
-* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V1.0.7-210625.img.xz)
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
+* [VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)
 ---
 **Deprecated:**
-* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
-* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190830.7z)
-* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190813](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20190813.7z)
+* [VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/old/VIM3_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
 </div>
 </div>
@@ -68,22 +68,22 @@ VIM3 Only support **Ubuntu 20.04** for Linux 4.9.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
-* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)(Latest release)
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V1.0.7-210625.img.xz)
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_EMMC_V0.9-20200530.7z)
 ---
 **Deprecated:**
-* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
-* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190830.7z)
-* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190813](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20190813.7z)
+* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/old/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
 
 </div>
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
-* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V1.0.7-210625.img.xz)
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
+* [VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-4.9_arm64_SD-USB_V0.9-20200530.7z)
 ---
 **Deprecated:**
-* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
-* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190830.7z)
-* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190813](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20190813.7z)
+* [VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/old/VIM3_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
 
 </div>
 </div>
@@ -117,20 +117,14 @@ VIM3 Only support **Ubuntu 20.04** for Mainline Linux.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="server2" role="tabpanel" aria-labelledby="server2-tab">
 
-* [VIM3_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
----
-**Deprecated:**
-* [VIM3_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.2-20200103](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.2-20200103.7z)
-* [VIM3_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830.7z)
+* [VIM3_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
+* [VIM3_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 
 </div>
 <div class="tab-pane fade show" id="desktop2" role="tabpanel" aria-labelledby="desktop2-tab">
 
-* [VIM3_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)(Latest release)
----
-**Deprecated:**
-* [VIM3_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.2-20200103](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-xfce-bionic_Linux-5.5-rc2_arm64_SD-USB_V0.8.2-20200103.7z)
-* [VIM3_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-xfce-bionic_Linux-5.3-rc4_arm64_SD-USB_V20190830.7z)
+* [VIM3_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
+* [VIM3_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/VIM3_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 
 </div>
 </div>
@@ -138,13 +132,13 @@ VIM3 Only support **Ubuntu 20.04** for Mainline Linux.
 {% note warn EMMC Installation %}
 
 **Images used to be flashed to onboard eMMC via Amlogic USB Burning Tool.**
-Check [Upgrade Via USB Cable Documentation](/linux/vim1/UpgradeViaUSBCable.html).
+Check [Upgrade Via USB Cable Documentation](/vim1/UpgradeViaUSBCable.html).
 
 {% endnote %}
 
 {% note warn SD/USB Installation %}
 
 **Images used to be flashed to SD/USB storage.**
-Check [Boot From Ext Media Documentation](/linux/vim1/BootFromExtMedia.html).
-Check [Write SD Image To eMMC](/linux/vim1/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC.
+Check [Boot From Ext Media Documentation](/vim1/BootFromExtMedia.html).
+Check [Write SD Image To eMMC](/vim1/HowToWriteSDImageToEmmc.html) to write the image to onboard eMMC.
 {% endnote %}
