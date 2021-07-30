@@ -1,19 +1,45 @@
-title: HIDM Resolution
+title: Setup HDMI Resolution
 ---
 
-This document will introduce how to setting HDMI resolution.
-
-{% note info Only for Linux 4.9 image. %}
+{% note info Only for Linux 4.9 image, mainline kernel image can use a more common way! %}
 
 {% endnote %}
 
-### Find `HDMI Resolution` application in the list of system applications.
+Tere are 2 ways to set the HDMI resolution:
+
+* Setup via configuration file
+* Setup via desktop application (**Only for desktop image**)
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="file-tab" data-toggle="tab" href="#file" role="tab" aria-controls="file" aria-selected="true">Configuration File</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="app-tab" data-toggle="tab" href="#app" role="tab" aria-controls="app" aria-selected="false">Application (Only for Desktop)</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="file" role="tabpanel" aria-labelledby="file-tab">
+
+Edit file `/boot/env.txt` to setup the resolution. 
+
+* Set `hdmi_autodetect=no`
+* Set `hdmi` node, e.g. `hdmi=1080p60hz`
+* Save the file
+
+Reboot to take effect.
+
+</div>
+<div class="tab-pane fade show" id="app" role="tabpanel" aria-labelledby="app-tab">
+
+* Find `HDMI Resolution` application in the list of system applications.
 
 ![gnome-HDMI-application](/linux/images/vim1/gnome-HDMI-application.png)
 
-### Click to open it.
+* Click to open it.
 
-### Select resolution.
+* Select resolution.
 
 ![gnome-HDMI-setting](/linux/images/vim1/gnome-HDMI-setting.png)
 
@@ -22,10 +48,3 @@ Choose a resolution you want, then click `OK`,
 ![gnome-HDMI-save](/linux/images/vim1/gnome-HDMI-save.png)
 
 The system will automatically log out and the resolution setting will take effect.
-
-{% note info Note %}
-
-Server firmware or those who want to set the resolution through the command line can refer to: [Set HDMI resolution through the system configuration file](/linux/vim3/SystemConfigureUsage#HDMI-Setting)
-
-{% endnote %}
-

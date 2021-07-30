@@ -1,4 +1,4 @@
-title: 如何使用GPIO中断
+title: GPIO中断
 ---
 
 ## 切换root用户
