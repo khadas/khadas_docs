@@ -1,4 +1,4 @@
-title: GPIO IRQ Usage
+title: GPIO IRQ
 ---
 
 ## Switch to root user
