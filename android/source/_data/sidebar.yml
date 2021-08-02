@@ -12,7 +12,7 @@ vim1:
       how_to_use_adb_tool: ADBTool.html
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
-      how_to_access_i2c: HowToAccessI2c.html
+      how_to_access_i2c: AccessI2c.html
   development:
     uboot:
       uboot_usage: UBootUsage.html
@@ -45,7 +45,7 @@ vim2:
       how_to_use_adb_tool: ADBTool.html
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
-      how_to_access_i2c: HowToAccessI2c.html
+      how_to_access_i2c: AccessI2c.html
       howto_use_wol: HowtoUseWol.html
       force_reset_features: ForceResetFeatures.html
   development:
@@ -90,7 +90,7 @@ vim3:
       how_to_use_lte_module: HowToUseLTEModule.html
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
-      how_to_access_i2c: HowToAccessI2c_android.html
+      how_to_access_i2c: AccessI2c_android.html
       howto_use_wol: HowtoUseWol.html
       how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
       how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html

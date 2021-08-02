@@ -1,14 +1,14 @@
-title: 如何使用I2C接口
+title: I2C Access Usage
 ---
 
 
-这篇文档介绍如何在Android下使用I2C。
+This guide is about how to access i2c on Android.
 
-## 前提条件
+## Preconditions
 
-* `Android V180619`或更新版本
+* `Android V180619` or newer
 
-## 连线
+## Connections
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -28,12 +28,12 @@ title: 如何使用I2C接口
 `Sensor SCL` <-> `I2C_SCK_A (PIN 22)`
 `Sensor SDA` <-> `I2C_SDA_A (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 **I2C B**
 `Sensor SCL` <-> `I2C_SCK_B (PIN 25)`
 `Sensor SDA` <-> `I2C_SDA_B (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 </div>
 <div class="tab-pane fade" id="vim2-pins" role="tabpanel" aria-labelledby="vim2-tab">
 
@@ -41,12 +41,12 @@ title: 如何使用I2C接口
 `Sensor SCL` <-> `I2C_SCK_A (PIN 22)`
 `Sensor SDA` <-> `I2C_SDA_A (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 **I2C B**
 `Sensor SCL` <-> `I2C_SCK_B (PIN 25)`
 `Sensor SDA` <-> `I2C_SDA_B (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 </div>
 <div class="tab-pane fade" id="vim3-pins" role="tabpanel" aria-labelledby="vim3-tab">
 
@@ -54,16 +54,16 @@ title: 如何使用I2C接口
 `Sensor SCL` <-> `I2C0_SCK (PIN 22)`
 `Sensor SDA` <-> `I2C0_SDA (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 **I2C 4**
 `Sensor SCL` <-> `I2C1_SCK (PIN 25)`
 `Sensor SDA` <-> `I2C1_SDA (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 </div>
 </div>
 
-## 检测设备
+## Detect the device
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -174,27 +174,27 @@ Detect device on `I2C 4`:
 </div>
 </div>
 
-如果连线正确并且所接传感器是正常的那么你会看到所接设备的地址，如：`0x1d`,`0x18` and `0x51`。
+If you have the right connection you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
 
-{% note warn 注意 %}
-	
-执行这些命令需要root权限。
+{% note warn Note %}
+
+Root privileges required.
 
 {% endnote %}
 
-## 从设备读取寄存器值
+## Read register from device
 
-从挂载在`I2C A`上设备地址为`0x1d`的设备读取寄存器`0x0d`的值。
+Read register `0x0d` of device `0x1d` on `I2C A`.
 
 ```bash
 # i2cget -f -y 1 0x1d 0x0d
 0x2a
 ```
 
-{% note warn 注意 %}
+{% note warn Note %}
 
-注意: 执行命令需要root权限。
+Note: Root privileges required.
 
 {% endnote %}
 
-更多用法请参考i2c工具帮助信息。
+For more, please refer to the help messages.
