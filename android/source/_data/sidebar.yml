@@ -46,7 +46,7 @@ vim2:
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: AccessI2c.html
-      howto_use_wol: HowtoUseWol.html
+      howto_use_wol: Wol.html
       force_reset_features: ForceResetFeatures.html
   development:
     uboot:
@@ -91,7 +91,7 @@ vim3:
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: AccessI2c_android.html
-      howto_use_wol: HowtoUseWol.html
+      howto_use_wol: Wol.html
       how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
       how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
       how_to_use_uart_android: HowToUseUart_android.html
@@ -139,7 +139,7 @@ edge:
       how_to_use_lte_module: HowToUseLTEModule.html
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
-      howto_use_wol: HowtoUseWol.html
+      howto_use_wol: Wol.html
   development:
     rk_docs: RockchipDocs.html
     uboot:

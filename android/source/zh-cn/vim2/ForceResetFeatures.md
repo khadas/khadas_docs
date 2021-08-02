@@ -3,7 +3,7 @@ title: 远程强制复位
 
 ## 简介
 VIM2板载一颗可编程的MCU(STM8S003F3U6)，所以可以实现很多特性，如：
-* [WOL: Wake-on-Lan](/android/zh-cn/vim2/HowtoUseWol.html)
+* [WOL: Wake-on-Lan](/android/zh-cn/vim2/Wol.html)
 * 启动介质设置: 从eMMC或SPI-Flash启动
 * IR遥控电源设置
 * 定时器电源设置

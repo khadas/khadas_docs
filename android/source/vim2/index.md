@@ -27,7 +27,7 @@ title: VIM2 Beginners Guide
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 2.0 speed, 500mA max output|
-|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](/android/vim2/HowtoUseWol.html)|
+|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](/android/vim2/Wol.html)|
 |3|HDMI|HDMI 2.0a with CEC, 4K@60Hz|
 |4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/android/vim2/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0 speed, 900mA max output|

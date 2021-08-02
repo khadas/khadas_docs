@@ -27,7 +27,7 @@ title: VIM2 文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 2.0接口,最大输出电流500mA|
-|2|RJ-45|有[WOL功能](/android/zh-cn/vim2/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/android/zh-cn/vim2/Wol.html)的Gigabit网口|
 |3|HDMI|支持3D,HDR,CEC以及HDCP2.2的HDMI接口|
 |4|USB-C|USB2.0 OTG接口,[5V输出](https://www.khadas.com/pr/oduct-page/power-adapter),[可用于升级固件](/android/zh-cn/vim2/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0接口,最大输出电流900mA|

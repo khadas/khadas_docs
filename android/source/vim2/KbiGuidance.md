@@ -166,7 +166,7 @@ kvim2# kbi trigger wol w 0
 set_wol: 0
 ```
 ## See also
-[WOL setup and usage](/android/vim2/HowtoUseWol.html).
+[WOL setup and usage](/android/vim2/Wol.html).
 [Edge-V MCU Register Map](https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_EN.pdf)
 [VIM2 MCU Register Map](https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_EN.pdf)
 [VIM3 MCU Register Map](https://dl.khadas.com/Hardware/VIM3/MCU/VIM3_MCU_REG_EN.pdf)

@@ -1,4 +1,4 @@
-title: How To Use WOL
+title:  WOL Usage
 ---
 
 Wake-On-LAN (WOL) is a protocol standard that allows your PC/Smartphone to turn on a computer via your local network or the Internet.

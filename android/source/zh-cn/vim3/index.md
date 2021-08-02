@@ -28,7 +28,7 @@ title: VIM3 相关文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0接口,最大输出电流900mA,PCIE被激活时,这个口降为2.0|
-|2|RJ-45|有[WOL功能](/android/zh-cn/vim3/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/android/zh-cn/vim3/Wol.html)的Gigabit网口|
 |3|HDMI|支持3D,HDR,CEC以及HDCP2.2的HDMI接口|
 |4|USB-C|USB2.0 OTG接口,接受[5V](https://www.khadas.com/product-page/power-adapter)到[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的输入,[可用于升级固件](/android/zh-cn/vim3/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0接口,最大输出电流500mA|
@@ -142,7 +142,7 @@ Linux_TX|19|39|GPIODZ_15
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0接口,最大输出电流900mA,PCIE被激活时,这个口降为2.0|
-|2|RJ-45|有[WOL功能](/android/zh-cn/vim3/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/android/zh-cn/vim3/Wol.html)的Gigabit网口|
 |3|HDMI|支持3D,HDR,CEC以及HDCP2.2的HDMI接口|
 |4|USB-C|USB2.0 OTG接口,接受[5V](https://www.khadas.com/product-page/power-adapter)到[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的输入,[可用于升级固件](/android/zh-cn/vim3/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0接口,最大输出电流500mA|

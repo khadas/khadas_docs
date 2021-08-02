@@ -105,7 +105,7 @@ title: Edge文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0, 蓝色接口|
-|2|RJ-45|有[WOL功能](/android/zh-cn/edge/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/android/zh-cn/edge/Wol.html)的Gigabit网口|
 |3|HDMI 2.0|支持4K@60Hz, HDCP 2.2的HDMI接口|
 |4||USB-C|USB 3.0,5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的DP输入, 同时可用于[升级系统](/android/zh-cn/edge/UpgradeViaUSBCable.html)|
 |5|USB-A|USB 2.0, 黑色接口|
@@ -217,7 +217,7 @@ Linux_TX|19|39|MCU_PA1
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|RK3399 SoC散热器|用于减少热量集中的金属层|
-|2|RJ-45|有[WOL功能](/android/zh-cn/edge/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/android/zh-cn/edge/Wol.html)的Gigabit网口|
 |3|[40脚GPIO座子](/android/zh-cn/edge/CaptainGPIOPinout.html)|学习[连接GPIO](/android/zh-cn/edge/AccessGpio.html)
 |4|RTC电池座子|硬件时钟芯片供电电池座子|
 |5|Reset按键|用于强制重启板子,按下会直接复位|

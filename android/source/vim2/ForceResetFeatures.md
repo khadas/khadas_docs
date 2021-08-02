@@ -3,7 +3,7 @@ title: Force Reset Remotely
 
 ## Introduction
 Your VIM is equipped with a programmable MCU(STM8S003F3U6), this allows it to support more features:
-* [WOL: Wake-On-Lan](/android/vim2/HowtoUseWol.html)
+* [WOL: Wake-On-Lan](/android/vim2/Wol.html)
 * Boot Media Setup: Boot from eMMC or SPI-Flash
 * IR Remote Power On/Off
 * Timer Power On/Off
