@@ -33,7 +33,7 @@ title: VIM1 文档
 |5|USB-A|USB 2.0接口,最大输出电流900mA|
 |6|风扇座子|PWM控制的4线制风扇|
 |7|reset按键|用于强制重启板子,按下会直接复位|
-|8|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
+|8|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)或从外部介质启动|
 |9|power按键|用于关机或者配合其他按键使用|
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|RTC电池接口|硬件时钟电池的接口|
@@ -48,7 +48,7 @@ title: VIM1 文档
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V电压输出|
 |2|[SD卡插座](/android/zh-cn/vim1/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
-|3|M寄存器触点|[强制进入MaskROM模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
+|3|M寄存器触点|[强制进入MaskROM模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)|
 |4|XPWR焊盘|用于连接使用外部电源|
 </div>
 <div class="tab-pane fade" id="button-vim1" role="tabpanel" aria-labelledby="button-tab">
@@ -56,9 +56,9 @@ title: VIM1 文档
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM1|
-||x||[进入升级模式(TST模式)](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
+||x||[进入升级模式(TST模式)](/android/zh-cn/vim1/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM1|
-|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim1/BootIntoUpgradeMode.html)|
 |x|x|x|[清除EMMC](/android/zh-cn/vim1/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
@@ -171,7 +171,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [启动卡与烧录卡的比较](/android/zh-cn/vim1/BootingCardVsBurningCard.html)
 [通过TF卡升级安卓](/android/zh-cn/vim1/UpgradeViaTFBurningCard.html)
 [从外部媒体介质启动系统](/android/zh-cn/vim1/BootFromExtMedia.html)
-[如何进入升级模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
+[如何进入升级模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)
 
 {% note warn 提示 %}
 
@@ -189,7 +189,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 
 **更多：**
 * [通过USB升级固件](/android/zh-cn/vim1/UpgradeViaUSBCable.html)
-* [进入升级模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
+* [进入升级模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)
 
 **固件**
 * [安卓固件](/android/zh-cn/vim1/FirmwareAndroid.html)
@@ -218,7 +218,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 2. USB串行调试工具（用于诊断软件/硬件问题）
 
 **更多:**
-* [升级模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
+* [升级模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)
 * [亚马逊－金属镊子](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [亚马逊-USB调试工具](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

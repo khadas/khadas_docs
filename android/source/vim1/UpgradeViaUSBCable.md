@@ -111,7 +111,7 @@ Root privilege required.
 
 ## Check The USB Driver
 
-You must now place your VIM board into "Upgrade Mode".See [VIM1](/android/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/android/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/android/vim3/HowtoBootIntoUpgradeMode.html) to enter Upgrade Mode.
+You must now place your VIM board into "Upgrade Mode".See [VIM1](/android/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/vim3/BootIntoUpgradeMode.html) to enter Upgrade Mode.
 Check to see if Ubuntu has detected your VIM1/VIM2 as a connected USB-device.
 
 ```bash
@@ -177,5 +177,5 @@ $ sudo ./UNINSTALL
 
 ## See Also
 * [Upgrade Via An SD-Card](/android/vim1/UpgradeViaTFBurningCard.html)
-* [How To Boot Into Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
+* [How To Boot Into Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
 

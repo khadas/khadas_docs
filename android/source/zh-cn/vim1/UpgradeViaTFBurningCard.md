@@ -51,8 +51,8 @@ title: 通过TF卡升级固件
 
 ## 更多资料
  * [通过USB-C数据线](/android/zh-cn/vim1/UpgradeViaUSBCable.html)
- * [VIM1怎样进入升级模式](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)
- * [VIM2怎样进入升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
- * [VIM3怎样进入升级模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)
+ * [VIM1怎样进入升级模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)
+ * [VIM2怎样进入升级模式](/android/zh-cn/vim2/BootIntoUpgradeMode.html)
+ * [VIM3怎样进入升级模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)
 
 

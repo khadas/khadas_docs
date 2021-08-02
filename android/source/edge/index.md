@@ -30,7 +30,7 @@ title: Edge Beginners Guide
 |5|USB-A|USB 2.0 speeds|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your Edge in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/edge/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge|
 |A|314-Pin Gold Fingers|For docking with expansion boards such as the [Captain](https://www.khadas.com/product-page/captain-carrier-board)|
 |B|I-Pex [Wi-Fi](/android/edge/HowToConnectWifi.html) / Bluetooth Connector|Connect Wi-Fi / Bluetooth antennas|
@@ -47,7 +47,7 @@ title: Edge Beginners Guide
 |4|M2x4 Mounting Point|For mounting a [heatsink](https://www.khadas.com/product-page/edge-heatsink) or [carrier board](https://www.khadas.com/product-page/captain-carrier-board)|
 |5|FPC Connector B|10-Pins, 0.5mm Pitch, USB, I2S(8ch), I2C, MCU IOs|
 |6|FPC Connector A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/edge-io)|
-|7|M-Register|Allows the EMMC to [enter MaskROM mode](/android/edge/HowtoBootIntoUpgradeMode.html)|
+|7|M-Register|Allows the EMMC to [enter MaskROM mode](/android/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edge" role="tabpanel" aria-labelledby="button-tab">
@@ -55,9 +55,9 @@ title: Edge Beginners Guide
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot Edge|
-||x||[Enter Upgrade Mode (TST)](/android/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/android/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[Enter Upgrade Mode (KEYS)](/android/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/android/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edge" role="tabpanel" aria-labelledby="led-tab">
@@ -108,7 +108,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |5|USB-A|USB 2.0, black colour|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your Edge-V in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/edge/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge-V|
 |A|RTC Battery Header|Header for attaching a battery for the real time clock|
 |B|[40-Pin GPIO](/android/edge/EdgeVGPIOPinout.html)|Learn how to access GPIO [here](/android/edge/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
@@ -133,7 +133,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |8|MIPI-TX|MIPI-DSI header for connecting [LCD screens](/android/edge/ConnectLcd.html)|
 |9|MIPI-RX|For connecting to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |A|MIPI-RX/TX|Configurable, connect to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera) or MIPI-DSI displays|
-|B|M-Register|Another way for entering [upgrade mode](/android/edge/HowtoBootIntoUpgradeMode.html)|
+|B|M-Register|Another way for entering [upgrade mode](/android/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edgev" role="tabpanel" aria-labelledby="button-tab">
@@ -141,9 +141,9 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot Edge-V|
-||x||[Enter Upgrade Mode (TST)](/android/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/android/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge-V|
-|x||x|[Enter Upgrade Mode (KEYS)](/android/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/android/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edgev" role="tabpanel" aria-labelledby="led-tab">
@@ -232,7 +232,7 @@ Linux_TX|19|39|MCU_PA1
 |H|MIPI-RX/TX|Configurable MIPI-CSI/DSI header|
 |I|MIPI-RX|For connecting to [MIPI-CSI cameras](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |J|3.5mm Audio Jack|Audio output, works with the [Kap Case](https://www.khadas.com/product-page/kap-case)|
-|K|Function Button|For entering [upgrade mode](/android/edge/HowtoBootIntoUpgradeMode.html)|
+|K|Function Button|For entering [upgrade mode](/android/edge/BootIntoUpgradeMode.html)|
 |L|Microphone|Audio input|
 |M|MXM3 Connector|For docking with the [Edge](https://www.khadas.com/product-page/edge)|
 |N|[Wi-Fi](/android/edge/HowToConnectWifi.html) / [Bluetooth](/android/edge/HowToSetupBluetooth.html) Chip Antenna|Wi-Fi and BT antenna|
@@ -258,7 +258,7 @@ Linux_TX|19|39|MCU_PA1
 |Reset|Function|Left Gamepad|Right Gamepad|Left Function|Right Function|Purpose|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---|
 |x||||||Force reboot Edge+Captain if the system freezes|
-||x|||||[Enter Upgrade Mode (TST)](/android/edge/HowtoBootIntoUpgradeMode.html)|
+||x|||||[Enter Upgrade Mode (TST)](/android/edge/BootIntoUpgradeMode.html)|
 |||x||||User programmable button|
 ||||x|||User programmable button|
 |||||x||User programmable button|
@@ -369,7 +369,7 @@ These items are useful when you want to upgrade your Edge SBC's operating system
 * [Booting Card Vs Burning Card](/android/edge/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/android/edge/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/android/vim2/BootFromExtMedia.html)
-* [Enter Upgrade Mode](/android/edge/HowtoBootIntoUpgradeMode.html)
+* [Enter Upgrade Mode](/android/edge/BootIntoUpgradeMode.html)
 
 {% note info Tip %}
 * **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
@@ -386,7 +386,7 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 
 **Learn More:**
 * [Upgrade Using USB-C Cable](/android/edge/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](/android/edge/HowtoBootIntoUpgradeMode.html)
+* [Boot Into Upgrade Mode](/android/edge/BootIntoUpgradeMode.html)
 
 **Firmware Images:**
 * [Android OS](/android/edge/FirmwareAndroid.html)
@@ -410,8 +410,8 @@ These items are useful if you wish to use your Edge-V or Edge+Captain SBC as a m
 3. USB Serial Debug Tool (For diagnosing software/hardware issues)
 
 **Learn More:**
-* [Terry's Smart Tweezers](/android/edge/HowtoBootIntoUpgradeMode.html)
-* [MRegister Upgrade Mode](/android/edge/HowtoBootIntoUpgradeMode.html)
+* [Terry's Smart Tweezers](/android/edge/BootIntoUpgradeMode.html)
+* [MRegister Upgrade Mode](/android/edge/BootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

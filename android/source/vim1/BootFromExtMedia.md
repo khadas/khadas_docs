@@ -61,7 +61,7 @@ You need to select the appropriate DTB file.
 ## Step 3. Boot VIMs from SD card or Thumbdrive
 There are several ways to boot (activate multi-boot) from the SD card / Thumbdrive:
 
-* Via [Keys mode (Side-Buttons)](/android/vim1/HowtoBootIntoUpgradeMode.html) - the easiest and fastest way
+* Via [Keys mode (Side-Buttons)](/android/vim1/BootIntoUpgradeMode.html) - the easiest and fastest way
 
 * Via Android
 

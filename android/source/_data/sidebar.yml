@@ -3,13 +3,13 @@ vim1:
     overview: index.html
     vim1_interfaces: Interfaces.html
     add_chinese_support: AddChineseSupport.html
-    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
   rescures_control:
     system_control:
-      how_to_use_adb_tool: HowToUseADBTool.html
+      how_to_use_adb_tool: ADBTool.html
     board_rescoures:
       how_to_access_gpio: HowToAccessGpio.html
       how_to_access_i2c: HowToAccessI2c.html
@@ -36,13 +36,13 @@ vim2:
     overview: index.html
     vim2_interfaces: Interfaces.html
     add_chinese_support: AddChineseSupport.html
-    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
   rescures_control:
     system_control:
-      how_to_use_adb_tool: HowToUseADBTool.html
+      how_to_use_adb_tool: ADBTool.html
     board_rescoures:
       how_to_access_gpio: HowToAccessGpio.html
       how_to_access_i2c: HowToAccessI2c.html
@@ -71,13 +71,13 @@ vim3:
     overview: index.html
     vim3_interfaces: Interfaces.html
     add_chinese_support: AddChineseSupport.html
-    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
     boot_from_ext_image: BootFromExtMedia.html
   rescures_control:
     system_control:
-      how_to_use_adb_tool: HowToUseADBTool.html
+      how_to_use_adb_tool: ADBTool.html
       how_to_change_logo_android: HowToChangeBootLogo_android.html
       how_to_change_animation: HowToChangeBootAnimation_android.html
       how_to_app_platform_sign: HowToAppPlatformSign.html
@@ -128,12 +128,12 @@ edge:
     edgev_interfaces: EdgeVInterfaces.html
     edgecaptain_power_priority: EdgeCaptainPowerPriority.html
     add_chinese_support: AddChineseSupport.html
-    enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
+    enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
   rescures_control:
     system_control:
-      how_to_use_adb_tool: HowToUseADBTool.html
+      how_to_use_adb_tool: ADBTool.html
     accessories:
       connect_lcd: ConnectLcd.html
       how_to_use_lte_module: HowToUseLTEModule.html

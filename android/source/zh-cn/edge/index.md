@@ -31,7 +31,7 @@ title: Edge文档
 |5|USB-A|USB 2.0 speeds|
 |6|风扇座子|4针的[风扇](https://www.khadas.com/product-page/3705-cooling-fan)座子接口|
 |7|Reset按键|用于强制重启板子,按下会直接复位|
-|8|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |9|Power按键|用于关机或者配合其他按键使用|
 |A|314针的金手指|用于与[Captain](https://www.khadas.com/product-page/captain-carrier-board)等扩展板对接|
 |B|I-Pex天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
@@ -48,7 +48,7 @@ title: Edge文档
 |4|4个M2插孔|用于[散热器](https://www.khadas.com/product-page/edge-heatsink)和[DIY外壳](https://www.khadas.com/product-page/captain-carrier-board)|
 |5|FPC座子B|10-Pins, 0.5mm Pitch, USB, I2S(8ch), I2C, MCU IOs|
 |6|FPC座子A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/edge-io)|
-|7|M寄存器|强制板子进入[MaskROM模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|7|M寄存器|强制板子进入[MaskROM模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edge" role="tabpanel" aria-labelledby="button-tab">
@@ -56,9 +56,9 @@ title: Edge文档
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子|
-||x||[进入TST模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edge" role="tabpanel" aria-labelledby="led-tab">
@@ -111,7 +111,7 @@ title: Edge文档
 |5|USB-A|USB 2.0, 黑色接口|
 |6|风扇座子|4针的[风扇](https://www.khadas.com/product-page/3705-cooling-fan)座子接口|
 |7|Reset按键|用于强制重启板子,按下会直接复位|
-|8|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |9|Power按键|用于关机或者配合其他按键使用|
 |A|RTC电池座子|硬件时钟芯片供电电池座子|
 |B|[40脚GPIO座子](/android/zh-cn/edge/EdgeVGPIOPinout.html)|学习[连接GPIO](/android/zh-cn/edge/HowToAccessGpio.html), 或者如何连接[Toneboard](https://www.khadas.com/product-page/tone-board)|
@@ -136,7 +136,7 @@ title: Edge文档
 |8|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/android/zh-cn/edge/ConnectLcd.html)|
 |9|MIPI-RX|用于连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |A|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
-|B||M寄存器|强制板子进入[MaskROM模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|B||M寄存器|强制板子进入[MaskROM模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edgev" role="tabpanel" aria-labelledby="button-tab">
@@ -144,9 +144,9 @@ title: Edge文档
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子| 
-||x||[进入TST模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edgev" role="tabpanel" aria-labelledby="led-tab">
@@ -235,7 +235,7 @@ Linux_TX|19|39|MCU_PA1
 |H|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
 |I|MIPI-RX|用于连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |J|3.5mm 耳机孔|与[Kap Case](https://www.khadas.com/product-page/kap-case)搭配使用|
-|K|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|K|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |L|麦克风|音频输入|
 |M|MXM3连接器|用于连接[Edge](https://www.khadas.com/product-page/edge)|
 |N|天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
@@ -261,9 +261,9 @@ Linux_TX|19|39|MCU_PA1
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子|
-||x||[进入TST模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-captain" role="tabpanel" aria-labelledby="led-tab">
@@ -370,7 +370,7 @@ Linux_TX|19|39|MCU_PA1
 **更多:**
 * [使用SD卡升级](/android/zh-cn/edge/UpgradeViaTFBurningCard.html)
 * [从外部介质启动](/android/zh-cn/vim2/BootFromExtMedia.html)
-* [进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
+* [进入升级模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)
 
 {% note info 提示 %}
 * **eMMC映像**应该使用USB-C数据线从Ubuntu或Windows主机直接刻录到eMMC。 请勿将其刻录到SD卡中。 例如：包含`EMMC`标记的Android和Ubuntu发行版。
@@ -387,7 +387,7 @@ Linux_TX|19|39|MCU_PA1
 
 **更多:**
 * [通过USBC升级系统](/android/zh-cn/edge/UpgradeViaUSBCable.html)
-* [进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
+* [进入升级模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)
 
 **固件:**
 * [Android OS](/zh-cn/firmware/EdgeFirmware.html#android)
@@ -411,8 +411,8 @@ Linux_TX|19|39|MCU_PA1
 3. USB串行调试工具(用于诊断软件/硬件问题)
 
 **更多:**
-* [Terry's Smart Tweezers](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
-* [如何进入升级模式](/android/zh-cn/edge/HowtoBootIntoUpgradeMode.html)
+* [Terry's Smart Tweezers](/android/zh-cn/edge/BootIntoUpgradeMode.html)
+* [如何进入升级模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - 串口调试工具](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

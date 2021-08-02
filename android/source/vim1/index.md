@@ -33,7 +33,7 @@ title: VIM1 Beginners Guide
 |5|USB-A|USB 2.0 speed, 900mA max output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM1 in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim1/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim1/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM1|
 |A|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|RTC Battery Header|Header for attaching a battery for the real time clock|
@@ -48,7 +48,7 @@ title: VIM1 Beginners Guide
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V power input|
 |2|[Micro-SD Card Slot](/android/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card, and for extra storage|
-|3|M-Register|Allows the EMMC to [enter MaskROM mode](/android/vim1/HowtoBootIntoUpgradeMode.html)|
+|3|M-Register|Allows the EMMC to [enter MaskROM mode](/android/vim1/BootIntoUpgradeMode.html)|
 |4|XPWR Pads|Connect an external power switch using these pads|
 </div>
 <div class="tab-pane fade" id="button-vim1" role="tabpanel" aria-labelledby="button-tab">
@@ -56,9 +56,9 @@ title: VIM1 Beginners Guide
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM1
-||x||[Enter Upgrade Mode (TST)](/android/vim1/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/android/vim1/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM1|
-|x||x|[Enter Upgrade Mode (KEYS)](/android/vim1/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/android/vim1/BootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/android/vim1/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
@@ -170,7 +170,7 @@ These items are useful when you want to upgrade your VIM1 SBC's operating system
 * [Booting Card Vs Burning Card](/android/vim1/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/android/vim1/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/android/vim1/BootFromExtMedia.html)
-* [Enter Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
+* [Enter Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
 
 **Tips:**
 * **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
@@ -186,7 +186,7 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 
 **Learn More:**
 * [Upgrade Firmware Using USB-C Cable](/android/vim1/UpgradeViaUSBCable.html)
-* [Booting Into Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
+* [Booting Into Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
 
 **Firmware Images:**
 * [Android OS](/android/vim1/FirmwareAndroid.html)
@@ -203,7 +203,7 @@ Extreme cases of crash-recovery will require you to use the MRegister to reset y
 2. USB Serial Debug Tool (For diagnosing software/hardware issues)
 
 **Learn More:**
-* [MRegister Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
+* [MRegister Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

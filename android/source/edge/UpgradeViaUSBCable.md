@@ -21,7 +21,7 @@ Make sure that you have installed the correct USB drivers, then follow these ste
 1. Open `AndroidTool.exe`, click `Upgrade Firmware-->Firmware` to choose an image for Edge.
 ![AndroidTool firmware select](/android/images/edge/AndroldTool_firmware.png)
 2. Connect Edge and PC with a USB-C data-cable (Edge will power-on automatically).
-3. Let Edge [enter into Upgrade Mode](/android/edge/HowtoBootIntoUpgradeMode.html) to complete the upgrading.
+3. Let Edge [enter into Upgrade Mode](/android/edge/BootIntoUpgradeMode.html) to complete the upgrading.
 4. Your PC should have found your Edge device as a connected USB device, if you had correctly followed the instructions above.
 * Loader Mode:
 ![AndroidTool loader](/android/images/edge/AndroldTool_loader.png)
@@ -139,5 +139,5 @@ $ ./UNINSTALL
 **NOTE: This burning tool has only been verified on Ubuntu 16.04**.
 
 ## See Also
-* [How To Boot Into Upgrade Mode](/android/edge/HowtoBootIntoUpgradeMode.html)
+* [How To Boot Into Upgrade Mode](/android/edge/BootIntoUpgradeMode.html)
 

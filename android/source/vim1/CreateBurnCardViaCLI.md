@@ -121,7 +121,7 @@ Done!
 ## Upgrade Using Your "Burning Card"
 
 1. Insert your Burning Card into your VIM, and power-on.
-2. Follow this guide([VIM1](/android/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/android/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/android/vim3/HowtoBootIntoUpgradeMode.html)) to boot into Upgrade Mode.
+2. Follow this guide([VIM1](/android/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/vim3/BootIntoUpgradeMode.html)) to boot into Upgrade Mode.
 3. Wait till the process completes.
 
 ## Further Reading:

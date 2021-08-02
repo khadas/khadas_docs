@@ -117,7 +117,7 @@ $ sudo eject /dev/sdX
 
 ## 通过TF烧录卡升级固件
 1. 把制作好的烧录卡插入VIM/VIM2设备中，然后上电。
-2. 参考文档([VIM1](/android/zh-cn/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html))进入升级模式。
+2. 参考文档([VIM1](/android/zh-cn/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/zh-cn/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/zh-cn/vim3/BootIntoUpgradeMode.html))进入升级模式。
 3. 等待升级完成。
 
 ## 更多资料

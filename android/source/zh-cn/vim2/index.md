@@ -34,7 +34,7 @@ title: VIM2 文档
 |6|限流开关|防止在负载不均衡的情况下损坏VIM2|
 |7|风扇座子|PWM控制的4线制[风扇](https://www.khadas.com/product-page/3705-cooling-fan)|
 |8|reset按键|用于强制重启板子,按下会直接复位|
-|9|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
+|9|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim2/BootIntoUpgradeMode.html)或从外部介质启动|
 |A|power按键|用于关机或者配合其他按键使用|
 |B|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |C|RTC电池接口|硬件时钟电池的接口|
@@ -65,9 +65,9 @@ title: VIM2 文档
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM2|
-||x||[进入升级模式(TST模式)](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
+||x||[进入升级模式(TST模式)](/android/zh-cn/vim2/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM2|
-|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim2/BootIntoUpgradeMode.html)|
 |x|x|x|[清除EMMC](/android/zh-cn/vim2/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
@@ -192,7 +192,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [启动卡与烧录卡的比较](/android/zh-cn/vim2/BootingCardVsBurningCard.html)
 [通过TF卡升级安卓](/android/zh-cn/vim2/UpgradeViaTFBurningCard.html)
 [从外部媒体介质启动系统](/android/zh-cn/vim2/BootFromExtMedia.html)
-[如何进入升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
+[如何进入升级模式](/android/zh-cn/vim2/BootIntoUpgradeMode.html)
 
 {% note info 提示 %}
 
@@ -210,7 +210,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 
 **更多：**
 * [通过USB升级固件](/android/zh-cn/vim2/UpgradeViaUSBCable.html)
-* [进入升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
+* [进入升级模式](/android/zh-cn/vim2/BootIntoUpgradeMode.html)
 
 **固件**
 * [安卓固件](/android/zh-cn/vim2/FirmwareAndroid.html)
@@ -243,7 +243,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 2. USB串行调试工具（用于诊断软件/硬件问题）
 
 **更多:**
-* [升级模式](/android/zh-cn/vim2/HowtoBootIntoUpgradeMode.html)
+* [升级模式](/android/zh-cn/vim2/BootIntoUpgradeMode.html)
 * [亚马逊－金属镊子](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [亚马逊-USB调试工具](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

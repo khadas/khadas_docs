@@ -34,7 +34,7 @@ title: VIM3 相关文档
 |5|USB-A|USB 2.0接口,最大输出电流500mA|
 |6|风扇座子|PWM控制的4线制[风扇](https://www.khadas.com/product-page/3705-cooling-fan)|
 |7|reset按键|用于强制重启板子,按下会直接复位|
-|8|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
+|8|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)或从外部介质启动|
 |9|power按键|用于关机或者配合其他按键使用|
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|G-Sensor|三轴加速传感器|
@@ -61,8 +61,8 @@ title: VIM3 相关文档
 |7|MIPI-CSI接口|30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理|
 |8|[SPI Flash](/android/zh-cn/vim3/BootFromSpiFlash.html)|通过SPI控制的Flash模块|
 |9|XPWR焊盘|用于连接使用外部电源|
-|A|M寄存器|可在任何情况下,强制EMMC进入[MaskROM模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
-|B|S寄存器|可在任何情况下,强制Flash进入[MaskROM模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
+|A|M寄存器|可在任何情况下,强制EMMC进入[MaskROM模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
+|B|S寄存器|可在任何情况下,强制Flash进入[MaskROM模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |C|限流开关|防止在负载不均衡的情况下损坏VIM3|
 </div>
 <div class="tab-pane fade" id="button-vim3" role="tabpanel" aria-labelledby="button-tab">
@@ -70,9 +70,9 @@ title: VIM3 相关文档
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM3|
-||x||[进入升级模式(TST模式)](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
+||x||[进入升级模式(TST模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM3|
-|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |x|x|x|[清除EMMC](/android/zh-cn/vim3/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3" role="tabpanel" aria-labelledby="led-tab">
@@ -148,7 +148,7 @@ Linux_TX|19|39|GPIODZ_15
 |5|USB-A|USB 2.0接口,最大输出电流500mA|
 |6|风扇座子|PWM控制的4线制[风扇](https://www.khadas.com/product-page/3705-cooling-fan)|
 |7|reset按键|用于强制重启板子,按下会直接复位|
-|8|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)或从外部介质启动|
+|8|function按键|快速短按3下进入[MaskROM模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)或从外部介质启动|
 |9|power按键|用于关机或者配合其他按键使用|
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|G-Sensor|三轴加速传感器|
@@ -175,8 +175,8 @@ Linux_TX|19|39|GPIODZ_15
 |7|MIPI-CSI接口|30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理|
 |8|[SPI Flash](/android/zh-cn/vim3/BootFromSpiFlash.html)|通过SPI控制的Flash模块|
 |9|XPWR焊盘|用于连接使用外部电源|
-|A|M寄存器|可在任何情况下,强制EMMC进入[MaskROM模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
-|B|S寄存器|可在任何情况下,强制Flash进入[MaskROM模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
+|A|M寄存器|可在任何情况下,强制EMMC进入[MaskROM模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
+|B|S寄存器|可在任何情况下,强制Flash进入[MaskROM模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |C|限流开关|防止在负载不均衡的情况下损坏VIM3|
 </div>
 <div class="tab-pane fade" id="button-vim3l" role="tabpanel" aria-labelledby="button-tab">
@@ -184,9 +184,9 @@ Linux_TX|19|39|GPIODZ_15
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启VIM3|
-||x||[进入升级模式(TST模式)](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
+||x||[进入升级模式(TST模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM3|
-|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式(按键模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |x|x|x|[清除EMMC](/android/zh-cn/vim3/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3l" role="tabpanel" aria-labelledby="led-tab">
@@ -324,7 +324,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [启动卡与烧录卡的比较](/android/zh-cn/vim3/BootingCardVsBurningCard.html)
 [通过TF卡升级安卓](/android/zh-cn/vim3/UpgradeViaTFBurningCard.html)
 [从外部媒体介质启动系统](/android/zh-cn/vim3/BootFromExtMedia.html)
-[如何进入升级模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)
+[如何进入升级模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)
 
 **提示:**
 * 应使用USB-C数据线从Ubuntu或Windows主机直接将**emmc固件**刻录到`emmc`。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。
@@ -339,7 +339,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 
 **更多：**
 * [通过USB升级固件](/android/zh-cn/vim3/UpgradeViaUSBCable.html)
-* [进入升级模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)
+* [进入升级模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)
 
 **固件**
 * [安卓固件](/android/zh-cn/vim3/FirmwareAndroid.html)
@@ -368,7 +368,7 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 2. USB串行调试工具（用于诊断软件/硬件问题）
 
 **更多:**
-* [升级模式](/android/zh-cn/vim3/HowtoBootIntoUpgradeMode.html)
+* [升级模式](/android/zh-cn/vim3/BootIntoUpgradeMode.html)
 * [亚马逊－金属镊子](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [亚马逊-USB调试工具](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

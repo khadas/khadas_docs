@@ -34,7 +34,7 @@ title: VIM3 Beginners Guide
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3 in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim3/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
@@ -61,17 +61,17 @@ title: VIM3 Beginners Guide
 |7|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, dual cameras, 8MP image signal processing|
 |8|[SPI Flash](/android/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
 |9|XPWR Pads|Connect an external power switch using these pads|
-|A|M-Register|Allows the EMMC to [enter MaskROM mode](/android/vim3/HowtoBootIntoUpgradeMode.html)|
-|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+|A|M-Register|Allows the EMMC to [enter MaskROM mode](/android/vim3/BootIntoUpgradeMode.html)|
+|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/android/vim3/BootIntoUpgradeMode.html)|
 </div>
 <div class="tab-pane fade" id="button-vim3" role="tabpanel" aria-labelledby="button-tab">
 
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3|
-||x||[Enter Upgrade Mode (TST)](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/android/vim3/BootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3|
-|x||x|[Enter Upgrade Mode (KEYS)](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/android/vim3/BootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/android/vim3/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3" role="tabpanel" aria-labelledby="led-tab">
@@ -147,7 +147,7 @@ Linux_TX|19|39|GPIODZ_15
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3L in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim3/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3L|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
@@ -174,8 +174,8 @@ Linux_TX|19|39|GPIODZ_15
 |7|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, single camera, no image signal processor|
 |8|[SPI Flash](/android/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
 |9|XPWR Pads|Connect an external power switch using these pads|
-|A|M-Register|Allows the EMMC to [enter MaskROM mode](/android/vim3/HowtoBootIntoUpgradeMode.html)|
-|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+|A|M-Register|Allows the EMMC to [enter MaskROM mode](/android/vim3/BootIntoUpgradeMode.html)|
+|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/android/vim3/BootIntoUpgradeMode.html)|
 |C|Current Limit Switch|Prevents damage to VIM3L due to faulty loading conditions|
 </div>
 <div class="tab-pane fade" id="button-vim3l" role="tabpanel" aria-labelledby="button-tab">
@@ -183,9 +183,9 @@ Linux_TX|19|39|GPIODZ_15
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3L|
-||x||[Enter Upgrade Mode (TST)](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/android/vim3/BootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3L|
-|x||x|[Enter Upgrade Mode (KEYS)](/android/vim3/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/android/vim3/BootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/android/vim3/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3l" role="tabpanel" aria-labelledby="led-tab">
@@ -294,11 +294,11 @@ Steps to boot your VIM3 from a Micro SD-card:
 3. Make sure you select the correct VIM3 .dtb file (follow instructions specific to the ROM!).
 4. Ensure that your VIM3 has Android 9.0 installed, and is connected to a power adapter (not PC!).
 5. Insert the SD-card into your VIM3, and power it on.
-6. Use [keys-mode](/android/vim3/HowtoBootIntoUpgradeMode.html) to enter upgrade mode.
+6. Use [keys-mode](/android/vim3/BootIntoUpgradeMode.html) to enter upgrade mode.
 7. If you have done all the above steps correctly, your VIM3 will boot from the Micro SD-card.
 
 **Learn More:**
-* [Enter Upgrade Mode](/android/vim3/HowtoBootIntoUpgradeMode.html)
+* [Enter Upgrade Mode](/android/vim3/BootIntoUpgradeMode.html)
 * [Upgrade Using SD-Card](/android/vim3/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/android/vim3/BootFromExtMedia.html)
 * [Booting Card Vs Burning Card](/android/vim3/BootingCardVsBurningCard.html)
@@ -317,7 +317,7 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 
 **Learn More:**
 * [Upgrade OS Using USB-C Cable](/android/vim3/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](/android/vim3/HowtoBootIntoUpgradeMode.html)
+* [Boot Into Upgrade Mode](/android/vim3/BootIntoUpgradeMode.html)
 
 **Firmware Images:**
 * [Android OS](/android/vim3/FirmwareAndroid.html)
@@ -373,8 +373,8 @@ Extreme cases of crash-recovery will require you to use either the Khadas TST (V
 3. USB Serial Debug Tool(For diagnosing software/hardware issues)
 
 **Learn More:**
-* [Khadas TST Upgrade Mode](/android/vim3/HowtoBootIntoUpgradeMode.html#TST-Mode-Recommended)
-* [Mregister Upgrade Mode](/android/vim3/HowtoBootIntoUpgradeMode.html)
+* [Khadas TST Upgrade Mode](/android/vim3/BootIntoUpgradeMode.html#TST-Mode-Recommended)
+* [Mregister Upgrade Mode](/android/vim3/BootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 

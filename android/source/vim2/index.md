@@ -34,7 +34,7 @@ title: VIM2 Beginners Guide
 |6|Current Limit Switch|Prevents damage to VIM2 during uneven loading conditions|
 |7|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |8|Reset Button|Force reboot your VIM2 in the event of a system freeze|
-|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim2/HowtoBootIntoUpgradeMode.html)|
+|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/vim2/BootIntoUpgradeMode.html)|
 |A|Power Button|This button turns on your VIM2|
 |B|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |C|RTC Battery Header|Header for attaching a battery for the real time clock|
@@ -65,9 +65,9 @@ title: VIM2 Beginners Guide
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM2
-||x||[Enter Upgrade Mode (TST)](/android/vim2/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/android/vim2/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM2|
-|x||x|[Enter Upgrade Mode (KEYS)](/android/vim2/HowtoBootIntoUpgradeMode.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/android/vim2/BootIntoUpgradeMode.html)|
 |x|x|x|[Erase EMMC](/android/vim2/HowtoEraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
@@ -204,7 +204,7 @@ These items are useful when you want to upgrade your VIM2 SBC's operating system
 * [Booting Card Vs Burning Card](/android/vim1/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/android/vim2/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/android/vim2/BootFromExtMedia.html)
-* [Enter Upgrade Mode](/android/vim2/HowtoBootIntoUpgradeMode.html)
+* [Enter Upgrade Mode](/android/vim2/BootIntoUpgradeMode.html)
 
 {% note info Tips %}
 
@@ -223,7 +223,7 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 
 **Learn More:**
 * [Upgrade Firmware Using USB-C Cable](/android/vim1/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](/android/vim1/HowtoBootIntoUpgradeMode.html)
+* [Boot Into Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
 
 **Firmware Images:**
 * [Android OS](/android/vim2/FirmwareAndroid.html)
@@ -257,8 +257,8 @@ Extreme cases of crash-recovery will require you to use the MRegister to reset y
 3. USB Serial Debug Tool (For diagnosing software/hardware issues)
 
 **Learn More:**
-* [Khadas TST Upgrade Mode](/android/vim2/HowtoBootIntoUpgradeMode.html#TST-Mode-v1-4-only)
-* [MRegister Upgrade Mode](/android/vim2/HowtoBootIntoUpgradeMode.html)
+* [Khadas TST Upgrade Mode](/android/vim2/BootIntoUpgradeMode.html#TST-Mode-v1-4-only)
+* [MRegister Upgrade Mode](/android/vim2/BootIntoUpgradeMode.html)
 * [Amazon - Metal Tweezers](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=metal+tweezers)
 * [Amazon - USB Serial Debug Tool](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=usb+serial+debug+tool&rh=i%3Aaps%2Ck%3Ausb+serial+debug+tool)
 
