@@ -114,7 +114,7 @@ title: Edge文档
 |8|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |9|Power按键|用于关机或者配合其他按键使用|
 |A|RTC电池座子|硬件时钟芯片供电电池座子|
-|B|[40脚GPIO座子](/android/zh-cn/edge/EdgeVGPIOPinout.html)|学习[连接GPIO](/android/zh-cn/edge/HowToAccessGpio.html), 或者如何连接[Toneboard](https://www.khadas.com/product-page/tone-board)|
+|B|[40脚GPIO座子](/android/zh-cn/edge/EdgeVGPIOPinout.html)|学习[连接GPIO](/android/zh-cn/edge/AccessGpio.html), 或者如何连接[Toneboard](https://www.khadas.com/product-page/tone-board)|
 |C|Gesture Sensor|三轴加速传感器|
 |D|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |E|LED灯|可用于指示LED灯的状态|
@@ -218,7 +218,7 @@ Linux_TX|19|39|MCU_PA1
 |---:|:---|:---|
 |1|RK3399 SoC散热器|用于减少热量集中的金属层|
 |2|RJ-45|有[WOL功能](/android/zh-cn/edge/HowtoUseWol.html)的Gigabit网口|
-|3|[40脚GPIO座子](/android/zh-cn/edge/CaptainGPIOPinout.html)|学习[连接GPIO](/android/zh-cn/edge/HowToAccessGpio.html)
+|3|[40脚GPIO座子](/android/zh-cn/edge/CaptainGPIOPinout.html)|学习[连接GPIO](/android/zh-cn/edge/AccessGpio.html)
 |4|RTC电池座子|硬件时钟芯片供电电池座子|
 |5|Reset按键|用于强制重启板子,按下会直接复位|
 |6|12V DC 供电座子||替代的[12V直流电源输入](https://www.khadas.com/product-page/captain-12v-adapter.html),请参考[电源优先级](/android/zh-cn/edge/EdgeCaptainPowerPriority.html)|

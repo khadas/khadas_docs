@@ -1,4 +1,4 @@
-title: How To Access GPIO
+title: Access GPIO Usage
 ---
 
 This guide will teach you how to access the GPIO using Android and Ubuntu.

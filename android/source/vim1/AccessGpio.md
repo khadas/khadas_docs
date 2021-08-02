@@ -1,16 +1,18 @@
-title: 如何访问GPIO
+title: Access GPIO Uasge
 ---
 
-这篇文档介绍如何在Android下访问GPIO。
+This guide is about how to access the GPIO using Android.
 
-## 准备工作
-固件版本必须满足以下条件：
+## Preconditions
 
-* Android M >= V170603
-* Android N >= V170421
+The ROM must satisfy the following conditions:
 
-## 如何获取GPIO数值
-你可以通过GPIO banks和pins来获取。不同版本的内核数值不同。
+* Android M     >= V170603
+* Android N     >= V170421
+
+## How to Get the GPIO Number
+You can get the GPIO number from GPIO Banks or Pins. Different versions of kernel will be different.
+
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -22,8 +24,8 @@ title: 如何访问GPIO
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="4.9-pins" role="tabpanel" aria-labelledby="4.9-tab">
-Linux 4.9 (Android O )
 
+Linux 4.9 (Android O/P)
 
 * aobus-banks
 
@@ -34,8 +36,8 @@ root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ra
 GPIO ranges handled:
 0: aobus-banks GPIOS [496 - 511] PINS [0 - 15]
 ```
-Pins:
 
+Pins:
 ```bash
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/pins
 registered pins: 16
@@ -57,7 +59,7 @@ pin 14 (GPIOE_2)  pinctrl@ff800014
 pin 15 (GPIO_TEST_N)  pinctrl@ff800014
 ```
 
-例如：获取`GPIOAO_6`的数值：
+For example, get the number of `GPIOAO_6`:
 Number(GPIOAO_6) = bank + pin = 496 + 6 = 502
 
 * periphs-banks
@@ -71,7 +73,6 @@ GPIO ranges handled:
 ```
 
 Pins:
-
 ```bash
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/pins
 registered pins: 86
@@ -98,9 +99,14 @@ pin 83 (GPIOX_17)  pinctrl@ff634480
 pin 84 (GPIOX_18)  pinctrl@ff634480
 pin 85 (GPIOX_19)  pinctrl@ff634480
 ```
+
+For example, get the number of `GPIOH_5`:
+Number(GPIOH_5) = bank + pin = 410 + 22 = 432
+
 </div>
 <div class="tab-pane fade" id="3.14-pins" role="tabpanel" aria-labelledby="3.14-tab">
-Linux 3.14 (Android M,N)
+
+Linux 3.14 (Android M, N)
 
 Banks:
 
@@ -108,14 +114,13 @@ Banks:
 # cat /sys/kernel/debug/pinctrl/c1109880.pinmux/gpio-ranges
 
 GPIO ranges handled:
-0: banks GPIOS [155 - 255] PINS [10 - 110]
-0: ao-bank GPIOS [145 - 154] PINS [0 - 9]
+0: banks GPIOS   [155 - 255] PINS [10 - 110]
+0: ao-bank GPIOS [145 - 154] PINS [ 0 -   9]
 
 Notice: ao-bank means GPIOAO_X gpios
 ```
 
 Pins:
-
 ```bash
 # cat /sys/kernel/debug/pinctrl/c1109880.pinmux/pins
 ...
@@ -133,119 +138,122 @@ pin 35 (GPIOH_9)
 ...
 ```
 
-例如：获取`GPIOH_4`, `GPIOH_5` and `GPIOAO_6`的数值：
-Number(GPIOH_5) = bank + pin = 155 - 10 + 31= 176
-Number(GPIOH_4) = bank + pin = 155 - 10 + 30= 175
-Number(GPIOAO_6) = bank + pin = 145 - 0 + 6 = 151
-
-</div>
-</div>
-
-
-## 在Android下
-
-**GPIO 列表**
+For example, get the number of `GPIOH_4`, `GPIOH_5` and `GPIOAO_6`.
 
 ```bash
-PIN         GPIO         Number
-PIN37       GPIOH5         432
-PIN33       GPIOAO6        502
+Number(GPIOH_5)  = bank + pin = 155 - 10 + 31 = 176
+Number(GPIOH_4)  = bank + pin = 155 - 10 + 30 = 175
+Number(GPIOAO_6) = bank + pin = 145 -  0 +  6 = 151
 ```
-有两种方式访问GPIO：
+</div>
+</div>
 
-* 通过ADB命令
-* 第三方应用
+## On Android
 
-**ADB命令**
+**GPIO List**
 
-* 通过Wi-Fi ADB连接到VIMs
+```
+PIN         GPIO         Number
+PIN37       GPIOH5       432
+PIN33       GPIOAO6      502
+```
+
+There are two ways to access the GPIO:
+
+* ADB Command
+* Third-Party Applications 
+
+**ADB command**
+
+* Connect the VIMs with a wifi adb:
 
 ```bash
 $ adb connect IP_ADDR 
 ```
 
-* 登录VIMs:
+* Login to the VIMs:
 
 ```bash
 $ adb shell
 ```
 
-* 获取root权限
+* Get root permision
 
 ```bash
 $ su
 ```
 
-* 申请GPIO(GPIOH5)
+* Request the gpio(GPIOH5)
 
 ```bash
 $ echo 432  > /sys/class/gpio/export
 ```
 
-* 配置GPIO(GPIOH5)为输出
+* Config the gpio(GPIOH5) as  output
 
 ```bash
 $ echo out > /sys/class/gpio/gpio432/direction
 ```
 
-* 配置GPIO(GPIOH5)输出高电平
+* Config the gpio(GPIOH5) as high level output
 
 ```bash
 $ echo 1 >  /sys/class/gpio/gpio432/value
 ```
-* 配置GPIO(GPIOH5)输出低电平
+
+* Config  the gpio(GPIOH5) as low level output
 
 ```bash
 $ echo 0 >  /sys/class/gpio/gpio432/value
 ```
 
-* 配置GPIO(GPIOH5)为输入
+* Config the gpio(GPIOH5) as input
 
 ```bash
 $ echo in > /sys/class/gpio/gpio432/direction
 ```
 
-* 读取GPIO(GPIOH5)电平
+* Get the gpio(GPIOH5) level
 
 ```bash
 $ cat /sys/class/gpio/gpio432/value
 ```
 
-* 释放GPIO(GPIOH5)
+* Release the gpio(GPIOH5)
 
 ```bash
 $ echo 432 > /sys/class/gpio/unexport
 ```
 
-**第三方应用**
+**Third-Party Applications**
 
-* 获取root权限
+* Get root permision
 
 ```bash
 Process mProcess = Runtime.getRuntime().exec("su");
 ```
 
-* 申请GPIO(GPIOH5)
+* Request the gpio(GPIOH5)
 
 ```bash
 DataOutputStream os = new DataOutputStream(mProcess.getOutputStream());
 os.writeBytes("echo " + 432 + " > /sys/class/gpio/export\n");
 ```
 
-* 配置GPIO(GPIOH5)为输出
+* Config the gpio(GPIOH5) as high level output
 
 ```bash
 os.writeBytes("echo out > /sys/class/gpio/gpio" + 432 + "/direction\n");
 os.writeBytes("echo 1 > /sys/class/gpio/gpio" + 432 + "/value\n");
 ```
 
-* 配置GPIO(GPIOH5)为输入
+* Config the gpio(GPIOH5) as input
 
 ```bash
 os.writeBytes("echo in > /sys/class/gpio/gpio" + 432 + "/direction\n");
 ```
 
-* 读取GPIO(GPIOH5)电平
+* Get the gpio(GPIOH5) level
 
 ```bash
 Runtime runtime = Runtime.getRuntime(); 
@@ -259,7 +267,7 @@ while (null != (line = br.readLine())) {
 } 
 ```
 
-* 释放GPIO(GPIOH5)
+* Release the gpio(GPIOH5)
 
 ```bash
  os.writeBytes("echo " + 432 + " > /sys/class/gpio/unexport\n");

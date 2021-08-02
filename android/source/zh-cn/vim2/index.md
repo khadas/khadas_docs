@@ -38,7 +38,7 @@ title: VIM2 文档
 |A|power按键|用于关机或者配合其他按键使用|
 |B|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |C|RTC电池接口|硬件时钟电池的接口|
-|D|[40脚的GPIO](/android/zh-cn/vim2/GPIOPinout.html)|可用于控制[GPIO](/android/zh-cn/vim2/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|D|[40脚的GPIO](/android/zh-cn/vim2/GPIOPinout.html)|可用于控制[GPIO](/android/zh-cn/vim2/AccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |F|LED灯|用于指示板子的状态|
 |G|FPC控制器|10个引脚,0.5mm间距,具有I2C和IOs的功能|

@@ -11,7 +11,7 @@ vim1:
     system_control:
       how_to_use_adb_tool: ADBTool.html
     board_rescoures:
-      how_to_access_gpio: HowToAccessGpio.html
+      how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: HowToAccessI2c.html
   development:
     uboot:
@@ -44,7 +44,7 @@ vim2:
     system_control:
       how_to_use_adb_tool: ADBTool.html
     board_rescoures:
-      how_to_access_gpio: HowToAccessGpio.html
+      how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: HowToAccessI2c.html
       howto_use_wol: HowtoUseWol.html
       force_reset_features: ForceResetFeatures.html
@@ -89,7 +89,7 @@ vim3:
       connect_lcd: ConnectLcd.html
       how_to_use_lte_module: HowToUseLTEModule.html
     board_rescoures:
-      how_to_access_gpio: HowToAccessGpio.html
+      how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: HowToAccessI2c_android.html
       howto_use_wol: HowtoUseWol.html
       how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
@@ -138,7 +138,7 @@ edge:
       connect_lcd: ConnectLcd.html
       how_to_use_lte_module: HowToUseLTEModule.html
     board_rescoures:
-      how_to_access_gpio: HowToAccessGpio.html
+      how_to_access_gpio: AccessGpio.html
       howto_use_wol: HowtoUseWol.html
   development:
     rk_docs: RockchipDocs.html

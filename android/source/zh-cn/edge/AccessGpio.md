@@ -1,4 +1,4 @@
-title: 如何访问GPIO
+title: GPIO连接使用说明
 ---
 
 这篇文档介绍如何在Android和Ubuntu下访问GPIO。

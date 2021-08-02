@@ -39,7 +39,7 @@ title: VIM3 Beginners Guide
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
-|D|[40-Pin GPIO](/android/vim3/GPIOPinout.html)|[General input/output pins](/android/vim3/HowToAccessGpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|[40-Pin GPIO](/android/vim3/GPIOPinout.html)|[General input/output pins](/android/vim3/AccessGpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3's available I/O beyond what A311D can provide|
 |F|[MCU](/android/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
 |G|WOL Switch|Power switch activated via Wake-On-LAN|
@@ -152,7 +152,7 @@ Linux_TX|19|39|GPIODZ_15
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
-|D|[40-Pin GPIO](/android/vim3/GPIOPinout.html)|[General input/output pins](/android/vim3/HowToAccessGpio.html) for VIM3L's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|[40-Pin GPIO](/android/vim3/GPIOPinout.html)|[General input/output pins](/android/vim3/AccessGpio.html) for VIM3L's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3L's available I/O beyond what S905D3 can provide|
 |F|[MCU](/android/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
 |G|WOL Switch|Power switch activated via Wake-On-LAN|

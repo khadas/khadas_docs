@@ -39,7 +39,7 @@ title: VIM3 相关文档
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|G-Sensor|三轴加速传感器|
 |C|RTC电池接口|硬件时钟电池的接口|
-|D|[40脚的GPIO](/android/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](/android/zh-cn/vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|D|[40脚的GPIO](/android/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](/android/zh-cn/vim3/AccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
 |F|[MCU](/android/zh-cn/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|
@@ -153,7 +153,7 @@ Linux_TX|19|39|GPIODZ_15
 |A|4个M2插孔|用于使用[散热器](https://www.khadas.com/product-page/new-vim-heatsink)和[DIY外壳](https://www.khadas.com/product-page/diy-case)时的固定|
 |B|G-Sensor|三轴加速传感器|
 |C|RTC电池接口|硬件时钟电池的接口|
-|D|[40脚的GPIO](/android/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](/android/zh-cn/vim3/HowToAccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
+|D|[40脚的GPIO](/android/zh-cn/vim3/GPIOPinout.html)|可用于控制[GPIO](/android/zh-cn/vim3/AccessGpio.html)或者与[toneboard](https://www.khadas.com/product-page/tone-board)连接|
 |E|GPIO扩展芯片|为VIM3拓展可用的GPIO|
 |F|[MCU](/android/zh-cn/vim3/KbiGuidance.html)|可编程的EEPROM阵列的STM8S003微控制器|
 |G|WOL选择开关|WOL功能的电源开关|

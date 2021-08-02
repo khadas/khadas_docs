@@ -37,7 +37,7 @@ title: VIM1 Beginners Guide
 |9|Power Button|This button turns on your VIM1|
 |A|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|RTC Battery Header|Header for attaching a battery for the real time clock|
-|C|[40-Pin GPIO](/android/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/android/vim1/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|C|[40-Pin GPIO](/android/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/android/vim1/AccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
 |F|I-Pex [Wi-Fi](/android/vim1/HowToConnectWifi.html) / [Bluetooth](/android/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|

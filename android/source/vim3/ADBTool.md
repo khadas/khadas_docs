@@ -1,1 +1,1 @@
-../vim1/HowToUseADBTool.md
+../vim1/ADBTool.md
