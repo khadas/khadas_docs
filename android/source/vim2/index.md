@@ -68,7 +68,7 @@ title: VIM2 Beginners Guide
 ||x||[Enter Upgrade Mode (TST)](/android/vim2/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM2|
 |x||x|[Enter Upgrade Mode (KEYS)](/android/vim2/BootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/android/vim2/HowtoEraseEMMC.html)|
+|x|x|x|[Erase EMMC](/android/vim2/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
 

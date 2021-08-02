@@ -26,7 +26,7 @@ vim1:
       package_update_image: FastPackageUpdateImage.html
       create_burning_card_via_cli: CreateBurnCardViaCLI.html
       create_booting_card: CreateBootableSDCard.html
-      erase_emmc: HowtoEraseEMMC.html
+      erase_emmc: EraseEMMC.html
     hardware:
       setup_serial: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -62,7 +62,7 @@ vim2:
       package_update_image: FastPackageUpdateImage.html
       create_burning_card_via_cli: CreateBurnCardViaCLI.html
       create_booting_card: CreateBootableSDCard.html
-      erase_emmc: HowtoEraseEMMC.html
+      erase_emmc: EraseEMMC.html
     hardware:
       setup_serial: SetupSerialTool.html
       extra_power_input: ExtraPowerInput.html
@@ -115,7 +115,7 @@ vim3:
       package_update_image: FastPackageUpdateImage.html
       create_burning_card_via_cli: CreateBurnCardViaCLI.html
       create_booting_card: CreateBootableSDCard.html
-      erase_emmc: HowtoEraseEMMC.html
+      erase_emmc: EraseEMMC.html
       how_to_use_fastboot: HowToUseFastboot.html
     hardware:
       setup_serial: SetupSerialTool.html
@@ -149,7 +149,7 @@ edge:
       install_toolchains: InstallToolchains.html
       download_android_source_code: DownloadAndroidSourceCode.html
       build_android: BuildAndroid.html
-      erase_emmc: HowtoEraseEMMC.html
+      erase_emmc: EraseEMMC.html
       instructions_for_edge_single_pack_burning_tool: InstructionsforEdgeSinglePackBurningTool.html
     hardware:
       setup_serial: SetupSerialTool.html

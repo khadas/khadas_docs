@@ -73,7 +73,7 @@ title: VIM3 相关文档
 ||x||[进入升级模式(TST模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM3|
 |x||x|[进入升级模式(按键模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
-|x|x|x|[清除EMMC](/android/zh-cn/vim3/HowtoEraseEMMC.html)|
+|x|x|x|[清除EMMC](/android/zh-cn/vim3/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3" role="tabpanel" aria-labelledby="led-tab">
 
@@ -187,7 +187,7 @@ Linux_TX|19|39|GPIODZ_15
 ||x||[进入升级模式(TST模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM3|
 |x||x|[进入升级模式(按键模式)](/android/zh-cn/vim3/BootIntoUpgradeMode.html)|
-|x|x|x|[清除EMMC](/android/zh-cn/vim3/HowtoEraseEMMC.html)|
+|x|x|x|[清除EMMC](/android/zh-cn/vim3/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3l" role="tabpanel" aria-labelledby="led-tab">
 

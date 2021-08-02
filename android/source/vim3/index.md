@@ -72,7 +72,7 @@ title: VIM3 Beginners Guide
 ||x||[Enter Upgrade Mode (TST)](/android/vim3/BootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3|
 |x||x|[Enter Upgrade Mode (KEYS)](/android/vim3/BootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/android/vim3/HowtoEraseEMMC.html)|
+|x|x|x|[Erase EMMC](/android/vim3/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3" role="tabpanel" aria-labelledby="led-tab">
 
@@ -186,7 +186,7 @@ Linux_TX|19|39|GPIODZ_15
 ||x||[Enter Upgrade Mode (TST)](/android/vim3/BootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3L|
 |x||x|[Enter Upgrade Mode (KEYS)](/android/vim3/BootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/android/vim3/HowtoEraseEMMC.html)|
+|x|x|x|[Erase EMMC](/android/vim3/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3l" role="tabpanel" aria-labelledby="led-tab">
 

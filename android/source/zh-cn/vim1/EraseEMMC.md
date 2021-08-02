@@ -1,4 +1,4 @@
-title: 如何擦除eMMC存储器
+title: 擦除eMMC存储器
 ---
 
 有三种方式可以擦除VIMs板载eMMC存储器，如下：

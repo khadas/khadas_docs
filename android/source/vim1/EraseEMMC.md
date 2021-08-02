@@ -1,4 +1,4 @@
-title: How to Erase the eMMC Storage
+title: Erase eMMC Storage
 ---
 
 There are 3 different ways to erase all data on the onboard eMMC storage:

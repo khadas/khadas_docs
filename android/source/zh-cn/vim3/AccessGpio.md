@@ -1,1 +1,1 @@
-../vim1/HowToAccessGpio.md
+../vim1/AccessGpio.md

@@ -59,7 +59,7 @@ title: VIM1 Beginners Guide
 ||x||[Enter Upgrade Mode (TST)](/android/vim1/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM1|
 |x||x|[Enter Upgrade Mode (KEYS)](/android/vim1/BootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/android/vim1/HowtoEraseEMMC.html)|
+|x|x|x|[Erase EMMC](/android/vim1/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
 

@@ -1,4 +1,4 @@
-title: How To Erase The eMMC Storage
+title: Erase eMMC Storage
 ---
 
 ## Using Windows

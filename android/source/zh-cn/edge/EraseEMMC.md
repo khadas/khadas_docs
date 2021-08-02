@@ -1,4 +1,4 @@
-title: 如何擦除eMMC
+title: 擦除eMMC存储器
 ---
 
 ## 在Windows下

@@ -68,7 +68,7 @@ title: VIM2 文档
 ||x||[进入升级模式(TST模式)](/android/zh-cn/vim2/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM2|
 |x||x|[进入升级模式(按键模式)](/android/zh-cn/vim2/BootIntoUpgradeMode.html)|
-|x|x|x|[清除EMMC](/android/zh-cn/vim2/HowtoEraseEMMC.html)|
+|x|x|x|[清除EMMC](/android/zh-cn/vim2/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
 

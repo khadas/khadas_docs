@@ -59,7 +59,7 @@ title: VIM1 文档
 ||x||[进入升级模式(TST模式)](/android/zh-cn/vim1/BootIntoUpgradeMode.html)|
 |||x|开机或者唤醒VIM1|
 |x||x|[进入升级模式(按键模式)](/android/zh-cn/vim1/BootIntoUpgradeMode.html)|
-|x|x|x|[清除EMMC](/android/zh-cn/vim1/HowtoEraseEMMC.html)|
+|x|x|x|[清除EMMC](/android/zh-cn/vim1/EraseEMMC.html)|
 </div>
 <div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
 
