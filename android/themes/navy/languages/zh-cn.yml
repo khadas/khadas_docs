@@ -33,7 +33,7 @@ sidebar:
   vim1:
     quick_start: 快速开始
     overview: 概述
-    vim1_interfaces: VIM1接口描述
+    vim1_interfaces: 接口描述
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -67,7 +67,7 @@ sidebar:
   vim2:
     quick_start: 快速开始
     overview: 概述
-    vim2_interfaces: VIM2接口描述
+    vim2_interfaces: 接口描述
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
@@ -104,7 +104,7 @@ sidebar:
   vim3:
     quick_start: 快速开始
     overview: 概述
-    vim3_interfaces: VIM3接口描述
+    vim3_interfaces: 接口描述
     add_chinese_support: 增加中文支持
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级

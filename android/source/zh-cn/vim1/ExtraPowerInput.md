@@ -91,7 +91,7 @@ VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
 
 ## 更多资料
-* [VIM1接口描述](/android/zh-cn/vim1/VimInterfaces.html)
-* [VIM2接口描述](/android/zh-cn/vim2/Vim2Interfaces.html)
-* [VIM3接口描述](/android/zh-cn/vim3/Vim3Interfaces.html)
+* [VIM1接口描述](/android/zh-cn/vim1/Interfaces.html)
+* [VIM2接口描述](/android/zh-cn/vim2/Interfaces.html)
+* [VIM3接口描述](/android/zh-cn/vim3/Interfaces.html)
 * [vin对vin连接线](https://www.khadas.com/product-page/vin-to-vin-cable)

@@ -1,7 +1,7 @@
 vim1:
   quick_start:
     overview: index.html
-    vim1_interfaces: VimInterfaces.html
+    vim1_interfaces: Interfaces.html
     add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
@@ -34,7 +34,7 @@ vim1:
 vim2:
   quick_start:
     overview: index.html
-    vim2_interfaces: Vim2Interfaces.html
+    vim2_interfaces: Interfaces.html
     add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
@@ -69,7 +69,7 @@ vim2:
 vim3:
   quick_start:
     overview: index.html
-    vim3_interfaces: Vim3Interfaces.html
+    vim3_interfaces: Interfaces.html
     add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: HowtoBootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html

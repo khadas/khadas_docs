@@ -34,7 +34,7 @@ sidebar:
   vim1:
     quick_start: Quick Start
     overview: Overview
-    vim1_interfaces: VIM1 Interfaces
+    vim1_interfaces: Interfaces
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
@@ -68,7 +68,7 @@ sidebar:
   vim2:
     quick_start: Quick Start
     overview: Overview
-    vim2_interfaces: VIM2 Interfaces
+    vim2_interfaces: Interfaces
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
@@ -105,7 +105,7 @@ sidebar:
   vim3:
     quick_start: Quick Start
     overview: Overview
-    vim3_interfaces: VIM3 Interfaces
+    vim3_interfaces: Interfaces
     add_chinese_support: Chinese Support
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
