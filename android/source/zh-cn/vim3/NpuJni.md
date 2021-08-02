@@ -1,37 +1,38 @@
-title: How To Use Android Npu Jni
+title: Npu Jni使用说明
 ---
 
-{% note warn note %}
+{% note warn 注意 %}
 
-before run android NPU Demo,please download newest [firmware](/android/zh-cn/firmware/Vim3AndroidFirmware.html),and update system to latest version.
+在运行android NPU Demo前请先下载[firmware](/android/zh-cn/firmware/Vim3AndroidFirmware.html)升级系统到最新版本。
 
 {% endnote %}
 
 
-## get npu app/jni source code
+## 获取NPU jni/app 源码
 
-Currently, the source code of NPU JNI is not integrated into the firmware and needs to be downloaded from gitlab
+npu jni源码目前没有集成到固件中，需要先从gitlab自行下载
 
-jni gitlab repository address:[https://github.com/liustarting/khadas_android_npu_library.git](https://github.com/liustarting/khadas_android_npu_library.git)
+jni仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android_npu_library.git](https://github.com/liustarting/khadas_android_npu_library.git)
 
-app gitlab repository address:[https://github.com/liustarting/khadas_android_npu_app.git](https://github.com/liustarting/khadas_android_npu_app.git)
-## install ndk build environment
+app仓库在gitlab上的地址为:[https://github.com/liustarting/khadas_android_npu_app.git](https://github.com/liustarting/khadas_android_npu_app.git)
 
-``1)`` download ndk
+## 安装ndk 编译环境
+
+``1)`` 下载ndk
 	wget https://dl.google.com/android/repository/android-ndk-r17-linux-x86_64.zip 
-``2)`` unzip
+``2)`` 解压
 	unzip android-ndk-r17-linux-x86_64.zip
-``3)`` Configure NDK environment variables: open .bashrc and add the following two lines to the end of the file, Or add it to the /etc/profile file
+``3)`` 配置NDK环境变量：打开.bashrc，将下面俩行添加到文件末尾。或者添加到/etc/profile文件也可以。
 
 	export NDKROOT=/usr/ndk/android-ndk-r17
 	export PATH=$NDKROOT:$PATH
-	save and exit,update environment variables：source ~/.bashrc
+	保存退出。更新下环境变量：source ~/.bashrc
 
-``4)`` check whether the NDK installation is completed:
-	enter the "ndk-build" command in the shell to check if your installation is successful, if not "ndk-build not found" is displayed
+``4)`` 检测ndk是否安装完成：
+	在shell中输入“ndk-build”命令来检查你的安装是否成功，如果不是显示“ndk-build not found”
 
-## ndk build npu jni so library
-After downloading the source code of npu jni, enter khadas_ android_ npu_ Library directory, as follows
+## ndk编译 npu jni so库
+下载npu jni源码后，进入khadas_android_npu_library目录，如下
 
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu_library# ll
@@ -43,7 +44,7 @@ drwxr-xr-x 8 root root 4096 Jun  3 14:04 .git/
 drwxr-xr-x 5 root root 4096 Jun  3 13:46 model_code/
 -rw-r--r-- 1 root root   28 Jun  3 13:45 README.md
 ```
-``1)`` build libkhadas_npu_jni.so 
+``1)`` 编译libkhadas_npu_jni.so 
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu_library/detect_code# ndk-build 
 Android NDK: android-9 is unsupported. Using minimum supported version android-14.    
@@ -55,7 +56,7 @@ Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependenc
 Android NDK:     current module    
 [armeabi-v7a] Install        : libkhadas_npu_jni.so => libs/armeabi-v7a/libkhadas_npu_jni.so
 ```
-``2)`` build libnn_yoloface.so
+``2)`` 编译libnn_yoloface.so
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu_library/model_code/detect_yoloface# ndk-build 
 Android NDK: android-9 is unsupported. Using minimum supported version android-14.    
@@ -67,7 +68,7 @@ Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependenc
 Android NDK:     current module    
 [armeabi-v7a] Install        : libnn_yoloface.so => libs/armeabi-v7a/libnn_yoloface.so
 ```
-``3)`` buld libnn_yolo_v2.so
+``3)`` 编译libnn_yolo_v2.so
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu_library/model_code/detect_yolo_v2# ndk-build 
 Android NDK: android-9 is unsupported. Using minimum supported version android-14.    
@@ -79,7 +80,7 @@ Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependenc
 Android NDK:     current module    
 [armeabi-v7a] Install        : libnn_yolo_v2.so => libs/armeabi-v7a/libnn_yolo_v2.so
 ```
-``4)`` build libnn_yolo_v3.so
+``4)`` 编译libnn_yolo_v3.so
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu_library/model_code/detect_yolo_v3# ndk-build 
 Android NDK: android-9 is unsupported. Using minimum supported version android-14.    
@@ -91,19 +92,14 @@ Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependenc
 Android NDK:     current module    
 [armeabi-v7a] Install        : libnn_yolo_v3.so => libs/armeabi-v7a/libnn_yolo_v3.so
 ```
-## So library description
-libkhadas_npu_jni.so: The npu related api encapsulated by khadas is called by khadas npu demo app，please refer to khadas_android_npu_library and khadas_android_npu_app code
+## so库说明
+libkhadas_npu_jni.so: khadas 封装的npu相关的api, 由khadas npu demo app调用，具体查看khadas_android_npu_library 和khadas_android_npu_app 代码
+libnn_yoloface.so: 由模型转换工具自动生成的yoloface人脸检测case代码编译，具体如何转出case代码，请参考linux板块关于npu模型转换的说明
+libnn_yolo_v2.so:由模型转换工具自动生成的yolo_v2图像识别case代码编译，具体如何转出case代码，请参考linux板块关于npu模型转换的说明
+libnn_yolo_v3.so:由模型转换工具自动生成的yolo_v3图像识别case代码编译，具体如何转出case代码，请参考linux板块关于npu模型转换的说明
 
-libnn_yoloface.so: compiled by Yoloface face detection case code which automatically generated by the model conversion tool , For details on how to transfer out the case code, please refer to the description of NPU model conversion in Linux doc
-
-libnn_yolo_v2.so: compiled by Yolo_v2 image recognition case code which automatically generated by the model conversion tool , For details on how to transfer out the case code, please refer to the description of NPU model conversion in Linux doc
-
-libnn_yolo_v3.so: compiled by Yolo_v3 image recognition case code which automatically generated by the model conversion tool , For details on how to transfer out the case code, please refer to the descr
-iption of NPU model conversion in Linux doc
-
-
-## khadas_android_npu_app app so library usage
-after download npu app source code，app/libs/armeabi-v7a directory include libkhadas_npu_jni.so libnn_yoloface.so libnn_yolo_v2.so libnn_yolo_v3.so and other npu releated library，libovxlib.so etc,app call libkhadas_npu_jni.so api by jni. 
+## khadas_android_npu_app app so库使用
+下载npu app 源码后，在app/libs/armeabi-v7a 目录中包含libkhadas_npu_jni.so libnn_yoloface.so libnn_yolo_v2.so libnn_yolo_v3.so以及其他npu相关的库，libovxlib.so等,app通过jni调用libkhadas_npu_jni.so接口 
 ```shell
 root@lxx-NUC10i7FNH:/home/lxx/khadas_android_npu/khadas_android_npu/app/libs/armeabi-v7a# ll
 total 33008
