@@ -1,4 +1,4 @@
-title: 如何在VIM3上面运行 Android Npu Demo
+title: 在VIM3上面运行 Android Npu Demo
 ---
 
 {% note warn 注意 %}
