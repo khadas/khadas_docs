@@ -1,0 +1,1 @@
+!function(){"use strict";function e(){var e=this.value,n=this.dataset.canonical;"en"===e&&(e=""),e&&(e+="/"),location.href="/linux/"+e+n}document.getElementById("lang-select").addEventListener("change",e),document.getElementById("mobile-lang-select").addEventListener("change",e)}();

@@ -1,0 +1,44 @@
+name: Publish
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Install and build
+      run: |
+        cd linux
+        npm install && npm install hexo-cli -g
+        hexo clean && hexo generate
+        cp -ravx public ../public/linux
+        cd ../android
+        npm install && npm install hexo-cli -g
+        hexo clean && hexo generate
+        cp -ravx public ../public/android
+    - name: Commit files
+      run: |
+        cd public
+        git init
+        git config --global user.name "Khadas Bot"
+        git config --global user.email hello@khadas.com
+        git add .
+        git commit -m "Site updated: `date +"%Y-%m-%d %H:%M"`"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        directory: ./public
+        repository: numbqq/numbqq.github.io
+        branch: master
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        force: true
