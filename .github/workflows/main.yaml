@@ -37,7 +37,7 @@ jobs:
         git config --global user.email hello@khadas.com
         git add .
         git commit -m "Site updated: `date +"%Y-%m-%d %H:%M"`"
-    - name: Push changes
+    - name: Push Changes
       uses: ad-m/github-push-action@master
       with:
         directory: ./public
