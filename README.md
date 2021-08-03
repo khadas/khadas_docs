@@ -1,7 +1,7 @@
 # Khadas documentation
 <!-- Markdown snippet -->
 
-[![Build Status](https://travis-ci.org/khadas/khadas_docs.svg?branch=master)](https://travis-ci.org/khadas/khadas_docs)
+[![Build Status](https://github.com/numbqq/khadas_docs/actions/workflows/main.yaml/badge.svg?branch=master)](https://github.com/numbqq/khadas_docs/actions/workflows/main.yaml)
 
 ## Getting started
 
