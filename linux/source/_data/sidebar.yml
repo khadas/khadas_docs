@@ -60,6 +60,8 @@ vim1:
     create_burn_card: CreateBurnCard.html
     create_bootable_sd_card: CreateBootableSDCard.html
     erase_emmc: EraseEmmc.html
+  troubleshooting:
+    capture_log: CaptureLog.html
 
 vim2:
   quick_start:
@@ -126,6 +128,8 @@ vim2:
     create_burn_card: CreateBurnCard.html
     create_bootable_sd_card: CreateBootableSDCard.html
     erase_emmc: EraseEmmc.html
+  troubleshooting:
+    capture_log: CaptureLog.html
 
 vim3:
   quick_start:
@@ -208,6 +212,8 @@ vim3:
     create_burn_card: CreateBurnCard.html
     create_bootable_sd_card: CreateBootableSDCard.html
     erase_emmc: EraseEmmc.html
+  troubleshooting:
+    capture_log: CaptureLog.html
 
 edge:
   quick_start:
@@ -257,6 +263,8 @@ edge:
       upgrade_linux_kernel: UpgradeLinuxKernel.html
     fenix: FenixScript.html
     setup_serial_tool: SetupSerialTool.html
+  troubleshooting:
+    capture_log: CaptureLog.html
 
 tone1:
   getting_started:

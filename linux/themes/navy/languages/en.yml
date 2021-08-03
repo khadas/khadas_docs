@@ -89,6 +89,8 @@ sidebar:
     create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
+    troubleshooting: Troubleshooting
+    capture_log: Capture Log
 
   vim2:
     quick_start: Quick Start
@@ -159,6 +161,8 @@ sidebar:
     create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
+    troubleshooting: Troubleshooting
+    capture_log: Capture Log
 
   vim3:
     quick_start: Quick Start
@@ -242,6 +246,8 @@ sidebar:
     create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
+    troubleshooting: Troubleshooting
+    capture_log: Capture Log
 
   edge:
     quick_start: Quick Start
@@ -309,6 +315,8 @@ sidebar:
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
     setup_serial_tool: Setup Serial Debug Tool
+    troubleshooting: Troubleshooting
+    capture_log: Capture Log
 
   tone1:
     getting_started: Getting Started

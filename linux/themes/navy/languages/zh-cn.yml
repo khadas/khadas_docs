@@ -90,6 +90,8 @@ sidebar:
     create_burn_card: 创建烧录卡
     create_bootable_sd_card: 创建启动卡
     erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   vim2:
     quick_start: 快速上手
@@ -160,6 +162,8 @@ sidebar:
     create_burn_card: 创建烧录卡
     create_bootable_sd_card: 创建启动卡
     erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   vim3:
     quick_start: 快速上手
@@ -242,6 +246,8 @@ sidebar:
     create_burn_card: 创建烧录卡
     create_bootable_sd_card: 创建启动卡
     erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   edge:
     quick_start: 快速上手
@@ -310,6 +316,8 @@ sidebar:
     upgrade_linux_kernel: 更新Linux内核
     fenix: 编译Ubuntu/Debian固件
     setup_serial_tool: 设置串口调试工具
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   tone1:
     getting_started: 开始使用
