@@ -1,6 +1,9 @@
-name: Publish
+name: Build
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -38,7 +41,7 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         directory: ./public
-        repository: numbqq/numbqq.github.io
+        repository: khadas/khadas.github.io
         branch: master
         github_token: ${{ secrets.ACCESS_TOKEN }}
         force: true
