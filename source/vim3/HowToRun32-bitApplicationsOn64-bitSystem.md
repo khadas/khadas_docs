@@ -1,1 +1,0 @@
-../vim1/HowToRun32-bitApplicationsOn64-bitSystem.md

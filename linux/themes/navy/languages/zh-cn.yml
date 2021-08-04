@@ -1,0 +1,354 @@
+menu:
+  vim: VIM
+  vim1: VIM1
+  vim2: VIM2
+  vim3: VIM3
+  edge: Edge
+  tone1: Tone1
+  hardware: 硬件资料
+  firmware: 固件下载
+
+index:
+  get_started: 开始使用
+  read_docs: 阅读文档
+
+page:
+  contents: 目录
+  back_to_top: 回到顶部
+  improve: 改进本文
+  prev: 上一页
+  next: 下一页
+  last_updated: 上次更新：%s
+
+sidebar:
+  vim1:
+    quick_start: 快速上手
+    quick_setup: 快速设置
+    os_introduce: 操作系统说明
+    install_os_into_emmc: 安装操作系统到eMMC
+    install_os_into_sd_usb: 安装操作系统到SD/USB存储
+    boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动系统
+    vim1_hardware: VIM1硬件描述
+    configuration: 配置
+    basic: 基本
+    upgrade_os: 升级系统
+    system_config_file: 配置文件
+    device_tree_overlay: Device Tree Overlay
+    auto_login: 自动登陆
+    write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    network: 网络
+    wifi: Wi-Fi
+    bt: 蓝牙
+    custom_mac_address: 自定义MAC地址
+    howto_use_wol: 局域网唤醒
+    display: 显示
+    hdmi_resolution: HDMI分辨率
+    rotate_framebuffer: 旋转Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: 修改启动Logo
+    framebuffer_console_font: Framebuffer Console字体
+    accessories: 配件
+    fan: 风扇
+    hardware: 硬件
+    pcie_usb_port: PCIe/USB3.0切换
+    custom_ir_code: 自定义IR Code
+    extra_power_input: 外部供电
+    applications: 应用
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: 播放视频
+    hardware_decoding: 硬件解码
+    hardware_encoding: 硬件编码
+    docker: Docker
+    watchdog: 看门狗
+    wifi_apsta_mode: Wi-Fi STA/AP模式
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32位运行库
+    development: 开发
+    uboot: U-Boot
+    build_uboot: 编译U-Boot
+    upgrade_uboot: 更新U-Boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    setup_tftp_server: TFTP服务器搭建
+    kbi_guidance: KBI说明
+    linux: Linux
+    build_linux_kernel: 编译Linux内核
+    upgrade_linux_kernel: 更新Linux内核
+    fenix: 编译Ubuntu/Debian固件
+    setup_serial_tool: 设置串口调试工具
+    create_burn_card: 创建烧录卡
+    create_bootable_sd_card: 创建启动卡
+    erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
+
+  vim2:
+    quick_start: 快速上手
+    quick_setup: 快速设置
+    os_introduce: 操作系统说明
+    install_os_into_emmc: 安装操作系统到eMMC
+    install_os_into_sd_usb: 安装操作系统到SD/USB存储
+    boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动系统
+    vim2_hardware: VIM2硬件描述
+    configuration: 配置
+    basic: 基本
+    upgrade_os: 升级系统
+    system_config_file: 配置文件
+    device_tree_overlay: Device Tree Overlay
+    auto_login: 自动登陆
+    write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    network: 网络
+    wifi: Wi-Fi
+    bt: 蓝牙
+    custom_mac_address: 自定义MAC地址
+    howto_use_wol: 局域网唤醒
+    display: 显示
+    hdmi_resolution: HDMI分辨率
+    rotate_framebuffer: 旋转Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: 修改启动Logo
+    framebuffer_console_font: Framebuffer Console字体
+    accessories: 配件
+    fan: 风扇
+    hardware: 硬件
+    pcie_usb_port: PCIe/USB3.0切换
+    custom_ir_code: 自定义IR Code
+    extra_power_input: 外部供电
+    applications: 应用
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: 播放视频
+    hardware_decoding: 硬件解码
+    hardware_encoding: 硬件编码
+    docker: Docker
+    watchdog: 看门狗
+    wifi_apsta_mode: Wi-Fi STA/AP模式
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32位运行库
+    development: 开发
+    uboot: U-Boot
+    build_uboot: 编译U-Boot
+    upgrade_uboot: 更新U-Boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    setup_tftp_server: TFTP服务器搭建
+    kbi_guidance: KBI说明
+    linux: Linux
+    build_linux_kernel: 编译Linux内核
+    upgrade_linux_kernel: 更新Linux内核
+    fenix: 编译Ubuntu/Debian固件
+    setup_serial_tool: 设置串口调试工具
+    create_burn_card: 创建烧录卡
+    create_bootable_sd_card: 创建启动卡
+    erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
+
+  vim3:
+    quick_start: 快速上手
+    quick_setup: 快速设置
+    os_introduce: 操作系统说明
+    install_os_into_emmc: 安装操作系统到eMMC
+    install_os_into_sd_usb: 安装操作系统到SD/USB存储
+    boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动系统
+    vim3_hardware: VIM3硬件描述
+    configuration: 配置
+    basic: 基本
+    upgrade_os: 升级系统
+    system_config_file: 配置文件
+    device_tree_overlay: Device Tree Overlay
+    auto_login: 自动登陆
+    write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    network: 网络
+    wifi: Wi-Fi
+    bt: 蓝牙
+    custom_mac_address: 自定义MAC地址
+    howto_use_wol: 局域网唤醒
+    display: 显示
+    hdmi_resolution: HDMI分辨率
+    rotate_framebuffer: 旋转Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: 修改启动Logo
+    framebuffer_console_font: Framebuffer Console字体
+    accessories: 配件
+    fan: 风扇
+    camera: MIPI摄像头
+    ts050: TS050触摸屏
+    lte_module_usage: 4G模块
+    m2x_eth: M2X以太网口
+    hardware: 硬件
+    pcie_usb_port: PCIe/USB3.0切换
+    custom_ir_code: 自定义IR Code
+    extra_power_input: 外部供电
+    applications: 应用
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: 播放视频
+    hardware_decoding: 硬件解码
+    hardware_encoding: 硬件编码
+    docker: Docker
+    watchdog: 看门狗
+    wifi_apsta_mode: Wi-Fi STA/AP模式
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32位运行库
+    npu: NPU
+    npu_binary_demo: 预编译NPU Demo
+    aml_npu_sdk: NPU SDK
+    aml_npu_app: NPU Demo源码
+    model_convert: 模型转换
+    npu_performance: NPU Performance
+    tengine_sdk: Tengine SDK
+    tengine_demo: Tengine Demo
+    amlnn_api_demo: Amlogic NN API Demo
+    development: 开发
+    uboot: U-Boot
+    build_uboot: 编译U-Boot
+    upgrade_uboot: 更新U-Boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    setup_tftp_server: TFTP服务器搭建
+    kbi_guidance: KBI说明
+    linux: Linux
+    build_linux_kernel: 编译Linux内核
+    upgrade_linux_kernel: 更新Linux内核
+    fenix: 编译Ubuntu/Debian固件
+    setup_serial_tool: 设置串口调试工具
+    create_burn_card: 创建烧录卡
+    create_bootable_sd_card: 创建启动卡
+    erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
+
+  edge:
+    quick_start: 快速上手
+    quick_setup: 快速设置
+    os_introduce: 操作系统说明
+    install_os_into_emmc: 安装操作系统到eMMC
+    install_os_into_sd_usb: 安装操作系统到SD/USB存储
+    boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动系统
+    edge_hardware: Edge 硬件描述
+    configuration: 配置
+    basic: 基本
+    upgrade_os: 升级系统
+    system_config_file: 配置文件
+    auto_login: 自动登陆
+    write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    device_tree_overlay: Device Tree Overlay
+    network: 网络
+    wifi: Wi-Fi
+    bt: 蓝牙
+    custom_mac_address: 自定义MAC地址
+    howto_use_wol: 局域网唤醒
+    display: 显示
+    rotate_framebuffer: 旋转Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: 修改启动Logo
+    framebuffer_console_font: Framebuffer Console字体
+    accessories: 配件
+    fan: 风扇
+    ts050: TS050触摸屏
+    lte_module_usage: 4G模块
+    hardware: 硬件
+    pcie_usb_port: PCIe/USB3.0切换
+    custom_ir_code: 自定义IR Code
+    extra_power_input: 外部供电
+    applications: 应用
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    play_video: 播放视频
+    hardware_decoding: 硬件解码
+    hardware_encoding: 硬件编码
+    docker: Docker
+    watchdog: 看门狗
+    wifi_apsta_mode: Wi-Fi STA/AP模式
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32位运行库
+    development: 开发
+    uboot: U-Boot
+    build_uboot: 编译U-Boot
+    upgrade_uboot: 更新U-Boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    setup_tftp_server: TFTP服务器搭建
+    kbi_guidance: KBI说明
+    linux: Linux
+    build_linux_kernel: 编译Linux内核
+    upgrade_linux_kernel: 更新Linux内核
+    fenix: 编译Ubuntu/Debian固件
+    setup_serial_tool: 设置串口调试工具
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
+
+  tone1:
+    getting_started: 开始使用
+    overview: 概述
+    user_manual: 用户手册
+    upgrade_firmware: 固件升级
+    use_tone_in_linux: Linux下使用MPD
+
+  hardware:
+    hardware: 硬件资料
+    vim1: VIM1
+    vim2: VIM2
+    vim3: VIM3
+    edge: Edge
+    tone1: Tone1
+  firmware:
+    firmware: 固件
+    vim1: VIM1
+    vim1_ubuntu: Ubuntu
+    vim1_thirdparty: 第三方固件
+    vim2: VIM2
+    vim2_ubuntu: Ubuntu
+    vim2_thirdparty: 第三方固件
+    vim3: VIM3
+    vim3_ubuntu: Ubuntu
+    vim3_thirdparty: 第三方固件
+    vim3l: VIM3L
+    vim3l_ubuntu: Ubuntu
+    vim3l_thirdparty: 第三方固件
+    edge: Edge
+    edge_ubuntu: Ubuntu
+    edge_thirdparty: 第三方固件
+    tone1: Tone1
