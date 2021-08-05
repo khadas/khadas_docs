@@ -35,18 +35,18 @@ title: VIM1 Hardware
 |1|USB-A|USB 2.0 speed, 500mA max output|
 |2|RJ-45|10/100 Mbps Ethernet|
 |3|HDMI|HDMI 2.0b with 3D, HDR, CEC and HDCP 2.2|
-|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/linux/vim1/UpgradeViaUSBCable.html)|
+|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/linux/vim1/InstallOsIntoEmmc.html)|
 |5|USB-A|USB 2.0 speed, 900mA max output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM1 in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/vim1/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM1|
 |A|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|RTC Battery Header|Header for attaching a battery for the real time clock|
-|C|[40-Pin GPIO](/linux/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/vim1/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|C|[40-Pin GPIO](/linux/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/linux/vim1/Gpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
-|F|I-Pex [Wi-Fi](/linux/vim1/HowToConnectWifi.html) / [Bluetooth](/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|F|I-Pex [Wi-Fi](/linux/vim1/Wifi.html) / [Bluetooth](/linux/vim1/Bluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim1" role="tabpanel" aria-labelledby="back-tab">
 
@@ -54,7 +54,7 @@ title: VIM1 Hardware
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V power input|
 |2|[Micro-SD Card Slot](/linux/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card, and for extra storage|
-|3|M-Register|Allows the EMMC to [enter MaskROM mode](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
+|3|M-Register|Allows the EMMC to [enter MaskROM mode](/linux/vim1/BootIntoUpgradeMode.html)|
 |4|XPWR Pads|Connect an external power switch using these pads|
 </div>
 <div class="tab-pane fade" id="button-vim1" role="tabpanel" aria-labelledby="button-tab">
@@ -62,10 +62,10 @@ title: VIM1 Hardware
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM1
-||x||[Enter Upgrade Mode (TST)](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/linux/vim1/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM1|
-|x||x|[Enter Upgrade Mode (KEYS)](/linux/vim1/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/linux/vim1/HowtoEraseEMMC.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/linux/vim1/BootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](/linux/vim1/EraseEmmc.html)|
 </div>
 <div class="tab-pane fade" id="led-vim1" role="tabpanel" aria-labelledby="led-tab">
 
@@ -81,7 +81,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 </div>
 <div class="tab-pane fade" id="gpio-vim1" role="tabpanel" aria-labelledby="gpio-tab">
 
-![Image of Vim GPIO](/linux/linux/vim1/vim_pinout.png)
+![Image of Vim GPIO](/linux/images/vim1/vim_pinout.png)
 </div>
 </div>
 

@@ -37,23 +37,23 @@ title: VIM2 Hardware
 ||Component|Purpose|
 |---:|:---|:---|
 |1|USB-A|USB 2.0 speed, 500mA max output|
-|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](/linux/vim2/HowtoUseWol.html)|
+|2|RJ-45|Gigabit Ethernet with [Wake-On-LAN (WOL)](/linux/vim2/Wol.html)|
 |3|HDMI|HDMI 2.0a with CEC, 4K@60Hz|
-|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/linux/vim2/UpgradeViaUSBCable.html)|
+|4|USB-C|USB 2.0 OTG and [5V power input](https://www.khadas.com/product-page/power-adapter), can be used for [upgrading the OS](/linux/vim2/InstallOsIntoEmmc.html)|
 |5|USB-A|USB 2.0 speed, 900mA max output|
 |6|Current Limit Switch|Prevents damage to VIM2 during uneven loading conditions|
 |7|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |8|Reset Button|Force reboot your VIM2 in the event of a system freeze|
-|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/vim2/HowtoBootIntoUpgradeMode.html)|
+|9|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/vim2/BootIntoUpgradeMode.html)|
 |A|Power Button|This button turns on your VIM2|
 |B|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |C|RTC Battery Header|Header for attaching a battery for the real time clock|
-|D|[40-Pin GPIO](/linux/vim2/GPIOPinout.html)|Learn how to access the GPIO from [here](/vim2/HowToAccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|[40-Pin GPIO]()|Learn how to access the GPIO from [here](/linux/vim2/Gpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |F|LEDs|Status indicator LEDs|
 |G|FPC Connector|10-pins, 0.5mm pitch, with I2C, IOs|
-|H|I-Pex [Wi-Fi](/linux/vim2/HowToConnectWifi.html) / [Bluetooth](/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
-|I|I-Pex [Wi-Fi](/linux/vim2/HowToConnectWifi.html) / [Bluetooth](/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|H|I-Pex [Wi-Fi](/linux/vim2/Wifi.html) / [Bluetooth](/linux/vim2/Bluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|I|I-Pex [Wi-Fi](/linux/vim2/Wifi.html) / [Bluetooth](/linux/vim2/Bluetooth.html) Connector|Wi-Fi / BT Antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim2" role="tabpanel" aria-labelledby="back-tab">
 
@@ -75,10 +75,10 @@ title: VIM2 Hardware
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM2
-||x||[Enter Upgrade Mode (TST)](/linux/vim2/HowtoBootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](/linux/vim2/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up VIM2|
-|x||x|[Enter Upgrade Mode (KEYS)](/linux/vim2/HowtoBootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/linux/vim2/HowtoEraseEMMC.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](/linux/vim2/BootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](/linux/vim2/EraseEmmc.html)|
 </div>
 <div class="tab-pane fade" id="led-vim2" role="tabpanel" aria-labelledby="led-tab">
 
