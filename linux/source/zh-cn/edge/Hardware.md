@@ -42,17 +42,17 @@ title: Edge 硬件描述
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0 speeds|
-|2|USB-C|USB 3.0,5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的DP输入, 同时可用于[升级系统](/linux/zh-cn/edge/UpgradeViaUSBCable.html)|
+|2|USB-C|USB 3.0,5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的DP输入, 同时可用于[升级系统](/linux/zh-cn/edge/InstallOsIntoEmmc.html)|
 |3|HDMI 2.0|支持4K@60Hz, HDCP 2.2的HDMI接口|
 |4|USB-C|5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的type-C接口|
 |5|USB-A|USB 2.0 speeds|
 |6|风扇座子|4针的[风扇](https://www.khadas.com/product-page/3705-cooling-fan)座子接口|
 |7|Reset按键|用于强制重启板子,按下会直接复位|
-|8|Function按键|快速短按3下[进入TST模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function按键|快速短按3下[进入TST模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 |9|Power按键|用于关机或者配合其他按键使用|
 |A|314针的金手指|用于与[Captain](https://www.khadas.com/product-page/captain-carrier-board)等扩展板对接|
-|B|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/linux/zh-cn/edge/HowToSetupBluetooth.html)的天线|
-|C|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/linux/zh-cn/edge/HowToSetupBluetooth.html)的天线|
+|B|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/Wifi.html)和[蓝牙](/linux/zh-cn/edge/Bluetooth.html)的天线|
+|C|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/Wifi.html)和[蓝牙](/linux/zh-cn/edge/Bluetooth.html)的天线|
 
 </div>
 <div class="tab-pane fade" id="back-edge" role="tabpanel" aria-labelledby="back-tab">
@@ -65,7 +65,7 @@ title: Edge 硬件描述
 |4|4个M2插孔|用于[散热器](https://www.khadas.com/product-page/edge-heatsink)和[DIY外壳](https://www.khadas.com/product-page/captain-carrier-board)|
 |5|FPC座子B|10-Pins, 0.5mm Pitch, USB, I2S(8ch), I2C, MCU IOs|
 |6|FPC座子A|10-Pins, 0.5mm Pitch, UART, I2C, SPI, SDMMC, ADC, PWM, IOs. To add GPIO, use [Edge IO](https://www.khadas.com/product-page/edge-io)|
-|7|M寄存器|强制板子进入[MaskROM模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|7|M寄存器|强制板子进入[MaskROM模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edge" role="tabpanel" aria-labelledby="button-tab">
@@ -73,9 +73,9 @@ title: Edge 硬件描述
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子|
-||x||[进入TST模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[进入TST模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[进入升级模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edge" role="tabpanel" aria-labelledby="led-tab">
@@ -121,21 +121,21 @@ title: Edge 硬件描述
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|USB-A|USB 3.0, 蓝色接口|
-|2|RJ-45|有[WOL功能](/linux/zh-cn/edge/HowtoUseWol.html)的Gigabit网口|
+|2|RJ-45|有[WOL功能](/linux/zh-cn/edge/Wol.html)的Gigabit网口|
 |3|HDMI 2.0|支持4K@60Hz, HDCP 2.2的HDMI接口|
-|4||USB-C|USB 3.0,5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的DP输入, 同时可用于[升级系统](/linux/zh-cn/edge/UpgradeViaUSBCable.html)|
+|4||USB-C|USB 3.0,5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的DP输入, 同时可用于[升级系统](/linux/zh-cn/edge/InstallOsIntoEmmc.html)|
 |5|USB-A|USB 2.0, 黑色接口|
 |6|风扇座子|4针的[风扇](https://www.khadas.com/product-page/3705-cooling-fan)座子接口|
 |7|Reset按键|用于强制重启板子,按下会直接复位|
-|8|Function按键|快速短按3下[进入TST模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|8|Function按键|快速短按3下[进入TST模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 |9|Power按键|用于关机或者配合其他按键使用|
 |A|RTC电池座子|硬件时钟芯片供电电池座子|
-|B|[40脚GPIO座子](/linux/zh-cn/edge/EdgeVGPIOPinout.html)|学习[连接GPIO](/linux/zh-cn/edge/HowToAccessGpio.html), 或者如何连接[Toneboard](https://www.khadas.com/product-page/tone-board)|
+|B|[40脚GPIO座子]()|学习[连接GPIO](/linux/zh-cn/edge/Gpio.html), 或者如何连接[Toneboard](https://www.khadas.com/product-page/tone-board)|
 |C|Gesture Sensor|三轴加速传感器|
 |D|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |E|LED灯|可用于指示LED灯的状态|
-|F|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/linux/zh-cn/edge/HowToSetupBluetooth.html)的天线|
-|G|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/linux/zh-cn/edge/HowToSetupBluetooth.html)的天线|
+|F|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/Wifi.html)和[蓝牙](/linux/zh-cn/edge/Bluetooth.html)的天线|
+|G|I-Pex天线|用于连接[wifi](/linux/zh-cn/edge/Wifi.html)和[蓝牙](/linux/zh-cn/edge/Bluetooth.html)的天线|
 
 </div>
 <div class="tab-pane fade" id="back-edgev" role="tabpanel" aria-labelledby="back-tab">
@@ -145,14 +145,14 @@ title: Edge 硬件描述
 |1|Li-Po电池接口|通过[juice板子](https://www.khadas.com/product-page/lipo-battery)用于连接[锂聚合物电池](https://www.khadas.com/product-page/lipo-battery)|
 |2|USB-C|5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter)的type-C接口|
 |3|[SD Card 插座](/linux/zh-cn/edge/UpgradeViaTFBurningCard.html)|通过SD Card启动或者只作为外部存储器|
-|4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘](/linux/zh-cn/vim3/ListOfCompatibleNVMeSSDs.html)以及[M2x板子](https://www.khadas.com/product-page/m2x-extension-board)|
+|4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘]()以及[M2x板子](https://www.khadas.com/product-page/m2x-extension-board)|
 |5|E-DP座子|用于外接eDP显示器|
 |6|4个M2插孔|用于[散热器](https://www.khadas.com/product-page/edge-heatsink)和[DIY外壳](https://www.khadas.com/product-page/captain-carrier-board)|
-|7|TP座子|用于连接[TP输入](/linux/zh-cn/edge/ConnectLcd.html)|
-|8|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/linux/zh-cn/edge/ConnectLcd.html)|
+|7|TP座子|用于连接[TP输入](/linux/zh-cn/edge/TS050.html)|
+|8|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/linux/zh-cn/edge/TS050.html)|
 |9|MIPI-RX|用于连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |A|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
-|B||M寄存器|强制板子进入[MaskROM模式](/edge/HowtoBootIntoUpgradeMode.html)|
+|B||M寄存器|强制板子进入[MaskROM模式](/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="button-edgev" role="tabpanel" aria-labelledby="button-tab">
@@ -160,9 +160,9 @@ title: Edge 硬件描述
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子| 
-||x||[进入TST模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[进入TST模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[进入升级模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-edgev" role="tabpanel" aria-labelledby="led-tab">
@@ -231,11 +231,11 @@ Linux_TX|19|39|MCU_PA1
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|RK3399 SoC散热器|用于减少热量集中的金属层|
-|2|RJ-45|有[WOL功能](/linux/zh-cn/edge/HowtoUseWol.html)的Gigabit网口|
-|3|[40脚GPIO座子](/linux/zh-cn/edge/CaptainGPIOPinout.html)|学习[连接GPIO](/linux/zh-cn/edge/HowToAccessGpio.html)
+|2|RJ-45|有[WOL功能](/linux/zh-cn/edge/Wol.html)的Gigabit网口|
+|3|[40脚GPIO座子]()|学习[连接GPIO](/linux/zh-cn/edge/Gpio.html)
 |4|RTC电池座子|硬件时钟芯片供电电池座子|
 |5|Reset按键|用于强制重启板子,按下会直接复位|
-|6|12V DC 供电座子||替代的[12V直流电源输入](https://www.khadas.com/product-page/captain-12v-adapter.html),请参考[电源优先级](/linux/zh-cn/edge/EdgeCaptainPowerPriority.html)|
+|6|12V DC 供电座子||替代的[12V直流电源输入](https://www.khadas.com/product-page/captain-12v-adapter.html),请参考[电源优先级]()|
 |7|[SD Card 插座](/linux/zh-cn/edge/UpgradeViaTFBurningCard.html)|通过SD Card启动或者只作为外部存储器|
 |8|蜂鸣器|发出简单的声音|
 |9|Gesture Sensor|三轴加速传感器|
@@ -244,16 +244,16 @@ Linux_TX|19|39|MCU_PA1
 |C|左边边游戏按键|通过[Kap Case](https://www.khadas.com/product-page/kap-case)可以玩简单的游戏|
 |D|USIC|旧版USB总线|
 |E|E-DP座子|用于外接eDP显示器|
-|F|TP座子|用于连接[TP输入](/linux/zh-cn/edge/ConnectLcd.html)|
-|G|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/linux/zh-cn/edge/ConnectLcd.html)|
+|F|TP座子|用于连接[TP输入](/linux/zh-cn/edge/TS050.html)|
+|G|MIPI-TX|MIPI-DSI接口用于连接[LCD显示屏](/linux/zh-cn/edge/TS050.html)|
 |H|MIPI-RX/TX|连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)或者MIPI-DSI显示屏|
 |I|MIPI-RX|用于连接[MIPI-CSI摄像头](https://www.khadas.com/product-page/imx214-13mp-camera)|
 |J|3.5mm 耳机孔|与[Kap Case](https://www.khadas.com/product-page/kap-case)搭配使用|
-|K|Function按键|快速短按3下[进入TST模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|K|Function按键|快速短按3下[进入TST模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 |L|麦克风|音频输入|
 |M|MXM3连接器|用于连接[Edge](https://www.khadas.com/product-page/edge)|
-|N|天线|用于连接[wifi](/linux/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/linux/zh-cn/edge/HowToSetupBluetooth.html)的天线|
-|O|天线|用于连接[wifi](/linux/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/linux/zh-cn/edge/HowToSetupBluetooth.html)的天线|
+|N|天线|用于连接[wifi](/linux/zh-cn/edge/Wifi.html)和[蓝牙](/linux/zh-cn/edge/Bluetooth.html)的天线|
+|O|天线|用于连接[wifi](/linux/zh-cn/edge/Wifi.html)和[蓝牙](/linux/zh-cn/edge/Bluetooth.html)的天线|
 |P|M3穿孔|用于与[Kap Case](https://www.khadas.com/product-page/kap-case)连接固定|
 |Q|M2螺纹支架|用于固定[Edge](https://www.khadas.com/product-page/edge)|
 
@@ -262,10 +262,10 @@ Linux_TX|19|39|MCU_PA1
 
 ||设备名称|描述说明|
 |---:|:---|:---|
-|1|[M.2 Socket (PCI-E 2.1)](/linux/zh-cn/edge/ListOfCompatibleNVMeSSDs.html)|可用于连接NVMe SSD|
+|1|[M.2 Socket (PCI-E 2.1)]()|可用于连接NVMe SSD|
 |2|外部扬声器和DMIC输入FPC连接器|用于连接一个外界的音箱|
-|3|[M.2 2280 Stand-Off (M2 Threaded)](/linux/zh-cn/edge/ListOfCompatibleNVMeSSDs.html)|用于固定SSD|
-|4|锂电池座子|可连接便携式[2-Cell Li-Po 电池](https://www.khadas.com/product-page/lipo-battery), 具体可查看[电源优先管理](/linux/zh-cn/edge/EdgeCaptainPowerPriority.html)|
+|3|[M.2 2280 Stand-Off (M2 Threaded)]()|用于固定SSD|
+|4|锂电池座子|可连接便携式[2-Cell Li-Po 电池](https://www.khadas.com/product-page/lipo-battery), 具体可查看[电源优先管理]()|
 |5|右按键|自定义可编程按键|
 |6|左按键|自定义可编程按键|
 
@@ -275,9 +275,9 @@ Linux_TX|19|39|MCU_PA1
 |Reset|Function|Power|描述说明|
 |:---:|:---:|:---:|:---|
 |x|||强制重启板子|
-||x||[进入TST模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+||x||[进入TST模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 |||x|Power On/Wake Up Edge|
-|x||x|[进入升级模式](/linux/zh-cn/edge/HowtoBootIntoUpgradeMode.html)|
+|x||x|[进入升级模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)|
 
 </div>
 <div class="tab-pane fade" id="led-captain" role="tabpanel" aria-labelledby="led-tab">
@@ -330,8 +330,8 @@ Linux_TX|19|39|MCU_PA1
 |1|[314针金手指](https://www.khadas.com/product-page/edge)|Edge＆Captain之间的数据交换和电源接口|
 |2|RockChip RK3399 SoC|x2 1.8GHz A72, x4 1.5GHz A53|
 |3|M2x4螺丝孔|用于固定edge和captain|
-|4|[USB-C电源接口(5-20V)](/linux/zh-cn/edge/EdgeCaptainPowerPriority.html)|电源接口|
-|5|[USB-C (3.0 + DP)](/linux/zh-cn/edge/UpgradeViaUSBCable.html)|电源和DP接口|
+|4|[USB-C电源接口(5-20V)]()|电源接口|
+|5|[USB-C (3.0 + DP)](/linux/zh-cn/edge/InstallOsIntoEmmc.html)|电源和DP接口|
 |6|USB-A|USB 3.0接口|
 |7|USB-A|USB 2.0接口|
 |9|HDMI|HDMI 2.0 and CEC|
