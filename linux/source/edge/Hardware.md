@@ -131,7 +131,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/edge/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge-V|
 |A|RTC Battery Header|Header for attaching a battery for the real time clock|
-|B|[40-Pin GPIO]()|Learn how to access GPIO [here](/linux/edge/Gpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|B|40-Pin GPIO|Learn how to access GPIO [here](/linux/edge/Gpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |C|Gesture Sensor|Control your Edge-V with a hand-wave|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
@@ -236,7 +236,7 @@ Linux_TX|19|39|MCU_PA1
 |---:|:---|:---|
 |1|RK3399 SoC Heat Spreader|Metallic layer for reducing heat concentration|
 |2|RJ-45|Gigabit Ethernet port with [Wake-On-LAN (WOL)](/linux/edge/Wol.html)|
-|3|[40-Pin GPIO]()|Learn how to access the GPIO [here](/linux/edge/Gpio.html)|
+|3|40-Pin GPIO|Learn how to access the GPIO [here](/linux/edge/Gpio.html)|
 |4|RTC Header|For connecting an external button battery for the real-time clock|
 |5|Reset Button|Forcefully reboot Edge+Captain if your system freezes|
 |6|12V DC Barrel Jack|Alternative [12V DC power input](https://www.khadas.com/product-page/captain-12v-adapter), see [power priority]()|

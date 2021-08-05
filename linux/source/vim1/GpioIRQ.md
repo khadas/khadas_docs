@@ -55,7 +55,7 @@ root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
 
 Please use `gpio readall` to check the status of `GPIOH_6`, if it is not normal GPIO, you need to remove `uart3` of `overlays` in `/boot/env.txt` file.
 
-Check [Device Tree Overlays](/vim3/HowToUseDeviceTreeOverlay.html) for more details.
+Check [Device Tree Overlays](/linux/vim3/DeviceTreeOverlay.html) for more details.
 
 {% endnote %}
 

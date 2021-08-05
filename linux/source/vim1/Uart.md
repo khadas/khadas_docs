@@ -7,8 +7,8 @@ This documentation will introduce how to use the uart of 40PIN headers.
 
 Uart PIN in 40 PINs header is `PIN15` and `PIN16`:
 
-* [VIM1-GPIO-Pin-Out](/linux/vim1/Hardware#VIM3-Hardware-Info)
-* [VIM2-GPIO-Pin-Out](/linux/vim2/Hardware#VIM3-Hardware-Info)
+* [VIM1-GPIO-Pin-Out](/linux/vim1/Hardware#VIM1-Hardware-Info)
+* [VIM2-GPIO-Pin-Out](/linux/vim2/Hardware#VIM2-Hardware-Info)
 * [VIM3-GPIO-Pin-Out](/linux/vim3/Hardware#VIM3-Hardware-Info)
 
 ## Enable Uart Node

@@ -5,8 +5,8 @@ title: PWM
 
 Hardware PWM had open at default dtb configuration.So you need to check which Physical pin is connect to it .
 
-* `PWM_F` on [VIM1 GPIO-Out](/linux/vim1/Hardware#VIM3-Hardware-Info)
-* `PWM_D` on [VIM2 GPIO-Out](/linux/vim2/Hardware#VIM3-Hardware-Info)
+* `PWM_F` on [VIM1 GPIO-Out](/linux/vim1/Hardware#VIM1-Hardware-Info)
+* `PWM_D` on [VIM2 GPIO-Out](/linux/vim2/Hardware#VIM2-Hardware-Info)
 * `PWM_F` on [VIM3 GPIO-Out](/linux/vim3/Hardware#VIM3-Hardware-Info)
 
 ## Switch to root user
