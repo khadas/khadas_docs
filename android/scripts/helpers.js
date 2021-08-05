@@ -377,7 +377,7 @@ hexo.extend.helper.register('url_for_lang', function(path) {
 });
 
 hexo.extend.helper.register('raw_link', function(path) {
-  return 'https://github.com/khadas/khadas_docs/edit/master/source/linux/' + path;
+  return 'https://github.com/khadas/khadas_docs/edit/master/source/android/' + path;
 });
 
 hexo.extend.helper.register('page_anchor', function(str) {
