@@ -5,7 +5,7 @@ title: Capture Running Log
 This document only applies to Ubuntu Linux.
 {% endnote %}
 
-In some cases, if the system is behaving abnormally or we are getting some unexpected outputs, it will be necessary to capture information from the running system log. This log will help us analuze and solve the problem. This document will teach you how to capture the running log of your system.
+If your system is behaving abnormally or we are getting some unexpected outputs, it will be necessary to capture information from the running system log. This log will help us analyze and solve the problem. This document will teach you how to capture the running log of your system.
 
 ## Login to Your System
 
@@ -28,7 +28,7 @@ Connect a USB mouse, keyboard and HDMI display, and then power on your Khadas si
 
 ### Login to the system via SSH
 
-To use SSH for remote logins, you need to setup an SSH client on your localhost (e.g. your smartphone, laptop or PC), and then your Khadas single board computer needs to be connected to the internet either via an ethernet cable, or Wi-Fi connection. At the same time, make sure that your SBC and your localhost are in the same local area network and subnet.
+To use SSH for remote logins, you need to setup an SSH client on your localhost (smartphone, laptop or PC), and then your Khadas single board computer needs to be connected to the internet either via an ethernet cable, or Wi-Fi connection. At the same time, make sure that your SBC and your localhost are on the same local area network and subnet.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -44,11 +44,11 @@ To use SSH for remote logins, you need to setup an SSH client on your localhost 
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
 
-To use SSH for remote logins, you need to setup an SSH client on your localhost (e.g. your smartphone, laptop or PC), and then your Khadas single board computer needs to be connected to the internet either via an ethernet cable, or Wi-Fi connection. At the same time, make sure that your SBC and your localhost are in the same local area network and subnet.
+To use SSH for remote logins, you need to setup an SSH client on your localhost (smartphone, laptop or PC), and then your Khadas single board computer needs to be connected to the internet either via an ethernet cable, or Wi-Fi connection. At the same time, make sure that your SBC and your localhost are on the same local area network and subnet.
 
 * Install SSH
 
-Install the SSH command directly from your terminal shell:
+Install the SSH program directly from your terminal shell:
 
 ```
 $ sudo apt update
@@ -113,7 +113,7 @@ Press Enter to log in to the system:
 </div>
 <div class="tab-pane fade show" id="macos" role="tabpanel" aria-labelledby="macos-tab">
 
-In Mac OS system, you can use the SSH command to login directly via your Terminal app:
+In Mac OS, you can use the SSH command to login directly via your Terminal app:
 
 ```sh
 $ ssh khadas@192.168.1.145
@@ -141,11 +141,11 @@ khadas@Khadas:~$
 
 ### Login via a serial terminal
 
-Refer to [Setup Serial Debug Tool](/linux/vim1/SetupSerialTool.html) to login to the serial terminal.
+Refer to the article [Setup Serial Debug Tool](/linux/vim1/SetupSerialTool.html) to login to the serial terminal.
 
 ## Running Log Capture
 
-After logging in, you can grab the log via the following commands.
+After logging in, you can capture the log via the following commands.
 
 ### Fetch system version information
 
@@ -167,4 +167,4 @@ khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/
 
 ## Send Log File
 
-When reporting problems on [Khadas Community](https://forum.khadas.com/) or to hello@khadas.com, please send the above log files to us.
+When reporting problems to [Khadas Community](forum.khadas.com) or hello@khadas.com, please send the above log files to us.
