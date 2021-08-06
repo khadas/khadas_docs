@@ -115,7 +115,7 @@ Press Enter to log in to the system:
 
 In Mac OS system, you can use the SSH command to login directly via your Terminal app:
 
-```
+```sh
 $ ssh khadas@192.168.1.145
 khadas@192.168.1.145's password:
 
@@ -141,7 +141,7 @@ khadas@Khadas:~$
 
 ### Login via a serial terminal
 
-Refer to [Setup Serial Debug Tool](/linux/zh-cn/vim1/SetupSerialTool.html) to login to the serial terminal.
+Refer to [Setup Serial Debug Tool](/linux/vim1/SetupSerialTool.html) to login to the serial terminal.
 
 ## Running Log Capture
 
@@ -167,4 +167,4 @@ khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/
 
 ## Send Log File
 
-When reporting problems on [Khadas Community](forum.khadas.com) or to hello@khadas.com, please send the above log files to us.
+When reporting problems on [Khadas Community](https://forum.khadas.com/) or to hello@khadas.com, please send the above log files to us.
