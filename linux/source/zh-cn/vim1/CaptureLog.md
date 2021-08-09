@@ -117,7 +117,7 @@ khadas@Khadas:~$
 
 在Mac OS系统下可以直接在终端下使用SSH命令登陆。如下：
 
-```
+```sh
 $ ssh khadas@192.168.1.145
 khadas@192.168.1.145's password:
 
@@ -170,4 +170,4 @@ khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/
 
 ## 发送Log文件
 
-在反馈问题时，把上述log文件发送给我们。
+在[Khadas论坛](https://forum.khadas.com/)或通过邮件hello@khadas.com反馈问题时，请提供上述log文件。
