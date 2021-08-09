@@ -1,7 +1,7 @@
 title: M2X网口
 ---
 
-我们之前在[文档](/linux/zh-cn/vim3/HowToUseDeviceTreeOverlay.html)中介绍过如何使用Device Tree Overlay
+我们之前在[文档](/linux/zh-cn/vim3/DeviceTreeOverlay.html)中介绍过如何使用Device Tree Overlay
 
 ## 在Ubuntu下使能M2X ETH
 

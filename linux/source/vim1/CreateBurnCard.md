@@ -121,6 +121,6 @@ Done!
 ## Upgrade Using Your "Burning Card"
 
 1. Insert your Burning Card into your VIM, and power-on.
-2. Follow this guide([VIM1](/linux/vim1/HowtoBootIntoUpgradeMode.html)/[VIM2](/linux/vim2/HowtoBootIntoUpgradeMode.html)/[VIM3](/linux/vim3/HowtoBootIntoUpgradeMode.html)) to boot into Upgrade Mode.
+2. Follow this guide([VIM1](/linux/vim1/BootIntoUpgradeMode.html)/[VIM2](/linux/vim2/BootIntoUpgradeMode.html)/[VIM3](/linux/vim3/BootIntoUpgradeMode.html)) to boot into Upgrade Mode.
 3. Wait till the process completes.
 

@@ -43,7 +43,7 @@ title: VIM1 Hardware
 |9|Power Button|This button turns on your VIM1|
 |A|M2x4 Mounting Point|For mounting to [cases](https://www.khadas.com/product-page/diy-case) and [heatsinks](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|RTC Battery Header|Header for attaching a battery for the real time clock|
-|C|[40-Pin GPIO](/linux/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/linux/vim1/Gpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|C|40-Pin GPIO|Learn how to access the GPIO from [here](/linux/vim1/Gpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
 |F|I-Pex [Wi-Fi](/linux/vim1/Wifi.html) / [Bluetooth](/linux/vim1/Bluetooth.html) Connector|Wi-Fi / BT Antenna connector|

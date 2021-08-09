@@ -5,7 +5,7 @@ title: NPU性能接口说明文档
 
 ### 升级系统到最新的版本
 
-请参考文档: [升级固件到最新版本](/zh-cn/vim3/HowToUpgradeTheSystem)
+请参考文档: [升级固件到最新版本](/zh-cn/vim3/UpgradeSystem)
 
 ### 重新加载驱动模块
 

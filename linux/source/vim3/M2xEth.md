@@ -1,7 +1,7 @@
 title: M2X Ethernet
 ---
 
-We have already explained in the [documentation](/linux/vim3/HowToUseDeviceTreeOverlay.html) how to useDevice Tree Overlays.
+We have already explained in the [documentation](/linux/vim3/DeviceTreeOverlay.html) how to useDevice Tree Overlays.
 
 ## Enable M2X ETH Under Ubuntu
 

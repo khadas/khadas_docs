@@ -57,7 +57,7 @@ Please replace `sdX` with the correct one on your PC.
 
 Ensure that you have done the correct setup of your Serial to USB Module([VIM1](/linux/vim1/SetupSerialTool.html)/[VIM2](/linux/vim2/SetupSerialTool.html)/[VIM3](/linux/vim3/SetupSerialTool.html)).
 
-In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been completely erased([VIM1](/linux/vim1/HowtoEraseEMMC.html)/[VIM2](/linux/vim2/HowtoEraseEMMC.html)/[VIM3](/linux/vim3/HowtoEraseEMMC.html)).
+In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been completely erased([VIM1](/linux/vim1/EraseEmmc.html)/[VIM2](/linux/vim2/EraseEmmc.html)/[VIM3](/linux/vim3/EraseEmmc.html)).
 
 Open a terminal and type the `sudo minicom` command or other serial tool you like.
 
