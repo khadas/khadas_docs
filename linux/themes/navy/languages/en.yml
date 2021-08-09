@@ -224,13 +224,16 @@ sidebar:
     qt5: QT5
     32bit_library: 32-bit Library
     npu: NPU
+    origin: Origin NN
     npu_binary_demo: Prebuilt NPU Demo
     aml_npu_sdk: NPU SDK
     aml_npu_app: NPU Demo Source Code
     model_convert: Model Convert
     npu_performance: NPU Performance
+    tengine: Tengine NN
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
+    amlogic: AML NN
     amlnn_api_demo: Amlogic NN API Demo
     development: Development
     uboot: U-Boot

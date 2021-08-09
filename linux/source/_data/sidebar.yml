@@ -190,14 +190,17 @@ vim3:
     qt5: QT5.html
     32bit_library: 32bitLibrary.html
   npu:
-    npu_binary_demo: OriginNPU-DemoUsage.html
-    aml_npu_sdk: HowToUseNPUSDK.html
-    aml_npu_app: HowToUseAmlNPUApp.html
-    model_convert: HowToConvertToUseNPU.html
-    npu_performance: OriginNPUPerformanceUsage.html
-    tengine_sdk: HowToUseTengineSDK.html
-    tengine_demo: HowToUseTengineApp.html
-    amlnn_api_demo: HowToUseAMLNNApi.html
+    origin:
+      npu_binary_demo: OriginNPU-DemoUsage.html
+      aml_npu_sdk: HowToUseNPUSDK.html
+      aml_npu_app: HowToUseAmlNPUApp.html
+      model_convert: HowToConvertToUseNPU.html
+      npu_performance: OriginNPUPerformanceUsage.html
+    tengine:
+      tengine_sdk: HowToUseTengineSDK.html
+      tengine_demo: HowToUseTengineApp.html
+    amlogic:
+      amlnn_api_demo: HowToUseAMLNNApi.html
   development:
     uboot:
       build_uboot: BuildUboot.html
