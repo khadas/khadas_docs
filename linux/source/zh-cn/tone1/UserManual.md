@@ -2,7 +2,7 @@ title: Khadas Tone1 用户手册
 ---
 
 感谢选购Khadas Tone1，现在开始享受高品质音乐吧～
-![Tone1 Overview](/images/tone1/ToneboardOverview.jpg)
+![Tone1 Overview](/linux/images/tone1/ToneboardOverview.jpg)
 
 
 
@@ -15,7 +15,7 @@ USB Type C数据线|USB Type C数据线
 -|40脚排座
 -|20脚排针
 
-![Tone1 Recipes](/images/tone1/ToneboardRecipes.jpg)
+![Tone1 Recipes](/linux/images/tone1/ToneboardRecipes.jpg)
 
 
 ## 设备连接
@@ -39,7 +39,7 @@ USB Type C数据线|USB Type C数据线
 3| 连接HDMI线到显示器
 4| 连接5V电源
 
-![Tone1 Connection VIMs](/images/tone1/ToneboardConnectionVIMs.png)
+![Tone1 Connection VIMs](/linux/images/tone1/ToneboardConnectionVIMs.png)
 
 </div>
 <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="win-tab">
@@ -49,7 +49,7 @@ USB Type C数据线|USB Type C数据线
 1| 连接音频线到RCA座子
 2| 通过USB Type C数据线连接Tone1和PC
 
-![Tone1 Connection General](/images/tone1/ToneboardConnectionGeneral.jpg)
+![Tone1 Connection General](/linux/images/tone1/ToneboardConnectionGeneral.jpg)
 
 </div>
 </div>
@@ -89,24 +89,24 @@ USB Type C数据线|USB Type C数据线
      * [下载](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)驱动
      * 解压并运行`setup.exe`来安装驱动
      * 安装完成后可以在设备管理器看到XMOS设备
-![Tone1 Windows Setup1](/images/tone1/ToneboardWindowsSetup1.png)
+![Tone1 Windows Setup1](/linux/images/tone1/ToneboardWindowsSetup1.png)
   *  选择声卡为Tone1
      * 点击底部任务栏的声音图标
-![Tone1 Windows Setup2](/images/tone1/ToneboardWindowsSetup2.jpg)
+![Tone1 Windows Setup2](/linux/images/tone1/ToneboardWindowsSetup2.jpg)
      * 选择XMOS XS1-U8 DJ为默认输出声卡
-![Tone1 Windows Setup3](/images/tone1/ToneboardWindowsSetup3.jpg)
+![Tone1 Windows Setup3](/linux/images/tone1/ToneboardWindowsSetup3.jpg)
 
 </div>
 <div class="tab-pane fade" id="ubuntu-set" role="tabpanel" aria-labelledby="ubuntu-set-tab">
 
 *  选择声卡为Tone1
-![Tone1 Ubuntu Setup](/images/tone1/ToneboardUbuntuSetup.jpg)
+![Tone1 Ubuntu Setup](/linux/images/tone1/ToneboardUbuntuSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="mac-set" role="tabpanel" aria-labelledby="mac-set-tab">
 
 *  选择声卡为Tone1
-![Tone1 Mac OS Setup](/images/tone1/ToneboardMacosSetup.jpg)
+![Tone1 Mac OS Setup](/linux/images/tone1/ToneboardMacosSetup.jpg)
 
 </div>
 <div class="tab-pane fade" id="rpi-set" role="tabpanel" aria-labelledby="rpi-set-tab">
@@ -114,7 +114,7 @@ USB Type C数据线|USB Type C数据线
 *  选择声卡为Tone1
 
    * Volumio
-![Tone1 Rpi Setup](/images/tone1/ToneboardRpiSetup.jpg)
+![Tone1 Rpi Setup](/linux/images/tone1/ToneboardRpiSetup.jpg)
 
    * Raspbian
 ```
@@ -154,7 +154,7 @@ No|Ports|Function|
 9|OLED     |VIMs OLED display
 10|Power LED     |Power supply indicator
 
-![Tone1 Ports](/images/tone1/ToneboardPorts.png)
+![Tone1 Ports](/linux/images/tone1/ToneboardPorts.png)
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
