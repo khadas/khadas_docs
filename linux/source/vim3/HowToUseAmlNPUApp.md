@@ -1,14 +1,14 @@
-title: Description and Usage of aml_NPU_app Code Repository 
+title: Application source code compilation instructions
 ---
 
-`aml_npu_app`  repository is the source code for `aml_npu_demo_binaries`,The library and demo of the `aml_npu_demo_binaries` repository can be compiled.
+This document mainly introduces how to compile the application source code and use it.
 
 {% note warn Note %}
 1. Just support local compile
 2. Just support Opencv4
 {% endnote %}
 
-## Install Opencv4
+## Install Opencv4 onto VIM3
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv
@@ -18,18 +18,11 @@ $ sudo apt install libopencv-dev python3-opencv
 
 The source code repository is stored in gitlab, and the repository address is:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
 
-1. Clone to local by git command
 
 ```shell
 $ cd {workspace}
 $ git clone https://gitlab.com/khadas/aml_npu_app
 ```
-
-2. Download the compressed package directly
-
-Users who do not use git can also download the compressed package directly from the repository homepage and unzip it.
-
-It is recommended to use the git command to clone. When the subsequent code is updated, you can directly `pull`
 
 ## Source description
 

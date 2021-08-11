@@ -1,7 +1,7 @@
 title: 如何使用Tengine SDK
 ---
 
-Tengine SDK 用于将训练好的模型转换成可以在NPU上运行模型
+Tengine 由 OPEN AI LAB 主导开发，该项目实现了深度学习神经网络模型在嵌入式设备上的快速、高效部署需求。为实现在众多 AIoT 应用中的跨平台部署，本项目使用 C 语言进行核心模块开发，针对嵌入式设备资源有限的特点进行了深度框架裁剪。
 
 这里以darknet框架的yolov3为例,演示如何将yolov3转换成tmfile
 

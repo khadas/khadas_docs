@@ -1,7 +1,7 @@
 title: How To Use Tengine SDK
 ---
 
-Tengine SDK is used to convert the trained model into the tengine model that can be run on the NPU.
+Tengine is developed by OPEN AI LAB. This project meet the demand of fast and efficient deployment of deep learning neural network models on embedded devices. In order to achieve cross-platform deployment in many AIoT applications, this project is based on the original Tengine project using C language for reconstruction, and deep frame tailoring for the characteristics of limited embedded device resources.
 
 Here takes yolov3 of the darknet framework as an example to demonstrate how to convert yolov3 to tmfile.
 

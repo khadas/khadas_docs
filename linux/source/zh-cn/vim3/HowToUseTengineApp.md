@@ -1,4 +1,4 @@
-title: 如何编译运行tengine示例
+title: 编译运行tengine示例
 ---
 
 Tengine_khadas_app 源码仓库是khadas基于tengine API制作的一个简易demo仓库
@@ -29,7 +29,7 @@ yolov3-camera  yolov3-picture
 $ sudo apt install libopencv-dev python3-opencv
 ```
 
-## 如何编译
+## 编译
 
 
 yolov3-picture:
@@ -55,7 +55,7 @@ tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
 其中`tengine_khadas_yolov3_picture`和`tengine_khadas_yolov3_camera`就是编译出来的可执行文件
 
 
-## 如何运行
+## 运行
 
 
 1. 获取tmfile

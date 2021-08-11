@@ -29,7 +29,7 @@ yolov3-camera  yolov3-picture
 $ sudo apt install libopencv-dev python3-opencv 
 ```
 
-## How To Compile
+## Compile
 
 yolov3-picture:
 
@@ -53,8 +53,7 @@ tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
 
 Among them, `tengine_khadas_yolov3_picture` and `tengine_khadas_yolov3_camera` are compiled executable files
 
-## How To Run
-
+## Run
 
 1. Get tmfile
 

@@ -1,4 +1,4 @@
-title: 如何编译使用Amlogic NN Api模板
+title: 编译使用Amlogic NN Api模板
 ---
 
 Amlogic NN Api是amlogic官方推出的一套NPU Api，这篇文档将介绍如何编译并使用khadas基于这套Api做的demo。
@@ -32,11 +32,9 @@ $ git clone https://gitlab.com/khadas/aml_npu_nnsdk_app
 
 ### 源码结构介绍
 
-源码仓库里面目前是3个demo:
 
-1. body_pose:       检测人体18点姿态,仅支持图片识别
 
-每个目录下都有编译脚本，makefile文件以及源码，以image_classify为例。
+每个目录下都有编译脚本，makefile文件以及源码,
 
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/image_classify_224x224

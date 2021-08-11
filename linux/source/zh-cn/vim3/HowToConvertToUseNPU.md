@@ -124,6 +124,18 @@ path/to/416x416.jpg
 这里的图片分辨率与yolo的cfg文件里面的配置是相同的
 
 
+4. 修改量化类型
+
+```sh
+    --quantized-dtype asymmetric_affine-u8 \
+```
+
+修改为,
+
+```sh
+    --quantized-dtype dynamic_fixed_point-i8 \
+```
+
 ## 修改`2_export_case_code.sh`
 
 1. 修改`NAME`
@@ -247,7 +259,7 @@ int size[3]={nn_width/32, nn_height/32,85*3};
 ```
 
 这里的`num_class`与训练集的class数量相同
-这里的`size[3]`等于`(num_class + 5 ) * 3` 
+这里的`size[2]`等于`(num_class + 5 ) * 3` 
 
 ## 编译
 
