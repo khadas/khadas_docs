@@ -32,9 +32,9 @@ The conversion is performed under the SDK.
 $ cd {workspace}/SDK/acuity-toolkit/conversion_scripts
 ```
 
-## Modifiy `0_import_model.sh`
+## Modify `0_import_model.sh`
 
-1. Modifiy `NAME`
+1. Modify `NAME`
 
 ```shell
 NAME=mobilenet_tf --> NAME=yolov3
@@ -53,7 +53,7 @@ $convert_tf \
     --data-output ${NAME}.data
 ```
 
-Modifiy to,
+Modify to,
 
 ```shell
 #$convert_tf \
@@ -75,7 +75,7 @@ Modifiy to,
 #    --data-output ${NAME}.data 
 ```
 
-Modifiy to,
+Modify to,
 
 ```shell
 $convert_darknet \
@@ -94,18 +94,18 @@ $convert_darknet \
 NAME=mobilenet_tf --> NAME=yolov3
 ```
 
-2. Modifiy regression parameters
+2. Modify regression parameters
 
 ```shell
      --channel-mean-value '128 128 128 128' \
 ```
-Modifiy to,
+Modify to,
 
 ```shell
      --channel-mean-value '0 0 0 256' \
 ```
 
-3. Modifiy `validation_tf.txt`
+3. Modify `validation_tf.txt`
 
 Replace the image inside
 
@@ -114,7 +114,7 @@ $ cat ./data/validation_tf.txt
 ./space_shuttle_224.jpg, 813
 ```
 
-Modifiy to,
+Modify to,
 
 ```shell
 path/to/416x416.jpg
@@ -122,39 +122,39 @@ path/to/416x416.jpg
 
 The picture resolution here is the same as the configuration in the yolo cfg file
 
-4. Modifiy quant type
+4. Modify quant type
 
 ```sh
     --quantized-dtype asymmetric_affine-u8 \
 ```
 
-Modifiy to,
+Modify to,
 
 ```sh
     --quantized-dtype dynamic_fixed_point-i8 \
 ```
 
-## Modifiy `2_export_case_code.sh`
+## Modify `2_export_case_code.sh`
 
-1. Modifiy `NAME`
+1. Modify `NAME`
 
 ```shell
 NAME=mobilenet_tf --> NAME=yolov3
 ```
 
-2. Modifiy regression parameters
+2. Modify regression parameters
 
 ```shell
      --channel-mean-value '128 128 128 128' \
 ```
 
-Modifiy to,
+Modify to,
 
 ```shell
      --channel-mean-value '0 0 0 256' \
 ```
 
-3. Modifiy the RGB channel order
+3. Modify the RGB channel order
 
 default channel is RGB
 
@@ -225,9 +225,9 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_pre_
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_yolov3.c {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/vnn_yolov3.c
 ```
 
-## Modifiy `yolov3_process.c`
+## Modify `yolov3_process.c`
 
-1. Modifiy the class array
+1. Modify the class array
 
 ```c
 static char *coco_names[] = {"person","bicycle","car","motorbike","aeroplane","bus","train","truck","boat","traffic light","fire hydrant","stop sign","parking meter","bench","bird","cat","dog","horse","sheep","cow","elephant","bear","zebra","giraffe","backpack","umbrella","handbag","tie","suitcase","frisbee","skis","snowboard","sports ball","kite","baseball bat","baseball glove","skateboard","surfboard","tennis racket","bottle","wine glass","cup","fork","knife","spoon","bowl","banana","apple","sandwich","orange","broccoli","carrot","hot dog","pizza","donut","cake","chair","sofa","pottedplant","bed","diningtable","toilet","tvmonitor","laptop","mouse","remote","keyboard","cell phone","microwave","oven","toaster","sink","refrigerator","book","clock","vase","scissors","teddy bear","hair drier","toothbrush"};
@@ -236,9 +236,9 @@ static char *coco_names[] = {"person","bicycle","car","motorbike","aeroplane","b
 
 According to your training data set settings, if it is a coco data set, there is no need to modify it.
 
-2. Modifiy `yolo_v3_post_process_onescale`
+2. Modify `yolo_v3_post_process_onescale`
 
-Modifiy `num_class`
+Modify `num_class`
 
 ```c
 int num_class = 80;
