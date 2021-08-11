@@ -15,7 +15,7 @@ $ sudo apt install libopencv-dev python3-opencv
 
 ## API Docs
 
-For detailed information about the API, please refer to the document `docs/zh-cn/DDK_6.4.3_SDK_V1.6 API Description.pdf`
+For detailed information about the API, please refer to the document `docs/zh-cn/DDK_6.4.3_SDK_V1.8 API Description.pdf`
 
 ## Compile
 
@@ -31,11 +31,8 @@ $ git clone https://gitlab.com/khadas/aml_npu_nnsdk_app
 
 ### Source code structure introduction
 
-There are currently 3 demos in the source code repository:
 
-1. body_pose:       Detect 18-point posture of the human body, only support image recognition
-
-There are compilation scripts, makefiles and source codes in each directory. Take image_classify as an example.
+There are compilation scripts, makefiles and source codes in each directory.
 
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/image_classify_224x224
@@ -50,8 +47,6 @@ build-cv4.sh  cv3_output  image_classify_224x224.cpp  include  makefile-cv4.linu
 ### Compilation method
 
 Please refer to get SDK [#Get-SDK](/vim3/HowToUseNPUSDK#Get-SDK)
-
-Here also take image_classify as an example,
 
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/image_classify_224x224
@@ -68,7 +63,7 @@ image_classify_224x224  image_classify_224x224.o
 
 Among them, `image_classify_224x224` are the generated executable files
 
-## How to Run
+## Run
 
 
 Here also take image_classify_224x224 as an example,

@@ -20,18 +20,18 @@ title: Khadas Tone1 Beginners FAQ
 
 * The audio output controls for your Mac are in System Preferences > Sound.
 
-![Mac OS X Sound Control Panel](/images/tone1/tb_faq_01.jpg)
+![Mac OS X Sound Control Panel](/linux/images/tone1/tb_faq_01.jpg)
 
 * Or click the volume icon in your Mac’s menu bar.
 
-![Mac OS X Sound Menu](/images/tone1/tb_faq_02.jpg)
+![Mac OS X Sound Menu](/linux/images/tone1/tb_faq_02.jpg)
 
 ## Enable Volume Control On Mac OS X:
 
 If you're using a Tone Board on a Mac, you may notice that you are unable to control the output volume of your Tone Board. To enable volume control, you'll need to upgrade your Tone Board's firmware. (Newer models of Tone Board are shipped with upgraded firmware)
 
 **Learn More:**
-[Upgrade Tone Board Firmware](/tone1/HowtoUpgradeFirmware.html)
+[Upgrade Tone Board Firmware](/linux/tone1/HowtoUpgradeFirmware.html)
 
 </div>
 <div class="tab-pane fade" id="win" role="tabpanel" aria-labelledby="win-tab">
@@ -47,11 +47,11 @@ If you're using a Tone Board on a Mac, you may notice that you are unable to con
 
 * Click the audio icon in your Windows Task Bar.
 
-![Windows 10 Volume Control](/images/tone1/xmos_volume.jpg)
+![Windows 10 Volume Control](/linux/images/tone1/xmos_volume.jpg)
 
 * Then click the upward-facing arrow to select your audio output device.
 
-![Windows 10 Select Playback Device](/images/tone1/xmos_selection.jpg)
+![Windows 10 Select Playback Device](/linux/images/tone1/xmos_selection.jpg)
 
 </div>
 </div>
@@ -59,5 +59,5 @@ If you're using a Tone Board on a Mac, you may notice that you are unable to con
 # More Information:
 
 * [Tone1 Website](https://www.khadas.com/tone1)
-* [Tone1 User Manual](/tone1/UserManual.html)
-* [Upgrade Tone Board Firmware](/tone1/HowtoUpgradeFirmware.html)
+* [Tone1 User Manual](/linux/tone1/UserManual.html)
+* [Upgrade Tone Board Firmware](/linux/tone1/HowtoUpgradeFirmware.html)

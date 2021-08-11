@@ -1,19 +1,19 @@
-title: 如何编译运行tengine示例
+title: How To Compile And Run Tengine Demo
 ---
 
-Tengine_khadas_app 源码仓库是khadas基于tengine API制作的一个简易demo仓库
+The source code repository is a simple demo repository made by khadas based on the tengine API
 
-
-{% note warn 注意 %}
-tengine-lite v.14(即NPU6.4.4.3)之后，demo仅支持在板子上进行本地编译
+{% note warn Note %}
+After tengine-lite v.14 (ie NPU6.4.4.3), the demo only supports local compilation on the board
 {% endnote %}
 
-## 获取源码
 
-源码仓库位于khadas的gitlab上,clone到板子上
+## Get Source code
+
+The source code repository is located on gitlab of khadas
 
 ```shell
-$ mkdir ${workspace}
+$ mkdir workspace
 $ cd ${workspace}
 $ git clone https://gitlab.com/khadas/tengine_khadas_app.git
 $ cd tengine_khadas_app
@@ -21,16 +21,15 @@ $ ls
 yolov3-camera  yolov3-picture
 ```
 
-`yolov3-camera`和`yolov3-picture`分别基于opencv的摄像头识别和图片识别的demo
+`yolov3-camera` and `yolov3-picture` are based on the demos of camera recognition and picture recognition of opencv respectively
 
-## 安装opencv4
+## Install opencv4
 
 ```shell
-$ sudo apt install libopencv-dev python3-opencv
+$ sudo apt install libopencv-dev python3-opencv 
 ```
 
-## 如何编译
-
+## Compile
 
 yolov3-picture:
 
@@ -46,24 +45,22 @@ yolov3-camera:
 
 ```shell
 $ cd ${workspace}/tengine_khadas_app/yolov3-camera
-$ ./build-cv3.sh
+$ ./build-cv4.sh
   COMPILE ${workspace}/tengine_khadas_app/yolov3-camera/tengine_khadas_yolov3_camera.cpp
 $ ls cv3_output/
 tengine_khadas_yolov3_camera  tengine_khadas_yolov3_camera.o
 ```
 
-其中`tengine_khadas_yolov3_picture`和`tengine_khadas_yolov3_camera`就是编译出来的可执行文件
+Among them, `tengine_khadas_yolov3_picture` and `tengine_khadas_yolov3_camera` are compiled executable files
+
+## Run
+
+1. Get tmfile
+
+Please refer to [How To Use Tengine SDK](/vim3/HowToUseTengineSDK)
 
 
-## 如何运行
-
-
-1. 获取tmfile
-
-请参考[如何使用Tengine SDK](/linux/zh-cn/vim3/HowToUseTengineSDK)
-
-
-2. 运行
+2. Run
 
 ```shell
 $ ./tengine_khadas_yolov3_camera -m path/to/yolov3_uint8_t_timfile -i path/to/picture

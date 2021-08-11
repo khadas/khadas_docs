@@ -1,13 +1,13 @@
-title: How To Use Tengine SDK
+title: 如何使用Tengine SDK
 ---
 
-Tengine SDK is used to convert the trained model into the tengine model that can be run on the NPU.
+Tengine 由 OPEN AI LAB 主导开发，该项目实现了深度学习神经网络模型在嵌入式设备上的快速、高效部署需求。为实现在众多 AIoT 应用中的跨平台部署，本项目使用 C 语言进行核心模块开发，针对嵌入式设备资源有限的特点进行了深度框架裁剪。
 
-Here takes yolov3 of the darknet framework as an example to demonstrate how to convert yolov3 to tmfile.
+这里以darknet框架的yolov3为例,演示如何将yolov3转换成tmfile
 
-## Get SDK
+## 获取SDK
 
-The tengine SDK source code repository is on gitlab of khadas
+tengine SDK 源码仓库在khadas的gitlab上
 
 ```shell
 $ mkdir workspace && cd workspace
@@ -16,23 +16,22 @@ $ cd tengine_khadas_sdk && ls
 docs  tengine_tools
 ```
 
-1. docs : Usage and documentation including conversion and quantification
-2. tengine_toos : Use for transform and quantify models
+1. docs : 包括转换和量化在内的使用和说明文档
+2. tengine_toos : 用于转换和量化模型
 
 
-## Convert and quant
+## 转换以及量化
 
-1. Get yolov3 original file
+1. 获取yolov3原始文件
 
-Before starting the conversion and quantification, get the weights file and cfg file of yolov3
+在开始转换和量化之前,获取yolov3的weights文件和cfg文件
 
 [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
 [yolov3.cfg](https://github.com/yan-wyb/darknet/blob/master/cfg/yolov3.cfg)
 
-2. Prepare photo gallery
+2. 准备图片集
 
-A certain amount of pictures need to be used for quantification
-
+量化时需要使用一定量的图片
 
 ```shell
 $ ls workspace/quant
@@ -45,19 +44,20 @@ quant14.jpg   quant20.jpg  quant27.jpg  quant33.jpg  quant3.jpg   quant46.jpg  q
 quant15.jpg   quant21.jpg  quant28.jpg  quant34.jpg  quant40.jpg  quant47.jpg  quant53.jpg  quant5.jpg   quant66.jpg  quant72.jpg  quant79.jpg  quant85.jpg  quant91.jpg  quant98.jpg
 ```
 
-100 images from the VOC2012 dataset are used here
+这里使用100张来自VOC2012数据集的图片
 
-3. Convert
+
+3. 转换
 
 ```shell
 $ cd ${workspace}/tengine_khadas_sdk/tengine_tools/convert_tool
 $ ./convert_tool -f darknet -m ~/yolov3.weights -p ~/yolov3.cfg -o yolov3.tmfile
 
----- Tengine Convert Tool ----
+---- Tengine Convert Tool ---- 
 
 Version     : v1.0, 15:43:59 Jun 24 2021
 Status      : float32
-major: 0, minor: 2, revision: 0, seen: 0, transpose: 0
+major: 0, minor: 2, revision: 0, seen: 0, transpose: 0 
 Create tengine model file done: yolov3.tmfile
 ```
 转换会生成一个tmfile,这个文件在量化时会使用到
@@ -66,14 +66,14 @@ Create tengine model file done: yolov3.tmfile
 $ cd ${workspace}/tengine_khadas_sdk/tengine_tools/convert_tool && ls
 convert_tool  README.md  yolov3.tmfile
 ```
-4. Quant
+
+4. 量化
 
 ```shell
 $ cd ${workspace}/tengine_khadas_sdk/tengine_tools/quant_tool
-$ ./quant_tool_uint8 -m ../convert_tool/yolov3.tmfile -i ~/data/git/npu/datesets/tengine_test_datasets_100/ -o yolov3_u8.tmfile -g 3,416,416 -a MINMAX  -w 0,0,0 -s 0.003922,0.003922,0.003922 -c 0 -t 4 -b 1 -
-y 416,416
+$ ./quant_tool_uint8 -m ../convert_tool/yolov3.tmfile -i ~/data/git/npu/datesets/tengine_test_datasets_100/ -o yolov3_u8.tmfile -g 3,416,416 -a MINMAX  -w 0,0,0 -s 0.003922,0.003922,0.003922 -c 0 -t 4 -b 1 -y 416,416
 
----- Tengine Post Training Quantization Tool ----
+---- Tengine Post Training Quantization Tool ---- 
 
 Version     : v1.2, 15:15:47 Jun 22 2021
 Status      : uint8, per-layer, asymmetric
@@ -111,16 +111,15 @@ Thread num  : 4
 ---- Tengine Int8 tmfile create success, best wish for your INT8 inference has a low accuracy loss...\(^0^)/ ----
 ```
 
-The converted `yolov3_u8.tmfile` file is the tmfile file that can be run on the NPU
+转换生成的`yolov3_u8.tmfile`文件就是可以运行在NPU上面的tmfile文件
 
 ```shell
 $ cd ${workspace}/tengine_khadas_sdk/tengine_tools/quant_tool && ls
 quant_tool_uint8  README.md  table_minmax.scale  yolov3_u8.tmfile
 ```
-{% note info Note %}
-For detailed parameter description, please refer to `workspace/tengine_khadas_sdk/docs`
-tengie offical docs: https://tengine-docs.readthedocs.io/en/latest/index.html
+
+{% note info 注意 %}
+详细的参数说明请参考`workspace/tengine_khadas_sdk/docs`
+tengie官方说明文档: https://tengine-docs.readthedocs.io/zh_CN/latest/index.html
 {% endnote %}
-
-
 

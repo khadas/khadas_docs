@@ -163,19 +163,19 @@ $ ls
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
-$ ./detect_demo_xx_xx type picture_path
+$ ./detect_demo_xx -m <type> -p <picture_path>
 ```
 
 这里以x11下调用yolov3模型识别图片为例，
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
-$ ./detect_demo_x11 2 1080p.bmp
+$ ./detect_demo_x11 -m 2 -p 1080p.bmp
 ```
 
 运行结果如下，
 
-![detect_demo_picture_x11_cv3](/images/vim3/detect_demo_picture_x11_cv3.png)
+![detect_demo_picture_x11_cv3](/linux/images/vim3/detect_demo_picture_x11_cv3.png)
 
 #### 摄像头动态识别
 
@@ -199,6 +199,6 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 
 打开摄像头以后。会将识别的结果显示在屏幕上
 
-![detect_demo_x11_cv3](/images/vim3/detect_demo_x11_cv3.png)
+![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
 
 

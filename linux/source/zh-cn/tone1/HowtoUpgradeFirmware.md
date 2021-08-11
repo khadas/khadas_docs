@@ -65,39 +65,39 @@ alt="Tone2 Pro - XMOS & MCU Firmware Upgrade (Mac)" width="480" height="360" bor
 * 从 [目录](https://dl.khadas.com/Firmware/ToneBoard/) 下载 `.bin` 固件并解压。
 * 用USB-C数据线将Tone连接到PC。
 
-![Tone With USB-C Cable](/images/tone1/tb_fw_01.jpg)
+![Tone With USB-C Cable](/linux/images/tone1/tb_fw_01.jpg)
 
 **安装:**
 
 * 运行 `setup_eval.exe` 程序安装工具，用来升级Tone的固件。
 
-![Tone USB Upgrade Tool Installation](/images/tone1/tb_fw_02.jpg)
+![Tone USB Upgrade Tool Installation](/linux/images/tone1/tb_fw_02.jpg)
 
 * 点击 `Yes`，然后断开并重新连接Tone。
 
-![Disconnect and Reconnect Tone](/images/tone1/tb_fw_03.jpg)
+![Disconnect and Reconnect Tone](/linux/images/tone1/tb_fw_03.jpg)
 
 **升级:**
 
 * 从开始菜单中打开 `TUSBAudio Firmware Upgrade` 。
 
-![TUSBAudio Firmware Upgrade Tool](/images/tone1/tb_fw_04.jpg)
+![TUSBAudio Firmware Upgrade Tool](/linux/images/tone1/tb_fw_04.jpg)
 
 * 当出现 `Device Opened` 时, 表示Tone连接成功并且可以开始升级(如果没有，断开并重新连接Tone)。
 
-![Tone Ready For Upgrade](/images/tone1/tb_fw_05.jpg)
+![Tone Ready For Upgrade](/linux/images/tone1/tb_fw_05.jpg)
 
 * 点击 `Browse`， 将解压的 `.bin` 文件加载到工具中。
 
-![Tone USB Upgrade Tool Browse For .img](/images/tone1/tb_fw_07.jpg)
+![Tone USB Upgrade Tool Browse For .img](/linux/images/tone1/tb_fw_07.jpg)
 
 * 点击 `Start`， 开始升级。
 
-![Tone USB Upgrade Tool Click Start](/images/tone1/tb_fw_08.jpg)
+![Tone USB Upgrade Tool Click Start](/linux/images/tone1/tb_fw_08.jpg)
 
 * 升级完成后，点击 `Exit` 退出。
 
-![Tone USB Upgrade Tool Finished And Exit](/images/tone1/tb_fw_09.jpg)
+![Tone USB Upgrade Tool Finished And Exit](/linux/images/tone1/tb_fw_09.jpg)
 
 * 卸载用于升级固件的[EVAL driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/%5bOnly%20for%20some%20OS%20Upgrade%20XMOS%5d-XMOS-TUSBAudio-EVAL-V4.11.0-Setup.zip) ，安装[v224 driver](https://dl.khadas.com/Firmware/ToneBoard/Driver/Thesycon-Stereo-USB-Audio-Driver-V224.rar)。
 
@@ -260,6 +260,6 @@ Abort trap: 6
 
 ## 其他:
 
-* [Tone1 概述](/zh-cn/tone1/index.html)
-* [Tone1 用户手册](/zh-cn/tone1/UserManual.html)
+* [Tone1 概述](/linux/zh-cn/tone1/index.html)
+* [Tone1 用户手册](/linux/zh-cn/tone1/UserManual.html)
 * [Tone1 固件下载](https://dl.khadas.com/Firmware/ToneBoard/)

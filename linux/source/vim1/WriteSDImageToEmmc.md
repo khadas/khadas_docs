@@ -1,28 +1,37 @@
-title: How to write SD image to eMMC
+title: Write SD/USB firmware to eMMC
 ---
 
-## Write image to SD card or Thumbdriver(U-Disk)
+This document describes how to write the firmware in SD/USB to eMMC.
 
-Check [here](/linux/vim3/BootFromExtMedia.html#Step-1-Clone-image-to-SD-card-or-Thumbdrive-U-Disk).
+## Boot from SD/USB
 
-## Boot from SD card or Thumbdriver(U-Disk)
+1. Write the firmware to SD card or U disk. To make a boot card, please refer to: [How to write firmware to SD/USB](/linux/zh-cn/vim3/BootFromExtMedia#Install-Image-to-SD-USB-Storage).
+2. Boot the system from SD card or U disk. Please refer to the boot method: [Boot System from External Media](/linux/zh-cn/vim3/BootFromExtMedia.html).
 
-Check [here](/linux/vim3/BootFromExtMedia.html).
+## Write to eMMC
 
-## Write SD image or Thumbdriver(U-Disk) image to eMMC
+1. Startup script
 
+```sh
+khadas@Khadas:~$ sudo emmc-install
 ```
-sudo emmc-install
-```
 
-## Install / Update the bootloader on SD / eMMC
+2. After the script starts, select option 1 to install the system into eMMC.
 
-![image](/linux/images/vim1/Write_SD_image_to_eMMC1.png)
+<img src="/linux/images/vim1/Write_SD_image_to_eMMC1.png" width="800px">
 
-## Continue
+3. To install to eMMC, eMMC needs to be cleared.
 
-![image](/linux/images/vim1/Write_SD_image_to_eMMC2.png)
+<img src="/linux/images/vim1/Write_SD_image_to_eMMC2.png" width="800px">
 
-## Writing bootloader done
+4. After clearing eMMC, eMMC will format and install the system to eMMC.
 
-![image](/linux/images/vim1/Write_SD_image_to_eMMC3.png)
+<img src="/linux/images/vim1/Write_SD_image_to_eMMC3.png" width="800px">
+<img src="/linux/images/vim1/Write_SD_image_to_eMMC4.png" width="800px">
+
+5. After the installation is complete, select `power off`, remove the SD card or U disk and boot from eMMC.
+
+<img src="/linux/images/vim1/Write_SD_image_to_eMMC5.png" width="800px">
+
+If you don't want to use the firmware in eMMC immediately, you can choose Exit.
+

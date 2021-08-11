@@ -1,46 +1,46 @@
-title: How to convert and call your own model through NPU
+title: 如何转换并通过NPU调用自己的模型
 ---
 
-Here takes yolov3 as an example to demonstrate how to convert your own model, adapt it to our demo, and run it on VIM3
+这里以yolov3为例，演示如何转换自己的模型，并适配进我们demo，在VIM3上面运行
 
-{% note info Note %}
-	Please review the document carefully before converting the reference document
+{% note info 注意 %}
+请在参照文档转换之前，先仔细查看一遍一下文档
 {% endnote %}
 
-1. [SDK instructions](/vim3/HowToUseNPUSDK.html)
-2. [Description and Usage of aml_NPU_app Code Repository](/vim3/HowToUseAmlNPUApp.html)
-3. [How to run NPU Demo](/vim3/HowToRunNPUDemo.html)
+1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
+2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
+3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
 
 
-# Prepare
+# 准备
 
-1. Train your own yolov3 model. The training method and process can refer to the official: [Darknet Yolo Page](https://pjreddie.com/darknet/yolo/), here we use the officially trained weights based on the coco data set
+1. 训练好自己的yolov3模型。训练方式和过程可参考官方: [Darknet Yolo Page](https://pjreddie.com/darknet/yolo/)，这里使用官方训练好的基于coco数据集的weights
 
-2. Prepare SDK, app warehouse, and demo warehouse
+2. 准备好SDK,app仓库，以及demo仓库
 
-Please refer to the SDK, app and demo documents respectively for how to obtain the corresponding code
+请分别参考SDK，app以及demo的文档是如何获取相应的代码的
 
-1. [SDK instructions](/vim3/HowToUseNPUSDK.html)
-2. [Description and Usage of aml_NPU_app Code Repository](/vim3/HowToUseAmlNPUApp.html)
-3. [How to run NPU Demo](/vim3/HowToRunNPUDemo.html)
+1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
+2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
+3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
 
-# Conversion
+# 转换
 
-The conversion is performed under the SDK.
+转换在SDK下进行。
 
 ```shell
 $ cd {workspace}/SDK/acuity-toolkit/conversion_scripts
 ```
 
-## Modify `0_import_model.sh`
+## 修改`0_import_model.sh`
 
-1. Modify `NAME`
+1. 修改`NAME`
 
 ```shell
 NAME=mobilenet_tf --> NAME=yolov3
 ```
 
-2. Comment out Tensorflow
+2. 注释掉Tensorflow
 
 
 ```shell
@@ -53,7 +53,7 @@ $convert_tf \
     --data-output ${NAME}.data
 ```
 
-Modify to,
+修改为
 
 ```shell
 #$convert_tf \
@@ -65,7 +65,7 @@ Modify to,
 #    --data-output ${NAME}.data
 ```
 
-3. Comment Darknet
+3. 打开Darknet
 
 ```shell
 #$convert_darknet \
@@ -75,7 +75,7 @@ Modify to,
 #    --data-output ${NAME}.data 
 ```
 
-Modify to,
+修改为
 
 ```shell
 $convert_darknet \
@@ -86,78 +86,91 @@ $convert_darknet \
 
 ```
 
-## MOdify `1_quantize_model.sh`
+## 修改`1_quantize_model.sh`
 
-1. MOdify `NAME`
+1. 修改`NAME`
 
 ```shell
 NAME=mobilenet_tf --> NAME=yolov3
 ```
 
-2. Modify regression parameters
+2. 修改回归参数
 
 ```shell
      --channel-mean-value '128 128 128 128' \
 ```
-Modify to,
+
+修改为
 
 ```shell
      --channel-mean-value '0 0 0 256' \
 ```
 
-3. Modify `validation_tf.txt`
+3. 修改`validation_tf.txt`
 
-Replace the image inside
+替换里面的图片
 
 ```shell
 $ cat ./data/validation_tf.txt
 ./space_shuttle_224.jpg, 813
 ```
 
-Modify to,
+修改为
 
 ```shell
 path/to/416x416.jpg
 ```
 
-The picture resolution here is the same as the configuration in the yolo cfg file
+这里的图片分辨率与yolo的cfg文件里面的配置是相同的
 
 
-## Modify `2_export_case_code.sh`
+4. 修改量化类型
 
-1. Modify `NAME`
+```sh
+    --quantized-dtype asymmetric_affine-u8 \
+```
+
+修改为,
+
+```sh
+    --quantized-dtype dynamic_fixed_point-i8 \
+```
+
+## 修改`2_export_case_code.sh`
+
+1. 修改`NAME`
 
 ```shell
 NAME=mobilenet_tf --> NAME=yolov3
 ```
 
-2. Modify regression parameters
+2. 修改回归参数
 
 ```shell
      --channel-mean-value '128 128 128 128' \
 ```
 
-Modify to,
+修改为
 
 ```shell
      --channel-mean-value '0 0 0 256' \
 ```
 
-3. Modify the RGB channel order
+3. 修改RGB通道顺序
 
-default channel is RGB
+默认是RGB
 
 ```shell
     --reorder-channel '0 1 2' \
 ```
 
-Modified to BGR
+修改为BGR
 
 ```shell
     --reorder-channel '2 1 0' \
 ```
 
-4. Specified board model
+4. 指定板子型号
 
 VIM3
 
@@ -171,26 +184,26 @@ VIM3L
     --optimize VIPNANOQI_PID0X99  \
 ```
 
-## Compile and get the converted code
+## 编译并获取转换后的代码
 
-1. Compile
+1. 转换
 
 ```shell
 $ bash 0_import_model.sh && bash 1_quantize_model.sh  && bash 2_export_case_code.sh
 ```
 
-2. case code
+2. case代码
 
-The converted code is in the `nbg_unify_yolov3` directory
+转换后的代码在`nbg_unify_yolov3`目录下
 
 ```shell
 $ ls {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3
 BUILD  main.c  makefile.linux  nbg_meta.json  vnn_global.h  vnn_post_process.c  vnn_post_process.h  vnn_pre_process.c  vnn_pre_process.h  vnn_yolov3.c  vnn_yolov3.h  yolov3.nb  yolov3.vcxproj
 ```
 
-# Compile
+# 编译
 
-This part of the code is carried out in the aml_npu_app warehouse. Enter the directory of `detect_yolo_v3`
+这部分代码在aml_npu_app仓库中进行。进入`detect_yolo_v3`的目录里面
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
@@ -198,9 +211,9 @@ $ ls
 build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c  yolov3_process.c
 ```
 
-## Replace vnn file
+## 替换vnn文件
 
-1. Replace `vnn_yolov3.h`, `vnn_post_process.h`, `vnn_pre_process.h` generated by SDK
+1. 将SDK生成的`vnn_yolov3.h`，`vnn_post_process.h`，`vnn_pre_process.h`替换进来
 
 ```shell
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_yolov3.h {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/include/vnn_yolov3.h
@@ -208,72 +221,73 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_post
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_pre_process.h {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/include/vnn_pre_process.h
 ```
 
-2. Replace `vnn_yolov3.c` generated by SDK
+2. 将SDK生成的`vnn_yolov3.c`替换进来
 
 ```shell
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_yolov3.c {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/vnn_yolov3.c
 ```
 
-## Modify `yolov3_process.c`
+## 修改`yolov3_process.c`
 
-1. Modify the class array
+1. 修改class数组
 
 ```c
 static char *coco_names[] = {"person","bicycle","car","motorbike","aeroplane","bus","train","truck","boat","traffic light","fire hydrant","stop sign","parking meter","bench","bird","cat","dog","horse","sheep","cow","elephant","bear","zebra","giraffe","backpack","umbrella","handbag","tie","suitcase","frisbee","skis","snowboard","sports ball","kite","baseball bat","baseball glove","skateboard","surfboard","tennis racket","bottle","wine glass","cup","fork","knife","spoon","bowl","banana","apple","sandwich","orange","broccoli","carrot","hot dog","pizza","donut","cake","chair","sofa","pottedplant","bed","diningtable","toilet","tvmonitor","laptop","mouse","remote","keyboard","cell phone","microwave","oven","toaster","sink","refrigerator","book","clock","vase","scissors","teddy bear","hair drier","toothbrush"};
 
 ```
 
-According to your training data set settings, if it is a coco data set, there is no need to modify it.
+按照你训练的数据集设置,如果是coco数据集,则不用修改.
 
-2. Modify `yolo_v3_post_process_onescale`
 
-Modify `num_class`
+2. 修改`yolo_v3_post_process_onescale`
+
+修改`num_class`
 
 ```c
 int num_class = 80;
 ```
 
-The `num_class` here is the same as the number of classes in the training set
+这里的`num_class`与训练集的class数量相同
 
-3. Modified post-processing function `yolov3_postprocess`
+3. 修改后处理函数`yolov3_postprocess`
 
-MOdify `num_class` and `size[3]`
+修改`num_class`以及`size[3]`
 
 ```c
 int num_class = 80;
 int size[3]={nn_width/32, nn_height/32,85*3};
 ```
 
-The `num_class` here is the same as the number of classes in the training set
-The `size[3]` here is equal to `(num_class + 5) * 3`
+这里的`num_class`与训练集的class数量相同
+这里的`size[2]`等于`(num_class + 5 ) * 3` 
 
-## Compile
+## 编译
 
-Use the `build_vx.sh` script to compile the yolov3 library,
+使用`build_vx.sh`脚本就能编译出yolov3的库,
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
 $ ./build_vx.sh
 ```
 
-The generated library is in the `bin_r` directory
+生成的库在`bin_r`目录下
 
 ```shell
 $ ls {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/bin_r
 libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 ```
 
-# How To  Run
+# 运行
 
-## Replace
+## 替换
 
-1. Replace yolov3 library
+1. 替换yolov3库
 
 ```shell
 $ cp {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/bin_r/libnn_yolo_v3.so {workspace}/aml_npu_demo_binaries/detect_demo_picture/lib/libnn_yolo_v3.so
 ```
 
-2. Replace nb file
+2. 替换nb文件
 
 VIM3
 
@@ -287,9 +301,10 @@ VIM3L
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/yolov3.nb {workspace}/aml_npu_demo_binaries/detect_demo_picture/nn_data/yolov3_99.nb
 ```
 
-## Run with board
+## 运行
 
-How to run the replaced `aml_npu_demo_binaries` on the board, please refer to
+如何在板子上运行替换完的`aml_npu_demo_binaries`，请参考
 
-[How to run NPU Demo](/vim3/HowToRunNPUDemo.html)
+
+[如何在板子上运行NPUDemo](/zh-cn/vim3/HowToRunNPUDemo.html)
 

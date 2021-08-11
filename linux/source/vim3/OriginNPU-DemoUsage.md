@@ -160,7 +160,7 @@ Identify the command format of the picture
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
-$ ./detect_demo_xx type picture_path
+$ ./detect_demo_xx -m <type> -p <picture_path>
 ```
 
 Here is an example of using Opencv3 to call the yolov3 model to recognize pictures under x11.
@@ -172,7 +172,7 @@ $ ./detect_demo_fb 2 1080p.bmp
 
 The results of the operation are as follows,
 
-![detect_demo_picture_x11_cv3](/images/vim3/detect_demo_picture_x11_cv3.png)
+![detect_demo_picture_x11_cv3](/linux/images/vim3/detect_demo_picture_x11_cv3.png)
 
 #### Dynamic camera recognition
 
@@ -196,7 +196,7 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 
 After turning on the camera, the recognition result will be displayed on the screen
 
-![detect_demo_x11_cv3](/images/vim3/detect_demo_x11_cv3.png)
+![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
 
 
 

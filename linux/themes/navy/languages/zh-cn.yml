@@ -224,13 +224,16 @@ sidebar:
     qt5: QT5
     32bit_library: 32位运行库
     npu: NPU
+    origin: 原始NN
     npu_binary_demo: 预编译NPU Demo
     aml_npu_sdk: NPU SDK
     aml_npu_app: NPU Demo源码
     model_convert: 模型转换
     npu_performance: NPU Performance
+    tengine: Tengine NN
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
+    amlogic: AML NN
     amlnn_api_demo: Amlogic NN API Demo
     development: 开发
     uboot: U-Boot

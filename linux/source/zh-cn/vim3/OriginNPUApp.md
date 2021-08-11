@@ -1,39 +1,31 @@
-title: aml_NPU_app仓库说明以及使用
+title: 应用源码编译使用说明
 ---
 
-`aml_npu_app仓库`是`aml_npu_demo_binaries`仓库的源码，可编译出`aml_npu_demo_binaries`仓库的库和demo。
+这篇文档主要介绍如何编译应用源码并使用。
 
 {% note warn 注意 %}
 1. 只支持本地编译
 2. 只支持opencv4
 {% endnote %}
 
-## 安装Opencv4
+## 安装Opencv4到VIM3
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv
 ```
 
-# 获取仓库源码
+## 获取仓库源码
 
 源码仓库存储在gitlab，仓库地址为:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
-
-1. 通过git命令clone到本地
 
 ```shell
 $ cd {workspace}
 $ git clone https://gitlab.com/khadas/aml_npu_app
 ```
 
-2. 直接下载压缩包
+## 仓库源码说明
 
-不使用git的用户也可以在仓库首页直接下载压缩包，再解压到板子上。
-
-建议通过git命令clone，后续代码有更新时，可以直接`pull`
-
-# 仓库源码说明
-
-## 结构说明
+### 结构说明
 
 ```shell
 $ cd {workspace}/aml_npu_app
@@ -48,7 +40,7 @@ DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
 4. LICENSE         #LICENSE文件
 ```
 
-## 库说明
+### 库说明
 
 进入库源码的目录，也就是DDK的目录。
 
@@ -89,7 +81,7 @@ build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c
 8. yolov3_process.c   #主要定义了模型的前处理和后处理
 ```
 
-## 应用层说明
+### 应用层说明
 
 进入应用层源码目录
 
@@ -128,10 +120,10 @@ $ ls
 4. xxx.h               #应用层需要使用到的定义相关的头文件
 ```
 
-# 编译仓库源码
+## 编译仓库源码
 
 
-## 编译库
+### 编译库
 
 编译库，只要进入到相应的库的目录编译即可。这里以yolov3为例
 
@@ -159,11 +151,11 @@ $ ls
 libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 ```
 
-## 编译应用
+### 编译应用
 
 编译应用时，要先编译`libnn_detect.so`。这是编译其他应用的依赖库之一.
 
-### 编译`libnn_detect.so`
+#### 编译`libnn_detect.so`
 
 进入`source_code`目录，编译`libnn_detect.so`
 
@@ -184,7 +176,7 @@ $ ls
 detect_log.o  detect.o  libnn_detect.so
 ```
 
-### 编译应用demo
+#### 编译应用demo
 
 这里以sample_demo_x11为例，
 

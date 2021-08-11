@@ -1,11 +1,14 @@
 title: SDK使用说明
 ---
 
-NPU SDK 是转换AI模型和编译`aml_npu_sdk`的工具合集。
+这篇主要介绍如何将不同平台的神经网络模型，转换成可以在NPU上面运行的模型代码和数据。
 
 ## 获取SDK
 
-SDK需要通过邮件申请，申请以后会通过一封邮件发到你的邮箱。[申请地址](https://www.khadas.com/npu-toolkit-vim3)
+```sh
+$ mkdir workspace && cd workspace
+$ git clone https://gitlab.com/khadas/aml_npu_sdk.git
+```
 
 ## SDK目录结构说明
 
@@ -14,7 +17,7 @@ SDK需要通过邮件申请，申请以后会通过一封邮件发到你的邮�
 ```shell
 $ cd {workspace}/aml_npu_sdk
 $ ls
-acuity-toolkit  android_sdk  Dockerfile  docs  LICENSE  README.md
+acuity-toolkit  android_sdk  Dockerfile  docs  LICENSE  linux_sdk  README.md
 ```
 
 SDK主要分成几个sdk，转换工具和编译工具以及docs几个部分。
@@ -25,6 +28,12 @@ android_sdk       #Android SDK 目录
 docs              #转换相关的文档合集
 ```
 
+{% note info 注意 %}
+
+由于linux代码全部已经实现了local编译，不再支持hlost编译。因此linux_sdk的内容已经全部移除
+
+{% endnote %}
+
 ## Docs说明
 
 进入Docs目录，
@@ -32,16 +41,8 @@ docs              #转换相关的文档合集
 ```shell
 $ cd {workspace}/aml_npu_sdk/docs/zh-cn
 $ ls
-'Android&Linux编译集成指导(0.2).pdf'  'NN工具FAQ (0.1).pdf'  '模型转换运行用户指南(0.6).pdf'
-$ cd ../en
-$ ls
-'AMLNN Convolution Acceleration Tips.pdf'                  'Model_Transcoding and Running User Guide_V0.6.pdf'                              'NN Tool FAQ (0.1).pdf'
-'Android&Linux_Compilation and Integration Guide_0.2.pdf'  'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'
+'Android&Linux编译集成指导(0.2).pdf'  'DDK_6.4.4.3_SDK_V1.8.0 API 描述.pdf'  'NN工具FAQ (0.4).pdf'  '模型转换运行用户指南(0.8).pdf'
 ```
-
-{% note info Linux SDK %}
-所有的demo已经迁移到板子上编译，需要的库也预转在板子上，不再需要Linux SDK
-{% endnote %}
 
 文档记录了从转换到集成的一系列过程，以及一些常见的问题
 
@@ -49,9 +50,7 @@ $ ls
 ```
 1. 'Android&Linux编译集成指导(0.2).pdf'                                              #Android&&linux编译集成指导,主要说明如何使用转换后的code
 2. 'NN工具FAQ (0.1).pdf'                                                             #转换工具FAQ文档,记录了常见的转换的问题
-3. '模型转换运行用户指南(0.6).pdf'                                                   #模型转换文档,详细的介绍了如何转换
-4. 'AMLNN Convolution Acceleration Tips.pdf                                          #AMLNN卷积加速文档
-5. 'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'   #支持的网络层和算子文档
+3. '模型转换运行用户指南(0.8).pdf'                                                   #模型转换文档,详细的介绍了如何转换
 ```
 
 ## 转换工具说明
@@ -61,16 +60,17 @@ $ ls
 ```shell
 $ cd {workspace}/aml_npu_sdk/acuity-toolkit
 $ ls
-bin  conversion_scripts  ReadMe.txt  requirements.txt
+bin  demo  python  ReadMe.txt  requirements.txt
 ```
 
-主要关注的目录是`conversion_scripts`
+主要关注的目录是`demo`
 
 ```
 1. bin                   #转换的使用的各种工具的合集,大部分都是不开源的.
-2. conversion_scripts    #转换脚本目录,转换AI模型的位置
-3. ReadMe.txt            #ReadMe.txt文件说明了如何转换和使用
-4. requirements.txt      #转换工具依赖的环境
+2. demo                  #转换脚本目录,转换AI模型的位置
+3. python                #用于转换python API对应的模型和数据
+4. ReadMe.txt            #ReadMe.txt文件说明了如何转换和使用
+5. requirements.txt      #转换工具依赖的环境
 ```
 
 ### 依赖安装
@@ -104,29 +104,29 @@ torch==1.2.0
 
 ### 转换脚本使用
 
-转换脚本在`conversion_scripts`目录下，
+转换脚本在`demo`目录下，
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
 $ ls
-0_import_model.sh  1_quantize_model.sh  2_export_case_code.sh  data  dataset.txt  extractoutput.py  inference.sh  mobilenet_tf.data  mobilenet_tf.json  mobilenet_tf.quantize  model  normal_case_demo
+0_import_model.sh  1_quantize_model.sh  2_export_case_code.sh  data  extractoutput.py  inference.sh  model
 ```
 
 使用脚本转换AI模型
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
 $ bash 0_import_model.sh && bash 1_quantize_model.sh && bash 2_export_case_code.sh 
 ```
 
 转换完成以后在`nbg_unify_xxxx`目录下就能看到转换出来的代码，这里以自带的模型为例
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/conversion_scripts/nbg_unify_mobilenet_tf
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo/nbg_unify_mobilenet_tf
 $ ls
 BUILD   makefile.linux   mobilenettf.vcxproj  vnn_global.h       vnn_mobilenettf.h   vnn_post_process.h  vnn_pre_process.h
 main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_process.c  vnn_pre_process.c
 ```
 
-转换参数的设置，请参考`Docs`里面的'模型转换运行用户指南(0.6).pdf'。
+转换参数的设置，请参考`Docs`里面的'模型转换运行用户指南(0.8).pdf'。
 
