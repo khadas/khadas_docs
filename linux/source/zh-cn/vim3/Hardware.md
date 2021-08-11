@@ -58,7 +58,7 @@ title: VIM3 硬件描述
 
 ||设备名称|描述说明|
 |---:|:---|:---|
-|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V电压输出|
+|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V电压输入|
 |2|[SD卡插座](/linux/zh-cn/vim3/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
 |3|限流开关|防止在负载不均衡的情况下损坏VIM3|
 |4|M.2接口|PCIE2.0接口(x1 lane),支持[M.2 2280 NVME固态硬盘]()|
