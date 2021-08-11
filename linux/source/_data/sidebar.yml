@@ -192,15 +192,15 @@ vim3:
   npu:
     origin:
       npu_binary_demo: OriginNPU-DemoUsage.html
-      aml_npu_sdk: HowToUseNPUSDK.html
-      aml_npu_app: HowToUseAmlNPUApp.html
-      model_convert: HowToConvertToUseNPU.html
+      aml_npu_sdk: NPUSDK.html
+      aml_npu_app: OriginNPUApp.html
+      model_convert: ConvertToUseNPU.html
       npu_performance: OriginNPUPerformanceUsage.html
     tengine:
-      tengine_sdk: HowToUseTengineSDK.html
-      tengine_demo: HowToUseTengineApp.html
+      tengine_sdk: TengineSDK.html
+      tengine_demo: TengineApp.html
     amlogic:
-      amlnn_api_demo: HowToUseAMLNNApi.html
+      amlnn_api_demo: AMLNNApi.html
   development:
     uboot:
       build_uboot: BuildUboot.html
