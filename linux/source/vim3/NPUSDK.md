@@ -9,7 +9,7 @@ $ mkdir workspace && cd workspace
 $ git clone https://gitlab.com/khadas/aml_npu_sdk.git
 ```
 
-## SDK directory structure description
+## SDK Structure
 
 Enter the SDK directory,
 
@@ -34,7 +34,7 @@ Since all linux codes have been supports local compiled, host compilation is no 
 {% endnote %}
 
 
-## Docs description
+## Docs
 
 entre Docs directory,
 
@@ -55,7 +55,7 @@ The document records a series of processes from conversion to integration, as we
 5. 'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'   #Supported network layer and operator documentation
 ```
 
-## Conversion tool description
+## Conversion Tool
 
 `acuity-toolkit` is the conversion tool directory,
 
@@ -75,7 +75,7 @@ The main directory of interest is `demo`
 5. requirements.txt      #Conversion tool dependent environment
 ```
 
-### Dependent installation
+### Dependent Installation
 
 The environment dependency package required by the conversion tool can be installed directly on the PC or installed through the virtual environment `virtualenv`
 
@@ -103,7 +103,7 @@ torch==1.2.0
 
 Among them, `tensorflow==2.0.0` can be replaced by `tensorflow==2.0.0a0`
 
-### Conversion script usage
+### Conversion Script
 
 The conversion script is in the `demo` directory,
 

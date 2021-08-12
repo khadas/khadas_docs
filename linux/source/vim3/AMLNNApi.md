@@ -1,4 +1,4 @@
-title: How to Compile and Use Amlogic NN Api demo 
+title: Amlogic NN Api Demo Usage
 ---
 
 Amlogic NN Api is a set of NPU Api officially launched by amlogic. This document will introduce how to compile and use khadas to demonstrate based on this set of Api.
@@ -7,7 +7,7 @@ Amlogic NN Api is a set of NPU Api officially launched by amlogic. This document
 Just support for opencv4
 {% endnote %}
 
-## Install Opencv4
+## Install OpenCV4
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv
@@ -19,7 +19,7 @@ For detailed information about the API, please refer to the document `docs/zh-cn
 
 ## Compile
 
-### Get demo source code
+### Source Code
 
 The source code of the `aml_npu_nnsdk_app` repository is open on the official gitlab of Khadas
 
@@ -29,7 +29,7 @@ $ cd ${workspace}
 $ git clone https://gitlab.com/khadas/aml_npu_nnsdk_app
 ```
 
-### Source code structure introduction
+### Code Structure
 
 
 There are compilation scripts, makefiles and source codes in each directory.
@@ -44,7 +44,7 @@ build-cv4.sh  cv3_output  image_classify_224x224.cpp  include  makefile-cv4.linu
 2. makefile-cv4.linux : Compilesd makefile
 3. image_classify_224x224.cpp: Source code for camera recognition
 
-### Compilation method
+### Compilation Method
 
 Please refer to get SDK [#Get-SDK](/vim3/HowToUseNPUSDK#Get-SDK)
 

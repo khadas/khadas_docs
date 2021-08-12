@@ -1,4 +1,4 @@
-title: How to run NPU Demo on VIM3
+title: NPU Prebuilt Demo Usage
 ---
 
 {% note warn Note %}
@@ -8,7 +8,7 @@ title: How to run NPU Demo on VIM3
 
 {% endnote %}
 
-## Install Opencv4
+## Install OpenCV4
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv
@@ -37,7 +37,7 @@ detect_demo_picture: A collection of yolo series models that identify pictures
 inceptionv3: Identify the inception model of the picture
 ```
 
-## Inception model recognition picture
+## Inception Model
 
 1. The inception model does not need to install any libraries into the system. Enter the inceptionv3 directory
 
@@ -90,7 +90,7 @@ $ ./inceptionv3 inception_v3.nb path/to/picture
 The size of the picture must correspond to the size of the model, so here, the input of the inceptionv3 model is 299x299x3, and the incoming recognized picture must also be 299x299
 {% endnote %}
 
-## Yolo series model
+## Yolo Series Model
 
 The application of the yolo series model is divided into two parts: camera dynamic recognition and image recognition.
 
@@ -128,7 +128,7 @@ The `type` parameter is an input parameter that must be selected whether it is t
 4 : yolov4 model
 ```
 
-### Operating environment description
+### Operating Environment Description
 
 NPU Demo can run in X11 or framebuffer mode, just select the corresponding demo to run.
 
@@ -138,7 +138,7 @@ The demo with `fb` is running in framebuffer mode.
 
 The demo with `x11` is running in X11 mode.
 
-### Illustrative example
+### Illustrative Example
 
 Here is an example of `detect_demo_picture`,
 
@@ -154,7 +154,7 @@ $ ls
 
 ### Run
 
-#### Picture recognition
+#### Picture Recognition
 
 Identify the command format of the picture
 
@@ -174,7 +174,7 @@ The results of the operation are as follows,
 
 ![detect_demo_picture_x11_cv3](/linux/images/vim3/detect_demo_picture_x11_cv3.png)
 
-#### Dynamic camera recognition
+#### Dynamic Camera Recognition
 
 Camera description
 
@@ -197,16 +197,6 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 After turning on the camera, the recognition result will be displayed on the screen
 
 ![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
-
-
-
-
-
-
-
-
-
-
 
 
 

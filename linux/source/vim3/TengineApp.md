@@ -1,4 +1,4 @@
-title: How To Compile And Run Tengine Demo
+title: Tengine Demo Usage
 ---
 
 The source code repository is a simple demo repository made by khadas based on the tengine API
@@ -8,7 +8,7 @@ After tengine-lite v.14 (ie NPU6.4.4.3), the demo only supports local compilatio
 {% endnote %}
 
 
-## Get Source code
+## Get Source Code
 
 The source code repository is located on gitlab of khadas
 
@@ -23,7 +23,7 @@ yolov3-camera  yolov3-picture
 
 `yolov3-camera` and `yolov3-picture` are based on the demos of camera recognition and picture recognition of opencv respectively
 
-## Install opencv4
+## Install OpenCV4
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv 

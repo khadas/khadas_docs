@@ -1,4 +1,4 @@
-title: 编译使用Amlogic NN Api模板
+title: Amlogic NN APi示例使用说明
 ---
 
 Amlogic NN Api是amlogic官方推出的一套NPU Api，这篇文档将介绍如何编译并使用khadas基于这套Api做的demo。

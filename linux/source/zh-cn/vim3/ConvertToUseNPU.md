@@ -1,4 +1,4 @@
-title: 如何转换并通过NPU调用自己的模型
+title: 转换并通过NPU调用自己的模型
 ---
 
 这里以yolov3为例，演示如何转换自己的模型，并适配进我们demo，在VIM3上面运行
@@ -12,7 +12,7 @@ title: 如何转换并通过NPU调用自己的模型
 3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
 
 
-# 准备
+## 准备
 
 1. 训练好自己的yolov3模型。训练方式和过程可参考官方: [Darknet Yolo Page](https://pjreddie.com/darknet/yolo/)，这里使用官方训练好的基于coco数据集的weights
 
@@ -24,7 +24,7 @@ title: 如何转换并通过NPU调用自己的模型
 2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
 3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
 
-# 转换
+## 转换
 
 转换在SDK下进行。
 
@@ -32,7 +32,7 @@ title: 如何转换并通过NPU调用自己的模型
 $ cd {workspace}/SDK/acuity-toolkit/conversion_scripts
 ```
 
-## 修改`0_import_model.sh`
+### 修改`0_import_model.sh`
 
 1. 修改`NAME`
 
@@ -86,7 +86,7 @@ $convert_darknet \
 
 ```
 
-## 修改`1_quantize_model.sh`
+### 修改`1_quantize_model.sh`
 
 1. 修改`NAME`
 
@@ -136,7 +136,7 @@ path/to/416x416.jpg
     --quantized-dtype dynamic_fixed_point-i8 \
 ```
 
-## 修改`2_export_case_code.sh`
+### 修改`2_export_case_code.sh`
 
 1. 修改`NAME`
 
@@ -184,7 +184,7 @@ VIM3L
     --optimize VIPNANOQI_PID0X99  \
 ```
 
-## 编译并获取转换后的代码
+### 编译并获取转换后的代码
 
 1. 转换
 
@@ -201,7 +201,7 @@ $ ls {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3
 BUILD  main.c  makefile.linux  nbg_meta.json  vnn_global.h  vnn_post_process.c  vnn_post_process.h  vnn_pre_process.c  vnn_pre_process.h  vnn_yolov3.c  vnn_yolov3.h  yolov3.nb  yolov3.vcxproj
 ```
 
-# 编译
+## 编译
 
 这部分代码在aml_npu_app仓库中进行。进入`detect_yolo_v3`的目录里面
 
@@ -211,7 +211,7 @@ $ ls
 build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c  yolov3_process.c
 ```
 
-## 替换vnn文件
+### 替换vnn文件
 
 1. 将SDK生成的`vnn_yolov3.h`，`vnn_post_process.h`，`vnn_pre_process.h`替换进来
 
@@ -227,7 +227,7 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_pre_
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/vnn_yolov3.c {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/vnn_yolov3.c
 ```
 
-## 修改`yolov3_process.c`
+### 修改`yolov3_process.c`
 
 1. 修改class数组
 
@@ -261,7 +261,7 @@ int size[3]={nn_width/32, nn_height/32,85*3};
 这里的`num_class`与训练集的class数量相同
 这里的`size[2]`等于`(num_class + 5 ) * 3` 
 
-## 编译
+### 编译
 
 使用`build_vx.sh`脚本就能编译出yolov3的库,
 
@@ -277,9 +277,9 @@ $ ls {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3/bin_r
 libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 ```
 
-# 运行
+## 运行
 
-## 替换
+### 替换
 
 1. 替换yolov3库
 
@@ -301,7 +301,7 @@ VIM3L
 $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/yolov3.nb {workspace}/aml_npu_demo_binaries/detect_demo_picture/nn_data/yolov3_99.nb
 ```
 
-## 运行
+### 运行
 
 如何在板子上运行替换完的`aml_npu_demo_binaries`，请参考
 

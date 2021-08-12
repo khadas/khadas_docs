@@ -8,7 +8,7 @@ title: 应用源码编译使用说明
 2. 只支持opencv4
 {% endnote %}
 
-## 安装Opencv4到VIM3
+## 安装OpenCV4到VIM3
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv
@@ -176,7 +176,7 @@ $ ls
 detect_log.o  detect.o  libnn_detect.so
 ```
 
-#### 编译应用demo
+#### 编译应用Demo
 
 这里以sample_demo_x11为例，
 
