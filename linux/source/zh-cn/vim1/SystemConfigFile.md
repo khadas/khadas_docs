@@ -1,7 +1,7 @@
 title: Ubuntu系统配置文件使用说明
 ---
 
-这边文档将介绍如何使用Ubuntu系统的配置文件
+这边文档将介绍如何使用Ubuntu系统的配置文件来配置系统功能。
 
 {% note warn 仅仅适用于Ubuntu Linux 4.9内核固件。 %}
 {% endnote %}
@@ -10,21 +10,15 @@ title: Ubuntu系统配置文件使用说明
 
 `env.txt`位于`/boot`目录下，是用于配置Ubuntu系统功能的环境配置文件，系统在启动时会读取这个文件，设置HDMI、风扇、CPU频率等。
 
-修改这个文件，就可以改变这些功能的设置。
-
-```sh
-$ sudo vim /boot/env.txt
-```
-
 ## HDMI设置
 
 {% note info 仅适用与4.9内核的固件，对于主线内核的固件可以使用更加通用的方法！ %}
 
 {% endnote %}
 
-### 自动读取开关
+### 自动检测
 
-默认设置为`yes`，会自动检测HDMI，设置分辨率，关闭则为手动设置
+默认设置为`yes`，会自动检测HDMI并设置最佳分辨率，关闭则为手动设置。
 
 ```sh
 # HDMI resolution auto detection
@@ -33,15 +27,17 @@ $ sudo vim /boot/env.txt
 hdmi_autodetect=yes
 ```
 
-关闭自动检测，
+关闭自动检测：
 
 ```sh
 hdmi_autodetect=no
 ```
 
-### HDMI分辨率设置
+### 手动设置HDMI分辨率
 
-只有当`hdmi_autodetect=no`时，改配置才会生效,默认为720p。
+在某些情况下，由于兼容性问题，自动检测HDMI分辨率可能会失效，这时你可以采用手动设置HDMI分辨率的方法。
+
+只有当`hdmi_autodetect=no`时，改配置才会生效，默认为`720p`。
 
 ```sh
 # HDMI mode
@@ -88,13 +84,13 @@ hdmi_autodetect=no
 hdmi=720p60hz
 ```
 
-修改为1080p,
+例如，修改分辨率为`1080p`：
 
 ```sh
 hdmi=1080p60hz
 ```
 
-重启系统就会生效。
+保存重启系统就会生效。
 
 
 ## 风扇设置
@@ -164,11 +160,9 @@ khadas@Khadas:~$ sudo vim /boot/env.txt
 
 `fb_rotate=0`修改为`fb_rotate=1`。
 
-### 确认修改时候成功并重启
+编辑完后记得保存文件并重启板子。
 
 ```sh
-khadas@Khadas:~$ cat /boot/env.txt | grep "fb_rotate"
-fb_rotate=1
 khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```
