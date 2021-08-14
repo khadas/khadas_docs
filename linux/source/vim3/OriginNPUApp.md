@@ -8,13 +8,13 @@ This document mainly introduces how to compile the application source code and u
 2. Just support Opencv4
 {% endnote %}
 
-## Install Opencv4 onto VIM3
+## Install OpenCV4 Onto VIM3
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv
 ```
 
-## Get the source code repository
+## Source Code
 
 The source code repository is stored in gitlab, and the repository address is:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
 
@@ -24,7 +24,7 @@ $ cd {workspace}
 $ git clone https://gitlab.com/khadas/aml_npu_app
 ```
 
-## Source description
+## Source Description
 
 ### Directory structure description
 
@@ -40,7 +40,7 @@ DDK_6.3.2  DDK_6.3.2.3  DDK_6.3.2.5  DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect
 4. LICENSE         #LICENSE file
 ```
 
-### Library description
+### Library Description
 
 Enter the directory of the library source code, which is the directory of the DDK.
 
@@ -81,7 +81,7 @@ Main content description:
 8. yolov3_process.c   #Mainly defines the pre-processing and post-processing of the model
 ```
 
-### Application  description
+### Application Description
 
 Enter the application source code directory
 
@@ -120,10 +120,10 @@ Here is an explanation of the main files,
 4. xxx.h               #The definition related header files that the application layer needs to use
 ```
 
-## Compile the repository source code
+## Compile
 
 
-### Compile library
+### Compile Library
 
 To compile the library, just enter the directory of the corresponding library and compile it. Here is yolov3 as an example
 
@@ -151,7 +151,7 @@ $ ls
 libnn_yolo_v3.so  vnn_yolov3.o  yolo_v3.o  yolov3_process.o
 ```
 
-### Compile the application
+### Compile The Application
 
 When compiling the application, first compile `libnn_detect.so`. This is one of the dependent libraries for compiling other applications.
 
@@ -176,7 +176,7 @@ $ ls
 detect_log.o  detect.o  libnn_detect.so
 ```
 
-#### Compile application demo
+#### Compile Application Demo
 
 Here is sample_demo_x11 as an example to compile the opencv3 version
 

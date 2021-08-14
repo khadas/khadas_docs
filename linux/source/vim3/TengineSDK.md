@@ -1,4 +1,4 @@
-title: How To Use Tengine SDK
+title: Tengine SDK Usage
 ---
 
 Tengine is developed by OPEN AI LAB. This project meet the demand of fast and efficient deployment of deep learning neural network models on embedded devices. In order to achieve cross-platform deployment in many AIoT applications, this project is based on the original Tengine project using C language for reconstruction, and deep frame tailoring for the characteristics of limited embedded device resources.
@@ -20,7 +20,7 @@ docs  tengine_tools
 2. tengine_toos : Use for transform and quantify models
 
 
-## Convert and quant
+## Convert and Quant
 
 1. Get yolov3 original file
 
@@ -29,7 +29,7 @@ Before starting the conversion and quantification, get the weights file and cfg 
 [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
 [yolov3.cfg](https://github.com/yan-wyb/darknet/blob/master/cfg/yolov3.cfg)
 
-2. Prepare photo gallery
+2. Prepare Photo Gallery
 
 A certain amount of pictures need to be used for quantification
 

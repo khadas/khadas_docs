@@ -1,4 +1,4 @@
-title: 如何在VIM3上面运行 NPU Demo
+title: NPU预编译demo使用说明
 ---
 
 {% note warn 注意 %}
@@ -8,7 +8,7 @@ title: 如何在VIM3上面运行 NPU Demo
 
 {% endnote %}
 
-## 安装Opencv4
+## 安装OpenCV4
 
 ```shell
 $ sudo apt install libopencv-dev python3-opencv
@@ -39,7 +39,7 @@ detect_demo_picture: 识别图片的yolo系列模型合集
 inceptionv3: 识别图片的inception模型
 ```
 
-## inception模型识别图片
+## Inception模型
 
 1. inception模型不需要安装任何库到系统中。进入inceptionv3目录
 

@@ -1,13 +1,13 @@
 title: NPU Performance Interface Usage
 ---
 
-## preparation
+## Preparation
 
 ### Upgrade The System
 
 Please refer to: [Upgrade The System To Latest Version](/zh-cn/vim3/HowToUpgradeTheSystem)
 
-### Reload the driver module
+### Reload the Driver Module
 
 1. Uninstall the NPU module
 
@@ -15,21 +15,21 @@ Please refer to: [Upgrade The System To Latest Version](/zh-cn/vim3/HowToUpgrade
 $ sudo rmmod galcore
 ```
 
-2. Reinstall the NPU module
+2. Reinstall NPU module
 
 ```sh
 $ sudo insmod /lib/modules/4.9.241/kernel/drivers/amlogic/npu/galcore.ko gpuProfiler=1 showArgs=1
 ```
 
-## Get interface data
+## Get Interface Data
 
-### Set environments
+### Set Environments
 
 ```sh
 export VIV_VX_PROFILE=1
 export VIV_VX_DEBUG_LEVEL=1
 ```
-### Run model
+### Run Model
 
 Use inception as a example [Get NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
 
@@ -77,9 +77,9 @@ Average 21.62ms or 21625.00us
 393: 0.002111
 Exit VX Thread: 0xa69a21c0
 ```
-## Interface data description
+## Interface Data Description
 
-### Bandwidth data description
+### Bandwidth Data Description
 
 1. TOTAL_READ_BANDWIDTH    : Total read bandwidth
 2. TOTAL_WRITE_BANDWIDTH   : Total write bandwidth
@@ -88,7 +88,7 @@ Exit VX Thread: 0xa69a21c0
 5. DDR_READ_BANDWIDTH      : DDR read bandwidth
 6. DDR_WRITE_BANDWIDTH     : DDR write bandwidth
 
-### Calculate usage rate
+### Calculate Usage Rate
 
 1. GPUTOTALCYCLES     : Total number of cycles
 2. GPUIDLECYCLES      : Number of cycles in idle state
