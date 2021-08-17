@@ -202,6 +202,8 @@ sidebar:
     pcie_usb_port: PCIe/USB3.0 Port Switch
     custom_ir_code: Custom IR Code
     extra_power_input: Exter Power Input
+    max_cpu_freq: Max CPU Frequency
+    usb_gadget: USB Gadget Usage
     applications: Applications
     gpio: GPIO
     gpio_usage: GPIO
@@ -213,6 +215,7 @@ sidebar:
     pwm: PWM
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
+    gsensor_usage: Gsensor Usage
     play_video: Play Video
     hardware_decoding: Hardware Decoding
     hardware_encoding: Hardware Encoding
@@ -224,17 +227,14 @@ sidebar:
     qt5: QT5
     32bit_library: 32-bit Library
     npu: NPU
-    origin: Origin NN
     npu_binary_demo: Prebuilt NPU Demo
     aml_npu_sdk: NPU SDK
     aml_npu_app: NPU Demo Source Code
     model_convert: Model Convert
     npu_performance: NPU Performance
-    tengine: Tengine NN
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
-    amlogic: AML NN
-    amlnn_api_demo: Amlogic NN API Demo
+    amlnn_api_demo: Amlogic NN API Usage
     development: Development
     uboot: U-Boot
     build_uboot: Build U-Boot

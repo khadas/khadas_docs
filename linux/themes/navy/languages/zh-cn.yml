@@ -202,6 +202,8 @@ sidebar:
     pcie_usb_port: PCIe/USB3.0切换
     custom_ir_code: 自定义IR Code
     extra_power_input: 外部供电
+    max_cpu_freq: CPU超频设置
+    usb_gadget: USB Gadget使用说明
     applications: 应用
     gpio: GPIO
     gpio_usage: GPIO
@@ -213,6 +215,7 @@ sidebar:
     pwm: PWM
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
+    gsensor_usage: Gsensor使用说明
     play_video: 播放视频
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
@@ -224,17 +227,14 @@ sidebar:
     qt5: QT5
     32bit_library: 32位运行库
     npu: NPU
-    origin: 原始NN
     npu_binary_demo: 预编译NPU Demo
     aml_npu_sdk: NPU SDK
     aml_npu_app: NPU Demo源码
     model_convert: 模型转换
     npu_performance: NPU Performance
-    tengine: Tengine NN
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
-    amlogic: AML NN
-    amlnn_api_demo: Amlogic NN API Demo
+    amlnn_api_demo: Amlogic NN API使用说明
     development: 开发
     uboot: U-Boot
     build_uboot: 编译U-Boot
