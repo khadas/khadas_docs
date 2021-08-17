@@ -1,11 +1,11 @@
 title: USB Gadget Usage
 ---
 
-We have already explained in the [documentation](/vim3/HowToUseDeviceTreeOverlay.html) how to use Device Tree Overlays.
+We have already explained in the [documentation](/linux/vim3/DeviceTreeOverlay.html) how to use Device Tree Overlays.
 
 ## Update System
 
-You can refer to this [document](HowToUpgradeTheSystem.html).
+You can refer to this [document](/linux/vim3/UpgradeSystem.html).
 
 ## Configure DTS Overlays
 
