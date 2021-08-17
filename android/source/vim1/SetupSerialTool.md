@@ -2,7 +2,9 @@ title: Setup Serial Debugging Tool
 ---
 
 ## Preparation
-* You need a `Serial Debugging Tool`. In this guide, we will use a `USB to TTL Converter`.
+
+* You need a `Serial Debugging Tool`. In this guide, we will use a `USB to TTL Converter`. You can find a [CH340 USB to TTL Converter here](https://www.amazon.com/Adaptor-Download-Adapter-Converter-LinkMore/dp/B08VGRRJ67/ref=sr_1_4?dchild=1&keywords=USB+to+TTL+ch340&qid=1629184609&sr=8-4).
+
 
 ## Connections
 Follow these steps to make the correct connections:
@@ -205,6 +207,14 @@ Choose `Yes` and hit `Enter` to exit `minicom`.
 <div class="tab-pane fade show" id="windows" role="tabpanel" aria-labelledby="windows-tab">
 
 On Windows system, you can use `SecureCRT` serial communication program.
+
+* Install USB to TTL Converter Driver
+
+If you haven't install `USB to TTL Converter` driver, you need to install it. Here we take **CH340** as a example.
+
+1. Download the driver [here](https://dl.khadas.com/Tools/CH34x_Install_Windows_v3_4.zip)
+2. Unzip the file
+3. Run the installer which you unzipped
 
 * Install `SecureCRT`
 

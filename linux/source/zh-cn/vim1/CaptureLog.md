@@ -40,4 +40,4 @@ khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/
 
 ## 发送Log文件
 
-在[Khadas论坛](https://forum.khadas.com/)或通过邮件hello@khadas.com反馈问题时，请提供上述log文件。
+在[Khadas论坛](https://forum.khadas.com/)或通过邮件support@khadas.com反馈问题时，请提供上述log文件。

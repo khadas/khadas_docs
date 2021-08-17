@@ -40,4 +40,4 @@ khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/
 
 ## Send Log File
 
-When reporting problems to [Khadas Community](https://forum.khadas.com/) or hello@khadas.com, please send the above log files to us.
+When reporting problems to [Khadas Community](https://forum.khadas.com/) or support@khadas.com, please send the above log files to us.

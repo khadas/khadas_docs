@@ -2,7 +2,7 @@ title: 设置串口调试工具
 ---
 
 ## 准备工作
-* 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具。
+* 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具。[这里有一个CH340串口的参考工具](https://detail.tmall.com/item.htm?id=590954778733&ali_refid=a3_430582_1006:1109952213:N:T+BSZBRBMKJ4P8zlByyd/g==:b94e362c34bb9ad84da8e8c8d85eb3f1&ali_trackid=1_b94e362c34bb9ad84da8e8c8d85eb3f1&spm=a230r.1.14.11&skuId=4221680274330)。
 
 ## 连接
 请按下面所示方式连接：
@@ -207,6 +207,14 @@ Khadas login:
 <div class="tab-pane fade show" id="windows" role="tabpanel" aria-labelledby="windows-tab">
 
 在Windows系统下，可以使用`SecureCRT`串口工具。
+
+* 安装串口工具驱动
+
+如果你还没有安装串口工具驱动，那么你需要先安装这个驱动，这里以**CH340**驱动为例。
+
+1. 下载[CH340驱动](https://dl.khadas.com/Tools/CH34x_Install_Windows_v3_4.zip)
+2. 解压
+3. 安装
 
 * 安装`SecureCRT`
 
