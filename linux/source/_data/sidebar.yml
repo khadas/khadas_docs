@@ -193,17 +193,14 @@ vim3:
     qt5: QT5.html
     32bit_library: 32bitLibrary.html
   npu:
-    origin:
-      npu_binary_demo: OriginNPU-DemoUsage.html
-      aml_npu_sdk: NPUSDK.html
-      aml_npu_app: OriginNPUApp.html
-      model_convert: ConvertToUseNPU.html
-      npu_performance: OriginNPUPerformanceUsage.html
-    tengine:
-      tengine_sdk: TengineSDK.html
-      tengine_demo: TengineApp.html
-    amlogic:
-      amlnn_api_demo: AMLNNApi.html
+    npu_binary_demo: NPUPrebuiltUsage.html
+    aml_npu_sdk: NPUSDK.html
+    aml_npu_app: NPUApp.html
+    model_convert: ConvertToUseNPU.html
+    npu_performance: NPUPerformanceUsage.html
+    tengine_sdk: TengineSDK.html
+    tengine_demo: TengineApp.html
+    amlnn_api_demo: AMLNNApi.html
   development:
     uboot:
       build_uboot: BuildUboot.html

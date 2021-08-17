@@ -1,7 +1,7 @@
-title: Amlogic NN APi示例使用说明
+title: Amlogic Neural Network Api示例使用说明
 ---
 
-Amlogic NN Api是amlogic官方推出的一套NPU Api，这篇文档将介绍如何编译并使用khadas基于这套Api做的demo。
+Amlogic Neural Network Api是amlogic官方推出的一套NPU Api，这篇文档将介绍如何编译并使用khadas基于这套Api做的demo。
 
 {% note warn 提示 %}
 仅支持opencv4
@@ -48,7 +48,7 @@ build-cv4.sh  cv3_output  image_classify_224x224.cpp  include  makefile-cv4.linu
 
 ### 编译方法
 
-获取SDK请参考[获取SDK](/linux/zh-cn/vim3/HowToUseNPUSDK#获取SDK)
+获取SDK请参考[获取SDK](/linux/zh-cn/vim3/NPUSDK#获取SDK)
 
 这里同样以image_classify为例，
 
