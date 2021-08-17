@@ -32,7 +32,7 @@ khadas@Khadas:~$ cat /etc/fenix-release > ~/system-version.log
 khadas@Khadas:~$ sudo dmesg > ~/kernel.log
 ```
 
-### 抓取系统log信息
+### 抓取系统Log信息
 
 ```bash
 khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/

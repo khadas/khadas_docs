@@ -28,7 +28,7 @@ console:/ #
 console:/ # dmesg > /storage/kernel.log
 ```
 
-### 抓取系统log信息
+### 抓取系统Log信息
 
 ```bash
 console:/ # logcat > /storage/logcat.log
