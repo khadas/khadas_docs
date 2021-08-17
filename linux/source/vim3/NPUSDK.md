@@ -1,4 +1,4 @@
-title: SDK instructions
+title: NPU SDK Usage
 ---
 This article mainly introduces how to convert neural network models of different platforms into model codes and data that can be run on the NPU.
 

@@ -1,7 +1,7 @@
-title: Amlogic NN Api Demo Usage
+title: Amlogic Neural Network Demo Usage
 ---
 
-Amlogic NN Api is a set of NPU Api officially launched by amlogic. This document will introduce how to compile and use khadas to demonstrate based on this set of Api.
+Amlogic Neural Network Api is a set of NPU Api officially launched by amlogic. This document will introduce how to compile and use khadas to demonstrate based on this set of Api.
 
 {% note warn Note %}
 Just support for opencv4
@@ -46,7 +46,7 @@ build-cv4.sh  cv3_output  image_classify_224x224.cpp  include  makefile-cv4.linu
 
 ### Compilation Method
 
-Please refer to get SDK [#Get-SDK](/vim3/HowToUseNPUSDK#Get-SDK)
+Please refer to get SDK [Get-SDK](/linux/vim3/NPUSDK#Get-SDK)
 
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/image_classify_224x224

@@ -7,11 +7,6 @@ title: 转换并通过NPU调用自己的模型
 请在参照文档转换之前，先仔细查看一遍一下文档
 {% endnote %}
 
-1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
-2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
-3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
-
-
 ## 准备
 
 1. 训练好自己的yolov3模型。训练方式和过程可参考官方: [Darknet Yolo Page](https://pjreddie.com/darknet/yolo/)，这里使用官方训练好的基于coco数据集的weights
@@ -20,9 +15,9 @@ title: 转换并通过NPU调用自己的模型
 
 请分别参考SDK，app以及demo的文档是如何获取相应的代码的
 
-1. [SDK使用说明](/zh-cn/vim3/HowToUseNPUSDK.html)
-2. [aml_npu_app源码仓库使用说明](/zh-cn/vim3/HowToUseAmlNPUApp.html)
-3. [如何在板子上运行NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
+1. [NPU SDK使用说明](/linux/zh-cn/vim3/NPUSDK.html)
+2. [应用源码编译使用说明](/linux/zh-cn/vim3/OriginNPUApp.html)
+3. [NPU预编译demo使用说明](/linux/zh-cn/vim3/OriginNPU-DemoUsage.html)
 
 ## 转换
 
@@ -305,6 +300,5 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/yolov3.n
 
 如何在板子上运行替换完的`aml_npu_demo_binaries`，请参考
 
-
-[如何在板子上运行NPUDemo](/zh-cn/vim3/HowToRunNPUDemo.html)
+[NPU预编译demo使用说明](/linux/zh-cn/vim3/OriginNPU-DemoUsage.html)
 

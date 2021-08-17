@@ -168,6 +168,8 @@ vim3:
       pcie_usb_port: PcieUsbPort.html
       custom_ir_code: CustomIRCode.html
       extra_power_input: ExtraPowerInput.html
+      max_cpu_freq: MaxCPUFrequency.html
+      usb_gadget: USBGadget.html
   applications:
     gpio:
       gpio_usage: Gpio.html
@@ -179,6 +181,7 @@ vim3:
       pwm: Pwm.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
+    gsensor_usage: GsensorUsage.html
     play_video: PlayVideo.html
     hardware_decoding: HardwareDecoding.html
     hardware_encoding: HardwareEncoding.html
@@ -190,17 +193,14 @@ vim3:
     qt5: QT5.html
     32bit_library: 32bitLibrary.html
   npu:
-    origin:
-      npu_binary_demo: OriginNPU-DemoUsage.html
-      aml_npu_sdk: NPUSDK.html
-      aml_npu_app: OriginNPUApp.html
-      model_convert: ConvertToUseNPU.html
-      npu_performance: OriginNPUPerformanceUsage.html
-    tengine:
-      tengine_sdk: TengineSDK.html
-      tengine_demo: TengineApp.html
-    amlogic:
-      amlnn_api_demo: AMLNNApi.html
+    npu_binary_demo: NPUPrebuiltUsage.html
+    aml_npu_sdk: NPUSDK.html
+    aml_npu_app: NPUApp.html
+    model_convert: ConvertToUseNPU.html
+    npu_performance: NPUPerformanceUsage.html
+    tengine_sdk: TengineSDK.html
+    tengine_demo: TengineApp.html
+    amlnn_api_demo: AMLNNApi.html
   development:
     uboot:
       build_uboot: BuildUboot.html

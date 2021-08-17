@@ -3,7 +3,7 @@ title: NPU预编译demo使用说明
 
 {% note warn 注意 %}
 
-1. 在运行NPU Demo前请先参考[文档](/zh-cn/vim3/UpgradeSystem.html)升级系统到最新版本。
+1. 在运行NPU Demo前请先参考[文档](/linux/zh-cn/vim3/UpgradeSystem.html)升级系统到最新版本。
 2. 只支持opencv4
 
 {% endnote %}

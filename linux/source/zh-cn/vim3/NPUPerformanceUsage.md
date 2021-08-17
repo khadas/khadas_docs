@@ -1,37 +1,37 @@
-title: NPU Performance Interface Usage
+title: NPU性能接口说明文档
 ---
 
-## Preparation
+## 准备工作
 
-### Upgrade The System
+### 升级系统到最新的版本
 
-Please refer to: [Upgrade The System To Latest Version](/zh-cn/vim3/HowToUpgradeTheSystem)
+请参考文档: [升级固件到最新版本](/linux/zh-cn/vim3/UpgradeSystem.html)
 
-### Reload the Driver Module
+### 重新加载驱动模块
 
-1. Uninstall the NPU module
+1. 卸载NPU模块
 
 ```sh
 $ sudo rmmod galcore
 ```
 
-2. Reinstall NPU module
+2. 重新加载模块
 
 ```sh
 $ sudo insmod /lib/modules/4.9.241/kernel/drivers/amlogic/npu/galcore.ko gpuProfiler=1 showArgs=1
 ```
 
-## Get Interface Data
+## 获取接口数据
 
-### Set Environments
+### 设置环境变量
 
 ```sh
 export VIV_VX_PROFILE=1
 export VIV_VX_DEBUG_LEVEL=1
 ```
-### Run Model
+### 运行模型
 
-Use inception as a example [Get NPU Demo](/zh-cn/vim3/HowToRunNPUDemo.html)
+这里以inception为例。 [NPU Demo获取](/linux/zh-cn/vim3/OriginNPU-DemoUsage.html)
 
 ```sh
 $ aml_npu_demo_binaries/inceptionv3/VIM3$ ./run.sh
@@ -77,21 +77,21 @@ Average 21.62ms or 21625.00us
 393: 0.002111
 Exit VX Thread: 0xa69a21c0
 ```
-## Interface Data Description
+## 接口数据说明
 
-### Bandwidth Data Description
+### 带宽数据说明
 
-1. TOTAL_READ_BANDWIDTH    : Total read bandwidth
-2. TOTAL_WRITE_BANDWIDTH   : Total write bandwidth
-3. AXI_READ_BANDWIDTH      : AXI_SRAM read bandwidth
-4. AXI_READ_BANDWIDTH      : AXI_SRAM write bandwidth
-5. DDR_READ_BANDWIDTH      : DDR read bandwidth
-6. DDR_WRITE_BANDWIDTH     : DDR write bandwidth
+1. TOTAL_READ_BANDWIDTH 总读带宽
+2. TOTAL_WRITE_BANDWIDTH 总写带宽
+3. AXI_READ_BANDWIDTH AXI_SRAM读带宽
+4. AXI_READ_BANDWIDTH AXI_SRAM写带宽
+5. DDR_READ_BANDWIDTH DDR读带宽
+6. DDR_WRITE_BANDWIDTH DDR写带宽
 
-### Calculate Usage Rate
+### 使用率计算
 
-1. GPUTOTALCYCLES     : Total number of cycles
-2. GPUIDLECYCLES      : Number of cycles in idle state
+1. GPUTOTALCYCLES 总的cycle数
+2. GPUIDLECYCLES 空闲状态的cycle数
 
-Usage rate = (GPUTOTALCYCLES - GPUIDLECYCLES) / GPUTOTALCYCLES
+使用率 = (GPUTOTALCYCLES - GPUIDLECYCLES) / GPUTOTALCYCLES
 
