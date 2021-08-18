@@ -28,7 +28,7 @@ jobs:
         cd ../android
         npm install && npm install hexo-cli -g
         hexo clean && hexo generate
-        mv public ../public/android
+        cp -ravx public/* ../public/android/*
     - name: Commit files
       run: |
         cd public
