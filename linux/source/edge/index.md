@@ -1,0 +1,73 @@
+title: Quick Start
+---
+
+This article mainly introduces how to quickly get started after getting the development board to make the system run.
+
+## Edge Power Supply
+Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
+
+![image](/linux/images/edge/usb-c_adapter_24w_2.jpg)
+
+1. Khadas USB-C 24W Power Adapter (USB Power Delivery)
+2. Khadas USB-C Cable (Male-to-Male)
+
+{% note info Tip %}
+These items are now available at Khadas Shop
+{% endnote %}
+
+**Learn More:**
+* [Edge+Captain Power Priority](/linux/edge/EdgeCaptainPowerPriority.html)
+* [Khadas Edge Specifications](https://khadas.com/edge)
+* [Khadas Edge Accessories](https://www.khadas.com/edge-add-ons)
+
+## Displays & User Input
+These items are useful when you need to connect your Edge SBC to an external display + keyboard mouse + remote control, for use as a desktop computer or media center. *Edge series SBCs h
+ave USB-C display-port capability, which allows them to connect directly to Type-C enabled 4K monitors, to exchange power, data, video, and audio over a single cable.*
+
+1. 4K HDMI 2.0 Cable
+2. HDMI-Compatible 1080P/4K Monitor w/ USB Type-C
+3. Wireless USB Keyboard + Mouse
+4. CEC-Compatible Remote Control
+
+**Learn More:**
+* [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
+* [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
+* [Amazon - LG 4K Monitor w/ USB Type-C](https://www.amazon.com/LG-27UD88-W-LED-Lit-Monitor-Type-C/dp/B01CDYB0QS/ref=sr_1_7?ie=UTF8&qid=1543993886&sr=8-7&keywords=usb-c+compatible+monitor)
+* [Amazon - Wireless Keyboard + Mouse](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
+
+{% note info Note %}
+Please do not attach multiple cables with large heads that interfere with each other, as that may bend or twist the connectors, and this will cause intermittent connectivity issues after
+ some time.
+{% endnote %}
+
+## Quick connect and boot
+
+1. Type-C: Type-C port is the power connection port
+
+2. HDMI: Standard HDMI socket, connect your display
+
+3. ETH (optional): Ethernet port holder
+
+<img src="/linux/images/edge/QuickConnect.jpg" width=800px>
+
+After the power is turned on, it starts normally, and you can see the Khadas Logo on the display, and the white light flashes
+
+## Troubleshooting
+
+1. The blue light is always on and the boot screen is not seen: the WoL function is turned on, press the Power button to boot normally, turn off WOL->[How to use WOL](/linux/edge/Wol)
+2. Repeated restarts: insufficient power supply, please use the official recommended external power supply
+
+## Commonly used documents
+
+1. [Install OS into eMMC](/linux/edge/InstallOsIntoEmmc.html)
+2. [Install System into SD/USB Storage](/linux/edge/InstallOsIntoSdusb.html)
+3. [Enter Upgrade Mode](/linux/edge/BootIntoUpgradeMode.html)
+4. [Boot Images from External Media](/linux/edge/BootFromExtMedia.html)
+5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
+6. [Wifi](/linux/edge/Wifi.html)
+
+## Edge Website
+For more information, please see our website, read more decumentation, or visit our forum.
+* [Khadas Edge Homepage](https://www.khadas.com/edge)
+* [Khadas Edge Forum](https://forum.khadas.com/c/Khadas-Edge)
+
