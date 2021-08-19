@@ -63,6 +63,8 @@ sidebar:
     hardware: 硬件
     setup_serial: 设置串口调试工具
     extra_power_input: 外部电源供电
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   vim2:
     quick_start: 快速开始
@@ -100,6 +102,8 @@ sidebar:
     hardware: 硬件
     setup_serial: 设置串口调试工具
     extra_power_input: 外部电源供电
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   vim3:
     quick_start: 快速开始
@@ -154,7 +158,9 @@ sidebar:
     how_to_use_fastboot: Fastboot用法
     hardware: 硬件
     setup_serial: 设置串口调试工具
-    extra_power_input: 外部电源供电    
+    extra_power_input: 外部电源供电
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   edge:
     quick_start: 快速开始
@@ -189,7 +195,8 @@ sidebar:
     erase_emmc: 擦除eMMC存储器
     hardware: 硬件
     setup_serial: 设置串口调试工具
-
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
 
   hardware:
     hardware: 硬件资料

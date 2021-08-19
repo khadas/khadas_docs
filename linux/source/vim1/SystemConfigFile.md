@@ -11,21 +11,15 @@ This documentation will introduce how to use the configuration file of the Ubunt
 `env.txt` is located in the `/boot` directory and is an environment configuration file used to configure the functions of the Ubuntu system.
 The system will read this file when it starts to set HDMI, fan, CPU frequency, etc.
 
-Modify this file, you can change the settings of these functions.
-
-```sh
-$ sudo vim /boot/env.txt
-```
-
 ## HDMI Setting
 
 {% note info Only applicable to the firmware of the 4.9 kernel, a more general method can be used for the firmware of the mainline kernel! %}
 
 {% endnote %}
 
-### Auto Detect Switch
+### Auto Detect
 
-The default setting is `yes`, it will automatically detect HDMI and set the resolution, if it is closed, it will be set manually
+The default setting is `yes`, it will automatically detect HDMI and set the best resolution, if it is closed, it will be set manually:
 
 ```sh
 # HDMI resolution auto detection
@@ -34,7 +28,7 @@ The default setting is `yes`, it will automatically detect HDMI and set the reso
 hdmi_autodetect=yes
 ```
 
-Disable auto detect,
+Disable auto detect:
 
 ```sh
 hdmi_autodetect=no
@@ -42,7 +36,9 @@ hdmi_autodetect=no
 
 ### HDMI Resolution Setting
 
-Only when `hdmi_autodetect=no`, the changed configuration will take effect, the default is 720p.
+In some situations HDMI resolution auto detect will not work, and you can try to setup the HDMI resolution manually.
+
+Only when `hdmi_autodetect=no`, the changed configuration will take effect, the default is `720p`.
 
 ```sh
 # HDMI mode
@@ -89,14 +85,13 @@ Only when `hdmi_autodetect=no`, the changed configuration will take effect, the 
 hdmi=720p60hz
 ```
 
-Modified to 1080p,
+Set to `1080p`:
 
 ```sh
 hdmi=1080p60hz
 ```
 
-Restart the system will take effect.
-
+Restart the system to take effect.
 
 ## Fan Setting
 
@@ -150,9 +145,9 @@ khadas@Khadas:~$ cat /boot/env.txt | grep "fb_rotate"
 fb_rotate=0
 ```
 
-### Change setting
+### Change Setting
 
-Rotate 90 degrees,
+Rotate 90 degrees:
 
 ```sh
 khadas@Khadas:~$ sudo vim /boot/env.txt
@@ -161,11 +156,9 @@ khadas@Khadas:~$ sudo vim /boot/env.txt
 
 `fb_rotate=0` change to `fb_rotate=1`.
 
-### Confirm that the modification is successful and restart the system
+After edit the file, you need to save the file and reboot the board.
 
 ```sh
-khadas@Khadas:~$ cat /boot/env.txt | grep "fb_rotate"
-fb_rotate=1
 khadas@Khadas:~$ sync
 khadas@Khadas:~$ sudo reboot
 ```

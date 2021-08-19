@@ -64,6 +64,8 @@ sidebar:
     hardware: Hardware
     setup_serial: Serial Debugging Tool
     extra_power_input: Extra Power Input
+    troubleshooting: Troubleshooting
+    capture_log: Capture Running Log
 
   vim2:
     quick_start: Quick Start
@@ -101,6 +103,8 @@ sidebar:
     hardware: Hardware
     setup_serial: Serial Debugging Tool
     extra_power_input: Extra Power Input
+    troubleshooting: Troubleshooting
+    capture_log: Capture Running Log
 
   vim3:
     quick_start: Quick Start
@@ -155,7 +159,9 @@ sidebar:
     how_to_use_fastboot: HowToUseFastboot.html
     hardware: Hardware
     setup_serial: Serial Debugging Tool
-    extra_power_input: Extra Power Input    
+    extra_power_input: Extra Power Input
+    troubleshooting: Troubleshooting
+    capture_log: Capture Running Log
 
   edge:
     quick_start: Quick Start
@@ -190,7 +196,8 @@ sidebar:
     erase_emmc: Erase eMMC Storage
     hardware: Hardware
     setup_serial: Serial Debugging Tool
-
+    troubleshooting: Troubleshooting
+    capture_log: Capture Running Log
 
   hardware:
     hardware: hardware
