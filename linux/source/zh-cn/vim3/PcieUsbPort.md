@@ -8,8 +8,7 @@ Khadas VIM3包含一个数据切换开关来切换`PCIe`或`USB 3.0`模式。默
 
 有多种方式可以来切换`PCIe/USB3.0`模式：
 * 通过[KBI](/linux/zh-cn//vim3/KbiGuidance.html)来切换
-* 通过Android菜单来切换
-* 通过Android/Ubuntu命令行来切换
+* 通过Ubuntu命令行来切换
 
 ## 通过KBI来切换 PCIe / USB3.0 模式
 
@@ -51,16 +50,7 @@ do_kbi_poweroff
 ```
 然后可以按电源键开机。
 
-## 通过Android菜单来设置 PCIe / USB3.0 模式
-
-通过遥控或鼠标进入`Device Preferences`菜单，选择`Toggle USB-3.0/PCI-E`菜单：
-
-![Android Device Preferences](https://github.com/tsangyoujun/khadas_docs/blob/master/settings_toggle.jpg?raw=true)
-![Mode Switch UI](https://github.com/tsangyoujun/khadas_docs/blob/master/mode_switch.jpg?raw=true)
-
-**设置完后一定要给系统断电，以保证配置生效：**
-
-## 通过Android/Ubuntu命令行设置 PCIe / USB3.0 模式
+## 通过Ubuntu命令行设置 PCIe / USB3.0 模式
 
 * 查看当前模式：
 

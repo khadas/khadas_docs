@@ -58,6 +58,6 @@ After the power is turned on, it starts normally, and you can see the Khadas Log
 
 ## VIM2 Website
 For more information, please see our website, read more decumentation, or visit our forum.
-* [Khadas VIM3 Homepage](https://www.khadas.com/vim)
-* [Khadas VIM3 Forum](https://forum.khadas.com/c/Khadas-VIM2)
+* [Khadas VIM2 Homepage](https://www.khadas.com/vim)
+* [Khadas VIM2 Forum](https://forum.khadas.com/c/Khadas-VIM2)
 
