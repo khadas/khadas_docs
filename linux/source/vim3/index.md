@@ -6,6 +6,8 @@ This article will show you how to quickly get up and running after receiving you
 ## Power Supply
 Your Khadas SBC is compatible with various types of power supplies, and these are the minimum specifications for the best performance and stability.
 
+<img src="/linux/images/edge/usb-c_adapter_24w_2.jpg" width=800px>
+
 * 24W USB-C Adapter
 * USB-C to C Cable
 

@@ -7,8 +7,10 @@ title: 快速上手
 
 适配器和数据线如下：
 
-1. 24W Type C PD电源适配器
-2. Type-C数据线
+<img src="/linux/images/edge/usb-c_adapter_24w_2.jpg" width=800px>
+
+* 24W Type C PD电源适配器
+* Type-C数据线
 
 **相关链接：**
 * [Khadas Shop - 24W电源适配器](https://www.khadas.cn/product-page/24w-power-adapter?post_type=product)

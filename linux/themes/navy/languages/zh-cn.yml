@@ -23,7 +23,7 @@ page:
 sidebar:
   vim1:
     quick_start: 快速上手
-    quick_setup: 快速设置
+    quick_setup: 快速上手
     choose_an_os: 选择操作系统
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
@@ -95,7 +95,7 @@ sidebar:
 
   vim2:
     quick_start: 快速上手
-    quick_setup: 快速设置
+    quick_setup: 快速上手
     choose_an_os: 选择操作系统
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
@@ -167,7 +167,7 @@ sidebar:
 
   vim3:
     quick_start: 快速上手
-    quick_setup: 快速设置
+    quick_setup: 快速上手
     choose_an_os: 选择操作系统
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
@@ -255,7 +255,7 @@ sidebar:
 
   edge:
     quick_start: 快速上手
-    quick_setup: 快速设置
+    quick_setup: 快速上手
     choose_an_os: 选择操作系统
     install_os_into_emmc: 安装操作系统到eMMC
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
