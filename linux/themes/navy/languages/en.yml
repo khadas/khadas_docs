@@ -22,8 +22,8 @@ page:
 sidebar:
   vim1:
     quick_start: Quick Start
-    quick_setup: Quick Setup
-    os_introduce: OS Introduce
+    quick_setup: Quickstart
+    choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
@@ -94,8 +94,8 @@ sidebar:
 
   vim2:
     quick_start: Quick Start
-    quick_setup: Quick Setup
-    os_introduce: OS Introduce
+    quick_setup: Quickstart
+    choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
@@ -166,8 +166,8 @@ sidebar:
 
   vim3:
     quick_start: Quick Start
-    quick_setup: Quick Setup
-    os_introduce: OS Introduce
+    quick_setup: Quickstart
+    choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
@@ -255,8 +255,8 @@ sidebar:
 
   edge:
     quick_start: Quick Start
-    quick_setup: Quick Setup
-    os_introduce: OS Introduce
+    quick_setup: Quickstart
+    choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode

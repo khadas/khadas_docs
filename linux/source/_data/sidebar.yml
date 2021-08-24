@@ -1,7 +1,7 @@
 vim1:
   quick_start:
     quick_setup: index.html
-    os_introduce: OsIntroduce.html
+    choose_an_os: OsIntroduce.html
     install_os_into_emmc: InstallOsIntoEmmc.html
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
@@ -66,7 +66,7 @@ vim1:
 vim2:
   quick_start:
     quick_setup: index.html
-    os_introduce: OsIntroduce.html
+    choose_an_os: OsIntroduce.html
     install_os_into_emmc: InstallOsIntoEmmc.html
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
@@ -134,7 +134,7 @@ vim2:
 vim3:
   quick_start:
     quick_setup: index.html
-    os_introduce: OsIntroduce.html
+    choose_an_os: OsIntroduce.html
     install_os_into_emmc: InstallOsIntoEmmc.html
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
@@ -222,7 +222,7 @@ vim3:
 edge:
   quick_start:
     quick_setup: index.html
-    os_introduce: OsIntroduce.html
+    choose_an_os: OsIntroduce.html
     install_os_into_emmc: InstallOsIntoEmmc.html
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html

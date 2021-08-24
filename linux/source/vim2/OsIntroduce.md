@@ -1,11 +1,11 @@
-title: OS Introduce
+title: Choose an OS
 ---
 
-We official supported Linux distribution is **Ubuntu** and will keep updating, **OTA upgrade is supported**.
+Khadas officially supports and updates the **Ubuntu** distribution; **OTA upgrades are supported**.
 
 ## Supported Ubuntu Distributions
 
-For `VIM2`, we support `Ubuntu 18.04` and `Ubuntu 20.04`.
+`VIM1` supports `Ubuntu 18.04` and `Ubuntu 20.04`.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -18,52 +18,52 @@ For `VIM2`, we support `Ubuntu 18.04` and `Ubuntu 20.04`.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="18.04" role="tabpanel" aria-labelledby="18.04-tab">
 
-The Linux kernel of `Ubuntu 18.04` is **4.9**, including **desktop** and **server**. The default desktop environment is **XFCE**.
+`Ubuntu 18.04` **desktop** and **server** versions use the **4.9 kernel**. The default desktop environment is **XFCE**.
 
 Supported installations:
 
-* `eMMC` - Use USB upgrade tool to write OS into eMMC
-* `SD/USB` - Use tool to write OS into SD card or U-Disk
+* `eMMC` - Write the OS into the eMMC using the USB Upgrade Tool
+* `SD/USB` - Write the OS into an SD card or USB thumbdrive
 
 </div>
 <div class="tab-pane fade" id="20.04" role="tabpanel" aria-labelledby="20.04-tab">
 
-The Linux kernel of `Ubuntu 20.04` is **mainline kernel**, including **desktop** and **server**. The default desktop environment is **GNOME**.
+`Ubuntu 20.04` **desktop** and **server** versions use the **mainline kernel**. The default desktop environment is **GNOME**.
 
 Supported installations:
 
-* `SD/USB` - Use tool to write OS into SD card or U-Disk
+* `SD/USB` - Write the OS into an SD card or USB thumbdrive
 
 {% note info %}
-Mainline kernel OS only support SD card installation, but you can wirte the OS to eMMC when the system bootup.
+The mainline kernel can only be installed into an SD card, however you can copy the OS into the eMMC after the OS has booted up.
 {% endnote %}
 
 </div>
 </div>
 
 {% note info %}
-The OS name include **EMMC** means for eMMC installation, include **SD-USB** means SD card installation.
+If the image name includes the text **EMMC**, it is meant for eMMC installation. If it includes **SD-USB**, it is meant for SD card installation.
 {% endnote %}
 
-## How To Choose OS
+## How to Select an OS
 
-### Choose According to Linux Kernel
+### Linux Kernel
 
-There are **4.9** and **mainline** two Linux kernel, **4.9** kernel has best support, but the kernel version is old; **mainline kernel** is the latest version, but some functions may not work well.
+At present we support two Linux kernels, **4.9** and **mainline**. The older **4.9** kernel is the most stable, whilst the **mainline** kernel contains the latest improvements but is unstable.
 
-If you want to use the stable version, you can choose **4.9** kernel OS.
-If you want to experience the new features of lstest kernel, you can choose **mainline kernel** OS.
+If your priority is stability, select an OS that uses the **4.9** kernel.
+If you want to experience the latest features, select an OS that uses the **mainline** kernel.
 
-### Choose According to OS Type
+### OS Type
 
-If you don't need desktop environment, you can choose **server** OS.
-If you need desktop environment, you can choose **xfce** desktop OS.
+**server** - no GUI support, only console
+**xfce** - standard desktop GUI support
 
-### Choose According to Installation
+### Installation Type
 
-If you want to write the OS to eMMC, you can choose **EMMC** OS.
-If you want to write the OS to SD card or U-Disk, you can choose **SD-USB** OS.
+**eMMC** - you can write this image directly to the eMMC
+**SD/USB** - you can write this image to an SD card or USB thumbdrive
 
-## OS Donwload
+## Download an OS
 
-Click to [Download OS](/linux/firmware/Vim2UbuntuFirmware.html).
+* VIM2 - [Compatible OS Images](/linux/firmware/Vim2UbuntuFirmware.html)
