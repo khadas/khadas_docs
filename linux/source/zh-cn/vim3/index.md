@@ -36,7 +36,7 @@ title: 快速上手
 
 3. ETH(可选): 网口座子
 
-<img src="/linux/images/vim3/QuickConnect.jpg" width=800px>
+<img src="/linux/images/vim3/QuickStart.jpg" width=800px>
 
 上电以后正常启动，可以从显示屏看到Khadas Logo，以及白灯闪烁
 
