@@ -6,7 +6,7 @@ This article mainly introduces how to quickly get started after getting the deve
 ## Edge Power Supply
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
-![image](/linux/images/edge/usb-c_adapter_24w_2.jpg)
+<img src="/linux/images/edge/usb-c_adapter_24w_2.jpg" width=800px>
 
 1. Khadas USB-C 24W Power Adapter (USB Power Delivery)
 2. Khadas USB-C Cable (Male-to-Male)
@@ -48,7 +48,28 @@ Please do not attach multiple cables with large heads that interfere with each o
 
 3. ETH (optional): Ethernet port holder
 
-<img src="/linux/images/edge/QuickConnect.jpg" width=800px>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="true">Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="edge-v-tab" data-toggle="tab" href="#edge-v" role="tab" aria-controls="edge-v" aria-selected="false">Edge-V</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="captain-tab" data-toggle="tab" href="#captain" role="tab" aria-controls="Captain" aria-selected="false">Captain</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="edge" role="tabpanel" aria-labelledby="edge-tab">
+<img src="/linux/images/edge/QuickStart-edge.jpg" width=800px>
+</div>
+<div class="tab-pane fade" id="edge-v" role="tabpanel" aria-labelledby="edge-v-tab">
+<img src="/linux/images/edge/QuickStart-edge-v.jpg" width=800px>
+</div>
+<div class="tab-pane fade" id="captain" role="tabpanel" aria-labelledby="captain-tab">
+<img src="/linux/images/edge/QuickStart-captain.jpg" width=800px>
+</div>
+</div>
 
 After the power is turned on, it starts normally, and you can see the Khadas Logo on the display, and the white light flashes
 

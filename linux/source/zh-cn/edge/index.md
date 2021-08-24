@@ -6,7 +6,7 @@ title: 快速上手
 ## Edge电源
 尽管Edge SBC可与各种类型的电源兼容，但建议使用这些规格以获得最佳的性能输出和稳定性。
 
-![image](/linux/images/edge/usb-c_adapter_24w_2.jpg)
+<img src="/linux/images/edge/usb-c_adapter_24w_2.jpg" width=800px>
 
 1. Khadas USB-C 24W供电器
 2. Khadas USB-C 数据线
@@ -46,7 +46,28 @@ title: 快速上手
 
 3. ETH(可选): 网口座子
 
-<img src="/linux/images/vim3/QuickConnect.jpg" width=800px>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="true">Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="edge-v-tab" data-toggle="tab" href="#edge-v" role="tab" aria-controls="edge-v" aria-selected="false">Edge-V</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="captain-tab" data-toggle="tab" href="#captain" role="tab" aria-controls="Captain" aria-selected="false">Captain</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="edge" role="tabpanel" aria-labelledby="edge-tab">
+<img src="/linux/images/edge/QuickStart-edge.jpg" width=800px>
+</div>
+<div class="tab-pane fade" id="edge-v" role="tabpanel" aria-labelledby="edge-v-tab">
+<img src="/linux/images/edge/QuickStart-edge-v.jpg" width=800px>
+</div>
+<div class="tab-pane fade" id="captain" role="tabpanel" aria-labelledby="captain-tab">
+<img src="/linux/images/edge/QuickStart-captain.jpg" width=800px>
+</div>
+</div>
 
 上电以后正常启动，可以从显示屏看到Khadas Logo，以及白灯闪烁
 
