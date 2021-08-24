@@ -1,12 +1,12 @@
 title: Quickstart
 ---
 
-This article will show you how to quickly get up and running after receiving your Khadas Development Board.
+This article will show you how to quickly get up and running after receiving your board.
 
 ## Power Supply
 Your Khadas SBC is compatible with various types of power supplies, and these are the minimum specifications for the best performance and stability.
 
-* 5V/2A power adapter
+* 5V/2A Power Adapter
 * USB-C to C or USB-A to C cable
 
 **Related Links:**
@@ -51,7 +51,7 @@ If your Khadas Development Board repeatedly restarts, or restarts randomly, this
 3. [Enter Upgrade Mode](/linux/vim1/BootIntoUpgradeMode.html)
 4. [Boot Images from External Media](/linux/vim1/BootFromExtMedia.html)
 5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
-6. [Wifi](/linux/vim1/Wifi.html)
+6. [Wi-Fi](/linux/vim1/Wifi.html)
 
 ## External Websites
 * [Khadas Homepage](https://www.khadas.com)

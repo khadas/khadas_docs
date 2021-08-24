@@ -1,7 +1,7 @@
 title: Quickstart
 ---
 
-This article will show you how to quickly get up and running after receiving your Khadas Development Board.
+This article will show you how to quickly get up and running after receiving your board.
 
 ## Power Supply
 Your Khadas SBC is compatible with various types of power supplies, and these are the minimum specifications for the best performance and stability.

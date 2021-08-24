@@ -1,17 +1,17 @@
 title: Quickstart
 ---
 
-This article will show you how to quickly get up and running after receiving your Khadas Development Board.
+This article will show you how to quickly get up and running after receiving your board.
 
 ## Power Supply
 Your Khadas SBC is compatible with various types of power supplies, and these are the minimum specifications for the best performance and stability.
 
-* 5V/2A power adapter
-* USB-C to C or USB-A to C cable
+* 24W USB-C Adapter
+* USB-C to C Cable
 
 **Related Links:**
-* [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
-* [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
+* [Khadas Shop - 24W USB-C Adapter](https://www.khadas.com/product-page/usb-c-24w-adapter)
+* [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable-male-to-male)
 * [Khadas VIM - Extra Power Input](/linux/vim3/ExtraPowerInput.html)
 * [Khadas VIM - Specifications](https://www.khadas.com/vim3)
 
