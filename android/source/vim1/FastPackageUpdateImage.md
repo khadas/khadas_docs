@@ -1,7 +1,7 @@
 title: Make a "Fast Package Update Image"
 ---
 
-This guide is about how to make a "Fast Package Update Image" on Android 6.0 and Android 7.1; This means that you will only change one part of Android. For example, only change the U-Boot, Kernel or System. In addition, if you want to fast package update image on Android 9.0, You can refer to [Fast Package Update Image on Android 9.0](vim3/FastPackageUpdateImage.md)
+This guide is about how to make a "Fast Package Update Image" on Android 6.0 and Android 7.1; This means that you will only change one part of Android. For example, only change the U-Boot, Kernel or System. In addition, if you want to fast package update image on Android 9.0, You can refer to [Fast Package Update Image on Android 9.0](/android/vim1/FastPackageUpdateImage.html)
 
 ## Preparations:
 

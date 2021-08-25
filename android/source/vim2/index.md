@@ -42,8 +42,8 @@ title: VIM2 Beginners Guide
 |E|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |F|LEDs|Status indicator LEDs|
 |G|FPC Connector|10-pins, 0.5mm pitch, with I2C, IOs|
-|H|I-Pex [Wi-Fi](/android/vim2/HowToConnectWifi.html) / [Bluetooth](/android/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
-|I|I-Pex [Wi-Fi](/android/vim2/HowToConnectWifi.html) / [Bluetooth](/android/vim2/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|H|I-Pex Wi-Fi / Bluetooth] Connector|Wi-Fi / BT Antenna connector|
+|I|I-Pex Wi-Fi / Bluetooth] Connector|Wi-Fi / BT Antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim2" role="tabpanel" aria-labelledby="back-tab">
 
@@ -201,7 +201,6 @@ These items are useful when you want to upgrade your VIM2 SBC's operating system
 4. 8GB or Larger, USB-Thumbdrive (U-Disk)
 
 **Learn More:**
-* [Booting Card Vs Burning Card](/android/vim1/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/android/vim2/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/android/vim2/BootFromExtMedia.html)
 * [Enter Upgrade Mode](/android/vim2/BootIntoUpgradeMode.html)
@@ -242,12 +241,6 @@ These items are useful if you wish to use your VIM2 SBC as a media center, for s
 **Learn More:**
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amazon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
-
-{% note info Tips %}
-
-Nowadays most people stream their media, see [How To Install LibreELEC](/android/vim2/InstallLibreELEC.html).
-
-{% endnote %}
 
 ## Software Development / Advanced Crash Recovery
 Extreme cases of crash-recovery will require you to use the MRegister to reset your VIM2 SBC. A USB Serial Debug Tool is also useful for developers debugging complex software issues.

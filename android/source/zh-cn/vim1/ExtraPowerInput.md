@@ -3,7 +3,6 @@ title: Khadas VIMs外部供电接口
 
 ## 前言
  * 设备主要由USB-C接口供电。
- * 电源适配器电压确保最高为5.2V，电流推荐值为2000mA。
 
 ## 概述
 Khadas vim1设计了两个主要电源输入接口
@@ -13,7 +12,8 @@ Khadas vim1设计了两个主要电源输入接口
 
 ## 使用USB-C作为外部供电接口
 USB-C是常用的供电接口，在供电的同时也可以作数据传输，比如烧录系统固件、ADB调试...
-![image](/android/images/vim1/usbc_extra_power.png)
+
+<img src="/android/images/vim3/EXT_USBC.png" width="50%" height="50%" >
 
 ## 使用VIN作为外部供电
 
@@ -37,7 +37,7 @@ USB-C是常用的供电接口，在供电的同时也可以作数据传输，比
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1v12" role="tabpanel" aria-labelledby="vim1v12-tab">
 
-<img src="/android/images/vim1/vim1v12-vin_extra_power.png" width="50%" height="50%" >
+<img src="/android/images/vim1/VIM1_V12_EXT.png" width="50%" height="50%" >
 
 VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 
@@ -46,32 +46,33 @@ VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 </div>
 <div class="tab-pane fade" id="vim1v14" role="tabpanel" aria-labelledby="vim1v14-tab">
 
+<img src="/android/images/vim1/VIM1_v14_EXT.png" width="50%" height="50%" >
+
 VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
 带有三角形标志的为1号脚。1号脚和2号脚为电源正极，3号和4号脚为电源负极。
 
-<img src="/android/images/vim1/vim1v14-vin_extra_power.jpg" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim2v12" role="tabpanel" aria-labelledby="vim2v12-tab">
 
-<img src="/android/images/vim2/vim2v12-vin_extra_power.jpg" width="50%" height="50%" >
+<img src="/android/images/vim2/VIM2_V12_EXT.png" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim2v14" role="tabpanel" aria-labelledby="vim2v14-tab">
 
-<img src="/android/images/vim2/vim2v14-vin_extra_power.jpg" width="50%" height="50%" >
+<img src="/android/images/vim2/VIM2_V14_EXT.png" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-<img src="/android/images/vim3/vim3-vin_extra_power.jpg" width="50%" height="50%" >
+<img src="/android/images/vim3/VIM3_V12_EXT.png" width="50%" height="50%" >
 
 VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
@@ -91,7 +92,7 @@ VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
 
 ## 更多资料
-* [VIM1接口描述](/android/zh-cn/vim1/Interfaces.html)
-* [VIM2接口描述](/android/zh-cn/vim2/Interfaces.html)
-* [VIM3接口描述](/android/zh-cn/vim3/Interfaces.html)
+* [VIM1接口描述](/android/zh-cn/vim1/Hardware.html)
+* [VIM2接口描述](/android/zh-cn/vim2/Hardware.html)
+* [VIM3接口描述](/android/zh-cn/vim3/Hardware.html)
 * [vin对vin连接线](https://www.khadas.com/product-page/vin-to-vin-cable)

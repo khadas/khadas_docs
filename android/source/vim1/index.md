@@ -40,7 +40,7 @@ title: VIM1 Beginners Guide
 |C|[40-Pin GPIO](/android/vim1/GPIOPinout.html)|Learn how to access the GPIO from [here](/android/vim1/AccessGpio.html), or use it to add a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
-|F|I-Pex [Wi-Fi](/android/vim1/HowToConnectWifi.html) / [Bluetooth](/android/vim1/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|F|I-Pex Wi-Fi / Bluetooth Connector|Wi-Fi / BT Antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim1" role="tabpanel" aria-labelledby="back-tab">
 
@@ -167,7 +167,6 @@ These items are useful when you want to upgrade your VIM1 SBC's operating system
 4. 8GB or Larger, USB-Thumbdrive (U-Disk)
 
 **Learn More:**
-* [Booting Card Vs Burning Card](/android/vim1/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/android/vim1/UpgradeViaTFBurningCard.html)
 * [Boot From External Media](/android/vim1/BootFromExtMedia.html)
 * [Enter Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
