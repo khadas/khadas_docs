@@ -13,11 +13,39 @@ VIM2、VIM3和Edge不同于VIM1的一点就是具有以太网唤醒功能。
 
 ### 获取以太网MAC地址
 
-1.在VIM2背面贴有MAC地址。
+1.在背面贴有MAC地址。
 
-![mac_page](/linux/images/vim2/vim2_mac.jpg)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim2-tab" data-toggle="tab" href="#vim2" role="tab" aria-controls="vim2" aria-selected="true">VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">Edge</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
-如果VIM2背面贴的MAC地址损坏了，你还可以通过如下方式获取MAC地址。
+<img src="/linux/images/vim2/VIM2_WOL.png" width="800px">
+
+</div>
+<div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
+<img src="/linux/images/vim3/VIM3_WOL.png" width="800px">
+
+</div>
+<div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
+
+<img src="/linux/images/edge/Edge_WOL.jpg" width="800px">
+
+</div>
+</div>
+
+
+如果背面贴的MAC地址损坏了，你还可以通过如下方式获取MAC地址。
 
 2.在终端执行 `ifconfig` 获取MAC地址。
 ```

@@ -12,9 +12,36 @@ Firstly, you have to connect VIM2 to your LAN, then get the Ethernet MAC address
 ## Ubuntu
 
 ### Get Ethernet MAC address
-1.MAC Address Sticker on the backside of the VIM:
+1.MAC Address Sticker on the backside of the board:
 
-![mac_page](/linux/images/vim2/vim2_mac.jpg)
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim2-tab" data-toggle="tab" href="#vim2" role="tab" aria-controls="vim2" aria-selected="true">VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">Edge</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
+
+<img src="/linux/images/vim2/VIM2_WOL.png" width="800px">
+
+</div>
+<div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
+<img src="/linux/images/vim3/VIM3_WOL.png" width="800px">
+
+</div>
+<div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
+
+<img src="/linux/images/edge/Edge_WOL.jpg" width="800px">
+
+</div>
+</div>
 
 If the sticker has peeled-off, you can use following steps to get the MAC Address.
 
