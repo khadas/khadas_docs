@@ -42,8 +42,8 @@ title: VIM2 文档
 |E|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |F|LED灯|用于指示板子的状态|
 |G|FPC控制器|10个引脚,0.5mm间距,具有I2C和IOs的功能|
-|H|天线座子|用于插[wifi](/android/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
-|I|天线座子|用于插[wifi](/android/zh-cn/vim2/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/vim2/HowToSetupBluetooth.html)的天线|
+|H|天线座子|用于插wifi和蓝牙的天线|
+|I|天线座子|用于插wifi和蓝牙的天线|
 </div>
 <div class="tab-pane fade" id="back-vim2" role="tabpanel" aria-labelledby="back-tab">
 
@@ -231,8 +231,6 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Amzon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
 {% note info 提示 %}
-
-如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/android/zh-cn/vim2/InstallLibreELEC.html)。
 
 {% endnote %}
 

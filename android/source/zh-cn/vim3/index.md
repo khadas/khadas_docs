@@ -45,8 +45,8 @@ title: VIM3 相关文档
 |G|WOL选择开关|WOL功能的电源开关|
 |H|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |I|LED灯|用于指示板子的状态|
-|J|IPEX天线|用于插[wifi](/android/zh-cn/vim3/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/vim3/HowToSetupBluetooth.html)的天线|
-|k|IPEX天线|用于插[wifi](/android/zh-cn/vim3/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/vim3/HowToSetupBluetooth.html)的天线|
+|J|IPEX天线|用于插wifi和蓝牙的天线|
+|k|IPEX天线|用于插wifi和蓝牙的天线|
 </div>
 <div class="tab-pane fade" id="back-vim3" role="tabpanel" aria-labelledby="back-tab">
 
@@ -359,7 +359,6 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 * [Amazon - Samsung T5 Portable SSD](https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1)
 * [Amzon - microSDXC UHS-I SD-Card](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=microSDXC+UHS-I&rh=i%3Aaps%2Ck%3AmicroSDXC+UHS-I)
 
-**提示:** 如今，大多数人都通过流媒体使用，可以参考[如何安装LibreELEC](/android/zh-cn/vim3/InstallLibreELEC.html)
 
 ## 软件开发/高级CRACH恢复
 在系统完全崩溃需要手动恢复的极端情况下，需要使用mregister重置VIM3 SBC。USB串行调试工具对于开发人员调试复杂软件问题也很有用。

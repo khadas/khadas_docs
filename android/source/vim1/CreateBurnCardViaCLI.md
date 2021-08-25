@@ -124,6 +124,3 @@ Done!
 2. Follow this guide([VIM1](/android/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/vim3/BootIntoUpgradeMode.html)) to boot into Upgrade Mode.
 3. Wait till the process completes.
 
-## Further Reading:
-* Booting_Card Vs Burning Card([VIM1](/android/vim1/BootingCardVsBurningCard.html)/[VIM2](/android/vim2/BootingCardVsBurningCard.html)/[VIM3](/android/vim3/BootingCardVsBurningCard.html))
-

@@ -33,8 +33,8 @@ title: Edge Beginners Guide
 |8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/android/edge/BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your Edge|
 |A|314-Pin Gold Fingers|For docking with expansion boards such as the [Captain](https://www.khadas.com/product-page/captain-carrier-board)|
-|B|I-Pex [Wi-Fi](/android/edge/HowToConnectWifi.html) / Bluetooth Connector|Connect Wi-Fi / Bluetooth antennas|
-|C|I-Pex Wi-Fi / [Bluetooth](/android/edge/HowToSetupBluetooth.html) Connector|Connect Wi-Fi / Bluetooth antennas|
+|B|I-Pex Wi-Fi / Bluetooth Connector|Connect Wi-Fi / Bluetooth antennas|
+|C|I-Pex Wi-Fi / Bluetooth Connector|Connect Wi-Fi / Bluetooth antennas|
 
 </div>
 <div class="tab-pane fade" id="back-edge" role="tabpanel" aria-labelledby="back-tab">
@@ -115,8 +115,8 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 |C|Gesture Sensor|Control your Edge-V with a hand-wave|
 |D|Infrared Module|2-channel infrared receiver for use with [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |E|LEDs|Status indicator LEDs|
-|F|I-Pex [Wi-Fi](/android/edge/HowToConnectWifi.html) / [Bluetooth](/android/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
-|G|I-Pex [Wi-Fi](/android/edge/HowToConnectWifi.html) / [Bluetooth](/android/edge/HowToSetupBluetooth.html) Connector|Wi-Fi / BT Antenna connector|
+|F|I-Pex Wi-Fi / Bluetooth Connector|Wi-Fi / BT Antenna connector|
+|G|I-Pex Wi-Fi / Bluetooth Connector|Wi-Fi / BT Antenna connector|
 
 </div>
 <div class="tab-pane fade" id="back-edgev" role="tabpanel" aria-labelledby="back-tab">
@@ -235,8 +235,8 @@ Linux_TX|19|39|MCU_PA1
 |K|Function Button|For entering [upgrade mode](/android/edge/BootIntoUpgradeMode.html)|
 |L|Microphone|Audio input|
 |M|MXM3 Connector|For docking with the [Edge](https://www.khadas.com/product-page/edge)|
-|N|[Wi-Fi](/android/edge/HowToConnectWifi.html) / [Bluetooth](/android/edge/HowToSetupBluetooth.html) Chip Antenna|Wi-Fi and BT antenna|
-|O|[Wi-Fi](/android/edge/HowToConnectWifi.html) / [Bluetooth](/android/edge/HowToSetupBluetooth.html) Chip Antenna|Wi-Fi and BT antenna|
+|N|Wi-Fi / Bluetooth Chip Antenna|Wi-Fi and BT antenna|
+|O|Wi-Fi / Bluetooth Chip Antenna|Wi-Fi and BT antenna|
 |P|M3 Clearance Hole|For mounting and cases, such as the [Kap Case](https://www.khadas.com/product-page/kap-case)|
 |Q|M2 Threaded Stand-Off|For mounting the [Edge](https://www.khadas.com/product-page/edge)|
 

@@ -45,8 +45,8 @@ title: VIM3 Beginners Guide
 |G|WOL Switch|Power switch activated via Wake-On-LAN|
 |H|Infrared Module|2-channel infrared receiver for the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |I|LEDs|Indicator LEDs|
-|J|IPEX Antenna|[Wi-Fi](/android/vim3/HowToConnectWifi.html) and Bluetooth antenna connector|
-|K|IPEX Antenna|Wi-Fi and [Bluetooth](/android/vim3/HowToSetupBluetooth.html) antenna connector|
+|J|IPEX Antenna|Wi-Fi and Bluetooth antenna connector|
+|K|IPEX Antenna|Wi-Fi and Bluetooth antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim3" role="tabpanel" aria-labelledby="back-tab">
 
@@ -270,12 +270,6 @@ More shell commands and examples:
 
 ## Amlogic A311D, NPU Usage Guides
 These following documentation links will help you get started with your VIM3's 5.0 TOPS neural processing unit.
-
-1. [How to Use NPU](/android/vim3/HowToUseNpu.html)
-2. [Install Darknet](/android/vim3/HowToInstallDarknet.html)
-3. [Train Yolo](/android/vim3/HowToTrainYolo.html)
-4. [Transform Yolo](/android/vim3/HowToTransformYolo.html)
-5. [Train Inception](/android/vim3/HowToTrainInception.html)
 
 **Learn More:**
 * [YouTube: VIM3 - Realtime Object Detection Using Yolo v3](https://www.youtube.com/watch?v=aQ-g_CBrzEU)

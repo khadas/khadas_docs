@@ -34,8 +34,8 @@ title: Edge文档
 |8|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |9|Power按键|用于关机或者配合其他按键使用|
 |A|314针的金手指|用于与[Captain](https://www.khadas.com/product-page/captain-carrier-board)等扩展板对接|
-|B|I-Pex天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
-|C|I-Pex天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
+|B|I-Pex天线|用于连接wifi和蓝牙的天线|
+|C|I-Pex天线|用于连接wifi和蓝牙的天线|
 
 </div>
 <div class="tab-pane fade" id="back-edge" role="tabpanel" aria-labelledby="back-tab">
@@ -118,8 +118,8 @@ title: Edge文档
 |C|Gesture Sensor|三轴加速传感器|
 |D|红外模块|可用于与[khadas遥控器](https://www.khadas.com/product-page/ir-remote)通信|
 |E|LED灯|可用于指示LED灯的状态|
-|F|I-Pex天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
-|G|I-Pex天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
+|F|I-Pex天线|用于连接wifi和蓝牙]的天线|
+|G|I-Pex天线|用于连接wifi和蓝牙]的天线|
 
 </div>
 <div class="tab-pane fade" id="back-edgev" role="tabpanel" aria-labelledby="back-tab">
@@ -238,8 +238,8 @@ Linux_TX|19|39|MCU_PA1
 |K|Function按键|快速短按3下[进入TST模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)|
 |L|麦克风|音频输入|
 |M|MXM3连接器|用于连接[Edge](https://www.khadas.com/product-page/edge)|
-|N|天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
-|O|天线|用于连接[wifi](/android/zh-cn/edge/HowToConnectWifi.html)和[蓝牙](/android/zh-cn/edge/HowToSetupBluetooth.html)的天线|
+|N|天线|用于连接wifi和蓝牙的天线|
+|O|天线|用于连接wifi和蓝牙的天线|
 |P|M3穿孔|用于与[Kap Case](https://www.khadas.com/product-page/kap-case)连接固定|
 |Q|M2螺纹支架|用于固定[Edge](https://www.khadas.com/product-page/edge)|
 
