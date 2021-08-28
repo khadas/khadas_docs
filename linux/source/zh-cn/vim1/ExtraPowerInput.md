@@ -5,7 +5,7 @@ title: Khadas VIMs外部供电接口
  * 设备主要由USB-C接口供电。
 
 ## 概述
-Khadas vim1设计了两个主要电源输入接口
+Khadas VIM设计了两个主要电源输入接口
  * USB-C：可以用作供电，也可以作USB数据传输。
  * VIN：只用于供电
  * 备用供电接口：靠近USB-C的USB Host接口，需要准备一个公对公的USB线进行连接。

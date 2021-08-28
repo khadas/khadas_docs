@@ -1,22 +1,20 @@
-title: Quick Start
+title: Quickstart
 ---
 
-This article mainly introduces how to quickly get started after getting the development board to make the system run.
+This article mainly introduces how to quickly get started after getting the board to make the system run.
 
-## Edge Power Supply
+## Power Supply
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
 <img src="/linux/images/edge/usb-c_adapter_24w_2.jpg" width=800px>
 
-1. Khadas USB-C 24W Power Adapter (USB Power Delivery)
-2. Khadas USB-C Cable (Male-to-Male)
+* Khadas USB-C 24W Power Adapter (USB Power Delivery)
+* Khadas USB-C Cable (Male-to-Male)
 
-{% note info Tip %}
-These items are now available at Khadas Shop
-{% endnote %}
+**Related Links:**
 
-**Learn More:**
-* [Edge+Captain Power Priority](/linux/edge/EdgeCaptainPowerPriority.html)
+* [Khadas Shop - 24W USB-C Adapter](https://www.khadas.com/product-page/usb-c-24w-adapter)
+* [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable-male-to-male)
 * [Khadas Edge Specifications](https://khadas.com/edge)
 * [Khadas Edge Accessories](https://www.khadas.com/edge-add-ons)
 
@@ -29,7 +27,7 @@ ave USB-C display-port capability, which allows them to connect directly to Type
 3. Wireless USB Keyboard + Mouse
 4. CEC-Compatible Remote Control
 
-**Learn More:**
+**Related Links:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
 * [Amazon - LG 4K Monitor w/ USB Type-C](https://www.amazon.com/LG-27UD88-W-LED-Lit-Monitor-Type-C/dp/B01CDYB0QS/ref=sr_1_7?ie=UTF8&qid=1543993886&sr=8-7&keywords=usb-c+compatible+monitor)
@@ -61,13 +59,13 @@ Please do not attach multiple cables with large heads that interfere with each o
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="edge" role="tabpanel" aria-labelledby="edge-tab">
-<img src="/linux/images/edge/QuickStart-edge.jpg" width=800px>
+<img src="/linux/images/edge/QuickStart-edge.jpg" width="50%" height="50%">
 </div>
 <div class="tab-pane fade" id="edge-v" role="tabpanel" aria-labelledby="edge-v-tab">
-<img src="/linux/images/edge/QuickStart-edge-v.jpg" width=800px>
+<img src="/linux/images/edge/QuickStart-edge-v.jpg" width="50%" height="50%">
 </div>
 <div class="tab-pane fade" id="captain" role="tabpanel" aria-labelledby="captain-tab">
-<img src="/linux/images/edge/QuickStart-captain.jpg" width=800px>
+<img src="/linux/images/edge/QuickStart-captain.jpg" width="50%" height="50%">
 </div>
 </div>
 
@@ -83,9 +81,8 @@ After the power is turned on, it starts normally, and you can see the Khadas Log
 1. [Install OS into eMMC](/linux/edge/InstallOsIntoEmmc.html)
 2. [Install System into SD/USB Storage](/linux/edge/InstallOsIntoSdusb.html)
 3. [Enter Upgrade Mode](/linux/edge/BootIntoUpgradeMode.html)
-4. [Boot Images from External Media](/linux/edge/BootFromExtMedia.html)
 5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
-6. [Wifi](/linux/edge/Wifi.html)
+6. [Wi-Fi](/linux/edge/Wifi.html)
 
 ## Edge Website
 For more information, please see our website, read more decumentation, or visit our forum.

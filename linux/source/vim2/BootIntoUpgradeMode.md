@@ -1,4 +1,4 @@
-title: Howto Boot Into Upgrade Mode
+title: Boot Into Upgrade Mode
 ---
 
 There are many different ways to boot into upgrade mode. They are listed below:
