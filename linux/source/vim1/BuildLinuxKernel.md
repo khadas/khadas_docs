@@ -3,7 +3,7 @@ title: Build Linux Kernel
 
 This documentation will introduce how to build Linux kernel from source code.
 
-We suggest to use [Fenix](https://github.com/khadas/fenix) to build Linux, just a few simple commands needed. Please refer to [Build Ubuntu/Debian Images](/linux/vim1/FenixScript.html) to setup the development environment.
+We suggest to use [Fenix](https://github.com/khadas/fenix) to build Linux, just a few simple commands needed. Please refer to [Build Ubuntu/Debian Images](FenixScript.html) to setup the development environment.
 
 
 ## Setup Environment
@@ -57,4 +57,4 @@ So the folder may be `build/images/debs/1.0.7/VIM3`, there are three packages we
   * Header - linux-headers-amlogic-mainline_1.0.7_arm64.deb
 
 ## See Also
-[Upgrade Linux](/linux/vim1/UpgradeLinuxKernel.html)
+[Upgrade Linux](UpgradeLinuxKernel.html)

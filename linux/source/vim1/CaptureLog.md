@@ -9,7 +9,7 @@ If your system is behaving abnormally or we are getting some unexpected outputs,
 
 ## Login via a serial terminal
 
-Refer to the article [Setup Serial Debug Tool](/linux/vim1/SetupSerialTool.html) to login to the serial terminal.
+Refer to the article [Setup Serial Debug Tool](SetupSerialTool.html) to login to the serial terminal.
 
 The default account and password of the system is as follows:
 

@@ -4,7 +4,7 @@ This guide is about how to configure Wi-Fi to work in STA+AP mode under Ubuntu.
 
 ## Preconditions
 
-The image is based on the V2005 version,and [update the OTA](/linux/vim3/UpgradeSystem.html) to the latest version
+The image is based on the V2005 version,and [update the OTA](UpgradeSystem.html) to the latest version
 
 ## Start to Configure
 
@@ -135,7 +135,7 @@ khadas@Khadas:~$ sudo ifconfig eth0 down
 
 2、Whether wlan0 can be used to surf the Internet
 
-* [Connect Wi-Fi](/linux/vim3/Wifi.html)
+* [Connect Wi-Fi](Wifi.html)
 
 Try to`ping www.khadas.com`:
 

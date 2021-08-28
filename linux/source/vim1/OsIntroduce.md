@@ -66,4 +66,4 @@ If you want to experience the latest features, select an OS that uses the **main
 
 ## Download an OS
 
-* VIM1 - [Compatible OS Images](/linux/firmware/Vim1UbuntuFirmware.html)
+* VIM1 - [Compatible OS Images](Vim1UbuntuFirmware.html)

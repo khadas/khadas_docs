@@ -35,7 +35,7 @@ Usually, the first two methods will meet the needs of most users. However, in so
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* Refer to this [guide](/linux/vim1/SetupSerialTool.html) to setup your serial tool.
+* Refer to this [guide](SetupSerialTool.html) to setup your serial tool.
 * Once again, ensure that you've done the right connections and setup.
 * Hit any keys at the moment of bootup to stop autoboot. This step will let the board boot into u-boot mode.
 * Type `run update` on the terminal of u-boot as below:

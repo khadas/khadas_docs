@@ -3,7 +3,7 @@ title: Build U-Boot
 
 This documentation will introduce how to build U-Boot from source code.
 
-We suggest to use [Fenix](https://github.com/khadas/fenix) to build U-Boot, just a few simple commands needed. Please refer to [Build Ubuntu/Debian Images](/linux/vim1/FenixScript.html) to setup the development environment.
+We suggest to use [Fenix](https://github.com/khadas/fenix) to build U-Boot, just a few simple commands needed. Please refer to [Build Ubuntu/Debian Images](FenixScript.html) to setup the development environment.
 
 
 ## Setup Environment
@@ -56,4 +56,4 @@ So the folder may be `build/images/debs/1.0.7/VIM3`, and the U-Boot Debian packa
 * Mainline U-Boot Debian package : `linux-u-boot-vim3-mainline_1.0.7-v2021.04_arm64.deb`
 
 ## See Also
-[Upgrade U-Boot](/linux/vim1/UpgradeUboot.html)
+[Upgrade U-Boot](UpgradeUboot.html)

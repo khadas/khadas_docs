@@ -24,7 +24,7 @@ There are 3 different ways to erase all data on the onboard eMMC storage:
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* Refer to this guide ([VIM1](/linux/vim1/SetupSerialTool.html)/[VIM2](/linux/vim2/SetupSerialTool.html)/[VIM3](/linux/vim3/SetupSerialTool.html)) to setup the Serial Tool for your VIM.
+* Refer to this [guide](SetupSerialTool.html) to setup the Serial Tool for your VIM.
 * Once again, ensure you've done the correct connections and setup.
 * Hit any keys at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode.
 * Type `store init 3` on the terminal of u-boot, and wait for the erasure process to complete.
@@ -75,7 +75,7 @@ GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:
 
 This approach is suitable for all products that use the Amlogic SoC:
 
-* Carry out normal upgrading via USB-C Cable([VIM1](/linux/vim1/InstallOsIntoEmmc.html)/[VIM2](/linux/vim2/InstallOsIntoEmmc.html)/[VIM3](/linux/vim3/InstallOsIntoEmmc.html)) or TF Card([VIM1](/linux/vim1/InstallOsIntoSdusb.html)/[VIM2](/linux/vim2/InstallOsIntoSdusb.html)/[VIM3](/linux/vim3/InstallOsIntoSdusb.html)).
+* Carry out normal upgrading via [USB-C Cable](InstallOsIntoEmmc.html) or [TF Card](InstallOsIntoSdusb.html).
 * Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
 * Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
 

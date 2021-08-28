@@ -3,7 +3,7 @@ title: Upgrade U-Boot
 
 ## Build U-Boot
 
-Please refer [Build U-Boot](/linux/vim1/BuildUboot.html).
+Please refer [Build U-Boot](BuildUboot.html).
 
 ## Upgrade U-Boot in Kernel Space
 
@@ -21,7 +21,7 @@ $ sudo reboot
 Only for SoC vendor eMMC U-Boot.
 {% endnote %}
 
-We can also upgrade the U-Boot in U-Boot command line mode. You need to setup the [Serial Tool](/linux/vim1/SetupSerialTool.html).
+We can also upgrade the U-Boot in U-Boot command line mode. You need to setup the [Serial Tool](SetupSerialTool.html).
 
 The built U-Boot is `build/u-boot/fip/_tmp/u-boot.bin`.
 
@@ -36,4 +36,4 @@ kvim3#reboot
 ```
 
 ## See Also
-[Build U-Boot](/linux/vim1/BuildUboot.html)
+[Build U-Boot](BuildUboot.html)

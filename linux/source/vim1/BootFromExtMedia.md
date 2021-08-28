@@ -16,7 +16,7 @@ This tutorial is about how to boot these images.
 
 ## Install Image to SD/USB Storage
 
-Please check [Install System on SD/USB Storage](/linux/vim1/InstallOsIntoSdusb.html).
+Please check [Install System on SD/USB Storage](InstallOsIntoSdusb.html).
 
 ## Select the Appropriate DTB
 
@@ -51,7 +51,7 @@ No need to setup the dtb file, just skip this step.
 ## Boot from SD/USB Storage
 There are several ways to boot (activate multi-boot) from the SD card / Thumbdrive:
 
-* Via [Keys mode (Side-Buttons)](/linux/vim1/BootIntoUpgradeMode.html) - the easiest and fastest way
+* Via [Keys mode (Side-Buttons)](BootIntoUpgradeMode.html) - the easiest and fastest way
 
 * Via Android
 
@@ -67,6 +67,6 @@ Don't use your PC as the USB-Host to supply the electrical power, otherwise it w
 
 {% note warn NOTICE %}
 
-If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Ubuntu is burned to eMMC by following [Install OS into eMMC](/linux/vim1/InstallOsIntoEmmc.html).
+If any other OS than Android, Armbian or LibreELEC has been installed to eMMC and you want to install either Armbian or LibreELEC to eMMC, the eMMC has to be completely wiped with `dd` before latest Ubuntu is burned to eMMC by following [Install OS into eMMC](InstallOsIntoEmmc.html).
 
 {% endnote %}

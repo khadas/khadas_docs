@@ -1,7 +1,7 @@
 title: Create a Burning Card
 ---
 
-This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](/linux/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/linux/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/linux/vim3/UpgradeViaTFBurningCard.html)) instead.
+This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](UpgradeViaTFBurningCard.html)/[VIM2](UpgradeViaTFBurningCard.html)/[VIM3](UpgradeViaTFBurningCard.html)) instead.
 
 {% note info The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example. %}
 
@@ -14,7 +14,7 @@ This guide contains step-by-step instructions to create a Burning Card for Linux
 
 ## Preparation
 * Build your own, or download ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) the latest U-Boot file for SD-Cards.
-* You may need to format the SD-Card Via FDisk ([VIM1](/linux/vim1/CreateBurnCardViaCLI.html)/[VIM2](/linux/vim2/CreateBurnCardViaCLI.html)/[VIM3](/linux/vim3/CreateBurnCardViaCLI.html)) if your SD-Card contains >1 partition.
+* You may need to format the SD-Card Via FDisk ([VIM1](CreateBurnCardViaCLI.html)/[VIM2](CreateBurnCardViaCLI.html)/[VIM3](CreateBurnCardViaCLI.html)) if your SD-Card contains >1 partition.
 
 
 ## Before You Start
@@ -121,6 +121,6 @@ Done!
 ## Upgrade Using Your "Burning Card"
 
 1. Insert your Burning Card into your VIM, and power-on.
-2. Follow this guide([VIM1](/linux/vim1/BootIntoUpgradeMode.html)/[VIM2](/linux/vim2/BootIntoUpgradeMode.html)/[VIM3](/linux/vim3/BootIntoUpgradeMode.html)) to boot into Upgrade Mode.
+2. Follow this [guide](BootIntoUpgradeMode.html) to boot into Upgrade Mode.
 3. Wait till the process completes.
 
