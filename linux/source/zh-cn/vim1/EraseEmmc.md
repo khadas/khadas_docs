@@ -24,7 +24,7 @@ title: 擦除eMMC
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* 参考这里([VIM1](/linux/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/linux/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/linux/zh-cn/vim3/SetupSerialTool.html))设置串口
+* 参考这里[串口工具设置](SetupSerialTool.html)。
 * 确保串口线连接正确以及串口软件正确配置
 * 在VIMs上电时按住任意键会进入U-boot命令行模式
 * U-boot命令行执行`store init 3`会擦除整个eMMC
@@ -77,7 +77,7 @@ GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:
 
 这种方法适用于所有Amlogic产品。
 
-* 通过USB-C([VIM1](/linux/zh-cn/vim1/UpgradeViaUSBCable.html)/[VIM2](/linux/zh-cn/vim2/UpgradeViaUSBCable.html)/[VIM3](/linux/zh-cn/vim3/UpgradeViaUSBCable.html)) 或TF卡([VIM1](/linux/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/linux/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/linux/zh-cn/vim3/UpgradeViaTFBurningCard.html))升级固件.
+* 通过[USB-C升级固件](UpgradeViaUSBCable.html)或[TF卡](UpgradeViaTFBurningCard.html).
 * 中断升级过程(建议进度条超过15%后中断), 例如, 拔掉USB数据线或TF卡
 * 重新上电，你会发现eMMC被擦除
 

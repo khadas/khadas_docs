@@ -16,7 +16,7 @@ title: 从外部媒体介质启动系统
 
 ## 把固件写入到SD卡或U盘
 
-参考[安装操作系统到SD/USB存储](/linux/zh-cn/vim1/InstallOsIntoSdusb.html)。
+参考[安装操作系统到SD/USB存储](InstallOsIntoSdusb.html)。
  
 ## 准备DTB文件
 
@@ -53,7 +53,7 @@ title: 从外部媒体介质启动系统
 
 ## 激活多启动
 两种方式激活多启动：
-1)、通过[按键模式](/linux/zh-cn/vim1/BootIntoUpgradeMode.html)。
+1)、通过[按键模式](BootIntoUpgradeMode.html)。
 2)、通过安卓系统激活。
 * 进入`Settings>About Device->System->updates`。
 * 点击`select`并选择`aml_autosript.zip`。

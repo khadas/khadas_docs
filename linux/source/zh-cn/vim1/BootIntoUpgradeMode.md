@@ -35,7 +35,7 @@ title: 进入升级模式
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* 参考 [这里](/linux/zh-cn/vim1/SetupSerialTool.html) 去设置串口.
+* 参考 [这里](SetupSerialTool.html) 去设置串口.
 * 确保串口连接正常并正确配置
 * 按任意键进入uboot命令行模式
 * 输入如下命令进入升级模式
