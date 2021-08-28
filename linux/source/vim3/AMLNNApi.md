@@ -46,7 +46,7 @@ build-cv4.sh  cv3_output  image_classify_224x224.cpp  include  makefile-cv4.linu
 
 ### Compilation Method
 
-Please refer to get SDK [Get-SDK](/linux/vim3/NPUSDK#Get-SDK)
+Please refer to get SDK [Get-SDK](NPUSDK#Get-SDK)
 
 ```shell
 $ cd ${workspace}/aml_npu_nnsdk_app/image_classify_224x224

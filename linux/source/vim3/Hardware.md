@@ -32,52 +32,52 @@ title: VIM3 Hardware
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/linux/vim3/PcieUsbPort.html), 900mA output|
-|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](/linux/vim3/Wol.html)|
+|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](PcieUsbPort.html), 900mA output|
+|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](Wol.html)|
 |3|HDMI|HDMI port supporting CEC|
-|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](/linux/vim3/InstallOsIntoEmmc.html)|
+|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](InstallOsIntoEmmc.html)|
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3 in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/vim3/BootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
-|D|40-Pin GPIO|[General input/output pins](/linux/vim3/Gpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|40-Pin GPIO|[General input/output pins](Gpio.html) for VIM3's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3's available I/O beyond what A311D can provide|
-|F|[MCU](/linux/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|F|[MCU](KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
 |G|WOL Switch|Power switch activated via Wake-On-LAN|
 |H|Infrared Module|2-channel infrared receiver for the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |I|LEDs|Indicator LEDs|
-|J|IPEX Antenna|[Wi-Fi](/linux/vim3/Wifi.html) and Bluetooth antenna connector|
-|K|IPEX Antenna|Wi-Fi and [Bluetooth](/linux/vim3/Bluetooth.html) antenna connector|
+|J|IPEX Antenna|[Wi-Fi](Wifi.html) and Bluetooth antenna connector|
+|K|IPEX Antenna|Wi-Fi and [Bluetooth](Bluetooth.html) antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim3" role="tabpanel" aria-labelledby="back-tab">
 
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
-|2|[Micro-SD Slot](/linux/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
+|2|[Micro-SD Slot](BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|Current Limit Switch|Prevents damage to VIM3 due to faulty loading conditions|
 |4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs]()|
-|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](/linux/vim3/TS050.html)|
-|6|[MIPI-DSI](/linux/vim3/TS050.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
+|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](TS050.html)|
+|6|[MIPI-DSI](TS050.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
 |7|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, dual cameras, 8MP image signal processing|
-|8|[SPI Flash](/linux/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
+|8|[SPI Flash](BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
 |9|XPWR Pads|Connect an external power switch using these pads|
-|A|M-Register|Allows the EMMC to [enter MaskROM mode](/linux/vim3/BootIntoUpgradeMode.html)|
-|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/linux/vim3/BootIntoUpgradeMode.html)|
+|A|M-Register|Allows the EMMC to [enter MaskROM mode](BootIntoUpgradeMode.html)|
+|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](BootIntoUpgradeMode.html)|
 </div>
 <div class="tab-pane fade" id="button-vim3" role="tabpanel" aria-labelledby="button-tab">
 
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3|
-||x||[Enter Upgrade Mode (TST)](/linux/vim3/BootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](BootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3|
-|x||x|[Enter Upgrade Mode (KEYS)](/linux/vim3/BootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/linux/vim3/EraseEmmc.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](BootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](EraseEmmc.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3" role="tabpanel" aria-labelledby="led-tab">
 
@@ -145,42 +145,42 @@ Linux_TX|19|39|GPIODZ_15
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/linux/vim3/PcieUsbPort.html), 900mA output|
-|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](/linux/vim3/Wol.html)|
+|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](PcieUsbPort.html), 900mA output|
+|2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](Wol.html)|
 |3|HDMI|HDMI port supporting CEC|
-|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](/linux/vim3/InstallOsIntoEmmc.html)|
+|4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](InstallOsIntoEmmc.html)|
 |5|USB-A|USB 2.0 port that supports 500mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM3L in the event of a system freeze|
-|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](/linux/vim3/BootIntoUpgradeMode.html)|
+|8|Function Button|Press this 3 times in 2 seconds to [enter MaskROM mode](BootIntoUpgradeMode.html)|
 |9|Power Button|This button turns on your VIM3L|
 |A|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
 |C|RTC Header|A header for connecting a real-time clock (button) battery|
-|D|40-Pin GPIO|[General input/output pins](/linux/vim3/Gpio.html) for VIM3L's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
+|D|40-Pin GPIO|[General input/output pins](Gpio.html) for VIM3L's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |E|GPIO Expander|Increases VIM3L's available I/O beyond what S905D3 can provide|
-|F|[MCU](/linux/vim3/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
+|F|[MCU](KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|
 |G|WOL Switch|Power switch activated via Wake-On-LAN|
 |H|Infrared Module|2-channel infrared receiver for the [Khadas IR remote](https://www.khadas.com/product-page/ir-remote)|
 |I|LEDs|Indicator LEDs|
-|J|IPEX Antenna|[Wi-Fi](/linux/vim3/Wifi.html) and Bluetooth antenna connector|
-|K|IPEX Antenna|Wi-Fi and [Bluetooth](/linux/vim3/Bluetooth.html) antenna connector|
+|J|IPEX Antenna|[Wi-Fi](Wifi.html) and Bluetooth antenna connector|
+|K|IPEX Antenna|Wi-Fi and [Bluetooth](Bluetooth.html) antenna connector|
 </div>
 <div class="tab-pane fade" id="back-vim3l" role="tabpanel" aria-labelledby="back-tab">
 
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
-|2|[Micro-SD Slot](/linux/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
+|2|[Micro-SD Slot](BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|Current Limit Switch|Prevents damage to VIM3L due to faulty loading conditions|
 |4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs]()|
-|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](/linux/vim3/TS050.html)|
-|6|[MIPI-DSI](/linux/vim3/TS050.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
+|5|TP|10-pin 0.5mm pitch FPC connector for [touch input](TS050.html)|
+|6|[MIPI-DSI](TS050.html)|30-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
 |7|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, single camera, no image signal processor|
-|8|[SPI Flash](/linux/vim3/BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
+|8|[SPI Flash](BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
 |9|XPWR Pads|Connect an external power switch using these pads|
-|A|M-Register|Allows the EMMC to [enter MaskROM mode](/linux/vim3/BootIntoUpgradeMode.html)|
-|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](/linux/vim3/BootIntoUpgradeMode.html)|
+|A|M-Register|Allows the EMMC to [enter MaskROM mode](BootIntoUpgradeMode.html)|
+|B|S-Register|Allows the SPI Flash to [enter MaskROM mode](BootIntoUpgradeMode.html)|
 |C|Current Limit Switch|Prevents damage to VIM3L due to faulty loading conditions|
 </div>
 <div class="tab-pane fade" id="button-vim3l" role="tabpanel" aria-labelledby="button-tab">
@@ -188,10 +188,10 @@ Linux_TX|19|39|GPIODZ_15
 |Reset|Function|Power|Purpose|
 |:---:|:---:|:---:|:---|
 |x|||Force Reboot VIM3L|
-||x||[Enter Upgrade Mode (TST)](/linux/vim3/BootIntoUpgradeMode.html)|
+||x||[Enter Upgrade Mode (TST)](BootIntoUpgradeMode.html)|
 |||x|Power ON/Wake Up VIM3L|
-|x||x|[Enter Upgrade Mode (KEYS)](/linux/vim3/BootIntoUpgradeMode.html)|
-|x|x|x|[Erase EMMC](/linux/vim3/EraseEmmc.html)|
+|x||x|[Enter Upgrade Mode (KEYS)](BootIntoUpgradeMode.html)|
+|x|x|x|[Erase EMMC](EraseEmmc.html)|
 </div>
 <div class="tab-pane fade" id="led-vim3l" role="tabpanel" aria-labelledby="led-tab">
 

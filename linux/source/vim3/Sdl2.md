@@ -7,7 +7,7 @@ In order to use SDL2 with GPU (fbdev), we have rebuilt the packages with Mali GP
 
 {% note warn Note %}
 
-* The SDL2 with Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](/linux/vim1/UpgradeSystem.html) the firmware to latest version.
+* The SDL2 with Mali GPU (fbdev) only supports **Ubuntu 20.04 Linux 4.9**, and you need to [upgrade](UpgradeSystem.html) the firmware to latest version.
 * Only support Framebuffer Console mode.
 * Install this version of library will break some official packages which depend on this library.
 
@@ -15,7 +15,7 @@ In order to use SDL2 with GPU (fbdev), we have rebuilt the packages with Mali GP
 
 ## Upgrade the System
 
-Follow this [documentation](/linux/vim1/UpgradeSystem.html) to upgrade the system to latest version.
+Follow this [documentation](UpgradeSystem.html) to upgrade the system to latest version.
 
 ## Install SDL2 Packages
 

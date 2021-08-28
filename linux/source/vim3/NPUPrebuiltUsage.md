@@ -3,7 +3,7 @@ title: NPU Prebuilt Demo Usage
 
 {% note warn Note %}
 
-1. Please follow this [docs](/linux/vim3/UpgradeSystem.html) to upgrade the system to latest version before run any NPU demos.
+1. Please follow this [docs](UpgradeSystem.html) to upgrade the system to latest version before run any NPU demos.
 2. Just support Opencv4
 
 {% endnote %}

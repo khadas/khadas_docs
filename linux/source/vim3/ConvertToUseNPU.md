@@ -15,9 +15,9 @@ Here takes yolov3 as an example to demonstrate how to convert your own model, ad
 
 Please refer to the SDK, app and demo documents respectively for how to obtain the corresponding code
 
-1. [NPU SDK Usage](/linux/vim3/NPUSDK.html)
-2. [Application source code compilation instructions](/linux/vim3/OriginNPUApp.html)
-3. [NPU Prebuilt Demo Usage](/linux/vim3/OriginNPU-DemoUsage.html)
+1. [NPU SDK Usage](NPUSDK.html)
+2. [Application source code compilation instructions](NPUApp.html)
+3. [NPU Prebuilt Demo Usage](NPUPrebuiltUsage.html)
 
 ## Conversion
 
@@ -297,4 +297,4 @@ $ cp {workspace}/SDK/acuity-toolkit/conversion_scripts/nbg_unify_yolov3/yolov3.n
 
 How to run the replaced `aml_npu_demo_binaries` on the board, please refer to
 
-[NPU Prebuilt Demo Usage](/linux/vim3/OriginNPU-DemoUsage.html)
+[NPU Prebuilt Demo Usage](NPUPrebuiltUsage.html)

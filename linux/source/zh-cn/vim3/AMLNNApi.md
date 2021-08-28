@@ -48,7 +48,7 @@ build-cv4.sh  cv3_output  image_classify_224x224.cpp  include  makefile-cv4.linu
 
 ### 编译方法
 
-获取SDK请参考[获取SDK](/linux/zh-cn/vim3/NPUSDK#获取SDK)
+获取SDK请参考[获取SDK](NPUSDK#获取SDK)
 
 这里同样以image_classify为例，
 

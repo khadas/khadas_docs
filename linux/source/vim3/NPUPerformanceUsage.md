@@ -5,7 +5,7 @@ title: NPU Performance Interface Usage
 
 ### Upgrade The System
 
-Please refer to: [Upgrade The System To Latest Version](/linux/zh-cn/vim3/UpgradeSystem.html)
+Please refer to: [Upgrade The System To Latest Version](UpgradeSystem.html)
 
 ### Reload the Driver Module
 
@@ -31,7 +31,7 @@ export VIV_VX_DEBUG_LEVEL=1
 ```
 ### Run Model
 
-Use inception as a example [Get NPU Demo](/linux//zh-cn/vim3/OriginNPU-DemoUsage.html)
+Use inception as a example [Get NPU Demo](NPUPrebuiltUsage.html)
 
 ```sh
 $ aml_npu_demo_binaries/inceptionv3/VIM3$ ./run.sh
