@@ -73,16 +73,16 @@ After the power is turned on, it starts normally, and you can see the Khadas Log
 
 ## Troubleshooting
 
-1. The blue light is always on and the boot screen is not seen: the WoL function is turned on, press the Power button to boot normally, turn off WOL->[How to use WOL](/linux/edge/Wol)
+1. The blue light is always on and the boot screen is not seen: the WoL function is turned on, press the Power button to boot normally, turn off WOL->[How to use WOL](Wol.html)
 2. Repeated restarts: insufficient power supply, please use the official recommended external power supply
 
 ## Commonly used documents
 
-1. [Install OS into eMMC](/linux/edge/InstallOsIntoEmmc.html)
-2. [Install System into SD/USB Storage](/linux/edge/InstallOsIntoSdusb.html)
-3. [Enter Upgrade Mode](/linux/edge/BootIntoUpgradeMode.html)
+1. [Install OS into eMMC](InstallOsIntoEmmc.html)
+2. [Install System into SD/USB Storage](InstallOsIntoSdusb.html)
+3. [Enter Upgrade Mode](BootIntoUpgradeMode.html)
 5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
-6. [Wi-Fi](/linux/edge/Wifi.html)
+6. [Wi-Fi](Wifi.html)
 
 ## Edge Website
 For more information, please see our website, read more decumentation, or visit our forum.

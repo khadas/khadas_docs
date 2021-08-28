@@ -70,16 +70,16 @@ title: 快速上手
 
 ## 故障排查
 
-1. 蓝色灯常亮没有看到开机画面：WoL功能已打开，按Power按键可以正常开机，关闭WOL->[如何使用WOL](/linux/zh-cn/edge/Wol)
+1. 蓝色灯常亮没有看到开机画面：WoL功能已打开，按Power按键可以正常开机，关闭WOL->[如何使用WOL](Wol)
 2. 反复重启开机: 供电不足，请使用官方推荐的外部供电器供电
 
 ## 常用文档
 
-1. [通过USB线安装系统到eMMC](/linux/zh-cn/edge/InstallOsIntoEmmc.html)
-2. [安装系统到SD卡或U盘](/linux/zh-cn/edge/InstallOsIntoSdusb.html)
-3. [进入升级模式](/linux/zh-cn/edge/BootIntoUpgradeMode.html)
+1. [通过USB线安装系统到eMMC](InstallOsIntoEmmc.html)
+2. [安装系统到SD卡或U盘](InstallOsIntoSdusb.html)
+3. [进入升级模式](BootIntoUpgradeMode.html)
 5. [Ubuntu固件](/linux/zh-cn/firmware/Vim1UbuntuFirmware.html)
-6. [Wi-Fi](/linux/zh-cn/edge/Wifi.html)
+6. [Wi-Fi](Wifi.html)
 
 ## Edge相关网页
 更多的相关信息，请查看我们的网页，阅读文档，或者到论坛浏览以及提问。

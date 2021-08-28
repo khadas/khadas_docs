@@ -4,7 +4,7 @@ title: 蓝牙使用说明
 这篇文档将介绍如何连接使用蓝牙
 
 {% note info 说明 %}
-如果你使用server版本的固件或者想通过命令行控制Wi-Fi,请参考这份文档 --> [蓝牙命令行使用说明](/linux/zh-cn/edge/BluetoothCommandUsage.html).
+如果你使用server版本的固件或者想通过命令行控制Wi-Fi,请参考这份文档 --> [蓝牙命令行使用说明](BluetoothCommandUsage.html).
 {% endnote %}
 
 ## 打开蓝牙设置
