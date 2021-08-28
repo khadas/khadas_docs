@@ -3,7 +3,7 @@ title: 编译Linux内核
 
 这篇文档会介绍如何编译Linux内核源码。
 
-我们推荐使用[Fenix](https://github.com/khadas/fenix)来编译Linux内核源码，只需要简单几条命令即可完成编译。如果还没有搭建开发环境，请参考文档[编译Ubuntu/Debian固件](/linux/zh-cn/vim1/FenixScript.html)搭建开发环境。
+我们推荐使用[Fenix](https://github.com/khadas/fenix)来编译Linux内核源码，只需要简单几条命令即可完成编译。如果还没有搭建开发环境，请参考文档[编译Ubuntu/Debian固件](FenixScript.html)搭建开发环境。
 
 ## 设置环境
 
@@ -57,4 +57,4 @@ $ make kernel-deb
 
 
 ## 参考
-[更新Linux内核](/linux/zh-cn/vim1/UpgradeLinuxKernel.html)
+[更新Linux内核](UpgradeLinuxKernel.html)

@@ -18,7 +18,7 @@ Usually, the first 4 methods will meet the needs of most users. In exceptional c
 4. Count for 2 to 3 seconds, then release the ‘Function’ key to enter into Upgrade Mode. You will see the sys-led turn ON when you've entered Upgrade Mode (Loader Mode).
 
 ## Serial Mode (For Developers)
-1. Refer this [guide](/linux/edge/SetupSerialTool.html) to setup your serial tool for Edge.
+1. Refer this [guide](SetupSerialTool.html) to setup your serial tool for Edge.
 2. Once again, make sure you've done the correct connections and setup.
 3. Hit any keys at the moment of bootup to stop autoboot. This step will let Edge boot into U-Boot Mode.
 4. Type `run update` in the terminal of U-Boot as below. You will see the sys-led turn ON when you've entered Upgrade Mode.
@@ -34,7 +34,7 @@ kedge# run maskrom
 
 ## Linux Command Line
 
-1. Refer to this [guide](/linux/edge/SetupSerialTool.html) to setup your serial tool for Edge.
+1. Refer to this [guide](SetupSerialTool.html) to setup your serial tool for Edge.
 2. Once again, make sure you've done the correct connections and setup.
 3. Boot into Android or Linux command line.
 4. For Linux, execute `sudo reboot loader`. For Android, execute `su` and `reboot loader`. The system will reboot and enter Upgrade Mode. You will see the sys-led turn ON when you've entered Upgrade Mode (Loader Mode).

@@ -48,4 +48,4 @@ If upgrading was done successfully, you will see the following interface:
 Remove the SD-Card from your Edge SBC, and the system will reboot automatically into the new OS.
 
 ## See Also
-[Upgrade Via a USB cable](/linux/edge/UpgradeViaUSBCable.html)
+[Upgrade Via a USB cable](UpgradeViaUSBCable.html)

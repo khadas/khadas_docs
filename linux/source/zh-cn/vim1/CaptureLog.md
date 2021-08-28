@@ -9,7 +9,7 @@ title: 抓取Log
 
 ## 通过串口终端登陆系统
 
-参考[设置串口调试工具](/linux/zh-cn/vim1/SetupSerialTool.html)来登陆串口终端。
+参考[设置串口调试工具](SetupSerialTool.html)来登陆串口终端。
 
 系统的默认账号和密码如下：
 

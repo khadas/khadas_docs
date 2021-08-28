@@ -32,7 +32,7 @@ Make sure that you have installed the correct USB upgrade Tool, then follow the 
 
 1. Open `USB_Burning_tool_v2.x.x.exe`, click `File-->Import Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
-3. Put your board into [Upgrade Mode](/linux/vim1/BootIntoUpgradeMode.html).
+3. Put your board into [Upgrade Mode](BootIntoUpgradeMode.html).
 4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as a connected USB-device.
 
     Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
@@ -41,7 +41,7 @@ Make sure that you have installed the correct USB upgrade Tool, then follow the 
 {% note info Tips %}
 
 * To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark.
-* Extra power supply([VIM1](/linux/vim1/ExtraPowerInput.html)/[VIM2](/linux/vim2/ExtraPowerInput.html)/[VIM3](/linux/vim3/ExtraPowerInput.html)) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
+* [Extra power supply](ExtraPowerInput.html) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
 
 {% endnote %}
 
@@ -120,7 +120,7 @@ Root privilege required.
 
 ## Check The USB Driver
 
-You must now place your board into `Upgrade Mode`.See [VIM1](/linux/vim1/BootIntoUpgradeMode.html)/[VIM2](/linux/vim2/BootIntoUpgradeMode.html)/[VIM3](/linux/vim3/BootIntoUpgradeMode.html) to enter upgrade mode.
+You must now place your board into `Upgrade Mode`.See [how to enter upgrade mode](BootIntoUpgradeMode.html).
 Check to see if Ubuntu has detected your board as a connected USB-device.
 
 ```bash
@@ -186,5 +186,5 @@ $ sudo ./UNINSTALL
 
 
 ## See Also
-* [Boot Into Upgrade Mode](/linux/vim1/BootIntoUpgradeMode.html)
+* [Boot Into Upgrade Mode](BootIntoUpgradeMode.html)
 

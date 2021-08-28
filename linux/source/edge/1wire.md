@@ -15,7 +15,7 @@ Add onewire to configuration file (default is enable)
 overlays=i2c2 spi3 i2s0 onewire
 ```
 
-For details on overlays, please refer to [how to use device tree overlays](/linux/edge/DeviceTreeOverlay.html)
+For details on overlays, please refer to [how to use device tree overlays](DeviceTreeOverlay.html)
 
 
 ## How TO Use 

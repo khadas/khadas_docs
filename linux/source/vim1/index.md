@@ -12,7 +12,7 @@ Your Khadas SBC is compatible with various types of power supplies, and these ar
 **Related Links:**
 * [Khadas Shop - Power Adapter](https://www.khadas.com/product-page/power-adapter)
 * [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable)
-* [Khadas VIM - Extra Power Input](/linux/vim1/ExtraPowerInput.html)
+* [Khadas VIM - Extra Power Input](ExtraPowerInput.html)
 * [Khadas VIM - Specifications](https://www.khadas.com/vim)
 
 ## Displays & Input
@@ -46,12 +46,12 @@ If your Khadas Development Board repeatedly restarts, or restarts randomly, this
 
 ## Related Articles
 
-1. [Install OS into eMMC](/linux/vim1/InstallOsIntoEmmc.html)
-2. [Install System into SD/USB Storage](/linux/vim1/InstallOsIntoSdusb.html)
-3. [Enter Upgrade Mode](/linux/vim1/BootIntoUpgradeMode.html)
-4. [Boot Images from External Media](/linux/vim1/BootFromExtMedia.html)
+1. [Install OS into eMMC](InstallOsIntoEmmc.html)
+2. [Install System into SD/USB Storage](InstallOsIntoSdusb.html)
+3. [Enter Upgrade Mode](BootIntoUpgradeMode.html)
+4. [Boot Images from External Media](BootFromExtMedia.html)
 5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
-6. [Wi-Fi](/linux/vim1/Wifi.html)
+6. [Wi-fi](Wifi.html)
 
 ## External Websites
 * [Khadas Homepage](https://www.khadas.com)

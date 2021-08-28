@@ -16,7 +16,7 @@ title: 单总线
 overlays=uart4 pwm_ao_a pwm_f i2c0 onewire
 ```
 
-关于overlays的详细说明可以参考[如何使用device tree overlays](/linux/zh-cn/vim1/DeviceTreeOverlay.html)。
+关于overlays的详细说明可以参考[如何使用device tree overlays](DeviceTreeOverlay.html)。
 
 ## 使用单总线
 

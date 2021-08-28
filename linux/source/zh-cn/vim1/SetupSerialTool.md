@@ -191,11 +191,11 @@ Khadas login:
 /dev/ttyUSB0: Permission denied
 ```
 
-2、连接串口工具到PC以及板子上，打开PC上的串口软件，给板子上电，看到串口开始打印信息提后，按下空格键就把系统停在uboot命令行界面。成功停在uboot命令行以后,会在串口软件看到[kvim#](/linux/zh-cn/vim1/UBootUsage.html)。
+2、连接串口工具到PC以及板子上，打开PC上的串口软件，给板子上电，看到串口开始打印信息提后，按下空格键就把系统停在uboot命令行界面。成功停在uboot命令行以后,会在串口软件看到[kvim#](UBootUsage.html)。
 
-3、需要注意的是如果你想要使用[uboot用户指南](/linux/zh-cn/vim1/UBootUsage.html)的里的标准“帮助”命令，那么你先要在板子上烧录一个ubuntu或者安卓的固件，当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行。
+3、需要注意的是如果你想要使用[uboot用户指南](UBootUsage.html)的里的标准“帮助”命令，那么你先要在板子上烧录一个ubuntu或者安卓的固件，当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行。
 
-4、你可以使用uboot命令去修改默认的[开机图标](/linux/zh-cn/vim1/BuildBootLogoForUboot.html)等等。
+4、你可以使用uboot命令去修改默认的[开机图标](BuildBootLogoForUboot.html)等等。
 
 {% endnote %}
 

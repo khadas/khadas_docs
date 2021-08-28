@@ -33,7 +33,7 @@ title: 进入升级模式
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-1. 参考[文档](/linux/zh-cn/vim3/SetupSerialTool.html)设置串口。
+1. 参考[文档](SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
 3. 系统启动时按任意按键进入串口命令行模式。
 4. 执行`run update`命令进入升级模式，进入升级模式后系统led灯会点亮。

@@ -48,12 +48,12 @@ If your Khadas Development Board repeatedly restarts, or restarts randomly, this
 
 ## Related Articles
 
-1. [Install OS into eMMC](/linux/vim3/InstallOsIntoEmmc.html)
-2. [Install System into SD/USB Storage](/linux/vim3/InstallOsIntoSdusb.html)
-3. [Enter Upgrade Mode](/linux/vim3/BootIntoUpgradeMode.html)
-4. [Boot Images from External Media](/linux/vim3/BootFromExtMedia.html)
+1. [Install OS into eMMC](InstallOsIntoEmmc.html)
+2. [Install System into SD/USB Storage](InstallOsIntoSdusb.html)
+3. [Enter Upgrade Mode](BootIntoUpgradeMode.html)
+4. [Boot Images from External Media](BootFromExtMedia.html)
 5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
-6. [Wi-Fi](/linux/vim3/Wifi.html)
+6. [Wi-Fi](Wifi.html)
 
 ## External Websites
 * [Khadas Homepage](https://www.khadas.com)

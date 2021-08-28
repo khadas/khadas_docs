@@ -3,7 +3,7 @@ title: Upgrade Linux kernel
 
 ## Build
 
-Please refer to [Build Linux Kernel](/linux/vim1/BuildLinuxKernel.html).
+Please refer to [Build Linux Kernel](BuildLinuxKernel.html).
 
 ## Upgrade
 
@@ -18,4 +18,4 @@ $ sudo reboot
 ```
 
 ## See Also
-[Build Linux Kernel](/linux/vim1/BuildLinuxKernel.html)
+[Build Linux Kernel](BuildLinuxKernel.html)

@@ -3,7 +3,7 @@ title: 编译U-Boot
 
 这篇文档会介绍如何编译U-Boot源码。
 
-我们推荐使用[Fenix](https://github.com/khadas/fenix)来编译U-Boot，只需要简单几条命令即可完成编译。如果还没有搭建开发环境，请参考文档[编译Ubuntu/Debian固件](/linux/zh-cn/vim1/FenixScript.html)搭建开发环境。
+我们推荐使用[Fenix](https://github.com/khadas/fenix)来编译U-Boot，只需要简单几条命令即可完成编译。如果还没有搭建开发环境，请参考文档[编译Ubuntu/Debian固件](FenixScript.html)搭建开发环境。
 
 ## 设置环境
 
@@ -55,4 +55,4 @@ $ make uboot-deb
 * 主线版本U-Boot Debian包为：`linux-u-boot-vim3-mainline_1.0.7-v2021.04_arm64.deb`
 
 ## 参考
-[更新U-Boot](/linux/zh-cn/vim1/UpgradeUboot.html)
+[更新U-Boot](UpgradeUboot.html)

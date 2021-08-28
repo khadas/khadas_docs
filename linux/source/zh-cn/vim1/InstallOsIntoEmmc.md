@@ -30,7 +30,7 @@ title: 通过USB线安装系统到eMMC
 
 1、打开升级工具`USB_Burning_Tool_v2.x.x.exe`，点击`File-->Import image`选择要升级的固件。
 2、用USB-C线连接板子和PC电脑（默认板子上电会自动开机）。
-3、进入固件[升级模式](/linux/zh-cn/vim1/BootIntoUpgradeMode.html)。
+3、进入固件[升级模式](BootIntoUpgradeMode.html)。
 4、如果上面操作已正确执行，电脑端会发现板子升级设备，点击升级工具上的`开始`按钮开始固件升级,升级进度条100%时完成升级。
 
 ![image](/linux/images/vim1/usb_upgrade_tool_interface_v217_zh.png)
@@ -38,7 +38,7 @@ title: 通过USB线安装系统到eMMC
 {% note info 提示 %}
 
 * 先点击`停止`按钮再关闭升级工具。
-* 外部供电要求([VIM1](/linux/zh-cn/vim1/ExtraPowerInput.html)/[VIM2](/linux/zh-cn/vim2/ExtraPowerInput.html)/[VIM3](/linux/zh-cn/vim3/ExtraPowerInput.html))，部分电脑供电比较弱会导致升级失败。
+* [外部供电要求](ExtraPowerInput.html)，部分电脑供电比较弱会导致升级失败。
 
 {% endnote %}
 
@@ -113,7 +113,7 @@ Installing Amlogic flash-tool...
 {% endnote %}
 
 ## 检查USB驱动
-首先设置VIMs进入升级模式([VIM1](/linux/zh-cn/vim1/BootIntoUpgradeMode.html)/[VIM2](/linux/zh-cn/vim2/BootIntoUpgradeMode.html)/[VIM3](/linux/zh-cn/vim3/BootIntoUpgradeMode.html))，然后检查USB驱动：
+首先设置VIMs进入[升级模式](BootIntoUpgradeMode.html)，然后检查USB驱动：
 
 ```bash
 $ lsusb | grep Amlogic

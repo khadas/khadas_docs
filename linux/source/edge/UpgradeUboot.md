@@ -3,7 +3,7 @@ title: Upgrade U-Boot
 
 ## Upgrade U-Boot in Kernel Space
 
-We use [Fenix](/linux/vim1/FenixScript.html) to build Ubuntu/Debian images. You can also use it to build the u-boot debian package.
+We use [Fenix](FenixScript.html) to build Ubuntu/Debian images. You can also use it to build the u-boot debian package.
 
 * Set the Fenix environment
 
@@ -37,9 +37,9 @@ $ sudo reboot
 
 ## Upgrade U-Boot in U-Boot Command Line
 
-We can also upgrade the U-Boot in U-Boot command line mode. You need to setup the [Serial Tool](/linux/vim1/SetupSerialTool.html).
+We can also upgrade the U-Boot in U-Boot command line mode. You need to setup the [Serial Tool](SetupSerialTool.html).
 
-Use [Fenix](/linux/vim1/FenixScript.html) to build the U-Boot:
+Use [Fenix](FenixScript.html) to build the U-Boot:
 
 ```
 $ make uboot

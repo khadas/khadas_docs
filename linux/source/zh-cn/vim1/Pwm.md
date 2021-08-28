@@ -5,9 +5,9 @@ title: PWM
 
 dts配置文件里默认已经打开了硬件PWM，所以仅需要确认哪一个物理引脚对应了硬件PWM。
 
-* `PWM_F` on [VIM1 GPIO-Out](/linux/zh-cn/vim1/Hardware#VIM1-硬件信息)
-* `PWM_D` on [VIM2 GPIO-Out](/linux/zh-cn/vim2/Hardware#VIM2-硬件信息)
-* `PWM_F` on [VIM3 GPIO-Out](/linux/zh-cn/vim3/Hardware#VIM3-硬件信息)
+* `PWM_F` on [VIM1 GPIO-Out](Hardware#VIM1-硬件信息)
+* `PWM_D` on [VIM2 GPIO-Out](Hardware#VIM2-硬件信息)
+* `PWM_F` on [VIM3 GPIO-Out](Hardware#VIM3-硬件信息)
 
 ## 却换到root用户
 

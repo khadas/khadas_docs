@@ -5,8 +5,8 @@ This document describes how to write the firmware in SD/USB to eMMC.
 
 ## Boot from SD/USB
 
-1. Write the firmware to SD card or U disk. To make a boot card, please refer to: [How to write firmware to SD/USB](/linux/zh-cn/vim3/BootFromExtMedia#Install-Image-to-SD-USB-Storage).
-2. Boot the system from SD card or U disk. Please refer to the boot method: [Boot System from External Media](/linux/zh-cn/vim3/BootFromExtMedia.html).
+1. Write the firmware to SD card or U disk. To make a boot card, please refer to: [How to write firmware to SD/USB](BootFromExtMedia#Install-Image-to-SD-USB-Storage).
+2. Boot the system from SD card or U disk. Please refer to the boot method: [Boot System from External Media](BootFromExtMedia.html).
 
 ## Write to eMMC
 

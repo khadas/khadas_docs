@@ -4,7 +4,7 @@ title: Bluetooth Usage
 This document will introduce how to connect and use Bluetooth
 
 {% note info Note %}
-If you use server firmware or you want to connect Wi-Fi via command line , you can follow this document --> [Bluetooth Command Usage](/linux/edge/BluetoothCommandUsage.html).
+If you use server firmware or you want to connect Wi-Fi via command line , you can follow this document --> [Bluetooth Command Usage](BluetoothCommandUsage.html).
 {% endnote %}
 
 ## Open Bluetooth settings

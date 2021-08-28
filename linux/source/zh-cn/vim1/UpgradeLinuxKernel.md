@@ -3,7 +3,7 @@ title: 更新Linux内核
 
 ## 编译
 
-参考文档[编译Linux内核](/linux/zh-cn/vim1/BuildLinuxKernel.html)。
+参考文档[编译Linux内核](BuildLinuxKernel.html)。
 
 ## 更新
 
@@ -18,4 +18,4 @@ $ sudo reboot
 ```
 
 ## 参考
-[编译Linux内核](/linux/zh-cn/vim1/BuildLinuxKernel.html)
+[编译Linux内核](BuildLinuxKernel.html)

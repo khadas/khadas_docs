@@ -93,4 +93,4 @@ We don't have a VIN cable for sale, you'll need to DIY one by yourself.
 {% endnote %}
 
 ## See Also
-* [Interfaces Description](/linux/vim1/Hardware#VIM1-Interfaces)
+* [Interfaces Description](Hardware.html#VIM1-Interfaces)

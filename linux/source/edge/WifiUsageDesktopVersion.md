@@ -4,7 +4,7 @@ title: WiFi Usage
 This document will introduce how to use WiFi in a desktop environment
 
 {% note info Note %}
-If you use server firmware or you want to connect Wi-Fi via command line , you can follow this document --> [Wi-Fi commnad Line Usage](/linux/vim1/WifiUsageCommand.html).
+If you use server firmware or you want to connect Wi-Fi via command line , you can follow this document --> [Wi-Fi commnad Line Usage](WifiUsageCommand.html).
 {% endnote %}
 
 ## Open Wi-Fi Settings
