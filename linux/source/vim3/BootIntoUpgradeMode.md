@@ -1,4 +1,4 @@
-title: Enter Upgrade Mode
+title: Boot Into Upgrade Mode
 ---
 
 There are 4 ways to boot into upgrade mode:
