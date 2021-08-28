@@ -52,7 +52,7 @@ title: 快速上手
 2. [安装系统到SD卡或U盘](InstallOsIntoSdusb.html)
 3. [进入升级模式](BootIntoUpgradeMode.html)
 4. [从外部媒体介质启动系统](BootFromExtMedia.html)
-5. [Ubuntu固件](Vim1UbuntuFirmware.html)
+5. [Ubuntu固件](/linux/zh-cn/firmware/Vim1UbuntuFirmware.html)
 6. [Wi-Fi](Wifi.html)
 
 ## VIM1相关网页

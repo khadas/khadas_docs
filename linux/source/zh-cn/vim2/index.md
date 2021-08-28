@@ -13,7 +13,7 @@ title: 快速上手
 **相关链接：**
 * [Khadas Shop - 电源适配器](https://www.khadas.cn/product-page/10w-power-adapter?post_type=product)
 * [Khadas Shop - Type-C数据线](https://www.khadas.cn/product-page/usb-c-to-usb-a-2-0-cable?post_type=product)
-* [Khadas VIMs 外部供电接口](/linux/zh-cn/vim2/ExtraPowerInput.html)
+* [Khadas VIMs 外部供电接口](ExtraPowerInput.html)
 * [Khadas VIM 规格](https://www.khadas.com/vim)
 
 ## 显示器&&用户输入
@@ -43,17 +43,17 @@ title: 快速上手
 
 ## 故障排查
 
-1. 蓝色灯常亮没有看到开机画面：WoL功能已打开，按Power按键可以正常开机，关闭WOL->[如何使用WOL](/linux/zh-cn/vim2/Wol)
+1. 蓝色灯常亮没有看到开机画面：WoL功能已打开，按Power按键可以正常开机，关闭WOL->[如何使用WOL](Wol)
 2. 反复重启开机: 供电不足，请使用官方推荐的外部供电器供电
 
 ## 常用文档
 
-1. [通过USB线安装系统到eMMC](/linux/zh-cn/vim2/InstallOsIntoEmmc.html)
-2. [安装系统到SD卡或U盘](/linux/zh-cn/vim2/InstallOsIntoSdusb.html)
-3. [进入升级模式](/linux/zh-cn/vim2/BootIntoUpgradeMode.html)
-4. [从外部媒体介质启动系统](/linux/zh-cn/vim2/BootFromExtMedia.html)
+1. [通过USB线安装系统到eMMC](InstallOsIntoEmmc.html)
+2. [安装系统到SD卡或U盘](InstallOsIntoSdusb.html)
+3. [进入升级模式](BootIntoUpgradeMode.html)
+4. [从外部媒体介质启动系统](BootFromExtMedia.html)
 5. [Ubuntu固件](/linux/zh-cn/firmware/Vim2UbuntuFirmware.html)
-6. [Wi-Fi](/linux/zh-cn/vim2/Wifi.html)
+6. [Wi-Fi](Wifi.html)
 
 ## VIM2相关网页
 更多的相关信息，请查看我们的网页，阅读文档，或者到论坛浏览以及提问。

@@ -50,7 +50,7 @@ If your Khadas Development Board repeatedly restarts, or restarts randomly, this
 2. [Install System into SD/USB Storage](InstallOsIntoSdusb.html)
 3. [Enter Upgrade Mode](BootIntoUpgradeMode.html)
 4. [Boot Images from External Media](BootFromExtMedia.html)
-5. [Ubuntu Firmware](Vim1UbuntuFirmware.html)
+5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
 6. [Wi-fi](Wifi.html)
 
 ## External Websites

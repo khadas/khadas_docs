@@ -65,5 +65,5 @@ title: 选择操作系统
 
 ## 固件下载
 
-点击[下载固件](Vim1UbuntuFirmware.html)。
+点击[下载固件](/linux/zh-cn/firmware/Vim1UbuntuFirmware.html)。
 
