@@ -12,9 +12,9 @@ before run android NPU Demo,please download newest [firmware](/android/zh-cn/fir
 
 Currently, the source code of NPU JNI is not integrated into the firmware and needs to be downloaded from gitlab
 
-jni gitlab repository address:[https://github.com/liustarting/khadas_android_npu_library.git](https://github.com/liustarting/khadas_android_npu_library.git)
+jni gitlab repository address:[https://github.com/khadas/khadas_android_npu_library](https://github.com/khadas/khadas_android_npu_library)
 
-app gitlab repository address:[https://github.com/liustarting/khadas_android_npu_app.git](https://github.com/liustarting/khadas_android_npu_app.git)
+app gitlab repository address:[https://github.com/khadas/khadas_android_npu_app](https://github.com/khadas/khadas_android_npu_app)
 ## install ndk build environment
 
 ``1)`` download ndk
