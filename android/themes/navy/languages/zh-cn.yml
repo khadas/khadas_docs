@@ -38,7 +38,6 @@ sidebar:
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
-    boot_from_ext_image: 从外部媒体介质启动系统
     rescures_control: 资源控制
     system_control: 系统控制
     how_to_use_adb_tool: ADB用法
@@ -74,7 +73,6 @@ sidebar:
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
-    boot_from_ext_image: 从外部媒体介质启动系统
     rescures_control: 资源控制
     system_control: 系统控制
     how_to_use_adb_tool: ADB用法
@@ -113,7 +111,6 @@ sidebar:
     enter_upgrade_mode: 进入升级模式
     upgrade_via_usb: 通过USB升级
     upgrade_via_tfcard: 通过TF卡升级安卓
-    boot_from_ext_image: 从外部媒体介质启动系统   
     rescures_control: 资源控制
     system_control: 系统控制
     how_to_use_adb_tool: ADB用法
