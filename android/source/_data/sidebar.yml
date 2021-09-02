@@ -6,7 +6,6 @@ vim1:
     enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-    boot_from_ext_image: BootFromExtMedia.html
   rescures_control:
     system_control:
       how_to_use_adb_tool: ADBTool.html
@@ -41,7 +40,6 @@ vim2:
     enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-    boot_from_ext_image: BootFromExtMedia.html
   rescures_control:
     system_control:
       how_to_use_adb_tool: ADBTool.html
@@ -79,7 +77,6 @@ vim3:
     enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     upgrade_via_tfcard: UpgradeViaTFBurningCard.html
-    boot_from_ext_image: BootFromExtMedia.html
   rescures_control:
     system_control:
       how_to_use_adb_tool: ADBTool.html
