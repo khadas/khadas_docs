@@ -369,7 +369,6 @@ Linux_TX|19|39|MCU_PA1
 
 **更多:**
 * [使用SD卡升级](/android/zh-cn/edge/UpgradeViaTFBurningCard.html)
-* [从外部介质启动](/android/zh-cn/vim2/BootFromExtMedia.html)
 * [进入升级模式](/android/zh-cn/edge/BootIntoUpgradeMode.html)
 
 {% note info 提示 %}
