@@ -89,50 +89,6 @@ title: VIM1 文档
 
 {% endnote %}
 
-## Krescue (Khadas Rescue OS)
-![image](/android/images/docs_krescue_online_install.jpg)
-
-[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把"瑞士军刀"，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。
-
-**主要特性:**
-- 将EMMC的中的内容通过[SD卡](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt),[USB存储设备](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt)或者[网络](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt)备份。
-- 从其他设备或者网络覆写img.gz格式的固件到EMMC
-- 通过网络直接安装系统
-- 查看硬件谁设备信息
-- 给有专业知识的用户准备的应急shell
-- 通过串口，USB网络接口或者网络接口使用[shell访问](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt)系统。
-
-**启动Krescue的[步骤](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt)**
-1. 从[dl.khadas.com](https://dl.khadas.com/Firmware/Krescue/dump/)上下载合适你板子使用的VIM1的镜像。
-2. 使用启动盘制作工具([Etcher](https://www.balena.io/etcher/)，[rufus](https://rufus.ie/))将下载的镜像烧录到SD中。
-3. 将SD卡插到板子上，同时插上HDMI，用USB-C供电
-4. 启动板子进入[MaskROM模式](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt)(请仔细阅读这个谅解的文档！！！)
-5. 使用[khadas遥控器](https://www.khadas.com/product-page/ir-remote)和USB的键盘就可以操作UI界面了。
-
-**通过shell命令在线安装**
-
-获取帮助信息:
-```
-curl -sfL dl.khadas.com/.mega | sh -s - --help
-wget -O-  dl.khadas.com/.mega | sh -s - --help
-```
-
-通过web将Krescue目录下载到EMMC
-```
-curl -sfL dl.khadas.com/.mega | sh -s - VIM1  > /dev/mmcblk? <tab auto-complete>
-curl -sfL dl.khadas.com/.mega | sh -s - VIM2  > /dev/mmcblk? <tab auto-complete>
-curl -sfL dl.khadas.com/.mega | sh -s - VIM3  > /dev/mmcblk? <tab auto-complete>
-curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
-```
-
-更多shell命令和示例:
-- [README.megaimage_online.txt](https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt)
-
-**更多:**
-- [YouTube - Krescue Introduction](https://youtu.be/ER4BOJUhoYU)
-- [YouTube - Krescue Online OS Installation](https://youtu.be/vvpkbhnyhZY)
-- [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
-
 ## VIM1 电源选择
 尽管您的VIM1 SBC与各种类型的电源兼容，但这些是最佳性能输出和稳定性的推荐规格。
 
@@ -157,29 +113,6 @@ curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
 [Khadas Shop - HDMI数据线](https://www.khadas.com/product-page/hdmi-cable)
 [Khadas Shop - 遥控器](https://www.khadas.com/product-page/ir-remote)
 [亚马逊－无线鼠标和键盘](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
-
-## 制作可引导 / 烧录的SD卡 / U盘驱动器
-当您想通过SD卡或U盘驱动器（烧录卡）升级VIM1 SBC的操作系统时，这些项目非常有用。或者，如果您想运行只能
-从外部Medi A（烧录卡）运行的操作系统，如LibreELEC。
-
-1. 不小于8GB的SD卡。
-2. 读卡器。
-3. 笔记本电脑、台式电脑。
-4. 不小于8GB的U盘。
-
-**更多：**
-[启动卡与烧录卡的比较](/android/zh-cn/vim1/BootingCardVsBurningCard.html)
-[通过TF卡升级安卓](/android/zh-cn/vim1/UpgradeViaTFBurningCard.html)
-[从外部媒体介质启动系统](/android/zh-cn/vim1/BootFromExtMedia.html)
-[如何进入升级模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)
-
-{% note warn 提示 %}
-
-* 应使用USB-C数据线从Ubuntu或Windows主机直接将**emmc固件**刻录到`emmc`。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。
-* **sd/usb固件**应复制到一张sd卡中，然后使用该卡用新操作系统重新格式化emmc存储。例如：Armbian、Ubuntu发行版包含到'sd_usb'标记，以及LibELEC。
-* 为了从**sd/usb images**启动，您需要在您的emmc上运行android或ubuntu，并激活多启动。
-
-{% endnote %}
 
 ## 使用Type-C升级EMMC系统
 如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM1 SBC操作系统，则需要这些项目。例如，将启动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。

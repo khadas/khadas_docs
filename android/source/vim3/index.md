@@ -228,79 +228,11 @@ Linux_TX|19|39|GPIODZ_15
 </div>
 </div> 
 
-## Krescue (Khadas Rescue OS)
-![image](/android/images/docs_krescue_online_install.jpg)
-
-[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
-
-**Main Features:**
-- Backup EMMC memory contents to an [SD card](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt), [USB](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt), [LAN host](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt).
-- Restore .img.gz into an EMMC on another device.
-- Online OS installation via Ethernet.
-- View device information.
-- Rescue shell for expert users.
-- [Shell access](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt) via UART, USB network, and LAN network.
-
-**[Steps](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt) to Boot Krescue:**
-1. Download an appropriate image for VIM3/3L from [dl.khadas.com](https://dl.khadas.com/Firmware/Krescue/dump/)
-2. Burn this image to a micro-SD card, using Rufus, dd (Linux) or [Etcher](https://www.balena.io/etcher/).
-3. Plug in the micro-SD card, USB-C power, and HDMI into your VIM3/3L device.
-4. Boot your VIM3/3L device into [MaskROM mode](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt) (please read!!!).
-5. Use an [IR remote control](https://www.khadas.com/product-page/ir-remote) or USB keyboard to navigate the UI menus.
-
-**Online Installation via Shell Command:**
-
-Online Help:
-- curl -sfL dl.khadas.com/.mega | sh -s - --help
-- wget -O-  dl.khadas.com/.mega | sh -s - --help
-
-Write Krescue directly to EMMC via the web:
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM1  > /dev/mmcblk? <tab auto-complete>
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM2  > /dev/mmcblk? <tab auto-complete>
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM3  > /dev/mmcblk? <tab auto-complete>
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
-  
-More shell commands and examples:
-- [https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt](https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt)
-
-**Learn More:**
-- [YouTube - Krescue Introduction](https://youtu.be/ER4BOJUhoYU)
-- [YouTube - Krescue Online OS Installation](https://youtu.be/vvpkbhnyhZY)
-- [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
-
 ## Amlogic A311D, NPU Usage Guides
 These following documentation links will help you get started with your VIM3's 5.0 TOPS neural processing unit.
 
 **Learn More:**
-* [YouTube: VIM3 - Realtime Object Detection Using Yolo v3](https://www.youtube.com/watch?v=aQ-g_CBrzEU)
-
-
-## Booting 3rd-Party ROMs from Micro SD-Card
-These items are useful when you want to boot your VIM3 from an SD-Card, to run 3rd-party ROMs such as LibreELEC.
-
-1. 8GB or larger, Micro SD-card.
-2. Computer with USB and/or a Micro SD-card reader.
-
-Steps to boot your VIM3 from a Micro SD-card:
-
-1. Insert your 8GB or larger Micro SD-card into your computer.
-2. Flash the ROM file (.img) to your Micro SD-card, using [Etcher](https://www.balena.io/etcher/).
-3. Make sure you select the correct VIM3 .dtb file (follow instructions specific to the ROM!).
-4. Ensure that your VIM3 has Android 9.0 installed, and is connected to a power adapter (not PC!).
-5. Insert the SD-card into your VIM3, and power it on.
-6. Use [keys-mode](/android/vim3/BootIntoUpgradeMode.html) to enter upgrade mode.
-7. If you have done all the above steps correctly, your VIM3 will boot from the Micro SD-card.
-
-**Learn More:**
-* [Enter Upgrade Mode](/android/vim3/BootIntoUpgradeMode.html)
-* [Upgrade Using SD-Card](/android/vim3/UpgradeViaTFBurningCard.html)
-* [Boot From External Media](/android/vim3/BootFromExtMedia.html)
-* [Booting Card Vs Burning Card](/android/vim3/BootingCardVsBurningCard.html)
-
-**Tips:**
-* **EMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions Containing the `EMMC` mark.
-* **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing to `SD_USB` mark, as well as LibreELEC and CoreELEC.
-* In order to bootup from **SD/USB images**, you need Android or Ubuntu running on your eMMC with Multi-Boot activated.
+* [VIM3 NPU usage](https://forum.khadas.com/t/vim3-vim3l-android-npu-app-initial-version-release/12658)
 
 ## Flashing eMMC Operating System Using USB-C Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your VIM3 SBC's operating system stored in the eMMC storage. For example, Changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.
