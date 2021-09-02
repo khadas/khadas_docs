@@ -160,8 +160,8 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Firmware Using USB-C Cable](/android/vim1/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
+* [Upgrade Firmware Using USB-C Cable](UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](BootIntoUpgradeMode.html)
 
 **Firmware Images:**
 * [Android OS](/android/vim2/FirmwareAndroid.html)

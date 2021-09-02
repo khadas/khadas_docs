@@ -36,7 +36,7 @@ out/target/product/TARGET/upgrade/ out/target/product/TARGET/update.img
 
 ## Only Change the Bootup Logo
 
-* Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](/android/vim1/BuildBootLogoForUboot.html))
+* Rebuild Logo Image.(About more informations,You can refer to [Build Bootup Logo For U-boot](BuildBootLogoForUboot.html))
 
 ```sh
 $ cd PATH_YOUR_PROJECT
