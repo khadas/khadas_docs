@@ -126,7 +126,6 @@ sidebar:
     how_to_use_settings_command: 如何使用Settings命令
     accessories: 配件
     connect_lcd: 配置触摸屏TS050
-    how_to_use_lte_module: LTE模块用法   
     board_rescoures: 板载资源
     how_to_access_gpio: GPIO用法
     how_to_access_i2c: 如何操作I2C

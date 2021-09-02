@@ -89,7 +89,6 @@ vim3:
       how_to_use_settings_command: HowToUseSettingsCommand.html
     accessories:
       connect_lcd: ConnectLcd.html
-      how_to_use_lte_module: HowToUseLTEModule.html
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: AccessI2c_android.html
