@@ -27,7 +27,7 @@ title: VIM3 Beginners Guide
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/android/vim3/HowToSetupPcieUsbPort.html), 900mA output|
+|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/android/vim3/SetupPcieUsbPort.html), 900mA output|
 |2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](/android/vim3/Wol.html)|
 |3|HDMI|HDMI port supporting CEC|
 |4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](/android/vim3/UpgradeViaUSBCable.html)|
@@ -140,7 +140,7 @@ Linux_TX|19|39|GPIODZ_15
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/android/vim3/HowToSetupPcieUsbPort.html), 900mA output|
+|1|USB-A|[USB 3.0 port that swaps to 2.0 when PCI-E is active](/android/vim3/SetupPcieUsbPort.html), 900mA output|
 |2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](/android/vim3/Wol.html)|
 |3|HDMI|HDMI port supporting CEC|
 |4|USB-C|USB-C port with USB power delivery ([5](https://www.khadas.com/product-page/power-adapter)-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](/android/vim3/UpgradeViaUSBCable.html)|

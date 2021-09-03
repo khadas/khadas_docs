@@ -80,22 +80,22 @@ vim3:
   rescures_control:
     system_control:
       how_to_use_adb_tool: ADBTool.html
-      how_to_change_logo_android: HowToChangeBootLogo_android.html
-      how_to_change_animation: HowToChangeBootAnimation_android.html
-      how_to_app_platform_sign: HowToAppPlatformSign.html
-      how_to_use_recovery: HowToUseRecovery.html
-      how_to_get_gps_data: HowToGetGpsData.html
-      how_to_get_gsensor_data: HowToGetGsensorData.html
-      how_to_use_settings_command: HowToUseSettingsCommand.html
+      how_to_change_logo_android: ChangeBootLogo.html
+      how_to_change_animation: ChangeBootAnimation.html
+      how_to_app_platform_sign: AppPlatformSign.html
+      how_to_use_recovery: UseRecovery.html
+      how_to_get_gps_data: GetGpsData.html
+      how_to_get_gsensor_data: GetGsensorData.html
+      how_to_use_settings_command: SettingsCommand.html
     accessories:
       connect_lcd: ConnectLcd.html
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: AccessI2c_android.html
       howto_use_wol: Wol.html
-      how_to_setup_pcie_usb_port: HowToSetupPcieUsbPort.html
-      how_to_enable_m2x_eth: HowToEnableM2xEthernet_android.html
-      how_to_use_uart_android: HowToUseUart_android.html
+      how_to_setup_pcie_usb_port: SetupPcieUsbPort.html
+      how_to_enable_m2x_eth: EnableM2xEthernet.html
+      how_to_use_uart_android: UseUart.html
       how_to_add_ir: HowToAddIr.html
       how_to_use_pwm: HowToUsePwm.html
   npu:
