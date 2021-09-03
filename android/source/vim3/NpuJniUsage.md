@@ -3,7 +3,7 @@ title: How To Use Android NPU JNI
 
 {% note warn NOTE %}
 
-Before run android NPU Demo,please download newest [firmware](/zh-cn/firmware/Vim3AndroidFirmware.html),and update system to latest version.
+Before run android NPU Demo,please download newest [firmware](/android/firmware/Vim3AndroidFirmware.html),and update system to latest version.
 
 {% endnote %}
 
