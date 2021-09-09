@@ -39,7 +39,6 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    boot_from_ext_image: Boot From External Media
     rescures_control: Rescoures Control
     system_control: System Control
     how_to_use_adb_tool: ADB Usage
@@ -75,7 +74,6 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    boot_from_ext_image: Boot From External Media
     rescures_control: Rescoures Control
     system_control: System Control
     how_to_use_adb_tool: ADB Usage
@@ -114,7 +112,6 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    boot_from_ext_image: Boot From External Media   
     rescures_control: Rescoures Control
     system_control: System Control
     how_to_use_adb_tool: ADB Usage
@@ -127,7 +124,6 @@ sidebar:
     how_to_use_settings_command: How To Use Settings Command
     accessories: Accessories
     connect_lcd: Connect TS050 Touchscreen
-    how_to_use_lte_module: LTE Module Usage   
     board_rescoures: Board Rescoures
     how_to_access_gpio: GPIO Usage
     how_to_access_i2c: How To Access I2c

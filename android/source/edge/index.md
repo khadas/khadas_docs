@@ -368,7 +368,6 @@ These items are useful when you want to upgrade your Edge SBC's operating system
 **Learn More:**
 * [Booting Card Vs Burning Card](/android/edge/BootingCardVsBurningCard.html)
 * [Upgrade Using SD-Card](/android/edge/UpgradeViaTFBurningCard.html)
-* [Boot From External Media](/android/vim2/BootFromExtMedia.html)
 * [Enter Upgrade Mode](/android/edge/BootIntoUpgradeMode.html)
 
 {% note info Tip %}
