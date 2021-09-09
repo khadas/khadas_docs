@@ -3,6 +3,35 @@ title: 快速上手
 
 这篇主要介绍在拿到板子以后如何快速上手，让系统跑起来。
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="edge-v-tab" data-toggle="tab" href="#edge-v-q" role="tab" aria-controls="edge-v" aria-selected="true">Edge-V</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge-q" role="tab" aria-controls="edge" aria-selected="false">Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="captain-tab" data-toggle="tab" href="#captain-q" role="tab" aria-controls="captain" aria-selected="false">Captain</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="edge-v-q" role="tabpanel" aria-labelledby="edge-v-tab">
+
+<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=400374941&page=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+</div>
+<div class="tab-pane fade" id="edge-q" role="tabpanel" aria-labelledby="edge-tab">
+
+<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=400374941&page=4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+</div>
+<div class="tab-pane fade" id="captain-q" role="tabpanel" aria-labelledby="captain-tab">
+
+<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=400374941&page=6" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+</div>
+</div>
+
 ## 电源选择
 
 适配器和数据线如下：

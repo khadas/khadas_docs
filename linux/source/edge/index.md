@@ -3,6 +3,35 @@ title: Quickstart
 
 This article mainly introduces how to quickly get started after getting the board to make the system run.
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="edge-v-tab" data-toggle="tab" href="#edge-v-q" role="tab" aria-controls="edge-v" aria-selected="true">Edge-V</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge-q" role="tab" aria-controls="edge" aria-selected="false">Edge</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="captain-tab" data-toggle="tab" href="#captain-q" role="tab" aria-controls="captain" aria-selected="false">Captain</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="edge-v-q" role="tabpanel" aria-labelledby="edge-v-tab">
+
+<iframe class="bilibili" src="https://www.youtube.com/embed/-e-LjtqjCsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<div class="tab-pane fade" id="edge-q" role="tabpanel" aria-labelledby="edge-tab">
+
+<iframe class="bilibili" src="https://www.youtube.com/embed/6D5iG3COopc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<div class="tab-pane fade" id="captain-q" role="tabpanel" aria-labelledby="captain-tab">
+
+<iframe class="bilibili" src="https://www.youtube.com/embed/SJZWBQ97X44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</div>
+
 ## Power Supply
 Although your Edge SBC is compatible with various types of power supplies, these are the recommended specs for the best performance-output and stability.
 
