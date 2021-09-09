@@ -225,7 +225,6 @@ vim3:
 edge:
   quick_start:
     quick_setup: index.html
-    choose_an_os: OsIntroduce.html
     install_os_into_emmc: InstallOsIntoEmmc.html
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
@@ -257,17 +256,14 @@ edge:
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWMServo.html
-    play_video: PlayVideo.html
     docker: Docker.html
     32bit_library: 32bitLibrary.html
   development:
     uboot:
-      build_uboot: BuildUboot.html
       upgrade_uboot: UpgradeUboot.html
       boot_from_spi_flash: BootFromSpiFlash.html
       kbi_guidance: KbiGuidance.html
     linux:
-      build_linux_kernel: BuildLinuxKernel.html
       upgrade_linux_kernel: UpgradeLinuxKernel.html
     fenix: FenixScript.html
     setup_serial_tool: SetupSerialTool.html
