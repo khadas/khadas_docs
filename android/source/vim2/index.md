@@ -109,46 +109,6 @@ Linux_TX|19|39|GPIODV_13
 </div>
 </div>
 
-## Krescue (Khadas Rescue OS)
-![image](/android/images/docs_krescue_online_install.jpg)
-
-[Krescue](https://dl.khadas.com/Firmware/Krescue/dump/README.txt) is an extremely small (21mb) operating system that you can boot directly from a micro-SD card or your EMMC. It is a "Swiss Army knife", and you can use it to perform a variety of low-level SBC maintenance tasks. Most notable of which are backing-up your EMMC by dumping a raw-compressed .img.gz, and rapidly installing a new OS via flashing a .img.gz back into the EMMC. As of January 2020, Krescue can download and install OS images directly from the web via wired Ethernet.
-
-**Main Features:**
-- Backup EMMC memory contents to an [SD card](https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt), [USB](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt), [LAN host](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt).
-- Restore .img.gz into an EMMC on another device.
-- Online OS installation via Ethernet.
-- View device information.
-- Rescue shell for expert users.
-- [Shell access](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt) via UART, USB network, and LAN network.
-
-**[Steps](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt) to Boot Krescue:**
-1. Download an appropriate image for VIM2 from [dl.khadas.com](https://dl.khadas.com/Firmware/Krescue/dump/)
-2. Burn this image to a micro-SD card, using Rufus, dd (Linux) or [Etcher](https://www.balena.io/etcher/).
-3. Plug in the micro-SD card, USB-C power, and HDMI into your VIM2 device.
-4. Boot your VIM2 device into [MaskROM mode](https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt) (please read!!!).
-5. Use an [IR remote control](https://www.khadas.com/product-page/ir-remote) or USB keyboard to navigate the UI menus.
-
-**Online Installation via Shell Command:**
-
-Online Help:
-- curl -sfL dl.khadas.com/.mega | sh -s - --help
-- wget -O-  dl.khadas.com/.mega | sh -s - --help
-
-Write Krescue directly to EMMC via the web:
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM1  > /dev/mmcblk? <tab auto-complete>
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM2  > /dev/mmcblk? <tab auto-complete>
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM3  > /dev/mmcblk? <tab auto-complete>
-- curl -sfL dl.khadas.com/.mega | sh -s - VIM3L > /dev/mmcblk? <tab auto-complete>
-  
-More shell commands and examples:
-- [https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt](https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt)
-
-**Learn More:**
-- [YouTube - Krescue Introduction](https://youtu.be/ER4BOJUhoYU)
-- [YouTube - Krescue Online OS Installation](https://youtu.be/vvpkbhnyhZY)
-- [Khadas Forum - Krescue Help & Discussion](https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945)
-
 ## VIM2 v1.4 What's New?
 Khadas has recently upgraded their VIM2 to v1.4 which features several improvements, such as the addition of XPWR pads for an external power switch, as well as a larger 16MB SPI-flash.
 
@@ -192,27 +152,6 @@ These items are useful when you need to connect your VIM2 SBC to an external dis
 * [Khadas Shop - Remote Control](https://www.khadas.com/product-page/ir-remote)
 * [Amazon - Wireless Keyboard + Mouse](https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=wireless+keyboard+and+mouse&rh=n%3A172282%2Ck%3Awireless+keyboard+and+mouse)
 
-## Making Bootable / Burning SD-Cards / Thumbdrives
-These items are useful when you want to upgrade your VIM2 SBC's operating system via SD-Card or Thumbdrive (Burning Cards). Or if you want to run operating systems that can only be run from external media (Booting Cards) like LibreELEC.
-
-1. 8GB or Larger, SD-Card
-2. SD-Card Reader
-3. Laptop / Desktop PC
-4. 8GB or Larger, USB-Thumbdrive (U-Disk)
-
-**Learn More:**
-* [Upgrade Using SD-Card](/android/vim2/UpgradeViaTFBurningCard.html)
-* [Boot From External Media](/android/vim2/BootFromExtMedia.html)
-* [Enter Upgrade Mode](/android/vim2/BootIntoUpgradeMode.html)
-
-{% note info Tips %}
-
-* **eMMC image** should be burned directly to the eMMC using a USB-C data cable, from a Ubuntu or Windows Host. It must not be burned into an SD-Card. For Example: Android and Ubuntu distributions containing the `EMMC` mark.
-* **SD/USB image** should be copied into an SD-Card, before that card is then used to reformat the eMMC storage with a new OS. For Example: Armbian, Ubuntu distributions containing the `SD_USB` mark, as well as LibreELEC and CoreELEC.
-* In order to bootup from **SD/USB images**, you need Android (V180209 or newer) or Ubuntu (V180531 or newer) running on your eMMC with Multi-Boot activated.
-
-{% endnote %}
-
 ## Upgrading eMMC Operating System Using USB-C Cable
 You'll need these items if you want to use your laptop or desktop PC to upgrade your VIM2 SBC's operating system stored in its eMMC storage. For example, changing the bootup operating system from Android to Ubuntu, or installing a more exotic 3rd-party OS.
 
@@ -221,8 +160,8 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 3. Laptop / Desktop PC
 
 **Learn More:**
-* [Upgrade Firmware Using USB-C Cable](/android/vim1/UpgradeViaUSBCable.html)
-* [Boot Into Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
+* [Upgrade Firmware Using USB-C Cable](UpgradeViaUSBCable.html)
+* [Boot Into Upgrade Mode](BootIntoUpgradeMode.html)
 
 **Firmware Images:**
 * [Android OS](/android/vim2/FirmwareAndroid.html)
