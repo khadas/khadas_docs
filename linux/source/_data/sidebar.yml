@@ -40,6 +40,7 @@ vim1:
       pwm: Pwm.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
+      soft_pwm: SoftPWMServo.html
     play_video: PlayVideo.html
     hardware_decoding: HardwareDecoding.html
     hardware_encoding: HardwareEncoding.html
@@ -106,6 +107,7 @@ vim2:
       pwm: Pwm.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
+      soft_pwm: SoftPWMServo.html
     play_video: PlayVideo.html
     hardware_decoding: HardwareDecoding.html
     hardware_encoding: HardwareEncoding.html
@@ -181,6 +183,7 @@ vim3:
       pwm: Pwm.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
+      soft_pwm: SoftPWMServo.html
     gsensor_usage: GsensorUsage.html
     play_video: PlayVideo.html
     hardware_decoding: HardwareDecoding.html
@@ -253,6 +256,7 @@ edge:
       1wire: 1wire.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
+      soft_pwm: SoftPWMServo.html
     play_video: PlayVideo.html
     docker: Docker.html
     32bit_library: 32bitLibrary.html
