@@ -65,6 +65,7 @@ sidebar:
     pwm: PWM
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
+    soft_pwm: 软件模拟PWM
     play_video: 播放视频
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
@@ -137,6 +138,7 @@ sidebar:
     pwm: PWM
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
+    soft_pwm: 软件模拟PWM
     play_video: 播放视频
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
@@ -215,6 +217,7 @@ sidebar:
     pwm: PWM
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
+    soft_pwm: 软件模拟PWM
     gsensor_usage: Gsensor使用说明
     play_video: 播放视频
     hardware_decoding: 硬件解码
@@ -298,6 +301,7 @@ sidebar:
     pwm: PWM
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
+    soft_pwm: 软件模拟PWM
     play_video: 播放视频
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
