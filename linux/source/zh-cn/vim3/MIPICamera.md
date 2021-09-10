@@ -111,38 +111,36 @@ namespace  std;
 
 int main(int argc, char** argv)
 {
-	int count=100;
-	string str = argv[1];
-	string res=str.substr(10);
-	VideoCapture capture(stoi(res));
-        capture.set(CV_CAP_PROP_FRAME_WIDTH, 1920);
-	capture.set(CV_CAP_PROP_FRAME_HEIGHT, 1080);
-	while (count)
-	{
-		Mat frame;
-		capture >> frame;
+    int count=100;
+    string str = argv[1];
+    string res=str.substr(10);
+    VideoCapture capture(stoi(res));
+    capture.set(CAP_PROP_FRAME_WIDTH, 1920);
+    capture.set(CAP_PROP_FRAME_HEIGHT, 1080);
+    while (count)
+    {
+        Mat frame;
+        capture >> frame;
 
-		if (frame.empty()) {
-			break;
-		}
-		int h = frame.rows;
-		int w = frame.cols;
-		const char *name = "video";
-		cvNamedWindow(name, 0);
-		cvResizeWindow(name, w / 1, h / 1);
-		imshow(name, frame);
-		waitKey(30);
-		count--;
-	}
-	return 0;
-}
-
+        if (frame.empty()) {
+            break;
+        }
+        int h = frame.rows;
+        int w = frame.cols;
+        const char *name = "video";
+        namedWindow(name, 0);
+        imshow(name, frame);
+        waitKey(30);
+        count--;
+    }
+    return 0;
+}    
 ```
 
-编译命令:
+编译命令
 
 ```sh
-$ gcc -o test test.cpp -lopencv_imgproc -lopencv_core -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -std=c++11 -std=gnu++11 -Wall -std=c++11 -lstdc++
+$ gcc -o mipi mipi.cpp -lopencv_imgproc -lopencv_core -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -std=c++11 -std=gnu++11 -Wall -std=c++11 -lstdc++ -I/usr/include/opencv4
 ```
 
 运行:
