@@ -166,7 +166,7 @@ Linux_TX|19|39|GPIODZ_15
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5-12V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
-|2|[Micro-SD Slot](/android/vim3/BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
+|2|Micro-SD Slot|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|Current Limit Switch|Prevents damage to VIM3L due to faulty loading conditions|
 |4|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs](/android/vim3/ListOfCompatibleNVMeSSDs.html)|
 |5|TP|10-pin 0.5mm pitch FPC connector for [touch input](/android/vim3/ConnectLcd.html)|

@@ -47,7 +47,7 @@ title: VIM1 Beginners Guide
 ||Component|Purpose|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V power input|
-|2|[Micro-SD Card Slot](/android/vim1/BootFromExtMedia.html)|Boot alternative OSes via a Micro-SD card, and for extra storage|
+|2|Micro-SD Card Slot|for extra storage|
 |3|M-Register|Allows the EMMC to [enter MaskROM mode](/android/vim1/BootIntoUpgradeMode.html)|
 |4|XPWR Pads|Connect an external power switch using these pads|
 </div>
@@ -131,9 +131,6 @@ You'll need these items if you want to use your laptop or desktop PC to upgrade 
 
 **Firmware Images:**
 * [Android OS](/android/vim1/FirmwareAndroid.html)
-* [Ubuntu OS](/android/vim1/FirmwareUbuntu.html)
-* [LibreELEC](/android/vim1/FirmwareLibreelec.html)
-* [Dual OS](/android/vim1/FirmwareDualos.html)
 * [U-Boot](/android/vim1/FirmwareUboot.html)
 * [Third Party OSes](/android/vim1/FirmwareThirdparty.html)
 

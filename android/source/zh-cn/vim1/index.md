@@ -47,7 +47,7 @@ title: VIM1 文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5V电压输出|
-|2|[SD卡插座](/android/zh-cn/vim1/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
+|2|SD卡插座|作为外部存储器|
 |3|M寄存器触点|[强制进入MaskROM模式](/android/zh-cn/vim1/BootIntoUpgradeMode.html)|
 |4|XPWR焊盘|用于连接使用外部电源|
 </div>
@@ -126,8 +126,6 @@ title: VIM1 文档
 
 **固件**
 * [安卓固件](/android/zh-cn/vim1/FirmwareAndroid.html)
-* [Ubuntu固件](/android/zh-cn/vim1/FirmwareUbuntu.html)
-* [Dual](/android/zh-cn/vim1/FirmwareDualos.html)
 * [U-Boot](/android/zh-cn/vim1/FirmwareUboot.html)
 * [Third Party OSes](/android/zh-cn/vim1/FirmwareThirdparty.html)
 

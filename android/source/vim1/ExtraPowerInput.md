@@ -93,4 +93,6 @@ We don't have a VIN cable for sale, you'll need to DIY one by yourself.
 {% endnote %}
 
 ## See Also
-* [Interfaces Description](/android/vim1/Hardware#VIM1-Interfaces)
+* [VIM1 Interfaces Description](/android/vim1/VimInterfaces.html)
+* [VIM2 Interfaces Description](/android/vim2/Vim2Interfaces.html)
+* [VIM3 Interfaces Description](/android/vim3/Vim3Interfaces.html)
