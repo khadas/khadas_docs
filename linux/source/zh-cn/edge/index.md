@@ -17,7 +17,7 @@ title: 快速上手
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="edge-v-q" role="tabpanel" aria-labelledby="edge-v-tab">
 
-<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=400374941&page=2" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=400374941&page=5" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 </div>
 <div class="tab-pane fade" id="edge-q" role="tabpanel" aria-labelledby="edge-tab">
