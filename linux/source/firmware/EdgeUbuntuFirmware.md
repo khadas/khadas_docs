@@ -1,7 +1,7 @@
 title: Khadas Edge Ubuntu Firmware
 ---
 
-Check [Release Note](/linux/firmware/EdgeUbuntuFirmwareReleaseNote.html).
+Check [Release Note](EdgeUbuntuFirmwareReleaseNote.html).
 
 ## Linux 4.4 Images
 

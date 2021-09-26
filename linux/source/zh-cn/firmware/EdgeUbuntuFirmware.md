@@ -1,7 +1,7 @@
 title: Khadas Edge Ubuntu固件
 ---
 
-查看[Release Note](/linux/zh-cn/firmware/EdgeUbuntuFirmwareReleaseNote.html)。
+查看[Release Note](EdgeUbuntuFirmwareReleaseNote.html)。
 
 ## Linux 4.4固件
 
