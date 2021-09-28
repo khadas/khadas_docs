@@ -239,6 +239,10 @@ sidebar:
     tengine_demo: Tengine Demo
     amlnn_api_demo: Amlogic NN API Usage
     development: Development
+    ksnn: KSNN(Python API)
+    ksnn_usage: KSNN Usage
+    ksnn_convert: KSNN Convert tool
+    ksnn_api: KSNN API
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
