@@ -1,7 +1,7 @@
 title: Khadas VIM3 Ubuntu 固件
 ---
 
-查看[Release Note](/zh-cn/firmware/Vim3UbuntuFirmwareReleaseNote.html)。
+查看[Release Note](Vim3UbuntuFirmwareReleaseNote.html)。
 
 ## Linux 4.9内核固件
 

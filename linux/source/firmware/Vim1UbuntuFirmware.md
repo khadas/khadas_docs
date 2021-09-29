@@ -1,7 +1,7 @@
 title: Khadas VIM1 Ubuntu Firmware
 ---
 
-Check [Release Note](/firmware/Vim1UbuntuFirmwareReleaseNote.html).
+Check [Release Note](Vim1UbuntuFirmwareReleaseNote.html).
 
 ## Linux 4.9 Images
 

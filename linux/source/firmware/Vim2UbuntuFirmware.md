@@ -1,7 +1,7 @@
 title: Khadas VIM2 Ubuntu Firmware
 ---
 
-Check [Release Note](/firmware/Vim2UbuntuFirmwareReleaseNote.html).
+Check [Release Note](Vim2UbuntuFirmwareReleaseNote.html).
 
 ## Linux 4.9 Images
 

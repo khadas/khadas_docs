@@ -1,7 +1,7 @@
 title: Khadas VIM1 Ubuntu 固件
 ---
 
-查看[Release Note](/zh-cn/firmware/Vim1UbuntuFirmwareReleaseNote.html)。
+查看[Release Note](Vim1UbuntuFirmwareReleaseNote.html)。
 
 ## Linux 4.9内核固件
 

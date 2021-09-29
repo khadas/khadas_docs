@@ -238,6 +238,10 @@ sidebar:
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
     amlnn_api_demo: Amlogic NN API使用说明
+    ksnn: KSNN(Python API)
+    ksnn_usage: KSNN使用说明
+    ksnn_convert: KSNN转换工具说明
+    ksnn_api: KSNN API
     development: 开发
     uboot: U-Boot
     build_uboot: 编译U-Boot
