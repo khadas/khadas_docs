@@ -5,7 +5,7 @@ This document mainly introduces what KSNN is and how to run the provided example
 
 ## Install KSNN
 
-1. clone code to local
+1. Clone code to local
 
 ```sh
 $ mkdir workspace && cd workspace
