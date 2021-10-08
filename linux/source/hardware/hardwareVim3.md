@@ -11,6 +11,7 @@ title: Khadas VIM3 Hardware Documentation
 * [Khadas VIM3/3L 3D CAD (STEP format)](https://dl.khadas.com/products/vim3/cad/VIM3_3D_Model_V200327.zip)
 * [Amlogic S922X Datasheet](https://dl.khadas.com/Hardware/VIM3/Datasheet/S922X_Datasheet_Wesion.pdf)
 * [Amlogic A311D Datasheet](https://dl.khadas.com/Hardware/VIM3/Datasheet/A311D_Datasheet_01_Wesion.pdf)
+* [Amlogic S905D3 Datasheet](http://dl.khadas.com/Hardware/VIM3/Datasheet/S905D3_datasheet_0.2_Wesion.pdf)
 
 ## 3D CAD Documentation
 
