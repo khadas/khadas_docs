@@ -6,7 +6,7 @@ This article mainly introduces how to convert neural network models of different
 
 ```sh
 $ mkdir workspace && cd workspace
-$ git clone https://gitlab.com/khadas/aml_npu_sdk.git
+$ git clone --recursive https://github.com/khadas/aml_npu_sdk.git
 ```
 
 ## SDK Structure

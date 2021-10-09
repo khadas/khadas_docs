@@ -17,15 +17,15 @@ $ sudo apt install libopencv-dev python3-opencv
 
 ## 获取NPU Demo
 
-NPU Demo 默认并没有安装在板子上。需要先从gitlab自行下载
+NPU Demo 默认并没有安装在板子上。需要先从github自行下载
 
-仓库在gitlab上的地址为:[https://gitlab.com/khadas/aml_npu_demo_binaries](https://gitlab.com/khadas/aml_npu_demo_binaries)
+仓库在github上的地址为:[https://github.com/khadas/aml_npu_demo_binaries](https://github.com/khadas/aml_npu_demo_binaries)
 
 通过`git`命令中clone到板子上
 
 ```shell
 $ cd {workspace}
-$ git clone https://gitlab.com/khadas/aml_npu_demo_binaries
+$ git clone --recursive https://github.com/khadas/aml_npu_demo_binaries
 ```
 
 或者直接下载压缩包，然后解压到板子上。

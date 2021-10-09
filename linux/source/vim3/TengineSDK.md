@@ -7,11 +7,11 @@ Here takes yolov3 of the darknet framework as an example to demonstrate how to c
 
 ## Get SDK
 
-The tengine SDK source code repository is on gitlab of khadas
+The tengine SDK source code repository is on github of khadas
 
 ```shell
 $ mkdir workspace && cd workspace
-$ git clone https://gitlab.com/khadas/tengine_khadas_sdk.git
+$ git clone https://github.com/khadas/tengine_khadas_sdk.git
 $ cd tengine_khadas_sdk && ls
 docs  tengine_tools
 ```

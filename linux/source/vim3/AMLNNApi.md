@@ -21,12 +21,12 @@ For detailed information about the API, please refer to the document `docs/zh-cn
 
 ### Source Code
 
-The source code of the `aml_npu_nnsdk_app` repository is open on the official gitlab of Khadas
+The source code of the `aml_npu_nnsdk_app` repository is open on the official github of Khadas
 
 ```shell
 $ mkdir workspace
 $ cd ${workspace}
-$ git clone https://gitlab.com/khadas/aml_npu_nnsdk_app
+$ git clone https://github.com/khadas/aml_npu_nnsdk_app
 ```
 
 ### Code Structure

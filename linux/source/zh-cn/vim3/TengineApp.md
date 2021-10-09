@@ -10,12 +10,12 @@ tengine-lite v.14(即NPU6.4.4.3)之后，demo仅支持在板子上进行本地�
 
 ## 获取源码
 
-源码仓库位于khadas的gitlab上,clone到板子上
+源码仓库位于khadas的github上,clone到板子上
 
 ```shell
 $ mkdir ${workspace}
 $ cd ${workspace}
-$ git clone https://gitlab.com/khadas/tengine_khadas_app.git
+$ git clone https://github.com/khadas/tengine_khadas_app.git
 $ cd tengine_khadas_app
 $ ls
 yolov3-camera  yolov3-picture

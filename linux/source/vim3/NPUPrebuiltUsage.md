@@ -16,15 +16,15 @@ $ sudo apt install libopencv-dev python3-opencv
 
 ## Get NPU Demo
 
-NPU Demo is not installed on the board by default. You need to download it from gitlab first
+NPU Demo is not installed on the board by default. You need to download it from github first
 
-The address of the repository on gitlab is:[https://gitlab.com/khadas/aml_npu_demo_binaries](https://gitlab.com/khadas/aml_npu_demo_binaries)
+The address of the repository on github is:[https://github.com/khadas/aml_npu_demo_binaries](https://github.com/khadas/aml_npu_demo_binaries)
 
 Clone to the board through the `git` command.
 
 ```shell
 $ cd {workspace}
-$ git clone https://gitlab.com/khadas/aml_npu_demo_binaries
+$ git clone --recursive https://github.com/khadas/aml_npu_demo_binaries
 ```
 
 Or download the compressed package directly, and then unzip it to the board

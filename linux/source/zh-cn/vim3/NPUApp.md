@@ -16,11 +16,11 @@ $ sudo apt install libopencv-dev python3-opencv
 
 ## 获取仓库源码
 
-源码仓库存储在gitlab，仓库地址为:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
+源码仓库存储在github，仓库地址为:[https://github.com/khadas/aml_npu_app](https://github.com/khadas/aml_npu_app)
 
 ```shell
 $ cd {workspace}
-$ git clone https://gitlab.com/khadas/aml_npu_app
+$ git clone --recursive https://github.com/khadas/aml_npu_app
 ```
 
 ## 仓库源码说明
@@ -65,7 +65,7 @@ detect_yolo_v4        #yolov4模型，用于物体检测
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
 $ ls
-build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c  yolov3_process.c
+build_vx.sh  include  Makefile  makefile.linux  vnn_yolov3.c  yolo_v3.c  yolov3_process.c
 ```
 
 主要内容说明:
@@ -75,7 +75,6 @@ build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c
 2. include            #相应的头文件以及所有的定义都会放置在这个目录下
 3. Makefile:          #Makefile文件
 4. makefile.linux     #Make时的环境配置文件
-5. nn_data            #SDK转换出来的对应模型的nb文件
 6. vnn_yolov3.c       #SDK转换出来的模型处理文件,主要使用到其中与nb文件对接的接口
 7. yolo_v3.c          #指定调用的nb文件,同时定义了模型的调用的所有接口
 8. yolov3_process.c   #主要定义了模型的前处理和后处理

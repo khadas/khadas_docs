@@ -14,6 +14,7 @@ vim1:
       device_tree_overlay: DeviceTreeOverlay.html
       auto_login: AutoLogin.html
       write_sd_image_to_emmc: WriteSDImageToEmmc.html
+      chinese_support: ChineseSupportUsage.html
     network:
       wifi: Wifi.html
       bt: Bluetooth.html
@@ -80,6 +81,7 @@ vim2:
       device_tree_overlay: DeviceTreeOverlay.html
       auto_login: AutoLogin.html
       write_sd_image_to_emmc: WriteSDImageToEmmc.html
+      chinese_support: ChineseSupportUsage.html
     network:
       wifi: Wifi.html
       bt: Bluetooth.html
@@ -149,6 +151,7 @@ vim3:
       device_tree_overlay: DeviceTreeOverlay.html
       auto_login: AutoLogin.html
       write_sd_image_to_emmc: WriteSDImageToEmmc.html
+      chinese_support: ChineseSupportUsage.html
     network:
       wifi: Wifi.html
       bt: Bluetooth.html
@@ -240,6 +243,7 @@ edge:
       auto_login: AutoLogin.html
       write_sd_image_to_emmc: WriteSDImageToEmmc.html
       device_tree_overlay: DeviceTreeOverlay.html
+      chinese_support: ChineseSupportUsage.html
     network:
       wifi: Wifi.html
       bt: Bluetooth.html
