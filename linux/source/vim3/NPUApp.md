@@ -1,23 +1,21 @@
-title: Application source code compilation instructions
+title: Application Source Code
 ---
 
-This document mainly introduces how to compile the application source code and use it.
+This documentation will introduce how to compile the application source code.
 
 {% note warn Note %}
-1. Just support local compile
-2. Just support Opencv4
+1. Only support local compile on VIM3/3L
+2. Only support OpenCV4
 {% endnote %}
 
-## Install OpenCV4 Onto VIM3
+## Install OpenCV4
 
 ```shell
+$ sudo apt update
 $ sudo apt install libopencv-dev python3-opencv
 ```
 
-## Source Code
-
-The source code repository is stored in github, and the repository address is:[https://github.com/khadas/aml_npu_app](https://github.com/khadas/aml_npu_app)
-
+## Get Source Code
 
 ```shell
 $ cd {workspace}
@@ -33,12 +31,11 @@ $ cd {workspace}/aml_npu_app
 $ ls
 DDK_6.3.2  DDK_6.3.2.3  DDK_6.3.2.5  DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
 ```
-```
-1. DDK_xxx         #Different versions of library source code
-2. detect_library  #Application layer source code. detect_library/model_code link to the latest version of DDK
-3. NN_SLT          #Separate source code directory for DnCnn model (no longer maintained)
-4. LICENSE         #LICENSE file
-```
+
+* **DDK_xxx** - Different versions of library source code
+* **detect_library** - Application layer source code. detect_library/model_code link to the latest version of DDK
+* **NN_SLT** - Separate source code directory for DnCnn model (no longer maintained)
+* **LICENSE** - LICENSE file
 
 ### Library Description
 
@@ -50,17 +47,15 @@ $ ls
 detect_mtcnn  detect_yoloface  detect_yolo_v2  detect_yolo_v3  detect_yolo_v3_tiny  detect_yolo_v4  facenet
 ```
 
-Except for `detect_mtcnn`, each directory represents a different model, and each model will be compiled into a library at compile time.
+Except for `detect_mtcnn`, each directory represents a different model, and each model will be compiled into a library.
 
-```shell
-detect_yoloface       #yoloface model, used to detect faces
-detect_yolo_v2        #yolov2 model, for object detection
-detect_yolo_v3        #yolov3 model, for object detection
-detect_yolo_v3_tiny   #yolov3-tiny model, for object detection
-detect_yolo_v4        #yolov4 model, used to detect faces
-```
+* **detect_yoloface** - yoloface model, used to detect faces
+* **detect_yolo_v2** - yolov2 model, for object detection
+* **detect_yolo_v3** - yolov3 model, for object detection
+* **detect_yolo_v3_tiny** - yolov3-tiny model, for object detection
+* **detect_yolo_v4** - yolov4 model, used to detect faces
 
-Here is `detect_yolo_v3` as an example to illustrate the structure of each directory
+Take `detect_yolo_v3` as an example to illustrate the structure of each directory
 
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
@@ -70,15 +65,13 @@ build_vx.sh  include  Makefile  makefile.linux  vnn_yolov3.c  yolo_v3.c  yolov3_
 
 Main content description:
 
-```
-1. build_vx.sh        #Compile script
-2. include            #The corresponding header files and all definitions will be placed in this directory
-3. Makefile:          #Makefile file
-4. makefile.linux     #Make environment configuration file
-6. vnn_yolov3.c       #SDK The converted model processing file is mainly used to interface with the nb file
-7. yolo_v3.c          #Specify the called nb file, and define all the interfaces of the model call
-8. yolov3_process.c   #Mainly defines the pre-processing and post-processing of the model
-```
+* **build_vx.sh** - Compile script
+* **include** - The corresponding header files and all definitions will be placed in this directory
+* **Makefile** - Makefile file
+* **makefile.linux** - Make environment configuration file
+* **vnn_yolov3.c** - SDK The converted model processing file is mainly used to interface with the nb file
+* **yolo_v3.c** - Specify the called nb file, and define all the interfaces of the model call
+* **yolov3_process.c** - Mainly defines the pre-processing and post-processing of the model
 
 ### Application Description
 
@@ -92,14 +85,12 @@ model_code  sample_demo_fb  sample_demo_x11  source_code  yolo_demo_gst_uvc_fb  
 
 Except `model_code` link to the leastest DDK, every other directory will compile a demo of the upper application
 
-```
-1. source_code            #Compile libnn_detect.so. as a bridge to connect different libraries and different application demos
-2. sample_demo_fb         #Compile detect_demo_fb_cv3/detect_demo_fb_cv4 of the aml_npu_demo_binaries repository for image recognition under framebuffer
-3. sample_demo_x11        #Compile detect_demo_x11_cv3/detect_demo_x11_cv4 of the aml_npu_demo_binaries repository for image recognition under X11
-4. yolo_demo_gst_uvc_fb   #Compile the detect_demo_uvc_fb_cv3/detect_demo_uvc_fb_cv4 of the aml_npu_demo_binaries repository for dynamic recognition of the USB camera under the framebuffer
-5. yolo_demo_mipi_fb      #Compile detect_demo_mipi_fb_cv3/detect_demo_mipi_fb_cv4 of the aml_npu_demo_binaries repository for dynamic recognition of mipi camera under framebuffer
-6. yolo_demo_x11          #Compile detect_demo_x11_cv3/detect_demo_x11_cv4 of the aml_npu_demo_binaries repository for dynamic camera recognition under X11
-```
+* **source_code** - Compile libnn_detect.so. as a bridge to connect different libraries and different application demos
+* **sample_demo_fb** - Compile detect_demo_fb_cv3/detect_demo_fb_cv4 of the aml_npu_demo_binaries repository for image recognition under framebuffer
+* **sample_demo_x11** - Compile detect_demo_x11_cv3/detect_demo_x11_cv4 of the aml_npu_demo_binaries repository for image recognition under X11
+* **yolo_demo_gst_uvc_fb** - Compile the detect_demo_uvc_fb_cv3/detect_demo_uvc_fb_cv4 of the aml_npu_demo_binaries repository for dynamic recognition of the USB camera under the framebuffer
+* **yolo_demo_mipi_fb** - Compile detect_demo_mipi_fb_cv3/detect_demo_mipi_fb_cv4 of the aml_npu_demo_binaries repository for dynamic recognition of mipi camera under framebuffer
+* **yolo_demo_x11** - Compile detect_demo_x11_cv3/detect_demo_x11_cv4 of the aml_npu_demo_binaries repository for dynamic camera recognition under X11
 
 Here is an example of `sample_demo_x11`
 
@@ -112,12 +103,10 @@ $ ls
 Here is an explanation of the main files,
 
 
-```
-1. build_vx.sh         #Compile script, the compilation environment specifies `opencv3` and `opencv4`
-2. makefile.linux      #Respectively, the opencv3/opencv4 compilation scripts need to specify the makefile.linux file when compiling
-3. main.cpp            # Is the main source code of the application demo in the opencv3/opencv4 environment.
-4. xxx.h               #The definition related header files that the application layer needs to use
-```
+* **build_vx.sh** - Compile script, the compilation environment specifies `opencv3` and `opencv4`
+* **makefile.linux** - Respectively, the opencv3/opencv4 compilation scripts need to specify the makefile.linux file when compiling
+* **main.cpp** - Is the main source code of the application demo in the opencv3/opencv4 environment.
+* **xxx.h** - The definition related header files that the application layer needs to use
 
 ## Compile
 

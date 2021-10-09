@@ -33,12 +33,10 @@ $ ls
 DDK_6.3.3.4  DDK_6.4.0.3  DDK_6.4.3  detect_library  LICENSE  NN_SLT
 ```
 
-```
-1. DDK_xxx         #不同版本的库源码
-2. detect_library  #应用层源码. detect_library/model_code则指向了最新的版本的DDK
-3. NN_SLT          #DnCnn模型的单独源码目录(不再维护)
-4. LICENSE         #LICENSE文件
-```
+* **DDK_xxx** - 不同版本的库源码
+* **detect_library** - 应用层源码. detect_library/model_code则指向了最新的版本的DDK
+* **NN_SLT** - DnCnn模型的单独源码目录(不再维护)
+* **LICENSE** - LICENSE文件
 
 ### 库说明
 
@@ -52,13 +50,11 @@ detect_mtcnn  detect_yoloface  detect_yolo_v2  detect_yolo_v3  detect_yolo_v3_ti
 
 除了`detect_mtcnn`以外每一个目录都代表了一个不同的模型，每一个模型在编译时都会被编译成一个库。
 
-```shell
-detect_yoloface       #yoloface模型，用于检测人脸
-detect_yolo_v2        #yolov2模型，用于物体检测
-detect_yolo_v3        #yolov3模型，用于物体检测
-detect_yolo_v3_tiny   #yolov3-tiny模型，用于物体检测
-detect_yolo_v4        #yolov4模型，用于物体检测
-```
+* **detect_yoloface** - yoloface模型，用于检测人脸
+* **detect_yolo_v2** - yolov2模型，用于物体检测
+* **detect_yolo_v3** - yolov3模型，用于物体检测
+* **detect_yolo_v3_tiny** - yolov3-tiny模型，用于物体检测
+* **detect_yolo_v4** - yolov4模型，用于物体检测
 
 这里以`detect_yolo_v3`为例，说明每个目录的结构
 
@@ -70,15 +66,13 @@ build_vx.sh  include  Makefile  makefile.linux  vnn_yolov3.c  yolo_v3.c  yolov3_
 
 主要内容说明:
 
-```
-1. build_vx.sh        #编译脚本
-2. include            #相应的头文件以及所有的定义都会放置在这个目录下
-3. Makefile:          #Makefile文件
-4. makefile.linux     #Make时的环境配置文件
-6. vnn_yolov3.c       #SDK转换出来的模型处理文件,主要使用到其中与nb文件对接的接口
-7. yolo_v3.c          #指定调用的nb文件,同时定义了模型的调用的所有接口
-8. yolov3_process.c   #主要定义了模型的前处理和后处理
-```
+* **build_vx.sh** - 编译脚本
+* **include** - 相应的头文件以及所有的定义都会放置在这个目录下
+* **Makefile** - Makefile文件
+* **makefile.linux** - Make时的环境配置文件
+* **vnn_yolov3.c** - SDK转换出来的模型处理文件,主要使用到其中与nb文件对接的接口
+* **yolo_v3.c** - 指定调用的nb文件,同时定义了模型的调用的所有接口
+* **yolov3_process.c** - 主要定义了模型的前处理和后处理
 
 ### 应用层说明
 
@@ -92,15 +86,12 @@ model_code  sample_demo_fb  sample_demo_x11  source_code  yolo_demo_gst_uvc_fb  
 
 除了`model_code`指向最新的DDK以外,其他的目录,每一个都会编译出一个上层应用的demo
 
-```
-1. source_code            #编译出libnn_detect.so.作为桥梁,衔接不同的库和不同的应用demo
-2. sample_demo_fb         #编译出aml_npu_demo_binaries仓库的detect_demo_fb,用于framebuffer下的图片识别
-3. sample_demo_x11        #编译出aml_npu_demo_binaries仓库的detect_demo_x11,用于X11下的图片识别
-4. yolo_demo_fb_usb       #编译出aml_npu_demo_binaries仓库的detect_demo_fb_usb,用于framebuffer下的USB摄像头的动态识别
-5. yolo_demo_fb_mipi      #编译出aml_npu_demo_binaries仓库的detect_demo_fb_mipi,用于framebuffer下的mipi摄像头动态识别
-6. yolo_demo_x11_usb      #编译出aml_npu_demo_binaries仓库的detect_demo_x11_usb,用于X11下的usb摄像头动态识别
-6. yolo_demo_x11_mipi     #编译出aml_npu_demo_binaries仓库的detect_demo_x11_mipi,用于X11下的mipi摄像头动态识别
-```
+* **source_code** - 编译出libnn_detect.so.作为桥梁,衔接不同的库和不同的应用demo
+* **sample_demo_fb** - 编译出aml_npu_demo_binaries仓库的detect_demo_fb,用于framebuffer下的图片识别
+* **sample_demo_x11** - 编译出aml_npu_demo_binaries仓库的detect_demo_x11,用于X11下的图片识别
+* **yolo_demo_fb_usb** - 编译出aml_npu_demo_binaries仓库的detect_demo_fb_usb,用于framebuffer下的USB摄像头的动态识别
+* **yolo_demo_fb_mipi** - 编译出aml_npu_demo_binaries仓库的detect_demo_fb_mipi,用于framebuffer下的mipi摄像头动态识别
+* **yolo_demo_x11_usb** - 编译出aml_npu_demo_binaries仓库的detect_demo_x11_usb,用于X11下的usb摄像头动态识别
 
 这里以`sample_demo_x11`为例
 
@@ -112,12 +103,10 @@ $ ls
 
 这里对主要的文件做说明
 
-```
-1. build_vx.sh         #编译脚本
-2. makefile.linux      #编译脚本在编译时需要指定的makefile.linux文件
-3. main.cpp            #环境下的应用demo的主要源码.
-4. xxx.h               #应用层需要使用到的定义相关的头文件
-```
+* **build_vx.sh** - 编译脚本
+* **makefile.linux** - 编译脚本在编译时需要指定的makefile.linux文件
+* **main.cpp** - 环境下的应用demo的主要源码.
+* **xxx.h** - 应用层需要使用到的定义相关的头文件
 
 ## 编译仓库源码
 
@@ -220,12 +209,3 @@ make: Nothing to be done for 'all'.
 $ ls bin_r_cv3/
 detect_demo  main.o
 ```
-
-
-
-
-
-
-
-
-
