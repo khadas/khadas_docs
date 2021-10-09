@@ -7,7 +7,7 @@ title: NPU SDK使用说明
 
 ```sh
 $ mkdir workspace && cd workspace
-$ git clone https://gitlab.com/khadas/aml_npu_sdk.git
+$ git clone --recursive https://github.com/khadas/aml_npu_sdk.git
 ```
 
 ## SDK目录结构说明

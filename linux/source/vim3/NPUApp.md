@@ -16,12 +16,12 @@ $ sudo apt install libopencv-dev python3-opencv
 
 ## Source Code
 
-The source code repository is stored in gitlab, and the repository address is:[https://gitlab.com/khadas/aml_npu_app](https://gitlab.com/khadas/aml_npu_app)
+The source code repository is stored in github, and the repository address is:[https://github.com/khadas/aml_npu_app](https://github.com/khadas/aml_npu_app)
 
 
 ```shell
 $ cd {workspace}
-$ git clone https://gitlab.com/khadas/aml_npu_app
+$ git clone https://github.com/khadas/aml_npu_app
 ```
 
 ## Source Description
@@ -65,7 +65,7 @@ Here is `detect_yolo_v3` as an example to illustrate the structure of each direc
 ```shell
 $ cd {workspace}/aml_npu_app/detect_library/model_code/detect_yolo_v3
 $ ls
-build_vx.sh  include  Makefile  makefile.linux  nn_data  vnn_yolov3.c  yolo_v3.c  yolov3_process.c
+build_vx.sh  include  Makefile  makefile.linux  vnn_yolov3.c  yolo_v3.c  yolov3_process.c
 ```
 
 Main content description:
@@ -75,7 +75,6 @@ Main content description:
 2. include            #The corresponding header files and all definitions will be placed in this directory
 3. Makefile:          #Makefile file
 4. makefile.linux     #Make environment configuration file
-5. nn_data            #SDK converted nb file of the corresponding model
 6. vnn_yolov3.c       #SDK The converted model processing file is mainly used to interface with the nb file
 7. yolo_v3.c          #Specify the called nb file, and define all the interfaces of the model call
 8. yolov3_process.c   #Mainly defines the pre-processing and post-processing of the model
