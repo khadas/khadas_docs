@@ -10,12 +10,12 @@ After tengine-lite v.14 (ie NPU6.4.4.3), the demo only supports local compilatio
 
 ## Get Source Code
 
-The source code repository is located on gitlab of khadas
+The source code repository is located on github of khadas
 
 ```shell
 $ mkdir workspace
 $ cd ${workspace}
-$ git clone https://gitlab.com/khadas/tengine_khadas_app.git
+$ git clone https://github.com/khadas/tengine_khadas_app.git
 $ cd tengine_khadas_app
 $ ls
 yolov3-camera  yolov3-picture

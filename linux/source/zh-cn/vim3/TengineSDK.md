@@ -7,11 +7,11 @@ Tengine 由 OPEN AI LAB 主导开发，该项目实现了深度学习神经网�
 
 ## 获取SDK
 
-tengine SDK 源码仓库在khadas的gitlab上
+tengine SDK 源码仓库在khadas的github上
 
 ```shell
 $ mkdir workspace && cd workspace
-$ git clone https://gitlab.com/khadas/tengine_khadas_sdk.git
+$ git clone https://github.com/khadas/tengine_khadas_sdk.git
 $ cd tengine_khadas_sdk && ls
 docs  tengine_tools
 ```
