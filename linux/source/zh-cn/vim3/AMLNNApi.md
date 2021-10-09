@@ -22,12 +22,12 @@ $ sudo apt install libopencv-dev python3-opencv
 
 ### 获取demo源码
 
-`aml_npu_nnsdk_app`仓库的源码开放在khadas官方的gitlab上
+`aml_npu_nnsdk_app`仓库的源码开放在khadas官方的github上
 
 ```shell
 $ mkdir workspace
 $ cd ${workspace}
-$ git clone https://gitlab.com/khadas/aml_npu_nnsdk_app
+$ git clone https://github.com/khadas/aml_npu_nnsdk_app
 ```
 
 ### 源码结构介绍
