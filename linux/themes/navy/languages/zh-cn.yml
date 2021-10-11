@@ -37,6 +37,7 @@ sidebar:
     device_tree_overlay: Device Tree Overlay
     auto_login: 自动登陆
     write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    chinese_support: 中文支持
     network: 网络
     wifi: Wi-Fi
     bt: 蓝牙
@@ -110,6 +111,7 @@ sidebar:
     device_tree_overlay: Device Tree Overlay
     auto_login: 自动登陆
     write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    chinese_support: 中文支持
     network: 网络
     wifi: Wi-Fi
     bt: 蓝牙
@@ -183,6 +185,7 @@ sidebar:
     device_tree_overlay: Device Tree Overlay
     auto_login: 自动登陆
     write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    chinese_support: 中文支持
     network: 网络
     wifi: Wi-Fi
     bt: 蓝牙
@@ -276,6 +279,7 @@ sidebar:
     auto_login: 自动登陆
     write_sd_image_to_emmc: 把SD卡固件写入到eMMC
     device_tree_overlay: Device Tree Overlay
+    chinese_support: 中文支持
     network: 网络
     wifi: Wi-Fi
     bt: 蓝牙
