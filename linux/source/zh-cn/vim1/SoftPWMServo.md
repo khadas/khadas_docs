@@ -125,12 +125,3 @@ GPIO.delay(3000)
 
 ```
 
-### 演示效果
-
-1. 舵机
-
-<img src="/linux/images/vim3/servo180.gif" width="50%" >
-
-2. 模拟舵机
-
-<img src="/linux/images/vim3/servo360.gif" width="50%" >

@@ -125,12 +125,3 @@ GPIO.delay(3000)
 
 ```
 
-### Demonstration effect
-
-1. Servo
-
-<img src="/linux/images/vim3/servo180.gif" width="50%" >
-
-2. Simulated servo
-
-<img src="/linux/images/vim3/servo360.gif" width="50%" >
