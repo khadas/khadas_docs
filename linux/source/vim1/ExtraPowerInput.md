@@ -52,7 +52,8 @@ The voltage range is 0~5V.
 
 <img src="/linux/images/vim1/VIM1_v14_EXT.png" width="50%" height="50%" >
 
-The VIN port is a 4-Pin 1.2mm port.
+The VIN port on board is [Molex 78171](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781710004_PCB_HEADERS.xml&channel=Products&Lang=en-US).
+And the connector is [Molex 78172](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781720004_CRIMP_HOUSINGS.xml).
 
 The one marked with a triangle is Pin 1. Pin 1 and Pin 2 are positive, Pin3 and Pin 4 are negative
 
