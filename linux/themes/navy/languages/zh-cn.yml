@@ -3,6 +3,7 @@ menu:
   vim1: VIM1
   vim2: VIM2
   vim3: VIM3
+  vim4: VIM4
   edge: Edge
   tone1: Tone1
   hardware: 硬件资料
@@ -247,6 +248,87 @@ sidebar:
     ksnn_usage: KSNN使用说明
     ksnn_convert: KSNN转换工具说明
     ksnn_api: KSNN API
+    development: 开发
+    uboot: U-Boot
+    build_uboot: 编译U-Boot
+    upgrade_uboot: 更新U-Boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    setup_tftp_server: TFTP服务器搭建
+    kbi_guidance: KBI说明
+    linux: Linux
+    build_linux_kernel: 编译Linux内核
+    upgrade_linux_kernel: 更新Linux内核
+    fenix: 编译Ubuntu/Debian固件
+    setup_serial_tool: 设置串口调试工具
+    create_burn_card: 创建烧录卡
+    create_bootable_sd_card: 创建启动卡
+    erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
+
+  vim4:
+    quick_start: 快速上手
+    quick_setup: 快速上手
+    choose_an_os: 选择操作系统
+    install_os_into_emmc: 安装操作系统到eMMC
+    install_os_into_sd_usb: 安装操作系统到SD/USB存储
+    boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动系统
+    vim4_hardware: VIM4硬件描述
+    configuration: 配置
+    basic: 基本
+    upgrade_os: 升级系统
+    system_config_file: 配置文件
+    device_tree_overlay: Device Tree Overlay
+    auto_login: 自动登陆
+    write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    chinese_support: 中文支持
+    network: 网络
+    wifi: Wi-Fi
+    bt: 蓝牙
+    custom_mac_address: 自定义MAC地址
+    howto_use_wol: 局域网唤醒
+    display: 显示
+    hdmi_resolution: HDMI分辨率
+    rotate_framebuffer: 旋转Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: 修改启动Logo
+    framebuffer_console_font: Framebuffer Console字体
+    accessories: 配件
+    fan: 风扇
+    camera: MIPI摄像头
+    ts050: TS050触摸屏
+    lte_module_usage: 4G模块
+    m2x_eth: M2X以太网口
+    hardware: 硬件
+    pcie_usb_port: PCIe/USB3.0切换
+    custom_ir_code: 自定义IR Code
+    extra_power_input: 外部供电
+    max_cpu_freq: CPU超频设置
+    usb_gadget: USB Gadget使用说明
+    applications: 应用
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    gpio_irq: IRQ
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    soft_pwm: 软件模拟PWM
+    gsensor_usage: Gsensor使用说明
+    play_video: 播放视频
+    hardware_decoding: 硬件解码
+    hardware_encoding: 硬件编码
+    docker: Docker
+    watchdog: 看门狗
+    wifi_apsta_mode: Wi-Fi STA/AP模式
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32位运行库
     development: 开发
     uboot: U-Boot
     build_uboot: 编译U-Boot

@@ -2,6 +2,7 @@ vim:
   vim1: /vim1/
   vim2: /vim2/
   vim3: /vim3/
+  vim4: /vim4/
 edge: /edge/
 tone1: /tone1/
 hardware: /hardware/
