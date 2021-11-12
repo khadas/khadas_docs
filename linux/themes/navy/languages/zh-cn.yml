@@ -213,6 +213,7 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
+    spi: SPI
     gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
