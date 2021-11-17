@@ -12,7 +12,7 @@ The default SPI is disabled. If you need to use SPI, you can enable it through t
 Modify the overlays part, remove pwm_f and uart3, and open SPI.
 
 ```sh
-overlays=uart3 pwm_f i2c3 os08a10 --> overlays=i2c3 os08a10 spi
+overlays=uart3 pwm_f i2c3 os08a10 --> overlays=i2c3 os08a10 spi1
 ```
 
 For Overlays documentation, please refer to --> [How to use Device Tree Overlay](./DeviceTreeOverlay.html)

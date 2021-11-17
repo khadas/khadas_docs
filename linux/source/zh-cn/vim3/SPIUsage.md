@@ -12,7 +12,7 @@ title: SPI
 修改overlays部分，移除pwm_f和uart3， 打开SPI。
 
 ```sh
-overlays=uart3 pwm_f i2c3 os08a10 --> overlays=i2c3 os08a10 spi
+overlays=uart3 pwm_f i2c3 os08a10 --> overlays=i2c3 os08a10 spi1
 ```
 
 Overlays文档请参考 --> [如何使用Device Tree Overlay](./DeviceTreeOverlay.html)
