@@ -39,7 +39,7 @@ SPI configures a loopback test device by default.
 
 1. Get test code
 
-<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ wget https://github.com/yan-wyb/source/blob/master/c%26c%2B%2B/embedded/app/spi/spi_test/spidev_test.c</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ wget https://raw.githubusercontent.com/yan-wyb/source/master/c%26c%2B%2B/embedded/app/spi/spi_test/spidev_test.c</pre>
 
 2. Compile test code
 
