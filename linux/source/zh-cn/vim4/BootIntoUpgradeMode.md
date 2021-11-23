@@ -6,7 +6,7 @@ title: 进入升级模式
 * 按键模式
 * 串口模式
 * TST模式（推荐使用）
-* MRegister模式
+* SD启动卡
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -19,7 +19,7 @@ title: 进入升级模式
     <a class="nav-link" id="tst-tab" data-toggle="tab" href="#tst" role="tab" aria-controls="tst" aria-selected="false">TST模式</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="mregister-tab" data-toggle="tab" href="#mregister" role="tab" aria-controls="mregister" aria-selected="false">MRegister模式</a>
+    <a class="nav-link" id="sdbooting-tab" data-toggle="tab" href="#sdbooting" role="tab" aria-controls="sdbooting" aria-selected="false">SD启动卡</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -35,7 +35,7 @@ title: 进入升级模式
 
 1. 参考[文档](SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
-3. 系统启动时按任意按键进入串口命令行模式。
+3. 系统启动时按空格键进入串口命令行模式。
 4. 执行`run update`命令进入升级模式，进入升级模式后系统led灯会点亮。
 
 </div>
@@ -46,11 +46,13 @@ title: 进入升级模式
 3. 你会看到系统电源指示灯(蓝色)闪烁,3s后电源指示灯(蓝色)会熄灭，表明板子已经进入升级模式。
 
 </div>
-<div class="tab-pane fade" id="mregister" role="tabpanel" aria-labelledby="mregister-tab">
+<div class="tab-pane fade" id="sdbooting" role="tabpanel" aria-labelledby="sdbooting-tab">
 
-1. 给VIM4上电
-2. 使用镊子短接`M`处的两个焊盘触点不松开
-3. 短按复位按键进入升级模式
+1. [制作SD启动卡]()。
+2. 参考[文档](SetupSerialTool.html)设置串口。
+3. 给VIM4上电。
+4. 系统启动时按空格键进入串口命令行模式。
+5. 执行`run update`命令进入升级模式。
 
 ![image](/linux/images/vim4/VIM4_M_Register.jpg)
 
