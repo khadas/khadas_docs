@@ -275,6 +275,7 @@ sidebar:
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
     boot_from_ext_media: Boot From External Media
+    boot_seqeqe: OS Boot Priority
     vim4_hardware: VIM4 Hardware
     configuration: Configuration
     basic: Basic

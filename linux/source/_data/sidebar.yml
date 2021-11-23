@@ -239,6 +239,7 @@ vim4:
     install_os_into_sd_usb: InstallOsIntoSdusb.html
     boot_into_upgrade_mode: BootIntoUpgradeMode.html
     boot_from_ext_media: BootFromExtMedia.html
+    boot_seqeqe: BootSequeue.html
     vim4_hardware: Hardware.html
   configuration:
     basic:

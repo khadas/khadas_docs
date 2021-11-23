@@ -274,6 +274,7 @@ sidebar:
     install_os_into_sd_usb: 安装操作系统到SD/USB存储
     boot_into_upgrade_mode: 进入升级模式
     boot_from_ext_media: 从外部介质启动系统
+    boot_seqeqe: 系统启动优先级
     vim4_hardware: VIM4硬件描述
     configuration: 配置
     basic: 基本
