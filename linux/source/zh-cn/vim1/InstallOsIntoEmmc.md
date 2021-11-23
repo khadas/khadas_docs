@@ -20,15 +20,15 @@ title: 通过USB线安装系统到eMMC
 <div class="tab-pane fade show active" id="win" role="tabpanel" aria-labelledby="win-tab">
 
 ## 准备
-* 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip)并解压。
-* 运行`setup_v2.x.x.exe`程序进行安装。
+* 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_vxxxzip)并解压。
+* 运行`setup_vxx.x.x.exe`程序进行安装。
 ![image](/linux/images/vim1/usb_upgrade_tool_setup_v217_zh.png)
 
 ## 安装系统到eMMC
 
 确保已经正确安装好升级工具，然后按照下面步骤进行升级：
 
-1、打开升级工具`USB_Burning_Tool_v2.x.x.exe`，点击`File-->Import image`选择要升级的固件。
+1、打开升级工具`USB_Burning_Tool_vxx.x.x.exe`，点击`File-->Import image`选择要升级的固件。
 2、用USB-C线连接板子和PC电脑（默认板子上电会自动开机）。
 3、进入固件[升级模式](BootIntoUpgradeMode.html)。
 4、如果上面操作已正确执行，电脑端会发现板子升级设备，点击升级工具上的`开始`按钮开始固件升级,升级进度条100%时完成升级。
@@ -124,27 +124,23 @@ Bus 002 Devices 036: ID 1b8e:c003 Amlogic, Inc.
 
 ## 安装系统到eMMC
 
-有2个命令可以用于烧录固件：`burn-tool`和`aml-burn-tool`。
-
-以烧录VIM3为例：
-
-* 通过烧录命令`burn-tool`：
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="boards-tab" data-toggle="tab" href="#vim1vim2" role="tab" aria-controls="vim1vim2" aria-selected="true">VIM1/VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1vim2" role="tabpanel" aria-labelledby="boards-tab">
 
 ```bash
-$ burn-tool -v aml -b VIM3 -i /path/to/image
+$ aml-burn-tool -i /path/to/image
 ```
-
-* Amlogic平台专用烧录命令`aml-burn-tool`：
-
-```bash
-$ aml-burn-tool -b VIM3 -i /path/to/image
-```
-
-{% note info 注意 %}
-
-烧录VIM3一定要指定`-b VIM3`参数，否则会失败。对于VIM1或VIM2不用指定。
-
-{% endnote %}
 
 如果烧录成功你会看到如下信息：
 
@@ -166,6 +162,45 @@ Do you want to reset the board? y/n [n]? y
 Resetting board [OK]
 
 ```
+
+</div>
+<div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
+```bash
+$ aml-burn-tool -b VIM3 -i /path/to/image
+```
+
+如果烧录成功你会看到如下信息：
+
+```bash
+Rebooting the board ........[OK]
+Unpacking image [OK]
+Initializing ddr ........[OK]
+Running u-boot ........[OK]
+Create partitions [OK]
+Writing device tree [OK]
+Writing bootloader [OK]
+Wiping  data partition [OK]
+Wiping  cache partition [OK]
+Writing boot partition [OK]
+Writing data partition [OK]
+Writing logo partition [OK]
+Writing system partition [OK]
+Do you want to reset the board? y/n [n]? y
+Resetting board [OK]
+
+```
+
+</div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+```bash
+$ aml-burn-tool -b VIM4 -i /path/to/image
+```
+
+</div>
+</div>
+
 
 更多请参考[文档](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs)。
 

@@ -22,8 +22,8 @@ All the VIM series boards have onboard eMMC storage, so you can install the OS v
 
 ## Preparation
 
-* Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v2.2.0.zip) and extract it.
-* Run `setup_v2.x.x.exe` to install the tool for upgrading your board.
+* Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v3xx.zip) and extract it.
+* Run `setup_vxx.x.x.exe` to install the tool for upgrading your board.
 ![Image of USB_Upgrade_tool_setup_v217](/linux/images/vim1/usb_upgrade_tool_setup_v217.png)
 
 ## Installation
@@ -131,27 +131,24 @@ The message above means that your board is connected and recogized by Ubuntu.
 
 ## Install the System on Ubuntu
 
-There are two commands that be used to install the system: `burn-tool` and `aml-burn-tool`.
 
-For example, install the system for `VIM3`:
-
-* General command `burn-tool`:
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="boards-tab" data-toggle="tab" href="#vim1vim2" role="tab" aria-controls="vim1vim2" aria-selected="true">VIM1/VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1vim2" role="tabpanel" aria-labelledby="boards-tab">
 
 ```bash
-$ burn-tool -v aml -b VIM3 -i /path/to/image
+$ aml-burn-tool -i /path/to/image
 ```
-
-* Amlogic command `aml-burn-tool`:
-
-```bash
-$ aml-burn-tool -b VIM3 -i /path/to/image
-```
-
-{% note warn Note %}
-
-For `VIM3/VIM3L`, you must specify the board with `-b VIM3` or it will fail. For `VIM1` or `VIM2` you can ignore this.
-
-{% endnote %}
 
 You will see these teminal logs if successful.
 
@@ -172,6 +169,45 @@ Writing system partition [OK]
 Do you want to reset the board? y/n [n]? y
 Resetting board [OK]
 ```
+
+</div>
+<div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
+```bash
+$ aml-burn-tool -b VIM3 -i /path/to/image
+```
+
+You will see these teminal logs if successful.
+
+```bash
+Rebooting the board ........[OK]
+Unpacking image [OK]
+Initializing ddr ........[OK]
+Running u-boot ........[OK]
+Create partitions [OK]
+Writing device tree [OK]
+Writing bootloader [OK]
+Wiping  data partition [OK]
+Wiping  cache partition [OK]
+Writing boot partition [OK]
+Writing data partition [OK]
+Writing logo partition [OK]
+Writing system partition [OK]
+Do you want to reset the board? y/n [n]? y
+Resetting board [OK]
+```
+
+</div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+```bash
+$ aml-burn-tool -b VIM4 -i /path/to/image
+```
+
+</div>
+</div>
+
+
 For more information please refer to [docs](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs).
 
 ## Uninstall Burning Tool
