@@ -12,7 +12,6 @@ Khadas VIM1/VIM2 is designed with three power supply ports:
 
 1. USB-C Port: This is used for both Power Supply and USB Data Transmission.
 2. 4-Pin VIN port which is situated near the USB-C port.
-3. USB-Port beside the USB-C port, is the final power source (Optional USB Host).
 
 ## Using USB-C as Extra Power Input
 USB-C is the normal power supply interface. It can also transport data at the same time; burning firmware, ADB debug...
