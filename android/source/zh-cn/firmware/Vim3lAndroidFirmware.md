@@ -1,6 +1,7 @@
 title: Khadas VIM3L Android固件
 ---
 ### Pie
+* [VIM3L_Pie_V210906](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V210906.7z)
 * [VIM3L_Pie_V210527](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V210527.7z)
 * [VIM3L_Pie_V210128](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V210128.7z)
 * [VIM3L_Pie_V200918](https://dl.khadas.com/Firmware/VIM3L/Android/VIM3L_Pie_V201113.7z)

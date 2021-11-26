@@ -1,7 +1,7 @@
 title: Khadas VIM1 Android固件
 ---
 ### Pie
-
+* [VIM1_Pie_V211022](https://dl.khadas.com/products/vim1/firmware/Android/Pie/VIM1_Pie_V211022.7z)
 * [VIM1_Pie_V200317](https://dl.khadas.com/Firmware/VIM1/Android/Pie/VIM1_Pie_V200317.7z)
 * [VIM1_Pie_V190823](https://dl.khadas.com/Firmware/VIM1/Android/Pie/VIM1_Pie_V190823.7z)
 

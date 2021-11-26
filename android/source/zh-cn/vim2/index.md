@@ -50,7 +50,7 @@ title: VIM2 文档
 ||设备名称|描述说明|
 |---:|:---|:---|
 |1|Pogo焊盘|外部5V电压输入,可有[VTV板子](https://www.khadas.com/product-page/vtv-board)提供|
-|2|[SD卡插座](/android/zh-cn/vim2/BootFromExtMedia.html)|用于从外部介质启动SD卡系统或者作为外部存储器|
+|2|SD卡插座|作为外部存储器|
 |3|500mA保险丝|为USB口提供500mA的电流保护|
 |4|WOL选择开关|打开以后可以用WOL的方式唤醒板子|
 |5|[MCU](/android/zh-cn/vim2/KbiGuidance.html)|可编程EEPROM阵列的STM8S003微控制器|

@@ -179,6 +179,7 @@ vim3:
     gpio:
       gpio_usage: Gpio.html
       i2c: I2c.html
+      spi: SPIUsage.html
       gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html

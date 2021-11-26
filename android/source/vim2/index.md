@@ -50,7 +50,7 @@ title: VIM2 Beginners Guide
 ||Component|Purpose|
 |---:|:---|:---|
 |1|Pogo Pads|External 5V power input, can be provided by [vTV Board](https://www.khadas.com/product-page/vtv-board) (DVB Tuner)|
-|2|[Micro-SD Card Slot](/android/vim2/BootFromExtMedia.html)|Boot alternative OSes via a micro-SD card, or just for extra storage|
+|2|Micro-SD Card Slot|for extra storage|
 |3|500mA Fuse|Fuse for the 500mA USB port|
 |4|WOL Switch|Power switch activated via Wake-On-LAN|
 |5|[MCU](/android/vim2/KbiGuidance.html)|STM8S003 micro-controller with programmable EEPROM|

@@ -178,7 +178,7 @@ title: Edge 硬件描述
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
 </div>
-<div class="tab-pane fade" id="gpio-vim" role="tabpanel" aria-labelledby="gpio-tab">
+<div class="tab-pane fade" id="gpio-edgev" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
@@ -293,7 +293,7 @@ Linux_TX|19|39|MCU_PA1
 上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系统都不同）编程的更多信息可通过[forum.khadas.com](https://forum.khadas.com)咨询。
 
 </div>
-<div class="tab-pane fade" id="gpio-vim" role="tabpanel" aria-labelledby="gpio-tab">
+<div class="tab-pane fade" id="gpio-captain" role="tabpanel" aria-labelledby="gpio-tab">
 
 SIGNAL| PIN|PIN|SIGNAL
 ---|:---|:---|:---
