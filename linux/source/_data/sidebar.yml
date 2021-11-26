@@ -188,6 +188,7 @@ vim3:
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWMServo.html
+      spdifin: spdifin.html
     gsensor_usage: GsensorUsage.html
     play_video: PlayVideo.html
     hardware_decoding: HardwareDecoding.html
