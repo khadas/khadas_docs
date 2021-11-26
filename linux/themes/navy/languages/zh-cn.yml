@@ -222,6 +222,7 @@ sidebar:
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
+    spdifin: SPDIF IN
     gsensor_usage: Gsensor使用说明
     play_video: 播放视频
     hardware_decoding: 硬件解码
