@@ -30,6 +30,13 @@ title: 设置串口调试工具
 
 ## 设置串口通讯工具
 
+{% note warn 提示 %}
+
+`VIM1/VIM2/VIM3/VIM3L`波特率为：**115200**。
+`VIM4`波特率为：**921600**。
+
+{% endnote %}
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="ubuntu-tab" data-toggle="tab" href="#ubuntu" role="tab" aria-controls="ubuntu" aria-selected="true">Ubuntu</a>

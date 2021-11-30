@@ -33,6 +33,13 @@ Another photo for more details (`VCC` Pin is not necessary):
 
 ## Setup Serial Communication Program
 
+{% note warn Note %}
+
+The baudrate for `VIM1/VIM2/VIM3/VIM3L` is **115200**.
+The baudrate for `VIM4` is **921600**.
+
+{% endnote %}
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="ubuntu-tab" data-toggle="tab" href="#ubuntu" role="tab" aria-controls="ubuntu" aria-selected="true">Ubuntu</a>
