@@ -13,16 +13,39 @@ Why do we need a `Bootable SD-Card`?
 * In some extreme cases, when your target-device is unable to boot from the eMMC (e.g. damaged bootloader), you can use a `Bootable SD-Card` to do your system/file recovery.
 
 
-{% note info The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example. %}
+{% note info The operation of VIM1, VIM2, VIM3, VIM3L and VIM4 is almost the same, so this document will take VIM1 as an example. %}
 
 {% endnote %}
 
 ## Getting Started
-Download U-Boot ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) or build U-Boot to get the bootloader blob for your SD-Card.
+Download U-Boot ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)) or build U-Boot to get the bootloader blob for your SD-Card.
 No matter which method you choose, you need to keep in mind that there are different bootloader blobs for different boot disks/media:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim123-tab" data-toggle="tab" href="#vim123" role="tab" aria-controls="vim123" aria-selected="true">VIM1/VIM2/VIM3/VIM3L</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim123" role="tabpanel" aria-labelledby="vim123-tab">
+
 
 * U-Boot blob `u-boot.bin.sd.bin` is built for SD-Cards
 * U-Boot blob `u-boot.bin` is built for eMMC Storage
+
+</div>
+<div class="tab-pane fade show" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+* U-Boot blob `u-boot.bin.sd.bin.signed` is built for SD-Cards
+* U-Boot blob `u-boot.bin.signed` is built for eMMC Storage
+* U-Boot blob `u-boot.bin.spi.bin.signed` is built for SPI Flash
+
+</div>
+</div>
+
 
 Insert the SD-Card into your PC, and make sure the disk is unmounted:
 
