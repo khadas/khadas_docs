@@ -86,11 +86,11 @@ model_code  sample_demo_fb  sample_demo_x11  source_code  yolo_demo_gst_uvc_fb  
 Except `model_code` link to the leastest DDK, every other directory will compile a demo of the upper application
 
 * **source_code** - Compile libnn_detect.so. as a bridge to connect different libraries and different application demos
-* **sample_demo_fb** - Compile detect_demo_fb_cv3/detect_demo_fb_cv4 of the aml_npu_demo_binaries repository for image recognition under framebuffer
-* **sample_demo_x11** - Compile detect_demo_x11_cv3/detect_demo_x11_cv4 of the aml_npu_demo_binaries repository for image recognition under X11
-* **yolo_demo_gst_uvc_fb** - Compile the detect_demo_uvc_fb_cv3/detect_demo_uvc_fb_cv4 of the aml_npu_demo_binaries repository for dynamic recognition of the USB camera under the framebuffer
-* **yolo_demo_mipi_fb** - Compile detect_demo_mipi_fb_cv3/detect_demo_mipi_fb_cv4 of the aml_npu_demo_binaries repository for dynamic recognition of mipi camera under framebuffer
-* **yolo_demo_x11** - Compile detect_demo_x11_cv3/detect_demo_x11_cv4 of the aml_npu_demo_binaries repository for dynamic camera recognition under X11
+* **sample_demo_fb** - Compile detect_demo_fb of the aml_npu_demo_binaries repository for image recognition under framebuffer
+* **sample_demo_x11** - Compile detect_demo_x11 of the aml_npu_demo_binaries repository for image recognition under X11
+* **yolo_demo_gst_uvc_fb** - Compile the detect_demo_uvc_fb of the aml_npu_demo_binaries repository for dynamic recognition of the USB camera under the framebuffer
+* **yolo_demo_mipi_fb** - Compile detect_demo_mipi_fb of the aml_npu_demo_binaries repository for dynamic recognition of mipi camera under framebuffer
+* **yolo_demo_x11** - Compile detect_demo_x11 of the aml_npu_demo_binaries repository for dynamic camera recognition under X11
 
 Here is an example of `sample_demo_x11`
 
@@ -103,9 +103,9 @@ $ ls
 Here is an explanation of the main files,
 
 
-* **build_vx.sh** - Compile script, the compilation environment specifies `opencv3` and `opencv4`
-* **makefile.linux** - Respectively, the opencv3/opencv4 compilation scripts need to specify the makefile.linux file when compiling
-* **main.cpp** - Is the main source code of the application demo in the opencv3/opencv4 environment.
+* **build_vx.sh** - Compile script
+* **makefile.linux** - Respectively, the compilation scripts need to specify the makefile.linux file when compiling
+* **main.cpp** - Is the main source code of the application demo.
 * **xxx.h** - The definition related header files that the application layer needs to use
 
 ## Compile
@@ -166,7 +166,7 @@ detect_log.o  detect.o  libnn_detect.so
 
 #### Compile Application Demo
 
-Here is sample_demo_x11 as an example to compile the opencv3 version
+Here is sample_demo_x11 as an example
 
 ```shell
 ./build_vx.sh
@@ -204,12 +204,12 @@ make: Nothing to be done for 'all'.
 ```
 
 
-In the `bin_r_cv3` directory, you will see the generated `detect_demo` file
+In the `bin_r_cv4` directory, you will see the generated `detect_demo` file
 
 ```shell
-$ cd {workspace}/aml_npu_app/detect_library/sample_demo_x11/bin_r_cv3
+$ cd {workspace}/aml_npu_app/detect_library/sample_demo_x11/bin_r_cv4
 $ ls
-detect_demo  main_cv3.o
+detect_demo_x11  main.o
 ```
 
 To compile the opencv4 version, just use the `build_vx_cv4.sh` script to compile.

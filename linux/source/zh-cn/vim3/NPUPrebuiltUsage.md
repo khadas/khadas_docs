@@ -175,7 +175,7 @@ $ ./detect_demo_x11 -m 2 -p 1080p.bmp
 
 运行结果如下，
 
-![detect_demo_picture_x11_cv3](/linux/images/vim3/detect_demo_picture_x11_cv3.png)
+![detect_demo_picture_x11_cv4](/linux/images/vim3/detect_demo_picture_x11_cv4.png)
 
 #### 摄像头动态识别
 
@@ -199,6 +199,6 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 
 打开摄像头以后。会将识别的结果显示在屏幕上
 
-![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
+![detect_demo_x11_cv4](/linux/images/vim3/detect_demo_x11_cv4.png)
 
 

@@ -41,17 +41,13 @@ docs              #转换相关的文档合集
 ```shell
 $ cd {workspace}/aml_npu_sdk/docs/zh-cn
 $ ls
-'Android&Linux编译集成指导(0.2).pdf'  'DDK_6.4.4.3_SDK_V1.8.0 API 描述.pdf'  'NN工具FAQ (0.4).pdf'  '模型转换运行用户指南(0.8).pdf'
+'Amlogic NN Convolution Acceleration Tips.pdf'  'Android NN JNI Development Guide.pdf'          'Neural Network Layer and Operation Support Guide .pdf'
+'Amlogic NN Integration Guide.pdf'              'Model_Transcoding and Running User Guide.pdf'  'NN Tool FAQ.pdf'
 ```
 
 文档记录了从转换到集成的一系列过程，以及一些常见的问题
 
 
-```
-1. 'Android&Linux编译集成指导(0.2).pdf'                                              #Android&&linux编译集成指导,主要说明如何使用转换后的code
-2. 'NN工具FAQ (0.1).pdf'                                                             #转换工具FAQ文档,记录了常见的转换的问题
-3. '模型转换运行用户指南(0.8).pdf'                                                   #模型转换文档,详细的介绍了如何转换
-```
 
 ## 转换工具说明
 
@@ -128,5 +124,5 @@ BUILD   makefile.linux   mobilenettf.vcxproj  vnn_global.h       vnn_mobilenettf
 main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_process.c  vnn_pre_process.c
 ```
 
-转换参数的设置，请参考`Docs`里面的'模型转换运行用户指南(0.8).pdf'。
+转换参数的设置，请参考`Docs`里面的'Model_Transcoding and Running User Guide.pdf'。
 
