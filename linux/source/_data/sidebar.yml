@@ -208,7 +208,6 @@ vim3:
     npu_performance: NPUPerformanceUsage.html
     tengine_sdk: TengineSDK.html
     tengine_demo: TengineApp.html
-    amlnn_api_demo: AMLNNApi.html
     ksnn:
       ksnn_usage: KSNNUsage.html
       ksnn_convert: KSNNConvert.html

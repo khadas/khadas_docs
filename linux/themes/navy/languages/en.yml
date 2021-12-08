@@ -242,7 +242,6 @@ sidebar:
     npu_performance: NPU Performance
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
-    amlnn_api_demo: Amlogic NN API Usage
     development: Development
     ksnn: KSNN(Python API)
     ksnn_usage: KSNN Usage
