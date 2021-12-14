@@ -67,6 +67,7 @@ sidebar:
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
     play_video: Play Video
+    rstp: RSTP Web Camera
     hardware_decoding: Hardware Decoding
     hardware_encoding: Hardware Encoding
     docker: Docker
@@ -141,6 +142,7 @@ sidebar:
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
     play_video: Play Video
+    rstp: RSTP Web Camera
     hardware_decoding: Hardware Decoding
     hardware_encoding: Hardware Encoding
     docker: Docker
@@ -225,6 +227,7 @@ sidebar:
     spdifin: SPDIF IN
     gsensor_usage: Gsensor Usage
     play_video: Play Video
+    rstp: RSTP Web Camera
     hardware_decoding: Hardware Decoding
     hardware_encoding: Hardware Encoding
     docker: Docker
@@ -311,6 +314,7 @@ sidebar:
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
     play_video: Play Video
+    rstp: RSTP Web Camera
     hardware_decoding: Hardware Decoding
     hardware_encoding: Hardware Encoding
     docker: Docker
