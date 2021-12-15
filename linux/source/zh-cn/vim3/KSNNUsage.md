@@ -8,44 +8,34 @@ title: KSNN使用说明
 
 1. clone代码到本地
 
-```sh
-$ mkdir workspace && cd workspace
-$ git clone --recursive https://github.com/khadas/ksnn.git
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ git clone --recursive https://github.com/khadas/ksnn.git</pre>
 
 2. 安装依赖
 
-```sh
-$ pip3 install matplotlib
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ pip3 install matplotlib</pre>
 
 3. 安装KSNN库
 
-```sh
-$ cd workspace/ksnn/ksnn
-$ pip3 install ksnn-1.0-py3-none-any.whl
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/ksnn</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/ksnn</b></font>$ pip3 install ksnn-1.0-py3-none-any.whl</pre>
 
 ## 使用示例
 
 demo全部集中在examlpes目录下，
 
-```sh
-$ cd workspace/ksnn/examples && ls
-caffe  darknet  keras  onnx  pytorch  tensorflow  tflite
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/examples/ &amp;&amp; ls
+<font color="#3465A4"><b>caffe</b></font>  <font color="#3465A4"><b>darknet</b></font>  <font color="#3465A4"><b>keras</b></font>  <font color="#3465A4"><b>onnx</b></font>  <font color="#3465A4"><b>pytorch</b></font>  <font color="#3465A4"><b>tensorflow</b></font>  <font color="#3465A4"><b>tflite</b></font></pre>
 
 这里以Inception V3为例，其他demo是类似的。
 
-```sh
-$ cd tensorflow && ls
-box_priors.txt  data  inceptionv3.py  libs  mobilenet_ssd_picture.py  models  README.md
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples</b></font>$ cd tensorflow &amp;&amp; ls
+README.md  box_priors.txt  <font color="#06989A"><b>data</b></font>  inceptionv3.py  <font color="#3465A4"><b>libs</b></font>  mobilenet_ssd_picture.py  <font color="#3465A4"><b>models</b></font></pre>
 
 运行的命令和转换参数都在对应目录下的`README`文件里。
 
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ cat README.md</pre>
+
 ```sh
-$ cat README.md 
 # run
 
 $ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 0
@@ -81,8 +71,9 @@ If you use VIM3L , please use `VIM3L` to replace `VIM3`
 
 运行Inception V3.
 
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 0</pre>
+
 ```sh
-$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 0
  |--- KSNN Version: v1.2 +---| 
 Start init neural network ...
 Done.
@@ -100,8 +91,9 @@ Done. inference :  0.042353153228759766
 
 `--level`参数可同于调整打印信息等级。下面的命令将打印等级设置为最高。
 
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 2</pre>
+
 ```sh
-$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 2
  |--- KSNN Version: v1.2 +---| 
 Start init neural network ...
 #productname=VIPNano-QI, pid=0x88
@@ -150,6 +142,18 @@ Done. inference :  0.1422710418701172
 ```
 
 可以看到相关的所有信息。
+
+## 摄像头Demo
+
+1. 目前支持摄像头的Demo有Yolo系列和OpenPose。以Yolov3为例，
+
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/examples/darknet/</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/darknet</b></font>$ python3 hand-cap.py --model ./models/VIM3/hand.nb --library ./libs/libnn_hand.so --device X</pre>
+
+2. 目前支持RTSP的demo只有yolo系列。以Yolov3为例，
+
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/examples/darknet/</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/darknet</b></font>$ python3 flask-yolov3.py --model ./models/VIM3/yolov3.nb --library ./libs/libnn_yolov3.so --device X</pre>
 
 ## 更多
 

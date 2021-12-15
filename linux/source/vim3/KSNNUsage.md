@@ -7,44 +7,34 @@ This document mainly introduces what KSNN is and how to run the provided example
 
 1. Clone code to local
 
-```sh
-$ mkdir workspace && cd workspace
-$ git clone --recursive https://github.com/khadas/ksnn.git
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ git clone --recursive https://github.com/khadas/ksnn.git</pre>
 
 2. Installation dependencies
 
-```sh
-$ pip3 install matplotlib
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ pip3 install matplotlib</pre>
 
 3. Install KSNN library
 
-```sh
-$ cd workspace/ksnn/ksnn
-$ pip3 install ksnn-1.0-py3-none-any.whl
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/ksnn</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/ksnn</b></font>$ pip3 install ksnn-1.0-py3-none-any.whl</pre>
 
 ## Example of use
 
 Demos are all concentrated in the examlpes directory,
 
-```sh
-$ cd workspace/ksnn/examples && ls
-caffe  darknet  keras  onnx  pytorch  tensorflow  tflite
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/examples/ &amp;&amp; ls
+<font color="#3465A4"><b>caffe</b></font>  <font color="#3465A4"><b>darknet</b></font>  <font color="#3465A4"><b>keras</b></font>  <font color="#3465A4"><b>onnx</b></font>  <font color="#3465A4"><b>pytorch</b></font>  <font color="#3465A4"><b>tensorflow</b></font>  <font color="#3465A4"><b>tflite</b></font></pre>
 
 Take Inception V3 as an example, other demos are similar.
 
-```sh
-$ cd tensorflow && ls
-box_priors.txt  data  inceptionv3.py  libs  mobilenet_ssd_picture.py  models  README.md
-```
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples</b></font>$ cd tensorflow &amp;&amp; ls
+README.md  box_priors.txt  <font color="#06989A"><b>data</b></font>  inceptionv3.py  <font color="#3465A4"><b>libs</b></font>  mobilenet_ssd_picture.py  <font color="#3465A4"><b>models</b></font></pre>
 
 The running commands and conversion parameters are in the `README` file in the corresponding directory.
 
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ cat README.md</pre>
+
 ```sh
-$ cat README.md 
 # run
 
 $ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 0
@@ -80,8 +70,9 @@ If you use VIM3L , please use `VIM3L` to replace `VIM3`
 
 Run Inception V3.
 
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 0</pre>
+
 ```sh
-$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 0
  |--- KSNN Version: v1.2 +---| 
 Start init neural network ...
 Done.
@@ -99,8 +90,9 @@ Done. inference :  0.042353153228759766
 
 The `--level` parameter can be used to adjust the level of printed information. The following command sets the printing level to the highest.
 
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 2</pre>
+
 ```sh
-$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 2
  |--- KSNN Version: v1.2 +---| 
 Start init neural network ...
 #productname=VIPNano-QI, pid=0x88
@@ -149,6 +141,18 @@ Done. inference :  0.1422710418701172
 ```
 
 You can see all relevant information
+
+## Camera Demo
+
+1. The Demos that currently support cameras include the Yolo series and OpenPose. Take Yolov3 as an example,
+
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/examples/darknet/</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/darknet</b></font>$ python3 hand-cap.py --model ./models/VIM3/hand.nb --library ./libs/libnn_hand.so --device X</pre>
+
+2. Currently, the only demo that supports RTSP is the yolo series. Take Yolov3 as an example,
+
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/examples/darknet/</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/darknet</b></font>$ python3 flask-yolov3.py --model ./models/VIM3/yolov3.nb --library ./libs/libnn_yolov3.so --device X</pre>
 
 ## More
 
