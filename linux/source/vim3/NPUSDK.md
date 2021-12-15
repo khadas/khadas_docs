@@ -41,19 +41,12 @@ entre Docs directory,
 ```shell
 $ cd {workspace}/aml_npu_sdk/docs/en
 $ ls
-'AMLNN Convolution Acceleration Tips.pdf'                  'DDK_6.4.4.3_SDK_V1.8.0 API Description.pdf'         'Neural Network Layer and Operation Support Guide (02)(ref.v1.17-20200623).pdf'
-'Android&Linux_Compilation and Integration Guide_0.2.pdf'  'Model_Transcoding and Running User Guide_V0.8.pdf'  'NN Tool FAQ (0.4).pdf'
+'Amlogic NN Convolution Acceleration Tips.pdf'  'Android NN JNI Development Guide Eng.pdf'          'Neural Network Layer and Operation Support Guide .pdf'
+'Amlogic NN Integration Guide Eng.pdf'          'Model_Transcoding and Running User Guide Eng.pdf'  'NN Tool FAQ Eng.pdf'
 ```
 
 The document records a series of processes from conversion to integration, as well as some common problems
 
-```
-1. 'Android&Linux_Compilation and Integration Guide_0.2.pdf'                         #Android&&linux compilation and integration guide, mainly explaining how to use the converted code
-2. 'NN Tool FAQ (0.4).pdf'                                                           #Conversion tool FAQ document, which records common conversion problems
-3. 'Model_Transcoding and Running User Guide_V0.8.pdf'                               #Model conversion document, a detailed description of how to convert
-4. 'AMLNN Convolution Acceleration Tips.pdf                                          #AMLNN convolution acceleration docs
-5. 'Neural Network Layer and Operation Support Guide (01)(ref.v1.13-20200323).pdf'   #Supported network layer and operator documentation
-```
 
 ## Conversion Tool
 
@@ -129,7 +122,7 @@ BUILD   makefile.linux   mobilenettf.vcxproj  vnn_global.h       vnn_mobilenettf
 main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_process.c  vnn_pre_process.c
 ```
 
-For the setting of conversion parameters, please refer to'Model Conversion Operation User Guide (0.8).pdf' in `Docs`
+For the setting of conversion parameters, please refer to 'Model_Transcoding and Running User Guide Eng.pdf' in `Docs`
 
 
 

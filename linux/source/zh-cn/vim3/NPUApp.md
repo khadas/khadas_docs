@@ -206,6 +206,6 @@ make: Nothing to be done for 'all'.
 生成的`detect_demo`文件就是我们需要的文件，
 
 ```shell
-$ ls bin_r_cv3/
-detect_demo  main.o
+$ ls bin_r_cv4/
+detect_demo_x11  main.o
 ```

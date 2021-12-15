@@ -148,8 +148,8 @@ $ ls
 1080p.bmp  detect_demo_x11  detect_demo_xfb  INSTALL  lib  nn_data  README.md  UNINSTALL
 ```
 
-1. detect_demo_fb  It is a demo that uses opencv3 recognition pictures running under framebuffer
-3. detect_demo_x11 It is a demo that uses opencv3 recognition pictures running under X11
+1. detect_demo_fb  It is a demo that uses opencv4 recognition pictures running under framebuffer
+3. detect_demo_x11 It is a demo that uses opencv4 recognition pictures running under X11
 
 
 ### Run
@@ -163,7 +163,7 @@ $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
 $ ./detect_demo_xx -m <type> -p <picture_path>
 ```
 
-Here is an example of using Opencv3 to call the yolov3 model to recognize pictures under x11.
+Here is an example of using Opencv4 to call the yolov3 model to recognize pictures under x11.
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo_picture
@@ -172,7 +172,7 @@ $ ./detect_demo_fb 2 1080p.bmp
 
 The results of the operation are as follows,
 
-![detect_demo_picture_x11_cv3](/linux/images/vim3/detect_demo_picture_x11_cv3.png)
+![detect_demo_picture_x11_cv4](/linux/images/vim3/detect_demo_picture_x11_cv4.png)
 
 #### Dynamic Camera Recognition
 
@@ -187,7 +187,7 @@ $ cd {workspace}/aml_npu_demo_binaries/detect_demo
 $ ./detect_xx_xx -d <video node> -m <type>
 ```
 
-Here is an example of using opencv3 to call yolov3 in the x11 environment.
+Here is an example of using opencv4 to call yolov3 in the x11 environment.
 
 ```shell
 $ cd {workspace}/aml_npu_demo_binaries/detect_demo
@@ -196,7 +196,7 @@ $ ./detect_demo_x11_usb -d /dev/video1 -m 2
 
 After turning on the camera, the recognition result will be displayed on the screen
 
-![detect_demo_x11_cv3](/linux/images/vim3/detect_demo_x11_cv3.png)
+![detect_demo_x11_cv4](/linux/images/vim3/detect_demo_x11_cv4.png)
 
 
 

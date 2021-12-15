@@ -68,6 +68,7 @@ sidebar:
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
     play_video: 播放视频
+    rstp: RSTP Web 摄像头
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
     docker: Docker
@@ -142,6 +143,7 @@ sidebar:
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
     play_video: 播放视频
+    rstp: RSTP Web 摄像头
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
     docker: Docker
@@ -225,6 +227,7 @@ sidebar:
     spdifin: SPDIF IN
     gsensor_usage: Gsensor使用说明
     play_video: 播放视频
+    rstp: RSTP Web 摄像头
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
     docker: Docker
@@ -242,7 +245,6 @@ sidebar:
     npu_performance: NPU Performance
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
-    amlnn_api_demo: Amlogic NN API使用说明
     ksnn: KSNN(Python API)
     ksnn_usage: KSNN使用说明
     ksnn_convert: KSNN转换工具说明
@@ -313,6 +315,7 @@ sidebar:
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
     play_video: 播放视频
+    rstp: RSTP Web 摄像头
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
     docker: Docker
