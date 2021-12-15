@@ -7,17 +7,12 @@ This document will introduce how to use the KSNN conversion tool.
 
 The tool is integrated in the NPU conversion tool warehouse of VIM3.
 
-```sh
-$ mkdir workspace && cd workspace
-$ git clone --recursive https://github.com/khadas/aml_npu_sdk.git
-```
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~</b></font>$ git clone --recursive https://github.com/khadas/aml_npu_sdk.git</pre>
 
 The KSNN conversion tool is under `acuity-toolkit/python`,
 
-```sh
-$ cd workspace/aml_npu_sdk/acuity-toolkit/python && ls
-convert  data  README.cn.md  README.md
-```
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~</b></font>$ cd aml_npu_sdk/acuity-toolkit/python &amp;&amp; ls
+<font color="#4E9A06"><b>convert</b></font>  <font color="#3465A4"><b>data</b></font>  <font color="#3465A4"><b>outputs</b></font></pre>
 
 ## Example for Convert
 
@@ -25,35 +20,30 @@ Choose tensorflow Inception V3 as a exmple.
 
 1. Get forzen model
 
-```sh
-$ cd workspace/aml_npu_sdk/acuity-toolkit/python
-$ wget https://github.com/yan-wyb/models-zoo/raw/master/tensorflow/inception/inception_v3_2016_08_28_frozen.pb
-```
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~</b></font>$ cd aml_npu_sdk/acuity-toolkit/python</pre>
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~/aml_npu_sdk/acuity-toolkit/python</b></font>$ wget https://github.com/yan-wyb/models-zoo/raw/master/tensonrflow/inception/inception_v3_2016_08_28_frozen.pb</pre>
 
 2. Convert
 
-```sh
-$ cd workspace/aml_npu_sdk/acuity-toolkit/python
-$ ./convert --model-name inception \
-			--platform tensorflow \
-			--model ./inception_v3_2016_08_28_frozen.pb \
-			--input-size-list '299,299,3' \
-			--inputs input \
-			--outputs InceptionV3/Predictions/Reshape_1 \
-			--mean-values '128,128,128,128' \
-			--quantized-dtype asymmetric_affine \
-			--kboard VIM3 --print-level 0
-```
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~</b></font>$ cd aml_npu_sdk/acuity-toolkit/python</pre>
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~/aml_npu_sdk/acuity-toolkit/python</b></font>$ ./convert --model-name inception \
+&gt;           --platform tensorflow \
+&gt;           --model ./inception_v3_2016_08_28_frozen.pb \
+&gt;           --input-size-list &apos;299,299,3&apos; \
+&gt;           --inputs input \
+&gt;           --outputs InceptionV3/Predictions/Reshape_1 \
+&gt;           --mean-values &apos;128,128,128,128&apos; \ 
+&gt;           --quantized-dtype asymmetric_affine \
+&gt;           --kboard VIM3 --print-level 0
+</pre>
 
 During conversion, if you need to view detailed information, you can modify `--print-level 0` to `--print-level 1`.
 
 3. File generated after conversion
 
-```sh
-$ cd workspace/aml_npu_sdk/acuity-toolkit/python 
-$ ls outputs/inception
-inception.nb  libnn_inception.so
-```
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~</b></font>$ cd aml_npu_sdk/acuity-toolkit/python</pre>
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~/aml_npu_sdk/acuity-toolkit/python</b></font>$ ls outputs/inception/
+inception.nb  <font color="#4E9A06"><b>libnn_inception.so</b></font></pre>
 
 ## More
 
@@ -63,8 +53,7 @@ inception.nb  libnn_inception.so
 
 3. More conversion parameters can be viewed through `-h`
 
-```sh
-$ ./convert -h
+<pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~/aml_npu_sdk/acuity-toolkit/python</b></font>$ ./convert -h
 usage: convert [-h] [--model-name MODEL_NAME] [--print-level PRINT_LEVEL] [--platform PLATFORM] [--kboard KBOARD] [--model MODEL] [--outputs OUTPUTS] [--input-size-list INPUT_SIZE_LIST]
                [--size-with-batch SIZE_WITH_BATCH] [--input-dtype-list INPUT_DTYPE_LIST] [--inputs INPUTS] [--weights WEIGHTS] [--std-values STD_VALUES] [--mean-values MEAN_VALUES]
                [--predef-file PREDEF_FILE] [--config CONFIG] [--proto PROTO] [--convert-engine CONVERT_ENGINE] [--quantized-dtype QUANTIZED_DTYPE] [--qtype QTYPE] [--batch-size BATCH_SIZE]
@@ -83,7 +72,7 @@ optional arguments:
   --input-size-list INPUT_SIZE_LIST
                         Inputs size list for correspoding input points
   --size-with-batch SIZE_WITH_BATCH
-                        Describe if the '--input-size-list' contain the highest batch dimension.
+                        Describe if the &apos;--input-size-list&apos; contain the highest batch dimension.
   --input-dtype-list INPUT_DTYPE_LIST
                         Input tensors dtype for corresponding input points
   --inputs INPUTS       Inputs points of graph
@@ -99,8 +88,8 @@ optional arguments:
   --convert-engine CONVERT_ENGINE
                         Convert engine for model
   --quantized-dtype QUANTIZED_DTYPE
-                        Quant type :'asymmetric_affine/dynamic_fixed_point/perchannel_symmetric_affine/symmetric_affine/asymmetric_quantized'
-  --qtype QTYPE         qtpye: 'uint8/int8/int16'
+                        Quant type :&apos;asymmetric_affine/dynamic_fixed_point/perchannel_symmetric_affine/symmetric_affine/asymmetric_quantized&apos;
+  --qtype QTYPE         qtpye: &apos;uint8/int8/int16&apos;
   --batch-size BATCH_SIZE
                         Integer value which specifies the batch size
   --iterations ITERATIONS
@@ -113,5 +102,5 @@ optional arguments:
                         Moving average coefficient.Positive float value.
   --divergence-nbins DIVERGENCE_NBINS
                         KL divergence histogram nbins.Positive integer value.
-```
+</pre>
 
