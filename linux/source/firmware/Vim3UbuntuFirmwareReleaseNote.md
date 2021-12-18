@@ -23,6 +23,16 @@ Please check [How To Upgrade The System](/linux/vim3/HowToUpgradeTheSystem.html)
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**v1.0.9-211217: (OTA Release)**
+
+1. improve ssh keys
+2. fix wol
+3. add more overlays
+4. add ext borad support
+5. update npu package to version 6.4.6.2
+6. bug fixup
+
+--------------------------------------------------------------------------------------------------
 **V1.0.5-210430: (OTA Release)**
 
 1. fix alsa issue
@@ -105,6 +115,13 @@ Please check [How To Upgrade The System](/linux/vim3/HowToUpgradeTheSystem.html)
 {% note warn VIM3 Only support Ubuntu 20.04 for Mainline Linux. %}
 
 {% endnote %}
+
+--------------------------------------------------------------------------------------------------
+**v1.0.9-211217: (OTA Release)**
+
+1. Linux 5.16-rc2
+2. add npu support
+3. fix PCIe driver to support B+M key Coral
 
 --------------------------------------------------------------------------------------------------
 **V1.0.5-210430: (OTA Release)**
