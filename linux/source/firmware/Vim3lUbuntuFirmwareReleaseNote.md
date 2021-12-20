@@ -24,6 +24,17 @@ Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to up
 {% endnote %}
 
 --------------------------------------------------------------------------------------------------
+**v1.0.9-211217: (OTA Release)**
+
+1. fix i2s for
+2. improve ssh keys
+3. fix wol
+4. add more overlays
+5. add ext borad support
+6. update npu package to version 6.4.6.2
+7. bug fixup
+
+--------------------------------------------------------------------------------------------------
 **V1.0.7-210625: (OTA Release)**
 
 1. remove opencv3 package
@@ -126,6 +137,13 @@ Please check [How To Upgrade The System](/vim3/HowToUpgradeTheSystem.html) to up
 {% note warn VIM3L Only support Ubuntu 20.04 for Mainline Linux. %}
 
 {% endnote %}
+
+--------------------------------------------------------------------------------------------------
+**v1.0.9-211217: (OTA Release)**
+
+1. Linux 5.16-rc2
+2. add npu support
+3. fix PCIe driver to support B+M key Coral
 
 --------------------------------------------------------------------------------------------------
 **V1.0.5-210430: (OTA Release)**
