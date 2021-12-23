@@ -1,9 +1,9 @@
 title: Create a Burning Card
 ---
 
-This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](UpgradeViaTFBurningCard.html)/[VIM2](UpgradeViaTFBurningCard.html)/[VIM3](UpgradeViaTFBurningCard.html)) instead.
+This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](UpgradeViaTFBurningCard.html)/[VIM2](UpgradeViaTFBurningCard.html)/[VIM3](UpgradeViaTFBurningCard.html)/[VIM4](UpgradeViaTFBurningCard.html)) instead.
 
-{% note info The operation of VIM1, VIM2 and VIM3 is almost the same, so this document will take VIM1 as an example. %}
+{% note info The operation of VIM1, VIM2, VIM3 and VIM4 is almost the same, so this document will take VIM1 as an example. %}
 
 {% endnote %}
 
@@ -13,8 +13,8 @@ This guide contains step-by-step instructions to create a Burning Card for Linux
 
 
 ## Preparation
-* Build your own, or download ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)) the latest U-Boot file for SD-Cards.
-* You may need to format the SD-Card Via FDisk ([VIM1](CreateBurnCardViaCLI.html)/[VIM2](CreateBurnCardViaCLI.html)/[VIM3](CreateBurnCardViaCLI.html)) if your SD-Card contains >1 partition.
+* Build your own, or download ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/([VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)) the latest U-Boot file for SD-Cards.
+* You may need to format the SD-Card Via FDisk ([VIM1](CreateBurnCardViaCLI.html)/[VIM2](CreateBurnCardViaCLI.html)/[VIM3](CreateBurnCardViaCLI.html)/[VIM4](CreateBurnCardViaCLI.html)) if your SD-Card contains >1 partition.
 
 
 ## Before You Start
