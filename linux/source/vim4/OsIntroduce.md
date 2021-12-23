@@ -66,5 +66,4 @@ If you want to experience the latest features, select an OS that uses the **main
 
 ## Download an OS
 
-* VIM3 - [Compatible OS Images](/linux/firmware/Vim3UbuntuFirmware.html)
-* VIM3L - [Compatible OS Images](/linux/firmware/Vim3lUbuntuFirmware.html)
+* VIM4 - [Compatible OS Images](/linux/firmware/Vim4UbuntuFirmware.html)
