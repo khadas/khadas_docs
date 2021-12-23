@@ -11,6 +11,7 @@ There are several images that are designed to run from a SD Card or Thumbdrive (
   * [VIM1](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/)
   * [VIM2](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/)
   * [VIM3](https://dl.khadas.com/Firmware/VIM3/Ubuntu/SD_USB/)
+  * [VIM4](https://dl.khadas.com/Firmware/VIM4/Ubuntu/SD_USB/)
 
 This tutorial is about how to boot these images.
 
