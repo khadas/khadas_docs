@@ -144,6 +144,12 @@ serverip=192.168.1.117
 
 ## Test Your TFTP Server
 
+{% note warn NOTE %}
+
+VIM1/VIM2/VIM3/VIM3L is **u-boot.bin**, VIM4 is **u-boot.bin.signed**.
+
+{% endnote %}
+
 Make sure you have copied the testing file to the TFTF root path:
 
 ```bash
