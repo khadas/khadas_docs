@@ -3,6 +3,21 @@ title: 32位库
 
 ## 在64位系统下执行32位的程序
 
+1. 简单测试代码
+
+```c
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    printf("Hello world !!!\n");
+
+    return 0;
+}
+```
+
+2. 编译运行
+
 ```bash
 $ arm-linux-gnueabihf-gcc -o test test.c
 $ ./test   

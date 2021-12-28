@@ -31,7 +31,7 @@ $ sudo reboot
 * 执行下面的命令更新U-Boot
 
 ```
-kvim4#usb_update bootloader u-boot.bin/signed
+kvim4#usb_update bootloader u-boot.bin.signed
 kvim4#reboot
 ```
 ## 参考

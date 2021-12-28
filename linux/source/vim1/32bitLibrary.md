@@ -3,6 +3,21 @@ title: 32-bit Library
 
 ## Execute The 32-bit Program Under 64-bit System
 
+1. Sample test code
+
+```
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    printf("Hello world !!!\n");
+
+    return 0;
+}
+```
+
+2. Compile and run
+
 ```bash
 $ arm-linux-gnueabihf-gcc -o test test.c
 $ ./test   

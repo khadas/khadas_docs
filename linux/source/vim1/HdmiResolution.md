@@ -1,7 +1,10 @@
 title: Setup HDMI Resolution
 ---
 
-{% note info Only for Linux 4.9 image, mainline kernel image can use a more common way! %}
+{% note info %}
+
+1. **VIM1/VIM2/VIM3/VIM3L: Only for Linux 4.9 image, mainline kernel image can use a more common way!**
+2. **VIM4: Only for Linux 5.4 image, mainline kernel image can use a more common way!**
 
 {% endnote %}
 

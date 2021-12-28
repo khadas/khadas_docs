@@ -147,6 +147,13 @@ serverip=192.168.1.117
 
 ### 测试
 
+{% note warn 注意 %}
+
+VIM1/VIM2/VIM3/VIM3L使用**u-boot.bin**, VIM4使用**u-boot.bin.signed**.
+
+{% endnote %}
+
+
 确保已经拷贝测试文件（如u-boot.bin）到TFTP服务器根目录（`/srv/tftp`）:
 
 ```bash

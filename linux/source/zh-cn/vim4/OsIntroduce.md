@@ -43,5 +43,4 @@ title: 选择操作系统
 
 ## 固件下载
 
-点击[下载VIM3L固件](/linux/zh-cn/firmware/Vim3lUbuntuFirmware.html)。
-点击[下载VIM3固件](/linux/zh-cn/firmware/Vim3UbuntuFirmware.html)。
+点击[下载VIM4固件](/linux/firmware/Vim4UbuntuFirmware.html)。

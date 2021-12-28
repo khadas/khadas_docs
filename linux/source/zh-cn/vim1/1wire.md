@@ -58,6 +58,9 @@ b1 01 4b 46 7f ff 0c 10 d8 t=27062
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-phy" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4-phy" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-phy" role="tabpanel" aria-labelledby="vim1-tab">
@@ -69,5 +72,7 @@ b1 01 4b 46 7f ff 0c 10 d8 t=27062
   <div class="tab-pane fade" id="vim3-phy" role="tabpanel" aria-labelledby="vim3-tab">
   GPIOH6 - PIN15
   </div>
+  <div class="tab-pane fade" id="vim4-phy" role="tabpanel" aria-labelledby="vim4-tab">
+  GPIOT19 - PIN37
 </div>
 

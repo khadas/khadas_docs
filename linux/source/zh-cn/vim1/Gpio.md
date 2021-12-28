@@ -39,6 +39,9 @@ Amlogic芯片通常都会包括AOBUS和Periphs两个GPIO Ranges。这里对每�
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1" role="tabpanel" aria-labelledby="vim1-tab">
@@ -278,6 +281,40 @@ pin 85 (GPIOX_19)  pinctrl@ff634480
 `GPIOX_10 = Banks + Pins = 410 + 76 = 486`
 
 </div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+1. 获取`Banks`
+
+```sh
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
+GPIO ranges handled:
+0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
+```
+
+2. 获取`Pins`
+
+```sh
+root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
+registered pins: 157
+pin 0 (GPIOB_0)  fe000000.apb4:pinctrl@4000
+pin 1 (GPIOB_1)  fe000000.apb4:pinctrl@4000
+pin 2 (GPIOB_2)  fe000000.apb4:pinctrl@4000
+pin 3 (GPIOB_3)  fe000000.apb4:pinctrl@4000
+pin 4 (GPIOB_4)  fe000000.apb4:pinctrl@4000
+pin 5 (GPIOB_5)  fe000000.apb4:pinctrl@4000
+pin 6 (GPIOB_6)  fe000000.apb4:pinctrl@4000
+pin 7 (GPIOB_7)  fe000000.apb4:pinctrl@4000
+pin 8 (GPIOB_8)  fe000000.apb4:pinctrl@4000
+pin 9 (GPIOB_9)  fe000000.apb4:pinctrl@4000
+```
+
+3. 计算Number
+
+这里以GPIOT_19为例，
+
+`GPIOH_4 = Banks + Pins = 355 + 110 = 465`
+
+</div>
 </div>
 
 ## GPIO使用示例
@@ -291,6 +328,9 @@ pin 85 (GPIOX_19)  pinctrl@ff634480
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="vim3demo-tab" data-toggle="tab" href="#vim3demo" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4demo-tab" data-toggle="tab" href="#vim4demo" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -505,6 +545,62 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 ```sh
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
+0
+```
+</div>
+<div class="tab-pane fade" id="vim4demo" role="tabpanel" aria-labelledby="vim4-tab">
+
+这里使用GPIOT_18读取GPIOT_19的引脚输出值,使用杜邦线将物理引脚的36和37连接在一起。
+
+
+1. 计算引脚值:
+
+`GPIOT_18 = 355 + 109 = 464`
+`GPIOT_19 = 355 + 110 = 465`
+
+2. 设置`GPIOT_18`为读模式
+
+* 申请GPIO
+
+```sh
+root@Khadas:/home/khadas# echo 464 > /sys/class/gpio/export
+```
+
+* 设置为读模式
+
+```sh
+root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio464/direction
+```
+
+3. 设置`GPIOT_19`为写模式
+
+* 申请GPIO
+
+```sh
+root@Khadas:/home/khadas# echo 465 > /sys/class/gpio/export
+```
+
+* 设置为写模式
+
+```sh
+root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio465/direction
+```
+
+4. 测试哦
+
+* 设置`GPIOT_19`为高电平并通过`GPIOT_18`读取
+
+```sh
+root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio465/value
+root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
+1
+```
+
+* 设置`GPIOT_19`为低电平并通过`GPIOT_18`读取
+
+```sh
+root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio465/value
+root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
 0
 ```
 </div>
