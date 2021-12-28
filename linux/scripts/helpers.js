@@ -199,7 +199,7 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
       }
     });
 
-    if (open === 'yes') {
+//    if (open === 'yes') {
       result +=
         '<strong class="' +
         className +
@@ -211,19 +211,19 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
         link_temp +
         '</details>' +
         '</strong>';
-    } else {
-      result +=
-        '<strong class="' +
-        className +
-        '-title">' +
-        '<details>' +
-        '<summary>' +
-        self.__(prefix + title) +
-        '</summary>' +
-        link_temp +
-        '</details>' +
-        '</strong>';
-    }
+//    } else {
+//      result +=
+//        '<strong class="' +
+//        className +
+//        '-title">' +
+//        '<details>' +
+//        '<summary>' +
+//        self.__(prefix + title) +
+ //       '</summary>' +
+//        link_temp +
+//        '</details>' +
+//        '</strong>';
+//    }
   });
   return result;
 });

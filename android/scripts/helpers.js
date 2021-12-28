@@ -149,25 +149,14 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
             '</a>';
         });
 
-        if (secondary_open === 'yes') {
-          link_temp +=
-            '<strong class="' +
-            className +
-            '-link"><details open><summary>' +
-            self.__(prefix + text) +
-            '</summary>' +
-            secondary_link_temp +
-            '</details></strong>';
-        } else {
-          link_temp +=
-            '<strong class="' +
-            className +
-            '-link"><details><summary>' +
-            self.__(prefix + text) +
-            '</summary>' +
-            secondary_link_temp +
-            '</details></strong>';
-        }
+        link_temp +=
+          '<strong class="' +
+          className +
+          '-link"><details open><summary>' +
+          self.__(prefix + text) +
+          '</summary>' +
+          secondary_link_temp +
+          '</details></strong>';
       } else {
         var link = secondMenu;
         if(link === 'index.html'){
@@ -199,7 +188,7 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
       }
     });
 
-    if (open === 'yes') {
+//    if (open === 'yes') {
       result +=
         '<strong class="' +
         className +
@@ -211,19 +200,19 @@ hexo.extend.helper.register('doc_sidebar', function (className) {
         link_temp +
         '</details>' +
         '</strong>';
-    } else {
-      result +=
-        '<strong class="' +
-        className +
-        '-title">' +
-        '<details>' +
-        '<summary>' +
-        self.__(prefix + title) +
-        '</summary>' +
-        link_temp +
-        '</details>' +
-        '</strong>';
-    }
+//    } else {
+//      result +=
+//        '<strong class="' +
+//        className +
+//        '-title">' +
+//        '<details>' +
+//        '<summary>' +
+//        self.__(prefix + title) +
+//        '</summary>' +
+//        link_temp +
+//        '</details>' +
+ //       '</strong>';
+ //   }
   });
   return result;
 });
