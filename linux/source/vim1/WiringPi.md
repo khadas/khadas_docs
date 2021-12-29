@@ -105,34 +105,157 @@ Special pin functions of wiringpi include`SPI,i2C,ADC,SoftPWM`
  
 ### SPI 
 
-Because`VIM1`and`vim2` don't export `SPI` to pin40 of GPIO, only `vim3` is supported for `SPI`. The corresponding pins of physical pin and SPI function are as follows:
+`VIM1`and`vim2` don't export `SPI` to pin40 of GPIO。
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="true">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
 ```
 PIN37 <---> MOSI
 PIN35 <---> MISO
 PIN15 <---> SS
 PIN16 <---> SCLK
 ```
- 
+
+</div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+```
+PIN37 <---> MOSI
+PIN35 <---> MISO
+PIN26 <---> SS
+PIN25 <---> SCLK
+```
+
+</div>
+</div>
+
 ### I2C
-`VIM1` and `vim2` use `i2c0`and `vim3` use `i2c3`. The physical pin connections are as follows:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim1-tab" data-toggle="tab" href="#vim1-i2c" role="tab" aria-controls="vim1" aria-selected="true">VIM1</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim2-tab" data-toggle="tab" href="#vim2-i2c" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-i2c" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-i2c" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1-i2c" role="tabpanel" aria-labelledby="vim1-tab">
+
+**I2C0**
 ```
 PIN22 <---> SCK
 PIN23 <---> SDA
 ```
+
+</div>
+<div class="tab-pane fade" id="vim2-i2c" role="tabpanel" aria-labelledby="vim2-tab">
+
+**I2C0**
+```
+PIN22 <---> SCK
+PIN23 <---> SDA
+```
+
+</div>
+<div class="tab-pane fade" id="vim3-i2c" role="tabpanel" aria-labelledby="vim3-tab">
+
+**I2C3**
+```
+PIN22 <---> SCK
+PIN23 <---> SDA
+```
+
+</div>
+<div class="tab-pane fade" id="vim4-i2c" role="tabpanel" aria-labelledby="vim4-tab">
+
+**I2C0**
+
+```
+PIN25 <---> SCK
+PIN26 <---> SDA
+```
+
+</div>
+</div>
+
 ### ADC
-`VIM1` and `vim2` uses `channel0` and `channel2`of `ADC`, and `vim3` uses `channel0` and `channel3`. The physical pins are connected as follows:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim1-tab" data-toggle="tab" href="#vim1-adc" role="tab" aria-controls="vim1" aria-selected="true">VIM1</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim2-tab" data-toggle="tab" href="#vim2-adc" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-adc" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-adc" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1-adc" role="tabpanel" aria-labelledby="vim1-tab">
+
 ```
 PIN10 <---> ADC_CH0
-PIN12 <---> ADC_CH2 or ADC_CH3
+PIN12 <---> ADC_CH2
 ```
+
+</div>
+<div class="tab-pane fade" id="vim2-adc" role="tabpanel" aria-labelledby="vim2-tab">
+
+```
+PIN10 <---> ADC_CH0
+PIN12 <---> ADC_CH2
+```
+
+</div>
+<div class="tab-pane fade" id="vim3-adc" role="tabpanel" aria-labelledby="vim3-tab">
+
+```
+PIN10 <---> ADC_CH0
+PIN12 <---> ADC_CH3
+```
+
+</div>
+<div class="tab-pane fade" id="vim4-adc" role="tabpanel" aria-labelledby="vim4-tab">
+
+```
+PIN10 <---> ADC_CH6
+PIN12 <---> ADC_CH3
+```
+
+</div>
+</div>
+
 ### Serial
+
 Please confirm the node name for Serial before using
+
 ```
 PIN15 <---> RX
 PIN16 <---> TX
 ```
 
 ## WiringPi Function List
+
 ```
 int  wiringPiSetup       (void) ;
 int  wiringPiSetupSys    (void) ;
@@ -195,5 +318,7 @@ void softPwmStop   (int pin) ;
 ```
 
 ## notes
+
 If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB.
+
 WiringPi itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.
