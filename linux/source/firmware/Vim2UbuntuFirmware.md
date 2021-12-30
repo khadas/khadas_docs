@@ -105,14 +105,14 @@ VIM2 Only support **Ubuntu 20.04** for Mainline Linux.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="server2" role="tabpanel" aria-labelledby="server2-tab">
 
-* [VIM2_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](http://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
+* [VIM2_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
 * [VIM2_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM2_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 
 </div>
 <div class="tab-pane fade show" id="desktop2" role="tabpanel" aria-labelledby="desktop2-tab">
 
-* [VIM2_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](http://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
+* [VIM2_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
 * [VIM2_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM2_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
 
