@@ -62,7 +62,7 @@ VIM1仅支持4.9内核**Ubuntu 18.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
-* [VIM1_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](http://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
+* [VIM1_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/EMMC/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
@@ -70,7 +70,7 @@ VIM1仅支持4.9内核**Ubuntu 18.04**。
 </div>
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
-* [VIM1_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](http://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
+* [VIM1_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
 * [VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM1/Ubuntu/SD_USB/VIM1_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
