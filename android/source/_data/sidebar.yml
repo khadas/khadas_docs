@@ -124,6 +124,20 @@ vim3:
   troubleshooting:
     capture_log: CaptureLog.html
 
+vim4:
+  quick_start:
+  rescures_control:
+    system_control:
+    accessories:
+    board_rescoures:
+  npu:
+  development:
+    uboot:
+    firmware&&system:
+    hardware:
+  troubleshooting:
+    capture_log: CaptureLog.html
+
 edge:
   quick_start:
     overview: index.html

@@ -3,6 +3,7 @@ menu:
   vim1: VIM1
   vim2: VIM2
   vim3: VIM3
+  vim4: VIM4
   edge: Edge
   hardware: Hardware
   firmware: Firmware
@@ -156,6 +157,19 @@ sidebar:
     hardware: Hardware
     setup_serial: Serial Debugging Tool
     extra_power_input: Extra Power Input
+    troubleshooting: Troubleshooting
+    capture_log: Capture Running Log
+
+  vim4: 
+    quick_start: Quick Start
+    rescures_control: Rescoures Control
+    system_control: System Control
+    accessories: Accessories
+    npu: NPU
+    development: Development
+    uboot: U-Boot
+    firmware&&system: Firmware && System
+    hardware: Hardware
     troubleshooting: Troubleshooting
     capture_log: Capture Running Log
 
