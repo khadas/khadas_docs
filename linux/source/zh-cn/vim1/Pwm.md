@@ -8,6 +8,7 @@ dts配置文件里默认已经打开了硬件PWM，所以仅需要确认哪一�
 * `PWM_F` on [VIM1 GPIO-Out](Hardware#VIM1-硬件信息)
 * `PWM_D` on [VIM2 GPIO-Out](Hardware#VIM2-硬件信息)
 * `PWM_F` on [VIM3 GPIO-Out](Hardware#VIM3-硬件信息)
+* `PWM_F` on [VIM4 GPIO-Out](Hardware#VIM4-硬件信息)
 
 ## 却换到root用户
 
@@ -33,6 +34,9 @@ root@Khadas:~#
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-enable" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4-enable" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-enable" role="tabpanel" aria-labelledby="vim1-tab">
@@ -52,6 +56,14 @@ root@Khadas:~#
     ```
   </div>
   <div class="tab-pane fade" id="vim3-enable" role="tabpanel" aria-labelledby="vim3-tab">
+    ```shell
+    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
+    root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
+    root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
+    ```
+  </div>
+  <div class="tab-pane fade" id="vim4-enable" role="tabpanel" aria-labelledby="vim4-tab">
     ```shell
     root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
     root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
@@ -83,6 +95,9 @@ root@Khadas:~#
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-disable" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4-disable" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-disable" role="tabpanel" aria-labelledby="vim1-tab">
@@ -96,6 +111,11 @@ root@Khadas:~#
   ```
   </div>
   <div class="tab-pane fade" id="vim3-disable" role="tabpanel" aria-labelledby="vim3-tab">
+  ```shell
+  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
+  ```
+  </div>
+  <div class="tab-pane fade" id="vim4-disable" role="tabpanel" aria-labelledby="vim4-tab">
   ```shell
   root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
   ```

@@ -104,7 +104,19 @@ wiringPi的特殊引脚功能包括`SPI,i2C,ADC,SoftPWM`
 
 ### SPI
 
-由于`VIM1`,`VIM2`没有将`SPI`引出到GPIO的Pin40上，所以`SPI`只支持`VIM3`,物理引脚与SPI功能的对应引脚
+`VIM1`,`VIM2`没有将`SPI`引出到GPIO的Pin40。
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="true">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
+
 ```
 PIN37 <---> MOSI
 PIN35 <---> MISO
@@ -112,20 +124,130 @@ PIN15 <---> SS
 PIN16 <---> SCLK
 ```
 
+</div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+```
+PIN37 <---> MOSI
+PIN35 <---> MISO
+PIN26 <---> SS
+PIN25 <---> SCLK
+```
+
+</div>
+</div>
+
 ### I2C
-`VIM1`,`VIM2`使用的是`i2c0`,`VIM3`使用`i2c3`,物理引脚连接如下:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim1-tab" data-toggle="tab" href="#vim1-i2c" role="tab" aria-controls="vim1" aria-selected="true">VIM1</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim2-tab" data-toggle="tab" href="#vim2-i2c" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-i2c" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-i2c" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1-i2c" role="tabpanel" aria-labelledby="vim1-tab">
+
+**I2C0**
 ```
 PIN22 <---> SCK
 PIN23 <---> SDA
 ```
+
+</div>
+<div class="tab-pane fade" id="vim2-i2c" role="tabpanel" aria-labelledby="vim2-tab">
+
+**I2C0**
+```
+PIN22 <---> SCK
+PIN23 <---> SDA
+```
+
+</div>
+<div class="tab-pane fade" id="vim3-i2c" role="tabpanel" aria-labelledby="vim3-tab">
+
+**I2C3**
+```
+PIN22 <---> SCK
+PIN23 <---> SDA
+```
+
+</div>
+<div class="tab-pane fade" id="vim4-i2c" role="tabpanel" aria-labelledby="vim4-tab">
+
+**I2C0**
+
+```
+PIN25 <---> SCK
+PIN26 <---> SDA
+```
+
+</div>
+</div>
+
 ### ADC
-`VIM1`,`VIM2`使用`ADC`的`通道0`和`通道2`,`VIM3`使用`通道0`和`通道3`,物理引脚连接如下:
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim1-tab" data-toggle="tab" href="#vim1-adc" role="tab" aria-controls="vim1" aria-selected="true">VIM1</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim2-tab" data-toggle="tab" href="#vim2-adc" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-adc" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-adc" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1-adc" role="tabpanel" aria-labelledby="vim1-tab">
+
 ```
 PIN10 <---> ADC_CH0
-PIN12 <---> ADC_CH2后者ADC_CH3
+PIN12 <---> ADC_CH2
 ```
+
+</div>
+<div class="tab-pane fade" id="vim2-adc" role="tabpanel" aria-labelledby="vim2-tab">
+
+```
+PIN10 <---> ADC_CH0
+PIN12 <---> ADC_CH2
+```
+
+</div>
+<div class="tab-pane fade" id="vim3-adc" role="tabpanel" aria-labelledby="vim3-tab">
+
+```
+PIN10 <---> ADC_CH0
+PIN12 <---> ADC_CH3
+```
+
+</div>
+<div class="tab-pane fade" id="vim4-adc" role="tabpanel" aria-labelledby="vim4-tab">
+
+```
+PIN10 <---> ADC_CH6
+PIN12 <---> ADC_CH3
+```
+
+</div>
+</div>
+
 ### Serial
+
 使用之前请先确认串口节点名称
+
 ```
 PIN15 <---> RX
 PIN16 <---> TX
@@ -133,6 +255,7 @@ PIN16 <---> TX
 
 
 ## wiringPi函数列表
+
 ```
 int  wiringPiSetup       (void) ;
 int  wiringPiSetupSys    (void) ;

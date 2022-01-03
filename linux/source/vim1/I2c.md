@@ -16,6 +16,9 @@ This guide is about how to access i2c on Ubuntu.
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-pins" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-pins" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-pins" role="tabpanel" aria-labelledby="vim1-tab">
@@ -57,6 +60,20 @@ This guide is about how to access i2c on Ubuntu.
 `Sensor GND` <-> `GND`
 `Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 </div>
+<div class="tab-pane fade" id="vim4-pins" role="tabpanel" aria-labelledby="vim4-tab">
+
+**I2C A**
+`Sensor SCL` <-> `I2CA_SCK (PIN 25)`
+`Sensor SDA` <-> `I2CA_SDA (PIN 26)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+**I2C F**
+`Sensor SCL` <-> `I2CF_SCK (PIN 22)`
+`Sensor SDA` <-> `I2CF_SDA (PIN 23)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+
+</div>
 </div>
 
 ## Detect the device
@@ -70,6 +87,9 @@ This guide is about how to access i2c on Ubuntu.
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -167,6 +187,39 @@ Detect device on `I2C 4`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
+</div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+Detect device on `I2C A`:
+
+```bash
+# i2cdetect -r -y 0
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
+Detect device on `I2C F`:
+
+```bash
+# i2cdetect -r -y 5
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- UU -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
 </div>
 </div>
 

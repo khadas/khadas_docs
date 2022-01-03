@@ -3,6 +3,7 @@ menu:
   vim1: VIM1
   vim2: VIM2
   vim3: VIM3
+  vim4: VIM4
   edge: Edge
   hardware: 硬件资料
   firmware: 固件下载
@@ -155,6 +156,19 @@ sidebar:
     hardware: 硬件
     setup_serial: 设置串口调试工具
     extra_power_input: 外部电源供电
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
+
+  vim4:
+    quick_start: 快速开始
+    rescures_control: 资源控制
+    system_control: 系统控制
+    accessories: 配件
+    npu: NPU
+    development: 开发
+    uboot: U-Boot
+    firmware&&system: 固件&&系统
+    hardware: 硬件
     troubleshooting: 故障排查
     capture_log: 抓取Log
 

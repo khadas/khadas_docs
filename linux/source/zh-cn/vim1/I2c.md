@@ -16,6 +16,9 @@ title: 如何使用I2C接口
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-pins" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-pins" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-pins" role="tabpanel" aria-labelledby="vim1-tab">
@@ -57,6 +60,20 @@ title: 如何使用I2C接口
 `Sensor GND` <-> `GND`
 `Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
 </div>
+<div class="tab-pane fade" id="vim4-pins" role="tabpanel" aria-labelledby="vim4-tab">
+
+**I2C A**
+`Sensor SCL` <-> `I2CA_SCK (PIN 25)`
+`Sensor SDA` <-> `I2CA_SDA (PIN 26)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+**I2C F**
+`Sensor SCL` <-> `I2CF_SCK (PIN 22)`
+`Sensor SDA` <-> `I2CF_SDA (PIN 23)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+
+</div>
 </div>
 
 ## 检测设备
@@ -71,11 +88,14 @@ title: 如何使用I2C接口
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1" role="tabpanel" aria-labelledby="vim1-tab">
 
-Detect device on `I2C A`:
+检索设备在`I2C A`:
 
 ```bash
 # i2cdetect -y -r 1
@@ -89,7 +109,7 @@ Detect device on `I2C A`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C B`:
+检索设备在`I2C B`:
 
 ```bash
 # i2cdetect -y -r 2
@@ -107,7 +127,7 @@ Detect device on `I2C B`:
 </div>
 <div class="tab-pane fade" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
-Detect device on `I2C A`:
+检索设备在`I2C A`:
 
 ```bash
 # i2cdetect -y -r 1
@@ -121,7 +141,7 @@ Detect device on `I2C A`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C B`:
+检索设备在`I2C B`:
 
 ```bash
 # i2cdetect -y -r 2
@@ -139,7 +159,7 @@ Detect device on `I2C B`:
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-Detect device on `I2C 3`:
+检索设备在`I2C 3`:
 
 ```bash
 # i2cdetect -y -r 3
@@ -153,7 +173,7 @@ Detect device on `I2C 3`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C 4`:
+检索设备在`I2C 4`:
 
 ```bash
 # i2cdetect -y -r 4
@@ -167,6 +187,39 @@ Detect device on `I2C 4`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
+</div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+检索设备在`I2C A`:
+
+```bash
+# i2cdetect -r -y 0
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
+检索设备在`I2C F`:
+
+```bash
+# i2cdetect -r -y 5
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- UU -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
 </div>
 </div>
 

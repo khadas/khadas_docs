@@ -10,6 +10,7 @@ Uart引出到40Pin的引脚是15脚以及16脚：
 * [VIM1-GPIO-Pin-Out](Hardware#VIM1-硬件信息)
 * [VIM2-GPIO-Pin-Out](Hardware#VIM2-硬件信息)
 * [VIM3-GPIO-Pin-Out](Hardware#VIM3-硬件信息)
+* [VIM4-GPIO-Pin-Out](Hardware#VIM4-硬件信息)
 
 
 ## 使能串口
@@ -25,8 +26,8 @@ overlays=uart4 pwm_ao_a pwm_f i2c0
 
 {% note info 例如 %}
 
-* VIM1/VIM2 - **uar4**
-* VIM3/VIM3L - **uart3**
+* VIM1/VIM2/VIM4 - **uar4**
+* VIM3/VIM3L     - **uart3**
 
 {% endnote %}
 
@@ -38,7 +39,7 @@ overlays=uart4 pwm_ao_a pwm_f i2c0
 
 {% note info 例如 %}
 
-* VIM1/VIM2 - **/dev/ttyS4**
-* VIM3/VIM3L - **/dev/ttyS3**
+* VIM1/VIM2/VIM4 - **/dev/ttyS4**
+* VIM3/VIM3L     - **/dev/ttyS3**
 
 {% endnote %}
