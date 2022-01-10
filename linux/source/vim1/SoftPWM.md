@@ -1,7 +1,7 @@
 title: WiriingPi/WiringPi-Python Software PWM
 ---
 
-This document mainly introduces how to use software PWM to control the servo on WiringPi and WiringPi-Python.
+This document mainly introduces how to use software PWM on WiringPi and WiringPi-Python.
 
 ## 1. SoftPWM Servo
 
