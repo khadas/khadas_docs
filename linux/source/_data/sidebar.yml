@@ -209,6 +209,7 @@ vim3:
     aml_npu_app: NPUApp.html
     model_convert: ConvertToUseNPU.html
     npu_performance: NPUPerformanceUsage.html
+    npu_operation: NPUOperationTimes.html
     tengine_sdk: TengineSDK.html
     tengine_demo: TengineApp.html
     ksnn:

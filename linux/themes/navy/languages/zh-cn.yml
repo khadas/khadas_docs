@@ -243,6 +243,7 @@ sidebar:
     aml_npu_app: NPU Demo源码
     model_convert: 模型转换
     npu_performance: NPU Performance
+    npu_operation: 获取单op运行耗时
     tengine_sdk: Tengine SDK
     tengine_demo: Tengine Demo
     ksnn: KSNN(Python API)
