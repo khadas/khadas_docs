@@ -104,33 +104,32 @@ class Serial(object):
 ## WiringPi-Python sample demo 
 This is a simple program of pin read-write control
 ```
-  1 import wiringpi as GPIO
-  2
-  3 INPUT = 0
-  4 OUTPUT = 1
-  5 OUTPUT_PIN = 37
-  6 INPUT_PIN = 39
-  7 OUTPUT_HIGH = 1
-  8 OUTPUT_LOW = 0
-  9 pinstatus_list = ['LOW','HIGH']
- 10
- 11 GPIO.wiringPiSetup()
- 12 GPIO.pinMode(OUTPUT_PIN, OUTPUT)
- 13 GPIO.pinMode(INPUT_PIN, INPUT)
- 14
- 15 print("----GPIO W&R test demo-----")
- 16 print("set output pin is LOW level")
- 17 GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_LOW)
- 18 result = GPIO.digitalRead(INPUT_PIN)
- 19 print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
- 20 GPIO.delay(2000)
- 21 print("set output pin is High level")
- 22 GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_HIGH)
- 23 result = GPIO.digitalRead(INPUT_PIN)
- 24 print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
- 25 GPIO.delay(2000)
- 26 print("End")
+import wiringpi as GPIO
 
+ INPUT = 0
+ OUTPUT = 1
+ OUTPUT_PIN = 17
+ INPUT_PIN = 16
+ OUTPUT_HIGH = 1
+ OUTPUT_LOW = 0
+ pinstatus_list = ['LOW','HIGH']
+ 
+ GPIO.wiringPiSetup()
+ GPIO.pinMode(OUTPUT_PIN, OUTPUT)
+ GPIO.pinMode(INPUT_PIN, INPUT)
+ 
+ print("----GPIO W&R test demo-----")
+ print("set output pin is LOW level")
+ GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_LOW)
+ result = GPIO.digitalRead(INPUT_PIN)
+ print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
+ GPIO.delay(2000)
+ print("set output pin is High level")
+ GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_HIGH)
+ result = GPIO.digitalRead(INPUT_PIN)
+ print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
+ GPIO.delay(2000)
+ print("End")
 ```
 
 ## notes
