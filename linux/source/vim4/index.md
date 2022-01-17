@@ -3,7 +3,7 @@ title: Quickstart
 
 This article will show you how to quickly get up and running after receiving your board.
 
-<iframe class="bilibili" src="https://www.youtube.com/embed/s_PZePhTnfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="bilibili" src="https://www.youtube.com/embed/sN61EtKOzYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Power Supply
 Your Khadas SBC is compatible with various types of power supplies, and these are the minimum specifications for the best performance and stability.

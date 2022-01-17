@@ -3,7 +3,7 @@ title: 快速上手
 
 这篇主要介绍在拿到板子以后如何快速上手，让系统跑起来。
 
-<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=400374941&page=3" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=486184062&page=7" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ## 电源选择
 
