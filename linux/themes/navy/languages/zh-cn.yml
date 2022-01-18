@@ -302,7 +302,6 @@ sidebar:
     lte_module_usage: 4G模块
     m2x_eth: M2X以太网口
     hardware: 硬件
-    pcie_usb_port: PCIe/USB3.0切换
     custom_ir_code: 自定义IR Code
     extra_power_input: 外部供电
     max_cpu_freq: CPU超频设置
