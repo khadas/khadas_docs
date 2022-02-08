@@ -55,5 +55,5 @@ Camera node is `/dev/video1`.
 
 Open the link to see the effect of the Demo
 
-![rtsp-camera.png](/linux/images/vim1/rtsp-camera.png)
+![rtsp-camera.png](/linux/images/vim1/rstp-camera.png)
 
