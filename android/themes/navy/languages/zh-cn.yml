@@ -132,6 +132,7 @@ sidebar:
     how_to_use_uart_android: 如何使用uart
     how_to_add_ir: 如何添加遥控器
     how_to_use_pwm: 如何使用PWM
+    how_to_use_hwdecode: 如何使用硬件解码
     npu: NPU
     how_to_use_android_npu_demo: 如何使用安卓npu demo
     how_to_use_npu_jni: 如何使用Npu jni
