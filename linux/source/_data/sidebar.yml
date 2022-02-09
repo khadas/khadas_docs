@@ -41,7 +41,7 @@ vim1:
       pwm: Pwm.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
-      soft_pwm: SoftPWMServo.html
+      soft_pwm: SoftPWM.html
     play_video: PlayVideo.html
     rstp: RSTPCamera.html
     hardware_decoding: HardwareDecoding.html
@@ -110,7 +110,7 @@ vim2:
       pwm: Pwm.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
-      soft_pwm: SoftPWMServo.html
+      soft_pwm: SoftPWM.html
     play_video: PlayVideo.html
     rstp: RSTPCamera.html
     hardware_decoding: HardwareDecoding.html
@@ -189,7 +189,7 @@ vim3:
       pwm: Pwm.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
-      soft_pwm: SoftPWMServo.html
+      soft_pwm: SoftPWM.html
       spdifin: spdifin.html
     gsensor_usage: GsensorUsage.html
     play_video: PlayVideo.html
@@ -209,6 +209,7 @@ vim3:
     aml_npu_app: NPUApp.html
     model_convert: ConvertToUseNPU.html
     npu_performance: NPUPerformanceUsage.html
+    npu_operation: NPUOperationTimes.html
     tengine_sdk: TengineSDK.html
     tengine_demo: TengineApp.html
     ksnn:
@@ -267,7 +268,7 @@ edge:
       1wire: 1wire.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
-      soft_pwm: SoftPWMServo.html
+      soft_pwm: SoftPWM.html
     rstp: RSTPCamera.html
     docker: Docker.html
     32bit_library: 32bitLibrary.html

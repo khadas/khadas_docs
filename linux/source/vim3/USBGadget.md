@@ -40,7 +40,7 @@ overlays=uart3 pwm_f i2c3 os08a10 --> overlays=uart3 pwm_f i2c3 os08a10 otg-devi
 khadas@khadas:~$ sudo systemctl enable usb-gadget-khadas.service
 ```
 
-## Save film and reboot the board
+## Save file and reboot the board
 
 ```shell
 khadas@khadas:~$ sync
