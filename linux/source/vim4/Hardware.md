@@ -92,7 +92,7 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 </div>
 <div class="tab-pane fade" id="gpio-vim4" role="tabpanel" aria-labelledby="gpio-tab">
 
-![VIM4 Interface Bottom](/linux/images/vim4/vim4_gpio.png)
+<img src="{{ system }}/linux/images/vim4/vim4_gpio.png" width="40%" height="40%" >
 
 </div>
 </div>

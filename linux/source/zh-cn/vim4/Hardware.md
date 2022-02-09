@@ -93,7 +93,7 @@ title: VIM4硬件描述
 </div>
 <div class="tab-pane fade" id="gpio-vim4" role="tabpanel" aria-labelledby="gpio-tab">
 
-![VIM4 Interface Bottom](/linux/images/vim4/vim4_gpio.png)
+<img src="{{ system }}/linux/images/vim4/vim4_gpio.png" width="40%" height="40%" >
 
 </div>
 </div>
