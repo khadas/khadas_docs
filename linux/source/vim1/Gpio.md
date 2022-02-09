@@ -312,7 +312,7 @@ pin 9 (GPIOB_9)  fe000000.apb4:pinctrl@4000
 
 Take GPIOT_19 as an examples here.
 
-`GPIOH_4 = Banks + Pins = 355 + 110 = 465`
+`GPIOT_19 = Banks + Pins = 355 + 110 = 465`
 
 </div>
 </div>
