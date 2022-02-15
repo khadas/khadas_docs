@@ -7,7 +7,7 @@ Khadas officially supports and updates the **Ubuntu** distribution; **OTA upgrad
 
 `VIM4` supports `Ubuntu 20.04`.
 
-`Ubuntu 20.04` **desktop** and **server** versions use the **mainline kernel**. The default desktop environment is **GNOME**.
+For `VIM4`, `Ubuntu 20.04` is currently supported, and the kernel version is **5.4**. Contains **desktop system** and **server** two versions. The desktop environment defaults to the **GNOME** desktop.
 
 Supported installations:
 
@@ -25,10 +25,7 @@ If the image name includes the text **EMMC**, it is meant for eMMC installation.
 
 ### Linux Kernel
 
-At present we support two Linux kernels, **5.4** and **mainline**. The older **5.4** kernel is the most stable, whilst the **mainline** kernel contains the latest improvements but is unstable.
-
-If your priority is stability, select an OS that uses the **5.4** kernel.
-If you want to experience the latest features, select an OS that uses the **mainline** kernel.
+There is currently a **5.4** version of the kernel.
 
 ### OS Type
 
