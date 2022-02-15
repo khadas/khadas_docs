@@ -1,1 +1,3 @@
-../vim1/SystemConfigFile.md
+title: Ubuntu System Configuration File
+---
+
