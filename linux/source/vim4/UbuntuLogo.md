@@ -1,1 +1,3 @@
-../vim1/UbuntuLogo.md
+title: Enable/Disable Ubuntu logo
+---
+
