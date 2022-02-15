@@ -1,1 +1,3 @@
-../vim1/CustomMac.md
+title: Setup Customer Ethernet MAC Address
+---
+
