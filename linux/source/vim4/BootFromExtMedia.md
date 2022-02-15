@@ -1,1 +1,3 @@
-../vim1/BootFromExtMedia.md
+title: Boot Images from External Media
+---
+

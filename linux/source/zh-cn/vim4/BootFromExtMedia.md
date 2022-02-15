@@ -1,1 +1,3 @@
-../vim1/BootFromExtMedia.md
+title: 从外部媒体介质启动系统
+---
+
