@@ -1,1 +1,3 @@
-../vim1/RotateFramebuffer.md
+title: 旋转Framebuffer Console
+---
+
