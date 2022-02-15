@@ -267,7 +267,6 @@ vim4:
       lte_module_usage: LteModule.html
       m2x_eth: M2xEth.html
     hardware:
-      custom_ir_code: CustomIRCode.html
       extra_power_input: ExtraPowerInput.html
       max_cpu_freq: MaxCPUFrequency.html
       usb_gadget: USBGadget.html

@@ -303,7 +303,6 @@ sidebar:
     lte_module_usage: LTE 4G Module
     m2x_eth: M2X ETH
     hardware: Hardware
-    custom_ir_code: Custom IR Code
     extra_power_input: Exter Power Input
     max_cpu_freq: Max CPU Frequency
     usb_gadget: USB Gadget Usage
