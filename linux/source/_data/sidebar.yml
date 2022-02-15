@@ -1,4 +1,4 @@
-vim1:
+im1:
   quick_start:
     quick_setup: index.html
     choose_an_os: OsIntroduce.html
@@ -268,7 +268,6 @@ vim4:
       m2x_eth: M2xEth.html
     hardware:
       extra_power_input: ExtraPowerInput.html
-      max_cpu_freq: MaxCPUFrequency.html
       usb_gadget: USBGadget.html
   applications:
     gpio:
