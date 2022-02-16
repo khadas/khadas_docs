@@ -30,7 +30,7 @@ There is currently a **5.4** version of the kernel.
 ### OS Type
 
 **server** - no GUI support, only console
-**xfce** - standard desktop GUI support
+**gnome** - standard desktop GUI support
 
 ### Installation Type
 
