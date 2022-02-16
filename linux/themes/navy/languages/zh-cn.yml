@@ -45,7 +45,7 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -119,7 +119,7 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -193,7 +193,7 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -290,7 +290,7 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo

@@ -45,7 +45,7 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -119,7 +119,7 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -193,7 +193,7 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -291,7 +291,7 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
