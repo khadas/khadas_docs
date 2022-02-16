@@ -35,7 +35,7 @@ title: VIM4 Hardware
 |1|USB-A|USB 3.0 port that supports 1500mA output|
 |2|RJ-45|Gigabit LAN port that supports [Wake-On-LAN](Wol.html)|
 |3|HDMI Output|HDMI output port supporting CEC|
-|4|USB-C|USB-C port with USB power delivery (5.5-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](InstallOsIntoEmmc.html)|
+|4|USB-C|USB-C port with USB power delivery (9-[20V](https://www.khadas.com/product-page/usb-c-24w-adapter) input) and 2.0 speeds, can be used for [upgrading the OS](InstallOsIntoEmmc.html)|
 |5|USB-A|USB 2.0 port that supports 1300mA output|
 |6|Fan Header|4-wire [fan](https://www.khadas.com/product-page/3705-cooling-fan) header utilising pulse width modulation|
 |7|Reset Button|Force reboot your VIM4 in the event of a system freeze|
@@ -45,7 +45,7 @@ title: VIM4 Hardware
 |B|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
 |B|G-Sensor|3-axis accelerometer|
 |C|40-Pin GPIO|[General input/output pins](Gpio.html) for VIM4's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
-|D|Mic||
+|D|DMIC|Digital Microphone|
 |E|HDMI Input|Tpye-D HDMI input|
 |F|LEDs|Indicator LEDs|
 |G|[MCU](KbiGuidance.html)|STM32G0 micro-controller|
@@ -57,13 +57,13 @@ title: VIM4 Hardware
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|5.5-20V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
+|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|9-20V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
 |2|[Micro-SD Slot](BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs]()|
 |4|MIPI-CSI|20-pin, 0.5mm pitch, Provided data path for dual cameras|
 |5|MIPI-CSI|30-pin, 0.5mm pitch, 4-lane, dual cameras, 16MP image signal processing|
-|6|[MIPI-DSI](TS050.html)|40-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays](https://www.khadas.com/product-page/ts050-touchscreen)|
-|7|v-by-one|30-pin, 0.5mm pitch|
+|6|[MIPI-DSI&TP](TS050.html)/eDP|40-pin, 0.5mm pitch FPC connector for [4-lane 1080P displays && TP touch input](https://www.khadas.com/product-page/ts050-touchscreen)/eDP|
+|7|V-by-One|30-pin, 0.5mm pitch|
 |8|XPWR Pads|Connect an external power switch using these pads|
 |9|[SPI Flash](BootFromSpiFlash.html)|Flash memory module that interfaces over SPI|
 |A|Current Limit Switch|Prevents damage to VIM4L due to faulty loading conditions|
@@ -96,15 +96,4 @@ The above behaviours are default out-of-the-box, and can be altered by a user. F
 
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
