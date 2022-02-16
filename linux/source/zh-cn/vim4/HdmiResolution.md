@@ -1,1 +1,4 @@
-../vim1/HdmiResolution.md
+title: 设置HDMI分辨率
+---
+
+## TODO
