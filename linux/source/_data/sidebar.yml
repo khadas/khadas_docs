@@ -262,7 +262,6 @@ vim4:
       framebuffer_console_font: SetupFramebufferConsoleFont.html
     accessories:
       fan: Fan.html
-      camera: MIPICamera.html
       ts050: TS050.html
       lte_module_usage: LteModule.html
       m2x_eth: M2xEth.html

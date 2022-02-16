@@ -298,7 +298,6 @@ sidebar:
     framebuffer_console_font: Framebuffer Console Font
     accessories: Accessories
     fan: Cooling Fan
-    camera: MIPI Camera
     ts050: TS050 Touch Screen
     lte_module_usage: LTE 4G Module
     m2x_eth: M2X ETH
