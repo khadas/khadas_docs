@@ -1,1 +1,6 @@
-../vim1/HardwareEncoding.md
+title: Hardware Encoding
+---
+
+## TODO
+
+

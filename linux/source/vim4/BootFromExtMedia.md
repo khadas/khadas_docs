@@ -1,4 +1,4 @@
-title: Boot from External Media
+title: Boot Images from External Media
 ---
 
 There are several images that are designed to run from a SD Card or Thumbdrive (U-Disk) and are compatible with VIMs. For example:

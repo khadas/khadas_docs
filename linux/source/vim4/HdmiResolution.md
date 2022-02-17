@@ -1,1 +1,4 @@
-../vim1/HdmiResolution.md
+title: Setup HDMI Resolution
+---
+
+## TODO

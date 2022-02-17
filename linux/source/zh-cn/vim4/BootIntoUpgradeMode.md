@@ -43,7 +43,7 @@ title: 进入升级模式
 
 1. 给VIM4上电。
 2. 在2S内连续按3次`Func`按键后松开。
-3. 你会看到系统电源指示灯(蓝色)闪烁,3s后电源指示灯(蓝色)会熄灭，表明板子已经进入升级模式。
+3. 你会看到系统电源指示灯(红色)闪烁,3s后电源指示灯(红色)会熄灭，表明板子已经进入升级模式。
 
 </div>
 <div class="tab-pane fade" id="sdbooting" role="tabpanel" aria-labelledby="sdbooting-tab">
@@ -53,8 +53,6 @@ title: 进入升级模式
 3. 给VIM4上电。
 4. 系统启动时按空格键进入串口命令行模式。
 5. 执行`run update`命令进入升级模式。
-
-![image](/linux/images/vim4/VIM4_M_Register.jpg)
 
 </div>
 </div>

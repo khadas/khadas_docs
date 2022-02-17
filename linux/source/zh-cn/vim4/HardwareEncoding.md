@@ -1,1 +1,6 @@
-../vim1/HardwareEncoding.md
+title: 硬件编码
+---
+
+## TODO
+
+

@@ -49,59 +49,16 @@ AT+QCFG="usbnet",0
 
 Power down and restart to switch back to default mode
 
-## Use LTE Module with Ubuntu Desktop
-
-### Xfce Desktop
-
-#### Step1: Open `edit connections`
-
-Find `edit connections` in network menu.
-
-![LTE_edit_connect](/linux/images/vim3/LTE_edit_connect.png)
-
-The lastest option is `edit connections`.
-
-#### Step2: Add new connect
-
-![LTE_add_connect](/linux/images/vim3/LTE_add_connect.png)
-
-You can find the `+` option in the lower left corner.
-
-#### Step3: choose connect type
-
-![LTE_choose_connect_tpye](/linux/images/vim3/LTE_choose_connect_tpye.png)
-
-The `Mobile Broadband` that can be use for LTE Module
-
-#### Step4: Choose you provider's country 
-
-![LTE_choose_country](/linux/images/vim3/LTE_choose_country.png)
-
-Choose you provider's country . 
-
-#### Step5: Choose you provider 
-
-![LTE_choose_provider](/linux/images/vim3/LTE_choose_provider.png)
-
-Choose you provider,This needs to be set according to your SIM card.
-
-After choose you provider, the next two steps use defconfigiure. So you just need to choose `next`.
-
-#### Step6: set password
-![LTE_set_psk](/linux/images/vim3/LTE_set_psk.png)
-
-Set you LTE Module connect passwork, you need to remember it . When you connect it , you need to use it.
-And you can set you connection name or use default.
-
-#### Step7: Connect 
-
-![LTE_connect](/linux/images/vim3/LTE_connect.png)
-
-Now, you can connect it , you will find you LTE module connections in network menu.Choose it and input the password which you set in `Step6`.
-
-![LTE_use_psk](/linux/images/vim3/LTE_use_psk.png)
-
-And then, you will connect success !
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true">Desktop</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="server-tab" data-toggle="tab" href="#server" role="tab" aria-controls="server" aria-selected="false">Server</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
 ### GNOME Desktop
 
@@ -146,6 +103,8 @@ Open the corresponding settings and update the password in 'mobile broadband'
 
 ![LTE_gnome_change_psk](/linux/images/vim3/LTE_gnome_change_psk.png)
 
+</div>
+<div class="tab-pane fade show active" id="server" role="tabpanel" aria-labelledby="desktop-tab">
 
 ## Use LTE Module with Ubuntu Server
 
@@ -155,6 +114,9 @@ If you use Ubuntu Server, you just need a command to connect it .
 $ sudo nmcli connection add type gsm apn 3gnet user 0000 password 0000 con-name "EM06 4G"
 
 ```
+
+</div>
+</div>
 
 ## How to check  you connection is success
 

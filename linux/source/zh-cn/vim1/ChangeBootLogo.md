@@ -1,4 +1,4 @@
-title: 如何更换开机Logo
+title: 修改启动Logo
 ---
 
 {% note info 对于最新的固件，在系统启动过程中会显示3个logo：%}

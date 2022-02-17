@@ -2,7 +2,7 @@ menu:
   vim: VIM
   vim1: VIM1
   vim2: VIM2
-  vim3: VIM3
+  vim3: VIM3/3L
   vim4: VIM4
   edge: Edge
   tone1: Tone1
@@ -45,7 +45,7 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -119,7 +119,7 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -193,7 +193,7 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -291,22 +291,18 @@ sidebar:
     custom_mac_address: Custom MAC Address
     howto_use_wol: Wake On Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
     framebuffer_console_font: Framebuffer Console Font
     accessories: Accessories
     fan: Cooling Fan
-    camera: MIPI Camera
     ts050: TS050 Touch Screen
     lte_module_usage: LTE 4G Module
     m2x_eth: M2X ETH
     hardware: Hardware
-    pcie_usb_port: PCIe/USB3.0 Port Switch
-    custom_ir_code: Custom IR Code
     extra_power_input: Exter Power Input
-    max_cpu_freq: Max CPU Frequency
     usb_gadget: USB Gadget Usage
     applications: Applications
     gpio: GPIO

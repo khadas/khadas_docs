@@ -262,15 +262,11 @@ vim4:
       framebuffer_console_font: SetupFramebufferConsoleFont.html
     accessories:
       fan: Fan.html
-      camera: MIPICamera.html
       ts050: TS050.html
       lte_module_usage: LteModule.html
       m2x_eth: M2xEth.html
     hardware:
-      pcie_usb_port: PcieUsbPort.html
-      custom_ir_code: CustomIRCode.html
       extra_power_input: ExtraPowerInput.html
-      max_cpu_freq: MaxCPUFrequency.html
       usb_gadget: USBGadget.html
   applications:
     gpio:

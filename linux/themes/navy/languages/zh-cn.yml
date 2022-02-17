@@ -2,7 +2,7 @@ menu:
   vim: VIM
   vim1: VIM1
   vim2: VIM2
-  vim3: VIM3
+  vim3: VIM3/3L
   vim4: VIM4
   edge: Edge
   tone1: Tone1
@@ -45,7 +45,7 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -119,7 +119,7 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -193,7 +193,7 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -290,22 +290,18 @@ sidebar:
     custom_mac_address: 自定义MAC地址
     howto_use_wol: 局域网唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
     framebuffer_console_font: Framebuffer Console字体
     accessories: 配件
     fan: 风扇
-    camera: MIPI摄像头
     ts050: TS050触摸屏
     lte_module_usage: 4G模块
     m2x_eth: M2X以太网口
     hardware: 硬件
-    pcie_usb_port: PCIe/USB3.0切换
-    custom_ir_code: 自定义IR Code
     extra_power_input: 外部供电
-    max_cpu_freq: CPU超频设置
     usb_gadget: USB Gadget使用说明
     applications: 应用
     gpio: GPIO
