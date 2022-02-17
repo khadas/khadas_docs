@@ -3,8 +3,8 @@ title: VIM4硬件描述
 
 ## VIM4 接口描述
 
-![VIM4 Interface Top](/linux/images/vim4/vim4_interfaces_top.png)
-![VIM4 Interface Bottom](/linux/images/vim4/vim4_interfaces_bottom.png)
+<img src="{{ system }}/linux/images/vim4/vim4_interfaces_top.png" width="70%" height="70%" >
+<img src="{{ system }}/linux/images/vim4/vim4_interfaces_top.png" width="70%" height="70%" >
 
 ## VIM4 硬件信息
 

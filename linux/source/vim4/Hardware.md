@@ -3,8 +3,9 @@ title: VIM4 Hardware
 
 ## VIM4 Interfaces
 
-![VIM4 Interface Top](/linux/images/vim4/vim4_interfaces_top.png)
-![VIM4 Interface Bottom](/linux/images/vim4/vim4_interfaces_bottom.png)
+<img src="{{ system }}/linux/images/vim4/vim4_interfaces_top.png" width="70%" height="70%" >
+<img src="{{ system }}/linux/images/vim4/vim4_interfaces_top.png" width="70%" height="70%" >
+
 
 ## VIM4 Hardware Info
 
@@ -43,7 +44,6 @@ title: VIM4 Hardware
 |9|Power Button|This button turns on your VIM4|
 |A|RTC Header|A header for connecting a real-time clock (button) battery|
 |B|M2 Hole|M2 clearance holes for a [case](https://www.khadas.com/product-page/diy-case), or adding a [heatsink](https://www.khadas.com/product-page/new-vim-heatsink)|
-|B|G-Sensor|3-axis accelerometer|
 |C|40-Pin GPIO|[General input/output pins](Gpio.html) for VIM4's SoC, or plugging-in a [Toneboard](https://www.khadas.com/product-page/tone-board)|
 |D|DMIC|Digital Microphone|
 |E|HDMI Input|Tpye-D HDMI input|

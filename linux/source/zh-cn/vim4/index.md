@@ -59,9 +59,7 @@ title: 快速上手
 5. [Ubuntu固件](Vim1UbuntuFirmware.html)
 6. [Wi-Fi](Wifi.html)
 
-## VIM3相关网页
-更多的相关信息，请查看我们的网页，阅读文档，或者到论坛浏览以及提问。
-* [VIM3商店](https://www.khadas.com/shop?Collection=VIM3&sort=price_descending)
-* [VIM3网站首页](https://www.khadas.com/vim)
-* [VIM3论坛页](https://forum.khadas.com/c/Khadas-VIM3)              
+## 外部链接
+* [Khadas Homepage](https://www.khadas.com)
+* [Khadas Community](https://forum.khadas.com)
 

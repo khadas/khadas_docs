@@ -43,7 +43,7 @@ There are 4 ways to boot into upgrade mode:
 
 1. Power-on VIM4.
 2. Quickly press the `Function` key 3 times in 2 seconds, then release the key.
-3. You will see the Power-LED (Blue) blink for about 3 seconds. After the Power-LED (Blue) turns OFF, this indicates that the board is in Upgrade Mode (Maskrom Mode).
+3. You will see the Power-LED (Red) blink for about 3 seconds. After the Power-LED (Red) turns OFF, this indicates that the board is in Upgrade Mode (Maskrom Mode).
 
 </div>
 <div class="tab-pane fade" id="sdbooting" role="tabpanel" aria-labelledby="sdbooting-tab">
@@ -54,8 +54,6 @@ There are 4 ways to boot into upgrade mode:
 4. Power-on VIM4.
 5. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot Mode.
 6. Type `run update` in the terminal of U-Boot as below..
-
-![image]()
 
 </div>
 </div>
