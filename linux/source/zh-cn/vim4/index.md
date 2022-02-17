@@ -27,11 +27,9 @@ title: 快速上手
 1. 4K HDMI 2.0 的数据线
 2. 兼容1080P和4K的显示器
 3. 无线的鼠标和键盘
-4. 兼容CEC的遥控器
 
 **相关链接：**
 [Khadas Shop - HDMI数据线](https://www.khadas.com/product-page/hdmi-cable)
-[Khadas Shop - 遥控器](https://www.khadas.com/product-page/ir-remote)
 
 ## 快速连接开机
 
