@@ -25,7 +25,6 @@ You can connect a HDMI monitor, USB keyboard and mouse to use your Khadas Develo
 1. 4K HDMI 2.0 cable
 2. HDMI-compatible 1080P/4K monitor
 3. USB keyboard and mouse
-4. CeC-compatible IR remote control
 
 {% note warn Warning: %}
 Do not attach multiple cables with large heads that could interfere. Bent or twisted connectors will result in intermittent connectivity issues.
@@ -33,7 +32,6 @@ Do not attach multiple cables with large heads that could interfere. Bent or twi
 
 **Related Links:**
 * [Khadas Shop - HDMI Cable](https://www.khadas.com/product-page/hdmi-cable)
-* [Khadas Shop - IR Remote Control](https://www.khadas.com/product-page/ir-remote)
 
 ## Boot Up
 
