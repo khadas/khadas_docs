@@ -4,7 +4,7 @@ title: VIM4 Hardware
 ## VIM4 Interfaces
 
 <img src="{{ system }}/linux/images/vim4/vim4_interfaces_top.png" width="70%" height="70%" >
-<img src="{{ system }}/linux/images/vim4/vim4_interfaces_top.png" width="70%" height="70%" >
+<img src="{{ system }}/linux/images/vim4/vim4_interfaces_bottom.png" width="70%" height="70%" >
 
 
 ## VIM4 Hardware Info
