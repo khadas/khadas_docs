@@ -22,15 +22,39 @@ All the VIM series boards have onboard eMMC storage, so you can install the OS v
 
 ## Preparation
 
-* Dowload the [USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_v3xx.zip) and extract it.
-* Run `setup_vxx.x.x.exe` to install the tool for upgrading your board.
-![Image of USB_Upgrade_tool_setup_v217](/linux/images/vim1/usb_upgrade_tool_setup_v217.png)
+1. Dowload the [USB Upgrade Tool](http://dl.khadas.com/products/vim4/tool/Aml_Burn_Tool_V3.2.0.zip) and extract it.
+2. Burning tool directory description
+  ![image](/linux/images/vim1/usb_upgrade_tool_dir_1.png)
+  * The `V2` and `V3` folders hold the original burning tool files
+  * The `burn tool` folder stores burning tools and drivers for different boards
+3. `burn tool` folders description
+  ![image](/linux/images/vim1/usb_upgrade_tool_dir_2.png)
+  * `Driver-VIM1_2_3` Driver files for VIM1/VIM2/VIM3/VIM3L boards
+  * `Driver-VIM4` Driver files for VIM4 board
+  * `VIM1_2_3.exe` Burning tool for VIM1/VIM2/VIM3/VIM3L boards
+  * `VIM4.exe` Burning tool for VIM4 board
 
 ## Installation
 
-Make sure that you have installed the correct USB upgrade Tool, then follow the steps below:
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim1-tab" data-toggle="tab" href="#vim1-tool" role="tab" aria-controls="vim1" aria-selected="true">VIM1/VIM2/VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-tool" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1-tool" role="tabpanel" aria-labelledby="vim1-tab">
 
-1. Open `USB_Burning_tool_v2.x.x.exe`, click `File-->Import Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
+Install driver
+
+1. Enter the `Driver-VIM1_2_3` directory, install `dpscat.exe`, the installation process is very fast, and there is no display.
+2. Install `dpinst64.exe`. After the installation is successful, you can burn the firmware.
+
+Make sure the driver is installed correctly, then follow the steps below to upgrade:
+
+1. Enter `burn tool` directory, open `VIM1_2_3.exe`, click `File-->Import Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
 3. Put your board into [Upgrade Mode](BootIntoUpgradeMode.html).
 4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as a connected USB-device.
@@ -38,13 +62,35 @@ Make sure that you have installed the correct USB upgrade Tool, then follow the 
     Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
     ![Image of USB_Upgrade_Tool_Interface_v217](/linux/images/vim1/usb_upgrade_tool_interface_v217_en.png)
 
+</div>
+<div class="tab-pane fade" id="vim4-tool" role="tabpanel" aria-labelledby="vim4-tab">
+
+Install driver
+
+1. Enter the `Driver-VIM4` directory, install `dpscat.exe`, the installation process is very fast, and there is no display.
+2. Install `dpinst64.exe`. After the installation is successful, you can burn the firmware.
+
+Make sure the driver is installed correctly, then follow the steps below to upgrade:
+
+1. 1. Enter `burn tool` directory, open `VIM4.exe`, click `Setup-->Load Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
+2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
+3. Put your board into [Upgrade Mode](BootIntoUpgradeMode.html).
+4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as a connected USB-device.
+
+    Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
+    ![Image of USB_Upgrade_Tool_Interface_v217](/linux/images/vim4/usb_upgrade_tool_interface_en.png)
+
+</div>
+
 {% note info Tips %}
 
 * To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark.
 * [Extra power supply](ExtraPowerInput.html) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
+* If your system is a 32-bit system, please select `dpinst32.exe` when installing the driver.
 
 {% endnote %}
 
+</div>
 </div>
 <div class="tab-pane fade" id="ubu" role="tabpanel" aria-labelledby="ubu-tab">
 
