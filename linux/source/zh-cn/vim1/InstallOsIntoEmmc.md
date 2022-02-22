@@ -20,28 +20,74 @@ title: 通过USB线安装系统到eMMC
 <div class="tab-pane fade show active" id="win" role="tabpanel" aria-labelledby="win-tab">
 
 ## 准备
-* 下载升级工具[USB Upgrade Tool](https://dl.khadas.com/Tools/USB_Burning_Tool_vxxxzip)并解压。
-* 运行`setup_vxx.x.x.exe`程序进行安装。
-![image](/linux/images/vim1/usb_upgrade_tool_setup_v217_zh.png)
+
+1. 下载升级工具[USB Upgrade Tool](http://dl.khadas.com/products/vim4/tool/Aml_Burn_Tool_V3.2.0.zip)并解压。
+2. 烧录工具目录说明
+  ![image](/linux/images/vim1/usb_upgrade_tool_dir_1.png)
+  * `V2`和`V3`文件夹存放了原始的烧录工具文件
+  * `burn tool`文件夹存放的是不同板子的烧录工具以及驱动
+3. `burn tool`目录说明
+  ![image](/linux/images/vim1/usb_upgrade_tool_dir_2.png)
+  * `Driver-VIM1_2_3` VIM1/VIM2/VIM3/VIM3L板子的驱动文件
+  * `Driver-VIM4` VIM4板子的驱动文件
+  * `VIM1_2_3.exe` VIM1/VIM2/VIM3/VIM3L板子的烧录工具
+  * `VIM4.exe` VIM4板子的烧录工具
 
 ## 安装系统到eMMC
 
-确保已经正确安装好升级工具，然后按照下面步骤进行升级：
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim1-tab" data-toggle="tab" href="#vim1-tool" role="tab" aria-controls="vim1" aria-selected="true">VIM1/VIM2/VIM3</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-tool" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="vim1-tool" role="tabpanel" aria-labelledby="vim1-tab">
 
-1、打开升级工具`USB_Burning_Tool_vxx.x.x.exe`，点击`File-->Import image`选择要升级的固件。
+安装驱动
+
+1. 进入`Driver-VIM1_2_3`目录，安装`dpscat.exe`，此安装过程很快，并且没有任何显示。
+2. 安装`dpinst64.exe`。安装成功，就可以烧录固件了。
+
+确保已经正确安装好驱动，然后按照下面步骤进行升级：
+
+1、进入`burn tool`目录，打开升级工具`VIM1_2_3.exe`，点击`File-->Import image`选择要升级的固件。
 2、用USB-C线连接板子和PC电脑（默认板子上电会自动开机）。
 3、进入固件[升级模式](BootIntoUpgradeMode.html)。
 4、如果上面操作已正确执行，电脑端会发现板子升级设备，点击升级工具上的`开始`按钮开始固件升级,升级进度条100%时完成升级。
 
 ![image](/linux/images/vim1/usb_upgrade_tool_interface_v217_zh.png)
 
+</div>
+<div class="tab-pane fade" id="vim4-tool" role="tabpanel" aria-labelledby="vim4-tab">
+
+安装驱动
+
+1. 进入`Driver-VIM4`目录，安装`dpscat.exe`，此安装过程很快，并且没有任何显示。
+2. 安装`dpinst64.exe`。安装成功，就可以烧录固件了。
+
+
+确保已经正确安装好驱动，然后按照下面步骤进行升级：
+
+1、进入`burn tool`目录，打开升级工具`VIM4.exe`，点击`设置-->加载镜像`选择要升级的固件。
+2、用USB-C线连接板子和PC电脑（默认板子上电会自动开机）。
+3、进入固件[升级模式](BootIntoUpgradeMode.html)。
+4、如果上面操作已正确执行，电脑端会发现板子升级设备，点击升级工具上的`Start`按钮开始固件升级,升级进度条100%时完成升级。
+
+![image](/linux/images/vim4/usb_upgrade_tool_interface_zh.png)
+
+</div>
+
 {% note info 提示 %}
 
 * 先点击`停止`按钮再关闭升级工具。
 * [外部供电要求](ExtraPowerInput.html)，部分电脑供电比较弱会导致升级失败。
-
+* 如果你的系统是32位的系统，在安装驱动时，请选择`dpinst32.exe`。
 {% endnote %}
 
+</div>
 </div>
 <div class="tab-pane fade" id="ubu" role="tabpanel" aria-labelledby="ubu-tab">
 

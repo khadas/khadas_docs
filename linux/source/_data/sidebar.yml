@@ -370,6 +370,7 @@ hardware:
     vim1: hardwareVim1.html
     vim2: hardwareVim2.html
     vim3: hardwareVim3.html
+    vim4: hardwareVim4.html
     edge: hardwareEdge.html
     tone1: hardwareTone1.html
     
@@ -387,6 +388,9 @@ firmware:
     vim3l:
      vim3l_ubuntu: Vim3lUbuntuFirmware.html
      vim3l_thirdparty: Vim3lThirdpartyFirmware.html
+    vim4:
+     vim4_ubuntu: Vim4UbuntuFirmware.html
+     vim4_thirdparty: Vim4ThirdpartyFirmware.html
     edge:
       edge_ubuntu: EdgeUbuntuFirmware.html
       edge_thirdparty: EdgeThirdpartyFirmware.html
