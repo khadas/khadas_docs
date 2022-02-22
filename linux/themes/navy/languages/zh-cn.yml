@@ -428,6 +428,7 @@ sidebar:
     vim1: VIM1
     vim2: VIM2
     vim3: VIM3
+    vim4: VIM4
     edge: Edge
     tone1: Tone1
   firmware:
@@ -444,6 +445,9 @@ sidebar:
     vim3l: VIM3L
     vim3l_ubuntu: Ubuntu
     vim3l_thirdparty: 第三方固件
+    vim4: VIM4
+    vim4_ubuntu: Ubuntu
+    vim4_thirdparty: 第三方固件
     edge: Edge
     edge_ubuntu: Ubuntu
     edge_thirdparty: 第三方固件
