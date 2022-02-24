@@ -150,21 +150,21 @@ img {
                 <a href="/android/zh-cn/vim3#VIM3">
                   {% endif %}
                   <div class="mask">
-                    <span class="mask-text">VIM3</span>
+                    <span class="mask-text">VIM3/VIM3L</span>
                   </div>
                 </a>
             </div>
           </div>
           <div class="homepage col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
             <div class="ui raised segment col-box">
-              <img src="/android/images/home/vim3l.jpg" alt="VIM3L">
+              <img src="/android/images/home/vim4.jpg" alt="VIM4">
               {% if page.lang == 'en' %}
-              <a href="/android/vim3#VIM3L">
+              <a href="/android/vim4#VIM4">
                 {% else %}
-                <a href="/android/zh-cn/vim3#VIM3L">
+                <a href="/android/zh-cn/vim4#VIM4">
                   {% endif %}
                   <div class="mask">
-                    <span class="mask-text">VIM3L</span>
+                    <span class="mask-text">VIM4</span>
                   </div>
                 </a>
             </div>

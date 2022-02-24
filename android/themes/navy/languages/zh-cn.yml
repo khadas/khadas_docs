@@ -2,7 +2,7 @@ menu:
   vim: VIM
   vim1: VIM1
   vim2: VIM2
-  vim3: VIM3
+  vim3: VIM3/3L
   vim4: VIM4
   edge: Edge
   hardware: 硬件资料
@@ -213,6 +213,7 @@ sidebar:
     vim1: VIM1
     vim2: VIM2
     vim3: VIM3
+    vim4: VIM4
     edge: Edge
   firmware:
     firmware: 固件
@@ -232,6 +233,9 @@ sidebar:
     vim3l_android: Android
     vim3l_ubuntu: Ubuntu
     vim3l_thirdparty: 第三方固件
+    vim4: VIM4
+    vim4_android: Android
+    vim4_thirdparty: 第三方固件
     edge: Edge
     edge_android: Android
     edge_ubuntu: Ubuntu
