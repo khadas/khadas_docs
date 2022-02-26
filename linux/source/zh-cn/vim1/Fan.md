@@ -1,11 +1,11 @@
 title: 如何设置风扇
 ---
 
-这篇文档介绍如何在Ubuntu下设置风扇。
+这篇文档介绍如何在Ubuntu下**设置风扇**。
 
 ### 打开风扇应用
 
-你可以在系统的应用列表中找到`FAN Setting`
+你可以在系统的应用列表中找到`FAN Setting`。
 
 ![FAN Setting](/linux/images/vim1/gnome_application_fan.png)
 
@@ -15,7 +15,7 @@ title: 如何设置风扇
 
 ![Fan Setting](/linux/images/vim1/gnome_fan_setting.png)
 
-可以选择你需要的工作模式,默认是`auto`.
+可以选择你需要的工作模式,默认是`auto`。
 
 ### Step3: 保存
 
