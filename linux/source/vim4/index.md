@@ -1,4 +1,4 @@
-title: Quickstart
+title: Quick Start
 ---
 
 This article will show you how to quickly get up and running after receiving your board.
