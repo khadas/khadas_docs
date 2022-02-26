@@ -12,19 +12,19 @@ title: Wi-Fi
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-* Open Wi-Fi Settings
+1. **Open Wi-Fi Settings**
 
 Wi-Fi settings are in the upper right corner, click on the lower triangle to see Wi-Fi settings options
 
 <img src="/linux/images/vim1/wifi-setting.png" width="400px">
 
-* Select Network
+2. **Select Network**
 
 Choose a Wi-Fi you want to connect to,
 
 <img src="/linux/images/vim1/wifi-select.png" width="400px">
 
-* Enter Password
+3. **Enter Password**
 
 After entering the password, you can use WiFi normally,
 
@@ -35,7 +35,7 @@ After entering the password, you can use WiFi normally,
 
 For the Ubuntu/Debian server we can use `NetworkManager` to setup Wi-Fi vis command line.
 
-* Scan for Wi-Fi Networks
+1. **Scan for Wi-Fi Networks**:
 
 ```
 $ nmcli d wifi list
@@ -51,7 +51,7 @@ IN-USE  SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SEC
 
 Find a Wi-Fi network that you can connect to.
 
-* Create an hashed pre-computed PSK key with wpa_passphrase
+2. **Create an hashed pre-computed PSK key with wpa_passphrase**:
 
 To avoid storing human readable passwords there is an handy tool coming with wpa_supplicant called `wpa_passphrase`.
 
@@ -74,7 +74,7 @@ Replace the `your_ssid` & `your_password` with your SSID and password.
 
 {% endnote %}
 
-* Connect to a Wi-Fi Network
+3. **Connect to a Wi-Fi Network**:
 
 ```bash
 $ sudo nmcli d wifi connect your_ssid password 6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d083a299734c wep-key-type key
@@ -87,7 +87,7 @@ Replace the `your_ssid` & `6d5324610d3627ab4f97b80cf22b742996d82c022b283a874e88d
 
 {% endnote %}
 
-* Disconnect from a Wi-Fi Network
+4. **Disconnect from a Wi-Fi Network**:
 
 ```bash
 $ sudo nmcli d disconnect wlan0
