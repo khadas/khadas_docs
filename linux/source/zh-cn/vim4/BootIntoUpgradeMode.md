@@ -25,10 +25,10 @@ title: 进入升级模式
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="keys" role="tabpanel" aria-labelledby="keys-tab">
 
-1. 给VIM4上电
-2. 长按`POWER`按键不松开
+1. 给VIM4上电。
+2. 长按`POWER`按键不松开。
 3. 短按`Reset`按键。
-4. 数2-3秒后松开`POWER`按键会进入升级模式，进入升级模式后系统led会点亮。
+4. 数2-3秒后松开`POWER`按键会进入升级模式，进入升级模式后系统LED会点亮。
 
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
@@ -36,14 +36,14 @@ title: 进入升级模式
 1. 参考[文档](SetupSerialTool.html)设置串口。
 2. 确保串口连线正确。
 3. 系统启动时按空格键进入串口命令行模式。
-4. 执行`run update`命令进入升级模式，进入升级模式后系统led灯会点亮。
+4. 执行`run update`命令进入升级模式，进入升级模式后系统LED灯会点亮。
 
 </div>
 <div class="tab-pane fade" id="tst" role="tabpanel" aria-labelledby="tst-tab">
 
 1. 给VIM4上电。
 2. 在2S内连续按3次`Func`按键后松开。
-3. 你会看到系统电源指示灯(红色)闪烁,3s后电源指示灯(红色)会熄灭，表明板子已经进入升级模式。
+3. 你会看到系统电源指示灯(红色)闪烁，3s后电源指示灯(红色)会熄灭，表明板子已经进入升级模式。
 
 </div>
 <div class="tab-pane fade" id="sdbooting" role="tabpanel" aria-labelledby="sdbooting-tab">

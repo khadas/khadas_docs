@@ -27,7 +27,7 @@ There are 4 ways to boot into upgrade mode:
 
 1. Power on VIM4.
 2. Long press the `POWER` key without releasing it.
-3. Short press the ‘RESET’ key and release it.
+3. Short press the `RESET` key and release it.
 4. Count for 2 to 3 seconds, then release the `POWER` key to enter into Upgrade Mode. You will see the sys-led turn ON when you've entered Upgrade Mode.
 
 </div>
@@ -35,7 +35,7 @@ There are 4 ways to boot into upgrade mode:
 
 1. Refer this [guide](SetupSerialTool.html) to setup your serial tool for VIM4.
 2. Once again, make sure you've done the correct connections and setup.
-3. Hit 'SPACE' key at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot Mode.
+3. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot Mode.
 4. Type `run update` in the terminal of U-Boot as below. You will see the sys-led turn ON when you've entered Upgrade Mode.
 
 </div>
@@ -53,7 +53,7 @@ There are 4 ways to boot into upgrade mode:
 3. Refer this [guide](SetupSerialTool.html) to setup your serial tool for VIM4.
 4. Power-on VIM4.
 5. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot Mode.
-6. Type `run update` in the terminal of U-Boot as below..
+6. Type `run update` in the terminal of U-Boot as below.
 
 </div>
 </div>
