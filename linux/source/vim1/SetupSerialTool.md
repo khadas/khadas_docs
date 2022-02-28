@@ -199,7 +199,7 @@ Choose `Yes` and hit `Enter` to exit `minicom`.
 ```
 /dev/ttyUSB0: Permission denied
 ```
-2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](UBootUsage.html) when you've entered u-boot.
+2. To access U-Boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](UBootUsage.html) when you've entered u-boot.
 
 3. Note that to see the standard "help" commands as listed in the [U-Boot Usage Guide](UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our [krescue images](https://dl.khadas.com/Firmware/Krescue/images/).
 

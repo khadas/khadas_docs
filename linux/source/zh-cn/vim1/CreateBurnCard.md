@@ -1,7 +1,7 @@
 title: 创建系统烧录卡
 ---
 
-本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式[创建烧录卡](CreateBootableSDCard.html)。
+本教程是指导Linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式[创建烧录卡](CreateBootableSDCard.html)。
 
 {% note info 由于VIM1、VIM2、VIM3和VIM4操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
 
@@ -116,7 +116,8 @@ $ sudo eject /dev/sdX
 至此，TF烧录卡的制作已完成。
 
 ## 通过TF烧录卡升级固件
-1. 把制作好的烧录卡插入VIM/VIM2设备中，然后上电。
+
+1. 把制作好的烧录卡插入设备中，然后上电。
 2. 参考文档[进入升级模式](BootIntoUpgradeMode.html)。
 3. 等待升级完成。
 

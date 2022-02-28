@@ -1,4 +1,4 @@
-title: WiringPi软件PWM
+title: 软件PWM
 ---
 
 **这篇文档主要介绍如何在WiringPi以及WiringPi-Python上使用软件PWM控制舵机。**
@@ -9,7 +9,7 @@ title: WiringPi软件PWM
 
 <img src="/linux/images/vim3/servo-pwm-signal_orig.png" width="50%" >
 
-不同的宽度对应着舵机的不同角度，脉冲宽度对应的范围是0.5到2.5ms。
+不同的宽度对应着舵机的不同角度，脉冲宽度对应的范围是0.5ms到2.5ms。
 
 ```
 0.5ms --  0度
@@ -67,8 +67,8 @@ $ gpio readall
 
 ### WiringPi源码以及编译
 
-1. 舵机在1800度、90度、0度之间来回切换，切换间隔为3S切换一次，周期为9S。
-2. 模拟舵机在顺时针转动，暂停转动和逆时针转动来回切换，切换间隔为3S切换一次，周期为9S。
+1. 舵机在1800度、90度、0度之间来回切换，切换间隔为3s切换一次，周期为9s。
+2. 模拟舵机在顺时针转动，暂停转动和逆时针转动来回切换，切换间隔为3s切换一次，周期为9s。
 
 ```c
 #include <wiringPi.h>
@@ -101,8 +101,8 @@ $ gcc -o SoftPwm SoftPwm.c -lwiringPi -lpthread -lrt -lm -lcrypt
 
 ### WiringPi-Python源码
 
-1. 舵机先后在180度、90度和0度之间切换，时间间隔为3S。
-2. 模拟舵机在顺时针转动，暂停转动和逆时针转动之间切换，时间间隔为3S。
+1. 舵机先后在180度、90度和0度之间切换，时间间隔为3s。
+2. 模拟舵机在顺时针转动，暂停转动和逆时针转动之间切换，时间间隔为3s。
 
 ```python
 import wiringpi as GPIO

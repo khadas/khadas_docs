@@ -7,7 +7,7 @@ title: 设置串口调试工具
 ## 连接
 请按下面所示方式连接：
 
-* 连接所有GPIO，确保TX/RX连接正确.
+* 连接所有GPIO，确保TX/RX连接正确。
   * Tool Pin `GND`: <---> `Pin17` of VIMs' GPIO
   * Tool Pin `TXD`: <---> `Pin18` of VIMs' GPIO(Linux_Rx)
   * Tool Pin `RXD`: <---> `Pin19` of VIMs' GPIO(Linux_Tx)
@@ -192,17 +192,17 @@ Khadas login:
 
 {% note info 提示 %}
 
-1、如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。
+1. 如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。
 
 ```bash
 /dev/ttyUSB0: Permission denied
 ```
 
-2、连接串口工具到PC以及板子上，打开PC上的串口软件，给板子上电，看到串口开始打印信息提后，按下空格键就把系统停在uboot命令行界面。成功停在uboot命令行以后,会在串口软件看到[kvim#](UBootUsage.html)。
+2. 连接串口工具到PC以及板子上，打开PC上的串口软件，给板子上电，看到串口开始打印信息提后，按下空格键就把系统停在U-Boot命令行界面。成功停在U-Boot命令行以后,会在串口软件看到[kvim#](UBootUsage.html)。
 
-3、需要注意的是如果你想要使用[uboot用户指南](UBootUsage.html)的里的标准“帮助”命令，那么你先要在板子上烧录一个ubuntu或者安卓的固件，当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行。
+3. 需要注意的是如果你想要使用[U-Boot用户指南](UBootUsage.html)的里的标准“帮助”命令，那么你先要在板子上烧录一个Ubuntu或者安卓的固件，当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行。
 
-4、你可以使用uboot命令去修改默认的[开机图标](BuildBootLogoForUboot.html)等等。
+4. 你可以使用U-Boot命令去修改默认的[开机图标](BuildBootLogoForUboot.html)等等。
 
 {% endnote %}
 

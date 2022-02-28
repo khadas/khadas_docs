@@ -99,7 +99,7 @@ $ cp -a aml_sdc_burn.ini update.img /media/XXX/9CE9-3938/
 
 {% note info Tips %}
 	
-`aml_sdc_burn.ini` is a configuration file for U-Boot to burn/download images into the onboard eMMC storage. You can found it [here](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini)
+`aml_sdc_burn.ini` is a configuration file for U-Boot to burn/download images into the onboard eMMC storage. You can found it [here](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini).
 
 {% endnote %}
 
@@ -118,9 +118,9 @@ $ sudo eject /dev/sdX
 
 Done!
 
-## Upgrade Using Your "Burning Card"
+## Upgrade Using Your Burning Card
 
-1. Insert your Burning Card into your VIM, and power-on.
-2. Follow this [guide](BootIntoUpgradeMode.html) to boot into Upgrade Mode.
+1. Insert your Burning Card into your board, and power-on.
+2. Follow this [guide](BootIntoUpgradeMode.html) to boot into upgrade mode.
 3. Wait till the process completes.
 

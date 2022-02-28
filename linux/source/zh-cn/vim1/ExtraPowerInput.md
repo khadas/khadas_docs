@@ -32,6 +32,9 @@ USB-C是常用的供电接口，在供电的同时也可以作数据传输，比
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="true">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1v12" role="tabpanel" aria-labelledby="vim1v12-tab">
@@ -76,6 +79,20 @@ VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 
 板载VIN供电接口座子型号为：[Molex 78171](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781710004_PCB_HEADERS.xml&channel=Products&Lang=en-US)。
 连接器型号为：[Molex 78172](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781720004_CRIMP_HOUSINGS.xml)。
+
+带有三角形标志的为1号脚。1号脚和2号脚为电源正极，3号和4号脚为电源负极。
+
+电压范围是0~20V。
+
+</div>
+<div class="tab-pane fade show active" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+<img src="/linux/images/vim4/vim4_v11_ext.png" width="50%" height="50%" >
+
+板上VIN供电接口 [Molex 78171](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781710004_PCB_HEADERS.xml&channel=Products&Lang=en-US)。
+板上VIN供电接口连接器 [Molex 78172](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781720004_CRIMP_HOUSINGS.xml)。
+
+VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
 带有三角形标志的为1号脚。1号脚和2号脚为电源正极，3号和4号脚为电源负极。
 
