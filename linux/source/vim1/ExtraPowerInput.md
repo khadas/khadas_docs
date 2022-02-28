@@ -10,7 +10,7 @@ title: Extra Power Input for Khadas VIMs
 ## Overview
 Khadas VIM1/VIM2 is designed with three power supply ports:
 
-1. USB-C Port: This is used for both Power Supply and USB Data Transmission.
+1. USB-C Port: This is used for both power supply and USB data transmission.
 2. 4-Pin VIN port which is situated near the USB-C port.
 
 ## Using USB-C as Extra Power Input
@@ -35,6 +35,9 @@ USB-C is the normal power supply interface. It can also transport data at the sa
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="true">VIM4</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -81,6 +84,18 @@ The VIN port on board is [Molex 78171](https://www.molex.com/molex/products/data
 And the connector is [Molex 78172](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781720004_CRIMP_HOUSINGS.xml).
 
 The one marked with a triangle is Pin 1. Pin 1 and Pin 2 are positive, Pin3 and Pin 4 are negative
+
+The voltage range is 0~20V.
+
+</div>
+<div class="tab-pane fade show active" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+<img src="/linux/images/vim4/vim4_v11_ext.png" width="50%" height="50%" >
+
+The VIN port on board is [Molex 78171](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781710004_PCB_HEADERS.xml&channel=Products&Lang=en-US).
+And the connector is [Molex 78172](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781720004_CRIMP_HOUSINGS.xml).
+
+The one marked with a triangle is Pin 1. Pin 1 and Pin 2 are positive, Pin3 and Pin 4 are negative.
 
 The voltage range is 0~20V.
 
