@@ -39,7 +39,7 @@ $ make kernel
 $ make kernel-deb
 ```
 
-编译后的Debian包在目录`build/images/debs/{VERSION}/{BOARD}`下
+编译后的Debian包在目录`build/images/debs/{VERSION}/{BOARD}`下：
 
 **VERSION** ：表示Fenix版本号，如`1.0.7`
 **BOARD** ：表示对应的板子，如`VIM4`
