@@ -22,8 +22,8 @@ title: 擦除eMMC
 
 1, 参考这里[串口工具设置](SetupSerialTool.html)。
 2. 确保串口线连接正确以及串口软件正确配置
-3. 在VIMs上电时按住空格键会进入U-boot命令行模式
-4. U-boot命令行执行`store boot_erase bootloader`会擦除eMMC U-Boot
+3. 在VIMs上电时按住空格键会进入U-Boot命令行模式
+4. U-Boot命令行执行`store boot_erase bootloader`会擦除eMMC U-Boot
 5. 执行`reboot` 或按 `Reset`键重启
 6. 参考如下:
 
@@ -80,7 +80,7 @@ T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DF
 这种方式适用于安装linux的设备。
 
 1. 上电并进入到linux命令行# 如何擦除eMMC存储器
-2. 打开终端使用`dd`命令清除U-boot分区
+2. 打开终端使用`dd`命令清除U-Boot分区
 
 ```bash
 root@Khadas:~# dd if=/dev/zero of=/dev/bootloader

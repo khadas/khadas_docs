@@ -96,9 +96,9 @@ $ sudo service tftpd-hpa restart
 
 * 连接网线到VIM，并确保和你的PC在同一个局域网 
 * 连接串口线，参考[这里设置串口](SetupSerialTool.html) 
-* 上电，确保U-boot正常运行
+* 上电，确保U-Boot正常运行
 
-按 `Enter` or `Space` 键进入U-boot命令行模式：
+按 `Enter` or `Space` 键进入U-Boot命令行模式：
 
 ```bash
 U-Boot 2015.01 (May 18 2019 - 19:31:53)

@@ -34,12 +34,12 @@ $ make
 
 你也可以选择单独编译u-boot和内核。
 
-### 编译U-boot
+### 编译U-Boot
 ```
 $ make uboot
 ```
 
-### 编译U-boot debian包
+### 编译U-Boot debian包
 ```
 $ make uboot-deb
 ```

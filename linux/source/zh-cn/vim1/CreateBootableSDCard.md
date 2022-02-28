@@ -3,7 +3,7 @@ title: 创建启动SD卡
 
 什么是启动SD卡？
 
-* 启动SD卡包含U-boot
+* 启动SD卡包含U-Boot
 * 启动卡又可以称为启动盘，在板载eMMC里面没有固件的情况下，可以用于启动你的板子
 
 为什么需要SD启动卡？
@@ -16,7 +16,7 @@ title: 创建启动SD卡
 {% endnote %}
 
 ## 开始制作
-下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/))或编译U-boot 获取U-boot镜像。
+下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/))或编译U-Boot 获取U-Boot镜像。
 
 不管通过哪种方式，你都会得到不同的镜像：
 
@@ -60,7 +60,7 @@ $ sudo umount /dev/sdX1
 $ sudo mkfs.vfat /dev/sdX1 
 ```
 
-通过`dd`命令把U-boot写入SD卡：
+通过`dd`命令把U-Boot写入SD卡：
 
 ```bash
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=1 count=444
@@ -83,7 +83,7 @@ $ sudo eject /dev/sdX
 
 确保串口连接正确，参考[串口工具设置](SetupSerialTool.html)。
 
-为了确保U-boot从SD卡启动，你必须[擦除eMMC](EraseEmmc.html)。
+为了确保U-Boot从SD卡启动，你必须[擦除eMMC](EraseEmmc.html)。
 
 打开终端，执行`sudo minicom`命令或者你也可以选则其他你喜欢的串口工具。
 

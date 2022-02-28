@@ -42,7 +42,7 @@ You can build the U-Boot and Kernel alone.
 $ make uboot
 ```
 
-### Build U-boot debian package
+### Build U-Boot debian package
 ```
 $ make uboot-deb
 ```
@@ -90,7 +90,7 @@ $ make kernel-config
 ```
 $ make kernel-saveconfig
 ```
-### Clean U-boot Source Tree
+### Clean U-Boot Source Tree
 ```
 $ make uboot-clean
 ```
