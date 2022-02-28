@@ -1,9 +1,11 @@
 title: GPIO中断
 ---
 
+**这里主要介绍如何在Ubuntu下使用GPIO中断。**
+
 ## 切换root用户
 
-只有root用户可以控制GPIO,在测试之前需要先切换到root用户。
+只有**root用户**可以控制GPIO,在测试之前需要先切换到root用户。
 
 ```bash
 $ khadas@Khadas:~$ su
@@ -265,4 +267,4 @@ GPIO 433 interrupt occurred!
 root@Khadas:/home/khadas# ./gpio-irq <edge> [pull]
 ```
 
-`<edge>`可设置为`rising`或者`failing`, [pull]为可选参数，设置为`up`或者`down`。
+`<edge>`可设置为`rising`或者`failing`, `[pull]`为可选参数，设置为`up`或者`down`。
