@@ -1,11 +1,11 @@
 title: GPIO使用文档
 ---
 
-这篇文档介绍如何在Ubuntu下访问GPIO。
+**这篇文档介绍如何在Ubuntu下访问GPIO。**
 
 {% note warn 注意 %}
-1. 此文档仅支持4.9内核
-2. 所有对GPIO的操作都是在root权限下进行的，切换到root:
+1. 此文档仅支持**4.9内核**。
+2. 所有对GPIO的操作都是在**root权限**下进行的，切换到root:
 
 ```sh
 khadas@Khadas:~$ su
@@ -20,10 +20,10 @@ root@Khadas:/home/khadas#
 
 ### 计算方法
 
-GPIO数组的计算方法为：`Number = Banks + Pins`
+**GPIO数组的计算方法为：`Number = Banks + Pins`。**
 
-1. `Banks`是指GPIO Ranges的基数值
-2. `Pins`是指你需要计算的GPIO引脚在对应ranges的排序
+1. `Banks`是指GPIO Ranges的基数值。
+2. `Pins`是指你需要计算的GPIO引脚在对应ranges的排序。
 
 ### 数值计算示例
 
@@ -48,7 +48,7 @@ Amlogic芯片通常都会包括AOBUS和Periphs两个GPIO Ranges。这里对每�
 
 **AOBUS**
 
-1. 获取`Banks`
+1. **获取`Banks`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
@@ -56,9 +56,9 @@ GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
 ```
 
-AOBUS的`Banks`就为496
+AOBUS的`Banks`就为`496`。
 
-2. 获取`Pins`
+2. **获取`Pins`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
@@ -76,11 +76,11 @@ pin 9 (GPIOAO_9)  pinctrl@14
 pin 10 (GPIO_TEST_N)  pinctrl@14
 ```
 
-每个GPIO前面的pin代表的就是对应的`Pins`
+每个GPIO前面的pin代表的就是对应的`Pins`。
 
 **Periphs**
 
-1. 获取`Banks`
+1. **获取`Banks`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
@@ -88,9 +88,9 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
 ```
 
-Periphs的`Banks`就是410
+Periphs的`Banks`就是`410`。
 
-2. 获取`Pins`
+2. **获取`Pins`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
@@ -113,18 +113,18 @@ pin 97 (GPIOX_18)  pinctrl@4b0
 pin 98 (GPIOCLK_0)  pinctrl@4b0
 pin 99 (GPIOCLK_1)  pinctrl@4b0
 ```
-3. 计算Number
+3. **计算Number：**
 
-这里以GPIOX_10为例，
+这里以`GPIOX_14`为例，
 
-`GPIOX_14 = Banks + Pins = 401 + 89 = 490`
+`GPIOX_14` = `Banks` + `Pins` = 401 + 93 = 494`
 
 </div>
 <div class="tab-pane fade" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
 **AOBUS**
 
-1. 获取`Banks`
+1. **获取`Banks`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
@@ -132,9 +132,9 @@ GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
 ```
 
-AOBUS的`Banks`就为496
+AOBUS的`Banks`就为`496`。
 
-2. 获取`Pins`
+2. **获取`Pins`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
@@ -152,11 +152,11 @@ pin 9 (GPIOAO_9)  pinctrl@14
 pin 10 (GPIO_TEST_N)  pinctrl@14
 ```
 
-每个GPIO前面的pin代表的就是对应的`Pins`
+每个GPIO前面的pin代表的就是对应的`Pins`。
 
 **Periphs**
 
-1. 获取`Banks`
+1. **获取`Banks`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
@@ -164,9 +164,9 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
 ```
 
-Periphs的`Banks`就是410
+Periphs的`Banks`就是`410`。
 
-2. 获取`Pins`
+2. **获取`Pins`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
@@ -189,18 +189,18 @@ pin 97 (GPIOX_18)  pinctrl@4b0
 pin 98 (GPIOCLK_0)  pinctrl@4b0
 pin 99 (GPIOCLK_1)  pinctrl@4b0
 ```
-3. 计算Number
+3. **计算Number**
 
-这里以GPIOX_10为例，
+这里以`GPIOX_14`为例，
 
-`GPIOX_14 = Banks + Pins = 401 + 89 = 490`
+`GPIOX_14` = `Banks` + `Pins` = `401` + `93` = `494`
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
 **AOBUS**
 
-1. 获取`Banks`
+1. **获取`Banks`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges
@@ -208,9 +208,9 @@ GPIO ranges handled:
 0: aobus-banks GPIOS [496 - 511] PINS [0 - 15]
 ```
 
-AOBUS的`Banks`就为496
+AOBUS的`Banks`就为`496`。
 
-2. 获取`Pins`
+2. **获取`Pins`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/pins
@@ -233,11 +233,11 @@ pin 14 (GPIOE_2)  pinctrl@ff800014
 pin 15 (GPIO_TEST_N)  pinctrl@ff800014
 ```
 
-每个GPIO前面的pin代表的就是对应的`Pins`
+每个GPIO前面的pin代表的就是对应的`Pins`。
 
 **Periphs**
 
-1. 获取`Banks`
+1. **获取`Banks`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges
@@ -245,9 +245,9 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [410 - 495] PINS [0 - 85]
 ```
 
-Periphs的`Banks`就是410
+Periphs的`Banks`就是`410`.
 
-2. 获取`Pins`
+2. **获取`Pins`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/pins
@@ -274,16 +274,16 @@ pin 83 (GPIOX_17)  pinctrl@ff634480
 pin 84 (GPIOX_18)  pinctrl@ff634480
 pin 85 (GPIOX_19)  pinctrl@ff634480
 ```
-3. 计算Number
+3. **计算Number**
 
-这里以GPIOX_10为例，
+这里以`GPIOX_10`为例，
 
-`GPIOX_10 = Banks + Pins = 410 + 76 = 486`
+`GPIOX_10` = `Banks` + `Pins` = `410` + `76` = `486`。
 
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
-1. 获取`Banks`
+1. **获取`Banks`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
@@ -291,7 +291,7 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
 ```
 
-2. 获取`Pins`
+2. **获取`Pins`：**
 
 ```sh
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
@@ -308,11 +308,11 @@ pin 8 (GPIOB_8)  fe000000.apb4:pinctrl@4000
 pin 9 (GPIOB_9)  fe000000.apb4:pinctrl@4000
 ```
 
-3. 计算Number
+3. **计算Number**
 
-这里以GPIOT_19为例，
+这里以`GPIOT_19`为例，
 
-`GPIOT_19 = Banks + Pins = 355 + 110 = 465`
+`GPIOT_19` = `Banks` + `Pins` = `355` + `110` = `465`。
 
 </div>
 </div>
@@ -336,140 +336,115 @@ pin 9 (GPIOB_9)  fe000000.apb4:pinctrl@4000
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1demo" role="tabpanel" aria-labelledby="vim1-tab">
 
-这里使用GPIODV24读取GPIODV25的引脚输出值,使用杜邦线将物理引脚的22和23连接在一起。
+**这里使用GPIODV24读取GPIODV25的引脚输出值,使用杜邦线将物理引脚的22和23连接在一起。**
 
-1. 将GPIODV24和GPIODV25设置为普通引脚(默认复用为i2c)
+1. **将GPIODV24和GPIODV25设置为普通引脚**(默认复用为i2c)。
 
-修改`/boot/env.txt`,
-
+  * 修改`/boot/env.txt`,
 ```sh
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
-
-从overlays中移除i2c3，
-
+  * 从overlays中移除i2c3，
 ```
 overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_f i2s watchdog
 ```
-
 重启，让配置生效。
 
-2. 计算GPIO数值：
+2. **计算GPIO数值：**
 
-`GPIODV_24 = 401 + 72 = 473`
-`GPIODV_25 = 401 + 73 = 474`
+`GPIODV_24` = `401` + `72` = `473`。
+`GPIODV_25` = `401` + `73` = `474`。
 
-3. 设置`GPIODV_24`为读模式
+3. **设置`GPIODV_24`为读模式。**
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 ```
-
-* 设置成读模式
-
+  * 设置成读模式
 ```sh
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
-4. 设置`GPIODV_25`为写模式
+4. **设置`GPIODV_25`为写模式。**
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
-
-* 设置成写模式
-
+  * 设置成写模式
 ```sh
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
 ```
 
-5. 测试
+5. **测试**
 
-* 设置`GPIODV_25`输出高电平并用`GPIODV_24`读取
-
+  * 设置`GPIODV_25`输出高电平并用`GPIODV_24`读取
 ```sh
 root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1
 ```
-
-* 设置`GPIODV_25`为低电平并用`GPIODV_24`读取
-
+  * 设置`GPIODV_25`为低电平并用`GPIODV_24`读取
 ```sh
 root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 0
 ```
+
 </div>
 <div class="tab-pane fade" id="vim2demo" role="tabpanel" aria-labelledby="vim2-tab">
 
-这里使用GPIODV24读取GPIODV25的引脚输出值,使用杜邦线将物理引脚的22和23连接在一起。
+**这里使用GPIODV24读取GPIODV25的引脚输出值,使用杜邦线将物理引脚的22和23连接在一起。**
 
-1. 将GPIODV24和GPIODV25设置为普通引脚(默认复用为i2c)
+1. **将GPIODV24和GPIODV25设置为普通引脚**(默认复用为i2c)。
 
-修改`/boot/env.txt`,
-
+  * 修改`/boot/env.txt`,
 ```sh
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
-
-从overlays中移除i2c3，
-
+  * 从overlays中移除i2c3，
 ```
 overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_f i2s watchdog
 ```
-
 重启，让配置生效。
 
-2. 计算GPIO数值：
+2. **计算GPIO数值：**
 
-`GPIODV_24 = 401 + 72 = 473`
-`GPIODV_25 = 401 + 73 = 474`
+`GPIODV_24` = `401` + `72` = `473`。
+`GPIODV_25` = `401` + `73` = `474`。
 
-3. 设置`GPIODV_24`为读模式
+3. **设置`GPIODV_24`为读模式**：
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 ```
-
-* 设置成读模式
-
+  * 设置成读模式
 ```sh
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
-4. 设置`GPIODV_25`为写模式
+4. **设置`GPIODV_25`为写模式**：
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
-
-* 设置成写模式
-
+  * 设置成写模式
 ```sh
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
 ```
 
-5. 测试
+5. **测试**
 
-* 设置`GPIODV_25`输出高电平并用`GPIODV_24`读取
-
+  * 设置`GPIODV_25`输出高电平并用`GPIODV_24`读取
 ```sh
 root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1
 ```
-
-* 设置`GPIODV_25`为低电平并用`GPIODV_24`读取
-
+  * 设置`GPIODV_25`为低电平并用`GPIODV_24`读取
 ```sh
 root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
@@ -479,69 +454,56 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 </div>
 <div class="tab-pane fade" id="vim3demo" role="tabpanel" aria-labelledby="vim3-tab">
 
-这里使用GPIOA14读取GPIOA15的引脚输出值,使用杜邦线将物理引脚的22和23连接在一起。
+**这里使用GPIOA14读取GPIOA15的引脚输出值,使用杜邦线将物理引脚的22和23连接在一起。**
 
-1. 将GPIOA14和GPIOA15设置为普通引脚(默认复用为i2c)
+1. **将GPIOA14和GPIOA15设置为普通引脚**(默认复用为i2c)：
 
-修改`/boot/env.txt`,
-
+  * 修改`/boot/env.txt`,
 ```sh
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
-
-从overlays中移除i2c3，
-
+  * 从overlays中移除i2c3，
 ```
 overlays=uart3 pwm_f i2c3 i2s os08a10 watchdog --> overlays=uart3 pwm_f i2s os08a10 watchdog
 ```
-
 重启，让配置生效。
 
-2. 计算GPIO数值：
+2. **计算GPIO数值：**
 
-`GPIOA_14 = 410 + 65 = 474`
-`GPIOA_15 = 410 + 65 = 475`
+`GPIOA_14` = `410` + `65` = `474`。
+`GPIOA_15` = `410` + `65` = `475`。
 
-3. 设置`GPIOA_14`为读模式
+3. **设置`GPIOA_14`为读模式**：
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
-
-* 设置成读模式
-
+  * 设置成读模式
 ```sh
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio474/direction
 ```
 
-4. 设置`GPIOA_15`为写模式
+4. **设置`GPIOA_15`为写模式**：
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 475 > /sys/class/gpio/export
 ```
-
-* 设置成写模式
-
+  * 设置成写模式
 ```sh
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio475/direction
 ```
 
-5. 测试
+5. **测试**
 
-* 设置`GPIOA_15`输出高电平并用`GPIOA_14`读取
-
+  * 设置`GPIOA_15`输出高电平并用`GPIOA_14`读取
 ```sh
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 1
 ```
-
-* 设置`GPIOA_15`为低电平并用`GPIOA_14`读取
-
+  * 设置`GPIOA_15`为低电平并用`GPIOA_14`读取
 ```sh
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
@@ -550,54 +512,45 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 </div>
 <div class="tab-pane fade" id="vim4demo" role="tabpanel" aria-labelledby="vim4-tab">
 
-这里使用GPIOT_18读取GPIOT_19的引脚输出值,使用杜邦线将物理引脚的36和37连接在一起。
+**这里使用GPIOT_18读取GPIOT_19的引脚输出值,使用杜邦线将物理引脚的36和37连接在一起。**
 
 
-1. 计算引脚值:
+1. **计算引脚值:**
 
-`GPIOT_18 = 355 + 109 = 464`
-`GPIOT_19 = 355 + 110 = 465`
+`GPIOT_18` = `355` + `109` = `464`。
+`GPIOT_19` = `355` + `110` = `465`。
 
-2. 设置`GPIOT_18`为读模式
+2. **设置`GPIOT_18`为读模式：**
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 464 > /sys/class/gpio/export
 ```
-
-* 设置为读模式
-
+  * 设置为读模式
 ```sh
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio464/direction
 ```
 
-3. 设置`GPIOT_19`为写模式
+3. **设置`GPIOT_19`为写模式**
 
-* 申请GPIO
-
+  * 申请GPIO
 ```sh
 root@Khadas:/home/khadas# echo 465 > /sys/class/gpio/export
 ```
-
-* 设置为写模式
-
+  * 设置为写模式
 ```sh
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio465/direction
 ```
 
-4. 测试哦
+4. **测试**
 
-* 设置`GPIOT_19`为高电平并通过`GPIOT_18`读取
-
+  * 设置`GPIOT_19`为高电平并通过`GPIOT_18`读取
 ```sh
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
 1
 ```
-
-* 设置`GPIOT_19`为低电平并通过`GPIOT_18`读取
-
+  * 设置`GPIOT_19`为低电平并通过`GPIOT_18`读取
 ```sh
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
