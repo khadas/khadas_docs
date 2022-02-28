@@ -1,7 +1,7 @@
 title: Quick Start
 ---
 
-This article will show you how to quickly get up and running after receiving your board.
+This guide will show you how to quickly get up and running after receiving your board.
 
 <iframe class="bilibili" src="https://www.youtube.com/embed/sN61EtKOzYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
