@@ -1,6 +1,8 @@
 title: WiriingPi/WiringPi-Python Software PWM
 ---
 
+**This document mainly describes how to use software PWM on Khadas SBC.**
+
 This document mainly introduces how to use software PWM to control the servo on WiringPi and WiringPi-Python.
 
 ## Principle of servo control
@@ -31,7 +33,7 @@ The working principle of the 360-degree angle simulation servo is the same as th
 
 ### Explanation
 
-1. Check the available pins through `gpio readall`
+1. Check the available pins through `gpio readall`:
 
 ```sh
 $ gpio readall
@@ -61,9 +63,9 @@ $ gpio readall
  +------+-----+----------+------+---+----+-------+----++----+-------+----+---+------+----------+-----+------+
 ```
 
-2. Pin is configured as normal IO output
+2. Pin is configured as normal IO output.
 
-3. Simulate PWM and control through the `softPwmCreate()` and `softPwmWrite()` functions
+3. Simulate PWM and control through the `softPwmCreate()` and `softPwmWrite()` functions.
 
 ### WiringPi source code and compilation
 
@@ -93,7 +95,7 @@ int main(){
 
 ```
 
-Compile command
+3. Compile command:
 
 ```sh
 $ gcc -o SoftPwm SoftPwm.c -lwiringPi -lpthread -lrt -lm -lcrypt

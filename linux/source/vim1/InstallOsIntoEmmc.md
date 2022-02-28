@@ -1,13 +1,7 @@
 title: Install OS into eMMC
 ---
 
-{% note info The operation for VIM series are almost the same, so this documentation will take VIM1 as an example. %}
-
-{% endnote %}
-
-
-All the VIM series boards have onboard eMMC storage, so you can install the OS via USB upgrade tool.
-
+All the VIM series boards have **onboard eMMC storage**, so you can install the **OS** into **eMMC** via **USB upgrade tool**.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -23,11 +17,11 @@ All the VIM series boards have onboard eMMC storage, so you can install the OS v
 ## Preparation
 
 1. Dowload the [USB Upgrade Tool](http://dl.khadas.com/products/vim4/tool/Aml_Burn_Tool_V3.2.0.zip) and extract it.
-2. Burning tool directory description
+2. Burning tool directory description:
   ![image](/linux/images/vim1/usb_upgrade_tool_dir_1.png)
   * The `V2` and `V3` folders hold the original burning tool files
   * The `burn tool` folder stores burning tools and drivers for different boards
-3. `burn tool` folders description
+3. `burn tool` folders description:
   ![image](/linux/images/vim1/usb_upgrade_tool_dir_2.png)
   * `Driver-VIM1_2_3` Driver files for VIM1/VIM2/VIM3/VIM3L boards
   * `Driver-VIM4` Driver files for VIM4 board
@@ -47,12 +41,12 @@ All the VIM series boards have onboard eMMC storage, so you can install the OS v
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-tool" role="tabpanel" aria-labelledby="vim1-tab">
 
-Install driver
+**Install driver**
 
 1. Enter the `Driver-VIM1_2_3` directory, install `dpscat.exe`, the installation process is very fast, and there is no display.
 2. Install `dpinst64.exe`. After the installation is successful, you can burn the firmware.
 
-Make sure the driver is installed correctly, then follow the steps below to upgrade:
+**Make sure the driver is installed correctly, then follow the steps below to upgrade:**
 
 1. Enter `burn tool` directory, open `VIM1_2_3.exe`, click `File-->Import Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
@@ -65,12 +59,12 @@ Make sure the driver is installed correctly, then follow the steps below to upgr
 </div>
 <div class="tab-pane fade" id="vim4-tool" role="tabpanel" aria-labelledby="vim4-tab">
 
-Install driver
+**Install driver**
 
 1. Enter the `Driver-VIM4` directory, install `dpscat.exe`, the installation process is very fast, and there is no display.
 2. Install `dpinst64.exe`. After the installation is successful, you can burn the firmware.
 
-Make sure the driver is installed correctly, then follow the steps below to upgrade:
+**Make sure the driver is installed correctly, then follow the steps below to upgrade:**
 
 1. 1. Enter `burn tool` directory, open `VIM4.exe`, click `Setup-->Load Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
@@ -84,9 +78,9 @@ Make sure the driver is installed correctly, then follow the steps below to upgr
 
 {% note info Tips %}
 
-* To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark.
-* [Extra power supply](ExtraPowerInput.html) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
-* If your system is a 32-bit system, please select `dpinst32.exe` when installing the driver.
+* To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark
+* [Extra power supply](ExtraPowerInput.html) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade
+* If your system is a 32-bit system, please select `dpinst32.exe` when installing the driver
 
 {% endnote %}
 

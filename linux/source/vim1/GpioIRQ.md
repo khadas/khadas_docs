@@ -1,9 +1,11 @@
 title: GPIO IRQ
 ---
 
+**This document mainly introduce how to use GPIO interrupt under Ubuntu.**
+
 ## Switch to root user
 
-Only root user can control GPIO, you need to switch to root user before testing.
+Only **root user** can control GPIO, you need to switch to root user before testing.
 
 ```bash
 $ khadas@Khadas:~$ su
@@ -265,4 +267,4 @@ The running format is as follows:
 root@Khadas:/home/khadas# ./gpio-irq <edge> [pull]
 ```
 
-`<edge>` can be set to `rising` or `failing`, [pull] is an optional parameter, set to `up` or `down`.
+`<edge>` can be set to `rising` or `failing`, `[pull]` is an optional parameter, set to `up` or `down`.

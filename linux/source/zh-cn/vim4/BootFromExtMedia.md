@@ -16,12 +16,6 @@ title: 从外部媒体介质启动系统
 
 把SD卡或U盘插入到板子，然后上电，系统会自动从SD卡或U盘启动。
 
-{% note warn 注意 %}
-
-如果SPI Flash或eMMC都没有固件，那么将无法直接从U盘启动固件。必须小烧录固件到eMMC或SPI Falsh后才能从U盘启动系统。
-
-{% endnote %}
-
 ## 参考
 
 [系统启动优先级](BootSequeue.html)

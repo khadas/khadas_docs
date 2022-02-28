@@ -16,12 +16,6 @@ Please check [Install System on SD/USB Storage](InstallOsIntoSdusb.html).
 
 Insert SD card or U-Disk to board and power on, the system will boot from SD card or U-Disk automatically.
 
-{% note warn Note %}
-
-If there is no image in SPI Flash or eMMC, then the system can't boot from U-Disk directly, you have to install system into SPI Flash or eMMC to boot system in U-Disk.
-
-{% endnote %}
-
 ## See Also
 
 [OS Boot Priority](BootSequeue.html)

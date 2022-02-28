@@ -1,7 +1,7 @@
 title: Cooling Fan
 ---
 
-This guide is about how to setup the cooling fan in Ubuntu.
+This guide is about how to **setup the cooling fan** in Ubuntu.
 
 
 ### Open Application 

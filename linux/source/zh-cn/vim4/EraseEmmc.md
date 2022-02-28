@@ -20,12 +20,12 @@ title: 擦除eMMC
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* 参考这里[串口工具设置](SetupSerialTool.html)。
-* 确保串口线连接正确以及串口软件正确配置
-* 在VIMs上电时按住空格键会进入U-boot命令行模式
-* U-boot命令行执行`store boot_erase bootloader`会擦除eMMC U-Boot
-* 执行`reboot` 或按 `Reset`键重启
-* 参考如下:
+1, 参考这里[串口工具设置](SetupSerialTool.html)。
+2. 确保串口线连接正确以及串口软件正确配置
+3. 在VIMs上电时按住空格键会进入U-boot命令行模式
+4. U-boot命令行执行`store boot_erase bootloader`会擦除eMMC U-Boot
+5. 执行`reboot` 或按 `Reset`键重启
+6. 参考如下:
 
 ```bash
 kvim4# store boot_erase bootloader
@@ -69,9 +69,9 @@ T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DF
 
 这种方法适用于所有Amlogic产品。
 
-* 通过[USB-C升级固件](UpgradeViaUSBCable.html)或[TF卡](UpgradeViaTFBurningCard.html).
-* 中断升级过程(建议进度条超过15%后中断), 例如, 拔掉USB数据线或TF卡
-* 重新上电，你会发现eMMC被擦除
+1. 通过[USB-C升级固件](UpgradeViaUSBCable.html)或[TF卡](UpgradeViaTFBurningCard.html).
+2. 中断升级过程(建议进度条超过15%后中断), 例如, 拔掉USB数据线或TF卡
+3. 重新上电，你会发现eMMC被擦除
 
 </div>
 
@@ -79,8 +79,8 @@ T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DF
 
 这种方式适用于安装linux的设备。
 
-* 上电并进入到linux命令行# 如何擦除eMMC存储器
-* 打开终端使用`dd`命令清除U-boot分区
+1. 上电并进入到linux命令行# 如何擦除eMMC存储器
+2. 打开终端使用`dd`命令清除U-boot分区
 
 ```bash
 root@Khadas:~# dd if=/dev/zero of=/dev/bootloader

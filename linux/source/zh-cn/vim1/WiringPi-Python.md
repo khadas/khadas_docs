@@ -1,11 +1,15 @@
 title: WiringPi-Python
 ---
 
+**这篇文档主要介绍如何在Khadas SBC上使用WiringPi-Python。**
+
 ## 什么是 WiringPi-Python
-WiringPi-Python 是wiringPi的Python版本，现在我们同样移植到VIMs上。用于控制板子上的40Pin的GPIO
+
+WiringPi-Python 是wiringPi的Python版本，现在我们同样移植到VIMs上。用于控制板子上的`40-PIN HEADERS`。
 
 ## WiringPi-Python 函数列表
-```
+
+```python
 //GPIO:
 class GPIO(object):
   def __init__(self,pinmode=0):
@@ -101,8 +105,10 @@ class Serial(object):
 ```
 
 ## wiringPi-Python 使用示例
-这是一对引脚读写控制的简单程序
-```
+
+这是一对引脚读写控制的简单程序。
+
+```python
 import wiringpi as GPIO
 
 INPUT = 0
@@ -131,5 +137,5 @@ GPIO.delay(2000)
 print("程序结束")
 ```
 ## 注意
-如果需要使用wiringPi-Python的特殊功能引脚，需要先确认dtb里面打开了相应的配置
+如果需要使用wiringPi-Python的特殊功能引脚，需要先确认dtb里面打开了相应的配置。
 wiringPi-Python本身包括很多功能，不仅仅只是控制GPIO引脚的输出和读取引脚电平值。这里只是一个简单的介绍和使用，更多的用法需要使用者自己去探索。

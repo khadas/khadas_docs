@@ -23,7 +23,7 @@ page:
 sidebar:
   vim1:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
@@ -97,7 +97,7 @@ sidebar:
 
   vim2:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
@@ -171,7 +171,7 @@ sidebar:
 
   vim3:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
@@ -268,7 +268,7 @@ sidebar:
 
   vim4:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
@@ -347,7 +347,7 @@ sidebar:
 
   edge:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media

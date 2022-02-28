@@ -1,7 +1,7 @@
 title: WiringPi软件PWM
 ---
 
-这篇文档主要介绍如何在WiringPi以及WiringPi-Python上使用软件PWM控制舵机。
+**这篇文档主要介绍如何在WiringPi以及WiringPi-Python上使用软件PWM控制舵机。**
 
 ## 舵机控制原理
 
@@ -31,7 +31,7 @@ title: WiringPi软件PWM
 
 ### 说明
 
-1. 通过`gpio readall`可查看可用的引脚
+1. 通过`gpio readall`可查看可用的引脚：
 
 ```sh
 $ gpio readall
@@ -61,9 +61,9 @@ $ gpio readall
  +------+-----+----------+------+---+----+-------+----++----+-------+----+---+------+----------+-----+------+
 ```
 
-2. 引脚配置成普通IO输出
+2. 引脚配置成普通IO输出。
 
-3. 通过`softPwmCreate()`和`softPwmWrite()`函数模拟PWM并控制
+3. 通过`softPwmCreate()`和`softPwmWrite()`函数模拟PWM并控制。
 
 ### WiringPi源码以及编译
 
@@ -93,7 +93,7 @@ int main(){
 
 ```
 
-编译命令
+3. 编译命令:
 
 ```sh
 $ gcc -o SoftPwm SoftPwm.c -lwiringPi -lpthread -lrt -lm -lcrypt

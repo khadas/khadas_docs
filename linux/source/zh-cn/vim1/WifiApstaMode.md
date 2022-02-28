@@ -108,13 +108,13 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```
 
 ## 验证
-1、关闭以太网
+1、关闭以太网。
 
 ```bash
 khadas@Khadas:~$ sudo ifconfig eth0 down
 ```
 
-2、wlan0是否能用于上网
+2、wlan0是否能用于上网。
 
 * [连接Wi-Fi](Wifi.html)
 
@@ -142,10 +142,10 @@ $ sudo nmcli con modify Hostspot ipv4.addresses 192.168.2.20/24
 $ sudo nmcli con modify Hostspot ipv4.gateway 192.168.2.1
 $ sudo nmcli con up Hostspot
 ```
-配置成5G,需要设置一下信道
+配置成5G,需要设置一下信道。
 
 
-3、wlan1是否能作为热点连接
+3、wlan1是否能作为热点连接。
 
 * 热点名称：2.4G/`khadas_ap`, 5G/`khadas_ap_5G`
 
