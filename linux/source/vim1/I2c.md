@@ -1,8 +1,7 @@
 title: I2C
 ---
 
-
-This guide is about how to access i2c on Ubuntu.
+**This guide is about how to access i2c on Ubuntu.**
 
 ## Connections
 
@@ -97,7 +96,7 @@ This guide is about how to access i2c on Ubuntu.
 
 Detect device on `I2C A`:
 
-```bash
+```shell
 # i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -111,7 +110,7 @@ Detect device on `I2C A`:
 ```
 Detect device on `I2C B`:
 
-```bash
+```shell
 # i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -129,7 +128,7 @@ Detect device on `I2C B`:
 
 Detect device on `I2C A`:
 
-```bash
+```shell
 # i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -143,7 +142,7 @@ Detect device on `I2C A`:
 ```
 Detect device on `I2C B`:
 
-```bash
+```shell
 # i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -161,7 +160,7 @@ Detect device on `I2C B`:
 
 Detect device on `I2C 3`:
 
-```bash
+```shell
 # i2cdetect -y -r 3
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -175,7 +174,7 @@ Detect device on `I2C 3`:
 ```
 Detect device on `I2C 4`:
 
-```bash
+```shell
 # i2cdetect -y -r 4
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- 0e --
@@ -192,7 +191,7 @@ Detect device on `I2C 4`:
 
 Detect device on `I2C A`:
 
-```bash
+```shell
 # i2cdetect -r -y 0
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -207,7 +206,7 @@ Detect device on `I2C A`:
 
 Detect device on `I2C F`:
 
-```bash
+```shell
 # i2cdetect -r -y 5
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -235,7 +234,7 @@ Root privileges required.
 
 Read register `0x0d` of device `0x1d` on `I2C A`.
 
-```bash
+```Shell
 # i2cget -f -y 1 0x1d 0x0d
 0x2a
 ```
