@@ -1,17 +1,17 @@
-title: WiriingPi/WiringPi-Python Software PWM
+title: Software PWM
 ---
 
 **This document mainly describes how to use software PWM on Khadas SBC.**
 
 This document mainly introduces how to use software PWM to control the servo on WiringPi and WiringPi-Python.
 
-## Principle of servo control
+## Principle of Servo Control
 
 The reference signal of the servo is 20ms in period and 1.5ms in width. Corresponds to the middle position of the servo.
 
 <img src="/linux/images/vim3/servo-pwm-signal_orig.png" width="50%" >
 
-Different pulse widths correspond to different angles of the servo, and the corresponding range of pulse widths is 0.5 to 2.5ms.
+Different pulse widths correspond to different angles of the servo, and the corresponding range of pulse widths is 0.5ms to 2.5ms.
 
 ```
 0.5ms --  0 degree angle
@@ -29,7 +29,7 @@ The working principle of the 360-degree angle simulation servo is the same as th
 2.5ms -- Clockwise/maximum speed
 ```
 
-## Source code compilation and demonstration
+## Source Code Compilation and Demonstration
 
 ### Explanation
 
@@ -67,10 +67,10 @@ $ gpio readall
 
 3. Simulate PWM and control through the `softPwmCreate()` and `softPwmWrite()` functions.
 
-### WiringPi source code and compilation
+### WiringPi Source Code and Compilation
 
-1. The servo switches back and forth between 1800 degrees, 90 degrees, and 0 degrees. The switching interval is 3S to switch once, and the period is 9S.
-2. The analog servo rotates clockwise, pauses rotation and counterclockwise rotation to switch back and forth, the switching interval is 3S to switch once, and the period is 9S.
+1. The servo switches back and forth between 1800 degrees, 90 degrees, and 0 degrees. The switching interval is 3s to switch once, and the period is 9s.
+2. The analog servo rotates clockwise, pauses rotation and counterclockwise rotation to switch back and forth, the switching interval is 3s to switch once, and the period is 9s.
 
 ```c
 #include <wiringPi.h>
@@ -101,10 +101,10 @@ int main(){
 $ gcc -o SoftPwm SoftPwm.c -lwiringPi -lpthread -lrt -lm -lcrypt
 ```
 
-### WiringPi-Python source code
+### WiringPi-Python Source Code
 
-1. The servo switches between 180 degrees, 90 degrees and 0 degrees successively, and the time interval is 3S.
-2. The analog servo is switched between clockwise rotation, pause rotation and counterclockwise rotation, and the time interval is 3S.
+1. The servo switches between 180 degrees, 90 degrees and 0 degrees successively, and the time interval is 3s.
+2. The analog servo is switched between clockwise rotation, pause rotation and counterclockwise rotation, and the time interval is 3s.
 
 ```python
 import wiringpi as GPIO
