@@ -1,1 +1,4 @@
-../vim1/1wire.md
+title: 1-Wire
+---
+
+## TODO
