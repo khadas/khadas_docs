@@ -3,9 +3,9 @@ title: How To Use WOL
 
 Wake-On-LAN (WOL) is a protocol standard that allows your PC/Smartphone to turn on a computer via your local network or the Internet.
 
-**Note: The operation of VIM2, VIM3 and Edge is almost the same, so this document will take VIM2 as an example.**
+**Note: The operation of VIM2, VIM3, VIM4 and Edge is almost the same, so this document will take VIM2 as an example.**
 
-VIM2, VIM3 and Edge are different from VIM1, as it supports the WOL-function.
+VIM2, VIM3, VIM4 and Edge are different from VIM1, as it supports the WOL-function.
 
 Firstly, you have to connect VIM2 to your LAN, then get the Ethernet MAC address.
 
@@ -22,6 +22,9 @@ Firstly, you have to connect VIM2 to your LAN, then get the Ethernet MAC address
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
   </li>
   <li class="nav-item" role="presentation">
+    <a class="nav-link" id="edge-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+  <li class="nav-item" role="presentation">
     <a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">Edge</a>
   </li>
 </ul>
@@ -34,6 +37,11 @@ Firstly, you have to connect VIM2 to your LAN, then get the Ethernet MAC address
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
 <img src="/linux/images/vim3/VIM3_WOL.png" width="800px">
+
+</div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+<img src="/linux/images/vim4/VIM4_WOL.png" width="800px">
 
 </div>
 <div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
@@ -79,17 +87,17 @@ boot wol: enable
 ### Test WOL
 After doing the steps above, we can test the WOL function.
 
-**1) Connect VIM2 with LAN**
+**1. Connect VIM2 with LAN**
 
-**2) Power off VIM2**
+**2. Power off VIM2**
 
-**3) Attempt to wake up your VIM2 on Ubuntu.**
+**3. Attempt to wake up your VIM2 on Ubuntu.**
 
-* Install the **wakeonlan** tool
+  * Install the **wakeonlan** tool
 ```
 $ sudo apt-get install wakeonlan
 ```
-Now you can wake up your VIM2 with it's MAC Address
+  * Now you can wake up your VIM2 with it's MAC Address
 ```
 $ wakeonlan 98:aa:fc:60:46:de
 ```
