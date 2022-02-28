@@ -1,13 +1,15 @@
 title: WiringPi
 ---
 
+**This document mainly introduces how to use WiringPi on Khadas SBC.**
+
 ## What is WiringPi
-WiringPi is a GPIO Controller basic on C Program.Originally a library for Raspberry Pie.Now we have migrated to VIMs.You can control the 40 pin header by it.
+WiringPi is a GPIO Controller basic on C Program.Originally a library for Raspberry Pie.Now we have migrated to VIMs.You can control the `40-PIN HEADER` by it.
 
 ## Begin to Use WiringPi
 ### Control command
 
-* run `gpio -h`, you can see all the control command with WiringPi.
+1. run `gpio -h`, you can see all the control command with WiringPi.
 ```
 gpio: Usage: gpio -v
 gpio -h
@@ -35,35 +37,48 @@ gpio gbr <channel>
 gpio gbw <channel> <value>
 ```
 
-* run `gpio readall`, It prints a table showing the status of all pins.
+2. run `gpio readall`, It prints a table showing the status of all pins.
+
 You will see a table with many columns.
-```
+
+```shell
 GPIO  --> GPIO native number
 wPi   --> WiringPi number
 Mode  --> GPIO Mode ,`ALT` mean that this  pin defined as a special function
 v     --> 1:HIGH 0:low 
 PU/PD --> PU:pull up PD:pull down DSBLD:disabled PU/PD
 ```
+
 ### Control by command
+
 Here's an example of controlling wpi number 1.
-* run `gpio mode 1 out`
+
+3. run `gpio mode 1 out`.
+
 Now, The wpi number 1 mode is out.
-* run `gpio read 1`
-```
+
+4. run `gpio read 1`:
+
+```shell
 root@Khadas:~# gpio read 1 
 1
 ```
-* run `gpio write 1 0` to change the pinout level
-* run `gpio read 1` again
-```
+
+5. run `gpio write 1 0` to change the pinout level.
+
+6. run `gpio read 1` again
+
+```shell
 root@Khadas:~# gpio read 1   
 0
 ```
 you can see the wpi number 1 Output changed from high to low.
 
 ### Control by Linux C program
-* Here is a simple control program.
-```
+
+1. Here is a simple control program.
+
+```shell
 #include <stdio.h>
 #include <wiringPi.h>
 
@@ -90,9 +105,12 @@ int main()
 	exit(0);
 }
 ```
-* And you can use gcc to compile it .here is the compile command `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
-* run `./test` to control wpi number 1
-```
+
+2. And you can use gcc to compile it .here is the compile command `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
+
+3. run `./test` to control wpi number 1.
+
+```shell
 wPi Pin 1 now is GIGH
 wPi Pin 1 now is LOW
 wPi Pin 1 now is GIGH
@@ -101,11 +119,12 @@ wPi Pin 1 now is LOW
 you can use `gpio read 1` to observing pin level changes.
 
 ## Special pin functions of wiringpi
-Special pin functions of wiringpi include`SPI,i2C,ADC,SoftPWM`
+
+Special pin functions of wiringpi include`SPI`,`i2C`,`ADC`,`SoftPWM`.
  
 ### SPI 
 
-`VIM1`and`vim2` don't export `SPI` to pin40 of GPIO。
+`VIM1`and`vim2` don't export `SPI` to `40-PIN HEADER` of GPIO.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -247,7 +266,7 @@ PIN12 <---> ADC_CH3
 
 ### Serial
 
-Please confirm the node name for Serial before using
+Please confirm the node name for Serial before using.
 
 ```
 PIN15 <---> RX

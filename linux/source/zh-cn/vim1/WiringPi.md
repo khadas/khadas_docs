@@ -1,14 +1,17 @@
 title: WiringPi
 ---
 
+**这篇文档主要介绍如何在Khadas SBC上使用WiringPi。**
+
 ## 什么是 WiringPi
-WiringPi 是一个基于C语言的GPIO引脚控制库。原本是开发被运用于树莓派上，现在我们移植到了VIMs上。可以通过WiringPi控制板子上40pin的引脚。
+WiringPi 是一个基于C语言的GPIO引脚控制库。原本是开发被运用于树莓派上，现在我们移植到了VIMs上。可以通过WiringPi控制板子上`40-PIN HEADERS`的引脚。
 
 ## 开始使用wiringPi
 ### 控制命令
 
-* 运行 `gpio -h`, 你可以看到所有可以关于WiringPi的相关的命令
-```
+1. 运行 `gpio -h`, 你可以看到所有可以关于WiringPi的相关的命令:
+
+```shell
 gpio: Usage: gpio -v
 gpio -h
 gpio [-g|-1] ...
@@ -34,35 +37,50 @@ gpio usbp high/low
 gpio gbr <channel>
 gpio gbw <channel> <value>
 ```
-* 运行 `gpio readall`, 可以看到所有引脚相关的状态和信息
-你会看到一个有很多栏目的表格，下面是主要栏目的注解
-```
+
+2. 运行 `gpio readall`, 可以看到所有引脚相关的状态和信息。
+
+你会看到一个有很多栏目的表格，下面是主要栏目的注解：
+
+```shell
 GPIO  --> GPIO的实际引脚
 wPi   --> WiringPi引脚值
 Mode  --> 引脚的模式 ,`ALT`说明引脚已经被配置成特殊的功能
 V     --> 1表示引脚是高电平，0表示引脚是低电平
 PU/PD --> PU:上拉 PD:下拉 DSBLD:已关闭上下拉
 ```
+
 ### 通过命令行控制
+
 这里的简单例子是通过wpi的1号引脚实现的。
-* 运行 `gpio mode 1 out`
+
+1. 运行 `gpio mode 1 out`：
+
 wpi的1号引脚被设置成了输出模式。
-* 运行 `gpio read 1`
-```
+
+2. 运行 `gpio read 1`：
+
+```shell
 root@Khadas:~# gpio read 1
 1
 ```
-* 运行 `gpio write 1 0` 改变引脚的输出值
-* 再次运行 `gpio read 1` 
-```
+
+3. 运行 `gpio write 1 0` 改变引脚的输出值。
+
+4. 再次运行 `gpio read 1`：
+
+```shell
 root@Khadas:~# gpio read 1   
 0
 ```
+
 你可看到将引脚设置成输出后，就可以通过写命令改变引脚的电平值了。
 
 ### 通过编写linuxC程序控制GPIO
-* 这里同样是一个控制GPIO1的简单程序。
-```
+
+1. 这里同样是一个控制GPIO1的简单程序。
+
+```shell
 #include <stdio.h>
 #include <wiringPi.h>
 
@@ -89,22 +107,27 @@ int main()
 	exit(0);
 }
 ```
-* 通过gcc可以编译成可执行的程序。编译的命令是 `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
-* 运行 `./test` 就可以控制wpi的1号引脚了
-```
+
+2. 通过gcc可以编译成可执行的程序。编译的命令是 `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`。
+
+3. 运行 `./test` 就可以控制wpi的1号引脚了。
+
+```shell
 wPi Pin 1 now is GIGH
 wPi Pin 1 now is LOW
 wPi Pin 1 now is GIGH
 wPi Pin 1 now is LOW
 ```
+
 你可以通过命令`gpio read 1`观察引脚的电平变化是否正确。
 
 ## WiringPi特殊功能引脚
-wiringPi的特殊引脚功能包括`SPI,i2C,ADC,SoftPWM`
+
+wiringPi的特殊引脚功能包括`SPI`,`i2C`,`ADC`,`SoftPWM`。
 
 ### SPI
 
-`VIM1`,`VIM2`没有将`SPI`引出到GPIO的Pin40。
+`VIM1`,`VIM2`没有将`SPI`引出到`40-PIN HEADERS`。
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -117,7 +140,7 @@ wiringPi的特殊引脚功能包括`SPI,i2C,ADC,SoftPWM`
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-```
+```shell
 PIN37 <---> MOSI
 PIN35 <---> MISO
 PIN15 <---> SS
@@ -127,7 +150,7 @@ PIN16 <---> SCLK
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
-```
+```shell
 PIN37 <---> MOSI
 PIN35 <---> MISO
 PIN26 <---> SS
@@ -157,7 +180,7 @@ PIN25 <---> SCLK
 <div class="tab-pane fade show active" id="vim1-i2c" role="tabpanel" aria-labelledby="vim1-tab">
 
 **I2C0**
-```
+```shell
 PIN22 <---> SCK
 PIN23 <---> SDA
 ```
@@ -166,7 +189,7 @@ PIN23 <---> SDA
 <div class="tab-pane fade" id="vim2-i2c" role="tabpanel" aria-labelledby="vim2-tab">
 
 **I2C0**
-```
+```shell
 PIN22 <---> SCK
 PIN23 <---> SDA
 ```
@@ -175,7 +198,7 @@ PIN23 <---> SDA
 <div class="tab-pane fade" id="vim3-i2c" role="tabpanel" aria-labelledby="vim3-tab">
 
 **I2C3**
-```
+```shell
 PIN22 <---> SCK
 PIN23 <---> SDA
 ```
@@ -184,8 +207,7 @@ PIN23 <---> SDA
 <div class="tab-pane fade" id="vim4-i2c" role="tabpanel" aria-labelledby="vim4-tab">
 
 **I2C0**
-
-```
+```shell
 PIN25 <---> SCK
 PIN26 <---> SDA
 ```
@@ -212,7 +234,7 @@ PIN26 <---> SDA
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-adc" role="tabpanel" aria-labelledby="vim1-tab">
 
-```
+```shell
 PIN10 <---> ADC_CH0
 PIN12 <---> ADC_CH2
 ```
@@ -220,7 +242,7 @@ PIN12 <---> ADC_CH2
 </div>
 <div class="tab-pane fade" id="vim2-adc" role="tabpanel" aria-labelledby="vim2-tab">
 
-```
+```shell
 PIN10 <---> ADC_CH0
 PIN12 <---> ADC_CH2
 ```
@@ -228,7 +250,7 @@ PIN12 <---> ADC_CH2
 </div>
 <div class="tab-pane fade" id="vim3-adc" role="tabpanel" aria-labelledby="vim3-tab">
 
-```
+```shell
 PIN10 <---> ADC_CH0
 PIN12 <---> ADC_CH3
 ```
@@ -236,7 +258,7 @@ PIN12 <---> ADC_CH3
 </div>
 <div class="tab-pane fade" id="vim4-adc" role="tabpanel" aria-labelledby="vim4-tab">
 
-```
+```shell
 PIN10 <---> ADC_CH6
 PIN12 <---> ADC_CH3
 ```
@@ -246,9 +268,9 @@ PIN12 <---> ADC_CH3
 
 ### Serial
 
-使用之前请先确认串口节点名称
+使用之前请先确认串口节点名称：
 
-```
+```shell
 PIN15 <---> RX
 PIN16 <---> TX
 ```
@@ -256,7 +278,7 @@ PIN16 <---> TX
 
 ## wiringPi函数列表
 
-```
+```shell
 int  wiringPiSetup       (void) ;
 int  wiringPiSetupSys    (void) ;
 int  wiringPiSetupGpio   (void) ;
@@ -318,5 +340,5 @@ void softPwmStop   (int pin) ;
 ```
 
 ## 注意
-如果需要使用wiringPi的特殊功能引脚，需要先确认dtb里面打开了相应的配置
+如果需要使用wiringPi的特殊功能引脚，需要先确认dtb里面打开了相应的配置。
 wiringPi本身包括很多功能，不仅仅只是控制GPIO引脚的输出和读取引脚电平值。这里只是一个简单的介绍和使用，更多的用法需要使用者自己去探索。
