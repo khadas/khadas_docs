@@ -1,11 +1,13 @@
 title: WiringPi-Python
 ---
 
+**This document mainly introduces how to use WiringPi-Python on Khadas SBC.**
+
 ## What is WiringPi-Python 
-WiringPi-Python is the python version of wiringPi. Now we also migrate it to VIMs Board GPIO for control GPIO Headlers.
+WiringPi-Python is the python version of wiringPi. Now we also migrate it to VIMs Board GPIO for control `40-PIN HEADERS`.
 
 ## WiringPi-Python Function List
-```
+```python
 //GPIO
 class GPIO(object):
   def __init__(self,pinmode=0):
@@ -102,8 +104,10 @@ class Serial(object):
 ```
 
 ## WiringPi-Python sample demo 
-This is a simple program of pin read-write control
-```
+
+This is a simple program of pin read-write control.
+
+```python
 import wiringpi as GPIO
 
  INPUT = 0
@@ -133,5 +137,5 @@ import wiringpi as GPIO
 ```
 
 ## notes
-If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB
+If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB.
 WiringPi-Python itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.
