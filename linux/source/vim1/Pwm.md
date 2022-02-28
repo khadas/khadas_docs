@@ -1,6 +1,8 @@
 title: PWM
 ---
 
+**The document mainly describes how to use hardware PWM.**
+
 ## Check HardwarePWM Pin
 
 Hardware PWM had open at default dtb configuration.So you need to check which Physical pin is connect to it .
