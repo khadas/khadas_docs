@@ -4,7 +4,7 @@ This guide is about how to configure Wi-Fi to work in STA+AP mode under Ubuntu.
 
 ## Preconditions
 
-The image is based on the V2005 version,and [update the OTA](UpgradeSystem.html) to the latest version
+The image is based on the V2005 version,and [update the OTA](UpgradeSystem.html) to the latest version.
 
 ## Start to Configure
 
@@ -127,13 +127,13 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 ## Verify
 
-1、Turn off Ethernet
+1、Turn off Ethernet:
 
 ```bash
 khadas@Khadas:~$ sudo ifconfig eth0 down
 ```
 
-2、Whether wlan0 can be used to surf the Internet
+2、Whether wlan0 can be used to surf the Internet:
 
 * [Connect Wi-Fi](Wifi.html)
 
@@ -148,7 +148,7 @@ PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wla
 ...
 ```
 
-3、Whether wlan1 can be connected as a hotpot
+3、Whether wlan1 can be connected as a hotpot:
 
 * Name: 2.4G/`khadas_ap`, 5G/`khadas_ap_5G`
 
