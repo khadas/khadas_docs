@@ -1,4 +1,4 @@
-title: How To Enable Auto Login
+title: How to Enable Auto-Login
 ---
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -12,7 +12,7 @@ title: How To Enable Auto Login
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-Edit file `/usr/share/lightdm/lightdm.conf.d/50-greeter-wrapper.conf` to add the configuration below:
+Edit the file `/usr/share/lightdm/lightdm.conf.d/50-greeter-wrapper.conf`, and add the following configuration:
 
 ```bash
 [SeatDefaults]
@@ -32,7 +32,7 @@ khadas@Khadas:~$ sudo sed -i "s/ExecStart=.*/ExecStart=-\/sbin\/agetty --noclear
 </div>
 </div>
 
-{% note info Reboot to take effect. %}
+{% note info Reboot to effect changes. %}
 
 {% endnote %}                                                                                                                                                                
 
