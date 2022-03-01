@@ -6,10 +6,6 @@ title: 擦除eMMC存储器
 * 中断模式
 * 命令行模式
 
-{% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
-
-{% endnote %}
-
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <a class="nav-link active" id="serial-tab" data-toggle="tab" href="#serial" role="tab" aria-controls="serial" aria-selected="true">串口模式（针对开发者）</a>
@@ -24,41 +20,37 @@ title: 擦除eMMC存储器
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* 参考这里([VIM1](/android/zh-cn/vim1/SetupSerialTool.html)/[VIM2](/android/zh-cn/vim2/SetupSerialTool.html)/[VIM3](/android/zh-cn/vim3/SetupSerialTool.html))设置串口
+* 参考这里[串口工具设置](SetupSerialTool.html)。
 * 确保串口线连接正确以及串口软件正确配置
-* 在VIMs上电时按住任意键会进入U-boot命令行模式
-* U-boot命令行执行`store init 3`会擦除整个eMMC
+* 在VIMs上电时按住空格键会进入U-boot命令行模式
+* U-boot命令行执行`store boot_erase bootloader`会擦除eMMC U-Boot
 * 执行`reboot` 或按 `Reset`键重启
 * 参考如下:
 
 ```bash
-kvim# store init 3
-emmc/sd response timeout, cmd8, status=0x1ff2800
-emmc/sd response timeout, cmd55, status=0x1ff2800
-[mmc_startup] mmc refix success
-[mmc_init] mmc init success
-switch to partitions #0, OK
-mmc1(part 0) is current device
-Device: SDIO Port C
-Manufacturer ID: 15
-OEM: 100
-Name: 8WPD3 
-Tran Speed: 52000000
-Rd Block Len: 512
-MMC version 5.0
-High Capacity: Yes
-Capacity: 7.3 GiB
-mmc clock: 40000000
-Bus Width: 8-bit DDR
-[store]amlmmc erase 1emmckey_is_protected : protect
-start = 0,end = 57343
+kvim4# store boot_erase bootloader
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+gpt is invalid
 
 
 Caution! Your devices Erase group is 0x400
-The erase range would be change to 0x36000~0xe8ffff
+The erase range would be change to 0x0~0x23ff
 
-start = 221184,end = 15269886
-kvim# reboot
+8191 blocks erased: OK
+
+
+Caution! Your devices Erase group is 0x400
+The erase range would be change to 0x0~0x23ff
+
+8191 blocks erased: OK
+
+
+Caution! Your devices Erase group is 0x400
+The erase range would be change to 0x0~0x23ff
+
+8191 blocks erased: OK
+kvim4# reboot
 ```
 
 {% note info 注意 %}
@@ -66,7 +58,7 @@ kvim# reboot
 如果擦除eMMC成功，在重启后可以在串口看到如下打印信息：
 
 ```bash
-GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:8;
+T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DFU:0;SD:2002;eMMC:0;RD-0:0;CHK:1;RD-1:0;CHK:1;RD-2:0;CHK:1;SPINOR:0;RD-0:0;CHK:1;RD-1:0;CHK:1;USB:ADFU�T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DFU:1;USB:0;RD-00:0;
 ```
 
 {% endnote %}
@@ -77,7 +69,7 @@ GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:800;USB:
 
 这种方法适用于所有Amlogic产品。
 
-* 通过USB-C([VIM1](/android/zh-cn/vim1/UpgradeViaUSBCable.html)/[VIM2](/android/zh-cn/vim2/UpgradeViaUSBCable.html)/[VIM3](/android/zh-cn/vim3/UpgradeViaUSBCable.html)) 或TF卡([VIM1](/android/zh-cn/vim1/UpgradeViaTFBurningCard.html)/[VIM2](/android/zh-cn/vim2/UpgradeViaTFBurningCard.html)/[VIM3](/android/zh-cn/vim3/UpgradeViaTFBurningCard.html))升级固件.
+* 通过[USB-C升级固件](UpgradeViaUSBCable.html)或[TF卡](UpgradeViaTFBurningCard.html).
 * 中断升级过程(建议进度条超过15%后中断), 例如, 拔掉USB数据线或TF卡
 * 重新上电，你会发现eMMC被擦除
 

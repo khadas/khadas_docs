@@ -1,4 +1,4 @@
-title: KBI Guidance for Khadas VIM4
+title: KBI Guidance
 ---
 
 ## TODO

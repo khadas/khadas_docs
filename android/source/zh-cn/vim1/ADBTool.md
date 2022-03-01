@@ -1,11 +1,19 @@
-title: 如何使用ADB工具
+title: 使用ADB工具
 ---
 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="Linux-tab" data-toggle="tab" href="#Linux-pins" role="tab" aria-controls="Linux" aria-selected="true">Linux</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="Windows-tab" data-toggle="tab" href="#Windows-pins" role="tab" aria-controls="Windows" aria-selected="false">Windows</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="Linux-pins" role="tabpanel" aria-labelledby="Linux-tab">
+
+
 ## 安装ADB
-
-这里将会介绍如何安装以及如何使用ADB工具
-
-### 如何安装ADB
 
 首先你要更新你的源，之后可以通过命令行直接安装。
 
@@ -26,13 +34,13 @@ $ sudo  useradd -G plugdev $USER
 
 #### 编写配置文件
 
-创建一个rules文件
+创建一个rules文件。
 
 ```shell
 $ sudo vim /etc/udev/rules.d/51-android.rules
 ```
 
-将以下内容写入文件中
+将以下内容写入文件中。
 
 ```shell
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0666"
@@ -45,8 +53,19 @@ SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0666"
 ```shell
 $ sudo /etc/init.d/udev restart
 ```
+</div>
+<div class="tab-pane fade" id="Windows-pins" role="tabpanel" aria-labelledby="Windows-tab">
 
-## 如何使用ADB
+## 安装ADB
+
+首先参照安装 USB 驱动一节安装好驱动。
+然后下载 [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip)，解压到打开`cmd`命令行窗口的根目录以方便调用，如下图所示：
+![mac](/android/images/vim4/adb.png)
+
+</div>
+</div>
+
+## 使用ADB
 
 ### 网络ADB 
 
@@ -56,11 +75,9 @@ $ sudo /etc/init.d/udev restart
 
 * 查看设备IP地址: `Settings-->About device--->Status--->IP`
 
-* 执行 `adb connect` 命令,如下 :
-
+* 执行 `adb connect` 命令,如下:
 ```shell
 $ adb connect 192.168.1.120
-connected to 192.168.1.120:5555
 $ adb shell
 ```
 
@@ -71,7 +88,6 @@ $ adb shell
 * 确保调试模式打开: `Settings-->Developer options--->USB debugging`
 
 * 打开终端执行如下命令: 
-
 ```shell
 $ adb shell
 ```
@@ -82,8 +98,8 @@ $ adb shell
 
 
 **注意:**
-1.如果你使用的是安卓手机，请确认你的手机打开了 *开发者模式*.
-2.当你尝试开始通过  `adb devices` 命令调试你的手机时,你的手机会弹出一条提醒，请确认连接。
-3.如果你使用的安卓设备是khadas的开发板，那么直接连接即可。
+1. 如果你使用的是安卓手机，请确认你的手机打开了*开发者模式*。
+2. 当你尝试开始通过`adb devices`命令调试你的手机时,你的手机会弹出一条提醒，请确认连接。
+3. 如果你使用的安卓设备是khadas的开发板，那么直接连接即可。
 
 

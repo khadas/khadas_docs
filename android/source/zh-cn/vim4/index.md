@@ -1,2 +1,1 @@
-title: VIM4 相关文档
----
+../../../../linux/source/zh-cn/vim4/index.md
