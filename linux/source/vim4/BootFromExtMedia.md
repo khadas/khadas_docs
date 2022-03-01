@@ -1,20 +1,20 @@
-title: Boot Images from External Media
+title: Boot Images from External SD/Thumbdrive Media
 ---
 
-There are several images that are designed to run from a SD Card or Thumbdrive (U-Disk) and are compatible with VIMs. For example:
+Certain images are designed to boot from an SD Card or Thumbdrive and are compatible with VIM SBCs. For example:
 
-* Khadas SD images
+* Khadas SD Images:
   * [VIM4](https://dl.khadas.com/Firmware/VIM4/Ubuntu/SD_USB/)
 
-This documentation will introduce how to boot these images.
+This documentation will show you how to boot these images.
 
-## Install Image to SD/USB Storage
+## Install Image to External SD/USB Media
 
-Please check [Install System on SD/USB Storage](InstallOsIntoSdusb.html).
+For detailed steps, please see [Install Image Into SD/USB Media](InstallOsIntoSdusb.html).
 
 ## Boot
 
-Insert SD card or U-Disk to board and power on, the system will boot from SD card or U-Disk automatically.
+Insert your Bootable SD card or Thumbdrive into your SBC and power ON, the system will automatically boot from the SD card or Thumbdrive.
 
 ## See Also
 
