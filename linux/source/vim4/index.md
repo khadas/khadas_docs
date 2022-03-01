@@ -38,6 +38,7 @@ Do not attach multiple cables with large heads that could interfere. Bent or twi
 * USB-C Port - 12V/2A power input port
 * HDMI - HDMI output for an external display
 * Ethernet - RJ45 port for LAN network
+* USB - Keyboard and mouse
 
 <img src="/linux/images/vim4/QuickStart.jpg" width="50%" height="50%">
 
