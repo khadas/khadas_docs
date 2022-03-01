@@ -1,7 +1,7 @@
 title: Bluetooth
 ---
 
-This document will introduce how to use Bluetooth
+This guide will show you how to use Bluetooth.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -16,19 +16,19 @@ This document will introduce how to use Bluetooth
 
 1. **Open Bluetooth settings**
 
-Bluetooth settings are in the upper right corner, click and select `device`.
+Bluetooth settings are in the upper-right corner, click it and select `device`.
 
 <img src="/linux/images/vim1/gnome-bluetooth1.png" width=400px>
 
 2. **Search for Bluetooth devices**
 
-Click `Search`, you can search for nearby Bluetooth devices.
+Click `Search` to scan for nearby Bluetooth devices.
 
 <img src="/linux/images/vim1/gnome-bluetooth2.png" width=400px>
 
-3. **Pair connected devices**
+3. **Pair with device**
 
-Click who you want to connect to, and then click the key, you can select the device to be paired.
+Select the device that you want to pair with.
 
 <img src="/linux/images/vim1/gnome-bluetooth3.png" width=400px>
 
@@ -60,7 +60,7 @@ Setup:
 [bluetooth]# scan on
 ```
 
-3. **Scan for Bluetooth Peripherals**:
+3. **Scan for Bluetooth devices**:
 
 ```sh
 [bluetooth]# scan on
@@ -70,7 +70,7 @@ Discovery started
 [NEW] Device 8C:EB:C6:E7:2E:33 Khadas
 ```
 
-4. **Show Devices**:
+4. **Show connected Bluetooth devices**:
 
 ```sh
 [bluetooth]# devices
@@ -82,7 +82,7 @@ Device 9C:FB:D5:0D:91:47 9C-FB-D5-0D-91-47
 [CHG] Device AC:83:F3:DD:D4:E1 Alias: LibreELEC
 ```
 
-5. **Connect to a Device**:
+5. **Pair with a device**:
 
 ```sh
 [bluetooth]# connect <device_addr>
@@ -105,7 +105,7 @@ khadas@Khadas:~$
 
 * **Troubleshooting**
 
-If your bluetooth doesn't work anymore, you can try to restart the bluetooth service manually.
+If the Bluetooth hangs or behaves abnormally, you can restart the Bluetooth service manually.
 
 ```
 $ sudo systemctl restart bluetooth-power-fixup.service
