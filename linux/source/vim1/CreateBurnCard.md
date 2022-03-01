@@ -118,7 +118,7 @@ $ sudo eject /dev/sdX
 
 Done!
 
-## Upgrade Using Your Burning Card
+## Upgrade Using Your `Burning Card`
 
 1. Insert your Burning Card into your board, and power-on.
 2. Follow this [guide](BootIntoUpgradeMode.html) to boot into upgrade mode.

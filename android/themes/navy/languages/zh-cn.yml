@@ -161,14 +161,59 @@ sidebar:
 
   vim4:
     quick_start: 快速开始
+    overview: 概述
+    vim3_interfaces: 接口描述
+    add_chinese_support: 增加中文支持
+    enter_upgrade_mode: 进入升级模式
+    upgrade_via_usb: 通过USB升级
+    upgrade_via_tfcard: 通过TF卡升级安卓
     rescures_control: 资源控制
     system_control: 系统控制
+    how_to_use_adb_tool: ADB用法
+    how_to_change_logo_android: 更新开机logo
+    how_to_change_animation: 更新开机动画
+    how_to_app_platform_sign: APP添加系统签名
+    how_to_get_gps_data: 获取GPS数据
+    how_to_get_gsensor_data: 获取GSensor数据
+    how_to_use_settings_command: 使用Settings命令
+    how_to_use_tts: 使用TTS
+    khadas_settings_usage: Khadas设置使用说明
+    how_to_add_permission: 修改系统为APP添加权限
+    how_to_app_add_window_permission: APP添加悬浮窗权限
     accessories: 配件
+    connect_lcd: 配置触摸屏TS050
+    board_rescoures: 板载资源
+    how_to_access_gpio: GPIO用法
+    how_to_access_i2c: 操作I2C
+    howto_use_wol: WOL用法
+    how_to_setup_pcie_usb_port: 设置PCIe/USB3.0端口
+    how_to_enable_m2x_eth: 使能M2x
+    how_to_use_uart_android: 使用uart
+    how_to_add_ir: 添加遥控器
+    how_to_use_pwm: 使用PWM
     npu: NPU
+    how_to_use_android_npu_demo: 使用安卓npu demo
+    how_to_use_npu_jni: 使用Npu jni
     development: 开发
     uboot: U-Boot
+    boot_from_spi_flash: 从SPI Flash启动系统
+    uboot_usage: U-Boot使用说明
+    build_boot_logo_for_uboot: 编译U-Boot启动Logo
+    setup_tftp: 搭建TFTP服务器
+    load_image_via_tftp: 通过TFTP下载镜像
+    kbi_guidance: KBI说明
     firmware&&system: 固件&&系统
+    install_toolchains: 安装交叉编译器
+    download_android_source_code: 下载安卓源码
+    build_android: 编译安卓源码
+    package_update_image: 快速打包安卓固件
+    create_burning_card_via_cli: 通过命令行创建烧录卡
+    create_booting_card: 通过命令行创建启动卡
+    erase_emmc: 擦除eMMC存储器
+    how_to_use_fastboot: 通过Fastboot单刷Image
     hardware: 硬件
+    setup_serial: 设置串口调试工具
+    extra_power_input: 外部电源供电
     troubleshooting: 故障排查
     capture_log: 抓取Log
 
