@@ -87,9 +87,9 @@ boot wol: enable
 ### Test WOL
 After doing the steps above, we can test the WOL function.
 
-**1. Connect VIM2 with LAN**
+**1. Connect VIM2 with LAN.**
 
-**2. Power off VIM2**
+**2. Power off VIM2.**
 
 **3. Attempt to wake up your VIM2 on Ubuntu.**
 

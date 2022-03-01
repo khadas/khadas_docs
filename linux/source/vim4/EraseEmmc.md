@@ -22,8 +22,8 @@ There are 3 different ways to erase all data on the onboard eMMC storage:
 
 1. Refer to this [guide](SetupSerialTool.html) to setup the Serial Tool for your VIM.
 2. Once again, ensure you've done the correct connections and setup.
-3. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode.
-4. Type `store boot_erase bootloader` on the terminal of u-boot, and wait for the erasure process to complete.
+3. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will make your VIM enter into U-Boot mode.
+4. Type `store boot_erase bootloader` on the terminal of U-Boot, and wait for the erasure process to complete.
 5. Type `reboot` or press the `Reset` button.
 6. Use the following as a reference:
 
