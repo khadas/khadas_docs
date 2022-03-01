@@ -3,10 +3,10 @@ title: Boot Into Upgrade Mode
 
 There are 4 ways to boot into upgrade mode:
 
-* Keys Mode (Side-Buttons)
+* Key Mode (Side-Buttons)
 * Serial Mode
 * TST Mode (Recommended)
-* SD Booting Card
+* Bootable SD Card
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -28,15 +28,15 @@ There are 4 ways to boot into upgrade mode:
 1. Power on VIM4.
 2. Long press the `POWER` key without releasing it.
 3. Short press the `RESET` key and release it.
-4. Count for 2 to 3 seconds, then release the `POWER` key to enter into Upgrade Mode. You will see the sys-led turn ON when you've entered Upgrade Mode.
+4. Count for 2 to 3 seconds, then release the `POWER` key to enter into Upgrade Mode. The Sys-LED (White) will turn ON when you've entered Upgrade Mode.
 
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-1. Refer this [guide](SetupSerialTool.html) to setup your serial tool for VIM4.
+1. Refer to this [guide](SetupSerialTool.html) to setup your Serial Tool for VIM4.
 2. Once again, make sure you've done the correct connections and setup.
-3. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot Mode.
-4. Type `run update` in the terminal of U-Boot as below. You will see the sys-led turn ON when you've entered Upgrade Mode.
+3. Hit `SPACE` on your keyboard at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot.
+4. Type `run update` in the terminal of U-Boot as shown below. The Sys-LED (White) will turn ON when you've entered Upgrade Mode.
 
 </div>
 <div class="tab-pane fade" id="tst" role="tabpanel" aria-labelledby="tst-tab">
@@ -48,12 +48,12 @@ There are 4 ways to boot into upgrade mode:
 </div>
 <div class="tab-pane fade" id="sdbooting" role="tabpanel" aria-labelledby="sdbooting-tab">
 
-1. [Create a SD booting Card]().
-2. Insert the SD card to slot.
-3. Refer this [guide](SetupSerialTool.html) to setup your serial tool for VIM4.
+1. [Create a Bootable SD Card]().
+2. Insert a Bootable SD card into the slot.
+3. Refer to this [guide](SetupSerialTool.html) to setup your serial tool for VIM4.
 4. Power-on VIM4.
-5. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot Mode.
-6. Type `run update` in the terminal of U-Boot as below.
+5. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will let VIM4 boot into U-Boot.
+6. Type `run update` in the U-Boot terminal.
 
 </div>
 </div>
