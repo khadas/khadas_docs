@@ -1,7 +1,7 @@
 title: Install OS into eMMC
 ---
 
-All the VIM series boards have **onboard eMMC storage**, so you can install the **OS** into **eMMC** via **USB upgrade tool**.
+All VIM series boards have **onboard eMMC storage**, so you can install the **OS** into the **eMMC** using the **USB upgrade tool**.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -17,16 +17,16 @@ All the VIM series boards have **onboard eMMC storage**, so you can install the 
 ## Preparation
 
 1. Dowload the [USB Upgrade Tool](http://dl.khadas.com/products/vim4/tool/Aml_Burn_Tool_V3.2.0.zip) and extract it.
-2. Burning tool directory description:
+2. Description of the USB Upgrade Tool's directory contents:
   ![image](/linux/images/vim1/usb_upgrade_tool_dir_1.png)
   * The `V2` and `V3` folders hold the original burning tool files
   * The `burn tool` folder stores burning tools and drivers for different boards
-3. `burn tool` folders description:
+3. Description of the `burn tool` directory contents:
   ![image](/linux/images/vim1/usb_upgrade_tool_dir_2.png)
   * `Driver-VIM1_2_3` Driver files for VIM1/VIM2/VIM3/VIM3L boards
-  * `Driver-VIM4` Driver files for VIM4 board
+  * `Driver-VIM4` Driver files for the VIM4 board
   * `VIM1_2_3.exe` Burning tool for VIM1/VIM2/VIM3/VIM3L boards
-  * `VIM4.exe` Burning tool for VIM4 board
+  * `VIM4.exe` Burning tool for the VIM4 board
 
 ## Installation
 
@@ -41,45 +41,45 @@ All the VIM series boards have **onboard eMMC storage**, so you can install the 
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-tool" role="tabpanel" aria-labelledby="vim1-tab">
 
-**Install driver**
+**Driver Installation**
 
-1. Enter the `Driver-VIM1_2_3` directory, install `dpscat.exe`, the installation process is very fast, and there is no display.
+1. Enter the `Driver-VIM1_2_3` directory, and install `dpscat.exe`. The installation process is quick, and there's is no GUI display.
 2. Install `dpinst64.exe`. After the installation is successful, you can burn the firmware.
 
-**Make sure the driver is installed correctly, then follow the steps below to upgrade:**
+**Make sure the driver is installed correctly, then follow the steps below to burn firmware:**
 
-1. Enter `burn tool` directory, open `VIM1_2_3.exe`, click `File-->Import Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
+1. Enter the `burn tool` directory, open `VIM1_2_3.exe`, click `File-->Import Image`, then choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
 3. Put your board into [Upgrade Mode](BootIntoUpgradeMode.html).
-4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as a connected USB-device.
+4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as an attached USB-device.
 
-    Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
+    Now all you need to do is to click the `Start` button and wait for burning to complete:
     ![Image of USB_Upgrade_Tool_Interface_v217](/linux/images/vim1/usb_upgrade_tool_interface_v217_en.png)
 
 </div>
 <div class="tab-pane fade" id="vim4-tool" role="tabpanel" aria-labelledby="vim4-tab">
 
-**Install driver**
+**Driver Installation**
 
-1. Enter the `Driver-VIM4` directory, install `dpscat.exe`, the installation process is very fast, and there is no display.
+1. Enter the `Driver-VIM4` directory, install `dpscat.exe`. The installation process is quick, and there is no GUI display.
 2. Install `dpinst64.exe`. After the installation is successful, you can burn the firmware.
 
 **Make sure the driver is installed correctly, then follow the steps below to upgrade:**
 
-1. 1. Enter `burn tool` directory, open `VIM4.exe`, click `Setup-->Load Image` to choose an [image](https://dl.khadas.com/Firmware/) for your board.
+1. Enter the `burn tool` directory, open `VIM4.exe`, click `Setup-->Load Image`, then choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
 3. Put your board into [Upgrade Mode](BootIntoUpgradeMode.html).
-4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as a connected USB-device.
+4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as an attached USB-device.
 
-    Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
+    Now all you need to do is to click the `Start` button and wait for burning to complete:
     ![Image of USB_Upgrade_Tool_Interface_v217](/linux/images/vim4/usb_upgrade_tool_interface_en.png)
 
 </div>
 
 {% note info Tips %}
 
-* To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark
-* [Extra power supply](ExtraPowerInput.html) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade
+* To interrupt burning, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC may already have been completely erased if you went past the 15% mark
+* An [External Power Supply](ExtraPowerInput.html) may be required in cases where your PC cannot provide enough electrical power for the burning process
 * If your system is a 32-bit system, please select `dpinst32.exe` when installing the driver
 
 {% endnote %}
@@ -90,7 +90,7 @@ All the VIM series boards have **onboard eMMC storage**, so you can install the 
 
 {% note warn Note %}
 
-We only verify the tool on Ubuntu, for other distributions may not work properly!
+Tools were verified to function properly on Ubuntu only, we make no guarantees for other Linux distributions!
 
 {% endnote %}
 
@@ -134,7 +134,7 @@ Host PC: Ubuntu 16.04
 ===============================================
 
 Installing USB rules...
-[sudo] password for frank:
+[sudo] password for User:
 Installing flash-tool...
 Done!
 
@@ -154,14 +154,14 @@ Done!
 ```
 {% note warn Note %}
 
-Root privilege required.
+Root privilege is required.
 
 {% endnote %}
 
 ## Check The USB Driver
 
-You must now place your board into `Upgrade Mode`.See [how to enter upgrade mode](BootIntoUpgradeMode.html).
-Check to see if Ubuntu has detected your board as a connected USB-device.
+You must now place your board into `Upgrade Mode`. See [how to enter upgrade mode](BootIntoUpgradeMode.html).
+Check to see if Ubuntu has detected your board as an attached USB-device.
 
 ```bash
 $ lsusb | grep Amlogic
@@ -217,7 +217,7 @@ Resetting board [OK]
 $ aml-burn-tool -b VIM3 -i /path/to/image
 ```
 
-You will see these teminal logs if successful.
+You will see these Terminal logs if successful.
 
 ```bash
 Rebooting the board ........[OK]
@@ -262,5 +262,5 @@ $ sudo ./UNINSTALL
 
 
 ## See Also
-* [Boot Into Upgrade Mode](BootIntoUpgradeMode.html)
+* [Boot into Upgrade Mode](BootIntoUpgradeMode.html)
 
