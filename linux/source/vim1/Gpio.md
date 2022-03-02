@@ -1,11 +1,11 @@
 title: GPIO
 ---
 
-**This document describes how to access GPIO under Ubuntu.**
+**Access GPIO pins from the Ubuntu Terminal.**
 
 {% note warn Note %}
 1. This document **only supports the 4.9 kernel**.
-2. All operations on GPIO are performed under **root privileges**, switch to root:
+2. **Root privileges** are required to access the GPIO:
 
 ```sh
 khadas@Khadas:~$ su
@@ -26,7 +26,7 @@ root@Khadas:/home/khadas#
 
 ### Numerical Calculation Example
 
-Amlogic chips usually include two GPIO Ranges, AOBUS and Periphs. There is a calculation example for each Ranges here for reference.
+Amlogic chips usually include two GPIO Ranges, AOBUS and Periphs. Examples for each range is provided here for reference.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -335,15 +335,15 @@ Take `GPIOT_19` as an examples here.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1demo" role="tabpanel" aria-labelledby="vim1-tab">
 
-**Here use `GPIODV24` to read the pin output value of `GPIODV25`, and use Dupont line to connect the physical pins 22 and 23 together.**
+**Use `GPIODV24` to read the pin output value of `GPIODV25`, and use a Dupont line to connect the physical pins 22 and 23 together.**
 
-1. **Set `GPIODV24` and `GPIODV25` as ordinary pins** (multiplexed as i2c by default).
+1. **Set `GPIODV24` and `GPIODV25` as ordinary pins** (multiplexed as I2C by default).
 
   * edit `/boot/env.txt`,
 ```sh
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
-  * Remove i2c3 from overlays,
+  * Remove I2C3 from overlays,
 ```
 overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_f i2s watchdog
 ```
@@ -394,15 +394,15 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 </div>
 <div class="tab-pane fade" id="vim2demo" role="tabpanel" aria-labelledby="vim2-tab">
 
-**Here use GPIODV24 to read the pin output value of GPIODV25, and use Dupont line to connect the physical pins 22 and 23 together.**
+**Use GPIODV24 to read the pin output value of GPIODV25, and use a Dupont line to connect the physical pins 22 and 23 together.**
 
-1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as i2c by default).
+1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as I2C by default).
 
 *  edit `/boot/env.txt`,
 ```sh
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
-* Remove i2c3 from overlays,
+* Remove I2C3 from overlays,
 ```
 overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_f i2s watchdog
 ```
@@ -437,13 +437,13 @@ root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
 
 5. **Test**
 
-  * Set `GPIODV_25` to output high level and read it with `GPIODV_24`
+  * Set `GPIODV_25` to high level output and read it with `GPIODV_24`
 ```sh
 root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1
 ```
-  * Set `GPIODV_25` to low level and read with `GPIODV_24`
+  * Set `GPIODV_25` to low level output and read it with `GPIODV_24`
 ```sh
 root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
@@ -453,14 +453,14 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 </div>
 <div class="tab-pane fade" id="vim3demo" role="tabpanel" aria-labelledby="vim3-tab">
 
-**Here use GPIODV24 to read the pin output value of GPIODV25, and use Dupont line to connect the physical pins 22 and 23 together.**
+**Use GPIODV24 to read the pin output value of GPIODV25, and a use Dupont line to connect the physical pins 22 and 23 together.**
 
-1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as i2c by default)
+1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as I2C by default)
   * edit `/boot/env.txt`,
 ```sh
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
-* Remove i2c3 from overlays,
+* Remove I2C3 from overlays,
 ```
 overlays=uart3 pwm_f i2c3 i2s os08a10 watchdog --> overlays=uart3 pwm_f i2s os08a10 watchdog
 ```
@@ -495,13 +495,13 @@ root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio475/direction
 
 5. **Test**
 
-  * Set `GPIOA_15` to output high level and read it with `GPIOA_14`
+  * Set `GPIOA_15` to high level output and read it with `GPIOA_14`
 ```sh
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 1
 ```
-  * Set `GPIOA_15` to output low level and read it with `GPIOA_14`
+  * Set `GPIOA_15` to low level output and read it with `GPIOA_14`
 ```sh
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
@@ -510,7 +510,7 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 </div>
 <div class="tab-pane fade" id="vim4demo" role="tabpanel" aria-labelledby="vim4-tab">
 
-**Here use GPIOT_18 to read the pin output value of GPIOT_19, and use Dupont line to connect the physical pins 36 and 37 together.**
+**Use GPIOT_18 to read the pin output value of GPIOT_19, and use a Dupont line to connect the physical pins 36 and 37 together.**
 
 1. **Calculate the GPIO value:**
 
@@ -541,13 +541,13 @@ root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio465/direction
 
 4. **Test**
 
-  * Set `GPIOT_19` to output high level and read it with `GPIOT_18`
+  * Set `GPIOT_19` to high level output and read it with `GPIOT_18`
 ```sh
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value 
 1
 ```
-  * Set `GPIOT_19` to output low level and read it with `GPIOT_18`
+  * Set `GPIOT_19` to low level output and read it with `GPIOT_18`
 ```sh
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
