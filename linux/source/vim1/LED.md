@@ -1,9 +1,9 @@
 title: LED
 ---
 
-## Switch to root user
+## Root privilege
 
-Only the root user has the authority to control and modify the node status of the LEDs.
+Only **root** has the authority to control and modify the LED nodes.
 
 ```bash
 khadas@Khadas:~$ su
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-## Check LED Node
+## List LED nodes
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -58,9 +58,9 @@ root@Khadas:/home/khadas#
 </div>
 
 
-## How To Use
+## Modifying the LED nodes
 
-Here takes `sys_led` as an example:
+Lets use `sys_led` (white) as an example:
 
 ```bash
 root@Khadas:/sys/class/leds# cd sys_led
@@ -77,7 +77,7 @@ none rc-feedback kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftl
 
 * Turn off
 
-Set `none` parameter to turn off the LED:
+Set the LED node parameter to `none` to turn off the LED:
 
 ```bash
 root@Khadas:/sys/class/leds/sys_led# echo none > trigger
@@ -85,16 +85,16 @@ root@Khadas:/sys/class/leds/sys_led# echo none > trigger
 
 * Turn on
 
-Set `default-on` parameter to turn off the LED:
+Set the LED node parameter to `default-on` to keep the LED permanently on:
 
 ```bash
 root@Khadas:/sys/class/leds/sys_led# echo default-on > trigger
 ```
 
-Set `heartbeat` to make the LED heartbeat flash:
+Set the LED node parameter to `heartbeat`, to make the LED flash with a heartbeat rhythm:
 
 ```bash
 root@Khadas:/sys/class/leds/sys_led# echo heartbeat > trigger
 ```
 
-You can also try other parameters.
+You can also experiment with other parameters.
