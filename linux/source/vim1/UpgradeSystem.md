@@ -1,13 +1,13 @@
-title: Upgrade System
+title: System Upgrades
 ---
 
-{% note warn Note %}
+{% note warn Attention %}
 
-Only for official released Ubuntu images, check [here](https://dl.khadas.com/Firmware/) for official images.
+This guide only applies to officially released Ubuntu images, see [here](https://dl.khadas.com/Firmware/) for official images.
 
 {% endnote %}
 
-If you already have our official released Ubuntu image in the eMMC, then you can follow the instructions to upgrade your system to latest release.
+If you are already using our officially released Ubuntu image in the eMMC, then you can follow these instructions to upgrade your system to the latest version.
 
 ```sh
 $ sudo apt update
@@ -19,7 +19,7 @@ $ sudo reboot
 
 {% note info Troubleshooting %}
 
-If you get the errors below:
+If you encounter the following errors:
 
 ```bash
 khadas@Khadas:~$ sudo apt update
@@ -36,7 +36,7 @@ N: Updating from such a repository can't be done securely, and is therefore disa
 N: See apt-secure(8) manpage for repository creation and user configuration details.
 ```
 
-You can follow the instructions below to fix it:
+Follow these instructions to fix it:
 
 ```bash
 $ sudo sed -i 's/https/http/g' /etc/apt/sources.list.d/fenix.list

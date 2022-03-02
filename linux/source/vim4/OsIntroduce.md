@@ -1,13 +1,11 @@
 title: Choose an OS
 ---
 
-Khadas officially supports and updates the **Ubuntu** distribution; **OTA upgrades are supported**.
+Khadas officially supports and updates the **Ubuntu** distribution; **OTA upgrades are also available**.
 
 ## Supported Ubuntu Distributions
 
-`VIM4` supports `Ubuntu 20.04`.
-
-For `VIM4`, `Ubuntu 20.04` is currently supported, and the kernel version is **5.4**. Contains **desktop system** and **server** two versions. The desktop environment defaults to the **GNOME** desktop.
+`VIM4` supports `Ubuntu 20.04` using kernel **5.4**. We support both **desktop** and **server** versions. The desktop environment uses the **GNOME** desktop.
 
 Supported installations:
 
@@ -25,12 +23,12 @@ If the image name includes the text **EMMC**, it is meant for eMMC installation.
 
 ### Linux Kernel
 
-There is currently a **5.4** version of the kernel.
+The kernel version is **5.4**.
 
 ### OS Type
 
-**server** - no GUI support, only console
-**gnome** - standard desktop GUI support
+**server** - no GUI support, only console input
+**desktop** - GNOME desktop GUI support
 
 ### Installation Type
 
