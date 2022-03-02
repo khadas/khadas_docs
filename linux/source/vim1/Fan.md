@@ -1,30 +1,28 @@
 title: Cooling Fan
 ---
 
-This guide is about how to **setup the cooling fan** in Ubuntu.
+This guide shows you how to change the fan speed modes from within Ubuntu.
 
+### Open Fan Settings 
 
-### Open Application 
+Find the app called `Fan Settings` from within your application list.
 
-You can find the application which name `FAN Setting` in your application list.
-
-![FAN Setting](/linux/images/vim1/gnome_application_fan.png)
+![Fan Settings](/linux/images/vim1/gnome_application_fan.png)
 
 Click to open it.
 
-### Select mode you want
+### Select Fan Speed Mode
 
-![Fan Setting](/linux/images/vim1/gnome_fan_setting.png)
+![Fan Speed](/linux/images/vim1/gnome_fan_setting.png)
 
-You can choose the mode you want, the default is `auto`.
+Select the fan speed mode that you want, the default is `auto`.
 
-### Save the Mode or not
+### Save or Exit
 
-![Fan save](/linux/images/vim1/gnome_fan_save.png)
+![Save or Exit](/linux/images/vim1/gnome_fan_save.png)
 
-You can choose to save it or not.
+Choose to either save the mode, or exit discarding changes.
 
 ![Fan PSK](/linux/images/vim1/gnome_fan_psk.png)
 
 Type your `sudo` password.
-
