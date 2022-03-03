@@ -1,15 +1,16 @@
 title: WiringPi
 ---
 
-**This document mainly introduces how to use WiringPi on Khadas SBC.**
+Using WiringPi on a Khadas SBC.
 
 ## What is WiringPi
-WiringPi is a GPIO Controller basic on C Program.Originally a library for Raspberry Pie.Now we have migrated to VIMs.You can control the `40-PIN HEADER` by it.
+WiringPi is a C++ library for Raspberry Pi. With this library you can use many of the functionalities provided by the GPIO header: digital pins, SPI, I2C, UART, etc.
+We have ported this library to also work with Khadas SBCs, and you can use it to control the `40-PIN HEADER`.
 
-## Begin to Use WiringPi
-### Control command
+## Using WiringPi
+### Available commands
 
-1. run `gpio -h`, you can see all the control command with WiringPi.
+1. Run `gpio -h` in the Terminal, and you can see all the available commands of WiringPi.
 ```
 gpio: Usage: gpio -v
 gpio -h
@@ -37,9 +38,7 @@ gpio gbr <channel>
 gpio gbw <channel> <value>
 ```
 
-2. run `gpio readall`, It prints a table showing the status of all pins.
-
-You will see a table with many columns.
+2. Run `gpio readall` in the Terminal, and it will print a table showing the status of all GPIO pins.
 
 ```shell
 GPIO  --> GPIO native number
@@ -49,7 +48,7 @@ v     --> 1:HIGH 0:low
 PU/PD --> PU:pull up PD:pull down DSBLD:disabled PU/PD
 ```
 
-### Control by command
+### Control by Terminal commands
 
 Here's an example of controlling wpi number 1.
 
@@ -72,9 +71,9 @@ root@Khadas:~# gpio read 1
 root@Khadas:~# gpio read 1   
 0
 ```
-you can see the wpi number 1 Output changed from high to low.
+You can see that wpi number 1 output has changed from high to low.
 
-### Control by Linux C program
+### Control by a Linux C program
 
 1. Here is a simple control program.
 
@@ -106,7 +105,7 @@ int main()
 }
 ```
 
-2. And you can use gcc to compile it .here is the compile command `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
+2. You can use gcc to compile it. This is the compile command: `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
 
 3. run `./test` to control wpi number 1.
 
@@ -116,15 +115,15 @@ wPi Pin 1 now is LOW
 wPi Pin 1 now is GIGH
 wPi Pin 1 now is LOW
 ```
-you can use `gpio read 1` to observing pin level changes.
+You can use `gpio read 1` to observe the pin level changes.
 
-## Special pin functions of wiringpi
+## Special pin functions of WiringPi
 
-Special pin functions of wiringpi include`SPI`,`i2C`,`ADC`,`SoftPWM`.
+Special pin functions of wiringpi include`SPI`,`I2C`,`ADC`,`SoftPWM`.
  
 ### SPI 
 
-`VIM1`and`vim2` don't export `SPI` to `40-PIN HEADER` of GPIO.
+**Note:** `VIM1`and`VIM2` do not provide access to `SPI` on the `40-PIN HEADER`.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -266,14 +265,14 @@ PIN12 <---> ADC_CH3
 
 ### Serial
 
-Please confirm the node name for Serial before using.
+Check which nodes are used for serial.
 
 ```
 PIN15 <---> RX
 PIN16 <---> TX
 ```
 
-## WiringPi Function List
+## WiringPi function list
 
 ```
 int  wiringPiSetup       (void) ;
@@ -336,8 +335,9 @@ void softPwmStop   (int pin) ;
 
 ```
 
-## notes
+## Notes
 
-If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB.
+If you need to use the special pin functions of wiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the .dtb file.
 
-WiringPi itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.
+WiringPi includes many functions, not limited to just controlling the output of GPIO pins and reading pin levels. 
+This is only a simple introduction, and users can explore more by themselves.
