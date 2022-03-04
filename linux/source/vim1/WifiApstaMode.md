@@ -1,22 +1,22 @@
-title: Wi-Fi in STA+AP Mode
+title: Set Wi-Fi to STA + AP Modes
 ---
-This guide is about how to configure Wi-Fi to work in STA+AP mode under Ubuntu.
+Configure Wi-Fi to function in STA+AP mode using Ubuntu.
 
-## Preconditions
+## Requirements
 
-The image is based on the V2005 version,and [update the OTA](UpgradeSystem.html) to the latest version.
+Use Ubuntu v2005 and newer, [OTA Update](UpgradeSystem.html) will upgrade your OS to the latest version.
 
-## Start to Configure
+## Configuration Instructions
 
-Configrure wlan0 as STA mode, wlan1 as AP mode.
+Configure wlan0 to `STA` mode, and wlan1 to `AP` mode.
 
-### Add wlan1
+### Add wlan1 interface
 
 ```bash
 khadas@Khadas:~$ sudo iw phy phy0 interface add wlan1 type managed
 ```
 
-Check the addition:
+Use `ifconfig` to check if `wlan1` has been added successfully:
 
 ```bash
 khadas@Khadas:~$ ifconfig 
@@ -54,11 +54,12 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### Setup AP
+### Setup wlan1 as a hotspot
 
-Set wlan1 as a hotspot and connect automatically.The name of the hotspot is`khadas_ap`,the password is`12345678`.
+Setup `wlan1` as a hotspot, and allow automatic connections. 
+We shall name our hotspot `khadas_ap`, with password `12345678`.
 
-#### 2.4G Hz
+#### 2.4 GHz frequency
 
 ```bash
 $ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap
@@ -70,7 +71,10 @@ $ sudo nmcli con modify Hostspot ipv4.gateway 192.168.2.1
 $ sudo nmcli con up Hostspot
 ```
 
-#### 5G Hz
+#### 5 GHz frequency
+
+To setup a 5GHz network, you'll need to use the `channel` argument.
+We shall name our hotspot `khadas_ap`, with password `12345678`.
 
 ```sh
 $ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap
@@ -82,10 +86,7 @@ $ sudo nmcli con modify Hostspot ipv4.gateway 192.168.2.1
 $ sudo nmcli con up Hostspot
 ```
 
-To configure a 5G network, you need to set up a channel.
-
-
-Check the setup:
+Use `ifconfig` to check if everything has been setup correctly:
 
 ```bash
 khadas@Khadas:~$ ifconfig
@@ -125,7 +126,7 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-## Verify
+## Go online!
 
 1、Turn off Ethernet:
 
@@ -133,11 +134,9 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 khadas@Khadas:~$ sudo ifconfig eth0 down
 ```
 
-2、Whether wlan0 can be used to surf the Internet:
+2、Verify that `wlan0` has a working internet connection:
 
-* [Connect Wi-Fi](Wifi.html)
-
-Try to`ping www.khadas.com`:
+* First [connect to Wi-Fi](Wifi.html), then try to `ping www.khadas.com`:
 
 ```bash
 khadas@Khadas:~$ sudo ping -I wlan0 www.khadas.com
@@ -148,9 +147,8 @@ PING td-balancer-dc11-60-161.wixdns.net (185.230.60.161) from 192.168.124.80 wla
 ...
 ```
 
-3、Whether wlan1 can be connected as a hotpot:
+3、Verify that `wlan1` can be used as a hotpot:
 
 * Name: 2.4G/`khadas_ap`, 5G/`khadas_ap_5G`
-
 * Password:`12345678`
 
