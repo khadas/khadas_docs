@@ -1,7 +1,7 @@
 title: I2C
 ---
 
-**This guide is about how to access i2c on Ubuntu.**
+**Access the I2C interface from Ubuntu Terminal.**
 
 ## Connections
 
@@ -75,7 +75,7 @@ title: I2C
 </div>
 </div>
 
-## Detect the device
+## Device detection
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -222,15 +222,15 @@ Detect device on `I2C F`:
 </div>
 </div>
 
-If you have the right connection you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
+If you have made a connection, you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
 
 {% note warn Note %}
 
-Root privileges required.
+Root privileges are required.
 
 {% endnote %}
 
-## Read register from device
+## Read registers from device
 
 Read register `0x0d` of device `0x1d` on `I2C A`.
 
@@ -241,8 +241,8 @@ Read register `0x0d` of device `0x1d` on `I2C A`.
 
 {% note warn Note %}
 
-Note: Root privileges required.
+Note: Root privileges are required.
 
 {% endnote %}
 
-For more, please refer to the help messages.
+For more information, please refer to the help messages.

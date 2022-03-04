@@ -1,20 +1,20 @@
-title: PWM
+title: Pulse Width Modulation (PWM)
 ---
 
-**The document mainly describes how to use hardware PWM.**
+**This guide will show you how to use pulse width modulation.**
 
-## Check HardwarePWM Pin
+## Check hardware PWM pins
 
-Hardware PWM had open at default dtb configuration.So you need to check which Physical pin is connect to it .
+By default, Hardware PWM is enabled within the .dtb file. However different SBCs will use different GPIO pins for PWM, so you'll need to check which pins are applicable to your SBC.
 
 * `PWM_F` on [VIM1 GPIO-Out](Hardware#VIM1-Hardware-Info)
 * `PWM_D` on [VIM2 GPIO-Out](Hardware#VIM2-Hardware-Info)
 * `PWM_F` on [VIM3 GPIO-Out](Hardware#VIM3-Hardware-Info)
 * `PWM_F` on [VIM4 GPIO-Out](Hardware#VIM4-Hardware-Info)
 
-## Switch to root user
+## Root privilege
 
-Ordinary users cannot control GPIO, so they need to switch to the root user.
+Only **root** users can control the GPIO pins responsible for PWM.
 
 ```shell
 khadas@Khadas:~$ sudo -i
@@ -22,9 +22,9 @@ khadas@Khadas:~$ sudo -i
 root@Khadas:~#
 ```
 
-## Set Hardware PWM
+## Setup hardware PWM
 
-### Setup and enable PWM
+### Enable PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -75,14 +75,13 @@ root@Khadas:~#
   </div>
 </div>
 
-
-If you sueccess to enable it , you can see it with oscilloscope.
+Use an oscilloscope to check if the pins have been successfully enabled.
 
 ![pwm-Oscilloscope](/linux/images/vim1/pwm-Oscilloscope.jpg)
 
 {% note info Note %}
 
-If you use an oscilloscope to view the waveform, remember that the board and the oscilloscope need to share the GND.
+If you use an oscilloscope to view the PWM waveform, remember that the SBC and the oscilloscope need to share the same GND (ground).
 
 {% endnote %}
 

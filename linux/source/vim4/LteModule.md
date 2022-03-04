@@ -1,23 +1,23 @@
-title: LTE 4G Module
+title: 4G LTE Module
 ---
 
-## operators and frequency bands
+## Operators and frequency bands
 
-Check operators and frequency bands supported by your region, you can view it on the following two websites:
+You can view operators and frequency bands supported by your region by visiting these two websites:
 
-1. [frequencycheck](https://www.frequencycheck.com/carriers)
-2. [spectrumonitoring](https://www.spectrummonitoring.com/frequencies/)
+1. [Frequency Check](https://www.frequencycheck.com/carriers)
+2. [Spectrum Monitoring](https://www.spectrummonitoring.com/frequencies/)
 
-## LTE module working mode setting
+## LTE module usage instructions
 
-### Install minicom in your boarad
+### Install minicom in Ubuntu
 
 ```shell
 $ sudo apt update
 $ sudo apt install minicom
 ```
 
-### Setting to USBNet mode
+### Switching to USBNet mode
 
 ```shell
 $ minicom -D /dev/ttyUSB2
@@ -33,7 +33,7 @@ OK
 
 ### Power down and restart
 
-LTE module needs power down and restart to switch mode. Unplug VIMS and plug in again. LTE module now works in usbnet mode.
+The LTE module needs to be powered down and restarted to switch modes. Power cycle your SBC by replugging the USB-C power cable, and your LTE module now will function in USBNet mode.
 
 ### Restore LTE module
 
@@ -41,13 +41,13 @@ LTE module needs power down and restart to switch mode. Unplug VIMS and plug in 
 $ minicom -D /dev/ttyUSB2
 ```
 
-The default mode is ` 0`
+The default mode is `0`
 
 ```shell
 AT+QCFG="usbnet",0
 ```
 
-Power down and restart to switch back to default mode
+Power down and restart to switch back to the default mode
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -60,35 +60,36 @@ Power down and restart to switch back to default mode
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-### GNOME Desktop
+### GNOME desktop
 
-#### Step1: Open `Mobile Board Settings`
+#### Step 1: open `Mobile Board Settings`
 
 ![LTE_gnome_open](/linux/images/vim3/LTE_gnome_open.png)
 
-Click the menu bar in the upper right corner to see the 'mobile board settings' option.
+Click the menu bar in the upper-right corner to see the 'mobile board settings' option.
 
-#### Step2: New Connect
+#### Step 2: add new connection
 
-Click the `Network`, Chooise `Add new connection`, and then click `Next`.
+Click `Network`, choose `Add New Connection`, and then click `Next`.
 
 ![LTE_gnome_new](/linux/images/vim3/LTE_gnome_new.png)
 ![LTE_gnome_next](/linux/images/vim3/LTE_gnome_next.png)
 
-#### Step3: Choose you provider's country
+#### Step 3: choose your provider's country
 
-Choose you provider's country. 
+Choose your provider's country. 
 
 ![LTE_gnome_country](/linux/images/vim3/LTE_gnome_country.png)
 
-#### Step4: Choose you provider
+#### Step 4: choose your provider
 
-Choose you provider,This needs to be set according to your SIM card.
+Choose your provider. This needs to be set according to your SIM card.
 
 ![LTE_gnome_provider](/linux/images/vim3/LTE_gnome_provider.png)
-#### Step5: Enter password and connect
 
-After choose you provider, the next two steps use defconfigiure. So you just need to choose `next`. And then click `apply` . Now, you need a password , default is `000`.
+#### Step 5: enter password and connect
+
+Using the default configuration, just choose `next`. Then click `apply`. The default password is `000`.
 
 ![LTE_gnome_apply](/linux/images/vim3/LTE_gnome_apply.png)
 ![LTE_gnome_psk](/linux/images/vim3/LTE_gnome_psk.png)
@@ -97,7 +98,7 @@ After entering the password, you can connect normally.
 
 ![LTE_gnome_success](/linux/images/vim3/LTE_gnome_success.png)
 
-#### Change Password
+#### Changing the password
 
 Open the corresponding settings and update the password in `mobile broadband`.
 
@@ -106,9 +107,9 @@ Open the corresponding settings and update the password in `mobile broadband`.
 </div>
 <div class="tab-pane fade show" id="server" role="tabpanel" aria-labelledby="server-tab">
 
-## Use LTE Module with Ubuntu Server
+## LTE Module with Ubuntu Server
 
-If you use Ubuntu server, you just need a command to connect it.
+If you use Ubuntu server, use this command to connect to the 4G LTE module.
 
 ```
 $ sudo nmcli connection add type gsm apn 3gnet user 0000 password 0000 con-name "EM06 4G".
@@ -118,12 +119,11 @@ $ sudo nmcli connection add type gsm apn 3gnet user 0000 password 0000 con-name 
 </div>
 </div>
 
-## How to check  you connection is success
+## Checking Network Connectivity
 
-You can test it by `ping` command. And you need to use `-I` option to choose the LTE Module.
+Use the `ping` command, with the `-I` flag to select the LTE module interface.
 
-
-### check your network node
+### Checking Network Nodes
 ```
 $ ifconfig -a
 
@@ -139,13 +139,12 @@ wwan0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
 ...
 ```
 
-You will find `wwan0` via command `ifconfig -a`
+You will find the interface `wwan0` via the command `ifconfig -a`
 
 
-### Use `ping` command to test
+### Using `ping` command to test
 
 ```
 $ ping www.baidu.com -I wwan0
 ```
-If you LTE module work fine, It will be success.
-
+If your LTE module is functionally normally, you should see a stream of ping echoes.

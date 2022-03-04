@@ -1,10 +1,10 @@
-title: Gsensor Usage
+title: Gsensor
 ---
-**This document mainly introduces how to use Gsensor on Ubuntu.**
+Use the Gsensor in Ubuntu.
 
 ## Gsensor node
 
-Gsensor node in `/dev` directory.
+The Gsensor node is located within the `/dev` directory.
 
 ```sh
 $ ll /dev/accel 
@@ -13,11 +13,11 @@ crw-rw-rw- 1 root root 10, 50 Mar 18 12:17 /dev/accel
 
 ## Gsensor demo
 
-The Gsensor example is to read and write nodes through the ioctl function.
+Read and write nodes using the ioctl function.
 
 ### Source code
 
-The source code only realizes the use of default settings to read data, other functions users can implement by yourself.
+The following source code only utilises the default settings to read data, additional functions can be implemented by the user.
 
 ```c
 #include <stdio.h>
@@ -52,25 +52,25 @@ int main(int argc, char **argv){
         gsensor_fd = open(gsensor_device, O_RDWR);
 
         if (0 > gsensor_fd){
-                printf("gsensor node open failed ...\n");
+                printf("gsensor node initialization failure...\n");
                 exit(-1);
         }else{
-                printf("gsensor node open success!!!\n");
+                printf("gsensor node initialization success!\n");
         }
 
         if(ioctl(gsensor_fd, GSENSOR_IOCTL_START, NULL) == -1) {
-                printf("gsensor start failed ... \n");
+                printf("gsensor failed to start... \n");
                 close(gsensor_fd);
                 exit(-1);
         }else{
-                printf("gsensor start sueecss !!!\n");
+                printf("gsensor started successfully!\n");
         }
 
-        printf("start to get gsensor data ...\n");
+        printf("Receiving gsensor data...\n");
         while(1){
 
                 if(ioctl(gsensor_fd, GSENSOR_IOCTL_GETDATA, &gsensor_data) == -1) {
-                        printf("gsensor get data faile ... \n");
+                        printf("Failed to get gsensor data... \n");
                         close(gsensor_fd);
                         exit(-1);
                 }
@@ -86,7 +86,7 @@ int main(int argc, char **argv){
 
 ### Compile
 
-Use `gcc` to compile directly on the board.
+Use `gcc` to compile this program directly on your SBC running Ubuntu.
 
 ```sh
 $ gcc -o gsensor_sample_demo gsensor_sample_demo.c
@@ -119,13 +119,13 @@ gsensor_sample_demo.c:57:3: warning: implicit declaration of function â€˜sleepâ€
 
 ### Run
 
-Rotate the board while running, you can see the changes in Gsensor data.
+Use your hands to rotate the SBC whilst this program is running, and you can see live changes in Gsensor data.
 
 ```sh
 $ ./gsensor_sample_demo
-gsensor node open success!!!
-gsensor start sueecss !!!
-start to get gsensor data ...
+gsensor node initialization success!
+gsensor started successfully!
+Receiving gsensor data...
 gsensor_data -- x:-2112,y:16,z:16448
 gsensor_data -- x:-2128,y:176,z:16128
 gsensor_data -- x:-1632,y:2784,z:15968

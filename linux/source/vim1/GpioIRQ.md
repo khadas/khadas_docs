@@ -1,11 +1,11 @@
-title: GPIO IRQ
+title: GPIO Interrupts
 ---
 
-**This document mainly introduce how to use GPIO interrupt under Ubuntu.**
+**Access the GPIO interrupts from Ubuntu Terminal.**
 
-## Switch to root user
+## Root permissions
 
-Only **root user** can control GPIO, you need to switch to root user before testing.
+You must elevate yourself to **root** before you are able to access the GPIO.
 
 ```bash
 $ khadas@Khadas:~$ su
@@ -13,9 +13,9 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-## GPIO Pin Control Setting
+## GPIO pin control
 
-* Check the pins you need to use, take VIM3 as an example:
+* From the table below, take note of which pins you need to use:
 
 ```bash
 root@Khadas:/home/khadas# gpio readall
@@ -45,7 +45,9 @@ root@Khadas:/home/khadas# gpio readall
  +------+-----+----------+------+---+----+-------+----++----+-------+----+---+------+----------+-----+------+
 ```
 
-Select the GPIO you need to use, and confirm the corresponding physical pin and GPIO value. Taking `GPIOH6` as an example here, the related GPIO value is `433`, and the physical pin is  `PIN15`.
+Take note of the GPIO pins that you need to use, and write-down the corresponding physical pin and GPIO values. 
+
+Using `GPIOH6` as an example here, the related GPIO value is `433`, and the physical pin is `PIN15`.
 
 * Export GPIO
 
@@ -55,9 +57,9 @@ root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
 
 {% note info Note %}
 
-Please use `gpio readall` to check the status of `GPIOH_6`, if it is not normal GPIO, you need to remove `uart3` of `overlays` in `/boot/env.txt` file.
+Please use `gpio readall` to check the status of `GPIOH_6`, if it is not shown as a normal GPIO, you need to remove `uart3` from `overlays` in the `/boot/env.txt` file.
 
-Check [Device Tree Overlays](DeviceTreeOverlay.html) for more details.
+Check the [Device Tree Overlays](DeviceTreeOverlay.html) for more details.
 
 {% endnote %}
 
@@ -245,7 +247,7 @@ GPIO 433 interrupt occurred!
 ..........
 ```
 
-Connect the `PIN20` and `PIN15` of the physical PIN via the DuPont line to trigger the interrupt. The phenomenon is as follows:
+Connect the physical pins `PIN20` and `PIN15` using a DuPont line to trigger the interrupt. The process is as follows:
 
 ```bash
 root@Khadas:/home/khadas# ./gpio-irq 433 rising down
@@ -259,12 +261,12 @@ GPIO 433 interrupt occurred!
 GPIO 433 interrupt occurred!
 ```
 
-* Test Program Introduce
+* Test Program
 
-The running format is as follows:
+Input the command as follows:
 
 ```bash
 root@Khadas:/home/khadas# ./gpio-irq <edge> [pull]
 ```
 
-`<edge>` can be set to `rising` or `failing`, `[pull]` is an optional parameter, set to `up` or `down`.
+`<edge>` can be set to `rising` or `falling`, `[pull]` is an optional parameter that can be set to `up` or `down`.

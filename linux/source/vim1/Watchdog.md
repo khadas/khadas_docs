@@ -1,12 +1,11 @@
 title: Watchdog
 ---
 
-This guide is about how to setup `watchdog` in Ubuntu.
-
+Setup `watchdog` in Ubuntu.
 
 ## Enable Watchdog
 
-The watchdog is disabled by default. You can use the commands below to enable it.
+Watchdog is disabled by default, use the commands below to enable it.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -27,7 +26,7 @@ khadas@Khadas:~$ sudo systemctl start watchdog.service
 
 {% note info Tips %}
 
-You need to create the service link manually, due to a [debian bug](https://unix.stackexchange.com/questions/346224/problem-with-systemd-starting-watchdog?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).
+You need to create the service link manually, due to a [Debian bug](https://unix.stackexchange.com/questions/346224/problem-with-systemd-starting-watchdog?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa).
 
 {% endnote %}
 
@@ -42,7 +41,7 @@ khadas@Khadas:~$ sudo systemctl start watchdog.service
 </div>
 </div>
 
-## Check Watchdog Service
+## Check Watchdog status
 
 ```bash
 khadas@Khadas:~$ systemctl status watchdog.service 
@@ -70,11 +69,11 @@ Mar 26 10:15:47 Khadas watchdog[3385]: still alive after 129 interval(s)
 lines 1-21/21 (END) 
 ```
 
-## Setup Watchdog Timeout
+## Set Watchdog timeout
 
-The default timeout is `15S`, you can edit file `/etc/watchdog.conf` to change the timeout `watchdog-timeout`.
+The default timeout is `15 seconds`, you can edit the file `/etc/watchdog.conf` to change the value `watchdog-timeout`.
 
-**Restart watchdog service to take effect.**
+**Restart the watchdog service to take effect.**
 
 ```bash
 $ sudo systemctl restart watchdog
@@ -82,18 +81,18 @@ $ sudo systemctl restart watchdog
 
 ## Test Watchdog
 
-* Trigger a Kernel Crash.
+* Trigger a Kernel crash.
 
 ```bash
 khadas@Khadas:~$ sudo -i
 root@Khadas:~# echo c > /proc/sysrq-trigger 
 ```
 
-If `watchdog` setup successfully, the system will reboot after the timeout you set above.
+If `watchdog` was setup successfully, the system will automatically reboot after the Kernel crash, in accordance with the timeout you have set above.
 
-* Kill Watchdog Daemon
+* Kill the Watchdog daemon
 
-You can also kill the watchdog daemon to prevent it to feed the watchdog, so the system will reboot after the timeout set in `/etc/watchdog.conf`.
+You can also kill the watchdog daemon to prevent an automatic restart after a Kernel crash.
 
 ```bash
 khadas@Khadas:~$ sudo pkill -9 watchdog
@@ -116,20 +115,20 @@ B1:e0f83180
 
 TE: 207260
 
-BL2 Built : 15:22:05, Aug 28 2019. g12b g1bf2b53 - luan.yuan@droid15-sz
+BL2 Built : 15:22:05, Aug 28 2019. g12b g1bf2b53 - user@domain
 ...
 
 ```
 
 ## Disable Watchdog
 
-* Disable Watchdog Service
+* Disable the Watchdog daemon
 
 ```bash
 khadas@Khadas:~$ sudo systemctl disable watchdog
 khadas@Khadas:~$ sudo reboot
 ```
 
-* Disable Watchdog Driver [Optional]
+* Disable Watchdog driver [Optional]
 
-You can also disable the watchdog driver as well. Edit `/boot/env.txt` and remove `watchdog` in `overlays` node then save and reboot the system.
+You can also disable the watchdog driver. Edit `/boot/env.txt` and remove `watchdog` in the `overlays` node, then save and reboot the system.
