@@ -34,7 +34,7 @@ Khadas SBCs are designed with two power supply ports:
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="true">VIM4</a>
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="true">VIM4</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -85,7 +85,7 @@ Pin-1 is marked with a triangle. Pin-1 and pin-2 are positive, Pin-3 and Pin-4 a
 The voltage range is 0 ~ 20V.
 
 </div>
-<div class="tab-pane fade show active" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
 <img src="/linux/images/vim4/vim4_v11_ext.png" width="50%" height="50%" >
 

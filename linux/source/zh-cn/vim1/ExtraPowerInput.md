@@ -33,7 +33,7 @@ USB-C是常用的供电接口，在供电的同时也可以作数据传输，比
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="true">VIM4</a>
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="true">VIM4</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -85,7 +85,7 @@ VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 电压范围是0~20V。
 
 </div>
-<div class="tab-pane fade show active" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
 <img src="/linux/images/vim4/vim4_v11_ext.png" width="50%" height="50%" >
 
