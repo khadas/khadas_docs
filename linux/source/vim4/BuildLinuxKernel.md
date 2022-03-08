@@ -1,30 +1,30 @@
-title: Build Linux Kernel
+title: Build the Linux kernel
 ---
 
-This documentation will introduce how to build Linux kernel from source code.
+Build the Linux kernel from source.
 
-We suggest to use [Fenix](https://github.com/khadas/fenix) to build Linux, just a few simple commands needed. Please refer to [Build Ubuntu/Debian Images](FenixScript.html) to setup the development environment.
+[Fenix](https://github.com/khadas/fenix) can build Linux with just a few commands. Refer to [Build Ubuntu/Debian Images](FenixScript.html) to setup the development environment.
 
 
-## Setup Environment
+## Environment Setup
 
-You need to choose the `BOARD`, e.g. `VIM4`, U-Boot version, Linux version, system version, etc.
+Choose your `board` (e.g. `VIM4`), U-boot version, Linux version, system version, etc.
 
 ```bash
 $ source setenv.sh
 ```
 
 {% note info Note %}
-At current stage, two version of Linux kernel supported:
-* SoC vendor Linux version `5.4`, version is old but has best support
-* Mainline Linux version, latest version but some functions may not work
+Two versions of the Linux kernel are supported:
+* 1. SoC Vendor: `5.4` (old but has the best support)
+* 2. Mainline Linux (latest version, with missing functionality)
 {% endnote %}
 
-You need to choose the correct version due to your requirement.
+Choose the correct version for your requirements.
 
 ### Change the kernel config [Optional]
 
-If you want to change the default kernel configuration you can follow these steps.
+Follow these steps to change the default kernel configuration.
 
 ```
 make kernel-config
@@ -33,27 +33,27 @@ make kernel-saveconfig
 
 ## Build
 
-Simple commands to build Linux Debian package.
+Build the Linux Debian package.
 
 ```bash
 $ make kernel
 $ make kernel-deb
 ```
 
-You can find the Debian packages in folder `build/images/debs/{VERSION}/{BOARD}`.
+Debian packages are in folder `build/images/debs/{VERSION}/{BOARD}`.
 
-**VERSION** : Means to Fenix version, e.g. `1.0.7`
-**BOARD** : Means to Khadas board, e.g. `VIM4`
+**VERSION** : refers to the Fenix version, e.g. `1.0.7`
+**BOARD** : refers to the Khadas SBC, e.g. `VIM4`
 
-So the folder may be `build/images/debs/1.0.7/VIM4`, there are three packages we need: dtb package, image package and header package.
+The folder location is `build/images/debs/1.0.7/VIM4`, and you'll need 3 packages: `dtb package`, `image package` and `header package`.
 
 * 5.4
-  * DTB - linux-dtb-amlogic-5.4_1.0.7_arm64.deb
-  * IMAGE - linux-image-amlogic-5.4_1.0.7_arm64.deb
+  * .dtb - linux-dtb-amlogic-5.4_1.0.7_arm64.deb
+  * Image - linux-image-amlogic-5.4_1.0.7_arm64.deb
   * Header - linux-headers-amlogic-5.4_1.0.7_arm64.deb
 * Mainline
-  * DTB - linux-dtb-amlogic-mainline_1.0.7_arm64.deb
-  * IMAGE - linux-image-amlogic-mainline_1.0.7_arm64.deb
+  * .dtb - linux-dtb-amlogic-mainline_1.0.7_arm64.deb
+  * Image - linux-image-amlogic-mainline_1.0.7_arm64.deb
   * Header - linux-headers-amlogic-mainline_1.0.7_arm64.deb
 
 ## See Also
