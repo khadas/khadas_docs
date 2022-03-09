@@ -1,8 +1,8 @@
 title: Erase eMMC
 ---
 
-There are 3 different ways to erase all data on the onboard eMMC storage:
-* Serial Mode (For developers)
+There are 3 ways to erase the eMMC:
+* Serial Mode (Developers)
 * Interrupt Mode
 * CLI Mode
 
@@ -20,12 +20,12 @@ There are 3 different ways to erase all data on the onboard eMMC storage:
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-1. Refer to this [guide](SetupSerialTool.html) to setup the Serial Tool for your VIM.
-2. Once again, ensure you've done the correct connections and setup.
-3. Hit `SPACE` key at the moment of bootup to stop autoboot. This step will make your VIM enter into U-Boot mode.
-4. Type `store boot_erase bootloader` on the terminal of U-Boot, and wait for the erasure process to complete.
-5. Type `reboot` or press the `Reset` button.
-6. Use the following as a reference:
+1. Connect your PC to your SBC using a [Serial to USB](SetupSerialTool.html) tool.
+2. Just as your SBC is booting-up, hit `SPACE` on your keyboard to enter U-boot mode.
+3. Type `store boot_erase bootloader` into the U-boot console, and wait for the erasure process to complete.
+4. After erasure is complete, type `reboot` or press the `RESET` button on your SBC.
+
+Use the following serial Terminal print-out as a reference:
 
 ```bash
 kvim4# store boot_erase bootloader
@@ -54,7 +54,7 @@ kvim4# reboot
 ```
 {% note info Tips %}
 
-If the erasure process completed successfully, the terminal should look like this when you power on your device:
+If the eMMC has been erased, the serial Terminal should show this print-out when your SBC powers-on:
 
 ```
 T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DFU:0;SD:2002;eMMC:0;RD-0:0;CHK:1;RD-1:0;CHK:1;RD-2:0;CHK:1;SPINOR:0;RD-0:0;CHK:1;RD-1:0;CHK:1;USB:ADFU�T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DFU:1;USB:0;RD-00:0;
@@ -65,19 +65,19 @@ T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DF
 
 <div class="tab-pane fade show" id="interupt" role="tabpanel" aria-labelledby="interupt-tab">
 
-This approach is suitable for all products that use the Amlogic SoC:
+This erasure method is suitable for all products that use the Amlogic SoC:
 
-1. Carry out normal upgrading via [USB-C Cable](InstallOsIntoEmmc.html) or [TF Card](InstallOsIntoSdusb.html).
-2. Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
-3. Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
+1. Carry out eMMC flashing via a [USB-C cable](InstallOsIntoEmmc.html) or [SD card](InstallOsIntoSdusb.html).
+2. Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or eject the SD card.
+3. Power on your SBC again, and you'll find that all the data on the eMMC has been erased.
 
 </div>
 <div class="tab-pane fade show" id="cli" role="tabpanel" aria-labelledby="cli-tab">
 
-This approach is suitable for a VIM that has Linux installed:
+This erasure method is suitable for an SBC with Linux installed:
 
 1. Power on and boot up.
-2. Open a terminal, and run `dd` to fill your bootloader partition with zeros:
+2. Open a Terminal, and run `dd` to fill your bootloader partition with zeros:
 
 ```bash
 root@Khadas:~# dd if=/dev/zero of=/dev/bootloader
