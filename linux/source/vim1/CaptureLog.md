@@ -2,23 +2,23 @@ title: Capture Running Log
 ---
 
 {% note info %}
-This document only applies to **Ubuntu Linux**.
+This guide is for users of **Ubuntu Linux**.
 {% endnote %}
 
-If your system is behaving abnormally or we are getting some unexpected outputs, it will be necessary to capture information from the running system log. This log will help us analyze and solve the problem. This document will teach you how to capture the running log of your system.
+You can capture information from the running system log to diagnose abnormal behaviour and unexpected outputs.
 
-## Login via a serial terminal
+## Login via a Serial Terminal
 
-Refer to the article [Setup Serial Debug Tool](SetupSerialTool.html) to login to the serial terminal.
+Connect your PC to the SBC using a [Serial Debugging Tool](SetupSerialTool.html).
 
-The default account and password of the system is as follows:
+The default account and password of Ubuntu Linux is as follows:
 
 Default account：`khadas`
 Default password：`khadas`
 
 ## Running Log Capture
 
-After logging in, you can capture the log via the following commands.
+After logging in with the serial Terminal, you can capture the running system log via the following commands.
 
 ### Fetch system version information
 
@@ -38,6 +38,6 @@ khadas@Khadas:~$ sudo dmesg > ~/kernel.log
 khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/
 ```
 
-## Send Log File
+## Send log file
 
-When reporting problems to [Khadas Community](https://forum.khadas.com/) or support@khadas.com, please send the above log files to us.
+When reporting problems to [Khadas Community](https://forum.khadas.com/) or support@khadas.com, you can save the log file from your SBC into an SD card, and then send it off to us using your PC.
