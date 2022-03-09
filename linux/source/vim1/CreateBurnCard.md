@@ -1,31 +1,30 @@
-title: Create a Burning Card
+title: OS Installation (Burning) SD Card
 ---
 
-This guide contains step-by-step instructions to create a Burning Card for Linux users. You may also use this Windows Guide([VIM1](UpgradeViaTFBurningCard.html)/[VIM2](UpgradeViaTFBurningCard.html)/[VIM3](UpgradeViaTFBurningCard.html)/[VIM4](UpgradeViaTFBurningCard.html)) instead.
+Linux users can follow this guide to create a special SD card for "burning" an OS into the eMMC. Windows users may use the following guides: ([VIM1](UpgradeViaTFBurningCard.html)/[VIM2](UpgradeViaTFBurningCard.html)/[VIM3](UpgradeViaTFBurningCard.html)/[VIM4](UpgradeViaTFBurningCard.html)).
 
-{% note info The operation of VIM1, VIM2, VIM3 and VIM4 is almost the same, so this document will take VIM1 as an example. %}
-
-{% endnote %}
-
-{% note warn As the burning card only support FAT32 filesystem, because the Ubuntu desktop image size is large then 4GB, so it is not supported to burn via TF card. %}
+{% note info The process for VIM1, VIM2, VIM3 and VIM4 is similar, so we will use VIM1 as an example. %}
 
 {% endnote %}
 
+{% note warn OS Installation SD Cards must use the FAT32 filesystem. Therefore, because the Ubuntu desktop image is larger then 4GB, it cannot be burned to the eMMC using this method. %}
+
+{% endnote %}
 
 ## Preparation
-* Build your own, or download ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/([VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)) the latest U-Boot file for SD-Cards.
-* You may need to format the SD-Card Via FDisk ([VIM1](CreateBurnCardViaCLI.html)/[VIM2](CreateBurnCardViaCLI.html)/[VIM3](CreateBurnCardViaCLI.html)/[VIM4](CreateBurnCardViaCLI.html)) if your SD-Card contains >1 partition.
+* Download the latest U-boot file for SD cards: ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/([VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)).
+* If your SD card contains >1 partition, format it using Fdisk ([VIM1](CreateBurnCardViaCLI.html)/[VIM2](CreateBurnCardViaCLI.html)/[VIM3](CreateBurnCardViaCLI.html)/[VIM4](CreateBurnCardViaCLI.html)).
 
 
-## Before You Start
+## Prepare your SD card
 
-You may have to delete all the partitions first, **you will loss all data on it, please remember to save them.**
+**Backup all important data**, then remove all partitions on your SD card.
 
 ```bash
 $ sudo fdisk /dev/sdX
 ```
 
-Then you need to creat only 1 partition:
+Then create just 1 partition:
 
 ```bash
 $ sudo fdisk /dev/sdX
@@ -33,11 +32,11 @@ $ sudo fdisk /dev/sdX
 
 {% note warn NOTE %}
 	
-First sector must set to **4096**.
+Set the first sector to **4096**.
 
 {% endnote %}
 
-The partition will be like this:
+The single partition should look like this:
 
 ```bash
 Command (m for help): p
@@ -54,17 +53,17 @@ Device     Boot Start      End  Sectors  Size Id Type
 /dev/sdc1        4096 31116287 31112192 14.9G 83 Linux
 ```
 
-The Start should be **4096**.
+The partition must start from **4096**.
 
-## Create the Burning SD-Card
+## Create the OS installation (burning) SD card
 
-Insert the SD-Card into your PC, and make sure the disk is unmounted:
+Insert the SD card into your PC, make sure it is unmounted:
 
 ```bash
 $ sudo umount /dev/sdX1
 ```
 
-Format the SD-Card to FAT32:
+Format the SD card to FAT32:
 
 ```bash
 $ sudo mkfs.vfat /dev/sdX1
@@ -72,11 +71,11 @@ $ sudo mkfs.vfat /dev/sdX1
 
 {% note info Note %}
 
-Replace `sdX` with the correct one on your PC.
+Replace `sdX` with the correct device node on your PC.
 
 {% endnote %}
 
-Use `dd` to write the Bootloader/U-Boot to the first sector of SD-Card:
+Use `dd` to write the Bootloader/U-boot to the first sector of the SD card:
 
 ```bash
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=1 count=444
@@ -85,13 +84,17 @@ $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek
 
 {% note info Tips %} 
 
-u-boot file `u-boot.bin.sd.bin` is build for SD, and `u-boot.bin` is for eMMC.
+The U-boot file `u-boot.bin.sd.bin` is built for SD cards.
+
+The U-boot file `u-boot.bin` is built for the eMMC.
 
 {% endnote %}
 
-Copy the images to your SD-Card, you can build the image yourself or download from our [storage](https://dl.khadas.com/Firmware/).
+Copy the OS image to your SD card. 
 
-Insert the SD-Card in again, then run the following command:
+Build the image yourself or download from our [dl.khadas.com](https://dl.khadas.com/Firmware/).
+
+Insert the SD card again, then run the following command:
 
 ```bash
 $ cp -a aml_sdc_burn.ini update.img /media/XXX/9CE9-3938/
@@ -99,18 +102,19 @@ $ cp -a aml_sdc_burn.ini update.img /media/XXX/9CE9-3938/
 
 {% note info Tips %}
 	
-`aml_sdc_burn.ini` is a configuration file for U-Boot to burn/download images into the onboard eMMC storage. You can found it [here](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini).
+The file `aml_sdc_burn.ini` is a configuration file for U-boot, it's purpose is to burn images into the eMMC. You can find it [here](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini).
 
 {% endnote %}
 
 {% note warn Note %}
 	
-The package in `aml_sdc_burn.ini` should match your image!
-e.g. The image name above is `update.img`, so the `package` in `aml_sdc_burn.ini` should be `package = update.img`.
+The package in `aml_sdc_burn.ini` should match your OS image!
+
+For example, the name of the OS image is `update.img`. So the `package` variable in `aml_sdc_burn.ini` should be specified as `package = update.img`.
 
 {% endnote %}
 
-Eject the SD-Card:
+Eject the SD card:
 
 ```bash
 $ sudo eject /dev/sdX
@@ -118,9 +122,9 @@ $ sudo eject /dev/sdX
 
 Done!
 
-## Upgrade Using Your `Burning Card`
+## Upgrade using your `OS installation (Burning) SD card`
 
-1. Insert your Burning Card into your board, and power-on.
+1. Insert your OS installation SD card into your SBC, and power-on.
 2. Follow this [guide](BootIntoUpgradeMode.html) to boot into upgrade mode.
-3. Wait till the process completes.
-
+3. Wait till the burning process completes.
+4. Eject the SD card, and reboot your SBC.

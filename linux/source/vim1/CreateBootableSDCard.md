@@ -1,25 +1,22 @@
-title: Create a Bootable SD Card
+title: Bootable SD Cards
 ---
 
-What is a `Bootable SD-Card`?
+What is a bootable SD card?
 
-* A `Bootable SD-Card` is an SD-Card that has a bootloader installed on it.
-* A `Bootable SD-Card` is also known as a `Boot-Disk`, and your target device will be able to boot from the SD-Card, as though it were the onboard eMMC storage.
+* A bootable SD card is an SD card that has a bootloader installed on it.
+* A bootable SD card is also known as a boot disk, which your SBC can boot-up from.
 
-Why do we need a `Bootable SD-Card`?
+Why do we need a bootable SD card?
 
-* A `Bootable SD-Card` can be used to speed up the development process.
-* If you want to release ROM for an SD-Card, the `Bootable SD-Card` can be used during your development process.
-* In some extreme cases, when your target-device is unable to boot from the eMMC (e.g. damaged bootloader), you can use a `Bootable SD-Card` to do your system/file recovery.
+* You can release your custom ROM as a bootable SD card, in order to speed up the testing and development process.
+* You can use a bootable SD card to do system/file recovery, in the event that your SBC is unable to boot from the eMMC.
 
-
-{% note info The operation of VIM1, VIM2, VIM3, VIM3L and VIM4 is almost the same, so this document will take VIM1 as an example. %}
+{% note info The process for VIM1, VIM2, VIM3, VIM3L and VIM4 is similar, so we will use VIM1 as an example. %}
 
 {% endnote %}
 
 ## Getting Started
-Download U-Boot ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)) or build U-Boot to get the bootloader blob for your SD-Card.
-No matter which method you choose, you need to keep in mind that there are different bootloader blobs for different boot disks/media:
+Download U-boot for ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)), or get the correct bootloader blob for your SD card and manually build U-boot. Regardless of which method you choose, you need to remember that there are different bootloader blobs for different boot disks/media:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -33,58 +30,57 @@ No matter which method you choose, you need to keep in mind that there are diffe
 <div class="tab-pane fade show active" id="vim123" role="tabpanel" aria-labelledby="vim123-tab">
 
 
-* U-Boot blob `u-boot.bin.sd.bin` is built for SD-Cards
-* U-Boot blob `u-boot.bin` is built for eMMC Storage
+* `u-boot.bin.sd.bin` is for SD-Cards
+* `u-boot.bin` is for eMMC storage
 
 </div>
 <div class="tab-pane fade show" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
-* U-Boot blob `u-boot.bin.sd.bin.signed` is built for SD-Cards
-* U-Boot blob `u-boot.bin.signed` is built for eMMC Storage
-* U-Boot blob `u-boot.bin.spi.bin.signed` is built for SPI Flash
+* `u-boot.bin.sd.bin.signed` is for SD cards
+* `u-boot.bin.signed` is for eMMC storage
+* `u-boot.bin.spi.bin.signed` is for SPI flash
 
 </div>
 </div>
 
-
-Insert the SD-Card into your PC, and make sure the disk is unmounted:
+Insert the SD card into your PC, and unmount it:
 
 ```bash
 $ sudo umount /dev/sdX1
 ```
 
-Format the SD-Card as Fat32:
+Format the SD card as FAT32:
 
 ```bash
 $ sudo mkfs.vfat /dev/sdX1
 ```
 
-Run `dd` to write the U-Boot blob into the first sector of SD-Card:
+Run `dd` to write the U-boot blob into the first sector of SD card:
 ```bash
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=1 count=444
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek=1
 ```
 
-Eject the SD-Card from your PC:
+Eject the SD card from your PC:
 ```bash
 $ sudo eject /dev/sdX
 ```
 
 {% note info Note %}
 
-Please replace `sdX` with the correct one on your PC.
+Replace `sdX` with the correct device node on your PC.
 
 {% endnote %}
 
-## Check Your Bootable SD-Card
+## Check your bootable SD card
 
-Ensure that you have done the correct setup of your Serial to [USB Module](SetupSerialTool.html).
+Connect your PC to your SBC using a [Serial to USB](SetupSerialTool.html) tool.
 
-In order to check the Bootable SD-Card, you may also need to make sure that all data stored in the onboard eMMC has been completely [erased](EraseEmmc.html).
+Open Terminal and type `sudo minicom` to open a serial connection to your SBC.
 
-Open a terminal and type the `sudo minicom` command or other serial tool you like.
+Insert the Bootable SD card into your SBC and power on. 
 
-Insert the Bootable SD-Card you created previously, into your target device and power-on. The terminal should print this out which means the board is booted from SD card:
+If your SBC has successfully booted from the SD card, you should get this Terminal print-out:
 
 ```bash
 GXL:BL1:9ac50e:a1974b;FEAT:ADFC318C;POC:3;RCY:0;EMMC:0;READ:0;CHK:AA;SD:0;READ:0;0.0;CHK:0;
@@ -114,3 +110,9 @@ NOTICE:  BL3-1: v1.0(debug):2e39a99
 ...
 
 ```
+
+{% note info Note %}
+
+In rare cases, you may need to [erase the eMMC](EraseEmmc.html) in order to boot from an SD card.
+
+{% endnote %}
