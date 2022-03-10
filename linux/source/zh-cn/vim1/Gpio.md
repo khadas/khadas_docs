@@ -4,7 +4,7 @@ title: GPIO使用文档
 **这篇文档介绍如何在Ubuntu下访问GPIO。**
 
 {% note warn 注意 %}
-1. 此文档仅支持**4.9内核**。
+1. 此文档仅支持**VIM1/VIM2/VIM3上的Amlogic 4.9内核以及VIM4上的Amlogic 5.4内核**。
 2. 所有对GPIO的操作都是在**root权限**下进行的，切换到root:
 
 ```sh

@@ -4,7 +4,7 @@ title: GPIO
 **Access GPIO pins from the Ubuntu Terminal.**
 
 {% note warn Note %}
-1. This document **only supports the 4.9 kernel**.
+1. This document **only supports the Amlogic 4.9 kernel on VIM1/VIM2/VIM3 and Amlogic 5.4 kernel on VIM4**.
 2. **Root privileges** are required to access the GPIO:
 
 ```sh
