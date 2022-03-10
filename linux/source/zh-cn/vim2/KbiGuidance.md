@@ -1,5 +1,8 @@
-title: Khadas VIM2/VIM3/Edge KBI说明
+title: KBI使用指导
 ---
+
+{% note info VIM1不支持KBI %}
+{% endnote %}
 
 KBI是"Khadas Bootloader Instructions"的缩写，主要用于以下几方面：
 * 控制可编程MCU
@@ -8,7 +11,7 @@ KBI是"Khadas Bootloader Instructions"的缩写，主要用于以下几方面：
 
 这篇文档介绍了如何配置使用KBI。 因为KBI是[U-Boot](http://www.denx.de) 命令，所以必须先[设置串口调试工具](SetupSerialTool.html)。
 
-*注意：此文档以VIM2为例进行说明，VIM3和Edge都是差不多的用法。*
+*注意：此文档以VIM2为例进行说明，VIM3、VIM4和Edge都是差不多的用法。*
 
 在开始之前，确保先进入U-boot命令行模式:
 ```

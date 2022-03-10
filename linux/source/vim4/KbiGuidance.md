@@ -1,4 +1,1 @@
-title: KBI Guidance
----
-
-## TODO
+../vim2/KbiGuidance.md

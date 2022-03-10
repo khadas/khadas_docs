@@ -1,5 +1,8 @@
-title: KBI Guidance for Khadas VIM2/VIM3/Edge
+title: KBI Guide
 ---
+
+{% note info VIM1 doesn't support KBI %}
+{% endnote %}
 
 KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to fulfill the following purposes:
 * Manage the programmable MCU
