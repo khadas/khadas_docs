@@ -1,7 +1,11 @@
 title: Boot From SPI Flash
 ---
 
-Khadas VIM3/VIM3L contains a 16 MB SPI-Flash that's used as boot storage; so you can boot from it. This guide is about how to boot from the on-board SPI-Flash.
+Khadas VIM3/VIM3L and VIM4 contains a 16 MB and 32 MB SPI-Flash that's used as boot storage; so you can boot from it. This guide is about how to boot from the on-board SPI-Flash. Take VIM4 as a example.
+
+{% note warn The U-Boot firmware that VIM3/VIM3L can use to burn to SPI is named `u-boot.bin`. %}
+{% endnote %}
+
 
 ## Build U-boot For SPI-Flash
 The U-Boot for SPI-Flash is the same as eMMC U-Boot. We recommend using [Fenix Script](https://github.com/khadas/fenix) to build U-Boot, as it's easy this way.
@@ -15,34 +19,34 @@ $ cd fenix
 $ source env/setenv.sh
 ```
 
-Select `VIM3` or `VIM3L` board(This is according to your board).
+Select `VIM4`
 
-* Build U-boot
+* Build U-Boot
 
 ```
 $ make uboot
 ```
 
-If successful, you will get a U-Boot for the SPI-Flash `u-boot.bin`, in the directory `fenix/u-boot/build`.
+If successful, you will get a U-Boot for the SPI-Flash `u-boot.bin.spi.bin.signed`, in the directory `fenix/build/u-boot/./fip/_tmp/`.
 
 ## Burn U-boot To SPI Flash
 
-Copy `u-boot.bin` to an SD-Card or Thumbdrive (U-Disk) and insert it into your board or load it via TFTP.
+Copy `u-boot.bin.signed` to an SD-Card or Thumbdrive (U-Disk) and insert it into your board or load it via TFTP.
 
 [Setup serial debugging tool](SetupSerialTool.html) and boot to the U-Boot Command Line.
 
-### Load U-boot to DDR
+### Load U-Boot to DDR
 
 * Load U-Boot from SD-Card:
 
 ```sh
-kvim3#load mmc 0 1080000 u-boot.bin
+kvim4# load mmc 0 1080000 u-boot.bin.spi.bin.signed
 ```
 * Load U-Boot from Thumbdrive (U-Disk):
 
 ```sh
-kvim3#usb start
-kvim3#load usb 0 1080000 u-boot.bin
+kvim4# usb start
+kvim4# load usb 0 1080000 u-boot.bin.spi.bin.signed
 ```
 
 * Load U-boot via TFTP
@@ -50,17 +54,20 @@ kvim3#load usb 0 1080000 u-boot.bin
 Please refer [here](SetupTFTPServer.html) about how to setup the TFTP.
 
 ```sh
-kvim3#tftp 1080000 u-boot.bin
+kvim4# tftp 1080000 u-boot.bin.spi.bin.signed
 ```
 
 ### Burning
 
 ```sh
-kvim3#sf probe
-kvim3#sf erase 0 +$filesize
-kvim3#sf write 1080000 0 $filesize
+kvim4# sf probe
+kvim4# sf erase 0 +$filesize
+kvim4# sf erase 0 +$filesize
+SF: 3919872 bytes @ 0x0 Erased: OK
+kvim4# sf update 0x1080000 0 0x3bd000
+device 0 offset 0x0, size 0x3bd000
+3919872 bytes written, 0 bytes skipped in 48.939s, speed 82019 B/s
 ```
-*Tip: This will take a few seconds, please be patient.*
 
 ## Setup bootmode to SPI
 
@@ -69,7 +76,7 @@ If you want to boot from SPI Flash, you have to setup the bootmode to SPI. The d
 * Check current bootmode:
 
 ```sh
-kvim3#kbi bootmode r
+kvim4# kbi bootmode r
 bootmode: emmc
 ```
 Current bootmode is boot from eMMC.
@@ -77,13 +84,13 @@ Current bootmode is boot from eMMC.
 * Setup bootmode to SPI:
 
 ```sh
-kvim3#kbi bootmode w spi
+kvim4# kbi bootmode w spi
 ```
 
 Poweroff the system to make it available:
 
 ```sh
-kvim3#kbi poweroff
+kvim4# kbi poweroff
 ```
 
 Press the `POWER` key to bootup, you will boot from the SPI-Flash.
@@ -91,9 +98,9 @@ Press the `POWER` key to bootup, you will boot from the SPI-Flash.
 ## Erase the SPI Flash to prevent boot from it
 
 ```sh
-kvim3#sf probe
-kvim3#sf erase 0 1000
-kvim3#reset
+kvim4# sf probe
+kvim4# sf erase 0 1000
+kvim4# reset
 ```
 
 ## Troubleshooting
