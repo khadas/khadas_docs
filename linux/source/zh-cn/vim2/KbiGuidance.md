@@ -1,19 +1,19 @@
 title: KBI使用指导
 ---
 
-{% note info VIM1不支持KBI %}
+{% note info VIM1V12不支持KBI %}
 {% endnote %}
 
 KBI是"Khadas Bootloader Instructions"的缩写，主要用于以下几方面：
 * 控制可编程MCU
 * 管理底层硬件
-* 让开发者体验VIM2/VIM3/Edge全部的特性
+* 让开发者体验VIM1V14/VIM2/VIM3/VIM4/Edge全部的特性
 
 这篇文档介绍了如何配置使用KBI。 因为KBI是[U-Boot](http://www.denx.de) 命令，所以必须先[设置串口调试工具](SetupSerialTool.html)。
 
-*注意：此文档以VIM2为例进行说明，VIM3、VIM4和Edge都是差不多的用法。*
+*注意：此文档以VIM2为例进行说明，VIM1V14、VIM3、VIM4和Edge都是差不多的用法。*
 
-在开始之前，确保先进入U-boot命令行模式:
+在开始之前，确保先进入U-Boot命令行模式:
 ```
 normal power off
 boot wol: enable
@@ -22,7 +22,7 @@ kvim2#
 ```
 
 ## 帮助信息
-和其他U-boot命令一样，直接执行`kbi`会给出帮助信息：
+和其他U-Boot命令一样，直接执行`kbi`会给出帮助信息：
 ```
 kvim2# kbi
 kbi - Khadas Bootloader Instructions sub-system

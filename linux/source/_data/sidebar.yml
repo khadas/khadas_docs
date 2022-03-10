@@ -54,6 +54,7 @@ vim1:
       build_uboot: BuildUboot.html
       upgrade_uboot: UpgradeUboot.html
       setup_tftp_server: SetupTFTPServer.html
+      kbi_guidance: KbiGuidance.html
     linux:
       build_linux_kernel: BuildLinuxKernel.html
       upgrade_linux_kernel: UpgradeLinuxKernel.html
