@@ -15,12 +15,12 @@ VIM4能从很多设备启动，如下：
 2. eMMC
 3. SPI Flash
 
-你可以通过[KBI]()命令配置`eMMC`和`SPI Flash`启动优先级，但是`SD卡`始终拥有最高优先级。
+你可以通过[KBI](./KbiGuidance.html)命令配置`eMMC`和`SPI Flash`启动优先级，但是`SD卡`始终拥有最高优先级。
 
 * 配置`eMMC`比`SPI Flash`优先
 
 ```
-kvim4# kbi ...
+kvim4#kbi bootmode w emmc
 ```
 
 启动优先级如下：
@@ -32,7 +32,7 @@ kvim4# kbi ...
 * 配置`SPI Flash`比`eMMC`优先
 
 ```
-kvim4# kbi ...
+kvim4#kbi bootmode w spi
 ```
 
 启动优先级如下：

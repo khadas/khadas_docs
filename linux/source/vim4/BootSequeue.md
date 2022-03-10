@@ -15,12 +15,12 @@ The default boot priority is:
 2. eMMC
 3. SPI Flash
 
-You can also swap the boot priority of the `eMMC` and `SPI Flash` via the [Khadas Boot Instructions (KBI)](), but the `SD Card` will always take the highest priority.
+You can also swap the boot priority of the `eMMC` and `SPI Flash` via the [Khadas Boot Instructions (KBI)](./KbiGuidance.html), but the `SD Card` will always take the highest priority.
 
 * Example 1: Setting the priority of `eMMC` above `SPI Flash`
 
 ```
-kvim4# kbi ...
+kvim4#kbi bootmode w emmc
 ```
 
 Then the boot priority will become:
@@ -32,7 +32,7 @@ Then the boot priority will become:
 * Example 2: Setting the priority of `SPI Flash` above `eMMC`
 
 ```
-kvim4# kbi ...
+kvim4#kbi bootmode w spi
 ```
 
 Then the boot priority will become:
