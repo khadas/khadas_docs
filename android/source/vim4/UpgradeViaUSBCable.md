@@ -1,7 +1,7 @@
-title: Upgrade Via a USB-C Cable
+title: USB-C Upgrading
 ---
 
-{% note info Vim4 upgrade tool requires Version V3.1.9 or above, If VIM1/VIM2/VIM3 firmware is imported, it will automatically switch to the old version tool, that is, this version of tool is not downward compatible. %}
+{% note info Use v3.1.9 (or newer) "Amlogic Flashing Tool" with VIM4. %}
 
 {% endnote %}
 
@@ -16,13 +16,13 @@ title: Upgrade Via a USB-C Cable
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="win" role="tabpanel" aria-labelledby="win-tab">
 
-## Perparation
-* Dowload the [Aml_Burn_Tool_V3.2.0](https://dl.khadas.com/products/vim4/tool/Aml_Burn_Tool_V3.2.0.zip) and extract it.
-* Run `Aml_Burn_Tool.exe` to open the tool for upgrading your VIMs:
+## Preparation
+* Dowload the [Amlogic Flashing Tool v3.2.0](https://dl.khadas.com/products/vim4/tool/Aml_Burn_Tool_V3.2.0.zip) and extract it.
+* Run `Aml_Burn_Tool.exe` to flash your VIM4's eMMC image:
     ![image](/android/images/vim4/upgrade_tool_setup.png)
 
 ## Upgrade steps
-Make soure that you have install the correct USB upgrade Tool, then follow the steps below to upgrade:
+Ensure that you are using the correct Amlogic Flashing Tool, then continue with upgrading:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -35,36 +35,36 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim4-pins" role="tabpanel" aria-labelledby="vim4-tab">
 
-1. Open `Aml_Burn_Tool.exe`, click `Setting-->Load Img` to choose an [image](https://dl.khadas.com/Firmware/) for your VIM4.
-2. Connect your VIM4 to your PC with a USB-C data cable (VIMs will power on automatically).
-3. Place your VIM4 into "Upgrade Mode":
-    * Long press the `Power` key without releasing it.
-    * Short press the `Reset` key and release it.
-    * Count to 10 seconds and then release the `Power` key.
-4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your VIMs asa connected USB-device.
+1. Open `Aml_Burn_Tool.exe`, click `Setting-->Load Img` to choose an [image](https://dl.khadas.com/Firmware/) for your SBC.
+2. Connect your SBC to your PC with a USB-C data cable (it will power-on automatically).
+3. Place your SBC into "upgrade mode":
+    * Long press the `POWER` key without releasing it.
+    * Short press the `RESET` key and release it.
+    * Count to 10 seconds and then release the `POWER` key.
+4. If you have performed steps 2 and 3 correctly, your SBC will appear as an attached device on your PC.
 
-    Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
+    Click the `Start` button and wait for burning to complete:
 	<img src="/android/images/vim4/upgrade_tool_interface.png" width="75%" height="75%">
 </div>
 
 <div class="tab-pane fade" id="vim123-pins" role="tabpanel" aria-labelledby="vim123-tab">
 
-1. Open `USB_Burning_Tool.exe`, click "File-->Import Image" to choose an [image](https://dl.khadas.com/Firmware/) for your VIMs.
-2. Connect your VIMs to your PC with a USB-C data cable (VIMs will power on automatically).
-3. Place your VIMs into "Upgrade Mode":
-    * Long press the `Power` key without releasing it.
-    * Short press the `Reset` key and release it.
-    * Count to 10 seconds and then release the `Power` key.
-4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your VIMs asa connected USB-device.
+1. Open `USB_Burning_Tool.exe`, click "File-->Import Image" to choose an [image](https://dl.khadas.com/Firmware/) for your SBC.
+2. Connect your SBC to your PC with a USB-C data cable (it will power-on automatically).
+3. Place your SBC into "Upgrade Mode":
+    * Long press the `POWER` key without releasing it.
+    * Short press the `RESET` key and release it.
+    * Count to 10 seconds and then release the `POWER` key.
+4. If you have performed steps 2 and 3 correctly, your SBC will appear as an attached device on your PC.
 
-    Now all you need to do is to click the `Start` button of the tool and wait for upgrading to complete:
+    Click the `Start` button and wait for burning to complete:
 	<img src="/android/images/vim4/upgrade_tool_interface_VIM123.png" width="75%" height="75%">
 </div>
 
 {% note info Tips %}
 
-* To cancel an upgrade, click the `Stop` button, then close the USB Upgrade Tool. Note that the eMMC might already have been completely erased if you went past the 15% mark.
-* Extra power supply([VIM1](/android/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/vim3/BootIntoUpgradeMode.html)/[VIM4](/android/vim4/ExtraPowerInput.html)) may be required in cases whereby your PC cannot provide enough electrical-current for the upgrade.
+* To cancel an upgrade, click the `Stop` button, then close the Amlogic Burning Tool. Note that the eMMC might already have been completely erased if you went past 15%.
+* Additional power ([VIM1](/android/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/vim3/BootIntoUpgradeMode.html)/[VIM4](/android/vim4/ExtraPowerInput.html)) may be required in cases whereby your PC cannot provide enough electrical power via USB.
 
 {% endnote %}
 
@@ -77,29 +77,29 @@ Make soure that you have install the correct USB upgrade Tool, then follow the s
 $ sudo apt-get install libusb-dev git parted
 ```
 
-## Download Burning Tool
+## Download flashing tool
 
-Image burning tool for Ubuntu is in this repository [utils](https://github.com/khadas/utils).
+The Amlogic Flashing Tool for Ubuntu is in this repository [utils](https://github.com/khadas/utils).
 
 ```bash
 $ git clone https://github.com/khadas/utils
 ```
-Or just pull it (if you have already cloned this repository).
+Or pull it (if you have already cloned this repository).
 
 ```bash
 $ cd /path/to/utils
 $ git pull
 ```
 
-## Install Burning Tool
-You need to install USB rules and create some links.
+## Install flashing tool
+Install USB rules and create some links.
 
 ```bash
 $ cd /path/to/utils
 $ sudo ./INSTALL
 ```
 
-You will see this print-out if it was successful.
+This print-out will appear once installation is successful.
 
 ```bash
 Installing Amlogic flash-tool...
@@ -135,21 +135,20 @@ Root privilege required.
 
 {% endnote %}
 
-## Check The USB Driver
+## Check the USB driver
 
-You must now place your VIM board into "Upgrade Mode".See [VIM1](/android/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/vim3/BootIntoUpgradeMode.html) to enter Upgrade Mode.
-Check to see if Ubuntu has detected your VIM1/VIM2 as a connected USB-device.
+Put your SBC into "upgrade mode". See instructions for [VIM1](/android/vim1/BootIntoUpgradeMode.html)/[VIM2](/android/vim2/BootIntoUpgradeMode.html)/[VIM3](/android/vim3/BootIntoUpgradeMode.html)/[VIM4](/android/vim4/BootIntoUpgradeMode.html) to enter upgrade mode. After entering "upgrade mode", check to see if Ubuntu has detected your SBC as a connected USB-device.
 
 ```bash
 $ lsusb | grep Amlogic
 BUS 002 Device 036: ID 1b8e:c003 Amlogic, Inc.
 ```
-The message above means that your VIM is connected and recogized by Ubuntu.
+The message above means that your SBC is connected and recognized by Ubuntu.
 
-## How to burn an Image on Ubuntu
-There are two commands that be used to burn image: `burn-tool` and `aml-burn-tool`.
+## Flash an image
+There are two commands that be used to flash: `burn-tool` and `aml-burn-tool`.
 
-For example: Burn image for VIM3
+For example: Flash image for VIM3
 
 * General command `burn-tool`:
 
@@ -165,11 +164,11 @@ $ aml-burn-tool -b VIM3 -i /path/to/image
 
 {% note warn Note %}
 
-For VIM3/VIM3L, you must specify the board with `-b VIM3` or it will fail. For VIM1 or VIM2 you can ignore this.
+For VIM3/VIM3L, you must use the argument `-b VIM3` or it will fail. For VIM1 or VIM2 you can ignore this.
 
 {% endnote %}
 
-You will see these teminal logs if successful.
+You will see these Terminal logs if successful.
 
 ```bash
 Rebooting the board ........[OK]
@@ -188,9 +187,9 @@ Writing system partition [OK]
 Do you want to reset the board? y/n [n]? y
 Resetting board [OK]
 ```
-For more information please refer to [docs](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs).
+For more information please refer to [Amlogic Documentation](https://github.com/khadas/utils/tree/master/aml-flash-tool/docs).
 
-## Uninstall Burning Tool
+## Uninstall flashing tool
 
 ```bash
 $ cd /path/to/utils
@@ -201,7 +200,7 @@ $ sudo ./UNINSTALL
 </div>
 
 
-## See Also
-* [Upgrade Via An SD-Card](/android/vim1/UpgradeViaTFBurningCard.html)
-* [How To Boot Into Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
+## See also
+* [Upgrade with SD card](/android/vim1/UpgradeViaTFBurningCard.html)
+* [Boot into Upgrade Mode](/android/vim1/BootIntoUpgradeMode.html)
 
