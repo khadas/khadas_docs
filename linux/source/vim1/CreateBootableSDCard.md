@@ -72,7 +72,7 @@ Replace `sdX` with the correct device node on your PC.
 
 {% endnote %}
 
-## Check your bootable SD card
+## Check Your Bootable SD Card
 
 Connect your PC to your SBC using a [Serial to USB](SetupSerialTool.html) tool.
 

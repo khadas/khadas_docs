@@ -7,7 +7,7 @@ Install Docker into Ubuntu.
 
 * This guide is for Ubuntu `V180531` or newer only.
 
-## Install essential packages
+## Install Essential Packages
 
 ```bash
 $ sudo apt-get update
@@ -15,7 +15,7 @@ $ sudo apt-get install apt-transport-https ca-certificates curl software-propert
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-## Add Docker source
+## Add Docker Source
 
 ```bash
 $ sudo add-apt-repository \

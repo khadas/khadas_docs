@@ -41,7 +41,7 @@ khadas@Khadas:~$ sudo systemctl start watchdog.service
 </div>
 </div>
 
-## Check Watchdog status
+## Check Watchdog Status
 
 ```bash
 khadas@Khadas:~$ systemctl status watchdog.service 
@@ -69,7 +69,7 @@ Mar 26 10:15:47 Khadas watchdog[3385]: still alive after 129 interval(s)
 lines 1-21/21 (END) 
 ```
 
-## Set Watchdog timeout
+## Set Watchdog Timeout
 
 The default timeout is `15 seconds`, you can edit the file `/etc/watchdog.conf` to change the value `watchdog-timeout`.
 

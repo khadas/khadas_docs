@@ -10,7 +10,7 @@ Use Ubuntu v2005 and newer, [OTA Update](UpgradeSystem.html) will upgrade your O
 
 Configure wlan0 to `STA` mode, and wlan1 to `AP` mode.
 
-### Add wlan1 interface
+### Add wlan1 Interface
 
 ```bash
 khadas@Khadas:~$ sudo iw phy phy0 interface add wlan1 type managed
@@ -54,12 +54,12 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### Setup wlan1 as a hotspot
+### Setup wlan1 as a Hotspot
 
 Setup `wlan1` as a hotspot, and allow automatic connections. 
 We shall name our hotspot `khadas_ap`, with password `12345678`.
 
-#### 2.4 GHz frequency
+#### 2.4 GHz Frequency
 
 ```bash
 $ sudo nmcli con add type wifi ifname wlan1 con-name Hostspot autoconnect yes ssid khadas_ap
@@ -71,7 +71,7 @@ $ sudo nmcli con modify Hostspot ipv4.gateway 192.168.2.1
 $ sudo nmcli con up Hostspot
 ```
 
-#### 5 GHz frequency
+#### 5 GHz Frequency
 
 To setup a 5GHz network, you'll need to use the `channel` argument.
 We shall name our hotspot `khadas_ap`, with password `12345678`.
@@ -126,7 +126,7 @@ wlan1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-## Go online!
+## Go Online!
 
 1、Turn off Ethernet:
 

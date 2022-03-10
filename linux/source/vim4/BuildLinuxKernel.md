@@ -22,7 +22,7 @@ Two versions of the Linux kernel are supported:
 
 Choose the correct version for your requirements.
 
-### Change the kernel config [Optional]
+### Change the Kernel Config [Optional]
 
 Follow these steps to change the default kernel configuration.
 

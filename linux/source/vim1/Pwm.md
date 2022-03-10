@@ -3,7 +3,7 @@ title: Pulse Width Modulation (PWM)
 
 **This guide will show you how to use pulse width modulation.**
 
-## Check hardware PWM pins
+## Check Hardware PWM Pins
 
 By default, Hardware PWM is enabled within the .dtb file. However different SBCs will use different GPIO pins for PWM, so you'll need to check which pins are applicable to your SBC.
 
@@ -12,7 +12,7 @@ By default, Hardware PWM is enabled within the .dtb file. However different SBCs
 * `PWM_F` on [VIM3 GPIO-Out](Hardware#VIM3-Hardware-Info)
 * `PWM_F` on [VIM4 GPIO-Out](Hardware#VIM4-Hardware-Info)
 
-## Root privilege
+## Root Privilege
 
 Only **root** users can control the GPIO pins responsible for PWM.
 
@@ -22,7 +22,7 @@ khadas@Khadas:~$ sudo -i
 root@Khadas:~#
 ```
 
-## Setup hardware PWM
+## Setup Hardware PWM
 
 ### Enable PWM
 

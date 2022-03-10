@@ -2,7 +2,7 @@ title: Gsensor
 ---
 Use the Gsensor in Ubuntu.
 
-## Gsensor node
+## Gsensor Node
 
 The Gsensor node is located within the `/dev` directory.
 
@@ -11,11 +11,11 @@ $ ll /dev/accel
 crw-rw-rw- 1 root root 10, 50 Mar 18 12:17 /dev/accel
 ```
 
-## Gsensor demo
+## Gsensor Demo
 
 Read and write nodes using the ioctl function.
 
-### Source code
+### Source Code
 
 The following source code only utilises the default settings to read data, additional functions can be implemented by the user.
 

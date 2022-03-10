@@ -1,7 +1,7 @@
 title: LED
 ---
 
-## Root privilege
+## Root Privilege
 
 Only **root** has the authority to control and modify the LED nodes.
 
@@ -11,7 +11,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-## List LED nodes
+## List LED Nodes
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -71,7 +71,7 @@ root@Khadas:/home/khadas#
 </div>
 
 
-## Modifying the LED nodes
+## Modifying the LED Nodes
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">

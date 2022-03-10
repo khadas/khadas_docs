@@ -20,24 +20,24 @@ Default password：`khadas`
 
 After logging in with the serial Terminal, you can capture the running system log via the following commands.
 
-### Fetch system version information
+### Fetch System Version Information
 
 ```bash
 khadas@Khadas:~$ cat /etc/fenix-release > ~/system-version.log
 ```
 
-### Fetch system kernel information
+### Fetch System Kernel Information
 
 ```bash
 khadas@Khadas:~$ sudo dmesg > ~/kernel.log
 ```
 
-### Fetch system log information
+### Fetch System Log Information
 
 ```bash
 khadas@Khadas:~$ sudo tar cvzf ~/systemlog.tgz /var/log/
 ```
 
-## Send log file
+## Send Log File
 
 When reporting problems to [Khadas Community](https://forum.khadas.com/) or support@khadas.com, you can save the log file from your SBC into an SD card, and then send it off to us using your PC.

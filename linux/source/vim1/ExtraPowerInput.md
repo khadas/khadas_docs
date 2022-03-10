@@ -15,7 +15,7 @@ Khadas SBCs are designed with two power supply ports:
 
 <img src="/linux/images/vim3/EXT_USBC.png" width="50%" height="50%" >
 
-## VIN port - secondary input power
+## VIN Port - Secondary Input Power
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

@@ -6,7 +6,7 @@ Using WiringPi-Python on a Khadas SBC.
 ## What is WiringPi-Python 
 WiringPi is a PIN based GPIO access library written in C for the BCM2835, BCM2836 and BCM2837 SoC devices used in the Raspberry Pi. Now we also migrate it to VIMs Board GPIO for control `40-PIN HEADERS`.
 
-## WiringPi-Python function list
+## WiringPi-Python Function List
 ```python
 //GPIO
 class GPIO(object):

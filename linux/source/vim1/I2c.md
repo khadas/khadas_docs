@@ -75,7 +75,7 @@ title: I2C
 </div>
 </div>
 
-## Device detection
+## Device Detection
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -230,7 +230,7 @@ Root privileges are required.
 
 {% endnote %}
 
-## Read registers from device
+## Read Registers from Device
 
 Read register `0x0d` of device `0x1d` on `I2C A`.
 

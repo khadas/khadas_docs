@@ -10,14 +10,14 @@ You can view operators and frequency bands supported by your region by visiting 
 
 ## LTE module usage instructions
 
-### Install minicom in Ubuntu
+### Install Minicom in Ubuntu
 
 ```shell
 $ sudo apt update
 $ sudo apt install minicom
 ```
 
-### Switching to USBNet mode
+### Switching to USBNet Mode
 
 ```shell
 $ minicom -D /dev/ttyUSB2
@@ -31,11 +31,11 @@ AT+QCFG="usbnet",2
 OK
 ```
 
-### Power down and restart
+### Power Down and Restart
 
 The LTE module needs to be powered down and restarted to switch modes. Power cycle your SBC by replugging the USB-C power cable, and your LTE module now will function in USBNet mode.
 
-### Restore LTE module
+### Restore LTE Module
 
 ```shell
 $ minicom -D /dev/ttyUSB2
@@ -60,7 +60,7 @@ Power down and restart to switch back to the default mode
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-### GNOME desktop
+### GNOME Desktop
 
 #### Step 1: open `Mobile Board Settings`
 
@@ -98,7 +98,7 @@ After entering the password, you can connect normally.
 
 ![LTE_gnome_success](/linux/images/vim3/LTE_gnome_success.png)
 
-#### Changing the password
+#### Changing the Password
 
 Open the corresponding settings and update the password in `mobile broadband`.
 
@@ -142,7 +142,7 @@ wwan0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
 You will find the interface `wwan0` via the command `ifconfig -a`
 
 
-### Using `ping` command to test
+### Using `ping` Command to Test
 
 ```
 $ ping www.baidu.com -I wwan0

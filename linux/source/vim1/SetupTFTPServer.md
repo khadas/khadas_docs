@@ -86,7 +86,8 @@ $ sudo service tftpd-hpa restart
 </div>
 </div>
 
-## Setup TFTP on a target device
+## Setup TFTP on a Target Device
+
 To setup TFTP on a target device, you will need to:
 
 * Connect a LAN cable to your target device, and make sure your device is on same local network with your Host PC.
@@ -141,7 +142,7 @@ serverip=192.168.1.117
 
 {% endnote %}
 
-## Test your TFTP server
+## Test Your TFTP Server
 
 {% note warn NOTE %}
 

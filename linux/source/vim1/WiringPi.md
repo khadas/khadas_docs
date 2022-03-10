@@ -8,7 +8,8 @@ WiringPi is a C++ library for Raspberry Pi. With this library you can use many o
 We have ported this library to also work with Khadas SBCs, and you can use it to control the `40-PIN HEADER`.
 
 ## Using WiringPi
-### Available commands
+
+### Available Commands
 
 1. Run `gpio -h` in the Terminal, and you can see all the available commands of WiringPi.
 ```
@@ -48,7 +49,7 @@ v     --> 1:HIGH 0:low
 PU/PD --> PU:pull up PD:pull down DSBLD:disabled PU/PD
 ```
 
-### Control by Terminal commands
+### Control by Terminal Commands
 
 Here's an example of controlling wpi number 1.
 
@@ -73,7 +74,7 @@ root@Khadas:~# gpio read 1
 ```
 You can see that wpi number 1 output has changed from high to low.
 
-### Control by a Linux C program
+### Control by a Linux C Program
 
 1. Here is a simple control program.
 
@@ -117,7 +118,7 @@ wPi Pin 1 now is LOW
 ```
 You can use `gpio read 1` to observe the pin level changes.
 
-## Special pin functions of WiringPi
+## Special Pin Functions of WiringPi
 
 Special pin functions of wiringpi include`SPI`,`I2C`,`ADC`,`SoftPWM`.
  
@@ -272,7 +273,7 @@ PIN15 <---> RX
 PIN16 <---> TX
 ```
 
-## WiringPi function list
+## WiringPi Function List
 
 ```
 int  wiringPiSetup       (void) ;

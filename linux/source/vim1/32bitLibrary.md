@@ -1,7 +1,9 @@
 title: 32-bit Library
 ---
 
-## This library is for executing 32-bit code within a 64-bit environment
+This library is for executing 32-bit code within a 64-bit environment.
+
+## Test Code
 
 1. Sample code.
 

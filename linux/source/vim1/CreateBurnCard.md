@@ -16,7 +16,7 @@ Linux users can follow this guide to create a special SD card for "burning" an O
 * If your SD card contains >1 partition, format it using Fdisk ([VIM1](CreateBurnCardViaCLI.html)/[VIM2](CreateBurnCardViaCLI.html)/[VIM3](CreateBurnCardViaCLI.html)/[VIM4](CreateBurnCardViaCLI.html)).
 
 
-## Prepare your SD card
+## Prepare Your SD Card
 
 **Backup all important data**, then remove all partitions on your SD card.
 
@@ -55,7 +55,7 @@ Device     Boot Start      End  Sectors  Size Id Type
 
 The partition must start from **4096**.
 
-## Create the OS installation (burning) SD card
+## Create the OS Installation (Burning) SD Card
 
 Insert the SD card into your PC, make sure it is unmounted:
 
@@ -122,7 +122,7 @@ $ sudo eject /dev/sdX
 
 Done!
 
-## Upgrade using your `OS installation (Burning) SD card`
+## Upgrade Using Your `OS Installation (Burning) SD Card`
 
 1. Insert your OS installation SD card into your SBC, and power-on.
 2. Follow this [guide](BootIntoUpgradeMode.html) to boot into upgrade mode.

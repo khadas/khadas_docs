@@ -29,7 +29,7 @@ $ cd ~/project/fenix
 $ source env/setenv.sh
 ```
 
-### Build the image
+### Build the Image
 As root, build the image with Fenix.
 
 ```sh
@@ -38,12 +38,12 @@ $ make
 
 **Tip:** If this is your first time building an image, the script will check your host's environment and install some essential packages. In addition, repositories (U-boot, Linux) will be cloned automatically from the Khadas GitHub.
 
-### Build U-boot
+### Build U-Boot
 ```
 $ make uboot
 ```
 
-### Build the U-boot Debian package
+### Build the U-Boot Debian Package
 ```
 $ make uboot-deb
 ```
@@ -53,31 +53,31 @@ $ make uboot-deb
 $ make kernel
 ```
 
-### Build the Linux Debian package
+### Build the Linux Debian Package
 ```
 $ make kernel-deb
 ```
 
-### Build the GPU Debian package
+### Build the GPU Debian Package
 ```
 $ make gpu-deb
 ```
 
-### Build the Board Debian package
+### Build the Board Debian Package
 ```
 $ make board-deb
 ```
 
-### Build all Debian packages
+### Build all Debian Packages
 ```
 $ make debs
 ```
-### Build U-boot image
+### Build U-Boot Image
 ```
 $ make uboot-image
 ```
 
-### Clean the Linux source tree
+### Clean the Linux Source Tree
 ```
 $ make kernel-clean
 ```
@@ -225,7 +225,7 @@ $ docker start fenix
 $ docker exec -ti fenix bash
 ```
 
-### Get the latest nightly build
+### Get the Latest Nightly build
 - See [Fenix](https://github.com/khadas/fenix)(one-stop script)
 - Release Build, Test Build Ubuntu, Test Build Debian
 ![image](/linux/images/vim1/FenixScript.png)

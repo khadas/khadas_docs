@@ -3,7 +3,7 @@ title: Software PWM
 
 Use Software PWM for servo control in WiringPi and WiringPi-Python.
 
-## Principle of servo control
+## Principle of Servo Control
 
 The reference signal of the servo is 20ms in period and 1.5ms in width, and this corresponds to the servo's middle position.
 
@@ -27,7 +27,7 @@ The working principle of the 360-degree simulated-servo is the same as that of t
 2.5ms -- Clockwise/maximum speed
 ```
 
-## Source code compilation and demonstration
+## Source Code Compilation and Demonstration
 
 ### Explanation
 
@@ -65,7 +65,7 @@ $ gpio readall
 
 3. Simulate PWM and control through the `softPwmCreate()` and `softPwmWrite()` functions.
 
-### WiringPi source code and compilation
+### WiringPi Source Code and Compilation
 
 1. The servo switches back and forth between 180 degrees, 90 degrees, and 0 degrees. The switching interval is 3 seconds to switch once, and the period is 9 seconds.
 2. The analog servo rotates clockwise, pauses rotation and rotates backward counterclockwise to switch back and forth, the switching interval is 3 seconds to switch once, and the period is 9 seconds.
@@ -99,7 +99,7 @@ int main(){
 $ gcc -o SoftPwm SoftPwm.c -lwiringPi -lpthread -lrt -lm -lcrypt
 ```
 
-### WiringPi-Python source code
+### WiringPi-Python Source Code
 
 1. The servo switches between 180 degrees, 90 degrees and 0 degrees successively, and the time interval is 3 seconds.
 2. The analog servo switches between clockwise rotation, pause rotation and counterclockwise rotation, and the time interval is 3s.

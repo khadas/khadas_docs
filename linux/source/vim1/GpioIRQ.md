@@ -3,7 +3,7 @@ title: GPIO Interrupts
 
 **Access the GPIO interrupts from Ubuntu Terminal.**
 
-## Root permissions
+## Root Permissions
 
 You must elevate yourself to **root** before you are able to access the GPIO.
 
@@ -13,7 +13,7 @@ Password:
 root@Khadas:/home/khadas#
 ```
 
-## GPIO pin control
+## GPIO Pin Control
 
 * From the table below, take note of which pins you need to use:
 
