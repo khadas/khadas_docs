@@ -23,6 +23,9 @@ root@Khadas:/home/khadas#
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-node" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4-node" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-node" role="tabpanel" aria-labelledby="vim1-tab">
@@ -55,11 +58,32 @@ root@Khadas:/home/khadas#
   red_led  sys_led
   ```
   </div>
+  <div class="tab-pane fade" id="vim4-node" role="tabpanel" aria-labelledby="vim4-tab">
+  
+  VIM4只有一个LED节点`pwmled`。
+
+  ```bash
+  root@Khadas:/home/khadas# cd /sys/class/leds/
+  root@Khadas:/sys/class/leds# ls
+  input2::capslock  input2::numlock  input2::scrolllock  pwmled
+  ```
+  </div>
 </div>
 
 ## 使用LED
 
-这里以`sys_led`为例.
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#vim1" role="tab" aria-controls="vim1" aria-selected="true">VIM1/VIM2/VIM3/VIM3L</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="vim1" role="tabpanel" aria-labelledby="vim1-tab">
+
+这里以 `sys_led` 为例.
 
 ```bash
 root@Khadas:/sys/class/leds# cd sys_led
@@ -97,4 +121,40 @@ root@Khadas:/sys/class/leds/sys_led# echo default-on > trigger
 root@Khadas:/sys/class/leds/sys_led# echo heartbeat > trigger
 ```
 
-你也可以尝试其他参数。
+你也可以尝试其他参数。 </div>
+
+  <div class="tab-pane fade show active" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+  VIM4的LED为`pwmled`：
+
+```bash
+root@Khadas:/sys/class/leds# cd pwmled
+root@Khadas:/sys/class/leds/pwmled# ls
+brightness  device  invert  max_brightness  power  subsystem  trigger  uevent
+```
+
+查看所有可设置的参数：
+
+```bash
+root@Khadas:/sys/class/leds/pwmled# cat trigger
+none rc-feedback kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock timer oneshot [heartbeat] backlight gpio cpu0 cpu1 cpu2 cpu3 cpu4 cpu5 default-on transient panic rc_feedback emmc sd sdio rfkill0 rfkill1 rfkill2 rfkill3
+```
+
+* 关闭LED
+
+输入`none`参数关闭LED：
+
+```bash
+root@Khadas:/sys/class/leds/pwmled# echo none > trigger
+```
+
+* 心跳闪烁
+
+设置`heartbeat`可以让LED以心跳的方式闪烁：
+
+```bash
+root@Khadas:/sys/class/leds/pwmled# echo heartbeat > trigger
+```
+
+你也可以尝试其他参数。</div>
+</div>
