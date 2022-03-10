@@ -1,11 +1,12 @@
-title: Change Boot Logo
+title: Replace Boot Logo
 ---
 
-* BMP format, should be
-  * 16bit RGB565 BMP format
-* Resolution <= 1080P (1920 * 1080)
+* Image format:
+  * 16bit RGB565 (BMP)
+* Resolution:
+  * <= 1080P (1920x1080 px)
 
-## Replace the Boot Logo by ADB
+## Method 1: Use ADB
 ```sh
 $ adb root
 $ adb remount
@@ -14,9 +15,9 @@ $ adb shell sync
 $ adb reboot
 ```
 
-## Updage the Logo by Upgrate Whole Firmware
-1. Replace `device/khadas/TARGET/logo_img_files/bootup.bmp` bmp file.
-2. Build upgrate package.
+## Method 2: Replace the firmware
+1. Replace the `device/khadas/TARGET/logo_img_files/bootup.bmp` logo file.
+2. Build upgrade package.
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ rm -rf out/target/product/TARGET/
@@ -25,11 +26,11 @@ $ lunch TARGET_LUNCH
 $ make installclean -j8
 $ make otapackage -j8
 ```
-3. Burn upgrate package update.img to your device you can refer [How To Upgrate](UpgradeViaUSBCable.html), restart then you can see the new boot logo.
+3. Burn update.img to your SBC, you can refer [How To Upgrade](UpgradeViaUSBCable.html). Restart for changes to take effect.
  
 {% note info Note %}
-* Replace `PATH_YOUR_PROJECT` to your project path
-* Replace `TARGET_LUNCH` to your lunch select
+* Replace `PATH_YOUR_PROJECT` with your project path
+* Replace `TARGET_LUNCH` with your selected lunch
   * For VIM4, it's kvim4-userdebug
 * `TARGET` should be kvim4
 {% endnote %}
