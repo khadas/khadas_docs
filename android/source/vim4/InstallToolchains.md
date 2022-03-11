@@ -1,9 +1,9 @@
 title: Install Toolchains
 ---
 
-The Amlogic Platform requires extra toolchains for cross-compiling, you will need to follow these steps to setup:
+The Amlogic platform requires extra toolchains for cross-compiling:
 
-1. To build an environment for compiling Android, it is recommended to use 64 bit Ubuntu 16.04. The following software packages need to be installed:
+1. Use Ubuntu 16.04 (64-bit) to build an environment for compiling Android. The following software packages need to be installed:
 
 ```sh
 $ sudo apt-get update
@@ -11,7 +11,7 @@ $ sudo apt-get install openjdk-8-jdk automake make git gperf zip dos2unix bison 
 $ sudo apt-get install unzip lib32z1 libx11-dev lib32z-dev ccache gitk xmllint libxml2-utils libssl-dev
 ```
 
-2. Tool chain required for U-Boot:
+2. Toolchains required for U-boot:
 
 ```sh
 $ sudo mkdir /opt/toolchains
@@ -22,13 +22,13 @@ $ sudo tar -xvJf gcc-linaro-7.3.1-2018.05-i686_aarch64-elf.tar.xz -C /opt/toolch
 $ sudo tar -zxvf xpack-riscv-none-embed-gcc-8.3.0-1.2-linux-x64.tar.gz -C /opt/toolchains
 ```
 
-3. Tool chain required for Linux kernel:
+3. Toolchains required for the Linux kernel:
 
 ```sh
 sudo apt-get install gcc-4.8-aarch64-linux-gnu 
 ```
-Main tool chain required for Linux kernel is included in the SDK `prebuilts/clang/host/linux-x86/clang-r383902/bin`.
+The main toolchain required for the Linux kernel is included in the SDK `prebuilts/clang/host/linux-x86/clang-r383902/bin`.
 
-## Further Reading
+## Further reading
 
 [Amlogic Openlinux Website](http://openlinux.amlogic.com/)
