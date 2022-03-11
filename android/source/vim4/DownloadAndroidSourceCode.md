@@ -1,13 +1,11 @@
-title: Download The Android Source Code
+title: Android Source Code
 ---
 
-The Android Source Tree of our Khadas VIMs are hosted on [Github](https://www.github.com/khadas). There are many different repositories.
+The Khadas VIM Android Source Tree is hosted on [Github](https://www.github.com/khadas).
 
-Walk through the steps below to download the Source Code.
+## How-to download
 
-## Steps
-
-Firstly, install git-lfs tool for downloading Android 9.0 SDK
+1) Install the git-lfs tool for downloading Android 9.0 SDK
 
 ```sh
 $ mkdir git_lfs
@@ -19,14 +17,14 @@ $ sudo ./install.sh
 $ git lfs install
 ```
 
-1) Create an empty directory to hold your working files:
+2) Create an empty directory to hold your working files:
 
 ```sh
 $ mkdir -p WORKING_DIRECTORY
 $ cd WORKING_DIRECTORY
 ```
 
-2) Run `repo init` to download the manifest repository first:
+3) Run `repo init` to download the manifest repository:
 
 ```sh
 $ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vims-pie
@@ -40,7 +38,7 @@ $ repo sync -j4
 The initial sync operation may take an hour or more to complete.
 
 {% note info Tip %}
-	You might need to run above command repeatly if it fails halfway. Or you can try with this script instead:
+	If the sync operation fails halfway, run this automated script to auto-restart the download:
 	```sh
 	#!/bin/bash
 	repo sync -j4
@@ -54,12 +52,12 @@ The initial sync operation may take an hour or more to complete.
 
 {% endnote %}
 
-4) Begin a new branch for development:
+4) Create a new branch for development:
 
 ```sh
 $ repo start <BRANCH_NAME> --all
 ```
 
-## Further Reading
-* [Android Official Documents](https://source.android.com/source/downloading.html)
+## Further reading
+* [Android Source Documentation](https://source.android.com/source/downloading.html)
 * [Build Android Source Code](/android/vim3/BuildAndroid.html)
