@@ -1,8 +1,8 @@
-title: Add Permission For App
+title: Add App Permissions
 ---
-For a better experience, you can add default permissions to your application in android framework.
+For a better experience, you can add default permissions to your application using the Android Framework.
 
-## Permission Name
+## Permission name
 ```java
 PHONE_PERMISSIONS
 CONTACTS_PERMISSIONS
@@ -18,12 +18,11 @@ SENSORS_PERMISSIONS
 STORAGE_PERMISSIONS
 ```
 
-
-## Source Code File Path
+## Source code file path
 ```
 frameworks/base/services/core/java/com/android/server/pm/permission/DefaultPermissionGrantPolicy.java
 ```
-Add in the `grantdefaultsystemhandlerpermissions()` function:
+Add the `grantdefaultsystemhandlerpermissions()` function:
 ```java
 //add Permission
 grantSystemFixedPermissionsToSystemPackage("com.xxx.xxx", userId,
@@ -31,4 +30,4 @@ PHONE_PERMISSIONS, SMS_PERMISSIONS, CALENDAR_PERMISSIONS,
 ALWAYS_LOCATION_PERMISSIONS, CONTACTS_PERMISSIONS, CAMERA_PERMISSIONS,MICROPHONE_PERMISSIONS, STORAGE_PERMISSIONS);
 //add end
 ```
-`com.xxx.xxx` is package name.
+`com.xxx.xxx` is the package name.
