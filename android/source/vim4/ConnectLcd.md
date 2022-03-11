@@ -1,4 +1,4 @@
-title: Connect TS050 Touchscreen
+title: TS050 Touchscreen
 ---
 
 <img src="/android/images/vim4/vim4_ts050_front.jpg" width="50%" height="50%">
