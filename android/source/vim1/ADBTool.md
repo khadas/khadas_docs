@@ -55,7 +55,7 @@ $ sudo /etc/init.d/udev restart
 
 ## Install ADB
 
-Install the ADB USB driver, then download [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip).
+Install the [ADB USB driver](UpgradeViaUSBCable.html), then download [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip).
 
 Unzip the compressed file to the root directory of the `cmd` console, as shown below:
 ![mac](/android/images/vim4/adb.png)
