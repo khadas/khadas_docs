@@ -1,28 +1,27 @@
-title: Use TTS
+title: TTS
 ---
 
-TTS service has been integrated into the Android system of vim4, and third-party applications only need to call.
+The TTS service is integrated into Android for VIM4 SBCs, and third-party applications only need to call it.
 
-## Broadcast Interface
+## Broadcast interface
 
-Broadcast : `com.khadas.tts.string`
+Broadcast: `com.khadas.tts.string`
 
-Parameter : `msg`, Value(String) : `test`
+Parameter: `msg`, Value(String) : `test`
 
 
-## Add Code to Java
+## Add code to Java
 ```java
 Intent intent = new Intent("com.khadas.tts.string");
 intent.putExtra("msg","test");
 sendBroadcast(intent);
 ```
 
-
-## Adb Test
+## ADB broadcast test
 ```
 adb shell am broadcast -a com.khadas.tts.string --es msg "test"
 ```
 
-## Language Choice
-You can choice language in settings.
+## Language selection
+Change your preferred language in settings.
 `Settings` --> `Accessibility` --> `Text-to-speech output`
