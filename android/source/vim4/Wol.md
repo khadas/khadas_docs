@@ -1,13 +1,13 @@
-title:  WOL Usage
+title:  Wake-On-LAN (WOL)
 ---
 
-`Wake-On-LAN (WOL)` is a protocol standard that allows your PC/Smartphone to turn on a computer via your local network or the Internet.
+`Wake-On-LAN (WOL)` is a protocol standard that allows your PC/Smartphone to turn on your SBC via a LAN network.
 
-VIM2, VIM3, VIM4 and Edge are different from VIM1, as it supports the WOL-function.
+VIM2, VIM3, VIM4 and Edge SBCs support Wake-On-LAN.
 
-Firstly, you have to connect VIM4 to your LAN, then get the Ethernet MAC address.
+Connect VIM4 to your LAN, then get the Ethernet MAC address.
 
-## Get Ethernet MAC Address
+## Get ethernet MAC address
 
 You can get it from `Settings`->`Khadas Settings`->`Ethernet` menu.
 
@@ -22,9 +22,9 @@ You can enable **WOL** in the `Settings`->`Khadas Settings`->`WOL` menu.
 
 ## Test WOL
 
-1. Connect VIM4 with LAN.
+1. Connect VIM4 with your LAN network.
 2. Power off VIM4.
-3. Attempt to wake up your VIM4 on Android.
+3. Attempt to wake up your VIM4 device from another Android device.
 
 * Download **[Wake-On-LAN Sender](http://www.yarovy.com/wol/)** tool
 
@@ -38,8 +38,7 @@ You can enable **WOL** in the `Settings`->`Khadas Settings`->`WOL` menu.
 
 ![sender](/android/images/vim2/wol_sender_send.png)
 
-* Note:On iPhone, you can search for **Wake On Lan** in the App Store
+* Note: On iPhone, you can search for **Wake On LAN** in the App Store
 
 ## See also
 [KBI Guidance](/android/vim4/KbiGuidance.html)
-
