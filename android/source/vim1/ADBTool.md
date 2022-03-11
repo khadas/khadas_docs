@@ -1,4 +1,4 @@
-title: Use ADB Tool
+title: ADB Tool
 ---
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -14,40 +14,38 @@ title: Use ADB Tool
 
 ## Install ADB
 
-First you must synchronized index file, then you can Install it directly.
+Install the ADB tool by synchronizing the index file:
 
 ```shell
 $ sudo apt-get update
 $ sudo apt-get install android-tools-adb
 ```
 
-### Add Permission & Write Configuration Files
+### Add permission and configuration files
 
-Now, it's already installed on your computer. But you still need to do some preparations.
+Add permission and configuration details after installation.
 
-#### Add Permission
+#### Add permission
 
 ```shell
 $ sudo  useradd -G plugdev $USER
 ```
 
-#### Write Configuration Files
+#### Write configuration files
 
-Touch a rules file for it.
+Create a .rules file:
 
 ```shell
 $ sudo vim /etc/udev/rules.d/51-android.rules
 ```
 
-Write the following to the file.
+Write the following to the .rules file.
 
 ```shell
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0666"
 ```
 
-This is a general setup.
-
-#### Restart Udev
+#### Restart udev
 
 ```shell
 $ sudo /etc/init.d/udev restart
@@ -57,8 +55,9 @@ $ sudo /etc/init.d/udev restart
 
 ## Install ADB
 
-First, refer to the section of installing USB driver to install the driver.
-Then download [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip), unzip it to the root directory of the open `cmd` command line window for easy calling, as shown in the following figure:
+Install the ADB USB driver, then download [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip).
+
+Unzip the compressed file to the root directory of the `cmd` console, as shown below:
 ![mac](/android/images/vim4/adb.png)
 
 </div>
@@ -68,11 +67,11 @@ Then download [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip), unzip
 
 ### ADB over Wi-Fi/LAN
 
-* Ensure that either the Wi-Fi or LAN is connected
+* Ensure that either Wi-Fi or LAN is connected
 
-* Enable ADB debugging on your Device: `Settings-->Developer options--->USB debugging`
+* Enable ADB debugging on your SBC: `Settings-->Developer options--->USB debugging`
 
-* Check the IP address of your Device: `Settings-->About device--->Status--->IP`
+* Check the IP address of your SBC: `Settings-->About device--->Status--->IP`
 
 * Run the `adb connect` command:
 ```shell
@@ -82,26 +81,26 @@ $ adb shell
 
 ### ADB over USB
 
-* Ensure that a USB-C cable is connected between your PC and VIM
+* Ensure that a USB-C cable is connected between your PC and SBC
 
-* Enable ADB debugging on your device: `Settings-->Developer options--->USB debugging`
+* Enable ADB debugging on your SBC: `Settings-->Developer options--->USB debugging`
 
-* Open a terminal and type:
+* Open a Terminal and type:
 ```shell
 $ adb shell
 ```
 
-### Resource
+### Links
 
 * [Android Debug Bridge](https://developer.android.com/studio/command-line/adb.html)
 
-**note**:
+**notes**:
 
-1. If you android deivce is a phone, you must open *developer model*.
+1. If you android device is a phone, you must enable *developer mode*.
 
-2. When you try to debug your Android device with `adb devices`, There will be a proposal on your mobile phone.Please check it. 
+2. When you try to debug your Android device with `adb devices`, a notification will appear that you must accept.
 
-3. If your Android device is the khadas SBC, *developer model* was opened.
+3. If your Android device is a Khadas SBC, *developer mode* is enabled by default.
 
 
 
