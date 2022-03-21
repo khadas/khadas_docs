@@ -20,10 +20,10 @@ There are 3 different ways to erase all data on the onboard eMMC storage:
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* Refer to this [guide](SetupSerialTool.html) to setup the Serial Tool for your VIM.
-* Once again, ensure you've done the correct connections and setup.
-* Hit `SPACE` key at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode.
-* Type `store boot_erase bootloader` on the terminal of u-boot, and wait for the erasure process to complete.
+* Refer to this [guide](SetupSerialTool.html) to setup the Serial Tool for your VIM
+* Once again, ensure you've done the correct connections and setup
+* Hit `SPACE` key at the moment of bootup to stop autoboot. This step will make your VIM enter into u-boot mode
+* Type `store boot_erase bootloader` on the terminal of u-boot, and wait for the erasure process to complete
 * Type `reboot` or press the `Reset` button
 * Use the following as a reference:
 
@@ -67,16 +67,16 @@ T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DF
 
 This approach is suitable for all products that use the Amlogic SoC:
 
-* Carry out normal upgrading via [USB-C Cable](InstallOsIntoEmmc.html) or [TF Card](InstallOsIntoSdusb.html).
-* Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card.
-* Power on your VIM again, and you'll find that all the data on the eMMC has been erased.
+* Carry out normal upgrading via [USB-C Cable](InstallOsIntoEmmc.html) or [TF Card](InstallOsIntoSdusb.html)
+* Manually interrupt the upgrading process (forcefully disconnect after 15% is recommended). For example, unplug the USB-C cable or the TF card
+* Power on your VIM again, and you'll find that all the data on the eMMC has been erased
 
 </div>
 <div class="tab-pane fade show" id="cli" role="tabpanel" aria-labelledby="cli-tab">
 
 This approach is suitable for a VIM that has Linux installed:
 
-* Power on and boot up.
+* Power on and boot up
 * Open a terminal, and run `dd` to fill your bootloader partition with zeros:
 
 ```bash
