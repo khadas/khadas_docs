@@ -1,7 +1,7 @@
 title: 获取GSensor数据
 ---
 
-VIM4集成GSensor功能，进入`设置` --> `Khadas设置` --> `重力感应器数据`可以查看X，Y，Z的加速度大小。
+VIM4集成GSensor功能，进入`设置-->Khadas设置-->重力感应器数据`可以查看X，Y，Z的加速度大小。
 <img src="/android/images/vim4/gsensor.png" width="75%" height="75%">
 
 ## Android APP 获取GSensor数据

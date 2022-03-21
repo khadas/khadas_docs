@@ -1,7 +1,7 @@
 title: Accelerometer Data
 ---
 
-VIM4 includes an accelerometer sensor. Go to `Settings` --> `Khadas settings` --> `G-Sensor data` to view the acceleration readings in the X, Y and Z axis.
+VIM4 includes an accelerometer sensor. Go to `Settings-->Khadas settings-->G-Sensor data` to view the acceleration readings in the X, Y and Z axis.
 
 <img src="/android/images/vim4/gsensor.png" width="75%" height="75%">
 
