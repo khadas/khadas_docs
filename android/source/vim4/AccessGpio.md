@@ -15,16 +15,16 @@ $ su
 
 
 
-## Get GPIO value
+## Get GPIO Value
 
-### Calculation method
+### Calculation Method
 
 The calculation method of the GPIO array is: `Number = Banks + Pins`.
 
-1. `Banks` refers to the base value of GPIO Ranges.
+1. `Banks` refers to the base value of GPIO ranges.
 2. `Pins` refers to the sorting of the GPIO pins you need to calculate in the corresponding ranges.
 
-### Numerical calculation example
+### Numerical Calculation Example
 
 Amlogic chips usually include two GPIO Ranges, AOBUS and Periphs. There is a calculation example for each Ranges here for reference.
 
@@ -66,80 +66,68 @@ Take `GPIOT_18` and `GPIOT_19` as an examples here.
 `GPIOT_19 = Banks + Pins = 355 + 110 = 465`
 
 
-## GPIO usage examples
+## GPIO Usage Examples
 
 * Request the gpio(`GPIOT_19`)
-
 ```bash
 # echo 465  > /sys/class/gpio/export
 ```
 
 * Config the gpio(`GPIOT_19`) as  output
-
 ```bash
 # echo out > /sys/class/gpio/gpio465/direction
 ```
 
 * Config the gpio(`GPIOT_19`) as high level output
-
 ```bash
 # echo 1 >  /sys/class/gpio/gpio465/value
 ```
 
 * Config  the gpio(`GPIOT_19`) as low level output
-
 ```bash
 # echo 0 >  /sys/class/gpio/gpio465/value
 ```
 
 * Config the gpio(`GPIOT_19`) as input
-
 ```bash
 # echo in > /sys/class/gpio/gpio465/direction
 ```
 
 * Get the gpio(`GPIOT_19`) level
-
 ```bash
 # cat /sys/class/gpio/gpio465/value
 ```
 
 * Release the gpio(`GPIOT_19`)
-
 ```bash
 # echo 465 > /sys/class/gpio/unexport
 ```
 
-## Third-Party Applications examples
+## Third-Party Applications Examples
 
 * Get root permision
-
 ```java
 Process mProcess = Runtime.getRuntime().exec("su");
 ```
 
 * Request the gpio(`GPIOT_19`)
-
 ```java
 DataOutputStream os = new DataOutputStream(mProcess.getOutputStream());
 os.writeBytes("echo " + 465 + " > /sys/class/gpio/export\n");
 ```
 
 * Config the gpio(`GPIOT_19`) as high level output
-
 ```java
 os.writeBytes("echo out > /sys/class/gpio/gpio" + 465 + "/direction\n");
 os.writeBytes("echo 1 > /sys/class/gpio/gpio" + 465 + "/value\n");
 ```
 
 * Config the gpio(`GPIOT_19`) as input
-
 ```java
 os.writeBytes("echo in > /sys/class/gpio/gpio" + 465 + "/direction\n");
 ```
 
 * Get the gpio(`GPIOT_19`) level
-
 ```java
 Runtime runtime = Runtime.getRuntime(); 
 Process process = runtime.exec("cat " + "/sys/class/gpio/gpio" + 465 + "/value");  
@@ -153,7 +141,6 @@ while (null != (line = br.readLine())) {
 ```
 
 * Release the gpio(`GPIOT_19`)
-
 ```java
  os.writeBytes("echo " + 465 + " > /sys/class/gpio/unexport\n");
 ```
