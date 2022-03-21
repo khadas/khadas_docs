@@ -22,13 +22,13 @@ console:/ $ su
 console:/ #
 ```
 
-### Fetch system kernel information
+### Fetch System Kernel Information
 
 ```bash
 console:/ # dmesg > /storage/kernel.log
 ```
 
-### Fetch system log information
+### Fetch System Log Information
 
 ```bash
 console:/ # logcat > /storage/logcat.log
