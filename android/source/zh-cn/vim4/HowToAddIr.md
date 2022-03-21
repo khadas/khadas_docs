@@ -1,17 +1,16 @@
-title: 添加遥控器
+title: 如何增加红外遥控器支持
 ---
 
-
-这个文档主要说明在安卓上增加遥控器。
+VIM4板子默认没有红外接收头，如果需要有红外遥控器支持的话，硬件上需要从40PIN排针扩展输出，另外软件上需要配置。
 
 
 ## 硬件连接
-`IR_IN`(红外遥控头输出)引出到40Pin的引脚是39脚 `GPIOD_15`：
+`IR_IN`(红外接收信号)是40PIN排针上的39管脚 `GPIOD_15`：
 
 * [VIM4-GPIO-Pin-Out](/android/zh-cn/vim4/Interfaces#GPIO-Pinout)
 
 ## 软件配置
-1. 在`common/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi`中增加遥控器码值到键值的映射，使能遥控器驱动配置：
+1. 在`common/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi`文件中增加遥控器配置：
 
 ```c
 --- a/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi
@@ -60,18 +59,17 @@ title: 添加遥控器
  };
 ```
 
-2. 增加 Android kl 文件：
+2. 增加Android Key Layout(kl)文件：
 
-* 记录你红外设备的ID号, 如前面步骤增加的ID号（as vendor=0x0003, product=0x0003）
+* kl文件的ID号需要和dtsi文件配置的ID号保持一致, 如前面步骤增加的ID号（as vendor=0x0003, product=0x0003）
 ```diff
 +                       vendor = <0x0003>;
 +                       product = <0x0003>;
 ```
 
-* 添加一个新文件：`device/khadas/common/keyboards/Vendor_xxxx_Product_xxxx.kl` (as Vendor_0003_Product_0003.kl)
-
+* 新增Key Layout(kl)文件：`device/khadas/common/keyboards/Vendor_xxxx_Product_xxxx.kl` (as Vendor_0003_Product_0003.kl)
 ```sh
-vi device/khadas/kVIM4/files/Vendor_0003_Product_0003.kl
+$ vim device/khadas/kVIM4/files/Vendor_0003_Product_0003.kl
 ```
 ```sh
 key 116   POWER
@@ -80,11 +78,11 @@ key 103   DPAD_UP
 key 108   DPAD_DOWN
 key 105   DPAD_LEFT
 key 106   DPAD_RIGHT
-key 232    DPAD_CENTER
+key 232   DPAD_CENTER
 key 114   VOLUME_DOWN
-key 63   F5
+key 63  　F5
 key 115   VOLUME_UP
-key 158     BACK
+key 158   BACK
 key 102   HOME
 ```
 

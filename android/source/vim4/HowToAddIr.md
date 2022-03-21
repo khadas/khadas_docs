@@ -5,7 +5,7 @@ This guide is about how to add IR on Android.
 
 
 ## Hardware Connectity
-`IR_IN`(Infrared remote control output) pin in 40 pins header is pin39 `GPIOD_15`:
+`IR_IN`(infrared remote control output) pin in `40-PIN HEADER` is pin39 `GPIOD_15`:
 * [VIM4-GPIO-Pin-Out](/android/zh-cn/vim4/Interfaces#GPIO-Pinout)
 
 ## Software Configuration
@@ -67,9 +67,8 @@ This guide is about how to add IR on Android.
 ```
 
 * Create one new files：`device/khadas/common/keyboards/Vendor_xxxx_Product_xxxx.kl` (as Vendor_0003_Product_0003.kl)
-
 ```sh
-vi device/khadas/kVIM4/files/Vendor_0003_Product_0003.kl
+$ vim device/khadas/kVIM4/files/Vendor_0003_Product_0003.kl
 ```
 ```sh
 key 116   POWER
@@ -114,4 +113,4 @@ Input Manager State:
       HaveKeyboardLayoutOverlay: false
       VideoDevice: <none>  
 ```
-As shown above, when the value `KeyLayoutFile:` is followed by the .kl file name `Vendor_0003_Product_0003.kl`, pairing is successful.
+As shown above, when the value `KeyLayoutFile:` is followed by the kl file name `Vendor_0003_Product_0003.kl`, pairing is successful.
