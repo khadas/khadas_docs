@@ -25,4 +25,4 @@ adb shell am broadcast -a com.khadas.tts.string --es msg "test"
 
 ## 语言选择
 你可以在设置里面添加和选择语言。
-`Settings` --> `Accessibility` --> `Text-to-speech output`
+`设置-->无障碍-->文字转语音（TTS）输出`

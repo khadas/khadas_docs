@@ -24,4 +24,4 @@ adb shell am broadcast -a com.khadas.tts.string --es msg "test"
 
 ## Language selection
 Change your preferred language in settings.
-`Settings` --> `Accessibility` --> `Text-to-speech output`
+`Settings-->Accessibility-->Text-to-speech output`
