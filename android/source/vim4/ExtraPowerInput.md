@@ -8,7 +8,7 @@ title: Extra Power Input for Khadas VIMs
 {% endnote %}
 
 ## Overview
-Khadas VIM is designed with three power supply ports:
+Khadas VIMs is designed with three power supply ports:
 
 1. USB-C Port: This is used for both Power Supply and USB Data Transmission.
 2. 4-Pin VIN port which is situated near the USB-C port.
