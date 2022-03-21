@@ -37,7 +37,7 @@ Ensure that you are using the correct Amlogic Flashing Tool, then continue with 
 
 1. Open `Aml_Burn_Tool.exe`, click `Setting-->Load Img` to choose an [image](https://dl.khadas.com/Firmware/) for your SBC.
 2. Connect your SBC to your PC with a USB-C data cable (it will power-on automatically).
-3. Place your SBC into "upgrade mode":
+3. Place your SBC into upgrade mode:
     * Long press the `POWER` key without releasing it.
     * Short press the `RESET` key and release it.
     * Count to 10 seconds and then release the `POWER` key.

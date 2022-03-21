@@ -56,6 +56,7 @@ title: 通过USB升级固件
 4. 如果上面操作已正确执行，电脑端会发现VIMs升级设备，点击升级工具上的start按钮开始固件升级,升级进度条100%时完成升级。
 	<img src="/android/images/vim4/upgrade_tool_interface_VIM123.png" width="75%" height="75%">
 </div>
+</div>
 
 {% note info 提示 %}
 
