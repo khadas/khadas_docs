@@ -1,17 +1,22 @@
-title: 如何使用Android Settings 命令
+title: 如何使用adb settings命令
 ---
 
-## Android Settings系统属性
-Android Settings有三种类型的属性，分别是`global`、`system`、`secure`，对应的是`/data/data/com.android.providers.settings/databases/settings.db`数据库的三个表。
-1. `global` ：所有的偏好设置对系统的所有用户公开，第三方APP有读没有写的权限。
-2. `system` ：包含各种各样的用户偏好系统设置。
-3. `secure` ：安全性的用户偏好系统设置，第三方APP有读没有写的权限。
+## settings 命令介绍
+通过settings命令查询或修改系统变量，实际上是对SettingsProvider数据库进行查询和修改，SettingsProvider数据库
+有三种属性的系统变量。
+1. system:　各种各样的用户系统变量
+2. global:　公开性的用户系统变量，第三方APP有读没有写的权限
+3. secure:　安全性的用户系统变量，第三方APP有读没有写的权限
 
-## Android Settings 用法 
+
+## settings 命令用法
 1. `settings list`
-`settings list`命令用于查看三种属性的值。
+`settings list`命令用于查看系统变量，命令行格式如下：
+```shell
+settings list [global/system/secure]
+```
 
-*  查看`global`所有的值：
+*  查看`global`属性的系统变量：
 ```shell
 console:/ $ settings list global                                           
 Phenotype_boot_count=10
@@ -32,7 +37,7 @@ bluetooth_on=1
 boot_count=11
 ```
 
-*  查看`system`所有的值：
+*  查看`system`属性的系统变量：
 ```shell
 console:/ $ settings list system
 accelerometer_rotation=0
@@ -51,7 +56,7 @@ notification_light_pulse=1
 notification_sound=content://media/internal/audio/media/180
 ```
 
-*  查看`secure`所有的值：
+*  查看`secure`属性的系统变量：
 ```shell
 console:/ $ settings list secure                                               
 accessibility_display_inversion_enabled=null
@@ -71,28 +76,28 @@ enabled_input_methods=com.android.inputmethod.latin/.LatinIME
 ```
 
 2. `settings get`
-`settings get`用于获取`global`、`system`、`secure`中单个key的值，比如获取`global`中auto_time这个key的值：
+`settings get`用于查询具体的系统变量，命令行格式如下：
 ```shell
-console:/ $ settings get global auto_time                                      
+settings get [global/system/secure] [key]
+```
+举例：查询飞行模式是否打开，该系统变量属于`global`属性，具体如下：
+```shell
+console:/ $ settings get global airplane_mode_on
 0
 ```
 
 3. `settings put` 
-`settings put`用于设置`global`、`system`、`secure`中单个key的值，比如设置`global`中auto_time这个key的值：
+`settings put`用于修改具体的系统变量，命令行格式如下：
 ```shell
-console:/ $ settings put global auto_time 1                                    
-console:/ $ settings get global auto_time                                      
-1
+settings put [global/system/secure] [key] [value]
 ```
-对于 `system`和`secure`中的key，获取和设置命令类似：
+举例：打开飞行模式，该系统设置属于`global`属性，具体如下：
 ```shell
-console:/ $ settings get system accelerometer_rotation              
-0
-console:/ $ settings put system accelerometer_rotation 1
-console:/ $ settings get system accelerometer_rotation       
+console:/ $ settings put global airplane_mode_on 1
+console:/ $ settings get global airplane_mode_on
 1
 ```
 
-`settings`可以获取和设置很多系统变量，比如获取、修改wifi状态（wifi_on）、飞行模式（airlpane_mode_on）、系统提示音(notification_sound)等。
+`settings`可以查询和修改很多系统变量，比如获取或修改Wi-Fi状态（wifi_on）、蓝牙状态（bluetooth_on）、系统提示音(notification_sound)等。
 
 
