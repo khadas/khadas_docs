@@ -69,9 +69,9 @@ Unzip the compressed file to the root directory of the `cmd` console, as shown b
 
 * Ensure that either Wi-Fi or LAN is connected
 
-* Enable ADB debugging on your SBC: `Settings-->Developer options--->USB debugging`
+* Enable ADB debugging on your SBC: `Settings-->Developer options-->USB debugging`
 
-* Check the IP address of your SBC: `Settings-->About device--->Status--->IP`
+* Check the IP address of your SBC: `Settings-->About device-->Status-->IP`
 
 * Run the `adb connect` command:
 ```shell
@@ -83,24 +83,19 @@ $ adb shell
 
 * Ensure that a USB-C cable is connected between your PC and SBC
 
-* Enable ADB debugging on your SBC: `Settings-->Developer options--->USB debugging`
+* Enable ADB debugging on your SBC: `Settings-->Developer options-->USB debugging`
 
 * Open a Terminal and type:
 ```shell
 $ adb shell
 ```
 
-### Links
+## Links
 
 * [Android Debug Bridge](https://developer.android.com/studio/command-line/adb.html)
 
-**notes**:
-
-1. If you android device is a phone, you must enable *developer mode*.
-
-2. When you try to debug your Android device with `adb devices`, a notification will appear that you must accept.
-
-3. If your Android device is a Khadas SBC, *developer mode* is enabled by default.
-
-
-
+{% note info Note %}
+* If you android device is a phone, you must enable *developer mode*
+* When you try to debug your Android device with `adb devices`, a notification will appear that you must accept
+* If your Android device is a Khadas SBC, *developer mode* is enabled by default
+{% endnote %}
