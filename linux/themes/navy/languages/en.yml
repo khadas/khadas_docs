@@ -33,7 +33,7 @@ sidebar:
     vim1_hardware: VIM1 Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
     auto_login: Auto Login
@@ -43,7 +43,7 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
     hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
@@ -54,7 +54,7 @@ sidebar:
     fan: Cooling Fan
     hardware: Hardware
     custom_ir_code: Custom IR Code
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     applications: Applications
     gpio: GPIO
     gpio_usage: GPIO
@@ -88,7 +88,7 @@ sidebar:
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
+    setup_serial_tool: Serial Debug Tool
     create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
@@ -107,7 +107,7 @@ sidebar:
     vim2_hardware: VIM2 Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
     auto_login: Auto Login
@@ -117,7 +117,7 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
     hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
@@ -128,7 +128,7 @@ sidebar:
     fan: Cooling Fan
     hardware: Hardware
     custom_ir_code: Custom IR Code
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     applications: Applications
     gpio: GPIO
     gpio_usage: GPIO
@@ -162,7 +162,7 @@ sidebar:
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
+    setup_serial_tool: Serial Debug Tool
     create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
@@ -181,7 +181,7 @@ sidebar:
     vim3_hardware: VIM3 Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
     auto_login: Auto Login
@@ -191,7 +191,7 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
     hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
@@ -207,7 +207,7 @@ sidebar:
     hardware: Hardware
     pcie_usb_port: PCIe/USB3.0 Port Switch
     custom_ir_code: Custom IR Code
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     max_cpu_freq: Max CPU Frequency
     usb_gadget: USB Gadget Usage
     applications: Applications
@@ -259,7 +259,7 @@ sidebar:
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
+    setup_serial_tool: Serial Debug Tool
     create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
@@ -279,7 +279,7 @@ sidebar:
     vim4_hardware: VIM4 Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
     auto_login: Auto Login
@@ -289,7 +289,7 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
     hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
@@ -302,7 +302,7 @@ sidebar:
     lte_module_usage: LTE 4G Module
     m2x_eth: M2X ETH
     hardware: Hardware
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     usb_gadget: USB Gadget Usage
     applications: Applications
     gpio: GPIO
@@ -338,7 +338,7 @@ sidebar:
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
+    setup_serial_tool: Serial Debug Tool
     create_burn_card: Create Burn Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
@@ -357,7 +357,7 @@ sidebar:
     edge_hardware: Edge Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     auto_login: Auto Login
     write_sd_image_to_emmc: Write SD Image to eMMC
@@ -367,7 +367,7 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
@@ -378,7 +378,7 @@ sidebar:
     ts050: TS050 Touch Screen
     lte_module_usage: LTE 4G Module
     hardware: Hardware
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     applications: Applications
     gpio: GPIO
     gpio_usage: GPIO
@@ -412,7 +412,7 @@ sidebar:
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
+    setup_serial_tool: Serial Debug Tool
     troubleshooting: Troubleshooting
     capture_log: Capture Log
 

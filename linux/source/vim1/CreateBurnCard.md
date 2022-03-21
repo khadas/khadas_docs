@@ -1,4 +1,4 @@
-title: OS Installation (Burning) SD Card
+title: Create Burn Card
 ---
 
 Linux users can follow this guide to create a special SD card for "burning" an OS into the eMMC. Windows users may use the following guides: ([VIM1](UpgradeViaTFBurningCard.html)/[VIM2](UpgradeViaTFBurningCard.html)/[VIM3](UpgradeViaTFBurningCard.html)/[VIM4](UpgradeViaTFBurningCard.html)).

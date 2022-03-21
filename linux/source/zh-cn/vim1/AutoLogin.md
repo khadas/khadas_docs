@@ -1,4 +1,4 @@
-title: 如何设置自动登录
+title: 自动登录
 ---
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">

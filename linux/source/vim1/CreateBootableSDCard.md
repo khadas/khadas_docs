@@ -1,4 +1,4 @@
-title: Bootable SD Cards
+title: Create Bootable SD Cards
 ---
 
 What is a bootable SD card?

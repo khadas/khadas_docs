@@ -1,4 +1,4 @@
-title: Upgrade the Linux kernel
+title: Upgrade the Linux Kernel
 ---
 
 ## Upgrading

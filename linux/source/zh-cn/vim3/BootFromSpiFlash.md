@@ -1,4 +1,4 @@
-title: 从SPI启动系统
+title: 从SPI-Flash启动系统
 ---
 
 Khadas VIM3/VIM3L和VIM4分别板载了一块存储空间为16MB和32MB的SPI-flash芯片，可用于从SPI启动系统,这篇文档将以VIM4为例说明如何从SPI启动。

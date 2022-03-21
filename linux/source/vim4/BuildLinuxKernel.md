@@ -1,4 +1,4 @@
-title: Build the Linux kernel
+title: Build the Linux Kernel
 ---
 
 Build the Linux kernel from source.

@@ -1,4 +1,4 @@
-title: TFTP Server (U-boot)
+title: TFTP Server for U-Boot
 ---
 
 Setting up a TFTP server inside U-boot is very simple, and many guides are also available via Google.
