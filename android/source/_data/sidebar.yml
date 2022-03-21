@@ -144,7 +144,6 @@ vim4:
       how_to_use_tts: AndroidTTS.html
       khadas_settings_usage: KhadasSettingsUsage.html
       how_to_add_permission: AndroidAddPermission.html
-      how_to_app_add_window_permission: AndroidAPPAddWindowPermission.html
     accessories:
       connect_lcd: ConnectLcd.html
     board_rescoures:
