@@ -2,7 +2,7 @@ title: I2C Access Usage
 ---
 
 
-This guide is about how to access i2c on Android.
+This guide is about how to access I2C on Android.
 
 ## Connections
 
@@ -75,7 +75,7 @@ This guide is about how to access i2c on Android.
 </div>
 </div>
 
-## Detect the device
+## Detect the Device
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -121,7 +121,6 @@ Detect device on `I2C B`:
 50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
-
 ```
 If you have the right connection you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
 </div>
@@ -154,7 +153,6 @@ Detect device on `I2C B`:
 50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
-
 ```
 If you have the right connection you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
 </div>
@@ -224,13 +222,7 @@ Detect device on `I2C F`:
 </div>
 
 
-{% note warn Note %}
-
-Root privileges required.
-
-{% endnote %}
-
-## Read register from device
+## Read Register from Device
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -279,7 +271,7 @@ Read register `0x0d` of device `0x1d` on `I2C A`.
 
 {% note warn Note %}
 
-Note: Root privileges required.
+Root privileges required.
 
 {% endnote %}
 
