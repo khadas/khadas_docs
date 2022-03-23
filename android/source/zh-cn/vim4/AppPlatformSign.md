@@ -1,7 +1,7 @@
 title: 第三方应用如何获取系统权限
 ---
 
-第三方应用想要获取系统权限，首先需要在AndroiManifest.xml文件中声明UID为系统进程，还要用平台key对APP进行签名。
+第三方应用想要获取系统权限，首先需要在AndroiManifest.xml文件中声明UID为系统进程，还要用平台Key对APP进行签名。
 
 ## 在APP中声明UID为系统进程
 第三方应用的AndroidManifest.xml文件中声明：
@@ -10,7 +10,7 @@ android:sharedUserid="android.uid.system
 ```
 
 ## 如何用平台Key对APP进行签名
-###　SDK源码编译环境下签名
+###　SDK源码下签名
 1. 将APK放到对应目录下，编写Android.mk文件。
 ```sh
 LOCAL_PATH := $(call my-dir)
@@ -46,4 +46,4 @@ PRODUCT_PACKAGES +=\
 4. 命令终端下运行
 ```sh
 java -Djava.library.path=signlib -jar signapk.jar platform.x509.pem platform.pk8 unsigned.apk signed.apk
-```ww
+```

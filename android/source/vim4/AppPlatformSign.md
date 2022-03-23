@@ -1,21 +1,21 @@
-title: 第三方应用如何获取系统权限
+title: System Permissions for 3rd Party Apps
 ---
 
-第三方应用想要获取系统权限，首先需要在AndroiManifest.xml文件中声明UID为系统进程，还要用平台key对APP进行签名。
+If a third-party application wants to obtain system permissions, it needs to declare its UID as a system process in the `AndroidManifest.xml` file, and the application needs to be signed with the platform key (signature).
 
-## 在APP中声明UID为系统进程
-第三方应用的AndroidManifest.xml文件中声明：
+## Declare UID as a System Process
+The third-party application's AndroidManifest.xml must include:
 ```sh
 android:sharedUserid="android.uid.system
 ```
 
-## 如何用平台Key对APP进行签名
-###　SDK源码编译环境下签名
-1. 将APK放到对应目录下，编写Android.mk文件。
+## Sign App with Platform Key
+### App signing for SDK source code
+1. Put the APK in the application directory, and create an `Android.mk` file containing the following contents:
 ```sh
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-# Module name should match apk name to be installed
+# module name should match the apk name
 LOCAL_MODULE := XXXX
 LOCAL_MODULE_TAGS := optional
 
@@ -24,26 +24,32 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_PRIVILEGED_MODULE := true
 
-# 保留原来应用自身签名
+# use the application's own signature
 # LOCAL_CERTIFICATE := PRESIGNED
-# 使用系统平台签名
+# sign with the platform key
 LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 ```
-2. 将APK添加到系统编译mk文件中
+
+2. Add the name of your APK `XXXX` into the compile file.
 ```sh
 PRODUCT_PACKAGES +=\
    Bluetooth \
    XXXX
 ```
-3. 重新编译SDK，在OUT目录下生成的APK文件就具有系统签名了。
 
-### Windows/Linux系统环境下进行应用签名
-1. 平台Key文件有`platform.x509.pem`与`platform.pk8`两个，需根据手上的板子型号与系统版本去`https://dl.khadas.com/products/vim4/development/signtools/`网站下载。
-2. 下载[signapk.jar](https://dl.khadas.com/products/vim4/development/signtools/signapk.kar)。
-3. 下载依赖库[libconscrypt_openjdk_jni.so](https://dl.khadas.com/products/vim4/development/signtools/libconscrypt_openjdk_jni.so), 创建新目录`signlib`，并把库文件放到该目录下。
-3. 安装JDK工具，可自行参考ｘｘｘ
-4. 命令终端运行
+3. Recompile the SDK, and the APK file will be generated in the `out` directory, containing the platform key.
+
+### App Signing for Windows & Linux PC
+1. According to your SBC model and system version, download the two platform key files `platform.x509.pem` and `platform.pk8`, from `https://dl.khadas.com/`.
+
+2. Download the Java Signing Tool [signapk.jar](https://dl.khadas.com/products/vim4/development/signtools/signapk.kar).
+
+3. Download the library-dependency [libconscrypt_openjdk_jni.so](https://dl.khadas.com/products/vim4/development/signtools/libconscrypt_openjdk_jni.so) and put it in the `signlib` directory.
+
+4. Install the [JDK Tool](https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html).
+
+5. Execute the shell command.
 ```sh
 java -Djava.library.path=signlib -jar signapk.jar platform.x509.pem platform.pk8 unsigned.apk signed.apk
-```ww
+```
