@@ -58,7 +58,7 @@ $ sudo /etc/init.d/udev restart
 
 ## 安装ADB
 
-首先参照安装 USB 驱动一节安装好驱动。
+首先参照安装 [通过USB升级固件](UpgradeViaUSBCable.html)安装好驱动。
 然后下载 [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip)，解压到打开`cmd`命令行窗口的根目录以方便调用，如下图所示：
 ![mac](/android/images/vim4/adb.png)
 
@@ -71,9 +71,9 @@ $ sudo /etc/init.d/udev restart
 
 * 确保连上局域网Wi-Fi或有线网络
 
-* 确保开启调试模式: `Settings-->Developer options--->USB debugging`
+* 确保开启调试模式: `Settings-->Developer options-->USB debugging`
 
-* 查看设备IP地址: `Settings-->About device--->Status--->IP`
+* 查看设备IP地址: `Settings-->About device-->Status-->IP`
 
 * 执行 `adb connect` 命令,如下:
 ```shell
@@ -85,7 +85,7 @@ $ adb shell
 
 * 确保设备通过USB-C数据线连接到PC
 
-* 确保调试模式打开: `Settings-->Developer options--->USB debugging`
+* 确保调试模式打开: `Settings-->Developer options-->USB debugging`
 
 * 打开终端执行如下命令: 
 ```shell
@@ -93,13 +93,12 @@ $ adb shell
 ```
 
 
-# 参考
+## 参考
 * [Android Debug Brige](https://developer.android.com/studio/command-line/adb.html)
 
 
-**注意:**
-1. 如果你使用的是安卓手机，请确认你的手机打开了*开发者模式*。
-2. 当你尝试开始通过`adb devices`命令调试你的手机时,你的手机会弹出一条提醒，请确认连接。
-3. 如果你使用的安卓设备是khadas的开发板，那么直接连接即可。
-
-
+{% note info Note %}
+* 如果你使用的是安卓手机，请确认你的手机打开了*开发者模式*
+* 当你尝试开始通过`adb devices`命令调试你的手机时,你的手机会弹出一条提醒，请确认连接
+* 如果你使用的安卓设备是khadas的开发板，那么直接连接即可
+{% endnote %}

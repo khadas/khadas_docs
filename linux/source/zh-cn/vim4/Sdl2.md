@@ -1,4 +1,4 @@
-title: SDL2 Mail库
+title: SDL2
 ---
 
 ## TODO

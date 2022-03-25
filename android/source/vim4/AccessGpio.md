@@ -1,10 +1,12 @@
-title: Access GPIO Usage
+title: GPIO Usage Guide
 ---
 
-This guide is about how to access the GPIO using Android.
+You can access the GPIO pins in two ways:
+* ADB shell
+* Java application
 
 {% note warn Note %}
-All operations on GPIO are performed under root privileges, switch to root:
+All GPIO commands require root privileges to execute:
 
 ```sh
 $ su
@@ -14,22 +16,20 @@ $ su
 {% endnote %}
 
 
+## Determine the GPIO Pin Number
 
-## Get GPIO value
+To use a GPIO pin, you need to know its corresponding pin number.
 
-### Calculation method
+### Calculation
 
-The calculation method of the GPIO array is: `Number = Banks + Pins`.
+GPIO PIN number calculation method: `pin number = bank number + pin number in bank`
 
-1. `Banks` refers to the base value of GPIO Ranges.
-2. `Pins` refers to the sorting of the GPIO pins you need to calculate in the corresponding ranges.
+1. `bank number`: Different groups of GPIOs correspond to different banks. Amlogic SoCs usually have AO banks and Periphs banks. For example, GPIOAO corresponds to the AO bank, and GPIOT corresponds to Periphs bank.
+2. `pin number in bank`: The position in the bank where the GPIO PIN is located. For example, GPIOT_18 is at the 109th position of the Periphs bank.
 
-### Numerical calculation example
+### Example
 
-Amlogic chips usually include two GPIO Ranges, AOBUS and Periphs. There is a calculation example for each Ranges here for reference.
-
-
-1. Get `Banks`:
+1. Obtain the `bank number`:
 
 ```sh
 # cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
@@ -37,7 +37,7 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
 ```
 
-2. Get `Pins`:
+2. Obtain the `pin number in bank`:
 
 ```sh
 # cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
@@ -58,88 +58,81 @@ pin 110 (GPIOT_19)  fe000000.apb4:pinctrl@4000
 ...
 ```
 
-3. Calculate Number:
+3. Calculate the `pin number`:
 
-Take `GPIOT_18` and `GPIOT_19` as an examples here.
+Here is an example for `GPIOT_18` and `GPIOT_19`,
 
-`GPIOT_18 = Banks + Pins = 355 + 109 = 464`
-`GPIOT_19 = Banks + Pins = 355 + 110 = 465`
+`GPIOT_18 = bank number + pin number in bank = 355 + 109 = 464`
+`GPIOT_19 = bank number + pin number in bank = 355 + 110 = 465`
+
+## ADB Shell Commands
 
 
-## GPIO usage examples
-
-* Request the gpio(`GPIOT_19`)
-
+* Request GPIO(`GPIOT_19`)
 ```bash
 # echo 465  > /sys/class/gpio/export
 ```
 
-* Config the gpio(`GPIOT_19`) as  output
-
+* Configure GPIO(`GPIOT_19`) as output mode
 ```bash
 # echo out > /sys/class/gpio/gpio465/direction
 ```
 
-* Config the gpio(`GPIOT_19`) as high level output
-
+* Set GPIO(`GPIOT_19`) to high level output
 ```bash
 # echo 1 >  /sys/class/gpio/gpio465/value
 ```
 
-* Config  the gpio(`GPIOT_19`) as low level output
-
+* Set GPIO(`GPIOT_19`) to low level output
 ```bash
 # echo 0 >  /sys/class/gpio/gpio465/value
 ```
 
-* Config the gpio(`GPIOT_19`) as input
-
+* Configure GPIO(`GPIOT_19`) as input mode
 ```bash
 # echo in > /sys/class/gpio/gpio465/direction
 ```
 
-* Get the gpio(`GPIOT_19`) level
-
+* Read the level of GPIO(`GPIOT_19`)
 ```bash
 # cat /sys/class/gpio/gpio465/value
 ```
 
-* Release the gpio(`GPIOT_19`)
-
+* Release GPIO(`GPIOT_19`)
 ```bash
 # echo 465 > /sys/class/gpio/unexport
 ```
 
-## Third-Party Applications examples
 
-* Get root permision
+## JAVA Application
 
+* Get root privileges
 ```java
 Process mProcess = Runtime.getRuntime().exec("su");
 ```
 
-* Request the gpio(`GPIOT_19`)
-
+* Request GPIO(`GPIOT_19`)
 ```java
 DataOutputStream os = new DataOutputStream(mProcess.getOutputStream());
 os.writeBytes("echo " + 465 + " > /sys/class/gpio/export\n");
 ```
 
-* Config the gpio(`GPIOT_19`) as high level output
-
+* Configure GPIO(`GPIOT_19`) as output mode
 ```java
 os.writeBytes("echo out > /sys/class/gpio/gpio" + 465 + "/direction\n");
+```
+
+* Set GPIO(`GPIOT_19`) to high level output
+```java
 os.writeBytes("echo 1 > /sys/class/gpio/gpio" + 465 + "/value\n");
 ```
 
-* Config the gpio(`GPIOT_19`) as input
-
+* Configure GPIO(`GPIOT_19`) as input mode
 ```java
 os.writeBytes("echo in > /sys/class/gpio/gpio" + 465 + "/direction\n");
 ```
 
-* Get the gpio(`GPIOT_19`) level
-
+* Read the level of GPIO(`GPIOT_19`)
 ```java
 Runtime runtime = Runtime.getRuntime(); 
 Process process = runtime.exec("cat " + "/sys/class/gpio/gpio" + 465 + "/value");  
@@ -152,8 +145,7 @@ while (null != (line = br.readLine())) {
 } 
 ```
 
-* Release the gpio(`GPIOT_19`)
-
+* Release GPIO(`GPIOT_19`)
 ```java
  os.writeBytes("echo " + 465 + " > /sys/class/gpio/unexport\n");
 ```

@@ -5,7 +5,7 @@ Khadas设置集成了一些自定义的功能。
 
 ## 如何进入Khadas设置
 
-`设置` --> `Khadas设置`
+`设置-->Khadas设置`
 <img src="/android/images/vim4/KhadasSettings1.png" width="75%" height="75%">
 
 ## 单项说明

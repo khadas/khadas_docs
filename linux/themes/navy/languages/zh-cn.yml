@@ -60,11 +60,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
@@ -134,11 +134,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
@@ -215,16 +215,16 @@ sidebar:
     gpio_usage: GPIO
     i2c: I2C
     spi: SPI
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
     spdifin: SPDIF IN
-    gsensor_usage: Gsensor使用说明
+    gsensor_usage: Gsensor
     play_video: 播放视频
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
@@ -307,15 +307,15 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
-    gsensor_usage: Gsensor使用说明
+    gsensor_usage: Gsensor
     play_video: 播放视频
     hardware_decoding: 硬件解码
     hardware_encoding: 硬件编码
@@ -383,11 +383,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM

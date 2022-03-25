@@ -1,4 +1,4 @@
-title: Add Window Permission For APP 
+title: Add Window Permission for APP 
 ---
 
 If your application need add window permission, you can modify it as follows.

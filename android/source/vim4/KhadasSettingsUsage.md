@@ -5,7 +5,7 @@ This guide describes settings that are unique to Khadas SBCs.
 
 ## Locating Khadas settings
 
-`Settings` --> `Khadas settings`
+`Settings-->Khadas settings`
 <img src="/android/images/vim4/KhadasSettings1.png" width="75%" height="75%">
 
 ## Menu descriptions

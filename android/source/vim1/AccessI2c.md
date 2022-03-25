@@ -1,10 +1,9 @@
-title: I2C Access Usage
+title: I2C Usage Guide
 ---
 
+This guide will show you how to use the I2C interface.
 
-This guide is about how to access i2c on Android.
-
-## Connections
+## Connect
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -27,12 +26,12 @@ This guide is about how to access i2c on Android.
 `Sensor SCL` <-> `I2C_SCK_A (PIN 22)`
 `Sensor SDA` <-> `I2C_SDA_A (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 **I2C B**
 `Sensor SCL` <-> `I2C_SCK_B (PIN 25)`
 `Sensor SDA` <-> `I2C_SDA_B (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 </div>
 <div class="tab-pane fade" id="vim2-pins" role="tabpanel" aria-labelledby="vim2-tab">
 
@@ -40,12 +39,12 @@ This guide is about how to access i2c on Android.
 `Sensor SCL` <-> `I2C_SCK_A (PIN 22)`
 `Sensor SDA` <-> `I2C_SDA_A (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 **I2C B**
 `Sensor SCL` <-> `I2C_SCK_B (PIN 25)`
 `Sensor SDA` <-> `I2C_SDA_B (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 </div>
 <div class="tab-pane fade" id="vim3-pins" role="tabpanel" aria-labelledby="vim3-tab">
 
@@ -53,12 +52,12 @@ This guide is about how to access i2c on Android.
 `Sensor SCL` <-> `I2C0_SCK (PIN 22)`
 `Sensor SDA` <-> `I2C0_SDA (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 **I2C 4**
 `Sensor SCL` <-> `I2C1_SCK (PIN 25)`
 `Sensor SDA` <-> `I2C1_SDA (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 </div>
 <div class="tab-pane fade" id="vim4-pins" role="tabpanel" aria-labelledby="vim4-tab">
 
@@ -66,16 +65,16 @@ This guide is about how to access i2c on Android.
 `Sensor SCL` <-> `I2C0_SCK (PIN 22)`
 `Sensor SDA` <-> `I2C0_SDA (PIN 23)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 **I2C A**
 `Sensor SCL` <-> `I2C1_SCK (PIN 25)`
 `Sensor SDA` <-> `I2C1_SDA (PIN 26)`
 `Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 </div>
 </div>
 
-## Detect the device
+## Detecting Device using the ADB Shell
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -121,9 +120,8 @@ Detect device on `I2C B`:
 50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
-
 ```
-If you have the right connection you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
+If the wiring is correct and the connected sensor is functioning normally, then you will see the address of the connected device, such as: `0x1d`, `0x18` and `0x51`.
 </div>
 <div class="tab-pane fade" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
@@ -154,9 +152,8 @@ Detect device on `I2C B`:
 50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
-
 ```
-If you have the right connection you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
+If the wiring is correct and the connected sensor is functioning normally, then you will see the address of the connected device, such as: `0x1d`, `0x18` and `0x51`.
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
@@ -188,7 +185,7 @@ Detect device on `I2C 4`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-If you have the right connection you will see the device address, e.g: `0x0e` and `0x22`.
+If the wiring is correct and the connected sensor is functioning normally, then you will see the address of the connected device, such as: `0x0e` and `0x22`.
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
@@ -224,13 +221,7 @@ Detect device on `I2C F`:
 </div>
 
 
-{% note warn Note %}
-
-Root privileges required.
-
-{% endnote %}
-
-## Read register from device
+## Read the Value of the Device Register
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -249,28 +240,31 @@ Root privileges required.
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-i2cget" role="tabpanel" aria-labelledby="vim1-tab">
 
-Read register `0x0d` of device `0x1d` on `I2C A`.
+Read the device connected to the `I2C A` bus, whose device address is `0x1d` and register address is `0x0d`.
+
 ```bash
 # i2cget -f -y 1 0x1d 0x0d
 ```
 </div>
 <div class="tab-pane fade" id="vim2-i2cget" role="tabpanel" aria-labelledby="vim2-tab">
 
-Read register `0x0d` of device `0x1d` on `I2C A`.
+Read the device connected to the `I2C A` bus, whose device address is `0x1d` and register address is `0x0d`.
+
 ```bash
 # i2cget -f -y 1 0x1d 0x0d
 ```
 </div>
 <div class="tab-pane fade" id="vim3-i2cget" role="tabpanel" aria-labelledby="vim3-tab">
 
-Read register `0x0d` of device `0x1d` on `I2C 3`.
+Read the device connected to the `I2C 3` bus, whose device address is `0x1d` and register address is `0x0d`.
+
 ```bash
 # i2cget -f -y 3 0x1d 0x0d
 ```
 </div>
 <div class="tab-pane fade" id="vim4-i2cget" role="tabpanel" aria-labelledby="vim4-tab">
 
-Read register `0x0d` of device `0x1d` on `I2C A`.
+Read the device connected to the `I2C A` bus, whose device address is `0x1d` and register address is `0x0d`.
 ```bash
 # i2cget -y 0 0x1d 0x0d
 ```
@@ -279,8 +273,8 @@ Read register `0x0d` of device `0x1d` on `I2C A`.
 
 {% note warn Note %}
 
-Note: Root privileges required.
+Executing ADB commands require root privileges
 
 {% endnote %}
 
-For more, please refer to the help messages.
+For more information, please refer to the I2C tool documentation.

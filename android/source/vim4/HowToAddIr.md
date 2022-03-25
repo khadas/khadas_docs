@@ -1,22 +1,21 @@
-title: Add IR 
+title: Adding IR Remote Support
 ---
 
-This guide is about how to add IR on Android.
+VIM4 does not have an IR receiver. If you require this feature, you will have to attach a module to the 40-pin header, and additional software configurations are required.
 
+## Hardware Configuration
+`IR_IN` (infrared signal input) is the 39th pin `GPIOD_15` on the 40-pin GPIO header:
 
-## Hardware Connectity
-`IR_IN`(Infrared remote control output) pin in 40 pins header is pin39 `GPIOD_15`:
 * [VIM4-GPIO-Pin-Out](/android/zh-cn/vim4/Interfaces#GPIO-Pinout)
 
 ## Software Configuration
-1. Add the mapping from remote control code value to key value, enable remote control driver configuration in `common/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi`:
+1. Add the IR remote configuration to the `common/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi` file:
 
 ```c
 --- a/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi
 +++ b/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi
 @@ -6,11 +6,12 @@
  / {
- 
         custom_maps: custom_maps {
 -               mapnum = <4>;
 +               mapnum = <5>;
@@ -58,19 +57,25 @@ This guide is about how to add IR on Android.
  };
 ```
 
-2. Add Android kl file:
+2. Create an Android Key Layout (.kl) file:
 
-* Record the ID number of your infrared device, such as the ID number added in the previous steps (as vendor=0x0003, product=0x0003)
+* The ID number of the .kl file needs to be consistent with the ID number configured within the .dtsi file. 
+
+For example, the ID numbers used in the previous step are `vendor=0x0003, product=0x0003`.
+
 ```diff
 +                       vendor = <0x0003>;
 +                       product = <0x0003>;
 ```
 
-* Create one new files：`device/khadas/common/keyboards/Vendor_xxxx_Product_xxxx.kl` (as Vendor_0003_Product_0003.kl)
+* Place the Android Key Layout file into: `device/khadas/common/keyboards/Vendor_xxxx_Product_xxxx.kl` 
+
+For example, the ID numbers used in the previous step are `vendor=0x0003, product=0x0003`.
 
 ```sh
-vi device/khadas/kVIM4/files/Vendor_0003_Product_0003.kl
+$ vim device/khadas/kVIM4/files/Vendor_0003_Product_0003.kl
 ```
+
 ```sh
 key 116   POWER
 key 139   MENU
@@ -78,15 +83,15 @@ key 103   DPAD_UP
 key 108   DPAD_DOWN
 key 105   DPAD_LEFT
 key 106   DPAD_RIGHT
-key 232    DPAD_CENTER
+key 232   DPAD_CENTER
 key 114   VOLUME_DOWN
-key 63   F5
+key 63  　F5
 key 115   VOLUME_UP
-key 158     BACK
+key 158   BACK
 key 102   HOME
 ```
 
-* Check if pairing was successful
+* Verify New Configuration
 ```sh
 kvim4:/ # dumpsys input
 INPUT MANAGER (dumpsys input)
@@ -114,4 +119,4 @@ Input Manager State:
       HaveKeyboardLayoutOverlay: false
       VideoDevice: <none>  
 ```
-As shown above, when the value `KeyLayoutFile:` is followed by the .kl file name `Vendor_0003_Product_0003.kl`, pairing is successful.
+As shown above, when the string `KeyLayoutFile:` is defined as your newly created .kl file `Vendor_0003_Product_0003.kl`, the new configuration was saved successfully.

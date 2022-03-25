@@ -1,17 +1,22 @@
-title: Use Android Settings Command
+title: ADB Settings Commands
 ---
 
-## Android Settings Three Type Attribute
-Android settings has three types of attributes, namely `global`, `system` and `secure`, corresponding to the three tables of `/data/data/com.android.providers.settings/databases/settings.db`.
-1. `global` : all preferences are open to all users of the system, and the third-party app has read permission,no write permission.
-2. `system` : contains a variety of user preferences system settings.
-3. `secure` : user preference system setting for security，and the third-party app has read permission,no write permission.
+## Introduction
+ADB settings commands are used to query or modify variables within the `SettingsProvider` database. 
 
-## Android Settings Usage 
-1. `settings list` 
-This command is used to view the values of three properties, such as.
+There are three types of system variables:
+1. global:　global system settings, containing preferences that always apply identically to all defined users.
+2. system:  system settings, containing miscellaneous system preferences.
+3. secure:　secure system settings, containing system preferences that applications can read but are not allowed to write.
 
-*  View all `global` values:
+
+## Usage
+1. `settings list` command is used to query system variables. The command line format is as follows:
+```shell
+settings list [global/system/secure]
+```
+
+*  List `global` variables:
 ```shell
 console:/ $ settings list global                                           
 Phenotype_boot_count=10
@@ -32,7 +37,7 @@ bluetooth_on=1
 boot_count=11
 ```
 
-*  View all `system` values:
+*  List `system` variables:
 ```shell
 console:/ $ settings list system
 accelerometer_rotation=0
@@ -51,7 +56,7 @@ notification_light_pulse=1
 notification_sound=content://media/internal/audio/media/180
 ```
 
-*  View all `secure` values:
+*  List `secure` variables:
 ```shell
 console:/ $ settings list secure                                               
 accessibility_display_inversion_enabled=null
@@ -70,29 +75,25 @@ double_tap_to_wake=1
 enabled_input_methods=com.android.inputmethod.latin/.LatinIME
 ```
 
-2. `settings get`
-`settings get` is used to get the value of a single key in `global`, `system` and `secure`, such as auto_time in global:
+2. `settings get` is used to query specific system variables. The command line format is as follows:
 ```shell
-console:/ $ settings get global auto_time                                      
+settings get [global/system/secure] [key]
+```
+Example: To query the value of `airplane_mode_on`, we need to add the `global` attribute, as follows:
+```shell
+console:/ $ settings get global airplane_mode_on
 0
 ```
 
-3. `settings put` 
-`settings put` is used to set the value of a single key in `global`, `system` and `secure`, such as auto_time in global:
+3. `settings put` is used to modify specific system variables. The command line format is as follows:
 ```shell
-console:/ $ settings put global auto_time 1                                    
-console:/ $ settings get global auto_time                                      
-1
+settings put [global/system/secure] [key] [value]
 ```
-For the key in `system`, `secure`, the command is similar:
+Example: To modify the value of `airplane_mode_on`, we need to add the `global` attribute, as follows:
 ```shell
-console:/ $ settings get system accelerometer_rotation                         
-0
-console:/ $ settings put system accelerometer_rotation 1                       
-console:/ $ settings get system accelerometer_rotation                         
+console:/ $ settings put global airplane_mode_on 1
+console:/ $ settings get global airplane_mode_on
 1
 ```
 
-`settings` can get and set many system variables, such as getting and modifying wifi status (wifi_on), airplane mode(airlpane_mode_on), system prompt tone (notification_sound), etc.
-
-
+The `settings` command can query and modify many system variables. For example, obtaining or modifying the Wi-Fi status (wifi_on), Bluetooth status (bluetooth_on), and system sounds (notification_sound), etc.

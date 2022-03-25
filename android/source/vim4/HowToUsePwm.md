@@ -47,7 +47,7 @@ diff --git a/arch/arm64/boot/dts/amlogic/mesont7_an400-panel.dtsi b/arch/arm64/b
 
 ## Switch To Root User
 
-Standard users cannot control the GPIO pins, so you'll need to elevate yourself to Root first.
+Standard users cannot control the GPIO pins, so you'll need to elevate yourself to root first.
 
 ```shell
 kvim4:/ $ su
@@ -75,7 +75,7 @@ root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
 root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
 ```
 
-if you successfully turn on the hardware pwm, you can see the waveform through the oscilloscope:
+If you successfully turn on the hardware pwm, you can see the waveform through the oscilloscope:
 ![pwm-Oscilloscope](/android/images/vim1/pwm-Oscilloscope.jpg)
 
 {% note info Note %}

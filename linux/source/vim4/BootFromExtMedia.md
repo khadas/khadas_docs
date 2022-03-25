@@ -1,4 +1,4 @@
-title: Boot Images from External SD/Thumbdrive Media
+title: Boot From External Media
 ---
 
 Certain images are designed to boot from an SD Card or Thumbdrive and are compatible with VIM SBCs. For example:

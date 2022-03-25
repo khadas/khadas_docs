@@ -20,7 +20,7 @@ title: 擦除eMMC存储器
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
-* 参考这里[串口工具设置](SetupSerialTool.html)。
+* 参考这里[串口工具设置](SetupSerialTool.html)
 * 确保串口线连接正确以及串口软件正确配置
 * 在VIMs上电时按住空格键会进入U-boot命令行模式
 * U-boot命令行执行`store boot_erase bootloader`会擦除eMMC U-Boot
@@ -69,7 +69,7 @@ T7:BL:055c20;ID:7CFDCF5E6052BDEC;FEAT:30F:1FFF0000:B002F:1;POC:CF;RCY:0;OVD:0;DF
 
 这种方法适用于所有Amlogic产品。
 
-* 通过[USB-C升级固件](UpgradeViaUSBCable.html)或[TF卡](UpgradeViaTFBurningCard.html).
+* 通过[USB-C升级固件](UpgradeViaUSBCable.html)或[TF卡](UpgradeViaTFBurningCard.html)
 * 中断升级过程(建议进度条超过15%后中断), 例如, 拔掉USB数据线或TF卡
 * 重新上电，你会发现eMMC被擦除
 

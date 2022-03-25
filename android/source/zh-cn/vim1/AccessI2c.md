@@ -1,8 +1,7 @@
-title: I2C连接使用说明
+title: I2C使用说明
 ---
 
-
-这篇文档介绍如何在Android下使用I2C。
+I2C是一个比较常用的接口，这篇文档主要介绍I2C的使用。
 
 ## 连线
 
@@ -75,7 +74,7 @@ title: I2C连接使用说明
 </div>
 </div>
 
-## 检测设备
+## 使用adb命令检测设备
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -121,9 +120,8 @@ Detect device on `I2C B`:
 50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
-
 ```
-如果连线正确并且所接传感器是正常的那么你会看到所接设备的地址，如：`0x1d`,`0x18` and `0x51`。
+如果连线正确并且连接的传感器是正常的，那么你会看到连接设备的地址，如：`0x1d`,`0x18` and `0x51`。
 </div>
 <div class="tab-pane fade" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
@@ -154,9 +152,8 @@ Detect device on `I2C B`:
 50: -- 51 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
-
 ```
-如果连线正确并且所接传感器是正常的那么你会看到所接设备的地址，如：`0x1d`,`0x18` and `0x51`。
+如果连线正确并且连接的传感器是正常的，那么你会看到连接设备的地址，如：`0x1d`,`0x18` and `0x51`。
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
@@ -188,7 +185,7 @@ Detect device on `I2C 4`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-如果连线正确并且所接传感器是正常的那么你会看到所接设备的地址，如：`0x0e` and `0x22`。
+如果连线正确并且连接的传感器是正常的，那么你会看到连接设备的地址，如：`0x0e` and `0x22`。
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
@@ -223,13 +220,8 @@ Detect device on `I2C F`:
 </div>
 </div>
 
-{% note warn 注意 %}
-	
-执行这些命令需要root权限。
 
-{% endnote %}
-
-## 从设备读取寄存器值
+## 读取设备寄存器的数值
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -248,7 +240,7 @@ Detect device on `I2C F`:
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-i2cget" role="tabpanel" aria-labelledby="vim1-tab">
 
-从挂载在`I2C A`上设备地址为`0x1d`的设备读取寄存器`0x0d`的值。
+读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
 
 ```bash
 # i2cget -f -y 1 0x1d 0x0d
@@ -256,7 +248,7 @@ Detect device on `I2C F`:
 </div>
 <div class="tab-pane fade" id="vim2-i2cget" role="tabpanel" aria-labelledby="vim2-tab">
 
-从挂载在`I2C A`上设备地址为`0x1d`的设备读取寄存器`0x0d`的值。
+读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
 
 ```bash
 # i2cget -f -y 1 0x1d 0x0d
@@ -264,7 +256,7 @@ Detect device on `I2C F`:
 </div>
 <div class="tab-pane fade" id="vim3-i2cget" role="tabpanel" aria-labelledby="vim3-tab">
 
-从挂载在`I2C 3`上设备地址为`0x1d`的设备读取寄存器`0x0d`的值。
+读取连接在`I2C 3`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
 
 ```bash
 # i2cget -f -y 3 0x1d 0x0d
@@ -272,7 +264,7 @@ Detect device on `I2C F`:
 </div>
 <div class="tab-pane fade" id="vim4-i2cget" role="tabpanel" aria-labelledby="vim4-tab">
 
-从挂载在`I2C A`上设备地址为`0x1d`的设备读取寄存器`0x0d`的值。
+读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
 ```bash
 # i2cget -y 0 0x1d 0x0d
 ```
@@ -281,8 +273,8 @@ Detect device on `I2C F`:
 
 {% note warn 注意 %}
 
-注意: 执行命令需要root权限。
+执行命令需要root权限。
 
 {% endnote %}
 
-更多用法请参考i2c工具帮助信息。
+更多用法请参考I2C工具帮助信息。
