@@ -1,4 +1,4 @@
-title: Ubuntu System Configuration File
+title: Config File
 ---
 
 ## TODO

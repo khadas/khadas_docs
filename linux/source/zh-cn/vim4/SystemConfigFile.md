@@ -1,4 +1,4 @@
-title: Ubuntu系统配置文件使用说明
+title: 配置文件
 ---
 
 ## TODO
