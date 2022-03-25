@@ -1,4 +1,4 @@
-title:  Chinese Language Support
+title:  Chinese Support
 ---
 
 This document explains how to add Chinese language support.
