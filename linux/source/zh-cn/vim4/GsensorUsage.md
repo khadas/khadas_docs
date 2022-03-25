@@ -1,4 +1,4 @@
-title: Gsensor使用说明
+title: Gsensor
 ---
 
 ## Gsensor节点

@@ -224,7 +224,7 @@ sidebar:
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
     spdifin: SPDIF IN
-    gsensor_usage: Gsensor Usage
+    gsensor_usage: Gsensor
     play_video: Play Video
     hardware_decoding: Hardware Decoding
     hardware_encoding: Hardware Encoding
@@ -316,7 +316,7 @@ sidebar:
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
-    gsensor_usage: Gsensor Usage
+    gsensor_usage: Gsensor
     play_video: Play Video
     hardware_decoding: Hardware Decoding
     hardware_encoding: Hardware Encoding
