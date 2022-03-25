@@ -28,12 +28,13 @@ KSNN转换工具在`acuity-toolkit/python`下，
 <pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~</b></font>$ cd aml_npu_sdk/acuity-toolkit/python</pre>
 <pre><font color="#4E9A06"><b>yan@yan-wyb</b></font>:<font color="#3465A4"><b>~/aml_npu_sdk/acuity-toolkit/python</b></font>$ ./convert --model-name inception \
 &gt;           --platform tensorflow \
-&gt;           --model ./inception_v3_2016_08_28_frozen.pb \
-&gt;           --input-size-list &apos;299,299,3&apos; \
+&gt;           --model /home/yan/yan/Yan/models-zoo/tensorflow/inception/inception_v3_2016_08_28_frozen.pb \
+&gt;           --input-size-list '299,299,3' \
 &gt;           --inputs input \
 &gt;           --outputs InceptionV3/Predictions/Reshape_1 \
-&gt;           --mean-values &apos;128,128,128,128&apos; \
+&gt;           --mean-values '128 128 128 0.0078125' \
 &gt;           --quantized-dtype asymmetric_affine \
+&gt;           --source-files ./data/dataset/dataset0.txt \
 &gt;           --kboard VIM3 --print-level 0
 </pre>
 
