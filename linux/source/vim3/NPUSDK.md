@@ -2,6 +2,9 @@ title: NPU SDK Usage
 ---
 This article mainly introduces how to convert neural network models of different platforms into model codes and data that can be run on the NPU.
 
+{% note warn The documentation is adapted to the NPU driver version 6.4.8.7. For drivers and demo repositories and SDKs lower than this version, the documentation is also applicable, but not completely consistent. %}
+{% endnote %}
+
 ## Get SDK
 
 ```sh
@@ -29,24 +32,14 @@ docs              #Conversion related documents collection
 
 {% note info Note %}
 
-Since all linux codes have been supports local compiled, host compilation is no longer supported. Therefore, the contents of linux_sdk have been completely removed
+Since all linux codes have been supports local compiled, host compilation is no longer supported. Therefore, the contents of linux_sdk have been completely removed.
 
 {% endnote %}
 
 
 ## Docs
 
-entre Docs directory,
-
-```shell
-$ cd {workspace}/aml_npu_sdk/docs/en
-$ ls
-'Amlogic NN Convolution Acceleration Tips.pdf'  'Android NN JNI Development Guide Eng.pdf'          'Neural Network Layer and Operation Support Guide .pdf'
-'Amlogic NN Integration Guide Eng.pdf'          'Model_Transcoding and Running User Guide Eng.pdf'  'NN Tool FAQ Eng.pdf'
-```
-
-The document records a series of processes from conversion to integration, as well as some common problems
-
+Enter the Docs directory, `DDK_Application_Guide_0.7.pdf` describes each document. The document records a series of processes from conversion to integration, as well as some common problems
 
 ## Conversion Tool
 
@@ -63,9 +56,11 @@ The main directory of interest is `demo`
 ```
 1. bin                   #Conversion is a collection of various tools used, most of which are not open source.
 2. demo                  #Conversion script directory, convert AI model location
-3. python                #Used to convert the model and data corresponding to the python API
-4. ReadMe.txt            #ReadMe.txt file explains how to convert and use
-5. requirements.txt      #Conversion tool dependent environment
+3. demo_hybird           #Mixed Input Conversion Tool
+4. mulity_input_demo     #mulity input demo
+5. python                #Used to convert the model and data corresponding to the python API
+6. ReadMe.txt            #ReadMe.txt file explains how to convert and use
+7. requirements.txt      #Conversion tool dependent environment
 ```
 
 ### Dependent Installation
@@ -113,16 +108,14 @@ $ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
 $ bash 0_import_model.sh && bash 1_quantize_model.sh && bash 2_export_case_code.sh 
 ```
 
-After the conversion is completed, you can see the converted code in the `nbg_unify_xxxx` directory, here is the built-in model as an example
+After the conversion is completed, you can see the converted code in the `xxxx_nbg_unify` directory, here is the built-in model as an example
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo/nbg_unify_mobilenet_tf
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo/mobilenet_tf_nbg_unify
 $ ls
 BUILD   makefile.linux   mobilenettf.vcxproj  vnn_global.h       vnn_mobilenettf.h   vnn_post_process.h  vnn_pre_process.h
 main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_process.c  vnn_pre_process.c
 ```
 
 For the setting of conversion parameters, please refer to 'Model_Transcoding and Running User Guide Eng.pdf' in `Docs`
-
-
 
