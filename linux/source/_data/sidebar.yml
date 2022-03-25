@@ -34,11 +34,11 @@ vim1:
     gpio:
       gpio_usage: Gpio.html
       i2c: I2c.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
       uart: Uart.html
       pwm: Pwm.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWMServo.html
@@ -103,11 +103,11 @@ vim2:
     gpio:
       gpio_usage: Gpio.html
       i2c: I2c.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
       uart: Uart.html
       pwm: Pwm.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWMServo.html
@@ -181,11 +181,11 @@ vim3:
       gpio_usage: Gpio.html
       i2c: I2c.html
       spi: SPIUsage.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
       uart: Uart.html
       pwm: Pwm.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWMServo.html
@@ -273,11 +273,11 @@ vim4:
     gpio:
       gpio_usage: Gpio.html
       i2c: I2c.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
       uart: Uart.html
       pwm: Pwm.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWMServo.html
@@ -339,9 +339,9 @@ edge:
   applications:
     gpio:
       gpio_usage: Gpio.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWMServo.html

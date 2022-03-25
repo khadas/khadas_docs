@@ -59,11 +59,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
@@ -133,11 +133,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
@@ -215,11 +215,11 @@ sidebar:
     gpio_usage: GPIO
     i2c: I2C
     spi: SPI
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
@@ -282,7 +282,7 @@ sidebar:
     upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
-    auto_login: Auto Login
+    auto_login: Auto-Login
     write_sd_image_to_emmc: Write SD Image to eMMC
     chinese_support: Chinese Support
     network: Network
@@ -308,11 +308,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
@@ -383,11 +383,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
