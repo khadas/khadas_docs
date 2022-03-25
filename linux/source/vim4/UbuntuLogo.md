@@ -1,4 +1,4 @@
-title: Enable/Disable Ubuntu logo
+title: Ubuntu Logo
 ---
 ## TODO
 
