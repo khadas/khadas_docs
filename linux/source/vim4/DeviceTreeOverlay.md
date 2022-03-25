@@ -1,4 +1,4 @@
-title: How To Use Device Tree Overlay
+title: Device Tree Overlay
 ---
 
 ## TODO
