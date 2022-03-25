@@ -1,4 +1,4 @@
-title: SDL2 Mail Library
+title: SDL2
 ---
 
 ## TODO
