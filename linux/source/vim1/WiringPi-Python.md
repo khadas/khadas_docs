@@ -103,7 +103,7 @@ class Serial(object):
 
 ```
 
-## WiringPi-Python sample demo 
+## WiringPi-Python Sample Demo 
 
 This is a simple program that demonstrates reading and writing to GPIO pins.
 
@@ -136,7 +136,7 @@ import wiringpi as GPIO
  print("End")
 ```
 
-## notes
+## Notes
 If you need to use the special pin functions of WiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the .dtb file.
 WiringPi-Python itself includes many functions, not limited to controlling the output of GPIO pins and reading pin levels.
 This is only a simple introduction and users should explore additional functions by themselves.
