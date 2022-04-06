@@ -37,7 +37,7 @@ public class Gsensor_Preference extends Activity implements SensorEventListener 
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         //get gsensor object
         Sensor gsensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        //register data listener，callback onSensorChanged method when has data
+        //register data listener, callback onSensorChanged method when has data
         mSensorManager.registerListener(this, gsensor, SensorManager.SENSOR_DELAY_NORMAL);
 
         mTextView_x = findViewById(R.id.textView_x);
