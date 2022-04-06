@@ -12,7 +12,7 @@ Linux users can follow this guide to create a special SD card for "burning" an O
 {% endnote %}
 
 ## Preparation
-* Download the latest U-boot file for SD cards: ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/([VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)).
+* Download the latest U-Boot file for SD cards: ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/([VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)).
 * If your SD card contains >1 partition, format it using Fdisk ([VIM1](CreateBurnCardViaCLI.html)/[VIM2](CreateBurnCardViaCLI.html)/[VIM3](CreateBurnCardViaCLI.html)/[VIM4](CreateBurnCardViaCLI.html)).
 
 
@@ -84,9 +84,9 @@ $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek
 
 {% note info Tips %} 
 
-The U-boot file `u-boot.bin.sd.bin` is built for SD cards.
+The U-Boot file `u-boot.bin.sd.bin` is built for SD cards.
 
-The U-boot file `u-boot.bin` is built for the eMMC.
+The U-Boot file `u-boot.bin` is built for the eMMC.
 
 {% endnote %}
 
@@ -102,7 +102,7 @@ $ cp -a aml_sdc_burn.ini update.img /media/XXX/9CE9-3938/
 
 {% note info Tips %}
 	
-The file `aml_sdc_burn.ini` is a configuration file for U-boot, it's purpose is to burn images into the eMMC. You can find it [here](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini).
+The file `aml_sdc_burn.ini` is a configuration file for U-Boot, it's purpose is to burn images into the eMMC. You can find it [here](https://github.com/khadas/images_upgrade/blob/master/Amlogic/aml_sdc_burn.ini).
 
 {% endnote %}
 
