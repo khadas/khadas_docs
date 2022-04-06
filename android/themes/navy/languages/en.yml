@@ -163,37 +163,34 @@ sidebar:
   vim4: 
     quick_start: Quick Start
     overview: Overview
-    vim3_interfaces: Interfaces
+    vim3_interfaces: VIM4 Hardware
     add_chinese_support: Chinese Support
-    enter_upgrade_mode: Enter Upgrade Mode
-    upgrade_via_usb: Upgrade Using USB-C Cable
+    enter_upgrade_mode: Boot Into Upgrade Mode
+    upgrade_via_usb: Install OS into eMMC
     upgrade_via_tfcard: Upgrade Android Using SD-Card
     rescures_control: Resources Control
     system_control: System Control
-    how_to_use_adb_tool: ADB Usage
+    how_to_use_adb_tool: ADB Tool
     how_to_change_logo_android: Change Boot Logo
     how_to_change_animation: Change Boot Animation
-    how_to_app_platform_sign: Add Platform Sign For APP
+    how_to_app_platform_sign: System Permissions for APP
     how_to_get_gps_data: Get GPS Data
     how_to_get_gsensor_data: Get Gsensor Data
-    how_to_use_settings_command: Use Settings Command
-    how_to_use_tts: Use TTS
-    khadas_settings_usage: Khadas Settings Usage Guide
-    how_to_add_permission: Add Permission For APP
+    how_to_use_settings_command: ADB Settings Commands
+    how_to_use_tts: TTS Usage
+    khadas_settings_usage: Khadas Settings
+    how_to_add_permission: Default Permissions for APP
     accessories: Accessories
     connect_lcd: Connect TS050 Touchscreen
     board_rescoures: Board Resources
     how_to_access_gpio: GPIO Usage
-    how_to_access_i2c: Access I2C
-    howto_use_wol: WOL Usage
+    how_to_access_i2c: I2C Usage
+    howto_use_wol: Wake-On-LAN
     how_to_setup_pcie_usb_port: PCIe/USB3.0 Port Setup
     how_to_enable_m2x_eth: Enable M2x Ethernet
-    how_to_use_uart_android: Use UART
-    how_to_add_ir: Add IR
-    how_to_use_pwm: Use PWM
-    npu: NPU
-    how_to_use_android_npu_demo: Use Android Npu Demo
-    how_to_use_npu_jni: Use Npu Jni
+    how_to_use_uart_android: UART Usage
+    how_to_add_ir: IR Remote Support
+    how_to_use_pwm: PWM Usage
     development: Development
     uboot: U-Boot
     boot_from_spi_flash: Boot From SPI-Flash

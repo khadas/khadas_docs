@@ -128,7 +128,7 @@ vim4:
   quick_start:
     overview: index.html
     vim3_interfaces: Interfaces.html
-    add_chinese_support: AddChineseSupport.html
+#    add_chinese_support: AddChineseSupport.html
     enter_upgrade_mode: BootIntoUpgradeMode.html
     upgrade_via_usb: UpgradeViaUSBCable.html
     #upgrade_via_tfcard: UpgradeViaTFBurningCard.html
@@ -149,10 +149,10 @@ vim4:
     board_rescoures:
       how_to_access_gpio: AccessGpio.html
       how_to_access_i2c: AccessI2c.html
-      howto_use_wol: Wol.html
       how_to_use_uart_android: UseUart.html
-      how_to_add_ir: HowToAddIr.html
       how_to_use_pwm: HowToUsePwm.html
+      howto_use_wol: Wol.html
+      how_to_add_ir: HowToAddIr.html
   development:
     uboot:
       #boot_from_spi_flash: BootFromSpiFlash.html
