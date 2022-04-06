@@ -7,7 +7,7 @@ title: GPIO
 1. This document **only supports the Amlogic 4.9 kernel on VIM1/VIM2/VIM3 and Amlogic 5.4 kernel on VIM4**.
 2. **Root privileges** are required to access the GPIO:
 
-```sh
+```
 khadas@Khadas:~$ su
 Password:
 root@Khadas:/home/khadas#
@@ -49,7 +49,7 @@ Amlogic chips usually include two GPIO Ranges, AOBUS and Periphs. Examples for e
 
 1. **Get `Banks`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
@@ -59,7 +59,7 @@ AOBUS' `Banks` is `496`.
 
 2. **Get `Pins`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
 registered pins: 11
 pin 0 (GPIOAO_0)  pinctrl@14
@@ -81,7 +81,7 @@ The pin in front of each GPIO represents the corresponding `pins`.
 
 1. **Get `Banks`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
 GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
@@ -91,7 +91,7 @@ Periphs' `Banks` is 410.
 
 2. **Get `Pins`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
 registered pins: 100
 pin 0 (GPIOZ_0)  pinctrl@4b0
@@ -125,7 +125,7 @@ Take `GPIOX_14` as an example here,
 
 1. **Get `Banks`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
@@ -135,7 +135,7 @@ AOBUS' `Banks` is `496`.
 
 2. **Get `Pins`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
 registered pins: 11
 pin 0 (GPIOAO_0)  pinctrl@14
@@ -157,7 +157,7 @@ The pin in front of each GPIO represents the corresponding `pins`.
 
 1. **Get `Banks`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
 GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
@@ -167,7 +167,7 @@ Periphs的' `Banks` is `410`.
 
 2. **Get `Pins`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
 registered pins: 100
 pin 0 (GPIOZ_0)  pinctrl@4b0
@@ -201,7 +201,7 @@ Take `GPIOX_14` as an example here,
 
 1. **Get `Banks`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [496 - 511] PINS [0 - 15]
@@ -211,7 +211,7 @@ AOBUS' `Banks` is `496`.
 
 2. **Get `Pins`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/pins
 registered pins: 16
 pin 0 (GPIOAO_0)  pinctrl@ff800014
@@ -238,7 +238,7 @@ The pin in front of each GPIO represents the corresponding `Pins`.
 
 1. **Get `Banks`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges
 GPIO ranges handled:
 0: periphs-banks GPIOS [410 - 495] PINS [0 - 85]
@@ -248,7 +248,7 @@ Periphs' `Banks` is `410`.
 
 2. **Get `Pins`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/pins
 registered pins: 86
 pin 0 (GPIOV_0)  pinctrl@ff634480
@@ -284,7 +284,7 @@ Take `GPIOX_10` as an example here,
 
 1. **Get `Banks`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
 GPIO ranges handled:
 0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
@@ -292,7 +292,7 @@ GPIO ranges handled:
 
 2. **Get `Pins`:**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
 registered pins: 157
 pin 0 (GPIOB_0)  fe000000.apb4:pinctrl@4000
@@ -340,7 +340,7 @@ Take `GPIOT_19` as an examples here.
 1. **Set `GPIODV24` and `GPIODV25` as ordinary pins** (multiplexed as I2C by default).
 
   * edit `/boot/env.txt`,
-```sh
+```
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
   * Remove I2C3 from overlays,
@@ -358,35 +358,35 @@ overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_
 3. **Set `GPIODV_24` to read mode.**
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 ```
   * Set to read mode
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
 4. **Set `GPIODV_25` to write mode**
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
   * Set to write mode
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
 ```
 
 5. **Test**
 
   * Set `GPIODV_25` to output high level and read it with `GPIODV_24`
-```sh
+```
 root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1
 ```
   * Set `GPIODV_25` to low level and read with `GPIODV_24`
-```sh
+```
 root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 0
@@ -399,7 +399,7 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as I2C by default).
 
 *  edit `/boot/env.txt`,
-```sh
+```
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
 * Remove I2C3 from overlays,
@@ -416,35 +416,35 @@ overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_
 3. Set `GPIODV_24` to read mode:
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 ```
   * Set to read mode
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
 4. **Set `GPIODV_25` to write mode**
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
   * Set to write mode
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
 ```
 
 5. **Test**
 
   * Set `GPIODV_25` to high level output and read it with `GPIODV_24`
-```sh
+```
 root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1
 ```
   * Set `GPIODV_25` to low level output and read it with `GPIODV_24`
-```sh
+```
 root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 0
@@ -457,7 +457,7 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 
 1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as I2C by default)
   * edit `/boot/env.txt`,
-```sh
+```
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
 * Remove I2C3 from overlays,
@@ -474,35 +474,35 @@ Reboot to take effect.
 3. **Set `GPIOA_14` to read mode**
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
   * Set to read mode
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio474/direction
 ```
 
 4. **Set `GPIOA_15` to write mode**
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 475 > /sys/class/gpio/export
 ```
   * Set to write mode
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio475/direction
 ```
 
 5. **Test**
 
   * Set `GPIOA_15` to high level output and read it with `GPIOA_14`
-```sh
+```
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 1
 ```
   * Set `GPIOA_15` to low level output and read it with `GPIOA_14`
-```sh
+```
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 0
@@ -520,35 +520,35 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 2. **Set `GPIOT_18` to read mode**
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 464 > /sys/class/gpio/export
 ```
   * Set to read mode
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio464/direction
 ```
 
 3. **Set `GPIOT_19` to read mode**
 
   * Export GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 465 > /sys/class/gpio/export
 ```
   * Set to write mode
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio465/direction
 ```
 
 4. **Test**
 
   * Set `GPIOT_19` to high level output and read it with `GPIOT_18`
-```sh
+```
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value 
 1
 ```
   * Set `GPIOT_19` to low level output and read it with `GPIOT_18`
-```sh
+```
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
 0
