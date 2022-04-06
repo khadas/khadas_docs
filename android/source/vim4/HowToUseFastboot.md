@@ -1,13 +1,15 @@
-title: FastBoot Burning Image
+title: Fastboot Burning Image
 ---
 
-## What is FastBoot
+## What is Fastboot
 
-FastBoot is a way to quickly upgrade each partition package of Android. It is a brush mode of connecting devices with USB cable.
+Fastboot is a way to quickly upgrade each partition package of Android. It is a brush mode of connecting devices with USB cable.
 
-### Enter FastBoot Mode
+### Enter Fastboot Mode
 
-Power on the VIM4 board again, press enter in the serial port debugging tool interface, stop at the U-Boot command line, and enter `fastBoot 1` command to enter the burning mode.
+1. Power on or reboot the VIM4 board, press `enter` in the serial terminal on your PC, then enter the U-Boot command line mode.
+
+2. Tpye `fastBoot 1` command to enter the burning mode.
 
 ```sh
 $ fastboot 1
@@ -16,9 +18,9 @@ $ fastboot 1
 
 ### Unlock Bootloader
 
-To use FastBoot to brush the machine, you must first unlock the bootloader, otherwise the machine cannot be flashed.
+To use fastboot to brush the machine, you must first unlock the bootloader, otherwise the machine cannot be flashed.
 
-After entering the FastBoot mode, input the following command to unlock:
+After entering the fastboot mode, input the following command to unlock:
 
 ```sh
 $ fastboot flashing unlock
@@ -69,12 +71,12 @@ $ fastboot flashing lock
 $ fastboot flash vendor_boot /path/to/vendor_boot.img
 ```
 
-### Update DTS File
+### Update DTS
 ```sh
 $ fastboot flash vendor_boot_a /path/to/vendor_boot.img
 ```
 
-### Exit FastBoot and Restart the Device
+### Exit Fastboot and Restart the Device
 
 ```
 $ fastboot reboot
