@@ -1,4 +1,4 @@
-title: GPIO Usage Guide
+title: GPIO Usage
 ---
 
 You can access the GPIO pins in two ways:
@@ -24,8 +24,11 @@ To use a GPIO pin, you need to know its corresponding pin number.
 
 GPIO PIN number calculation method: `pin number = bank number + pin number in bank`
 
-1. `bank number`: Different groups of GPIOs correspond to different banks. Amlogic SoCs usually have AO banks and Periphs banks. For example, GPIOAO corresponds to the AO bank, and GPIOT corresponds to Periphs bank.
-2. `pin number in bank`: The position in the bank where the GPIO PIN is located. For example, GPIOT_18 is at the 109th position of the Periphs bank.
+1. `bank number`: Different groups of GPIOs correspond to different banks. Amlogic SoCs usually have AO banks and Periphs banks.
+For example, GPIOAO corresponds to the AO bank, and GPIOT corresponds to Periphs bank.
+
+2. `pin number in bank`: The position in the bank where the GPIO PIN is located.
+For example, GPIOT_18 is at the 109th position of the Periphs bank.
 
 ### Example
 
