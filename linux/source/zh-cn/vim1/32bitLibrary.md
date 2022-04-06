@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 2. 编译运行运行代码。
 
-```bash
+```
 $ arm-linux-gnueabihf-gcc -o test test.c
 $ ./test   
 -bash: ./test: No such file or directory
