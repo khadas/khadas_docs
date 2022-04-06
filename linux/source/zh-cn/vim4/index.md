@@ -33,11 +33,11 @@ title: 快速上手
 
 ## 快速连接开机
 
-1. Type-C: Type-C口为电源连接口
+* Type-C: Type-C口为电源连接口
 
-2. HDMI: 标准HDMI座子，连接你的显示屏
+* HDMI: 标准HDMI座子，连接你的显示屏
 
-3. ETH(可选): 网口座子
+* ETH(可选): 网口座子
 
 <img src="/linux/images/vim4/QuickStart.jpg" width="50%" height="50%">
 
