@@ -1,18 +1,16 @@
-title: Accelerometer Data
+title: Get Gsensor Data
 ---
 
-VIM4 includes an accelerometer sensor. Go to `Settings-->Khadas settings-->G-Sensor data` to view the acceleration readings in the X, Y and Z axis.
+VIM4 board has integrated gsensor function. Goto `Settings` --> `Khadas settings` --> `G-Sensor data` to view the acceleration of X, Y and Z.
 
 <img src="/android/images/vim4/gsensor.png" width="75%" height="75%">
 
-## Example: Android app for reading accelerometer data
-Data acquisition is mainly divided into three steps:
-
-1. Get sensor service : `getSystemService`.
+## Android APP get Gsensor Data
+The data acquisition of app layer is mainly divided into three steps.
+1. Get Sensor service : `getSystemService`.
 2. Get detailed sensor object : `getDefaultSensor`.
 3. Register data listener : `registerListener`.
-
-App source code:
+The reference code is as follows:
 ```java
 import android.app.Activity;
 import android.content.Context;
