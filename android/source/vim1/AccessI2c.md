@@ -1,4 +1,4 @@
-title: I2C Usage Guide
+title: I2C Usage
 ---
 
 This guide will show you how to use the I2C interface.
