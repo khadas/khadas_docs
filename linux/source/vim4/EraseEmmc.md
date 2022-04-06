@@ -21,8 +21,8 @@ There are 3 ways to erase the eMMC:
 <div class="tab-pane fade show active" id="serial" role="tabpanel" aria-labelledby="serial-tab">
 
 1. Connect your PC to your SBC using a [Serial to USB](SetupSerialTool.html) tool.
-2. Just as your SBC is booting-up, hit `SPACE` on your keyboard to enter U-boot mode.
-3. Type `store boot_erase bootloader` into the U-boot console, and wait for the erasure process to complete.
+2. Just as your SBC is booting-up, hit `SPACE` on your keyboard to enter U-Boot mode.
+3. Type `store boot_erase bootloader` into the U-Boot console, and wait for the erasure process to complete.
 4. After erasure is complete, type `reboot` or press the `RESET` button on your SBC.
 
 Use the following serial Terminal print-out as a reference:

@@ -6,7 +6,7 @@ title: SD/USB固件写入到eMMC
 
 ## 从SD/USB中启动
 
-1. **把固件写入SD卡或者U盘中**。制作启动卡请参考:[如何把固件写入SD/USB](BootFromExtMedia#1、把固件写入到SD卡或U盘)。
+1. **把固件写入SD卡或者U盘中**。制作启动卡请参考:[把固件写入SD/USB](BootFromExtMedia#1、把固件写入到SD卡或U盘)。
 2. **从SD卡或者U盘中启动系统**。启动方法请参考：[从外部介质启动系统](BootFromExtMedia.html)。
 
 ## 写入eMMC

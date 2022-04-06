@@ -8,7 +8,7 @@ Build the Linux kernel from source.
 
 ## Environment Setup
 
-Choose your `board` (e.g. `VIM4`), U-boot version, Linux version, system version, etc.
+Choose your `board` (e.g. `VIM4`), U-Boot version, Linux version, system version, etc.
 
 ```bash
 $ source setenv.sh

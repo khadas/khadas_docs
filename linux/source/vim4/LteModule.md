@@ -1,14 +1,14 @@
 title: 4G LTE Module
 ---
 
-## Operators and frequency bands
+## Operators and Frequency Bands
 
 You can view operators and frequency bands supported by your region by visiting these two websites:
 
 1. [Frequency Check](https://www.frequencycheck.com/carriers)
 2. [Spectrum Monitoring](https://www.spectrummonitoring.com/frequencies/)
 
-## LTE module usage instructions
+## LTE Module Usage Instructions
 
 ### Install Minicom in Ubuntu
 
@@ -62,32 +62,32 @@ Power down and restart to switch back to the default mode
 
 ### GNOME Desktop
 
-#### Step 1: open `Mobile Board Settings`
+#### Step1: Open `Mobile Board Settings`
 
 ![LTE_gnome_open](/linux/images/vim3/LTE_gnome_open.png)
 
 Click the menu bar in the upper-right corner to see the 'mobile board settings' option.
 
-#### Step 2: add new connection
+#### Step2: Add New Connection
 
 Click `Network`, choose `Add New Connection`, and then click `Next`.
 
 ![LTE_gnome_new](/linux/images/vim3/LTE_gnome_new.png)
 ![LTE_gnome_next](/linux/images/vim3/LTE_gnome_next.png)
 
-#### Step 3: choose your provider's country
+#### Step3: Choose Your Provider's Country
 
 Choose your provider's country. 
 
 ![LTE_gnome_country](/linux/images/vim3/LTE_gnome_country.png)
 
-#### Step 4: choose your provider
+#### Step4: Choose Your Provider
 
 Choose your provider. This needs to be set according to your SIM card.
 
 ![LTE_gnome_provider](/linux/images/vim3/LTE_gnome_provider.png)
 
-#### Step 5: enter password and connect
+#### Step5: Enter Password and Connect
 
 Using the default configuration, just choose `next`. Then click `apply`. The default password is `000`.
 

@@ -28,7 +28,7 @@ There are 4 ways to boot into upgrade mode:
 1. Power on VIM4.
 2. Long press the `POWER` key without releasing it.
 3. Short press the `RESET` key and release it.
-4. Count for 2 to 3 seconds, then release the `POWER` key to enter into Upgrade Mode. The Sys-LED (White) will turn ON when you've entered Upgrade Mode.
+4. Count for 2 to 3 seconds, then release the `POWER` key to enter into Upgrade Mode. The Sys-LED (White) will turn on when you've entered Upgrade Mode.
 
 </div>
 <div class="tab-pane fade" id="serial" role="tabpanel" aria-labelledby="serial-tab">

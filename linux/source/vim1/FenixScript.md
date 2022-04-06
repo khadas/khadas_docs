@@ -36,7 +36,7 @@ As root, build the image with Fenix.
 $ make
 ```
 
-**Tip:** If this is your first time building an image, the script will check your host's environment and install some essential packages. In addition, repositories (U-boot, Linux) will be cloned automatically from the Khadas GitHub.
+**Tip:** If this is your first time building an image, the script will check your host's environment and install some essential packages. In addition, repositories (U-Boot, Linux) will be cloned automatically from the Khadas GitHub.
 
 ### Build U-Boot
 ```

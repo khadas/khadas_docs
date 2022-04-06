@@ -14,7 +14,7 @@ For detailed steps, please see [Install Image Into SD/USB Media](InstallOsIntoSd
 
 ## Boot
 
-Insert your Bootable SD card or Thumbdrive into your SBC and power ON, the system will automatically boot from the SD card or Thumbdrive.
+Insert your Bootable SD card or Thumbdrive into your SBC and power on, the system will automatically boot from the SD card or Thumbdrive.
 
 ## See Also
 

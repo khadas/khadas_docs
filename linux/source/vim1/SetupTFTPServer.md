@@ -1,7 +1,7 @@
 title: TFTP Server for U-Boot
 ---
 
-Setting up a TFTP server inside U-boot is very simple, and many guides are also available via Google.
+Setting up a TFTP server inside U-Boot is very simple, and many guides are also available via Google.
 
 ## Setup TFTP
 

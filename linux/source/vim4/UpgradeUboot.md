@@ -1,9 +1,9 @@
-title: Upgrade U-boot
+title: Upgrade U-Boot
 ---
 
-## Upgrading U-boot from kernel space
+## Upgrading U-Boot from Kernel Space
 
-Copy the Debian U-boot package to your board and install it.
+Copy the Debian U-Boot package to your board and install it.
 
 ```
 $ sudo dpkg -i linux-u-boot-vim4-vendor_1.0.7-2019.01_arm64.deb
@@ -11,20 +11,20 @@ $ sync
 $ sudo reboot
 ```
 
-## Upgrade U-boot from U-boot console
+## Upgrade U-Boot from U-Boot Console
 
 {% note warn %}
 Only for SoC Vendor eMMC U-Boot.
 {% endnote %}
 
-Using a [Serial Tool](SetupSerialTool.html), you can directly upgrade U-boot from the U-boot console.
+Using a [Serial Tool](SetupSerialTool.html), you can directly upgrade U-Boot from the U-Boot console.
 
-The installed U-boot is located at `build/u-boot/fip/_tmp/u-boot.bin.signed`.
+The installed U-Boot is located at `build/u-boot/fip/_tmp/u-boot.bin.signed`.
 
-* Power on the board and enter the U-boot console
+* Power on the board and enter the U-Boot console
 * Copy `u-boot.bin.signed` into an SD card or thumbdrive
 * Insert the SD card or thumbdrive into the board
-* Execute the following commands to upgrade U-boot
+* Execute the following commands to upgrade U-Boot
 
 ```
 kvim4#usb_update bootloader u-boot.bin.signed

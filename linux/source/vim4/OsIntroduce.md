@@ -5,7 +5,7 @@ Khadas officially supports and updates the **Ubuntu** distribution; **OTA upgrad
 
 ## Supported Ubuntu Distributions
 
-`VIM4` supports `Ubuntu 20.04` using kernel **5.4**. We support both **desktop** and **server** versions. The desktop environment uses the **GNOME** desktop.
+`VIM4` supports `Ubuntu 22.04` using kernel **5.4**. We support both **desktop** and **server** versions. The desktop environment uses the **GNOME** desktop.
 
 Supported installations:
 
@@ -16,7 +16,7 @@ The mainline kernel can only be installed into an SD card, however you can copy 
 {% endnote %}
 
 {% note info %}
-If the image name includes the text **EMMC**, it is meant for eMMC installation. If it includes **SD-USB**, it is meant for SD card installation.
+If the image name includes the text **eMMC**, it is meant for eMMC installation. If it includes **SD-USB**, it is meant for SD card installation.
 {% endnote %}
 
 ## How to Select an OS
