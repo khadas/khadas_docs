@@ -7,7 +7,7 @@ title: GPIO Interrupts
 
 You must elevate yourself to **root** before you are able to access the GPIO.
 
-```bash
+```
 $ khadas@Khadas:~$ su
 Password: 
 root@Khadas:/home/khadas#
@@ -17,7 +17,7 @@ root@Khadas:/home/khadas#
 
 * From the table below, take note of which pins you need to use:
 
-```bash
+```
 root@Khadas:/home/khadas# gpio readall
  +------+-----+----------+------+---+----+---- Model  Khadas VIM3 --+----+---+------+----------+-----+------+
  | GPIO | wPi |   Name   | Mode | V | DS | PU/PD | Physical | PU/PD | DS | V | Mode |   Name   | wPi | GPIO |
@@ -51,7 +51,7 @@ Using `GPIOH6` as an example here, the related GPIO value is `433`, and the phys
 
 * Export GPIO
 
-```bash
+```
 root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
 ```
 
@@ -234,13 +234,13 @@ out:
 
 * Compile the source code
 
-```bash
+```
 root@Khadas:/home/khadas# gcc -o gpio-irq gpio-irq.c
 ```
 
 * Check
 
-```bash
+```
 ./gpio-irq 433 rising down
 .
 GPIO 433 interrupt occurred!
@@ -249,7 +249,7 @@ GPIO 433 interrupt occurred!
 
 Connect the physical pins `PIN20` and `PIN15` using a DuPont line to trigger the interrupt. The process is as follows:
 
-```bash
+```
 root@Khadas:/home/khadas# ./gpio-irq 433 rising down
 .
 GPIO 433 interrupt occurred!
@@ -265,7 +265,7 @@ GPIO 433 interrupt occurred!
 
 Input the command as follows:
 
-```bash
+```
 root@Khadas:/home/khadas# ./gpio-irq <edge> [pull]
 ```
 
