@@ -1,4 +1,4 @@
-title: Replace Boot Logo
+title: Change Boot Logo
 ---
 
 * Image format:
@@ -6,7 +6,8 @@ title: Replace Boot Logo
 * Resolution:
   * <= 1080P (1920x1080 px)
 
-## Method 1: Use ADB
+## Change Boot Logo via ADB
+
 ```sh
 $ adb root
 $ adb remount
@@ -15,8 +16,10 @@ $ adb shell sync
 $ adb reboot
 ```
 
-## Method 2: Replace the firmware
+## Change Boot Logo via Upgrading the Firmware
+
 1. Replace the `device/khadas/TARGET/logo_img_files/bootup.bmp` logo file.
+
 2. Build upgrade package.
 ```sh
 $ cd PATH_YOUR_PROJECT
