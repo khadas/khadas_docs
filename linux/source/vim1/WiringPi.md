@@ -53,20 +53,20 @@ PU/PD --> PU:pull up PD:pull down DSBLD:disabled PU/PD
 
 Here's an example of controlling wpi number 1.
 
-3. run `gpio mode 1 out`.
+3. Run `gpio mode 1 out`.
 
 Now, The wpi number 1 mode is out.
 
-4. run `gpio read 1`:
+4. Run `gpio read 1`:
 
 ```shell
 root@Khadas:~# gpio read 1 
 1
 ```
 
-5. run `gpio write 1 0` to change the pinout level.
+5. Run `gpio write 1 0` to change the pinout level.
 
-6. run `gpio read 1` again
+6. Run `gpio read 1` again
 
 ```shell
 root@Khadas:~# gpio read 1   
@@ -108,7 +108,7 @@ int main()
 
 2. You can use gcc to compile it. This is the compile command: `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
 
-3. run `./test` to control wpi number 1.
+3. Run `./test` to control wpi number 1.
 
 ```shell
 wPi Pin 1 now is GIGH
@@ -341,4 +341,5 @@ void softPwmStop   (int pin) ;
 If you need to use the special pin functions of wiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the .dtb file.
 
 WiringPi includes many functions, not limited to just controlling the output of GPIO pins and reading pin levels. 
+
 This is only a simple introduction, and users can explore more by themselves.
