@@ -16,7 +16,7 @@ Why do we need a bootable SD card?
 {% endnote %}
 
 ## Getting Started
-Download U-boot for ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)), or get the correct bootloader blob for your SD card and manually build U-boot. Regardless of which method you choose, you need to remember that there are different bootloader blobs for different boot disks/media:
+Download U-Boot for ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)), or get the correct bootloader blob for your SD card and manually build U-Boot. Regardless of which method you choose, you need to remember that there are different bootloader blobs for different boot disks/media:
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -55,7 +55,7 @@ Format the SD card as FAT32:
 $ sudo mkfs.vfat /dev/sdX1
 ```
 
-Run `dd` to write the U-boot blob into the first sector of SD card:
+Run `dd` to write the U-Boot blob into the first sector of SD card:
 ```bash
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=1 count=444
 $ sudo dd if=u-boot.bin.sd.bin of=/dev/sdX conv=fsync,notrunc bs=512 skip=1 seek=1
