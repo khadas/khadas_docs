@@ -1,4 +1,4 @@
-title: System Permissions for 3rd Party Apps
+title: System Permissions for APP
 ---
 
 If a third-party application wants to obtain system permissions, it needs to declare its UID as a system process in the `AndroidManifest.xml` file, and the application needs to be signed with the platform key (signature).
@@ -9,8 +9,10 @@ The third-party application's AndroidManifest.xml must include:
 android:sharedUserid="android.uid.system
 ```
 
-## Sign App with Platform Key
-### App signing for SDK source code
+## Sign APP with Platform Key
+
+### APP Signing for SDK Source Code
+
 1. Put the APK in the application directory, and create an `Android.mk` file containing the following contents:
 ```sh
 LOCAL_PATH := $(call my-dir)
@@ -40,8 +42,9 @@ PRODUCT_PACKAGES +=\
 
 3. Recompile the SDK, and the APK file will be generated in the `out` directory, containing the platform key.
 
-### App Signing for Windows & Linux PC
-1. According to your SBC model and system version, download the two platform key files `platform.x509.pem` and `platform.pk8`, from `https://dl.khadas.com/`.
+### APP Signing for Windows & Linux PC
+
+1. According to your SBC model and system version, download the two platform key files [platform.x509.pem](https://dl.khadas.com/products/vim4/development/signtools/platform.x509.pem) and [platform.pk8](https://dl.khadas.com/products/vim4/development/signtools/platform.pk8).
 
 2. Download the Java Signing Tool [signapk.jar](https://dl.khadas.com/products/vim4/development/signtools/signapk.kar).
 
