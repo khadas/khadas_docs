@@ -1,4 +1,4 @@
-title: Adding IR Remote Support
+title: IR Remote Support
 ---
 
 VIM4 does not have an IR receiver. If you require this feature, you will have to attach a module to the 40-pin header, and additional software configurations are required.
@@ -9,9 +9,12 @@ VIM4 does not have an IR receiver. If you require this feature, you will have to
 * [VIM4-GPIO-Pin-Out](/android/zh-cn/vim4/Interfaces#GPIO-Pinout)
 
 ## Software Configuration
-1. Add the IR remote configuration to the `common/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi` file:
 
-```c
+### IR remote configuration
+
+Add the IR remote configuration to the `common/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi` file:
+
+```diff
 --- a/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi
 +++ b/arch/arm64/boot/dts/amlogic/meson-ir-map.dtsi
 @@ -6,11 +6,12 @@
@@ -57,9 +60,9 @@ VIM4 does not have an IR receiver. If you require this feature, you will have to
  };
 ```
 
-2. Create an Android Key Layout (.kl) file:
+###  Create an Android Key Layout
 
-* The ID number of the .kl file needs to be consistent with the ID number configured within the .dtsi file. 
+1. The ID number of the .kl file needs to be consistent with the ID number configured within the .dtsi file. 
 
 For example, the ID numbers used in the previous step are `vendor=0x0003, product=0x0003`.
 
@@ -68,7 +71,7 @@ For example, the ID numbers used in the previous step are `vendor=0x0003, produc
 +                       product = <0x0003>;
 ```
 
-* Place the Android Key Layout file into: `device/khadas/common/keyboards/Vendor_xxxx_Product_xxxx.kl` 
+2. Place the Android Key Layout file into: `device/khadas/common/keyboards/Vendor_xxxx_Product_xxxx.kl` 
 
 For example, the ID numbers used in the previous step are `vendor=0x0003, product=0x0003`.
 
@@ -91,7 +94,8 @@ key 158   BACK
 key 102   HOME
 ```
 
-* Verify New Configuration
+3. Verify New Configuration
+
 ```sh
 kvim4:/ # dumpsys input
 INPUT MANAGER (dumpsys input)
