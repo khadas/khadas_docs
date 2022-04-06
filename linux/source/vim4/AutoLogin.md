@@ -1,4 +1,4 @@
-title: How to Enable Auto-Login
+title: Auto-Login
 ---
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
