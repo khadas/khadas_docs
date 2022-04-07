@@ -216,9 +216,9 @@ Choose `Yes` and hit `Enter` to exit `minicom`.
 
 Install the **CH340** driver.
 
-1. Download the [driver](https://dl.khadas.com/Tools/CH34x_Install_Windows_v3_4.zip)
-2. Unzip the compressed file
-3. Run the installer
+1. Download the [driver](https://dl.khadas.com/Tools/CH34x_Install_Windows_v3_4.zip).
+2. Unzip the compressed file.
+3. Run the installer.
 
 * Install `SecureCRT`
 

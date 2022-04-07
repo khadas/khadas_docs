@@ -17,7 +17,7 @@ title: Setup HDMI Resolution
 
 ![gnome-HDMI-setting](/linux/images/vim1/gnome-HDMI-setting.png)
 
-4. Choose a resolution you want, then click `OK`,
+4. Choose a resolution you want, then click `OK`.
 
 ![gnome-HDMI-save](/linux/images/vim1/gnome-HDMI-save.png)
 

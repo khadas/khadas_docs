@@ -3,7 +3,8 @@ title: Boot From SPI-Flash
 
 Khadas VIM3/VIM3L and VIM4 contains a 16 MB and 32 MB SPI-Flash that's used as boot storage; so you can boot from it. This guide is about how to boot from the on-board SPI-Flash. Take VIM4 as a example.
 
-{% note warn The U-Boot firmware that VIM3/VIM3L can use to burn to SPI is named `u-boot.bin`, VIM4 is `u-boot.bin.spi.bin.signed`. %}
+{% note warn Warn %}
+note warn The U-Boot firmware that VIM3/VIM3L can use to burn to SPI is named `u-boot.bin`, VIM4 is `u-boot.bin.spi.bin.signed`.
 {% endnote %}
 
 

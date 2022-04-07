@@ -51,7 +51,7 @@ Agent registered
 ```
 Setup:
 
-```sh
+```
 [bluetooth]# agent on
 [bluetooth]# default-agent
 [bluetooth]# power on
@@ -62,7 +62,7 @@ Setup:
 
 3. **Scan for Bluetooth devices**:
 
-```sh
+```
 [bluetooth]# scan on
 Discovery started
 [CHG] Controller 43:54:A2:00:1F:AC Discovering: yes
@@ -72,7 +72,7 @@ Discovery started
 
 4. **Show connected Bluetooth devices**:
 
-```sh
+```
 [bluetooth]# devices
 Device 46:04:25:5F:1E:8D 46-04-25-5F-1E-8D
 Device 8C:EB:C6:E7:2E:33 Khadas
@@ -84,7 +84,7 @@ Device 9C:FB:D5:0D:91:47 9C-FB-D5-0D-91-47
 
 5. **Pair with a device**:
 
-```sh
+```
 [bluetooth]# connect <device_addr>
 ```
 
@@ -96,7 +96,7 @@ Device 9C:FB:D5:0D:91:47 9C-FB-D5-0D-91-47
 
 6. **Exit bluetoothctl**:
 
-```sh
+```
 [bluetooth]# quit
 Agent unregistered
 [DEL] Controller 43:54:A2:00:1F:AC Khadas [default]

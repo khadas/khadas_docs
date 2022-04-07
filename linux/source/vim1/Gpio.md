@@ -21,12 +21,12 @@ root@Khadas:/home/khadas#
 
 **The calculation method of the GPIO array is: `Number = Banks + Pins`.**
 
-1. `Banks` refers to the **base value** of GPIO Ranges.
+1. `Banks` refers to the **base value** of GPIO ranges.
 2. `Pins` refers to the sorting of the **GPIO pins** you need to calculate in the corresponding ranges.
 
 ### Numerical Calculation Example
 
-Amlogic chips usually include two GPIO Ranges, AOBUS and Periphs. Examples for each range is provided here for reference.
+Amlogic chips usually include two GPIO ranges, AOBUS and Periphs. Examples for each range is provided here for reference.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -87,7 +87,7 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
 ```
 
-Periphs' `Banks` is 410.
+Periphs' `Banks` is `410`.
 
 2. **Get `Pins`:**
 
@@ -316,7 +316,7 @@ Take `GPIOT_19` as an examples here.
 </div>
 </div>
 
-## GPIO usage examples
+## GPIO Usage Examples
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -366,7 +366,7 @@ root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
-4. **Set `GPIODV_25` to write mode**
+4. **Set `GPIODV_25` to write mode**.
 
   * Export GPIO
 ```
@@ -424,7 +424,7 @@ root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
-4. **Set `GPIODV_25` to write mode**
+4. **Set `GPIODV_25` to write mode**.
 
   * Export GPIO
 ```
@@ -482,7 +482,7 @@ root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio474/direction
 ```
 
-4. **Set `GPIOA_15` to write mode**
+4. **Set `GPIOA_15` to write mode**.
 
   * Export GPIO
 ```
@@ -528,7 +528,7 @@ root@Khadas:/home/khadas# echo 464 > /sys/class/gpio/export
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio464/direction
 ```
 
-3. **Set `GPIOT_19` to read mode**
+3. **Set `GPIOT_19` to read mode**.
 
   * Export GPIO
 ```

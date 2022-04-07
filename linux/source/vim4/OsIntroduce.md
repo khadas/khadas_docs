@@ -2,10 +2,13 @@ title: Choose an OS
 ---
 
 Khadas officially supports and updates the **Ubuntu** distribution; **OTA upgrades are also available**.
+Khadas supports and maintaining the **Ubuntu** distribution officially with OTA upgrades. （GNote）
+
 
 ## Supported Ubuntu Distributions
 
 `VIM4` supports `Ubuntu 22.04` using kernel **5.4**. We support both **desktop** and **server** versions. The desktop environment uses the **GNOME** desktop.
+`VIM4` supports `Ubuntu 22.04` with linux kernel **5.4** in both **desktop** and **server** versions, and the desktop version with **GNOME** as the desktop environment.(GNote)
 
 Supported installations:
 

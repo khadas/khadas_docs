@@ -53,8 +53,9 @@ First connect VIM2 to your local area network (LAN), then get the Ethernet MAC a
 
 If the sticker has peeled-off, you can use following Terminal commands to get the MAC Address.
 
-2.On Ubuntu, type `ifconfig` on terminal
-```
+2.On Ubuntu, type `ifconfig` on terminal.
+
+```sh
 $ ifconfig
 eth0      Link encap:Ethernet  HWaddr 98:aa:fc:60:46:de
           inet addr:192.168.1.142  Bcast:192.168.1.255  Mask:255.255.255.0 

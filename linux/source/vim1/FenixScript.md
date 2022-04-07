@@ -11,15 +11,16 @@ $ sudo apt-get install git make lsb-release qemu-user-static
 ```
 
 ### Clone the Fenix Repository
-Clone the Fenix repository to: `~/project/`
+Clone the Fenix repository to: `~/project`
 
 ```sh
-$ mkdir ~/project/
+$ mkdir ~/project
 $ cd ~/project/
 $ git clone --depth 1 https://github.com/khadas/fenix
 ```
 
 ### Setup the Build Environment
+
 You should setup the build environment first. 
 
 For example: Board type, Linux version, distribution, etc.
@@ -30,6 +31,7 @@ $ source env/setenv.sh
 ```
 
 ### Build the Image
+
 As root, build the image with Fenix.
 
 ```sh

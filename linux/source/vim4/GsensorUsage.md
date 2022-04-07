@@ -90,30 +90,6 @@ Use `gcc` to compile this program directly on your SBC running Ubuntu.
 
 ```sh
 $ gcc -o gsensor_sample_demo gsensor_sample_demo.c
-gsensor_sample_demo.c: In function ‘main’:
-gsensor_sample_demo.c:34:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
-   34 |   exit(-1);
-      |   ^~~~
-gsensor_sample_demo.c:34:3: warning: incompatible implicit declaration of built-in function ‘exit’
-gsensor_sample_demo.c:4:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
-    3 | #include <fcntl.h>
-  +++ |+#include <stdlib.h>
-    4 |
-gsensor_sample_demo.c:41:3: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
-   41 |   close(gsensor_fd);
-      |   ^~~~~
-      |   pclose
-gsensor_sample_demo.c:42:3: warning: incompatible implicit declaration of built-in function ‘exit’
-   42 |   exit(-1);
-      |   ^~~~
-gsensor_sample_demo.c:42:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
-gsensor_sample_demo.c:53:4: warning: incompatible implicit declaration of built-in function ‘exit’
-   53 |    exit(-1);
-      |    ^~~~
-gsensor_sample_demo.c:53:4: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
-gsensor_sample_demo.c:57:3: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
-   57 |   sleep(1);
-      |   ^~~~~
 ```
 
 

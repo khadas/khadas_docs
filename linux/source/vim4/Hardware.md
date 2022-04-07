@@ -16,10 +16,10 @@ title: VIM4 Hardware
     <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim4" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim4" role="tab" aria-controls="back" aria-selected="false">BACK(Red)</a>
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim4" role="tab" aria-controls="back" aria-selected="false">Back(Red)</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim4" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim4" role="tab" aria-controls="button" aria-selected="false">Buttons</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim4" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>
@@ -49,15 +49,15 @@ title: VIM4 Hardware
 |E|HDMI Input|Tpye-D HDMI input|
 |F|LEDs|Indicator LEDs|
 |G|[MCU](KbiGuidance.html)|STM32G0 micro-controller|
-|H|IPEX4 Antenna|[Wi-Fi](Wifi.html) and Bluetooth antenna connector|
-|I|IPEX4 Antenna|Wi-Fi and [Bluetooth](Bluetooth.html) antenna connector|
+|H|MHF4 Antenna|[Wi-Fi](Wifi.html) and Bluetooth antenna connector|
+|I|MHF4 Antenna|Wi-Fi and [Bluetooth](Bluetooth.html) antenna connector|
 |J|Current Limit Switch|Prevents damage to VIM4L due to faulty loading conditions|
 </div>
 <div class="tab-pane fade" id="back-vim4" role="tabpanel" aria-labelledby="back-tab">
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|9-20V power input, supports Power-Over-Ethernet via [M2X Extension](https://www.khadas.com/product-page/m2x-extension-board)|
+|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|9-20V power input.|
 |2|[Micro-SD Slot](BootFromExtMedia.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs]()|
 |4|MIPI-CSI|20-pin, 0.5mm pitch, Provided data path for dual cameras|

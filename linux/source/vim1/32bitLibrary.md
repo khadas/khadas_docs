@@ -34,4 +34,4 @@ $ sudo apt-get -y install libc6:armhf
 $ ./test
 Hello World!
 ```
-'libc6' is the name of the package, whilst 'armhf' indicates that the package is 32-bit.
+`libc6` is the name of the package, whilst `armhf` indicates that the package is 32-bit.

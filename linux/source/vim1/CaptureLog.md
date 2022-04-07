@@ -7,7 +7,7 @@ This guide is for users of **Ubuntu Linux**.
 
 You can capture information from the running system log to diagnose abnormal behaviour and unexpected outputs.
 
-## Login via a serial terminal
+## Login via a Serial Terminal
 
 Connect your PC to the SBC using a [Serial Debugging Tool](SetupSerialTool.html).
 
@@ -16,7 +16,7 @@ The default account and password of Ubuntu Linux is as follows:
 Default account：`khadas`
 Default password：`khadas`
 
-## Running log capture
+## Running Log Capture
 
 After logging in with the serial Terminal, you can capture the running system log via the following commands.
 

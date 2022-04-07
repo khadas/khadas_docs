@@ -27,7 +27,7 @@ There are 3 ways to erase the eMMC:
 
 Use the following serial Terminal print-out as a reference:
 
-```bash
+```
 kvim4# store boot_erase bootloader
 GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
 GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
@@ -79,7 +79,7 @@ This erasure method is suitable for an SBC with Linux installed:
 1. Power on and boot up.
 2. Open a Terminal, and run `dd` to fill your bootloader partition with zeros:
 
-```bash
+```
 root@Khadas:~# dd if=/dev/zero of=/dev/bootloader
 dd: writing to '/dev/bootloader': No space left on device
 8193+0 records in

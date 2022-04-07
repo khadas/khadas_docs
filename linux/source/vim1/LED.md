@@ -32,7 +32,7 @@ root@Khadas:/home/khadas#
   
   VIM1 has only one node.
 
-  ```bash
+  ```
   root@Khadas:/home/khadas# cd /sys/class/leds/
   root@Khadas:/sys/class/leds# ls
   sys_led
@@ -42,7 +42,7 @@ root@Khadas:/home/khadas#
 
   VIM2 has only one node.
 
-  ```bash
+  ```
   root@Khadas:/home/khadas# cd /sys/class/leds/
   root@Khadas:/sys/class/leds# ls
   sys_led
@@ -52,7 +52,7 @@ root@Khadas:/home/khadas#
 
   VIM3/VIM3L has two nodes.
 
-  ```bash
+  ```
   root@Khadas:/home/khadas# cd /sys/class/leds/
   root@Khadas:/sys/class/leds# ls
   red_led  sys_led
@@ -62,7 +62,7 @@ root@Khadas:/home/khadas#
 
   VIM2 has only one node `pwmled`.
 
-  ```bash
+  ```
   root@Khadas:/home/khadas# cd /sys/class/leds/
   root@Khadas:/sys/class/leds# ls
   pwmled
@@ -87,7 +87,7 @@ root@Khadas:/home/khadas#
 
 Lets use `sys_led` (white) as an example:
 
-```bash
+```
 root@Khadas:/sys/class/leds# cd sys_led
 root@Khadas:/sys/class/leds/sys_led# ls
 brightness  device  invert  max_brightness  power  subsystem  trigger  uevent
@@ -95,7 +95,7 @@ brightness  device  invert  max_brightness  power  subsystem  trigger  uevent
 
 Check the parameters:
 
-```bash
+```
 root@Khadas:/sys/class/leds/sys_led# cat trigger
 none rc-feedback kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock timer oneshot [heartbeat] backlight gpio cpu0 cpu1 cpu2 cpu3 cpu4 cpu5 default-on transient panic rc_feedback emmc sd sdio rfkill0 rfkill1 rfkill2 rfkill3
 ```
@@ -104,7 +104,7 @@ none rc-feedback kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftl
 
 Set the LED node parameter to `none` to turn off the LED:
 
-```bash
+```
 root@Khadas:/sys/class/leds/sys_led# echo none > trigger
 ```
 
@@ -112,13 +112,13 @@ root@Khadas:/sys/class/leds/sys_led# echo none > trigger
 
 Set the LED node parameter to `default-on` to keep the LED permanently on:
 
-```bash
+```
 root@Khadas:/sys/class/leds/sys_led# echo default-on > trigger
 ```
 
 Set the LED node parameter to `heartbeat`, to make the LED flash with a heartbeat rhythm:
 
-```bash
+```
 root@Khadas:/sys/class/leds/sys_led# echo heartbeat > trigger
 ```
 
@@ -129,7 +129,7 @@ You can also experiment with other parameters.
 
 Lets use `pwmled` (white) as an example:
 
-```bash
+```
 root@Khadas:/sys/class/leds# cd pwmled
 root@Khadas:/sys/class/leds/pwmled# ls
 brightness  device  invert  max_brightness  power  subsystem  trigger  uevent
@@ -137,7 +137,7 @@ brightness  device  invert  max_brightness  power  subsystem  trigger  uevent
 
 Check the parameters:
 
-```bash
+```
 root@Khadas:/sys/class/leds/pwmled# cat trigger
 none rfkill-any rfkill-none kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock khadas-bat-charging-or-full khadas-bat-charging [khadas-bat-full] khadas-bat-charging-blink-full-solid mmc0 mmc1 mmc2 timer oneshot heartbeat rfkill0 rfkill1 rfkill2 rfkill3
 ```
@@ -146,7 +146,7 @@ none rfkill-any rfkill-none kbd-scrolllock kbd-numlock kbd-capslock kbd-kanalock
 
 Set the LED node parameter to `none` to turn off the LED:
 
-```bash
+```
 root@Khadas:/sys/class/leds/pwmled# echo none > trigger
 ```
 
@@ -154,7 +154,7 @@ root@Khadas:/sys/class/leds/pwmled# echo none > trigger
 
 Set the LED node parameter to `heartbeat`, to make the LED flash with a heartbeat rhythm:
 
-```bash
+```
 root@Khadas:/sys/class/leds/pwmled# echo heartbeat > trigger
 ```
 

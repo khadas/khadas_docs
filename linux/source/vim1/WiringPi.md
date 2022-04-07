@@ -4,7 +4,7 @@ title: WiringPi
 Using WiringPi on a Khadas SBC.
 
 ## What is WiringPi
-WiringPi is a C++ library for Raspberry Pi. With this library you can use many of the functionalities provided by the GPIO header: digital pins, SPI, I2C, UART, etc.
+WiringPi is a C++ library for Raspberry Pi. With this library you can use many of the functionalities provided by the GPIO header: `digital pins`, `SPI`, `I2C`, `UART`, etc.
 We have ported this library to also work with Khadas SBCs, and you can use it to control the `40-PIN HEADER`.
 
 ## Using WiringPi
@@ -66,7 +66,7 @@ root@Khadas:~# gpio read 1
 
 5. Run `gpio write 1 0` to change the pinout level.
 
-6. Run `gpio read 1` again
+6. Run `gpio read 1` again:
 
 ```shell
 root@Khadas:~# gpio read 1   
@@ -78,7 +78,7 @@ You can see that wpi number 1 output has changed from high to low.
 
 1. Here is a simple control program.
 
-```shell
+```c
 #include <stdio.h>
 #include <wiringPi.h>
 
@@ -338,7 +338,7 @@ void softPwmStop   (int pin) ;
 
 ## Notes
 
-If you need to use the special pin functions of wiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the .dtb file.
+If you need to use the special pin functions of wiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the dtb file.
 
 WiringPi includes many functions, not limited to just controlling the output of GPIO pins and reading pin levels. 
 
