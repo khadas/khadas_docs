@@ -1,1 +1,1 @@
-../vim1/ChineseSupportUsage.md
+chinese_support_usage.md

@@ -1,1 +1,1 @@
-../vim1/32bitLibrary.md
+32bit_library.md

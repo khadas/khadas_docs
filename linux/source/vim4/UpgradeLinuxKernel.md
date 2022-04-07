@@ -1,1 +1,1 @@
-../vim1/UpgradeLinuxKernel.md
+upgrade_linux_kernel.md

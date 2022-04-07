@@ -1,1 +1,1 @@
-../vim1/InstallOsIntoEmmc.md
+install_os_into_emmc.md

@@ -1,1 +1,1 @@
-../vim1/SetupSerialTool.md
+setup_serial_tool.md

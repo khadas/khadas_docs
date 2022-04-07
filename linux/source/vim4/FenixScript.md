@@ -1,1 +1,1 @@
-../vim1/FenixScript.md
+fenix_script.md

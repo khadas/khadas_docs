@@ -1,1 +1,1 @@
-../vim1/I2c.md
+i2c.md

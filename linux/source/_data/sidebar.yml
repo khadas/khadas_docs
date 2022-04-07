@@ -235,80 +235,80 @@ vim3:
 vim4:
   quick_start:
     quick_setup: index.html
-    choose_an_os: OsIntroduce.html
-    install_os_into_emmc: InstallOsIntoEmmc.html
-    install_os_into_sd_usb: InstallOsIntoSdusb.html
-    boot_into_upgrade_mode: BootIntoUpgradeMode.html
-    boot_from_ext_media: BootFromExtMedia.html
-    boot_seqeqe: BootSequeue.html
-    vim4_hardware: Hardware.html
+    choose_an_os: os_introduce.html
+    install_os_into_emmc: install_os_into_emmc.html
+    install_os_into_sd_usb: install_os_into_sdusb.html
+    boot_into_upgrade_mode: boot_into_upgrade_mode.html
+    boot_from_ext_media: boot_from_ext_media.html
+    boot_seqeqe: boot_sequeue.html
+    vim4_hardware: hardware.html
   configuration:
     basic:
-      upgrade_os: UpgradeSystem.html
-      system_config_file: SystemConfigFile.html
-      device_tree_overlay: DeviceTreeOverlay.html
-      auto_login: AutoLogin.html
-      write_sd_image_to_emmc: WriteSDImageToEmmc.html
-      chinese_support: ChineseSupportUsage.html
+      upgrade_os: upgrade_system.html
+      system_config_file: system_config_file.html
+      device_tree_overlay: device_tree_overlay.html
+      auto_login: auto_login.html
+      write_sd_image_to_emmc: write_sd_image_to_emmc.html
+      chinese_support: chinese_support_usage.html
     network:
-      wifi: Wifi.html
-      bt: Bluetooth.html
-      custom_mac_address: CustomMac.html
-      howto_use_wol: Wol.html
+      wifi: wifi.html
+      bt: bluetooth.html
+      custom_mac_address: custom_mac.html
+      howto_use_wol: wol.html
     display:
-      hdmi_resolution: HdmiResolution.html
-      rotate_framebuffer: RotateFramebuffer.html
-      ubuntu_logo: UbuntuLogo.html
-      change_boot_logo: ChangeBootLogo.html
-      framebuffer_console_font: SetupFramebufferConsoleFont.html
+      hdmi_resolution: hdmi_resolution.html
+      rotate_framebuffer: rotate_framebuffer.html
+      ubuntu_logo: ubuntu_logo.html
+      change_boot_logo: change_boot_logo.html
+      framebuffer_console_font: setup_framebuffer_console_font.html
     accessories:
-      fan: Fan.html
-      ts050: TS050.html
-      lte_module_usage: LteModule.html
-      m2x_eth: M2xEth.html
+      fan: fan.html
+      ts050: ts050.html
+      lte_module_usage: lte_module.html
+      m2x_eth: m2x_eth.html
     hardware:
-      extra_power_input: ExtraPowerInput.html
-      usb_gadget: USBGadget.html
+      extra_power_input: extra_power_input.html
+      usb_gadget: usb_gadget.html
   applications:
     gpio:
-      gpio_usage: Gpio.html
-      i2c: I2c.html
-      led: LED.html
+      gpio_usage: gpio.html
+      i2c: i2c.html
+      led: led.html
       1wire: 1wire.html
-      uart: Uart.html
-      pwm: Pwm.html
-      gpio_irq: GpioIRQ.html
-      wiringpi: WiringPi.html
-      wiringpi_python: WiringPi-Python.html
-      soft_pwm: SoftPWMServo.html
-    gsensor_usage: GsensorUsage.html
-    play_video: PlayVideo.html
-    hardware_decoding: HardwareDecoding.html
-    hardware_encoding: HardwareEncoding.html
-    docker: Docker.html
-    watchdog: Watchdog.html
-    wifi_apsta_mode: WifiApstaMode.html
-    sdl2: Sdl2.html
-    ppsspp: Ppsspp.html
-    qt5: QT5.html
-    32bit_library: 32bitLibrary.html
+      uart: uart.html
+      pwm: pwm.html
+      gpio_irq: gpio_irq.html
+      wiringpi: wiringpi.html
+      wiringpi_python: wiringpi_python.html
+      soft_pwm: soft_pwm_servo.html
+    gsensor_usage: gsensor_usage.html
+    play_video: play_video.html
+    hardware_decoding: hardware_decoding.html
+    hardware_encoding: hardware_encoding.html
+    docker: docker.html
+    watchdog: watchdog.html
+    wifi_apsta_mode: wifi_apsta_mode.html
+    sdl2: sdl2.html
+    ppsspp: ppsspp.html
+    qt5: qt5.html
+    32bit_library: 32bit_library.html
   development:
     uboot:
-      build_uboot: BuildUboot.html
-      upgrade_uboot: UpgradeUboot.html
-      boot_from_spi_flash: BootFromSpiFlash.html
-      setup_tftp_server: SetupTFTPServer.html
-      kbi_guidance: KbiGuidance.html
+      build_uboot: build_uboot.html
+      upgrade_uboot: upgrade_uboot.html
+      boot_from_spi_flash: boot_from_spi_flash.html
+      setup_tftp_server: setup_tftp_server.html
+      kbi_guidance: kbi_guidance.html
     linux:
-      build_linux_kernel: BuildLinuxKernel.html
-      upgrade_linux_kernel: UpgradeLinuxKernel.html
-    fenix: FenixScript.html
-    setup_serial_tool: SetupSerialTool.html
-    create_burn_card: CreateBurnCard.html
-    create_bootable_sd_card: CreateBootableSDCard.html
-    erase_emmc: EraseEmmc.html
+      build_linux_kernel: build_linux_kernel.html
+      upgrade_linux_kernel: upgrade_linux_kernel.html
+    fenix: fenix_script.html
+    setup_serial_tool: setup_serial_tool.html
+    create_burn_card: create_burn_card.html
+    create_bootable_sd_card: create_bootable_sdcard.html
+    erase_emmc: erase_emmc.html
   troubleshooting:
-    capture_log: CaptureLog.html
+    capture_log: capture_log.html
 
 edge:
   quick_start:
@@ -390,8 +390,8 @@ firmware:
      vim3l_ubuntu: Vim3lUbuntuFirmware.html
      vim3l_thirdparty: Vim3lThirdpartyFirmware.html
     vim4:
-     vim4_ubuntu: Vim4UbuntuFirmware.html
-     vim4_thirdparty: Vim4ThirdpartyFirmware.html
+     vim4_ubuntu: vim4_ubuntu_firmware.html
+     vim4_thirdparty: vim4_thirdparty_firmware.html
     edge:
       edge_ubuntu: EdgeUbuntuFirmware.html
       edge_thirdparty: EdgeThirdpartyFirmware.html

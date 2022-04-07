@@ -1,1 +1,1 @@
-../vim1/ChangeBootLogo.md
+change_boot_logo.md

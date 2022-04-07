@@ -1,1 +1,1 @@
-../vim1/SetupFramebufferConsoleFont.md
+setup_framebuffer_console_font.md

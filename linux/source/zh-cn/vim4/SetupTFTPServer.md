@@ -1,1 +1,1 @@
-../vim1/SetupTFTPServer.md
+setup_tftp_server.md

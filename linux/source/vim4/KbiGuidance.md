@@ -1,1 +1,1 @@
-../vim2/KbiGuidance.md
+kbi_guidance.md

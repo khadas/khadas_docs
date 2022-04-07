@@ -1,1 +1,1 @@
-../vim1/Bluetooth.md
+bluetooth.md

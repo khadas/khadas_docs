@@ -1,1 +1,1 @@
-../vim1/CreateBootableSDCard.md
+create_bootable_sdcard.md

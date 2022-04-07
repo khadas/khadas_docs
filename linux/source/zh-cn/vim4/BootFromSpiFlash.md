@@ -1,1 +1,1 @@
-../vim3/BootFromSpiFlash.md
+boot_from_spi_flash.md
