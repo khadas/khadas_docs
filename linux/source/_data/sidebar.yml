@@ -122,7 +122,6 @@ vim2:
     uboot:
       build_uboot: BuildUboot.html
       upgrade_uboot: UpgradeUboot.html
-      boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
       kbi_guidance: KbiGuidance.html
     linux:
@@ -218,7 +217,6 @@ vim3:
     uboot:
       build_uboot: BuildUboot.html
       upgrade_uboot: UpgradeUboot.html
-      boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
       kbi_guidance: KbiGuidance.html
     linux:
@@ -296,7 +294,6 @@ vim4:
     uboot:
       build_uboot: build_uboot.html
       upgrade_uboot: upgrade_uboot.html
-      boot_from_spi_flash: boot_from_spi_flash.html
       setup_tftp_server: setup_tftp_server.html
       kbi_guidance: kbi_guidance.html
     linux:
@@ -350,7 +347,6 @@ edge:
   development:
     uboot:
       upgrade_uboot: UpgradeUboot.html
-      boot_from_spi_flash: BootFromSpiFlash.html
       kbi_guidance: KbiGuidance.html
     linux:
       upgrade_linux_kernel: UpgradeLinuxKernel.html
