@@ -57,7 +57,7 @@ title: VIM4 Hardware
 
 ||Component|Purpose|
 |---:|:---|:---|
-|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|9-20V power input.|
+|1|[VIN](https://www.khadas.com/product-page/vin-to-vin-cable)|9-20V power input|
 |2|[Micro-SD Slot](boot_from_ext_media.html)|Molex Slot, spec version 2.x/3.x/4.x (SDSC/SDHC/SDXC)|
 |3|M.2 Slot|PCIe 2.0 (x1 lane), supports [M.2 2280 NVMe SSDs]()|
 |4|MIPI-CSI|20-pin, 0.5mm pitch, Provided data path for dual cameras|

@@ -3,7 +3,7 @@ title: System Upgrades
 
 {% note warn Attention %}
 
-This guide only applies to officially released Ubuntu images, see [here](https://dl.khadas.com/Firmware/) for official images.
+This guide only applies to officially released Ubuntu images, check [here](https://dl.khadas.com/Firmware/) for official images.
 
 {% endnote %}
 

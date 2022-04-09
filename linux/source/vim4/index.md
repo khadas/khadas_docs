@@ -20,7 +20,7 @@ Your Khadas SBC is compatible with various types of power supplies, and these ar
 * [Khadas VIM - Specifications](https://www.khadas.com/vim4)
 
 ## Displays & Input
-You can connect a HDMI monitor, USB keyboard and mouse to use your Khadas Development Board as a standard desktop computer.
+You can connect a HDMI monitor, USB keyboard and mouse to use your Khadas SBC as a standard desktop computer.
 
 * 4K HDMI 2.0 cable
 * HDMI-compatible 1080P/4K monitor

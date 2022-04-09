@@ -12,6 +12,7 @@ Khadas supports and maintaining the **Ubuntu** distribution officially with OTA 
 
 Supported installations:
 
+* `eMMC` - Write the OS into the eMMC using the USB Upgrade Tool
 * `SD/USB` - Write the OS into an SD card or USB thumbdrive
 
 {% note info %}
