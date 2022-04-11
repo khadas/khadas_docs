@@ -9,12 +9,12 @@ title: Edge 硬件描述
 
 ### Edge-V
 
-![Top view](/linux/images/edge/EdgeVInterfaces.jpg)
+![Top view](/linux/images/edge/edgev_interfaces.jpg)
 
 
 ### Captain
 
-![Top view](/linux/images/edge/CaptainInterfaces.jpg)
+![Top view](/linux/images/edge/captain_interfaces.jpg)
 
 ## Edge系列硬件信息
 

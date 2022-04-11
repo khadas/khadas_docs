@@ -12,7 +12,7 @@ Fastboot是一种快速升级Android每个分区包的方法，是通过USB数�
 ```sh
 $ fastboot 1
 ```
-![image](/android/images/vim4/How_To_Use_Fastboot_On_VIM4_1.png)
+![image](/android/images/vim4/fastboot_on_vim4_1.png)
 
 ### 解锁引导加载程序
 
@@ -24,7 +24,7 @@ $ fastboot 1
 $ fastboot flashing unlock
 $ fastboot flashing unlock_critical
 ```
-![image](/android/images/vim4/How_To_Use_Fastboot_On_VIM4_2.png)
+![image](/android/images/vim4/fastboot_on_vim4_2.png)
 
 ### Bootloader模式的烧录命令
 

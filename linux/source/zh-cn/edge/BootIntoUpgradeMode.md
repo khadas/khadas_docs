@@ -54,7 +54,7 @@ kedge# run maskrom
 2. 用镊子短接 `M` register不松开。
 3. 短按`Reset`按键会进入升级模式（maskrom模式）。
 
-![Image of MRegister_ShortCircuit](/linux/images/edge/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/linux/images/edge/mregister_short_circuit.png)
 
 {% note info 提示 %}
 `M` register在Edge板背面

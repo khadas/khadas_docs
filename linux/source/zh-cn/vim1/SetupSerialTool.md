@@ -17,7 +17,7 @@ title: 设置串口调试工具
 
 连接方式如下：
 
-![Image of SerialConnections](/linux/images/vim1/SerialConnections_3Pin.jpg)
+![Image of SerialConnections](/linux/images/vim1/serial_connections_3pin.jpg)
 
 * 蓝色是 Tool Pin `TXD`
 * 橙色是 Tool Pin `RXD`
@@ -25,7 +25,7 @@ title: 设置串口调试工具
 
 参考下图(`VCC` 管脚可以不接)：
 
-![Image of SerialConnections](/linux/images/vim1/SerialConnections.jpg)
+![Image of SerialConnections](/linux/images/vim1/serial_connections.jpg)
 
 
 ## 设置串口通讯工具

@@ -9,16 +9,16 @@ title: Setup HDMI Resolution
 
 1. Find `HDMI Resolution` application in the list of system applications.
 
-![gnome-HDMI-application](/linux/images/vim1/gnome-HDMI-application.png)
+![gnome-hdmi-application](/linux/images/vim1/gnome-hdmi-application.png)
 
 2. Click to open it.
 
 3. Select resolution.
 
-![gnome-HDMI-setting](/linux/images/vim1/gnome-HDMI-setting.png)
+![gnome-hdmi-setting](/linux/images/vim1/gnome-hdmi-setting.png)
 
 4. Choose a resolution you want, then click `OK`.
 
-![gnome-HDMI-save](/linux/images/vim1/gnome-HDMI-save.png)
+![gnome-hdmi-save](/linux/images/vim1/gnome-hdmi-save.png)
 
 The system will automatically log out and the resolution setting will take effect.

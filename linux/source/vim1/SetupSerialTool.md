@@ -19,7 +19,7 @@ title: Serial Debugging Tool
 
 Refer to this image:
 
-![Image of SerialConnections](/linux/images/vim1/SerialConnections_3Pin.jpg)
+![Image of SerialConnections](/linux/images/vim1/serial_connections_3pin.jpg)
 
 * Blue line: `TXD`
 * Orange line: `RXD`
@@ -27,7 +27,7 @@ Refer to this image:
 
 Another photo (don't connect `VCC`):
 
-![Image of Serial Connections](/linux/images/vim1/SerialConnections.jpg)
+![Image of Serial Connections](/linux/images/vim1/serial_connections.jpg)
 
 ## Setup Serial Communication Program
 

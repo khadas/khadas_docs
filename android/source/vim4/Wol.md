@@ -11,13 +11,13 @@ Connect VIM4 to your LAN, then get the Ethernet MAC address.
 
 You can get it from `Settings-->Khadas Settings-->Ethernet` menu.
 
-<img src="/android/images/vim4/Vim4AndroidMAC.png" width="75%" height="75%">
+<img src="/android/images/vim4/vim4_android_mac.png" width="75%" height="75%">
 
 ## Enable WOL
 
 You can enable WOL in the `Settings-->Khadas Settings-->WOL` menu.
 
-<img src="/android/images/vim4/Vim4AndroidWOL.png" width="75%" height="75%">
+<img src="/android/images/vim4/vim4_android_wol.png" width="75%" height="75%">
 
 
 ## Test WOL

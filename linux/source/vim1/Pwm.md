@@ -77,7 +77,7 @@ root@Khadas:~#
 
 Use an oscilloscope to check if the pins have been successfully enabled.
 
-![pwm-Oscilloscope](/linux/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/linux/images/vim1/pwm-oscilloscope.jpg)
 
 {% note info Note %}
 

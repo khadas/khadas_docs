@@ -57,11 +57,11 @@ kvim2# run update
 
 1. VIM2 V14
 
-![Image of MRegister_ShortCircuit](/linux/images/vim2/MRegister_ShortCircuit_V14.png)
+![Image of MRegister_ShortCircuit](/linux/images/vim2/mregister_short_circuit_v14.png)
 
 2. VIM2 V12
 
-![Image of MRegister_ShortCircuit](/linux/images/vim2/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/linux/images/vim2/mregister_short_circuit.png)
 *Tip: The `M` register is located on the underside of VIM2*
 
 </div>

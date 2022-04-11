@@ -40,7 +40,7 @@ Do not attach multiple cables with large heads that could interfere. Bent or twi
 * Ethernet - RJ45 port for LAN network
 * USB - Keyboard and mouse
 
-<img src="/linux/images/vim4/QuickStart.jpg" width="50%" height="50%">
+<img src="/linux/images/vim4/quick_start.jpg" width="50%" height="50%">
 
 After connecting a 12V/2A power source to the USB-C port, your Khadas Development Board will boot up. You will see the Khadas Logo appear on your display, and the white LED will flash in a regular pattern.
 

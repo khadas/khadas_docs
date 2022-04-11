@@ -14,7 +14,7 @@ Fastboot is a way to quickly upgrade each partition package of Android. It is a 
 ```sh
 $ fastboot 1
 ```
-![image](/android/images/vim4/How_To_Use_Fastboot_On_VIM4_1.png)
+![image](/android/images/vim4/fastboot_on_vim4_1.png)
 
 ### Unlock Bootloader
 
@@ -26,7 +26,7 @@ After entering the fastboot mode, input the following command to unlock:
 $ fastboot flashing unlock
 $ fastboot flashing unlock_critical
 ```
-![image](/android/images/vim4/How_To_Use_Fastboot_On_VIM4_2.png)
+![image](/android/images/vim4/fastboot_on_vim4_2.png)
 
 ### Burning Command in Bootloader Mode
 

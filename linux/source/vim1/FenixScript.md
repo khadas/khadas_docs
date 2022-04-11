@@ -230,7 +230,7 @@ $ docker exec -ti fenix bash
 ### Get the Latest Nightly build
 - See [Fenix](https://github.com/khadas/fenix)(one-stop script)
 - Release Build, Test Build Ubuntu, Test Build Debian
-![image](/linux/images/vim1/FenixScript.png)
+![image](/linux/images/vim1/fenix_script.png)
 - You can see the firmware page when you click on the latest workflow
 
 ### See Also
