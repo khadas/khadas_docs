@@ -78,37 +78,13 @@ You can see that wpi number 1 output has changed from high to low.
 
 1. Here is a simple control program.
 
-```c
-#include <stdio.h>
-#include <wiringPi.h>
-
-const int gpio_pin = 1;
-
-int main()
-{
-	if(-1 == wiringPiSetup()){
-		printf("set up error");
-		exit(1);
-	}
-
-	pinMode(gpio_pin,OUTPUT);
-
-	while(1){
-		digitalWrite(gpio_pin,HIGH);
-		printf("wPi Pin %d now is GIGH\n",gpio_pin);
-		delay(5000);
-		digitalWrite(gpio_pin,LOW);
-		printf("wPi Pin %d now is LOW\n",gpio_pin);
-		delay(5000);
-	}
-
-	exit(0);
-}
+```sh
+$ wget https://dl.khadas.com/development/code/docs_source/wiringpi.c
 ```
 
-2. You can use gcc to compile it. This is the compile command: `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
+2. You can use gcc to compile it. This is the compile command: `gcc -o wiringpi wiringpi.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
 
-3. Run `./test` to control wpi number 1.
+3. Run `./wiringpi` to control wpi number 1.
 
 ```shell
 wPi Pin 1 now is GIGH

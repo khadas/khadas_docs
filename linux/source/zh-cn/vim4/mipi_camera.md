@@ -62,91 +62,28 @@ $ gst-launch-1.0 v4l2src name=vsrc device=/dev/video0 ! video/x-raw,width=1920,h
 
 python版本的源码如下：
 
-```python
-import cv2
-
-if __name__ == '__main__':
-
-    val = True
-
-    cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
-
-    fourcc = cv2.VideoWriter_fourcc(*'XVID')
-
-    out = cv2.VideoWriter("./test.avi", fourcc, 20.0, (640, 480), True)
-
-    while val is True:
-        ret, frame = cap.read()
-        cv2.cvtColor(frame,cv2.COLOR_RGB2BGR)
-        if frame is None:
-            break
-        else:
-            out.write(frame)
-            cv2.imshow("video", frame)
-            k = cv2.waitKey(1) & 0xFF
-            if k == 27:
-                break
-
-    cap.release()
-    out.release()
+```sh
+$ wget https://dl.khadas.com/development/code/docs_source/mipi-opencv.py
 ```
 
 ### C++
 
 C++版本的源码如下：
 
-```c++
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/core/core.hpp>
-#include <iostream>
-#include <string>
-using
-namespace  cv;
-
-using
-namespace  std;
-
-int main(int argc, char** argv)
-{
-    int count=100;
-    string str = argv[1];
-    string res=str.substr(10);
-    VideoCapture capture(stoi(res));
-    capture.set(CAP_PROP_FRAME_WIDTH, 1920);
-    capture.set(CAP_PROP_FRAME_HEIGHT, 1080);
-    while (count)
-    {
-        Mat frame;
-        capture >> frame;
-
-        if (frame.empty()) {
-            break;
-        }
-        int h = frame.rows;
-        int w = frame.cols;
-        const char *name = "video";
-        namedWindow(name, 0);
-        imshow(name, frame);
-        waitKey(30);
-        count--;
-    }
-    return 0;
-}    
+```sh
+$ wget https://dl.khadas.com/development/code/docs_source/mipi-opencv.cpp    
 ```
 
 编译命令
 
 ```sh
-$ gcc -o mipi mipi.cpp -lopencv_imgproc -lopencv_core -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -std=c++11 -std=gnu++11 -Wall -std=c++11 -lstdc++ -I/usr/include/opencv4
+$ gcc -o mipi mipi-opencv.cpp -lopencv_imgproc -lopencv_core -lopencv_videoio -lopencv_imgcodecs -lopencv_highgui -std=c++11 -std=gnu++11 -Wall -std=c++11 -lstdc++ -I/usr/include/opencv4
 ```
 
 运行:
 
 ```sh
-$ ./test /dev/videoX
+$ ./mipi /dev/videoX
 ```
 
 

@@ -81,36 +81,12 @@ root@Khadas:~# gpio read 1
 1. 这里同样是一个控制GPIO1的简单程序。
 
 ```shell
-#include <stdio.h>
-#include <wiringPi.h>
-
-const int gpio_pin = 1;
-
-int main()
-{
-	if(-1 == wiringPiSetup()){
-		printf("set up error");
-		exit(1);
-	}
-
-	pinMode(gpio_pin,OUTPUT);
-
-	while(1){
-		digitalWrite(gpio_pin,HIGH);
-		printf("wPi Pin %d now is GIGH\n",gpio_pin);
-		delay(5000);
-		digitalWrite(gpio_pin,LOW);
-		printf("wPi Pin %d now is LOW\n",gpio_pin);
-		delay(5000);
-	}
-
-	exit(0);
-}
+$ wget https://dl.khadas.com/development/code/docs_source/wiringpi.c
 ```
 
-2. 通过gcc可以编译成可执行的程序。编译的命令是 `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`。
+2. 通过gcc可以编译成可执行的程序。编译的命令是 `gcc -o wiringpi wiringpi.c -lwiringPi -lpthread -lrt -lm -lcrypt`。
 
-3. 运行 `./test` 就可以控制wpi的1号引脚了。
+3. 运行 `./wiringpi` 就可以控制wpi的1号引脚了。
 
 ```shell
 wPi Pin 1 now is GIGH

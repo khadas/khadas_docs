@@ -108,33 +108,8 @@ class Serial(object):
 
 这是一对引脚读写控制的简单程序。
 
-```python
-import wiringpi as GPIO
-
-INPUT = 0
-OUTPUT = 1
-OUTPUT_PIN = 17
-INPUT_PIN = 16
-OUTPUT_HIGH = 1
-OUTPUT_LOW = 0
-pinstatus_list = ['LOW','HIGH']
-
-GPIO.wiringPiSetup()
-GPIO.pinMode(OUTPUT_PIN, OUTPUT)
-GPIO.pinMode(INPUT_PIN, INPUT)
-
-print("----GPIO写测试程序-----")
-print("设置输出脚的值为低电平")
-GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_LOW)
-result = GPIO.digitalRead(INPUT_PIN)
-print('{}{}'.format('读取到的引脚值为', pinstatus_list[result]))
-GPIO.delay(2000)
-print("设置输出脚的值为高电平")
-GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_HIGH)
-result = GPIO.digitalRead(INPUT_PIN)
-print('{}{}'.format('读取到的引脚值为', pinstatus_list[result]))
-GPIO.delay(2000)
-print("程序结束")
+```sh
+$ wget https://dl.khadas.com/development/code/docs_source/wiringpi-python.py
 ```
 ## 注意
 如果需要使用wiringPi-Python的特殊功能引脚，需要先确认DTB里面打开了相应的配置。
