@@ -5,16 +5,19 @@ title: Edge Series Hwardware
 
 ### Edge
 
-![Top view](/linux/images/edge/edge-specs.jpg)
+![Edge TOP](/linux/images/edge/edge_top_interfaces.png)
+![Edge BOTTOM](/linux/images/edge/edge_bottom_interfaces.png)
 
 ### Edge-V
 
-![Top view](/linux/images/edge/edgev_interfaces.jpg)
+![Edge-V TOP](/linux/images/edge/edge_v_top_interfaces.png)
+![Edge-V BOTTOM](/linux/images/edge/edge_v_bottom_interfaces.png)
 
 
 ### Captain
 
-![Top view](/linux/images/edge/captain_interfaces.jpg)
+![Captain TOP](/linux/images/edge/captain_v_top_interfaces.png)
+![Captain BOTTOM](/linux/images/edge/captain_bottom_interfaces.png)
 
 
 ## Edge Series Hardware Info

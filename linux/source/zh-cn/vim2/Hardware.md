@@ -4,8 +4,8 @@ title: VIM2 硬件描述
 ## VIM2 硬件接口描述
 
 ### VIM2 V14
-![TOP image](/linux/images/vim2/VIM2_v1.4_top_port_labels.jpg)
-![Bottom image](/linux/images/vim2/VIM2_v1.4_bottom_port_labels.jpg) 
+![TOP image](/linux/images/vim2/VIM2_v1.4_top_port_labels.png)
+![Bottom image](/linux/images/vim2/VIM2_v1.4_bottom_port_labels.png) 
 
 ### VIM2 V12
 ![image](/linux/images/vim2/vim2_interfaces.png)
