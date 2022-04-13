@@ -1,1 +1,1 @@
-../vim1/CreateBurnCard.md
+create_burn_card.md

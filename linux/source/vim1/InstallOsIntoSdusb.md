@@ -11,7 +11,7 @@ There are several ways to install the image into an SD card or USB storage:
 
 * [Etcher](https://www.balena.io/etcher/) has a user-friendly GUI for beginners, and it is compatible with Mac, Windows and Linux. Simply select an image and it will automatically identify your flash drive and burn the image. **(Recommended)**
 
-![How to Use Etcher](/linux/images/vim1/HowtoUseEtcher.png)
+![How to Use Etcher](/linux/images/vim1/howto_use_etcher.gif)
 
 * Alternatively, utilise the `dd` command from within the Ubuntu Terminal:
 

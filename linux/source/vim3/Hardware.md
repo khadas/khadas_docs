@@ -1,10 +1,10 @@
-title: VIM3 Hardware
+title: VIM3/3L Hardware
 ---
 
 ## VIM3 Interfaces
 
-![VIM3 Interface Top](/linux/images/vim3/vim3_interfaces_top.jpg)
-![VIM3 Interface Bottom](/linux/images/vim3/vim3_interfaces_bottom.jpg)
+![VIM3 Interface Top](/linux/images/vim3/vim3_interfaces_top.png)
+![VIM3 Interface Bottom](/linux/images/vim3/vim3_interfaces_bottom.png)
 
 ## VIM3 Hardware Info
 
@@ -118,8 +118,12 @@ Linux_TX|19|39|GPIODZ_15
 </div>
 </div>
 
+## VIM3L Interfaces
 
-## VIM3L
+![VIM3L Interface Top](/linux/images/vim3/vim3l_interfaces_top.png)
+![VIM3L Interface Bottom](/linux/images/vim3/vim3l_interfaces_bottom.png)
+
+## VIM3L Hardware Info
 
 ![image](/linux/images/vim3/docs_vim3l.jpg)
 

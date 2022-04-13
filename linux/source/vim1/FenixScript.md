@@ -11,15 +11,16 @@ $ sudo apt-get install git make lsb-release qemu-user-static
 ```
 
 ### Clone the Fenix Repository
-Clone the Fenix repository to: `~/project/`
+Clone the Fenix repository to: `~/project`
 
 ```sh
-$ mkdir ~/project/
+$ mkdir ~/project
 $ cd ~/project/
 $ git clone --depth 1 https://github.com/khadas/fenix
 ```
 
 ### Setup the Build Environment
+
 You should setup the build environment first. 
 
 For example: Board type, Linux version, distribution, etc.
@@ -30,13 +31,14 @@ $ source env/setenv.sh
 ```
 
 ### Build the Image
+
 As root, build the image with Fenix.
 
 ```sh
 $ make
 ```
 
-**Tip:** If this is your first time building an image, the script will check your host's environment and install some essential packages. In addition, repositories (U-boot, Linux) will be cloned automatically from the Khadas GitHub.
+**Tip:** If this is your first time building an image, the script will check your host's environment and install some essential packages. In addition, repositories (U-Boot, Linux) will be cloned automatically from the Khadas GitHub.
 
 ### Build U-Boot
 ```
@@ -228,7 +230,7 @@ $ docker exec -ti fenix bash
 ### Get the Latest Nightly build
 - See [Fenix](https://github.com/khadas/fenix)(one-stop script)
 - Release Build, Test Build Ubuntu, Test Build Debian
-![image](/linux/images/vim1/FenixScript.png)
+![image](/linux/images/vim1/fenix_script.png)
 - You can see the firmware page when you click on the latest workflow
 
 ### See Also

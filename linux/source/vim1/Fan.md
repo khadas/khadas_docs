@@ -42,7 +42,7 @@ Type your password.
 </div>
 <div class="tab-pane fade" id="server" role="tabpanel" aria-labelledby="server-tab">
 
-1. Set the fan mode
+1. Set the fan mode:
 
 ```sh
 $ fan.sh off
@@ -50,13 +50,13 @@ $ fan.sh on
 $ fan.sh auto
 ```
 
-2. Read the fan mode
+2. Read the fan mode:
 
 ```sh
 $ fan.sh mode
 ```
 
-3. Set the fan speed
+3. Set the fan speed:
 
 ```sh
 $ fan.sh high
@@ -64,13 +64,13 @@ $ fan.sh mid
 $ fan.sh low
 ```
 
-4. Read the fan speed
+4. Read the fan speed:
 
 ```sh
 $ fan.sh level
 ```
 
-5. Read CPU temperature
+5. Read CPU temperature:
 
 ```sh
 $ fan.sh temp

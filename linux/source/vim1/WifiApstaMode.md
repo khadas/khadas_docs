@@ -10,7 +10,7 @@ Use Ubuntu v2005 and newer, [OTA Update](UpgradeSystem.html) will upgrade your O
 
 Configure wlan0 to `STA` mode, and wlan1 to `AP` mode.
 
-### Add wlan1 Interface
+### Add Wlan1 Interface
 
 ```bash
 khadas@Khadas:~$ sudo iw phy phy0 interface add wlan1 type managed
@@ -54,7 +54,7 @@ wlan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-### Setup wlan1 as a Hotspot
+### Setup Wlan1 as a Hotspot
 
 Setup `wlan1` as a hotspot, and allow automatic connections. 
 We shall name our hotspot `khadas_ap`, with password `12345678`.

@@ -5,11 +5,11 @@ Use Software PWM for servo control in WiringPi and WiringPi-Python.
 
 ## Principle of Servo Control
 
-The reference signal of the servo is 20ms in period and 1.5ms in width, and this corresponds to the servo's middle position.
+The reference signal of the servo is `20`ms in period and `1.5`ms in width, and this corresponds to the servo's middle position.
 
 <img src="/linux/images/vim3/servo-pwm-signal_orig.png" width="50%" >
 
-Different pulse widths correspond to different angles of the servo, and the range of pulse widths is 0.5ms to 2.5ms.
+Different pulse widths correspond to different angles of the servo, and the range of pulse widths is `0.5`ms to `2.5`ms.
 
 ```
 0.5ms --  0 degree angle
@@ -67,8 +67,8 @@ $ gpio readall
 
 ### WiringPi Source Code and Compilation
 
-1. The servo switches back and forth between 180 degrees, 90 degrees, and 0 degrees. The switching interval is 3 seconds to switch once, and the period is 9 seconds.
-2. The analog servo rotates clockwise, pauses rotation and rotates backward counterclockwise to switch back and forth, the switching interval is 3 seconds to switch once, and the period is 9 seconds.
+1. The servo switches back and forth between `180` degrees, `90` degrees, and `0` degrees. The switching interval is `3` seconds to switch once, and the period is `9` seconds.
+2. The analog servo rotates clockwise, pauses rotation and rotates backward counterclockwise to switch back and forth, the switching interval is `3` seconds to switch once, and the period is `9` seconds.
 
 ```c
 #include <wiringPi.h>
@@ -101,8 +101,8 @@ $ gcc -o SoftPwm SoftPwm.c -lwiringPi -lpthread -lrt -lm -lcrypt
 
 ### WiringPi-Python Source Code
 
-1. The servo switches between 180 degrees, 90 degrees and 0 degrees successively, and the time interval is 3 seconds.
-2. The analog servo switches between clockwise rotation, pause rotation and counterclockwise rotation, and the time interval is 3s.
+1. The servo switches between `180` degrees, `90` degrees and `0` degrees successively, and the time interval is `3` seconds.
+2. The analog servo switches between clockwise rotation, pause rotation and counterclockwise rotation, and the time interval is `3`s.
 
 ```python
 import wiringpi as GPIO

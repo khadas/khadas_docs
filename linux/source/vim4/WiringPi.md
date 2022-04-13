@@ -1,1 +1,1 @@
-../vim1/WiringPi.md
+wiringpi.md

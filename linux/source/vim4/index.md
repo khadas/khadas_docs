@@ -16,15 +16,15 @@ Your Khadas SBC is compatible with various types of power supplies, and these ar
 **Related Links:**
 * [Khadas Shop - 24W USB-C Adapter](https://www.khadas.com/product-page/usb-c-24w-adapter)
 * [Khadas Shop - USB-C Cable](https://www.khadas.com/product-page/usb-c-cable-male-to-male)
-* [Khadas VIM - Extra Power Input](/linux/vim4/ExtraPowerInput.html)
+* [Khadas VIM - Extra Power Input](extra_power_input.html)
 * [Khadas VIM - Specifications](https://www.khadas.com/vim4)
 
 ## Displays & Input
-You can connect a HDMI monitor, USB keyboard and mouse to use your Khadas Development Board as a standard desktop computer.
+You can connect a HDMI monitor, USB keyboard and mouse to use your Khadas SBC as a standard desktop computer.
 
-1. 4K HDMI 2.0 cable
-2. HDMI-compatible 1080P/4K monitor
-3. USB keyboard and mouse
+* 4K HDMI 2.0 cable
+* HDMI-compatible 1080P/4K monitor
+* USB keyboard and mouse
 
 {% note warn Warning: %}
 Do not attach multiple cables with large heads that could interfere. Bent or twisted connectors will result in intermittent connectivity issues.
@@ -40,7 +40,7 @@ Do not attach multiple cables with large heads that could interfere. Bent or twi
 * Ethernet - RJ45 port for LAN network
 * USB - Keyboard and mouse
 
-<img src="/linux/images/vim4/QuickStart.jpg" width="50%" height="50%">
+<img src="/linux/images/vim4/quick_start.jpg" width="50%" height="50%">
 
 After connecting a 12V/2A power source to the USB-C port, your Khadas Development Board will boot up. You will see the Khadas Logo appear on your display, and the white LED will flash in a regular pattern.
 
@@ -49,12 +49,12 @@ If your Khadas Development Board repeatedly restarts, or restarts randomly, this
 
 ## Related Articles
 
-1. [Install OS into eMMC](InstallOsIntoEmmc.html)
-2. [Install System into SD/USB Storage](InstallOsIntoSdusb.html)
-3. [Enter Upgrade Mode](BootIntoUpgradeMode.html)
-4. [Boot Images from External Media](BootFromExtMedia.html)
-5. [Ubuntu Firmware](/linux/firmware/Vim1UbuntuFirmware.html)
-6. [Wi-Fi](Wifi.html)
+1. [Install OS into eMMC](install_os_into_emmc.html)
+2. [Install System into SD/USB Storage](install_os_intoSdusb.html)
+3. [Enter Upgrade Mode](boot_into_upgrade_mode.html)
+4. [Boot Images from External Media](boot_from_ext_media.html)
+5. [Ubuntu Firmware](/linux/firmware/vim4_ubuntu_firmware.html)
+6. [Wi-Fi](wifi.html)
 
 ## External Websites
 * [Khadas Homepage](https://www.khadas.com)

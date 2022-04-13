@@ -1,1 +1,1 @@
-../vim1/GpioIRQ.md
+gpio_irq.md

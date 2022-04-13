@@ -1,1 +1,1 @@
-../vim2/Wol.md
+wol.md

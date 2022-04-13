@@ -4,7 +4,7 @@ title: WiringPi
 Using WiringPi on a Khadas SBC.
 
 ## What is WiringPi
-WiringPi is a C++ library for Raspberry Pi. With this library you can use many of the functionalities provided by the GPIO header: digital pins, SPI, I2C, UART, etc.
+WiringPi is a C++ library for Raspberry Pi. With this library you can use many of the functionalities provided by the GPIO header: `digital pins`, `SPI`, `I2C`, `UART`, etc.
 We have ported this library to also work with Khadas SBCs, and you can use it to control the `40-PIN HEADER`.
 
 ## Using WiringPi
@@ -53,20 +53,20 @@ PU/PD --> PU:pull up PD:pull down DSBLD:disabled PU/PD
 
 Here's an example of controlling wpi number 1.
 
-3. run `gpio mode 1 out`.
+3. Run `gpio mode 1 out`.
 
 Now, The wpi number 1 mode is out.
 
-4. run `gpio read 1`:
+4. Run `gpio read 1`:
 
 ```shell
 root@Khadas:~# gpio read 1 
 1
 ```
 
-5. run `gpio write 1 0` to change the pinout level.
+5. Run `gpio write 1 0` to change the pinout level.
 
-6. run `gpio read 1` again
+6. Run `gpio read 1` again:
 
 ```shell
 root@Khadas:~# gpio read 1   
@@ -78,37 +78,13 @@ You can see that wpi number 1 output has changed from high to low.
 
 1. Here is a simple control program.
 
-```shell
-#include <stdio.h>
-#include <wiringPi.h>
-
-const int gpio_pin = 1;
-
-int main()
-{
-	if(-1 == wiringPiSetup()){
-		printf("set up error");
-		exit(1);
-	}
-
-	pinMode(gpio_pin,OUTPUT);
-
-	while(1){
-		digitalWrite(gpio_pin,HIGH);
-		printf("wPi Pin %d now is GIGH\n",gpio_pin);
-		delay(5000);
-		digitalWrite(gpio_pin,LOW);
-		printf("wPi Pin %d now is LOW\n",gpio_pin);
-		delay(5000);
-	}
-
-	exit(0);
-}
+```sh
+$ wget https://dl.khadas.com/development/code/docs_source/wiringpi.c
 ```
 
-2. You can use gcc to compile it. This is the compile command: `gcc -o test test.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
+2. You can use gcc to compile it. This is the compile command: `gcc -o wiringpi wiringpi.c -lwiringPi -lpthread -lrt -lm -lcrypt`.
 
-3. run `./test` to control wpi number 1.
+3. Run `./wiringpi` to control wpi number 1.
 
 ```shell
 wPi Pin 1 now is GIGH
@@ -338,7 +314,8 @@ void softPwmStop   (int pin) ;
 
 ## Notes
 
-If you need to use the special pin functions of wiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the .dtb file.
+If you need to use the special pin functions of wiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the dtb file.
 
 WiringPi includes many functions, not limited to just controlling the output of GPIO pins and reading pin levels. 
+
 This is only a simple introduction, and users can explore more by themselves.

@@ -31,30 +31,31 @@ First connect VIM2 to your local area network (LAN), then get the Ethernet MAC a
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
-<img src="/linux/images/vim2/VIM2_WOL.png" width="800px">
+<img src="/linux/images/vim2/vim2_wol.png" width="800px">
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-<img src="/linux/images/vim3/VIM3_WOL.png" width="800px">
+<img src="/linux/images/vim3/vim3_wol.png" width="800px">
 
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
-<img src="/linux/images/vim4/VIM4_WOL.png" width="800px">
+<img src="/linux/images/vim4/vim4_wol.png" width="800px">
 
 </div>
 <div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
 
-<img src="/linux/images/edge/Edge_WOL.jpg" width="800px">
+<img src="/linux/images/edge/edge_wol.jpg" width="800px">
 
 </div>
 </div>
 
 If the sticker has peeled-off, you can use following Terminal commands to get the MAC Address.
 
-2.On Ubuntu, type `ifconfig` on terminal
-```
+2.On Ubuntu, type `ifconfig` on terminal.
+
+```sh
 $ ifconfig
 eth0      Link encap:Ethernet  HWaddr 98:aa:fc:60:46:de
           inet addr:192.168.1.142  Bcast:192.168.1.255  Mask:255.255.255.0 

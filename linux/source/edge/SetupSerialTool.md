@@ -4,7 +4,7 @@ title: Setup Serial Debugging Tool
 ## Edge-V
 You won't need an Edge-IO board to setup the serial debugger on an Edge-V. Just use the on-board GPIO pins, as shown in this picture (same as VIM1, VIM2, and VIM3).
 
-![VIM1-GPIO](/linux/images/vim1/SerialConnections_3Pin.jpg)
+![VIM1-GPIO](/linux/images/vim1/serial_connections_3pin.jpg)
 
 ## Edge
 If you're using an Edge SBC, continue reading below:
@@ -27,7 +27,7 @@ Follow these steps to make the correct connections:
 
 The connections should look like this:
 
-![Image of SerialConnections](/linux/images/edge/SerialConnections_3Pin.png)
+![Image of SerialConnections](/linux/images/edge/serial_connections_3pin.png)
 
 3) Insert the USB-end into your Host-PC.
 
@@ -97,11 +97,11 @@ If the print-out contains the following line, you might need to check the step `
 ## SecureCRT Bug
 
 If you use SecureCRT to connect the Edge-V or edge,maybe you will see this.
-![SrcureCRT BUG](/linux/images/edge/SourceCRT_BUG.png)
+![SrcureCRT BUG](/linux/images/edge/sourcecrt_bug.png)
 This is not caused by incorrect settings. This is a CRT bug. You need to follow my steps.
 * Use kermit to connect you board,you will see the true log
 * Close kermit,then use SecureCRT to connect you board.you will find all is fine.
-![SecureCRT Slove](/linux/images/edge/SourceCRT_BUG_slove.png)
+![SecureCRT Slove](/linux/images/edge/sourcecrt_bug_slove.png)
 
 
 {% note info Note %}

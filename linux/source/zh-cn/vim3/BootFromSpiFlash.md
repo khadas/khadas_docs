@@ -40,7 +40,7 @@ $ make uboot
 
 * 从SD卡加载的方式:
 
-```shell
+```
 kvim4# load mmc 0 1080000 u-boot.bin.spi.bin.signed
 ```
 
@@ -56,13 +56,13 @@ kvim4# load usb 0 1080000 u-boot.bin.spi.bin.signed
 设置TFTP的方法在[如何设TFTP服务器](SetupTFTPServer.html)的文档里有详细的说明。
 
 
-```shell
+```
 kvim4# tftp 1080000 u-boot.bin.spi.bin.signed
 ```
 
 ### 烧录
 
-```shell
+```
 kvim4# sf probe
 kvim4# sf erase 0 +$filesize
 kvim4# sf erase 0 +$filesize
@@ -78,7 +78,7 @@ device 0 offset 0x0, size 0x3bd000
 
 * 确认当前的启动方式:
 
-```shell
+```
 kvim4# kbi bootmode r
 bootmode: emmc
 ```
@@ -87,13 +87,13 @@ bootmode: emmc
 
 * 设置为SPI启动:
 
-```shell
+```
 kvim4# kbi bootmode w spi
 ```
 
 关机已使新设置的启动方式的参数生效:
 
-```shell
+```
 kvim4# kbi poweroff
 ```
 
@@ -101,19 +101,19 @@ kvim4# kbi poweroff
 
 ## 不再需要从SPI启动时清除SPI
 
-```shell
+```
 kvim4# sf probe
 kvim4# sf erase 0 1000
 kvim4# reset
 ```
 
 ## 故障排查
-1. 如果启动方式已经设置为从SPI启动，同时SPI的U-Boot损坏了是无法进入uboot的命令行的
-	1) 如果uboot损坏了，你可以尝试使用[TST模式](BootIntoUpgradeMode.html#TST-Mode-Recommended)从eMMC启动，然后进入命令行，清除你的SPI或者重新烧录U-Boot进SPI。
+如果启动方式已经设置为从SPI启动，同时SPI的U-Boot损坏了是无法进入uboot的命令行的
+	1. 如果uboot损坏了，你可以尝试使用[TST模式](BootIntoUpgradeMode.html#TST-Mode-Recommended)从eMMC启动，然后进入命令行，清除你的SPI或者重新烧录U-Boot进SPI。
 	{% note info 注意 %}
 		此时不能使用PC的USB口给板子供电,会直接进入升级模式,而不是从eMMC启动。
 	{% endnote %}
-	2) 如果eMMC的U-Boot损坏了，你可以尝试使用[TST模式](BootIntoUpgradeMode.html#TST-Mode-Recommended)进入升级模式，烧录一个固件到eMMC上，再重复步骤1。
+	2. 如果eMMC的U-Boot损坏了，你可以尝试使用[TST模式](BootIntoUpgradeMode.html#TST-Mode-Recommended)进入升级模式，烧录一个固件到eMMC上，再重复步骤1。
 	{% note info 注意 %}
 		此时板子需要通过Type-C的线连接到PC。
 	{% endnote %}

@@ -1,1 +1,1 @@
-../vim1/Gpio.md
+gpio.md

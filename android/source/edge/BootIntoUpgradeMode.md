@@ -51,7 +51,7 @@ kedge# run maskrom
 2. Use a tweezer to short-circuit the two pads of `M` register, then without releasing...
 3. Short press the `Reset` key and release it to boot into Upgrade Mode (Maskrom Mode).
 
-![Image of MRegister_ShortCircuit](/android/images/edge/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/android/images/edge/mregister_short_circuit.png)
 
 {% note info Tip %}
 The `M` register is located on the backside of Edge

@@ -1,1 +1,1 @@
-../vim1/WiringPi-Python.md
+wiringpi_python.md

@@ -1,1 +1,1 @@
-../vim1/WifiUsageDesktopVersion.md
+wifi_usage_desktop_version.md

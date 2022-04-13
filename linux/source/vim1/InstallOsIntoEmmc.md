@@ -158,7 +158,7 @@ Root privilege is required.
 
 {% endnote %}
 
-## Check The USB Driver
+## Check the USB Driver
 
 You must now place your board into `Upgrade Mode`. See [how to enter upgrade mode](BootIntoUpgradeMode.html).
 Check to see if Ubuntu has detected your board as an attached USB-device.

@@ -3,18 +3,22 @@ title: Edge 硬件描述
 
 ## Edge系列接口描述
 
-### Edge 
+### Edge
 
-![Top view](/linux/images/edge/edge-specs.jpg)
+![Edge TOP](/linux/images/edge/edge_top_interfaces.png)
+![Edge BOTTOM](/linux/images/edge/edge_bottom_interfaces.png)
 
 ### Edge-V
 
-![Top view](/linux/images/edge/EdgeVInterfaces.jpg)
+![Edge-V TOP](/linux/images/edge/edge_v_top_interfaces.png)
+![Edge-V BOTTOM](/linux/images/edge/edge_v_bottom_interfaces.png)
 
 
 ### Captain
 
-![Top view](/linux/images/edge/CaptainInterfaces.jpg)
+![Captain TOP](/linux/images/edge/captain_v_top_interfaces.png)
+![Captain BOTTOM](/linux/images/edge/captain_bottom_interfaces.png)
+
 
 ## Edge系列硬件信息
 

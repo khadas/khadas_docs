@@ -1,8 +1,10 @@
-title: Use PWM
+title: PWM Usage
 ---
 
 Within the VIM4's GPIO pin-outs, there is a pin labelled `PWM_F`. 
+
 By default, the DTS configuration file specifies `PWM_F` as the pin used to control the backlight of a VBO screen. 
+
 The following code modification is required:
 
 ```diff
@@ -41,9 +43,9 @@ diff --git a/arch/arm64/boot/dts/amlogic/mesont7_an400-panel.dtsi b/arch/arm64/b
                 interrupts = <0 197 1
 
 ```
-## Confirm Which Physical Pin Corresponds To Hardware PWM
+## PWM-F Harware Interfaces
 
-* `PWM_F` on [VIM4 GPIO-Out](/android/zh-cn/vim4/Interfaces#GPIO-Pinout)
+* `PWM_F` on [VIM4 GPIO-Out](/android/vim4/Interfaces#GPIO-Pinout)
 
 ## Switch To Root User
 
@@ -76,7 +78,8 @@ root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
 ```
 
 If you successfully turn on the hardware pwm, you can see the waveform through the oscilloscope:
-![pwm-Oscilloscope](/android/images/vim1/pwm-Oscilloscope.jpg)
+
+![pwm-Oscilloscope](/android/images/vim1/pwm-oscilloscope.jpg)
 
 {% note info Note %}
 If you use an oscilloscope to check the waveform, remember that the board and the oscilloscope need to share the same ground.

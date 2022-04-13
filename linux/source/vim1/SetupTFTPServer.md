@@ -1,7 +1,7 @@
 title: TFTP Server for U-Boot
 ---
 
-Setting up a TFTP server inside U-boot is very simple, and many guides are also available via Google.
+Setting up a TFTP server inside U-Boot is very simple, and many guides are also available via Google.
 
 ## Setup TFTP
 
@@ -26,14 +26,14 @@ $ sudo apt-get install openbsd-inetd tftpd tftp
 
 As root, enable the TFTP server by editing `/etc/inetd.conf`. Locate the line that looks similar to:
 
-```bash
-#tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
+```
+# tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
 ```
 
 Uncomment this line, and add the option and value `-s /srv/tftp` to the end of this line: 
 
-```bash
-tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tftp
+```
+# tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tftp
 ```
 
 Create and modify permissions on the TFTP root directory:
@@ -111,14 +111,14 @@ kvim3#
 
 Setup the ip address of the target client and TFTP host server:
 
-```bash
+```
 kvim3# setenv ipaddr 192.168.1.249
 kvim3# setenv serverip 192.168.1.117
 ```
 
 Save the settings:
 
-```bash
+```
 kvim3# saveenv
 Saving Environment to aml-storage...
 mmc env offset: 0x6c00000 
@@ -133,7 +133,7 @@ Please confirm that your configuration is correct.
 
 e.g.
 
-```bash
+```
 kvim3#print ipaddr
 ipaddr=192.168.1.249
 kvim3#print serverip

@@ -5,7 +5,7 @@ title: Pulse Width Modulation (PWM)
 
 ## Check Hardware PWM Pins
 
-By default, Hardware PWM is enabled within the .dtb file. However different SBCs will use different GPIO pins for PWM, so you'll need to check which pins are applicable to your SBC.
+By default, Hardware PWM is enabled within the dtb file. However different SBCs will use different GPIO pins for PWM, so you'll need to check which pins are applicable to your SBC.
 
 * `PWM_F` on [VIM1 GPIO-Out](Hardware#VIM1-Hardware-Info)
 * `PWM_D` on [VIM2 GPIO-Out](Hardware#VIM2-Hardware-Info)
@@ -77,7 +77,7 @@ root@Khadas:~#
 
 Use an oscilloscope to check if the pins have been successfully enabled.
 
-![pwm-Oscilloscope](/linux/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/linux/images/vim1/pwm-oscilloscope.jpg)
 
 {% note info Note %}
 

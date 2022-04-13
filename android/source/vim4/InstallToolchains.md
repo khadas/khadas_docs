@@ -29,6 +29,6 @@ sudo apt-get install gcc-4.8-aarch64-linux-gnu
 ```
 The main toolchain required for the Linux kernel is included in the SDK `prebuilts/clang/host/linux-x86/clang-r383902/bin`.
 
-## Further reading
+## Further Reading
 
 [Amlogic Openlinux Website](http://openlinux.amlogic.com/)

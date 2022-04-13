@@ -39,7 +39,7 @@ VIM3 board has integrated USB GPS function on Android 9. It can insert GPS recei
 **2)** It can also be used without network, but GPS equipment needs to be placed outdoors to receive satellite signals
 {% endnote %}
 
-To use GPS positioning, you need to turn on the location switch in the settings first，Droid Settings > More settings > Device Preferences > Loacation,Location selects on,use command to query location_providers_allowed is gps 
+To use GPS positioning, you need to turn on the location switch in the settings first, Droid Settings > More settings > Device Preferences > Loacation,Location selects on,use command to query location_providers_allowed is gps 
 ```shell
 130|console:/ $ settings list secure |grep location_providers_allowed          
 location_providers_allowed=gps

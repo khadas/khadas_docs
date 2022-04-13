@@ -81,7 +81,6 @@ sidebar:
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
-    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
     kbi_guidance: KBI Guide
     linux: Linux
@@ -155,7 +154,6 @@ sidebar:
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
-    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
     kbi_guidance: KBI Guide
     linux: Linux
@@ -252,7 +250,6 @@ sidebar:
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
-    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
     kbi_guidance: KBI Guide
     linux: Linux
@@ -331,7 +328,6 @@ sidebar:
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
-    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
     kbi_guidance: KBI Guide
     linux: Linux

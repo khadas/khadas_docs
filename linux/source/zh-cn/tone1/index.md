@@ -56,7 +56,7 @@ title: Khadas Tone1 初学者 FAQ
 </div>
 </div>
 
-# 更多相关信息:
+## 更多相关信息:
 
 * [Tone1 官网](https://www.khadas.com/tone1)
 * [Tone1 用户手册](/linux/zh-cn/tone1/UserManual.html)

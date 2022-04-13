@@ -13,7 +13,7 @@ Khadas SBCs are designed with two power supply ports:
 1. USB-C Port: This is used for both power supply and USB data transmission.
 2. VIN Port: 4-pin port which is situated near the USB-C port.
 
-<img src="/linux/images/vim3/EXT_USBC.png" width="50%" height="50%" >
+<img src="/linux/images/vim3/ext_usbc.png" width="50%" height="50%" >
 
 ## VIN Port - Secondary Input Power
 
@@ -40,7 +40,7 @@ Khadas SBCs are designed with two power supply ports:
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1v12" role="tabpanel" aria-labelledby="vim1v12-tab">
 
-<img src="/linux/images/vim1/VIM1_V12_EXT.png" width="50%" height="50%" >
+<img src="/linux/images/vim1/vim1_v12_ext.png" width="50%" height="50%" >
 
 The VIN port is a 4-pin 1.25mm port.
 
@@ -49,7 +49,7 @@ The voltage range is from 0 ~ 5V.
 </div>
 <div class="tab-pane fade" id="vim1v14" role="tabpanel" aria-labelledby="vim1v14-tab">
 
-<img src="/linux/images/vim1/VIM1_v14_EXT.png" width="50%" height="50%" >
+<img src="/linux/images/vim1/vim1_v14_ext.png" width="50%" height="50%" >
 
 The VIN "jack" on the SBC is the [Molex 78171](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781710004_PCB_HEADERS.xml&channel=Products&Lang=en-US).
 And the corresponding VIN "plug" is [Molex 78172](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781720004_CRIMP_HOUSINGS.xml).
@@ -61,21 +61,21 @@ The voltage range is 0 ~ 5V.
 </div>
 <div class="tab-pane fade" id="vim2v12" role="tabpanel" aria-labelledby="vim2v12-tab">
 
-<img src="/linux/images/vim2/VIM2_V12_EXT.png" width="50%" height="50%" >
+<img src="/linux/images/vim2/vim2_v12_ext.png" width="50%" height="50%" >
 
 The voltage range is 0 ~ 5V.
 
 </div>
 <div class="tab-pane fade" id="vim2v14" role="tabpanel" aria-labelledby="vim2v14-tab">
 
-<img src="/linux/images/vim2/VIM2_V14_EXT.png" width="50%" height="50%" >
+<img src="/linux/images/vim2/vim2_v14_ext.png" width="50%" height="50%" >
 
 The voltage range is 0 ~ 5V.
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-<img src="/linux/images/vim3/VIM3_V12_EXT.png" width="50%" height="50%" >
+<img src="/linux/images/vim3/vim3_v12_ext.png" width="50%" height="50%" >
 
 The VIN "jack" on the SBC is the [Molex 78171](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781710004_PCB_HEADERS.xml&channel=Products&Lang=en-US).
 And the corresponding VIN "plug" is [Molex 78172](https://www.molex.com/molex/products/datasheet.jsp?part=active/0781720004_CRIMP_HOUSINGS.xml).

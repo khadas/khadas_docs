@@ -1,1 +1,1 @@
-../vim1/ExtraPowerInput.md
+extra_power_input.md

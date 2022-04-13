@@ -1,1 +1,1 @@
-../vim1/Fan.md
+fan.md

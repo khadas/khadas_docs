@@ -1,1 +1,1 @@
-../vim1/Wifi.md
+wifi.md

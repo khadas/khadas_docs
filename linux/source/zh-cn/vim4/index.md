@@ -17,7 +17,7 @@ title: 快速上手
 **相关链接：**
 * [Khadas Shop - 24W电源适配器](https://www.khadas.cn/product-page/24w-power-adapter?post_type=product)
 * [Khadas Shop - USB-C male to male线](https://www.khadas.cn/product-page/usb-c-cable-male-to-male?post_type=product)
-* [Khadas VIMs 外部供电接口](ExtraPowerInput.html)
+* [Khadas VIMs 外部供电接口](extra_power_input.html)
 * [Khadas VIM 规格](https://www.khadas.com/vim)
 
 ## 显示器&&用户输入
@@ -33,13 +33,13 @@ title: 快速上手
 
 ## 快速连接开机
 
-1. Type-C: Type-C口为电源连接口
+* Type-C: Type-C口为电源连接口
 
-2. HDMI: 标准HDMI座子，连接你的显示屏
+* HDMI: 标准HDMI座子，连接你的显示屏
 
-3. ETH(可选): 网口座子
+* ETH(可选): 网口座子
 
-<img src="/linux/images/vim4/QuickStart.jpg" width="50%" height="50%">
+<img src="/linux/images/vim4/quick_start.jpg" width="50%" height="50%">
 
 上电以后正常启动，可以从显示屏看到Khadas Logo，以及白灯闪烁。
 
@@ -49,12 +49,12 @@ title: 快速上手
 
 ## 常用文档
 
-1. [通过USB线安装系统到eMMC](InstallOsIntoEmmc.html)
-2. [安装系统到SD卡或U盘](InstallOsIntoSdusb.html)
-3. [进入升级模式](BootIntoUpgradeMode.html)
-4. [从外部媒体介质启动系统](BootFromExtMedia.html)
-5. [Ubuntu固件](Vim1UbuntuFirmware.html)
-6. [Wi-Fi](Wifi.html)
+1. [通过USB线安装系统到eMMC](install_os_into_emmc.html)
+2. [安装系统到SD卡或U盘](install_os_intoSdusb.html)
+3. [进入升级模式](boot_into_upgrade_mode.html)
+4. [从外部媒体介质启动系统](boot_from_ext_media.html)
+5. [Ubuntu固件](/linux/firmware/vim4_ubuntu_firmware.html)
+6. [Wi-Fi](wifi.html)
 
 ## 外部链接
 * [Khadas Homepage](https://www.khadas.com)

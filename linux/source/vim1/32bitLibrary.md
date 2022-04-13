@@ -7,7 +7,7 @@ This library is for executing 32-bit code within a 64-bit environment.
 
 1. Sample code.
 
-```
+```c
 #include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 2. Compile and run.
 
-```bash
+```
 $ arm-linux-gnueabihf-gcc -o test test.c
 $ ./test   
 -bash: ./test: No such file or directory
@@ -34,4 +34,4 @@ $ sudo apt-get -y install libc6:armhf
 $ ./test
 Hello World!
 ```
-'libc6' is the name of the package, whilst 'armhf' indicates that the package is 32-bit.
+`libc6` is the name of the package, whilst `armhf` indicates that the package is 32-bit.

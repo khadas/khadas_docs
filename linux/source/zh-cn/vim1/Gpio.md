@@ -7,7 +7,7 @@ title: GPIO使用文档
 1. 此文档仅支持**VIM1/VIM2/VIM3上的Amlogic 4.9内核以及VIM4上的Amlogic 5.4内核**。
 2. 所有对GPIO的操作都是在**root权限**下进行的，切换到root:
 
-```sh
+```
 khadas@Khadas:~$ su
 Password:
 root@Khadas:/home/khadas#
@@ -50,7 +50,7 @@ Amlogic芯片通常都会包括AOBUS和Periphs两个GPIO Ranges。这里对每�
 
 1. **获取`Banks`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
@@ -60,7 +60,7 @@ AOBUS的`Banks`就为`496`。
 
 2. **获取`Pins`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
 registered pins: 11
 pin 0 (GPIOAO_0)  pinctrl@14
@@ -82,7 +82,7 @@ pin 10 (GPIO_TEST_N)  pinctrl@14
 
 1. **获取`Banks`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
 GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
@@ -92,7 +92,7 @@ Periphs的`Banks`就是`410`。
 
 2. **获取`Pins`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
 registered pins: 100
 pin 0 (GPIOZ_0)  pinctrl@4b0
@@ -126,7 +126,7 @@ pin 99 (GPIOCLK_1)  pinctrl@4b0
 
 1. **获取`Banks`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
@@ -136,7 +136,7 @@ AOBUS的`Banks`就为`496`。
 
 2. **获取`Pins`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
 registered pins: 11
 pin 0 (GPIOAO_0)  pinctrl@14
@@ -158,7 +158,7 @@ pin 10 (GPIO_TEST_N)  pinctrl@14
 
 1. **获取`Banks`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
 GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
@@ -168,7 +168,7 @@ Periphs的`Banks`就是`410`。
 
 2. **获取`Pins`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
 registered pins: 100
 pin 0 (GPIOZ_0)  pinctrl@4b0
@@ -202,7 +202,7 @@ pin 99 (GPIOCLK_1)  pinctrl@4b0
 
 1. **获取`Banks`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [496 - 511] PINS [0 - 15]
@@ -212,7 +212,7 @@ AOBUS的`Banks`就为`496`。
 
 2. **获取`Pins`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/pins
 registered pins: 16
 pin 0 (GPIOAO_0)  pinctrl@ff800014
@@ -239,7 +239,7 @@ pin 15 (GPIO_TEST_N)  pinctrl@ff800014
 
 1. **获取`Banks`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges
 GPIO ranges handled:
 0: periphs-banks GPIOS [410 - 495] PINS [0 - 85]
@@ -249,7 +249,7 @@ Periphs的`Banks`就是`410`.
 
 2. **获取`Pins`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/pins
 registered pins: 86
 pin 0 (GPIOV_0)  pinctrl@ff634480
@@ -285,7 +285,7 @@ pin 85 (GPIOX_19)  pinctrl@ff634480
 
 1. **获取`Banks`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
 GPIO ranges handled:
 0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
@@ -293,7 +293,7 @@ GPIO ranges handled:
 
 2. **获取`Pins`：**
 
-```sh
+```
 root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
 registered pins: 157
 pin 0 (GPIOB_0)  fe000000.apb4:pinctrl@4000
@@ -341,7 +341,7 @@ pin 9 (GPIOB_9)  fe000000.apb4:pinctrl@4000
 1. **将GPIODV24和GPIODV25设置为普通引脚**(默认复用为i2c)。
 
   * 修改`/boot/env.txt`,
-```sh
+```
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
   * 从overlays中移除i2c3，
@@ -358,35 +358,35 @@ overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_
 3. **设置`GPIODV_24`为读模式。**
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 ```
   * 设置成读模式
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
 4. **设置`GPIODV_25`为写模式。**
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
   * 设置成写模式
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
 ```
 
 5. **测试**
 
   * 设置`GPIODV_25`输出高电平并用`GPIODV_24`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1
 ```
   * 设置`GPIODV_25`为低电平并用`GPIODV_24`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 0
@@ -400,7 +400,7 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1. **将GPIODV24和GPIODV25设置为普通引脚**(默认复用为i2c)。
 
   * 修改`/boot/env.txt`,
-```sh
+```
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
   * 从overlays中移除i2c3，
@@ -417,35 +417,35 @@ overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_
 3. **设置`GPIODV_24`为读模式**：
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
 ```
   * 设置成读模式
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
 ```
 
 4. **设置`GPIODV_25`为写模式**：
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
   * 设置成写模式
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
 ```
 
 5. **测试**
 
   * 设置`GPIODV_25`输出高电平并用`GPIODV_24`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1
 ```
   * 设置`GPIODV_25`为低电平并用`GPIODV_24`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 0
@@ -459,7 +459,7 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
 1. **将GPIOA14和GPIOA15设置为普通引脚**(默认复用为i2c)：
 
   * 修改`/boot/env.txt`,
-```sh
+```
 root@Khadas:/home/khadas# vim /boot/env.txt
 ```
   * 从overlays中移除i2c3，
@@ -476,35 +476,35 @@ overlays=uart3 pwm_f i2c3 i2s os08a10 watchdog --> overlays=uart3 pwm_f i2s os08
 3. **设置`GPIOA_14`为读模式**：
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
 ```
   * 设置成读模式
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio474/direction
 ```
 
 4. **设置`GPIOA_15`为写模式**：
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 475 > /sys/class/gpio/export
 ```
   * 设置成写模式
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio475/direction
 ```
 
 5. **测试**
 
   * 设置`GPIOA_15`输出高电平并用`GPIOA_14`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 1
 ```
   * 设置`GPIOA_15`为低电平并用`GPIOA_14`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio475/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 0
@@ -523,35 +523,35 @@ root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
 2. **设置`GPIOT_18`为读模式：**
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 464 > /sys/class/gpio/export
 ```
   * 设置为读模式
-```sh
+```
 root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio464/direction
 ```
 
 3. **设置`GPIOT_19`为写模式**
 
   * 申请GPIO
-```sh
+```
 root@Khadas:/home/khadas# echo 465 > /sys/class/gpio/export
 ```
   * 设置为写模式
-```sh
+```
 root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio465/direction
 ```
 
 4. **测试**
 
   * 设置`GPIOT_19`为高电平并通过`GPIOT_18`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
 1
 ```
   * 设置`GPIOT_19`为低电平并通过`GPIOT_18`读取
-```sh
+```
 root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio465/value
 root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
 0

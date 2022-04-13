@@ -1,1 +1,1 @@
-../vim1/WriteSDImageToEmmc.md
+write_sd_image_to_emmc.md

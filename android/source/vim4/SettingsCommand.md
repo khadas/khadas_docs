@@ -5,13 +5,15 @@ title: ADB Settings Commands
 ADB settings commands are used to query or modify variables within the `SettingsProvider` database. 
 
 There are three types of system variables:
-1. global:　global system settings, containing preferences that always apply identically to all defined users.
-2. system:  system settings, containing miscellaneous system preferences.
-3. secure:　secure system settings, containing system preferences that applications can read but are not allowed to write.
+1. `global`: global system settings, containing preferences that always apply identically to all defined users.
+2. `system`: system settings, containing miscellaneous system preferences.
+3. `secure`: secure system settings, containing system preferences that applications can read but are not allowed to write.
 
 
-## Usage
-1. `settings list` command is used to query system variables. The command line format is as follows:
+## Settings Commands Usage
+
+1. **`settings list` command is used to query system variables.** The command line format is as follows:
+
 ```shell
 settings list [global/system/secure]
 ```
@@ -75,7 +77,7 @@ double_tap_to_wake=1
 enabled_input_methods=com.android.inputmethod.latin/.LatinIME
 ```
 
-2. `settings get` is used to query specific system variables. The command line format is as follows:
+2. **`settings get` is used to query specific system variables.** The command line format is as follows:
 ```shell
 settings get [global/system/secure] [key]
 ```
@@ -85,7 +87,7 @@ console:/ $ settings get global airplane_mode_on
 0
 ```
 
-3. `settings put` is used to modify specific system variables. The command line format is as follows:
+3. **`settings put` is used to modify specific system variables.** The command line format is as follows:
 ```shell
 settings put [global/system/secure] [key] [value]
 ```
@@ -96,4 +98,6 @@ console:/ $ settings get global airplane_mode_on
 1
 ```
 
-The `settings` command can query and modify many system variables. For example, obtaining or modifying the Wi-Fi status (wifi_on), Bluetooth status (bluetooth_on), and system sounds (notification_sound), etc.
+The `settings` command can query and modify many system variables. 
+
+For example, obtaining or modifying the Wi-Fi status (wifi_on), Bluetooth status (bluetooth_on), and system sounds (notification_sound), etc.

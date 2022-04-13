@@ -4,7 +4,7 @@ title: WiringPi-Python
 Using WiringPi-Python on a Khadas SBC.
 
 ## What is WiringPi-Python 
-WiringPi is a PIN based GPIO access library written in C for the BCM2835, BCM2836 and BCM2837 SoC devices used in the Raspberry Pi. Now we also migrate it to VIMs Board GPIO for control `40-PIN HEADERS`.
+WiringPi is a PIN based GPIO access library written in C for the Raspberry Pi. Now we also migrate it to VIMs Board GPIO for control `40-PIN HEADERS`.
 
 ## WiringPi-Python Function List
 ```python
@@ -103,40 +103,15 @@ class Serial(object):
 
 ```
 
-## WiringPi-Python sample demo 
+## WiringPi-Python Sample Demo 
 
 This is a simple program that demonstrates reading and writing to GPIO pins.
 
-```python
-import wiringpi as GPIO
-
- INPUT = 0
- OUTPUT = 1
- OUTPUT_PIN = 17
- INPUT_PIN = 16
- OUTPUT_HIGH = 1
- OUTPUT_LOW = 0
- pinstatus_list = ['LOW','HIGH']
- 
- GPIO.wiringPiSetup()
- GPIO.pinMode(OUTPUT_PIN, OUTPUT)
- GPIO.pinMode(INPUT_PIN, INPUT)
- 
- print("----GPIO W&R test demo-----")
- print("set output pin is LOW level")
- GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_LOW)
- result = GPIO.digitalRead(INPUT_PIN)
- print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
- GPIO.delay(2000)
- print("set output pin is High level")
- GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_HIGH)
- result = GPIO.digitalRead(INPUT_PIN)
- print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
- GPIO.delay(2000)
- print("End")
+```sh
+$ wget https://dl.khadas.com/development/code/docs_source/wiringpi-python.py
 ```
 
-## notes
-If you need to use the special pin functions of WiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the .dtb file.
+## Notes
+If you need to use the special pin functions of WiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the dtb file.
 WiringPi-Python itself includes many functions, not limited to controlling the output of GPIO pins and reading pin levels.
 This is only a simple introduction and users should explore additional functions by themselves.

@@ -56,7 +56,7 @@ If you're using a Tone Board on a Mac, you may notice that you are unable to con
 </div>
 </div>
 
-# More Information:
+## More Information:
 
 * [Tone1 Website](https://www.khadas.com/tone1)
 * [Tone1 User Manual](/linux/tone1/UserManual.html)

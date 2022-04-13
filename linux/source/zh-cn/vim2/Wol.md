@@ -32,22 +32,22 @@ VIM2、VIM3、VIM4和Edge不同于VIM1的一点就是具有以太网唤醒功能
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
-<img src="/linux/images/vim2/VIM2_WOL.png" width="800px">
+<img src="/linux/images/vim2/vim2_wol.png" width="800px">
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-<img src="/linux/images/vim3/VIM3_WOL.png" width="800px">
+<img src="/linux/images/vim3/vim3_wol.png" width="800px">
 
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
-<img src="/linux/images/vim4/VIM4_WOL.png" width="800px">
+<img src="/linux/images/vim4/vim4_wol.png" width="800px">
 
 </div>
 <div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
 
-<img src="/linux/images/edge/Edge_WOL.jpg" width="800px">
+<img src="/linux/images/edge/edge_wol.jpg" width="800px">
 
 </div>
 </div>

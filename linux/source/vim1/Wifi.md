@@ -14,19 +14,19 @@ title: Wi-Fi
 
 1. **Open Wi-Fi Settings**
 
-Wi-Fi settings are in the upper-right corner, click on the lower triangle to see the Wi-Fi settings options
+Wi-Fi settings are in the upper-right corner, click on the lower triangle to see the Wi-Fi settings options.
 
 <img src="/linux/images/vim1/wifi-setting.png" width="400px">
 
 2. **Select Network**
 
-Choose a Wi-Fi network that you want to connect to,
+Choose a Wi-Fi network that you want to connect to.
 
 <img src="/linux/images/vim1/wifi-select.png" width="400px">
 
 3. **Enter Password**
 
-After entering the password, you can use Wi-Fi normally,
+After entering the password, you can use Wi-Fi normally.
 
 <img src="/linux/images/vim1/wifi-password.png" width="400px">
 

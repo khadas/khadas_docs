@@ -1,1 +1,1 @@
-../vim1/UBootUsage.md
+uboot_usage.md

@@ -1,31 +1,31 @@
-title: Build Android Source Code
+title: Building Android Source Code
 ---
 
 
 ## Preparations
 
-- [x] [Establish a Build Environment](http://source.android.com/source/initializing.html)
-- [x] [Download the Android Source](/android/vim4/DownloadAndroidSourceCode.html)
+- [x] [Establishing a Build Environment](http://source.android.com/source/initializing.html)
+- [x] [Downloading the Android Source](/android/vim4/DownloadAndroidSourceCode.html)
 - [x] [Install Toolchains for the Amlogic Platform](/android/vim4/InstallToolchains.html)
 
 
 ## Building
 
 {% note info Note %}
-	Before you start to build, make sure you have done all the `preparations` listed above.
+	Before you start to build, make sure you have done all the `Preparations` listed above.
 {% endnote %}
 
-**Build U-boot:**
+**Build U-Boot:**
 
 ```sh
 $ cd PATH_YOUR_PROJECT
 $ cd bootloader/uboot
 $ ./mk kvim4 --avb2 --vab
 ```
-Generate images:
+Gernerate images in this step:
 
-* `build/u-boot.bin`: for eMMC boot
-* `build/u-boot.bin.sd.bin`: for SD card boot
+* `build/u-boot.bin`: for onboard EMMC storage booting
+* `build/u-boot.bin.sd.bin`: for external TF card booting
 
 **Build Linux Kernel:**
 
@@ -46,19 +46,20 @@ $ lunch TARGET_LUNCH
 $ make -jN otapackage
 ```
 
-Generate images:
+Gernerate images in this step:
 
 * `out/target/product/TARGET/update.img`
 
 {% note info Note %}
-	* The VIM4 kernel needs to be compiled separately from VIM3.
-	* Replace `N` with the actual number of threads on your own computer.
-	* Replace `TARGET_LUNCH` with your selected lunch.
+	* VIM4 compiling Android will not compile the Linux Kernel at the same time as VIM3.
+	* Replace `N` with the actual number of threads on your own computer
+	* Replace `TARGET_LUNCH` to your lunch select.
 	  * For VIM4, it's `kvim4-userdebug`.
 
 {% endnote %}
 
-**Compile your own demo script:**
+
+**Made your own compiled script demo:**
 ```sh
 $ vim demo.sh
 ```
@@ -109,6 +110,6 @@ $ ./demo.sh a
 #build all
 $ ./demo.sh n
 ```
-## See also
-* [USB-C Upgrade](/android/vim4/UpgradeViaUSBCable.html)
-* [SD Card Upgrade](/android/vim4/UpgradeViaTFBurningCard.html)
+## See Also
+* [Upgrade Via an USB Cable](/android/vim4/UpgradeViaUSBCable.html)
+* [Upgrade Via a Burnning TF Card](/android/vim4/UpgradeViaTFBurningCard.html)

@@ -1,0 +1,1 @@
+../../firmware/vim4_ubuntu_firmware_release_note.md
