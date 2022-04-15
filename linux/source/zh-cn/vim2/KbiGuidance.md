@@ -1,10 +1,12 @@
-title: KBI使用指导
+title: KBI
 ---
 
-{% note info VIM1V12不支持KBI %}
+{% note info 注意 %}
+* VIM1V12不支持KBI
+* 此文档以VIM2为例进行说明，VIM1V14、VIM3、VIM4和Edge用法类似。
 {% endnote %}
 
-KBI是"Khadas Bootloader Instructions"的缩写，主要用于以下几方面：
+KBI是“Khadas Bootloader Instructions”的缩写，主要用于以下几方面：
 
 * 控制可编程MCU
 
@@ -13,8 +15,6 @@ KBI是"Khadas Bootloader Instructions"的缩写，主要用于以下几方面：
 * 让开发者体验VIM1V14/VIM2/VIM3/VIM4/Edge全部的特性
 
 这篇文档介绍了如何配置使用KBI。 因为KBI是[U-Boot](http://www.denx.de) 命令，所以必须先[设置串口调试工具](SetupSerialTool.html)。
-
-*注意：此文档以VIM2为例进行说明，VIM1V14、VIM3、VIM4和Edge都是差不多的用法。*
 
 在开始之前，确保先进入U-Boot命令行模式:
 
@@ -56,23 +56,27 @@ kbi trigger [wol|rtc|ir|dcin|key|gpio] r - read mode of a boot trigger
 ## 使用方法
 
 1. **获取MCU固件版本号：**
+
 ```
 kvim2# kbi version
 version: 03
 ```
 
 2. **初始化KBI：**
+
 ```
 kvim2# kbi init
 ```
 
 3. **获取设备usid：**
+
 ```
 kvim2# kbi usid
 usid: 000000
 ```
 
 4. **获取ADC数值：**
+
 ```
 kvim2# kbi adc
 adc: 0x236
@@ -80,11 +84,13 @@ adc: 0x236
 *ADC数值用于区分不同的Khadas SBC。*
 
 5. **给设备断电：**
+
 ```
 kvim2# kbi poweroff
 ```
 
 6. **获取以太网MAC地址：**
+
 ```
 kvim2# kbi ethmac
 mac address: 98:aa:fc:60:44:c0
@@ -193,7 +199,7 @@ set_wol: 0
 ```
 
 ## 更多
-[如何使用WOL](HowtoUseWol.html)。
+[如何使用WOL](wol.html)。
 [Edge-V MCU寄存器说明](https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_ZH.pdf)
 [VIM2 MCU寄存器说明](https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_ZH.pdf)
 [VIM3 MCU寄存器说明](https://dl.khadas.com/Hardware/VIM3/MCU/VIM3_MCU_REG_ZH.pdf)
