@@ -15,10 +15,10 @@ title: VIM4硬件描述
     <a class="nav-link active" id="front-tab" data-toggle="tab" href="#front-vim4" role="tab" aria-controls="front" aria-selected="true">Front(Blue)</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim4" role="tab" aria-controls="back" aria-selected="false">BACK(Red)</a>
+    <a class="nav-link" id="back-tab" data-toggle="tab" href="#back-vim4" role="tab" aria-controls="back" aria-selected="false">Back(Red)</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim4" role="tab" aria-controls="button" aria-selected="false">BUTTONS</a>
+    <a class="nav-link" id="button-tab" data-toggle="tab" href="#button-vim4" role="tab" aria-controls="button" aria-selected="false">Buttons</a>
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="led-tab" data-toggle="tab" href="#led-vim4" role="tab" aria-controls="led" aria-selected="false">Indicator LEDs</a>

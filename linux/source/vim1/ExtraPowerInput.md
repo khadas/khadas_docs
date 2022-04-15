@@ -3,7 +3,7 @@ title: Secondary Power Input
 
 {% note info NOTE %}
 
-* **The USB-C port supplies primary input power, this guide is for adding a secondary input source!**
+**The USB-C port supplies primary input power, this guide is for adding a secondary input source!**
 
 {% endnote %}
 
@@ -106,5 +106,4 @@ You can purchase a VIN to VIN cable from [Khadas Shop](https://www.khadas.com/pr
 {% endnote %}
 
 ## See Also
-* [Interfaces Description](Hardware.html#VIM1-Interfaces)
 * [Khadas Shop - VIN to VIN Cable](https://www.khadas.com/product-page/vin-to-vin-cable)

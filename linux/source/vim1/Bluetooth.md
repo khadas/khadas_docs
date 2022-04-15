@@ -103,14 +103,6 @@ Agent unregistered
 khadas@Khadas:~$
 ```
 
-* **Troubleshooting**
-
-If the Bluetooth hangs or behaves abnormally, you can restart the Bluetooth service manually.
-
-```
-$ sudo systemctl restart bluetooth-power-fixup.service
-```
-
 </div>
 </div>
 

@@ -1,28 +1,21 @@
 title: GPIO
 ---
 
-**Access GPIO pins from the Ubuntu Terminal.**
+Access GPIO pins from the Ubuntu Terminal.
 
 {% note warn Note %}
-1. This document **only supports the Amlogic 4.9 kernel on VIM1/VIM2/VIM3 and Amlogic 5.4 kernel on VIM4**.
-2. **Root privileges** are required to access the GPIO:
-
-```
-khadas@Khadas:~$ su
-Password:
-root@Khadas:/home/khadas#
-```
+1. This document **only for Amlogic 4.9 kernel on VIM1/VIM2/VIM3 and Amlogic 5.4 kernel on VIM4**.
 
 {% endnote %}
 
-## Get GPIO Value
+## Get GPIO Number
 
 ### Calculation Method
 
-**The calculation method of the GPIO array is: `Number = Banks + Pins`.**
+**The calculation method of the GPIO array is: `Number = Range Base + Pin Index`.**
 
-1. `Banks` refers to the **base value** of GPIO ranges.
-2. `Pins` refers to the sorting of the **GPIO pins** you need to calculate in the corresponding ranges.
+1. `Range Base` refers to the **base value** of GPIO ranges.
+2. `Pin Index` refers to the sorting of the **GPIO pins** you need to calculate in the corresponding ranges.
 
 ### Numerical Calculation Example
 
@@ -47,20 +40,20 @@ Amlogic chips usually include two GPIO ranges, AOBUS and Periphs. Examples for e
 
 **AOBUS**
 
-1. **Get `Banks`:**
+1. **Get `Range Base`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
+$ cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
 ```
 
-AOBUS' `Banks` is `496`.
+AOBUS' `Range Base` is `501`.
 
-2. **Get `Pins`:**
+2. **Get `Pin Index`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
+$ cat /sys/kernel/debug/pinctrl/pinctrl@14/pins
 registered pins: 11
 pin 0 (GPIOAO_0)  pinctrl@14
 pin 1 (GPIOAO_1)  pinctrl@14
@@ -75,24 +68,24 @@ pin 9 (GPIOAO_9)  pinctrl@14
 pin 10 (GPIO_TEST_N)  pinctrl@14
 ```
 
-The pin in front of each GPIO represents the corresponding `pins`.
+The pin in front of each GPIO represents the corresponding `Pin Index`.
 
 **Periphs**
 
-1. **Get `Banks`:**
+1. **Get `Range Base`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
+$ cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
 GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
 ```
 
-Periphs' `Banks` is `410`.
+Periphs' `Range Base` is `401`.
 
-2. **Get `Pins`:**
+2. **Get `Pin Index`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
+$ cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
 registered pins: 100
 pin 0 (GPIOZ_0)  pinctrl@4b0
 pin 1 (GPIOZ_1)  pinctrl@4b0
@@ -116,27 +109,27 @@ pin 99 (GPIOCLK_1)  pinctrl@4b0
 
 Take `GPIOX_14` as an example here,
 
-`GPIOX_14` = `Banks` + `Pins` = `401` + `93` = `494`.
+`GPIOX_14` = `Range Base` + `Pin Index` = `401` + `93` = `494`.
 
 </div>
 <div class="tab-pane fade" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
 **AOBUS**
 
-1. **Get `Banks`:**
+1. **Get `Range Base`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
+$ cat /sys/kernel/debug/pinctrl/pinctrl@14/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [501 - 511] PINS [0 - 10]
 ```
 
-AOBUS' `Banks` is `496`.
+AOBUS' `Range Base` is `501`.
 
-2. **Get `Pins`:**
+2. **Get `Pin Index`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@14/pins 
+$ cat /sys/kernel/debug/pinctrl/pinctrl@14/pins
 registered pins: 11
 pin 0 (GPIOAO_0)  pinctrl@14
 pin 1 (GPIOAO_1)  pinctrl@14
@@ -151,24 +144,24 @@ pin 9 (GPIOAO_9)  pinctrl@14
 pin 10 (GPIO_TEST_N)  pinctrl@14
 ```
 
-The pin in front of each GPIO represents the corresponding `pins`.
+The pin in front of each GPIO represents the corresponding `Pin Index`.
 
 **Periphs**
 
-1. **Get `Banks`:**
+1. **Get `Range Base`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
+$ cat /sys/kernel/debug/pinctrl/pinctrl@4b0/gpio-ranges 
 GPIO ranges handled:
 0: periphs-banks GPIOS [401 - 500] PINS [0 - 99]
 ```
 
-Periphs的' `Banks` is `410`.
+Periphs的`Range Base` is `401`.
 
-2. **Get `Pins`:**
+2. **Get `Pin Index`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
+$ cat /sys/kernel/debug/pinctrl/pinctrl@4b0/pins
 registered pins: 100
 pin 0 (GPIOZ_0)  pinctrl@4b0
 pin 1 (GPIOZ_1)  pinctrl@4b0
@@ -192,27 +185,27 @@ pin 99 (GPIOCLK_1)  pinctrl@4b0
 
 Take `GPIOX_14` as an example here,
 
-`GPIOX_14` = `Banks` + `Pins` = `401` + `93` = `494`
+`GPIOX_14` = `Range Base` + `Pin Index` = `401` + `93` = `494`
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
 **AOBUS**
 
-1. **Get `Banks`:**
+1. **Get `Range Base`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges
+$ cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/gpio-ranges
 GPIO ranges handled:
 0: aobus-banks GPIOS [496 - 511] PINS [0 - 15]
 ```
 
-AOBUS' `Banks` is `496`.
+AOBUS' `Range Base` is `496`.
 
-2. **Get `Pins`:**
+2. **Get `Pin Index`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/pins
+$ cat /sys/kernel/debug/pinctrl/pinctrl@ff800014/pins
 registered pins: 16
 pin 0 (GPIOAO_0)  pinctrl@ff800014
 pin 1 (GPIOAO_1)  pinctrl@ff800014
@@ -232,24 +225,24 @@ pin 14 (GPIOE_2)  pinctrl@ff800014
 pin 15 (GPIO_TEST_N)  pinctrl@ff800014
 ```
 
-The pin in front of each GPIO represents the corresponding `Pins`.
+The pin in front of each GPIO represents the corresponding `Pin Index`.
 
 **Periphs**
 
-1. **Get `Banks`:**
+1. **Get `Range Base`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges
+$ cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/gpio-ranges
 GPIO ranges handled:
 0: periphs-banks GPIOS [410 - 495] PINS [0 - 85]
 ```
 
-Periphs' `Banks` is `410`.
+Periphs' `Range Base` is `410`.
 
-2. **Get `Pins`:**
+2. **Get `Pin Index`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/pins
+$ cat /sys/kernel/debug/pinctrl/pinctrl@ff634480/pins
 registered pins: 86
 pin 0 (GPIOV_0)  pinctrl@ff634480
 pin 1 (GPIOZ_0)  pinctrl@ff634480
@@ -277,23 +270,23 @@ pin 85 (GPIOX_19)  pinctrl@ff634480
 
 Take `GPIOX_10` as an example here,
 
-`GPIOX_10` = `Banks` + `Pins` = `410` + `76` = `486`.
+`GPIOX_10` = `Range Base` + `Pin Index` = `410` + `76` = `486`.
 
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
-1. **Get `Banks`:**
+1. **Get `Range Base`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
+$ cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
 GPIO ranges handled:
 0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
 ```
 
-2. **Get `Pins`:**
+2. **Get `Pin Index`:**
 
 ```
-root@Khadas:/home/khadas# cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
+$ cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
 registered pins: 157
 pin 0 (GPIOB_0)  fe000000.apb4:pinctrl@4000
 pin 1 (GPIOB_1)  fe000000.apb4:pinctrl@4000
@@ -311,248 +304,43 @@ pin 9 (GPIOB_9)  fe000000.apb4:pinctrl@4000
 
 Take `GPIOT_19` as an examples here.
 
-`GPIOT_19` = `Banks` + `Pins` = `355` + `110` = `465`.
+`GPIOT_19` = `Range Base` + `Pin Index` = `355` + `110` = `465`.
 
 </div>
 </div>
 
-## GPIO Usage Examples
+## GPIO Usage
 
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="vim1demo-tab" data-toggle="tab" href="#vim1demo" role="tab" aria-controls="vim1" aria-selected="true">VIM1</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="vim2demo-tab" data-toggle="tab" href="#vim2demo" role="tab" aria-controls="vim2" aria-selected="false">VIM2</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="vim3demo-tab" data-toggle="tab" href="#vim3demo" role="tab" aria-controls="vim3" aria-selected="false">VIM3</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" id="vim4demo-tab" data-toggle="tab" href="#vim4demo" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-<div class="tab-pane fade show active" id="vim1demo" role="tabpanel" aria-labelledby="vim1-tab">
+When you get the GPIO number, you can follow the steps below to control it. Here will take GPIO number `465` as a example.
 
-**Use `GPIODV24` to read the pin output value of `GPIODV25`, and use a Dupont line to connect the physical pins 22 and 23 together.**
+* Export GPIO
 
-1. **Set `GPIODV24` and `GPIODV25` as ordinary pins** (multiplexed as I2C by default).
-
-  * edit `/boot/env.txt`,
-```
-root@Khadas:/home/khadas# vim /boot/env.txt
-```
-  * Remove I2C3 from overlays,
-```
-overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_f i2s watchdog
+```bash
+$ echo 465 | sudo tee > /sys/class/gpio/export
 ```
 
-**Reboot** to take effect.
+* Set GPIO direction
 
-2. **Calculate the GPIO value:**
+You can set the direction `input` or `output`.
 
-`GPIODV_24` = `401` + `72` = `473`.
-`GPIODV_25` = `401` + `73` = `474`.
-
-3. **Set `GPIODV_24` to read mode.**
-
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
-```
-  * Set to read mode
-```
-root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
+```bash
+$ echo out | sudo tee > /sys/class/gpio/gpio465/direction # Set GPIO output
+$ echo in | sudo tee > /sys/class/gpio/gpio465/direction # Set GPIO input
 ```
 
-4. **Set `GPIODV_25` to write mode**.
+* Set or get GPIO value
 
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
-```
-  * Set to write mode
-```
-root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
+```bash
+$ echo 1 | sudo tee > /sys/class/gpio/gpio465/value # Set GPIO output high
+$ echo 0 | sudo tee > /sys/class/gpio/gpio465/value # Set GPIO output low
+$ cat /sys/class/gpio/gpio465/value # Get GPIO input value
 ```
 
-5. **Test**
+* Unexport GPIO
 
-  * Set `GPIODV_25` to output high level and read it with `GPIODV_24`
-```
-root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
-1
-```
-  * Set `GPIODV_25` to low level and read with `GPIODV_24`
-```
-root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
-0
-```
-</div>
-<div class="tab-pane fade" id="vim2demo" role="tabpanel" aria-labelledby="vim2-tab">
-
-**Use GPIODV24 to read the pin output value of GPIODV25, and use a Dupont line to connect the physical pins 22 and 23 together.**
-
-1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as I2C by default).
-
-*  edit `/boot/env.txt`,
-```
-root@Khadas:/home/khadas# vim /boot/env.txt
-```
-* Remove I2C3 from overlays,
-```
-overlays=uart4 pwm_ao_a pwm_f i2c0 i2s watchdog --> overlays=uart4 pwm_ao_a pwm_f i2s watchdog
-```
-  * Reboot to take effect.
-
-2. **Calculate the GPIO value:**
-
-`GPIODV_24` = `401` + `72` = `473`.
-`GPIODV_25` = `401` + `73` = `474`.
-
-3. Set `GPIODV_24` to read mode:
-
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 473 > /sys/class/gpio/export
-```
-  * Set to read mode
-```
-root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio473/direction
+```bash
+$ echo 465 | sudo tee > /sys/class/gpio/unexport
 ```
 
-4. **Set `GPIODV_25` to write mode**.
-
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
-```
-  * Set to write mode
-```
-root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio474/direction
-```
-
-5. **Test**
-
-  * Set `GPIODV_25` to high level output and read it with `GPIODV_24`
-```
-root@Khadas:/home/khadas# echo 1 > /sys/class/gpio/gpio474/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
-1
-```
-  * Set `GPIODV_25` to low level output and read it with `GPIODV_24`
-```
-root@Khadas:/home/khadas# echo 0 > /sys/class/gpio/gpio474/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio473/value
-0
-```
-
-</div>
-<div class="tab-pane fade" id="vim3demo" role="tabpanel" aria-labelledby="vim3-tab">
-
-**Use GPIODV24 to read the pin output value of GPIODV25, and a use Dupont line to connect the physical pins 22 and 23 together.**
-
-1. **Set GPIODV24 and GPIODV25 as ordinary pins** (multiplexed as I2C by default)
-  * edit `/boot/env.txt`,
-```
-root@Khadas:/home/khadas# vim /boot/env.txt
-```
-* Remove I2C3 from overlays,
-```
-overlays=uart3 pwm_f i2c3 i2s os08a10 watchdog --> overlays=uart3 pwm_f i2s os08a10 watchdog
-```
-Reboot to take effect.
-
-2. **Calculate the GPIO value:**
-
-`GPIOA_14` = `410` + `65` = `474`.
-`GPIOA_15` = `410` + `65` = `475`.
-
-3. **Set `GPIOA_14` to read mode**
-
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 474 > /sys/class/gpio/export
-```
-  * Set to read mode
-```
-root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio474/direction
-```
-
-4. **Set `GPIOA_15` to write mode**.
-
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 475 > /sys/class/gpio/export
-```
-  * Set to write mode
-```
-root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio475/direction
-```
-
-5. **Test**
-
-  * Set `GPIOA_15` to high level output and read it with `GPIOA_14`
-```
-root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio475/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
-1
-```
-  * Set `GPIOA_15` to low level output and read it with `GPIOA_14`
-```
-root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio475/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio474/value
-0
-```
-</div>
-<div class="tab-pane fade" id="vim4demo" role="tabpanel" aria-labelledby="vim4-tab">
-
-**Use GPIOT_18 to read the pin output value of GPIOT_19, and use a Dupont line to connect the physical pins 36 and 37 together.**
-
-1. **Calculate the GPIO value:**
-
-`GPIOT_18` = `355` + `109` = `464`.
-`GPIOT_19` = `355` + `110` = `465`.
-
-2. **Set `GPIOT_18` to read mode**
-
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 464 > /sys/class/gpio/export
-```
-  * Set to read mode
-```
-root@Khadas:/home/khadas# echo in > /sys/class/gpio/gpio464/direction
-```
-
-3. **Set `GPIOT_19` to read mode**.
-
-  * Export GPIO
-```
-root@Khadas:/home/khadas# echo 465 > /sys/class/gpio/export
-```
-  * Set to write mode
-```
-root@Khadas:/home/khadas# echo out > /sys/class/gpio/gpio465/direction
-```
-
-4. **Test**
-
-  * Set `GPIOT_19` to high level output and read it with `GPIOT_18`
-```
-root@Khadas:/home/khadas# echo 1 >  /sys/class/gpio/gpio465/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value 
-1
-```
-  * Set `GPIOT_19` to low level output and read it with `GPIOT_18`
-```
-root@Khadas:/home/khadas# echo 0 >  /sys/class/gpio/gpio465/value
-root@Khadas:/home/khadas# cat /sys/class/gpio/gpio464/value
-0
-```
-</div>
-</div>
+Unexport to release the GPIO.
 

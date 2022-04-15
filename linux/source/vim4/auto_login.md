@@ -32,7 +32,7 @@ khadas@Khadas:~$ sudo sed -i "s/ExecStart=.*/ExecStart=-\/sbin\/agetty --noclear
 </div>
 </div>
 
-{% note info Reboot to effect changes. %}
+{% note info Reboot to take effect. %}
 
 {% endnote %}                                                                                                                                                                
 

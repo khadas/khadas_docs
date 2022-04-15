@@ -83,7 +83,7 @@ $ sudo eject /dev/sdX
 
 确保串口连接正确，参考[串口工具设置](SetupSerialTool.html)。
 
-为了确保U-Boot从SD卡启动，你必须[擦除eMMC](EraseEmmc.html)。
+为了确保U-Boot从SD卡启动，你必须[擦除eMMC](erase_emmc.html)。
 
 打开终端，执行`sudo minicom`命令或者你也可以选则其他你喜欢的串口工具。
 

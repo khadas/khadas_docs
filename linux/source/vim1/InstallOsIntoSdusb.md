@@ -1,4 +1,4 @@
-title: Install System into SD/USB Media
+title: Install OS into SD/USB Media
 ---
 
 {% note info Note %}

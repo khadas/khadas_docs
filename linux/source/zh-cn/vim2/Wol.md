@@ -1,4 +1,4 @@
-title: 如何使用WOL
+title: 远程唤醒
 ---
 
 以太网唤醒（WOL）允许你用手机或电脑通过局域网或广域网唤醒设备。
@@ -93,17 +93,21 @@ boot wol: enable
 
 **1. 通过网线连接VIM2到局域网。**
  
-**2. 关闭VIM2。**
+**2. 关机。**
  
-**3. 在ubuntu系统下通过以太网唤醒WOL。**
+**3. 在Ubuntu系统下通过以太网唤醒WOL。**
 
 * 安装**wakeonlan** 工具
+
 ```
-terry@terry:~$ sudo apt-get install wakeonlan
+$ sudo apt update
+$ sudo apt install wakeonlan
 ```
+
 * 执行以下命令来唤醒VIM2：
+
 ``` 
-terry@terry:~$ wakeonlan 98:aa:fc:60:46:de
+$ wakeonlan 98:aa:fc:60:46:de
 ```
 
 ## 更多

@@ -48,7 +48,7 @@ There are 4 ways to boot into upgrade mode:
 </div>
 <div class="tab-pane fade" id="sdbooting" role="tabpanel" aria-labelledby="sdbooting-tab">
 
-1. [Create a Bootable SD Card]().
+1. [Create a Bootable SD Card](create_bootable_sdcard.html).
 2. Insert a Bootable SD card into the slot.
 3. Refer to this [guide](SetupSerialTool.html) to setup your serial tool for VIM4.
 4. Power-on VIM4.

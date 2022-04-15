@@ -77,7 +77,7 @@ usid: 000000
 kvim2# kbi adc
 adc: 0x236
 ```
-*ADC数值用于区分不同的Khadas开发板。*
+*ADC数值用于区分不同的Khadas SBC。*
 
 5. **给设备断电：**
 ```

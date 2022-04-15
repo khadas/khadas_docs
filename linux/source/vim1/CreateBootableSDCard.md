@@ -113,6 +113,6 @@ NOTICE:  BL3-1: v1.0(debug):2e39a99
 
 {% note info Note %}
 
-In rare cases, you may need to [erase the eMMC](EraseEmmc.html) in order to boot from an SD card.
+In rare cases, you may need to [erase the eMMC](erase_emmc.html) in order to boot from an SD card.
 
 {% endnote %}

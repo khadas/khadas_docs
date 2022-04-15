@@ -1,10 +1,10 @@
 title: WiringPi-Python
 ---
 
-Using WiringPi-Python on a Khadas SBC.
+This documentation will introduce how to use WiringPi Python API.
 
 ## What is WiringPi-Python 
-WiringPi is a PIN based GPIO access library written in C for the Raspberry Pi. Now we also migrate it to VIMs Board GPIO for control `40-PIN HEADERS`.
+WiringPi Python is a PIN based GPIO access library written in Python for the Raspberry Pi. Now we also migrate it to VIMs.
 
 ## WiringPi-Python Function List
 ```python
@@ -103,7 +103,7 @@ class Serial(object):
 
 ```
 
-## WiringPi-Python Sample Demo 
+## WiringPi-Python Demo 
 
 This is a simple program that demonstrates reading and writing to GPIO pins.
 
@@ -112,6 +112,5 @@ $ wget https://dl.khadas.com/development/code/docs_source/wiringpi-python.py
 ```
 
 ## Notes
-If you need to use the special pin functions of WiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the dtb file.
-WiringPi-Python itself includes many functions, not limited to controlling the output of GPIO pins and reading pin levels.
-This is only a simple introduction and users should explore additional functions by themselves.
+* If you need to use the special pin functions of WiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the dts file.
+* WiringPi-Python itself includes many functions, not limited to controlling the output of GPIO pins and reading pin levels. This is only a simple introduction, and you can explore more by yourself.

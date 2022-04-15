@@ -1,30 +1,9 @@
 title: PWM
 ---
 
-**这篇文档主要介绍如何使用硬件PWM。**
+这篇文档主要介绍如何使用硬件PWM（Pulse Width Modulation）。
 
-## 确认PWM引脚
-
-dts配置文件里默认已经打开了硬件PWM，所以仅需要确认哪一个物理引脚对应了硬件PWM。
-
-* `PWM_F` on [VIM1 GPIO-Out](Hardware#VIM1-硬件信息)
-* `PWM_D` on [VIM2 GPIO-Out](Hardware#VIM2-硬件信息)
-* `PWM_F` on [VIM3 GPIO-Out](Hardware#VIM3-硬件信息)
-* `PWM_F` on [VIM4 GPIO-Out](Hardware#VIM4-硬件信息)
-
-## 却换到root用户
-
-普通用户无法控制GPIO，因此需要先却换到root用户。
-
-```bash
-khadas@Khadas:~$ sudo -i
-[sudo] password for khadas:
-root@Khadas:~#
-```
-
-## 设置硬件PWM
-
-### 设置以及打开PWM
+## 设置以及打开PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -42,35 +21,39 @@ root@Khadas:~#
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-enable" role="tabpanel" aria-labelledby="vim1-tab">
+    PWM_F：
     ```shell
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
-    root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
-    root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
+    $ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
+    $ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
     ```
   </div>
   <div class="tab-pane fade" id="vim2-enable" role="tabpanel" aria-labelledby="vim2-tab">
+    PWM_D：
     ```shell
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/export
-    root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip1/pwm1/period
-    root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip1/pwm1/duty_cycle
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/pwm1/enable
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip1/export
+    $ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/period
+    $ echo 500000 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/duty_cycle
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/enable
     ```
   </div>
   <div class="tab-pane fade" id="vim3-enable" role="tabpanel" aria-labelledby="vim3-tab">
+    PWM_F：
     ```shell
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
-    root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
-    root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
+    $ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
+    $ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
     ```
   </div>
   <div class="tab-pane fade" id="vim4-enable" role="tabpanel" aria-labelledby="vim4-tab">
+    PWM_F：
     ```shell
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
-    root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
-    root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-    root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
+    $ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
+    $ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+    $ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
     ```
   </div>
 </div>
@@ -85,7 +68,7 @@ root@Khadas:~#
 
 {% endnote %}
 
-### 关闭PWM
+## 关闭PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -104,22 +87,22 @@ root@Khadas:~#
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-disable" role="tabpanel" aria-labelledby="vim1-tab">
   ```shell
-  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim2-disable" role="tabpanel" aria-labelledby="vim2-tab">
   ```shell
-  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip1/pwm1/enable
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim3-disable" role="tabpanel" aria-labelledby="vim3-tab">
   ```shell
-  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim4-disable" role="tabpanel" aria-labelledby="vim4-tab">
   ```shell
-  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
 </div>

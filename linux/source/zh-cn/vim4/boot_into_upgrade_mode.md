@@ -48,7 +48,7 @@ title: 进入升级模式
 </div>
 <div class="tab-pane fade" id="sdbooting" role="tabpanel" aria-labelledby="sdbooting-tab">
 
-1. [制作SD启动卡]()。
+1. [制作SD启动卡](create_bootable_sdcard.html)。
 2. 参考[文档](SetupSerialTool.html)设置串口。
 3. 给VIM4上电。
 4. 系统启动时按空格键进入串口命令行模式。

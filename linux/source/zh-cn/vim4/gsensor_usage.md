@@ -3,8 +3,6 @@ title: Gsensor
 
 ## Gsensor节点
 
-Gsensor的设备节点在`/dev`目录下。
-
 ```sh
 $ ll /dev/accel 
 crw-rw-rw- 1 root root 10, 50 Mar 18 12:17 /dev/accel
@@ -31,7 +29,7 @@ $ gcc -o gsensor gsensor.c
 ```
 
 
-### 运行
+### 测试
 
 运行时旋转板子,可以看到Gsensor数据的变化:
 

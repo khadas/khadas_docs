@@ -1,24 +1,15 @@
 title: GPIO中断
 ---
 
-**这里主要介绍如何在Ubuntu下使用GPIO中断。**
+这里主要介绍如何在Ubuntu下使用GPIO中断。
 
-## 切换root用户
 
-只有**root用户**可以控制GPIO,在测试之前需要先切换到root用户。
+* 获取GPIO数值
 
-```bash
-$ khadas@Khadas:~$ su
-Password: 
-root@Khadas:/home/khadas#
-```
-
-## 设置GPIO引脚
-
-* 确认你需要使用的引脚,以VIM3为例：
+可以通过`gpio read`命令来获取对应管脚的GPIO数值。
 
 ```bash
-root@Khadas:/home/khadas# gpio readall
+$ sudo gpio readall
  +------+-----+----------+------+---+----+---- Model  Khadas VIM3 --+----+---+------+----------+-----+------+
  | GPIO | wPi |   Name   | Mode | V | DS | PU/PD | Physical | PU/PD | DS | V | Mode |   Name   | wPi | GPIO |
  +------+-----+----------+------+---+----+-------+----++----+-------+----+---+------+----------+-----+------+
@@ -50,19 +41,19 @@ root@Khadas:/home/khadas# gpio readall
 * Export GPIO
 
 ```bash
-root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
+$ echo 433 | sudo tee > /sys/class/gpio/export
 ```
 
 {% note info 注意 %}
 
 请确保`gpio readall`查看到的`GPIOH_6`状态为普通GPIO，如果不是，你需要先把这个管脚配置为普通GPIO，方法为编辑文件`/boot/env.txt`，移除`overlays`节点里面的`uart3`，然后保存重启系统。
 
-详细信息请查看 [Device Tree Overlays](DeviceTreeOverlay.html) 。
+详细信息请查看 [Device Tree Overlays](device_tree_overlay.html) 。
 
 {% endnote %}
 
 
-* 测试程序源码`gpio_interrupts.c`
+* 获取测试源码
 
 ```sh
 $ wget https://dl.khadas.com/development/code/docs_source/gpio_interrupts.c
@@ -71,13 +62,13 @@ $ wget https://dl.khadas.com/development/code/docs_source/gpio_interrupts.c
 * 编译源码
 
 ```bash
-root@Khadas:/home/khadas# gcc -o gpio_interrupts gpio_interrupts.c
+$ gcc -o gpio_interrupts gpio_interrupts.c
 ```
 
 * 运行程序
 
 ```bash
-./gpio_interrupts 433 rising down
+$ sudo ./gpio_interrupts 433 rising down
 .
 GPIO 433 interrupt occurred!
 ..........
@@ -86,7 +77,7 @@ GPIO 433 interrupt occurred!
 通过杜邦线连接物理引脚的`PIN20`和`PIN15`，触发中断。现象如下：
 
 ```bash
-root@Khadas:/home/khadas# ./gpio_interrupts 433 rising down
+$ sudo ./gpio_interrupts 433 rising down
 .
 GPIO 433 interrupt occurred!
 ..
@@ -102,7 +93,7 @@ GPIO 433 interrupt occurred!
 运行格式如下：
 
 ```bash
-root@Khadas:/home/khadas# ./gpio_interrupts <edge> [pull]
+$ sudo ./gpio_interrupts <edge> [pull]
 ```
 
 `<edge>`可设置为`rising`或者`failing`, `[pull]`为可选参数，设置为`up`或者`down`。

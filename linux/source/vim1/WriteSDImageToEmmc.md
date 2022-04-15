@@ -1,12 +1,12 @@
-title: Burn SD/USB Firmware to the eMMC
+title: Write SD Image to eMMC
 ---
 
 This guide will show you how to write an SD/USB firmware to the eMMC.
 
 ## Boot from SD/USB
 
-1. **Write the firmware to an SD card or USB thumbdrive**. To make a bootable media, please refer to: [Install Image to SD-USB Storage](BootFromExtMedia#Install-Image-to-SD-USB-Storage).
-2. **Boot the system from SD card or USB thumbdrive**. Please refer to the boot method: [Boot From External Media](BootFromExtMedia.html).
+1. **Write the firmware to an SD card or USB thumbdrive**. To make a bootable media, please refer to: [Install Image to SD-USB Storage](boot_from_ext_media#Install-Image-to-SD-USB-Storage).
+2. **Boot the system from SD card or USB thumbdrive**. Please refer to the boot method: [Boot From External Media](boot_from_ext_media.html).
 
 ## Write OS Image to eMMC
 

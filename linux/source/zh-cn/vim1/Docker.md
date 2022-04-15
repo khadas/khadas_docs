@@ -3,10 +3,6 @@ title: Docker
 
 这篇文档介绍如何在VIMs/Edge Ubuntu下安装Docker。
 
-## 准备
-
-* Ubuntu `V180531`或以上版本
-
 ## 安装必要的软件包
 
 ```bash
