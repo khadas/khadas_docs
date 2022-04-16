@@ -74,7 +74,7 @@ Replace `sdX` with the correct device node on your PC.
 
 ## Check Your Bootable SD Card
 
-Connect your PC to your SBC using a [Serial to USB](SetupSerialTool.html) tool.
+Connect your PC to your SBC using a [Serial to USB tool](SetupSerialTool.html).
 
 Open Terminal and type `sudo minicom` to open a serial connection to your SBC.
 

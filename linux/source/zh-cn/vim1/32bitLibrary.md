@@ -35,6 +35,6 @@ $ sudo apt-get -y install libc6:armhf
 $ ./test  
 Hello World!
 ```
-其中，'libc6'为安装包的名字，'armhf'代表这个安装包是32位的。
+其中，`libc6`为安装包的名字，`armhf`代表这个安装包是32位的。
 执行完以上的命令就可以运行32位的程序了。
 

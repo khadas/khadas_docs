@@ -1,7 +1,8 @@
 title: Create Flash Card
 ---
 
-Linux users can follow this guide to create a special SD card for "flashing" an OS into the eMMC. Windows users may use the following guides: ([VIM1](InstallOsIntoSdusb.html)/[VIM2](InstallOsIntoSdusb.html)/[VIM3](InstallOsIntoSdusb.html)/[VIM4](InstallOsIntoSdusb.html)).
+
+Linux users can follow this guide to create a special SD card for "flashing" an OS into the eMMC. Windows users may use the following guides: [Install OS into SD/USB Media](InstallOsIntoSdusb.html).
 
 {% note info The process for VIM1, VIM2, VIM3 and VIM4 is similar, so we will use VIM1 as an example. %}
 
@@ -12,8 +13,10 @@ Linux users can follow this guide to create a special SD card for "flashing" an 
 {% endnote %}
 
 ## Preparation
+
 * Download the latest U-Boot file for SD cards: ([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/([VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/)).
-* If your SD card contains >1 partition, format it using Fdisk ([VIM1](CreateBootableSDCard.html)/[VIM2](CreateBootableSDCard.html)/[VIM3](CreateBootableSDCard.html)/[VIM4](CreateBootableSDCard.html)).
+
+* If your SD card contains >1 partition, format it using Fdisk [Create Bootable SD Card](CreateBootableSDCard.html).
 
 
 ## Prepare Your SD Card

@@ -199,8 +199,8 @@ set_wol: 0
 ```
 
 ## 更多
-[如何使用WOL](wol.html)。
-[Edge-V MCU寄存器说明](https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_ZH.pdf)
-[VIM2 MCU寄存器说明](https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_ZH.pdf)
-[VIM3 MCU寄存器说明](https://dl.khadas.com/Hardware/VIM3/MCU/VIM3_MCU_REG_ZH.pdf)
+* [如何使用WOL](wol.html)
+* [Edge-V MCU寄存器说明](https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_ZH.pdf)
+* [VIM2 MCU寄存器说明](https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_ZH.pdf)
+* [VIM3 MCU寄存器说明](https://dl.khadas.com/Hardware/VIM3/MCU/VIM3_MCU_REG_ZH.pdf)
 

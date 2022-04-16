@@ -15,7 +15,7 @@ title: 快速上手
 * Type-C数据线
 
 **相关链接：**
-* [Khadas Shop - 24W电源适配器](https://www.khadas.cn/product-page/24w-power-adapter?post_type=product)
+* [Khadas Shop - 24W电源适配器](http://www.khadas.cn/product-page/24w%e7%94%b5%e6%ba%90%e9%80%82%e9%85%8d%e5%99%a8)
 * [Khadas Shop - USB-C male to male线](https://www.khadas.cn/product-page/usb-c-cable-male-to-male?post_type=product)
 * [Khadas VIM4 外部供电接口](extra_power_input.html)
 * [Khadas VIM4 规格](https://www.khadas.com/vim4444)
@@ -57,6 +57,6 @@ title: 快速上手
 6. [Wi-Fi](wifi.html)
 
 ## 外部链接
-* [Khadas Homepage](https://www.khadas.com)
+* [Khadas Homepage](https://www.khadas.cn)
 * [Khadas Community](https://forum.khadas.com)
 
