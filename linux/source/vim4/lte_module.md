@@ -60,49 +60,47 @@ Power down and restart to switch back to the default mode
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-### GNOME Desktop
-
 #### Step1: Open `Mobile Board Settings`
 
-![LTE_gnome_open](/linux/images/vim3/LTE_gnome_open.png)
+![LTE_gnome_open](/linux/images/vim3/lte_gnome_open.png)
 
-Click the menu bar in the upper-right corner to see the 'mobile board settings' option.
+Click the menu bar in the upper-right corner and select `Mobile Broadband Settings` option.
 
 #### Step2: Add New Connection
 
 Click `Network`, choose `Add New Connection`, and then click `Next`.
 
-![LTE_gnome_new](/linux/images/vim3/LTE_gnome_new.png)
-![LTE_gnome_next](/linux/images/vim3/LTE_gnome_next.png)
+![LTE_gnome_new](/linux/images/vim3/lte_gnome_new.png)
+![LTE_gnome_next](/linux/images/vim3/lte_gnome_next.png)
 
 #### Step3: Choose Your Provider's Country
 
 Choose your provider's country. 
 
-![LTE_gnome_country](/linux/images/vim3/LTE_gnome_country.png)
+![LTE_gnome_country](/linux/images/vim3/lte_gnome_country.png)
 
 #### Step4: Choose Your Provider
 
 Choose your provider. This needs to be set according to your SIM card.
 
-![LTE_gnome_provider](/linux/images/vim3/LTE_gnome_provider.png)
+![LTE_gnome_provider](/linux/images/vim3/lte_gnome_provider.png)
 
 #### Step5: Enter Password and Connect
 
 Using the default configuration, just choose `next`. Then click `apply`. The default password is `000`.
 
-![LTE_gnome_apply](/linux/images/vim3/LTE_gnome_apply.png)
-![LTE_gnome_psk](/linux/images/vim3/LTE_gnome_psk.png)
+![LTE_gnome_apply](/linux/images/vim3/lte_gnome_apply.png)
+![LTE_gnome_psk](/linux/images/vim3/lte_gnome_psk.png)
 
 After entering the password, you can connect normally.
 
-![LTE_gnome_success](/linux/images/vim3/LTE_gnome_success.png)
+![LTE_gnome_success](/linux/images/vim3/lte_gnome_success.png)
 
 #### Changing the Password
 
-Open the corresponding settings and update the password in `mobile broadband`.
+Open the corresponding settings and update the password in `Mobile Broadband`.
 
-![LTE_gnome_change_psk](/linux/images/vim3/LTE_gnome_change_psk.png)
+![LTE_gnome_change_psk](/linux/images/vim3/lte_gnome_change_psk.png)
 
 </div>
 <div class="tab-pane fade show" id="server" role="tabpanel" aria-labelledby="server-tab">

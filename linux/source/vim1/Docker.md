@@ -3,10 +3,6 @@ title: Docker
 
 Install Docker into Ubuntu.
 
-## Preparations
-
-* This guide is for Ubuntu `V180531` or newer only.
-
 ## Install Essential Packages
 
 ```bash

@@ -1,7 +1,7 @@
 title: 软件PWM
 ---
 
-**这篇文档主要介绍如何在WiringPi以及WiringPi-Python上使用软件PWM控制舵机。**
+这篇文档主要介绍如何在WiringPi以及WiringPi-Python上使用软件PWM控制舵机。
 
 ## 舵机控制原理
 

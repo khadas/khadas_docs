@@ -1,7 +1,7 @@
-title: Create Burn Card
+title: Create Flash Card
 ---
 
-Linux users can follow this guide to create a special SD card for "burning" an OS into the eMMC. Windows users may use the following guides: ([VIM1](InstallOsIntoSdusb.html)/[VIM2](InstallOsIntoSdusb.html)/[VIM3](InstallOsIntoSdusb.html)/[VIM4](InstallOsIntoSdusb.html)).
+Linux users can follow this guide to create a special SD card for "flashing" an OS into the eMMC. Windows users may use the following guides: ([VIM1](InstallOsIntoSdusb.html)/[VIM2](InstallOsIntoSdusb.html)/[VIM3](InstallOsIntoSdusb.html)/[VIM4](InstallOsIntoSdusb.html)).
 
 {% note info The process for VIM1, VIM2, VIM3 and VIM4 is similar, so we will use VIM1 as an example. %}
 
@@ -126,5 +126,5 @@ Done!
 
 1. Insert your OS installation SD card into your SBC, and power-on.
 2. Follow this [guide](BootIntoUpgradeMode.html) to boot into upgrade mode.
-3. Wait till the burning process completes.
+3. Wait till the flashing process completes.
 4. Eject the SD card, and reboot your SBC.

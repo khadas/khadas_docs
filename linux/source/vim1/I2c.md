@@ -97,7 +97,7 @@ title: I2C
 Detect device on `I2C A`:
 
 ```shell
-# i2cdetect -y -r 1
+$ sudo i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- 1d -- --
@@ -111,7 +111,7 @@ Detect device on `I2C A`:
 Detect device on `I2C B`:
 
 ```shell
-# i2cdetect -y -r 2
+$ sudo i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- UU -- -- -- -- -- -- --
@@ -129,7 +129,7 @@ Detect device on `I2C B`:
 Detect device on `I2C A`:
 
 ```shell
-# i2cdetect -y -r 1
+$ sudo i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- 1d -- --
@@ -143,7 +143,7 @@ Detect device on `I2C A`:
 Detect device on `I2C B`:
 
 ```shell
-# i2cdetect -y -r 2
+$ sudo i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- UU -- -- -- -- -- -- --
@@ -161,7 +161,7 @@ Detect device on `I2C B`:
 Detect device on `I2C 3`:
 
 ```shell
-# i2cdetect -y -r 3
+$ sudo i2cdetect -y -r 3
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -175,7 +175,7 @@ Detect device on `I2C 3`:
 Detect device on `I2C 4`:
 
 ```shell
-# i2cdetect -y -r 4
+$ sudo i2cdetect -y -r 4
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- 0e --
 10: -- -- -- -- -- -- -- -- UU -- -- -- -- -- -- --
@@ -192,7 +192,7 @@ Detect device on `I2C 4`:
 Detect device on `I2C A`:
 
 ```shell
-# i2cdetect -r -y 0
+$ sudo i2cdetect -r -y 0
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -207,7 +207,7 @@ Detect device on `I2C A`:
 Detect device on `I2C F`:
 
 ```shell
-# i2cdetect -r -y 5
+$ sudo i2cdetect -r -y 5
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -224,25 +224,12 @@ Detect device on `I2C F`:
 
 If you have made a connection, you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
 
-{% note warn Note %}
-
-Root privileges are required.
-
-{% endnote %}
-
 ## Read Registers from Device
 
 Read register `0x0d` of device `0x1d` on `I2C A`.
 
 ```Shell
-# i2cget -f -y 1 0x1d 0x0d
+$ sudo i2cget -f -y 1 0x1d 0x0d
 0x2a
 ```
-
-{% note warn Note %}
-
-Note: Root privileges are required.
-
-{% endnote %}
-
 For more information, please refer to the help messages.

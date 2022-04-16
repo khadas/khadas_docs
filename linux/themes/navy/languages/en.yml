@@ -29,7 +29,7 @@ sidebar:
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     vim1_hardware: VIM1 Hardware
     configuration: Configuration
     basic: Basic
@@ -82,13 +82,13 @@ sidebar:
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
     setup_serial_tool: Serial Debug Tool
-    create_burn_card: Create Burn Card
+    create_burn_card: Create Flash Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
     troubleshooting: Troubleshooting
@@ -102,7 +102,7 @@ sidebar:
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     vim2_hardware: VIM2 Hardware
     configuration: Configuration
     basic: Basic
@@ -155,13 +155,13 @@ sidebar:
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
     setup_serial_tool: Serial Debug Tool
-    create_burn_card: Create Burn Card
+    create_burn_card: Create Flash Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
     troubleshooting: Troubleshooting
@@ -175,7 +175,7 @@ sidebar:
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     vim3_hardware: VIM3 Hardware
     configuration: Configuration
     basic: Basic
@@ -251,13 +251,13 @@ sidebar:
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
     setup_serial_tool: Serial Debug Tool
-    create_burn_card: Create Burn Card
+    create_burn_card: Create Flash Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
     troubleshooting: Troubleshooting
@@ -271,7 +271,7 @@ sidebar:
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     boot_seqeqe: OS Boot Priority
     vim4_hardware: VIM4 Hardware
     configuration: Configuration
@@ -329,13 +329,13 @@ sidebar:
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
     setup_serial_tool: Serial Debug Tool
-    create_burn_card: Create Burn Card
+    create_burn_card: Create Flash Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
     troubleshooting: Troubleshooting
@@ -349,7 +349,7 @@ sidebar:
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     edge_hardware: Edge Hardware
     configuration: Configuration
     basic: Basic
@@ -403,7 +403,7 @@ sidebar:
     upgrade_uboot: Upgrade U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel

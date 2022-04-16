@@ -1,7 +1,9 @@
 title: KBI
 ---
 
-{% note info VIM1 V12 doesn't support KBI %}
+{% note info Note %}
+* VIM1 V12 doesn't support KBI
+* This document uses VIM2 as an example, VIM3 and Edge are similar.
 {% endnote %}
 
 KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to fulfill the following purposes:
@@ -13,8 +15,6 @@ KBI is an abbreviation for Khadas Bootloader Instructions, which is developed to
 * Let developers utilise all the features of Khadas VIM1V14/VIM2/VIM3/VIM4/Edge
 
 This document describes how to setup, configure and use the KBI. As KBI is one of the [U-Boot](http://www.denx.de) commands, to get started you have to setup a [Serial Debugging Tool](SetupSerialTool.html).
-
-*Note: This document uses VIM2 as an example, VIM3 and Edge are similar.*
 
 Before continuing, make sure you have booted into U-Boot:
 
@@ -201,7 +201,7 @@ kvim2# kbi trigger wol w 0
 set_wol: 0
 ```
 ## See Also
-[WOL setup and usage](HowtoUseWol.html).
+[WOL](wol.html)
 [Edge-V MCU Register Map](https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_EN.pdf)
 [VIM2 MCU Register Map](https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_EN.pdf)
 [VIM3 MCU Register Map](https://dl.khadas.com/Hardware/VIM3/MCU/VIM3_MCU_REG_EN.pdf)

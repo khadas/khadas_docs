@@ -1,24 +1,14 @@
 title: GPIO Interrupts
 ---
 
-**Access the GPIO interrupts from Ubuntu Terminal.**
+Access the GPIO interrupts from Ubuntu Terminal.
 
-## Root Permissions
+* Get GPIO number
 
-You must elevate yourself to **root** before you are able to access the GPIO.
-
-```
-$ khadas@Khadas:~$ su
-Password: 
-root@Khadas:/home/khadas#
-```
-
-## GPIO Pin Control
-
-* From the table below, take note of which pins you need to use:
+You can use `gpio read` command to get the GPIO numbers:
 
 ```
-root@Khadas:/home/khadas# gpio readall
+$ sudo gpio readall
  +------+-----+----------+------+---+----+---- Model  Khadas VIM3 --+----+---+------+----------+-----+------+
  | GPIO | wPi |   Name   | Mode | V | DS | PU/PD | Physical | PU/PD | DS | V | Mode |   Name   | wPi | GPIO |
  +------+-----+----------+------+---+----+-------+----++----+-------+----+---+------+----------+-----+------+
@@ -52,19 +42,19 @@ Using `GPIOH6` as an example here, the related GPIO value is `433`, and the phys
 * Export GPIO
 
 ```
-root@Khadas:/home/khadas# echo 433 > /sys/class/gpio/export
+$ echo 433 | sudo tee > /sys/class/gpio/export
 ```
 
 {% note info Note %}
 
 Please use `gpio readall` to check the status of `GPIOH_6`, if it is not shown as a normal GPIO, you need to remove `uart3` from `overlays` in the `/boot/env.txt` file.
 
-Check the [Device Tree Overlays](DeviceTreeOverlay.html) for more details.
+Check the [Device Tree Overlays](device_tree_overlay.html) for more details.
 
 {% endnote %}
 
 
-* Source code for `gpio_interrupts.c`
+* Get demo source code
 
 ```sh
 $ wget https://dl.khadas.com/development/code/docs_source/gpio_interrupts.c
@@ -73,13 +63,13 @@ $ wget https://dl.khadas.com/development/code/docs_source/gpio_interrupts.c
 * Compile the source code
 
 ```
-root@Khadas:/home/khadas# gcc -o gpio_interrupts gpio_interrupts.c
+$ gcc -o gpio_interrupts gpio_interrupts.c
 ```
 
 * Check
 
 ```
-./gpio_interrupts rising down
+$ sudo ./gpio_interrupts rising down
 .
 GPIO 433 interrupt occurred!
 ..........
@@ -88,7 +78,7 @@ GPIO 433 interrupt occurred!
 Connect the physical pins `PIN20` and `PIN15` using a DuPont line to trigger the interrupt. The process is as follows:
 
 ```
-root@Khadas:/home/khadas# ./gpio_interrupts rising down
+$ sudo ./gpio_interrupts rising down
 .
 GPIO 433 interrupt occurred!
 ..
@@ -101,10 +91,8 @@ GPIO 433 interrupt occurred!
 
 * Test Program
 
-Input the command as follows:
-
 ```
-root@Khadas:/home/khadas# ./gpio_interrupts <edge> [pull]
+$ sudo ./gpio_interrupts <edge> [pull]
 ```
 
 `<edge>` can be set to `rising` or `falling`, `[pull]` is an optional parameter that can be set to `up` or `down`.

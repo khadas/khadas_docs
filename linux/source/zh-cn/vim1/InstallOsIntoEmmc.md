@@ -1,4 +1,4 @@
-title: 通过USB线安装系统到eMMC
+title: 安装操作系统到eMMC
 ---
 
 所有VIM系列板子都有**板载eMMC存储**，可以通过**USB烧录工具**把**系统**安装到**eMMC**。

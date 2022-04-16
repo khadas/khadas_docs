@@ -1,10 +1,8 @@
 title: Gsensor
 ---
-Use the Gsensor in Ubuntu.
+Use Gsensor in Ubuntu.
 
 ## Gsensor Node
-
-The Gsensor node is located within the `/dev` directory.
 
 ```sh
 $ ll /dev/accel 
@@ -31,9 +29,9 @@ Use `gcc` to compile this program directly on your SBC running Ubuntu.
 $ gcc -o gsensor gsensor.c
 ```
 
-### Run
+### Test
 
-Use your hands to rotate the SBC whilst this program is running, and you can see live changes in Gsensor data.
+Use your hands to rotate the SBC while this program is running, and you can see live changes in Gsensor data.
 
 ```sh
 $ ./gsensor

@@ -68,7 +68,7 @@ All VIM series boards have **onboard eMMC storage**, so you can install the **OS
 
 1. Enter the `burn tool` directory, open `VIM4.exe`, click `Setup-->Load Image`, then choose an [image](https://dl.khadas.com/Firmware/) for your board.
 2. Connect your board to your PC with a USB-C data cable (the board will power on automatically).
-3. Put your board into [Upgrade Mode](BootIntoUpgradeMode.html).
+3. Put your board into [Upgrade Mode](boot_into_upgrade_mode.html).
 4. If you have performed steps 2 and 3 correctly, your PC will automatically discover your board as an attached USB-device.
 
     Now all you need to do is to click the `Start` button and wait for burning to complete:

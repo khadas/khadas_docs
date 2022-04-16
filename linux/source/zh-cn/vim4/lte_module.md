@@ -3,7 +3,7 @@ title: LTE 4G 模块
 
 ## 运营商以及频段支持
 
-查看所在地区支持的运营商和频段，可以在以下两个网站进行查看:
+查看所在地区支持的运营商和频段，可以在以下两个网站进行查看：
 
 1. [frequencycheck](https://www.frequencycheck.com/carriers)
 2. [spectrumonitoring](https://www.spectrummonitoring.com/frequencies/)
@@ -11,7 +11,7 @@ title: LTE 4G 模块
 
 ## LTE模块工作模式设置
 
-### VIMs上安装monicom
+### 安装minicom
 
 ```shell
 $ sudo apt update
@@ -24,7 +24,7 @@ $ sudo apt install minicom
 $ minicom -D /dev/ttyUSB2
 ```
 
-打开minicom以后,输入
+打开minicom以后输入如下命令：
 
 ```shell
 AT+QCFG="usbnet",2
@@ -34,7 +34,7 @@ OK
 
 ### 掉电重启
 
-LITE模块需要掉电重启才能切换模式，拔出VIMs的电源，重新插上。LTE模块现在就工作在USBNet模式了
+LTE模块需要掉电重启才能切换模式，拔出VIMs的电源，重新插上。LTE模块现在就工作在USBNet模式了。
 
 ### 恢复LTE模块
 
@@ -42,13 +42,13 @@ LITE模块需要掉电重启才能切换模式，拔出VIMs的电源，重新插
 $ minicom -D /dev/ttyUSB2
 ```
 
-默认的工作方式是`0`
+默认的工作方式是`0`：
 
 ```shell
 AT+QCFG="usbnet",0
 ```
 
-同样掉电重启切换回默认模式
+同样掉电重启切换回默认模式。
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -61,11 +61,9 @@ AT+QCFG="usbnet",0
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-## GNOME桌面环境
-
 #### Step1: 打开 `Mobile Board Settings`
 
-![LTE_gnome_open](/linux/images/vim3/LTE_gnome_open.png)
+![LTE_gnome_open](/linux/images/vim3/lte_gnome_open.png)
 
 
 在右上角菜单栏选中以后，就会看到`Mobile Board Settings`选项。
@@ -74,37 +72,37 @@ AT+QCFG="usbnet",0
 
 点击Network,选择`Add new connection`,点击以后`Next`:
 
-![LTE_gnome_new](/linux/images/vim3/LTE_gnome_new.png)
-![LTE_gnome_next](/linux/images/vim3/LTE_gnome_next.png)
+![LTE_gnome_new](/linux/images/vim3/lte_gnome_new.png)
+![LTE_gnome_next](/linux/images/vim3/lte_gnome_next.png)
 
 #### Step3: 选择运营商所在国家
 
 选择运营商所在国家，这个应该与sim卡相同。
 
-![LTE_gnome_country](/linux/images/vim3/LTE_gnome_country.png)
+![LTE_gnome_country](/linux/images/vim3/lte_gnome_country.png)
 
 #### Step4: 选择运营商
 
 选择运营商，这里应与你的sim卡相同。
 
-![LTE_gnome_provider](/linux/images/vim3/LTE_gnome_provider.png)
+![LTE_gnome_provider](/linux/images/vim3/lte_gnome_provider.png)
 
 #### Step5: 输入密码连接
 
 选择完运营商以后，一路`Next`，最后`apply`。此时需要输入密码 ，默认是`000`。
 
-![LTE_gnome_apply](/linux/images/vim3/LTE_gnome_apply.png)
-![LTE_gnome_psk](/linux/images/vim3/LTE_gnome_psk.png)
+![LTE_gnome_apply](/linux/images/vim3/lte_gnome_apply.png)
+![LTE_gnome_psk](/linux/images/vim3/lte_gnome_psk.png)
 
 输入以后以后就能正常连接了。
 
-![LTE_gnome_success](/linux/images/vim3/LTE_gnome_success.png)
+![LTE_gnome_success](/linux/images/vim3/lte_gnome_success.png)
 
 #### 修改连接密码
 
 打开相应的设置，在`Mobile Broadband`里面可以更新密码。
 
-![LTE_gnome_change_psk](/linux/images/vim3/LTE_gnome_change_psk.png)
+![LTE_gnome_change_psk](/linux/images/vim3/lte_gnome_change_psk.png)
 
 </div>
 <div class="tab-pane fade show active" id="server" role="tabpanel" aria-labelledby="desktop-tab">

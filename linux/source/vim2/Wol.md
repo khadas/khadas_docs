@@ -92,14 +92,17 @@ After doing the steps above, you can test the WOL function.
 
 **3. Attempt to wake up your VIM2, via a Ubuntu device on the same LAN.**
 
-  * Install the **wakeonlan** tool
+* Install the **wakeonlan** tool
+
 ```
 $ sudo apt-get install wakeonlan
 ```
-  * Wake up your VIM2 using it's MAC Address
+
+* Wake up your VIM2 using it's MAC Address
+
 ```
 $ wakeonlan 98:aa:fc:60:46:de
 ```
 
 ## See also
-[Khadas Bootloader Instructions (KBI))](KbiGuidance.html)
+[KBI(Khadas Bootloader Instructions)](KbiGuidance.html)

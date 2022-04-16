@@ -1,7 +1,7 @@
 title: WiringPi-Python
 ---
 
-**这篇文档主要介绍如何在Khadas SBC上使用WiringPi-Python。**
+这篇文档主要介绍如何使用WiringPi-Python API。
 
 ## 什么是 WiringPi-Python
 
@@ -112,5 +112,5 @@ class Serial(object):
 $ wget https://dl.khadas.com/development/code/docs_source/wiringpi-python.py
 ```
 ## 注意
-如果需要使用wiringPi-Python的特殊功能引脚，需要先确认DTB里面打开了相应的配置。
-wiringPi-Python本身包括很多功能，不仅仅只是控制GPIO引脚的输出和读取引脚电平值。这里只是一个简单的介绍和使用，更多的用法需要使用者自己去探索。
+* 如果需要使用wiringPi-Python的特殊功能引脚，需要先确认DTB里面打开了相应的配置。
+* wiringPi-Python本身包括很多功能，不仅仅只是控制GPIO引脚的输出和读取引脚电平值。这里只是一个简单的介绍和使用，更多的用法需要使用者自己去探索。

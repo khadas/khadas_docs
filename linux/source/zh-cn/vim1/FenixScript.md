@@ -19,7 +19,7 @@ $ git clone --depth 1 https://github.com/khadas/fenix
 ```
 
 ### 设置编译环境
-你需要先设置Fenix编译环境，如：选择Khadas开发板型号、U-Boot版本、Linux版本、Linux发行版、安装方式等等。
+你需要先设置Fenix编译环境，如：选择Khadas SBC型号、U-Boot版本、Linux版本、Linux发行版、安装方式等等。
 ```sh
 $ cd ~/project/fenix
 $ source env/setenv.sh

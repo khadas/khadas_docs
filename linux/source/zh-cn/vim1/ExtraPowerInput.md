@@ -2,7 +2,8 @@ title: Khadas VIMs外部供电接口
 ---
 
 ## 前言
- * 设备主要由USB-C接口供电。
+
+设备主要由USB-C接口供电，但同时也支持外部接口供电。
 
 ## 概述
 Khadas VIM设计了两个主要电源输入接口
@@ -110,7 +111,4 @@ VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
 
 ## 更多资料
-* [VIM1接口描述](Hardware.html)
-* [VIM2接口描述](Hardware.html)
-* [VIM3接口描述](Hardware.html)
 * [vin对vin连接线](https://www.khadas.com/product-page/vin-to-vin-cable)
