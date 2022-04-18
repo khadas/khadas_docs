@@ -1,1 +1,1 @@
-../../../linux/source/vim4/Hardware.md
+../../../linux/source/vim4/hardware.md
