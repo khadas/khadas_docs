@@ -171,7 +171,7 @@ sidebar:
     system_control: 系统控制
     how_to_use_adb_tool: ADB工具使用
     how_to_change_logo_android: 更换开机Logo
-    how_to_change_animation: 更新开机动画
+    how_to_change_animation: 更换开机动画
     how_to_app_platform_sign: APP添加系统签名
     how_to_get_gps_data: 获取GPS数据
     how_to_get_gsensor_data: 获取GSensor数据
