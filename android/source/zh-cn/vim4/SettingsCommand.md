@@ -1,15 +1,17 @@
-title: 如何使用adb settings命令
+title: ADB Settings命令
 ---
 
-## settings 命令介绍
-通过settings命令查询或修改系统变量，实际上是对SettingsProvider数据库进行查询和修改，SettingsProvider数据库
-有三种属性的系统变量。
-1. system:　各种各样的用户系统变量
-2. global:　公开性的用户系统变量，第三方APP有读没有写的权限
-3. secure:　安全性的用户系统变量，第三方APP有读没有写的权限
+## ADB Settings命令介绍
+
+通过ADB Settings命令查询或修改系统变量，实际上是对SettingsProvider数据库进行查询和修改。
+SettingsProvider数据库有三种属性的系统变量：
+
+* `system`：各种各样的用户系统变量
+* `global`：公开性的用户系统变量，第三方APP有读没有写的权限
+* `secure`：安全性的用户系统变量，第三方APP有读没有写的权限
 
 
-## settings 命令用法
+## ADB Settings命令用法
 1. `settings list`
 `settings list`命令用于查看系统变量，命令行格式如下：
 ```shell
@@ -17,8 +19,9 @@ settings list [global/system/secure]
 ```
 
 *  查看`global`属性的系统变量：
+
 ```shell
-console:/ $ settings list global                                           
+console:/ $ settings list global
 Phenotype_boot_count=10
 Phenotype_flags=
 _boot_Phenotype_flags=
@@ -37,7 +40,8 @@ bluetooth_on=1
 boot_count=11
 ```
 
-*  查看`system`属性的系统变量：
+* 查看`system`属性的系统变量：
+
 ```shell
 console:/ $ settings list system
 accelerometer_rotation=0
@@ -57,6 +61,7 @@ notification_sound=content://media/internal/audio/media/180
 ```
 
 *  查看`secure`属性的系统变量：
+
 ```shell
 console:/ $ settings list secure                                               
 accessibility_display_inversion_enabled=null
@@ -76,22 +81,29 @@ enabled_input_methods=com.android.inputmethod.latin/.LatinIME
 ```
 
 2. `settings get`
+
 `settings get`用于查询具体的系统变量，命令行格式如下：
+
 ```shell
 settings get [global/system/secure] [key]
 ```
+
 举例：查询飞行模式是否打开，该系统变量属于`global`属性，具体如下：
+
 ```shell
 console:/ $ settings get global airplane_mode_on
 0
 ```
 
-3. `settings put` 
+3. `settings put`
+
 `settings put`用于修改具体的系统变量，命令行格式如下：
 ```shell
 settings put [global/system/secure] [key] [value]
 ```
+
 举例：打开飞行模式，该系统设置属于`global`属性，具体如下：
+
 ```shell
 console:/ $ settings put global airplane_mode_on 1
 console:/ $ settings get global airplane_mode_on
