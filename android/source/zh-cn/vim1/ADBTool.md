@@ -1,5 +1,8 @@
-title: 使用ADB工具
+title: ADB工具使用
 ---
+
+## ADB介绍
+ADB是Android Debug Bridge的简称，其由客户端、守护进程、服务器三部分组成。
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -13,42 +16,40 @@ title: 使用ADB工具
 <div class="tab-pane fade show active" id="Linux-pins" role="tabpanel" aria-labelledby="Linux-tab">
 
 
-## 安装ADB
+## ADB工具安装
 
-首先你要更新你的源，之后可以通过命令行直接安装。
+PC主机运行命令直接安装ADB工具：
 
 ```shell
 $ sudo apt-get update
 $ sudo apt-get install android-tools-adb
 ```
 
-### 添加权限&编写配置文件
+### 权限添加&文件配置
 
-现在ADB工具已经安装在你的计算机中，但在使用之前还要做一些准备。
+ADB工具安装完成后，在使用之前还要做一些准备。
 
-#### 添加权限
+#### 权限添加
 
 ```shell
 $ sudo  useradd -G plugdev $USER
 ```
 
-#### 编写配置文件
+#### 文件配置
 
-创建一个rules文件。
+创建一个rules文件：
 
 ```shell
 $ sudo vim /etc/udev/rules.d/51-android.rules
 ```
 
-将以下内容写入文件中。
+将以下内容写入文件中：
 
 ```shell
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0666"
 ```
 
-这是一个通用配置。
-
-#### 重启你的udev
+#### 重启udev服务
 
 ```shell
 $ sudo /etc/init.d/udev restart
@@ -56,18 +57,22 @@ $ sudo /etc/init.d/udev restart
 </div>
 <div class="tab-pane fade" id="Windows-pins" role="tabpanel" aria-labelledby="Windows-tab">
 
-## 安装ADB
+## ADB工具安装
 
-首先参照安装 [通过USB升级固件](UpgradeViaUSBCable.html)安装好驱动。
-然后下载 [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip)，解压到打开`cmd`命令行窗口的根目录以方便调用，如下图所示：
-![mac](/android/images/vim4/adb.png)
+* 安装USB驱动，请参考[通过USB升级固件](UpgradeViaUSBCable.html)
+* 下载[Android SDK平台工具](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+* 解压平台工具到一个容易访问的文件夹，比如`C:\platform-tools`
+
+{% note warn Note %}
+* 在cmd终端执行adb命令时，需要进入`C:\platform-tools`目录，否则会提示找不到adb命令
+{% endnote %}
 
 </div>
 </div>
 
-## 使用ADB
+## ADB使用
 
-### 网络ADB 
+### 网络ADB
 
 * 确保连上局域网Wi-Fi或有线网络
 
@@ -75,7 +80,7 @@ $ sudo /etc/init.d/udev restart
 
 * 查看设备IP地址: `Settings-->About device-->Status-->IP`
 
-* 执行 `adb connect` 命令,如下:
+* 执行 `adb connect` 命令，如下：
 ```shell
 $ adb connect 192.168.1.120
 $ adb shell
@@ -87,7 +92,7 @@ $ adb shell
 
 * 确保调试模式打开: `Settings-->Developer options-->USB debugging`
 
-* 打开终端执行如下命令: 
+* 打开终端执行如下命令：
 ```shell
 $ adb shell
 ```

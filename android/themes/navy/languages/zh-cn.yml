@@ -169,7 +169,7 @@ sidebar:
     upgrade_via_tfcard: 通过TF卡升级安卓
     rescures_control: 资源控制
     system_control: 系统控制
-    how_to_use_adb_tool: ADB用法
+    how_to_use_adb_tool: ADB工具使用
     how_to_change_logo_android: 更新开机logo
     how_to_change_animation: 更新开机动画
     how_to_app_platform_sign: APP添加系统签名
