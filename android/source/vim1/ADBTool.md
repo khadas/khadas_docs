@@ -12,9 +12,9 @@ title: ADB Tool
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="Linux-pins" role="tabpanel" aria-labelledby="Linux-tab">
 
-## Install ADB
+## Install ADB Tool
 
-Install the ADB tool by synchronizing the index file:
+Install the ADB tool on PC Host:
 
 ```shell
 $ sudo apt-get update
@@ -39,13 +39,13 @@ Create a .rules file:
 $ sudo vim /etc/udev/rules.d/51-android.rules
 ```
 
-Write the following to the .rules file.
+Write the following to the .rules file:
 
 ```shell
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0666"
 ```
 
-#### Restart udev
+#### Restart udev service
 
 ```shell
 $ sudo /etc/init.d/udev restart
@@ -53,12 +53,15 @@ $ sudo /etc/init.d/udev restart
 </div>
 <div class="tab-pane fade" id="Windows-pins" role="tabpanel" aria-labelledby="Windows-tab">
 
-## Install ADB
+## Install ADB Tool
 
-Install the [ADB USB driver](UpgradeViaUSBCable.html), then download [adb.zip](https://dl.khadas.com/products/edge/tool/ADB.zip).
+* Regfer this [guide](UpgradeViaUSBCable.html) to install the USB driver.
+* Download the [Platform Tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip).
+* Unzip the `Platform Tools` file to the easily accessible directory, such as `C:\platform-tools`.
 
-Unzip the compressed file to the root directory of the `cmd` console, as shown below:
-![mac](/android/images/vim4/adb.png)
+{% note warn Note %}
+* When executing the adb command in the cmd terminal, you need to enter the `C:\platform-tools` directory, otherwise it will prompt that the adb command cannot be found.
+{% endnote %}
 
 </div>
 </div>
