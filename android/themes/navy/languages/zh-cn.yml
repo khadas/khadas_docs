@@ -180,7 +180,7 @@ sidebar:
     khadas_settings_usage: Khadas设置使用说明
     how_to_add_permission: APP默认权限添加
     accessories: 配件
-    connect_lcd: 配置触摸屏TS050
+    connect_lcd: TS050屏幕连接
     board_rescoures: 板载资源
     how_to_access_gpio: GPIO用法
     how_to_access_i2c: 操作I2C
