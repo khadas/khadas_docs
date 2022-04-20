@@ -18,14 +18,14 @@ $ adb reboot
 
 ## Change Boot Logo via Upgrading the Firmware
 
-1. Replace the `device/khadas/TARGET/logo_img_files/bootup.bmp` logo file.
+1. Replace the `device/khadas/kvim4/logo_img_files/bootup.bmp` logo file.
 
-2. Build upgrade package.
+2. Build upgrade package:
 ```sh
 $ cd PATH_YOUR_PROJECT
-$ rm -rf out/target/product/TARGET/
+$ rm -rf out/target/product/kvim4/
 $ source build/envsetup.sh
-$ lunch TARGET_LUNCH
+$ lunch kvim4-userdebug
 $ make installclean -j8
 $ make otapackage -j8
 ```
@@ -33,7 +33,4 @@ $ make otapackage -j8
  
 {% note info Note %}
 * Replace `PATH_YOUR_PROJECT` with your project path
-* Replace `TARGET_LUNCH` with your selected lunch
-  * For VIM4, it's kvim4-userdebug
-* `TARGET` should be kvim4
 {% endnote %}
