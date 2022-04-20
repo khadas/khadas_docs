@@ -1,34 +1,22 @@
 title: GPIO使用说明
 ---
 
-这篇文章主要介绍`adb`命令和Java应用两种方法使用GPIO。
+这篇文章主要介绍如何在Android系统下控制GPIO。
 
-{% note warn 注意 %}
-所有对GPIO的操作都是在root权限下进行的，切换到root:
+## 获取GPIO数值
 
-```sh
-$ su
-#
-```
-
-{% endnote %}
-
-
-## 获取GPIO PIN Number
-
-想要使用某一个GPIO PIN，你需要知道其对应的PIN number。
+想要控制GPIO，必须知道其对应的GPIO数值。
 
 ### 计算方法
 
-GPIO PIN number的计算方法为：`PIN number = BANK number + PIN number in BANK`。
+GPIO数值计算方法为：`Number = Range Base + Pin Index`。
 
-1. `BANK number`：不同组别的GPIO对应不同的BANK，Amlogic SOC通常包含AO BANK和Periphs BANK。
-　　举例GPIOAO对应的是AO BANK，而GPIOT对应的是Periphs BANK，然而AO BANK与Periphs BANK对应的number是不一样的。
-2. `Pin number in BANK`：GPIO PIN所在BANK的位置，比如GPIOT_18在Periphs BANK的第109个位置。
+1. `Range Base`表示Range基数。
+2. `Pin Index`表示GPIO管脚相对于Range的偏移。
 
-### 数值计算示例
+### GPIO数值计算举例
 
-1. 获取`BANK number`：
+1. 获取`Range Base`：
 
 ```sh
 # cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
@@ -36,7 +24,7 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
 ```
 
-2. 获取`PIN number in BANK`：
+2. 获取`Pin Index`：
 
 ```sh
 # cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
@@ -57,15 +45,18 @@ pin 110 (GPIOT_19)  fe000000.apb4:pinctrl@4000
 ...
 ```
 
-3. 计算`PIN Number`：
+3. 获取GPIO数值：
 
-这里以`GPIOT_18`和`GPIOT_19`为例，
+以`GPIOT_19`为例
 
-`GPIOT_18 = BANK number + PIN number in BANK = 355 + 109 = 464`
-`GPIOT_19 = BANK number + PIN number in BANK = 355 + 110 = 465`
+`GPIOT_19` = `Range Base` + `Pin Index` = 355 + 110 = 465
 
-## GPIO adb命令使用示例
 
+## GPIO用法
+
+在获取到GPIO数值后就可以通过如下的步骤来控制GPIO，以GPIOT_19（Number 465）为例：
+
+### ADB命令使用方法
 
 * 申请GPIO(`GPIOT_19`)
 ```bash
@@ -103,7 +94,7 @@ pin 110 (GPIOT_19)  fe000000.apb4:pinctrl@4000
 ```
 
 
-## JAVA应用使用示例
+### JAVA应用使用方法
 
 * 获取root权限
 ```java

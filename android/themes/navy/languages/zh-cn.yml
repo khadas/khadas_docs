@@ -182,7 +182,7 @@ sidebar:
     accessories: 配件
     connect_lcd: TS050屏幕连接
     board_rescoures: 板载资源
-    how_to_access_gpio: GPIO用法
+    how_to_access_gpio: GPIO使用说明
     how_to_access_i2c: 操作I2C
     howto_use_wol: WOL用法
     how_to_setup_pcie_usb_port: 设置PCIe/USB3.0端口
