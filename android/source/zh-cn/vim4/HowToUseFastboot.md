@@ -1,13 +1,17 @@
-title: 通过Fastboot单独刷Image
+title: Fastboot使用说明
 ---
 
 ## 什么是Fastboot
 
-Fastboot是一种快速升级Android每个分区包的方法，是通过USB数据线连接设备的刷机模式。
+Fastboot是一种快速升级Android每个分区包的方法。
 
 ### 进入Fastboot模式
 
-板子重新上电，串口调试工具界面按住回车，停在U-Boot命令行下，输入`fastboot 1`命令进入烧录模式。
+1. 通过USB数据线连接VIM4和电脑。
+2. 参考[文档](SetupSerialTool)设置串口。
+3. 确保串口连线正确。
+4. 系统启动时按空格键进入串口命令行模式。
+5. 执行`fastboot 1`命令进入Fastboot烧录模式。
 
 ```sh
 $ fastboot 1
@@ -16,7 +20,7 @@ $ fastboot 1
 
 ### 解锁引导加载程序
 
-为了使Fastboot刷机，首先我们必须解锁引导加载程序，否则不能被烧录。
+为了使设备能够正常进行Fastboot刷机，首先我们必须解锁引导加载程序，否则不能被烧录。
 
 进入Fastboot模式后，输入以下命令解锁：
 
@@ -26,7 +30,7 @@ $ fastboot flashing unlock_critical
 ```
 ![image](/android/images/vim4/fastboot_on_vim4_2.png)
 
-### Bootloader模式的烧录命令
+### Fastboot命令
 
 ```sh
 $ fastboot devices
@@ -56,12 +60,7 @@ $ fastboot getvar is-logical:boot //return no, others
 $ fastboot getvar is-logical:system //return yes, system/odm/vendor/product
 $ fastboot getvar super-partition-name //return super
 ```
-升级固件后，你可以选择是否锁定设备（调试过程中不需要）。
 
-```sh
-$ fastboot flashing lock_critical
-$ fastboot flashing lock
-```
 ### 单独更新Kernel
 ```sh
 $ fastboot flash vendor_boot /path/to/vendor_boot.img

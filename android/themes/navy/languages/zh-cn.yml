@@ -209,7 +209,7 @@ sidebar:
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
     erase_emmc: 擦除eMMC存储器
-    how_to_use_fastboot: 通过Fastboot单刷Image
+    how_to_use_fastboot: Fastboot使用说明
     hardware: 硬件
     setup_serial: 设置串口调试工具
     extra_power_input: 外部电源供电
