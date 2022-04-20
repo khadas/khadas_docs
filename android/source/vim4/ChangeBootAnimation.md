@@ -4,7 +4,7 @@ title: Change Boot Animation
 ## Explanation of Bootanimation Content
 Android boot animation is composed of a series of PNG pictures that act as frames of a continuous animation. Each PNG frame is saved in a compressed format.
 
-The boot animation file name is `Bootanimation.zip`, the format is `.zip` and the compression method is `store`.
+The boot animation file name is `bootanimation.zip`, the format is `.zip` and the compression method is `store`.
 
 The animation file includes one `desc.txt` file and directories labelled `part0` to `part4`.
 
@@ -17,15 +17,15 @@ drwxrwxrwx 2 lxx lxx 4096 Mar 18 13:41 part3
 drwxrwxrwx 2 lxx lxx 4096 Mar 18 13:42 part4
 ```
 
-1. `desc.txt`: animation property description file. Used to set the animation pixel (size), number of frames, number of cycles, file name, etc. 
+* `desc.txt`: animation property description file. Used to set the animation pixel (size), number of frames, number of cycles, file name, etc. 
 
 {% note info Tip %}
 The file format needs to be set to ANSI
 {% endnote %}
 
-2. `Part0`: folder containing first stage animation frames.
+* `Part0`: folder containing first stage animation frames.
 
-3. `Part1`: folder containing second stage animation frames.
+* `Part1`: folder containing second stage animation frames.
 
 
 `desc.txt` file contents:
@@ -49,16 +49,18 @@ c 1 15 part4
 `part0": the directory of the picture
 We can there calculate the time-duration of part0 as: `30 * (1 / 60) seconds`. 
 
-## Generate Bootanimation
+## Generate and Replace Bootanimation
 
-After you create the part folders and `desc.txt`, you can use following Linux command to generate `Bootanimation.zip`.
+After you create the part folders and `desc.txt`, you can use following Linux command to generate `bootanimation.zip`:
 
 ```
 $ zip -r -X -Z store bootanimation part*/* desc.txt 
 ``` 
-Push `Bootanimation.zip` to `system/media`, and restart your SBC for changes to take effect.
+Push `bootanimation.zip` to `system/media`, and restart your SBC for changes to take effect.
 
 ```
+$ adb root
+$ adb remount
 $ adb push bootanimation.zip system/media/bootanimation.zip
 ```
 
