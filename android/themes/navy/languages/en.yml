@@ -181,7 +181,7 @@ sidebar:
     khadas_settings_usage: Khadas Settings
     how_to_add_permission: Default Permissions for APP
     accessories: Accessories
-    connect_lcd: Connect TS050 Touchscreen
+    connect_lcd: TS050 Connection
     board_rescoures: Board Resources
     how_to_access_gpio: GPIO Usage
     how_to_access_i2c: I2C Usage
