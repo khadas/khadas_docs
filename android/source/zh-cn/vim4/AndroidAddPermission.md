@@ -1,8 +1,10 @@
-title: 修改系统为App添加权限
+title: APP默认权限添加
 ---
-为了更好的用户交换体验，可以在framework里为App添加默认的权限。
+Anddroid 6.0以上，系统应用第一次打开会出现申请权限弹窗，为了更好的用户交互体验，系统应用不该弹窗，
 
-## 权限名称
+而是直接授予默认权限，下面就介绍如何为应用添加默认权限。
+
+## 权限名称列表
 ```java
 PHONE_PERMISSIONS
 CONTACTS_PERMISSIONS
@@ -19,16 +21,15 @@ STORAGE_PERMISSIONS
 ```
 
 
-## 源码文件路径
-```
-frameworks/base/services/core/java/com/android/server/pm/permission/DefaultPermissionGrantPolicy.java
-```
-在`grantDefaultSystemHandlerPermissions()`函数里面添加如下：
+## SDK源码修改
+
+修改`frameworks/base/services/core/java/com/android/server/pm/permission/DefaultPermissionGrantPolicy.java`源码文件，
+
+在`grantDefaultSystemHandlerPermissions()`函数里面为应用添加默认权限：
+
 ```java
-//add Permission
+//com.xxx.xxx为应用的包名
 grantSystemFixedPermissionsToSystemPackage("com.xxx.xxx", userId,
 PHONE_PERMISSIONS, SMS_PERMISSIONS, CALENDAR_PERMISSIONS,
 ALWAYS_LOCATION_PERMISSIONS, CONTACTS_PERMISSIONS, CAMERA_PERMISSIONS,MICROPHONE_PERMISSIONS, STORAGE_PERMISSIONS);
-//add end
 ```
-`com.xxx.xxx`为应用的包名。
