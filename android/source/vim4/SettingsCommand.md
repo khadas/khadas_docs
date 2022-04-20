@@ -5,9 +5,9 @@ title: ADB Settings Commands
 ADB settings commands are used to query or modify variables within the `SettingsProvider` database. 
 
 There are three types of system variables:
-1. `global`: global system settings, containing preferences that always apply identically to all defined users.
-2. `system`: system settings, containing miscellaneous system preferences.
-3. `secure`: secure system settings, containing system preferences that applications can read but are not allowed to write.
+* `global`: global system settings, containing preferences that always apply identically to all defined users
+* `system`: system settings, containing miscellaneous system preferences
+* `secure`: secure system settings, containing system preferences that applications can read but are not allowed to write
 
 
 ## Settings Commands Usage
