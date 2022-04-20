@@ -1,15 +1,16 @@
-title: Get Gsensor Data
+title: Get G-Sensor Data
 ---
 
-VIM4 board has integrated gsensor function. Goto `Settings` --> `Khadas settings` --> `G-Sensor data` to view the acceleration of X, Y and Z.
+VIM4 board has integrated G-Sensor module. Goto `Settings` --> `Khadas settings` --> `G-Sensor data` to view the acceleration of X, Y and Z.
 
 <img src="/android/images/vim4/gsensor.png" width="75%" height="75%">
 
 ## Android APP get Gsensor Data
-The data acquisition of app layer is mainly divided into three steps.
+There are the following steps for APP to obtain G-Sensor data:
 1. Get Sensor service : `getSystemService`.
-2. Get detailed sensor object : `getDefaultSensor`.
+2. Get G-Sensor object : `getDefaultSensor`.
 3. Register data listener : `registerListener`.
+
 The reference code is as follows:
 ```java
 import android.app.Activity;
@@ -35,7 +36,7 @@ public class Gsensor_Preference extends Activity implements SensorEventListener 
 
         //get Sensor service
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        //get gsensor object
+        //get G-Sensor object
         Sensor gsensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         //register data listener, callback onSensorChanged method when has data
         mSensorManager.registerListener(this, gsensor, SensorManager.SENSOR_DELAY_NORMAL);
@@ -55,7 +56,7 @@ public class Gsensor_Preference extends Activity implements SensorEventListener 
     public void onSensorChanged(SensorEvent event) {
         if(event.sensor == null)
             return ;
-        //Judge whether the data type is gsensor
+        //Judge whether the data type is G-Sensor
         if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
             //Get data
             mTextView_x.setText("X: " + event.values[0] + " m/s²");
