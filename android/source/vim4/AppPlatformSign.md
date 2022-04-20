@@ -6,7 +6,7 @@ If a third-party application wants to obtain system permissions, it needs to dec
 ## Declare UID as a System Process
 The third-party application's AndroidManifest.xml must include:
 ```sh
-android:sharedUserid="android.uid.system
+android:sharedUserid="android.uid.system"
 ```
 
 ## Sign APP with Platform Key
@@ -52,7 +52,7 @@ PRODUCT_PACKAGES +=\
 
 4. Install the [JDK Tool](https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html).
 
-5. Execute the shell command.
+5. Execute the shell command:
 ```sh
 java -Djava.library.path=signlib -jar signapk.jar platform.x509.pem platform.pk8 unsigned.apk signed.apk
 ```
