@@ -12,8 +12,11 @@ title: 创建系统烧录卡
 {% endnote %}
 
 ## 准备工作
+
 * 编译或下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/))最新的U-Boot文件。
+
 * 准备好TF卡和读卡器。
+
 * 如果TF卡上有多个分区的话，需要通过`fdisk`格式化[TF卡](CreateBurnCardViaCLI.html)。
 
 ## 开始前

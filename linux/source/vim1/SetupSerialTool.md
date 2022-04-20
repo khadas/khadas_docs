@@ -200,9 +200,7 @@ Choose `Yes` and hit `Enter` to exit `minicom`.
 ```
 2. To access U-Boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your Terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](UBootUsage.html) when you've entered U-boot.
 
-3. Standard "help" commands are listed in [U-Boot Usage Guide](UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our official [Krescue images](https://dl.khadas.com/Firmware/Krescue/images/).
-
-4. You can use the U-Boot command line ([kvim#](UBootUsage.html)), to change your VIM's default boot logo `logo.bmp`, use the guide [Boot Logo for U-Boot](BuildBootLogoForUboot.html).
+3. Standard "help" commands are listed in [U-Boot Usage Guide](UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our official [OOWOW images](https://dl.khadas.com/Firmware/Krescue/images/).
 
 {% endnote %}
 
