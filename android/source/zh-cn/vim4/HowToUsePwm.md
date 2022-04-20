@@ -1,8 +1,6 @@
-title: 使用硬件PWM
+title: PWM使用说明
 ---
-
-目前VIM4板子40引脚有个`PWM_F`管脚可以用作为PWM使用。
-dts配置文件里默认`PWM_F`被VBO屏的背光使用，需要作如下代码修改才能使用：
+这篇文档主要介绍如何使用硬件PWM，VIM4`PWM_F`端口默认被其它功能占用，使用`PWM_F`端口前，请先修改如下代码：
 ```diff
 diff --git a/arch/arm64/boot/dts/amlogic/kvim4.dts b/arch/arm64/boot/dts/amlogic/kvim4.dts
 --- a/arch/arm64/boot/dts/amlogic/kvim4.dts
@@ -39,42 +37,35 @@ diff --git a/arch/arm64/boot/dts/amlogic/mesont7_an400-panel.dtsi b/arch/arm64/b
                 interrupts = <0 197 1
 
 ```
-## 确认哪一个物理引脚对应了硬件PWM.
+## `PWM_F`物理引脚确认
 
-* `PWM_F` on [VIM4 GPIO-Out](/android/zh-cn/vim4/Interfaces#GPIO-Pinout)
+* [VIM4 GPIO-Out](/android/zh-cn/vim4/Interfaces#GPIO-Pinout)
 
-## 切换到root用户
-
-普通用户无法控制GPIO，因此需要先却换到root用户。
-
-```shell
-kvim4:/ $ su
-```
 
 ## PWM使用
 
-* Export PWM
+* 申请PWM
 ```shell
 root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
 ```
-* Configure PWM period
+* 配置PWM周期
 ```shell
 root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
 ```
-* Configure PWM duty cycle
+* 配置PWM占空比
 ```shell
 root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
 ```
-* Enable PWM
+* 使能PWM
 ```shell
 root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
 ```
-* Disable PWM
+* 关闭PWM
 ```shell
 root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
 ```
 
-如果你成功开启了硬件PWM，你可以通过示波器看到波形：
+如果你成功开启了硬件PWM，可以通过示波器看到波形：
 
 ![pwm-Oscilloscope](/android/images/vim1/pwm-oscilloscope.jpg)
 
