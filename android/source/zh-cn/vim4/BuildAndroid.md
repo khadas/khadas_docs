@@ -1,4 +1,4 @@
-title: 编译Amlogic平台安卓源码
+title: 编译安卓源码
 ---
 
 
