@@ -2,7 +2,7 @@ title: U-Boot使用说明
 ---
 
 ## 通过U盘烧录`boot.img`
-拷贝 `boot.img` 到U盘, 然后插入到VIM USB，执行如下命令
+拷贝 `boot.img` 到U盘, 然后插入到VIM USB端口，执行如下命令：
 ```
 kvim# usb_update boot boot.img
 ```
