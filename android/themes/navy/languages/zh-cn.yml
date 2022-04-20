@@ -187,7 +187,7 @@ sidebar:
     howto_use_wol: WOL用法
     how_to_setup_pcie_usb_port: 设置PCIe/USB3.0端口
     how_to_enable_m2x_eth: 使能M2x
-    how_to_use_uart_android: 使用uart
+    how_to_use_uart_android: UART使用说明
     how_to_add_ir: 添加遥控器
     how_to_use_pwm: 使用PWM
     npu: NPU
