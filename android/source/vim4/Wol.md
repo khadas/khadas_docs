@@ -7,7 +7,7 @@ VIM2, VIM3, VIM4 and Edge SBCs support Wake-On-LAN.
 
 Connect VIM4 to your LAN, then get the Ethernet MAC address.
 
-## Get ethernet MAC address
+## Get Ethernet MAC Address
 
 You can get it from `Settings-->Khadas Settings-->Ethernet` menu.
 
@@ -22,16 +22,22 @@ You can enable WOL in the `Settings-->Khadas Settings-->WOL` menu.
 
 ## Test WOL
 
-* Connect VIM4 with your LAN network
-* Power off VIM4
-* Attempt to wake up your VIM4 device from another Android device
-  * Download **[Wake-On-LAN Sender](http://www.yarovy.com/wol/)** tool
-  ![sender](/android/images/vim2/wol_sender_main.png)
-  * Add a remote computer
-  ![sender_add](/android/images/vim2/wol_sender_add_remote.png)
-  * Wake up VIM4 with this button
-  ![sender](/android/images/vim2/wol_sender_send.png)
-  * Note: On iPhone, you can search for **Wake On LAN** in the App Store
+**1. Connect VIM4 with your LAN network.**
+**2. Power off VIM4.**
+**3. Attempt to wake up your VIM2, via a Ubuntu device on the same LAN.**
+
+* Install the **wakeonlan** tool
+
+```
+$ sudo apt update
+$ sudo apt install wakeonlan
+```
+
+* Wake up your VIM4 using it’s MAC Address
+
+```
+$ wakeonlan 02:ad:36:01:25:55
+```
 
 ## See also
 
