@@ -1,38 +1,26 @@
-title: GPIO Usage
+title: GPIO Access Usage
 ---
 
 You can access the GPIO pins in two ways:
 * ADB shell
 * Java application
 
-{% note warn Note %}
-All GPIO commands require root privileges to execute:
 
-```sh
-$ su
-#
-```
+## Get GPIO Number
 
-{% endnote %}
-
-
-## Determine the GPIO Pin Number
-
-To use a GPIO pin, you need to know its corresponding pin number.
+To use a GPIO pin, you need to know its PIN number.
 
 ### Calculation
 
-GPIO PIN number calculation method: `pin number = bank number + pin number in bank`
+GPIO PIN number calculation method: `Number = Range Base + Pin Index`
 
-1. `bank number`: Different groups of GPIOs correspond to different banks. Amlogic SoCs usually have AO banks and Periphs banks.
-For example, GPIOAO corresponds to the AO bank, and GPIOT corresponds to Periphs bank.
+1. `Range Base` refers to the base value of GPIO ranges.
 
-2. `pin number in bank`: The position in the bank where the GPIO PIN is located.
-For example, GPIOT_18 is at the 109th position of the Periphs bank.
+2. `Pin Index` refers to the sorting of the GPIO pins you need to calculate in the corresponding ranges.
 
 ### Example
 
-1. Obtain the `bank number`:
+1. Get `Range Base`:
 
 ```sh
 # cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/gpio-ranges
@@ -40,7 +28,7 @@ GPIO ranges handled:
 0: periphs-banks GPIOS [355 - 511] PINS [0 - 156]
 ```
 
-2. Obtain the `pin number in bank`:
+2. Get `Pin Index`:
 
 ```sh
 # cat /sys/kernel/debug/pinctrl/fe000000.apb4\:pinctrl\@4000-pinctrl-meson/pins
@@ -61,14 +49,18 @@ pin 110 (GPIOT_19)  fe000000.apb4:pinctrl@4000
 ...
 ```
 
-3. Calculate the `pin number`:
+3. Calculate `Number`:
 
-Here is an example for `GPIOT_18` and `GPIOT_19`,
+Here is an example for `GPIOT_19`:
 
-`GPIOT_18 = bank number + pin number in bank = 355 + 109 = 464`
-`GPIOT_19 = bank number + pin number in bank = 355 + 110 = 465`
+`GPIOT_19 = Range Base + Pin Index = 355 + 110 = 465`
 
-## ADB Shell Commands
+
+## GPIO Usage
+When you get the GPIO number, you can follow the steps below to control it.
+Here will take GPIO number 465 as a example.
+
+### ADB Shell Commands
 
 
 * Request GPIO(`GPIOT_19`)
@@ -107,7 +99,7 @@ Here is an example for `GPIOT_18` and `GPIOT_19`,
 ```
 
 
-## JAVA Application
+### JAVA Application
 
 * Get root privileges
 ```java

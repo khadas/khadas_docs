@@ -183,7 +183,7 @@ sidebar:
     accessories: Accessories
     connect_lcd: TS050 Connection
     board_rescoures: Board Resources
-    how_to_access_gpio: GPIO Usage
+    how_to_access_gpio: GPIO Access Usage
     how_to_access_i2c: I2C Usage
     howto_use_wol: Wake-On-LAN
     how_to_setup_pcie_usb_port: PCIe/USB3.0 Port Setup
