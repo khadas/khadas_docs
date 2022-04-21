@@ -1,7 +1,7 @@
 title: Install Toolchains
 ---
 
-The Amlogic platform requires extra toolchains for cross-compiling:
+To build the VIMs SDK source code, you need to install the extra toolchains for cross-compiling:
 
 1. Use Ubuntu 16.04 (64-bit) to build an environment for compiling Android. The following software packages need to be installed:
 
