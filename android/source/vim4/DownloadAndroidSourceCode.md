@@ -7,7 +7,7 @@ Walk through the steps below to download the Source Code.
 
 ## Steps
 
-Firstly, install git-lfs tool for downloading Android 9.0 SDK
+Firstly, install git-lfs tool for downloading Android 11.0 SDK
 
 ```sh
 $ mkdir git_lfs
@@ -29,7 +29,7 @@ $ cd WORKING_DIRECTORY
 2) Run `repo init` to download the manifest repository first:
 
 ```sh
-$ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vims-pie
+$ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vim4-r
 ```
 
 3) Run `repo sync` to pull down the Android Source Tree:
