@@ -21,12 +21,15 @@ This documentation will introduce how to use the UART of `40-PIN HEADER`.
 
 ## Use UART by ComAssistant APP
 
-1. Through the serial port to USB adapter board, one end is connected to the computer, the other end is connected to pin 15, pin 16.
+1. You need a USB to TTL Converter, one end is connected to the computer, the other end is connected to pin 15, pin 16.
 
-2. Install the`ComAssistant.apk`, the app can test UART send and recieve function.
+2. Install `ComAssistant` application on VIM4, then setup the baudrate to `9600` and chose the uart device node to `/dev/ttyS4`.
 
-3. The run result is as following, ComAssistant recevie `12345678` from PC, and send `serial send test` to PC.
+3. Install the SecureCRT tool on PC host, then chose correct serial port number and setup the baudrate to `9600`.
+
+4. PC host sends the number `12345678`, and VIM4 sends the character serial send test`
+
+5. The run result is as following, VIM4 recevie `12345678` from PC, and PC recevie `serial send test` from VIM4.
 
 <img src="/android/images/vim4/serial_send_rec.png" width="75%" height="75%">
 
-4. PC receive `serial send test`, show in serial tool secureCRT.
