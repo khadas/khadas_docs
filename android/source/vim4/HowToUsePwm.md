@@ -1,7 +1,7 @@
 title: PWM Usage
 ---
 
-Within the VIM4's GPIO pin-outs, there is a pin labelled `PWM_F`. 
+This document introduces how to use hardware PWM.
 
 By default, the DTS configuration file specifies `PWM_F` as the pin used to control the backlight of a VBO screen. 
 
@@ -45,15 +45,9 @@ diff --git a/arch/arm64/boot/dts/amlogic/mesont7_an400-panel.dtsi b/arch/arm64/b
 ```
 ## PWM-F Harware Interfaces
 
-* `PWM_F` on [VIM4 GPIO-Out](/android/vim4/Interfaces#GPIO-Pinout)
+* [VIM4 GPIO-Out](/android/vim4/Interfaces#GPIO-Pinout)
 
-## Switch To Root User
 
-Standard users cannot control the GPIO pins, so you'll need to elevate yourself to root first.
-
-```shell
-kvim4:/ $ su
-```
 ## PWM Usage 
 
 * Export PWM
