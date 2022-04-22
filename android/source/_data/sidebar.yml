@@ -211,6 +211,7 @@ hardware:
     vim1: hardwareVim1.html
     vim2: hardwareVim2.html
     vim3: hardwareVim3.html
+    vim4: hardwareVim4.html
     edge: hardwareEdge.html
 
 firmware:
@@ -219,4 +220,5 @@ firmware:
     vim2: Vim2AndroidFirmware.html
     vim3: Vim3AndroidFirmware.html
     vim3l: Vim3lAndroidFirmware.html
+    vim4: Vim4AndroidFirmware.html
     edge: EdgeAndroidFirmware.html
