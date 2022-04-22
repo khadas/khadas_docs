@@ -1,1 +1,1 @@
-../../../../linux/source/zh-cn/vim4/SetupSerialTool.md
+setup_tftp_server.md

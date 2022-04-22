@@ -1,1 +1,1 @@
-../../../../linux/source/zh-cn/vim4/SetupTFTPServer.md
+setup_tftp_server.md
