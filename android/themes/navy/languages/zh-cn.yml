@@ -169,27 +169,27 @@ sidebar:
     upgrade_via_tfcard: 通过TF卡升级安卓
     rescures_control: 资源控制
     system_control: 系统控制
-    how_to_use_adb_tool: ADB用法
-    how_to_change_logo_android: 更新开机logo
-    how_to_change_animation: 更新开机动画
-    how_to_app_platform_sign: APP添加系统签名
+    how_to_use_adb_tool: ADB工具使用
+    how_to_change_logo_android: 更换开机Logo
+    how_to_change_animation: 更换开机动画
+    how_to_app_platform_sign: APP获取系统权限
     how_to_get_gps_data: 获取GPS数据
-    how_to_get_gsensor_data: 获取GSensor数据
-    how_to_use_settings_command: 使用Settings命令
-    how_to_use_tts: 使用TTS
+    how_to_get_gsensor_data: G-Sensor数据获取
+    how_to_use_settings_command: ADB Settings命令
+    how_to_use_tts: TTS使用说明
     khadas_settings_usage: Khadas设置使用说明
-    how_to_add_permission: 修改系统为APP添加权限
+    how_to_add_permission: APP默认权限添加
     accessories: 配件
-    connect_lcd: 配置触摸屏TS050
+    connect_lcd: TS050屏幕连接
     board_rescoures: 板载资源
-    how_to_access_gpio: GPIO用法
-    how_to_access_i2c: 操作I2C
-    howto_use_wol: WOL用法
+    how_to_access_gpio: GPIO使用说明
+    how_to_access_i2c: I2C使用说明
+    howto_use_wol: 远程唤醒
     how_to_setup_pcie_usb_port: 设置PCIe/USB3.0端口
     how_to_enable_m2x_eth: 使能M2x
-    how_to_use_uart_android: 使用uart
-    how_to_add_ir: 添加遥控器
-    how_to_use_pwm: 使用PWM
+    how_to_use_uart_android: UART使用说明
+    how_to_add_ir: 红外遥控器支持
+    how_to_use_pwm: PWM使用说明
     npu: NPU
     how_to_use_android_npu_demo: 使用安卓npu demo
     how_to_use_npu_jni: 使用Npu jni
@@ -209,7 +209,7 @@ sidebar:
     create_burning_card_via_cli: 通过命令行创建烧录卡
     create_booting_card: 通过命令行创建启动卡
     erase_emmc: 擦除eMMC存储器
-    how_to_use_fastboot: 通过Fastboot单刷Image
+    how_to_use_fastboot: Fastboot使用说明
     hardware: 硬件
     setup_serial: 设置串口调试工具
     extra_power_input: 外部电源供电

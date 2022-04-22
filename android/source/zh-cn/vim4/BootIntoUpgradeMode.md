@@ -1,1 +1,1 @@
-../../../../linux/source/zh-cn/vim4/BootIntoUpgradeMode.md
+boot_into_upgrade_mode.md

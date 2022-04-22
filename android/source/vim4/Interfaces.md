@@ -1,1 +1,0 @@
-../../../linux/source/vim4/Hardware.md

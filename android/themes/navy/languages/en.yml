@@ -175,15 +175,15 @@ sidebar:
     how_to_change_animation: Change Boot Animation
     how_to_app_platform_sign: System Permissions for APP
     how_to_get_gps_data: Get GPS Data
-    how_to_get_gsensor_data: Get Gsensor Data
+    how_to_get_gsensor_data: Get G-Sensor Data
     how_to_use_settings_command: ADB Settings Commands
     how_to_use_tts: TTS Usage
     khadas_settings_usage: Khadas Settings
     how_to_add_permission: Default Permissions for APP
     accessories: Accessories
-    connect_lcd: Connect TS050 Touchscreen
+    connect_lcd: TS050 Connection
     board_rescoures: Board Resources
-    how_to_access_gpio: GPIO Usage
+    how_to_access_gpio: GPIO Access Usage
     how_to_access_i2c: I2C Usage
     howto_use_wol: Wake-On-LAN
     how_to_setup_pcie_usb_port: PCIe/USB3.0 Port Setup
@@ -207,7 +207,7 @@ sidebar:
     create_burning_card_via_cli: Create Burning Card Using CLI
     create_booting_card: Create Booting Card Using CLI
     erase_emmc: Erase EMMC
-    how_to_use_fastboot: FastBoot Burning Image
+    how_to_use_fastboot: FastBoot Uasge
     hardware: Hardware
     setup_serial: Serial Debugging Tool
     extra_power_input: Extra Power Input

@@ -61,20 +61,20 @@ I2C是一个比较常用的接口，这篇文档主要介绍I2C的使用。
 </div>
 <div class="tab-pane fade" id="vim4-pins" role="tabpanel" aria-labelledby="vim4-tab">
 
-**I2C F**
-`Sensor SCL` <-> `I2C0_SCK (PIN 22)`
-`Sensor SDA` <-> `I2C0_SDA (PIN 23)`
-`Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
 **I2C A**
 `Sensor SCL` <-> `I2C1_SCK (PIN 25)`
 `Sensor SDA` <-> `I2C1_SDA (PIN 26)`
 `Sensor GND` <-> `GND`
 `Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
+**I2C F**
+`Sensor SCL` <-> `I2C0_SCK (PIN 22)`
+`Sensor SDA` <-> `I2C0_SDA (PIN 23)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //取决于传感器供电
 </div>
 </div>
 
-## 使用adb命令检测设备
+## 使用ADB命令检测设备
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -93,7 +93,7 @@ I2C是一个比较常用的接口，这篇文档主要介绍I2C的使用。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1" role="tabpanel" aria-labelledby="vim1-tab">
 
-Detect device on `I2C A`:
+检索`I2C A`上的设备：
 
 ```bash
 # i2cdetect -y -r 1
@@ -107,7 +107,8 @@ Detect device on `I2C A`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C B`:
+
+检索`I2C B`上的设备：
 
 ```bash
 # i2cdetect -y -r 2
@@ -125,7 +126,7 @@ Detect device on `I2C B`:
 </div>
 <div class="tab-pane fade" id="vim2" role="tabpanel" aria-labelledby="vim2-tab">
 
-Detect device on `I2C A`:
+检索`I2C A`上的设备：
 
 ```bash
 # i2cdetect -y -r 1
@@ -139,7 +140,8 @@ Detect device on `I2C A`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C B`:
+
+检索`I2C B`上的设备：
 
 ```bash
 # i2cdetect -y -r 2
@@ -157,7 +159,7 @@ Detect device on `I2C B`:
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-Detect device on `I2C 3`:
+检索`I2C 3`上的设备：
 
 ```bash
 # i2cdetect -y -r 3
@@ -171,7 +173,8 @@ Detect device on `I2C 3`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C 4`:
+
+检索`I2C 4`上的设备：
 
 ```bash
 # i2cdetect -y -r 4
@@ -189,7 +192,7 @@ Detect device on `I2C 4`:
 </div>
 <div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
 
-Detect device on `I2C A`:
+检索`I2C A`上的设备：
 
 ```bash
 # i2cdetect -y 0
@@ -203,7 +206,8 @@ Detect device on `I2C A`:
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-Detect device on `I2C F`:
+
+检索`I2C F`上的设备：
 
 ```bash
 # i2cdetect -y 5
@@ -240,7 +244,7 @@ Detect device on `I2C F`:
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1-i2cget" role="tabpanel" aria-labelledby="vim1-tab">
 
-读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
+读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`：
 
 ```bash
 # i2cget -f -y 1 0x1d 0x0d
@@ -248,7 +252,7 @@ Detect device on `I2C F`:
 </div>
 <div class="tab-pane fade" id="vim2-i2cget" role="tabpanel" aria-labelledby="vim2-tab">
 
-读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
+读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`：
 
 ```bash
 # i2cget -f -y 1 0x1d 0x0d
@@ -256,7 +260,7 @@ Detect device on `I2C F`:
 </div>
 <div class="tab-pane fade" id="vim3-i2cget" role="tabpanel" aria-labelledby="vim3-tab">
 
-读取连接在`I2C 3`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
+读取连接在`I2C 3`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`：
 
 ```bash
 # i2cget -f -y 3 0x1d 0x0d
@@ -264,7 +268,7 @@ Detect device on `I2C F`:
 </div>
 <div class="tab-pane fade" id="vim4-i2cget" role="tabpanel" aria-labelledby="vim4-tab">
 
-读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`。
+读取连接在`I2C A`总线上的设备，其设备地址为`0x1d`，寄存器地址为`0x0d`：
 ```bash
 # i2cget -y 0 0x1d 0x0d
 ```

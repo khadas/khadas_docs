@@ -1,9 +1,9 @@
 title: I2C Usage
 ---
 
-This guide will show you how to use the I2C interface.
+This guide will show you how to access the I2C interface with ADB command.
 
-## Connect
+## Connections
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -61,20 +61,21 @@ This guide will show you how to use the I2C interface.
 </div>
 <div class="tab-pane fade" id="vim4-pins" role="tabpanel" aria-labelledby="vim4-tab">
 
-**I2C F**
-`Sensor SCL` <-> `I2C0_SCK (PIN 22)`
-`Sensor SDA` <-> `I2C0_SDA (PIN 23)`
-`Sensor GND` <-> `GND`
-`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 **I2C A**
 `Sensor SCL` <-> `I2C1_SCK (PIN 25)`
 `Sensor SDA` <-> `I2C1_SDA (PIN 26)`
 `Sensor GND` <-> `GND`
 `Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
+
+**I2C F**
+`Sensor SCL` <-> `I2C0_SCK (PIN 22)`
+`Sensor SDA` <-> `I2C0_SDA (PIN 23)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //depends on external device power requirement
 </div>
 </div>
 
-## Detecting Device using the ADB Shell
+## Device Detection
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">

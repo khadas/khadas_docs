@@ -1,1 +1,1 @@
-../../../linux/source/vim4/CreateBurnCard.md
+create_burn_card_via_cli.md

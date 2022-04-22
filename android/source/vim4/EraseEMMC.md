@@ -1,1 +1,1 @@
-../vim1/EraseEMMC.md
+erase_emmc.md

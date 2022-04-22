@@ -1,1 +1,0 @@
-../../../linux/source/vim4/CreateBootableSDCard.md
