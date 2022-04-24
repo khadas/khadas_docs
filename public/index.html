@@ -117,12 +117,13 @@
 
           </select>
         </div> -->
-        <div style="width: 50px;height: 50px;"></div>
-        <a id="mobile-nav-toggle">
+        <div class="keep-center"></div>
+        <!-- <a id="mobile-nav-toggle">
           <span class="mobile-nav-toggle-bar"></span>
           <span class="mobile-nav-toggle-bar"></span>
           <span class="mobile-nav-toggle-bar"></span>
-        </a>
+        </a> -->
+
       </div>
     </header>
 
@@ -461,6 +462,20 @@
         }
       }
 
+      @media screen and (min-width: 769px) {
+        .keep-center {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .keep-center {
+          width: 0px;
+          height: 0px;
+        }
+      }
+
       #content-wrap {
         min-height: calc(100vh - 420px - 70px);
       }
@@ -491,6 +506,19 @@
 
                   <div class="mask">
                     <span class="mask-text">Android</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 right-box">
+            <div class="scale-right">
+              <div class="right-item">
+                <img src="images/home/android.png" class="img-system" />
+                <a href="/oowow" class="mask-link">
+                  <div class="mask">
+                    <span class="mask-text">OOWOW</span>
                   </div>
                 </a>
               </div>
