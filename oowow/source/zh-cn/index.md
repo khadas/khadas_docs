@@ -1,65 +1,29 @@
 title: 快速上手
 ---
 
-这篇主要介绍在拿到板子以后如何快速上手，让系统跑起来。
+## 什么是OOWOW？
 
-<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=720164941&bvid=BV1hQ4y1h7rh&cid=400374941&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+OOWOW是一个轻量级嵌入式系统（集成在板子上）- 如果你想控制你的板子，你可以在任何情况下启动并运行这个系统。
 
-## 电源选择
+*说明：VIM4是Khadas第一款出厂预装OOWOW系统的SBC。虽然没有出厂预装Android或Ubuntu等系统，但是用户可以通过OOWOW轻松地选择安装自己感兴趣的系统。*
 
-适配器和数据线如下：
+## OOWOW功能
 
-* 5V,2A 电源适配器
-* Type-C数据线
+OOWOW提供快速在线下载和安装系统等功能，可以大大提升使用SBC安装系统时的体验 - 你可以使用OOWOW在2~3分钟内安装或重装任何兼容的操作系统。
 
-**相关链接：**
+## OOWOW向导
 
-* [Khadas Shop - 电源适配器](https://www.khadas.cn/product-page/10w-power-adapter?post_type=product)
-* [Khadas Shop - Type-C数据线](https://www.khadas.cn/product-page/usb-c-to-usb-a-2-0-cable?post_type=product)
-* [Khadas VIMs 外部供电接口](ExtraPowerInput.html)
-* [Khadas VIM 规格](https://www.khadas.com/vim)
+如果你的SBC还没有安装任何操作系统，那么在上电后会默认启动OOWOW并进入向导模式，通过向导模式你可以用4步操作完成新系统的安装。
 
-## 显示器&&用户输入
+* 通过网线或Wi-Fi连接到网络
+* 浏览SBC支持的系统
+* 选择你要安装的系统
+* 下载并安装系统到你的SBC
 
-当您需要将VIM1 SBC连接到外部显示器+键盘鼠标+遥控器，以用作台式计算机或媒体中心时，这些选项非常有用：
+查看[向导模式操作示例](https://dl.khadas.com/.temp/oowow/screencast/quick-start/-gallery?play=loop)。
 
-1. 4K HDMI 2.0 的数据线
-2. 兼容1080P和4K的显示器
-3. 无线的鼠标和键盘
-4. 兼容CEC的遥控器
+***提示：如果你想体验更多功能，你可以退出向导模式并进入主菜单界面。***
 
-**相关链接：**
-[Khadas Shop - HDMI数据线](https://www.khadas.com/product-page/hdmi-cable)
-[Khadas Shop - 遥控器](https://www.khadas.com/product-page/ir-remote)
+## OOWOW用户手册
 
-## 快速连接开机
-
-1. Type-C: Type-C口为电源连接口
-
-2. HDMI: 标准HDMI座子，连接你的显示屏
-
-3. ETH(可选): 网口座子
-
-<img src="/linux/images/vim1/quick_start.jpg" width="50%" height="50%">
-
-上电以后正常启动，可以从显示屏看到Khadas Logo，以及白灯闪烁。
-
-## 故障排查
-
-1. 反复重启开机: 供电不足，请使用官方推荐的外部供电器供电
-
-## 常用文档
-
-1. [通过USB线安装系统到eMMC](InstallOsIntoEmmc.html)
-2. [安装系统到SD卡或U盘](InstallOsIntoSdusb.html)
-3. [进入升级模式](BootIntoUpgradeMode.html)
-4. [从外部媒体介质启动系统](BootFromExtMedia.html)
-5. [Ubuntu固件](/linux/zh-cn/firmware/Vim1UbuntuFirmware.html)
-6. [Wi-Fi](Wifi.html)
-
-## VIM1相关网页
-更多的相关信息，请查看我们的网页，阅读文档，或者到论坛浏览以及提问。
-* [VIM1商店](https://www.khadas.com/shop?Collection=VIM1&sort=price_descending)
-* [VIM1网站首页](https://www.khadas.com/vim)
-* [VIM1论坛页](https://forum.khadas.com/c/Khadas-VIM)              
-
+查看[OOWOW用户手册](user_manual.html)获取更多信息。

@@ -11,5 +11,6 @@ page:
   last_updated: 上次更新：%s
 
 sidebar:
-  test:
-    quick_start: 快速上手
+  oowow: OOWOW
+  quick_start: 快速上手
+  user_manual: 用户手册

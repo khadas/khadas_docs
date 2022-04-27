@@ -10,6 +10,6 @@ page:
   last_updated: "Last updated: %s"
 
 sidebar:
-  test: Test
+  oowow: OOWOW
   quick_start: Quick Start
-  quick_test: Test
+  user_manual: User Manual
