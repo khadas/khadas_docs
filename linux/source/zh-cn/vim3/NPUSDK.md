@@ -3,6 +3,9 @@ title: NPU SDK使用说明
 
 这篇主要介绍如何将不同平台的神经网络模型，转换成可以在NPU上面运行的模型代码和数据。
 
+{% note warn 文档适配NPU驱动版本为6.4.8.7，低于该版本的驱动和示例仓库以及SDK，文档同样适用，但不完全一致。 %}
+{% endnote %}
+
 ## 获取SDK
 
 ```sh
@@ -30,22 +33,13 @@ docs              #转换相关的文档合集
 
 {% note info 注意 %}
 
-由于linux代码全部已经实现了local编译，不再支持hlost编译。因此linux_sdk的内容已经全部移除
+由于linux代码全部已经实现了local编译，不再支持hlost编译。因此linux_sdk的内容已经全部移除。
 
 {% endnote %}
 
 ## Docs说明
 
-进入Docs目录，
-
-```shell
-$ cd {workspace}/aml_npu_sdk/docs/zh-cn
-$ ls
-'Amlogic NN Convolution Acceleration Tips.pdf'  'Android NN JNI Development Guide.pdf'          'Neural Network Layer and Operation Support Guide .pdf'
-'Amlogic NN Integration Guide.pdf'              'Model_Transcoding and Running User Guide.pdf'  'NN Tool FAQ.pdf'
-```
-
-文档记录了从转换到集成的一系列过程，以及一些常见的问题
+进入Docs目录，`DDK_Application_Guide_0.7.pdf`里面对每个文档都做了说明。文档记录了从转换到集成的一系列过程，以及一些常见的问题。
 
 
 
@@ -56,7 +50,7 @@ $ ls
 ```shell
 $ cd {workspace}/aml_npu_sdk/acuity-toolkit
 $ ls
-bin  demo  python  ReadMe.txt  requirements.txt
+bin  demo  demo_hybird  mulity_input_demo  python  ReadMe.txt
 ```
 
 主要关注的目录是`demo`
@@ -64,9 +58,11 @@ bin  demo  python  ReadMe.txt  requirements.txt
 ```
 1. bin                   #转换的使用的各种工具的合集,大部分都是不开源的.
 2. demo                  #转换脚本目录,转换AI模型的位置
-3. python                #用于转换python API对应的模型和数据
-4. ReadMe.txt            #ReadMe.txt文件说明了如何转换和使用
-5. requirements.txt      #转换工具依赖的环境
+3. demo_hybird           #混合输入转换工具
+4. mulity_input_demo     #多输入demo
+4. python                #用于转换python API对应的模型和数据
+5. ReadMe.txt            #ReadMe.txt文件说明了如何转换和使用
+6. requirements.txt      #转换工具依赖的环境
 ```
 
 ### 依赖安装
@@ -115,10 +111,10 @@ $ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo
 $ bash 0_import_model.sh && bash 1_quantize_model.sh && bash 2_export_case_code.sh 
 ```
 
-转换完成以后在`nbg_unify_xxxx`目录下就能看到转换出来的代码，这里以自带的模型为例
+转换完成以后在`xxxx_nbg_unify`目录下就能看到转换出来的代码，这里以自带的模型为例
 
 ```shell
-$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo/nbg_unify_mobilenet_tf
+$ cd {workspace}/aml_npu_sdk/acuity-toolkit/demo/mobilenet_tf_nbg_unify
 $ ls
 BUILD   makefile.linux   mobilenettf.vcxproj  vnn_global.h       vnn_mobilenettf.h   vnn_post_process.h  vnn_pre_process.h
 main.c  mobilenet_tf.nb  nbg_meta.json        vnn_mobilenettf.c  vnn_post_process.c  vnn_pre_process.c

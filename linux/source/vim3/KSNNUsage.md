@@ -16,7 +16,7 @@ This document mainly introduces what KSNN is and how to run the provided example
 3. Install KSNN library
 
 <pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ cd ksnn/ksnn</pre>
-<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/ksnn</b></font>$ pip3 install ksnn-1.0-py3-none-any.whl</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/ksnn</b></font>$ pip3 install ksnn-1.3-py3-none-any.whl</pre>
 
 ## Example of use
 
@@ -73,7 +73,7 @@ Run Inception V3.
 <pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 0</pre>
 
 ```sh
- |--- KSNN Version: v1.2 +---| 
+ |--- KSNN Version: v1.3 +---| 
 Start init neural network ...
 Done.
 Get input data ...
@@ -93,7 +93,7 @@ The `--level` parameter can be used to adjust the level of printed information. 
 <pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~/ksnn/examples/tensorflow</b></font>$ python3 inceptionv3.py --model ./models/VIM3/inceptionv3.nb --library ./libs/libnn_inceptionv3.so --picture ./data/goldfish_299x299.jpg --level 2</pre>
 
 ```sh
- |--- KSNN Version: v1.2 +---| 
+ |--- KSNN Version: v1.3 +---| 
 Start init neural network ...
 #productname=VIPNano-QI, pid=0x88
 Create Neural Network: 283ms or 283181us

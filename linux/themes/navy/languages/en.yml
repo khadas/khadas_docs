@@ -244,8 +244,6 @@ sidebar:
     model_convert: Model Convert
     npu_performance: NPU Performance
     npu_operation: NPU Operation Usage Times
-    tengine_sdk: Tengine SDK
-    tengine_demo: Tengine Demo
     development: Development
     ksnn: KSNN(Python API)
     ksnn_usage: KSNN Usage
