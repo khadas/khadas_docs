@@ -33,7 +33,7 @@ title: 设置串口调试工具
 
 连接如下：
 
-![Image of SerialConnections](/android/images/edge/SerialConnections_3Pin.png)
+![Image of SerialConnections](/android/images/edge/serial_connections_3pin.png)
 
 3) 把串口工具USB插入PC。
 
@@ -104,11 +104,11 @@ TE: 116640
 ## SecureCRT BUG
 
 如果你使用SecureCRT连接你的edge，你会看到log是这样子的
-![SecureCRT BUG](/android/images/edge/SourceCRT_BUG.png)
+![SecureCRT BUG](/android/images/edge/sourcecrt_bug.png)
 这是SecureCRT本身的bug，你需要执行以下步骤：
 * 先打开一个kermit,你会看到正确的log信息
 * 关闭kermit，打开SecureCRT连接你的开发板
-![SecureCRT BUG](/android/images/edge/SourceCRT_BUG_slove.png)
+![SecureCRT BUG](/android/images/edge/sourcecrt_bug_slove.png)
 你就会看到正确的信息了
 
 {% note info 注意 %}

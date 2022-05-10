@@ -57,6 +57,9 @@ Physical pins of onewire bus:
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-phy" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4-phy" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-phy" role="tabpanel" aria-labelledby="vim1-tab">
@@ -67,6 +70,9 @@ Physical pins of onewire bus:
   </div>
   <div class="tab-pane fade" id="vim3-phy" role="tabpanel" aria-labelledby="vim3-tab">
   GPIOH6 - PIN15
+  </div>
+  <div class="tab-pane fade" id="vim4-phy" role="tabpanel" aria-labelledby="vim4-tab">
+  GPIOT19 - PIN37
   </div>
 </div>
 

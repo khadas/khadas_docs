@@ -1,0 +1,1 @@
+../../../../linux/source/zh-cn/vim4/SetupSerialTool.md

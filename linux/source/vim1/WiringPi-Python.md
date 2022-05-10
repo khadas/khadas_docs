@@ -1,11 +1,13 @@
 title: WiringPi-Python
 ---
 
+This documentation will introduce how to use WiringPi Python API.
+
 ## What is WiringPi-Python 
-WiringPi-Python is the python version of wiringPi. Now we also migrate it to VIMs Board GPIO for control GPIO Headlers.
+WiringPi Python is a PIN based GPIO access library written in Python for the Raspberry Pi. Now we also migrate it to VIMs.
 
 ## WiringPi-Python Function List
-```
+```python
 //GPIO
 class GPIO(object):
   def __init__(self,pinmode=0):
@@ -101,38 +103,14 @@ class Serial(object):
 
 ```
 
-## WiringPi-Python sample demo 
-This is a simple program of pin read-write control
-```
-  1 import wiringpi as GPIO
-  2
-  3 INPUT = 0
-  4 OUTPUT = 1
-  5 OUTPUT_PIN = 37
-  6 INPUT_PIN = 39
-  7 OUTPUT_HIGH = 1
-  8 OUTPUT_LOW = 0
-  9 pinstatus_list = ['LOW','HIGH']
- 10
- 11 GPIO.wiringPiSetup()
- 12 GPIO.pinMode(OUTPUT_PIN, OUTPUT)
- 13 GPIO.pinMode(INPUT_PIN, INPUT)
- 14
- 15 print("----GPIO W&R test demo-----")
- 16 print("set output pin is LOW level")
- 17 GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_LOW)
- 18 result = GPIO.digitalRead(INPUT_PIN)
- 19 print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
- 20 GPIO.delay(2000)
- 21 print("set output pin is High level")
- 22 GPIO.digitalWrite(OUTPUT_PIN, OUTPUT_HIGH)
- 23 result = GPIO.digitalRead(INPUT_PIN)
- 24 print('{}{}'.format('The read Pin value is', pinstatus_list[result]))
- 25 GPIO.delay(2000)
- 26 print("End")
+## WiringPi-Python Demo 
 
+This is a simple program that demonstrates reading and writing to GPIO pins.
+
+```sh
+$ wget https://dl.khadas.com/development/code/docs_source/wiringpi-python.py
 ```
 
-## notes
-If you need to use the special function pin of wiringPi-Python, you need to confirm that the corresponding configuration is opened in DTB
-WiringPi-Python itself includes many functions, not just controlling the output of GPIO pins and reading pin levels. Here is only a simple introduction and use, more use needs to be explored by users themselves.
+## Notes
+* If you need to use the special pin functions of WiringPi-Python, you'll need to confirm that the corresponding configuration is enabled in the dts file.
+* WiringPi-Python itself includes many functions, not limited to controlling the output of GPIO pins and reading pin levels. This is only a simple introduction, and you can explore more by yourself.

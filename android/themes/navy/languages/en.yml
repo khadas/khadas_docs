@@ -2,7 +2,8 @@ menu:
   vim: VIM
   vim1: VIM1
   vim2: VIM2
-  vim3: VIM3
+  vim3: VIM3/3L
+  vim4: VIM4
   edge: Edge
   hardware: Hardware
   firmware: Firmware
@@ -39,11 +40,11 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    rescures_control: Rescoures Control
+    rescures_control: Resources Control
     system_control: System Control
     how_to_use_adb_tool: ADB Usage
     accessories: Accessories
-    board_rescoures: Board Rescoures
+    board_rescoures: Board Resources
     how_to_access_gpio: GPIO Usage
     how_to_access_i2c: I2C Usage
     development: Development
@@ -74,11 +75,11 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    rescures_control: Rescoures Control
+    rescures_control: Resources Control
     system_control: System Control
     how_to_use_adb_tool: ADB Usage
     accessories: Accessories   
-    board_rescoures: Board Rescoures
+    board_rescoures: Board Resources
     how_to_access_gpio: GPIO Usage
     how_to_access_i2c: I2C Usage
     howto_use_wol: WOL Usage
@@ -112,7 +113,7 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Android Using SD-Card
-    rescures_control: Rescoures Control
+    rescures_control: Resources Control
     system_control: System Control
     how_to_use_adb_tool: ADB Usage
     how_to_change_logo_android: How To Change Boot Logo
@@ -124,7 +125,7 @@ sidebar:
     how_to_use_settings_command: How To Use Settings Command
     accessories: Accessories
     connect_lcd: Connect TS050 Touchscreen
-    board_rescoures: Board Rescoures
+    board_rescoures: Board Resources
     how_to_access_gpio: GPIO Usage
     how_to_access_i2c: How To Access I2c
     howto_use_wol: WOL Usage
@@ -160,6 +161,60 @@ sidebar:
     troubleshooting: Troubleshooting
     capture_log: Capture Running Log
 
+  vim4: 
+    quick_start: Quick Start
+    overview: Overview
+    vim3_interfaces: VIM4 Hardware
+    add_chinese_support: Chinese Support
+    enter_upgrade_mode: Boot Into Upgrade Mode
+    upgrade_via_usb: Install OS into eMMC
+    upgrade_via_tfcard: Upgrade Android Using SD-Card
+    rescures_control: Resources Control
+    system_control: System Control
+    how_to_use_adb_tool: ADB Tool
+    how_to_change_logo_android: Change Boot Logo
+    how_to_change_animation: Change Boot Animation
+    how_to_app_platform_sign: System Permissions for APP
+    how_to_get_gps_data: Get GPS Data
+    how_to_get_gsensor_data: Get G-Sensor Data
+    how_to_use_settings_command: ADB Settings Commands
+    how_to_use_tts: TTS Usage
+    khadas_settings_usage: Khadas Settings
+    how_to_add_permission: Default Permissions for APP
+    accessories: Accessories
+    connect_lcd: TS050 Connection
+    board_rescoures: Board Resources
+    how_to_access_gpio: GPIO Access Usage
+    how_to_access_i2c: I2C Usage
+    howto_use_wol: Wake-On-LAN
+    how_to_setup_pcie_usb_port: PCIe/USB3.0 Port Setup
+    how_to_enable_m2x_eth: Enable M2x Ethernet
+    how_to_use_uart_android: UART Usage
+    how_to_add_ir: IR Remote Support
+    how_to_use_pwm: PWM Usage
+    development: Development
+    uboot: U-Boot
+    boot_from_spi_flash: Boot From SPI-Flash
+    uboot_usage: U-Boot Usage Guide
+    build_boot_logo_for_uboot: Boot Logo For U-Boot
+    setup_tftp: TFTP Server for U-Boot
+    load_image_via_tftp: Load Images with U-Boot via TFTP
+    kbi_guidance: KBI Guide
+    firmware&&system: Firmware && System
+    install_toolchains: Install Toolchains
+    download_android_source_code: Download Android Source Code
+    build_android: Build Android Source Code
+    package_update_image: Fast Package Update Image
+    create_burning_card_via_cli: Create Burning Card Using CLI
+    create_booting_card: Create Booting Card Using CLI
+    erase_emmc: Erase EMMC
+    how_to_use_fastboot: FastBoot Uasge
+    hardware: Hardware
+    setup_serial: Serial Debugging Tool
+    extra_power_input: Extra Power Input
+    troubleshooting: Troubleshooting
+    capture_log: Capture Running Log
+
   edge:
     quick_start: Quick Start
     overview: Overview
@@ -171,13 +226,13 @@ sidebar:
     enter_upgrade_mode: Enter Upgrade Mode
     upgrade_via_usb: Upgrade Using USB-C Cable
     upgrade_via_tfcard: Upgrade Using SD-Card
-    rescures_control: Rescoures Control
+    rescures_control: Resources Control
     system_control: System Control
     how_to_use_adb_tool: ADB Usage
     accessories: Accessories
     connect_lcd: Connect TS050 Touchscreen
     how_to_use_lte_module: LTE Module Usage
-    board_rescoures: Board Rescoures
+    board_rescoures: Board Resources
     how_to_access_gpio: GPIO Usage
     howto_use_wol: WOL Usage
     development: Development
@@ -201,6 +256,7 @@ sidebar:
     vim1: VIM1
     vim2: VIM2
     vim3: VIM3
+    vim4: VIM4
     edge: Edge
 
   firmware:
@@ -221,6 +277,9 @@ sidebar:
     vim3l_android: Android
     vim3l_ubuntu: Ubuntu
     vim3l_thirdparty: Third Party
+    vim4: VIM4
+    vim4_android: Android
+    vim4_thirdparty: Third Party
     edge: Edge
     edge_android: Android
     edge_ubuntu: Ubuntu

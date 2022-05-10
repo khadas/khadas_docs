@@ -85,13 +85,13 @@ title: 快速上手
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="edge" role="tabpanel" aria-labelledby="edge-tab">
-<img src="/linux/images/edge/QuickStart-edge.jpg" width="50%" height="50%">
+<img src="/linux/images/edge/quick_start-edge.jpg" width="50%" height="50%">
 </div>
 <div class="tab-pane fade" id="edge-v" role="tabpanel" aria-labelledby="edge-v-tab">
-<img src="/linux/images/edge/QuickStart-edge-v.jpg" width="50%" height="50%">
+<img src="/linux/images/edge/quick_start-edge-v.jpg" width="50%" height="50%">
 </div>
 <div class="tab-pane fade" id="captain" role="tabpanel" aria-labelledby="captain-tab">
-<img src="/linux/images/edge/QuickStart-captain.jpg" width="50%" height="50%">
+<img src="/linux/images/edge/quick_start-captain.jpg" width="50%" height="50%">
 </div>
 </div>
 

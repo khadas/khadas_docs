@@ -1,21 +1,21 @@
-title:  Chinese Support Usage
+title:  Chinese Support
 ---
 
-This document explains how to add Chinese support.
+This document explains how to add Chinese language support.
 
-English is the default language of Ubuntu. Therefore, it can't display Chinese Characters until you install the following packages:
+English is the default language of Ubuntu. Therefore, Chinese Characters cannot be displayed until you install the following packages:
 
 ```
 $ sudo apt-get -y install language-pack-zh-* ttf-wqy-microhei language-pack-zh-han* ttf-wqy-zenhei fonts-droid-fallback
 ```
 
-Install Font:
+Install fonts:
 
 ```
 $ sudo apt-get -y install fonts-arphic-uming fonts-arphic-ukai
 ```
 
-Setup Language:
+Setup language:
 
 ```
 $ sudo locale-gen "zh_CN.UTF-8"

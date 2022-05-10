@@ -1,0 +1,15 @@
+index:
+  get_started: Getting Started
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+
+sidebar:
+  oowow: OOWOW
+  quick_start: Quick Start
+  user_manual: User Manual

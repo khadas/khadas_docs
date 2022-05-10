@@ -1,7 +1,7 @@
 title: Bluetooth
 ---
 
-This document will introduce how to use Bluetooth
+This guide will show you how to use Bluetooth.
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -14,36 +14,36 @@ This document will introduce how to use Bluetooth
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
 
-* Open Bluetooth settings
+1. **Open Bluetooth settings**
 
-Bluetooth settings are in the upper right corner, click and select `device`
+Bluetooth settings are in the upper-right corner, click it and select `device`.
 
 <img src="/linux/images/vim1/gnome-bluetooth1.png" width=400px>
 
-* Search for Bluetooth devices
+2. **Search for Bluetooth devices**
 
-Click `Search`, you can search for nearby Bluetooth devices
+Click `Search` to scan for nearby Bluetooth devices.
 
 <img src="/linux/images/vim1/gnome-bluetooth2.png" width=400px>
 
-* Pair connected devices
+3. **Pair with device**
 
-Click who you want to connect to, and then click the key, you can select the device to be paired
+Select the device that you want to pair with.
 
 <img src="/linux/images/vim1/gnome-bluetooth3.png" width=400px>
 
 </div>
 <div class="tab-pane fade" id="server" role="tabpanel" aria-labelledby="server-tab">
 
-* Enable Bluetooth
+1. **Enable Bluetooth**:
 
-```
+```sh
 $ sudo hciconfig hci0 up
 ```
 
-* Launch bluetoothctl and Setup
+2. **Launch bluetoothctl and Setup**:
 
-```
+```sh
 $ sudo bluetoothctl
 [NEW] Controller 43:54:A2:00:1F:AC Khadas [default]
 Agent registered
@@ -60,7 +60,7 @@ Setup:
 [bluetooth]# scan on
 ```
 
-* Scan for Bluetooth Peripherals
+3. **Scan for Bluetooth devices**:
 
 ```
 [bluetooth]# scan on
@@ -70,7 +70,7 @@ Discovery started
 [NEW] Device 8C:EB:C6:E7:2E:33 Khadas
 ```
 
-* Show Devices
+4. **Show connected Bluetooth devices**:
 
 ```
 [bluetooth]# devices
@@ -81,7 +81,8 @@ Device 9C:FB:D5:0D:91:47 9C-FB-D5-0D-91-47
 [CHG] Device AC:83:F3:DD:D4:E1 Name: LibreELEC
 [CHG] Device AC:83:F3:DD:D4:E1 Alias: LibreELEC
 ```
-* Connect to a Device
+
+5. **Pair with a device**:
 
 ```
 [bluetooth]# connect <device_addr>
@@ -93,21 +94,13 @@ Device 9C:FB:D5:0D:91:47 9C-FB-D5-0D-91-47
 
 {% endnote %}
 
-* Exit bluetoothctl
+6. **Exit bluetoothctl**:
 
 ```
 [bluetooth]# quit
 Agent unregistered
 [DEL] Controller 43:54:A2:00:1F:AC Khadas [default]
 khadas@Khadas:~$
-```
-
-* Troubleshooting
-
-If your bluetooth doesn't work anymore, you can try to restart the bluetooth service manually.
-
-```
-$ sudo systemctl restart bluetooth-power-fixup.service
 ```
 
 </div>

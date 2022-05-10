@@ -9,7 +9,7 @@ var cheerio = require('cheerio');
 var lunr = require('lunr');
 const MOBILE_NAV = 'mobile-nav';
 
-var localizedPath = ['vim1', 'vim2', 'vim3', 'edge', 'tone1', "hardware", 'firmware', 'faq'];
+var localizedPath = ['vim1', 'vim2', 'vim3', 'vim4', 'edge', 'tone1', "hardware", 'firmware', 'faq'];
 
 function startsWith(str, start) {
   return str.substring(0, start.length) === start;
@@ -70,19 +70,28 @@ hexo.extend.helper.register('page_nav', function() {
   var type = this.page.canonical_path.split('/')[0];
   var sidebar = this.site.data.sidebar[type];
   var path = pathFn.basename(this.path);
+  
   var list = {};
   var prefix = 'sidebar.' + type + '.';
 
   for (var i in sidebar) {
     for (var j in sidebar[i]) {
-      list[sidebar[i][j]] = j;
+      if(Object.prototype.toString.call(sidebar[i][j]) === '[object Object]'){
+        for(var k in sidebar[i][j]){
+          if(sidebar[i][j][k] !== '[object Object]'){
+            list[sidebar[i][j][k]] = k;
+          }
+        }
+      }else{
+        list[sidebar[i][j]] = j;
+      }
     }
   }
 
   var keys = Object.keys(list);
   var index = keys.indexOf(path);
   var result = '';
-
+  
   if (index > 0) {
     result += '<a href="' + keys[index - 1] + '" class="article-footer-prev" title="' + this.__(prefix + list[keys[index - 1]]) + '">'
       + '<i class="fa fa-chevron-left"></i><span>' + this.__('page.prev') + '</span></a>';
@@ -342,6 +351,7 @@ hexo.extend.helper.register('redirect_link',function(title, header_text, path){
       startsWith(canonicalPath, 'vim1/') ||
       startsWith(canonicalPath, 'vim2/') ||
       startsWith(canonicalPath, 'vim3/') ||
+	  startsWith(canonicalPath, 'vim4/') ||
       startsWith(canonicalPath, 'edge/') ||
       (startsWith(canonicalPath, 'tone1/') && header_text === 'hardware')
       ) {
@@ -415,7 +425,7 @@ hexo.extend.helper.register('lunr_index', function(data) {
 hexo.extend.helper.register('canonical_path_for_nav', function() {
   var path = this.page.canonical_path;
 
-  if (startsWith(path, 'vim1/') || startsWith(path, 'vim2/') || startsWith(path, 'vim3/') || startsWith(path, 'edge/') || startsWith(path, 'hardware/') || startsWith(path, 'firmware/') || startsWith(path, 'tone1/') || startsWith(path, 'faq/')) {
+  if (startsWith(path, 'vim1/') || startsWith(path, 'vim2/') || startsWith(path, 'vim3/') || startsWith(path, 'vim4/') || startsWith(path, 'edge/') || startsWith(path, 'hardware/') || startsWith(path, 'firmware/') || startsWith(path, 'tone1/') || startsWith(path, 'faq/')) {
     return path;
   }
   return '';

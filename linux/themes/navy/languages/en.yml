@@ -2,7 +2,8 @@ menu:
   vim: VIM
   vim1: VIM1
   vim2: VIM2
-  vim3: VIM3
+  vim3: VIM3/3L
+  vim4: VIM4
   edge: Edge
   tone1: Tone1
   hardware: Hardware
@@ -22,17 +23,17 @@ page:
 sidebar:
   vim1:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     vim1_hardware: VIM1 Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
     auto_login: Auto Login
@@ -42,9 +43,9 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -53,16 +54,16 @@ sidebar:
     fan: Cooling Fan
     hardware: Hardware
     custom_ir_code: Custom IR Code
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     applications: Applications
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
@@ -81,15 +82,14 @@ sidebar:
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
-    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
-    create_burn_card: Create Burn Card
+    setup_serial_tool: Serial Debug Tool
+    create_burn_card: Create Flash Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
     troubleshooting: Troubleshooting
@@ -97,17 +97,17 @@ sidebar:
 
   vim2:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     vim2_hardware: VIM2 Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
     auto_login: Auto Login
@@ -117,9 +117,9 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -128,16 +128,16 @@ sidebar:
     fan: Cooling Fan
     hardware: Hardware
     custom_ir_code: Custom IR Code
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     applications: Applications
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
@@ -156,15 +156,14 @@ sidebar:
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
-    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
-    create_burn_card: Create Burn Card
+    setup_serial_tool: Serial Debug Tool
+    create_burn_card: Create Flash Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
     troubleshooting: Troubleshooting
@@ -172,17 +171,17 @@ sidebar:
 
   vim3:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     vim3_hardware: VIM3 Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     device_tree_overlay: Device Tree Overlay
     auto_login: Auto Login
@@ -192,9 +191,9 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
-    hdmi_resolution: HDMI Resolution
+    hdmi_resolution: Setup HDMI Resolution
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: Change Boot Logo
@@ -208,7 +207,7 @@ sidebar:
     hardware: Hardware
     pcie_usb_port: PCIe/USB3.0 Port Switch
     custom_ir_code: Custom IR Code
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     max_cpu_freq: Max CPU Frequency
     usb_gadget: USB Gadget Usage
     applications: Applications
@@ -216,16 +215,16 @@ sidebar:
     gpio_usage: GPIO
     i2c: I2C
     spi: SPI
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
     spdifin: SPDIF IN
-    gsensor_usage: Gsensor Usage
+    gsensor_usage: Gsensor
     play_video: Play Video
     rstp: RSTP Web Camera
     hardware_decoding: Hardware Decoding
@@ -252,15 +251,92 @@ sidebar:
     uboot: U-Boot
     build_uboot: Build U-Boot
     upgrade_uboot: Upgrade U-Boot
-    boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
-    create_burn_card: Create Burn Card
+    setup_serial_tool: Serial Debug Tool
+    create_burn_card: Create Flash Card
+    create_bootable_sd_card: Create Bootable SD Card
+    erase_emmc: Erase eMMC
+    troubleshooting: Troubleshooting
+    capture_log: Capture Running Log
+
+  vim4:
+    quick_start: Quick Start
+    quick_setup: Quick Start
+    choose_an_os: Choose an OS
+    install_os_into_emmc: Install OS into eMMC
+    install_os_into_sd_usb: Install OS into SD/USB Media
+    boot_into_upgrade_mode: Boot into Upgrade Mode
+    upgrade_via_USB_cable: Upgrade Via a USB-C Cable
+    boot_from_ext_media: Boot from External Media
+    boot_seqeqe: OS Boot Priority
+    vim4_hardware: VIM4 Hardware
+    configuration: Configuration
+    basic: Basic
+    upgrade_os: System Upgrades
+    system_config_file: Config File
+    device_tree_overlay: Device Tree Overlay
+    auto_login: Auto-Login
+    write_sd_image_to_emmc: Write SD Image to eMMC
+    chinese_support: Chinese Support
+    network: Network
+    wifi: Wi-Fi
+    bt: Bluetooth
+    custom_mac_address: Custom MAC Address
+    howto_use_wol: Wake-On-Lan
+    display: Display
+    hdmi_resolution: Setup HDMI Resolution
+    rotate_framebuffer: Rotate Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: Change Boot Logo
+    framebuffer_console_font: Framebuffer Console Font
+    accessories: Accessories
+    fan: Cooling Fan
+    ts050: TS050 Touch Screen
+    lte_module_usage: LTE 4G Module
+    m2x_eth: M2X ETH
+    hardware: Hardware
+    extra_power_input: Secondary Power Input
+    usb_gadget: USB Gadget Usage
+    applications: Applications
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    gpio_irq: GPIO Interrupts
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    soft_pwm: Software PWM
+    gsensor_usage: Gsensor
+    play_video: Play Video
+    hardware_decoding: Hardware Decoding
+    hardware_encoding: Hardware Encoding
+    docker: Docker
+    watchdog: Watchdog
+    wifi_apsta_mode: Wi-Fi STA/AP Mode
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32-bit Library
+    development: Development
+    uboot: U-Boot
+    build_uboot: Build U-Boot
+    upgrade_uboot: Upgrade U-Boot
+    setup_tftp_server: TFTP Sever for U-Boot
+    kbi_guidance: KBI
+    linux: Linux
+    build_linux_kernel: Build Linux Kernel
+    upgrade_linux_kernel: Upgrade Linux Kernel
+    fenix: Build Ubuntu/Debian Image
+    setup_serial_tool: Serial Debug Tool
+    create_burn_card: Create Flash Card
     create_bootable_sd_card: Create Bootable SD Card
     erase_emmc: Erase eMMC
     troubleshooting: Troubleshooting
@@ -268,17 +344,17 @@ sidebar:
 
   edge:
     quick_start: Quick Start
-    quick_setup: Quickstart
+    quick_setup: Quick Start
     choose_an_os: Choose an OS
     install_os_into_emmc: Install OS into eMMC
     install_os_into_sd_usb: Install OS into SD/USB Media
     boot_into_upgrade_mode: Boot into Upgrade Mode
     upgrade_via_USB_cable: Upgrade Via a USB-C Cable
-    boot_from_ext_media: Boot From External Media
+    boot_from_ext_media: Boot from External Media
     edge_hardware: Edge Hardware
     configuration: Configuration
     basic: Basic
-    upgrade_os: Upgrade System
+    upgrade_os: System Upgrades
     system_config_file: Config File
     auto_login: Auto Login
     write_sd_image_to_emmc: Write SD Image to eMMC
@@ -288,7 +364,7 @@ sidebar:
     wifi: Wi-Fi
     bt: Bluetooth
     custom_mac_address: Custom MAC Address
-    howto_use_wol: Wake On Lan
+    howto_use_wol: Wake-On-Lan
     display: Display
     rotate_framebuffer: Rotate Framebuffer
     ubuntu_logo: Ubuntu Logo
@@ -299,16 +375,16 @@ sidebar:
     ts050: TS050 Touch Screen
     lte_module_usage: LTE 4G Module
     hardware: Hardware
-    extra_power_input: Exter Power Input
+    extra_power_input: Secondary Power Input
     applications: Applications
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO Interrupts
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: Software PWM
@@ -329,12 +405,12 @@ sidebar:
     upgrade_uboot: Upgrade U-Boot
     boot_from_spi_flash: Boot From SPI-Flash
     setup_tftp_server: TFTP Sever for U-Boot
-    kbi_guidance: KBI Guide
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: Build Linux Kernel
     upgrade_linux_kernel: Upgrade Linux Kernel
     fenix: Build Ubuntu/Debian Image
-    setup_serial_tool: Setup Serial Debug Tool
+    setup_serial_tool: Serial Debug Tool
     troubleshooting: Troubleshooting
     capture_log: Capture Log
 
@@ -350,6 +426,7 @@ sidebar:
     vim1: VIM1
     vim2: VIM2
     vim3: VIM3
+    vim4: VIM4
     edge: Edge
     tone1: Tone1
 
@@ -367,6 +444,9 @@ sidebar:
     vim3l: VIM3L
     vim3l_ubuntu: Ubuntu
     vim3l_thirdparty: Third Party
+    vim4: VIM4
+    vim4_ubuntu: Ubuntu
+    vim4_thirdparty: Third Party
     edge: Edge
     edge_ubuntu: Ubuntu
     edge_thirdparty: Third Party

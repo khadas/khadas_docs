@@ -1,4 +1,4 @@
-title: Gsensor Usage
+title: Gsensor
 ---
 
 ## Gsensor node

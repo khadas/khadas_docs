@@ -125,6 +125,52 @@ vim3:
   troubleshooting:
     capture_log: CaptureLog.html
 
+vim4:
+  quick_start:
+    overview: index.html
+    vim3_interfaces: interfaces.html
+    enter_upgrade_mode: boot_into_upgrade_mode.html
+    upgrade_via_usb: upgrade_via_usbcable.html
+  rescures_control:
+    system_control:
+      how_to_use_adb_tool: adb_tool.html
+      how_to_change_logo_android: change_boot_logo.html
+      how_to_change_animation: change_boot_animation.html
+      how_to_app_platform_sign: app_platform_sign.html
+      how_to_get_gsensor_data: get_gsensor_data.html
+      how_to_use_settings_command: settings_command.html
+      how_to_use_tts: android_tts.html
+      khadas_settings_usage: khadas_settings_usage.html
+      how_to_add_permission: android_add_permission.html
+    accessories:
+      connect_lcd: connect_lcd.html
+    board_rescoures:
+      how_to_access_gpio: access_gpio.html
+      how_to_access_i2c: access_i2c.html
+      how_to_use_uart_android: use_uart.html
+      how_to_use_pwm: howto_use_pwm.html
+      howto_use_wol: wol.html
+      how_to_add_ir: howto_add_ir.html
+  development:
+    uboot:
+      uboot_usage: uboot_usage.html
+      setup_tftp: setup_tftp_server.html
+      load_image_via_tftp: load_images_with_uboot_via_tftp.html
+      kbi_guidance: kbi_guidance.html
+    firmware&&system:
+      install_toolchains: install_toolchains.html
+      download_android_source_code: download_android_sourcecode.html
+      build_android: build_android.html
+      create_burning_card_via_cli: create_burn_card_via_cli.html
+      create_booting_card: create_bootable_sdcard.html
+      erase_emmc: erase_emmc.html
+      how_to_use_fastboot: howto_use_fastboot.html
+    hardware:
+      setup_serial: setup_serial_tool.html
+      extra_power_input: extra_power_input.html
+  troubleshooting:
+    capture_log: capture_log.html
+
 edge:
   quick_start:
     overview: index.html
@@ -166,6 +212,7 @@ hardware:
     vim1: hardwareVim1.html
     vim2: hardwareVim2.html
     vim3: hardwareVim3.html
+    vim4: hardwareVim4.html
     edge: hardwareEdge.html
 
 firmware:
@@ -174,4 +221,5 @@ firmware:
     vim2: Vim2AndroidFirmware.html
     vim3: Vim3AndroidFirmware.html
     vim3l: Vim3lAndroidFirmware.html
+    vim4: Vim4AndroidFirmware.html
     edge: EdgeAndroidFirmware.html

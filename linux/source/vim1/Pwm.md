@@ -1,27 +1,9 @@
 title: PWM
 ---
 
-## Check HardwarePWM Pin
+This guide will show you how to use PWM (Pulse Width Modulation).
 
-Hardware PWM had open at default dtb configuration.So you need to check which Physical pin is connect to it .
-
-* `PWM_F` on [VIM1 GPIO-Out](Hardware#VIM1-Hardware-Info)
-* `PWM_D` on [VIM2 GPIO-Out](Hardware#VIM2-Hardware-Info)
-* `PWM_F` on [VIM3 GPIO-Out](Hardware#VIM3-Hardware-Info)
-
-## Switch to root user
-
-Ordinary users cannot control GPIO, so they need to switch to the root user.
-
-```shell
-khadas@Khadas:~$ sudo -i
-[sudo] password for khadas:
-root@Khadas:~#
-```
-
-## Set Hardware PWM
-
-### Setup and enable PWM
+## Enable PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -33,46 +15,60 @@ root@Khadas:~#
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-enable" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4-enable" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-enable" role="tabpanel" aria-labelledby="vim1-tab">
+    PWM_F:
   	```shell
-	root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
-	root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
-	root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-	root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
+	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
+	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
 	```
   </div>
   <div class="tab-pane fade" id="vim2-enable" role="tabpanel" aria-labelledby="vim2-tab">
+    PWM_D:
   	```shell
-	root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/export
-	root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip1/pwm1/period
-	root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip1/pwm1/duty_cycle
-	root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip1/pwm1/enable
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip1/export
+	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/period
+	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/duty_cycle
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/enable
 	```
   </div>
   <div class="tab-pane fade" id="vim3-enable" role="tabpanel" aria-labelledby="vim3-tab">
+    PWM_F:
   	```shell
-	root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/export
-	root@Khadas:~# echo 1000000 > /sys/class/pwm/pwmchip4/pwm1/period
-	root@Khadas:~# echo 500000 > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-	root@Khadas:~# echo 1 > /sys/class/pwm/pwmchip4/pwm1/enable
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
+	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
+	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+	```
+  </div>
+  <div class="tab-pane fade" id="vim4-enable" role="tabpanel" aria-labelledby="vim4-tab">
+    PWM_F:
+	```shell
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
+	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
+	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
 	```
   </div>
 </div>
 
+Use an oscilloscope to check if the pins have been successfully enabled.
 
-If you sueccess to enable it , you can see it with oscilloscope.
-
-![pwm-Oscilloscope](/linux/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/linux/images/vim1/pwm-oscilloscope.jpg)
 
 {% note info Note %}
 
-If you use an oscilloscope to view the waveform, remember that the board and the oscilloscope need to share the GND.
+If you use an oscilloscope to view the PWM waveform, remember that the SBC and the oscilloscope need to share the same GND (ground).
 
 {% endnote %}
 
-### Disable PWM
+## Disable PWM
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -84,21 +80,29 @@ If you use an oscilloscope to view the waveform, remember that the board and the
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3-disable" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4-disable" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-disable" role="tabpanel" aria-labelledby="vim1-tab">
   ```shell
-  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim2-disable" role="tabpanel" aria-labelledby="vim2-tab">
   ```shell
-  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip1/pwm1/enable
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim3-disable" role="tabpanel" aria-labelledby="vim3-tab">
   ```shell
-  root@Khadas:~# echo 0 > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+  ```
+  </div>
+  <div class="tab-pane fade" id="vim4-disable" role="tabpanel" aria-labelledby="vim4-tab">
+  ```shell
+  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
 </div>

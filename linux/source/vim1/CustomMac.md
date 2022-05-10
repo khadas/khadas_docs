@@ -1,4 +1,4 @@
-title: Setup Customer Ethernet MAC Address
+title: Customer MAC Address
 ---
 
 ## Check Ethernet MAC address

@@ -1,4 +1,4 @@
 title: Edge-V Interfaces
 ---
 
-![Top view](/android/images/edge/EdgeVInterfaces.jpg)
+![Top view](/android/images/edge/edgev_interfaces.jpg)

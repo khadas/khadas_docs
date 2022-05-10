@@ -52,7 +52,7 @@ There are 4 ways to boot into upgrade mode:
 2. Use a tweezer to short-circuit the two pads of the `M` register, and without releasing...
 3. Short press the `Reset` key and then release it, to boot into upgroup mode
 
-![image](/linux/images/vim3/VIM3_M_Register.jpg)
+![image](/linux/images/vim3/vim3_m_register.jpg)
 
 </div>
 </div>

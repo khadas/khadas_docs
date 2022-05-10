@@ -36,7 +36,7 @@ kvim3:/ $ su
 
 如果你成功开启了硬件PWM,你可以通过示波器看到波形
 
-![pwm-Oscilloscope](/android/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/android/images/vim1/pwm-oscilloscope.jpg)
 
 {% note info 注意 %}
 如果使用示波器去查看波形,记得板子和示波器需要共地

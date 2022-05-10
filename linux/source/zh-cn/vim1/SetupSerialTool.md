@@ -2,12 +2,12 @@ title: 设置串口调试工具
 ---
 
 ## 准备工作
-* 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具。[这里有一个CH340串口的参考工具](https://detail.tmall.com/item.htm?id=590954778733&ali_refid=a3_430582_1006:1109952213:N:T+BSZBRBMKJ4P8zlByyd/g==:b94e362c34bb9ad84da8e8c8d85eb3f1&ali_trackid=1_b94e362c34bb9ad84da8e8c8d85eb3f1&spm=a230r.1.14.11&skuId=4221680274330)。
+* 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具。[这里有一个CH340串口的参考工具](https://www.amazon.com/Adaptor-Download-Adapter-Converter-LinkMore/dp/B08VGRRJ67/ref=sr_1_4?dchild=1&keywords=USB+to+TTL+ch340&qid=1629184609&sr=8-4)。
 
 ## 连接
 请按下面所示方式连接：
 
-* 连接所有GPIO，确保TX/RX连接正确.
+* 连接所有GPIO，确保TX/RX连接正确。
   * Tool Pin `GND`: <---> `Pin17` of VIMs' GPIO
   * Tool Pin `TXD`: <---> `Pin18` of VIMs' GPIO(Linux_Rx)
   * Tool Pin `RXD`: <---> `Pin19` of VIMs' GPIO(Linux_Tx)
@@ -17,7 +17,7 @@ title: 设置串口调试工具
 
 连接方式如下：
 
-![Image of SerialConnections](/linux/images/vim1/SerialConnections_3Pin.jpg)
+![Image of SerialConnections](/linux/images/vim1/serial_connections_3pin.jpg)
 
 * 蓝色是 Tool Pin `TXD`
 * 橙色是 Tool Pin `RXD`
@@ -25,10 +25,17 @@ title: 设置串口调试工具
 
 参考下图(`VCC` 管脚可以不接)：
 
-![Image of SerialConnections](/linux/images/vim1/SerialConnections.jpg)
+![Image of SerialConnections](/linux/images/vim1/serial_connections.jpg)
 
 
 ## 设置串口通讯工具
+
+{% note warn 提示 %}
+
+`VIM1/VIM2/VIM3/VIM3L`波特率为：**115200**。
+`VIM4`波特率为：**921600**。
+
+{% endnote %}
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -185,17 +192,15 @@ Khadas login:
 
 {% note info 提示 %}
 
-1、如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。
+1. 如果打印如下信息，你需要检查上面添加权限步骤是否执行正确。
 
 ```bash
 /dev/ttyUSB0: Permission denied
 ```
 
-2、连接串口工具到PC以及板子上，打开PC上的串口软件，给板子上电，看到串口开始打印信息提后，按下空格键就把系统停在uboot命令行界面。成功停在uboot命令行以后,会在串口软件看到[kvim#](UBootUsage.html)。
+2. 连接串口工具到PC以及板子上，打开PC上的串口软件，给板子上电，看到串口开始打印信息提后，按下空格键就把系统停在U-Boot命令行界面。成功停在U-Boot命令行以后,会在串口软件看到[kvim#](UBootUsage.html)。
 
-3、需要注意的是如果你想要使用[uboot用户指南](UBootUsage.html)的里的标准“帮助”命令，那么你先要在板子上烧录一个ubuntu或者安卓的固件，当然直接只用[Kerscue固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行。
-
-4、你可以使用uboot命令去修改默认的[开机图标](BuildBootLogoForUboot.html)等等。
+3. 需要注意的是如果你想要使用[U-Boot用户指南](UBootUsage.html)的里的标准“帮助”命令，那么你先要在板子上烧录一个Ubuntu或者安卓的固件，当然直接只用[OOWOW固件](https://dl.khadas.com/Firmware/Krescue/images/)也可行。
 
 {% endnote %}
 
