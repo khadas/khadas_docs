@@ -21,11 +21,14 @@ jobs:
         node-version: 12.x
     - name: Install and Build
       run: |
+        cd oowow
+        npm install && npm install hexo-cli -g
+        hexo clean && hexo generate
+        mv public ../public/oowow
         cd linux
         npm install && npm install hexo-cli -g
         hexo clean && hexo generate
         mv public ../public/linux
-        cd ../android
         npm install && npm install hexo-cli -g
         hexo clean && hexo generate
         mv public android
