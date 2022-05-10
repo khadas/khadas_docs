@@ -1,7 +1,7 @@
 title: 用户手册
 ---
 
-![oowow](https://raw.githubusercontent.com/hyphop/oowow/main/files/oowow.svg)
+![oowow](/oowow/images/oowow.png)
 
 ## 什么是OOWOW？
 

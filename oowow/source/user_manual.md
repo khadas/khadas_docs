@@ -1,7 +1,7 @@
 title: User Manual
 ---
 
-![oowow](https://raw.githubusercontent.com/hyphop/oowow/main/files/oowow.svg)
+![oowow](/oowow/images/oowow.png)
 
 ## What is OOWOW?
 
