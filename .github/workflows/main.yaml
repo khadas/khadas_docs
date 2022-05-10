@@ -25,10 +25,11 @@ jobs:
         npm install && npm install hexo-cli -g
         hexo clean && hexo generate
         mv public ../public/oowow
-        cd linux
+        cd ../linux
         npm install && npm install hexo-cli -g
         hexo clean && hexo generate
         mv public ../public/linux
+        cd ../android
         npm install && npm install hexo-cli -g
         hexo clean && hexo generate
         mv public android
