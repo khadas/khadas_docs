@@ -1,4 +1,4 @@
-title: U-boot使用说明
+title: U-Boot使用说明
 ---
 
 ## 通过U盘烧录`boot.img`
@@ -53,7 +53,7 @@ store key read/write addr <size>
 kvim#
 ```
 
-在U-boot命令行下执行`help`可以获取全部支持的命令：
+在U-Boot命令行下执行`help`可以获取全部支持的命令：
 ```
 kvim# help
 ?       - alias for 'help'

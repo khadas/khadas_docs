@@ -19,7 +19,7 @@ $ git clone --depth 1 https://github.com/khadas/fenix
 ```
 
 ### 设置编译环境
-你需要先设置Fenix编译环境，如：选择Khadas开发板型号、u-boot版本、linux版本、linux发行版、安装方式等等。
+你需要先设置Fenix编译环境，如：选择Khadas SBC型号、U-Boot版本、Linux版本、Linux发行版、安装方式等等。
 ```sh
 $ cd ~/project/fenix
 $ source env/setenv.sh
@@ -30,16 +30,16 @@ $ source env/setenv.sh
 $ make
 ```
 
-**提示：**如果是你第一次编译，那么时间会比较久，因为脚本会检测你的电脑的编译环境，可能会安装编译需要的一些软件包，同时还会从Khadas Github下载一些仓库（如：u-boot和linux）。
+**提示：**如果是你第一次编译，那么时间会比较久，因为脚本会检测你的电脑的编译环境，可能会安装编译需要的一些软件包，同时还会从Khadas Github下载一些仓库（如：U-Boot和Linux）。
 
-你也可以选择单独编译u-boot和内核。
+你也可以选择单独编译U-Boot和内核。
 
-### 编译U-boot
+### 编译U-Boot
 ```
 $ make uboot
 ```
 
-### 编译U-boot debian包
+### 编译U-Boot debian包
 ```
 $ make uboot-deb
 ```
@@ -228,7 +228,7 @@ $ docker exec -ti fenix bash
 ### 获取最新的nightly build固件
 - 访问[Fenix](https://github.com/khadas/fenix)脚本
 - 点击下面的badge,如:Rlease Build,Test Build Ubuntu,Test Build Debian
-![image](/linux/images/vim1/FenixScript.png)
+![image](/linux/images/vim1/fenix_script.png)
 - 点击最新的workflow就可以看到固件下载页面了
 
 ### 参考

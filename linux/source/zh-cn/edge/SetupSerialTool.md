@@ -5,7 +5,7 @@ title: 设置串口调试工具
 
 您不需要Edge-IO板就可以在Edge-V上设置串行调试器。 只需使用板载GPIO引脚，如图所示（与VIM1，VIM2和VIM3相同）。
 
-![VIM1-GPIO](/linux/images/vim1/SerialConnections_3Pin.jpg)
+![VIM1-GPIO](/linux/images/vim1/serial_connections_3pin.jpg)
 
 ## Edge
 
@@ -33,7 +33,7 @@ title: 设置串口调试工具
 
 连接如下：
 
-![Image of SerialConnections](/linux/images/edge/SerialConnections_3Pin.png)
+![Image of SerialConnections](/linux/images/edge/serial_connections_3pin.png)
 
 3) 把串口工具USB插入PC。
 
@@ -104,11 +104,11 @@ TE: 116640
 ## SecureCRT BUG
 
 如果你使用SecureCRT连接你的edge，你会看到log是这样子的
-![SecureCRT BUG](/linux/images/edge/SourceCRT_BUG.png)
+![SecureCRT BUG](/linux/images/edge/sourcecrt_bug.png)
 这是SecureCRT本身的bug，你需要执行以下步骤：
 * 先打开一个kermit,你会看到正确的log信息
 * 关闭kermit，打开SecureCRT连接你的开发板
-![SecureCRT BUG](/linux/images/edge/SourceCRT_BUG_slove.png)
+![SecureCRT BUG](/linux/images/edge/sourcecrt_bug_slove.png)
 你就会看到正确的信息了
 
 {% note info 注意 %}

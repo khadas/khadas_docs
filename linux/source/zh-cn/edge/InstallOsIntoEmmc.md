@@ -6,11 +6,11 @@ title: 通过USB升级固件
 ### 准备
 
 * 下载[USB驱动_v4.91](https://dl.khadas.com/Tools/DriverAssitant_v4.91.zip)并解压。
-* 运行`DriverInstall.exe`来安装USB驱动。
+* 运行`driver_installg.exe`来安装USB驱动。
   * 先点击`驱动卸载`来卸载旧的驱动。
-  ![DriverInstall uninstall](/linux/images/edge/DriverInstall_uninstall_zh.png)
+  ![driver_installg uninstall](/linux/images/edge/driver_install_uninstall_zh.png)
   * 在点击`驱动安装`来安装新的驱动。
-  ![DriverInstall install](/linux/images/edge/DriverInstall_install_zh.png)
+  ![driver_installg install](/linux/images/edge/driver_install_install_zh.png)
 * 下载[AndroidTool_Release_zh_v2.71](https://dl.khadas.com/Tools/AndroidTool_Release_zh_v2.71.zip)并解压。
 * `AndroidTool.exe`就是烧录工具，是免安装的，直接运行即可。
 
@@ -19,14 +19,14 @@ title: 通过USB升级固件
 确保USB驱动已经安装，并按如下步骤进行升级。
 
 1. 运行`AndroidTool.exe`, 点击`升级固件-->固件`来加载镜像文件。
-![AndroidTool firmware select](/linux/images/edge/AndroldTool_firmware_zh.png)
+![AndroidTool firmware select](/linux/images/edge/android_tool_firmware_zh.png)
 2. 通过USB-C数据线连接Edge和PC。
 3. 使Edge[进入升级模式](BootIntoUpgradeMode.html)。
 4. 执行上述操作后你会看到Edge升级模式设备。
 * Loader模式如下：
-![AndroidTool loader](/linux/images/edge/AndroldTool_loader_zh.png)
+![AndroidTool loader](/linux/images/edge/android_tool_loader_zh.png)
 * Maskrom模式如下：
-![AndroidTool maskrom](/linux/images/edge/AndroldTool_maskrom_zh.png)
+![AndroidTool maskrom](/linux/images/edge/android_tool_maskrom_zh.png)
 
 如果板子为 `android 7.1` 升级到 `android 9.0` 固件或者
 板子为 `android 9.0` 升级到 `android 7.1` 固件，需要先执行`擦除Flash`。
@@ -34,7 +34,7 @@ title: 通过USB升级固件
 ![AndroidTool maskrom](/linux/images/edge/AndroidTool_erase_zh.png)
 
 现在执行`升级`就会开始升级：
-![AndroidTool upgrade](/linux/images/edge/AndroldTool_upgrade_zh.png)
+![AndroidTool upgrade](/linux/images/edge/android_tool_upgrade_zh.png)
 
 ## 在Ubuntu下升级固件
 

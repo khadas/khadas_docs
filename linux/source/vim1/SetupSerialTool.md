@@ -1,37 +1,43 @@
-title: Setup Serial Debugging Tool
+title: Serial Debugging Tool
 ---
 
 ## Preparation
 
-* You need a `Serial Debugging Tool`. In this guide, we will use a `USB to TTL Converter`. You can find a [CH340 USB to TTL Converter here](https://www.amazon.com/Adaptor-Download-Adapter-Converter-LinkMore/dp/B08VGRRJ67/ref=sr_1_4?dchild=1&keywords=USB+to+TTL+ch340&qid=1629184609&sr=8-4).
+* Get a `Serial Debugging Tool`, also known as a `USB to TTL Converter`. For example, the [CH340 USB to TTL Converter](https://www.amazon.com/Adaptor-Download-Adapter-Converter-LinkMore/dp/B08VGRRJ67/ref=sr_1_4?dchild=1&keywords=USB+to+TTL+ch340&qid=1629184609&sr=8-4).
 
 
 ## Connections
-Follow these steps to make the correct connections:
 
-* Connect the Tool Pins to the GPIOs, and check the Tx / Rx Pins once more to ensure that you've made correct connections:
+* Use the following diagram to connect your serial tool to your board's GPIOs:
 
   * Tool Pin `GND`: <---> `Pin17` of VIM's GPIO
   * Tool Pin `TXD`: <---> `Pin18` of VIM's GPIO (Linux_Rx)
   * Tool Pin `RXD`: <---> `Pin19` of VIM's GPIO (Linux_Tx)
   * Tool Pin `VCC`: <---> `Pin20` of VIM's GPIO
 
-* Insert the USB-end into your PC.
+* Insert the USB-side of the tool into your computer.
 
-The connections should look like this:
+Refer to this image:
 
-![Image of SerialConnections](/linux/images/vim1/SerialConnections_3Pin.jpg)
+![Image of SerialConnections](/linux/images/vim1/serial_connections_3pin.jpg)
 
-* Blue color line: Tool Pin `TXD`
-* Orange color line: Tool Pin `RXD`
-* Black color line: Tool Pin `GND`
+* Blue line: `TXD`
+* Orange line: `RXD`
+* Black line: `GND`
 
-Another photo for more details (`VCC` Pin is not necessary):
+Another photo (don't connect `VCC`):
 
-![Image of SerialConnections](/linux/images/vim1/SerialConnections.jpg)
-
+![Image of Serial Connections](/linux/images/vim1/serial_connections.jpg)
 
 ## Setup Serial Communication Program
+
+{% note warn Note %}
+
+`VIM1/VIM2/VIM3/VIM3L` Baudrate: **115200**
+
+`VIM4` Baudrate: **921600**
+
+{% endnote %}
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -47,7 +53,7 @@ Another photo for more details (`VCC` Pin is not necessary):
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="ubuntu" role="tabpanel" aria-labelledby="ubuntu-tab">
 
-On Ubuntu system, you can use `minicom` serial communication program.
+Use the `minicom` serial communication program.
 
 * Install `minicom`
 
@@ -56,25 +62,25 @@ $ sudo apt update
 $ sudo apt install minicom
 ```
 
-* Add access permission
+* Add access permissions
 
 ```sh
 $ sudo usermod -a -G dialout $(whoami)
 ```
 
 {% note info %}
-You may need to logout or reboot your system.
+You may need to logout or reboot your system for changes to take effect.
 {% endnote %}
 
 * Setup `minicom`
 
-Before setup `minicom`, you need to connect the `USB to TTL Converter` tool to your device and computer.
+Connect the `USB to TTL Converter` tool to your SBC and computer before setting up `minicom`.
 
 ```sh
 $ sudo minicom -s
 ```
 
-You will enter `minicom` setup mode, like this:
+Enter the `minicom` setup mode:
 
 ```
  +-----[configuration]------+
@@ -91,7 +97,7 @@ You will enter `minicom` setup mode, like this:
 
 ```
 
-You can use **up/down arrow** on the keyboard to shift to `Serial port setup` item and hit `Enter` to `Serial port setup` menu.
+Use the **up/down arrows** to shift to `Serial port setup`, and hit `Enter` to enter the `Serial port setup` menu.
 
 ```
  +-----------------------------------------------------------------------+
@@ -114,21 +120,21 @@ You can use **up/down arrow** on the keyboard to shift to `Serial port setup` it
 
 ```
 
-You can use `Shift + A` to setup the serial device, and hit `Enter` to confirm.
+You can use `Shift + A` to setup the serial device, hit `Enter` to confirm.
 You can use `Shift + E` to setup the baudrate, choose `115200` and hit `Enter` to confirm.
 You can use `Shift + F` to disable the hardware flow control, set to `NO`.
-When you done all the setup, you can hit `Enter` to exit the menu, and then choose `Save setup as dfl` to save the configuration, then `Exit from Minicom`.
 
+After completing the setup, hit `Enter` to exit, then choose `Save setup as dfl`, then `Exit from Minicom`.
 
 {% note info Note %}
 
-You need to replace the serial device node to the correct one on your computer.
+The `serial device node` must correspond to Ubuntu's serial device node.
 
 {% endnote %}
 
 * Launch `minicom`
 
-Type `minicom` command in terminal will enter the board serial terminal.
+Type `minicom` into the Ubuntu Terminal:
 
 ```
 $ minicom
@@ -149,7 +155,7 @@ Khadas login:
 
 * Exit `minicom`
 
-You can use `Ctrl + A + Z` to lanuch the menu:
+You can use `Ctrl + A + Z` to open the menu:
 
 ```
 +-------------------------------------------------------------------+
@@ -173,7 +179,7 @@ You can use `Ctrl + A + Z` to lanuch the menu:
 +-------------------------------------------------------------------+
 ```
 
-And use `Shift + Q` to exit `minicom`.
+Use `Shift + Q` to exit `minicom`.
 
 ```
 
@@ -188,62 +194,56 @@ Choose `Yes` and hit `Enter` to exit `minicom`.
 
 {% note info Tips %}
 
-1. If the terminal output contains this line, you might need to type `sudo minicom`.
+1. If the Terminal output contains this line, you need to use `sudo minicom`.
 ```
 /dev/ttyUSB0: Permission denied
 ```
-2. To access U-boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](UBootUsage.html) when you've entered u-boot.
+2. To access U-Boot, leave your USB-Serial-Debug tool connected, then press the `reset` button on your device once. You should see some print-out on your Terminal, then quickly press the `space-bar` or `control-c` to stop auto-boot. You will see the prompt [kvim#](UBootUsage.html) when you've entered U-boot.
 
-3. Note that to see the standard "help" commands as listed in the [U-Boot Usage Guide](UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our [krescue images](https://dl.khadas.com/Firmware/Krescue/images/).
-
-4. You can use the U-Boot command line ([kvim#](UBootUsage.html)), to change your VIM's default boot logo.bmp, according to the guide, [Boot Logo for U-Boot](BuildBootLogoForUboot.html).
+3. Standard "help" commands are listed in [U-Boot Usage Guide](UBootUsage.html), you'll need to first have a version of Android or Ubuntu installed in your VIM device, from our official [OOWOW images](https://dl.khadas.com/Firmware/Krescue/images/).
 
 {% endnote %}
 
 ## See Also
-* [Minicom wiki](https://en.wikipedia.org/wiki/Minicom)
+* [Minicom Wiki](https://en.wikipedia.org/wiki/Minicom)
 
 </div>
 <div class="tab-pane fade show" id="windows" role="tabpanel" aria-labelledby="windows-tab">
 
-On Windows system, you can use `SecureCRT` serial communication program.
+* Install the USB to TTL Driver
 
-* Install USB to TTL Converter Driver
+Install the **CH340** driver.
 
-If you haven't install `USB to TTL Converter` driver, you need to install it. Here we take **CH340** as a example.
-
-1. Download the driver [here](https://dl.khadas.com/Tools/CH34x_Install_Windows_v3_4.zip)
-2. Unzip the file
-3. Run the installer which you unzipped
+1. Download the [driver](https://dl.khadas.com/Tools/CH34x_Install_Windows_v3_4.zip).
+2. Unzip the compressed file.
+3. Run the installer.
 
 * Install `SecureCRT`
 
-Please access [SecureCRT official website](https://www.vandyke.com/products/securecrt/) to down and install it.
+Download the program from the [SecureCRT](https://www.vandyke.com/products/securecrt/) website.
 
 * Setup `SecureCRT`
 
-Before setup `SecureCRT`, you need to connect the `USB to TTL Converter` tool to your device and computer.
+Before starting `SecureCRT`, you'll need to connect the `USB to TTL Converter` tool to your SBC and computer.
 
 Launch `SecureCRT` and navigate to `File->Quick Connect`:
 
 ![securecrt1](/linux/images/vim1/securecrt1.png)
 
-Select protol `Serial`, and select correct device node, baudrate set to `115200`, unselect `XON/XOFF`.
+Select the `Serial` protocol, select the correct device node, set the baudrate to `115200`, unselect `XON/XOFF`.
 
 ![securecrt2](/linux/images/vim1/securecrt2.png)
 
-Then click `Connect` will enter the board serial terminal.
+Click `Connect`.
 
 ![securecrt3](/linux/images/vim1/securecrt3.png)
 
 </div>
 <div class="tab-pane fade show" id="macos" role="tabpanel" aria-labelledby="macos-tab">
 
-On Mac OS system, you can use `minicom` serial communication program.
+* Setup Meta key
 
-* Setup the terminal
-
-As `minicom` need Meta key, so you need to setup your terminal Meta option.
+`minicom` needs a Meta key. Use Terminal to create a Meta key.
 Go to `Terminal->Preferences->Keyboard`, select `Use Option as Meta key`.
 
 ![minicom1](/linux/images/vim1/minicom1_en.png)
@@ -252,10 +252,9 @@ Go to `Terminal->Preferences->Keyboard`, select `Use Option as Meta key`.
 
 ![minicom3](/linux/images/vim1/minicom3_en.png)
 
-
 * Install `minicom`
 
-You may need to install [homebrew](https://brew.sh/) if you haven't instll it.
+Use [homebrew](https://brew.sh/) to install `minicom`.
 
 ```sh
 $ brew install minicom
@@ -263,13 +262,13 @@ $ brew install minicom
 
 * Setup `minicom`
 
-Before setup `minicom`, you need to connect the `USB to TTL Converter` tool to your device and computer.
+Connect the `USB to TTL Converter` tool to your SBC and computer, then input the command:
 
 ```sh
 $ minicom -s
 ```
 
-You will enter `minicom` setup mode, like this:
+Enter `minicom` setup mode:
 
 ```
  ┌─────[configuration]──────┐
@@ -285,7 +284,7 @@ You will enter `minicom` setup mode, like this:
  └──────────────────────────┘
 ```
 
-You can use **up/down arrow** on the keyboard to shift to `Serial port setup` item and hit `Enter` to `Serial port setup` menu.
+Use **up/down arrow** on the keyboard to shift to the `Serial port setup` item and hit `Enter` to enter the `Serial port setup` menu.
 
 ```
 ┌───────────────────────────────────────────────────────────────────────┐
@@ -308,21 +307,22 @@ You can use **up/down arrow** on the keyboard to shift to `Serial port setup` it
 
 ```
 
-You can use `Shift + A` to setup the serial device, and hit `Enter` to confirm.
+You can use `Shift + A` to setup the serial device, hit `Enter` to confirm.
 You can use `Shift + E` to setup the baudrate, choose `115200` and hit `Enter` to confirm.
 You can use `Shift + F` to disable the hardware flow control, set to `NO`.
-When you done all the setup, you can hit `Enter` to exit the menu, and then choose `Save setup as dfl` to save the configuration, then `Exit from Minicom`.
+
+After completing setup, hit `Enter` to exit, then choose `Save setup as dfl` to save the configuration, then choose `Exit from Minicom`.
 
 
 {% note info Note %}
 
-You need to replace the serial device node to the correct one on your computer.
+The `serial device node` must correspond to the Mac OS' serial device node.
 
 {% endnote %}
 
 * Launch `minicom`
 
-Type `minicom` command in terminal will enter the board serial terminal.
+Type `minicom` into the Mac OS Terminal, to access your SBC's serial Terminal.
 
 ```
 $ minicom
@@ -343,7 +343,7 @@ Khadas login:
 
 * Exit minicom
 
-You can use `option + Z` to lanuch the menu:
+You can use `option + Z` to open the menu:
 
 ```
 ┌───────────────────────────────────────────────────────────────────┐
@@ -367,7 +367,7 @@ You can use `option + Z` to lanuch the menu:
 └───────────────────────────────────────────────────────────────────┘
 ```
 
-And use `Shift + Q` to exit `minicom`.
+Use `Shift + Q` to exit `minicom`.
 
 ```
 
@@ -382,4 +382,3 @@ Choose `Yes` and hit `Enter` to exit `minicom`.
 
 </div>
 </div>
-

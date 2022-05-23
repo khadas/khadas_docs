@@ -1,12 +1,12 @@
 title: 通过TFTP下载镜像
 ---
 
-在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
+在有线网络连接正常的情况下，U-Boot能通过TFTP非常方便的下载更新镜像文件。
 
 ## 准备
 * [搭建TFTP服务器](SetupTFTPServer.html)
 
-## 更新U-boot
+## 更新U-Boot
 
 ```bash
 kvim# tftp 1080000 u-boot.bin
@@ -15,14 +15,14 @@ kvim# store rom_write 1080000 0 $filesize
 
 {% note info 注意 %}
 
-你可能需要清除旧的U-boot的环境变量：
+你可能需要清除旧的U-Boot的环境变量：
 
 ```bash
 kvim# defenv
 kvim# saveenv
 ```
 
-执行`reset` 或者按 `Reset` 按键重启设备运行新的U-boot：
+执行`reset` 或者按 `Reset` 按键重启设备运行新的U-Boot：
 
 ```bash
 kvim# reset

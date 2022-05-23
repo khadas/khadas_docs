@@ -1,8 +1,7 @@
 title: I2C
 ---
 
-
-This guide is about how to access i2c on Ubuntu.
+**Access the I2C interface from Ubuntu Terminal.**
 
 ## Connections
 
@@ -15,6 +14,9 @@ This guide is about how to access i2c on Ubuntu.
   </li>
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="vim3-tab" data-toggle="tab" href="#vim3-pins" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="vim4-tab" data-toggle="tab" href="#vim4-pins" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -57,9 +59,23 @@ This guide is about how to access i2c on Ubuntu.
 `Sensor GND` <-> `GND`
 `Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
 </div>
+<div class="tab-pane fade" id="vim4-pins" role="tabpanel" aria-labelledby="vim4-tab">
+
+**I2C A**
+`Sensor SCL` <-> `I2CA_SCK (PIN 25)`
+`Sensor SDA` <-> `I2CA_SDA (PIN 26)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+**I2C F**
+`Sensor SCL` <-> `I2CF_SCK (PIN 22)`
+`Sensor SDA` <-> `I2CF_SDA (PIN 23)`
+`Sensor GND` <-> `GND`
+`Sensor VCC` <-> `5V or 3.3V` //depends on your sensor
+
+</div>
 </div>
 
-## Detect the device
+## Device Detection
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -71,14 +87,17 @@ This guide is about how to access i2c on Ubuntu.
   <li class="nav-item" role="presentation">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim3" role="tab" aria-controls="vim3" aria-selected="false">VIM3/VIM3L</a>
   </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#vim4" role="tab" aria-controls="vim4" aria-selected="false">VIM4</a>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1" role="tabpanel" aria-labelledby="vim1-tab">
 
 Detect device on `I2C A`:
 
-```bash
-# i2cdetect -y -r 1
+```shell
+$ sudo i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- 1d -- --
@@ -91,8 +110,8 @@ Detect device on `I2C A`:
 ```
 Detect device on `I2C B`:
 
-```bash
-# i2cdetect -y -r 2
+```shell
+$ sudo i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- UU -- -- -- -- -- -- --
@@ -109,8 +128,8 @@ Detect device on `I2C B`:
 
 Detect device on `I2C A`:
 
-```bash
-# i2cdetect -y -r 1
+```shell
+$ sudo i2cdetect -y -r 1
     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- 1d -- --
@@ -123,8 +142,8 @@ Detect device on `I2C A`:
 ```
 Detect device on `I2C B`:
 
-```bash
-# i2cdetect -y -r 2
+```shell
+$ sudo i2cdetect -y -r 2
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- UU -- -- -- -- -- -- --
@@ -141,8 +160,8 @@ Detect device on `I2C B`:
 
 Detect device on `I2C 3`:
 
-```bash
-# i2cdetect -y -r 3
+```shell
+$ sudo i2cdetect -y -r 3
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -155,8 +174,8 @@ Detect device on `I2C 3`:
 ```
 Detect device on `I2C 4`:
 
-```bash
-# i2cdetect -y -r 4
+```shell
+$ sudo i2cdetect -y -r 4
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- 0e --
 10: -- -- -- -- -- -- -- -- UU -- -- -- -- -- -- --
@@ -168,29 +187,49 @@ Detect device on `I2C 4`:
 70: -- -- -- -- -- -- -- --
 ```
 </div>
+<div class="tab-pane fade" id="vim4" role="tabpanel" aria-labelledby="vim4-tab">
+
+Detect device on `I2C A`:
+
+```shell
+$ sudo i2cdetect -r -y 0
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
+Detect device on `I2C F`:
+
+```shell
+$ sudo i2cdetect -r -y 5
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- UU -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+
+</div>
 </div>
 
-If you have the right connection you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
+If you have made a connection, you will see the device address, e.g: `0x1d`,`0x18` and `0x51`.
 
-{% note warn Note %}
-
-Root privileges required.
-
-{% endnote %}
-
-## Read register from device
+## Read Registers from Device
 
 Read register `0x0d` of device `0x1d` on `I2C A`.
 
-```bash
-# i2cget -f -y 1 0x1d 0x0d
+```Shell
+$ sudo i2cget -f -y 1 0x1d 0x0d
 0x2a
 ```
-
-{% note warn Note %}
-
-Note: Root privileges required.
-
-{% endnote %}
-
-For more, please refer to the help messages.
+For more information, please refer to the help messages.

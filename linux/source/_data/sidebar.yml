@@ -34,11 +34,11 @@ vim1:
     gpio:
       gpio_usage: Gpio.html
       i2c: I2c.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
       uart: Uart.html
       pwm: Pwm.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWM.html
@@ -55,6 +55,7 @@ vim1:
       build_uboot: BuildUboot.html
       upgrade_uboot: UpgradeUboot.html
       setup_tftp_server: SetupTFTPServer.html
+      kbi_guidance: KbiGuidance.html
     linux:
       build_linux_kernel: BuildLinuxKernel.html
       upgrade_linux_kernel: UpgradeLinuxKernel.html
@@ -103,11 +104,11 @@ vim2:
     gpio:
       gpio_usage: Gpio.html
       i2c: I2c.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
       uart: Uart.html
       pwm: Pwm.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWM.html
@@ -123,7 +124,6 @@ vim2:
     uboot:
       build_uboot: BuildUboot.html
       upgrade_uboot: UpgradeUboot.html
-      boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
       kbi_guidance: KbiGuidance.html
     linux:
@@ -182,11 +182,11 @@ vim3:
       gpio_usage: Gpio.html
       i2c: I2c.html
       spi: SPIUsage.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
       uart: Uart.html
       pwm: Pwm.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWM.html
@@ -218,7 +218,6 @@ vim3:
     uboot:
       build_uboot: BuildUboot.html
       upgrade_uboot: UpgradeUboot.html
-      boot_from_spi_flash: BootFromSpiFlash.html
       setup_tftp_server: SetupTFTPServer.html
       kbi_guidance: KbiGuidance.html
     linux:
@@ -231,6 +230,83 @@ vim3:
     erase_emmc: EraseEmmc.html
   troubleshooting:
     capture_log: CaptureLog.html
+
+vim4:
+  quick_start:
+    quick_setup: index.html
+    choose_an_os: os_introduce.html
+    install_os_into_emmc: install_os_into_emmc.html
+    install_os_into_sd_usb: install_os_into_sdusb.html
+    boot_into_upgrade_mode: boot_into_upgrade_mode.html
+    boot_from_ext_media: boot_from_ext_media.html
+    boot_seqeqe: boot_sequeue.html
+    vim4_hardware: hardware.html
+  configuration:
+    basic:
+      upgrade_os: upgrade_system.html
+      system_config_file: system_config_file.html
+      device_tree_overlay: device_tree_overlay.html
+      auto_login: auto_login.html
+      write_sd_image_to_emmc: write_sd_image_to_emmc.html
+      chinese_support: chinese_support_usage.html
+    network:
+      wifi: wifi.html
+      bt: bluetooth.html
+      custom_mac_address: custom_mac.html
+      howto_use_wol: wol.html
+    display:
+      hdmi_resolution: hdmi_resolution.html
+      rotate_framebuffer: rotate_framebuffer.html
+      ubuntu_logo: ubuntu_logo.html
+      change_boot_logo: change_boot_logo.html
+      framebuffer_console_font: setup_framebuffer_console_font.html
+    accessories:
+      fan: fan.html
+      ts050: ts050.html
+      lte_module_usage: lte_module.html
+      m2x_eth: m2x_eth.html
+    hardware:
+      extra_power_input: extra_power_input.html
+      usb_gadget: usb_gadget.html
+  applications:
+    gpio:
+      gpio_usage: gpio.html
+      i2c: i2c.html
+      led: led.html
+      1wire: 1wire.html
+      uart: uart.html
+      pwm: pwm.html
+      gpio_irq: gpio_irq.html
+      wiringpi: wiringpi.html
+      wiringpi_python: wiringpi_python.html
+      soft_pwm: soft_pwm_servo.html
+    gsensor_usage: gsensor_usage.html
+    play_video: play_video.html
+    hardware_decoding: hardware_decoding.html
+    hardware_encoding: hardware_encoding.html
+    docker: docker.html
+    watchdog: watchdog.html
+    wifi_apsta_mode: wifi_apsta_mode.html
+    sdl2: sdl2.html
+    ppsspp: ppsspp.html
+    qt5: qt5.html
+    32bit_library: 32bit_library.html
+  development:
+    uboot:
+      build_uboot: build_uboot.html
+      upgrade_uboot: upgrade_uboot.html
+      setup_tftp_server: setup_tftp_server.html
+      kbi_guidance: kbi_guidance.html
+    linux:
+      build_linux_kernel: build_linux_kernel.html
+      upgrade_linux_kernel: upgrade_linux_kernel.html
+    fenix: fenix_script.html
+    setup_serial_tool: setup_serial_tool.html
+    create_burn_card: create_burn_card.html
+    create_bootable_sd_card: create_bootable_sdcard.html
+    erase_emmc: erase_emmc.html
+  troubleshooting:
+    capture_log: capture_log.html
 
 edge:
   quick_start:
@@ -261,9 +337,9 @@ edge:
   applications:
     gpio:
       gpio_usage: Gpio.html
-      gpio_irq: GpioIRQ.html
       led: LED.html
       1wire: 1wire.html
+      gpio_irq: GpioIRQ.html
       wiringpi: WiringPi.html
       wiringpi_python: WiringPi-Python.html
       soft_pwm: SoftPWM.html
@@ -273,7 +349,6 @@ edge:
   development:
     uboot:
       upgrade_uboot: UpgradeUboot.html
-      boot_from_spi_flash: BootFromSpiFlash.html
       kbi_guidance: KbiGuidance.html
     linux:
       upgrade_linux_kernel: UpgradeLinuxKernel.html
@@ -294,6 +369,7 @@ hardware:
     vim1: hardwareVim1.html
     vim2: hardwareVim2.html
     vim3: hardwareVim3.html
+    vim4: hardwareVim4.html
     edge: hardwareEdge.html
     tone1: hardwareTone1.html
     
@@ -311,6 +387,9 @@ firmware:
     vim3l:
      vim3l_ubuntu: Vim3lUbuntuFirmware.html
      vim3l_thirdparty: Vim3lThirdpartyFirmware.html
+    vim4:
+     vim4_ubuntu: vim4_ubuntu_firmware.html
+     vim4_thirdparty: vim4_thirdparty_firmware.html
     edge:
       edge_ubuntu: EdgeUbuntuFirmware.html
       edge_thirdparty: EdgeThirdpartyFirmware.html

@@ -1,10 +1,10 @@
-title: VIM3 硬件描述
+title: VIM3/3L 硬件描述
 ---
 
 ## VIM3 接口描述
 
-![VIM3 Interface Top](/linux/images/vim3/vim3_interfaces_top.jpg)
-![VIM3 Interface Bottom](/linux/images/vim3/vim3_interfaces_bottom.jpg)
+![VIM3 Interface Top](/linux/images/vim3/vim3_interfaces_top.png)
+![VIM3 Interface Bottom](/linux/images/vim3/vim3_interfaces_bottom.png)
 
 
 ## VIM3 硬件信息
@@ -120,7 +120,12 @@ Linux_TX|19|39|GPIODZ_15
 </div>
 </div>
 
-## VIM3L
+## VIM3L 接口描述
+
+![VIM3L Interface Top](/linux/images/vim3/vim3l_interfaces_top.png)
+![VIM3L Interface Bottom](/linux/images/vim3/vim3l_interfaces_bottom.png)
+
+## VIM3L 硬件信息
 
 ![image](/linux/images/vim3/docs_vim3l.jpg)
 

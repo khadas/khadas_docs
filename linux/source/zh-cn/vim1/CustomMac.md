@@ -1,4 +1,4 @@
-title: 如何自定义以太网MAC地址
+title: 自定义MAC地址
 ---
 
 ## 查看以太网MAC地址

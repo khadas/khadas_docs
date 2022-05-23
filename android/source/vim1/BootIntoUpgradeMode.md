@@ -62,7 +62,7 @@ kvim# run update
 * Use a tweezer to short-circuit the two pads of the `M` register, and without releasing it.
 * Short press the `Reset` key and release it to boot into upgrade mode.
 
-![Image of MRegister_ShortCircuit](/android/images/vim1/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/android/images/vim1/mregister_short_circuit.png)
 
 {% note info Tips %}
 

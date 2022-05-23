@@ -26,12 +26,12 @@ title:  通过TF卡升级固件
 
 6. 点击`开始创建`进行烧录TF卡的创建
 
-![Sdtool](/android/images/edge/Sdtool_zh_1.png)
-![Sdtool](/android/images/edge/Sdtool_zh_2.png)
+![Sdtool](/android/images/edge/sdtool_zh_1.png)
+![Sdtool](/android/images/edge/sdtool_zh_2.png)
 
 烧录卡创建成功后会看到如下提示：
 
-![Sdtool](/android/images/edge/Sdtool_zh_3.png)
+![Sdtool](/android/images/edge/sdtool_zh_3.png)
 
 ## 使用TF烧录卡进行升级
 
@@ -40,11 +40,11 @@ title:  通过TF卡升级固件
 3. 给Edge上电或重启Edge开发板
 4. 重启后会在HDMI显示器看到升级界面，如下：
 
-![Sdtool upgrade](/android/images/edge/Sd_upgrade.JPG)
+![Sdtool upgrade](/android/images/edge/sd_upgrade.JPG)
 
 等待升级完成后会看到如下界面：
 
-![Sdtool upgrade done](/android/images/edge/Sd_upgrade_done.JPG)
+![Sdtool upgrade done](/android/images/edge/sd_upgrade_done.JPG)
 
 这时请弹出TF卡，然后Edge会自动重启进入到刚烧录好的系统。
 

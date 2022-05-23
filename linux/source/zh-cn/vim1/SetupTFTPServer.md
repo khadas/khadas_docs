@@ -29,14 +29,14 @@ $ sudo apt-get install openbsd-inetd tftpd tftp
 
 通过root权限编辑文件`/etc/inetd.conf`来使能TFTP服务，文件内容如下：
 
-```bash
-#tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
+```
+# tftp   dgram   udp     wait    root    /usr/sbin/tcpd  /usr/sbin/in.tftpd
 ```
 
 取消注释下面这一行，并添加 `-s /srv/tftp` 到行尾：
 
-```bash
-tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tftp
+```
+# tftp   dgram   udp   wait   root   /usr/sbin/tcpd  /usr/sbin/in.tftpd -s /srv/tftp
 ```
 
 创建`/srv/tftp`目录，并修改权限：
@@ -96,9 +96,9 @@ $ sudo service tftpd-hpa restart
 
 * 连接网线到VIM，并确保和你的PC在同一个局域网 
 * 连接串口线，参考[这里设置串口](SetupSerialTool.html) 
-* 上电，确保U-boot正常运行
+* 上电，确保U-Boot正常运行
 
-按 `Enter` or `Space` 键进入U-boot命令行模式：
+按 `Enter` or `Space` 键进入U-Boot命令行模式：
 
 ```bash
 U-Boot 2015.01 (May 18 2019 - 19:31:53)
@@ -115,14 +115,14 @@ kvim3#
 
 设置目标板IP地址以及TFTP服务器地址：
 
-```bash
+```
 kvim3# setenv ipaddr 192.168.1.249
 kvim3# setenv serverip 192.168.1.117
 ```
 
 保存环境变量：
 
-```bash
+```
 kvim3# saveenv
 Saving Environment to aml-storage...
 mmc env offset: 0x6c00000 
@@ -136,7 +136,7 @@ kvim3#
 
 确认你的环境变量设置是正确的。
 
-```bash
+```
 kvim3#print ipaddr
 ipaddr=192.168.1.249
 kvim3#print serverip
@@ -147,16 +147,23 @@ serverip=192.168.1.117
 
 ### 测试
 
+{% note warn 注意 %}
+
+VIM1/VIM2/VIM3/VIM3L使用**u-boot.bin**, VIM4使用**u-boot.bin.signed**.
+
+{% endnote %}
+
+
 确保已经拷贝测试文件（如u-boot.bin）到TFTP服务器根目录（`/srv/tftp`）:
 
-```bash
+```
 $ ls /srv/tftp/u-boot.bin
 /srv/tftp/u-boot.bin
 ```
 
 下载文件到地址 `0x1080000`：
 
-```bash
+```
 kvim3# tftp 1080000 u-boot.bin
 Speed: 1000, full duplex
 Using dwmac.ff3f0000 device
@@ -187,7 +194,7 @@ kvim3#
 
 * 如果看到如下打印信息，那么你可能是TFTP服务器地址设置错误或者文件名错误
 
-```bash
+```
 kvim3#tftp 1080000 u-boot.bin
 Speed: 1000, full duplex
 Using dwmac.ff3f0000 device

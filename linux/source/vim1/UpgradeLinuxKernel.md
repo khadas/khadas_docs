@@ -1,13 +1,9 @@
-title: Upgrade Linux kernel
+title: Upgrade the Linux Kernel
 ---
 
-## Build
+## Upgrading
 
-Please refer to [Build Linux Kernel](BuildLinuxKernel.html).
-
-## Upgrade
-
-Copy the kernel & dtb debian packages to the board and install it.
+Copy the kernel & dtb Debian packages to the board and install them.
 
 ```
 $ sudo dpkg -i linux-dtb-*.deb 

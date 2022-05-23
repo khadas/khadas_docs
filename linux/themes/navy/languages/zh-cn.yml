@@ -2,7 +2,8 @@ menu:
   vim: VIM
   vim1: VIM1
   vim2: VIM2
-  vim3: VIM3
+  vim3: VIM3/3L
+  vim4: VIM4
   edge: Edge
   tone1: Tone1
   hardware: 硬件资料
@@ -42,9 +43,9 @@ sidebar:
     wifi: Wi-Fi
     bt: 蓝牙
     custom_mac_address: 自定义MAC地址
-    howto_use_wol: 局域网唤醒
+    howto_use_wol: 远程唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -59,11 +60,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
@@ -84,7 +85,7 @@ sidebar:
     upgrade_uboot: 更新U-Boot
     boot_from_spi_flash: 从SPI-Flash启动
     setup_tftp_server: TFTP服务器搭建
-    kbi_guidance: KBI说明
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: 编译Linux内核
     upgrade_linux_kernel: 更新Linux内核
@@ -117,9 +118,9 @@ sidebar:
     wifi: Wi-Fi
     bt: 蓝牙
     custom_mac_address: 自定义MAC地址
-    howto_use_wol: 局域网唤醒
+    howto_use_wol: 远程唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -134,11 +135,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
@@ -159,7 +160,7 @@ sidebar:
     upgrade_uboot: 更新U-Boot
     boot_from_spi_flash: 从SPI-Flash启动
     setup_tftp_server: TFTP服务器搭建
-    kbi_guidance: KBI说明
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: 编译Linux内核
     upgrade_linux_kernel: 更新Linux内核
@@ -192,9 +193,9 @@ sidebar:
     wifi: Wi-Fi
     bt: 蓝牙
     custom_mac_address: 自定义MAC地址
-    howto_use_wol: 局域网唤醒
+    howto_use_wol: 远程唤醒
     display: 显示
-    hdmi_resolution: HDMI分辨率
+    hdmi_resolution: 设置HDMI分辨率
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
     change_boot_logo: 修改启动Logo
@@ -216,16 +217,16 @@ sidebar:
     gpio_usage: GPIO
     i2c: I2C
     spi: SPI
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
     spdifin: SPDIF IN
-    gsensor_usage: Gsensor使用说明
+    gsensor_usage: Gsensor
     play_video: 播放视频
     rstp: RSTP Web 摄像头
     hardware_decoding: 硬件解码
@@ -254,7 +255,85 @@ sidebar:
     upgrade_uboot: 更新U-Boot
     boot_from_spi_flash: 从SPI-Flash启动
     setup_tftp_server: TFTP服务器搭建
-    kbi_guidance: KBI说明
+    kbi_guidance: KBI
+    linux: Linux
+    build_linux_kernel: 编译Linux内核
+    upgrade_linux_kernel: 更新Linux内核
+    fenix: 编译Ubuntu/Debian固件
+    setup_serial_tool: 设置串口调试工具
+    create_burn_card: 创建烧录卡
+    create_bootable_sd_card: 创建启动卡
+    erase_emmc: 擦除eMMC
+    troubleshooting: 故障排查
+    capture_log: 抓取Log
+
+  vim4:
+    quick_start: 快速上手
+    quick_setup: 快速上手
+    choose_an_os: 选择操作系统
+    install_os_into_emmc: 安装操作系统到eMMC
+    install_os_into_sd_usb: 安装操作系统到SD/USB存储
+    boot_into_upgrade_mode: 进入升级模式
+    boot_from_ext_media: 从外部介质启动系统
+    boot_seqeqe: 系统启动优先级
+    vim4_hardware: VIM4硬件描述
+    configuration: 配置
+    basic: 基本
+    upgrade_os: 升级系统
+    system_config_file: 配置文件
+    device_tree_overlay: Device Tree Overlay
+    auto_login: 自动登陆
+    write_sd_image_to_emmc: 把SD卡固件写入到eMMC
+    chinese_support: 中文支持
+    network: 网络
+    wifi: Wi-Fi
+    bt: 蓝牙
+    custom_mac_address: 自定义MAC地址
+    howto_use_wol: 远程唤醒
+    display: 显示
+    hdmi_resolution: 设置HDMI分辨率
+    rotate_framebuffer: 旋转Framebuffer
+    ubuntu_logo: Ubuntu Logo
+    change_boot_logo: 修改启动Logo
+    framebuffer_console_font: Framebuffer Console字体
+    accessories: 配件
+    fan: 风扇
+    ts050: TS050触摸屏
+    lte_module_usage: 4G模块
+    m2x_eth: M2X以太网口
+    hardware: 硬件
+    extra_power_input: 外部供电
+    usb_gadget: USB Gadget使用说明
+    applications: 应用
+    gpio: GPIO
+    gpio_usage: GPIO
+    i2c: I2C
+    led: LED
+    1wire: 1-Wire
+    uart: UART
+    pwm: PWM
+    gpio_irq: GPIO中断
+    wiringpi: WiringPi
+    wiringpi_python: WiringPi-Python
+    soft_pwm: 软件模拟PWM
+    gsensor_usage: Gsensor
+    play_video: 播放视频
+    hardware_decoding: 硬件解码
+    hardware_encoding: 硬件编码
+    docker: Docker
+    watchdog: 看门狗
+    wifi_apsta_mode: Wi-Fi STA/AP模式
+    sdl2: SDL2
+    ppsspp: PPSSPP
+    qt5: QT5
+    32bit_library: 32位运行库
+    development: 开发
+    uboot: U-Boot
+    build_uboot: 编译U-Boot
+    upgrade_uboot: 更新U-Boot
+    boot_from_spi_flash: 从SPI-Flash启动
+    setup_tftp_server: TFTP服务器搭建
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: 编译Linux内核
     upgrade_linux_kernel: 更新Linux内核
@@ -287,7 +366,7 @@ sidebar:
     wifi: Wi-Fi
     bt: 蓝牙
     custom_mac_address: 自定义MAC地址
-    howto_use_wol: 局域网唤醒
+    howto_use_wol: 远程唤醒
     display: 显示
     rotate_framebuffer: 旋转Framebuffer
     ubuntu_logo: Ubuntu Logo
@@ -305,11 +384,11 @@ sidebar:
     gpio: GPIO
     gpio_usage: GPIO
     i2c: I2C
-    gpio_irq: IRQ
     led: LED
     1wire: 1-Wire
     uart: UART
     pwm: PWM
+    gpio_irq: GPIO中断
     wiringpi: WiringPi
     wiringpi_python: WiringPi-Python
     soft_pwm: 软件模拟PWM
@@ -330,7 +409,7 @@ sidebar:
     upgrade_uboot: 更新U-Boot
     boot_from_spi_flash: 从SPI-Flash启动
     setup_tftp_server: TFTP服务器搭建
-    kbi_guidance: KBI说明
+    kbi_guidance: KBI
     linux: Linux
     build_linux_kernel: 编译Linux内核
     upgrade_linux_kernel: 更新Linux内核
@@ -351,6 +430,7 @@ sidebar:
     vim1: VIM1
     vim2: VIM2
     vim3: VIM3
+    vim4: VIM4
     edge: Edge
     tone1: Tone1
   firmware:
@@ -367,6 +447,9 @@ sidebar:
     vim3l: VIM3L
     vim3l_ubuntu: Ubuntu
     vim3l_thirdparty: 第三方固件
+    vim4: VIM4
+    vim4_ubuntu: Ubuntu
+    vim4_thirdparty: 第三方固件
     edge: Edge
     edge_ubuntu: Ubuntu
     edge_thirdparty: 第三方固件

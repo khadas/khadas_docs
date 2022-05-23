@@ -1,9 +1,9 @@
 title: 创建系统烧录卡
 ---
 
-本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式[创建烧录卡](CreateBootableSDCard.html)。
+本教程是指导Linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式[创建烧录卡](CreateBootableSDCard.html)。
 
-{% note info 由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
+{% note info 由于VIM1、VIM2、VIM3和VIM4操作方式基本上是一样的，所以本文档以VIM1为例进行说明。%}
 
 {% endnote %}
 
@@ -12,9 +12,12 @@ title: 创建系统烧录卡
 {% endnote %}
 
 ## 准备工作
-* 编译或下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/))最新的U-Boot文件。
+
+* 编译或下载([VIM1](https://dl.khadas.com/Firmware/VIM1/U-boot/)/[VIM2](https://dl.khadas.com/Firmware/VIM2/U-boot/)/[VIM3](https://dl.khadas.com/Firmware/VIM3/U-boot/)/[VIM4](https://dl.khadas.com/Firmware/VIM4/U-boot/))最新的U-Boot文件。
+
 * 准备好TF卡和读卡器。
-* 如果TF卡上有多个分区的话，需要通过fdisk格式化[TF卡](CreateBurnCardViaCLI.html)。
+
+* 如果TF卡上有多个分区的话，需要通过`fdisk`格式化[TF卡](CreateBurnCardViaCLI.html)。
 
 ## 开始前
 首先要先删除所有分区，**卡里面所有的数据将会丢失，请注意保存！**
@@ -35,7 +38,7 @@ $ sudo fdisk /dev/sdX
 
 {% endnote %}
 
-创建好的分区应该是像这样的:
+创建好的分区应该是像这样的：
 
 ```bash
 Command (m for help): p
@@ -116,7 +119,8 @@ $ sudo eject /dev/sdX
 至此，TF烧录卡的制作已完成。
 
 ## 通过TF烧录卡升级固件
-1. 把制作好的烧录卡插入VIM/VIM2设备中，然后上电。
+
+1. 把制作好的烧录卡插入设备中，然后上电。
 2. 参考文档[进入升级模式](BootIntoUpgradeMode.html)。
 3. 等待升级完成。
 

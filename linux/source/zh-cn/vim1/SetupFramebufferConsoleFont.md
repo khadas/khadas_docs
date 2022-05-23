@@ -1,4 +1,4 @@
-title: 如何设置Framebuffer Console字体大小
+title: Framebuffer Console字体
 ---
 
 如果觉得Framebuffer Console字体太小，比如在4K分辨率或者MIPI LCD下显示，可以通过如下命令来设置字体大小:

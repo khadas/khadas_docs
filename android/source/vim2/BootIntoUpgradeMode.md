@@ -61,7 +61,7 @@ kvim2# run update
 
 2. VIM2 V12
 
-![Image of MRegister_ShortCircuit](/android/images/vim2/MRegister_ShortCircuit.png)
+![Image of MRegister_ShortCircuit](/android/images/vim2/mregister_short_circuit.png)
 *Tip: The `M` register is located on the underside of VIM2*
 
 </div>

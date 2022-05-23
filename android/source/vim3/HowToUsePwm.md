@@ -31,7 +31,7 @@ kvim3:/ $ su
     ```
 
 if you successfully turn on the hardware pwm, you can see the waveform through the oscilloscope
-![pwm-Oscilloscope](/android/images/vim1/pwm-Oscilloscope.jpg)
+![pwm-Oscilloscope](/android/images/vim1/pwm-oscilloscope.jpg)
 
 {% note info Note %}
 If you use an oscilloscope to check the waveform, remember that the board and the oscilloscope need to share the same ground 

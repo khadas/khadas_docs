@@ -37,7 +37,7 @@ USB-C是常用的供电接口，在供电的同时也可以作数据传输，比
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="vim1v12" role="tabpanel" aria-labelledby="vim1v12-tab">
 
-<img src="/android/images/vim1/VIM1_V12_EXT.png" width="50%" height="50%" >
+<img src="/android/images/vim1/vim1_v12_ext.png" width="50%" height="50%" >
 
 VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 
@@ -46,7 +46,7 @@ VIN供电接口座子规格参数：4-Pin 1.25mm间距。
 </div>
 <div class="tab-pane fade" id="vim1v14" role="tabpanel" aria-labelledby="vim1v14-tab">
 
-<img src="/android/images/vim1/VIM1_v14_EXT.png" width="50%" height="50%" >
+<img src="/android/images/vim1/vim1_v14_ext.png" width="50%" height="50%" >
 
 VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
@@ -58,21 +58,21 @@ VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 </div>
 <div class="tab-pane fade" id="vim2v12" role="tabpanel" aria-labelledby="vim2v12-tab">
 
-<img src="/android/images/vim2/VIM2_V12_EXT.png" width="50%" height="50%" >
+<img src="/android/images/vim2/vim2_v12_ext.png" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim2v14" role="tabpanel" aria-labelledby="vim2v14-tab">
 
-<img src="/android/images/vim2/VIM2_V14_EXT.png" width="50%" height="50%" >
+<img src="/android/images/vim2/vim2_v14_ext.png" width="50%" height="50%" >
 
 电压范围是0~5V。
 
 </div>
 <div class="tab-pane fade" id="vim3" role="tabpanel" aria-labelledby="vim3-tab">
 
-<img src="/android/images/vim3/VIM3_V12_EXT.png" width="50%" height="50%" >
+<img src="/android/images/vim3/vim3_v12_ext.png" width="50%" height="50%" >
 
 VIN供电接口座子规格参数：4-Pin 1.2mm间距。
 
