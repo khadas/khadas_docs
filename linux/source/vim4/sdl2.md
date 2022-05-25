@@ -11,7 +11,7 @@ The Ubuntu 22.04 Gnome desktop is hardware accelerated with wayland GPU, so you 
 
 ## Upgrade the System
 
-Follow this [documentation](UpgradeSystem.html) to upgrade the system to latest version.
+Follow this [documentation](upgrade_system.html) to upgrade the system to latest version.
 
 
 ## Install SDL2 Packages

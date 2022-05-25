@@ -11,7 +11,7 @@ Ubuntu 22.04 Gnome桌面系统默认是支持Wayland GPU硬件加速的，所以
 
 ## 升级到最新系统
 
-参考[文档](UpgradeSystem.html)升级系统到最新版本。
+参考[文档](upgrade_system.html)升级系统到最新版本。
 
 
 ## 安装SDL2包
