@@ -53,7 +53,6 @@
   <!-- endbuild -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="{{ config.root }}/css/font/fontawesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
   {{ feed_tag('atom.xml') }}
   <!-- Open Graph -->
