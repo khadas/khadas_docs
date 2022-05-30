@@ -46,7 +46,7 @@ PRODUCT_PACKAGES +=\
 
 1. According to your SBC model and system version, download the two platform key files [platform.x509.pem](https://dl.khadas.com/products/vim4/development/signtools/platform.x509.pem) and [platform.pk8](https://dl.khadas.com/products/vim4/development/signtools/platform.pk8).
 
-2. Download the Java Signing Tool [signapk.jar](https://dl.khadas.com/products/vim4/development/signtools/signapk.kar).
+2. Download the Java Signing Tool [signapk.jar](https://dl.khadas.com/products/vim4/development/signtools/signapk.jar).
 
 3. Download the library-dependency [libconscrypt_openjdk_jni.so](https://dl.khadas.com/products/vim4/development/signtools/libconscrypt_openjdk_jni.so) and put it in the `signlib` directory.
 
