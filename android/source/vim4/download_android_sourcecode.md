@@ -64,7 +64,7 @@ The initial sync operation may take an hour or more to complete.
 $ repo start <BRANCH_NAME> --all
 ```
 
-5) Based on different unbutu versions, the following operations may be required to pull large files.
+5) Based on different unbutu versions, the following operations may be required to pull large files(Otherwise, the corresponding file is small and incorrect).
 You need to go to the following three directories and use the 'git lfs pull' command to pull large files, otherwise an error will be reported during compilation:
 ```sh
 vendor/amlogic/common
