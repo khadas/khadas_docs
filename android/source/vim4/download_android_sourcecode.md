@@ -12,7 +12,7 @@ Firstly, install git-lfs tool for downloading Android 11.0 SDK
 ```sh
 sudo apt install git-lfs
 ```
-or
+Or source code installation
 ```sh
 $ mkdir git_lfs
 $ cd git_lfs
