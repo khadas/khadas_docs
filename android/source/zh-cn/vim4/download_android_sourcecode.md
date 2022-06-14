@@ -1,62 +1,94 @@
-title: 如何下载安卓源码
+title: 下载安卓源码
 ---
 
-由于Android SDK的部分仓库需要从Google服务器下载，中国大陆地区用户，可以通过如下4种方式下载完整Android源码：
-* 使用VPN直接下载源码
-  * 优点：直接下载，无需额外修改XML文件
-  * 缺点：需要使用VPN，根据不同VPN提供商网速可能较慢
-* 使用内地镜像服务器下载
-  * 优点：国内镜像服务器访问速度更快
-  * 缺点：需要额外修改XML文件
-* 百度网盘下载基版本代码（链接：https://pan.baidu.com/s/1xu8B3EJC-YitSZPZlmIf2w 提取码：wllx ）（里面有个说明）
-  * 优点：下载速度快
-  * 缺点：需要下载与解压
-* 使用内地镜像服务器下载 + 百度网盘下载基版本代码
-  * 优点：下载速度最快
-  * 缺点：需要额外修改XML文件 + 需要下载与解压
-  
-VPN方式不再介绍，如下方法基于清华大学镜像服务器：
-* 步骤参考[Download the Android Source Code](/android/zh-cn/vim4/DownloadAndroidSourceCode.html)
-* 在`repo sync`之前修改default.xml文件，把Google的URL地址改为清华大学的，如下：
+国内用户请优先阅读此[网页](/android/zh-cn/vim3/DownloadAndroidSourceCode.html)。
+
+我们的Khadas VIM4的Android源代码托管在Github上。有许多不同的存储库。
+
+按如下步骤下载源代码。
+
+## 步骤
+
+首先通过下面命令安装 git-lfs tool
 
 ```sh
-gouwa@Server:~/project/khadas/aosp/.repo/manifests$ git diff
-diff --git a/default.xml b/default.xml
-index f48a988..b8cb9da 100644
---- a/default.xml
-+++ b/default.xml
-@@ -1,6 +1,6 @@
- <?xml version="1.0" encoding="UTF-8"?>
- <manifest>
--  <remote fetch="https://android.googlesource.com/" name="aosp" review="https:/
-+  <remote fetch="https://aosp.tuna.tsinghua.edu.cn/" name="aosp" review="https:
-   <remote fetch="https://github.com/khadas/" name="github"/>
-
-   <default remote="github" revision="refs/heads/Nougat" sync-j="4"/>
-gouwa@Server:~/project/khadas/aosp/.repo/manifests$
+sudo apt install git-lfs
+```
+或者源码安装
+```sh
+$ mkdir git_lfs
+$ cd git_lfs
+$ wget https://github.com/git-lfs/git-lfs/releases/download/v2.3.4/git-lfs-linux-amd64-2.3.4.tar.gz
+$ tar xvzf git-lfs-linux-amd64-2.3.4.tar.gz
+$ cd git-lfs-2.3.4
+$ sudo ./install.sh
+$ git lfs install
 ```
 
-## 常见问题：
-* repo在运行过程中会尝试访问Google官方的git源更新自己，因此在运行过程中有可能出现”无法连接gerrit.googlesource.com“的问题，解决方案参考[这里](https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/)。
-
-* 下载过程中如果报如下错误，检查上述VPN或者修改XML方法是否正确配置
+1) 创建一个空目录来保存您的工作文件：
 
 ```sh
-...
-Fetching project platform/prebuilts/sdk
-Fetching projects:  66% (4/6)  fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/tools/': Failed to connect to android.googlesource.com port 443: Connection timed out
-fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/sdk/': Failed to connect to android.googlesource.com port 443: Connection timed out
-fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/tools/': Failed to connect to android.googlesource.com port 443: Connection timed out
-fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/sdk/': Failed to connect to android.googlesource.com port 443: Connection timed out
-error: Cannot fetch platform/prebuilts/tools
-error: Cannot fetch platform/prebuilts/sdk
-
-error: Exited sync due to fetch errors
-gouwa@Server:~/project/khadas/aosp$
+$ mkdir -p WORKING_DIRECTORY
+$ cd WORKING_DIRECTORY
 ```
 
-## 更多参考：
-* [总结国内下载源码报错问题](https://forum.khadas.com/t/faq/10745)
-* [清华大学官方文档：如何下载Android AOSP源码](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)
+2) 首先运行repo init下载清单存储库：
 
+```sh
+$ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vim4-r-64bit
+```
 
+3) 运行repo-sync下拉Android源代码：
+
+```sh
+$ repo sync -j4
+```
+初始同步操作可能需要很长时间才能完成。
+提示：如果命令中途失败，您可能需要重复运行上面的命令。或者您可以尝试使用此脚本：
+
+{% note info Tip %}
+	```sh
+	#!/bin/bash
+	repo sync -j4
+	while [ $? = 1 ]; do
+	echo "Sync failed, repeat again:"
+	repo sync -j4
+	done
+	```
+	
+	*如果需要，请按ctrl-\退出。*
+
+{% endnote %}
+
+4) 建立开发分支：
+
+```sh
+$ repo start <BRANCH_NAME> --all
+```
+
+5) 基于不同的unbutu版本，可能需要执行以下操作才能提取到大型文件（否则对应的文件很小，不正确）。
+您需要转到以下三个目录并使用“git lfs pull”命令来拉取大型文件，否则在编译过程中会报告错误：
+```sh
+vendor/amlogic/common
+device/khadas/kvim4-kernel
+device/khadas
+```
+```sh
+xxx@server:/users/xxx/vim4$ cd vendor/amlogic/common
+xxx@server:/users/xxx/vim4/vendor/amlogic/common$ git lfs pull
+Git LFS: (6 of 6 files) 239.31 MB / 239.31 MB                                                                                                                                                                                         
+xxx@server:/users/xxx/vim4/vendor/amlogic/common$ cd -
+/users/xxx/vim4
+xxx@server:/users/xxx/vim4$ cd device/khadas/
+xxx@server:/users/xxx/vim4/device/khadas$ 
+xxx@server:/users/xxx/vim4/device/khadas$ git lfs pull
+Git LFS: (2 of 2 files) 231.89 MB / 231.89 MB                                                                                                                                                                                             
+xxx@server:/users/xxx/vim4/device/khadas$ cd kvim4-kernel/
+xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$ 
+xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$ git lfs pull    
+Git LFS: (4 of 4 files) 451.79 MB / 451.79 MB                                                                                                                                                                                             
+xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$
+```
+## 更多参考
+* [Android Official Documents](https://source.android.com/source/downloading.html)
+* [Build Android Source Code](/android/vim3/BuildAndroid.html)
