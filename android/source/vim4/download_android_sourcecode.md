@@ -10,6 +10,10 @@ Walk through the steps below to download the Source Code.
 Firstly, install git-lfs tool for downloading Android 11.0 SDK
 
 ```sh
+sudo apt install git-lfs
+```
+or
+```sh
 $ mkdir git_lfs
 $ cd git_lfs
 $ wget https://github.com/git-lfs/git-lfs/releases/download/v2.3.4/git-lfs-linux-amd64-2.3.4.tar.gz
@@ -29,7 +33,7 @@ $ cd WORKING_DIRECTORY
 2) Run `repo init` to download the manifest repository first:
 
 ```sh
-$ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vim4-r
+$ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vim4-r-64bit
 ```
 
 3) Run `repo sync` to pull down the Android Source Tree:
@@ -60,6 +64,29 @@ The initial sync operation may take an hour or more to complete.
 $ repo start <BRANCH_NAME> --all
 ```
 
+5) Based on different unbutu versions, the following operations may be required to pull large files.
+You need to go to the following three directories and use the 'git lfs pull' command to pull large files, otherwise an error will be reported during compilation:
+```sh
+vendor/amlogic/common
+device/khadas/kvim4-kernel
+device/khadas
+```
+```sh
+xxx@server:/users/xxx/vim4$ cd vendor/amlogic/common
+xxx@server:/users/xxx/vim4/vendor/amlogic/common$ git lfs pull
+Git LFS: (6 of 6 files) 239.31 MB / 239.31 MB                                                                                                                                                                                         
+xxx@server:/users/xxx/vim4/vendor/amlogic/common$ cd -
+/users/xxx/vim4
+xxx@server:/users/xxx/vim4$ cd device/khadas/
+xxx@server:/users/xxx/vim4/device/khadas$ 
+xxx@server:/users/xxx/vim4/device/khadas$ git lfs pull
+Git LFS: (2 of 2 files) 231.89 MB / 231.89 MB                                                                                                                                                                                             
+xxx@server:/users/xxx/vim4/device/khadas$ cd kvim4-kernel/
+xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$ 
+xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$ git lfs pull    
+Git LFS: (4 of 4 files) 451.79 MB / 451.79 MB                                                                                                                                                                                             
+xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$
+```
 ## Further Reading
 * [Android Official Documents](https://source.android.com/source/downloading.html)
 * [Build Android Source Code](/android/vim3/BuildAndroid.html)
