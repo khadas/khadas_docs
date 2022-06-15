@@ -7,10 +7,10 @@ Walk through the steps below to download the Source Code.
 
 ## Steps
 
-Firstly, install git-lfs tool for downloading Android 11.0 SDK
+Firstly, install git-lfs tool for downloading Android 11.0 64bit SDK
 
 ```sh
-sudo apt install git-lfs
+$ sudo apt install git-lfs
 ```
 Or source code installation
 ```sh
