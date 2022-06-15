@@ -72,20 +72,20 @@ device/khadas/kvim4-kernel
 device/khadas
 ```
 ```sh
-xxx@server:/users/xxx/vim4$ cd vendor/amlogic/common
-xxx@server:/users/xxx/vim4/vendor/amlogic/common$ git lfs pull
+xxx@server:/users/vim4$ cd vendor/amlogic/common
+xxx@server:/users/vim4/vendor/amlogic/common$ git lfs pull
 Git LFS: (6 of 6 files) 239.31 MB / 239.31 MB                                                                                                                                                                                         
-xxx@server:/users/xxx/vim4/vendor/amlogic/common$ cd -
-/users/xxx/vim4
-xxx@server:/users/xxx/vim4$ cd device/khadas/
-xxx@server:/users/xxx/vim4/device/khadas$ 
-xxx@server:/users/xxx/vim4/device/khadas$ git lfs pull
+xxx@server:/users/vim4/vendor/amlogic/common$ cd -
+/users/vim4
+xxx@server:/users/vim4$ cd device/khadas/
+xxx@server:/users/vim4/device/khadas$ 
+xxx@server:/users/vim4/device/khadas$ git lfs pull
 Git LFS: (2 of 2 files) 231.89 MB / 231.89 MB                                                                                                                                                                                             
-xxx@server:/users/xxx/vim4/device/khadas$ cd kvim4-kernel/
-xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$ 
-xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$ git lfs pull    
+xxx@server:/users/vim4/device/khadas$ cd kvim4-kernel/
+xxx@server:/users/vim4/device/khadas/kvim4-kernel$ 
+xxx@server:/users/vim4/device/khadas/kvim4-kernel$ git lfs pull    
 Git LFS: (4 of 4 files) 451.79 MB / 451.79 MB                                                                                                                                                                                             
-xxx@server:/users/xxx/vim4/device/khadas/kvim4-kernel$
+xxx@server:/users/vim4/device/khadas/kvim4-kernel$
 ```
 ## Further Reading
 * [Android Official Documents](https://source.android.com/source/downloading.html)
