@@ -12,7 +12,7 @@ title: 下载安卓源码
 首先通过下面命令安装 git-lfs tool
 
 ```sh
-sudo apt install git-lfs
+$ sudo apt install git-lfs
 ```
 或者源码安装
 ```sh
