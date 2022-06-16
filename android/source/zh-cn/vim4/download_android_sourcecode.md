@@ -67,7 +67,7 @@ $ repo start <BRANCH_NAME> --all
 ```
 
 5) 基于不同的unbutu版本，可能需要执行以下操作才能提取到大型文件（否则对应的文件很小，不正确）。
-您需要转到以下三个目录并使用“git lfs pull”命令来拉取大型文件，否则在编译过程中会报告错误：
+您需要转到以下三个目录并使用“git lfs pull”命令来拉取大型文件，否则在编译过程中会报告[错误](https://forum.khadas.com/t/cannot-build-an-android/15886)：
 ```sh
 vendor/amlogic/common
 device/khadas/kvim4-kernel
