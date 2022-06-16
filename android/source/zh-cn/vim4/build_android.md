@@ -5,8 +5,8 @@ title: 编译安卓源码
 ## 准备
 
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
-- [x] [下载安卓源码](/android/zh-cn/vim4/DownloadAndroidSourceCode.html)
-- [x] [安装Amlogic平台工具链](/android/zh-cn/vim4/InstallToolchains.html)
+- [x] [下载安卓源码](/android/zh-cn/vim4/download_android_sourcecode.md.html)
+- [x] [安装Amlogic平台工具链](/android/zh-cn/vim4/install_toolchains.md.html)
 
 
 ## 编译
@@ -111,5 +111,5 @@ $ ./demo.sh a
 $ ./demo.sh n
 ```
 ## 参考
-* [通过USB数据线升级](/android/zh-cn/vim4/UpgradeViaUSBCable.html)
-* [通过TF卡升级](/android/zh-cn/vim4/UpgradeViaTFBurningCard.html)
+* [通过USB数据线升级](/android/zh-cn/vim4/upgrade_via_usbcable.html)
+* [通过TF卡升级](/android/zh-cn/vim4/upgrade_viatf_burning_card.html)
