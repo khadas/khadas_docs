@@ -112,4 +112,3 @@ $ ./demo.sh n
 ```
 ## See Also
 * [Upgrade Via an USB Cable](/android/vim4/upgrade_via_usbcable.html)
-* [Upgrade Via a Burnning TF Card](/android/vim4/upgrade_viatf_burning_card.html)
