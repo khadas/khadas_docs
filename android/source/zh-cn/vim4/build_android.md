@@ -112,4 +112,3 @@ $ ./demo.sh n
 ```
 ## 参考
 * [通过USB数据线升级](/android/zh-cn/vim4/upgrade_via_usbcable.html)
-* [通过TF卡升级](/android/zh-cn/vim4/upgrade_viatf_burning_card.html)
