@@ -9,7 +9,7 @@ VIM2、VIM3、VIM4和Edge不同于VIM1的一点就是具有以太网唤醒功能
 
 ## 获取以太网MAC地址
 
-通过`Settings-->Khadas Settings-->Ethernet`菜单获取MAC地址。
+通过`Settings-->Network & internet-->Ethernet`菜单获取MAC地址。
 
 <img src="/android/images/vim4/vim4_android_mac.png" width="75%" height="75%">
 
