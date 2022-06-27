@@ -9,7 +9,7 @@ Connect VIM4 to your LAN, then get the Ethernet MAC address.
 
 ## Get Ethernet MAC Address
 
-You can get it from `Settings-->Khadas Settings-->Ethernet` menu.
+You can get it from `Settings-->Network & internet-->Ethernet` menu.
 
 <img src="/android/images/vim4/vim4_android_mac.png" width="75%" height="75%">
 
