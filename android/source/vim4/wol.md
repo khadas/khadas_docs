@@ -9,9 +9,12 @@ Connect VIM4 to your LAN, then get the Ethernet MAC address.
 
 ## Get Ethernet MAC Address
 
-You can get it from `Settings-->Network & internet-->Ethernet` menu.
+You can get it from executing the `cat sys/class/net/eth0/address` command.
 
-<img src="/android/images/vim4/vim4_android_mac.png" width="75%" height="75%">
+```sh
+VIM4:/ $ cat sys/class/net/eth0/address
+02:ad:36:01:e4:a1
+```
 
 ## Enable WOL
 
