@@ -23,37 +23,37 @@ This guide will show you how to use PWM (Pulse Width Modulation).
   <div class="tab-pane fade show active" id="vim1-enable" role="tabpanel" aria-labelledby="vim1-tab">
     PWM_F:
   	```shell
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
-	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
-	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip4/export
+	$ echo 1000000 | sudo tee /sys/class/pwm/pwmchip4/pwm1/period
+	$ echo 500000 | sudo tee /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip4/pwm1/enable
 	```
   </div>
   <div class="tab-pane fade" id="vim2-enable" role="tabpanel" aria-labelledby="vim2-tab">
     PWM_D:
   	```shell
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip1/export
-	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/period
-	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/duty_cycle
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/enable
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip1/export
+	$ echo 1000000 | sudo tee /sys/class/pwm/pwmchip1/pwm1/period
+	$ echo 500000 | sudo tee /sys/class/pwm/pwmchip1/pwm1/duty_cycle
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip1/pwm1/enable
 	```
   </div>
   <div class="tab-pane fade" id="vim3-enable" role="tabpanel" aria-labelledby="vim3-tab">
     PWM_F:
   	```shell
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
-	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
-	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip4/export
+	$ echo 1000000 | sudo tee /sys/class/pwm/pwmchip4/pwm1/period
+	$ echo 500000 | sudo tee /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip4/pwm1/enable
 	```
   </div>
   <div class="tab-pane fade" id="vim4-enable" role="tabpanel" aria-labelledby="vim4-tab">
     PWM_F:
 	```shell
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/export
-	$ echo 1000000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/period
-	$ echo 500000 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/duty_cycle
-	$ echo 1 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip4/export
+	$ echo 1000000 | sudo tee /sys/class/pwm/pwmchip4/pwm1/period
+	$ echo 500000 | sudo tee /sys/class/pwm/pwmchip4/pwm1/duty_cycle
+	$ echo 1 | sudo tee /sys/class/pwm/pwmchip4/pwm1/enable
 	```
   </div>
 </div>
@@ -87,22 +87,22 @@ If you use an oscilloscope to view the PWM waveform, remember that the SBC and t
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vim1-disable" role="tabpanel" aria-labelledby="vim1-tab">
   ```shell
-  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim2-disable" role="tabpanel" aria-labelledby="vim2-tab">
   ```shell
-  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip1/pwm1/enable
+  $ echo 0 | sudo tee /sys/class/pwm/pwmchip1/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim3-disable" role="tabpanel" aria-labelledby="vim3-tab">
   ```shell
-  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
   <div class="tab-pane fade" id="vim4-disable" role="tabpanel" aria-labelledby="vim4-tab">
   ```shell
-  $ echo 0 | sudo tee > /sys/class/pwm/pwmchip4/pwm1/enable
+  $ echo 0 | sudo tee /sys/class/pwm/pwmchip4/pwm1/enable
   ```
   </div>
 </div>

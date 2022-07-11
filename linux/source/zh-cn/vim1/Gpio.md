@@ -316,7 +316,7 @@ pin 9 (GPIOB_9)  fe000000.apb4:pinctrl@4000
 * 导出GPIO
 
 ```bash
-$ echo 465 | sudo tee > /sys/class/gpio/export
+$ echo 465 | sudo tee /sys/class/gpio/export
 ```
 
 * 设置GPIO输入或输出
@@ -324,22 +324,22 @@ $ echo 465 | sudo tee > /sys/class/gpio/export
 可以设置GPIO输入或者输出。
 
 ```bash
-$ echo out | sudo tee > /sys/class/gpio/gpio465/direction # 设置GPIO输出
-$ echo in | sudo tee > /sys/class/gpio/gpio465/direction # 设置GPIO输入
+$ echo out | sudo tee /sys/class/gpio/gpio465/direction # 设置GPIO输出
+$ echo in | sudo tee /sys/class/gpio/gpio465/direction # 设置GPIO输入
 ```
 
 * 设置GPIO数值或获取GPIO数值
 
 ```bash
-$ echo 1 | sudo tee > /sys/class/gpio/gpio465/value # 设置GPIO输出高电平
-$ echo 0 | sudo tee > /sys/class/gpio/gpio465/value # 设置GPIO输出低电平
+$ echo 1 | sudo tee /sys/class/gpio/gpio465/value # 设置GPIO输出高电平
+$ echo 0 | sudo tee /sys/class/gpio/gpio465/value # 设置GPIO输出低电平
 $ cat /sys/class/gpio/gpio465/value # 获取GPIO数值
 ```
 
 * 释放GPIO
 
 ```bash
-$ echo 465 | sudo tee > /sys/class/gpio/unexport
+$ echo 465 | sudo tee /sys/class/gpio/unexport
 ```
 
 释放GPIO。

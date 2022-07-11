@@ -5,8 +5,8 @@ title: 编译安卓源码
 ## 准备
 
 - [x] [搭建开发环境](http://source.android.com/source/initializing.html)
-- [x] [下载安卓源码](/android/zh-cn/vim4/download_android_sourcecode.md.html)
-- [x] [安装Amlogic平台工具链](/android/zh-cn/vim4/install_toolchains.md.html)
+- [x] [下载安卓源码](/android/zh-cn/vim4/download_android_sourcecode.html)
+- [x] [安装Amlogic平台工具链](/android/zh-cn/vim4/install_toolchains.html)
 
 
 ## 编译
