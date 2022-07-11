@@ -41,7 +41,7 @@ $ sudo gpio readall
 * Export GPIO
 
 ```bash
-$ echo 433 | sudo tee > /sys/class/gpio/export
+$ echo 433 | sudo tee /sys/class/gpio/export
 ```
 
 {% note info 注意 %}

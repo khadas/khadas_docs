@@ -316,7 +316,7 @@ When you get the GPIO number, you can follow the steps below to control it. Here
 * Export GPIO
 
 ```bash
-$ echo 465 | sudo tee > /sys/class/gpio/export
+$ echo 465 | sudo tee /sys/class/gpio/export
 ```
 
 * Set GPIO direction
@@ -324,22 +324,22 @@ $ echo 465 | sudo tee > /sys/class/gpio/export
 You can set the direction `input` or `output`.
 
 ```bash
-$ echo out | sudo tee > /sys/class/gpio/gpio465/direction # Set GPIO output
-$ echo in | sudo tee > /sys/class/gpio/gpio465/direction # Set GPIO input
+$ echo out | sudo tee /sys/class/gpio/gpio465/direction # Set GPIO output
+$ echo in | sudo tee /sys/class/gpio/gpio465/direction # Set GPIO input
 ```
 
 * Set or get GPIO value
 
 ```bash
-$ echo 1 | sudo tee > /sys/class/gpio/gpio465/value # Set GPIO output high
-$ echo 0 | sudo tee > /sys/class/gpio/gpio465/value # Set GPIO output low
+$ echo 1 | sudo tee /sys/class/gpio/gpio465/value # Set GPIO output high
+$ echo 0 | sudo tee /sys/class/gpio/gpio465/value # Set GPIO output low
 $ cat /sys/class/gpio/gpio465/value # Get GPIO input value
 ```
 
 * Unexport GPIO
 
 ```bash
-$ echo 465 | sudo tee > /sys/class/gpio/unexport
+$ echo 465 | sudo tee /sys/class/gpio/unexport
 ```
 
 Unexport to release the GPIO.

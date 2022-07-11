@@ -42,7 +42,7 @@ Using `GPIOH6` as an example here, the related GPIO value is `433`, and the phys
 * Export GPIO
 
 ```
-$ echo 433 | sudo tee > /sys/class/gpio/export
+$ echo 433 | sudo tee /sys/class/gpio/export
 ```
 
 {% note info Note %}
