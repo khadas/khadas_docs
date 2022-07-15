@@ -28,12 +28,12 @@ $ cd WORKING_DIRECTORY
 
 2) Run `repo init` to download the manifest repository first:
 
-android 9.0 64 bit
+**android 9.0 64 bit:**
 ```sh
 $ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vim3-p-64bit
 ```
 
-android 9.0 32 bit
+**android 9.0 32 bit:**
 ```sh
 $ repo init -u https://github.com/khadas/android_manifest.git -b khadas-vims-pie
 ```
