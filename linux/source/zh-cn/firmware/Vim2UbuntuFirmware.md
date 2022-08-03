@@ -34,16 +34,12 @@ VIM2仅支持4.9内核**Ubuntu 18.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc" role="tabpanel" aria-labelledby="emmc-tab">
 
-* [VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM2/Ubuntu/EMMC/VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625.img.xz)
-* [VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/EMMC/VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
-* [VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM2/Ubuntu/EMMC/VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
+* [vim2-ubuntu-18.04-server-linux-4.9-fenix-1.1.1-220725](https://dl.khadas.com/firmware/VIM2/Ubuntu/EMMC/vim2-ubuntu-18.04-server-linux-4.9-fenix-1.1.1-220725-emmc.img.xz)
 
 </div>
 <div class="tab-pane fade show" id="sd" role="tabpanel" aria-labelledby="sd-tab">
 
-* [VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625.img.xz)
-* [VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
-* [VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
+* [vim2-ubuntu-18.04-server-linux-4.9-fenix-1.1.1-220725](https://dl.khadas.com/firmware/VIM2/Ubuntu/SD_USB/vim2-ubuntu-18.04-server-linux-4.9-fenix-1.1.1-220725.img.xz)
 
 </div>
 </div>
@@ -62,16 +58,13 @@ VIM2仅支持4.9内核**Ubuntu 18.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="emmc2" role="tabpanel" aria-labelledby="emmc2-tab">
 
-* [VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM2/Ubuntu/EMMC/VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.7-210625.img.xz)
-* [VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/EMMC/VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V1.0.5-210430.img.xz)
-* [VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231](https://dl.khadas.com/Firmware/VIM2/Ubuntu/EMMC/VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_EMMC_V20191231.7z)
+* [vim2-ubuntu-18.04-xfce-linux-4.9-fenix-1.1.1-220725](https://dl.khadas.com/firmware/VIM2/Ubuntu/EMMC/vim2-ubuntu-18.04-xfce-linux-4.9-fenix-1.1.1-220725-emmc.img.xz)
+
 
 </div>
 <div class="tab-pane fade show" id="sd2" role="tabpanel" aria-labelledby="sd2-tab">
 
-* [VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.7-210625.img.xz)
-* [VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V1.0.5-210430.img.xz)
-* [VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-xfce-bionic_Linux-4.9_arm64_SD-USB_V20191231.7z)
+* [vim2-ubuntu-18.04-xfce-linux-4.9-fenix-1.1.1-220725](https://dl.khadas.com/firmware/VIM2/Ubuntu/SD_USB/vim2-ubuntu-18.04-xfce-linux-4.9-fenix-1.1.1-220725.img.xz)
 
 </div>
 </div>
@@ -105,16 +98,12 @@ VIM2仅支持主线内核**Ubuntu 20.04**。
 <div class="tab-content" id="myTabContent">
 <div class="tab-pane fade show active" id="server2" role="tabpanel" aria-labelledby="server2-tab">
 
-* [VIM2_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
-* [VIM2_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
-* [VIM2_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-server-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
+* [vim2-ubuntu-20.04-server-linux-5.18-fenix-1.1.1-220725](https://dl.khadas.com/firmware/VIM2/Ubuntu/SD_USB/vim2-ubuntu-20.04-server-linux-5.18-fenix-1.1.1-220725.img.xz)
 
 </div>
 <div class="tab-pane fade show" id="desktop2" role="tabpanel" aria-labelledby="desktop2-tab">
 
-* [VIM2_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.16-rc2_arm64_SD-USB_V1.0.9-211217.img.xz)
-* [VIM2_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.12_arm64_SD-USB_V1.0.5-210430.img.xz)
-* [VIM2_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530](https://dl.khadas.com/Firmware/VIM2/Ubuntu/SD_USB/VIM2_Ubuntu-gnome-focal_Linux-5.7-rc7_arm64_SD-USB_V0.9-20200530.7z)
+* [vim2-ubuntu-20.04-gnome-linux-5.18-fenix-1.1.1-220725](https://dl.khadas.com/firmware/VIM2/Ubuntu/SD_USB/vim2-ubuntu-20.04-gnome-linux-5.18-fenix-1.1.1-220725.img.xz)
 
 </div>
 </div>
