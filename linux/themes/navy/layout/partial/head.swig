@@ -36,7 +36,7 @@
     crossorigin="anonymous"></script>
   <script src="{{ config.root }}/vendor/semantic/dist/semantic.min.js"></script>
   <script src="{{ config.root }}/vendor/bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js"></script>
- <!-- Hotjar Tracking Code for https://docs.khadas.com -->
+ <!-- Hotjar Tracking Code for https://khadas.github.io -->
   <script>
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};

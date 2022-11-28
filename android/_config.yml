@@ -5,7 +5,7 @@ author: Khadas
 language: en
 timezone: PRC
 
-url: https://docs.khadas.com
+url: https://khadas.github.io
 root: /android
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
