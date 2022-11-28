@@ -156,6 +156,3 @@ title: VIM1 文档
 * [VIM1网站首页](https://www.khadas.com/vim)
 * [VIM1论坛页](https://forum.khadas.com/c/khadas-vim)
 
-## VIM1 介绍视频
-{% youtube dLAX8nwcTvo %}
-

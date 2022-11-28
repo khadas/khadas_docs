@@ -149,6 +149,3 @@ Extreme cases of crash-recovery will require you to use the MRegister to reset y
 For more information, please see our website, read more documentation, or visit our forum.
 * [Khadas VIM1 Homepage](https://www.khadas.com/vim)
 * [Khadas VIM1 Forum](https://forum.khadas.com/c/khadas-vim)
-
-## VIM1 Review Video
-{% youtube dLAX8nwcTvo %}
