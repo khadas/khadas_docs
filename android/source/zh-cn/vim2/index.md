@@ -181,7 +181,3 @@ Linux_TX|19|39|GPIODV_13
 更多的相关信息，请查看我们的网页，阅读文档，或者到论坛浏览以及提问。
 * [VIM2网站首页](https://www.khadas.com/vim)
 * [VIM2论坛页](https://forum.khadas.com/c/Khadas-VIM2)
-
-## VIM2 介绍视频
-{% youtube FZX6c8o5kzo %}
-
