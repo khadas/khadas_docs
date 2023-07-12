@@ -27,7 +27,7 @@ This documentation will introduce how to use the UART of `40-PIN HEADER`.
 
 3. Install the SecureCRT tool on PC host, then chose correct serial port number and setup the baudrate to `9600`.
 
-4. PC host sends the number `12345678`, and VIM4 sends the character serial send test`
+4. PC host sends the number `12345678`, and VIM4 sends the character serial send test.
 
 5. The run result is as following, VIM4 recevie `12345678` from PC, and PC recevie `serial send test` from VIM4.
 
