@@ -23,7 +23,7 @@ This documentation will introduce how to use the UART of `40-PIN HEADER`.
 
 1. You need a USB to TTL Converter, one end is connected to the computer, the other end is connected to pin 15, pin 16.
 
-2. Install `ComAssistant` application on VIM4, then setup the baudrate to `9600` and chose the uart device node to `/dev/ttyS4`.
+2. Install [ComAssistant](https://dl.khadas.com/development/com_assistant.zip) application on VIM4, then setup the baudrate to `9600` and chose the uart device node to `/dev/ttyS4`.
 
 3. Install the SecureCRT tool on PC host, then chose correct serial port number and setup the baudrate to `9600`.
 
