@@ -27,7 +27,7 @@ You can enable WOL in the `Settings-->Khadas Settings-->WOL` menu.
 
 **1. Connect VIM4 with your LAN network.**
 **2. Power off VIM4.**
-**3. Attempt to wake up your VIM2, via a Ubuntu device on the same LAN.**
+**3. Attempt to wake up your VIM4, via a Ubuntu device on the same LAN.**
 
 * Install the **wakeonlan** tool
 
