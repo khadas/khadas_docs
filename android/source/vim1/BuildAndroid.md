@@ -13,7 +13,7 @@ title: Building Android
 
 {% note info Note %}
 
-Before you start to build, make sure you have done all the `Preperations` listed above.
+Before you start to build, make sure you have done all the `Preparations` listed above.
 
 {% endnote %}
 
