@@ -14,7 +14,7 @@ Demo mainly uses opencv and flask frameworks.
 2. Install flask
 
 <pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ sudo apt install python3-pip</pre>
-<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ pip3 instal flask</pre>
+<pre><font color="#4E9A06"><b>khadas@Khadas</b></font>:<font color="#3465A4"><b>~</b></font>$ pip3 install flask</pre>
 
 ## Run Demo
 
